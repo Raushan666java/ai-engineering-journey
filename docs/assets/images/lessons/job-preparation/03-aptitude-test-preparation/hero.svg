@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="8" height="400" fill="url(#accent)"/>
+  <!-- Decorative shapes -->
+  <rect x="900" y="-50" width="400" height="500" rx="30" fill="#2563eb" opacity="0.03" transform="rotate(10 1100 200)"/>
+  <rect x="1000" y="-30" width="300" height="460" rx="40" fill="#3b82f6" opacity="0.04" transform="rotate(-5 1150 200)"/>
+    <circle cx="1019.3982029829647" cy="107.76073014379676" r="34.64715238523722" fill="#2563eb" opacity="0.3"/>
+  <circle cx="1026.8862602110228" cy="306.0740635985734" r="55.74368521814554" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="1033.1134393784087" cy="167.8500481515523" r="53.77316585983807" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="1152.6658050266797" cy="280.81505114295214" r="33.46421512666336" fill="#93c5fd" opacity="0.6"/>
+  <circle cx="1098.9572543740244" cy="88.81823377684105" r="66.64449881771722" fill="#bfdbfe" opacity="0.4"/>
+  <circle cx="1150.7827852955127" cy="319.43520754822964" r="66.6668962097705" fill="#2563eb" opacity="0.4"/>
+  <!-- Title -->
+  <text x="60" y="120" font-size="42" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Aptitude Test Preparation for IT Companies &amp;amp; PSUs</text>
+  <!-- Subtitle -->
+  <text x="60" y="170" font-size="18" fill="#64748b" font-family="Arial, sans-serif">Aptitude test preparation needs systematic practice across all sections.
+Master the 100 shortcut formulas for speed....</text>
+  <!-- Divider -->
+  <line x1="60" y1="200" x2="260" y2="200" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stats row -->
+  <g transform="translate(60, 270)">
+    <rect x="0" y="0" width="140" height="36" rx="6" fill="#2563eb" opacity="0.1"/>
+    <text x="70" y="23" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">13 Concepts</text>
+    <rect x="155" y="0" width="140" height="36" rx="6" fill="#059669" opacity="0.1"/>
+    <text x="225" y="23" font-size="12" fill="#059669" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">0 Algorithms</text>
+    <rect x="310" y="0" width="140" height="36" rx="6" fill="#d97706" opacity="0.1"/>
+    <text x="380" y="23" font-size="12" fill="#d97706" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">0 Formulas</text>
+  </g>
+  <!-- Keyword tags -->
+  
+</svg>

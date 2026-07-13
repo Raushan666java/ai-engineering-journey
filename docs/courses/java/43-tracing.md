@@ -3,6 +3,45 @@
 > **Previous:** [Distributed Configuration](./42-config.md) | **Next:** [Project Reactor &amp; Reactive Streams](./44-reactor.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/43-tracing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/hero.svg" alt="Chapter Banner: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/handwritten-notes.svg" alt="Handwritten Notes: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/sticky-notes.svg" alt="Sticky Notes: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/visual-explanation.svg" alt="Visual Explanation: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/architecture.svg" alt="Architecture: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/workflow.svg" alt="Workflow: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/mindmap.svg" alt="Mind Map: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/comparison.svg" alt="Comparison: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/cheatsheet.svg" alt="Cheat Sheet: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/interview-quiz.svg" alt="Quiz Card: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/43-tracing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/43-tracing/social-card.svg" alt="Social Card: Distributed Tracing & Observability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

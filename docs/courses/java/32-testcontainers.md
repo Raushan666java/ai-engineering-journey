@@ -5,6 +5,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/32-testcontainers/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/hero.svg" alt="Chapter Banner: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/handwritten-notes.svg" alt="Handwritten Notes: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/sticky-notes.svg" alt="Sticky Notes: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/visual-explanation.svg" alt="Visual Explanation: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/architecture.svg" alt="Architecture: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/workflow.svg" alt="Workflow: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/mindmap.svg" alt="Mind Map: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/comparison.svg" alt="Comparison: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/cheatsheet.svg" alt="Cheat Sheet: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/interview-quiz.svg" alt="Quiz Card: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/32-testcontainers/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/32-testcontainers/social-card.svg" alt="Social Card: Testcontainers & Integration Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  Understand the Testcontainers architecture and how it manages container lifecycles
 2.  Use `GenericContainer` with the JUnit 5 `@Testcontainers` / `@Container` extension
 3.  Manage container lifecycles: start/stop, reusable containers, singleton patterns

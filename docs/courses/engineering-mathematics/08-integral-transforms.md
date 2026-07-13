@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/hero.svg" alt="Chapter Banner: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/handwritten-notes.svg" alt="Handwritten Notes: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/sticky-notes.svg" alt="Sticky Notes: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/visual-explanation.svg" alt="Visual Explanation: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/architecture.svg" alt="Architecture: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/workflow.svg" alt="Workflow: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/mindmap.svg" alt="Mind Map: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/comparison.svg" alt="Comparison: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/cheatsheet.svg" alt="Cheat Sheet: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/interview-quiz.svg" alt="Quiz Card: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/08-integral-transforms/social-card.svg" alt="Social Card: Chapter 8: Integral Transforms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Compute Fourier series expansions of periodic functions
 - Apply the Fourier transform to signals and systems
 - Use the Laplace transform for solving ODEs and analyzing systems

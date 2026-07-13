@@ -6,6 +6,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/hero.svg" alt="Chapter Banner: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/handwritten-notes.svg" alt="Handwritten Notes: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/sticky-notes.svg" alt="Sticky Notes: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/visual-explanation.svg" alt="Visual Explanation: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/architecture.svg" alt="Architecture: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/workflow.svg" alt="Workflow: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/mindmap.svg" alt="Mind Map: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/comparison.svg" alt="Comparison: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/cheatsheet.svg" alt="Cheat Sheet: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/interview-quiz.svg" alt="Quiz Card: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/06-gate-cs-mock/social-card.svg" alt="Social Card: GATE CS — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Test Pattern
 
 | Section | Questions | Marks | Type | Duration |

@@ -6,6 +6,45 @@ This chapter covers 25 essential REST API interview questions from REST constrai
 
 ![REST API Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/58-interview-rest-api.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/hero.svg" alt="Chapter Banner: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/handwritten-notes.svg" alt="Handwritten Notes: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/sticky-notes.svg" alt="Sticky Notes: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/visual-explanation.svg" alt="Visual Explanation: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/architecture.svg" alt="Architecture: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/workflow.svg" alt="Workflow: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/mindmap.svg" alt="Mind Map: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/comparison.svg" alt="Comparison: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/cheatsheet.svg" alt="Cheat Sheet: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/interview-quiz.svg" alt="Quiz Card: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/58-interview-rest-api/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/58-interview-rest-api/social-card.svg" alt="Social Card: REST API Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

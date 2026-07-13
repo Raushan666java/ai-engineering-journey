@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Introduction to Spring &amp; Spring Boot</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">Hollywood Principle:</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">*&quot;Don&apos;t call</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">us, we&apos;ll call</text>
+  <text x="35" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">you.&quot;*</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">Spring Ecosystem: Spring</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">began in 2004 with Rod</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">Johnson&apos;s vision</text>
+  <text x="35" y="217" font-size="9" fill="#475569" font-family="Arial, sans-serif">of...</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">Inversion of Control</text>
+  <text x="35" y="245" font-size="9" fill="#475569" font-family="Arial, sans-serif">&amp; Dependency</text>
+  <text x="35" y="258" font-size="9" fill="#475569" font-family="Arial, sans-serif">Injection: The Hollywood</text>
+  <text x="35" y="271" font-size="9" fill="#475569" font-family="Arial, sans-serif">Principle</text>
+  <text x="35" y="284" font-size="9" fill="#475569" font-family="Arial, sans-serif">(&quot;don&apos;t call</text>
+  <text x="35" y="297" font-size="9" fill="#475569" font-family="Arial, sans-serif">us, we&apos;ll...</text>
+  <text x="35" y="312" font-size="9" fill="#475569" font-family="Arial, sans-serif">Spring Boot Philosophy:</text>
+  <text x="35" y="325" font-size="9" fill="#475569" font-family="Arial, sans-serif">Opinionated defaults</text>
+  <text x="35" y="338" font-size="9" fill="#475569" font-family="Arial, sans-serif">reduce configuration...</text>
+  <text x="35" y="353" font-size="9" fill="#475569" font-family="Arial, sans-serif">Project Initialization:</text>
+  <text x="35" y="366" font-size="9" fill="#475569" font-family="Arial, sans-serif">Spring Initializr</text>
+  <text x="35" y="379" font-size="9" fill="#475569" font-family="Arial, sans-serif">(start.spring.io),</text>
+  <text x="35" y="392" font-size="9" fill="#475569" font-family="Arial, sans-serif">IntelliJ...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">1:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">{spring-security.version}&lt;/version&gt;...</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">{DB_PASSWORD}...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">{#dates.createNow()}&quot;&gt;time&lt;/span&gt;&lt;/...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">{SSL_KEY_PASSWORD}...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ @SuppressWarnings(&quot;unchecked&quot;)</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ @SuppressWarnings(&quot;unchecked&quot;)</text>
+  <text x="315" y="536" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ @SuppressWarnings(&quot;unchecked&quot;)</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Introduction to Spring &amp; Spring Boot — Quick Reference</text>
+</svg>

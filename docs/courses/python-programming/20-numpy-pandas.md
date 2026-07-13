@@ -13,6 +13,45 @@ By the end of this chapter, students will be able to:
 - Filter, group, aggregate, and merge datasets
 - Create basic visualisations with matplotlib and seaborn
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/hero.svg" alt="Chapter Banner: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/handwritten-notes.svg" alt="Handwritten Notes: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/sticky-notes.svg" alt="Sticky Notes: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/visual-explanation.svg" alt="Visual Explanation: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/architecture.svg" alt="Architecture: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/workflow.svg" alt="Workflow: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/mindmap.svg" alt="Mind Map: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/comparison.svg" alt="Comparison: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/cheatsheet.svg" alt="Cheat Sheet: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/interview-quiz.svg" alt="Quiz Card: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/20-numpy-pandas/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/20-numpy-pandas/social-card.svg" alt="Social Card: Chapter 20: NumPy and pandas" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Data Science Stack](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/20-numpy-pandas.png)
 
 

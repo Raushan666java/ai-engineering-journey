@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/hero.svg" alt="Chapter Banner: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/sticky-notes.svg" alt="Sticky Notes: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/visual-explanation.svg" alt="Visual Explanation: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/architecture.svg" alt="Architecture: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/workflow.svg" alt="Workflow: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/mindmap.svg" alt="Mind Map: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/comparison.svg" alt="Comparison: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/interview-quiz.svg" alt="Quiz Card: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/07-state-machines/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/07-state-machines/social-card.svg" alt="Social Card: Chapter 7: State Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Distinguish between Mealy and Moore state machine models
 2. Construct state diagrams and state tables from informal specifications
 3. Design state machines using D, JK, and T flip-flops

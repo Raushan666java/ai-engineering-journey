@@ -11,6 +11,45 @@
 - Authenticate and authorize API consumers using Laravel Sanctum with token abilities and expiry
 - Apply API versioning strategies, rate limiting, response formatting, and error handling
 - Integrate GraphQL endpoints using the Lighthouse package
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/07-api-development/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/hero.svg" alt="Chapter Banner: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/sticky-notes.svg" alt="Sticky Notes: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/visual-explanation.svg" alt="Visual Explanation: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/architecture.svg" alt="Architecture: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/workflow.svg" alt="Workflow: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/mindmap.svg" alt="Mind Map: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/comparison.svg" alt="Comparison: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/interview-quiz.svg" alt="Quiz Card: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/07-api-development/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/07-api-development/social-card.svg" alt="Social Card: Chapter 7: API Development & Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Key Topics |

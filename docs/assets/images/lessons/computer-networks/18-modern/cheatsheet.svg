@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 18: Modern Networking →...</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">QUIC 0-RTT is powerful</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">but risky: 0-RTT data is</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">vulnerable to replay</text>
+  <text x="35" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">attacks. Use...</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">MQTT QoS 2 is expensive:</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">Exactly-once delivery</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">uses a 4-way handshake</text>
+  <text x="35" y="217" font-size="9" fill="#475569" font-family="Arial, sans-serif">per...</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">LoRaWAN ADR is essential</text>
+  <text x="35" y="245" font-size="9" fill="#475569" font-family="Arial, sans-serif">at scale: Without</text>
+  <text x="35" y="258" font-size="9" fill="#475569" font-family="Arial, sans-serif">Adaptive Data Rate, all</text>
+  <text x="35" y="271" font-size="9" fill="#475569" font-family="Arial, sans-serif">devices use the...</text>
+  <text x="35" y="286" font-size="9" fill="#475569" font-family="Arial, sans-serif">Intent-based networking</text>
+  <text x="35" y="299" font-size="9" fill="#475569" font-family="Arial, sans-serif">â‰  IaC: IBN translates</text>
+  <text x="35" y="312" font-size="9" fill="#475569" font-family="Arial, sans-serif">business intent into</text>
+  <text x="35" y="325" font-size="9" fill="#475569" font-family="Arial, sans-serif">policies and...</text>
+  <text x="35" y="340" font-size="9" fill="#475569" font-family="Arial, sans-serif">eBPF for DDoS</text>
+  <text x="35" y="353" font-size="9" fill="#475569" font-family="Arial, sans-serif">mitigation: XDP programs</text>
+  <text x="35" y="366" font-size="9" fill="#475569" font-family="Arial, sans-serif">can drop DDoS traffic at</text>
+  <text x="35" y="379" font-size="9" fill="#475569" font-family="Arial, sans-serif">line rate...</text>
+  <text x="35" y="394" font-size="9" fill="#475569" font-family="Arial, sans-serif">Zero Trust is a mindset,</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">1:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">{ipv6}`;
+        return { ipv4,...</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">{hex.slice(4, 8)}`;...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">1000 (CPE) |
+| Weather...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">{deviceId}`;
+    if...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: What are the main barriers to IPv6 adoption?</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: 5G vs Wi-Fi 6 → when would you use each?</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Is quantum networking feasible for the internet today?</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ Real-World Analogy: Traditional...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ if (reading.humidity &gt; 75) return...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 18: Modern Networking → Complete Reference — Quick Reference</text>
+</svg>

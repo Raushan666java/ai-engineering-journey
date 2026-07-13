@@ -8,6 +8,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/hero.svg" alt="Chapter Banner: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/architecture.svg" alt="Architecture: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/workflow.svg" alt="Workflow: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/mindmap.svg" alt="Mind Map: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/comparison.svg" alt="Comparison: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/interview-quiz.svg" alt="Quiz Card: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/05-csp/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/05-csp/social-card.svg" alt="Social Card: Chapter 5: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Define a Constraint Satisfaction Problem (CSP) in terms of variables, domains, and constraints.
 2. Formalize real-world problems (e.g., scheduling, map coloring) as CSPs.
 3. Apply backtracking search with MRV, Degree, and LCV heuristics for solving CSPs.

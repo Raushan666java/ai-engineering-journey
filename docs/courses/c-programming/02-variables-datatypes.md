@@ -12,6 +12,45 @@
 - Differentiate const, #define, and enum with type safety analysis
 - Use sizeof for portable code and diagnose common edge cases (overflow, underflow, truncation)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/hero.svg" alt="Chapter Banner: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/architecture.svg" alt="Architecture: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/workflow.svg" alt="Workflow: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/mindmap.svg" alt="Mind Map: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/comparison.svg" alt="Comparison: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/interview-quiz.svg" alt="Quiz Card: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/02-variables-datatypes/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/02-variables-datatypes/social-card.svg" alt="Social Card: Chapter 2: Variables and Data Types" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 <a href="../../../assets/images/diagrams/c-programming/02-variables-datatypes/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">

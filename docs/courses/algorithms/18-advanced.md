@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/18-advanced/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/hero.svg" alt="Chapter Banner: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/architecture.svg" alt="Architecture: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/workflow.svg" alt="Workflow: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/mindmap.svg" alt="Mind Map: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/comparison.svg" alt="Comparison: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/interview-quiz.svg" alt="Quiz Card: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/18-advanced/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/18-advanced/social-card.svg" alt="Social Card: Chapter 18: Advanced Topics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Analyze online algorithms using the competitive ratio framework.
 2. Implement paging and ski rental algorithms and compute their competitive ratios.
 3. Design and analyze streaming algorithms including reservoir sampling and Bloom filters.

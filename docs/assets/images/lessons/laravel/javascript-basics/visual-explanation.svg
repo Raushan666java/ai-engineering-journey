@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter: JavaScript Fundamentals</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Decl: variables with `var`, `let`, and `const` and explain their</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">scoping differences</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="55" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Scoping rules:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Spread *expands* an iterable (used in array/object literals, function</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">calls) → Rest *collects* remaining elements (used in destructuring,</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">function parameters) → Capture Ã¢â‚¬â€ document Ã¢â€ â€™ target</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">(rarely used directly) → Target Ã¢â‚¬â€ the element that received the</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">event → Bubble Ã¢â‚¬â€ target Ã¢â€ â€™ document (default listener</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">phase) → Entry point Ã¢â‚¬â€ the file Vite starts from (usually</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">`resources/js/app.js`) → Code splitting Ã¢â‚¬â€ dynamic `import()`</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">automatically creates separate chunks → Tree shaking Ã¢â‚¬â€ unused</text>
+  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">exports are removed in production builds</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {value}`&quot;&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; {{--</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">Real-time orders (Echo) --}} &lt;div x-data=&quot;orders()&quot;</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">class=&quot;bg-white rounded-lg shadow p-6&quot;&gt; &lt;div</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">class=&quot;flex justify | 2:</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">{name}!`;
+}
+
+console.log(greet(&apos;Alice&apos;)); // &quot;Hello,</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">Alice!&quot;
+```
+
+Declarations are hoisted Ã¢â | 3:</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">{values[i]}&lt;/strong&gt;` : &apos;&apos;;
+        return result +</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">str + val;
+    }, &apos;&apos;);
+}
+
+const tagged = hi | 4:</text>
+  <text x="85" y="601" font-size="11" fill="#475569" font-family="Arial, sans-serif">{&apos;admin&apos;}`;
+console.log(tagged); // &quot;User:</text>
+  <text x="85" y="619" font-size="11" fill="#475569" font-family="Arial, sans-serif">&lt;strong&gt;Alice&lt;/strong&gt;, Role:</text>
+  <text x="85" y="637" font-size="11" fill="#475569" font-family="Arial, sans-serif">&lt;strong&gt;admin&lt;/strong&gt;&quot;
+` | 5: {response.status}`);</text>
+  <text x="85" y="655" font-size="11" fill="#475569" font-family="Arial, sans-serif">}
+        return response.json();
+    })
+    .then(posts =&gt; {</text>
+  <text x="85" y="673" font-size="11" fill="#475569" font-family="Arial, sans-serif">| 6: {errorBody}`
+            );
+        }
+
+        return await</text>
+  <text x="85" y="691" font-size="11" fill="#475569" font-family="Arial, sans-serif">response.json();
+    } catch (error</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Core language; Functions; Objects and arrays</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter: JavaScript Fundamentals</text>
+</svg>

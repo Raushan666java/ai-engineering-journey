@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="aarch" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#abg)" rx="4"/>
+  <!-- Title -->
+  <text x="400" y="36" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Lambda and Functional Programming</text>
+  <rect x="375" y="46" width="50" height="3" rx="2" fill="#2563eb"/>
+    <rect x="250" y="122.5" width="300" height="55" rx="12" fill="#2563eb" opacity="0.15" stroke="#2563eb" stroke-width="2"/>
+    <text x="400" y="146.5" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q1.</text>
+    <text x="400" y="164.5" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">What is the main limitation of lambda? - no...</text>
+  <line x1="400" y1="177.5" x2="400" y2="185.5" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="193.5" width="300" height="55" rx="8" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="2"/>
+    <text x="400" y="217.5" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q2.</text>
+    <text x="400" y="235.5" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Are map() and filter() eager or lazy? - eager -...</text>
+  <line x1="400" y1="248.5" x2="400" y2="256.5" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="264.5" width="300" height="55" rx="8" fill="#60a5fa" opacity="0.15" stroke="#60a5fa" stroke-width="2"/>
+    <text x="400" y="288.5" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q3.</text>
+    <text x="400" y="306.5" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">What does reduce() do? - filters elements - maps...</text>
+  <line x1="400" y1="319.5" x2="400" y2="327.5" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="335.5" width="300" height="55" rx="8" fill="#93c5fd" opacity="0.15" stroke="#93c5fd" stroke-width="2"/>
+    <text x="400" y="359.5" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q4.</text>
+    <text x="400" y="377.5" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">What does functools.partial do? - splits a...</text>
+  <line x1="400" y1="390.5" x2="400" y2="398.5" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="406.5" width="300" height="55" rx="12" fill="#bfdbfe" opacity="0.15" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="400" y="430.5" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q5.</text>
+    <text x="400" y="448.5" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Which operator import is equivalent to lambda...</text>
+  <text x="240" y="134.5" font-size="10" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif" transform="rotate(-90 240 134.5)">DATA FLOW</text>
+</svg>

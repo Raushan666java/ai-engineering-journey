@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/hero.svg" alt="Chapter Banner: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/handwritten-notes.svg" alt="Handwritten Notes: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/sticky-notes.svg" alt="Sticky Notes: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/visual-explanation.svg" alt="Visual Explanation: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/architecture.svg" alt="Architecture: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/workflow.svg" alt="Workflow: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/mindmap.svg" alt="Mind Map: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/comparison.svg" alt="Comparison: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/cheatsheet.svg" alt="Cheat Sheet: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/interview-quiz.svg" alt="Quiz Card: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/14-logging-error-i18n/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/14-logging-error-i18n/social-card.svg" alt="Social Card: Logging, Error Handling & Internationalization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Configure Logback with custom appenders, loggers, rolling policies, and MDC
 - Configure Log4j2 as an alternative logging framework
 - Use the SLF4J API with parameterized logging throughout your application

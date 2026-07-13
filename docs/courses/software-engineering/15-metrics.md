@@ -14,6 +14,45 @@ After completing this chapter, the student will be able to:
 - Use defect prediction models and reliability growth modelling
 - Understand DORA metrics and their role in DevOps improvement
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/hero.svg" alt="Chapter Banner: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/handwritten-notes.svg" alt="Handwritten Notes: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/sticky-notes.svg" alt="Sticky Notes: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/visual-explanation.svg" alt="Visual Explanation: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/architecture.svg" alt="Architecture: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/workflow.svg" alt="Workflow: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/mindmap.svg" alt="Mind Map: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/comparison.svg" alt="Comparison: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/cheatsheet.svg" alt="Cheat Sheet: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/interview-quiz.svg" alt="Quiz Card: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/15-metrics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/15-metrics/social-card.svg" alt="Social Card: Software Metrics and Measurement" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Theory
 
 ### Why Measure Software?

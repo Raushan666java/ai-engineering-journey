@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">REST API Interview Q&amp;A</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Th: chapter covers 25 essential REST API interview questions from REST</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">constraints...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="55" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Answer: → Answer: → Answer: → Answer: → Answer: → Answer:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Use lowercase, kebab-case: order-items (not OrderItems, orderItems) →</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">Use plural nouns: /api/orders (not /api/order) → Use query params for</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">filtering/sorting: ?status=SHIPPED → Keep hierarchies shallow:</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">/api/customers/123/orders (not /api/.../.../...) → Use verbs only for</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">non-CRUD actions: /api/orders/123/cancel → Never use file extensions:</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">/api/orders/123.json → /api/orders/123 (use Accept header) → Public</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">APIs: URI path versioning (most practical) → Internal APIs: Accept</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">header versioning (most RESTful)</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1:</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">.type&quot;).value(&quot;https://api.example.com/errors/order-not-found&quot;));
+}
+
+@Test
+void</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">testValidationRe | 2: .errors.total&quot;).exists());
+}
+*/
+
+// ===</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">Common error response formats compared ===
+/*
+Format   | 3:</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">.token&quot;).exists());
+}
+*/
+
+// === 6. Authentication best</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">practices ===
+/*
+1. Always use HTTPS → | 4: &quot;,
+        message</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">= &quot;Currency must be 2-10 uppercase letters&quot;)
+    String</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">currency,
+
+    @Valid | 5:</text>
+  <text x="85" y="601" font-size="11" fill="#475569" font-family="Arial, sans-serif">.errors.total&quot;).exists());
+}
+
+@Test
+void</text>
+  <text x="85" y="619" font-size="11" fill="#475569" font-family="Arial, sans-serif">testMinMaxValidation() throws Exception {
+    mockMvc. | 6:</text>
+  <text x="85" y="637" font-size="11" fill="#475569" font-family="Arial, sans-serif">.errors.status&quot;).exists());
+}
+*/
+
+// === 9. Best practices</text>
+  <text x="85" y="655" font-size="11" fill="#475569" font-family="Arial, sans-serif">===
+/*
+1. Validate at the boundary</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">REST API Interview Q&amp;A</text>
+</svg>

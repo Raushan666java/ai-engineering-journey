@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/12-configuration/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/hero.svg" alt="Chapter Banner: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/handwritten-notes.svg" alt="Handwritten Notes: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/sticky-notes.svg" alt="Sticky Notes: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/visual-explanation.svg" alt="Visual Explanation: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/architecture.svg" alt="Architecture: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/workflow.svg" alt="Workflow: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/mindmap.svg" alt="Mind Map: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/comparison.svg" alt="Comparison: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/cheatsheet.svg" alt="Cheat Sheet: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/interview-quiz.svg" alt="Quiz Card: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/12-configuration/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/12-configuration/social-card.svg" alt="Social Card: Application Properties & Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Configure Spring Boot applications using `application.properties` and `application.yml`
 - Bind configuration properties to type-safe Java beans using `@ConfigurationProperties`
 - Inject individual property values with `@Value`

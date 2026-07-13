@@ -12,6 +12,45 @@ By the end of this chapter, students will be able to:
 - Manage `sys.path` and third-party dependencies with pip
 - Build and distribute packages using setuptools
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/11-modules/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/hero.svg" alt="Chapter Banner: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/sticky-notes.svg" alt="Sticky Notes: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/visual-explanation.svg" alt="Visual Explanation: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/architecture.svg" alt="Architecture: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/workflow.svg" alt="Workflow: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/mindmap.svg" alt="Mind Map: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/comparison.svg" alt="Comparison: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/interview-quiz.svg" alt="Quiz Card: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/11-modules/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/11-modules/social-card.svg" alt="Social Card: Chapter 11: Modules and Packages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Modules and Packages](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/11-modules.png)
 
 

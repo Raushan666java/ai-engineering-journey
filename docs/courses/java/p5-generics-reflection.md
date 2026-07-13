@@ -7,6 +7,45 @@ This chapter explores each mechanism in depth, from the type-parameter syntax of
 ---
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/hero.svg" alt="Chapter Banner: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/handwritten-notes.svg" alt="Handwritten Notes: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/sticky-notes.svg" alt="Sticky Notes: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/visual-explanation.svg" alt="Visual Explanation: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/architecture.svg" alt="Architecture: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/workflow.svg" alt="Workflow: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/mindmap.svg" alt="Mind Map: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/comparison.svg" alt="Comparison: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/cheatsheet.svg" alt="Cheat Sheet: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/interview-quiz.svg" alt="Quiz Card: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p5-generics-reflection/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p5-generics-reflection/social-card.svg" alt="Social Card: Generics, Annotations & Reflection" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

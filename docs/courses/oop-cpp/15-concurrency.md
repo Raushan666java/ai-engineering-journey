@@ -6,6 +6,45 @@
 
 After studying this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/hero.svg" alt="Chapter Banner: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/sticky-notes.svg" alt="Sticky Notes: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/visual-explanation.svg" alt="Visual Explanation: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/architecture.svg" alt="Architecture: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/workflow.svg" alt="Workflow: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/mindmap.svg" alt="Mind Map: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/comparison.svg" alt="Comparison: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/interview-quiz.svg" alt="Quiz Card: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/15-concurrency/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/15-concurrency/social-card.svg" alt="Social Card: Chapter 15: Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Distinguish concurrency from parallelism with real-world analogies
 - Create and manage threads with `std::thread` → join, detach, RAII wrapping
 - Protect shared data with every mutex variant: `std::mutex`, `lock_guard`, `unique_lock`, `scoped_lock`, `timed_mutex`, `recursive_mutex`

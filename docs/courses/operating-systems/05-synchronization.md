@@ -13,6 +13,45 @@
 - Use mutex locks and semaphores for process synchronization
 - Recognize classic synchronization problems and their solutions
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/hero.svg" alt="Chapter Banner: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/architecture.svg" alt="Architecture: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/workflow.svg" alt="Workflow: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/mindmap.svg" alt="Mind Map: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/comparison.svg" alt="Comparison: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/interview-quiz.svg" alt="Quiz Card: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/05-synchronization/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/05-synchronization/social-card.svg" alt="Social Card: Chapter 5: Process Synchronization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Points |

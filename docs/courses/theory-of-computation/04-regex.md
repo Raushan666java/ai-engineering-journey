@@ -14,6 +14,45 @@
 - Apply Arden's lemma to solve regular expression equations.
 - Understand the limitations of regular expressions.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/hero.svg" alt="Chapter Banner: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/architecture.svg" alt="Architecture: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/workflow.svg" alt="Workflow: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/mindmap.svg" alt="Mind Map: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/comparison.svg" alt="Comparison: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/interview-quiz.svg" alt="Quiz Card: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/04-regex/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/04-regex/social-card.svg" alt="Social Card: Chapter 4: Regular Expressions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |

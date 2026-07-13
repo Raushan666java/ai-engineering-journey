@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: NP-Completeness</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">This: the value of NP-completeness theory: it saves you from chasing</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">impossible...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Definition 15.1 (P). → Examples: → Definition 15.2 (NP). → Real-world</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">analogy: → Examples: → Definition 15.3 (NP-hard).</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">If \( A \le_p B \) and \( B \in P \), then \( A \in P \). → If \( A</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">\le_p B \) and \( A \) is NP-hard, then \( B \) is NP-hard. →</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">Reductions are transitive: \( A \le_p B \) and \( B \le_p C \) implies</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">\( A \le_p C \). → SAT is in NP: Given a satisfying assignment (the</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">certificate), evaluate each clause in O(number of clauses) time.</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">Verification is clearly polynomial. → SAT is NP-hard: For any NP</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">language \( L \), there exists a nondeterministic Turing machine \( M</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">\) and a polynomial \( p(n) \) such that \( M \) deci → Initial</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">configuration: Encodes the starting tape contents, head position, and</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">state as Boolean variables. → Transition function: Encodes the</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">NTM&apos;s transition relation as clauses — for each time step, the</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">next configuration follows from the current one. → Acceptance</text>
+  <text x="85" y="588" font-size="11" fill="#475569" font-family="Arial, sans-serif">condition: At least one time step shows the machine in an accepting</text>
+  <text x="85" y="606" font-size="11" fill="#475569" font-family="Arial, sans-serif">state.</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 15.1: Clique to Vertex Cover Reduction:  Problem: Reduce</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">CLIQUE to VERTEX COVER. Construction: Given graph \( G = (V,...</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">| Class | Definition | Example |
+|-------|------------|---------|
+|</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">P | Solvable in polynomial...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: NP-Completeness</text>
+</svg>

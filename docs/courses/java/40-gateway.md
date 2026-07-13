@@ -5,6 +5,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/40-gateway/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/hero.svg" alt="Chapter Banner: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/handwritten-notes.svg" alt="Handwritten Notes: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/sticky-notes.svg" alt="Sticky Notes: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/visual-explanation.svg" alt="Visual Explanation: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/architecture.svg" alt="Architecture: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/workflow.svg" alt="Workflow: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/mindmap.svg" alt="Mind Map: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/comparison.svg" alt="Comparison: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/cheatsheet.svg" alt="Cheat Sheet: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/interview-quiz.svg" alt="Quiz Card: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/40-gateway/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/40-gateway/social-card.svg" alt="Social Card: API Gateway (Spring Cloud Gateway)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Configure Spring Cloud Gateway with RouteLocatorBuilder and YAML-based route definitions
 - Implement gateway predicates including Path, Method, Header, Query, Cookie, Host, RemoteAddr, Weight, and temporal predicates
 - Create and apply gateway filters (AddRequestHeader, AddResponseHeader, RewritePath, StripPrefix, CircuitBreaker, Retry, RequestRateLimiter)

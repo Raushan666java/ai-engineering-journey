@@ -8,6 +8,45 @@
 - Understand Google's interview process, scoring rubric, and decision-making framework
 - Develop product sense and design thinking for Google's unique interview style
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/hero.svg" alt="Chapter Banner: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/architecture.svg" alt="Architecture: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/workflow.svg" alt="Workflow: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/mindmap.svg" alt="Mind Map: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/comparison.svg" alt="Comparison: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/interview-quiz.svg" alt="Quiz Card: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/14-company-google-swe/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/14-company-google-swe/social-card.svg" alt="Social Card: Chapter 14: Google SWE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Google Interview Process
 
 ```mermaid

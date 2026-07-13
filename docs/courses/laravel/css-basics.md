@@ -3,6 +3,45 @@
 ## Learning Objectives
 
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/css-basics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/hero.svg" alt="Chapter Banner: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/handwritten-notes.svg" alt="Handwritten Notes: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/sticky-notes.svg" alt="Sticky Notes: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/visual-explanation.svg" alt="Visual Explanation: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/architecture.svg" alt="Architecture: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/workflow.svg" alt="Workflow: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/mindmap.svg" alt="Mind Map: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/comparison.svg" alt="Comparison: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/cheatsheet.svg" alt="Cheat Sheet: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/interview-quiz.svg" alt="Quiz Card: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/css-basics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/css-basics/social-card.svg" alt="Social Card: CSS Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

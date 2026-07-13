@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/hero.svg" alt="Chapter Banner: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/architecture.svg" alt="Architecture: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/workflow.svg" alt="Workflow: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/mindmap.svg" alt="Mind Map: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/comparison.svg" alt="Comparison: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/interview-quiz.svg" alt="Quiz Card: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/01-introduction/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/01-introduction/social-card.svg" alt="Social Card: Chapter 1: Introduction to Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Differentiate between analog and digital signals and identify the advantages of digital systems
 2. Convert numbers among decimal, binary, octal, and hexadecimal bases using algorithmic methods
 3. Represent signed integers using sign-magnitude, ones' complement, and two's complement notation

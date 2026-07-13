@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Turing Machine Extensions and the Church-Turing...</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">universal Turing machine (UTM): a TM U that takes as input âŸ¨M, wâŸ©</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">(the encoding of a TM M and an input...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Relationship: → Intuition: → Theorem: → Proof: → Construction of UTM:</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Simulation algorithm:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Every recursive language is RE (a decider is a special case of a</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">recognizer). → There exist RE languages that are NOT recursive</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">(Chapter 10: the halting problem). → If L is recursive, then LÌ… is</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">also recursive (swap accept and reject states in the decider). → If L</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">is RE, LÌ… may or may not be RE. → A language is co-RE if its</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">complement is RE. → L is recursive iff L is both RE and co-RE. →</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">Encode states as strings in {q}* (e.g., q = qâ‚€, qq = qâ‚, etc.). →</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">Encode tape symbols similarly.</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {encodeDirection(dir)}0`;
+}
+
+function encodeTMDescription(desc:</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">TMDescription): string {
+  let e | 2: {symbol}`;
+    const options =</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">this.transitions.get(key) || [];
+
+    for (const option of options |</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">3: {symbol}`;
+    const options = this.transitions.get(key) || [];</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">if (options.length === 0) { | 4: {opt.direction})`;
+      const</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">newTape = [...tape];
+      if (head &gt;= newTape.length)</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">newTape.push</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 9.1: RE but Not Recursive → The Halting Problem (Preview):</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">HALT_TM = { âŸ¨M, wâŸ© | M halts on input w }. - HALT_TM is RE: A UTM</text>
+  <text x="85" y="618" font-size="11" fill="#475569" font-family="Arial, sans-serif">can...</text>
+  <line x1="500" y1="620" x2="500" y2="630" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="645" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="645" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="667" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="687" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Recursive languages are decidable (TM always halts); RE languages</text>
+  <text x="85" y="705" font-size="11" fill="#475569" font-family="Arial, sans-serif">are recognizable (TM may loop)....</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Turing Machine Extensions and the Church-Turing Thesis</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 17: Network Troubleshooting</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">The Doctor Diagnos: Analogy&quot; width=&quot;30%&quot;&gt;</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Triage protocol: → The 80/20 rule: → Bottom-up approach (recommended</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">for most scenarios): → Top-down approach (better for</text>
+  <text x="85" y="283" font-size="11" fill="#475569" font-family="Arial, sans-serif">application-specific issues): → Divide and conquer approach: → Step 1</text>
+  <text x="85" y="301" font-size="11" fill="#475569" font-family="Arial, sans-serif">— Define the problem precisely.</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Apply a systematic OSI-layer troubleshooting methodology to isolate</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">network faults. → Diagnose physical layer issues: cable faults, signal</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">degradation, power over Ethernet problems. → Detect and resolve data</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">link layer issues: duplex mismatches, MAC flooding, STP problems. →</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">Troubleshoot network layer issues: routing loops, MTU mismatches, ICMP</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">filtering. → Identify transport layer issues: port blocking, TIME_WAIT</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">exhaustion, connection limits. → Debug application layer issues: DNS</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">resolution failures, HTTP status errors, SSL/TLS handshake failures. →</text>
+  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master diagnostic tools: ping, traceroute, netstat/ss, nslookup/dig,</text>
+  <text x="85" y="514" font-size="11" fill="#475569" font-family="Arial, sans-serif">tcpdump/Wireshark, nmap, iperf, mtr. → Analyze packet captures and</text>
+  <text x="85" y="532" font-size="11" fill="#475569" font-family="Arial, sans-serif">build systematic troubleshooting workflows.</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {result.jitter.toFixed(2)}ms`);
+```
+
+### 17.7.2 traceroute /</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">mtr
+
+&lt;a href=&quot;../../../assets/image</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Case Study 1: E-commerce Platform Slowdown at Peak Hours:  &lt;a...</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">Network troubleshooting is a systematic process that follows the OSI</text>
+  <text x="85" y="685" font-size="11" fill="#475569" font-family="Arial, sans-serif">layer model from bottom to...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 17: Network Troubleshooting</text>
+</svg>

@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/hero.svg" alt="Chapter Banner: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/handwritten-notes.svg" alt="Handwritten Notes: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/sticky-notes.svg" alt="Sticky Notes: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/visual-explanation.svg" alt="Visual Explanation: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/architecture.svg" alt="Architecture: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/workflow.svg" alt="Workflow: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/mindmap.svg" alt="Mind Map: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/comparison.svg" alt="Comparison: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/cheatsheet.svg" alt="Cheat Sheet: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/interview-quiz.svg" alt="Quiz Card: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/02-job-search-strategy/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/02-job-search-strategy/social-card.svg" alt="Social Card: Job Search Strategy for Indian IT Professionals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Design a multi-channel job search strategy covering all major Indian portals
 - Leverage networking and referrals to access the hidden job market
 - Write effective cold emails and LinkedIn messages that get responses

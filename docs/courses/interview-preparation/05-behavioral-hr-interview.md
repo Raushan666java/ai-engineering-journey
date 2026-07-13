@@ -9,6 +9,45 @@
 - Excel in group discussions with proven strategies
 - Develop confidence for panel interviews in both IT and government sectors
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/hero.svg" alt="Chapter Banner: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/architecture.svg" alt="Architecture: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/workflow.svg" alt="Workflow: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/mindmap.svg" alt="Mind Map: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/comparison.svg" alt="Comparison: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/interview-quiz.svg" alt="Quiz Card: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/05-behavioral-hr-interview/social-card.svg" alt="Social Card: Chapter 5: Behavioral and HR Interview" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Key Concepts
 
 ### The STAR Method

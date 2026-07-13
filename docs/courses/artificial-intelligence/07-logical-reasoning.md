@@ -6,6 +6,45 @@
 
 By the conclusion of this chapter, the student will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/hero.svg" alt="Chapter Banner: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/architecture.svg" alt="Architecture: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/workflow.svg" alt="Workflow: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/mindmap.svg" alt="Mind Map: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/comparison.svg" alt="Comparison: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/interview-quiz.svg" alt="Quiz Card: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-logical-reasoning/social-card.svg" alt="Social Card: Chapter 7: Logical Reasoning and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Apply unification with the occur check to compute the Most General Unifier (MGU) for any pair of logical expressions.
 2. Implement forward chaining for data-driven inference over Horn clause knowledge bases.
 3. Implement backward chaining for goal-driven query answering with loop detection.

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Boolean Algebra</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Proof: x + x?y = x?1 + x?y (Identity)</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Proof → Proof → Theorem 1 → Theorem 2 → Proof of Theorem 1 by truth</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">table → NAND as universal gate</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">SOP S(m_i) = POS ?(M_j) where j indexes the minterms NOT in the SOP →</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">For an n-variable function: if F = S(m_i), then F&apos; = S(m_j) where</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">j ? i → F = ?(M_j) where j ? i → NOT: A&apos; = (A?A)&apos; → AND: A?B</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">= [(A?B)&apos;]&apos; → OR: A + B = (A&apos;?B&apos;)&apos; =</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">(A?A)&apos;?(B?B)&apos; → NOT: A&apos; = (A + A)&apos; → OR: A + B =</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">[(A + B)&apos;]&apos;</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {varName}`);
+            const value = isComplemented ?</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">!values[varIndex] : values[varIndex];
+     | 2: {ch}`);
+    }</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">return tokens;
+  }
+
+  static evaluate(expr: string, vars:</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">Record&lt;string, numb | 3: {be.evaluate(&quot;A*B+C&quot;,</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">vars1)}`);
+console.log(`  (A+B)&apos;?C with A=1,B=0,C=1: | 4:</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">{be.evaluate(&quot;A^B^C&quot;,</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">vars1)}`);
+
+TruthTableGenerator.print(</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">be.generateTruthTable(&quot;(A+B)*(A+C) | 5: {b}: A+A?B= | 6: {a}, B=</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 2.1: Algebraic Simplification with Proof Steps:  Simplify F =</text>
+  <text x="85" y="580" font-size="11" fill="#475569" font-family="Arial, sans-serif">x?y + x?z + y?z using Boolean algebra, showing each step....</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Boolean algebra, with operators AND, OR, and NOT on the set {0, 1},</text>
+  <text x="85" y="685" font-size="11" fill="#475569" font-family="Arial, sans-serif">is the mathematical...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Boolean Algebra</text>
+</svg>

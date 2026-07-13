@@ -6,6 +6,45 @@
 
 By the conclusion of this chapter, the student will be able to: (1) formulate problems as constraint satisfaction problems; (2) apply backtracking search with heuristic ordering; (3) implement constraint propagation via arc consistency; (4) exploit problem structure for efficient solving; (5) apply iterative algorithms for large CSPs.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/hero.svg" alt="Chapter Banner: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/architecture.svg" alt="Architecture: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/workflow.svg" alt="Workflow: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/mindmap.svg" alt="Mind Map: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/comparison.svg" alt="Comparison: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/interview-quiz.svg" alt="Quiz Card: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-csp/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-csp/social-card.svg" alt="Social Card: Chapter 4: Constraint Satisfaction Problems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Constraint Satisfaction Matters
 
 **Real-World Analogy — Scheduling University Classes:** Imagine you are the registrar at a university. You have 50 classes to schedule across 10 time slots and 20 rooms. Each professor can only teach during certain hours, no two classes can share the same room at the same time, some courses must be taken in sequence (prerequisite constraints), and some students must be able to take both AI and Machine Learning without a time conflict. This is a classic Constraint Satisfaction Problem (CSP). The variables are (class, time, room) triples, the domains are all possible time-room combinations, and the constraints capture every real-world restriction. Without a CSP framework, you would resort to brute-force enumeration — evaluating 20Â¹â�° possible room assignments alone. With CSP techniques (backtracking, forward checking, AC-3), you prune invalid branches early and find a feasible schedule in seconds instead of centuries. CSPs are the mathematical backbone of timetabling, Sudoku, register allocation in compilers, and even NASA's Deep Space Network antenna scheduling.

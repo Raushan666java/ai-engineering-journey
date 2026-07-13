@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">IBPS SO IT Officer 2022 — Solved Paper</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="19.999999999999943" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="99.99999999999994" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Section</text>
+  <rect x="179.99999999999994" y="90" width="233.33333333333334" height="44" rx="0" fill="#2563eb"/>
+    <text x="296.66666666666663" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Questions</text>
+  <rect x="413.33333333333326" y="90" width="233.33333333333334" height="44" rx="0" fill="#2563eb"/>
+    <text x="529.9999999999999" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Marks</text>
+  <rect x="646.6666666666666" y="90" width="233.33333333333334" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="763.3333333333333" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Duration</text>
+  <rect x="19.999999999999943" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="27.999999999999943" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Reasoning &amp; Computer Aptitude</text>
+  <rect x="179.99999999999994" y="134" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="187.99999999999994" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">45</text>
+  <rect x="413.33333333333326" y="134" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="421.33333333333326" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">60</text>
+  <rect x="646.6666666666666" y="134" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="654.6666666666666" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">60 min</text>
+  <rect x="19.999999999999943" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="27.999999999999943" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Quantitative Aptitude</text>
+  <rect x="179.99999999999994" y="170" width="233.33333333333334" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="187.99999999999994" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">35</text>
+  <rect x="413.33333333333326" y="170" width="233.33333333333334" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="421.33333333333326" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">60</text>
+  <rect x="646.6666666666666" y="170" width="233.33333333333334" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="654.6666666666666" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">45 min</text>
+  <rect x="19.999999999999943" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="27.999999999999943" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">English Language</text>
+  <rect x="179.99999999999994" y="206" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="187.99999999999994" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">35</text>
+  <rect x="413.33333333333326" y="206" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="421.33333333333326" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">40</text>
+  <rect x="646.6666666666666" y="206" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="654.6666666666666" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">40 min</text>
+  <rect x="19.999999999999943" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="27.999999999999943" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Professional Knowledge (IT)</text>
+  <rect x="179.99999999999994" y="242" width="233.33333333333334" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="187.99999999999994" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">60</text>
+  <rect x="413.33333333333326" y="242" width="233.33333333333334" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="421.33333333333326" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">60</text>
+  <rect x="646.6666666666666" y="242" width="233.33333333333334" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="654.6666666666666" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">45 min</text>
+  <rect x="19.999999999999943" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="27.999999999999943" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Total</text>
+  <rect x="179.99999999999994" y="278" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="187.99999999999994" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">175</text>
+  <rect x="413.33333333333326" y="278" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="421.33333333333326" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">220</text>
+  <rect x="646.6666666666666" y="278" width="233.33333333333334" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="654.6666666666666" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">190 min</text>
+</svg>

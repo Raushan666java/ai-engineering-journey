@@ -14,6 +14,45 @@
 - Engineer feature pipelines with Laravel queues for cleaning, transforming, and selecting features at scale
 - Apply MLOps practices including experiment tracking, model registry, drift detection, and deployment strategies
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/hero.svg" alt="Chapter Banner: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/handwritten-notes.svg" alt="Handwritten Notes: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/sticky-notes.svg" alt="Sticky Notes: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/visual-explanation.svg" alt="Visual Explanation: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/architecture.svg" alt="Architecture: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/workflow.svg" alt="Workflow: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/mindmap.svg" alt="Mind Map: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/comparison.svg" alt="Comparison: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/cheatsheet.svg" alt="Cheat Sheet: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/interview-quiz.svg" alt="Quiz Card: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/ai-ml-fundamentals/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/ai-ml-fundamentals/social-card.svg" alt="Social Card: Chapter P6: AI/ML Fundamentals & Laravel Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

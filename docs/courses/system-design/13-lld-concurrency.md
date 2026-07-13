@@ -10,6 +10,45 @@
 - Design thread pool configurations (fixed, cached, scheduled, work-stealing) for different workload types
 - Distinguish between threading models: async/await event loops, actor model message passing, and CSP channels
 ---
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/hero.svg" alt="Chapter Banner: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/architecture.svg" alt="Architecture: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/workflow.svg" alt="Workflow: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/mindmap.svg" alt="Mind Map: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/comparison.svg" alt="Comparison: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/interview-quiz.svg" alt="Quiz Card: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/13-lld-concurrency/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/13-lld-concurrency/social-card.svg" alt="Social Card: Chapter 13: Low-Level Design: Concurrency and Threading" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

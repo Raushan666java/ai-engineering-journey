@@ -6,6 +6,45 @@
 
 After studying this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/hero.svg" alt="Chapter Banner: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/sticky-notes.svg" alt="Sticky Notes: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/visual-explanation.svg" alt="Visual Explanation: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/architecture.svg" alt="Architecture: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/workflow.svg" alt="Workflow: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/mindmap.svg" alt="Mind Map: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/comparison.svg" alt="Comparison: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/interview-quiz.svg" alt="Quiz Card: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/09-stl-containers/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/09-stl-containers/social-card.svg" alt="Social Card: Chapter 9: STL Containers -- In-Depth Mastery" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Classify STL containers into sequence, associative, unordered, and adapter categories
 - Explain the internal implementation of each container (dynamic array, RB-tree, hash table, chunked array)
 - Select the optimal container for any given problem using complexity analysis

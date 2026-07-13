@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <!-- Desk background -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  <rect width="800" height="600" fill="#f1f5f9" opacity="0.3"/>
+  <!-- Subtle wood grain lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="0" y1="320" x2="800" y2="320" stroke="#e2e8f0" stroke-width="0.3"/>
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#e2e8f0" stroke-width="0.3"/>
+  <!-- Sticky notes -->
+  <g transform="rotate(-6 117.5 110)" filter="url(#shadow)">
+      <rect x="30" y="30" width="175" height="160" rx="4" fill="#FEF3C7" stroke="#92400e" stroke-width="1" opacity="0.95"/>
+          <text x="42" y="60" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">The Feynman</text>
+    <text x="42" y="78" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Technique</text>
+    <text x="42" y="100" font-size="10" fill="#475569" font-family="Arial, sans-serif">the ultimate</text>
+    <text x="42" y="114" font-size="10" fill="#475569" font-family="Arial, sans-serif">comprehension check —</text>
+    <text x="42" y="128" font-size="10" fill="#475569" font-family="Arial, sans-serif">if you can&apos;t</text>
+    <text x="42" y="142" font-size="10" fill="#475569" font-family="Arial, sans-serif">explain it...</text>
+    </g>
+
+<g transform="rotate(-6 312.5 110)" filter="url(#shadow)">
+      <rect x="225" y="30" width="175" height="160" rx="4" fill="#FEF3C7" stroke="#92400e" stroke-width="1" opacity="0.95"/>
+          <text x="237" y="60" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Th</text>
+    <text x="237" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">chapter gives you</text>
+    <text x="237" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">three more weapons:</text>
+    <text x="237" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">Pomodoro (focus...</text>
+    </g>
+
+<g transform="rotate(-6 507.5 110)" filter="url(#shadow)">
+      <rect x="420" y="30" width="175" height="160" rx="4" fill="#FEF3C7" stroke="#92400e" stroke-width="1" opacity="0.95"/>
+          <text x="432" y="60" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">What</text>
+    <text x="432" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">the Pomodoro Technique</text>
+    <text x="432" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">and why does it work?</text>
+    </g>
+
+<g transform="rotate(-6 507.5 110)" filter="url(#shadow)">
+      <rect x="420" y="30" width="175" height="160" rx="4" fill="#FCE7F3" stroke="#9d174d" stroke-width="1" opacity="0.95"/>
+          <text x="432" y="60" font-size="12" font-weight="bold" fill="#9d174d" font-family="Arial, sans-serif">Interview Q</text>
+    <text x="432" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">What is the Pomodoro</text>
+    <text x="432" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">Technique and why does</text>
+    <text x="432" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">it work?</text>
+    </g>
+
+<g transform="rotate(-6 702.5 110)" filter="url(#shadow)">
+      <rect x="615" y="30" width="175" height="160" rx="4" fill="#FCE7F3" stroke="#9d174d" stroke-width="1" opacity="0.95"/>
+          <text x="627" y="60" font-size="12" font-weight="bold" fill="#9d174d" font-family="Arial, sans-serif">Interview Q</text>
+    <text x="627" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">How do I adapt the</text>
+    <text x="627" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">Pomodoro Technique for</text>
+    <text x="627" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">coding?</text>
+    </g>
+
+<g transform="rotate(-6 117.5 470)" filter="url(#shadow)">
+      <rect x="30" y="390" width="175" height="160" rx="4" fill="#FFEDD5" stroke="#9a3412" stroke-width="1" opacity="0.95"/>
+          <text x="42" y="420" font-size="12" font-weight="bold" fill="#9a3412" font-family="Arial, sans-serif">Warning</text>
+    <text x="42" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">&gt; Warning:</text>
+    <text x="42" y="456" font-size="10" fill="#475569" font-family="Arial, sans-serif">Don&apos;t extend your</text>
+    <text x="42" y="470" font-size="10" fill="#475569" font-family="Arial, sans-serif">coding Pomodoro beyond</text>
+    <text x="42" y="484" font-size="10" fill="#475569" font-family="Arial, sans-serif">90...</text>
+    </g>
+
+<g transform="rotate(-6 312.5 470)" filter="url(#shadow)">
+      <rect x="225" y="390" width="175" height="160" rx="4" fill="#FFEDD5" stroke="#9a3412" stroke-width="1" opacity="0.95"/>
+          <text x="237" y="420" font-size="12" font-weight="bold" fill="#9a3412" font-family="Arial, sans-serif">Warning</text>
+    <text x="237" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">&gt; Warning:</text>
+    <text x="237" y="456" font-size="10" fill="#475569" font-family="Arial, sans-serif">Interleaving will feel</text>
+    <text x="237" y="470" font-size="10" fill="#475569" font-family="Arial, sans-serif">wrong. Your</text>
+    <text x="237" y="484" font-size="10" fill="#475569" font-family="Arial, sans-serif">accuracy...</text>
+    </g>
+
+<g transform="rotate(-6 507.5 470)" filter="url(#shadow)">
+      <rect x="420" y="390" width="175" height="160" rx="4" fill="#F3E8FF" stroke="#581c87" stroke-width="1" opacity="0.95"/>
+          <text x="432" y="420" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Prerequisites:</text>
+    <text x="432" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">concept</text>
+    </g>
+
+<g transform="rotate(-6 702.5 470)" filter="url(#shadow)">
+      <rect x="615" y="390" width="175" height="160" rx="4" fill="#F3E8FF" stroke="#581c87" stroke-width="1" opacity="0.95"/>
+          <text x="627" y="420" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Next:</text>
+    <text x="627" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">concept</text>
+    </g>
+  <!-- Coffee mug -->
+  <g transform="translate(710, 460)">
+    <rect x="0" y="10" width="40" height="45" rx="5" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M40,18 Q55,22 40,32" fill="none" stroke="#94a3b8" stroke-width="2"/>
+    <ellipse cx="20" cy="10" rx="20" ry="6" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1"/>
+    <ellipse cx="20" cy="10" rx="16" ry="4" fill="#1e293b" opacity="0.2"/>
+  </g>
+  <!-- Pen -->
+  <g transform="translate(680, 530) rotate(-30)">
+    <rect x="0" y="0" width="80" height="5" rx="2" fill="#2563eb"/>
+    <polygon points="80,0 90,2.5 80,5" fill="#1e293b"/>
+  </g>
+  <!-- Header -->
+  <text x="400" y="592" font-size="11" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 4: Pomodoro, Interleaving &amp; the Feynman Technique</text>
+</svg>

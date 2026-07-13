@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#ffffff" rx="6"/>
+  <!-- Top decoration -->
+  <rect x="0" y="0" width="600" height="4" fill="url(#qgrad)"/>
+  <defs>
+    <linearGradient id="qgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+    <text x="300" y="60" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: The Physical Layer</text>
+  <text x="300" y="82" font-size="12" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Self-Test Quiz — 4 Questions</text>
+  <rect x="30" y="110" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="118" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="131" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q1</text>
+        <text x="45" y="132" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">1</text>
+        <text x="55" y="156" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Which UTP category supports 10 Gbps at 100...</text>
+  <text x="55" y="170" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. Cat 5e</text>
+  <text x="55" y="184" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. Cat 6</text>
+  <text x="55" y="198" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. Cat 6a</text>
+      <text x="45" y="224" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ C</text>
+  <rect x="30" y="248" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="256" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="269" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q2</text>
+        <text x="45" y="270" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">2</text>
+        <text x="55" y="294" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. What is the primary disadvantage of circuit...</text>
+  <text x="55" y="308" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. Higher latency</text>
+  <text x="55" y="322" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. Poor burst efficiency</text>
+  <text x="55" y="336" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. Lower bandwidth</text>
+      <text x="45" y="362" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ B</text>
+  <rect x="30" y="386" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="394" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="407" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q3</text>
+        <text x="45" y="408" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">3</text>
+        <text x="55" y="432" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. SMF attenuation = 0.2 dB/km. 50 km link, 3...</text>
+  <text x="55" y="446" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. −3 dBm</text>
+  <text x="55" y="460" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. −7 dBm</text>
+  <text x="55" y="474" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. −10 dBm</text>
+      <text x="45" y="500" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ B</text>
+  <rect x="30" y="524" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="532" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="545" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q4</text>
+        <text x="45" y="546" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">4</text>
+        <text x="55" y="570" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. 80 independent 100 Gbps channels on a single...</text>
+  <text x="55" y="584" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. FDM</text>
+  <text x="55" y="598" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. TDM</text>
+  <text x="55" y="612" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. DWDM</text>
+      <text x="45" y="638" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ C</text>
+</svg>

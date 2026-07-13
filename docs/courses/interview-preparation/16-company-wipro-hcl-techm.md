@@ -9,6 +9,45 @@
 - Answer 10 domain-specific CS fundamentals questions
 - Compare selection processes across Wipro, HCL, and Tech Mahindra
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/hero.svg" alt="Chapter Banner: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/architecture.svg" alt="Architecture: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/workflow.svg" alt="Workflow: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/mindmap.svg" alt="Mind Map: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/comparison.svg" alt="Comparison: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/interview-quiz.svg" alt="Quiz Card: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/16-company-wipro-hcl-techm/social-card.svg" alt="Social Card: Chapter 16: Wipro NLTH, HCL, Tech Mahindra — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Selection Process Comparison
 
 ```mermaid

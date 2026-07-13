@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/hero.svg" alt="Chapter Banner: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/handwritten-notes.svg" alt="Handwritten Notes: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/sticky-notes.svg" alt="Sticky Notes: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/visual-explanation.svg" alt="Visual Explanation: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/architecture.svg" alt="Architecture: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/workflow.svg" alt="Workflow: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/mindmap.svg" alt="Mind Map: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/comparison.svg" alt="Comparison: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/cheatsheet.svg" alt="Cheat Sheet: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/interview-quiz.svg" alt="Quiz Card: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/osho-glossary/social-card.svg" alt="Social Card: ओशो की शब्दावली: मुख्य संस्कृत शब्द और उनके अर्थ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## इस शब्दावली का उपयोग कैसे करें
 
 यह शब्दावली **विज्ञान भैरव तंत्र** पर ओशो के प्रवचनों में प्रयुक्त मुख्य संस्कृत शब्दों का संग्रह है। प्रत्येक प्रविष्टि में:

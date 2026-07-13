@@ -6,6 +6,45 @@
 
 By the conclusion of this chapter, the student will be able to: (1) explain the role of ontology in knowledge representation; (2) distinguish propositional and first-order logic as representation languages; (3) construct semantic networks and frame-based representations; (4) apply description logic to taxonomic reasoning; (5) model actions and change using situation and event calculi; (6) compare knowledge representation schemes along expressiveness, tractability, and decidability; (7) implement basic inference procedures for semantic networks and description logics in Python.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/hero.svg" alt="Chapter Banner: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/architecture.svg" alt="Architecture: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/workflow.svg" alt="Workflow: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/mindmap.svg" alt="Mind Map: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/comparison.svg" alt="Comparison: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/interview-quiz.svg" alt="Quiz Card: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/06-knowledge-representation/social-card.svg" alt="Social Card: Chapter 6: Knowledge Representation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Knowledge Representation Matters
 
 > **Real-World Analogy:** Think of a library cataloging system. A library contains thousands of books, each with a subject, author, publication year, and location. Without a structured catalog (Dewey Decimal System, card catalogs, digital databases), finding a specific book would require searching every shelf. Knowledge representation is the AI equivalent — it provides the schema, categories, and relationships that allow an intelligent system to store, index, retrieve, and infer new knowledge efficiently.

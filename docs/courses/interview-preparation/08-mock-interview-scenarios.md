@@ -8,6 +8,45 @@
 - Practice graded responses and avoid common pitfalls
 - Build confidence through realistic exposure to interview dynamics
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/hero.svg" alt="Chapter Banner: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/handwritten-notes.svg" alt="Handwritten Notes: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/sticky-notes.svg" alt="Sticky Notes: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/visual-explanation.svg" alt="Visual Explanation: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/architecture.svg" alt="Architecture: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/workflow.svg" alt="Workflow: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/mindmap.svg" alt="Mind Map: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/comparison.svg" alt="Comparison: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/cheatsheet.svg" alt="Cheat Sheet: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/interview-quiz.svg" alt="Quiz Card: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/08-mock-interview-scenarios/social-card.svg" alt="Social Card: Chapter 8: Mock Interview Scenarios" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## How to Use This Chapter
 
 1. **Read each scenario** to understand the flow and format of different interview types

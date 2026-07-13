@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/hero.svg" alt="Chapter Banner: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/architecture.svg" alt="Architecture: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/workflow.svg" alt="Workflow: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/mindmap.svg" alt="Mind Map: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/comparison.svg" alt="Comparison: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/interview-quiz.svg" alt="Quiz Card: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/10-architecture/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/10-architecture/social-card.svg" alt="Social Card: Chapter 10: Cloud Architecture Design Patterns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Design cloud architectures using the AWS Well-Architected Framework pillars.
 2. Apply the six Rs of migration strategies for moving workloads to the cloud.
 3. Implement disaster recovery strategies across multiple regions.

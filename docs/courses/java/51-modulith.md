@@ -3,6 +3,45 @@
 > **Previous:** [Spring Integration](./50-integration.md) | **Next:** [Docker &amp; Containerization](./52-docker.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/51-modulith/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/hero.svg" alt="Chapter Banner: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/handwritten-notes.svg" alt="Handwritten Notes: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/sticky-notes.svg" alt="Sticky Notes: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/visual-explanation.svg" alt="Visual Explanation: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/architecture.svg" alt="Architecture: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/workflow.svg" alt="Workflow: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/mindmap.svg" alt="Mind Map: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/comparison.svg" alt="Comparison: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/cheatsheet.svg" alt="Cheat Sheet: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/interview-quiz.svg" alt="Quiz Card: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/51-modulith/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/51-modulith/social-card.svg" alt="Social Card: Spring Modulith" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

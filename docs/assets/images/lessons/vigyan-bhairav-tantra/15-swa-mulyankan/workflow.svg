@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="warrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#ffffff" rx="4"/>
+  <text x="400" y="40" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि</text>
+  <rect x="380" y="50" width="40" height="3" rx="2" fill="#2563eb"/>
+    <rect x="-460" y="275" width="180" height="50" rx="25" fill="#2563eb" stroke="none" stroke-width="2"/>
+    <text x="-370" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">1</text>
+    <text x="-370" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">ओशो के अनूठे...</text>
+  <line x1="-275" y1="300" x2="-245" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-260" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-240" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="-150" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">2</text>
+    <text x="-150" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">साधना में प्रगति के...</text>
+  <line x1="-55" y1="300" x2="-25" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-40" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-20" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="70" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
+    <text x="70" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">आध्यात्मिक अनुभवों के...</text>
+  <line x1="165" y1="300" x2="195" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="180" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="200" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="290" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
+    <text x="290" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">&quot;कोई प्रगति नहीं है&quot;...</text>
+  <line x1="385" y1="300" x2="415" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="400" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="420" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="510" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">5</text>
+    <text x="510" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">आत्म-मूल्यांकन को एक...</text>
+  <line x1="605" y1="300" x2="635" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="620" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="640" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="730" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+    <text x="730" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">TypeScript...</text>
+  <line x1="825" y1="300" x2="855" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="840" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="860" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="950" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">13</text>
+    <text x="950" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">मन बहुत भटक रहा है —...</text>
+  <line x1="1045" y1="300" x2="1075" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="1060" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="1080" y="275" width="180" height="50" rx="25" fill="#059669" stroke="none" stroke-width="2"/>
+    <text x="1170" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">14</text>
+    <text x="1170" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">यह चिढ़ भी एक विचार...</text>
+  <rect x="-455" y="345" width="170" height="74" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-370" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">ओशो के अनूठे</text>
+  <text x="-370" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">आत्म-मूल्यांकन</text>
+  <text x="-370" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">दृष्टिकोण को समझना</text>
+  <text x="-370" y="409" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">—...</text>
+  <rect x="-235" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-150" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">साधना में प्रगति के</text>
+  <text x="-150" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">ओशो के संकेतकों को</text>
+  <text x="-150" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">पहचानना —...</text>
+  <rect x="-15" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="70" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">आध्यात्मिक अनुभवों के</text>
+  <text x="70" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">मोह से बचने की ओशो</text>
+  <text x="70" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">की...</text>
+  <rect x="205" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="290" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">&quot;कोई प्रगति नहीं</text>
+  <text x="290" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">है&quot; — ओशो के</text>
+  <text x="290" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">विरोधाभास को समझना</text>
+  <rect x="425" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="510" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">आत्म-मूल्यांकन को एक</text>
+  <text x="510" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">ध्यान के रूप में</text>
+  <text x="510" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">अपनाना</text>
+  <rect x="645" y="345" width="170" height="74" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="730" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">TypeScript</text>
+  <text x="730" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Self-Assessment</text>
+  <text x="730" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Journal with</text>
+  <text x="730" y="409" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Osho&apos;s...</text>
+  <rect x="865" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="950" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">मन बहुत भटक रहा है —</text>
+  <text x="950" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">लेकिन मैंने देखा कि</text>
+  <text x="950" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">मैं...</text>
+  <rect x="1085" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1170" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">यह चिढ़ भी एक विचार है</text>
+  <text x="1170" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">— इसे भी देखा</text>
+</svg>

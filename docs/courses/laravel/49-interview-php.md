@@ -11,6 +11,45 @@ This chapter covers the most frequently asked PHP interview questions across fun
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/49-interview-php/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/hero.svg" alt="Chapter Banner: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/handwritten-notes.svg" alt="Handwritten Notes: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/sticky-notes.svg" alt="Sticky Notes: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/visual-explanation.svg" alt="Visual Explanation: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/architecture.svg" alt="Architecture: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/workflow.svg" alt="Workflow: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/mindmap.svg" alt="Mind Map: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/comparison.svg" alt="Comparison: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/cheatsheet.svg" alt="Cheat Sheet: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/interview-quiz.svg" alt="Quiz Card: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/49-interview-php/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/49-interview-php/social-card.svg" alt="Social Card: Chapter 49: PHP Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -6,6 +6,45 @@
 
 After completing this chapter you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/hero.svg" alt="Chapter Banner: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/architecture.svg" alt="Architecture: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/workflow.svg" alt="Workflow: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/mindmap.svg" alt="Mind Map: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/comparison.svg" alt="Comparison: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/interview-quiz.svg" alt="Quiz Card: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch09-loop-tooling/social-card.svg" alt="Social Card: Chapter 9: Loop Tooling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Design durable execution workflows with saga compensation patterns for agent loops
 - Implement checkpoint/restore to serialize and resume agent state across crashes
 - Build rate limiters that enforce per-token, per-iteration, and per-cost budgets

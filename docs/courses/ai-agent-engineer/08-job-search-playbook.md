@@ -4,6 +4,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/hero.svg" alt="Chapter Banner: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/handwritten-notes.svg" alt="Handwritten Notes: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/sticky-notes.svg" alt="Sticky Notes: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/visual-explanation.svg" alt="Visual Explanation: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/architecture.svg" alt="Architecture: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/workflow.svg" alt="Workflow: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/mindmap.svg" alt="Mind Map: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/comparison.svg" alt="Comparison: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/cheatsheet.svg" alt="Cheat Sheet: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/interview-quiz.svg" alt="Quiz Card: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/08-job-search-playbook/social-card.svg" alt="Social Card: Job Search Playbook: AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## 1. Job Market Landscape
 
 ### Types of AI Agent Engineer roles

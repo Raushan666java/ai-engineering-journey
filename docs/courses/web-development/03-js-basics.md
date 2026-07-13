@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** `const` and `let` provide block scoping while `var` is function-scoped and should be avoided in modern code.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/web-development/03-js-basics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/hero.svg" alt="Chapter Banner: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/sticky-notes.svg" alt="Sticky Notes: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/visual-explanation.svg" alt="Visual Explanation: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/architecture.svg" alt="Architecture: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/workflow.svg" alt="Workflow: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/mindmap.svg" alt="Mind Map: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/comparison.svg" alt="Comparison: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/cheatsheet.svg" alt="Cheat Sheet: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/interview-quiz.svg" alt="Quiz Card: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/03-js-basics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/03-js-basics/social-card.svg" alt="Social Card: Chapter 3 → JavaScript Basics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

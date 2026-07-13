@@ -3,6 +3,45 @@
 > **Previous:** [R2DBC &amp; Reactive Data Access](./46-r2dbc.md) | **Next:** [GraphQL](./48-graphql.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/47-spring-ai/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/hero.svg" alt="Chapter Banner: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/handwritten-notes.svg" alt="Handwritten Notes: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/sticky-notes.svg" alt="Sticky Notes: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/visual-explanation.svg" alt="Visual Explanation: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/architecture.svg" alt="Architecture: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/workflow.svg" alt="Workflow: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/mindmap.svg" alt="Mind Map: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/comparison.svg" alt="Comparison: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/cheatsheet.svg" alt="Cheat Sheet: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/interview-quiz.svg" alt="Quiz Card: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/47-spring-ai/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/47-spring-ai/social-card.svg" alt="Social Card: Spring AI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

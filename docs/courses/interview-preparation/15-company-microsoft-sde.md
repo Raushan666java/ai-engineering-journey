@@ -8,6 +8,45 @@
 - Ace 10 behavioral questions using the Microsoft STAR framework
 - Understand Microsoft interview rounds and the STAR response methodology
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/hero.svg" alt="Chapter Banner: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/sticky-notes.svg" alt="Sticky Notes: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/visual-explanation.svg" alt="Visual Explanation: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/architecture.svg" alt="Architecture: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/workflow.svg" alt="Workflow: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/mindmap.svg" alt="Mind Map: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/comparison.svg" alt="Comparison: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/interview-quiz.svg" alt="Quiz Card: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/15-company-microsoft-sde/social-card.svg" alt="Social Card: Chapter 15: Microsoft SDE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Microsoft Interview Process
 
 ```mermaid

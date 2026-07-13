@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/hero.svg" alt="Chapter Banner: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/architecture.svg" alt="Architecture: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/workflow.svg" alt="Workflow: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/mindmap.svg" alt="Mind Map: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/comparison.svg" alt="Comparison: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/interview-quiz.svg" alt="Quiz Card: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/04-cloud-storage/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/04-cloud-storage/social-card.svg" alt="Social Card: Chapter 4: Cloud Storage Services" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Differentiate between object, block, and file storage models and their use cases.
 2. Compare object storage offerings (S3, Azure Blob, GCS) including buckets/containers and tiers.
 3. Configure persistent block storage for virtual machines across different performance tiers.

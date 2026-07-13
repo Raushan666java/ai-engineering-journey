@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 14: TypeScript</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Types: better for unions, intersections, and computed types.</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Q1. When should you use an interface over a type alias? → B)</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">Interfaces support declaration merging and extension (`extends`),</text>
+  <text x="85" y="283" font-size="11" fill="#475569" font-family="Arial, sans-serif">making them ideal for public API shapes that may be extended later.</text>
+  <text x="85" y="301" font-size="11" fill="#475569" font-family="Arial, sans-serif">Types are better for unions, intersections, and computed types. → Q2.</text>
+  <text x="85" y="319" font-size="11" fill="#475569" font-family="Arial, sans-serif">What does `Pick&lt;User, &apos;id&apos; | &apos;name&apos;&gt;`</text>
+  <text x="85" y="337" font-size="11" fill="#475569" font-family="Arial, sans-serif">produce? → B) `Pick` creates a type containing only the specified keys</text>
+  <text x="85" y="355" font-size="11" fill="#475569" font-family="Arial, sans-serif">from the source type. `Omit` does the inverse — it excludes the</text>
+  <text x="85" y="373" font-size="11" fill="#475569" font-family="Arial, sans-serif">specified keys. → Q3. How do discriminated unions improve type safety?</text>
+  <text x="85" y="391" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ B) Discriminated unions use a literal property (like `kind`) to</text>
+  <text x="85" y="409" font-size="11" fill="#475569" font-family="Arial, sans-serif">distinguish between union members. TypeScript narrows the type within</text>
+  <text x="85" y="427" font-size="11" fill="#475569" font-family="Arial, sans-serif">each branch of a switch, ensuring only valid properties are accessed.</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Use TypeScript types, interfaces, and generics effectively →</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">Differentiate between types, interfaces, and type aliases → Apply</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">utility types and type narrowing patterns → Write type-safe React</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">components and API routes → Configure TypeScript for strict mode → A)</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">Always — interfaces are better → B) For object shapes that may be</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">extended or merged → C) For union types</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {Capitalize&lt;string&gt;}`;
+type ClickEvent = `onClick`; //</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">Valid
+
+type HttpMethod = &quot;GET&quot; | &quot;POST&quot; |  | 2:</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">{string}` ? Param : never;
+type Param =</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">ExtractParam&lt;&quot;/api/users/[userId]&quot;&gt;; //</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">&quot;userId&quot;
+
+// Mapp | 3: {props} }`;
+        }</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">return this.mapJSToTS(typeof value);
+    }
+
+    static generateIn |</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">4: {name} {\n | 5: {p.type};`).join(&quot;\n&quot;);
+        const</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">constructor = `  constructor(data: | 6: {props.map(p =&gt; `this._</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">TypeScript adds static type checking to JavaScript, catching errors at</text>
+  <text x="85" y="580" font-size="11" fill="#475569" font-family="Arial, sans-serif">compile time. Generics...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 14: TypeScript</text>
+</svg>

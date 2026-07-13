@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/hero.svg" alt="Chapter Banner: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/architecture.svg" alt="Architecture: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/workflow.svg" alt="Workflow: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/mindmap.svg" alt="Mind Map: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/comparison.svg" alt="Comparison: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/interview-quiz.svg" alt="Quiz Card: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/10-pla-pal/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/10-pla-pal/social-card.svg" alt="Social Card: Chapter 10: Programmable Logic ? PLA and PAL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Distinguish between PROM, PLA, PAL, and CPLD/FPGA architectures
 2. Design and program a PLA for arbitrary combinational logic
 3. Analyse the trade-offs between PAL (fixed OR) and PLA (programmable OR)

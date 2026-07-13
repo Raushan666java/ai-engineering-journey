@@ -13,6 +13,45 @@
 - Implement an AI-powered content moderation pipeline for both text and image analysis
 - Design caching strategies for embeddings, search results, and AI responses that balance freshness with cost
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/hero.svg" alt="Chapter Banner: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/handwritten-notes.svg" alt="Handwritten Notes: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/sticky-notes.svg" alt="Sticky Notes: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/visual-explanation.svg" alt="Visual Explanation: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/architecture.svg" alt="Architecture: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/workflow.svg" alt="Workflow: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/mindmap.svg" alt="Mind Map: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/comparison.svg" alt="Comparison: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/cheatsheet.svg" alt="Cheat Sheet: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/interview-quiz.svg" alt="Quiz Card: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/23-case-study-ai-content/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/23-case-study-ai-content/social-card.svg" alt="Social Card: Chapter 23: Case Study Ã¢â‚¬â€ AI-Powered Content Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

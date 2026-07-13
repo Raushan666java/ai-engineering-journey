@@ -19,6 +19,45 @@
 - Implement lead scoring and nurturing agents that rank prospects and trigger automated workflows
 - Generate automated marketing analytics reports aggregating multi-source campaign data
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/32-marketing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/hero.svg" alt="Chapter Banner: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/sticky-notes.svg" alt="Sticky Notes: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/visual-explanation.svg" alt="Visual Explanation: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/architecture.svg" alt="Architecture: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/workflow.svg" alt="Workflow: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/mindmap.svg" alt="Mind Map: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/comparison.svg" alt="Comparison: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/cheatsheet.svg" alt="Cheat Sheet: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/interview-quiz.svg" alt="Quiz Card: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/32-marketing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/32-marketing/social-card.svg" alt="Social Card: Chapter 32: Marketing & Advertising Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

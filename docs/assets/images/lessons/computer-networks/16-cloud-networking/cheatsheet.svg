@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 16: Cloud Networking</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">Cross-region latency:</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">Packets traversing</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">regions incur 50-200ms</text>
+  <text x="35" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">RTT....</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">VPC peering limits:</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">Non-transitive → VPC A</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">to VPC B to VPC C</text>
+  <text x="35" y="217" font-size="9" fill="#475569" font-family="Arial, sans-serif">doesn&apos;t...</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">DNS propagation delay:</text>
+  <text x="35" y="245" font-size="9" fill="#475569" font-family="Arial, sans-serif">Route53 TTL minimum is 0</text>
+  <text x="35" y="258" font-size="9" fill="#475569" font-family="Arial, sans-serif">for alias records,</text>
+  <text x="35" y="271" font-size="9" fill="#475569" font-family="Arial, sans-serif">but...</text>
+  <text x="35" y="286" font-size="9" fill="#475569" font-family="Arial, sans-serif">Security group capacity:</text>
+  <text x="35" y="299" font-size="9" fill="#475569" font-family="Arial, sans-serif">Max 60 inbound + 60</text>
+  <text x="35" y="312" font-size="9" fill="#475569" font-family="Arial, sans-serif">outbound rules per SG.</text>
+  <text x="35" y="325" font-size="9" fill="#475569" font-family="Arial, sans-serif">Use...</text>
+  <text x="35" y="340" font-size="9" fill="#475569" font-family="Arial, sans-serif">Jumbo frames: Most cloud</text>
+  <text x="35" y="353" font-size="9" fill="#475569" font-family="Arial, sans-serif">providers limit MTU to</text>
+  <text x="35" y="366" font-size="9" fill="#475569" font-family="Arial, sans-serif">1500 within...</text>
+  <text x="35" y="381" font-size="9" fill="#475569" font-family="Arial, sans-serif">Ephemeral IPs: Stopping</text>
+  <text x="35" y="394" font-size="9" fill="#475569" font-family="Arial, sans-serif">an instance releases its</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">Cross-region peering:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">0.01-0.02/GB data transfer cost....</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">{subnetPrefix}`;
+        const...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">{azs[azIdx]}`,
+          cidr,...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">{r.source}`);
+      }
+    }
+  }...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: How does cloud networking differ from on-premises...</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Compare round-robin vs least-connections vs IP hash...</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: What is DNS propagation and why does it matter?</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 16: Cloud Networking — Quick Reference</text>
+</svg>

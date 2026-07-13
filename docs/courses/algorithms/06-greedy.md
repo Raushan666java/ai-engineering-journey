@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/06-greedy/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/hero.svg" alt="Chapter Banner: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/architecture.svg" alt="Architecture: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/workflow.svg" alt="Workflow: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/mindmap.svg" alt="Mind Map: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/comparison.svg" alt="Comparison: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/interview-quiz.svg" alt="Quiz Card: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/06-greedy/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/06-greedy/social-card.svg" alt="Social Card: Chapter 6: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Understand the greedy paradigm and the conditions under which it produces optimal solutions.
 2. Implement activity selection, Huffman coding, fractional knapsack, job sequencing, and canonical coin change.
 3. Prove the optimality of greedy algorithms using the exchange argument.

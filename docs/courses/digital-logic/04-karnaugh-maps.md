@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/hero.svg" alt="Chapter Banner: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/architecture.svg" alt="Architecture: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/workflow.svg" alt="Workflow: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/mindmap.svg" alt="Mind Map: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/comparison.svg" alt="Comparison: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/interview-quiz.svg" alt="Quiz Card: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/04-karnaugh-maps/social-card.svg" alt="Social Card: Chapter 4: Karnaugh Maps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Construct K-maps for 2, 3, 4, and 5 variables with correct Gray code ordering
 2. Apply K-map grouping rules to identify prime implicants and essential prime implicants
 3. Minimise Boolean functions using K-maps with don't-care conditions

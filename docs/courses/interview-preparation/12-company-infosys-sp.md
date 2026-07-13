@@ -8,6 +8,45 @@
 - Ace 10 verbal ability questions with comprehension and grammar focus
 - Understand the Infosys selection process through visual diagrams
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/hero.svg" alt="Chapter Banner: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/architecture.svg" alt="Architecture: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/workflow.svg" alt="Workflow: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/mindmap.svg" alt="Mind Map: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/comparison.svg" alt="Comparison: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/interview-quiz.svg" alt="Quiz Card: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/12-company-infosys-sp/social-card.svg" alt="Social Card: Chapter 12: Infosys SP & DSE — Company-Specific Question Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Infosys Selection Process
 
 ```mermaid

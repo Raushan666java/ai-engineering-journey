@@ -11,6 +11,45 @@
 | LO5 | Describe the four-layer AI engineering stack: data, model, application, and deployment |
 | LO6 | Identify key challenges in production AI systems and their mitigation strategies |
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/hero.svg" alt="Chapter Banner: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/architecture.svg" alt="Architecture: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/workflow.svg" alt="Workflow: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/mindmap.svg" alt="Mind Map: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/comparison.svg" alt="Comparison: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/interview-quiz.svg" alt="Quiz Card: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/01-introduction-to-ai-engineering/social-card.svg" alt="Social Card: Chapter 1: Introduction to AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## 1.1 What is AI Engineering?
 
 AI engineering is the discipline of building production-ready applications powered by foundation models. It sits at the intersection of machine learning engineering, software engineering, and systems design, but introduces unique concerns that neither field addresses alone.

@@ -7,6 +7,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/hero.svg" alt="Chapter Banner: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/handwritten-notes.svg" alt="Handwritten Notes: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/sticky-notes.svg" alt="Sticky Notes: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/visual-explanation.svg" alt="Visual Explanation: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/architecture.svg" alt="Architecture: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/workflow.svg" alt="Workflow: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/mindmap.svg" alt="Mind Map: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/comparison.svg" alt="Comparison: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/cheatsheet.svg" alt="Cheat Sheet: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/interview-quiz.svg" alt="Quiz Card: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/47-interview-legal/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/47-interview-legal/social-card.svg" alt="Social Card: Chapter 47: Legal & Compliance Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

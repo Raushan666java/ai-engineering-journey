@@ -6,6 +6,45 @@
 
 By the conclusion of this chapter, the student will be able to: (1) describe the architecture of rule-based expert systems; (2) explain the reasoning mechanisms of MYCIN and DENDRAL; (3) implement a simple rule-based system in Python and CLIPS; (4) manage uncertainty using certainty factors and Dempster-Shafer theory; (5) distinguish forward chaining from backward chaining with trace tables; (6) analyze time/space complexity of inference strategies; (7) evaluate expert systems vs ML approaches for a given problem domain.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/hero.svg" alt="Chapter Banner: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/architecture.svg" alt="Architecture: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/workflow.svg" alt="Workflow: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/mindmap.svg" alt="Mind Map: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/comparison.svg" alt="Comparison: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/interview-quiz.svg" alt="Quiz Card: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/16-expert-systems/social-card.svg" alt="Social Card: Chapter 16: Expert Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Why Expert Systems Matter

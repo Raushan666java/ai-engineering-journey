@@ -13,6 +13,45 @@
 - Recognize the role of automata in AI and natural language processing.
 - Apply concepts from computability to real-world software engineering.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/hero.svg" alt="Chapter Banner: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/architecture.svg" alt="Architecture: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/workflow.svg" alt="Workflow: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/mindmap.svg" alt="Mind Map: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/comparison.svg" alt="Comparison: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/interview-quiz.svg" alt="Quiz Card: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/16-applications/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/16-applications/social-card.svg" alt="Social Card: Chapter 16: Applications of Automata Theory" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |

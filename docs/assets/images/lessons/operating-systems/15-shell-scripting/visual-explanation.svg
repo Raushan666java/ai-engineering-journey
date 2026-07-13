@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Shell Scripting</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Interactive mode: Reads commands from the terminal, executes them, and</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">displays results in real...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: &quot; # 1234 (current script PID) echo &quot;Last BG PID: $!&quot;</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif"># 1235 (last background process PID) echo &quot;Options flag: $-&quot;</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif"># hB (current shell option flags) `` | 2: echo &quot;Done.</text>
+  <text x="85" y="321" font-size="11" fill="#475569" font-family="Arial, sans-serif">Exiting.&quot; exit 0 } # Register trap for specific signals trap</text>
+  <text x="85" y="339" font-size="11" fill="#475569" font-family="Arial, sans-serif">cleanup SIGINT SIGTERM # Ignore Ctrl+C completely trap &apos;&apos;</text>
+  <text x="85" y="357" font-size="11" fill="#475569" font-family="Arial, sans-serif">SIGINT # Reset sign | Variables: ? for exit status |
+|</text>
+  <text x="85" y="375" font-size="11" fill="#475569" font-family="Arial, sans-serif">**Conditionals** | if-then-else, case; test command [ ] and [[ ]] |
+|</text>
+  <text x="85" y="393" font-size="11" fill="#475569" font-family="Arial, sans-serif">**Loop | 4: name&quot;    | &quot;Alice&quot;       | &quot;10&quot;</text>
+  <text x="85" y="411" font-size="11" fill="#475569" font-family="Arial, sans-serif">| Hello Alice
+4    | sum= | 5: sum             | &quot;Alice&quot;</text>
+  <text x="85" y="429" font-size="11" fill="#475569" font-family="Arial, sans-serif">| &quot;10&quot;           | 15
+6    | echo &quot;count= | 6:</text>
+  <text x="85" y="447" font-size="11" fill="#475569" font-family="Arial, sans-serif">name!&quot;   # Variable expansion in double</text>
+  <text x="85" y="465" font-size="11" fill="#475569" font-family="Arial, sans-serif">quotes
+literal=&apos;Hello,</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Integrated Examples:  --- Sample Input/Output: Key Difference: -</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">`&quot;$@&quot;` preserves argument...</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">- The shell is both an interactive command interpreter and script</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">interpreter
+- Shebang...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Shell Scripting</text>
+</svg>

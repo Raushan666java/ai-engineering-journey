@@ -6,6 +6,45 @@
 
 After studying this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/hero.svg" alt="Chapter Banner: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/architecture.svg" alt="Architecture: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/workflow.svg" alt="Workflow: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/mindmap.svg" alt="Mind Map: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/comparison.svg" alt="Comparison: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/interview-quiz.svg" alt="Quiz Card: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/03-constructors/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/03-constructors/social-card.svg" alt="Social Card: Chapter 3: Constructors and Destructors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Design and implement all six constructor forms in C++
 - Use initialiser lists correctly, understanding declaration-order rules
 - Distinguish deep copy from shallow copy and implement both

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 39: Healthcare Interview Q&amp;A</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">Data Layer: All PHI</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">fields encrypted via</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">Eloquent accessors....</text>
+  <text x="35" y="165" font-size="9" fill="#475569" font-family="Arial, sans-serif">Access Layer: Laravel</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">Gates for all CRUD</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">operations, roles...</text>
+  <text x="35" y="206" font-size="9" fill="#475569" font-family="Arial, sans-serif">Infrastructure Layer:</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">`AppServiceProvider::forceHttps()`</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">in production....</text>
+  <text x="35" y="247" font-size="9" fill="#475569" font-family="Arial, sans-serif">Database: Read replicas</text>
+  <text x="35" y="260" font-size="9" fill="#475569" font-family="Arial, sans-serif">for reporting queries,</text>
+  <text x="35" y="273" font-size="9" fill="#475569" font-family="Arial, sans-serif">partitioning...</text>
+  <text x="35" y="288" font-size="9" fill="#475569" font-family="Arial, sans-serif">Queue: Horizon with</text>
+  <text x="35" y="301" font-size="9" fill="#475569" font-family="Arial, sans-serif">multiple queue workers</text>
+  <text x="35" y="314" font-size="9" fill="#475569" font-family="Arial, sans-serif">for claims...</text>
+  <text x="35" y="329" font-size="9" fill="#475569" font-family="Arial, sans-serif">Cache: Redis for</text>
+  <text x="35" y="342" font-size="9" fill="#475569" font-family="Arial, sans-serif">provider availability</text>
+  <text x="35" y="355" font-size="9" fill="#475569" font-family="Arial, sans-serif">lookups, patient...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">1:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">this-&gt;encrypted_name ? decrypt(</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">value);
+    }
+}
+```
+
+### Q2:...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">bundle = [...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">observation-&gt;loinc_code]],...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: What is HIPAA and what are its three core safeguards?...</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: What are the five core data models in a healthcare...</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Explain the difference between EHR, HL7, and FHIR. How...</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ E[Common Pitfalls]</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 39: Healthcare Interview Q&amp;A — Quick Reference</text>
+</svg>

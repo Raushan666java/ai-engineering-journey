@@ -6,6 +6,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/03-nio-networking/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/hero.svg" alt="Chapter Banner: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/handwritten-notes.svg" alt="Handwritten Notes: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/sticky-notes.svg" alt="Sticky Notes: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/visual-explanation.svg" alt="Visual Explanation: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/architecture.svg" alt="Architecture: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/workflow.svg" alt="Workflow: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/mindmap.svg" alt="Mind Map: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/comparison.svg" alt="Comparison: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/cheatsheet.svg" alt="Cheat Sheet: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/interview-quiz.svg" alt="Quiz Card: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/03-nio-networking/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/03-nio-networking/social-card.svg" alt="Social Card: Java NIO & Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Explain the Java NIO architecture and contrast it with traditional blocking I/O
 - Use buffers and channels for efficient data transfer
 - Work with `FileChannel` for advanced file operations including zero-copy transfers and memory-mapped files

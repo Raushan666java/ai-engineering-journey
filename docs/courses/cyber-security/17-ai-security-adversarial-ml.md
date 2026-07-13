@@ -10,6 +10,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/hero.svg" alt="Chapter Banner: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/handwritten-notes.svg" alt="Handwritten Notes: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/sticky-notes.svg" alt="Sticky Notes: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/visual-explanation.svg" alt="Visual Explanation: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/architecture.svg" alt="Architecture: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/workflow.svg" alt="Workflow: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/mindmap.svg" alt="Mind Map: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/comparison.svg" alt="Comparison: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/cheatsheet.svg" alt="Cheat Sheet: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/interview-quiz.svg" alt="Quiz Card: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/17-ai-security-adversarial-ml/social-card.svg" alt="Social Card: Chapter 17: AI Security, Adversarial Machine Learning & Deepfakes" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  Map the AI/ML threat landscape using the OWASP ML Top 10 and identify attack surfaces across the ML pipeline.
 2.  Generate adversarial examples using FGSM and PGD, and understand how they evade ML-based malware/IDS detectors.
 3.  Distinguish data poisoning, backdoor attacks, and supply-chain compromises on ML models.

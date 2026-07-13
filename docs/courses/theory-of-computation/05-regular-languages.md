@@ -13,6 +13,45 @@
 - Minimize a DFA using the table-filling algorithm.
 - Distinguish between regular and non-regular languages.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/hero.svg" alt="Chapter Banner: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/architecture.svg" alt="Architecture: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/workflow.svg" alt="Workflow: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/mindmap.svg" alt="Mind Map: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/comparison.svg" alt="Comparison: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/interview-quiz.svg" alt="Quiz Card: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/05-regular-languages/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/05-regular-languages/social-card.svg" alt="Social Card: Chapter 5: Properties of Regular Languages" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |

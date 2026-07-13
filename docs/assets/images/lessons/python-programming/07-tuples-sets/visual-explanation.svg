@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Tuples and Sets</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Tuples: immutable sequences created with commas -- use them for fixed</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">data and dict...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="55" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Q1. → Q2. → Q3. → Q4. → Q5.</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Create and use tuples for immutable sequences → Unpack tuples into</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">variables with the star operator → Use `namedtuple` for lightweight</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">data objects → Perform set operations including union, intersection,</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">difference, and symmetric difference → Choose between sets,</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">frozensets, and other collections based on requirements → Write set</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">comprehensions → Dictionary keys (lists cannot be keys) → Return</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">values from functions</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Tuples are immutable sequences; sorted by stability and</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">hashability.
+- Tuple unpacking with `*`...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Tuples and Sets</text>
+</svg>

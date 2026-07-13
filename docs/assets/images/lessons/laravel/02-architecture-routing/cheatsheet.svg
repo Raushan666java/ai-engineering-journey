@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Architecture, Routing,...</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">Step 1 →</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">`public/index.php`: This</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">single entry point</text>
+  <text x="35" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">(configured in Nginx</text>
+  <text x="35" y="176" font-size="9" fill="#475569" font-family="Arial, sans-serif">or...</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">Step 2 →</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">`bootstrap/app.php`:</text>
+  <text x="35" y="217" font-size="9" fill="#475569" font-family="Arial, sans-serif">Creates the</text>
+  <text x="35" y="230" font-size="9" fill="#475569" font-family="Arial, sans-serif">`Illuminate\Foundation\Application`...</text>
+  <text x="35" y="245" font-size="9" fill="#475569" font-family="Arial, sans-serif">Step 3 → Kernel:</text>
+  <text x="35" y="258" font-size="9" fill="#475569" font-family="Arial, sans-serif">`App\Http\Kernel`</text>
+  <text x="35" y="271" font-size="9" fill="#475569" font-family="Arial, sans-serif">defines global</text>
+  <text x="35" y="284" font-size="9" fill="#475569" font-family="Arial, sans-serif">middleware (runs...</text>
+  <text x="35" y="299" font-size="9" fill="#475569" font-family="Arial, sans-serif">Step 4 → Service</text>
+  <text x="35" y="312" font-size="9" fill="#475569" font-family="Arial, sans-serif">Providers: The kernel</text>
+  <text x="35" y="325" font-size="9" fill="#475569" font-family="Arial, sans-serif">boots the application,</text>
+  <text x="35" y="338" font-size="9" fill="#475569" font-family="Arial, sans-serif">registering and...</text>
+  <text x="35" y="353" font-size="9" fill="#475569" font-family="Arial, sans-serif">Step 5 → Router:</text>
+  <text x="35" y="366" font-size="9" fill="#475569" font-family="Arial, sans-serif">`RouteServiceProvider`</text>
+  <text x="35" y="379" font-size="9" fill="#475569" font-family="Arial, sans-serif">loads route files.</text>
+  <text x="35" y="392" font-size="9" fill="#475569" font-family="Arial, sans-serif">Laravel...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">1:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">app = require_once...</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">app-&gt;make(Illuminate\Contracts\Http...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">response);
+```
+
+**Step 2 →...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">calculator =...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Architecture, Routing, Middleware &amp;... — Quick Reference</text>
+</svg>

@@ -6,6 +6,45 @@
 
 After studying this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/hero.svg" alt="Chapter Banner: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/sticky-notes.svg" alt="Sticky Notes: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/visual-explanation.svg" alt="Visual Explanation: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/architecture.svg" alt="Architecture: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/workflow.svg" alt="Workflow: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/mindmap.svg" alt="Mind Map: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/comparison.svg" alt="Comparison: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/interview-quiz.svg" alt="Quiz Card: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/10-stl-algorithms/social-card.svg" alt="Social Card: Chapter 10: STL Algorithms — Master the C++ Standard Template Library" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Distinguish among the five STL algorithm categories (non-modifying, modifying, sorting, numeric, set operations)
 - Apply std::find, std::count, std::equal, std::mismatch, and std::search on real data
 - Use std::copy, std::transform, std::replace, std::fill, std::generate, std::remove, and std::unique correctly

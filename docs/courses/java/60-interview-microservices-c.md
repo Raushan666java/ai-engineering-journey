@@ -1,5 +1,44 @@
 ![Service Mesh - Istio and Envoy](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-c.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/hero.svg" alt="Chapter Banner: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/handwritten-notes.svg" alt="Handwritten Notes: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/sticky-notes.svg" alt="Sticky Notes: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/visual-explanation.svg" alt="Visual Explanation: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/architecture.svg" alt="Architecture: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/workflow.svg" alt="Workflow: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/mindmap.svg" alt="Mind Map: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/comparison.svg" alt="Comparison: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/cheatsheet.svg" alt="Cheat Sheet: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/interview-quiz.svg" alt="Quiz Card: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-c/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-c/social-card.svg" alt="Social Card: ── Deployment for a microservice ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

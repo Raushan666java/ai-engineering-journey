@@ -15,6 +15,45 @@
 - Implement route model binding for automatic Eloquent model resolution
 - Protect routes with CSRF and handle various response types
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/hero.svg" alt="Chapter Banner: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/architecture.svg" alt="Architecture: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/workflow.svg" alt="Workflow: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/mindmap.svg" alt="Mind Map: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/comparison.svg" alt="Comparison: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/interview-quiz.svg" alt="Quiz Card: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/02-architecture-routing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/02-architecture-routing/social-card.svg" alt="Social Card: Chapter 2: Architecture, Routing, Middleware & Controllers" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 

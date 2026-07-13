@@ -4,6 +4,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/hero.svg" alt="Chapter Banner: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/architecture.svg" alt="Architecture: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/workflow.svg" alt="Workflow: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/mindmap.svg" alt="Mind Map: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/comparison.svg" alt="Comparison: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/interview-quiz.svg" alt="Quiz Card: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/06-sql-advanced/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/06-sql-advanced/social-card.svg" alt="Social Card: Chapter 6: Advanced SQL â†’ Subqueries, CTEs, Window Functions, Pivot, MERGE, Dynamic SQL, Stored Procedures, Functions, Triggers, Views, Temp Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## 6.1 Subqueries
 
 A **subquery** (inner query / nested query) is a query embedded inside another query (outer query). Subqueries can return scalar values, single rows, tables, or be correlated to the outer query.

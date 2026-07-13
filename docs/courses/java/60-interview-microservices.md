@@ -4,6 +4,45 @@
 
 ![Microservices Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/60-interview-microservices/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/hero.svg" alt="Chapter Banner: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/handwritten-notes.svg" alt="Handwritten Notes: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/sticky-notes.svg" alt="Sticky Notes: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/visual-explanation.svg" alt="Visual Explanation: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/architecture.svg" alt="Architecture: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/workflow.svg" alt="Workflow: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/mindmap.svg" alt="Mind Map: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/comparison.svg" alt="Comparison: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/cheatsheet.svg" alt="Cheat Sheet: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/interview-quiz.svg" alt="Quiz Card: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices/social-card.svg" alt="Social Card: Chapter 60: Microservices Interview Q&A (Part A → Q1â€“Q8)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

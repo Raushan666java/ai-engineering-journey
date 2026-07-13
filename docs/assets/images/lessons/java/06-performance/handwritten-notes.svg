@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Paper background -->
+  <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
+  <rect width="600" height="800" fill="url(#grid)"/>
+  <!-- Red margin line -->
+  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <!-- Guide lines -->
+  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Page number -->
+  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <!-- Content -->
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Performance Tuning &amp; Profiling</text>
+    <line x1="55" y1="128" x2="560" y2="128" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="152" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
+    <text x="60" y="180" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">diagnostic tools</tspan>: profilers, heap analyzers, thread dump analysis, and GC log analysis. Section 5...</text>
+    <text x="60" y="202" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">analyzers, thread dump analysis, and GC</text>
+    <text x="60" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">log analysis. Section 5...</text>
+    <text x="60" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Thread-local storage leaks</tspan>: web applications where threads are reused but ThreadLocal values are not cleared</text>
+    <text x="60" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">applications where threads are reused</text>
+    <text x="60" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">but ThreadLocal values are not cleared</text>
+    <text x="60" y="312" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Classloader leaks</tspan>: redeployed web applications where the old classloader is retained</text>
+    <text x="60" y="334" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">applications where the old classloader</text>
+    <text x="60" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">is retained</text>
+    <text x="60" y="378" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Reference chains</tspan>: analysis of why collections grow unbounded</text>
+    <text x="60" y="400" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">collections grow unbounded</text>
+    <text x="60" y="430" font-size="15" font-weight="bold" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive">Formulas</text>
+    <text x="60" y="458" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1: Node&quot;
+
+// Group objects by their class and count
+SELECT clazz, COUNT(*) AS cnt
+  FROM OBJECTS OB</text>
+    <text x="60" y="480" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2: &quot;);
+
+    @Benchmark
+    public boolean patternCompiledEachTime() {
+        // Pattern.compile() </text>
+    <text x="60" y="510" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
+    <text x="60" y="538" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. Use Java Mission Control (JMC) with Flight Recorder to capture and...</text>
+    <text x="60" y="560" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. Profile CPU and memory with async-profiler, VisualVM, JProfiler,...</text>
+    <text x="60" y="582" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. Analyze heap dumps with Eclipse MAT: dominator tree, leak suspect...</text>
+    <text x="60" y="604" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">5. Understand shallow heap vs retained heap and interpret the results</text>
+    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
+    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Profiling tools; Heap analysis; Thread dump analysis</text>
+</svg>

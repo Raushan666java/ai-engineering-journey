@@ -12,6 +12,45 @@ The chapter is organized into nine sections. Sections 1--4 cover **diagnostic to
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/06-performance/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/hero.svg" alt="Chapter Banner: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/handwritten-notes.svg" alt="Handwritten Notes: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/sticky-notes.svg" alt="Sticky Notes: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/visual-explanation.svg" alt="Visual Explanation: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/architecture.svg" alt="Architecture: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/workflow.svg" alt="Workflow: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/mindmap.svg" alt="Mind Map: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/comparison.svg" alt="Comparison: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/cheatsheet.svg" alt="Cheat Sheet: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/interview-quiz.svg" alt="Quiz Card: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/06-performance/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/06-performance/social-card.svg" alt="Social Card: Performance Tuning & Profiling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Use Java Mission Control (JMC) with Flight Recorder to capture and analyze JVM events
 - Profile CPU and memory with async-profiler, VisualVM, JProfiler, YourKit, and IntelliJ profiler
 - Analyze heap dumps with Eclipse MAT: dominator tree, leak suspect report, GC roots, OQL

@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/hero.svg" alt="Chapter Banner: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/sticky-notes.svg" alt="Sticky Notes: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/visual-explanation.svg" alt="Visual Explanation: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/architecture.svg" alt="Architecture: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/workflow.svg" alt="Workflow: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/mindmap.svg" alt="Mind Map: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/comparison.svg" alt="Comparison: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/interview-quiz.svg" alt="Quiz Card: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/15-advanced-topics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/15-advanced-topics/social-card.svg" alt="Social Card: Chapter 15: Advanced Topics in Digital Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Describe the ASIC design flow from specification to tapeout
 2. Explain low-power design techniques at architecture, RTL, and gate levels
 3. Analyse design-for-test (DFT) structures including scan chains and BIST

@@ -13,6 +13,45 @@
 - Construct a real-time product search layer using Laravel Scout with Meilisearch, including faceted filters and ranked sorting
 - Build a multi-tenant caching strategy with per-tenant Redis namespaces and selective invalidation
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/hero.svg" alt="Chapter Banner: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/handwritten-notes.svg" alt="Handwritten Notes: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/sticky-notes.svg" alt="Sticky Notes: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/visual-explanation.svg" alt="Visual Explanation: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/architecture.svg" alt="Architecture: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/workflow.svg" alt="Workflow: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/mindmap.svg" alt="Mind Map: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/comparison.svg" alt="Comparison: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/cheatsheet.svg" alt="Cheat Sheet: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/interview-quiz.svg" alt="Quiz Card: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/22-case-study-ecommerce/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/22-case-study-ecommerce/social-card.svg" alt="Social Card: Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

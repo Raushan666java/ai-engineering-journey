@@ -9,6 +9,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/hero.svg" alt="Chapter Banner: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/handwritten-notes.svg" alt="Handwritten Notes: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/sticky-notes.svg" alt="Sticky Notes: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/visual-explanation.svg" alt="Visual Explanation: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/architecture.svg" alt="Architecture: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/workflow.svg" alt="Workflow: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/mindmap.svg" alt="Mind Map: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/comparison.svg" alt="Comparison: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/cheatsheet.svg" alt="Cheat Sheet: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/interview-quiz.svg" alt="Quiz Card: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/03-sql-problem-bank/social-card.svg" alt="Social Card: SQL Problem Bank" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Prerequisites Setup
 
 Run the following statements to create all required tables and sample data before attempting the problems.

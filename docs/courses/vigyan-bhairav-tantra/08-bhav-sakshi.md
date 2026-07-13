@@ -19,6 +19,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/hero.svg" alt="Chapter Banner: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/handwritten-notes.svg" alt="Handwritten Notes: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/sticky-notes.svg" alt="Sticky Notes: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/visual-explanation.svg" alt="Visual Explanation: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/architecture.svg" alt="Architecture: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/workflow.svg" alt="Workflow: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/mindmap.svg" alt="Mind Map: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/comparison.svg" alt="Comparison: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/cheatsheet.svg" alt="Cheat Sheet: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/interview-quiz.svg" alt="Quiz Card: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/08-bhav-sakshi/social-card.svg" alt="Social Card: अध्याय ८: भाव साक्षी — ओशो की भावना तकनीकें" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## सीखने के उद्देश्य (Learning Objectives)
 
 - ओशो के "न दबाओ, न व्यक्त करो — साक्षी बनो" दर्शन को समझना

@@ -15,6 +15,45 @@ Teaching is the master key to learning. Every time you explain a concept to some
 - Use code review as a two-way teaching opportunity
 - Design a sustainable weekly teaching practice
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/hero.svg" alt="Chapter Banner: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/architecture.svg" alt="Architecture: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/workflow.svg" alt="Workflow: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/mindmap.svg" alt="Mind Map: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/comparison.svg" alt="Comparison: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/interview-quiz.svg" alt="Quiz Card: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-12-teaching-knowledge-transfer/social-card.svg" alt="Social Card: Chapter 12: Teaching & Knowledge Transfer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 <a href="../../../assets/images/diagrams/learning-how-to-learn/ch-12-teaching-knowledge-transfer/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">

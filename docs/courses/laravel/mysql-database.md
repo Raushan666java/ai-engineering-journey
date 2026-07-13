@@ -14,6 +14,45 @@
 - Understand migration concepts: schema versioning, up/down methods, and seeding
 - Apply performance best practices: connection pooling, read replicas, query caching
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/mysql-database/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/hero.svg" alt="Chapter Banner: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/handwritten-notes.svg" alt="Handwritten Notes: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/sticky-notes.svg" alt="Sticky Notes: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/visual-explanation.svg" alt="Visual Explanation: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/architecture.svg" alt="Architecture: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/workflow.svg" alt="Workflow: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/mindmap.svg" alt="Mind Map: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/comparison.svg" alt="Comparison: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/cheatsheet.svg" alt="Cheat Sheet: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/interview-quiz.svg" alt="Quiz Card: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/mysql-database/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/mysql-database/social-card.svg" alt="Social Card: MySQL & Database Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

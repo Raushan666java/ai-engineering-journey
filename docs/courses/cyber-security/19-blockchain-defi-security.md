@@ -10,6 +10,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/hero.svg" alt="Chapter Banner: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/handwritten-notes.svg" alt="Handwritten Notes: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/sticky-notes.svg" alt="Sticky Notes: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/visual-explanation.svg" alt="Visual Explanation: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/architecture.svg" alt="Architecture: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/workflow.svg" alt="Workflow: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/mindmap.svg" alt="Mind Map: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/comparison.svg" alt="Comparison: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/cheatsheet.svg" alt="Cheat Sheet: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/interview-quiz.svg" alt="Quiz Card: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/19-blockchain-defi-security/social-card.svg" alt="Social Card: Chapter 19: Blockchain, Smart Contract & DeFi Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  Identify and explain fundamental blockchain attacks: 51%, Sybil, eclipse, selfish mining, and timejacking.
 2.  Analyze consensus-level security for PoW (double-spend probability), PoS (long-range, nothing-at-stake), PBFT, and DPoS.
 3.  Detect and mitigate smart contract vulnerabilities including reentrancy, integer overflow, front-running, flash loan attacks, and oracle manipulation.

@@ -12,6 +12,45 @@
 - Solve classic interview problems (Number of Islands II, Accounts Merge, Redundant Connection) using DSU.
 - Recognize real-world applications — social networks, image segmentation, percolation.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/18-union-find/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/hero.svg" alt="Chapter Banner: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/architecture.svg" alt="Architecture: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/workflow.svg" alt="Workflow: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/mindmap.svg" alt="Mind Map: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/comparison.svg" alt="Comparison: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/interview-quiz.svg" alt="Quiz Card: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/18-union-find/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/18-union-find/social-card.svg" alt="Social Card: Chapter 18: Union-Find (Disjoint Set Union)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Union-Find Matters
 
 Imagine you walk into a party with 100 people you've never met. You want to know: *are these two people in the same social circle?* Each time someone introduces themselves — "Hi, I'm Alice, and this is my friend Bob" — you mentally merge their groups. After enough introductions, you can answer instantly whether any two people belong to the same extended friend group.

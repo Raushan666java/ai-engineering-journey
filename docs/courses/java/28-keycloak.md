@@ -11,6 +11,45 @@ This chapter covers Keycloak from zero to production: setting up Keycloak with D
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/28-keycloak/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/hero.svg" alt="Chapter Banner: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/handwritten-notes.svg" alt="Handwritten Notes: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/sticky-notes.svg" alt="Sticky Notes: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/visual-explanation.svg" alt="Visual Explanation: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/architecture.svg" alt="Architecture: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/workflow.svg" alt="Workflow: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/mindmap.svg" alt="Mind Map: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/comparison.svg" alt="Comparison: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/cheatsheet.svg" alt="Cheat Sheet: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/interview-quiz.svg" alt="Quiz Card: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/28-keycloak/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/28-keycloak/social-card.svg" alt="Social Card: Keycloak & Identity Federation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Set up Keycloak with Docker Compose and configure realms, clients, users, roles, and groups via the admin console
 - Secure Spring Boot REST endpoints using the Keycloak Spring Boot adapter (legacy) and Spring Security OAuth2 resource server (modern)
 - Implement token exchange between clients for service-to-service delegation

@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to: identify basic blocks from intermediate-code sequences; construct flow graphs and edge types; compute dominators using the iterative data-flow algorithm; implement the Lengauer-Tarjan near-linear dominator algorithm; build depth-first spanning trees and classify edges; identify natural loops and their pre-headers; determine whether a flow graph is reducible; and implement a complete CFA framework in TypeScript.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/hero.svg" alt="Chapter Banner: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/sticky-notes.svg" alt="Sticky Notes: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/visual-explanation.svg" alt="Visual Explanation: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/architecture.svg" alt="Architecture: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/workflow.svg" alt="Workflow: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/mindmap.svg" alt="Mind Map: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/comparison.svg" alt="Comparison: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/interview-quiz.svg" alt="Quiz Card: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/11-cfa/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/11-cfa/social-card.svg" alt="Social Card: Chapter 11: Control-Flow Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |

@@ -18,6 +18,45 @@
 - Implement an e-discovery pipeline with staged collection, processing, deduplication, and production
 - Automate legal report generation with template filling, data aggregation, and multi-format output
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/35-legal/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/hero.svg" alt="Chapter Banner: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/handwritten-notes.svg" alt="Handwritten Notes: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/sticky-notes.svg" alt="Sticky Notes: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/visual-explanation.svg" alt="Visual Explanation: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/architecture.svg" alt="Architecture: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/workflow.svg" alt="Workflow: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/mindmap.svg" alt="Mind Map: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/comparison.svg" alt="Comparison: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/cheatsheet.svg" alt="Cheat Sheet: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/interview-quiz.svg" alt="Quiz Card: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/35-legal/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/35-legal/social-card.svg" alt="Social Card: Chapter 35: Legal & Compliance Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

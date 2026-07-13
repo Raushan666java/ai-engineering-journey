@@ -2,6 +2,45 @@
 
 > Build lightning-fast mental calculation skills through timed practice across addition, subtraction, multiplication, division, percentages, fractions, squares, cubes, roots, and approximation.
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/hero.svg" alt="Chapter Banner: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/handwritten-notes.svg" alt="Handwritten Notes: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/sticky-notes.svg" alt="Sticky Notes: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/visual-explanation.svg" alt="Visual Explanation: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/architecture.svg" alt="Architecture: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/workflow.svg" alt="Workflow: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/mindmap.svg" alt="Mind Map: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/comparison.svg" alt="Comparison: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/cheatsheet.svg" alt="Cheat Sheet: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/interview-quiz.svg" alt="Quiz Card: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/social-card.svg" alt="Social Card: Quant Arithmetic Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Skill Tracking
 
 ```mermaid

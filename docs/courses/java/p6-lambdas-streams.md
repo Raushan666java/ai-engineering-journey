@@ -1,6 +1,45 @@
 # Lambda Expressions & Functional Programming
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/hero.svg" alt="Chapter Banner: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/handwritten-notes.svg" alt="Handwritten Notes: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/sticky-notes.svg" alt="Sticky Notes: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/visual-explanation.svg" alt="Visual Explanation: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/architecture.svg" alt="Architecture: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/workflow.svg" alt="Workflow: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/mindmap.svg" alt="Mind Map: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/comparison.svg" alt="Comparison: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/cheatsheet.svg" alt="Cheat Sheet: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/interview-quiz.svg" alt="Quiz Card: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p6-lambdas-streams/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p6-lambdas-streams/social-card.svg" alt="Social Card: Lambda Expressions & Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

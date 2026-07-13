@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/hero.svg" alt="Chapter Banner: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/architecture.svg" alt="Architecture: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/workflow.svg" alt="Workflow: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/mindmap.svg" alt="Mind Map: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/comparison.svg" alt="Comparison: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/interview-quiz.svg" alt="Quiz Card: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/10-dp-trees-grids/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/10-dp-trees-grids/social-card.svg" alt="Social Card: Chapter 10: Trees, Grids & Dynamic Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Implement and analyze binary tree traversals (inorder, preorder, postorder, level-order).
 2. Perform BST operations (search, insert, delete) and understand their complexity.
 3. Build and query segment trees and Fenwick trees for range queries.

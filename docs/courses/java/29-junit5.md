@@ -20,6 +20,45 @@ Every example in this chapter compiles and runs against JUnit 5.10+. Add this de
 
 By the end of this chapter you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/29-junit5/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/hero.svg" alt="Chapter Banner: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/handwritten-notes.svg" alt="Handwritten Notes: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/sticky-notes.svg" alt="Sticky Notes: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/visual-explanation.svg" alt="Visual Explanation: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/architecture.svg" alt="Architecture: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/workflow.svg" alt="Workflow: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/mindmap.svg" alt="Mind Map: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/comparison.svg" alt="Comparison: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/cheatsheet.svg" alt="Cheat Sheet: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/interview-quiz.svg" alt="Quiz Card: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/29-junit5/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/29-junit5/social-card.svg" alt="Social Card: JUnit 5 Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Diagram the JUnit 5 architecture including the Platform, Jupiter, and Vintage modules and explain how they interact with IDEs and build tools
 - Write parameterized tests using every source annotation and combine them with argument conversion and aggregation
 - Generate dynamic tests at runtime using `@TestFactory` and the `DynamicTest`/`DynamicContainer` API

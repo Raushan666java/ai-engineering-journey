@@ -10,6 +10,45 @@ Concurrency is one of the most challenging topics in Java. This chapter covers t
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/02-concurrency/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/hero.svg" alt="Chapter Banner: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/handwritten-notes.svg" alt="Handwritten Notes: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/sticky-notes.svg" alt="Sticky Notes: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/visual-explanation.svg" alt="Visual Explanation: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/architecture.svg" alt="Architecture: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/workflow.svg" alt="Workflow: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/mindmap.svg" alt="Mind Map: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/comparison.svg" alt="Comparison: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/cheatsheet.svg" alt="Cheat Sheet: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/interview-quiz.svg" alt="Quiz Card: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/02-concurrency/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/02-concurrency/social-card.svg" alt="Social Card: Multithreading & Concurrency" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Describe the six thread states and the transitions between them
 - Synchronize access to shared mutable state using `synchronized`, `Lock`, and `Atomic*` classes
 - Explain the Java Memory Model, visibility guarantees, and the happens-before relationship

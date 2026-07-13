@@ -18,6 +18,45 @@
 - Compare semaphore-based and monitor-based solutions
 - Apply semaphores and monitors in real systems (Linux, POSIX, Java, C++)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/hero.svg" alt="Chapter Banner: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/architecture.svg" alt="Architecture: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/workflow.svg" alt="Workflow: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/mindmap.svg" alt="Mind Map: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/comparison.svg" alt="Comparison: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/interview-quiz.svg" alt="Quiz Card: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/06-semaphores-monitors/social-card.svg" alt="Social Card: Chapter 6: Semaphores & Monitors" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Points |

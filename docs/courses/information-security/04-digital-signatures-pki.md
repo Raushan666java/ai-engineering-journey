@@ -10,6 +10,45 @@
 
 After completing this chapter you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/hero.svg" alt="Chapter Banner: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/architecture.svg" alt="Architecture: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/workflow.svg" alt="Workflow: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/mindmap.svg" alt="Mind Map: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/comparison.svg" alt="Comparison: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/interview-quiz.svg" alt="Quiz Card: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/04-digital-signatures-pki/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/04-digital-signatures-pki/social-card.svg" alt="Social Card: Chapter 4: Digital Signatures & PKI" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Explain the digital signature process: signing (hash + encrypt with private key) and verification (decrypt with public key + compare hash).
 - Describe the PKI hierarchy: Certificate Authority (CA), Registration Authority (RA), Validation Authority (VA), Certificate Revocation List (CRL), and OCSP.
 - Interpret X.509 certificate structure (version, serial number, issuer, subject, validity, public key, extensions).

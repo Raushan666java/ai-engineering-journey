@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Model Selection and Evaluation</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Bias: Error due to overly simplistic assumptions in the learning</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">algorithm. High bias...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Key insight: → Stratified K-fold → Diagnosis rules: → Techniques:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Bias: Error due to overly simplistic assumptions in the learning</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">algorithm. High bias can cause the model to miss relevant relations</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">between features  → Variance: Error due to excessive sensitivity to</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">small fluctuations in the training set. High variance can cause the</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">model to model the random noise in → Bias?: $(E[\hat{f}] - f)^2$ ? how</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">far the average prediction deviates from the true value. → Variance:</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">$E[(\hat{f} - E[\hat{f}])^2]$ ? how much predictions fluctuate across</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">different training sets. → Irreducible Error: $\sigma^2$ ? noise</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">inherent in the data that no model can remove. → K-fold</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">Cross-Validation: The data is split into $K$ equal-sized folds. The</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">model is trained $K$ times, each time using $K-1$ folds for training</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">and th → Accuracy: $(TP+TN) / (TP+TN+FP+FN)$. Simple but misleading</text>
+  <text x="85" y="588" font-size="11" fill="#475569" font-family="Arial, sans-serif">for imbalanced datasets. → Precision: $TP / (TP+FP)$. &quot;Of all</text>
+  <text x="85" y="606" font-size="11" fill="#475569" font-family="Arial, sans-serif">predicted positives, how many were actually positive?&quot;</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: \begin{aligned} E[(y - \hat{f})^2] &amp;= E[(f + \epsilon -</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">\hat{f})^2] \\ &amp;= E[(f - \hat{f})^2] + 2E[(f - \hat{f})\epsilon] +</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">E[\epsilon^2] \\ &amp;= E[(\hat | 2: \text{Macro-F1} =</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">\frac{1}{C}\sum_{i=1}^{C} F1_i | 3: \text{Micro-F1} = \frac{2 \cdot</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">TP_{\text{global}}}{2 \cdot TP_{\text{global}} + FP_{\text{global}} +</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">FN_{\text{global}}} | 4: \text{Weighted-F1} = \sum_{i=1}^{C} w_i \cdot</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">F1_i \quad \text{where} \quad w_i = \frac{n_i}{\sum_{j=1}^{C} n_j} |</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">5: \text{Cost} = \sum_{i=1}^{n} w_{y_i} \cdot \log(1 + e^{-y_i \cdot</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">\hat{y}_i}) | Model A Wrong: \chi^2 = \frac{(|n_{01} - n_{10}| -</text>
+  <text x="85" y="639" font-size="11" fill="#475569" font-family="Arial, sans-serif">1)^2}{n_{01} + n_{10}}</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: Confusion Matrix Interpretation:  A medical test for a</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">disease. - Data: 100 people tested. 10 have the disease....</text>
+  <line x1="500" y1="620" x2="500" y2="630" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="645" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="645" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="667" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="687" font-size="11" fill="#475569" font-family="Arial, sans-serif">- The bias-variance tradeoff is a central challenge in machine</text>
+  <text x="85" y="705" font-size="11" fill="#475569" font-family="Arial, sans-serif">learning.
+- Overfitting occurs when...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Model Selection and Evaluation</text>
+</svg>

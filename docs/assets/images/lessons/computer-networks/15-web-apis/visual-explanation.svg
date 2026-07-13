@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Web APIs and Application Protocols</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Unary: single request, single response (like REST).</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Real-World Analogy: Library Catalog System → The Six Constraints: →</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">Numbered Steps: REST API Call Flow → Pseudocode: REST Request</text>
+  <text x="85" y="283" font-size="11" fill="#475569" font-family="Arial, sans-serif">Lifecycle → Dry Run Trace Table: REST API Call Flow → Complexity</text>
+  <text x="85" y="301" font-size="11" fill="#475569" font-family="Arial, sans-serif">Analysis:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Design RESTful APIs with appropriate resource modeling, HTTP methods,</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">and status codes. → Explain the WebSocket protocol and its use in</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">real-time applications. → Compare gRPC and REST for different</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">application requirements. → Describe GraphQL query structure and its</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">advantages over REST for certain use cases. → Analyze the role of</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">WebRTC in peer-to-peer communication. → Books/resources are</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">identifiable by ISBN (unique URI) → Library rules define how you</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">interact with books (uniform interface) → You browse the catalog</text>
+  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">independently; the librarian doesn&apos;t remember your past visits</text>
+  <text x="85" y="514" font-size="11" fill="#475569" font-family="Arial, sans-serif">(stateless)</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {headers[&apos;X-RateLimit-Remaining&apos;]}`);
+}
+// Output:
+//</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">Request 1: ALLOWED | Remaining: 9 | Retry-A | 2: ref:</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">&quot;#/components/schemas/BookInput&quot;
+      responses:</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">&quot;201&quot;:
+          description: Book | 3: {token}`;
+  }</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">clearAuthToken(): void {
+    this.authToken = null;
+    delete</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">this.defaultHea | 4: {endpoint}`);
+    if (params) {</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">Object.entries(params).forEach(([key, value]) =&gt; url.searchP | 5:</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">{client.handleStatusCode(getResult.statusCode)}`);
+  // Output: GET</text>
+  <text x="85" y="601" font-size="11" fill="#475569" font-family="Arial, sans-serif">/books → 200 OK
+
+  // POST -  | 6:</text>
+  <text x="85" y="619" font-size="11" fill="#475569" font-family="Arial, sans-serif">{postResult.headers[&apos;location&apos;]})`);
+  // Output: POST</text>
+  <text x="85" y="637" font-size="11" fill="#475569" font-family="Arial, sans-serif">/books → 201 (Location: /v1/books/42)
+
+  /</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">RESTful APIs model resources as nouns with HTTP methods as verbs,</text>
+  <text x="85" y="580" font-size="11" fill="#475569" font-family="Arial, sans-serif">leveraging status codes for...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Web APIs and Application Protocols</text>
+</svg>

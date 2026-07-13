@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 9: Binary Search Trees</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="20" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="100" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Topic</text>
+  <rect x="180" y="90" width="350" height="44" rx="0" fill="#2563eb"/>
+    <text x="355" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Key Insight</text>
+  <rect x="530" y="90" width="350" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="705" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Practical Takeaway</text>
+  <rect x="20" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">BST Invariant</text>
+  <rect x="180" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Left &amp;lt; root &lt; right for all...</text>
+  <rect x="530" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Enables O(log n) average search</text>
+  <rect x="20" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Insert/Search</text>
+  <rect x="180" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Compare key, descend left or right</text>
+  <rect x="530" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Recursive or iterative both O(h)</text>
+  <rect x="20" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Deletion (3 cases)</text>
+  <rect x="180" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Leaf, one child, two children</text>
+  <rect x="530" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Two-child case uses successor swap</text>
+  <rect x="20" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Successor/Predecessor</text>
+  <rect x="180" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Min of right subtree or ancestor</text>
+  <rect x="530" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Useful for ordered traversal</text>
+  <rect x="20" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Floor/Ceiling</text>
+  <rect x="180" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Largest ≤ key / Smallest ≥ key</text>
+  <rect x="530" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Range queries and nearest-neighbor</text>
+  <rect x="20" y="314" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="336" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Check BST</text>
+  <rect x="180" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Validate range (min, max) per node</text>
+  <rect x="530" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Catch broken invariants</text>
+  <rect x="20" y="350" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="372" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Sorted Array → BST</text>
+  <rect x="180" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Pick middle, recurse</text>
+  <rect x="530" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Build balanced tree in O(n)</text>
+  <rect x="20" y="386" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="408" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">LCA in BST</text>
+  <rect x="180" y="386" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">First node between the two values</text>
+  <rect x="530" y="386" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Simpler than binary tree LCA</text>
+</svg>

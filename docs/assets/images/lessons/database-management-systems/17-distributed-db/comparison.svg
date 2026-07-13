@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 17: Distributed Database Systems</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="20" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="100" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Topic</text>
+  <rect x="180" y="90" width="350" height="44" rx="0" fill="#2563eb"/>
+    <text x="355" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Key Insight</text>
+  <rect x="530" y="90" width="350" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="705" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Practical Takeaway</text>
+  <rect x="20" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Distributed DB Overview</text>
+  <rect x="180" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Logically related DBs across a...</text>
+  <rect x="530" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Design for failure â†’ any node...</text>
+  <rect x="20" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Data Fragmentation</text>
+  <rect x="180" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Split data by rows (horizontal),...</text>
+  <rect x="530" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Choose fragmentation based on...</text>
+  <rect x="20" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Data Replication</text>
+  <rect x="180" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Full copy vs subset copy across...</text>
+  <rect x="530" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Full replication â†’ fast reads,...</text>
+  <rect x="20" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Transparency</text>
+  <rect x="180" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Hide distribution details from...</text>
+  <rect x="530" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Users write queries without...</text>
+  <rect x="20" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">2PC / 3PC</text>
+  <rect x="180" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Two-phase and three-phase commit...</text>
+  <rect x="530" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">2PC blocks on coordinator failure;...</text>
+  <rect x="20" y="314" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="336" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Query Processing</text>
+  <rect x="180" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Decompose global queries into...</text>
+  <rect x="530" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Semi-joins minimize network data...</text>
+  <rect x="20" y="350" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="372" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Homogeneous vs Heterogeneous</text>
+  <rect x="180" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Same DBMS everywhere vs different...</text>
+  <rect x="530" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Heterogeneous adds translation...</text>
+  <rect x="20" y="386" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="408" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">CAP Theorem</text>
+  <rect x="180" y="386" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Consistency vs Availability during...</text>
+  <rect x="530" y="386" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Choose CP or AP based on business...</text>
+</svg>

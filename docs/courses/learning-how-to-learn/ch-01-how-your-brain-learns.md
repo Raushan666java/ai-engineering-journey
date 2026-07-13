@@ -9,6 +9,45 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 ![Focused vs Diffuse Modes](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns-dg1.png)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/hero.svg" alt="Chapter Banner: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/sticky-notes.svg" alt="Sticky Notes: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/visual-explanation.svg" alt="Visual Explanation: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/architecture.svg" alt="Architecture: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/workflow.svg" alt="Workflow: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/mindmap.svg" alt="Mind Map: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/comparison.svg" alt="Comparison: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/interview-quiz.svg" alt="Quiz Card: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-01-how-your-brain-learns/social-card.svg" alt="Social Card: Chapter 1: How Your Brain Learns" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Understand focused vs diffuse thinking and when to use each
 - Explain the 4-chunk limit and how to build chunks
 - Distinguish procedural knowledge from declarative knowledge

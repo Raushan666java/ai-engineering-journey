@@ -13,6 +13,45 @@
 > - Implement layered, MVC, and hexagonal architectures in TypeScript
 > - Build an ArchitectureDecisionRecord manager with full lifecycle support
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/hero.svg" alt="Chapter Banner: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/handwritten-notes.svg" alt="Handwritten Notes: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/sticky-notes.svg" alt="Sticky Notes: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/visual-explanation.svg" alt="Visual Explanation: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/architecture.svg" alt="Architecture: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/workflow.svg" alt="Workflow: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/mindmap.svg" alt="Mind Map: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/comparison.svg" alt="Comparison: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/cheatsheet.svg" alt="Cheat Sheet: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/interview-quiz.svg" alt="Quiz Card: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/04-architectural-design/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/04-architectural-design/social-card.svg" alt="Social Card: Architectural Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Theory
 
 ### The Role of Architectural Design

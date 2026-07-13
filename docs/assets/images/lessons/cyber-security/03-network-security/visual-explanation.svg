@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 3: Network Security</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">workers: 1 thread handles capture + decode + detect per CPU</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Real-World Analogy: → How it works: → Configuration Steps (iptables):</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Dry Run → Packet Filter Decision: → Complexity: → Advantages &amp;</text>
+  <text x="85" y="283" font-size="11" fill="#475569" font-family="Arial, sans-serif">Disadvantages:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Identify common security threats at different layers of the OSI model</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Compare firewall architectures: packet filter, stateful, proxy,</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">NGFW, WAF → Explain IDS/IPS functionality, signature vs anomaly</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">detection, and write Snort/Suricata rules → Understand VPN mechanisms:</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">IPsec, WireGuard, OpenVPN site-to-site and remote access → Describe</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">network segmentation: VLANs, DMZ, micro-segmentation → Analyze</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">protocol security for DNS, DHCP, BGP, SNMP → Understand wireless</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">security: WPA3, 802.1X, EAP, Rogue AP detection → Explain DDoS</text>
+  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">mitigation strategies and zero trust networking principles</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: $ (Palo Alto) | | 2:  | 3: - | 4: $ | Medium | None | --- ##</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">Section 10: Zero Trust Networking (ZTN) ### 10.1 Overview &lt;a</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">href=&quot;../../../assets/images/diagrams/cyber-security/03-networ |</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">5: (AWS WAF) |
+| Use Case | Edge router ACL | Internal segmentation |</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">Content filtering | Enterprise p | 6: HOME_NET 445
+    (msg:&quot;ET</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">TROJAN WannaCry Ransomware SMBv1 Exploit&quot;;</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">flow:to_server,establish</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Case Study Analysis:  &lt;a...</text>
+  <line x1="500" y1="580" x2="500" y2="590" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="605" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="605" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="627" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="647" font-size="11" fill="#475569" font-family="Arial, sans-serif">Core Security Principles:; Key Takeaways:; Remember:</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 3: Network Security</text>
+</svg>

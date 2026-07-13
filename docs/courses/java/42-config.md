@@ -3,6 +3,45 @@
 > **Previous:** [Resilience &amp; Circuit Breakers](./41-resilience.md) | **Next:** [Distributed Tracing &amp; Observability](./43-tracing.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/42-config/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/hero.svg" alt="Chapter Banner: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/handwritten-notes.svg" alt="Handwritten Notes: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/sticky-notes.svg" alt="Sticky Notes: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/visual-explanation.svg" alt="Visual Explanation: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/architecture.svg" alt="Architecture: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/workflow.svg" alt="Workflow: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/mindmap.svg" alt="Mind Map: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/comparison.svg" alt="Comparison: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/cheatsheet.svg" alt="Cheat Sheet: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/interview-quiz.svg" alt="Quiz Card: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/42-config/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/42-config/social-card.svg" alt="Social Card: Distributed Configuration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

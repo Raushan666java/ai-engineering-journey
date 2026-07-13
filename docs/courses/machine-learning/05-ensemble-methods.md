@@ -15,6 +15,45 @@
 - Compare and contrast stacking, voting, and blending ensembles
 - Use out-of-bag (OOB) evaluation for unbiased performance estimation
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/hero.svg" alt="Chapter Banner: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/architecture.svg" alt="Architecture: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/workflow.svg" alt="Workflow: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/mindmap.svg" alt="Mind Map: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/comparison.svg" alt="Comparison: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/interview-quiz.svg" alt="Quiz Card: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/05-ensemble-methods/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/05-ensemble-methods/social-card.svg" alt="Social Card: Chapter 5: Ensemble Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

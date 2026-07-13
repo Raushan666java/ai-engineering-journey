@@ -6,6 +6,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/hero.svg" alt="Chapter Banner: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/handwritten-notes.svg" alt="Handwritten Notes: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/sticky-notes.svg" alt="Sticky Notes: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/visual-explanation.svg" alt="Visual Explanation: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/architecture.svg" alt="Architecture: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/workflow.svg" alt="Workflow: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/mindmap.svg" alt="Mind Map: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/comparison.svg" alt="Comparison: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/cheatsheet.svg" alt="Cheat Sheet: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/interview-quiz.svg" alt="Quiz Card: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/05-ssc-cgl-tier1/social-card.svg" alt="Social Card: SSC CGL Tier 1 — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Test Pattern
 
 | Section | Questions | Marks | Duration | Cutoff (Gen/OBC/SC/ST) |

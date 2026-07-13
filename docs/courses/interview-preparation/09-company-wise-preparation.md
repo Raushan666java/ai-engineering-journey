@@ -9,6 +9,45 @@
 - Learn preparation strategies for PSUs (SAIL, ONGC, IOCL, BSNL, NTPC, BHEL)
 - Identify company-specific question patterns and focus areas
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/hero.svg" alt="Chapter Banner: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/architecture.svg" alt="Architecture: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/workflow.svg" alt="Workflow: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/mindmap.svg" alt="Mind Map: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/comparison.svg" alt="Comparison: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/interview-quiz.svg" alt="Quiz Card: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/09-company-wise-preparation/social-card.svg" alt="Social Card: Chapter 9: Company-Wise Preparation Strategy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Company-Wise Interview Landscape
 
 ```mermaid

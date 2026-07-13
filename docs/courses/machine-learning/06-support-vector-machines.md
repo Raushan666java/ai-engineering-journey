@@ -15,6 +15,45 @@
 - Extend SVM to multi-class classification (one-vs-one, one-vs-rest)
 - Train an SVM using gradient descent with hinge loss
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/hero.svg" alt="Chapter Banner: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/architecture.svg" alt="Architecture: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/workflow.svg" alt="Workflow: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/mindmap.svg" alt="Mind Map: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/comparison.svg" alt="Comparison: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/interview-quiz.svg" alt="Quiz Card: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/06-support-vector-machines/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/06-support-vector-machines/social-card.svg" alt="Social Card: Chapter 6: Support Vector Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

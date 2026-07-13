@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="8" height="400" fill="url(#accent)"/>
+  <!-- Decorative shapes -->
+  <rect x="900" y="-50" width="400" height="500" rx="30" fill="#2563eb" opacity="0.03" transform="rotate(10 1100 200)"/>
+  <rect x="1000" y="-30" width="300" height="460" rx="40" fill="#3b82f6" opacity="0.04" transform="rotate(-5 1150 200)"/>
+    <circle cx="1015.731288888802" cy="120.36818314508007" r="65.84862477140781" fill="#2563eb" opacity="0.5"/>
+  <circle cx="1094.8028372432216" cy="263.6301744783884" r="23.7351381729124" fill="#3b82f6" opacity="0.4"/>
+  <circle cx="1113.9005627441363" cy="130.72428177776305" r="22.95563931555739" fill="#60a5fa" opacity="0.4"/>
+  <circle cx="1020.9383855964493" cy="164.4310833082026" r="27.19425317220161" fill="#93c5fd" opacity="0.3"/>
+  <circle cx="1068.8297515463187" cy="213.07358417884964" r="47.546199598733224" fill="#bfdbfe" opacity="0.5"/>
+  <circle cx="1096.0213959484306" cy="146.56894121433524" r="26.216250827693372" fill="#2563eb" opacity="0.3"/>
+  <!-- Title -->
+  <text x="60" y="120" font-size="42" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chapter 12: Low-Level Design: Component and Class Design</text>
+  <!-- Subtitle -->
+  <text x="60" y="170" font-size="18" fill="#64748b" font-family="Arial, sans-serif">Previous: [11 Lld Design Patterns](./11-lld-design-patterns.md) | Next: [13 Lld Concurrency](./13-lld-concurrency.md)</text>
+  <!-- Divider -->
+  <line x1="60" y1="200" x2="260" y2="200" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stats row -->
+  <g transform="translate(60, 270)">
+    <rect x="0" y="0" width="140" height="36" rx="6" fill="#2563eb" opacity="0.1"/>
+    <text x="70" y="23" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">15 Concepts</text>
+    <rect x="155" y="0" width="140" height="36" rx="6" fill="#059669" opacity="0.1"/>
+    <text x="225" y="23" font-size="12" fill="#059669" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">1 Algorithms</text>
+    <rect x="310" y="0" width="140" height="36" rx="6" fill="#d97706" opacity="0.1"/>
+    <text x="380" y="23" font-size="12" fill="#d97706" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">4 Formulas</text>
+  </g>
+  <!-- Keyword tags -->
+      <rect x="60" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="120" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Previous:</text>
+    <rect x="190" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="250" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Next:</text>
+    <rect x="320" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="380" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Scope</text>
+    <rect x="450" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="510" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Key Concepts</text>
+    <rect x="580" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="640" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Component Modeli</text>
+    <rect x="710" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="770" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">API Contracts</text>
+</svg>

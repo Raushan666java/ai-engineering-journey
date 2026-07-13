@@ -13,6 +13,45 @@
 - Recognize the limits of TM-based computation.
 - Understand the concept of oracles and relativized computation.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/hero.svg" alt="Chapter Banner: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/architecture.svg" alt="Architecture: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/workflow.svg" alt="Workflow: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/mindmap.svg" alt="Mind Map: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/comparison.svg" alt="Comparison: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/interview-quiz.svg" alt="Quiz Card: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/10-turing-extensions/social-card.svg" alt="Social Card: Chapter 10: Turing Machine Extensions and the Church-Turing Thesis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |

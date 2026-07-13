@@ -14,6 +14,45 @@
 - Compare Turing machines with finite automata and PDAs.
 - Describe the relationship between Turing machines and algorithms.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/hero.svg" alt="Chapter Banner: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/architecture.svg" alt="Architecture: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/workflow.svg" alt="Workflow: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/mindmap.svg" alt="Mind Map: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/comparison.svg" alt="Comparison: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/interview-quiz.svg" alt="Quiz Card: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/09-turing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/09-turing/social-card.svg" alt="Social Card: Chapter 9: Turing Machines" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 
 ## Chapter at a Glance
 | Topic | Key Insight | Practical Takeaway |

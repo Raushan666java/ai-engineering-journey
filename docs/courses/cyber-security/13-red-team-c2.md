@@ -9,6 +9,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/hero.svg" alt="Chapter Banner: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/architecture.svg" alt="Architecture: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/workflow.svg" alt="Workflow: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/mindmap.svg" alt="Mind Map: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/comparison.svg" alt="Comparison: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/interview-quiz.svg" alt="Quiz Card: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/13-red-team-c2/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/13-red-team-c2/social-card.svg" alt="Social Card: Chapter 13: Advanced Red Team Operations & C2 Frameworks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Execute the full red team kill chain: Planning -> Recon -> Initial Access -> Persistence -> Lateral Movement -> Exfiltration -> Reporting.
 2. Deploy and configure C2 frameworks â€” Cobalt Strike (Malleable C2 profiles, beaconing, BOFs), Sliver (mTLS/HTTP/DNS operators), and Covenant (ASP.NET, gRPC staging).
 3. Design and execute phishing campaigns using GoPhish with SMTP relay, evaded SPF/DKIM/DMARC checks, and tracking pixel analytics.

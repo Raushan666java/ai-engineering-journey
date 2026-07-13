@@ -21,6 +21,45 @@ This single starter pulls in JUnit 5, Mockito, AssertJ, Hamcrest, JSON Assert, a
 
 ![Spring Boot Testing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/ch31-spring-boot-test.png)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/hero.svg" alt="Chapter Banner: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/handwritten-notes.svg" alt="Handwritten Notes: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/sticky-notes.svg" alt="Sticky Notes: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/visual-explanation.svg" alt="Visual Explanation: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/architecture.svg" alt="Architecture: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/workflow.svg" alt="Workflow: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/mindmap.svg" alt="Mind Map: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/comparison.svg" alt="Comparison: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/cheatsheet.svg" alt="Cheat Sheet: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/interview-quiz.svg" alt="Quiz Card: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/31-spring-boot-test/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/31-spring-boot-test/social-card.svg" alt="Social Card: Spring Boot Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter you will be able to:
 
 - Bootstrap a full Spring application context for integration testing using `@SpringBootTest`

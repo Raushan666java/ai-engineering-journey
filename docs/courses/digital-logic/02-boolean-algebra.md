@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/hero.svg" alt="Chapter Banner: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/architecture.svg" alt="Architecture: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/workflow.svg" alt="Workflow: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/mindmap.svg" alt="Mind Map: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/comparison.svg" alt="Comparison: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/interview-quiz.svg" alt="Quiz Card: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/02-boolean-algebra/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/02-boolean-algebra/social-card.svg" alt="Social Card: Chapter 2: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. State and apply the fundamental postulates and theorems of Boolean algebra
 2. Simplify Boolean expressions using algebraic manipulation with formal proof steps
 3. Apply De Morgan's theorems to complement expressions and convert gate types

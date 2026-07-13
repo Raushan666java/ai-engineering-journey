@@ -14,6 +14,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/hero.svg" alt="Chapter Banner: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/architecture.svg" alt="Architecture: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/workflow.svg" alt="Workflow: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/mindmap.svg" alt="Mind Map: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/comparison.svg" alt="Comparison: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/interview-quiz.svg" alt="Quiz Card: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/04-evaluation-of-ai-systems/social-card.svg" alt="Social Card: Chapter 4: Evaluation of AI Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## 4.1 Why Evaluation is Hard for Generative AI
 
 Traditional machine learning evaluation relies on a single ground-truth label per example. A classifier either predicts correctly or it does not. Accuracy, precision, recall, and F1 score are well-understood and directly comparable across studies. Generative AI breaks this paradigm in several fundamental ways.

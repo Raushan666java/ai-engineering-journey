@@ -6,6 +6,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/09-spring-intro/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/hero.svg" alt="Chapter Banner: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/handwritten-notes.svg" alt="Handwritten Notes: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/sticky-notes.svg" alt="Sticky Notes: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/visual-explanation.svg" alt="Visual Explanation: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/architecture.svg" alt="Architecture: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/workflow.svg" alt="Workflow: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/mindmap.svg" alt="Mind Map: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/comparison.svg" alt="Comparison: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/cheatsheet.svg" alt="Cheat Sheet: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/interview-quiz.svg" alt="Quiz Card: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/09-spring-intro/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/09-spring-intro/social-card.svg" alt="Social Card: Introduction to Spring & Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Trace the history of the Spring ecosystem from 2004 to the present, explaining the role of Spring Framework, Spring Boot, Spring Cloud, Spring Data, Spring Security, and related projects
 - Articulate the Inversion of Control principle, distinguish it from Dependency Injection, and explain the benefits of loose coupling, testability, and lifecycle management
 - Describe the Spring Boot philosophy of opinionated defaults, auto-configuration, standalone production-grade applications, and embedded servers

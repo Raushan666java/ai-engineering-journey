@@ -11,6 +11,45 @@ By the end of this chapter, you will be able to:
 - Distinguish write policies: write-through vs write-back
 - Solve numerical problems on average memory access time and cache performance
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/hero.svg" alt="Chapter Banner: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/handwritten-notes.svg" alt="Handwritten Notes: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/sticky-notes.svg" alt="Sticky Notes: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/visual-explanation.svg" alt="Visual Explanation: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/architecture.svg" alt="Architecture: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/workflow.svg" alt="Workflow: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/mindmap.svg" alt="Mind Map: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/comparison.svg" alt="Comparison: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/cheatsheet.svg" alt="Cheat Sheet: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/interview-quiz.svg" alt="Quiz Card: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/03-memory-hierarchy/social-card.svg" alt="Social Card: Memory Hierarchy" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

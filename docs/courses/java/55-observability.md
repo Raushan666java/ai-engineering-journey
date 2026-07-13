@@ -3,6 +3,45 @@
 > **Previous:** [CI/CD Pipelines](./54-cicd.md) | **Next:** [Java Core Interview Q&amp;A](./56-interview-java.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/55-observability/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/hero.svg" alt="Chapter Banner: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/handwritten-notes.svg" alt="Handwritten Notes: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/sticky-notes.svg" alt="Sticky Notes: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/visual-explanation.svg" alt="Visual Explanation: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/architecture.svg" alt="Architecture: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/workflow.svg" alt="Workflow: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/mindmap.svg" alt="Mind Map: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/comparison.svg" alt="Comparison: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/cheatsheet.svg" alt="Cheat Sheet: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/interview-quiz.svg" alt="Quiz Card: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/55-observability/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/55-observability/social-card.svg" alt="Social Card: Observability (Micrometer, Prometheus, Grafana)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

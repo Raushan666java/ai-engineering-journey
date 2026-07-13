@@ -9,6 +9,45 @@
 - Design a personal portfolio website to stand out in interviews
 - Master the art of tailoring resumes for specific job applications
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/hero.svg" alt="Chapter Banner: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/architecture.svg" alt="Architecture: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/workflow.svg" alt="Workflow: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/mindmap.svg" alt="Mind Map: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/comparison.svg" alt="Comparison: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/interview-quiz.svg" alt="Quiz Card: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/07-resume-linkedin-portfolio/social-card.svg" alt="Social Card: Chapter 7: Resume, LinkedIn, and Portfolio Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Key Concepts
 
 ### The 30-Second Resume Test

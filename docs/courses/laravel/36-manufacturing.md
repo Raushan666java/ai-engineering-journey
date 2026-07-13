@@ -18,6 +18,45 @@
 - Develop an InventoryAutomationAgent that manages raw material and work-in-progress inventory with AI-driven reorder calculations
 - Build an EquipmentLifecycleAgent that tracks depreciation, warranty status, calibration schedules, and maintenance history across the equipment fleet
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/hero.svg" alt="Chapter Banner: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/sticky-notes.svg" alt="Sticky Notes: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/visual-explanation.svg" alt="Visual Explanation: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/architecture.svg" alt="Architecture: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/workflow.svg" alt="Workflow: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/mindmap.svg" alt="Mind Map: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/comparison.svg" alt="Comparison: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/cheatsheet.svg" alt="Cheat Sheet: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/interview-quiz.svg" alt="Quiz Card: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/36-manufacturing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/36-manufacturing/social-card.svg" alt="Social Card: Chapter 36: Manufacturing & Industrial → AI-Powered Factory Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

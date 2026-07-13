@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to: design activation records for procedure invocations; allocate storage on the stack and heap; distinguish static scoping from dynamic scoping; implement call-by-value, call-by-reference, and call-by-name parameter passing; manage variable-length data on the stack and heap; compare garbage collection strategies including reference counting, mark-sweep, copying, and generational collection; implement a mark-sweep collector in TypeScript; and analyze the performance trade-offs of each GC strategy.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/hero.svg" alt="Chapter Banner: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/handwritten-notes.svg" alt="Handwritten Notes: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/sticky-notes.svg" alt="Sticky Notes: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/visual-explanation.svg" alt="Visual Explanation: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/architecture.svg" alt="Architecture: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/workflow.svg" alt="Workflow: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/mindmap.svg" alt="Mind Map: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/comparison.svg" alt="Comparison: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/cheatsheet.svg" alt="Cheat Sheet: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/interview-quiz.svg" alt="Quiz Card: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/08-runtime-env/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/08-runtime-env/social-card.svg" alt="Social Card: Chapter 8: Runtime Environment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |

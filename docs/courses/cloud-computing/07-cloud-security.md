@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/hero.svg" alt="Chapter Banner: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/architecture.svg" alt="Architecture: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/workflow.svg" alt="Workflow: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/mindmap.svg" alt="Mind Map: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/comparison.svg" alt="Comparison: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/interview-quiz.svg" alt="Quiz Card: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/07-cloud-security/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/07-cloud-security/social-card.svg" alt="Social Card: Chapter 7: Cloud Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Apply the shared responsibility model to determine security boundaries.
 2. Configure IAM users, groups, roles, and policies for least-privilege access.
 3. Implement encryption at rest and in transit using KMS and TLS.

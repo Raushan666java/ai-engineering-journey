@@ -9,6 +9,45 @@ A curated collection of CSS interview questions covering fundamental concepts, l
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/52-interview-css/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/hero.svg" alt="Chapter Banner: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/handwritten-notes.svg" alt="Handwritten Notes: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/sticky-notes.svg" alt="Sticky Notes: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/visual-explanation.svg" alt="Visual Explanation: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/architecture.svg" alt="Architecture: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/workflow.svg" alt="Workflow: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/mindmap.svg" alt="Mind Map: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/comparison.svg" alt="Comparison: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/cheatsheet.svg" alt="Cheat Sheet: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/interview-quiz.svg" alt="Quiz Card: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/52-interview-css/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/52-interview-css/social-card.svg" alt="Social Card: CSS Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

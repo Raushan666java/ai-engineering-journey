@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Agent Loop Architecture</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">critique-guided refinement: instead of regenerating from scratch, the</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">refine step should perform targeted...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">When ReAct shines: → When ReAct struggles: → Key advantage: → Key</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">risk: → Key insight: → Failure mode:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Thought: reason about current state and what to do next → Action:</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">invoke a tool, query a database, or call an API → Observation: ingest</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">the result (structured data, error, etc.) → → repeat until the task is</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">complete or a terminal action is taken → Short-horizon tasks (2–10</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">steps) → Tasks requiring frequent tool use with immediate feedback →</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">Situations where the plan cannot be known in advance → Long-horizon</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">tasks (20+ steps) — the agent forgets the original goal</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {query}&quot;: (simulated) no relevant results found.`;
+    }</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">case &quot;calculator&quot;: {
+      const exp | 2:</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">{outputs.join(&quot;\n&quot;)}`;
+      }
+      return &quot;Code</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">executed successfully (no output).&quot;;
+    }
+  } | 3:</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">{task}\n\n`;
+
+    for (let cycle = 0; cycle &lt; maxCycles; cycle++)</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">{
+      const cycleStart = perf | 4: {observation}\n\n`;</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">console.log(
+        `[Cycle | 5: {llmOutput.thought.slice(0, 60)}\n`</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">+
+        `  Action: | 6: {observation.slice(0, 50)}...\n`
+      );</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">// 4. Terminal condition: no action = we have th</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: ReActAgent — Thought, Action, Observation Cycle:  This is a</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">complete, runnable ReAct agent. It simulates three tools (web...</text>
+  <line x1="500" y1="620" x2="500" y2="630" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="645" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="645" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="667" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="687" font-size="11" fill="#475569" font-family="Arial, sans-serif">ReAct; ReWoo; Reflexion</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Agent Loop Architecture</text>
+</svg>

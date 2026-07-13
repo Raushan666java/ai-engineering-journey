@@ -10,6 +10,45 @@
 
 After completing this chapter you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/hero.svg" alt="Chapter Banner: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/architecture.svg" alt="Architecture: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/workflow.svg" alt="Workflow: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/mindmap.svg" alt="Mind Map: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/comparison.svg" alt="Comparison: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/interview-quiz.svg" alt="Quiz Card: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/01-cryptography-fundamentals/social-card.svg" alt="Social Card: Chapter 1: Cryptography Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Distinguish between symmetric and asymmetric encryption across key management, performance, and use cases.
 - Explain the internal architecture of DES, 3DES, and AES.
 - Describe RSA key generation, encryption, and decryption using modular arithmetic.

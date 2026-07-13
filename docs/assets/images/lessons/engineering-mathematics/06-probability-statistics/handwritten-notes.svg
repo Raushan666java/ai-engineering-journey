@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Paper background -->
+  <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
+  <rect width="600" height="800" fill="url(#grid)"/>
+  <!-- Red margin line -->
+  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <!-- Guide lines -->
+  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Page number -->
+  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <!-- Content -->
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 6: Probability &amp;</text>
+    <text x="60" y="122" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Statistics</text>
+    <line x1="55" y1="160" x2="560" y2="160" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="184" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
+    <text x="60" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Hypothes</tspan>: Testing | Reject $H_0$ if p-value &amp;lt; $\alpha$ | Evidence-based decision...</text>
+    <text x="60" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">p-value &amp;lt; $\alpha$ |</text>
+    <text x="60" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Evidence-based decision...</text>
+    <text x="60" y="278" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Th</tspan>: explains why the normal distribution appears everywhere in nature and...</text>
+    <text x="60" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">appears everywhere in nature and...</text>
+    <text x="60" y="322" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Chi-Squ</tspan>: Distribution: If $Z_1, \ldots, Z_k \sim N(0,1)$ independent:</text>
+    <text x="60" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Z_k \sim N(0,1)$ independent:</text>
+    <text x="60" y="366" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Null Hypothes</tspan>: $H_0$: Status quo claim.</text>
+    <text x="60" y="396" font-size="15" font-weight="bold" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive">Formulas</text>
+    <text x="60" y="424" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Law of Total Probability:: P(A) = \sum_{i=1}^n P(A|B_i)P(B_i)</text>
+    <text x="60" y="446" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"> If $B_1, B_2, \ldots, B_n$ partition $S$:
+$$P(A) = \sum_{i=1}^n P(A|B_i)P(B_i)$$
+
+: P(B_i|A) = \frac{P(A|B_i)P(B_i)}{\sum_{j=1}^n P(A|B_j)P(B_j)}</text>
+    <text x="60" y="468" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">discrete random variable: P(X = x_k) = p_k, \quad \sum_k p_k = 1</text>
+    <text x="60" y="498" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
+    <text x="60" y="526" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1. $0 \leq P(E) \leq 1$ for any event $E$</text>
+    <text x="60" y="548" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. $P(S) = 1$</text>
+    <text x="60" y="570" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. For mutually exclusive events $E_1, E_2, \ldots$,...</text>
+    <text x="60" y="592" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. $P(\emptyset) = 0$</text>
+    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
+    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">- Probability quantifies uncertainty via Kolmogorov&apos;s axioms
+- Bayes&apos; theorem...</text>
+</svg>

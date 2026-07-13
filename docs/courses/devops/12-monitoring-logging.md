@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/hero.svg" alt="Chapter Banner: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/architecture.svg" alt="Architecture: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/workflow.svg" alt="Workflow: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/mindmap.svg" alt="Mind Map: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/comparison.svg" alt="Comparison: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/interview-quiz.svg" alt="Quiz Card: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/12-monitoring-logging/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/12-monitoring-logging/social-card.svg" alt="Social Card: Chapter 12: Monitoring and Logging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Deploy and configure Prometheus for metrics collection and alerting
 2. Design Grafana dashboards for operational visibility
 3. Configure Loki for log aggregation and querying with LogQL

@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/hero.svg" alt="Chapter Banner: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/sticky-notes.svg" alt="Sticky Notes: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/visual-explanation.svg" alt="Visual Explanation: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/architecture.svg" alt="Architecture: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/workflow.svg" alt="Workflow: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/mindmap.svg" alt="Mind Map: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/comparison.svg" alt="Comparison: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/interview-quiz.svg" alt="Quiz Card: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/11-algebra/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/11-algebra/social-card.svg" alt="Social Card: Chapter 11: Algebraic Structures" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Define binary operations and identify their properties (closure, associativity, commutativity, identity, inverses)
 - Recognize groups, semigroups, monoids, rings, and fields
 - Apply group axioms and prove basic group properties

@@ -10,6 +10,45 @@
 - Handle edge cases: empty list, single node, circular lists
 - Apply dummy node technique to simplify edge case handling
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/hero.svg" alt="Chapter Banner: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/handwritten-notes.svg" alt="Handwritten Notes: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/sticky-notes.svg" alt="Sticky Notes: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/visual-explanation.svg" alt="Visual Explanation: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/architecture.svg" alt="Architecture: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/workflow.svg" alt="Workflow: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/mindmap.svg" alt="Mind Map: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/comparison.svg" alt="Comparison: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/cheatsheet.svg" alt="Cheat Sheet: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/interview-quiz.svg" alt="Quiz Card: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/03-linked-lists/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/03-linked-lists/social-card.svg" alt="Social Card: Chapter 03: Linked Lists" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Problem Classification Flow
 
 ```mermaid

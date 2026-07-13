@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 4: Marketing in Banking Sector</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">For exams: Remember the</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">five SERVQUAL dimensions</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">(RATER:...</text>
+  <text x="35" y="165" font-size="9" fill="#475569" font-family="Arial, sans-serif">For interviews: Be</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">prepared to explain how</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">you would cross-sell</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">a...</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">For banking</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">professionals: Always</text>
+  <text x="35" y="245" font-size="9" fill="#475569" font-family="Arial, sans-serif">lead with customer need</text>
+  <text x="35" y="258" font-size="9" fill="#475569" font-family="Arial, sans-serif">analysis before...</text>
+  <text x="35" y="273" font-size="9" fill="#475569" font-family="Arial, sans-serif">For digital strategy:</text>
+  <text x="35" y="286" font-size="9" fill="#475569" font-family="Arial, sans-serif">Push digital adoption</text>
+  <text x="35" y="299" font-size="9" fill="#475569" font-family="Arial, sans-serif">among existing</text>
+  <text x="35" y="312" font-size="9" fill="#475569" font-family="Arial, sans-serif">customers...</text>
+  <text x="35" y="327" font-size="9" fill="#475569" font-family="Arial, sans-serif">For compliance: Every</text>
+  <text x="35" y="340" font-size="9" fill="#475569" font-family="Arial, sans-serif">marketing communication</text>
+  <text x="35" y="353" font-size="9" fill="#475569" font-family="Arial, sans-serif">in banking must be...</text>
+  <text x="35" y="368" font-size="9" fill="#475569" font-family="Arial, sans-serif">KYC (Know Your</text>
+  <text x="35" y="381" font-size="9" fill="#475569" font-family="Arial, sans-serif">Customer): a regulatory</text>
+  <text x="35" y="394" font-size="9" fill="#475569" font-family="Arial, sans-serif">requirement for customer</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 4: Marketing in Banking Sector — Quick Reference</text>
+</svg>

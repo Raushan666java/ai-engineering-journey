@@ -8,6 +8,45 @@
 - Compare algorithms using growth-rate families.
 - Apply complexity analysis to choose optimal data structures for real-world problems.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/01-complexity/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/hero.svg" alt="Chapter Banner: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/architecture.svg" alt="Architecture: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/workflow.svg" alt="Workflow: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/mindmap.svg" alt="Mind Map: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/comparison.svg" alt="Comparison: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/interview-quiz.svg" alt="Quiz Card: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/01-complexity/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/01-complexity/social-card.svg" alt="Social Card: Chapter 1: Complexity Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Complexity Analysis Matters in DS
 
 **Real-World Analogy:** Imagine you are building a contact-list app for a phone with 1 million users. When a user searches for a contact, using an **ArrayList** (O(n) search) would scan through all million entries — taking ~10 milliseconds. But using a **HashMap** (O(1) average search) retrieves the contact in under 1 microsecond. At scale, the difference between O(n) and O(1) is the difference between a snappy app and one that freezes. Data structure choice IS complexity analysis in action.

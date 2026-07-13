@@ -10,6 +10,45 @@
 - Differentiate between greedy and DP: when to use each
 - Apply exchange argument to prove correctness
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/hero.svg" alt="Chapter Banner: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/handwritten-notes.svg" alt="Handwritten Notes: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/sticky-notes.svg" alt="Sticky Notes: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/visual-explanation.svg" alt="Visual Explanation: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/architecture.svg" alt="Architecture: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/workflow.svg" alt="Workflow: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/mindmap.svg" alt="Mind Map: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/comparison.svg" alt="Comparison: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/cheatsheet.svg" alt="Cheat Sheet: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/interview-quiz.svg" alt="Quiz Card: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/08-greedy/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/08-greedy/social-card.svg" alt="Social Card: Chapter 08: Greedy Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Problem Classification Flow
 
 ```mermaid

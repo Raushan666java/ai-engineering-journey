@@ -1,5 +1,6 @@
 export const COURSES_DIR = require('path').resolve(__dirname, '..', '..', 'docs', 'courses');
 export const ASSETS_DIR = require('path').resolve(__dirname, '..', '..', 'docs', 'assets', 'images', 'diagrams');
+export const LESSON_IMAGES_DIR = require('path').resolve(__dirname, '..', '..', 'docs', 'assets', 'images', 'lessons');
 export const SVG_WIDTH = 600;
 export const SVG_HEIGHT = 400;
 

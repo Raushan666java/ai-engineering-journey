@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 3: Constructors and Destructors</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="20" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="100" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">C++ Concept</text>
+  <rect x="180" y="90" width="700" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="530" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Real-World Analogy</text>
+  <rect x="20" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Default constructor</text>
+  <rect x="180" y="134" width="700" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Newborn with blank records</text>
+  <rect x="20" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Parameterised constructor</text>
+  <rect x="180" y="170" width="700" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Custom order at a restaurant</text>
+  <rect x="20" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Copy constructor</text>
+  <rect x="180" y="206" width="700" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Photocopy machine — creates...</text>
+  <rect x="20" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Move constructor</text>
+  <rect x="180" y="242" width="700" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Moving truck — transfers contents,...</text>
+  <rect x="20" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Destructor</text>
+  <rect x="180" y="278" width="700" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Hotel cleaning crew after checkout</text>
+  <rect x="20" y="314" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="336" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Virtual destructor</text>
+  <rect x="180" y="314" width="700" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Universal fire alarm — works for...</text>
+  <rect x="20" y="350" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="372" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Initialiser list</text>
+  <rect x="180" y="350" width="700" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Filling passport details at...</text>
+  <rect x="20" y="386" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="408" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">`explicit` keyword</text>
+  <rect x="180" y="386" width="700" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Bouncer checking ID — no automatic...</text>
+</svg>

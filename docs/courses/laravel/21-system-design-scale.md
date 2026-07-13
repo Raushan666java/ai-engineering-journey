@@ -16,6 +16,45 @@
 - Execute cost optimization across cache, compute, CDN, database, and logging infrastructure
 - Plan and execute a monolith-to-services migration using the Strangler Fig pattern, database decomposition, and feature-flag-controlled traffic shifting
 ---
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/hero.svg" alt="Chapter Banner: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/handwritten-notes.svg" alt="Handwritten Notes: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/sticky-notes.svg" alt="Sticky Notes: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/visual-explanation.svg" alt="Visual Explanation: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/architecture.svg" alt="Architecture: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/workflow.svg" alt="Workflow: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/mindmap.svg" alt="Mind Map: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/comparison.svg" alt="Comparison: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/cheatsheet.svg" alt="Cheat Sheet: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/interview-quiz.svg" alt="Quiz Card: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/21-system-design-scale/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/21-system-design-scale/social-card.svg" alt="Social Card: Chapter 21: System Design: Laravel at Enterprise Scale" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Theory
 
 ![System Design and Scale](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/laravel/21-system-design-scale.png)

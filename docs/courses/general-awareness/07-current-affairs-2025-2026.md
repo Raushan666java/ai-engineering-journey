@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/hero.svg" alt="Chapter Banner: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/architecture.svg" alt="Architecture: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/workflow.svg" alt="Workflow: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/mindmap.svg" alt="Mind Map: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/comparison.svg" alt="Comparison: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/interview-quiz.svg" alt="Quiz Card: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/07-current-affairs-2025-2026/social-card.svg" alt="Social Card: Chapter 7: Current Affairs 2025–2026" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Recall key events of 2025 and early 2026 — national, international, economic
 - Identify major policy announcements, budget highlights, and government schemes
 - Describe ISRO, DRDO, and scientific achievements in 2025–2026

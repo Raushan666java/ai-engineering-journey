@@ -12,6 +12,45 @@
 - Design a personalized recommendation pipeline using candidate generation, neural ranking, and re-ranking stages
 - Apply chaos engineering principles including Chaos Monkey, Chaos Kong, and automated failure experimentation in production
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/hero.svg" alt="Chapter Banner: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/handwritten-notes.svg" alt="Handwritten Notes: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/sticky-notes.svg" alt="Sticky Notes: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/visual-explanation.svg" alt="Visual Explanation: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/architecture.svg" alt="Architecture: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/workflow.svg" alt="Workflow: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/mindmap.svg" alt="Mind Map: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/comparison.svg" alt="Comparison: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/cheatsheet.svg" alt="Cheat Sheet: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/interview-quiz.svg" alt="Quiz Card: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/20-case-study-netflix/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/20-case-study-netflix/social-card.svg" alt="Social Card: Chapter 20: Case Study — Netflix and Video Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

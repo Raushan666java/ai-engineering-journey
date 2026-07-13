@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Seating Arrangements — Circular, Linear, and Double Row</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Linear Puzzle (6 persons): Six persons sit in a row facing north. A is</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">at the extreme left. C sits third...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Simplified Rule: → Absolute Left/Right vs. Immediate Left/Right: →</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">Framework for Single Row (6 persons, all facing north): → Framework</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">for Single Row (6 persons, all facing south): → Framework for Mixed</text>
+  <text x="85" y="321" font-size="11" fill="#475569" font-family="Arial, sans-serif">Direction (some face north, some south): → Standard Approach for</text>
+  <text x="85" y="339" font-size="11" fill="#475569" font-family="Arial, sans-serif">Linear Seating:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Linear (Single Row): Persons sit in a single row facing either north</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">or south (or a combination) → Circular: Persons sit around a circular</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">table facing either inward (toward the center) or outward (away from</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">the center) → Double Row (Parallel): Two parallel rows of persons</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">facing each other → If a person faces north, their left is the left</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">side of the diagram on paper → If a person faces south, their left is</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">the right side of the diagram on paper → In circular arrangements</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">facing inward, the person&apos;s left is clockwise (from the</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">person&apos;s perspective) → In circular arrangements facing outward,</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">the person&apos;s left is counterclockwise → &quot;A is to the left of</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">B&quot; (absolute positioning): A sits to the east/west of B depending</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">on perspective</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: Linear (Single Row) Seating:  Question: Six persons P, Q,</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">R, S, T, U sit in a straight row facing north. - P...</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Seating arrangements contribute 4–6 questions in IBPS SO IT Officer</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">Prelims
+- Three main types:...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Seating Arrangements — Circular, Linear, and Double Row</text>
+</svg>

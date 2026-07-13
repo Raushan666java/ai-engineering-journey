@@ -14,6 +14,45 @@ After completing this chapter, the student will be able to:
 - Compare Z, B-Method, Alloy, and TLA+ for different use cases
 - Understand model checking tools (SPIN, NuSMV) and theorem provers (Coq, Isabelle)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/hero.svg" alt="Chapter Banner: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/handwritten-notes.svg" alt="Handwritten Notes: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/sticky-notes.svg" alt="Sticky Notes: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/visual-explanation.svg" alt="Visual Explanation: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/architecture.svg" alt="Architecture: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/workflow.svg" alt="Workflow: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/mindmap.svg" alt="Mind Map: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/comparison.svg" alt="Comparison: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/cheatsheet.svg" alt="Cheat Sheet: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/interview-quiz.svg" alt="Quiz Card: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/14-formal-methods/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/14-formal-methods/social-card.svg" alt="Social Card: Formal Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Theory
 
 ### What are Formal Methods?

@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/devops/14-devsecops/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/hero.svg" alt="Chapter Banner: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/sticky-notes.svg" alt="Sticky Notes: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/visual-explanation.svg" alt="Visual Explanation: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/architecture.svg" alt="Architecture: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/workflow.svg" alt="Workflow: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/mindmap.svg" alt="Mind Map: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/comparison.svg" alt="Comparison: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/interview-quiz.svg" alt="Quiz Card: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/14-devsecops/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/14-devsecops/social-card.svg" alt="Social Card: Chapter 14: DevSecOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Explain the shift-left security principle and its impact on software development
 2. Integrate SAST tools (SonarQube, Semgrep, CodeQL) into CI/CD pipelines
 3. Configure DAST scanning using OWASP ZAP and Burp Suite

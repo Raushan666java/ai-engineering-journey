@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 3: Consensus Mechanisms</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Casper FFG (Friendly Finality Gadget): the PoS finality mechanism used</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">by Ethereum. It provides:</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Casper FFG (Friendly Finality Gadget) → PBFT phases explained: →</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">Requirements: → LMD-GHOST (Latest Message Driven Greedy Heaviest</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">Observed Sub-Tree)</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Agreement: All loyal generals must agree on the same plan. → Validity:</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">The plan must be reasonable (not based on traitor messages). →</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">Termination: The generals must eventually reach a decision. → You need</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">`2f+1` honest nodes to outvote `f` traitors → Total: `n = 3f + 1` →</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">Mechanism: Find a value (nonce) such that `Hash(BlockHeader + Nonce)</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">&lt; Target`. → Security: Requires enormous energy/hardware</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">investment. An attacker must control 51% of the network&apos;s hash</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">rate. → Incentive: Block rewards and transaction fees.</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: 5-10B (Bitcoin) | 51% hash rate | Economic disincentive |
+| PoS |</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">33% of staked value | 51% stake |  | 2: {msg.value}`;
+    const</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">prepareCount = this.log.filter(
+      m =&gt; m.type ===</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">&quot;PREPARE&quot; &amp;&amp; m.view == | 3: {msg.digest}`;</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">switch (msg.type) {
+            case &apos;PRE-PREPARE&apos;:</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">if (from  | 4: {from}`);
+                if (this.prepares.size &gt;=</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">this.majority()) return &apos;broadcast:commit&apos;;
+     | 5:</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">{from}`);
+                if (this.commits.size &gt;= this.majority())</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">return &apos;consensus:reached&apos;;
+     | 6:</text>
+  <text x="85" y="639" font-size="11" fill="#475569" font-family="Arial, sans-serif">{result.hash}`);
+
+const pos = new PoSSimulator();
+pos.addValidator(new</text>
+  <text x="85" y="657" font-size="11" fill="#475569" font-family="Arial, sans-serif">PoSValidator(&apos;alice&apos;, 40));
+p</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: PoW Difficulty Adjustment:  Bitcoin aims for a 10-minute</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">block time. If miners solve blocks too fast...</text>
+  <line x1="500" y1="620" x2="500" y2="630" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="645" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="645" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="667" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="687" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Consensus mechanisms enable distributed nodes to agree on the state</text>
+  <text x="85" y="705" font-size="11" fill="#475569" font-family="Arial, sans-serif">of a ledger.
+- PoW uses...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 3: Consensus Mechanisms</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: The Application Layer →...</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">Comp: client-server and</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">peer-to-peer</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">application...</text>
+  <text x="35" y="165" font-size="9" fill="#475569" font-family="Arial, sans-serif">Clients: intermittently</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">connected and may have</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">dynamic IPs.</text>
+  <text x="35" y="206" font-size="9" fill="#475569" font-family="Arial, sans-serif">There: no central</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">kitchen. The more guests</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">arrive, the...</text>
+  <text x="35" y="247" font-size="9" fill="#475569" font-family="Arial, sans-serif">Peers: both clients and</text>
+  <text x="35" y="260" font-size="9" fill="#475569" font-family="Arial, sans-serif">servers</text>
+  <text x="35" y="273" font-size="9" fill="#475569" font-family="Arial, sans-serif">(&quot;servents&quot;).</text>
+  <text x="35" y="288" font-size="9" fill="#475569" font-family="Arial, sans-serif">Server: bottleneck |</text>
+  <text x="35" y="303" font-size="9" fill="#475569" font-family="Arial, sans-serif">Complexity Analys:</text>
+  <text x="35" y="316" font-size="9" fill="#475569" font-family="Arial, sans-serif">&lt;a...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">1:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">{parsed.search} HTTP/1.1\r\n` +...</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">{v}`).join(&apos;\r\n&apos;) + &apos;\r\n\r\n&apos; +...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">{url}`);...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">{domain}`);
+    const records =...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Difference between DNS Recursive and Iterative...</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Difference between HTTP Persistent and Non-Persistent...</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Difference between SMTP and HTTP?</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ - Stale TTL with server migration:...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | 551 | User not local | Wrong...</text>
+  <text x="315" y="536" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | 405 | Method Not Allowed | Wrong...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: The Application Layer → Complete... — Quick Reference</text>
+</svg>

@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/hero.svg" alt="Chapter Banner: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/architecture.svg" alt="Architecture: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/workflow.svg" alt="Workflow: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/mindmap.svg" alt="Mind Map: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/comparison.svg" alt="Comparison: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/interview-quiz.svg" alt="Quiz Card: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/09-optimization/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/09-optimization/social-card.svg" alt="Social Card: Chapter 9: Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Classify optimization problems by convexity, constraints, and smoothness
 - Solve unconstrained optimization using gradient descent and Newton's method
 - Apply Lagrange multipliers and KKT conditions for constrained optimization

@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/hero.svg" alt="Chapter Banner: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/architecture.svg" alt="Architecture: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/workflow.svg" alt="Workflow: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/mindmap.svg" alt="Mind Map: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/comparison.svg" alt="Comparison: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/interview-quiz.svg" alt="Quiz Card: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-awareness/03-indian-history/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-awareness/03-indian-history/social-card.svg" alt="Social Card: Chapter 3: Indian History & Culture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Describe the Harappan Civilization and Vedic period with key features
 - Trace the rise and fall of major ancient empires — Maurya and Gupta
 - Explain the Delhi Sultanate, Mughal Empire, and Vijayanagara Kingdom

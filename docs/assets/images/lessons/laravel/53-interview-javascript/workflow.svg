@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="warrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#ffffff" rx="4"/>
+  <text x="400" y="40" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 53: JavaScript Interview Q&amp;A</text>
+  <rect x="380" y="50" width="40" height="3" rx="2" fill="#2563eb"/>
+    <rect x="-460" y="275" width="180" height="50" rx="25" fill="#2563eb" stroke="none" stroke-width="2"/>
+    <text x="-370" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">10</text>
+    <text x="-370" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">Core JavaScript...</text>
+  <line x1="-275" y1="300" x2="-245" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-260" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-240" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="-150" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">11</text>
+    <text x="-150" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">ES6+ features like...</text>
+  <line x1="-55" y1="300" x2="-25" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-40" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-20" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="70" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">12</text>
+    <text x="70" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Asynchronous patterns...</text>
+  <line x1="165" y1="300" x2="195" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="180" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="200" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="290" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">13</text>
+    <text x="290" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">DOM and Fetch API...</text>
+  <line x1="385" y1="300" x2="415" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="400" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="420" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="510" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">14</text>
+    <text x="510" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Alpine.js is...</text>
+  <line x1="605" y1="300" x2="635" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="620" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="640" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="730" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">15</text>
+    <text x="730" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">JavaScript in Laravel...</text>
+  <line x1="825" y1="300" x2="855" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="840" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="860" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="950" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">20</text>
+    <text x="950" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">A) let allows...</text>
+  <line x1="1045" y1="300" x2="1075" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="1060" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="1080" y="275" width="180" height="50" rx="25" fill="#059669" stroke="none" stroke-width="2"/>
+    <text x="1170" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">21</text>
+    <text x="1170" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">B) const allows...</text>
+  <rect x="-455" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-370" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Core JavaScript</text>
+  <text x="-370" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">fundamentals → types,</text>
+  <text x="-370" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">closures,...</text>
+  <rect x="-235" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-150" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">ES6+ features like</text>
+  <text x="-150" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">destructuring,</text>
+  <text x="-150" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">modules, and...</text>
+  <rect x="-15" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="70" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Asynchronous patterns</text>
+  <text x="70" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">→ Promises,</text>
+  <text x="70" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">`async/await`,...</text>
+  <rect x="205" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="290" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">DOM and Fetch API</text>
+  <text x="290" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">skills are essential</text>
+  <text x="290" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">for any...</text>
+  <rect x="425" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="510" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Alpine.js is</text>
+  <text x="510" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Laravel&apos;s default</text>
+  <text x="510" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">lightweight...</text>
+  <rect x="645" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="730" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">JavaScript in Laravel</text>
+  <text x="730" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">ties together Vite,</text>
+  <text x="730" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Echo,...</text>
+  <rect x="865" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="950" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">A) let allows</text>
+  <text x="950" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">reassignment, const</text>
+  <text x="950" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">does not</text>
+  <rect x="1085" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1170" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">B) const allows</text>
+  <text x="1170" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">reassignment, let does</text>
+  <text x="1170" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">not</text>
+</svg>

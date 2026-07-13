@@ -6,6 +6,45 @@
 
 After studying this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/hero.svg" alt="Chapter Banner: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/architecture.svg" alt="Architecture: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/workflow.svg" alt="Workflow: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/mindmap.svg" alt="Mind Map: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/comparison.svg" alt="Comparison: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/interview-quiz.svg" alt="Quiz Card: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/04-inheritance/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/04-inheritance/social-card.svg" alt="Social Card: Chapter 4: Inheritance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Model is-a relationships using inheritance with correct access specifiers
 - Control member visibility through all three inheritance access specifiers
 - Implement all five inheritance types: single, multilevel, multiple, hierarchical, hybrid

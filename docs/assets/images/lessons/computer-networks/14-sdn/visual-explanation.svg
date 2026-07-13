@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 14: Software-Defined Networking</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Data plane: simple forwarding devices (switches, routers) that perform</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">packet matching and...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Flow Table (pre-populated): → Incoming Packet: → Trace: → Incoming</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">Packet: → Why linear flow table lookup is acceptable in software</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">switches (Open vSwitch): → Why Dijkstra is preferred over Bellman-Ford</text>
+  <text x="85" y="321" font-size="11" fill="#475569" font-family="Arial, sans-serif">in SDN:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Explain the separation of control plane and data plane in SDN. →</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">Describe the OpenFlow protocol and its role in switch-controller</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">communication. → Analyze the architecture of SDN controllers and their</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">northbound/southbound interfaces. → Compare network functions</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">virtualization (NFV) with traditional network appliances. → Evaluate</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">overlay networks including VXLAN and their role in network</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">virtualization. → Implement SDN switch simulator logic in C++ and</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">Python. → Analyze complexity trade-offs in SDN controller placement</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">and flow table design. → Data plane: simple forwarding devices</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">(switches, routers) that perform packet matching and action based on</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">flow tables.</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {cookie} priority= | 2: {JSON.stringify(entry.match)}`);</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">return cookie;
+  }
+
+  packetIn(packet: { data: string; inPo | 3:</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">{f.hardTimeout}s)`);
+        return false;
+      }
+      if</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">(f.idleTimeout &gt; 0) return true;
+    | 4:</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">{JSON.stringify(flow.instructions)}`);
+        return</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">flow.instructions;
+      }
+    }
+    conso | 5: {id} joined`);</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">this.sendLLDP(id, ports);
+  }
+
+  private sendLLDP(switchId: string,</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">ports: nu | 6: {port}`);
+      }, Math.random() * 100);
+    });
+  }</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">handleLLDP(srcSwitch: string, srcPort:</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">SDN separates the control plane from the data plane, enabling</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">centralized, programmable network...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 14: Software-Defined Networking</text>
+</svg>

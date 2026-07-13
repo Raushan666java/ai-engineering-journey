@@ -1,5 +1,44 @@
 ![Database Sharding - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/59-interview-databases-c.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/hero.svg" alt="Chapter Banner: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/handwritten-notes.svg" alt="Handwritten Notes: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/sticky-notes.svg" alt="Sticky Notes: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/visual-explanation.svg" alt="Visual Explanation: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/architecture.svg" alt="Architecture: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/workflow.svg" alt="Workflow: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/mindmap.svg" alt="Mind Map: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/comparison.svg" alt="Comparison: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/cheatsheet.svg" alt="Cheat Sheet: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/interview-quiz.svg" alt="Quiz Card: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/59-interview-databases-c/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/59-interview-databases-c/social-card.svg" alt="Social Card: Spring Boot default (enabled) → causes the anti-pattern:" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

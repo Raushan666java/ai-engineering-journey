@@ -8,6 +8,45 @@ This chapter covers the essential tools and DevOps practices every Java backend 
 
 ![DevOps Tools Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/63-interview-tools.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/63-interview-tools/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/hero.svg" alt="Chapter Banner: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/handwritten-notes.svg" alt="Handwritten Notes: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/sticky-notes.svg" alt="Sticky Notes: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/visual-explanation.svg" alt="Visual Explanation: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/architecture.svg" alt="Architecture: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/workflow.svg" alt="Workflow: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/mindmap.svg" alt="Mind Map: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/comparison.svg" alt="Comparison: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/cheatsheet.svg" alt="Cheat Sheet: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/interview-quiz.svg" alt="Quiz Card: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/63-interview-tools/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/63-interview-tools/social-card.svg" alt="Social Card: 63. Tools & DevOps — Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

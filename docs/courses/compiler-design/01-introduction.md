@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to: describe the analysis-synthesis model of compilation; enumerate and explain the principal phases of a compiler with their input/output representations; distinguish between compilers, interpreters, and JIT compilers with concrete performance analysis; implement a symbol table in TypeScript; construct T-diagrams for bootstrapping scenarios; explain cross-compilation, JIT vs AOT trade-offs; and identify appropriate compiler construction tools for each phase.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/hero.svg" alt="Chapter Banner: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/architecture.svg" alt="Architecture: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/workflow.svg" alt="Workflow: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/mindmap.svg" alt="Mind Map: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/comparison.svg" alt="Comparison: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/interview-quiz.svg" alt="Quiz Card: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/01-introduction/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/01-introduction/social-card.svg" alt="Social Card: Chapter 1: Introduction to Compiler Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 | Section | Description |

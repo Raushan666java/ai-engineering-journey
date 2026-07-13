@@ -11,6 +11,45 @@ By the end of this chapter, students will be able to:
 - Apply arithmetic, comparison, logical, assignment, bitwise, identity, and membership operators
 - Predict operator precedence and associativity
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/02-variables/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/hero.svg" alt="Chapter Banner: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/architecture.svg" alt="Architecture: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/workflow.svg" alt="Workflow: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/mindmap.svg" alt="Mind Map: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/comparison.svg" alt="Comparison: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/interview-quiz.svg" alt="Quiz Card: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/02-variables/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/02-variables/social-card.svg" alt="Social Card: Chapter 2: Variables, Types, and Operators" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Python Data Types](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/02-variables.png)
 
 

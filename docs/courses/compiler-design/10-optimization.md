@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to: distinguish machine-independent from machine-dependent optimizations; apply peephole optimization techniques including redundant load/store elimination, constant folding, strength reduction, null-sequence elimination, and algebraic simplification; implement common-subexpression elimination; perform copy propagation and dead-code elimination; implement a fixed-point peephole optimizer in TypeScript; and understand how data-flow analyses enable more powerful global optimizations.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/hero.svg" alt="Chapter Banner: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/architecture.svg" alt="Architecture: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/workflow.svg" alt="Workflow: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/mindmap.svg" alt="Mind Map: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/comparison.svg" alt="Comparison: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/interview-quiz.svg" alt="Quiz Card: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/10-optimization/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/10-optimization/social-card.svg" alt="Social Card: Chapter 10: Code Optimization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 | Section | Key Concept | Why It Matters |

@@ -15,6 +15,45 @@ By the end of this chapter, you will be able to:
 - Work with multiple virtual hosts, `RabbitAdmin`, and connection factory customization
 - Secure connections with TLS and customize container factories
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/35-rabbitmq/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/hero.svg" alt="Chapter Banner: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/handwritten-notes.svg" alt="Handwritten Notes: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/sticky-notes.svg" alt="Sticky Notes: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/visual-explanation.svg" alt="Visual Explanation: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/architecture.svg" alt="Architecture: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/workflow.svg" alt="Workflow: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/mindmap.svg" alt="Mind Map: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/comparison.svg" alt="Comparison: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/cheatsheet.svg" alt="Cheat Sheet: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/interview-quiz.svg" alt="Quiz Card: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/35-rabbitmq/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/35-rabbitmq/social-card.svg" alt="Social Card: RabbitMQ" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

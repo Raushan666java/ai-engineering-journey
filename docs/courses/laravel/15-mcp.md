@@ -9,6 +9,45 @@
 - Implement tool schemas, annotations, and response types
 - Build an MCP Client for agent integration
 - Authenticate and test MCP servers
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/15-mcp/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/hero.svg" alt="Chapter Banner: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/sticky-notes.svg" alt="Sticky Notes: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/visual-explanation.svg" alt="Visual Explanation: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/architecture.svg" alt="Architecture: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/workflow.svg" alt="Workflow: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/mindmap.svg" alt="Mind Map: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/comparison.svg" alt="Comparison: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/interview-quiz.svg" alt="Quiz Card: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/15-mcp/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/15-mcp/social-card.svg" alt="Social Card: Chapter 15: Laravel MCP → Model Context Protocol" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Key Topics |

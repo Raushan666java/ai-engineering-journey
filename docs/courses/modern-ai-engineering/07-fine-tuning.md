@@ -12,6 +12,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/hero.svg" alt="Chapter Banner: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/architecture.svg" alt="Architecture: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/workflow.svg" alt="Workflow: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/mindmap.svg" alt="Mind Map: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/comparison.svg" alt="Comparison: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/interview-quiz.svg" alt="Quiz Card: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/social-card.svg" alt="Social Card: Chapter 7: Fine-Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## 7.1 When to Fine-Tune
 
 Fine-tuning is one of the most powerful tools in an AI engineer's toolkit, but it is also the most expensive and complex. Before fine-tuning, teams should exhaust cheaper alternatives: prompt engineering, few-shot examples, retrieval-augmented generation (RAG), and controlled decoding. The decision to fine-tune should be driven by **performance gaps** that cannot be closed by other means.

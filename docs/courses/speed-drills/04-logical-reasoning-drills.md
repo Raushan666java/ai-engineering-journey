@@ -15,6 +15,45 @@ dataset "Input-Output" [35, 48, 58, 68, 76]
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/hero.svg" alt="Chapter Banner: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/handwritten-notes.svg" alt="Handwritten Notes: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/sticky-notes.svg" alt="Sticky Notes: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/visual-explanation.svg" alt="Visual Explanation: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/architecture.svg" alt="Architecture: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/workflow.svg" alt="Workflow: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/mindmap.svg" alt="Mind Map: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/comparison.svg" alt="Comparison: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/cheatsheet.svg" alt="Cheat Sheet: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/interview-quiz.svg" alt="Quiz Card: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/04-logical-reasoning-drills/social-card.svg" alt="Social Card: Logical Reasoning Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Puzzles Drills
 
 ### Set 1: Linear Arrangement | ⏱ Target: 5 min | 🎯 Accuracy Goal: 70%

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">अध्याय १०: उपाय — ओशो का दृष्टिकोण</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">श्वास-ध्यान पर ओशो: → मंत्र-जप पर ओशो: → त्राटक (दृष्टि स्थिरीकरण) पर</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">ओशो: → ओशो की रति-ध्यान विधि: → ओशो की शांभव विधि (यदि इसे विधि कहा जा</text>
+  <text x="85" y="198" font-size="11" fill="#475569" font-family="Arial, sans-serif">सके): → प्रश्न १:</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">तीन उपायों को ओशो के अनूठे और क्रांतिकारी दृष्टिकोण से समझेंगे →</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">जानेंगे कि क्यों ओशो &quot;नो-मेथड&quot; (शांभव) को सर्वोच्च मानते हैं</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">— और फिर भी ११२ तकनीकें क्यों देते हैं → प्रयास और सहजता के बीच ओशो के</text>
+  <text x="85" y="321" font-size="11" fill="#475569" font-family="Arial, sans-serif">संतुलन को समझेंगे → ओशो की कहानियों — नाव वाली, सीढ़ी वाली — के माध्यम</text>
+  <text x="85" y="339" font-size="11" fill="#475569" font-family="Arial, sans-serif">से उपायों का सार पकड़ेंगे → TypeScript में उपाय वर्गीकरण प्रणाली</text>
+  <text x="85" y="357" font-size="11" fill="#475569" font-family="Arial, sans-serif">बनाएँगे → अपने स्वभाव के अनुकूल उपाय को पहचानेंगे → क) सबसे कठिन तकनीक</text>
+  <text x="85" y="375" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ ख) कोई उपाय नहीं — उपाय का अंत और चेतना की पहचान</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {technique.name}&quot; — इसे तकनीक मत बनाओ। यह तो बस एक संकेत है।</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">जैसे कोई चाँद की तरफ उँगली उठाए — उँगली | 2: {count} तकनीकें`);</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">});
+
+        report.push(&apos;&apos;);
+        report.push(&apos;🧘</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">ओशो का संदेश:&apos;);</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">Code Example 1: mermaid</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">अध्याय १०: उपाय — ओशो का दृष्टिकोण</text>
+</svg>

@@ -11,6 +11,45 @@
 - Analyze why Build Heap runs in O(n) time.
 - Apply heap-based solutions to classic interview problems.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/10-heaps/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/hero.svg" alt="Chapter Banner: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/architecture.svg" alt="Architecture: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/workflow.svg" alt="Workflow: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/mindmap.svg" alt="Mind Map: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/comparison.svg" alt="Comparison: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/interview-quiz.svg" alt="Quiz Card: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/10-heaps/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/10-heaps/social-card.svg" alt="Social Card: Chapter 10: Heaps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Heaps Matter
 
 **Real-World Analogy (Hospital ER Triage):** In a hospital emergency room, patients arrive with different severity levels. A heart attack patient needs immediate attention even if 20 people with minor cuts arrived first. A queue (FIFO) would be disastrous → you'd treat in arrival order, letting critical cases wait. A priority queue (heap) solves this: the most critical patient is always treated next, regardless of arrival order. This is exactly what heaps do → they maintain items in a way that the "most important" (highest/lowest priority) is always immediately accessible.

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="aarch" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+    <linearGradient id="abg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#abg)" rx="4"/>
+  <!-- Title -->
+  <text x="400" y="36" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: DSA &amp; Coding Interview Prep</text>
+  <rect x="375" y="46" width="50" height="3" rx="2" fill="#2563eb"/>
+    <rect x="250" y="87" width="300" height="55" rx="12" fill="#2563eb" opacity="0.15" stroke="#2563eb" stroke-width="2"/>
+    <text x="400" y="111" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">One-Sentence Takeaway:</text>
+    <text x="400" y="129" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">The 3-pass method enforces understanding before...</text>
+  <line x1="400" y1="142" x2="400" y2="150" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="158" width="300" height="55" rx="8" fill="#3b82f6" opacity="0.15" stroke="#3b82f6" stroke-width="2"/>
+    <text x="400" y="182" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Answer:</text>
+    <text x="400" y="200" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif"> The 3-pass method is a structured approach to...</text>
+  <line x1="400" y1="213" x2="400" y2="221" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="229" width="300" height="55" rx="8" fill="#60a5fa" opacity="0.15" stroke="#60a5fa" stroke-width="2"/>
+    <text x="400" y="253" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Pass 1: Understand &amp; Explore</text>
+    <text x="400" y="271" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif"> - Restate the problem in your own words - Walk...</text>
+  <line x1="400" y1="284" x2="400" y2="292" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="300" width="300" height="55" rx="8" fill="#93c5fd" opacity="0.15" stroke="#93c5fd" stroke-width="2"/>
+    <text x="400" y="324" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Pass 2: Plan &amp; Verify</text>
+    <text x="400" y="342" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif"> - Write a high-level approach in pseudocode or...</text>
+  <line x1="400" y1="355" x2="400" y2="363" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="371" width="300" height="55" rx="8" fill="#bfdbfe" opacity="0.15" stroke="#bfdbfe" stroke-width="2"/>
+    <text x="400" y="395" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Pass 3: Code &amp; Test</text>
+    <text x="400" y="413" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif"> - Write clean, readable code with meaningful...</text>
+  <line x1="400" y1="426" x2="400" y2="434" stroke="#94a3b8" stroke-width="2" marker-end="url(#aarch)"/>
+  <rect x="250" y="442" width="300" height="55" rx="12" fill="#dbeafe" opacity="0.15" stroke="#dbeafe" stroke-width="2"/>
+    <text x="400" y="466" font-size="15" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Try This:</text>
+    <text x="400" y="484" font-size="11" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Pick any unsolved LeetCode problem. Set a...</text>
+  <text x="240" y="99" font-size="10" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif" transform="rotate(-90 240 99)">DATA FLOW</text>
+</svg>

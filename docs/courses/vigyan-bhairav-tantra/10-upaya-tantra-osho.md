@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/hero.svg" alt="Chapter Banner: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/handwritten-notes.svg" alt="Handwritten Notes: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/sticky-notes.svg" alt="Sticky Notes: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/visual-explanation.svg" alt="Visual Explanation: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/architecture.svg" alt="Architecture: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/workflow.svg" alt="Workflow: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/mindmap.svg" alt="Mind Map: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/comparison.svg" alt="Comparison: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/cheatsheet.svg" alt="Cheat Sheet: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/interview-quiz.svg" alt="Quiz Card: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/social-card.svg" alt="Social Card: अध्याय १०: उपाय — ओशो का दृष्टिकोण" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## सीखने के उद्देश्य
 
 ```mermaid

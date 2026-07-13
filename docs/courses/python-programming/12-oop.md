@@ -12,6 +12,45 @@ By the end of this chapter, students will be able to:
 - Write data classes with `@dataclass`
 - Understand name mangling for attribute protection
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/12-oop/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/hero.svg" alt="Chapter Banner: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/architecture.svg" alt="Architecture: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/workflow.svg" alt="Workflow: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/mindmap.svg" alt="Mind Map: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/comparison.svg" alt="Comparison: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/interview-quiz.svg" alt="Quiz Card: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/12-oop/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/12-oop/social-card.svg" alt="Social Card: Chapter 12: Object-Oriented Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Python OOP](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/12-oop.png)
 
 

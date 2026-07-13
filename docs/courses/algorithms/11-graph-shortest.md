@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/hero.svg" alt="Chapter Banner: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/sticky-notes.svg" alt="Sticky Notes: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/visual-explanation.svg" alt="Visual Explanation: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/architecture.svg" alt="Architecture: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/workflow.svg" alt="Workflow: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/mindmap.svg" alt="Mind Map: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/comparison.svg" alt="Comparison: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/interview-quiz.svg" alt="Quiz Card: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/11-graph-shortest/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/11-graph-shortest/social-card.svg" alt="Social Card: Chapter 11: Graph Shortest Paths" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Implement Dijkstra's algorithm for single-source shortest paths with non-negative weights.
 2. Implement Bellman-Ford for graphs with negative weights and detect negative cycles.
 3. Compute all-pairs shortest paths using Floyd-Warshall.

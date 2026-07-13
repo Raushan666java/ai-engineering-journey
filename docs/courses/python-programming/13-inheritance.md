@@ -12,6 +12,45 @@ By the end of this chapter, students will be able to:
 - Define abstract base classes and enforce interfaces
 - Use structural subtyping (protocols) for duck typing
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/hero.svg" alt="Chapter Banner: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/architecture.svg" alt="Architecture: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/workflow.svg" alt="Workflow: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/mindmap.svg" alt="Mind Map: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/comparison.svg" alt="Comparison: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/interview-quiz.svg" alt="Quiz Card: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/13-inheritance/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/13-inheritance/social-card.svg" alt="Social Card: Chapter 13: Inheritance and Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Inheritance and Protocols](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/13-inheritance.png)
 
 

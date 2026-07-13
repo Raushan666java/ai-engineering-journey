@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 1: Introduction to Computer Networks</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="20" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="100" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Topic</text>
+  <rect x="180" y="90" width="350" height="44" rx="0" fill="#2563eb"/>
+    <text x="355" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Key Insight</text>
+  <rect x="530" y="90" width="350" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="705" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Practical Takeaway</text>
+  <rect x="20" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Network Classification</text>
+  <rect x="180" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">LAN, MAN, WAN differ by geographic...</text>
+  <rect x="530" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Choose LAN for buildings, WAN for...</text>
+  <rect x="20" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Protocol Layering</text>
+  <rect x="180" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Layers provide services to the...</text>
+  <rect x="530" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Encapsulation (adding headers at...</text>
+  <rect x="20" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">OSI Model</text>
+  <rect x="180" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">7-layer conceptual model: Physical...</text>
+  <rect x="530" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Useful as pedagogical framework;...</text>
+  <rect x="20" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">TCP/IP Model</text>
+  <rect x="180" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">4-layer model: Link, Internet,...</text>
+  <rect x="530" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">The architecture of the actual...</text>
+  <rect x="20" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Encapsulation</text>
+  <rect x="180" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Each layer adds its header to the...</text>
+  <rect x="530" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Trace headers to debug network...</text>
+  <rect x="20" y="314" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="336" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Network Topologies</text>
+  <rect x="180" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Bus, star, ring, mesh, tree,...</text>
+  <rect x="530" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Star is dominant in LANs; mesh in...</text>
+  <rect x="20" y="350" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="372" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Standardization</text>
+  <rect x="180" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">IETF, IEEE, ITU-T, ISO develop...</text>
+  <rect x="530" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">RFCs are the definitive...</text>
+</svg>

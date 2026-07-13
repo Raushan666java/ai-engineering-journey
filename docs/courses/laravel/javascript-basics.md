@@ -17,6 +17,45 @@
 - Configure Vite, npm scripts, and `import.meta.env` inside a Laravel project
 - Integrate Laravel Echo with WebSocket broadcasting for real-time features
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/javascript-basics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/hero.svg" alt="Chapter Banner: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/handwritten-notes.svg" alt="Handwritten Notes: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/sticky-notes.svg" alt="Sticky Notes: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/visual-explanation.svg" alt="Visual Explanation: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/architecture.svg" alt="Architecture: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/workflow.svg" alt="Workflow: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/mindmap.svg" alt="Mind Map: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/comparison.svg" alt="Comparison: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/cheatsheet.svg" alt="Cheat Sheet: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/interview-quiz.svg" alt="Quiz Card: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/javascript-basics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/javascript-basics/social-card.svg" alt="Social Card: Chapter: JavaScript Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

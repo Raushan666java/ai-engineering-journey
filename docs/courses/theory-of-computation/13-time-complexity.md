@@ -14,6 +14,45 @@
 - Distinguish between P, NP, and NP-complete.
 - Understand the significance of the P vs NP question.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/hero.svg" alt="Chapter Banner: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/architecture.svg" alt="Architecture: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/workflow.svg" alt="Workflow: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/mindmap.svg" alt="Mind Map: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/comparison.svg" alt="Comparison: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/interview-quiz.svg" alt="Quiz Card: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/theory-of-computation/13-time-complexity/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/theory-of-computation/13-time-complexity/social-card.svg" alt="Social Card: Chapter 13: Time Complexity and NP-Completeness" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 
 ## Nondeterminism as Proof Search
 

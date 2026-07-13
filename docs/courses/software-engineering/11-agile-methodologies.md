@@ -11,6 +11,45 @@
 - [x] Implement agile metrics tools: velocity tracker, burndown charts, CFD, cycle time
 - [x] Configure scaled agile frameworks (SAFe, LeSS, Nexus)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/hero.svg" alt="Chapter Banner: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/handwritten-notes.svg" alt="Handwritten Notes: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/sticky-notes.svg" alt="Sticky Notes: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/visual-explanation.svg" alt="Visual Explanation: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/architecture.svg" alt="Architecture: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/workflow.svg" alt="Workflow: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/mindmap.svg" alt="Mind Map: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/comparison.svg" alt="Comparison: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/cheatsheet.svg" alt="Cheat Sheet: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/interview-quiz.svg" alt="Quiz Card: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/11-agile-methodologies/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/11-agile-methodologies/social-card.svg" alt="Social Card: Agile Methodologies" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Theory
 
 ### The Agile Manifesto

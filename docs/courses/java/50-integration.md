@@ -3,6 +3,45 @@
 > **Previous:** [Spring Batch](./49-batch.md) | **Next:** [Spring Modulith](./51-modulith.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/50-integration/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/hero.svg" alt="Chapter Banner: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/handwritten-notes.svg" alt="Handwritten Notes: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/sticky-notes.svg" alt="Sticky Notes: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/visual-explanation.svg" alt="Visual Explanation: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/architecture.svg" alt="Architecture: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/workflow.svg" alt="Workflow: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/mindmap.svg" alt="Mind Map: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/comparison.svg" alt="Comparison: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/cheatsheet.svg" alt="Cheat Sheet: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/interview-quiz.svg" alt="Quiz Card: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/50-integration/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/50-integration/social-card.svg" alt="Social Card: Spring Integration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

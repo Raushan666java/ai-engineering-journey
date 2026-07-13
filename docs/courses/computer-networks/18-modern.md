@@ -6,6 +6,45 @@
 
 ![Modern Networking](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch18-modern-networking.png)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/18-modern/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/hero.svg" alt="Chapter Banner: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/architecture.svg" alt="Architecture: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/workflow.svg" alt="Workflow: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/mindmap.svg" alt="Mind Map: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/comparison.svg" alt="Comparison: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/interview-quiz.svg" alt="Quiz Card: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/18-modern/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/18-modern/social-card.svg" alt="Social Card: Chapter 18: Modern Networking → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Describe the QUIC transport protocol and its advantages over TCP.
 2. Explain HTTP/3 architecture and its relationship to QUIC.
 3. Analyze the 5G core network architecture using service-based interfaces.

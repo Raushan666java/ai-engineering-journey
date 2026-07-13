@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Multithreading &amp; Concurrency</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">reentrant: if a thread</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">holds a lock, it can</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">acquire the same...</text>
+  <text x="35" y="165" font-size="9" fill="#475569" font-family="Arial, sans-serif">work-stealing: idle</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">threads steal tasks from</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">busy threads&apos;...</text>
+  <text x="35" y="206" font-size="9" fill="#475569" font-family="Arial, sans-serif">Concurrency: one of the</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">most challenging topics</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">in Java. This...</text>
+  <text x="35" y="247" font-size="9" fill="#475569" font-family="Arial, sans-serif">Java: an instance of</text>
+  <text x="35" y="260" font-size="9" fill="#475569" font-family="Arial, sans-serif">`java.lang.Thread`. When</text>
+  <text x="35" y="273" font-size="9" fill="#475569" font-family="Arial, sans-serif">it runs,...</text>
+  <text x="35" y="288" font-size="9" fill="#475569" font-family="Arial, sans-serif">This: a</text>
+  <text x="35" y="301" font-size="9" fill="#475569" font-family="Arial, sans-serif">read-modify-write: not</text>
+  <text x="35" y="314" font-size="9" fill="#475569" font-family="Arial, sans-serif">atomic!</text>
+  <text x="35" y="329" font-size="9" fill="#475569" font-family="Arial, sans-serif">Th: write may never</text>
+  <text x="35" y="342" font-size="9" fill="#475569" font-family="Arial, sans-serif">become visible to worker</text>
+  <text x="35" y="355" font-size="9" fill="#475569" font-family="Arial, sans-serif">without...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ &gt; Warning: Virtual threads are not...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ The `java.util.concurrent` package...</text>
+  <text x="315" y="536" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ throw new...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Multithreading &amp; Concurrency — Quick Reference</text>
+</svg>

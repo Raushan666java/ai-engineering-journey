@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/hero.svg" alt="Chapter Banner: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/architecture.svg" alt="Architecture: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/workflow.svg" alt="Workflow: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/mindmap.svg" alt="Mind Map: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/comparison.svg" alt="Comparison: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/interview-quiz.svg" alt="Quiz Card: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/05-divide-conquer/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/05-divide-conquer/social-card.svg" alt="Social Card: Chapter 5: Divide and Conquer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Apply the divide-and-conquer paradigm to novel problems.
 2. Solve the maximum subarray problem in \( O(n \log n) \) time.
 3. Analyze Strassen's matrix multiplication and Karatsuba multiplication.

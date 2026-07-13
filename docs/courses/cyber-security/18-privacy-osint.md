@@ -10,6 +10,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/hero.svg" alt="Chapter Banner: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/architecture.svg" alt="Architecture: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/workflow.svg" alt="Workflow: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/mindmap.svg" alt="Mind Map: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/comparison.svg" alt="Comparison: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/interview-quiz.svg" alt="Quiz Card: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/18-privacy-osint/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/18-privacy-osint/social-card.svg" alt="Social Card: Chapter 18: Digital Privacy, Anonymity & OSINT" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  Apply threat modeling for privacy and implement data minimization strategies in digital communications.
 2.  Explain the Tor onion routing protocol, deploy hidden services, and configure bridges/pluggable transports.
 3.  Differentiate Tor relay types (guard, middle, exit) and understand the legal and operational considerations of running relays.

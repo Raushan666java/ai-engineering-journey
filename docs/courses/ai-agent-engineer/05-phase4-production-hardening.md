@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/hero.svg" alt="Chapter Banner: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/handwritten-notes.svg" alt="Handwritten Notes: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/sticky-notes.svg" alt="Sticky Notes: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/visual-explanation.svg" alt="Visual Explanation: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/architecture.svg" alt="Architecture: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/workflow.svg" alt="Workflow: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/mindmap.svg" alt="Mind Map: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/comparison.svg" alt="Comparison: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/cheatsheet.svg" alt="Cheat Sheet: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/interview-quiz.svg" alt="Quiz Card: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/05-phase4-production-hardening/social-card.svg" alt="Social Card: Phase 4 — Production Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Topic Table
 
 | # | Subtopic | Hours | Done checkpoint |

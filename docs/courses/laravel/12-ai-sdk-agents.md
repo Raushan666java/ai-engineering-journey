@@ -10,6 +10,45 @@
 - Manage conversational context using the RemembersConversations trait and database persistence
 - Define structured output schemas using the fluent JsonSchema builder with nested and constrained types
 - Implement streaming responses, broadcasting, and queued agent execution
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/hero.svg" alt="Chapter Banner: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/architecture.svg" alt="Architecture: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/workflow.svg" alt="Workflow: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/mindmap.svg" alt="Mind Map: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/comparison.svg" alt="Comparison: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/interview-quiz.svg" alt="Quiz Card: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/12-ai-sdk-agents/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/12-ai-sdk-agents/social-card.svg" alt="Social Card: Chapter 12: Laravel AI SDK → Agents, Prompting & Structured Output" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Key Topics |

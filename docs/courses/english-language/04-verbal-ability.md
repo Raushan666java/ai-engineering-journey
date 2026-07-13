@@ -10,6 +10,45 @@ By the end of this chapter, you will be able to:
 - Solve verbal analogy questions with precision
 - Detect and correct illogical or poorly constructed sentences
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/hero.svg" alt="Chapter Banner: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/architecture.svg" alt="Architecture: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/workflow.svg" alt="Workflow: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/mindmap.svg" alt="Mind Map: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/comparison.svg" alt="Comparison: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/interview-quiz.svg" alt="Quiz Card: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/04-verbal-ability/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/04-verbal-ability/social-card.svg" alt="Social Card: Chapter 4: Verbal Ability" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

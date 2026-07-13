@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="warrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#ffffff" rx="4"/>
+  <text x="400" y="40" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Neural Networks</text>
+  <rect x="380" y="50" width="40" height="3" rx="2" fill="#2563eb"/>
+    <rect x="-350" y="275" width="180" height="50" rx="25" fill="#2563eb" stroke="none" stroke-width="2"/>
+    <text x="-260" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">1</text>
+    <text x="-260" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">$x_i$ are the inputs.</text>
+  <line x1="-165" y1="300" x2="-135" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-150" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-130" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="-40" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">2</text>
+    <text x="-40" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">$w_i$ are the weights.</text>
+  <line x1="55" y1="300" x2="85" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="70" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="90" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="180" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
+    <text x="180" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">$b$ is the bias.</text>
+  <line x1="275" y1="300" x2="305" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="290" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="310" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="400" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
+    <text x="400" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">$f$ is the activation...</text>
+  <line x1="495" y1="300" x2="525" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="510" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="530" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="620" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">5</text>
+    <text x="620" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Epoch: One full pass...</text>
+  <line x1="715" y1="300" x2="745" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="730" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="750" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="840" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+    <text x="840" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Batch: A subset of...</text>
+  <line x1="935" y1="300" x2="965" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="950" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="970" y="275" width="180" height="50" rx="25" fill="#059669" stroke="none" stroke-width="2"/>
+    <text x="1060" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">7</text>
+    <text x="1060" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">Iteration: One...</text>
+  <rect x="-345" y="345" width="170" height="26" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-260" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">$x_i$ are the inputs.</text>
+  <rect x="-125" y="345" width="170" height="26" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-40" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">$w_i$ are the weights.</text>
+  <rect x="95" y="345" width="170" height="26" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="180" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">$b$ is the bias.</text>
+  <rect x="315" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="400" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">$f$ is the activation</text>
+  <text x="400" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">function.</text>
+  <rect x="535" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="620" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Epoch: One full pass</text>
+  <text x="620" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">over the entire</text>
+  <text x="620" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">training...</text>
+  <rect x="755" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="840" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Batch: A subset of</text>
+  <text x="840" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">samples processed</text>
+  <text x="840" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">together....</text>
+  <rect x="975" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1060" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Iteration: One forward</text>
+  <text x="1060" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">+ backward pass on</text>
+  <text x="1060" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">one...</text>
+</svg>

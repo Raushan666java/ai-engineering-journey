@@ -14,6 +14,45 @@
 - Apply index strategies in real systems: MySQL InnoDB, PostgreSQL, MongoDB
 - Answer interview questions on index internals, trade-offs, and optimization
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/hero.svg" alt="Chapter Banner: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/architecture.svg" alt="Architecture: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/workflow.svg" alt="Workflow: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/mindmap.svg" alt="Mind Map: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/comparison.svg" alt="Comparison: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/interview-quiz.svg" alt="Quiz Card: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/12-indexing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/12-indexing/social-card.svg" alt="Social Card: Chapter 12: Indexing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

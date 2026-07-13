@@ -5,6 +5,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/33-security-perf-test/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/hero.svg" alt="Chapter Banner: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/handwritten-notes.svg" alt="Handwritten Notes: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/sticky-notes.svg" alt="Sticky Notes: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/visual-explanation.svg" alt="Visual Explanation: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/architecture.svg" alt="Architecture: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/workflow.svg" alt="Workflow: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/mindmap.svg" alt="Mind Map: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/comparison.svg" alt="Comparison: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/cheatsheet.svg" alt="Cheat Sheet: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/interview-quiz.svg" alt="Quiz Card: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/33-security-perf-test/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/33-security-perf-test/social-card.svg" alt="Social Card: Security Testing & Performance Testing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  Test Spring Security configurations using `@WithMockUser`, `@WithAnonymousUser`, and `@WithUserDetails`
 2.  Create custom security annotations like `@WithMockJwt` for JWT-authenticated tests
 3.  Write tests for method security (`@PreAuthorize`, `@PostAuthorize`) and CORS/CSRF configurations

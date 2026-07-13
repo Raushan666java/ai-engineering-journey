@@ -9,6 +9,45 @@ This chapter covers AI and machine learning interview questions for Laravel deve
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/hero.svg" alt="Chapter Banner: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/handwritten-notes.svg" alt="Handwritten Notes: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/sticky-notes.svg" alt="Sticky Notes: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/visual-explanation.svg" alt="Visual Explanation: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/architecture.svg" alt="Architecture: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/workflow.svg" alt="Workflow: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/mindmap.svg" alt="Mind Map: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/comparison.svg" alt="Comparison: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/cheatsheet.svg" alt="Cheat Sheet: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/interview-quiz.svg" alt="Quiz Card: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/54-interview-ai-ml/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/54-interview-ai-ml/social-card.svg" alt="Social Card: Chapter 54: AI/ML Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

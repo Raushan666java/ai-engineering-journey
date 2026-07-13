@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+  <!-- Desk background -->
+  <rect width="800" height="600" fill="#f8fafc"/>
+  <rect width="800" height="600" fill="#f1f5f9" opacity="0.3"/>
+  <!-- Subtle wood grain lines -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="0" y1="320" x2="800" y2="320" stroke="#e2e8f0" stroke-width="0.3"/>
+  <line x1="0" y1="280" x2="800" y2="280" stroke="#e2e8f0" stroke-width="0.3"/>
+  <!-- Sticky notes -->
+  <g transform="rotate(-6 117.5 110)" filter="url(#shadow)">
+      <rect x="30" y="30" width="175" height="160" rx="4" fill="#FEF3C7" stroke="#92400e" stroke-width="1" opacity="0.95"/>
+          <text x="42" y="60" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">The Doctor</text>
+    <text x="42" y="78" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Diagnos</text>
+    <text x="42" y="100" font-size="10" fill="#475569" font-family="Arial, sans-serif">Analogy&quot;</text>
+    <text x="42" y="114" font-size="10" fill="#475569" font-family="Arial, sans-serif">width=&quot;30%&quot;&gt;</text>
+    </g>
+
+<g transform="rotate(-6 312.5 110)" filter="url(#shadow)">
+      <rect x="225" y="30" width="175" height="160" rx="4" fill="#FEF3C7" stroke="#92400e" stroke-width="1" opacity="0.95"/>
+          <text x="237" y="60" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Medical Diagnos</text>
+    <text x="237" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">Phase | Network</text>
+    <text x="237" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">Troubleshooting</text>
+    <text x="237" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">Equivalent |</text>
+    </g>
+
+<g transform="rotate(-6 507.5 110)" filter="url(#shadow)">
+      <rect x="420" y="30" width="175" height="160" rx="4" fill="#FEF3C7" stroke="#92400e" stroke-width="1" opacity="0.95"/>
+          <text x="432" y="60" font-size="12" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Th</text>
+    <text x="432" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">eliminates half the</text>
+    <text x="432" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">possibilities in one</text>
+    <text x="432" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">test.</text>
+    </g>
+
+<g transform="rotate(-6 117.5 290)" filter="url(#shadow)">
+      <rect x="30" y="210" width="175" height="160" rx="4" fill="#DBEAFE" stroke="#1e40af" stroke-width="1" opacity="0.95"/>
+          <text x="42" y="240" font-size="12" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">1</text>
+    <text x="42" y="262" font-size="10" fill="#475569" font-family="Arial, sans-serif"></text>
+    <text x="42" y="276" font-size="10" fill="#475569" font-family="Arial, sans-serif">{result.jitter.toFixed(2)}ms`);
+```
+
+###</text>
+    <text x="42" y="290" font-size="10" fill="#475569" font-family="Arial, sans-serif">17.7.2 traceroute /</text>
+    <text x="42" y="304" font-size="10" fill="#475569" font-family="Arial, sans-serif">mtr
+
+&lt;a</text>
+    <text x="42" y="318" font-size="10" fill="#475569" font-family="Arial, sans-serif">href=&quot;../../../assets/image</text>
+    </g>
+
+<g transform="rotate(-6 507.5 110)" filter="url(#shadow)">
+      <rect x="420" y="30" width="175" height="160" rx="4" fill="#FCE7F3" stroke="#9d174d" stroke-width="1" opacity="0.95"/>
+          <text x="432" y="60" font-size="12" font-weight="bold" fill="#9d174d" font-family="Arial, sans-serif">Interview Q</text>
+    <text x="432" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">When ping fails but</text>
+    <text x="432" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">the application works,</text>
+    <text x="432" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">what is...</text>
+    </g>
+
+<g transform="rotate(-6 702.5 110)" filter="url(#shadow)">
+      <rect x="615" y="30" width="175" height="160" rx="4" fill="#FCE7F3" stroke="#9d174d" stroke-width="1" opacity="0.95"/>
+          <text x="627" y="60" font-size="12" font-weight="bold" fill="#9d174d" font-family="Arial, sans-serif">Interview Q</text>
+    <text x="627" y="82" font-size="10" fill="#475569" font-family="Arial, sans-serif">How does traceroute</text>
+    <text x="627" y="96" font-size="10" fill="#475569" font-family="Arial, sans-serif">work, and what does it</text>
+    <text x="627" y="110" font-size="10" fill="#475569" font-family="Arial, sans-serif">mean when a...</text>
+    </g>
+
+<g transform="rotate(-6 117.5 470)" filter="url(#shadow)">
+      <rect x="30" y="390" width="175" height="160" rx="4" fill="#FFEDD5" stroke="#9a3412" stroke-width="1" opacity="0.95"/>
+          <text x="42" y="420" font-size="12" font-weight="bold" fill="#9a3412" font-family="Arial, sans-serif">Warning</text>
+    <text x="42" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">5. Check VLAN</text>
+    <text x="42" y="456" font-size="10" fill="#475569" font-family="Arial, sans-serif">membership: show vlan</text>
+    <text x="42" y="470" font-size="10" fill="#475569" font-family="Arial, sans-serif">brief. A port in...</text>
+    </g>
+
+<g transform="rotate(-6 312.5 470)" filter="url(#shadow)">
+      <rect x="225" y="390" width="175" height="160" rx="4" fill="#FFEDD5" stroke="#9a3412" stroke-width="1" opacity="0.95"/>
+          <text x="237" y="420" font-size="12" font-weight="bold" fill="#9a3412" font-family="Arial, sans-serif">Warning</text>
+    <text x="237" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">Network layer problems</text>
+    <text x="237" y="456" font-size="10" fill="#475569" font-family="Arial, sans-serif">are like GPS</text>
+    <text x="237" y="470" font-size="10" fill="#475569" font-family="Arial, sans-serif">navigation errors....</text>
+    </g>
+
+<g transform="rotate(-6 507.5 470)" filter="url(#shadow)">
+      <rect x="420" y="390" width="175" height="160" rx="4" fill="#F3E8FF" stroke="#581c87" stroke-width="1" opacity="0.95"/>
+          <text x="432" y="420" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">Triage protocol:</text>
+    <text x="432" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">concept</text>
+    </g>
+
+<g transform="rotate(-6 702.5 470)" filter="url(#shadow)">
+      <rect x="615" y="390" width="175" height="160" rx="4" fill="#F3E8FF" stroke="#581c87" stroke-width="1" opacity="0.95"/>
+          <text x="627" y="420" font-size="12" font-weight="bold" fill="#581c87" font-family="Arial, sans-serif">The 80/20 rule:</text>
+    <text x="627" y="442" font-size="10" fill="#475569" font-family="Arial, sans-serif">concept</text>
+    </g>
+  <!-- Coffee mug -->
+  <g transform="translate(710, 460)">
+    <rect x="0" y="10" width="40" height="45" rx="5" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1"/>
+    <path d="M40,18 Q55,22 40,32" fill="none" stroke="#94a3b8" stroke-width="2"/>
+    <ellipse cx="20" cy="10" rx="20" ry="6" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1"/>
+    <ellipse cx="20" cy="10" rx="16" ry="4" fill="#1e293b" opacity="0.2"/>
+  </g>
+  <!-- Pen -->
+  <g transform="translate(680, 530) rotate(-30)">
+    <rect x="0" y="0" width="80" height="5" rx="2" fill="#2563eb"/>
+    <polygon points="80,0 90,2.5 80,5" fill="#1e293b"/>
+  </g>
+  <!-- Header -->
+  <text x="400" y="592" font-size="11" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 17: Network Troubleshooting</text>
+</svg>

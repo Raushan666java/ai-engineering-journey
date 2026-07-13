@@ -6,6 +6,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/hero.svg" alt="Chapter Banner: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/handwritten-notes.svg" alt="Handwritten Notes: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/sticky-notes.svg" alt="Sticky Notes: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/visual-explanation.svg" alt="Visual Explanation: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/architecture.svg" alt="Architecture: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/workflow.svg" alt="Workflow: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/mindmap.svg" alt="Mind Map: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/comparison.svg" alt="Comparison: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/cheatsheet.svg" alt="Cheat Sheet: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/interview-quiz.svg" alt="Quiz Card: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/mock-tests/02-nic-scientist-b/social-card.svg" alt="Social Card: NIC Scientist B — Full-Length Mock Test" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Test Pattern
 
 | Section | Questions | Marks | Duration | Cutoff (Gen/OBC/SC/ST) |

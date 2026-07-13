@@ -6,6 +6,45 @@ This chapter covers everything you need to know about testing Java and Spring Bo
 
 ![Testing Interview Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/62-interview-testing.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/62-interview-testing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/hero.svg" alt="Chapter Banner: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/handwritten-notes.svg" alt="Handwritten Notes: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/sticky-notes.svg" alt="Sticky Notes: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/visual-explanation.svg" alt="Visual Explanation: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/architecture.svg" alt="Architecture: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/workflow.svg" alt="Workflow: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/mindmap.svg" alt="Mind Map: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/comparison.svg" alt="Comparison: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/cheatsheet.svg" alt="Cheat Sheet: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/interview-quiz.svg" alt="Quiz Card: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/62-interview-testing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/62-interview-testing/social-card.svg" alt="Social Card: Testing Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

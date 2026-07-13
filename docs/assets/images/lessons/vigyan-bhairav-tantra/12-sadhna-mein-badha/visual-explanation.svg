@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">अध्याय १२: साधना में बाधाएँ — ओशो का समाधान</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Diagnos: = this.diagnose(primary.obstacle, primary.severity);</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">विधि — &quot;पाँच मिनट का नियम&quot;: → विधि — &quot;संदेह को देखो,</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">उत्तर मत दो&quot;: → विधि: → विधि: → विधि: → प्रश्न १:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">ओशो की पाँच विशिष्ट बाधाओं को उनके अनूठे दृष्टिकोण से समझेंगे →</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">जानेंगे कि क्यों ओशो कहते हैं — &quot;अनुभवों में आसक्ति सबसे बड़ी</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">बाधा है&quot; → ओशो की प्रसिद्ध कहानियों — गधे वाली, अँगूठी वाली — के</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">माध्यम से बाधाओं का समाधान पाएँगे → &quot;खोज मत करो — बस देखो&quot;</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">के सिद्धांत को आत्मसात करेंगे → TypeScript में बाधा निदान उपकरण</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">बनाएँगे → बाधाओं को शत्रु नहीं, बल्कि द्वार के रूप में देखना सीखेंगे →</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">क) आलस्य → ख) संदेह</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {remedy.duration_minutes} मिनट)`);
+        plan.push(&apos;&apos;);</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">plan.push(&apos;🗓️ साप्ताहिक कार्यक्र | 2:</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">{secRemedy.duration_minutes} मिनट`);
+            } else {</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">plan.push(` | 3: {analysis.primaryBlockage.diagnosis.oshoRootCause}`);</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">report.push(&apos;&apos;);
+        report.push(&apos; | 4:</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">{analysis.oshoRemedy.oshoWarning}`);</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">report.push(&apos;&apos;);
+        report.push(&apos;📅 साप्ताहिक योज</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Code Example 1: mermaid</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">अध्याय १२: साधना में बाधाएँ — ओशो का समाधान</text>
+</svg>

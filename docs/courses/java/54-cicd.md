@@ -3,6 +3,45 @@
 > **Previous:** [Kubernetes](./53-kubernetes.md) | **Next:** [Observability](./55-observability.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/54-cicd/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/hero.svg" alt="Chapter Banner: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/handwritten-notes.svg" alt="Handwritten Notes: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/sticky-notes.svg" alt="Sticky Notes: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/visual-explanation.svg" alt="Visual Explanation: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/architecture.svg" alt="Architecture: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/workflow.svg" alt="Workflow: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/mindmap.svg" alt="Mind Map: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/comparison.svg" alt="Comparison: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/cheatsheet.svg" alt="Cheat Sheet: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/interview-quiz.svg" alt="Quiz Card: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/54-cicd/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/54-cicd/social-card.svg" alt="Social Card: CI/CD for Spring Boot" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

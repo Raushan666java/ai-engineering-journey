@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="700" viewBox="0 0 800 700">
+  <defs>
+    <radialGradient id="mbg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#mbg)" rx="4"/>
+  <!-- Grid dots -->
+  <pattern id="mdots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="#e2e8f0"/>
+  </pattern>
+  <rect width="800" height="700" fill="url(#mdots)"/>
+    <!-- Center node -->
+  <rect x="320" y="322" width="160" height="56" rx="16" fill="#2563eb"/>
+    <text x="400" y="344" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">सामान्य गलतियाँ और</text>
+  <text x="400" y="362" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">समाधान: विज्ञान...</text>
+</svg>

@@ -3,6 +3,45 @@
 > **Previous:** [Spring Modulith](./51-modulith.md) | **Next:** [Kubernetes](./53-kubernetes.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/52-docker/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/hero.svg" alt="Chapter Banner: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/handwritten-notes.svg" alt="Handwritten Notes: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/sticky-notes.svg" alt="Sticky Notes: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/visual-explanation.svg" alt="Visual Explanation: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/architecture.svg" alt="Architecture: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/workflow.svg" alt="Workflow: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/mindmap.svg" alt="Mind Map: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/comparison.svg" alt="Comparison: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/cheatsheet.svg" alt="Cheat Sheet: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/interview-quiz.svg" alt="Quiz Card: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/52-docker/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/52-docker/social-card.svg" alt="Social Card: Docker & Containerization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

@@ -3,6 +3,45 @@
 > **Previous:** [Spring AI](./47-spring-ai.md) | **Next:** [Spring Batch](./49-batch.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/48-graphql/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/hero.svg" alt="Chapter Banner: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/handwritten-notes.svg" alt="Handwritten Notes: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/sticky-notes.svg" alt="Sticky Notes: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/visual-explanation.svg" alt="Visual Explanation: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/architecture.svg" alt="Architecture: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/workflow.svg" alt="Workflow: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/mindmap.svg" alt="Mind Map: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/comparison.svg" alt="Comparison: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/cheatsheet.svg" alt="Cheat Sheet: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/interview-quiz.svg" alt="Quiz Card: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/48-graphql/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/48-graphql/social-card.svg" alt="Social Card: Spring GraphQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

@@ -9,6 +9,45 @@
 
 After completing this chapter you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/hero.svg" alt="Chapter Banner: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/architecture.svg" alt="Architecture: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/workflow.svg" alt="Workflow: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/mindmap.svg" alt="Mind Map: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/comparison.svg" alt="Comparison: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/interview-quiz.svg" alt="Quiz Card: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/02-cryptography/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/02-cryptography/social-card.svg" alt="Social Card: Chapter 2: Cryptography" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Compare symmetric and asymmetric encryption across performance, key management, and use cases.
 - Explain the internal structure of AES (SubBytes, ShiftRows, MixColumns, AddRoundKey) and contrast ECB/CBC/GCM/CTR modes.
 - Describe the mathematical foundations of RSA (modular arithmetic, Euler's theorem) and ECC (elliptic curve discrete log).

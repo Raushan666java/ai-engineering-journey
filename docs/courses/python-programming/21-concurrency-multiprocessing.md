@@ -12,6 +12,45 @@ After completing this chapter, you will be able to:
 - Parallelize ML workflows: hyperparameter tuning, batch inference, ensemble evaluation
 - Avoid shared-state pitfalls and serialization bottlenecks
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/hero.svg" alt="Chapter Banner: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/sticky-notes.svg" alt="Sticky Notes: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/visual-explanation.svg" alt="Visual Explanation: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/architecture.svg" alt="Architecture: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/workflow.svg" alt="Workflow: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/mindmap.svg" alt="Mind Map: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/comparison.svg" alt="Comparison: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/cheatsheet.svg" alt="Cheat Sheet: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/interview-quiz.svg" alt="Quiz Card: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/21-concurrency-multiprocessing/social-card.svg" alt="Social Card: Chapter 21: Concurrency, Multiprocessing & Parallelism" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Concurrency and Multiprocessing](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/21-concurrency-multiprocessing.png)
 
 

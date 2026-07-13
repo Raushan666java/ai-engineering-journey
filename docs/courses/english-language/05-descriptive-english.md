@@ -10,6 +10,45 @@ By the end of this chapter, you will be able to:
 - Manage time effectively during the descriptive English paper
 - Avoid common mistakes in grammar, structure, and presentation
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/hero.svg" alt="Chapter Banner: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/architecture.svg" alt="Architecture: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/workflow.svg" alt="Workflow: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/mindmap.svg" alt="Mind Map: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/comparison.svg" alt="Comparison: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/interview-quiz.svg" alt="Quiz Card: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/english-language/05-descriptive-english/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/english-language/05-descriptive-english/social-card.svg" alt="Social Card: Chapter 5: Descriptive English" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

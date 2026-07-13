@@ -8,6 +8,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/18-file-handling/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/hero.svg" alt="Chapter Banner: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/handwritten-notes.svg" alt="Handwritten Notes: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/sticky-notes.svg" alt="Sticky Notes: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/visual-explanation.svg" alt="Visual Explanation: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/architecture.svg" alt="Architecture: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/workflow.svg" alt="Workflow: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/mindmap.svg" alt="Mind Map: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/comparison.svg" alt="Comparison: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/cheatsheet.svg" alt="Cheat Sheet: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/interview-quiz.svg" alt="Quiz Card: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/18-file-handling/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/18-file-handling/social-card.svg" alt="Social Card: File Upload, Download & Streaming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Accept single and multiple file uploads using `MultipartFile` and `@RequestParam`
 - Configure upload limits, temp directories, and encoding via `spring.servlet.multipart.*`
 - Build a custom storage service that abstracts file persistence

@@ -6,6 +6,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/05-functional-deep/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/hero.svg" alt="Chapter Banner: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/handwritten-notes.svg" alt="Handwritten Notes: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/sticky-notes.svg" alt="Sticky Notes: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/visual-explanation.svg" alt="Visual Explanation: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/architecture.svg" alt="Architecture: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/workflow.svg" alt="Workflow: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/mindmap.svg" alt="Mind Map: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/comparison.svg" alt="Comparison: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/cheatsheet.svg" alt="Cheat Sheet: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/interview-quiz.svg" alt="Quiz Card: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/05-functional-deep/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/05-functional-deep/social-card.svg" alt="Social Card: Functional Programming in Practice" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Apply advanced stream operations including `mapMulti`, custom `distinctBy`, `zip`, and `Stream.iterate` with predicates
 - Design custom `Collector` implementations using all five components of the `Collector` interface
 - Recognize and construct monad patterns with `Optional`, `CompletableFuture`, and custom monad-like types including `Validation`

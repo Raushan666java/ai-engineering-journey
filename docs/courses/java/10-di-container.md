@@ -12,6 +12,45 @@ Every example in this chapter is complete and compilable. The recommended way to
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/10-di-container/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/hero.svg" alt="Chapter Banner: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/handwritten-notes.svg" alt="Handwritten Notes: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/sticky-notes.svg" alt="Sticky Notes: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/visual-explanation.svg" alt="Visual Explanation: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/architecture.svg" alt="Architecture: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/workflow.svg" alt="Workflow: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/mindmap.svg" alt="Mind Map: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/comparison.svg" alt="Comparison: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/cheatsheet.svg" alt="Cheat Sheet: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/interview-quiz.svg" alt="Quiz Card: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/10-di-container/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/10-di-container/social-card.svg" alt="Social Card: Dependency Injection & IoC Container" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Bootstrap and configure all major `ApplicationContext` implementations
 - Distinguish stereotype annotations (`@Component`, `@Service`, `@Repository`, `@Controller`, `@RestController`) and explain their inclusion rules
 - Declare beans via both `@Component` scanning and `@Bean` factory methods

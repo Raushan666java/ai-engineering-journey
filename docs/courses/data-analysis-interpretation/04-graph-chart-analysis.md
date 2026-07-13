@@ -10,6 +10,45 @@ By the end of this chapter, you will be able to:
 - Interpret line + bar combo charts with dual axes
 - Generate and analyse chart data programmatically using TypeScript
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/hero.svg" alt="Chapter Banner: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/architecture.svg" alt="Architecture: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/workflow.svg" alt="Workflow: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/mindmap.svg" alt="Mind Map: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/comparison.svg" alt="Comparison: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/interview-quiz.svg" alt="Quiz Card: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/04-graph-chart-analysis/social-card.svg" alt="Social Card: Chapter 4: Graph and Chart Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#ffffff" rx="6"/>
+  <!-- Top decoration -->
+  <rect x="0" y="0" width="600" height="4" fill="url(#qgrad)"/>
+  <defs>
+    <linearGradient id="qgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+    <text x="300" y="60" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Laravel MCP → Model Context...</text>
+  <text x="300" y="82" font-size="12" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Self-Test Quiz — 0 Questions</text>
+  <text x="300" y="122" font-size="11" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Difficulty: Mixed | Source: Chapter 15: Laravel MCP →...</text>
+</svg>

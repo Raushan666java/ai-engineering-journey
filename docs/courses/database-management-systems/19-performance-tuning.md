@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/hero.svg" alt="Chapter Banner: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/handwritten-notes.svg" alt="Handwritten Notes: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/sticky-notes.svg" alt="Sticky Notes: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/visual-explanation.svg" alt="Visual Explanation: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/architecture.svg" alt="Architecture: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/workflow.svg" alt="Workflow: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/mindmap.svg" alt="Mind Map: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/comparison.svg" alt="Comparison: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/cheatsheet.svg" alt="Cheat Sheet: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/interview-quiz.svg" alt="Quiz Card: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/19-performance-tuning/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/19-performance-tuning/social-card.svg" alt="Social Card: Chapter 19: Performance Tuning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Select the right index type (BRIN, GiST, GIN, SP-GiST) for real-world workloads
 - Monitor and maintain indexes to prevent bloat and fragmentation
 - Design indexes based on actual query patterns, not theory

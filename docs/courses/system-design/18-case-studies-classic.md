@@ -12,6 +12,45 @@
 - Understand how to pre-generate unique identifiers to avoid database contention on write paths
 - Compare token bucket, leaky bucket, fixed window, and sliding window algorithms for rate limiting at scale
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/hero.svg" alt="Chapter Banner: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/architecture.svg" alt="Architecture: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/workflow.svg" alt="Workflow: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/mindmap.svg" alt="Mind Map: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/comparison.svg" alt="Comparison: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/interview-quiz.svg" alt="Quiz Card: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/18-case-studies-classic/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/18-case-studies-classic/social-card.svg" alt="Social Card: Chapter 18: Case Study — URL Shortener, Rate Limiter, Pastebin" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 3: Solving Problems by Searching</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="20" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="100" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Domain</text>
+  <rect x="180" y="90" width="350" height="44" rx="0" fill="#2563eb"/>
+    <text x="355" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Problem</text>
+  <rect x="530" y="90" width="350" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="705" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">How Search Helps</text>
+  <rect x="20" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">GPS Navigation</text>
+  <rect x="180" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Find shortest route from A to B</text>
+  <rect x="530" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">A* search evaluates roads by...</text>
+  <rect x="20" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Web Search (Google)</text>
+  <rect x="180" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Crawl billions of pages</text>
+  <rect x="530" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">BFS ensures breadth coverage of...</text>
+  <rect x="20" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chess AI (Stockfish)</text>
+  <rect x="180" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Evaluate next move under time...</text>
+  <rect x="530" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">IDDFS-based minimax with...</text>
+  <rect x="20" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Robotics</text>
+  <rect x="180" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Plan collision-free motion</text>
+  <rect x="530" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">BFS/A* on configuration space grid</text>
+  <rect x="20" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Game Development</text>
+  <rect x="180" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">NPC pathfinding around obstacles</text>
+  <rect x="530" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">A* on navigation mesh</text>
+  <rect x="20" y="314" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="336" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Social Networks</text>
+  <rect x="180" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Find shortest connection path</text>
+  <rect x="530" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Bidirectional BFS halves search...</text>
+  <rect x="20" y="350" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="372" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Logistics / Delivery</text>
+  <rect x="180" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Optimize delivery routes</text>
+  <rect x="530" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">UCS handles varying road costs</text>
+  <rect x="20" y="386" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="408" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Puzzle Solving</text>
+  <rect x="180" y="386" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Solve 8-puzzle, Rubik&apos;s cube</text>
+  <rect x="530" y="386" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="408" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">IDDFS finds optimal solution with...</text>
+</svg>

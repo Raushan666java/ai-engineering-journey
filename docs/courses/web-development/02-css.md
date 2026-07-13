@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** CSS selectors allow precise element targeting using combinators, pseudo-classes, and attribute patterns.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/web-development/02-css/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/hero.svg" alt="Chapter Banner: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/sticky-notes.svg" alt="Sticky Notes: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/visual-explanation.svg" alt="Visual Explanation: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/architecture.svg" alt="Architecture: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/workflow.svg" alt="Workflow: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/mindmap.svg" alt="Mind Map: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/comparison.svg" alt="Comparison: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/cheatsheet.svg" alt="Cheat Sheet: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/interview-quiz.svg" alt="Quiz Card: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/02-css/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/02-css/social-card.svg" alt="Social Card: Chapter 2 → CSS3" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

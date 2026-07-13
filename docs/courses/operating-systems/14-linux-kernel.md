@@ -15,6 +15,45 @@
 - Compare kernel synchronization primitives: spinlock, mutex, RCU
 - Understand control groups and namespaces as container building blocks
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/hero.svg" alt="Chapter Banner: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/architecture.svg" alt="Architecture: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/workflow.svg" alt="Workflow: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/mindmap.svg" alt="Mind Map: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/comparison.svg" alt="Comparison: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/interview-quiz.svg" alt="Quiz Card: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/operating-systems/14-linux-kernel/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/operating-systems/14-linux-kernel/social-card.svg" alt="Social Card: Chapter 14: Linux Kernel Internals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Prerequisites
 
 | Concept | Why Needed |

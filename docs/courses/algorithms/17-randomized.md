@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/17-randomized/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/hero.svg" alt="Chapter Banner: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/handwritten-notes.svg" alt="Handwritten Notes: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/sticky-notes.svg" alt="Sticky Notes: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/visual-explanation.svg" alt="Visual Explanation: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/architecture.svg" alt="Architecture: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/workflow.svg" alt="Workflow: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/mindmap.svg" alt="Mind Map: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/comparison.svg" alt="Comparison: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/cheatsheet.svg" alt="Cheat Sheet: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/interview-quiz.svg" alt="Quiz Card: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/17-randomized/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/17-randomized/social-card.svg" alt="Social Card: Chapter 17: Randomized Algorithms" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Distinguish between Monte Carlo and Las Vegas randomized algorithms.
 2. Implement and analyze randomized quickselect and randomized quicksort.
 3. Implement the Miller-Rabin primality test.

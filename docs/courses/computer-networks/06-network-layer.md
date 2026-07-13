@@ -13,6 +13,45 @@
 7. Implement IPv4 header parsing, subnet calculation, ARP cache, and fragmentation simulation in C++ and Python.
 8. Analyze time and space complexity of network layer algorithms with reasoning.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/hero.svg" alt="Chapter Banner: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/sticky-notes.svg" alt="Sticky Notes: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/visual-explanation.svg" alt="Visual Explanation: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/architecture.svg" alt="Architecture: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/workflow.svg" alt="Workflow: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/mindmap.svg" alt="Mind Map: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/comparison.svg" alt="Comparison: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/interview-quiz.svg" alt="Quiz Card: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/06-network-layer/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/06-network-layer/social-card.svg" alt="Social Card: Chapter 6: The Network Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ### Chapter at a Glance

@@ -6,6 +6,45 @@
 
 By the conclusion of this chapter, the student will be able to: (1) describe the transformer architecture and its significance; (2) explain foundation models and their emergent abilities; (3) implement in-context learning and prompt engineering; (4) understand multimodal model architectures; (5) describe AI agent architectures including ReAct, MCP, and AutoGPT; (6) implement generative AI algorithms from scratch; (7) design autonomous agent systems; (8) evaluate modern AI systems across real-world applications.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/hero.svg" alt="Chapter Banner: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/handwritten-notes.svg" alt="Handwritten Notes: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/sticky-notes.svg" alt="Sticky Notes: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/visual-explanation.svg" alt="Visual Explanation: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/architecture.svg" alt="Architecture: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/workflow.svg" alt="Workflow: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/mindmap.svg" alt="Mind Map: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/comparison.svg" alt="Comparison: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/cheatsheet.svg" alt="Cheat Sheet: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/interview-quiz.svg" alt="Quiz Card: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/17-modern-ai/social-card.svg" alt="Social Card: Chapter 17: Modern Artificial Intelligence" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Modern AI Matters
 
 **Real-World Analogy:** Traditional AI was like a cookbook — every recipe (rule) had to be written by hand, ingredient by ingredient. If you wanted the system to recognize a cat, you had to manually define whisker length, ear shape, fur texture, and eye color. Modern AI is like a chef who learns to cook by eating thousands of meals — the system discovers the patterns itself from data, generalizes to new dishes, and even creates novel recipes no human ever wrote.

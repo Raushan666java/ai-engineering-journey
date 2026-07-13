@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/hero.svg" alt="Chapter Banner: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/handwritten-notes.svg" alt="Handwritten Notes: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/sticky-notes.svg" alt="Sticky Notes: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/visual-explanation.svg" alt="Visual Explanation: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/architecture.svg" alt="Architecture: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/workflow.svg" alt="Workflow: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/mindmap.svg" alt="Mind Map: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/comparison.svg" alt="Comparison: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/cheatsheet.svg" alt="Cheat Sheet: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/interview-quiz.svg" alt="Quiz Card: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/20-zero-trust-architecture/social-card.svg" alt="Social Card: Chapter 20: Zero Trust & Enterprise Security Architecture" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  **Trace** the historical evolution of Zero Trust from Forrester's 2010 initiative through NIST SP 800-207 and industry adoption at Google BeyondCorp.
 2.  **Explain** the seven core principles of Zero Trust—never trust/always verify, assume breach, least privilege, microsegmentation, and continuous validation.
 3.  **Diagram** the NIST SP 800-207 logical architecture including the Policy Engine (PE), Policy Administrator (PA), and Policy Enforcement Point (PEP).

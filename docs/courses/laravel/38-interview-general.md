@@ -7,6 +7,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/38-interview-general/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/hero.svg" alt="Chapter Banner: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/handwritten-notes.svg" alt="Handwritten Notes: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/sticky-notes.svg" alt="Sticky Notes: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/visual-explanation.svg" alt="Visual Explanation: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/architecture.svg" alt="Architecture: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/workflow.svg" alt="Workflow: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/mindmap.svg" alt="Mind Map: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/comparison.svg" alt="Comparison: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/cheatsheet.svg" alt="Cheat Sheet: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/interview-quiz.svg" alt="Quiz Card: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/38-interview-general/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/38-interview-general/social-card.svg" alt="Social Card: Chapter 38: Laravel General Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

@@ -15,6 +15,45 @@
 - Write multi-threaded programs with pthreads
 - Understand type punning and strict aliasing rules
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/hero.svg" alt="Chapter Banner: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/handwritten-notes.svg" alt="Handwritten Notes: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/sticky-notes.svg" alt="Sticky Notes: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/visual-explanation.svg" alt="Visual Explanation: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/architecture.svg" alt="Architecture: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/workflow.svg" alt="Workflow: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/mindmap.svg" alt="Mind Map: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/comparison.svg" alt="Comparison: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/cheatsheet.svg" alt="Cheat Sheet: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/interview-quiz.svg" alt="Quiz Card: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/c-programming/18-advanced-c/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/c-programming/18-advanced-c/social-card.svg" alt="Social Card: Chapter 18: Advanced C" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 <a href="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">

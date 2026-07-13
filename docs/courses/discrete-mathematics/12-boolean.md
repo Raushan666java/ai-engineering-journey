@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/hero.svg" alt="Chapter Banner: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/architecture.svg" alt="Architecture: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/workflow.svg" alt="Workflow: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/mindmap.svg" alt="Mind Map: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/comparison.svg" alt="Comparison: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/interview-quiz.svg" alt="Quiz Card: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/12-boolean/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/12-boolean/social-card.svg" alt="Social Card: Chapter 12: Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Define Boolean algebra and identify its axioms and properties
 - Simplify Boolean expressions using identities and laws
 - Apply De Morgan's laws to transform expressions

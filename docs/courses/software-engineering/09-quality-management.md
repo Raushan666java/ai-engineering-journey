@@ -11,6 +11,45 @@
 - [x] Measure quality using ISO 25010 characteristics
 - [x] Build production-grade quality metric collection and evaluation tools
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/hero.svg" alt="Chapter Banner: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/handwritten-notes.svg" alt="Handwritten Notes: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/sticky-notes.svg" alt="Sticky Notes: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/visual-explanation.svg" alt="Visual Explanation: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/architecture.svg" alt="Architecture: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/workflow.svg" alt="Workflow: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/mindmap.svg" alt="Mind Map: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/comparison.svg" alt="Comparison: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/cheatsheet.svg" alt="Cheat Sheet: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/interview-quiz.svg" alt="Quiz Card: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/software-engineering/09-quality-management/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/software-engineering/09-quality-management/social-card.svg" alt="Social Card: Software Quality Management" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Theory
 
 ### What is Software Quality?

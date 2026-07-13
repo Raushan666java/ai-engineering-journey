@@ -11,6 +11,45 @@ By the end of this chapter, students will be able to:
 - Understand short-circuit evaluation
 - Apply the ternary conditional expression
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/hero.svg" alt="Chapter Banner: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/architecture.svg" alt="Architecture: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/workflow.svg" alt="Workflow: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/mindmap.svg" alt="Mind Map: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/comparison.svg" alt="Comparison: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/interview-quiz.svg" alt="Quiz Card: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/03-control-flow/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/03-control-flow/social-card.svg" alt="Social Card: Chapter 3: Control Flow" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Control Flow](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/03-control-flow.png)
 
 

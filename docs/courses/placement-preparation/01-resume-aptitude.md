@@ -6,6 +6,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/hero.svg" alt="Chapter Banner: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/handwritten-notes.svg" alt="Handwritten Notes: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/sticky-notes.svg" alt="Sticky Notes: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/visual-explanation.svg" alt="Visual Explanation: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/architecture.svg" alt="Architecture: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/workflow.svg" alt="Workflow: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/mindmap.svg" alt="Mind Map: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/comparison.svg" alt="Comparison: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/cheatsheet.svg" alt="Cheat Sheet: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/interview-quiz.svg" alt="Quiz Card: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/01-resume-aptitude/social-card.svg" alt="Social Card: Resume Building, LinkedIn Optimization & Aptitude Crash Course" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

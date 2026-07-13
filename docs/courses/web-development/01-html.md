@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** Semantic HTML5 elements provide meaningful document structure that aids accessibility and SEO.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/web-development/01-html/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/hero.svg" alt="Chapter Banner: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/sticky-notes.svg" alt="Sticky Notes: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/visual-explanation.svg" alt="Visual Explanation: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/architecture.svg" alt="Architecture: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/workflow.svg" alt="Workflow: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/mindmap.svg" alt="Mind Map: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/comparison.svg" alt="Comparison: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/cheatsheet.svg" alt="Cheat Sheet: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/interview-quiz.svg" alt="Quiz Card: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/01-html/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/01-html/social-card.svg" alt="Social Card: Chapter 1 → HTML5" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

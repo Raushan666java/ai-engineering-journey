@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/hero.svg" alt="Chapter Banner: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/handwritten-notes.svg" alt="Handwritten Notes: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/sticky-notes.svg" alt="Sticky Notes: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/visual-explanation.svg" alt="Visual Explanation: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/architecture.svg" alt="Architecture: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/workflow.svg" alt="Workflow: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/mindmap.svg" alt="Mind Map: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/comparison.svg" alt="Comparison: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/cheatsheet.svg" alt="Cheat Sheet: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/interview-quiz.svg" alt="Quiz Card: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/02-digital-payment-systems/social-card.svg" alt="Social Card: Chapter 02: Digital Payment Systems" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Explain UPI architecture including NPCI role, PSPs, issuer/acquirer banks, and the UPI reference number flow
 - Compare IMPS, NEFT, and RTGS on settlement type, timing, and transaction limits
 - Describe RuPay card processing and how it differs from Visa/Mastercard

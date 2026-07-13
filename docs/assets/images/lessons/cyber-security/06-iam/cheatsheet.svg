@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 6: Identity &amp; Access Management</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">Comp: authentication</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">factors (knowledge,</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">possession,...</text>
+  <text x="35" y="165" font-size="9" fill="#475569" font-family="Arial, sans-serif">Hardw: Tokens (U2F /</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">FIDO2 / WebAuthn</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">Passkeys)</text>
+  <text x="35" y="206" font-size="9" fill="#475569" font-family="Arial, sans-serif">Identity-Aw: Proxy) in</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">front of all apps</text>
+  <text x="35" y="234" font-size="9" fill="#475569" font-family="Arial, sans-serif">Th: was a pipeline</text>
+  <text x="35" y="247" font-size="9" fill="#475569" font-family="Arial, sans-serif">compromise, not a user</text>
+  <text x="35" y="260" font-size="9" fill="#475569" font-family="Arial, sans-serif">login</text>
+  <text x="35" y="275" font-size="9" fill="#475569" font-family="Arial, sans-serif">Secure Softw:</text>
+  <text x="35" y="288" font-size="9" fill="#475569" font-family="Arial, sans-serif">Development Framework</text>
+  <text x="35" y="301" font-size="9" fill="#475569" font-family="Arial, sans-serif">mandate</text>
+  <text x="35" y="316" font-size="9" fill="#475569" font-family="Arial, sans-serif">Tokens: bearer tokens →</text>
+  <text x="35" y="329" font-size="9" fill="#475569" font-family="Arial, sans-serif">possession = access</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">Modular Crypt Format::</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">[22-char-salt][31-char-hash]`...</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">bits =...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">3:</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">bitIdx = 0
+    foreach (</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">j = 4;</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: What is the difference between authentication and...</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Explain OAuth 2.0 Authorization Code flow with PKCE....</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Compare passwords, TOTP, and FIDO2/WebAuthn passkeys.</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ sudo chage -W 14 username    #...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | FAR | False Accept Rate →...</text>
+  <text x="315" y="536" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | FRR | False Reject Rate →...</text>
+  <text x="315" y="552" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | RBAC | Simple role-based access;...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 6: Identity &amp; Access Management — Quick Reference</text>
+</svg>

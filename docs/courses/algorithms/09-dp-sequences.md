@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/hero.svg" alt="Chapter Banner: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/architecture.svg" alt="Architecture: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/workflow.svg" alt="Workflow: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/mindmap.svg" alt="Mind Map: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/comparison.svg" alt="Comparison: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/interview-quiz.svg" alt="Quiz Card: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/09-dp-sequences/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/09-dp-sequences/social-card.svg" alt="Social Card: Chapter 9: Dynamic Programming — Sequences" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Compute the longest common subsequence (LCS) and reconstruct the sequence.
 2. Compute the longest increasing subsequence (LIS) in both \( O(n^2) \) and \( O(n \log n) \) time.
 3. Compute the edit distance (Levenshtein distance) between two strings.

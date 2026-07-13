@@ -10,6 +10,45 @@
 - Implement caching strategies for embeddings to reduce API costs and latency
 - Apply reranking to improve search result relevance using supported providers
 - Test and mock AI SDK operations using the built-in fake implementations
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/hero.svg" alt="Chapter Banner: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/architecture.svg" alt="Architecture: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/workflow.svg" alt="Workflow: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/mindmap.svg" alt="Mind Map: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/comparison.svg" alt="Comparison: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/interview-quiz.svg" alt="Quiz Card: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/14-ai-sdk-media/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/14-ai-sdk-media/social-card.svg" alt="Social Card: Chapter 14: Laravel AI SDK → Images, Audio, Transcriptions & Embeddings" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Key Topics |

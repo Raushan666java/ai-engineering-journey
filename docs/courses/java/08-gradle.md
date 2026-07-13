@@ -12,6 +12,45 @@ This chapter covers Gradle from first principles through advanced production pat
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/08-gradle/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/hero.svg" alt="Chapter Banner: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/handwritten-notes.svg" alt="Handwritten Notes: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/sticky-notes.svg" alt="Sticky Notes: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/visual-explanation.svg" alt="Visual Explanation: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/architecture.svg" alt="Architecture: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/workflow.svg" alt="Workflow: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/mindmap.svg" alt="Mind Map: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/comparison.svg" alt="Comparison: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/cheatsheet.svg" alt="Cheat Sheet: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/interview-quiz.svg" alt="Quiz Card: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/08-gradle/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/08-gradle/social-card.svg" alt="Social Card: Gradle Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Explain the Gradle build lifecycle: initialization, configuration, and execution phases
 - Write and run builds using both Groovy DSL and Kotlin DSL
 - Define tasks with `doLast`, `doFirst`, `@TaskAction`, `dependsOn`, and Gradle's built-in task types (`Copy`, `Exec`, `Jar`, `Zip`, `Delete`, `JavaExec`)

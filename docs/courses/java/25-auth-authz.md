@@ -11,6 +11,45 @@ This chapter covers the full authentication and authorization architecture of Sp
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/25-auth-authz/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/hero.svg" alt="Chapter Banner: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/handwritten-notes.svg" alt="Handwritten Notes: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/sticky-notes.svg" alt="Sticky Notes: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/visual-explanation.svg" alt="Visual Explanation: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/architecture.svg" alt="Architecture: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/workflow.svg" alt="Workflow: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/mindmap.svg" alt="Mind Map: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/comparison.svg" alt="Comparison: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/cheatsheet.svg" alt="Cheat Sheet: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/interview-quiz.svg" alt="Quiz Card: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/25-auth-authz/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/25-auth-authz/social-card.svg" alt="Social Card: Authentication & Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Configure `SecurityFilterChain` with `@EnableWebSecurity` and understand the auto-configuration that Spring Boot provides
 - Add custom `Filter` implementations at specific positions in the filter chain
 - Understand `ProviderManager`, `DaoAuthenticationProvider`, and how to write a custom `AuthenticationProvider`

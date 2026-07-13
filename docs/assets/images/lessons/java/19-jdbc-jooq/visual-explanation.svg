@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">JDBC, Connection Pooling &amp; JOOQ</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">JDBC Core: `DriverManager` for basic connections. `PreparedStatement`</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">prevents SQL...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">SQL Injection Ã¢â‚¬â€ The Critical Problem → Statement execute</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">methods: → PreparedStatement setter methods: → ResultSet navigation</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">methods: → HikariCP → HikariCP configuration parameters:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Establish database connections using DriverManager and DataSource →</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">Execute SQL queries with Statement, PreparedStatement, and</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">CallableStatement → Prevent SQL injection attacks using parameterized</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">queries → Navigate result sets and extract metadata from queries and</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">database schemas → Perform batch updates for efficient bulk operations</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Use scrollable and updatable ResultSets for advanced data navigation</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Configure and tune HikariCP connection pools in Spring Boot →</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">Leverage JdbcTemplate for simplified database access</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: // BEGIN // UPDATE accounts SET balance = balance - p_amount WHERE</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">id = p_from_account; // UPDATE accounts SET balance = balance +</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">p_amount WHERE id = | 2: // BEGIN // RETURN (SELECT SUM(quantity *</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">unit_price) FROM order_items WHERE order_id = p_order_id); // END; |</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">3: // BEGIN
+    //     UPDATE accounts SET balance = balance -</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">p_amount WHERE id = p_from_account;
+   | 4: ;
+
+    public String</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">transferFunds(long fromAccount, long toAccount, BigDecimal amount)</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">throws SQL | 5: // BEGIN
+    //     RETURN (SELECT SUM(quantity *</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">unit_price) FROM order_items WHERE order_id = p_o</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">JDBC Core; DataSource &amp; HikariCP; JdbcTemplate</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">JDBC, Connection Pooling &amp; JOOQ</text>
+</svg>

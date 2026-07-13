@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Paper background -->
+  <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
+  <rect width="600" height="800" fill="url(#grid)"/>
+  <!-- Red margin line -->
+  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <!-- Guide lines -->
+  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Page number -->
+  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <!-- Content -->
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 6: Queues</text>
+    <line x1="55" y1="128" x2="560" y2="128" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="152" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
+    <text x="60" y="180" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Circular array queue needs one sentinel</text>
+    <text x="60" y="202" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">slot: Use front and rear indices where</text>
+    <text x="60" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">an empty queue has front == rear, and a</text>
+    <text x="60" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">full...</text>
+    <text x="60" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">BFS is queue&apos;s natural domain: Push</text>
+    <text x="60" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">the start node, mark visited, then</text>
+    <text x="60" y="312" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">repeatedly pop, process neighbors,</text>
+    <text x="60" y="334" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">and...</text>
+    <text x="60" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Monotonic queue for sliding window max</tspan>: Maintain a deque where elements are in decreasing order. Before pushing, pop...</text>
+    <text x="60" y="378" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Maintain a deque where elements are in</text>
+    <text x="60" y="400" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">decreasing order. Before pushing, pop...</text>
+    <text x="60" y="422" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Priority queue with `decreaseKey` needs</text>
+    <text x="60" y="444" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">a heap index: For Dijkstra&apos;s</text>
+    <text x="60" y="466" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">algorithm, maintain an array mapping</text>
+    <text x="60" y="488" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">vertex ID → heap position....</text>
+    <text x="60" y="518" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
+    <text x="60" y="546" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. Initialize — allocate an array `arr[0..n-1]`, set `front = 0`, `rear...</text>
+    <text x="60" y="568" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. enqueue(x) — if full, return overflow error; else increment `rear`,...</text>
+    <text x="60" y="590" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. dequeue() — if empty, return underflow error; else store...</text>
+    <text x="60" y="612" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">5. front() — if empty, error; else return `arr[front]`.</text>
+    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
+    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">- Queues enforce FIFO ordering; circular arrays prevent wasted space by...</text>
+</svg>

@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to: define context-free grammars and use them to describe programming-language syntax; construct derivations and parse trees; eliminate ambiguity, left recursion, and common prefixes from grammars; compute FIRST and FOLLOW sets using the full iterative algorithm; construct LL(1) parsing tables; implement recursive-descent parsers with proper error reporting; and implement a complete LL(1) parser generator in TypeScript.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/hero.svg" alt="Chapter Banner: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/architecture.svg" alt="Architecture: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/workflow.svg" alt="Workflow: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/mindmap.svg" alt="Mind Map: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/comparison.svg" alt="Comparison: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/interview-quiz.svg" alt="Quiz Card: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/compiler-design/03-parsing-topdown/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/compiler-design/03-parsing-topdown/social-card.svg" alt="Social Card: Chapter 3: Top-Down Parsing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 | Section | Description |

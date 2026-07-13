@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/hero.svg" alt="Chapter Banner: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/handwritten-notes.svg" alt="Handwritten Notes: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/sticky-notes.svg" alt="Sticky Notes: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/visual-explanation.svg" alt="Visual Explanation: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/architecture.svg" alt="Architecture: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/workflow.svg" alt="Workflow: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/mindmap.svg" alt="Mind Map: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/comparison.svg" alt="Comparison: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/cheatsheet.svg" alt="Cheat Sheet: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/interview-quiz.svg" alt="Quiz Card: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/banking-technology/04-fintech-emerging-trends/social-card.svg" alt="Social Card: Chapter 04: Fintech and Emerging Trends" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Explain the Account Aggregator (AA) framework and its consent artefact mechanism
 - Understand Open Banking under NDHP (National Data Health Platform)
 - Describe the Digital Rupee (CBDC) architecture — token-based, dual offline, wholesale vs retail

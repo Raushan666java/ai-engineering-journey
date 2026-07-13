@@ -10,6 +10,45 @@ By the end of this chapter, you will be able to:
 - Use algebraic and arithmetic progression patterns to solve series
 - Solve IBPS SO-level number series questions in under 30 seconds
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/hero.svg" alt="Chapter Banner: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/architecture.svg" alt="Architecture: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/workflow.svg" alt="Workflow: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/mindmap.svg" alt="Mind Map: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/comparison.svg" alt="Comparison: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/interview-quiz.svg" alt="Quiz Card: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/quantitative-aptitude/04-number-series/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/quantitative-aptitude/04-number-series/social-card.svg" alt="Social Card: Chapter 4: Number Series — Missing Number Series, Wrong Number Series, Pattern Identification" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Theory
 
 ### Introduction

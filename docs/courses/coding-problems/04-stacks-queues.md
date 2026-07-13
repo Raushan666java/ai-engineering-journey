@@ -10,6 +10,45 @@
 - Use queues and deques for sliding window problems
 - Handle browser history, undo/redo, and BFS traversal patterns
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/hero.svg" alt="Chapter Banner: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/handwritten-notes.svg" alt="Handwritten Notes: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/sticky-notes.svg" alt="Sticky Notes: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/visual-explanation.svg" alt="Visual Explanation: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/architecture.svg" alt="Architecture: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/workflow.svg" alt="Workflow: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/mindmap.svg" alt="Mind Map: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/comparison.svg" alt="Comparison: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/cheatsheet.svg" alt="Cheat Sheet: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/interview-quiz.svg" alt="Quiz Card: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/04-stacks-queues/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/04-stacks-queues/social-card.svg" alt="Social Card: Chapter 04: Stacks & Queues" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Problem Classification Flow
 
 ```mermaid

@@ -9,6 +9,45 @@
 - Apply stacks to expression evaluation, parenthesis matching, and undo functionality.
 - Analyze the complexity of each stack operation.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/05-stacks/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/hero.svg" alt="Chapter Banner: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/architecture.svg" alt="Architecture: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/workflow.svg" alt="Workflow: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/mindmap.svg" alt="Mind Map: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/comparison.svg" alt="Comparison: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/interview-quiz.svg" alt="Quiz Card: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/05-stacks/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/05-stacks/social-card.svg" alt="Social Card: Chapter 5: Stacks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Stacks Matter
 
 **Real-world analogy:** Imagine a stack of plates in a cafeteria. You place clean plates on top (push), and when someone needs a plate, they take the topmost one (pop). The plate at the bottom came first but gets used last. This is exactly Last-In-First-Out (LIFO). Another example — a Pringles can: you can only remove the chip that was inserted last. Stacks appear everywhere in computing: the Call Stack tracks where each function should return after it finishes; the Undo stack (Ctrl+Z) remembers your last edit; your browser's Back button pops the previous page off a navigation stack. Without stacks, recursion, expression evaluation, and depth-first search simply would not work.

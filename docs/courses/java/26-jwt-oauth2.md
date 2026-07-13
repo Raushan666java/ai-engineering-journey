@@ -11,6 +11,45 @@ This chapter covers the three pillars of modern authentication and authorization
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/hero.svg" alt="Chapter Banner: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/handwritten-notes.svg" alt="Handwritten Notes: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/sticky-notes.svg" alt="Sticky Notes: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/visual-explanation.svg" alt="Visual Explanation: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/architecture.svg" alt="Architecture: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/workflow.svg" alt="Workflow: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/mindmap.svg" alt="Mind Map: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/comparison.svg" alt="Comparison: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/cheatsheet.svg" alt="Cheat Sheet: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/interview-quiz.svg" alt="Quiz Card: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/26-jwt-oauth2/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/26-jwt-oauth2/social-card.svg" alt="Social Card: JWT, OAuth2 & OIDC" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Understand JWT structure (header, payload, signature) and the difference between JWS and JWE
 - Create and validate JWTs using the Nimbus JOSE + JWT library and the jjwt library
 - Implement refresh token rotation and token revocation strategies

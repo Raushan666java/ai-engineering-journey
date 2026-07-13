@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/hero.svg" alt="Chapter Banner: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/architecture.svg" alt="Architecture: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/workflow.svg" alt="Workflow: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/mindmap.svg" alt="Mind Map: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/comparison.svg" alt="Comparison: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/interview-quiz.svg" alt="Quiz Card: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/general-aptitude/05-non-verbal-reasoning/social-card.svg" alt="Social Card: Chapter 5: Non-Verbal Reasoning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Identify patterns in figure series and find the next figure
 - Find missing figures in analogies
 - Classify figures into odd-one-out groups

@@ -4,6 +4,45 @@
 
 ![Web APIs and Application Protocols](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch15-web-apis.png)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/hero.svg" alt="Chapter Banner: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/sticky-notes.svg" alt="Sticky Notes: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/visual-explanation.svg" alt="Visual Explanation: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/architecture.svg" alt="Architecture: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/workflow.svg" alt="Workflow: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/mindmap.svg" alt="Mind Map: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/comparison.svg" alt="Comparison: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/interview-quiz.svg" alt="Quiz Card: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/15-web-apis/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/15-web-apis/social-card.svg" alt="Social Card: Chapter 15: Web APIs and Application Protocols" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Design RESTful APIs with appropriate resource modeling, HTTP methods, and status codes.
 2. Explain the WebSocket protocol and its use in real-time applications.
 3. Compare gRPC and REST for different application requirements.

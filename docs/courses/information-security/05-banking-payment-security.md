@@ -10,6 +10,45 @@
 
 After completing this chapter you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/hero.svg" alt="Chapter Banner: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/architecture.svg" alt="Architecture: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/workflow.svg" alt="Workflow: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/mindmap.svg" alt="Mind Map: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/comparison.svg" alt="Comparison: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/interview-quiz.svg" alt="Quiz Card: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/information-security/05-banking-payment-security/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/information-security/05-banking-payment-security/social-card.svg" alt="Social Card: Chapter 5: Banking & Payment Security" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Explain key RBI cybersecurity guidelines for scheduled commercial banks (BCSBI, cyber fraud reporting, outsourcing).
 - Describe PCI DSS requirements for cardholder data protection (encryption, access control, logging, quarterly scans).
 - Walk through the 3D Secure (3DS) authentication flow — merchant, issuer, ACS.

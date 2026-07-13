@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/hero.svg" alt="Chapter Banner: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/sticky-notes.svg" alt="Sticky Notes: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/visual-explanation.svg" alt="Visual Explanation: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/architecture.svg" alt="Architecture: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/workflow.svg" alt="Workflow: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/mindmap.svg" alt="Mind Map: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/comparison.svg" alt="Comparison: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/cheatsheet.svg" alt="Cheat Sheet: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/interview-quiz.svg" alt="Quiz Card: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/12-ai-observability-debugging/social-card.svg" alt="Social Card: Chapter 12 — AI Observability & Debugging" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Topic Table
 
 | # | Subtopic | Hours | Done checkpoint |

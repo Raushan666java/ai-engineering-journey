@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">अध्याय ११: आधुनिक विज्ञान और ओशो का तंत्र</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#065f46"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">प्रश्न १: → उत्तर: → प्रश्न २: → उत्तर: → प्रश्न ३: → उत्तर:</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">ओशो के दृष्टिकोण से विज्ञान और तंत्र के संगम को समझेंगे → जानेंगे कि</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">कैसे ओशो ने क्वांटम भौतिकी को तंत्र से जोड़ा → फ्रायड, जंग और राइख पर</text>
+  <text x="85" y="283" font-size="11" fill="#475569" font-family="Arial, sans-serif">ओशो की अनूठी टिप्पणी को समझेंगे → ओशो के दिमाग़ और चेतना के मॉडल को</text>
+  <text x="85" y="301" font-size="11" fill="#475569" font-family="Arial, sans-serif">जानेंगे → TypeScript में वैज्ञानिक संदर्भ प्रबंधक बनाएँगे → ओशो की</text>
+  <text x="85" y="319" font-size="11" fill="#475569" font-family="Arial, sans-serif">भविष्यवाणियों की सच्चाई को आज के विज्ञान में देखेंगे → २००५: हार्वर्ड</text>
+  <text x="85" y="337" font-size="11" fill="#475569" font-family="Arial, sans-serif">— ध्यान से ग्रे मैटर बढ़ता है (लाज़र) → २०११: येल — ध्यान DMN को शांत</text>
+  <text x="85" y="355" font-size="11" fill="#475569" font-family="Arial, sans-serif">करता है (ब्रेवर)</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {p.yearPredicted}`);
+            
+            if (p.status ===</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">OshoPredictionStatus.PROVEN) proven++ | 2:</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">{e.clinicalApplications.join(&apos;, &apos;)}`);
+            }</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">});
+
+        report.push(&apos;&apos;);
+        r | 3:</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">{e.clinicalApplications.join(&apos;, &apos;)}`);
+    });
+
+    //</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">संश्लेषण बिंदु
+    console.log(&apos;\n🔮 ओशो के व</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">Code Example 1: mermaid</text>
+  <line x1="500" y1="475" x2="500" y2="485" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="500" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="500" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="522" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="542" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">अध्याय ११: आधुनिक विज्ञान और ओशो का तंत्र</text>
+</svg>

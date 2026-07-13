@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/hero.svg" alt="Chapter Banner: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/architecture.svg" alt="Architecture: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/workflow.svg" alt="Workflow: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/mindmap.svg" alt="Mind Map: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/comparison.svg" alt="Comparison: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/interview-quiz.svg" alt="Quiz Card: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/12-graph-mst/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/12-graph-mst/social-card.svg" alt="Social Card: Chapter 12: Minimum Spanning Trees" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Implement Kruskal's algorithm with union-find and Prim's algorithm with a priority queue.
 2. Prove the cut property and cycle property and use them to justify MST algorithms.
 3. Analyze the complexity of Boruvka's algorithm and understand its parallel nature.

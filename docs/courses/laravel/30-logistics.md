@@ -16,6 +16,45 @@
 - Implement fleet management agents for vehicle health monitoring and maintenance scheduling
 - Construct supply chain visibility dashboards with agent-generated real-time analytics reports
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/30-logistics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/hero.svg" alt="Chapter Banner: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/handwritten-notes.svg" alt="Handwritten Notes: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/sticky-notes.svg" alt="Sticky Notes: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/visual-explanation.svg" alt="Visual Explanation: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/architecture.svg" alt="Architecture: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/workflow.svg" alt="Workflow: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/mindmap.svg" alt="Mind Map: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/comparison.svg" alt="Comparison: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/cheatsheet.svg" alt="Cheat Sheet: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/interview-quiz.svg" alt="Quiz Card: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/30-logistics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/30-logistics/social-card.svg" alt="Social Card: Chapter 30: Logistics & Supply Chain Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

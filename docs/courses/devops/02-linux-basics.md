@@ -13,6 +13,45 @@
 - Write and debug shell scripts for automation.
 - Configure networking and manage services with systemd.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/devops/02-linux-basics/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/hero.svg" alt="Chapter Banner: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/architecture.svg" alt="Architecture: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/workflow.svg" alt="Workflow: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/mindmap.svg" alt="Mind Map: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/comparison.svg" alt="Comparison: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/interview-quiz.svg" alt="Quiz Card: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/02-linux-basics/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/02-linux-basics/social-card.svg" alt="Social Card: Chapter 2: Linux Basics for DevOps" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Chapter at a Glance

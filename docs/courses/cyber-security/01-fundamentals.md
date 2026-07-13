@@ -18,6 +18,45 @@ By the end of this chapter, you will be able to:
 7.  Analyze three major breaches (Equifax, Target, Capital One) with root-cause mapping.
 8.  Answer 15+ interview questions on security fundamentals with depth.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/hero.svg" alt="Chapter Banner: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/architecture.svg" alt="Architecture: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/workflow.svg" alt="Workflow: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/mindmap.svg" alt="Mind Map: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/comparison.svg" alt="Comparison: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/interview-quiz.svg" alt="Quiz Card: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cyber-security/01-fundamentals/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cyber-security/01-fundamentals/social-card.svg" alt="Social Card: Chapter 1: Security Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Chapter at a Glance

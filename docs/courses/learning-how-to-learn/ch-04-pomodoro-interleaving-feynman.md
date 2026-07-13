@@ -9,6 +9,45 @@ In Chapter 3 you learned active recall and spaced repetition — how to pull inf
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/hero.svg" alt="Chapter Banner: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/architecture.svg" alt="Architecture: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/workflow.svg" alt="Workflow: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/mindmap.svg" alt="Mind Map: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/comparison.svg" alt="Comparison: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/interview-quiz.svg" alt="Quiz Card: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-04-pomodoro-interleaving-feynman/social-card.svg" alt="Social Card: Chapter 4: Pomodoro, Interleaving & the Feynman Technique" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Use the Pomodoro Technique to maintain deep focus during coding sessions
 - Apply interleaving to DSA and GATE preparation for stronger retention
 - Explain any concept using the Feynman Technique in plain language

@@ -8,6 +8,45 @@ This chapter covers behavioral interview preparation for Java backend engineers.
 
 ![Behavioral Interview - STAR Method Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/66-interview-behavioral.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/hero.svg" alt="Chapter Banner: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/handwritten-notes.svg" alt="Handwritten Notes: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/sticky-notes.svg" alt="Sticky Notes: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/visual-explanation.svg" alt="Visual Explanation: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/architecture.svg" alt="Architecture: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/workflow.svg" alt="Workflow: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/mindmap.svg" alt="Mind Map: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/comparison.svg" alt="Comparison: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/cheatsheet.svg" alt="Cheat Sheet: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/interview-quiz.svg" alt="Quiz Card: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/66-interview-behavioral/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/66-interview-behavioral/social-card.svg" alt="Social Card: 66. Behavioral Interview — Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

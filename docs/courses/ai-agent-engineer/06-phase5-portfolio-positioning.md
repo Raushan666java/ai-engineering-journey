@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/hero.svg" alt="Chapter Banner: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/handwritten-notes.svg" alt="Handwritten Notes: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/sticky-notes.svg" alt="Sticky Notes: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/visual-explanation.svg" alt="Visual Explanation: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/architecture.svg" alt="Architecture: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/workflow.svg" alt="Workflow: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/mindmap.svg" alt="Mind Map: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/comparison.svg" alt="Comparison: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/cheatsheet.svg" alt="Cheat Sheet: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/interview-quiz.svg" alt="Quiz Card: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/06-phase5-portfolio-positioning/social-card.svg" alt="Social Card: Phase 5 — Portfolio + Market Positioning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Topic Table
 
 | # | Subtopic | Hours | Done checkpoint |

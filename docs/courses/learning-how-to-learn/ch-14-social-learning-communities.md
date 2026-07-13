@@ -15,6 +15,45 @@ Learning alone is limited. Learning with others compounds. This chapter covers h
 - Give and receive peer review for learning growth
 - Avoid social learning traps (comparison, performance, echo chambers)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/hero.svg" alt="Chapter Banner: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/architecture.svg" alt="Architecture: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/workflow.svg" alt="Workflow: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/mindmap.svg" alt="Mind Map: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/comparison.svg" alt="Comparison: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/interview-quiz.svg" alt="Quiz Card: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-14-social-learning-communities/social-card.svg" alt="Social Card: Chapter 14: Social Learning & Communities" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 <a href="../../../assets/images/diagrams/learning-how-to-learn/ch-14-social-learning-communities/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">

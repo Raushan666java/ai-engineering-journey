@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="700" viewBox="0 0 800 700">
+  <defs>
+    <radialGradient id="mbg" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#mbg)" rx="4"/>
+  <!-- Grid dots -->
+  <pattern id="mdots" width="30" height="30" patternUnits="userSpaceOnUse">
+    <circle cx="15" cy="15" r="1" fill="#e2e8f0"/>
+  </pattern>
+  <rect width="800" height="700" fill="url(#mdots)"/>
+    <!-- Center node -->
+  <rect x="320" y="313" width="160" height="74" rx="16" fill="#2563eb"/>
+    <text x="400" y="335" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 4: Number</text>
+  <text x="400" y="353" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Series —</text>
+  <text x="400" y="371" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Missing...</text>
+  <path d="M320,350 Q355,232.05771365940052 310.00000000000006,194.11542731880104" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
+  <rect x="255.00000000000006" y="179.11542731880104" width="110" height="30" rx="15" fill="#2563eb" opacity="0.12" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="310.00000000000006" y="199.11542731880104" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Concepts</text>
+  <circle cx="250.00000000000006" cy="164.11542731880104" r="3" fill="#2563eb"/>
+      <text x="260.00000000000006" y="168.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">Terms</text>
+  <circle cx="250.00000000000006" cy="184.11542731880104" r="3" fill="#2563eb"/>
+      <text x="260.00000000000006" y="188.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">This</text>
+  <circle cx="250.00000000000006" cy="204.11542731880104" r="3" fill="#2563eb"/>
+      <text x="260.00000000000006" y="208.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">Comp</text>
+  <circle cx="250.00000000000006" cy="224.11542731880104" r="3" fill="#2563eb"/>
+      <text x="260.00000000000006" y="228.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">Th</text>
+  <path d="M320,350 Q468.943999880708,252.14911512821146 537.887999761416,234.29823025642293" fill="none" stroke="#059669" stroke-width="2" opacity="0.6"/>
+  <rect x="482.88799976141604" y="219.29823025642293" width="110" height="30" rx="15" fill="#059669" opacity="0.12" stroke="#059669" stroke-width="1.5"/>
+    <text x="537.887999761416" y="239.29823025642293" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Workflow</text>
+  <circle cx="477.88799976141604" cy="214.29823025642293" r="3" fill="#059669"/>
+      <text x="487.88799976141604" y="218.29823025642293" font-size="10" fill="#475569" font-family="Arial, sans-serif">Missing Number Serie</text>
+  <circle cx="477.88799976141604" cy="234.29823025642293" r="3" fill="#059669"/>
+      <text x="487.88799976141604" y="238.29823025642293" font-size="10" fill="#475569" font-family="Arial, sans-serif">Wrong Number Series </text>
+  <circle cx="477.88799976141604" cy="254.29823025642293" r="3" fill="#059669"/>
+      <text x="487.88799976141604" y="258.2982302564229" font-size="10" fill="#475569" font-family="Arial, sans-serif">Pattern Identificati</text>
+  <path d="M480,350 Q311.3673022289013,325.62833599002374 222.73460445780256,381.25667198004743" fill="none" stroke="#7c3aed" stroke-width="2" opacity="0.6"/>
+  <rect x="167.73460445780256" y="366.25667198004743" width="110" height="30" rx="15" fill="#7c3aed" opacity="0.12" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="222.73460445780256" y="386.25667198004743" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Mistakes</text>
+  <circle cx="282.73460445780256" cy="371.25667198004743" r="3" fill="#7c3aed"/>
+      <text x="292.73460445780256" y="375.25667198004743" font-size="10" fill="#475569" font-family="Arial, sans-serif"># Chapter 4: Numbe</text>
+  <circle cx="282.73460445780256" cy="391.25667198004743" r="3" fill="#7c3aed"/>
+      <text x="292.73460445780256" y="395.25667198004743" font-size="10" fill="#475569" font-family="Arial, sans-serif">- Detect the wrong</text>
+</svg>

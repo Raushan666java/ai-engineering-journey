@@ -2,6 +2,45 @@
 
 > **Purpose:** A structured 12-week plan to build job-ready AI agent engineering skills. Each week targets a specific phase with daily topics, actions, and done conditions.
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/hero.svg" alt="Chapter Banner: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/handwritten-notes.svg" alt="Handwritten Notes: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/sticky-notes.svg" alt="Sticky Notes: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/visual-explanation.svg" alt="Visual Explanation: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/architecture.svg" alt="Architecture: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/workflow.svg" alt="Workflow: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/mindmap.svg" alt="Mind Map: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/comparison.svg" alt="Comparison: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/cheatsheet.svg" alt="Cheat Sheet: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/interview-quiz.svg" alt="Quiz Card: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/07-day-by-day-plan/social-card.svg" alt="Social Card: Day-by-Day Plan: 12 Weeks" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Overview
 
 This plan bridges backend engineering (Python, FastAPI) with AI agent development (LangGraph, CrewAI, MCP) and production hardening (Docker, CI/CD, monitoring). By week 12 you will have:

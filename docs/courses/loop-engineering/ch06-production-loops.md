@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/hero.svg" alt="Chapter Banner: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/architecture.svg" alt="Architecture: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/workflow.svg" alt="Workflow: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/mindmap.svg" alt="Mind Map: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/comparison.svg" alt="Comparison: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/interview-quiz.svg" alt="Quiz Card: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch06-production-loops/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch06-production-loops/social-card.svg" alt="Social Card: Chapter 6: Production Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Design and implement a deploy → monitor → drift-detect → retrain → redeploy pipeline
 - Deploy shadow and canary deployments that compare production vs. candidate models
 - Build a cost governor loop that tracks token usage, per-iteration accounting, and auto-halting

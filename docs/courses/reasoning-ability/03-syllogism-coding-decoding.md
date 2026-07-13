@@ -13,6 +13,45 @@ By the end of this chapter, you will be able to:
 - Differentiate between "all," "some," "no," "some not" statements in syllogism
 - Apply the either-or case in syllogism when conclusions share the same predicate-subject pair
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/hero.svg" alt="Chapter Banner: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/handwritten-notes.svg" alt="Handwritten Notes: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/sticky-notes.svg" alt="Sticky Notes: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/visual-explanation.svg" alt="Visual Explanation: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/architecture.svg" alt="Architecture: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/workflow.svg" alt="Workflow: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/mindmap.svg" alt="Mind Map: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/comparison.svg" alt="Comparison: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/cheatsheet.svg" alt="Cheat Sheet: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/interview-quiz.svg" alt="Quiz Card: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/03-syllogism-coding-decoding/social-card.svg" alt="Social Card: Syllogism and Coding-Decoding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

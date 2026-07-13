@@ -14,6 +14,45 @@ By the end of this chapter, you will be able to:
 - Solve comparison-based ordering puzzles (age, height, weight, marks)
 - Differentiate between "rank," "position," "order," and "sequence" in exam questions
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/hero.svg" alt="Chapter Banner: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/handwritten-notes.svg" alt="Handwritten Notes: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/sticky-notes.svg" alt="Sticky Notes: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/visual-explanation.svg" alt="Visual Explanation: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/architecture.svg" alt="Architecture: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/workflow.svg" alt="Workflow: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/mindmap.svg" alt="Mind Map: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/comparison.svg" alt="Comparison: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/cheatsheet.svg" alt="Cheat Sheet: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/interview-quiz.svg" alt="Quiz Card: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/05-blood-relations-direction-sense/social-card.svg" alt="Social Card: Blood Relations, Direction Sense, and Order-Ranking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

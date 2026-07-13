@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/hero.svg" alt="Chapter Banner: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/handwritten-notes.svg" alt="Handwritten Notes: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/sticky-notes.svg" alt="Sticky Notes: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/visual-explanation.svg" alt="Visual Explanation: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/architecture.svg" alt="Architecture: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/workflow.svg" alt="Workflow: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/mindmap.svg" alt="Mind Map: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/comparison.svg" alt="Comparison: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/cheatsheet.svg" alt="Cheat Sheet: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/interview-quiz.svg" alt="Quiz Card: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/loop-engineering/ch08-multi-agent-loops/social-card.svg" alt="Social Card: Chapter 8: Multi-Agent Loops" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Design a supervisor loop that orchestrates workers, aggregates results, and decides on next actions
 - Implement debate loops where agents argue with adversarial scoring and judge evaluation
 - Build negotiation loops where agents trade resources and iterate toward agreement

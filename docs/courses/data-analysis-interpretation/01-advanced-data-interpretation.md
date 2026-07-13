@@ -11,6 +11,45 @@ By the end of this chapter, you will be able to:
 - Apply approximation and estimation strategies for time-efficient calculation
 - Compute CAGR, growth rates, ratios, and averages from tabular data
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/hero.svg" alt="Chapter Banner: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/sticky-notes.svg" alt="Sticky Notes: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/visual-explanation.svg" alt="Visual Explanation: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/architecture.svg" alt="Architecture: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/workflow.svg" alt="Workflow: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/mindmap.svg" alt="Mind Map: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/comparison.svg" alt="Comparison: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/interview-quiz.svg" alt="Quiz Card: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-analysis-interpretation/01-advanced-data-interpretation/social-card.svg" alt="Social Card: Chapter 1: Advanced Data Interpretation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

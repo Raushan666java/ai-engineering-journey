@@ -16,6 +16,45 @@
 - Automate regulatory report generation with data aggregation, format conversion, and filing metadata
 - Build payment processing agents for reconciliation, dispute resolution, and settlement tracking
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/28-finance/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/hero.svg" alt="Chapter Banner: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/handwritten-notes.svg" alt="Handwritten Notes: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/sticky-notes.svg" alt="Sticky Notes: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/visual-explanation.svg" alt="Visual Explanation: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/architecture.svg" alt="Architecture: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/workflow.svg" alt="Workflow: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/mindmap.svg" alt="Mind Map: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/comparison.svg" alt="Comparison: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/cheatsheet.svg" alt="Cheat Sheet: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/interview-quiz.svg" alt="Quiz Card: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/28-finance/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/28-finance/social-card.svg" alt="Social Card: Chapter 28: Finance & FinTech Agents" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

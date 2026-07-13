@@ -14,6 +14,45 @@
 - Apply Terraform best practices for production-grade infrastructure.
 - Integrate Terraform with CI/CD pipelines for automated provisioning.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/devops/09-iac/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/hero.svg" alt="Chapter Banner: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/architecture.svg" alt="Architecture: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/workflow.svg" alt="Workflow: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/mindmap.svg" alt="Mind Map: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/comparison.svg" alt="Comparison: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/interview-quiz.svg" alt="Quiz Card: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/09-iac/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/09-iac/social-card.svg" alt="Social Card: Chapter 9: Terraform & Infrastructure as Code" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Chapter at a Glance

@@ -14,6 +14,45 @@
 - Identify and mitigate multi-agent failure modes with circuit breakers, timeout guards, and output conflict resolution
 - Write comprehensive PEST tests for multi-agent systems including mock agents, integration tests, and handoff verification
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/hero.svg" alt="Chapter Banner: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/handwritten-notes.svg" alt="Handwritten Notes: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/sticky-notes.svg" alt="Sticky Notes: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/visual-explanation.svg" alt="Visual Explanation: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/architecture.svg" alt="Architecture: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/workflow.svg" alt="Workflow: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/mindmap.svg" alt="Mind Map: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/comparison.svg" alt="Comparison: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/cheatsheet.svg" alt="Cheat Sheet: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/interview-quiz.svg" alt="Quiz Card: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/25-multi-agent-systems/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/25-multi-agent-systems/social-card.svg" alt="Social Card: Chapter 25: Multi-Agent Systems & Orchestration with Laravel" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

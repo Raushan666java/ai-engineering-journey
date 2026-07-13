@@ -10,6 +10,45 @@
 6. Implement SDN switch simulator logic in C++ and Python.
 7. Analyze complexity trade-offs in SDN controller placement and flow table design.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/hero.svg" alt="Chapter Banner: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/architecture.svg" alt="Architecture: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/workflow.svg" alt="Workflow: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/mindmap.svg" alt="Mind Map: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/comparison.svg" alt="Comparison: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/interview-quiz.svg" alt="Quiz Card: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/14-sdn/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/14-sdn/social-card.svg" alt="Social Card: Chapter 14: Software-Defined Networking" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## 14.1 The SDN Paradigm
 
 ![SDN, NFV, Cloud Networking and Modern Trends](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch10-sdn-cloud-modern.png)

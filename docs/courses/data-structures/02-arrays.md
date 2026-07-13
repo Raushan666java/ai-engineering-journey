@@ -9,6 +9,45 @@
 - Solve problems using the two-pointer technique.
 - Manipulate 2D arrays and matrices.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/02-arrays/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/hero.svg" alt="Chapter Banner: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/architecture.svg" alt="Architecture: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/workflow.svg" alt="Workflow: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/mindmap.svg" alt="Mind Map: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/comparison.svg" alt="Comparison: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/interview-quiz.svg" alt="Quiz Card: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/02-arrays/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/02-arrays/social-card.svg" alt="Social Card: Chapter 2: Arrays" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Arrays Matter
 
 Imagine a row of cinema seats numbered 0 to n-1. Each seat holds exactly one person — just like an array slot holds one element. You can instantly tell anyone to "go to seat 7" (O(1) random access), but if a new person needs to sit in seat 2, everyone from seat 2 onward must shift right by one (O(n) insertion). If someone leaves seat 4, everyone to the right shifts left (O(n) deletion). This trade-off — instant lookup vs. costly insertion/deletion — is the defining character of arrays and the reason they power everything from image buffers to dynamic language runtimes.

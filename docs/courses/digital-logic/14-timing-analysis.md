@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/hero.svg" alt="Chapter Banner: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/architecture.svg" alt="Architecture: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/workflow.svg" alt="Workflow: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/mindmap.svg" alt="Mind Map: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/comparison.svg" alt="Comparison: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/interview-quiz.svg" alt="Quiz Card: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/14-timing-analysis/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/14-timing-analysis/social-card.svg" alt="Social Card: Chapter 14: Timing Analysis" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Perform static timing analysis (STA) on synchronous digital circuits
 2. Compute setup and hold slack for timing paths
 3. Analyse and mitigate clock skew, jitter, and on-chip variation

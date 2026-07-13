@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/hero.svg" alt="Chapter Banner: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/handwritten-notes.svg" alt="Handwritten Notes: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/sticky-notes.svg" alt="Sticky Notes: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/visual-explanation.svg" alt="Visual Explanation: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/architecture.svg" alt="Architecture: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/workflow.svg" alt="Workflow: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/mindmap.svg" alt="Mind Map: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/comparison.svg" alt="Comparison: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/cheatsheet.svg" alt="Cheat Sheet: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/interview-quiz.svg" alt="Quiz Card: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/13-actuator-devtools/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/13-actuator-devtools/social-card.svg" alt="Social Card: Actuator, DevTools & Monitoring" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Expose and configure Spring Boot Actuator endpoints for production monitoring
 - Read and interpret key actuator endpoints: health, info, metrics, env, beans, configprops, loggers
 - Write custom actuator endpoints with `@Endpoint`, `@ReadOperation`, `@WriteOperation`, and `@DeleteOperation`

@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** REST APIs organize endpoints around resources identified by URIs and manipulated via HTTP methods.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/hero.svg" alt="Chapter Banner: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/sticky-notes.svg" alt="Sticky Notes: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/visual-explanation.svg" alt="Visual Explanation: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/architecture.svg" alt="Architecture: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/workflow.svg" alt="Workflow: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/mindmap.svg" alt="Mind Map: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/comparison.svg" alt="Comparison: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/interview-quiz.svg" alt="Quiz Card: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/09-rest-apis/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/09-rest-apis/social-card.svg" alt="Social Card: Chapter 9: REST APIs and API Design" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

@@ -12,6 +12,45 @@ This chapter covers three major NoSQL engines Ã¢â‚¬â€ MongoDB (docume
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/23-nosql/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/hero.svg" alt="Chapter Banner: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/handwritten-notes.svg" alt="Handwritten Notes: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/sticky-notes.svg" alt="Sticky Notes: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/visual-explanation.svg" alt="Visual Explanation: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/architecture.svg" alt="Architecture: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/workflow.svg" alt="Workflow: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/mindmap.svg" alt="Mind Map: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/comparison.svg" alt="Comparison: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/cheatsheet.svg" alt="Cheat Sheet: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/interview-quiz.svg" alt="Quiz Card: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/23-nosql/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/23-nosql/social-card.svg" alt="Social Card: Spring Data for NoSQL" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Model documents with `@Document` and query them via `MongoRepository` and `@Query`
 - Write aggregation pipelines, geo-spatial queries, and use `MongoTemplate` for imperative data access
 - Store and retrieve files with GridFS and manage indexes and transactions in MongoDB

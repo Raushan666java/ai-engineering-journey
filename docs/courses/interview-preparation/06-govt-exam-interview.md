@@ -9,6 +9,45 @@
 - Stay updated on current affairs relevant to technology and banking sectors
 - Navigate the unique aspects of government recruitment: reservation, pay scales, bonding, and posting policies
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/hero.svg" alt="Chapter Banner: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/architecture.svg" alt="Architecture: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/workflow.svg" alt="Workflow: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/mindmap.svg" alt="Mind Map: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/comparison.svg" alt="Comparison: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/interview-quiz.svg" alt="Quiz Card: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/06-govt-exam-interview/social-card.svg" alt="Social Card: Chapter 6: Government Exam Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Government Interview Landscape
 
 ```mermaid

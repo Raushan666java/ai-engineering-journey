@@ -11,6 +11,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/hero.svg" alt="Chapter Banner: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/handwritten-notes.svg" alt="Handwritten Notes: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/sticky-notes.svg" alt="Sticky Notes: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/visual-explanation.svg" alt="Visual Explanation: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/architecture.svg" alt="Architecture: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/workflow.svg" alt="Workflow: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/mindmap.svg" alt="Mind Map: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/comparison.svg" alt="Comparison: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/cheatsheet.svg" alt="Cheat Sheet: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/interview-quiz.svg" alt="Quiz Card: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/40-interview-finance/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/40-interview-finance/social-card.svg" alt="Social Card: Chapter 40: Finance & FinTech Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

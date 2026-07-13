@@ -8,6 +8,45 @@
 - Install and configure pgvector for vector similarity search in Laravel
 - Build a complete RAG (Retrieval-Augmented Generation) pipeline
 - Integrate Laravel Scout with database, full-text, and vector engines
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/16-search-rag/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/hero.svg" alt="Chapter Banner: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/architecture.svg" alt="Architecture: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/workflow.svg" alt="Workflow: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/mindmap.svg" alt="Mind Map: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/comparison.svg" alt="Comparison: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/interview-quiz.svg" alt="Quiz Card: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/16-search-rag/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/16-search-rag/social-card.svg" alt="Social Card: Chapter 16: Semantic Search, Vector Search & RAG with pgvector" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Key Topics |

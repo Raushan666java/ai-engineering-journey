@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/hero.svg" alt="Chapter Banner: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/architecture.svg" alt="Architecture: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/workflow.svg" alt="Workflow: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/mindmap.svg" alt="Mind Map: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/comparison.svg" alt="Comparison: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/interview-quiz.svg" alt="Quiz Card: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/13-computer-vision/social-card.svg" alt="Social Card: Chapter 13: Computer Vision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Describe how images are formed and represented as numerical arrays.
 2. Implement image filtering operations (blurring, sharpening, edge detection).
 3. Compute image gradients and apply the Canny edge detection pipeline.

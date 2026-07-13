@@ -14,6 +14,45 @@
 - Convert FOL sentences to Conjunctive Normal Form (CNF) via Skolemization.
 - Apply the unification algorithm and resolution principle in FOL theorem proving.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/hero.svg" alt="Chapter Banner: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/sticky-notes.svg" alt="Sticky Notes: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/visual-explanation.svg" alt="Visual Explanation: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/architecture.svg" alt="Architecture: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/workflow.svg" alt="Workflow: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/mindmap.svg" alt="Mind Map: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/comparison.svg" alt="Comparison: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/interview-quiz.svg" alt="Quiz Card: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/07-fol/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/07-fol/social-card.svg" alt="Social Card: Chapter 7: First-Order Logic and Inference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why FOL Matters — Contracts, Not Facts
 
 **Real-World Analogy (Contract Law):** Propositional Logic is like a checklist of facts — "It is raining," "The contract was signed." But contracts are far richer: they say "Every party must sign before the effective date" (universal claim) and "There exists a notary who witnessed the signatures" (existential claim). A contract that said only "Party A signed. Party B signed. Effective date passed." would miss the conditional structure and the scope of obligations. FOL is the language of contracts — it says *for every* object of a certain kind, *there exists* some relation or object that satisfies a condition. Without FOL, you cannot represent general truths that span entire classes of objects, and no AI system can reason about the world beyond isolated facts.

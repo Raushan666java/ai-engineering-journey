@@ -11,6 +11,45 @@
 7. Analyze scalability trade-offs for the C10K problem.
 8. Identify edge cases: connection refused, broken pipe, EAGAIN, address in use.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/hero.svg" alt="Chapter Banner: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/architecture.svg" alt="Architecture: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/workflow.svg" alt="Workflow: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/mindmap.svg" alt="Mind Map: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/comparison.svg" alt="Comparison: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/interview-quiz.svg" alt="Quiz Card: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/13-sockets/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/13-sockets/social-card.svg" alt="Social Card: Chapter 13: Socket Programming → Complete Reference" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## 13.1 Socket API Overview

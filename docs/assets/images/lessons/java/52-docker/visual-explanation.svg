@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Docker &amp; Containerization</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Dependencies: reused from cache.</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="55" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Problems: → Improvements: → Pros: → Cons: → Pros: → Cons:</text>
+  <line x1="500" y1="265" x2="500" y2="275" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="290" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="290" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="312" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="332" font-size="11" fill="#475569" font-family="Arial, sans-serif">Build optimized Docker images for Spring Boot applications using</text>
+  <text x="85" y="350" font-size="11" fill="#475569" font-family="Arial, sans-serif">multi-stage builds → Distinguish between Alpine-based and distroless</text>
+  <text x="85" y="368" font-size="11" fill="#475569" font-family="Arial, sans-serif">base images and choose appropriately → Optimize Docker image layer</text>
+  <text x="85" y="386" font-size="11" fill="#475569" font-family="Arial, sans-serif">caching with proper instruction ordering and `.dockerignore` →</text>
+  <text x="85" y="404" font-size="11" fill="#475569" font-family="Arial, sans-serif">Leverage Spring Boot&apos;s layered JAR feature for faster container</text>
+  <text x="85" y="422" font-size="11" fill="#475569" font-family="Arial, sans-serif">builds → Configure Docker Compose for multi-service Spring Boot</text>
+  <text x="85" y="440" font-size="11" fill="#475569" font-family="Arial, sans-serif">environments → Implement health checks, liveness probes, and readiness</text>
+  <text x="85" y="458" font-size="11" fill="#475569" font-family="Arial, sans-serif">probes in containers → Tune JVM flags for optimal performance inside</text>
+  <text x="85" y="476" font-size="11" fill="#475569" font-family="Arial, sans-serif">container constraints → Understand container orchestration</text>
+  <text x="85" y="494" font-size="11" fill="#475569" font-family="Arial, sans-serif">fundamentals and when to use them</text>
+  <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="395" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="395" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="417" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="437" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {PORT:-8080}:8080&quot;
+    env_file:
+      - .env. | 2:</text>
+  <text x="85" y="455" font-size="11" fill="#475569" font-family="Arial, sans-serif">{ENVIRONMENT:-dev},docker
+      -</text>
+  <text x="85" y="473" font-size="11" fill="#475569" font-family="Arial, sans-serif">SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/myapp
+      - SP | 3:</text>
+  <text x="85" y="491" font-size="11" fill="#475569" font-family="Arial, sans-serif">{KAFKA_JAAS_CONFIG}
+    depends_on:
+      db:
+        condition:</text>
+  <text x="85" y="509" font-size="11" fill="#475569" font-family="Arial, sans-serif">service_healthy
+      redis:
+  | 4: {MEM_LIMIT:-512M}&quot;
+
+  db:</text>
+  <text x="85" y="527" font-size="11" fill="#475569" font-family="Arial, sans-serif">image: postgres:15-alpine
+    environment:
+      - POSTGRES_DB=my |</text>
+  <text x="85" y="545" font-size="11" fill="#475569" font-family="Arial, sans-serif">5: {GRAFANA_PASSWORD:-admin}
+      -</text>
+  <text x="85" y="563" font-size="11" fill="#475569" font-family="Arial, sans-serif">GF_INSTALL_PLUGINS=grafana-piechart-panel
+    ports:
+      - &quot;3</text>
+  <text x="85" y="581" font-size="11" fill="#475569" font-family="Arial, sans-serif">| 6: {GITHUB_SHA:-</text>
+  <line x1="500" y1="475" x2="500" y2="485" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="500" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="500" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="522" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="542" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Docker containers provide consistent, isolated environments for</text>
+  <text x="85" y="560" font-size="11" fill="#475569" font-family="Arial, sans-serif">Spring Boot applications
+-...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Docker &amp; Containerization</text>
+</svg>

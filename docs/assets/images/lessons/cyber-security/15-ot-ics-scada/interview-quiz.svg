@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#ffffff" rx="6"/>
+  <!-- Top decoration -->
+  <rect x="0" y="0" width="600" height="4" fill="url(#qgrad)"/>
+  <defs>
+    <linearGradient id="qgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+    <text x="300" y="60" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: OT/ICS &amp; SCADA Security</text>
+  <text x="300" y="82" font-size="12" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Self-Test Quiz — 4 Questions</text>
+  <rect x="30" y="110" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="118" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="131" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q1</text>
+        <text x="45" y="132" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">1</text>
+        <text x="55" y="156" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Which Purdue model level contains the actual...</text>
+  <text x="55" y="170" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. Level 0 — Physical Process</text>
+  <text x="55" y="184" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. Level 1 — Basic Control</text>
+  <text x="55" y="198" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. Level 2 — Supervisory Control</text>
+      <text x="45" y="224" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ A</text>
+  <rect x="30" y="248" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="256" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="269" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q2</text>
+        <text x="45" y="270" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">2</text>
+        <text x="55" y="294" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. What is the primary difference between IT...</text>
+  <text x="55" y="308" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. IT prioritizes Availability; OT prioritizes...</text>
+  <text x="55" y="322" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. IT prioritizes Confidentiality; OT...</text>
+  <text x="55" y="336" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. Both prioritize Integrity above all</text>
+      <text x="45" y="362" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ B</text>
+  <rect x="30" y="386" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="394" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="407" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q3</text>
+        <text x="45" y="408" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">3</text>
+        <text x="55" y="432" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Which Modbus function code writes a single...</text>
+  <text x="55" y="446" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. 0x01 (Read Coils)</text>
+  <text x="55" y="460" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. 0x06 (Write Single Register)</text>
+  <text x="55" y="474" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. 0x0F (Write Multiple Coils)</text>
+      <text x="45" y="500" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ B</text>
+  <rect x="30" y="524" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="532" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="545" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q4</text>
+        <text x="45" y="546" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">4</text>
+        <text x="55" y="570" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. In the Stuxnet attack, how did the rootkit...</text>
+  <text x="55" y="584" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. By encrypting the PLC configuration</text>
+  <text x="55" y="598" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. By intercepting `s7blk_read` calls and...</text>
+  <text x="55" y="612" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. By changing the PLC IP address</text>
+      <text x="45" y="638" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ B</text>
+</svg>

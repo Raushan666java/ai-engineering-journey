@@ -12,6 +12,45 @@ By the end of this chapter, you will be able to:
 - Handle complex multi-attribute puzzles by breaking them into sub-problems
 - Re-verify all constraints after completing the puzzle to avoid careless errors
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/hero.svg" alt="Chapter Banner: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/handwritten-notes.svg" alt="Handwritten Notes: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/sticky-notes.svg" alt="Sticky Notes: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/visual-explanation.svg" alt="Visual Explanation: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/architecture.svg" alt="Architecture: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/workflow.svg" alt="Workflow: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/mindmap.svg" alt="Mind Map: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/comparison.svg" alt="Comparison: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/cheatsheet.svg" alt="Cheat Sheet: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/interview-quiz.svg" alt="Quiz Card: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/reasoning-ability/01-puzzles/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/reasoning-ability/01-puzzles/social-card.svg" alt="Social Card: Puzzles — Floor, Box, and Scheduling" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

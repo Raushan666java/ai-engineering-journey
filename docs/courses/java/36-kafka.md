@@ -14,6 +14,45 @@ By the end of this chapter, you will be able to:
 - Build stream processing applications with Kafka Streams including KStream, KTable, aggregations, joins, and window operations
 - Implement seek operations and custom error handlers for production resilience
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/36-kafka/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/hero.svg" alt="Chapter Banner: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/handwritten-notes.svg" alt="Handwritten Notes: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/sticky-notes.svg" alt="Sticky Notes: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/visual-explanation.svg" alt="Visual Explanation: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/architecture.svg" alt="Architecture: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/workflow.svg" alt="Workflow: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/mindmap.svg" alt="Mind Map: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/comparison.svg" alt="Comparison: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/cheatsheet.svg" alt="Cheat Sheet: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/interview-quiz.svg" alt="Quiz Card: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/36-kafka/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/36-kafka/social-card.svg" alt="Social Card: Apache Kafka" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

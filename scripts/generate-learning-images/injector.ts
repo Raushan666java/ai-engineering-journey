@@ -1,94 +1,87 @@
-import { Topic } from './parser';
+import { ConceptData, IMAGE_TYPES, ImageType } from './types';
 
-export interface InjectionResult {
-  updatedMarkdown: string;
-  insertedCount: number;
+const IMAGE_LABELS: Record<ImageType, string> = {
+  'hero': 'Chapter Banner',
+  'handwritten-notes': 'Handwritten Notes',
+  'sticky-notes': 'Sticky Notes',
+  'visual-explanation': 'Visual Explanation',
+  'architecture': 'Architecture',
+  'workflow': 'Workflow',
+  'mindmap': 'Mind Map',
+  'comparison': 'Comparison',
+  'cheatsheet': 'Cheat Sheet',
+  'interview-quiz': 'Quiz Card',
+  'social-card': 'Social Card',
+};
+
+function generateImageBlock(data: ConceptData, course: string, chapterSlug: string): string {
+  const base = `../../../assets/images/lessons/${course}/${chapterSlug}`;
+
+  const images = IMAGE_TYPES.map(type => {
+    const label = IMAGE_LABELS[type];
+    return `<a href="${base}/${type}.svg" target="_blank" rel="noopener">
+  <img src="${base}/${type}.svg" alt="${label}: ${data.title}" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>`;
+  }).join('\n');
+
+  return `
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+${images}
+</div>
+<!-- End Image Gallery -->
+`;
 }
 
-function generateImageBlock(topic: Topic, course: string, chapterSlug: string): string {
-  const assetBase = `../../../assets/images/diagrams/${course}/${chapterSlug}/${topic.slug}`;
-
-  const images = [
-    { type: 'handwritten', alt: `Handwritten: ${topic.heading}` },
-    { type: 'diagram', alt: `Diagram: ${topic.heading}` },
-    { type: 'sticky', alt: `Sticky Note: ${topic.heading}` },
-  ];
-
-  return images.map(img =>
-    `<a href="${assetBase}-${img.type}.svg" target="_blank" rel="noopener">
-  <img src="${assetBase}-${img.type}.svg" alt="${img.alt}" width="30%">
-</a>`
-  ).join('\n');
+function alreadyHasGallery(markdown: string): boolean {
+  return markdown.includes('<!-- Image Gallery -->');
 }
 
-function isQaFormat(markdown: string): boolean {
-  return markdown.includes('## Q&A Content');
-}
-
-export function injectImages(
+export function injectLessonImages(
   markdown: string,
-  topics: Topic[],
+  data: ConceptData,
   course: string,
   chapterSlug: string,
-): InjectionResult {
-  const topicMap = new Map<string, Topic>();
-  for (const t of topics) {
-    topicMap.set(t.heading.toLowerCase(), t);
+): { updatedMarkdown: string; inserted: boolean } {
+  if (alreadyHasGallery(markdown)) {
+    return { updatedMarkdown: markdown, inserted: false };
   }
 
   const lines = markdown.split('\n');
-  const out: string[] = [];
-  let insertedCount = 0;
-  let currentTopic: Topic | null = null;
-  let awaitingAnswer = false;
-  const qa = isQaFormat(markdown);
+  let insertIdx = -1;
 
-  function alreadyHasImages(idx: number): boolean {
-    for (let i = idx + 1; i < Math.min(idx + 6, lines.length); i++) {
-      const t = lines[i].trim();
-      if (t.startsWith('</a>')) return true;
-      if (t.startsWith('### ') || t.startsWith('## ') || t.startsWith('```')) return false;
-    }
-    return false;
-  }
-
+  // Find the Learning Objectives section end
   for (let i = 0; i < lines.length; i++) {
-    out.push(lines[i]);
-
-    const trimmed = lines[i].trim();
-
-    if (!awaitingAnswer && trimmed.startsWith('### ')) {
-      const rawHeading = trimmed.replace(/^###\s+/, '');
-      const cleanHeading = rawHeading.replace(/^Q\d+[:\u2013\)\s]+/, '').trim();
-      const key = cleanHeading.toLowerCase();
-
-      if (topicMap.has(key)) {
-        currentTopic = topicMap.get(key)!;
-        if (!qa) {
-          if (!alreadyHasImages(i)) {
-            out.push('');
-            out.push(generateImageBlock(currentTopic, course, chapterSlug));
-            out.push('');
-            insertedCount++;
-          }
-          currentTopic = null;
-        } else {
-          awaitingAnswer = true;
+    const t = lines[i].trim();
+    if (t.startsWith('## Learning Objectives')) {
+      // Look for the first empty line or next heading after the objectives list
+      for (let j = i + 1; j < Math.min(i + 30, lines.length); j++) {
+        const tj = lines[j].trim();
+        if (tj.startsWith('## ') || (tj === '' && j > i + 2 && lines[j - 1].trim() !== '')) {
+          insertIdx = j;
+          break;
         }
       }
-    }
-
-    if (awaitingAnswer && trimmed.startsWith('#### Answer')) {
-      if (!alreadyHasImages(i)) {
-        out.push('');
-        out.push(generateImageBlock(currentTopic!, course, chapterSlug));
-        out.push('');
-        insertedCount++;
-      }
-      awaitingAnswer = false;
-      currentTopic = null;
+      break;
     }
   }
 
-  return { updatedMarkdown: out.join('\n'), insertedCount };
+  // Fallback: insert after first heading
+  if (insertIdx === -1) {
+    for (let i = 0; i < lines.length; i++) {
+      if (lines[i].trim().startsWith('## ') && i > 0) {
+        insertIdx = i;
+        break;
+      }
+    }
+  }
+
+  if (insertIdx === -1) {
+    insertIdx = 2; // fallback
+  }
+
+  const block = generateImageBlock(data, course, chapterSlug);
+  lines.splice(insertIdx, 0, block);
+
+  return { updatedMarkdown: lines.join('\n'), inserted: true };
 }

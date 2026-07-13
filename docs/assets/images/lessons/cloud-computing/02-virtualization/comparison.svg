@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <rect width="900" height="600" fill="#ffffff" rx="4"/>
+  <!-- Title -->
+  <text x="450" y="50" font-size="20" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 2: Virtualization</text>
+  <rect x="430" y="60" width="40" height="3" rx="2" fill="#2563eb"/>
+  <!-- Comparison table -->
+    <rect x="20" y="90" width="160" height="44" rx="8" fill="#2563eb"/>
+    <text x="100" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Topic</text>
+  <rect x="180" y="90" width="350" height="44" rx="0" fill="#2563eb"/>
+    <text x="355" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Key Insight</text>
+  <rect x="530" y="90" width="350" height="44" rx="0 8 0" fill="#2563eb"/>
+    <text x="705" y="117" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Practical Takeaway</text>
+  <rect x="20" y="134" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="156" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Hypervisors</text>
+  <rect x="180" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Type 1 (bare-metal) vs Type 2...</text>
+  <rect x="530" y="134" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="156" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Type 1 dominates cloud data centers</text>
+  <rect x="20" y="170" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="192" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Server Virtualization</text>
+  <rect x="180" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Partition physical server into...</text>
+  <rect x="530" y="170" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="192" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">5-15% ? 60-80%+ utilization</text>
+  <rect x="20" y="206" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="228" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Storage Virtualization</text>
+  <rect x="180" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Block, file, and object abstraction</text>
+  <rect x="530" y="206" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="228" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Provision storage independently of...</text>
+  <rect x="20" y="242" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="264" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Network Virtualization</text>
+  <rect x="180" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">SDN, VLANs, VXLANs, NFV</text>
+  <rect x="530" y="242" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="264" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Multi-tenant isolation over shared...</text>
+  <rect x="20" y="278" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="300" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Containers vs VMs</text>
+  <rect x="180" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">OS-level vs hardware-level...</text>
+  <rect x="530" y="278" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="300" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Containers: density; VMs: isolation</text>
+  <rect x="20" y="314" width="160" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="336" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Paravirtualization</text>
+  <rect x="180" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Modified guest OS for near-native...</text>
+  <rect x="530" y="314" width="350" height="36" fill="#ffffff" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="336" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Essential before hardware-assisted...</text>
+  <rect x="20" y="350" width="160" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="28" y="372" font-size="11" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Docker Architecture</text>
+  <rect x="180" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="188" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Client, daemon, containerd, runc</text>
+  <rect x="530" y="350" width="350" height="36" fill="#f8fafc" stroke="#e2e8f0" stroke-width="0.5"/>
+      <text x="538" y="372" font-size="10" font-weight="normal" fill="#475569" font-family="Arial, sans-serif">Layered images enable efficient...</text>
+</svg>

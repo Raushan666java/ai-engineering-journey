@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <rect width="600" height="800" fill="#ffffff" rx="6"/>
+  <!-- Top decoration -->
+  <rect x="0" y="0" width="600" height="4" fill="url(#qgrad)"/>
+  <defs>
+    <linearGradient id="qgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+    <text x="300" y="60" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 12: Indexing</text>
+  <text x="300" y="82" font-size="12" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Self-Test Quiz — 4 Questions</text>
+  <rect x="30" y="110" width="540" height="126" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="118" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="131" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q1</text>
+        <text x="45" y="132" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">Fill factor controls:</text>
+        <text x="55" y="156" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Indexes are auxiliary structures that...</text>
+  <text x="55" y="170" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. B-Trees store data pointers in all nodes;...</text>
+  <text x="55" y="184" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. B+Tree is the dominant index structure,...</text>
+  <text x="55" y="198" font-size="10" fill="#475569" font-family="Arial, sans-serif">D. Clustered indexes physically sort data (one...</text>
+      <text x="45" y="224" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+  <rect x="30" y="248" width="540" height="128" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="256" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="269" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q2</text>
+        <text x="45" y="270" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">For the composite index (department_id, hire_date,</text>
+  <text x="45" y="286" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">salary):</text>
+        <text x="55" y="310" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Which queries can use all three columns...</text>
+  <text x="55" y="324" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. Which queries can use only two columns?</text>
+  <text x="55" y="338" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. Which queries cannot use the index...</text>
+      <text x="45" y="364" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+  <rect x="30" y="388" width="540" height="128" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="396" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="409" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q3</text>
+        <text x="45" y="410" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">Given a B+Tree with page size 8 KB, key size 8</text>
+  <text x="45" y="426" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">bytes, pointer size 6 bytes, calculate:</text>
+        <text x="55" y="450" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Maximum keys per internal node</text>
+  <text x="55" y="464" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. Tree height for 10M keys</text>
+  <text x="55" y="478" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. Number of I/Os for a point lookup</text>
+      <text x="45" y="504" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+  <rect x="30" y="528" width="540" height="128" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+      <!-- Difficulty badge -->
+      <rect x="510" y="536" width="50" height="18" rx="9" fill="#dbeafe"/>
+      <text x="535" y="549" font-size="9" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Q4</text>
+        <text x="45" y="550" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">Design an index strategy for a logging table that</text>
+  <text x="45" y="566" font-size="11" fill="#1e293b" font-family="Arial, sans-serif">receives 10,000 INSERTs per second:</text>
+        <text x="55" y="590" font-size="10" fill="#475569" font-family="Arial, sans-serif">A. Queries: Find all errors in the last hour,...</text>
+  <text x="55" y="604" font-size="10" fill="#475569" font-family="Arial, sans-serif">B. Constraints: Minimal impact on write...</text>
+  <text x="55" y="618" font-size="10" fill="#475569" font-family="Arial, sans-serif">C. Consider: Partial indexes, time-based...</text>
+      <text x="45" y="644" font-size="10" fill="#059669" font-family="Arial, sans-serif">✓ </text>
+</svg>

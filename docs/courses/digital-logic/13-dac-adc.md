@@ -7,6 +7,45 @@
 
 By the conclusion of this chapter, the student shall be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/hero.svg" alt="Chapter Banner: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/architecture.svg" alt="Architecture: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/workflow.svg" alt="Workflow: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/mindmap.svg" alt="Mind Map: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/comparison.svg" alt="Comparison: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/interview-quiz.svg" alt="Quiz Card: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/digital-logic/13-dac-adc/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/digital-logic/13-dac-adc/social-card.svg" alt="Social Card: Chapter 13: Digital-to-Analog and Analog-to-Digital Converters" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Classify DAC and ADC architectures by speed, resolution, and application
 2. Design and analyse R-2R ladder, binary-weighted, and sigma-delta DACs
 3. Compare flash, SAR, pipelined, and sigma-delta ADC architectures

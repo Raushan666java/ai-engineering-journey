@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/hero.svg" alt="Chapter Banner: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/architecture.svg" alt="Architecture: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/workflow.svg" alt="Workflow: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/mindmap.svg" alt="Mind Map: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/comparison.svg" alt="Comparison: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/interview-quiz.svg" alt="Quiz Card: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/07-numerical-methods/social-card.svg" alt="Social Card: Chapter 7: Numerical Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Solve nonlinear equations using bisection, Newton-Raphson, and secant methods
 - Interpolate data using Lagrange, Newton, and spline methods
 - Perform numerical differentiation and integration

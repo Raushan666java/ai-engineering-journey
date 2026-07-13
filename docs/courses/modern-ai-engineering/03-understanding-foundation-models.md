@@ -11,6 +11,45 @@
 | LO5 | Identify limitations including hallucinations, knowledge cutoff, context window constraints, and bias |
 | LO6 | Apply a model selection framework that maps tasks to models based on capability, cost, and latency requirements |
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/hero.svg" alt="Chapter Banner: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/architecture.svg" alt="Architecture: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/workflow.svg" alt="Workflow: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/mindmap.svg" alt="Mind Map: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/comparison.svg" alt="Comparison: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/interview-quiz.svg" alt="Quiz Card: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/03-understanding-foundation-models/social-card.svg" alt="Social Card: Chapter 3: Understanding Foundation Models" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## 3.1 How Transformers Work
 
 The transformer architecture, introduced in the 2017 paper "Attention Is All You Need," is the foundation upon which all modern foundation models are built. Understanding transformers is essential for making informed decisions about model selection, prompt design, and troubleshooting.

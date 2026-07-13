@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** Authentication verifies identity; authorization determines what an authenticated user can access.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/web-development/10-auth/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/hero.svg" alt="Chapter Banner: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/architecture.svg" alt="Architecture: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/workflow.svg" alt="Workflow: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/mindmap.svg" alt="Mind Map: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/comparison.svg" alt="Comparison: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/interview-quiz.svg" alt="Quiz Card: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/10-auth/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/10-auth/social-card.svg" alt="Social Card: Chapter 10: Authentication and Authorization" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

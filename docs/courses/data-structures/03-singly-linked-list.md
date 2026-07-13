@@ -12,6 +12,45 @@
 - Master Floyd's cycle detection, finding the middle, and merging sorted lists.
 - Recognise real-world systems that rely on singly linked lists.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/hero.svg" alt="Chapter Banner: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/architecture.svg" alt="Architecture: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/workflow.svg" alt="Workflow: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/mindmap.svg" alt="Mind Map: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/comparison.svg" alt="Comparison: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/interview-quiz.svg" alt="Quiz Card: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/03-singly-linked-list/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/03-singly-linked-list/social-card.svg" alt="Social Card: Chapter 3: Singly Linked List" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Linked Lists Matter
 
 Imagine a train. Each car carries cargo (data) and is coupled to the next car via a single coupler (pointer). The engine is the **head**. To add a new car at the front, you just unhook the coupler, attach the new car, and hook it back → **O(1)**. To reach the last car, the conductor must walk from the engine all the way to the end → **O(n)**.

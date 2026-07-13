@@ -11,6 +11,45 @@
 5. Analyze flow control mechanisms including stop-and-wait and sliding window protocols.
 6. Implement ARQ simulators and evaluate performance trade-offs.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/hero.svg" alt="Chapter Banner: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/sticky-notes.svg" alt="Sticky Notes: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/visual-explanation.svg" alt="Visual Explanation: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/architecture.svg" alt="Architecture: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/workflow.svg" alt="Workflow: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/mindmap.svg" alt="Mind Map: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/comparison.svg" alt="Comparison: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/interview-quiz.svg" alt="Quiz Card: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/03-datalink-layer/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/03-datalink-layer/social-card.svg" alt="Social Card: Chapter 3: The Data Link Layer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ### Chapter at a Glance

@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 12: Deployment and DevOps</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">What: the advantage of multi-stage Docker builds?</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Q1. What is the advantage of multi-stage Docker builds? → B)</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">Multi-stage builds use separate stages for dependencies, building, and</text>
+  <text x="85" y="283" font-size="11" fill="#475569" font-family="Arial, sans-serif">running. The final stage copies only the compiled output and</text>
+  <text x="85" y="301" font-size="11" fill="#475569" font-family="Arial, sans-serif">production dependencies, resulting in a minimal image. → Q2. Why</text>
+  <text x="85" y="319" font-size="11" fill="#475569" font-family="Arial, sans-serif">should you validate environment variables at startup? → B) Startup</text>
+  <text x="85" y="337" font-size="11" fill="#475569" font-family="Arial, sans-serif">validation catches misconfiguration immediately with a clear error</text>
+  <text x="85" y="355" font-size="11" fill="#475569" font-family="Arial, sans-serif">message, rather than causing cryptic runtime failures when the missing</text>
+  <text x="85" y="373" font-size="11" fill="#475569" font-family="Arial, sans-serif">variable is first accessed. → Q3. What is the purpose of `npm ci` vs</text>
+  <text x="85" y="391" font-size="11" fill="#475569" font-family="Arial, sans-serif">`npm install` in CI? → B) `npm ci` uses the lockfile to install exact</text>
+  <text x="85" y="409" font-size="11" fill="#475569" font-family="Arial, sans-serif">versions, deletes `node_modules` first, and fails if the lockfile is</text>
+  <text x="85" y="427" font-size="11" fill="#475569" font-family="Arial, sans-serif">out of sync with `package.json` — ensuring deterministic builds.</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Set up build processes for frontend and backend applications → Manage</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">environment variables across deployment environments → Deploy</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">applications to Vercel, Netlify, Railway, and AWS → Configure custom</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">domains and SSL certificates → Implement CI/CD pipelines with GitHub</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">Actions → Monitor production applications → &quot;4000:4000&quot; →</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">DATABASE_URL=postgresql://user:pass@db:5432/mydb</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {{ secrets.RAILWAY_TOKEN }}
+```
+
+## 12.6 Environment-Specific</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">Configuration
+
+```typescript
+//  | 2: {stage}...`);
+      const</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">success = await this.executeStage(stage);</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">this.results.set(stage,  | 3: {s.name}:\n    image: | 4: {s.port ? `\n</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">ports:\n      - &quot; | 5: {Object.entries(s.env).map(([k, v]) =&gt;</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">` | 6: {v}`).join(&quot;\n&quot;)}` : &quot;&quot;}`);
+    return</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">`version: &quot;3.8&quot;\nservices:\n</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Deployment transforms development code into production services.</text>
+  <text x="85" y="580" font-size="11" fill="#475569" font-family="Arial, sans-serif">Modern platforms like Vercel,...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 12: Deployment and DevOps</text>
+</svg>

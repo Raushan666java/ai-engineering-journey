@@ -6,6 +6,45 @@
 
 ![Logic Overview](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/discrete-mathematics/02-logic.png)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/hero.svg" alt="Chapter Banner: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/architecture.svg" alt="Architecture: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/workflow.svg" alt="Workflow: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/mindmap.svg" alt="Mind Map: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/comparison.svg" alt="Comparison: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/interview-quiz.svg" alt="Quiz Card: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/02-logic/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/02-logic/social-card.svg" alt="Social Card: Chapter 2: Logic" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 After completing this chapter, you will be able to:
 
 - Identify propositions and their truth values

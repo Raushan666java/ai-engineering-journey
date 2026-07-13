@@ -15,6 +15,45 @@ This chapter teaches you how to use AI as a learning accelerator — not a crutc
 - Create an AI-assisted study dashboard for tracking progress
 - Recognize and avoid the five most common AI learning pitfalls
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/hero.svg" alt="Chapter Banner: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/sticky-notes.svg" alt="Sticky Notes: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/visual-explanation.svg" alt="Visual Explanation: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/architecture.svg" alt="Architecture: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/workflow.svg" alt="Workflow: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/mindmap.svg" alt="Mind Map: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/comparison.svg" alt="Comparison: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/interview-quiz.svg" alt="Quiz Card: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-11-ai-assisted-learning/social-card.svg" alt="Social Card: Chapter 11: AI-Assisted Learning" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ### Chapter at a Glance
 
 <a href="../../../assets/images/diagrams/learning-how-to-learn/ch-11-ai-assisted-learning/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">

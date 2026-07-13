@@ -8,6 +8,45 @@
 - Trace TCP connection establishment and termination handshakes
 - Analyze routing protocols and congestion control mechanisms
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/hero.svg" alt="Chapter Banner: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/architecture.svg" alt="Architecture: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/workflow.svg" alt="Workflow: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/mindmap.svg" alt="Mind Map: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/comparison.svg" alt="Comparison: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/interview-quiz.svg" alt="Quiz Card: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/professional-knowledge/02-computer-networks/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/professional-knowledge/02-computer-networks/social-card.svg" alt="Social Card: Chapter 2: Computer Networks — Exam Quick Revision" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## 1. OSI vs TCP/IP Model

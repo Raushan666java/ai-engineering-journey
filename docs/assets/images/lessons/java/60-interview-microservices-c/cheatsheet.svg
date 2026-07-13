@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">── Deployment for a microservice ──</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">API calls: Best for</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">real-time data (get user</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">details when...</text>
+  <text x="35" y="165" font-size="9" fill="#475569" font-family="Arial, sans-serif">Event replication: Best</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">for reference data</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">(cache user address...</text>
+  <text x="35" y="206" font-size="9" fill="#475569" font-family="Arial, sans-serif">API composition: Best</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">for complex read models</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">(API gateway...</text>
+  <text x="35" y="247" font-size="9" fill="#475569" font-family="Arial, sans-serif">Shared kernel: Rare →</text>
+  <text x="35" y="260" font-size="9" fill="#475569" font-family="Arial, sans-serif">share only extremely</text>
+  <text x="35" y="273" font-size="9" fill="#475569" font-family="Arial, sans-serif">stable data (country...</text>
+  <text x="35" y="288" font-size="9" fill="#475569" font-family="Arial, sans-serif">Comp: deployment</text>
+  <text x="35" y="301" font-size="9" fill="#475569" font-family="Arial, sans-serif">strategies: rolling,</text>
+  <text x="35" y="314" font-size="9" fill="#475569" font-family="Arial, sans-serif">blue/green, and...</text>
+  <text x="35" y="329" font-size="9" fill="#475569" font-family="Arial, sans-serif">What: common</text>
+  <text x="35" y="342" font-size="9" fill="#475569" font-family="Arial, sans-serif">microservices</text>
+  <text x="35" y="355" font-size="9" fill="#475569" font-family="Arial, sans-serif">anti-patterns and how do</text>
+  <text x="35" y="368" font-size="9" fill="#475569" font-family="Arial, sans-serif">you...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">1:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">)(.*)
+            pathType:...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: How do you deploy microservices on Kubernetes?</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Compare deployment strategies: rolling, blue/green,...</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: How do you monitor microservices with Prometheus and...</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | Best Practices |...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ // order-service calls...</text>
+  <text x="315" y="536" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ ## Common Mistakes in...</text>
+  <text x="315" y="552" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ // ❌ WRONG: Unit test passes, but...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">── Deployment for a microservice ── — Quick Reference</text>
+</svg>

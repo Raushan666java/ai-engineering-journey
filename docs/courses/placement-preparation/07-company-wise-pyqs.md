@@ -3,6 +3,45 @@
 > **Previous:** [06 → HR Interview, GD & Soft Skills](06-hr-gd-soft-skills.md)  
 > **Next:** None (Last Chapter)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/hero.svg" alt="Chapter Banner: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/handwritten-notes.svg" alt="Handwritten Notes: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/sticky-notes.svg" alt="Sticky Notes: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/visual-explanation.svg" alt="Visual Explanation: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/architecture.svg" alt="Architecture: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/workflow.svg" alt="Workflow: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/mindmap.svg" alt="Mind Map: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/comparison.svg" alt="Comparison: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/cheatsheet.svg" alt="Cheat Sheet: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/interview-quiz.svg" alt="Quiz Card: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/placement-preparation/07-company-wise-pyqs/social-card.svg" alt="Social Card: 07 → Company-Wise Previous Year Questions" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Content |

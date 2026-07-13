@@ -3,6 +3,45 @@
 > **Previous:** [Docker &amp; Containerization](./52-docker.md) | **Next:** [CI/CD Pipelines](./54-cicd.md)
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/53-kubernetes/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/hero.svg" alt="Chapter Banner: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/handwritten-notes.svg" alt="Handwritten Notes: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/sticky-notes.svg" alt="Sticky Notes: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/visual-explanation.svg" alt="Visual Explanation: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/architecture.svg" alt="Architecture: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/workflow.svg" alt="Workflow: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/mindmap.svg" alt="Mind Map: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/comparison.svg" alt="Comparison: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/cheatsheet.svg" alt="Cheat Sheet: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/interview-quiz.svg" alt="Quiz Card: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/53-kubernetes/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/53-kubernetes/social-card.svg" alt="Social Card: Kubernetes Deployment" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

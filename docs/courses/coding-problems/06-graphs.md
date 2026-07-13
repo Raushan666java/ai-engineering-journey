@@ -11,6 +11,45 @@
 - Detect cycles in directed and undirected graphs
 - Model real-world problems as graph traversal challenges
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/hero.svg" alt="Chapter Banner: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/handwritten-notes.svg" alt="Handwritten Notes: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/sticky-notes.svg" alt="Sticky Notes: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/visual-explanation.svg" alt="Visual Explanation: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/architecture.svg" alt="Architecture: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/workflow.svg" alt="Workflow: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/mindmap.svg" alt="Mind Map: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/comparison.svg" alt="Comparison: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/cheatsheet.svg" alt="Cheat Sheet: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/interview-quiz.svg" alt="Quiz Card: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/coding-problems/06-graphs/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/coding-problems/06-graphs/social-card.svg" alt="Social Card: Chapter 06: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Problem Classification Flow
 
 ```mermaid

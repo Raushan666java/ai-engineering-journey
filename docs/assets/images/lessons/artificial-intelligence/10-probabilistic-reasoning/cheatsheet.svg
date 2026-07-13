@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Probabilistic Reasoning</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">reasoning under</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">uncertainty: multiple</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">causes, imperfect</text>
+  <text x="35" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">observations, and the...</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">chain rule: $$P(X_1,</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">X_2, \ldots, X_n) =</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">\prod_{i=1}^n P(X_i...</text>
+  <text x="35" y="219" font-size="9" fill="#475569" font-family="Arial, sans-serif">blocked: - Walk along</text>
+  <text x="35" y="232" font-size="9" fill="#475569" font-family="Arial, sans-serif">the path, examining</text>
+  <text x="35" y="245" font-size="9" fill="#475569" font-family="Arial, sans-serif">every triple of...</text>
+  <text x="35" y="260" font-size="9" fill="#475569" font-family="Arial, sans-serif">Markov blanket: $$P(X_i</text>
+  <text x="35" y="273" font-size="9" fill="#475569" font-family="Arial, sans-serif">\mid</text>
+  <text x="35" y="286" font-size="9" fill="#475569" font-family="Arial, sans-serif">\text{MarkovBlanket}(X_i))</text>
+  <text x="35" y="299" font-size="9" fill="#475569" font-family="Arial, sans-serif">\propto...</text>
+  <text x="35" y="314" font-size="9" fill="#475569" font-family="Arial, sans-serif">Gibbs sampling: a Markov</text>
+  <text x="35" y="327" font-size="9" fill="#475569" font-family="Arial, sans-serif">Chain Monte Carlo (MCMC)</text>
+  <text x="35" y="340" font-size="9" fill="#475569" font-family="Arial, sans-serif">method that...</text>
+  <text x="35" y="355" font-size="9" fill="#475569" font-family="Arial, sans-serif">This: reasoning under</text>
+  <text x="35" y="368" font-size="9" fill="#475569" font-family="Arial, sans-serif">uncertainty: multiple</text>
+  <text x="35" y="381" font-size="9" fill="#475569" font-family="Arial, sans-serif">causes,...</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <text x="315" y="94" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">chain rule:</text>
+    <text x="315" y="107" font-size="9" fill="#475569" font-family="Arial, sans-serif">P(X_1, X_2, \ldots, X_n) =...</text>
+  <text x="315" y="122" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">2:</text>
+    <text x="315" y="135" font-size="9" fill="#475569" font-family="Arial, sans-serif">P(X_i \mid X_1, \ldots, X_{i-1}) =...</text>
+  <text x="315" y="150" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">Joint distribution factorization::</text>
+    <text x="315" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">P(B, E, A, J, M) = P(B) P(E) P(A...</text>
+  <text x="315" y="178" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">4:</text>
+    <text x="315" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">P(X, Y \mid \mathcal{Z}) = P(X...</text>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="35" y="504" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: How do you know when MCMC (Gibbs sampling) has...</text>
+  <text x="35" y="518" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="538" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: Can Bayesian network structure be learned from data?...</text>
+  <text x="35" y="552" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="35" y="572" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: How do you perform inference in very large Bayesian...</text>
+  <text x="35" y="586" font-size="8" fill="#64748b" font-family="Arial, sans-serif"></text>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ | Compact representation --...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ Common pitfall: Visual inspection...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 10: Probabilistic Reasoning — Quick Reference</text>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 59: Database Interview Q&amp;A for Java &amp; Spring Boot...</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">What: the difference between JDBC and JPA, and when would you use</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">each?</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Answer: → Answer: → Answer: → 1. JOIN FETCH → one query with a join: →</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">2. `@EntityGraph` → declarative fetch plan: → 3. Hibernate</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">`@BatchSize` → loads lazy proxies in batches:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">`validate`: Checks that the database schema matches your entities.</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">Throws an exception on mismatch. Safe for production → it never</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">modifies the schema → `update`: Automatically alters the schema to</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">match your entities (adds new tables/columns, but never drops</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">anything). Not safe for production → it can → `create`: Drops all</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">existing tables and recreates them from your entities. Data loss</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">guaranteed. Useful for testing only. → `create-drop`: Same as</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">`create`, but also drops the schema when the session factory closes.</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">Ideal for embedded databases in unit tests. → Always prefer `LAZY` for</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">`@OneToMany` and `@ManyToMany`. Eager loading a large collection can</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">pull in the entire database. → `@ManyToOne` defaults to `EAGER`.</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">Consider changing it to `LAZY` and using `JOIN FETCH` when you</text>
+  <text x="85" y="588" font-size="11" fill="#475569" font-family="Arial, sans-serif">actually need the parent. → `@Basic` (scalar fields) is always `EAGER`</text>
+  <text x="85" y="606" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ there is no lazy loading for simple columns unless you enable</text>
+  <text x="85" y="624" font-size="11" fill="#475569" font-family="Arial, sans-serif">bytecode enhancement. → Eager loading via `@ManyToOne` can cascade</text>
+  <text x="85" y="642" font-size="11" fill="#475569" font-family="Arial, sans-serif">into multiple joins: `Order → Customer → Address → Country`. One</text>
+  <text x="85" y="660" font-size="11" fill="#475569" font-family="Arial, sans-serif">simple query becomes a 4-table Cartesian p</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {count} IDs in one DB round-trip`);
+  }
+
+  /** Generate an ID</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">based on the strategy */
+  private | 2: {entity.id} (individual — no</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">batching)`
+          );
+        }
+      } else {
+        //</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">SEQUENC | 3: {batchEntities[0].sqlTable} ` +
+          `(batched, IDs</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">pre-allocated)`
+        );
+      }
+     | 4: {i}`, price:</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">Math.random() * 100 }
+    }));
+
+    console.log(`\n=== Benchmark:</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">Inserting | 5: {query.substring(0, 40)}`);
+  }
+
+  private</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">countTableScans(query: string): number {
+    const fr | 6:</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">{q.executionTimeMs.toFixed(1)}ms): consider adding an index`</text>
+  <text x="85" y="639" font-size="11" fill="#475569" font-family="Arial, sans-serif">);
+      }
+    }
+    return</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 59: Database Interview Q&amp;A for Java &amp; Spring Boot Developers</text>
+</svg>

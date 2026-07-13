@@ -10,6 +10,45 @@ By the end of this chapter, you will be able to:
 - Analyze logic gates and derive SOP/POS canonical forms
 - Solve exam numericals on number system conversions and IEEE 754 representation
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/hero.svg" alt="Chapter Banner: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/handwritten-notes.svg" alt="Handwritten Notes: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/sticky-notes.svg" alt="Sticky Notes: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/visual-explanation.svg" alt="Visual Explanation: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/architecture.svg" alt="Architecture: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/workflow.svg" alt="Workflow: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/mindmap.svg" alt="Mind Map: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/comparison.svg" alt="Comparison: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/cheatsheet.svg" alt="Cheat Sheet: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/interview-quiz.svg" alt="Quiz Card: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-architecture/01-number-systems/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-architecture/01-number-systems/social-card.svg" alt="Social Card: Number Systems & Boolean Algebra" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

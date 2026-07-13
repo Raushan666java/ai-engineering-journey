@@ -1,6 +1,45 @@
 # Java Collections Framework
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/p3-java-collections/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/hero.svg" alt="Chapter Banner: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/handwritten-notes.svg" alt="Handwritten Notes: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/sticky-notes.svg" alt="Sticky Notes: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/visual-explanation.svg" alt="Visual Explanation: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/architecture.svg" alt="Architecture: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/workflow.svg" alt="Workflow: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/mindmap.svg" alt="Mind Map: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/comparison.svg" alt="Comparison: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/cheatsheet.svg" alt="Cheat Sheet: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/interview-quiz.svg" alt="Quiz Card: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p3-java-collections/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p3-java-collections/social-card.svg" alt="Social Card: Java Collections Framework" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

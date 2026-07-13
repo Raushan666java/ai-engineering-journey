@@ -6,6 +6,45 @@
 
 By the conclusion of this chapter, the student will be able to: (1) define language models and evaluate them using perplexity; (2) implement n-gram models with smoothing; (3) apply HMMs and CRFs for sequence labeling; (4) implement the CKY algorithm for parsing; (5) use modern NLP toolkits for standard tasks; (6) explain tokenization, stemming, lemmatization, and POS tagging with working code; (7) implement named entity recognition and dependency parsing; (8) understand word embeddings (Word2Vec, GloVe, FastText, BERT); (9) explain the Transformer architecture, attention mechanism, and GPT/BERT differences; (10) apply NLP to real-world systems like chatbots, search, and translation.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/hero.svg" alt="Chapter Banner: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/handwritten-notes.svg" alt="Handwritten Notes: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/sticky-notes.svg" alt="Sticky Notes: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/visual-explanation.svg" alt="Visual Explanation: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/architecture.svg" alt="Architecture: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/workflow.svg" alt="Workflow: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/mindmap.svg" alt="Mind Map: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/comparison.svg" alt="Comparison: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/cheatsheet.svg" alt="Cheat Sheet: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/interview-quiz.svg" alt="Quiz Card: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/12-nlp/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/12-nlp/social-card.svg" alt="Social Card: Chapter 12: Natural Language Processing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why NLP Matters
 
 **Analogy:** Teaching a computer to understand language is like teaching a child to read. A child first learns letters (characters), then words (tokens), then grammar (syntax), then meaning (semantics), then reading between the lines (pragmatics). Similarly, NLP pipelines progress from raw text through tokenization, parsing, semantic analysis, and discourse processing — each layer building on the previous one.

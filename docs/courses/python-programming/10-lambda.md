@@ -11,6 +11,45 @@ By the end of this chapter, students will be able to:
 - Apply the `operator` module for common operations
 - Compose functions and build functional pipelines
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/10-lambda/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/hero.svg" alt="Chapter Banner: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/architecture.svg" alt="Architecture: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/workflow.svg" alt="Workflow: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/mindmap.svg" alt="Mind Map: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/comparison.svg" alt="Comparison: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/interview-quiz.svg" alt="Quiz Card: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/10-lambda/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/10-lambda/social-card.svg" alt="Social Card: Chapter 10: Lambda and Functional Programming" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Lambda and Functional Programming](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/10-lambda.png)
 
 

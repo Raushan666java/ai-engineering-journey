@@ -6,6 +6,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/hero.svg" alt="Chapter Banner: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/handwritten-notes.svg" alt="Handwritten Notes: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/sticky-notes.svg" alt="Sticky Notes: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/visual-explanation.svg" alt="Visual Explanation: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/architecture.svg" alt="Architecture: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/workflow.svg" alt="Workflow: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/mindmap.svg" alt="Mind Map: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/comparison.svg" alt="Comparison: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/cheatsheet.svg" alt="Cheat Sheet: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/interview-quiz.svg" alt="Quiz Card: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/21-spring-data-jpa/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/21-spring-data-jpa/social-card.svg" alt="Social Card: Spring Data JPA" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1.  Choose the appropriate repository interface for any data access pattern
 2.  Write derived query methods following Spring Data JPA naming conventions
 3.  Implement custom JPQL and native queries with @Query

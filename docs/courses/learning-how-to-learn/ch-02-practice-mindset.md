@@ -13,6 +13,45 @@ The difference between learners who plateau and learners who keep improving isn'
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/hero.svg" alt="Chapter Banner: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/handwritten-notes.svg" alt="Handwritten Notes: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/sticky-notes.svg" alt="Sticky Notes: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/visual-explanation.svg" alt="Visual Explanation: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/architecture.svg" alt="Architecture: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/workflow.svg" alt="Workflow: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/mindmap.svg" alt="Mind Map: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/comparison.svg" alt="Comparison: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/cheatsheet.svg" alt="Cheat Sheet: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/interview-quiz.svg" alt="Quiz Card: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-02-practice-mindset/social-card.svg" alt="Social Card: Chapter 2: Practice, Mindset & Performance" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Apply deliberate practice principles to any skill by identifying the performance edge, getting immediate feedback, and working with a coach or role model
 - Recognize illusions of competence (familiarity vs. recall, fluency, re-reading) and replace them with production-based verification
 - Distinguish recall tests from recognition tests and use both strategically for different learning goals

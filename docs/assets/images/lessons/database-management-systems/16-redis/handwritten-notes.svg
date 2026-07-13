@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Paper background -->
+  <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
+  <rect width="600" height="800" fill="url(#grid)"/>
+  <!-- Red margin line -->
+  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <!-- Guide lines -->
+  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Page number -->
+  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <!-- Content -->
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 16: Redis â†’ In-Memory</text>
+    <text x="60" y="122" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Data Store</text>
+    <line x1="55" y1="160" x2="560" y2="160" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="184" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
+    <text x="60" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">TTL-based</tspan>: set `EXPIRE` and let Redis auto-delete â†’ simplest, but may serve stale data...</text>
+    <text x="60" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">auto-delete â†’ simplest, but may serve</text>
+    <text x="60" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">stale data...</text>
+    <text x="60" y="278" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Write-through</tspan>: update cache and DB simultaneously â†’ strong consistency, higher write...</text>
+    <text x="60" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">simultaneously â†’ strong consistency,</text>
+    <text x="60" y="322" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">higher write...</text>
+    <text x="60" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Mutex lock</tspan>: first request acquires a lock on the cache key, others wait. (b)...</text>
+    <text x="60" y="366" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">lock on the cache key, others wait.</text>
+    <text x="60" y="388" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(b)...</text>
+    <text x="60" y="410" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Jittered TTL</tspan>: add random variance to TTL values so keys don&apos;t expire simultaneously.</text>
+    <text x="60" y="432" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">values so keys don&apos;t expire</text>
+    <text x="60" y="454" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">simultaneously.</text>
+    <text x="60" y="484" font-size="15" font-weight="bold" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive">Formulas</text>
+    <text x="60" y="512" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">How RESP Works:: 3\r\nSET\r\n</text>
+    <text x="60" y="534" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">How RESP Works:: 7\r\nmyvalue\r\n
+Meaning: Array of 3 bulk strings: [&quot;SET&quot;, &quot;mykey&quot;, &quot;myvalue&quot;]
+
+Server: +OK\r\n
+</text>
+    <text x="60" y="556" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3: 5\r\nAlice\r\n`
+
+**Pseudocode â†’ Core String Implementation:**
+
+```
+function SET(key, value):</text>
+    <text x="60" y="586" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
+    <text x="60" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1. In-memory: All data resides in RAM (microsecond latency). Disk is...</text>
+    <text x="60" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. Single-threaded event loop: All commands execute sequentially on one...</text>
+    <text x="60" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. Persistence optional: RDB snapshots, AOF logs, hybrid mode, or purely...</text>
+    <text x="60" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. Rich data types: Strings, lists, sets, sorted sets, hashes, bitmaps,...</text>
+    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
+    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">- Redis is an in-memory data structure store with sub-millisecond latency and a...</text>
+</svg>

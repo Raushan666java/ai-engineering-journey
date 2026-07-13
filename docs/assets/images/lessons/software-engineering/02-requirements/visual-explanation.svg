@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Requirements Engineering</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">SMART: | Criterion | Meaning | Example |</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Functional requirements → Non-functional requirements → Domain</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">requirements → Real-world example:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Technical feasibility: Does the required technology exist? Does the</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">team possess the necessary skills? Can the system integrate with</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">existing infrastr → Economic feasibility: Do the expected benefits</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">justify the investment? Common techniques include cost-benefit</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">analysis (CBA), return on investment (RO → Operational feasibility:</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">Can the organisation adapt to the new system? Will users accept it?</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">Does management support the change? → Introduction — Purpose, scope,</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">definitions, references, overview → General Description — Product</text>
+  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">perspective, user characteristics, constraints, assumptions,</text>
+  <text x="85" y="514" font-size="11" fill="#475569" font-family="Arial, sans-serif">dependencies → Specific Requirements — Functional requirements (by</text>
+  <text x="85" y="532" font-size="11" fill="#475569" font-family="Arial, sans-serif">mode/feature), external interface requirements, performance</text>
+  <text x="85" y="550" font-size="11" fill="#475569" font-family="Arial, sans-serif">requirements, design constraints, soft → Appendices — Glossary,</text>
+  <text x="85" y="568" font-size="11" fill="#475569" font-family="Arial, sans-serif">models, issues list → Basic Needs (Threshold): Expected features —</text>
+  <text x="85" y="586" font-size="11" fill="#475569" font-family="Arial, sans-serif">their absence causes dissatisfaction. Example: brakes on a car.</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {String(this.nextId++).padStart(4, &apos;0&apos;)}`;
+    const</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">requirement: Requirement = {
+      ...req,
+     | 2: {id} not found`);</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">const updated: Requirement = {
+      ...req,
+      ...updates,</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">updatedAt | 3: {p}`),
+      &apos;&apos;,
+      &apos;Main Success</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">Scenario:&apos;,
+      ...uc.mainSuccessScenario.map(s =&gt; ` | 4:</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">{s.action}`),
+      ]),
+      &apos;&apos;,</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">&apos;Postconditions:&apos;,
+      ...uc.postconditions.map(p =&gt; `</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">- | 5: {matches.join(&apos;, &apos;)}&quot; — replace with specific</text>
+  <text x="85" y="601" font-size="11" fill="#475569" font-family="Arial, sans-serif">criteria` : &apos;No vague terms&apos;,
+    };
+  }
+
+  private ch | 6:</text>
+  <text x="85" y="619" font-size="11" fill="#475569" font-family="Arial, sans-serif">/i.test(req.id);
+    return {
+      rule:</text>
+  <text x="85" y="637" font-size="11" fill="#475569" font-family="Arial, sans-serif">&apos;unique-identifier&apos;,
+      passed: idFormat,
+      severit</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: TypeScript RequirementsManager — Full CRUD with</text>
+  <text x="85" y="580" font-size="11" fill="#475569" font-family="Arial, sans-serif">Traceability:</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">Requirements engineering is the foundation of successful software</text>
+  <text x="85" y="685" font-size="11" fill="#475569" font-family="Arial, sans-serif">development. Functional...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Requirements Engineering</text>
+</svg>

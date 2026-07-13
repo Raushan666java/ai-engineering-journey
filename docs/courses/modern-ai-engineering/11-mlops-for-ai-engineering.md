@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/hero.svg" alt="Chapter Banner: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/sticky-notes.svg" alt="Sticky Notes: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/visual-explanation.svg" alt="Visual Explanation: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/architecture.svg" alt="Architecture: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/workflow.svg" alt="Workflow: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/mindmap.svg" alt="Mind Map: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/comparison.svg" alt="Comparison: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/interview-quiz.svg" alt="Quiz Card: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/11-mlops-for-ai-engineering/social-card.svg" alt="Social Card: Chapter 11: MLOps for AI Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Distinguish MLOps for AI engineering from traditional MLOps across 10 key dimensions
 - Implement experiment tracking for prompt versions, model versions, and evaluation results
 - Manage prompt lifecycles with version control, staging, A/B testing, and rollback

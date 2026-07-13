@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">I/O Organization</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Comp: I/O processor vs I/O channel vs DMA controller</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Functions of an I/O interface: → I/O port types: → I/O mapping</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">techniques: → Memory-mapped I/O: → Isolated I/O: → Polling flow:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">Address decoding — identify which device is being accessed → Data</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">buffering — accommodate speed differences → Status/control registers —</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">monitor device state → Protocol conversion — translate between system</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">bus and device protocols → Interrupt generation — notify CPU of events</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Simple to implement → CPU busy-waits — wastes CPU cycles that could</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">be used for computation → Low throughput for high-speed devices (CPU</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">is slower than polling rate)</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {r.costPerUsableGB.toFixed(2)}\n`; } return result; }</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">recommend(useCase: &apos;database&apos; | &apos;fileserver&apos; |</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">&apos;streaming&apos; | &apos;archive&apos; | &apos;os&apos;): string</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">{ const r | 2: {level}`);
+    }
+
+    // Rebuild time estimation</text>
+  <text x="85" y="529" font-size="11" fill="#475569" font-family="Arial, sans-serif">const rebuildSpeedMBps = disk.readSpeedMBps * 0 | 3:</text>
+  <text x="85" y="547" font-size="11" fill="#475569" font-family="Arial, sans-serif">{r.costPerUsableGB.toFixed(2)}\n`;
+    }
+
+    return result;
+  }</text>
+  <text x="85" y="565" font-size="11" fill="#475569" font-family="Arial, sans-serif">recommend(useCase: &apos;database&apos; |  | 4: 0.10 per GB</text>
+  <text x="85" y="583" font-size="11" fill="#475569" font-family="Arial, sans-serif">mtbfHours: 1500000 // 1.5M hours MTBF (~171</text>
+  <text x="85" y="601" font-size="11" fill="#475569" font-family="Arial, sans-serif">years)
+};
+
+console.log(&apos;=== RAID Calculato | 5:</text>
+  <text x="85" y="619" font-size="11" fill="#475569" font-family="Arial, sans-serif">{result.costPerUsableGB}`);
+}
+
+// Parity calculation</text>
+  <text x="85" y="637" font-size="11" fill="#475569" font-family="Arial, sans-serif">demo
+console.log(&apos;\n--- Parity Calculation (RAI | 6:</text>
+  <text x="85" y="655" font-size="11" fill="#475569" font-family="Arial, sans-serif">{parity.toString(16)}`);
+
+// Simulate disk failure and rebuild
+const</text>
+  <text x="85" y="673" font-size="11" fill="#475569" font-family="Arial, sans-serif">failedDisk = 2; // disk index 2</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Code Example 1: Implementation</text>
+  <line x1="500" y1="580" x2="500" y2="590" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="605" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="605" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="627" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="647" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Three fundamental I/O techniques: programmed I/O (CPU polls device),</text>
+  <text x="85" y="665" font-size="11" fill="#475569" font-family="Arial, sans-serif">interrupt-driven I/O (device...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">I/O Organization</text>
+</svg>

@@ -4,6 +4,45 @@
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/hero.svg" alt="Chapter Banner: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/handwritten-notes.svg" alt="Handwritten Notes: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/sticky-notes.svg" alt="Sticky Notes: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/visual-explanation.svg" alt="Visual Explanation: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/architecture.svg" alt="Architecture: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/workflow.svg" alt="Workflow: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/mindmap.svg" alt="Mind Map: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/comparison.svg" alt="Comparison: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/cheatsheet.svg" alt="Cheat Sheet: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/interview-quiz.svg" alt="Quiz Card: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/job-preparation/04-group-discussion-case-study/social-card.svg" alt="Social Card: Group Discussion and Case Study Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Participate effectively in group discussions across private sector and government selection processes
 - Analyze and present structured arguments on current affairs, technology trends, and ethical dilemmas
 - Apply business frameworks (SWOT, Porter's Five Forces, 3Cs, 4Ps) to case study problems

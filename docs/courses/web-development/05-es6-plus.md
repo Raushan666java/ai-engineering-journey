@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** `let` and `const` provide block scoping and eliminate the hoisting pitfalls of `var`.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/hero.svg" alt="Chapter Banner: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/sticky-notes.svg" alt="Sticky Notes: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/visual-explanation.svg" alt="Visual Explanation: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/architecture.svg" alt="Architecture: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/workflow.svg" alt="Workflow: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/mindmap.svg" alt="Mind Map: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/comparison.svg" alt="Comparison: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/cheatsheet.svg" alt="Cheat Sheet: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/interview-quiz.svg" alt="Quiz Card: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/web-development/05-es6-plus/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/web-development/05-es6-plus/social-card.svg" alt="Social Card: Chapter 5 — ES6+ JavaScript" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 By the end of this chapter, you will be able to:
 
 ## Chapter at a Glance

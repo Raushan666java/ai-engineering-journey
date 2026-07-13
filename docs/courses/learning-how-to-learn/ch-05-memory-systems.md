@@ -15,6 +15,45 @@ You will learn to build internal memory palaces where abstract concepts become w
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/hero.svg" alt="Chapter Banner: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/architecture.svg" alt="Architecture: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/workflow.svg" alt="Workflow: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/mindmap.svg" alt="Mind Map: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/comparison.svg" alt="Comparison: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/interview-quiz.svg" alt="Quiz Card: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-05-memory-systems/social-card.svg" alt="Social Card: Chapter 5: Memory Systems & Mnemonics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Build and navigate a memory palace to store and recall ordered information
 - Apply visual mnemonics to encode abstract concepts as vivid, retrievable images
 - Use the chaining system to remember sequences of arbitrary items

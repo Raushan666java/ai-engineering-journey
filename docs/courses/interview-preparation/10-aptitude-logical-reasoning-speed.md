@@ -9,6 +9,45 @@
 - Practice 50+ solved examples with shortcut methods across all major topics
 - Build confidence for written tests of TCS, Infosys, Wipro, IBPS, SBI, PSUs, and NIC
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/hero.svg" alt="Chapter Banner: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/architecture.svg" alt="Architecture: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/workflow.svg" alt="Workflow: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/mindmap.svg" alt="Mind Map: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/comparison.svg" alt="Comparison: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/interview-quiz.svg" alt="Quiz Card: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/interview-preparation/10-aptitude-logical-reasoning-speed/social-card.svg" alt="Social Card: Chapter 10: Aptitude, Logical Reasoning, and Speed Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Key Concepts
 
 ### The Speed Mathematics Mindset

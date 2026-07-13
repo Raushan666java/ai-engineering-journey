@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <marker id="warrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#ffffff" rx="4"/>
+  <text x="400" y="40" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Software Process Models</text>
+  <rect x="380" y="50" width="40" height="3" rx="2" fill="#2563eb"/>
+    <rect x="-460" y="275" width="180" height="50" rx="25" fill="#2563eb" stroke="none" stroke-width="2"/>
+    <text x="-370" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">1</text>
+    <text x="-370" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">Specification —...</text>
+  <line x1="-275" y1="300" x2="-245" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-260" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-240" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="-150" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">2</text>
+    <text x="-150" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Design and...</text>
+  <line x1="-55" y1="300" x2="-25" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="-40" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="-20" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="70" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
+    <text x="70" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Validation — checking...</text>
+  <line x1="165" y1="300" x2="195" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="180" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="200" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="290" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
+    <text x="290" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Evolution — modifying...</text>
+  <line x1="385" y1="300" x2="415" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="400" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="420" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="510" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">5</text>
+    <text x="510" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Simplicity and...</text>
+  <line x1="605" y1="300" x2="635" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="620" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="640" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="730" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">6</text>
+    <text x="730" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Enforces discipline...</text>
+  <line x1="825" y1="300" x2="855" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="840" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="860" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
+    <text x="950" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">7</text>
+    <text x="950" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Works well when...</text>
+  <line x1="1045" y1="300" x2="1075" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
+      <text x="1060" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
+  <rect x="1080" y="275" width="180" height="50" rx="25" fill="#059669" stroke="none" stroke-width="2"/>
+    <text x="1170" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">8</text>
+    <text x="1170" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">Clear phase gates for...</text>
+  <rect x="-455" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-370" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Specification —</text>
+  <text x="-370" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">defining what the</text>
+  <text x="-370" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">system should do</text>
+  <rect x="-235" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="-150" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Design and</text>
+  <text x="-150" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">implementation —</text>
+  <text x="-150" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">defining the system...</text>
+  <rect x="-15" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="70" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Validation — checking</text>
+  <text x="70" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">that the system does</text>
+  <text x="70" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">what...</text>
+  <rect x="205" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="290" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Evolution — modifying</text>
+  <text x="290" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">the system in response</text>
+  <text x="290" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">to...</text>
+  <rect x="425" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="510" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Simplicity and clarity</text>
+  <text x="510" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">of milestones</text>
+  <rect x="645" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="730" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Enforces discipline</text>
+  <text x="730" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">through documented...</text>
+  <rect x="865" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="950" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Works well when</text>
+  <text x="950" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">requirements are well</text>
+  <text x="950" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">understood...</text>
+  <rect x="1085" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="1170" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Clear phase gates for</text>
+  <text x="1170" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">management control</text>
+</svg>

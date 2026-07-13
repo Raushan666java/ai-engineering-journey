@@ -12,6 +12,45 @@ By the end of this chapter, students will be able to:
 - Build iterable objects with `__iter__` and `__next__`
 - Use `__len__` and other container methods
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/hero.svg" alt="Chapter Banner: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/handwritten-notes.svg" alt="Handwritten Notes: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/sticky-notes.svg" alt="Sticky Notes: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/visual-explanation.svg" alt="Visual Explanation: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/architecture.svg" alt="Architecture: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/workflow.svg" alt="Workflow: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/mindmap.svg" alt="Mind Map: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/comparison.svg" alt="Comparison: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/cheatsheet.svg" alt="Cheat Sheet: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/interview-quiz.svg" alt="Quiz Card: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/14-magic-methods/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/14-magic-methods/social-card.svg" alt="Social Card: Chapter 14: Magic Methods" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Magic Methods](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/14-magic-methods.png)
 
 

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="8" height="400" fill="url(#accent)"/>
+  <!-- Decorative shapes -->
+  <rect x="900" y="-50" width="400" height="500" rx="30" fill="#2563eb" opacity="0.03" transform="rotate(10 1100 200)"/>
+  <rect x="1000" y="-30" width="300" height="460" rx="40" fill="#3b82f6" opacity="0.04" transform="rotate(-5 1150 200)"/>
+    <circle cx="1140.7578764293426" cy="314.89004394419544" r="44.35816227323737" fill="#2563eb" opacity="0.6"/>
+  <circle cx="1139.9558158624995" cy="182.12048278836562" r="49.33098211644202" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="1089.4567503006338" cy="68.34979771340484" r="41.80427273659854" fill="#60a5fa" opacity="0.4"/>
+  <circle cx="1151.1872860646272" cy="250.68478274785704" r="36.84899956184826" fill="#93c5fd" opacity="0.3"/>
+  <circle cx="1111.0590163287302" cy="78.37161053888913" r="30.295192086989637" fill="#bfdbfe" opacity="0.3"/>
+  <circle cx="1150.4572085279265" cy="193.38891498102117" r="53.88174268417989" fill="#2563eb" opacity="0.5"/>
+  <!-- Title -->
+  <text x="60" y="120" font-size="42" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">SQL Problem Bank</text>
+  <!-- Subtitle -->
+  <text x="60" y="170" font-size="18" fill="#64748b" font-family="Arial, sans-serif">`n&gt; Previous: [Chapter 2: DSA Problem Bank](./02-dsa-problem-bank.md) | Next: [Chapter 4: Company-Specific...</text>
+  <!-- Divider -->
+  <line x1="60" y1="200" x2="260" y2="200" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stats row -->
+  <g transform="translate(60, 270)">
+    <rect x="0" y="0" width="140" height="36" rx="6" fill="#2563eb" opacity="0.1"/>
+    <text x="70" y="23" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">7 Concepts</text>
+    <rect x="155" y="0" width="140" height="36" rx="6" fill="#059669" opacity="0.1"/>
+    <text x="225" y="23" font-size="12" fill="#059669" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">0 Algorithms</text>
+    <rect x="310" y="0" width="140" height="36" rx="6" fill="#d97706" opacity="0.1"/>
+    <text x="380" y="23" font-size="12" fill="#d97706" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">6 Formulas</text>
+  </g>
+  <!-- Keyword tags -->
+      <rect x="60" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="120" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Previous:</text>
+    <rect x="190" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="250" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Next:</text>
+    <rect x="320" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="380" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Compatible with:</text>
+    <rect x="450" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="510" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Basic Queries</text>
+    <rect x="580" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="640" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Joins</text>
+    <rect x="710" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="770" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Aggregation</text>
+</svg>

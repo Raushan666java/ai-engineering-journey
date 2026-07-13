@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#eff6ff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <!-- Accent bar -->
+  <rect x="0" y="0" width="8" height="400" fill="url(#accent)"/>
+  <!-- Decorative shapes -->
+  <rect x="900" y="-50" width="400" height="500" rx="30" fill="#2563eb" opacity="0.03" transform="rotate(10 1100 200)"/>
+  <rect x="1000" y="-30" width="300" height="460" rx="40" fill="#3b82f6" opacity="0.04" transform="rotate(-5 1150 200)"/>
+    <circle cx="1049.983636593922" cy="211.69137593724298" r="42.653232281948476" fill="#2563eb" opacity="0.3"/>
+  <circle cx="1004.2606609754704" cy="137.42980122642751" r="26.143971235666925" fill="#3b82f6" opacity="0.5"/>
+  <circle cx="1107.1495470070695" cy="61.8022648963956" r="34.25502844197243" fill="#60a5fa" opacity="0.5"/>
+  <circle cx="1154.138911629314" cy="139.5507759044665" r="63.76896235456862" fill="#93c5fd" opacity="0.6"/>
+  <circle cx="1081.2887576058565" cy="217.82642399574053" r="62.71896983275417" fill="#bfdbfe" opacity="0.3"/>
+  <circle cx="1015.3864667058052" cy="134.60493444319007" r="38.64091790897628" fill="#2563eb" opacity="0.5"/>
+  <!-- Title -->
+  <text x="60" y="120" font-size="42" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chapter 1: Sets</text>
+  <!-- Subtitle -->
+  <text x="60" y="170" font-size="18" fill="#64748b" font-family="Arial, sans-serif">Previous: None | Next: [Chapter 2: Logic](02-logic.md)</text>
+  <!-- Divider -->
+  <line x1="60" y1="200" x2="260" y2="200" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <!-- Stats row -->
+  <g transform="translate(60, 270)">
+    <rect x="0" y="0" width="140" height="36" rx="6" fill="#2563eb" opacity="0.1"/>
+    <text x="70" y="23" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">4 Concepts</text>
+    <rect x="155" y="0" width="140" height="36" rx="6" fill="#059669" opacity="0.1"/>
+    <text x="225" y="23" font-size="12" fill="#059669" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">4 Algorithms</text>
+    <rect x="310" y="0" width="140" height="36" rx="6" fill="#d97706" opacity="0.1"/>
+    <text x="380" y="23" font-size="12" fill="#d97706" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">6 Formulas</text>
+  </g>
+  <!-- Keyword tags -->
+      <rect x="60" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="120" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Previous:</text>
+    <rect x="190" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="250" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Next:</text>
+    <rect x="320" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="380" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">set</text>
+    <rect x="450" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="510" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">elements</text>
+    <rect x="580" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="640" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">members</text>
+    <rect x="710" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
+     <text x="770" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">empty set</text>
+</svg>

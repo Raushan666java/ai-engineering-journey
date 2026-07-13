@@ -15,6 +15,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/hero.svg" alt="Chapter Banner: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/architecture.svg" alt="Architecture: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/workflow.svg" alt="Workflow: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/mindmap.svg" alt="Mind Map: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/comparison.svg" alt="Comparison: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/interview-quiz.svg" alt="Quiz Card: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/modern-ai-engineering/05-prompt-engineering/social-card.svg" alt="Social Card: Chapter 5: Prompt Engineering" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## 5.1 Prompt Design Principles
 
 A prompt is the interface between human intent and model behavior. Unlike traditional software where behavior is determined by imperative code, LLM behavior is shaped by natural language instructions. Small changes in wording can produce dramatically different outputs.

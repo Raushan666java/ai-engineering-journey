@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900">
+  <rect width="600" height="900" fill="#ffffff" rx="6"/>
+  <!-- Top accent bar -->
+  <rect x="0" y="0" width="600" height="4" fill="#2563eb"/>
+  <!-- Column dividers -->
+  <line x1="300" y1="60" x2="300" y2="860" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+    <text x="300" y="70" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">05 → Placement Season Strategy</text>
+  <text x="30" y="100" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
+  <line x1="30" y1="104" x2="290" y2="104" stroke="#2563eb" stroke-width="1"/>
+  <text x="35" y="124" font-size="9" fill="#475569" font-family="Arial, sans-serif">IITs / NITs / Top NIRF</text>
+  <text x="35" y="137" font-size="9" fill="#475569" font-family="Arial, sans-serif">colleges: Phase 1 starts</text>
+  <text x="35" y="150" font-size="9" fill="#475569" font-family="Arial, sans-serif">Julyâ€“August. Phase 2</text>
+  <text x="35" y="163" font-size="9" fill="#475569" font-family="Arial, sans-serif">(slower)...</text>
+  <text x="35" y="178" font-size="9" fill="#475569" font-family="Arial, sans-serif">Autonomous private</text>
+  <text x="35" y="191" font-size="9" fill="#475569" font-family="Arial, sans-serif">colleges (VIT, SRM,</text>
+  <text x="35" y="204" font-size="9" fill="#475569" font-family="Arial, sans-serif">Manipal, etc.):</text>
+  <text x="35" y="217" font-size="9" fill="#475569" font-family="Arial, sans-serif">Septemberâ€“March</text>
+  <text x="35" y="230" font-size="9" fill="#475569" font-family="Arial, sans-serif">window. Multiple phases</text>
+  <text x="35" y="243" font-size="9" fill="#475569" font-family="Arial, sans-serif">across...</text>
+  <text x="35" y="258" font-size="9" fill="#475569" font-family="Arial, sans-serif">State universities:</text>
+  <text x="35" y="271" font-size="9" fill="#475569" font-family="Arial, sans-serif">Usually Januaryâ€“April,</text>
+  <text x="35" y="284" font-size="9" fill="#475569" font-family="Arial, sans-serif">with fewer companies...</text>
+  <text x="35" y="299" font-size="9" fill="#475569" font-family="Arial, sans-serif">Internship season (3rd</text>
+  <text x="35" y="312" font-size="9" fill="#475569" font-family="Arial, sans-serif">year): Companies hire</text>
+  <text x="35" y="325" font-size="9" fill="#475569" font-family="Arial, sans-serif">for 2â€“6 month</text>
+  <text x="35" y="338" font-size="9" fill="#475569" font-family="Arial, sans-serif">summer...</text>
+  <text x="35" y="353" font-size="9" fill="#475569" font-family="Arial, sans-serif">Placement season (final</text>
+  <text x="35" y="366" font-size="9" fill="#475569" font-family="Arial, sans-serif">year): Full-time job</text>
+  <text x="35" y="379" font-size="9" fill="#475569" font-family="Arial, sans-serif">hiring. The focus of</text>
+  <text x="35" y="392" font-size="9" fill="#475569" font-family="Arial, sans-serif">this guide.</text>
+  <text x="310" y="70" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
+  <line x1="310" y1="74" x2="570" y2="74" stroke="#059669" stroke-width="1"/>
+  <line x1="30" y1="470" x2="570" y2="470" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="30" y="484" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
+  <line x1="30" y1="488" x2="290" y2="488" stroke="#dc2626" stroke-width="1"/>
+  <text x="310" y="484" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
+  <line x1="310" y1="488" x2="570" y2="488" stroke="#d97706" stroke-width="1"/>
+  <text x="315" y="504" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ - Poor formatting → inconsistent...</text>
+  <text x="315" y="520" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ 1. Skip Q3 if stuck → A wrong...</text>
+  <text x="315" y="536" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ 6. Test with sample → Always run...</text>
+  <text x="315" y="552" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ - After 24 hours, analyze what...</text>
+  <text x="300" y="880" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">05 → Placement Season Strategy — Quick Reference</text>
+</svg>

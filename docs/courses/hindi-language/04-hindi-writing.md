@@ -9,6 +9,45 @@ By the end of this chapter, you will be able to:
 - Write reports, summaries, and dialogues in Hindi
 - Use official Hindi (à¤•à¤¾à¤°à¥à¤¯à¤¾à¤²à¤¯à¥€ à¤¹à¤¿à¤‚à¤¦à¥€) terminology for government documentation
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/hero.svg" alt="Chapter Banner: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/sticky-notes.svg" alt="Sticky Notes: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/visual-explanation.svg" alt="Visual Explanation: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/architecture.svg" alt="Architecture: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/workflow.svg" alt="Workflow: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/mindmap.svg" alt="Mind Map: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/comparison.svg" alt="Comparison: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/interview-quiz.svg" alt="Quiz Card: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/04-hindi-writing/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/04-hindi-writing/social-card.svg" alt="Social Card: Chapter 4: à¤¹à¤¿à¤‚à¤¦à¥€ à¤²à¥‡à¤–à¤¨ (Hindi Writing)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

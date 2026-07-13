@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Paper background -->
+  <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
+  <rect width="600" height="800" fill="url(#grid)"/>
+  <!-- Red margin line -->
+  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <!-- Guide lines -->
+  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Page number -->
+  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <!-- Content -->
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 10: Turing Machine</text>
+    <text x="60" y="122" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Extensions and the...</text>
+    <line x1="55" y1="160" x2="560" y2="160" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="184" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
+    <text x="60" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">universal Turing machine (UTM)</tspan>: a TM U that takes as input âŸ¨M, wâŸ© (the encoding of a TM M and an input...</text>
+    <text x="60" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">that takes as input âŸ¨M, wâŸ© (the</text>
+    <text x="60" y="256" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">encoding of a TM M and an input...</text>
+    <text x="60" y="278" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">oracle Turing machine</tspan>: a TM with an additional &quot;oracle tape&quot; and a special query state. When the...</text>
+    <text x="60" y="300" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">additional &quot;oracle tape&quot; and a</text>
+    <text x="60" y="322" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">special query state. When the...</text>
+    <text x="60" y="344" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Church-Turing Thes</tspan>: &gt; Previous: [Turing Machines](./09-turing.md) | Next:...</text>
+    <text x="60" y="366" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">[Turing Machines](./09-turing.md) |</text>
+    <text x="60" y="388" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Next:...</text>
+    <text x="60" y="410" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Th</tspan>: means M halts in the accept state for every w âˆˆ L, and for w âˆ‰ L, M either...</text>
+    <text x="60" y="432" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">for every w âˆˆ L, and for w âˆ‰ L, M</text>
+    <text x="60" y="454" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">either...</text>
+    <text x="60" y="484" font-size="15" font-weight="bold" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive">Formulas</text>
+    <text x="60" y="512" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1: {encodeDirection(dir)}0`;
+}
+
+function encodeTMDescription(desc: TMDescription): string {
+  let e</text>
+    <text x="60" y="534" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2: {symbol}`;
+    const options = this.transitions.get(key) || [];
+
+    for (const option of options</text>
+    <text x="60" y="556" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3: {symbol}`;
+    const options = this.transitions.get(key) || [];
+
+    if (options.length === 0) {</text>
+    <text x="60" y="586" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
+    <text x="60" y="614" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1. Every recursive language is RE (a decider is a special case of a...</text>
+    <text x="60" y="636" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. There exist RE languages that are NOT recursive (Chapter 10: the...</text>
+    <text x="60" y="658" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. If L is recursive, then LÌ… is also recursive (swap accept and reject...</text>
+    <text x="60" y="680" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. If L is RE, LÌ… may or may not be RE.</text>
+    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
+    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">- Recursive languages are decidable (TM always halts); RE languages are...</text>
+</svg>

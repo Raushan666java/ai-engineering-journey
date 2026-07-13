@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/hero.svg" alt="Chapter Banner: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/handwritten-notes.svg" alt="Handwritten Notes: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/sticky-notes.svg" alt="Sticky Notes: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/visual-explanation.svg" alt="Visual Explanation: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/architecture.svg" alt="Architecture: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/workflow.svg" alt="Workflow: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/mindmap.svg" alt="Mind Map: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/comparison.svg" alt="Comparison: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/cheatsheet.svg" alt="Cheat Sheet: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/interview-quiz.svg" alt="Quiz Card: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/common-mistakes-faq/social-card.svg" alt="Social Card: सामान्य गलतियाँ और समाधान: विज्ञान भैरव तंत्र (ओशो की दृष्टि में)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## इस मार्गदर्शिका का उपयोग कैसे करें
 
 यह दस्तावेज़ उन सभी साधकों के लिए है जो **विज्ञान भैरव तंत्र की ११२ ध्यान विधियों** का अभ्यास कर रहे हैं। इसमें शामिल हैं:

@@ -6,6 +6,45 @@
 
 > **One-Sentence Takeaway:** Graphs model pairwise relationships; choose adjacency matrix for dense graphs and adjacency list for sparse graphs.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/11-graphs/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/hero.svg" alt="Chapter Banner: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/handwritten-notes.svg" alt="Handwritten Notes: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/sticky-notes.svg" alt="Sticky Notes: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/visual-explanation.svg" alt="Visual Explanation: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/architecture.svg" alt="Architecture: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/workflow.svg" alt="Workflow: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/mindmap.svg" alt="Mind Map: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/comparison.svg" alt="Comparison: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/cheatsheet.svg" alt="Cheat Sheet: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/interview-quiz.svg" alt="Quiz Card: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/11-graphs/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/11-graphs/social-card.svg" alt="Social Card: Chapter 11: Graphs" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Define graphs and graph terminology.
 - Implement graph representations: adjacency matrix, adjacency list, and edge list.
 - Distinguish directed, undirected, weighted, and unweighted graphs.

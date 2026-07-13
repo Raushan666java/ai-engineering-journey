@@ -6,6 +6,45 @@
 
 After completing this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/hero.svg" alt="Chapter Banner: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/handwritten-notes.svg" alt="Handwritten Notes: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/sticky-notes.svg" alt="Sticky Notes: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/visual-explanation.svg" alt="Visual Explanation: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/architecture.svg" alt="Architecture: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/workflow.svg" alt="Workflow: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/mindmap.svg" alt="Mind Map: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/comparison.svg" alt="Comparison: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/cheatsheet.svg" alt="Cheat Sheet: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/interview-quiz.svg" alt="Quiz Card: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/cloud-computing/09-containerization/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/cloud-computing/09-containerization/social-card.svg" alt="Social Card: Chapter 9: Containerization and Orchestration" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Build and optimize Docker images for cloud deployment.
 2. Orchestrate containers with Kubernetes for production workloads.
 3. Design pod, service, and deployment configurations.

@@ -14,6 +14,45 @@
 - Extend logistic regression to multi-class classification via softmax
 - Apply L1 and L2 regularization to logistic regression
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/hero.svg" alt="Chapter Banner: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/architecture.svg" alt="Architecture: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/workflow.svg" alt="Workflow: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/mindmap.svg" alt="Mind Map: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/comparison.svg" alt="Comparison: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/interview-quiz.svg" alt="Quiz Card: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/machine-learning/03-logistic-regression/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/machine-learning/03-logistic-regression/social-card.svg" alt="Social Card: Chapter 3: Logistic Regression" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

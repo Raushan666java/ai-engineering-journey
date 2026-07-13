@@ -12,6 +12,45 @@
 - Recognize common pitfalls and develop strategies to avoid them
 - Practice time-boxed mock interview workflow with specific phase durations
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/hero.svg" alt="Chapter Banner: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/handwritten-notes.svg" alt="Handwritten Notes: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/sticky-notes.svg" alt="Sticky Notes: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/visual-explanation.svg" alt="Visual Explanation: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/architecture.svg" alt="Architecture: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/workflow.svg" alt="Workflow: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/mindmap.svg" alt="Mind Map: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/comparison.svg" alt="Comparison: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/cheatsheet.svg" alt="Cheat Sheet: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/interview-quiz.svg" alt="Quiz Card: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/24-interview-preparation/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/24-interview-preparation/social-card.svg" alt="Social Card: Chapter 24: System Design Interview Preparation" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

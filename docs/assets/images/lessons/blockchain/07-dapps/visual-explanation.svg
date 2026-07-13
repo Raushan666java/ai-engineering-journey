@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Decentralized Applications (dApps)</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Read: free, write costs gas |</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="55" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Key components: → Why IPFS for dApps?</text>
+  <line x1="500" y1="265" x2="500" y2="275" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="290" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="290" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="312" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="332" font-size="11" fill="#475569" font-family="Arial, sans-serif">Frontend: React, Vue, or Angular — same as Web2. → Wallet (e.g.,</text>
+  <text x="85" y="350" font-size="11" fill="#475569" font-family="Arial, sans-serif">MetaMask): Manages private keys and signs transactions. Injects</text>
+  <text x="85" y="368" font-size="11" fill="#475569" font-family="Arial, sans-serif">`window.ethereum` into the browser. → Provider (e.g., Infura,</text>
+  <text x="85" y="386" font-size="11" fill="#475569" font-family="Arial, sans-serif">Alchemy): JSON-RPC interface to blockchain nodes — enables reading</text>
+  <text x="85" y="404" font-size="11" fill="#475569" font-family="Arial, sans-serif">data and sending transactions. → Smart Contracts: On-chain logic</text>
+  <text x="85" y="422" font-size="11" fill="#475569" font-family="Arial, sans-serif">deployed on the blockchain. → Decentralized Storage (IPFS):</text>
+  <text x="85" y="440" font-size="11" fill="#475569" font-family="Arial, sans-serif">Content-addressed P2P storage for files that are too expensive to</text>
+  <text x="85" y="458" font-size="11" fill="#475569" font-family="Arial, sans-serif">store on-chain. → Provider: Connection to the blockchain (read</text>
+  <text x="85" y="476" font-size="11" fill="#475569" font-family="Arial, sans-serif">operations). → Signer: Represents an account that can sign</text>
+  <text x="85" y="494" font-size="11" fill="#475569" font-family="Arial, sans-serif">transactions (write operations). → Contract: ABI-bound interface to</text>
+  <text x="85" y="512" font-size="11" fill="#475569" font-family="Arial, sans-serif">interact with deployed contracts.</text>
+  <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="395" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="395" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="417" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="437" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {ethers.formatEther(value)} ETH`);
+    // Update UI in real-time</text>
+  <text x="85" y="455" font-size="11" fill="#475569" font-family="Arial, sans-serif">updateTransactionList({ from, t | 2: {result.IpfsHash}`;  //</text>
+  <text x="85" y="473" font-size="11" fill="#475569" font-family="Arial, sans-serif">CID
+}
+```
+
+### Provider Comparison
+
+&lt;a</text>
+  <text x="85" y="491" font-size="11" fill="#475569" font-family="Arial, sans-serif">href=&quot;../../../assets/images/diagrams | 3: 49+/mo | Yes |</text>
+  <text x="85" y="509" font-size="11" fill="#475569" font-family="Arial, sans-serif">Cross-chain, webhooks |
+| Public RPC | Unlimited (rate limited) | Free</text>
+  <text x="85" y="527" font-size="11" fill="#475569" font-family="Arial, sans-serif">| Limited | et | 4: {txHash}`);</text>
+  <text x="85" y="545" font-size="11" fill="#475569" font-family="Arial, sans-serif">this.trackTransaction(txHash);
+        });
+    }
+
+    private async</text>
+  <text x="85" y="563" font-size="11" fill="#475569" font-family="Arial, sans-serif">trackTra | 5: {event.name}`, event.args);
+        }
+    }
+}
+```
+
+###</text>
+  <text x="85" y="581" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 3: IPFS-CID-based NFT Store
+
+```types | 6: {this.to}` };
+    }</text>
+  <text x="85" y="599" font-size="11" fill="#475569" font-family="Arial, sans-serif">timeRemaining(now: number): number { return Math.max(0, this.lockTime</text>
+  <text x="85" y="617" font-size="11" fill="#475569" font-family="Arial, sans-serif">- now)</text>
+  <line x1="500" y1="475" x2="500" y2="485" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="500" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="500" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="522" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="542" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: Complete dApp Frontend (React + ethers.js):</text>
+  <line x1="500" y1="560" x2="500" y2="570" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="585" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="585" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="607" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="627" font-size="11" fill="#475569" font-family="Arial, sans-serif">- dApps remove central points of control and failure by utilizing</text>
+  <text x="85" y="645" font-size="11" fill="#475569" font-family="Arial, sans-serif">blockchain and P2P storage.
+- The...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Decentralized Applications (dApps)</text>
+</svg>

@@ -2,6 +2,45 @@
 
 > **Prerequisite:** [Modern AI Engineering](../modern-ai-engineering/index.md) — Covers Genkit, LangGraph, LlamaIndex, MCP, and production AI deployment. Complete that first for foundational AI engineering skills before diving into this agent-focused curriculum.
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/hero.svg" alt="Chapter Banner: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/handwritten-notes.svg" alt="Handwritten Notes: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/sticky-notes.svg" alt="Sticky Notes: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/visual-explanation.svg" alt="Visual Explanation: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/architecture.svg" alt="Architecture: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/workflow.svg" alt="Workflow: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/mindmap.svg" alt="Mind Map: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/comparison.svg" alt="Comparison: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/cheatsheet.svg" alt="Cheat Sheet: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/interview-quiz.svg" alt="Quiz Card: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/00-index/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/00-index/social-card.svg" alt="Social Card: Laravel Backend Developer → AI Agent Engineer" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Course Overview
 
 A 12-week, 6-phase transition curriculum for experienced Laravel/PHP backend developers who want to pivot into AI Agent Engineering. Builds on your existing production experience — multi-tenant ERPs, payment systems, WhatsApp AI bots, n8n automation, Docker, Redis — and fills the gaps in Python async, LLM fundamentals, RAG theory, LangGraph orchestration, MCP protocol, and production hardening for AI workloads.

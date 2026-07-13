@@ -6,6 +6,45 @@ This chapter covers essential security concepts every Java and Spring Boot devel
 
 ![Security Interview Topics - Mindmap](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/61-interview-security.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/61-interview-security/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/hero.svg" alt="Chapter Banner: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/handwritten-notes.svg" alt="Handwritten Notes: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/sticky-notes.svg" alt="Sticky Notes: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/visual-explanation.svg" alt="Visual Explanation: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/architecture.svg" alt="Architecture: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/workflow.svg" alt="Workflow: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/mindmap.svg" alt="Mind Map: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/comparison.svg" alt="Comparison: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/cheatsheet.svg" alt="Cheat Sheet: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/interview-quiz.svg" alt="Quiz Card: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/61-interview-security/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/61-interview-security/social-card.svg" alt="Social Card: Security Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 8: Memory Management</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Compile-time binding: You buy a specific seat (14A) when booking —</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">that seat is locked regardless of...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Address binding → 1. Compile-time Binding → 2. Load-time Binding → 3.</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">Execution-time Binding (Runtime Binding) → Problem: → Multiple</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">Partition Method</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Must recompile to relocate the program. → Used by simple embedded</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">systems and MS-DOS .COM files. → If the starting address changes,</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">every absolute reference breaks. → The process must be loaded into a</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">contiguous block of memory. → The base address is added to every</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">relative reference at load time. → If the program is swapped out and</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">later reloaded at a different address, it must be rebound (reloaded).</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">→ Used by all modern general-purpose operating systems (Linux,</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">Windows, macOS). → Requires hardware support (MMU, TLB).</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: Address Translation with Paging (Full Walk):  Given: -</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">32-bit logical address space - Page size = 4 KB (2¹² bytes) - Page...</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Logical addresses are mapped to physical addresses by the MMU,</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">enabling relocation and protection...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 8: Memory Management</text>
+</svg>

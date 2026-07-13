@@ -6,6 +6,45 @@
 
 After studying this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/hero.svg" alt="Chapter Banner: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/architecture.svg" alt="Architecture: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/workflow.svg" alt="Workflow: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/mindmap.svg" alt="Mind Map: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/comparison.svg" alt="Comparison: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/interview-quiz.svg" alt="Quiz Card: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/oop-cpp/16-design-patterns/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/oop-cpp/16-design-patterns/social-card.svg" alt="Social Card: Chapter 16: Design Patterns → The Gang of Four" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Classify all 23 GoF patterns into Creational, Structural, and Behavioral categories
 - Implement every pattern in idiomatic modern C++ with smart pointers
 - Select the correct pattern for a given design problem

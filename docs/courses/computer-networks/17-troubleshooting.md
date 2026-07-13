@@ -11,6 +11,45 @@
 7. Master diagnostic tools: ping, traceroute, netstat/ss, nslookup/dig, tcpdump/Wireshark, nmap, iperf, mtr.
 8. Analyze packet captures and build systematic troubleshooting workflows.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/hero.svg" alt="Chapter Banner: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/handwritten-notes.svg" alt="Handwritten Notes: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/sticky-notes.svg" alt="Sticky Notes: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/visual-explanation.svg" alt="Visual Explanation: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/architecture.svg" alt="Architecture: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/workflow.svg" alt="Workflow: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/mindmap.svg" alt="Mind Map: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/comparison.svg" alt="Comparison: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/cheatsheet.svg" alt="Cheat Sheet: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/interview-quiz.svg" alt="Quiz Card: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/17-troubleshooting/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/17-troubleshooting/social-card.svg" alt="Social Card: Chapter 17: Network Troubleshooting" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## 17.0 The Troubleshooting Mindset
 
 ### The Doctor Diagnosis Analogy

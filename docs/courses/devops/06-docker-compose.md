@@ -14,6 +14,45 @@
 - Apply Compose for development, testing, and production environments.
 - Extend and override compose files for different environments.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/devops/06-docker-compose/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/hero.svg" alt="Chapter Banner: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/handwritten-notes.svg" alt="Handwritten Notes: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/sticky-notes.svg" alt="Sticky Notes: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/visual-explanation.svg" alt="Visual Explanation: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/architecture.svg" alt="Architecture: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/workflow.svg" alt="Workflow: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/mindmap.svg" alt="Mind Map: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/comparison.svg" alt="Comparison: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/cheatsheet.svg" alt="Cheat Sheet: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/interview-quiz.svg" alt="Quiz Card: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/devops/06-docker-compose/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/devops/06-docker-compose/social-card.svg" alt="Social Card: Chapter 6: Docker Compose" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Chapter at a Glance

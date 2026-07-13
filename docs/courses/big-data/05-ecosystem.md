@@ -11,6 +11,45 @@ After completing this chapter, you will be able to:
 - Set up and use Kafka for streaming data ingestion
 - Compare legacy Hadoop tools with modern cloud-native alternatives
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/hero.svg" alt="Chapter Banner: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/architecture.svg" alt="Architecture: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/workflow.svg" alt="Workflow: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/mindmap.svg" alt="Mind Map: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/comparison.svg" alt="Comparison: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/interview-quiz.svg" alt="Quiz Card: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/big-data/05-ecosystem/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/big-data/05-ecosystem/social-card.svg" alt="Social Card: Chapter 5: Big Data Ecosystem Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

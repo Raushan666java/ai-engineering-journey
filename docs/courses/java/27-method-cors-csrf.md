@@ -11,6 +11,45 @@ This chapter covers the four pillars of web security beyond basic authentication
 
 By the end of this chapter you should be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/hero.svg" alt="Chapter Banner: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/handwritten-notes.svg" alt="Handwritten Notes: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/sticky-notes.svg" alt="Sticky Notes: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/visual-explanation.svg" alt="Visual Explanation: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/architecture.svg" alt="Architecture: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/workflow.svg" alt="Workflow: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/mindmap.svg" alt="Mind Map: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/comparison.svg" alt="Comparison: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/cheatsheet.svg" alt="Cheat Sheet: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/interview-quiz.svg" alt="Quiz Card: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/27-method-cors-csrf/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/27-method-cors-csrf/social-card.svg" alt="Social Card: Method Security, CORS & CSRF" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Enable method-level security with `@EnableMethodSecurity` (Java 17+ syntax)
 - Apply `@PreAuthorize`, `@PostAuthorize`, `@PreFilter`, and `@PostFilter` with SpEL expressions
 - Understand and use `hasRole`, `hasAuthority`, `hasAnyAuthority`, `hasPermission`, `authentication`, `principal`, `returnObject`, and `filterObject`

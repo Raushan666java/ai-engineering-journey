@@ -12,6 +12,45 @@
 - Evaluate the impact of heuristic evaluation functions on game-playing performance.
 - Discuss the challenges of games with imperfect information or stochastic elements.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/hero.svg" alt="Chapter Banner: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/handwritten-notes.svg" alt="Handwritten Notes: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/sticky-notes.svg" alt="Sticky Notes: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/visual-explanation.svg" alt="Visual Explanation: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/architecture.svg" alt="Architecture: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/workflow.svg" alt="Workflow: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/mindmap.svg" alt="Mind Map: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/comparison.svg" alt="Comparison: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/cheatsheet.svg" alt="Cheat Sheet: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/interview-quiz.svg" alt="Quiz Card: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/artificial-intelligence/04-adversarial-search/social-card.svg" alt="Social Card: Chapter 4: Adversarial Search and Games" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Why Adversarial Search Matters

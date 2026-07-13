@@ -11,6 +11,45 @@
 - Evaluate cross-shard query patterns including scatter-gather, distributed joins, and secondary index architectures
 - Design compound shard keys and database-per-service decompositions using real-world case studies
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/hero.svg" alt="Chapter Banner: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/architecture.svg" alt="Architecture: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/workflow.svg" alt="Workflow: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/mindmap.svg" alt="Mind Map: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/comparison.svg" alt="Comparison: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/interview-quiz.svg" alt="Quiz Card: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/system-design/05-partitioning-sharding/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/system-design/05-partitioning-sharding/social-card.svg" alt="Social Card: Chapter 5: Data Partitioning and Sharding" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 ## Chapter at a Glance
 

@@ -6,6 +6,45 @@
 
 ![Ethernet Switching](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/computer-networks/ch05-ethernet-switching.png)
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/hero.svg" alt="Chapter Banner: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/handwritten-notes.svg" alt="Handwritten Notes: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/sticky-notes.svg" alt="Sticky Notes: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/visual-explanation.svg" alt="Visual Explanation: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/architecture.svg" alt="Architecture: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/workflow.svg" alt="Workflow: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/mindmap.svg" alt="Mind Map: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/comparison.svg" alt="Comparison: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/cheatsheet.svg" alt="Cheat Sheet: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/interview-quiz.svg" alt="Quiz Card: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/computer-networks/05-ethernet-switching/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/computer-networks/05-ethernet-switching/social-card.svg" alt="Social Card: Chapter 5: Ethernet Switching" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Parse and explain every field of the Ethernet frame format.
 2. Trace the evolution of Ethernet from 10 Mbps shared media to 400 Gbps switched networks.
 3. Explain the operation of learning bridges and transparent switching with pseudocode and implementations.

@@ -12,6 +12,45 @@
 - Build custom guidelines for team-specific conventions
 ---
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/17-boost/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/hero.svg" alt="Chapter Banner: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/handwritten-notes.svg" alt="Handwritten Notes: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/sticky-notes.svg" alt="Sticky Notes: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/visual-explanation.svg" alt="Visual Explanation: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/architecture.svg" alt="Architecture: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/workflow.svg" alt="Workflow: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/mindmap.svg" alt="Mind Map: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/comparison.svg" alt="Comparison: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/cheatsheet.svg" alt="Cheat Sheet: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/interview-quiz.svg" alt="Quiz Card: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/17-boost/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/17-boost/social-card.svg" alt="Social Card: Chapter 17: Laravel Boost Ã¢â‚¬â€ AI-Assisted Development" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

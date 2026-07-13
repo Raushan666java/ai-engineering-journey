@@ -6,6 +6,45 @@
 
 By the end of this chapter, students will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/hero.svg" alt="Chapter Banner: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/architecture.svg" alt="Architecture: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/workflow.svg" alt="Workflow: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/mindmap.svg" alt="Mind Map: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/comparison.svg" alt="Comparison: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/interview-quiz.svg" alt="Quiz Card: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/algorithms/07-dp-intro/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/algorithms/07-dp-intro/social-card.svg" alt="Social Card: Chapter 7: Dynamic Programming — Foundations" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 1. Identify problems with optimal substructure and overlapping subproblems.
 2. Distinguish between memoization (top-down) and tabulation (bottom-up) approaches.
 3. Solve Fibonacci numbers and the rod cutting problem using dynamic programming.

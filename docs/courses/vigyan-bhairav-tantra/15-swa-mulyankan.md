@@ -1,5 +1,44 @@
 # अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/hero.svg" alt="Chapter Banner: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/handwritten-notes.svg" alt="Handwritten Notes: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/sticky-notes.svg" alt="Sticky Notes: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/visual-explanation.svg" alt="Visual Explanation: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/architecture.svg" alt="Architecture: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/workflow.svg" alt="Workflow: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/mindmap.svg" alt="Mind Map: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/comparison.svg" alt="Comparison: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/cheatsheet.svg" alt="Cheat Sheet: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/interview-quiz.svg" alt="Quiz Card: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/vigyan-bhairav-tantra/15-swa-mulyankan/social-card.svg" alt="Social Card: अध्याय १५: आत्म-मूल्यांकन: ओशो की दृष्टि" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## सीखने के उद्देश्य (Learning Objectives)
 
 इस अध्याय को पूरा करने के बाद, तुम निम्नलिखित में सक्षम होगे:

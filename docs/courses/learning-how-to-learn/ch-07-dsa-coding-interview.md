@@ -22,6 +22,45 @@ This chapter teaches you how to learn data structures and algorithms efficiently
 
 - Apply the 3-pass method to any DSA problem
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/hero.svg" alt="Chapter Banner: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/sticky-notes.svg" alt="Sticky Notes: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/visual-explanation.svg" alt="Visual Explanation: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/architecture.svg" alt="Architecture: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/workflow.svg" alt="Workflow: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/mindmap.svg" alt="Mind Map: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/comparison.svg" alt="Comparison: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/interview-quiz.svg" alt="Quiz Card: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/learning-how-to-learn/ch-07-dsa-coding-interview/social-card.svg" alt="Social Card: Chapter 7: DSA & Coding Interview Prep" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Classify problem types into patterns to reduce unfamiliar questions to known templates
 
 - Create effective Anki decks specifically for DSA retention

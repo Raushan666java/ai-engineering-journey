@@ -5,6 +5,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/hero.svg" alt="Chapter Banner: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/handwritten-notes.svg" alt="Handwritten Notes: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/sticky-notes.svg" alt="Sticky Notes: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/visual-explanation.svg" alt="Visual Explanation: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/architecture.svg" alt="Architecture: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/workflow.svg" alt="Workflow: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/mindmap.svg" alt="Mind Map: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/comparison.svg" alt="Comparison: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/cheatsheet.svg" alt="Cheat Sheet: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/interview-quiz.svg" alt="Quiz Card: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/ai-agent-engineer/01-phase0-backend-hardening/social-card.svg" alt="Social Card: Phase 0 — Compressed Backend Hardening" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Topic Table
 
 | # | Subtopic | Hours | Done checkpoint |

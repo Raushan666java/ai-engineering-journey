@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">discriminator-based multi-tenancy: a single schema with a tenant</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">discriminator column. We chose this over the...</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Functional Requirements → Non-Functional Requirements → Traffic</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">Estimation → Storage Estimation → Memory Estimation → Core Schema</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Architect a multi-tenant SaaS e-commerce platform using Laravel</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">13&apos;s core infrastructural components → Perform capacity</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">estimation for a high-traffic, multi-store marketplace serving</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">millions of users → Design a normalized, tenant-isolated relational</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">schema with polymorphic relationships for media → Implement a</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">distributed checkout pipeline with Redis-backed cart state,</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">transactional order creation, and queue-driven fulfillment → Construct</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">a real-time product search layer using Laravel Scout with Meilisearch,</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">including faceted filters and ranked sorting → Build a multi-tenant</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">caching strategy with per-tenant Redis namespaces and selective</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">invalidation → - Tenants (stores) → - Products belong to a tenant, not</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">to a user</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: domain = | 2: tenant = \App\Models\Tenant::query()</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">-&gt;where(&apos;domain&apos;, | 3:</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">request-&gt;merge([&apos;tenant_id&apos; =&gt; | 4: request);</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">}
+}
+```
+
+A global scope automatically applies the tenant filter to</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">every query:
+ | 5: tenantId);
+        }
+    }
+}
+```
+
+```php
+//</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">App\Traits\BelongsToTenant.php
+&lt;?php
+
+namespac | 6:</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">model-&gt;tenant_id)) {</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">- Multi-tenant e-commerce requires careful schema design with a</text>
+  <text x="85" y="600" font-size="11" fill="#475569" font-family="Arial, sans-serif">`tenant_id` discriminator column on...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 22: Case Study Ã¢â‚¬â€ SaaS E-Commerce Platform</text>
+</svg>

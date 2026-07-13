@@ -14,6 +14,45 @@ dataset "Simplification" [60, 68, 75, 82, 88]
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/hero.svg" alt="Chapter Banner: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/handwritten-notes.svg" alt="Handwritten Notes: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/sticky-notes.svg" alt="Sticky Notes: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/visual-explanation.svg" alt="Visual Explanation: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/architecture.svg" alt="Architecture: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/workflow.svg" alt="Workflow: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/mindmap.svg" alt="Mind Map: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/comparison.svg" alt="Comparison: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/cheatsheet.svg" alt="Cheat Sheet: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/interview-quiz.svg" alt="Quiz Card: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/social-card.svg" alt="Social Card: Quant Advanced Speed Drills" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Data Interpretation Drills
 
 ### Set 1: Table DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%

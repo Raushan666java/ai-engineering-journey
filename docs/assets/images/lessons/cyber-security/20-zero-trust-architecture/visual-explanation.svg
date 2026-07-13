@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 20: Zero Trust &amp; Enterprise Security Architecture</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Device inventory: Every device was catalogued, managed, and</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">continuously attested.</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Maturity levels: → Implications of assume breach: → Key rule: → Secure</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">Access Service Edge (SASE) → Zero Trust Network Access (ZTNA) →</text>
+  <text x="85" y="303" font-size="11" fill="#475569" font-family="Arial, sans-serif">Identity Pillar:</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">Trace the historical evolution of Zero Trust from Forrester&apos;s</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">2010 initiative through NIST SP 800-207 and industry adoption at</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">Google BeyondCorp. → Explain the seven core principles of Zero</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">Trust—never trust/always verify, assume breach, least privilege,</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">microsegmentation, and continuous validatio → Diagram the NIST SP</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">800-207 logical architecture including the Policy Engine (PE), Policy</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">Administrator (PA), and Policy Enforcement Point (PEP). →</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">Differentiate between the control plane and data plane in a Zero Trust</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">architecture and describe their separation. → Analyze the SASE</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">framework as the convergence of SD-WAN and SSE (CASB, SWG, ZTNA) and</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">evaluate its role in enterprise security. → Implement a working Zero</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">Trust Policy Engine in TypeScript that evaluates user, device,</text>
+  <text x="85" y="588" font-size="11" fill="#475569" font-family="Arial, sans-serif">location, and behavioral context before granting access. → Design a</text>
+  <text x="85" y="606" font-size="11" fill="#475569" font-family="Arial, sans-serif">microsegmentation policy generator that translates service</text>
+  <text x="85" y="624" font-size="11" fill="#475569" font-family="Arial, sans-serif">dependencies into concrete firewall rule sets. → Construct a</text>
+  <text x="85" y="642" font-size="11" fill="#475569" font-family="Arial, sans-serif">continuous trust score algorithm that follows the NIST SP 800-077</text>
+  <text x="85" y="660" font-size="11" fill="#475569" font-family="Arial, sans-serif">guidance for attribute-based validation.</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {this.paEndpoint}/evaluate`, {
+      method: &quot;POST&quot;,</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">body: JSON.stringify(dataPlaneMsg),
+      | 2: {sessionId} to MFA`);</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">}
+}
+```
+
+---
+
+## 20.4 SASE: Secure Access Service Edge
+
+### 20.4.1 The</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">SASE | 3: {context.userId}`);
+    switch (policy.action) {
+      case</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">&quot;allow&quot;:
+        this.routeToDestination | 4:</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">{policy.name}`);
+  }
+}
+```
+
+---
+
+## 20.5 ZTNA: Zero Trust Network</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">Access
+
+### 20.5.1 What is ZTNA?
+
+ | 5: {dep.destService}`);</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">continue;
+      }
+
+      const rule: FirewallRule = {
+        ruleId:</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">` | 6: {(err as Error).message}`,
+      };
+    }
+  }</text>
+  <text x="85" y="639" font-size="11" fill="#475569" font-family="Arial, sans-serif">revokeToken(jti: string): void {
+    this.revokedTo</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Code Example 1: typescript</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">Zero Trust; NIST SP 800-207; CISA</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 20: Zero Trust &amp; Enterprise Security Architecture</text>
+</svg>

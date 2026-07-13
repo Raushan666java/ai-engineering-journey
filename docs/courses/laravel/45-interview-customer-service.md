@@ -7,6 +7,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/hero.svg" alt="Chapter Banner: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/handwritten-notes.svg" alt="Handwritten Notes: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/sticky-notes.svg" alt="Sticky Notes: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/visual-explanation.svg" alt="Visual Explanation: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/architecture.svg" alt="Architecture: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/workflow.svg" alt="Workflow: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/mindmap.svg" alt="Mind Map: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/comparison.svg" alt="Comparison: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/cheatsheet.svg" alt="Cheat Sheet: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/interview-quiz.svg" alt="Quiz Card: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/45-interview-customer-service/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/45-interview-customer-service/social-card.svg" alt="Social Card: Chapter 45: Customer Service & Support → Interview Q&A" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Aspect | Details |

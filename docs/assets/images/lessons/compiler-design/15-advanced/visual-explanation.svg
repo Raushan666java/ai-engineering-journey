@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Advanced Topics in Compilation</text>
+  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">tiered compilation: multiple optimization levels that trade</text>
+  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">compilation speed for peak performance.</text>
+  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="225" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="225" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Threshold-driven promotion → Example (HotSpot deoptimization) → Hidden</text>
+  <text x="85" y="285" font-size="11" fill="#475569" font-family="Arial, sans-serif">classes → Inline caching → Deoptimization in V8 → Mod/Ref analysis</text>
+  <line x1="500" y1="305" x2="500" y2="315" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="330" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="330" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="352" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="372" font-size="11" fill="#475569" font-family="Arial, sans-serif">CompileThreshold (default 10,000 in client mode, 15,000 in server</text>
+  <text x="85" y="390" font-size="11" fill="#475569" font-family="Arial, sans-serif">mode): number of invocations before compilation. → TieredCompilation</text>
+  <text x="85" y="408" font-size="11" fill="#475569" font-family="Arial, sans-serif">(default in JDK 8+): methods start interpreted, are compiled with C1</text>
+  <text x="85" y="426" font-size="11" fill="#475569" font-family="Arial, sans-serif">after ~2,000 invocations, and promoted to C2 after ~15,000 invo → C1</text>
+  <text x="85" y="444" font-size="11" fill="#475569" font-family="Arial, sans-serif">(Client compiler): lightweight, performs basic inlining, dead-code</text>
+  <text x="85" y="462" font-size="11" fill="#475569" font-family="Arial, sans-serif">elimination, and peephole optimization. Compiles in milliseconds. → C2</text>
+  <text x="85" y="480" font-size="11" fill="#475569" font-family="Arial, sans-serif">(Server compiler): heavyweight, performs all global optimizations</text>
+  <text x="85" y="498" font-size="11" fill="#475569" font-family="Arial, sans-serif">(loop transformations, SSA-based GVN, graph-coloring register</text>
+  <text x="85" y="516" font-size="11" fill="#475569" font-family="Arial, sans-serif">allocation). Compil → Sparkplug: very fast baseline compiler, one pass</text>
+  <text x="85" y="534" font-size="11" fill="#475569" font-family="Arial, sans-serif">over bytecode (no IR), produces mediocre code but compiles in</text>
+  <text x="85" y="552" font-size="11" fill="#475569" font-family="Arial, sans-serif">microseconds. Replaced the old full-cod → TurboFan: full optimizing</text>
+  <text x="85" y="570" font-size="11" fill="#475569" font-family="Arial, sans-serif">compiler, SSA-based IR, performs type specialization using observed</text>
+  <text x="85" y="588" font-size="11" fill="#475569" font-family="Arial, sans-serif">types from inline caches. → Maglev: mid-tier (recently introduced),</text>
+  <text x="85" y="606" font-size="11" fill="#475569" font-family="Arial, sans-serif">between Sparkplug and TurboFan, uses SSA but simpler passes than</text>
+  <text x="85" y="624" font-size="11" fill="#475569" font-family="Arial, sans-serif">TurboFan. → Class hierarchy assumption: &quot;the receiver of this</text>
+  <text x="85" y="642" font-size="11" fill="#475569" font-family="Arial, sans-serif">virtual call is always of type `Foo`.&quot;</text>
+  <line x1="500" y1="410" x2="500" y2="420" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="435" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="435" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="457" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="477" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {phi.dest}_ | 2: {newName} = f(...)`)
+    }
+
+    // Rename</text>
+  <text x="85" y="495" font-size="11" fill="#475569" font-family="Arial, sans-serif">regular statements
+    for (const stmt of block.stmts) | 3:</text>
+  <text x="85" y="513" font-size="11" fill="#475569" font-family="Arial, sans-serif">{renamedRhs}`)
+    }
+
+    // Visit children
+    for (const childId</text>
+  <text x="85" y="531" font-size="11" fill="#475569" font-family="Arial, sans-serif">of block.domChildren) {
+     | 4: {canonical} (via GVN)`)
+        }</text>
+  <text x="85" y="549" font-size="11" fill="#475569" font-family="Arial, sans-serif">else {
+          this.valueTable.set(hash, lhs)
+          newSt | 5:</text>
+  <text x="85" y="567" font-size="11" fill="#475569" font-family="Arial, sans-serif">{stmts.join(&apos;; &apos;)}`)
+}
+
+//</text>
+  <text x="85" y="585" font-size="11" fill="#475569" font-family="Arial, sans-serif">============================================================
+// Examp</text>
+  <text x="85" y="603" font-size="11" fill="#475569" font-family="Arial, sans-serif">| 6: {methodName} at baseline (Tier 1)`)
+      method.compiled = true</text>
+  <text x="85" y="621" font-size="11" fill="#475569" font-family="Arial, sans-serif">method.compilationLevel = 1</text>
+  <line x1="500" y1="515" x2="500" y2="525" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="540" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="540" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="562" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="582" font-size="11" fill="#475569" font-family="Arial, sans-serif">Oracle HotSpot JVM: A Case Study:  &lt;a...</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="75" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="75" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">Modern compilation extends far beyond the classic phase-by-phase</text>
+  <text x="85" y="685" font-size="11" fill="#475569" font-family="Arial, sans-serif">pipeline. Just-in-time compilers...</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 15: Advanced Topics in Compilation</text>
+</svg>

@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/hero.svg" alt="Chapter Banner: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/handwritten-notes.svg" alt="Handwritten Notes: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/sticky-notes.svg" alt="Sticky Notes: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/visual-explanation.svg" alt="Visual Explanation: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/architecture.svg" alt="Architecture: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/workflow.svg" alt="Workflow: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/mindmap.svg" alt="Mind Map: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/comparison.svg" alt="Comparison: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/cheatsheet.svg" alt="Cheat Sheet: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/interview-quiz.svg" alt="Quiz Card: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/discrete-mathematics/15-applications/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/discrete-mathematics/15-applications/social-card.svg" alt="Social Card: Chapter 15: Applications of Discrete Mathematics" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Model real-world problems using discrete mathematical structures
 - Apply graph theory to network flow, scheduling, and matching problems
 - Use combinatorial reasoning for counting and optimization

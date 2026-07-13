@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    </pattern>
+  </defs>
+  <!-- Paper background -->
+  <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
+  <rect width="600" height="800" fill="url(#grid)"/>
+  <!-- Red margin line -->
+  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <!-- Guide lines -->
+  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <!-- Page number -->
+  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <!-- Content -->
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Maven Deep Dive</text>
+    <line x1="55" y1="128" x2="560" y2="128" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
+    <text x="60" y="152" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
+    <text x="60" y="180" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">clean lifecycle</tspan>: pre-clean, clean (deletes `target/`)</text>
+    <text x="60" y="202" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(deletes `target/`)</text>
+    <text x="60" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">default lifecycle</tspan>: validate, initialize, generate-sources, process-sources, generate-resources,...</text>
+    <text x="60" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">generate-sources, process-sources,</text>
+    <text x="60" y="268" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">generate-resources,...</text>
+    <text x="60" y="290" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">`source` / `target` / `release`</tspan>: Java version for source compatibility and target output. Prefer `release` in...</text>
+    <text x="60" y="312" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">version for source compatibility and</text>
+    <text x="60" y="334" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">target output. Prefer `release` in...</text>
+    <text x="60" y="356" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">`annotationProcessorPaths`</tspan>: The correct way to configure Lombok, MapStruct, and Spring Boot configuration...</text>
+    <text x="60" y="378" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">way to configure Lombok, MapStruct, and</text>
+    <text x="60" y="400" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Spring Boot configuration...</text>
+    <text x="60" y="430" font-size="15" font-weight="bold" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive">Formulas</text>
+    <text x="60" y="458" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1: {app.version}&lt;/app.full.name&gt;
+&lt;/properties&gt;
+```
+
+### 1.5 Packaging Types
+
+&lt;a href=&quot;../../../ass</text>
+    <text x="60" y="480" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2: {mapstruct.version}&lt;/version&gt;
+            &lt;/path&gt;
+            &lt;path&gt;
+                &lt;groupId&gt;org</text>
+    <text x="60" y="502" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3: {env.MY_SECRET}&lt;/MY_SECRET&gt;
+        &lt;/environmentVariables&gt;
+    &lt;/configuration&gt;
+&lt;/plugin&gt;
+```
+</text>
+    <text x="60" y="532" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
+    <text x="60" y="560" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. Read and write a complete Maven POM from scratch</text>
+    <text x="60" y="582" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. Explain every element of the Project Object Model: coordinates,...</text>
+    <text x="60" y="604" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. Describe the Maven lifecycle phases and their order: validate,...</text>
+    <text x="60" y="626" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">5. Configure the compiler plugin with source/target versions, annotation...</text>
+    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
+    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Core concepts:; Key techniques:; Spring Boot integration:</text>
+</svg>

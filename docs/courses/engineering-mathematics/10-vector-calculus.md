@@ -6,6 +6,45 @@
 
 After completing this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/hero.svg" alt="Chapter Banner: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/handwritten-notes.svg" alt="Handwritten Notes: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/sticky-notes.svg" alt="Sticky Notes: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/visual-explanation.svg" alt="Visual Explanation: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/architecture.svg" alt="Architecture: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/workflow.svg" alt="Workflow: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/mindmap.svg" alt="Mind Map: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/comparison.svg" alt="Comparison: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/cheatsheet.svg" alt="Cheat Sheet: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/interview-quiz.svg" alt="Quiz Card: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/engineering-mathematics/10-vector-calculus/social-card.svg" alt="Social Card: Chapter 10: Vector Calculus & Applications" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Compute line integrals and surface integrals of scalar and vector fields
 - Apply Green's theorem, Stokes' theorem, and the divergence theorem
 - Understand the physical meaning of gradient, divergence, and curl

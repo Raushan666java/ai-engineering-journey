@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
+  <!-- Light grid -->
+  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
+  </pattern>
+  <rect width="1000" height="700" fill="url(#vgrid)"/>
+    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
+  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Current Affairs 2025–2026</text>
+  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
+    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Par: Paralympics (2024) | — | — |</text>
+  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
+    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
+    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
+  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Key Highlights: → Major Announcements: → Key Economic Trends: → Other</text>
+  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">Space Developments: → Key Sporting Achievements: → Padma Awards 2025:</text>
+  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
+    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
+    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
+  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">New Income Tax Regime: Major simplification — new tax regime with</text>
+  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">revised slabs; standard deduction increased to ₹1,00,000 → PM Awas</text>
+  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">Yojana: Target of 2 crore additional houses (Urban + Rural) →</text>
+  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">Gaganyaan: ₹1,500 crore increased allocation for the crewed mission →</text>
+  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">Digital India 2.0: ₹1,200 crore for AI compute infrastructure → Green</text>
+  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">Hydrogen Mission: Second phase allocation of ₹10,000 crore → Export</text>
+  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">Promotion: New Foreign Trade Policy 2025-30 announced → Skill India</text>
+  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">Upgrade: ₹5,000 crore for new skill development centres → Ease of</text>
+  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">Doing Business 2.0: Digital portal integration for 100+ government</text>
+  <text x="85" y="514" font-size="11" fill="#475569" font-family="Arial, sans-serif">services</text>
+  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="415" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
+    <rect x="60" y="415" width="8" height="75" rx="3" fill="#701a75"/>
+    <text x="85" y="437" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
+  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: 5 trillion GDP&apos;, status: &apos;ongoing&apos;, targetYear:</text>
+  <text x="85" y="475" font-size="11" fill="#475569" font-family="Arial, sans-serif">2027, keyMetric: &apos;Nominal GDP target&apos; },
+      { sec | India</text>
+  <text x="85" y="493" font-size="11" fill="#475569" font-family="Arial, sans-serif">Economy:: 10 trillion by 2032-35; 500 GW renewable by 2030.
+6. **UCC</text>
+  <text x="85" y="511" font-size="11" fill="#475569" font-family="Arial, sans-serif">and ONE:** Understand that Uttarakhand im</text>
+  <line x1="500" y1="495" x2="500" y2="505" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="520" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
+    <rect x="60" y="520" width="8" height="75" rx="3" fill="#1e40af"/>
+    <text x="85" y="542" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Real-world Example</text>
+  <text x="85" y="562" font-size="11" fill="#475569" font-family="Arial, sans-serif">Example 1: Future Events Quiz Engine (TypeScript):  Output: --- Q1</text>
+  <text x="85" y="580" font-size="11" fill="#475569" font-family="Arial, sans-serif">(Exam Style): The &quot;Union Budget 2025-26&quot; was presented on:</text>
+  <text x="85" y="598" font-size="11" fill="#475569" font-family="Arial, sans-serif">A) 1...</text>
+  <line x1="500" y1="600" x2="500" y2="610" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="60" y="625" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
+    <rect x="60" y="625" width="8" height="55" rx="3" fill="#831843"/>
+    <text x="85" y="647" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="85" y="667" font-size="11" fill="#475569" font-family="Arial, sans-serif">Union Budget 2025-26:; G20 Summit 2025; COP30</text>
+  <!-- Footer note -->
+  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 7: Current Affairs 2025–2026</text>
+</svg>

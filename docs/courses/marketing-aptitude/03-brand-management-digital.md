@@ -9,6 +9,45 @@ By the end of this chapter, you will be able to:
 - Compare digital marketing channels: SEO, SEM, social media, content, email, affiliate, and influencer marketing
 - Understand CRM concepts including customer retention, loyalty programmes, and technology
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/hero.svg" alt="Chapter Banner: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/sticky-notes.svg" alt="Sticky Notes: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/visual-explanation.svg" alt="Visual Explanation: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/architecture.svg" alt="Architecture: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/workflow.svg" alt="Workflow: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/mindmap.svg" alt="Mind Map: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/comparison.svg" alt="Comparison: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/interview-quiz.svg" alt="Quiz Card: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/marketing-aptitude/03-brand-management-digital/social-card.svg" alt="Social Card: Chapter 3: Brand Management and Digital Marketing" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

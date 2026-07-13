@@ -10,6 +10,45 @@ By the end of this chapter, you will be able to:
 - Conjugate verbs across three tenses (bhoot, vartman, bhavishya) and three voices (kartri, karm, bhav)
 - Recognize 15+ alankar and 9 ras in Hindi literature
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/hero.svg" alt="Chapter Banner: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/handwritten-notes.svg" alt="Handwritten Notes: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/sticky-notes.svg" alt="Sticky Notes: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/visual-explanation.svg" alt="Visual Explanation: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/architecture.svg" alt="Architecture: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/workflow.svg" alt="Workflow: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/mindmap.svg" alt="Mind Map: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/comparison.svg" alt="Comparison: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/cheatsheet.svg" alt="Cheat Sheet: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/interview-quiz.svg" alt="Quiz Card: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/01-hindi-grammar/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/01-hindi-grammar/social-card.svg" alt="Social Card: Chapter 1: हिंदी व्याकरण (Hindi Grammar)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---
 
 ## Theory

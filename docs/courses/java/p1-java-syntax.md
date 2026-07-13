@@ -1,6 +1,45 @@
 # Java Syntax & Fundamentals
 
 ## Learning Objectives
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/p1-java-syntax/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/hero.svg" alt="Chapter Banner: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/handwritten-notes.svg" alt="Handwritten Notes: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/sticky-notes.svg" alt="Sticky Notes: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/visual-explanation.svg" alt="Visual Explanation: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/architecture.svg" alt="Architecture: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/workflow.svg" alt="Workflow: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/mindmap.svg" alt="Mind Map: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/comparison.svg" alt="Comparison: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/cheatsheet.svg" alt="Cheat Sheet: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/interview-quiz.svg" alt="Quiz Card: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/p1-java-syntax/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/p1-java-syntax/social-card.svg" alt="Social Card: Java Syntax & Fundamentals" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

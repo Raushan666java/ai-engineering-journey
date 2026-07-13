@@ -11,6 +11,45 @@ By the end of this chapter, students will be able to:
 - Delegate to subgenerators with `yield from`
 - Apply the `itertools` module for efficient iteration patterns
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/python-programming/16-generators/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/hero.svg" alt="Chapter Banner: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/architecture.svg" alt="Architecture: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/workflow.svg" alt="Workflow: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/mindmap.svg" alt="Mind Map: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/comparison.svg" alt="Comparison: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/interview-quiz.svg" alt="Quiz Card: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/python-programming/16-generators/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/python-programming/16-generators/social-card.svg" alt="Social Card: Chapter 16: Generators and itertools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ![Generators and itertools](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/python-programming/16-generators.png)
 
 

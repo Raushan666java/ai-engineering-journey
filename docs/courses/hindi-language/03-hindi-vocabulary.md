@@ -9,6 +9,45 @@ By the end of this chapter, you will be able to:
 - Classify words as तत्सम, तद्भव, देशज, and विदेशी (foreign-origin)
 - Apply vocabulary knowledge to fill-in-the-blanks, synonym/antonym matching, and sentence completion
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/hero.svg" alt="Chapter Banner: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/handwritten-notes.svg" alt="Handwritten Notes: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/sticky-notes.svg" alt="Sticky Notes: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/visual-explanation.svg" alt="Visual Explanation: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/architecture.svg" alt="Architecture: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/workflow.svg" alt="Workflow: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/mindmap.svg" alt="Mind Map: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/comparison.svg" alt="Comparison: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/cheatsheet.svg" alt="Cheat Sheet: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/interview-quiz.svg" alt="Quiz Card: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/hindi-language/03-hindi-vocabulary/social-card.svg" alt="Social Card: Chapter 3: हिंदी शब्दावली (Hindi Vocabulary)" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ---## Theory
 
 ### 3.1 Classification of Hindi Vocabulary

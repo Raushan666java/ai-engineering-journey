@@ -1,5 +1,44 @@
 ![Microservices Advanced Topics - Flowchart](https://raw.githubusercontent.com/Raushan666java/ai-engineering-journey/main/docs/assets/images/diagrams/java/60-interview-microservices-d.png)
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/hero.svg" alt="Chapter Banner: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/handwritten-notes.svg" alt="Handwritten Notes: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/sticky-notes.svg" alt="Sticky Notes: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/visual-explanation.svg" alt="Visual Explanation: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/architecture.svg" alt="Architecture: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/workflow.svg" alt="Workflow: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/mindmap.svg" alt="Mind Map: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/comparison.svg" alt="Comparison: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/cheatsheet.svg" alt="Cheat Sheet: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/interview-quiz.svg" alt="Quiz Card: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/60-interview-microservices-d/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/60-interview-microservices-d/social-card.svg" alt="Social Card: ── Istio DestinationRule (circuit breaker at mesh level) ──" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Topic | Key Focus | Key Questions |

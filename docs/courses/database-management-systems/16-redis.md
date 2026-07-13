@@ -12,6 +12,45 @@
 - Use Redis for real-world use cases: caching, sessions, rate limiters, message brokers, leaderboards, distributed locks
 - Understand eviction policies, transactions, Lua scripting, and Pub/Sub vs Streams
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/hero.svg" alt="Chapter Banner: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/handwritten-notes.svg" alt="Handwritten Notes: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/sticky-notes.svg" alt="Sticky Notes: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/visual-explanation.svg" alt="Visual Explanation: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/architecture.svg" alt="Architecture: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/workflow.svg" alt="Workflow: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/mindmap.svg" alt="Mind Map: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/comparison.svg" alt="Comparison: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/cheatsheet.svg" alt="Cheat Sheet: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/interview-quiz.svg" alt="Quiz Card: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/database-management-systems/16-redis/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/database-management-systems/16-redis/social-card.svg" alt="Social Card: Chapter 16: Redis â†’ In-Memory Data Store" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Chapter at a Glance
 
 | Topic | Key Insight | Practical Takeaway |

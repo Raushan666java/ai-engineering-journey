@@ -10,6 +10,45 @@
 - Integrate Model Context Protocol (MCP) tools from remote and local MCP servers
 - Leverage built-in provider tools for web search, web fetching, and file search
 - Build a complete support agent combining multiple tools for production use
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/hero.svg" alt="Chapter Banner: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/handwritten-notes.svg" alt="Handwritten Notes: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/sticky-notes.svg" alt="Sticky Notes: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/visual-explanation.svg" alt="Visual Explanation: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/architecture.svg" alt="Architecture: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/workflow.svg" alt="Workflow: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/mindmap.svg" alt="Mind Map: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/comparison.svg" alt="Comparison: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/cheatsheet.svg" alt="Cheat Sheet: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/interview-quiz.svg" alt="Quiz Card: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/laravel/13-ai-sdk-tools/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/laravel/13-ai-sdk-tools/social-card.svg" alt="Social Card: Chapter 13: Laravel AI SDK → Tools, MCP Tools & Provider Tools" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Chapter at a Glance
 
 | Section | Key Topics |

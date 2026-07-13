@@ -9,6 +9,45 @@
 - Analyze load factor and rehashing strategies.
 - Evaluate the complexity of search, insert, and delete.
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/hero.svg" alt="Chapter Banner: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/handwritten-notes.svg" alt="Handwritten Notes: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/sticky-notes.svg" alt="Sticky Notes: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/visual-explanation.svg" alt="Visual Explanation: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/architecture.svg" alt="Architecture: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/workflow.svg" alt="Workflow: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/mindmap.svg" alt="Mind Map: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/comparison.svg" alt="Comparison: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/cheatsheet.svg" alt="Cheat Sheet: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/interview-quiz.svg" alt="Quiz Card: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/data-structures/07-hash-tables/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/data-structures/07-hash-tables/social-card.svg" alt="Social Card: Chapter 7: Hash Tables" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 ## Why Hash Tables Matter
 
 Imagine you have a massive **dictionary** with 100,000 words. To look up the definition of "serendipity", you could:

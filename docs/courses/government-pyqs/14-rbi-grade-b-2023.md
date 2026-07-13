@@ -4,6 +4,45 @@
 
 ---
 
+
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/hero.svg" alt="Chapter Banner: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/handwritten-notes.svg" alt="Handwritten Notes: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/sticky-notes.svg" alt="Sticky Notes: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/visual-explanation.svg" alt="Visual Explanation: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/architecture.svg" alt="Architecture: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/workflow.svg" alt="Workflow: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/mindmap.svg" alt="Mind Map: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/comparison.svg" alt="Comparison: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/cheatsheet.svg" alt="Cheat Sheet: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/interview-quiz.svg" alt="Quiz Card: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/government-pyqs/14-rbi-grade-b-2023/social-card.svg" alt="Social Card: RBI Grade B Phase 1 2023 — Solved Paper" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
 ## Exam Pattern
 
 | Section | Questions | Marks | Duration |

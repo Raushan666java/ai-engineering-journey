@@ -12,6 +12,45 @@ This chapter covers Maven in full depth: the POM structure, the build lifecycle,
 
 By the end of this chapter, you will be able to:
 
+<!-- Image Gallery -->
+<div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
+<a href="../../../assets/images/lessons/java/07-maven/hero.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/hero.svg" alt="Chapter Banner: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/handwritten-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/handwritten-notes.svg" alt="Handwritten Notes: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/sticky-notes.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/sticky-notes.svg" alt="Sticky Notes: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/visual-explanation.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/visual-explanation.svg" alt="Visual Explanation: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/architecture.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/architecture.svg" alt="Architecture: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/workflow.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/workflow.svg" alt="Workflow: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/mindmap.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/mindmap.svg" alt="Mind Map: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/comparison.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/comparison.svg" alt="Comparison: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/cheatsheet.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/cheatsheet.svg" alt="Cheat Sheet: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/interview-quiz.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/interview-quiz.svg" alt="Quiz Card: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+<a href="../../../assets/images/lessons/java/07-maven/social-card.svg" target="_blank" rel="noopener">
+  <img src="../../../assets/images/lessons/java/07-maven/social-card.svg" alt="Social Card: Maven Deep Dive" width="18%" style="margin:2px;border:1px solid #e2e8f0;border-radius:6px;">
+</a>
+</div>
+<!-- End Image Gallery -->
+
+
 - Read and write a complete Maven POM from scratch
 - Explain every element of the Project Object Model: coordinates, packaging, properties, dependencies, dependency management, build, profiles, modules
 - Describe the Maven lifecycle phases and their order: validate, compile, test, package, verify, install, deploy

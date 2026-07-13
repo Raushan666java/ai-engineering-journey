@@ -87,16 +87,6 @@ flowchart LR
 
 ### 6.1 Requirements Gathering
 
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-1-requirements-gathering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-1-requirements-gathering-handwritten.svg" alt="Handwritten: 6.1 Requirements Gathering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-1-requirements-gathering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-1-requirements-gathering-diagram.svg" alt="Diagram: 6.1 Requirements Gathering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-1-requirements-gathering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-1-requirements-gathering-sticky.svg" alt="Sticky Note: 6.1 Requirements Gathering" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Multi-tenant e-commerce requires tenant isolation for products, orders, carts, and customer data.
@@ -128,16 +118,6 @@ Before writing a single line of code, we must derive hard requirements from the 
 | Bandwidth | ~100 Mbps sustained (API traffic, image serving, WebSocket frames) |
 
 ### 6.2 Capacity Estimation
-
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-2-capacity-estimation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-2-capacity-estimation-handwritten.svg" alt="Handwritten: 6.2 Capacity Estimation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-2-capacity-estimation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-2-capacity-estimation-diagram.svg" alt="Diagram: 6.2 Capacity Estimation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-2-capacity-estimation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-2-capacity-estimation-sticky.svg" alt="Sticky Note: 6.2 Capacity Estimation" width="30%">
-</a>
 
 
 
@@ -196,16 +176,6 @@ Total cache + search memory Ã¢â€°Ë† 50 GB Ã¢â€ â€™ justifies
 ```
 
 ### 6.3 Data Model
-
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-3-data-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-3-data-model-handwritten.svg" alt="Handwritten: 6.3 Data Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-3-data-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-3-data-model-diagram.svg" alt="Diagram: 6.3 Data Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-3-data-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-3-data-model-sticky.svg" alt="Sticky Note: 6.3 Data Model" width="30%">
-</a>
 
 
 
@@ -418,16 +388,6 @@ The `inventory_movements` table is an append-only ledger. Every stock changeÃ¢
 
 ### 6.4 Multi-Tenant Middleware and Scoping
 
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-4-multi-tenant-middleware-and-scoping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-4-multi-tenant-middleware-and-scoping-handwritten.svg" alt="Handwritten: 6.4 Multi-Tenant Middleware and Scoping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-4-multi-tenant-middleware-and-scoping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-4-multi-tenant-middleware-and-scoping-diagram.svg" alt="Diagram: 6.4 Multi-Tenant Middleware and Scoping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-4-multi-tenant-middleware-and-scoping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-4-multi-tenant-middleware-and-scoping-sticky.svg" alt="Sticky Note: 6.4 Multi-Tenant Middleware and Scoping" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Global scopes automatically filter queries to the current tenant; middleware resolves the tenant from the request.
@@ -529,16 +489,6 @@ class Product extends Model
 ```
 
 ### 6.5 Checkout Pipeline
-
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-5-checkout-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-5-checkout-pipeline-handwritten.svg" alt="Handwritten: 6.5 Checkout Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-5-checkout-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-5-checkout-pipeline-diagram.svg" alt="Diagram: 6.5 Checkout Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-5-checkout-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-5-checkout-pipeline-sticky.svg" alt="Sticky Note: 6.5 Checkout Pipeline" width="30%">
-</a>
 
 
 
@@ -1057,16 +1007,6 @@ class OrderStatusChanged implements ShouldBroadcast
 
 ### 6.6 Product Search with Laravel Scout
 
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-6-product-search-with-laravel-scout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-6-product-search-with-laravel-scout-handwritten.svg" alt="Handwritten: 6.6 Product Search with Laravel Scout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-6-product-search-with-laravel-scout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-6-product-search-with-laravel-scout-diagram.svg" alt="Diagram: 6.6 Product Search with Laravel Scout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-6-product-search-with-laravel-scout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-6-product-search-with-laravel-scout-sticky.svg" alt="Sticky Note: 6.6 Product Search with Laravel Scout" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Scout with Meilisearch provides typo-tolerant full-text search with real-time index updates.
@@ -1224,16 +1164,6 @@ class ProductSearchController extends Controller
 
 ### 6.7 Multi-Tenant Caching
 
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-7-multi-tenant-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-7-multi-tenant-caching-handwritten.svg" alt="Handwritten: 6.7 Multi-Tenant Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-7-multi-tenant-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-7-multi-tenant-caching-diagram.svg" alt="Diagram: 6.7 Multi-Tenant Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-7-multi-tenant-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-7-multi-tenant-caching-sticky.svg" alt="Sticky Note: 6.7 Multi-Tenant Caching" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Cache keys are prefixed by tenant_id to prevent data leakage between tenants.
@@ -1331,16 +1261,6 @@ Cache::tags(["tenant:{$tenantId}", 'products'])->flush();
 
 ### 6.8 System Architecture
 
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-8-system-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-8-system-architecture-handwritten.svg" alt="Handwritten: 6.8 System Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-8-system-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-8-system-architecture-diagram.svg" alt="Diagram: 6.8 System Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-8-system-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-8-system-architecture-sticky.svg" alt="Sticky Note: 6.8 System Architecture" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** The architecture uses tenant-per-database isolation with shared Redis and queue infrastructure.
@@ -1421,16 +1341,6 @@ The full system follows a layered, horizontally scalable topology.
 > **Remember:** Test tenant isolation thoroughly because a bug in scoping can leak customer data across tenants.
 
 ### 6.9 Deployment and Scaling Strategy
-
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-9-deployment-and-scaling-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-9-deployment-and-scaling-strategy-handwritten.svg" alt="Handwritten: 6.9 Deployment and Scaling Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-9-deployment-and-scaling-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-9-deployment-and-scaling-strategy-diagram.svg" alt="Diagram: 6.9 Deployment and Scaling Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-9-deployment-and-scaling-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/22-case-study-ecommerce/6-9-deployment-and-scaling-strategy-sticky.svg" alt="Sticky Note: 6.9 Deployment and Scaling Strategy" width="30%">
-</a>
 
 
 

@@ -99,16 +99,6 @@ Java's package system, while useful for namespacing, had fundamental flaws that 
 
 ### 1.1 JAR Hell
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-1-jar-hell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-1-jar-hell-handwritten.svg" alt="Handwritten: 1.1 JAR Hell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-1-jar-hell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-1-jar-hell-diagram.svg" alt="Diagram: 1.1 JAR Hell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-1-jar-hell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-1-jar-hell-sticky.svg" alt="Sticky Note: 1.1 JAR Hell" width="30%">
-</a>
-
 
 The classpath is a flat list of JAR files. When two JARs contain the same class (same fully qualified name), the first one found wins→silently. There is no mechanism to express that library A requires version 2 of library B, or to ensure that two versions of the same library do not coexist.
 
@@ -125,16 +115,6 @@ The classpath is a flat list of JAR files. When two JARs contain the same class 
 JPMS solves this with **reliable configuration**: every module declares its dependencies in `module-info.java`, and the module system ensures that exactly one version of each module is resolved and that all required modules are present at startup.
 
 ### 1.2 Weak Encapsulation
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-2-weak-encapsulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-2-weak-encapsulation-handwritten.svg" alt="Handwritten: 1.2 Weak Encapsulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-2-weak-encapsulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-2-weak-encapsulation-diagram.svg" alt="Diagram: 1.2 Weak Encapsulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-2-weak-encapsulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-2-weak-encapsulation-sticky.svg" alt="Sticky Note: 1.2 Weak Encapsulation" width="30%">
-</a>
 
 
 In the classpath world, `public` meant accessible to everyone. Frameworks could access your internal classes via reflection. There was no way to declare that a package was internal implementation detail.
@@ -158,16 +138,6 @@ JPMS provides **strong encapsulation**: a module must explicitly `export` a pack
 
 ### 1.3 JDK Modularization
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-3-jdk-modularization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-3-jdk-modularization-handwritten.svg" alt="Handwritten: 1.3 JDK Modularization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-3-jdk-modularization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-3-jdk-modularization-diagram.svg" alt="Diagram: 1.3 JDK Modularization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-3-jdk-modularization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-3-jdk-modularization-sticky.svg" alt="Sticky Note: 1.3 JDK Modularization" width="30%">
-</a>
-
 
 Before Java 9, the JRE was a monolithic `rt.jar` of around 60 MB containing every public class in the JDK. Applications could not shrink the runtime, and internal APIs like `com.sun.*` were technically public but unsupported.
 
@@ -187,16 +157,6 @@ Java 9 broke the JDK itself into about 80 modules (e.g., `java.base`, `java.sql`
 
 ### 1.4 Reliable Configuration
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-4-reliable-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-4-reliable-configuration-handwritten.svg" alt="Handwritten: 1.4 Reliable Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-4-reliable-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-4-reliable-configuration-diagram.svg" alt="Diagram: 1.4 Reliable Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-4-reliable-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-4-reliable-configuration-sticky.svg" alt="Sticky Note: 1.4 Reliable Configuration" width="30%">
-</a>
-
 
 JPMS performs **module resolution** at startup: it reads all `module-info.class` descriptors, builds a directed graph of dependencies, checks that every `requires` is satisfied by exactly one module, and fails fast with a clear error message if anything is missing.
 
@@ -208,16 +168,6 @@ JPMS performs **module resolution** at startup: it reads all `module-info.class`
 ```
 
 ### 1.5 Scalable Reasoning
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-5-scalable-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-5-scalable-reasoning-handwritten.svg" alt="Handwritten: 1.5 Scalable Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-5-scalable-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-5-scalable-reasoning-diagram.svg" alt="Diagram: 1.5 Scalable Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/1-5-scalable-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/1-5-scalable-reasoning-sticky.svg" alt="Sticky Note: 1.5 Scalable Reasoning" width="30%">
-</a>
 
 
 As projects grow beyond a few dozen JARs, understanding the dependency graph becomes impossible without tooling. JPMS makes the graph explicit: every module's dependencies are declared in a single file, and tools can query, visualize, and validate the graph statically.
@@ -235,16 +185,6 @@ As projects grow beyond a few dozen JARs, understanding the dependency graph bec
 Every Java module is defined by a `module-info.java` file at the root of the module's source tree. This file is compiled by `javac` into a `module-info.class` that is placed in the root of the compiled JAR.
 
 ### 2.1 Basic Module Declaration
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-1-basic-module-declaration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-1-basic-module-declaration-handwritten.svg" alt="Handwritten: 2.1 Basic Module Declaration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-1-basic-module-declaration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-1-basic-module-declaration-diagram.svg" alt="Diagram: 2.1 Basic Module Declaration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-1-basic-module-declaration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-1-basic-module-declaration-sticky.svg" alt="Sticky Note: 2.1 Basic Module Declaration" width="30%">
-</a>
 
 
 The simplest possible module declaration:
@@ -269,16 +209,6 @@ module com.example.store {
 
 ### 2.2 The requires Keyword
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-2-the-requires-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-2-the-requires-keyword-handwritten.svg" alt="Handwritten: 2.2 The requires Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-2-the-requires-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-2-the-requires-keyword-diagram.svg" alt="Diagram: 2.2 The requires Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-2-the-requires-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-2-the-requires-keyword-sticky.svg" alt="Sticky Note: 2.2 The requires Keyword" width="30%">
-</a>
-
 
 `requires` declares that this module depends on another module at both compile time and runtime.
 
@@ -295,16 +225,6 @@ module com.example.inventory {
 - Module names use reversed-domain naming (like packages), but they are not the same as package names. A module can contain multiple packages.
 
 ### 2.3 requires transitive
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-3-requires-transitive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-3-requires-transitive-handwritten.svg" alt="Handwritten: 2.3 requires transitive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-3-requires-transitive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-3-requires-transitive-diagram.svg" alt="Diagram: 2.3 requires transitive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-3-requires-transitive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-3-requires-transitive-sticky.svg" alt="Sticky Note: 2.3 requires transitive" width="30%">
-</a>
 
 
 `requires transitive` adds **implicit readability**: any module that `requires` your module also reads the transitive dependency.
@@ -355,16 +275,6 @@ module com.example.orm {
 
 ### 2.4 requires static
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-4-requires-static-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-4-requires-static-handwritten.svg" alt="Handwritten: 2.4 requires static" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-4-requires-static-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-4-requires-static-diagram.svg" alt="Diagram: 2.4 requires static" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-4-requires-static-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-4-requires-static-sticky.svg" alt="Sticky Note: 2.4 requires static" width="30%">
-</a>
-
 
 `requires static` declares a dependency that is needed at compile time but is optional at runtime.
 
@@ -380,16 +290,6 @@ module com.example.export {
 This is equivalent to Maven's `<optional>true</optional>` or Gradle's `compileOnly` configuration.
 
 ### 2.5 exports
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-5-exports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-5-exports-handwritten.svg" alt="Handwritten: 2.5 exports" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-5-exports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-5-exports-diagram.svg" alt="Diagram: 2.5 exports" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-5-exports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-5-exports-sticky.svg" alt="Sticky Note: 2.5 exports" width="30%">
-</a>
 
 
 `exports` makes a package accessible to other modules at both compile time and runtime. Without `exports`, all packages in a module are inaccessible to other modules.
@@ -407,16 +307,6 @@ module com.example.library {
 
 ### 2.6 exports to
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-6-exports-to-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-6-exports-to-handwritten.svg" alt="Handwritten: 2.6 exports to" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-6-exports-to-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-6-exports-to-diagram.svg" alt="Diagram: 2.6 exports to" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-6-exports-to-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-6-exports-to-sticky.svg" alt="Sticky Note: 2.6 exports to" width="30%">
-</a>
-
 
 `exports ... to` restricts a package's accessibility to specific modules only.
 
@@ -433,16 +323,6 @@ module com.example.framework {
 ```
 
 ### 2.7 opens
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-7-opens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-7-opens-handwritten.svg" alt="Handwritten: 2.7 opens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-7-opens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-7-opens-diagram.svg" alt="Diagram: 2.7 opens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-7-opens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-7-opens-sticky.svg" alt="Sticky Note: 2.7 opens" width="30%">
-</a>
 
 
 `opens` allows **reflective access** to a package at runtime. Without `opens`, reflection (including `setAccessible(true)`) cannot access private members of classes in the package, even if the package is exported.
@@ -481,16 +361,6 @@ public class User {
 
 ### 2.8 opens to
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-8-opens-to-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-8-opens-to-handwritten.svg" alt="Handwritten: 2.8 opens to" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-8-opens-to-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-8-opens-to-diagram.svg" alt="Diagram: 2.8 opens to" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-8-opens-to-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-8-opens-to-sticky.svg" alt="Sticky Note: 2.8 opens to" width="30%">
-</a>
-
 
 `opens ... to` restricts reflective access to specific modules:
 
@@ -512,16 +382,6 @@ module com.example.model {
 
 ### 2.9 open module
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-9-open-module-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-9-open-module-handwritten.svg" alt="Handwritten: 2.9 open module" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-9-open-module-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-9-open-module-diagram.svg" alt="Diagram: 2.9 open module" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-9-open-module-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-9-open-module-sticky.svg" alt="Sticky Note: 2.9 open module" width="30%">
-</a>
-
 
 An `open module` makes all its packages available for reflective access, while still controlling which packages are exported for compile-time access:
 
@@ -539,16 +399,6 @@ open module com.example.model {
 This is a pragmatic choice for applications that use many frameworks requiring reflection, at the cost of weaker encapsulation.
 
 ### 2.10 provides and uses (ServiceLoader)
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-10-provides-and-uses-serviceloader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-10-provides-and-uses-serviceloader-handwritten.svg" alt="Handwritten: 2.10 provides and uses (ServiceLoader)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-10-provides-and-uses-serviceloader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-10-provides-and-uses-serviceloader-diagram.svg" alt="Diagram: 2.10 provides and uses (ServiceLoader)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-10-provides-and-uses-serviceloader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-10-provides-and-uses-serviceloader-sticky.svg" alt="Sticky Note: 2.10 provides and uses (ServiceLoader)" width="30%">
-</a>
 
 
 The ServiceLoader pattern allows modules to provide implementations of interfaces without compile-time dependencies.
@@ -666,16 +516,6 @@ Spring Boot's `spring.factories` (now `org.springframework.boot.autoconfigure.Au
 
 ### 2.11 permits (Sealed Modules)
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-11-permits-sealed-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-11-permits-sealed-modules-handwritten.svg" alt="Handwritten: 2.11 permits (Sealed Modules)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-11-permits-sealed-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-11-permits-sealed-modules-diagram.svg" alt="Diagram: 2.11 permits (Sealed Modules)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/2-11-permits-sealed-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/2-11-permits-sealed-modules-sticky.svg" alt="Sticky Note: 2.11 permits (Sealed Modules)" width="30%">
-</a>
-
 
 Java 17 introduced **sealed classes**, and Java 21's module system can seal modules to restrict which modules can extend or implement certain classes.
 
@@ -723,30 +563,10 @@ JPMS defines three categories of modules.
 
 ### 3.1 Named Modules
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-1-named-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-1-named-modules-handwritten.svg" alt="Handwritten: 3.1 Named Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-1-named-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-1-named-modules-diagram.svg" alt="Diagram: 3.1 Named Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-1-named-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-1-named-modules-sticky.svg" alt="Sticky Note: 3.1 Named Modules" width="30%">
-</a>
-
 
 A **named module** is a module with a `module-info.class` on the module path. All examples above are named modules. Named modules have full strong encapsulation: only exported packages are accessible, and only declared dependencies are readable.
 
 ### 3.2 Automatic Modules
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-2-automatic-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-2-automatic-modules-handwritten.svg" alt="Handwritten: 3.2 Automatic Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-2-automatic-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-2-automatic-modules-diagram.svg" alt="Diagram: 3.2 Automatic Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-2-automatic-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-2-automatic-modules-sticky.svg" alt="Sticky Note: 3.2 Automatic Modules" width="30%">
-</a>
 
 
 An **automatic module** is a regular JAR file (without `module-info.class`) placed on the module path. The module system automatically derives a module name for it, either from the `Automatic-Module-Name` entry in the JAR's `MANIFEST.MF` or from the JAR filename.
@@ -776,16 +596,6 @@ module com.example.myapp {
 
 ### 3.3 Unnamed Modules
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-3-unnamed-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-3-unnamed-modules-handwritten.svg" alt="Handwritten: 3.3 Unnamed Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-3-unnamed-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-3-unnamed-modules-diagram.svg" alt="Diagram: 3.3 Unnamed Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-3-unnamed-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-3-unnamed-modules-sticky.svg" alt="Sticky Note: 3.3 Unnamed Modules" width="30%">
-</a>
-
 
 The **unnamed module** is the special module that contains all classes loaded from the classpath (as opposed to the module path). It is not a named module and has special behavior:
 
@@ -805,16 +615,6 @@ The **unnamed module** is the special module that contains all classes loaded fr
 ```
 
 ### 3.4 Module Graph Resolution
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-4-module-graph-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-4-module-graph-resolution-handwritten.svg" alt="Handwritten: 3.4 Module Graph Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-4-module-graph-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-4-module-graph-resolution-diagram.svg" alt="Diagram: 3.4 Module Graph Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/3-4-module-graph-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/3-4-module-graph-resolution-sticky.svg" alt="Sticky Note: 3.4 Module Graph Resolution" width="30%">
-</a>
 
 
 At startup, the module system resolves dependencies as follows:
@@ -881,16 +681,6 @@ The module graph is a **directed acyclic graph (DAG)**:
 
 ### 4.1 Basic jlink Usage
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-1-basic-jlink-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-1-basic-jlink-usage-handwritten.svg" alt="Handwritten: 4.1 Basic jlink Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-1-basic-jlink-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-1-basic-jlink-usage-diagram.svg" alt="Diagram: 4.1 Basic jlink Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-1-basic-jlink-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-1-basic-jlink-usage-sticky.svg" alt="Sticky Note: 4.1 Basic jlink Usage" width="30%">
-</a>
-
 
 ```bash
 # Step 1: Compile your module
@@ -911,16 +701,6 @@ jlink \
 
 ### 4.2 --launcher
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-2-launcher-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-2-launcher-handwritten.svg" alt="Handwritten: 4.2 --launcher" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-2-launcher-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-2-launcher-diagram.svg" alt="Diagram: 4.2 --launcher" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-2-launcher-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-2-launcher-sticky.svg" alt="Sticky Note: 4.2 --launcher" width="30%">
-</a>
-
 
 Create platform-specific launchers for your application:
 
@@ -937,16 +717,6 @@ jlink \
 
 ### 4.3 --compress
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-3-compress-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-3-compress-handwritten.svg" alt="Handwritten: 4.3 --compress" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-3-compress-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-3-compress-diagram.svg" alt="Diagram: 4.3 --compress" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-3-compress-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-3-compress-sticky.svg" alt="Sticky Note: 4.3 --compress" width="30%">
-</a>
-
 
 Reduce the size of the runtime image:
 
@@ -961,16 +731,6 @@ jlink \
 ```
 
 ### 4.4 --strip-debug, --no-header-files, --no-man-pages
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-4-strip-debug-no-header-files-no-man-pages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-4-strip-debug-no-header-files-no-man-pages-handwritten.svg" alt="Handwritten: 4.4 --strip-debug, --no-header-files, --no-man-pages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-4-strip-debug-no-header-files-no-man-pages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-4-strip-debug-no-header-files-no-man-pages-diagram.svg" alt="Diagram: 4.4 --strip-debug, --no-header-files, --no-man-pages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-4-strip-debug-no-header-files-no-man-pages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-4-strip-debug-no-header-files-no-man-pages-sticky.svg" alt="Sticky Note: 4.4 --strip-debug, --no-header-files, --no-man-pages" width="30%">
-</a>
 
 
 Remove debug information and documentation to minimize size:
@@ -991,16 +751,6 @@ jlink \
 ```
 
 ### 4.5 Complete Build Pipeline with jlink
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-5-complete-build-pipeline-with-jlink-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-5-complete-build-pipeline-with-jlink-handwritten.svg" alt="Handwritten: 4.5 Complete Build Pipeline with jlink" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-5-complete-build-pipeline-with-jlink-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-5-complete-build-pipeline-with-jlink-diagram.svg" alt="Diagram: 4.5 Complete Build Pipeline with jlink" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-5-complete-build-pipeline-with-jlink-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-5-complete-build-pipeline-with-jlink-sticky.svg" alt="Sticky Note: 4.5 Complete Build Pipeline with jlink" width="30%">
-</a>
 
 
 ```bash
@@ -1044,16 +794,6 @@ du -sh "$RUNTIME_DIR"
 
 ### 4.6 jlink with Maven (jlink-maven-plugin)
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-6-jlink-with-maven-jlink-maven-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-6-jlink-with-maven-jlink-maven-plugin-handwritten.svg" alt="Handwritten: 4.6 jlink with Maven (jlink-maven-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-6-jlink-with-maven-jlink-maven-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-6-jlink-with-maven-jlink-maven-plugin-diagram.svg" alt="Diagram: 4.6 jlink with Maven (jlink-maven-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/4-6-jlink-with-maven-jlink-maven-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/4-6-jlink-with-maven-jlink-maven-plugin-sticky.svg" alt="Sticky Note: 4.6 jlink with Maven (jlink-maven-plugin)" width="30%">
-</a>
-
 
 ```xml
 <plugin>
@@ -1093,16 +833,6 @@ du -sh "$RUNTIME_DIR"
 
 ### 5.1 jpackage from a JAR
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-1-jpackage-from-a-jar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-1-jpackage-from-a-jar-handwritten.svg" alt="Handwritten: 5.1 jpackage from a JAR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-1-jpackage-from-a-jar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-1-jpackage-from-a-jar-diagram.svg" alt="Diagram: 5.1 jpackage from a JAR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-1-jpackage-from-a-jar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-1-jpackage-from-a-jar-sticky.svg" alt="Sticky Note: 5.1 jpackage from a JAR" width="30%">
-</a>
-
 
 ```bash
 # Step 1: Build your modular JAR
@@ -1135,16 +865,6 @@ jpackage \
 
 ### 5.2 jpackage with jlink
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-2-jpackage-with-jlink-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-2-jpackage-with-jlink-handwritten.svg" alt="Handwritten: 5.2 jpackage with jlink" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-2-jpackage-with-jlink-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-2-jpackage-with-jlink-diagram.svg" alt="Diagram: 5.2 jpackage with jlink" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-2-jpackage-with-jlink-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-2-jpackage-with-jlink-sticky.svg" alt="Sticky Note: 5.2 jpackage with jlink" width="30%">
-</a>
-
 
 `jpackage` can use a `jlink` runtime image for the bundled JRE:
 
@@ -1173,16 +893,6 @@ jpackage \
 
 ### 5.3 jpackage Options
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-3-jpackage-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-3-jpackage-options-handwritten.svg" alt="Handwritten: 5.3 jpackage Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-3-jpackage-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-3-jpackage-options-diagram.svg" alt="Diagram: 5.3 jpackage Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-3-jpackage-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-3-jpackage-options-sticky.svg" alt="Sticky Note: 5.3 jpackage Options" width="30%">
-</a>
-
 
 | Option | Description |
 |--------|-------------|
@@ -1202,16 +912,6 @@ jpackage \
 | `--app-image` | Instead of creating the app image, package an existing one |
 
 ### 5.4 Complete jpackage Build (Maven)
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-4-complete-jpackage-build-maven-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-4-complete-jpackage-build-maven-handwritten.svg" alt="Handwritten: 5.4 Complete jpackage Build (Maven)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-4-complete-jpackage-build-maven-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-4-complete-jpackage-build-maven-diagram.svg" alt="Diagram: 5.4 Complete jpackage Build (Maven)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/5-4-complete-jpackage-build-maven-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/5-4-complete-jpackage-build-maven-sticky.svg" alt="Sticky Note: 5.4 Complete jpackage Build (Maven)" width="30%">
-</a>
 
 
 ```xml
@@ -1242,16 +942,6 @@ jpackage \
 Real applications are composed of multiple modules. Both Maven and Gradle can combine their own multi-module project structure with JPMS modules.
 
 ### 6.1 Maven Multi-Module with JPMS
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-1-maven-multi-module-with-jpms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-1-maven-multi-module-with-jpms-handwritten.svg" alt="Handwritten: 6.1 Maven Multi-Module with JPMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-1-maven-multi-module-with-jpms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-1-maven-multi-module-with-jpms-diagram.svg" alt="Diagram: 6.1 Maven Multi-Module with JPMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-1-maven-multi-module-with-jpms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-1-maven-multi-module-with-jpms-sticky.svg" alt="Sticky Note: 6.1 Maven Multi-Module with JPMS" width="30%">
-</a>
 
 
 **Project structure:**
@@ -1379,16 +1069,6 @@ module com.example.application {
 
 ### 6.2 Gradle Multi-Project with JPMS
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-2-gradle-multi-project-with-jpms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-2-gradle-multi-project-with-jpms-handwritten.svg" alt="Handwritten: 6.2 Gradle Multi-Project with JPMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-2-gradle-multi-project-with-jpms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-2-gradle-multi-project-with-jpms-diagram.svg" alt="Diagram: 6.2 Gradle Multi-Project with JPMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-2-gradle-multi-project-with-jpms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-2-gradle-multi-project-with-jpms-sticky.svg" alt="Sticky Note: 6.2 Gradle Multi-Project with JPMS" width="30%">
-</a>
-
 
 **`settings.gradle`:**
 
@@ -1430,16 +1110,6 @@ java {
 
 ### 6.3 The Split-Package Problem
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-3-the-split-package-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-3-the-split-package-problem-handwritten.svg" alt="Handwritten: 6.3 The Split-Package Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-3-the-split-package-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-3-the-split-package-problem-diagram.svg" alt="Diagram: 6.3 The Split-Package Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-3-the-split-package-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-3-the-split-package-problem-sticky.svg" alt="Sticky Note: 6.3 The Split-Package Problem" width="30%">
-</a>
-
 
 A **split package** occurs when the same Java package exists in two different modules on the module path. This is illegal in JPMS and causes a resolution error.
 
@@ -1469,16 +1139,6 @@ A **split package** occurs when the same Java package exists in two different mo
 ```
 
 ### 6.4 Circular Dependencies
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-4-circular-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-4-circular-dependencies-handwritten.svg" alt="Handwritten: 6.4 Circular Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-4-circular-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-4-circular-dependencies-diagram.svg" alt="Diagram: 6.4 Circular Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-4-circular-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-4-circular-dependencies-sticky.svg" alt="Sticky Note: 6.4 Circular Dependencies" width="30%">
-</a>
 
 
 JPMS does **not** allow circular dependencies between modules at compile time or runtime.
@@ -1520,16 +1180,6 @@ JPMS does **not** allow circular dependencies between modules at compile time or
 
 ### 6.5 Module Graph Visualization
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-5-module-graph-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-5-module-graph-visualization-handwritten.svg" alt="Handwritten: 6.5 Module Graph Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-5-module-graph-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-5-module-graph-visualization-diagram.svg" alt="Diagram: 6.5 Module Graph Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/6-5-module-graph-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/6-5-module-graph-visualization-sticky.svg" alt="Sticky Note: 6.5 Module Graph Visualization" width="30%">
-</a>
-
 
 ```bash
 # Show the module graph as a tree
@@ -1556,16 +1206,6 @@ Migrating an existing Java application to JPMS requires careful planning. Here i
 
 ### 7.1 Step 1: Run jdeps
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-1-step-1-run-jdeps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-1-step-1-run-jdeps-handwritten.svg" alt="Handwritten: 7.1 Step 1: Run jdeps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-1-step-1-run-jdeps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-1-step-1-run-jdeps-diagram.svg" alt="Diagram: 7.1 Step 1: Run jdeps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-1-step-1-run-jdeps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-1-step-1-run-jdeps-sticky.svg" alt="Sticky Note: 7.1 Step 1: Run jdeps" width="30%">
-</a>
-
 
 `jdeps` analyzes your existing JARs and tells you what you need for JPMS.
 
@@ -1586,16 +1226,6 @@ jdeps --generate-module-info out myapp.jar
 ```
 
 ### 7.2 Step 2: Add Automatic-Module-Name
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-2-step-2-add-automatic-module-name-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-2-step-2-add-automatic-module-name-handwritten.svg" alt="Handwritten: 7.2 Step 2: Add Automatic-Module-Name" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-2-step-2-add-automatic-module-name-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-2-step-2-add-automatic-module-name-diagram.svg" alt="Diagram: 7.2 Step 2: Add Automatic-Module-Name" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-2-step-2-add-automatic-module-name-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-2-step-2-add-automatic-module-name-sticky.svg" alt="Sticky Note: 7.2 Step 2: Add Automatic-Module-Name" width="30%">
-</a>
 
 
 For JARs you control but cannot yet fully modularize, add an `Automatic-Module-Name` entry to `MANIFEST.MF`:
@@ -1626,16 +1256,6 @@ jar {
 This gives the JAR a stable module name when placed on the module path as an automatic module.
 
 ### 7.3 Step 3: Use --add-exports, --add-opens, --add-reads
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-3-step-3-use-add-exports-add-opens-add-reads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-3-step-3-use-add-exports-add-opens-add-reads-handwritten.svg" alt="Handwritten: 7.3 Step 3: Use --add-exports, --add-opens, --add-reads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-3-step-3-use-add-exports-add-opens-add-reads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-3-step-3-use-add-exports-add-opens-add-reads-diagram.svg" alt="Diagram: 7.3 Step 3: Use --add-exports, --add-opens, --add-reads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-3-step-3-use-add-exports-add-opens-add-reads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-3-step-3-use-add-exports-add-opens-add-reads-sticky.svg" alt="Sticky Note: 7.3 Step 3: Use --add-exports, --add-opens, --add-reads" width="30%">
-</a>
 
 
 During migration, you may need to work around modules that do not export or open packages you need.
@@ -1698,16 +1318,6 @@ tasks.withType(JavaExec) {
 
 ### 7.4 Step 4: --illegal-access
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-4-step-4-illegal-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-4-step-4-illegal-access-handwritten.svg" alt="Handwritten: 7.4 Step 4: --illegal-access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-4-step-4-illegal-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-4-step-4-illegal-access-diagram.svg" alt="Diagram: 7.4 Step 4: --illegal-access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-4-step-4-illegal-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-4-step-4-illegal-access-sticky.svg" alt="Sticky Note: 7.4 Step 4: --illegal-access" width="30%">
-</a>
-
 
 In Java 9, the default behavior was `--illegal-access=permit` (warn on first reflective access to internal API). Java 16 made the default `--illegal-access=deny`, which means any reflective access to internal packages that are not opened will throw an `InaccessibleObjectException`.
 
@@ -1726,16 +1336,6 @@ java --add-opens java.base/java.lang=ALL-UNNAMED -jar myapp.jar
 
 ### 7.5 Migration Checklist
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-5-migration-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-5-migration-checklist-handwritten.svg" alt="Handwritten: 7.5 Migration Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-5-migration-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-5-migration-checklist-diagram.svg" alt="Diagram: 7.5 Migration Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-5-migration-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-5-migration-checklist-sticky.svg" alt="Sticky Note: 7.5 Migration Checklist" width="30%">
-</a>
-
 
 | Step | Description | Tool / Action |
 |------|-------------|---------------|
@@ -1752,16 +1352,6 @@ java --add-opens java.base/java.lang=ALL-UNNAMED -jar myapp.jar
 | 11 | Test thoroughly | Verify both compile and runtime |
 
 ### 7.6 jdeps in Depth
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-6-jdeps-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-6-jdeps-in-depth-handwritten.svg" alt="Handwritten: 7.6 jdeps in Depth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-6-jdeps-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-6-jdeps-in-depth-diagram.svg" alt="Diagram: 7.6 jdeps in Depth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/7-6-jdeps-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/7-6-jdeps-in-depth-sticky.svg" alt="Sticky Note: 7.6 jdeps in Depth" width="30%">
-</a>
 
 
 ```bash
@@ -1798,16 +1388,6 @@ Spring Boot interacts with JPMS in several important ways. Understanding these i
 
 ### 8.1 Spring's Use of opens
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-1-spring-s-use-of-opens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-1-spring-s-use-of-opens-handwritten.svg" alt="Handwritten: 8.1 Spring's Use of opens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-1-spring-s-use-of-opens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-1-spring-s-use-of-opens-diagram.svg" alt="Diagram: 8.1 Spring's Use of opens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-1-spring-s-use-of-opens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-1-spring-s-use-of-opens-sticky.svg" alt="Sticky Note: 8.1 Spring's Use of opens" width="30%">
-</a>
-
 
 Spring Framework relies heavily on reflection for dependency injection, AOP proxies, and configuration property binding. For Spring to work with JPMS, the packages containing Spring beans must be opened.
 
@@ -1834,16 +1414,6 @@ module com.example.shop {
 ```
 
 ### 8.2 JPA Entities in Modules
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-2-jpa-entities-in-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-2-jpa-entities-in-modules-handwritten.svg" alt="Handwritten: 8.2 JPA Entities in Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-2-jpa-entities-in-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-2-jpa-entities-in-modules-diagram.svg" alt="Diagram: 8.2 JPA Entities in Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-2-jpa-entities-in-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-2-jpa-entities-in-modules-sticky.svg" alt="Sticky Note: 8.2 JPA Entities in Modules" width="30%">
-</a>
 
 
 JPA entities require reflective access for Hibernate to instantiate proxies, read field annotations, and set field values.
@@ -1901,16 +1471,6 @@ public class User {
 
 ### 8.3 Auto-Configuration in Modular JARs
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-3-auto-configuration-in-modular-jars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-3-auto-configuration-in-modular-jars-handwritten.svg" alt="Handwritten: 8.3 Auto-Configuration in Modular JARs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-3-auto-configuration-in-modular-jars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-3-auto-configuration-in-modular-jars-diagram.svg" alt="Diagram: 8.3 Auto-Configuration in Modular JARs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-3-auto-configuration-in-modular-jars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-3-auto-configuration-in-modular-jars-sticky.svg" alt="Sticky Note: 8.3 Auto-Configuration in Modular JARs" width="30%">
-</a>
-
 
 Spring Boot's auto-configuration depends on `spring.factories` files (now `AutoConfiguration.imports`). On the module path, these files are still loaded from `META-INF/spring/` directories inside JARs. The key requirement is that the auto-configuration classes themselves must be accessible.
 
@@ -1936,16 +1496,6 @@ module com.example.starter {
 ```
 
 ### 8.4 Spring Boot Starter Pattern with JPMS
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-4-spring-boot-starter-pattern-with-jpms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-4-spring-boot-starter-pattern-with-jpms-handwritten.svg" alt="Handwritten: 8.4 Spring Boot Starter Pattern with JPMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-4-spring-boot-starter-pattern-with-jpms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-4-spring-boot-starter-pattern-with-jpms-diagram.svg" alt="Diagram: 8.4 Spring Boot Starter Pattern with JPMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-4-spring-boot-starter-pattern-with-jpms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-4-spring-boot-starter-pattern-with-jpms-sticky.svg" alt="Sticky Note: 8.4 Spring Boot Starter Pattern with JPMS" width="30%">
-</a>
 
 
 ```java
@@ -1984,16 +1534,6 @@ module com.example.monitoring.starter {
 
 ### 8.5 open module for Spring Boot Applications
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-5-open-module-for-spring-boot-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-5-open-module-for-spring-boot-applications-handwritten.svg" alt="Handwritten: 8.5 open module for Spring Boot Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-5-open-module-for-spring-boot-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-5-open-module-for-spring-boot-applications-diagram.svg" alt="Diagram: 8.5 open module for Spring Boot Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-5-open-module-for-spring-boot-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-5-open-module-for-spring-boot-applications-sticky.svg" alt="Sticky Note: 8.5 open module for Spring Boot Applications" width="30%">
-</a>
-
 
 The simplest migration path for Spring Boot applications is often an `open module` declaration:
 
@@ -2023,16 +1563,6 @@ open module com.example.myapp {
 This is the recommended starting point for Spring Boot applications migrating to JPMS. You can gradually tighten encapsulation later by removing `open` and adding targeted `opens` declarations.
 
 ### 8.6 SpringFactoriesLoader vs ServiceLoader
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-6-springfactoriesloader-vs-serviceloader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-6-springfactoriesloader-vs-serviceloader-handwritten.svg" alt="Handwritten: 8.6 SpringFactoriesLoader vs ServiceLoader" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-6-springfactoriesloader-vs-serviceloader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-6-springfactoriesloader-vs-serviceloader-diagram.svg" alt="Diagram: 8.6 SpringFactoriesLoader vs ServiceLoader" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/8-6-springfactoriesloader-vs-serviceloader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/8-6-springfactoriesloader-vs-serviceloader-sticky.svg" alt="Sticky Note: 8.6 SpringFactoriesLoader vs ServiceLoader" width="30%">
-</a>
 
 
 Spring Boot's `SpringFactoriesLoader` (and its successor `AutoConfiguration.imports`) provides similar functionality to `ServiceLoader` but is classpath-based rather than module-path-based.
@@ -2079,16 +1609,6 @@ This section presents a complete, compilable multi-module project that demonstra
 
 ### 9.1 Project Structure
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-1-project-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-1-project-structure-handwritten.svg" alt="Handwritten: 9.1 Project Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-1-project-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-1-project-structure-diagram.svg" alt="Diagram: 9.1 Project Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-1-project-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-1-project-structure-sticky.svg" alt="Sticky Note: 9.1 Project Structure" width="30%">
-</a>
-
 
 ```
 banking-app/
@@ -2125,16 +1645,6 @@ banking-app/
 ```
 
 ### 9.2 banking-api → Public API
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-2-banking-api-public-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-2-banking-api-public-api-handwritten.svg" alt="Handwritten: 9.2 banking-api → Public API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-2-banking-api-public-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-2-banking-api-public-api-diagram.svg" alt="Diagram: 9.2 banking-api → Public API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-2-banking-api-public-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-2-banking-api-public-api-sticky.svg" alt="Sticky Note: 9.2 banking-api → Public API" width="30%">
-</a>
 
 
 ```java
@@ -2200,16 +1710,6 @@ module com.example.banking.api {
 
 ### 9.3 banking-spi → Service Provider Interface
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-3-banking-spi-service-provider-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-3-banking-spi-service-provider-interface-handwritten.svg" alt="Handwritten: 9.3 banking-spi → Service Provider Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-3-banking-spi-service-provider-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-3-banking-spi-service-provider-interface-diagram.svg" alt="Diagram: 9.3 banking-spi → Service Provider Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-3-banking-spi-service-provider-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-3-banking-spi-service-provider-interface-sticky.svg" alt="Sticky Note: 9.3 banking-spi → Service Provider Interface" width="30%">
-</a>
-
 
 ```java
 // banking-spi/src/main/java/com/example/banking/spi/ReportExporter.java
@@ -2236,16 +1736,6 @@ module com.example.banking.spi {
 ```
 
 ### 9.4 banking-persistence → Data Access
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-4-banking-persistence-data-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-4-banking-persistence-data-access-handwritten.svg" alt="Handwritten: 9.4 banking-persistence → Data Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-4-banking-persistence-data-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-4-banking-persistence-data-access-diagram.svg" alt="Diagram: 9.4 banking-persistence → Data Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-4-banking-persistence-data-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-4-banking-persistence-data-access-sticky.svg" alt="Sticky Note: 9.4 banking-persistence → Data Access" width="30%">
-</a>
 
 
 ```java
@@ -2337,16 +1827,6 @@ module com.example.banking.persistence {
 ```
 
 ### 9.5 banking-impl → Implementation
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-5-banking-impl-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-5-banking-impl-implementation-handwritten.svg" alt="Handwritten: 9.5 banking-impl → Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-5-banking-impl-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-5-banking-impl-implementation-diagram.svg" alt="Diagram: 9.5 banking-impl → Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-5-banking-impl-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-5-banking-impl-implementation-sticky.svg" alt="Sticky Note: 9.5 banking-impl → Implementation" width="30%">
-</a>
 
 
 ```java
@@ -2482,16 +1962,6 @@ module com.example.banking.impl {
 
 ### 9.6 banking-reporting → ServiceLoader Provider
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-6-banking-reporting-serviceloader-provider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-6-banking-reporting-serviceloader-provider-handwritten.svg" alt="Handwritten: 9.6 banking-reporting → ServiceLoader Provider" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-6-banking-reporting-serviceloader-provider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-6-banking-reporting-serviceloader-provider-diagram.svg" alt="Diagram: 9.6 banking-reporting → ServiceLoader Provider" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-6-banking-reporting-serviceloader-provider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-6-banking-reporting-serviceloader-provider-sticky.svg" alt="Sticky Note: 9.6 banking-reporting → ServiceLoader Provider" width="30%">
-</a>
-
 
 ```java
 // banking-reporting/src/main/java/com/example/banking/reporting/ReportGenerator.java
@@ -2576,16 +2046,6 @@ module com.example.banking.reporting {
 
 ### 9.7 banking-app → Main Application
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-7-banking-app-main-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-7-banking-app-main-application-handwritten.svg" alt="Handwritten: 9.7 banking-app → Main Application" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-7-banking-app-main-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-7-banking-app-main-application-diagram.svg" alt="Diagram: 9.7 banking-app → Main Application" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-7-banking-app-main-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-7-banking-app-main-application-sticky.svg" alt="Sticky Note: 9.7 banking-app → Main Application" width="30%">
-</a>
-
 
 ```java
 // banking-app/src/main/java/com/example/banking/app/Main.java
@@ -2656,16 +2116,6 @@ module com.example.banking.app {
 
 ### 9.8 Build Script
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-8-build-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-8-build-script-handwritten.svg" alt="Handwritten: 9.8 Build Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-8-build-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-8-build-script-diagram.svg" alt="Diagram: 9.8 Build Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/9-8-build-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/9-8-build-script-sticky.svg" alt="Sticky Note: 9.8 Build Script" width="30%">
-</a>
-
 
 ```bash
 #!/bin/bash
@@ -2712,16 +2162,6 @@ echo "Run with: ./banking-runtime/bin/banking"
 
 ### 10.1 Selective Export with Qualified Exports
 
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-1-selective-export-with-qualified-exports-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-1-selective-export-with-qualified-exports-handwritten.svg" alt="Handwritten: 10.1 Selective Export with Qualified Exports" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-1-selective-export-with-qualified-exports-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-1-selective-export-with-qualified-exports-diagram.svg" alt="Diagram: 10.1 Selective Export with Qualified Exports" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-1-selective-export-with-qualified-exports-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-1-selective-export-with-qualified-exports-sticky.svg" alt="Sticky Note: 10.1 Selective Export with Qualified Exports" width="30%">
-</a>
-
 
 ```java
 module com.example.framework {
@@ -2740,16 +2180,6 @@ module com.example.framework {
 ```
 
 ### 10.2 Multi-Release JARs with Module Info
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-2-multi-release-jars-with-module-info-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-2-multi-release-jars-with-module-info-handwritten.svg" alt="Handwritten: 10.2 Multi-Release JARs with Module Info" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-2-multi-release-jars-with-module-info-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-2-multi-release-jars-with-module-info-diagram.svg" alt="Diagram: 10.2 Multi-Release JARs with Module Info" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-2-multi-release-jars-with-module-info-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-2-multi-release-jars-with-module-info-sticky.svg" alt="Sticky Note: 10.2 Multi-Release JARs with Module Info" width="30%">
-</a>
 
 
 Multi-release JARs (MRJARs) can include a `module-info.class` in the Java 9+ versioned directory:
@@ -2776,16 +2206,6 @@ module com.example.lib {
 ```
 
 ### 10.3 Module Layers
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-3-module-layers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-3-module-layers-handwritten.svg" alt="Handwritten: 10.3 Module Layers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-3-module-layers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-3-module-layers-diagram.svg" alt="Diagram: 10.3 Module Layers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-3-module-layers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-3-module-layers-sticky.svg" alt="Sticky Note: 10.3 Module Layers" width="30%">
-</a>
 
 
 JPMS supports multiple module layers for advanced scenarios like application servers and IDEs:
@@ -2824,16 +2244,6 @@ public class ModuleLayerExample {
 ```
 
 ### 10.4 Module Annotations
-
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-4-module-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-4-module-annotations-handwritten.svg" alt="Handwritten: 10.4 Module Annotations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-4-module-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-4-module-annotations-diagram.svg" alt="Diagram: 10.4 Module Annotations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/04-jpms-packaging/10-4-module-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/04-jpms-packaging/10-4-module-annotations-sticky.svg" alt="Sticky Note: 10.4 Module Annotations" width="30%">
-</a>
 
 
 Modules themselves can be annotated:

@@ -91,16 +91,6 @@ flowchart LR
 
 ### 1.1.1 The History of C
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-1-the-history-of-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-1-the-history-of-c-handwritten.svg" alt="Handwritten: 1.1.1 The History of C" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-1-the-history-of-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-1-the-history-of-c-diagram.svg" alt="Diagram: 1.1.1 The History of C" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-1-the-history-of-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-1-the-history-of-c-sticky.svg" alt="Sticky Note: 1.1.1 The History of C" width="30%">
-</a>
-
 
 C was developed between 1969 and 1973 by **Dennis Ritchie** at Bell Telephone Laboratories. It evolved from an earlier language called **B** (created by Ken Thompson), which itself was derived from **BCPL** (Basic Combined Programming Language, by Martin Richards). Ritchie designed C to implement the Unix operating system kernel, which had previously been written in assembly language.
 
@@ -124,16 +114,6 @@ C was developed between 1969 and 1973 by **Dennis Ritchie** at Bell Telephone La
 Just as transportation evolved from walking (assembly) → horse (BCPL) → steam engine (B) → modern car (C), the C language inherited the best ideas from its predecessors while adding new capabilities. BCPL was typeless like a horse-drawn cart —” functional but limited. B added some structure like early automobiles. C became the "modern sedan" —” powerful, reliable, and still the standard for getting real work done.
 
 ### 1.1.2 Features of C
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-2-features-of-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-2-features-of-c-handwritten.svg" alt="Handwritten: 1.1.2 Features of C" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-2-features-of-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-2-features-of-c-diagram.svg" alt="Diagram: 1.1.2 Features of C" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-2-features-of-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-2-features-of-c-sticky.svg" alt="Sticky Note: 1.1.2 Features of C" width="30%">
-</a>
 
 
 C is often called a **mid-level language** because it combines high-level language features (functions, loops, structures) with low-level capabilities (pointers, bit manipulation, memory addresses).
@@ -159,16 +139,6 @@ C is the Swiss Army Knife of programming languages. Other languages are like spe
 
 ### 1.1.3 Why C is Still Relevant in 2024+
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-3-why-c-is-still-relevant-in-2024-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-3-why-c-is-still-relevant-in-2024-handwritten.svg" alt="Handwritten: 1.1.3 Why C is Still Relevant in 2024+" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-3-why-c-is-still-relevant-in-2024-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-3-why-c-is-still-relevant-in-2024-diagram.svg" alt="Diagram: 1.1.3 Why C is Still Relevant in 2024+" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-1-3-why-c-is-still-relevant-in-2024-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-1-3-why-c-is-still-relevant-in-2024-sticky.svg" alt="Sticky Note: 1.1.3 Why C is Still Relevant in 2024+" width="30%">
-</a>
-
 
 1. **Operating Systems**: Linux (â‰ˆ95% C), Windows kernel, macOS kernel (XNU)
 2. **Embedded Systems**: Microcontrollers, firmware, IoT —” billions of devices run C
@@ -180,16 +150,6 @@ C is the Swiss Army Knife of programming languages. Other languages are like spe
 ## 1.2 Setting Up a C Development Environment
 
 ### GCC (GNU Compiler Collection)
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/gcc-gnu-compiler-collection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/gcc-gnu-compiler-collection-handwritten.svg" alt="Handwritten: GCC (GNU Compiler Collection)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/gcc-gnu-compiler-collection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/gcc-gnu-compiler-collection-diagram.svg" alt="Diagram: GCC (GNU Compiler Collection)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/gcc-gnu-compiler-collection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/gcc-gnu-compiler-collection-sticky.svg" alt="Sticky Note: GCC (GNU Compiler Collection)" width="30%">
-</a>
 
 
 **Linux:**
@@ -211,16 +171,6 @@ scoop install gcc
 
 ### Clang
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/clang-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/clang-handwritten.svg" alt="Handwritten: Clang" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/clang-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/clang-diagram.svg" alt="Diagram: Clang" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/clang-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/clang-sticky.svg" alt="Sticky Note: Clang" width="30%">
-</a>
-
 
 ```bash
 # Linux
@@ -230,16 +180,6 @@ sudo apt install clang              # Debian/Ubuntu
 ```
 
 ### Verify Installation
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/verify-installation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/verify-installation-handwritten.svg" alt="Handwritten: Verify Installation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/verify-installation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/verify-installation-diagram.svg" alt="Diagram: Verify Installation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/verify-installation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/verify-installation-sticky.svg" alt="Sticky Note: Verify Installation" width="30%">
-</a>
 
 
 ```bash
@@ -252,16 +192,6 @@ A successful installation displays version information. If the command is not fo
 
 ### Real-World Analogy: House Blueprint
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-house-blueprint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-house-blueprint-handwritten.svg" alt="Handwritten: Real-World Analogy: House Blueprint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-house-blueprint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-house-blueprint-diagram.svg" alt="Diagram: Real-World Analogy: House Blueprint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-house-blueprint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-house-blueprint-sticky.svg" alt="Sticky Note: Real-World Analogy: House Blueprint" width="30%">
-</a>
-
 
 A C program is like a house blueprint:
 - **Comments = Annotations on the blueprint**: Notes for the builder, ignored by the construction crew
@@ -271,16 +201,6 @@ A C program is like a house blueprint:
 - **Function Definitions = Individual rooms**: Each room (function) has a specific purpose and can be reused
 
 ### Anatomy of a C Program
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/anatomy-of-a-c-program-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/anatomy-of-a-c-program-handwritten.svg" alt="Handwritten: Anatomy of a C Program" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/anatomy-of-a-c-program-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/anatomy-of-a-c-program-diagram.svg" alt="Diagram: Anatomy of a C Program" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/anatomy-of-a-c-program-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/anatomy-of-a-c-program-sticky.svg" alt="Sticky Note: Anatomy of a C Program" width="30%">
-</a>
 
 
 ```
@@ -311,16 +231,6 @@ A C program is like a house blueprint:
 ```
 
 ### Complete Example
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-example-handwritten.svg" alt="Handwritten: Complete Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-example-diagram.svg" alt="Diagram: Complete Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-example-sticky.svg" alt="Sticky Note: Complete Example" width="30%">
-</a>
 
 
 ```c
@@ -367,16 +277,6 @@ PI = 3.1416
 
 ### Edge Cases: Structure Violations
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-structure-violations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-structure-violations-handwritten.svg" alt="Handwritten: Edge Cases: Structure Violations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-structure-violations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-structure-violations-diagram.svg" alt="Diagram: Edge Cases: Structure Violations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-structure-violations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-structure-violations-sticky.svg" alt="Sticky Note: Edge Cases: Structure Violations" width="30%">
-</a>
-
 
 | Violation | Code | Error Message |
 |-----------|------|---------------|
@@ -388,16 +288,6 @@ PI = 3.1416
 ## 1.4 Writing Your First C Program: Hello, World!
 
 ### Step-by-Step: Creating and Running hello.c
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/step-by-step-creating-and-running-hello-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/step-by-step-creating-and-running-hello-c-handwritten.svg" alt="Handwritten: Step-by-Step: Creating and Running hello.c" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/step-by-step-creating-and-running-hello-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/step-by-step-creating-and-running-hello-c-diagram.svg" alt="Diagram: Step-by-Step: Creating and Running hello.c" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/step-by-step-creating-and-running-hello-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/step-by-step-creating-and-running-hello-c-sticky.svg" alt="Sticky Note: Step-by-Step: Creating and Running hello.c" width="30%">
-</a>
 
 
 **File: hello.c**
@@ -424,16 +314,6 @@ int main(void)
 
 ### Dry Run: What Happens Inside the Computer
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-what-happens-inside-the-computer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-what-happens-inside-the-computer-handwritten.svg" alt="Handwritten: Dry Run: What Happens Inside the Computer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-what-happens-inside-the-computer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-what-happens-inside-the-computer-diagram.svg" alt="Diagram: Dry Run: What Happens Inside the Computer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-what-happens-inside-the-computer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-what-happens-inside-the-computer-sticky.svg" alt="Sticky Note: Dry Run: What Happens Inside the Computer" width="30%">
-</a>
-
 
 | Stage | Input | Process | Output | Key Action |
 |-------|-------|---------|--------|------------|
@@ -445,16 +325,6 @@ int main(void)
 | **Run** | `hello` | OS loads binary into memory, starts execution | **"Hello, World!"** on screen | `printf` writes to stdout |
 
 ### Explanation of Each Line
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explanation-of-each-line-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explanation-of-each-line-handwritten.svg" alt="Handwritten: Explanation of Each Line" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explanation-of-each-line-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explanation-of-each-line-diagram.svg" alt="Diagram: Explanation of Each Line" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explanation-of-each-line-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explanation-of-each-line-sticky.svg" alt="Sticky Note: Explanation of Each Line" width="30%">
-</a>
 
 
 ```c
@@ -469,16 +339,6 @@ int main(void)          // Line 3: Entry point. 'int' = returns integer. 'void' 
 ```
 
 ### Common Compilation and Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-and-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-and-edge-cases-handwritten.svg" alt="Handwritten: Common Compilation and Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-and-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-and-edge-cases-diagram.svg" alt="Diagram: Common Compilation and Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-and-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-and-edge-cases-sticky.svg" alt="Sticky Note: Common Compilation and Edge Cases" width="30%">
-</a>
 
 
 **Edge Case 1: Missing semicolon**
@@ -525,16 +385,6 @@ printf("Hello, World!");  // No \n
 
 ### Real-World Analogy: Building a House
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-building-a-house-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-building-a-house-handwritten.svg" alt="Handwritten: Real-World Analogy: Building a House" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-building-a-house-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-building-a-house-diagram.svg" alt="Diagram: Real-World Analogy: Building a House" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-building-a-house-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-building-a-house-sticky.svg" alt="Sticky Note: Real-World Analogy: Building a House" width="30%">
-</a>
-
 
 The C compilation process is like building a house from an architectural plan:
 
@@ -548,16 +398,6 @@ The C compilation process is like building a house from an architectural plan:
 | **Loader** | Real estate agent places the family (program) in the house (memory) and opens the front door (starts execution) |
 
 ### Stage-by-Stage Breakdown
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/stage-by-stage-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/stage-by-stage-breakdown-handwritten.svg" alt="Handwritten: Stage-by-Stage Breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/stage-by-stage-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/stage-by-stage-breakdown-diagram.svg" alt="Diagram: Stage-by-Stage Breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/stage-by-stage-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/stage-by-stage-breakdown-sticky.svg" alt="Sticky Note: Stage-by-Stage Breakdown" width="30%">
-</a>
 
 
 #### Stage 1: Preprocessing (`.c` → `.i`)
@@ -688,16 +528,6 @@ When you run `./hello`, the OS **loader**:
 
 ### Dry Run: Compilation of `hello.c` with Trace Table
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-compilation-of-hello-c-with-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-compilation-of-hello-c-with-trace-table-handwritten.svg" alt="Handwritten: Dry Run: Compilation of `hello.c` with Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-compilation-of-hello-c-with-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-compilation-of-hello-c-with-trace-table-diagram.svg" alt="Diagram: Dry Run: Compilation of `hello.c` with Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-compilation-of-hello-c-with-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/dry-run-compilation-of-hello-c-with-trace-table-sticky.svg" alt="Sticky Note: Dry Run: Compilation of `hello.c` with Trace Table" width="30%">
-</a>
-
 
 Let's trace a minimal `hello.c` through all four stages:
 
@@ -718,16 +548,6 @@ int main(void) {
 | 4. Link | 2 KB + libc | `ld` | `hello` | ~16 KB | Resolve `printf`, set entry point, create executable header |
 
 ### Pseudocode: The Compiler's Internal Phases
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/pseudocode-the-compiler-s-internal-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/pseudocode-the-compiler-s-internal-phases-handwritten.svg" alt="Handwritten: Pseudocode: The Compiler's Internal Phases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/pseudocode-the-compiler-s-internal-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/pseudocode-the-compiler-s-internal-phases-diagram.svg" alt="Diagram: Pseudocode: The Compiler's Internal Phases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/pseudocode-the-compiler-s-internal-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/pseudocode-the-compiler-s-internal-phases-sticky.svg" alt="Sticky Note: Pseudocode: The Compiler's Internal Phases" width="30%">
-</a>
 
 
 ```
@@ -796,16 +616,6 @@ PHASE 6: Code Generation
 
 ### Complexity Analysis of Compilation Stages
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complexity-analysis-of-compilation-stages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complexity-analysis-of-compilation-stages-handwritten.svg" alt="Handwritten: Complexity Analysis of Compilation Stages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complexity-analysis-of-compilation-stages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complexity-analysis-of-compilation-stages-diagram.svg" alt="Diagram: Complexity Analysis of Compilation Stages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complexity-analysis-of-compilation-stages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complexity-analysis-of-compilation-stages-sticky.svg" alt="Sticky Note: Complexity Analysis of Compilation Stages" width="30%">
-</a>
-
 
 | Stage | Time Complexity | Space Complexity | Why? |
 |-------|----------------|-----------------|------|
@@ -820,16 +630,6 @@ PHASE 6: Code Generation
 
 ### Advantages and Disadvantages of the Compilation Process
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/advantages-and-disadvantages-of-the-compilation-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/advantages-and-disadvantages-of-the-compilation-process-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of the Compilation Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/advantages-and-disadvantages-of-the-compilation-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/advantages-and-disadvantages-of-the-compilation-process-diagram.svg" alt="Diagram: Advantages and Disadvantages of the Compilation Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/advantages-and-disadvantages-of-the-compilation-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/advantages-and-disadvantages-of-the-compilation-process-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of the Compilation Process" width="30%">
-</a>
-
 
 | Advantage | Disadvantage |
 |-----------|-------------|
@@ -841,16 +641,6 @@ PHASE 6: Code Generation
 | **Smaller memory footprint** —” no VM overhead | **Harder debugging** —” need debug info (-g flag) to map binary back to source |
 
 ### Common Compilation Errors and What They Mean
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-errors-and-what-they-mean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-errors-and-what-they-mean-handwritten.svg" alt="Handwritten: Common Compilation Errors and What They Mean" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-errors-and-what-they-mean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-errors-and-what-they-mean-diagram.svg" alt="Diagram: Common Compilation Errors and What They Mean" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-errors-and-what-they-mean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-compilation-errors-and-what-they-mean-sticky.svg" alt="Sticky Note: Common Compilation Errors and What They Mean" width="30%">
-</a>
 
 
 | Error | Stage | Cause | Fix |
@@ -882,16 +672,6 @@ PHASE 6: Code Generation
 
 ### Hybrid Approaches
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/hybrid-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/hybrid-approaches-handwritten.svg" alt="Handwritten: Hybrid Approaches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/hybrid-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/hybrid-approaches-diagram.svg" alt="Diagram: Hybrid Approaches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/hybrid-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/hybrid-approaches-sticky.svg" alt="Sticky Note: Hybrid Approaches" width="30%">
-</a>
-
 
 | Approach | How It Works | Examples |
 |----------|-------------|----------|
@@ -902,16 +682,6 @@ PHASE 6: Code Generation
 ## 1.7 Comments in C
 
 ### Types of Comments
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/types-of-comments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/types-of-comments-handwritten.svg" alt="Handwritten: Types of Comments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/types-of-comments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/types-of-comments-diagram.svg" alt="Diagram: Types of Comments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/types-of-comments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/types-of-comments-sticky.svg" alt="Sticky Note: Types of Comments" width="30%">
-</a>
 
 
 ```c
@@ -925,16 +695,6 @@ PHASE 6: Code Generation
 
 ### Rules and Important Notes
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/rules-and-important-notes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/rules-and-important-notes-handwritten.svg" alt="Handwritten: Rules and Important Notes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/rules-and-important-notes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/rules-and-important-notes-diagram.svg" alt="Diagram: Rules and Important Notes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/rules-and-important-notes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/rules-and-important-notes-sticky.svg" alt="Sticky Note: Rules and Important Notes" width="30%">
-</a>
-
 
 1. **Comments are removed by the preprocessor** —” replaced with a single space
 2. **Multi-line comments do NOT nest** —” `/* outer /* inner */ outer */` causes an error
@@ -943,16 +703,6 @@ PHASE 6: Code Generation
 5. **Do not put comments inside strings** —” `printf("/* not a comment */\n");` prints the text
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 ```c
@@ -974,16 +724,6 @@ int x /* counter */ = 5;
 
 ### Best Practices
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/best-practices-handwritten.svg" alt="Handwritten: Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/best-practices-diagram.svg" alt="Diagram: Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/best-practices-sticky.svg" alt="Sticky Note: Best Practices" width="30%">
-</a>
-
 
 ```c
 /* Use block comments for:
@@ -1002,16 +742,6 @@ int x /* counter */ = 5;
 
 ### Real-World Analogy: A Library
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-a-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-a-library-handwritten.svg" alt="Handwritten: Real-World Analogy: A Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-a-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-a-library-diagram.svg" alt="Diagram: Real-World Analogy: A Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-a-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/real-world-analogy-a-library-sticky.svg" alt="Sticky Note: Real-World Analogy: A Library" width="30%">
-</a>
-
 
 A C program is like a library:
 - **Keywords** = Library rules (no food, quiet hours) —” fixed, unchangeable, predefined
@@ -1024,16 +754,6 @@ A C program is like a library:
 A **token** is the smallest individual element of a C program that has meaning to the compiler. The compiler breaks your source code into tokens during the lexical analysis phase.
 
 ### Classification of Tokens
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/classification-of-tokens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/classification-of-tokens-handwritten.svg" alt="Handwritten: Classification of Tokens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/classification-of-tokens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/classification-of-tokens-diagram.svg" alt="Diagram: Classification of Tokens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/classification-of-tokens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/classification-of-tokens-sticky.svg" alt="Sticky Note: Classification of Tokens" width="30%">
-</a>
 
 
 ```
@@ -1077,16 +797,6 @@ int count = 10 + 2 * 3;
 
 ### 1.8.1 Keywords
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-1-keywords-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-1-keywords-handwritten.svg" alt="Handwritten: 1.8.1 Keywords" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-1-keywords-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-1-keywords-diagram.svg" alt="Diagram: 1.8.1 Keywords" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-1-keywords-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-1-keywords-sticky.svg" alt="Sticky Note: 1.8.1 Keywords" width="30%">
-</a>
-
 
 **Keywords** are reserved words that have special meaning to the C compiler. They cannot be used as identifiers (variable names, function names, etc.).
 
@@ -1108,16 +818,6 @@ int count = 10 + 2 * 3;
 **C23 added:** `bool`, `true`, `false`, `static_assert`, `thread_local`, `alignas`, `alignof`, `typeof`, `typeof_unqual`, `nullptr`, `constexpr` (some were macros in C23, promoted to keywords)
 
 ### 1.8.2 Identifiers
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-2-identifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-2-identifiers-handwritten.svg" alt="Handwritten: 1.8.2 Identifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-2-identifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-2-identifiers-diagram.svg" alt="Diagram: 1.8.2 Identifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-2-identifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-2-identifiers-sticky.svg" alt="Sticky Note: 1.8.2 Identifiers" width="30%">
-</a>
 
 
 **Identifiers** are names given to variables, functions, structures, unions, and labels.
@@ -1151,30 +851,10 @@ $money         // $ is not allowed (allowed in C23 via <cuchar> but not in ident
 
 ### 1.8.3 Constants
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-3-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-3-constants-handwritten.svg" alt="Handwritten: 1.8.3 Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-3-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-3-constants-diagram.svg" alt="Diagram: 1.8.3 Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-3-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-3-constants-sticky.svg" alt="Sticky Note: 1.8.3 Constants" width="30%">
-</a>
-
 
 Constants are fixed values that do not change during program execution. (Covered in detail in Section 1.11.)
 
 ### 1.8.4 String Literals
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-4-string-literals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-4-string-literals-handwritten.svg" alt="Handwritten: 1.8.4 String Literals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-4-string-literals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-4-string-literals-diagram.svg" alt="Diagram: 1.8.4 String Literals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-4-string-literals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-4-string-literals-sticky.svg" alt="Sticky Note: 1.8.4 String Literals" width="30%">
-</a>
 
 
 A **string literal** is a sequence of characters enclosed in double quotes.
@@ -1188,16 +868,6 @@ A **string literal** is a sequence of characters enclosed in double quotes.
 **Important:** String literals are automatically terminated with a null character (`\0`). `"Hello"` is actually stored as `{'H','e','l','l','o','\0'}` —” 6 bytes, not 5.
 
 ### 1.8.5 Operators
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-5-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-5-operators-handwritten.svg" alt="Handwritten: 1.8.5 Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-5-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-5-operators-diagram.svg" alt="Diagram: 1.8.5 Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-8-5-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-8-5-operators-sticky.svg" alt="Sticky Note: 1.8.5 Operators" width="30%">
-</a>
 
 
 Operators are symbols that perform operations on operands. (45+ operators in C.)
@@ -1219,16 +889,6 @@ sizeof                // Size-of operator
 ## 1.9 Identifiers —” Naming Conventions
 
 ### Identifier Length and Scope
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/identifier-length-and-scope-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/identifier-length-and-scope-handwritten.svg" alt="Handwritten: Identifier Length and Scope" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/identifier-length-and-scope-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/identifier-length-and-scope-diagram.svg" alt="Diagram: Identifier Length and Scope" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/identifier-length-and-scope-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/identifier-length-and-scope-sticky.svg" alt="Sticky Note: Identifier Length and Scope" width="30%">
-</a>
 
 
 ```c
@@ -1253,16 +913,6 @@ int main(void) {
 
 ### Naming Conventions
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/naming-conventions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/naming-conventions-handwritten.svg" alt="Handwritten: Naming Conventions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/naming-conventions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/naming-conventions-diagram.svg" alt="Diagram: Naming Conventions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/naming-conventions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/naming-conventions-sticky.svg" alt="Sticky Note: Naming Conventions" width="30%">
-</a>
-
 
 | Convention | Example | Usage |
 |-----------|---------|-------|
@@ -1275,16 +925,6 @@ int main(void) {
 ## 1.10 Keywords —” Complete Reference
 
 ### All 32 C89/C90 Keywords
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/all-32-c89-c90-keywords-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/all-32-c89-c90-keywords-handwritten.svg" alt="Handwritten: All 32 C89/C90 Keywords" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/all-32-c89-c90-keywords-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/all-32-c89-c90-keywords-diagram.svg" alt="Diagram: All 32 C89/C90 Keywords" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/all-32-c89-c90-keywords-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/all-32-c89-c90-keywords-sticky.svg" alt="Sticky Note: All 32 C89/C90 Keywords" width="30%">
-</a>
 
 
 ```c
@@ -1339,16 +979,6 @@ A **constant** is a fixed value that does not change during program execution.
 
 ### Types of Constants
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/types-of-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/types-of-constants-handwritten.svg" alt="Handwritten: Types of Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/types-of-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/types-of-constants-diagram.svg" alt="Diagram: Types of Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/types-of-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/types-of-constants-sticky.svg" alt="Sticky Note: Types of Constants" width="30%">
-</a>
-
 
 ```
                     ┌──────────────────────┐
@@ -1371,16 +1001,6 @@ A **constant** is a fixed value that does not change during program execution.
 
 ### 1.11.1 Integer Constants
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-1-integer-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-1-integer-constants-handwritten.svg" alt="Handwritten: 1.11.1 Integer Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-1-integer-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-1-integer-constants-diagram.svg" alt="Diagram: 1.11.1 Integer Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-1-integer-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-1-integer-constants-sticky.svg" alt="Sticky Note: 1.11.1 Integer Constants" width="30%">
-</a>
-
 
 ```c
 42          // Decimal (base 10)
@@ -1396,16 +1016,6 @@ A **constant** is a fixed value that does not change during program execution.
 
 ### 1.11.2 Floating-Point Constants
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-2-floating-point-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-2-floating-point-constants-handwritten.svg" alt="Handwritten: 1.11.2 Floating-Point Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-2-floating-point-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-2-floating-point-constants-diagram.svg" alt="Diagram: 1.11.2 Floating-Point Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-2-floating-point-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-2-floating-point-constants-sticky.svg" alt="Sticky Note: 1.11.2 Floating-Point Constants" width="30%">
-</a>
-
 
 ```c
 3.14159     // Double (default)
@@ -1418,16 +1028,6 @@ A **constant** is a fixed value that does not change during program execution.
 ```
 
 ### 1.11.3 Character Constants
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-3-character-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-3-character-constants-handwritten.svg" alt="Handwritten: 1.11.3 Character Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-3-character-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-3-character-constants-diagram.svg" alt="Diagram: 1.11.3 Character Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-3-character-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-3-character-constants-sticky.svg" alt="Sticky Note: 1.11.3 Character Constants" width="30%">
-</a>
 
 
 ```c
@@ -1444,16 +1044,6 @@ A **constant** is a fixed value that does not change during program execution.
 
 ### 1.11.4 String Constants (String Literals)
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-4-string-constants-string-literals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-4-string-constants-string-literals-handwritten.svg" alt="Handwritten: 1.11.4 String Constants (String Literals)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-4-string-constants-string-literals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-4-string-constants-string-literals-diagram.svg" alt="Diagram: 1.11.4 String Constants (String Literals)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-4-string-constants-string-literals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-4-string-constants-string-literals-sticky.svg" alt="Sticky Note: 1.11.4 String Constants (String Literals)" width="30%">
-</a>
-
 
 ```c
 "Hello"         // String of 5 characters + null terminator = 6 bytes
@@ -1463,16 +1053,6 @@ A **constant** is a fixed value that does not change during program execution.
 ```
 
 ### 1.11.5 Symbolic Constants (`#define`)
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-5-symbolic-constants-define-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-5-symbolic-constants-define-handwritten.svg" alt="Handwritten: 1.11.5 Symbolic Constants (`#define`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-5-symbolic-constants-define-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-5-symbolic-constants-define-diagram.svg" alt="Diagram: 1.11.5 Symbolic Constants (`#define`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-5-symbolic-constants-define-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-5-symbolic-constants-define-sticky.svg" alt="Sticky Note: 1.11.5 Symbolic Constants (`#define`)" width="30%">
-</a>
 
 
 ```c
@@ -1492,16 +1072,6 @@ int main(void) {
 
 ### 1.11.6 The `const` Keyword
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-6-the-const-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-6-the-const-keyword-handwritten.svg" alt="Handwritten: 1.11.6 The `const` Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-6-the-const-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-6-the-const-keyword-diagram.svg" alt="Diagram: 1.11.6 The `const` Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-11-6-the-const-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-11-6-the-const-keyword-sticky.svg" alt="Sticky Note: 1.11.6 The `const` Keyword" width="30%">
-</a>
-
 
 ```c
 const int DAYS_IN_WEEK = 7;      // Read-only variable
@@ -1516,16 +1086,6 @@ const int * const ptr3;          // Both pointer and data are const
 
 ### Difference: `#define` vs `const`
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/difference-define-vs-const-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/difference-define-vs-const-handwritten.svg" alt="Handwritten: Difference: `#define` vs `const`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/difference-define-vs-const-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/difference-define-vs-const-diagram.svg" alt="Diagram: Difference: `#define` vs `const`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/difference-define-vs-const-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/difference-define-vs-const-sticky.svg" alt="Sticky Note: Difference: `#define` vs `const`" width="30%">
-</a>
-
 
 | Aspect | `#define` | `const` |
 |--------|-----------|---------|
@@ -1537,16 +1097,6 @@ const int * const ptr3;          // Both pointer and data are const
 | **Pointer to** | Not applicable | Can have const pointers |
 
 ### Edge Cases with Constants
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-with-constants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-with-constants-handwritten.svg" alt="Handwritten: Edge Cases with Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-with-constants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-with-constants-diagram.svg" alt="Diagram: Edge Cases with Constants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-with-constants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/edge-cases-with-constants-sticky.svg" alt="Sticky Note: Edge Cases with Constants" width="30%">
-</a>
 
 
 ```c
@@ -1570,16 +1120,6 @@ int *p = (int *)&c;       // Casting away const
 
 ### 1.12.1 `printf()` —” Formatted Output
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-12-1-printf-formatted-output-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-12-1-printf-formatted-output-handwritten.svg" alt="Handwritten: 1.12.1 `printf()` —” Formatted Output" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-12-1-printf-formatted-output-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-12-1-printf-formatted-output-diagram.svg" alt="Diagram: 1.12.1 `printf()` —” Formatted Output" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-12-1-printf-formatted-output-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-12-1-printf-formatted-output-sticky.svg" alt="Sticky Note: 1.12.1 `printf()` —” Formatted Output" width="30%">
-</a>
-
 
 ```c
 int printf(const char *format, ...);
@@ -1588,16 +1128,6 @@ int printf(const char *format, ...);
 `printf()` writes a formatted string to the standard output (stdout). It returns the number of characters printed on success, or a negative value on error.
 
 ### Complete Format Specifier Table
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-format-specifier-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-format-specifier-table-handwritten.svg" alt="Handwritten: Complete Format Specifier Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-format-specifier-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-format-specifier-table-diagram.svg" alt="Diagram: Complete Format Specifier Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-format-specifier-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-format-specifier-table-sticky.svg" alt="Sticky Note: Complete Format Specifier Table" width="30%">
-</a>
 
 
 | Specifier | Type | Example Usage | Output |
@@ -1622,16 +1152,6 @@ int printf(const char *format, ...);
 
 ### Width and Precision Specifiers
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/width-and-precision-specifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/width-and-precision-specifiers-handwritten.svg" alt="Handwritten: Width and Precision Specifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/width-and-precision-specifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/width-and-precision-specifiers-diagram.svg" alt="Diagram: Width and Precision Specifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/width-and-precision-specifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/width-and-precision-specifiers-sticky.svg" alt="Sticky Note: Width and Precision Specifiers" width="30%">
-</a>
-
 
 ```c
 printf("%10d", 42);       // Right-justified in field width 10: "        42"
@@ -1643,16 +1163,6 @@ printf("%-10.3f", 3.14);  // Left-justified, width 10, precision 3: "3.140     "
 ```
 
 ### 1.12.2 `scanf()` —” Formatted Input
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-12-2-scanf-formatted-input-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-12-2-scanf-formatted-input-handwritten.svg" alt="Handwritten: 1.12.2 `scanf()` —” Formatted Input" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-12-2-scanf-formatted-input-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-12-2-scanf-formatted-input-diagram.svg" alt="Diagram: 1.12.2 `scanf()` —” Formatted Input" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/1-12-2-scanf-formatted-input-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/1-12-2-scanf-formatted-input-sticky.svg" alt="Sticky Note: 1.12.2 `scanf()` —” Formatted Input" width="30%">
-</a>
 
 
 ```c
@@ -1687,16 +1197,6 @@ int main(void) {
 
 ### Scanf Format Specifiers
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/scanf-format-specifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/scanf-format-specifiers-handwritten.svg" alt="Handwritten: Scanf Format Specifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/scanf-format-specifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/scanf-format-specifiers-diagram.svg" alt="Diagram: Scanf Format Specifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/scanf-format-specifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/scanf-format-specifiers-sticky.svg" alt="Sticky Note: Scanf Format Specifiers" width="30%">
-</a>
-
 
 | Specifier | Reads | Example |
 |-----------|-------|---------|
@@ -1713,16 +1213,6 @@ int main(void) {
 | `%*d` | Suppress assignment | `scanf("%*d %d", &x)` —” read and discard first integer |
 
 ### Escape Sequences Table
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/escape-sequences-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/escape-sequences-table-handwritten.svg" alt="Handwritten: Escape Sequences Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/escape-sequences-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/escape-sequences-table-diagram.svg" alt="Diagram: Escape Sequences Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/escape-sequences-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/escape-sequences-table-sticky.svg" alt="Sticky Note: Escape Sequences Table" width="30%">
-</a>
 
 
 | Sequence | ASCII Value | Meaning |
@@ -1742,16 +1232,6 @@ int main(void) {
 | `\OOO` | OOO (octal) | Octal character |
 
 ### Complete I/O Examples
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-i-o-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-i-o-examples-handwritten.svg" alt="Handwritten: Complete I/O Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-i-o-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-i-o-examples-diagram.svg" alt="Diagram: Complete I/O Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/complete-i-o-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/complete-i-o-examples-sticky.svg" alt="Sticky Note: Complete I/O Examples" width="30%">
-</a>
 
 
 ```c
@@ -1803,16 +1283,6 @@ Previous printf printed 5 characters
 
 ### Common scanf Pitfalls
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-scanf-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-scanf-pitfalls-handwritten.svg" alt="Handwritten: Common scanf Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-scanf-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-scanf-pitfalls-diagram.svg" alt="Diagram: Common scanf Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/common-scanf-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/common-scanf-pitfalls-sticky.svg" alt="Sticky Note: Common scanf Pitfalls" width="30%">
-</a>
-
 
 ```c
 /* Pitfall 1: Trailing newline */
@@ -1840,16 +1310,6 @@ scanf("%lf", &d);          // %lf for double —” CORRECT (NOT %f!)
 ## 1.13 C Standards: From K&R to C23
 
 ### Timeline and Feature Comparison
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/timeline-and-feature-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/timeline-and-feature-comparison-handwritten.svg" alt="Handwritten: Timeline and Feature Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/timeline-and-feature-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/timeline-and-feature-comparison-diagram.svg" alt="Diagram: Timeline and Feature Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/timeline-and-feature-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/timeline-and-feature-comparison-sticky.svg" alt="Sticky Note: Timeline and Feature Comparison" width="30%">
-</a>
 
 
 | Feature | K&R (1978) | C89/C90 | C99 | C11 | C17 | C23 |
@@ -1883,16 +1343,6 @@ scanf("%lf", &d);          // %lf for double —” CORRECT (NOT %f!)
 | **Trigraphs** | âŒ | âœ… | âœ… | âœ… | âœ… | âŒ removed |
 
 ### Why C Standards Matter
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/why-c-standards-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/why-c-standards-matter-handwritten.svg" alt="Handwritten: Why C Standards Matter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/why-c-standards-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/why-c-standards-matter-diagram.svg" alt="Diagram: Why C Standards Matter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/why-c-standards-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/why-c-standards-matter-sticky.svg" alt="Sticky Note: Why C Standards Matter" width="30%">
-</a>
 
 
 ```c
@@ -1937,16 +1387,6 @@ int main(void) {
 
 ### Q1: What is the difference between C and C++?
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-c-and-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-c-and-c-handwritten.svg" alt="Handwritten: What is the difference between C and C++?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-c-and-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-c-and-c-diagram.svg" alt="Diagram: What is the difference between C and C++?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-c-and-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-c-and-c-sticky.svg" alt="Sticky Note: What is the difference between C and C++?" width="30%">
-</a>
-
 
 | Aspect | C | C++ |
 |--------|---|-----|
@@ -1965,16 +1405,6 @@ int main(void) {
 
 ### Q2: Explain the four stages of compilation in detail.
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explain-the-four-stages-of-compilation-in-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explain-the-four-stages-of-compilation-in-detail-handwritten.svg" alt="Handwritten: Explain the four stages of compilation in detail." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explain-the-four-stages-of-compilation-in-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explain-the-four-stages-of-compilation-in-detail-diagram.svg" alt="Diagram: Explain the four stages of compilation in detail." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explain-the-four-stages-of-compilation-in-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explain-the-four-stages-of-compilation-in-detail-sticky.svg" alt="Sticky Note: Explain the four stages of compilation in detail." width="30%">
-</a>
-
 
 **Answer:** See Section 1.5. Key interview points:
 1. **Preprocessor**: Text processing —” `#include`, `#define`, conditional compilation
@@ -1987,16 +1417,6 @@ int main(void) {
 - **Dynamic linking** (default on most systems): References to shared libraries (`.so` / `.dll` / `.dylib`) are resolved at load time. Smaller binary, but requires libraries present at runtime.
 
 ### Q3: What does `printf()` return?
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-does-printf-return-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-does-printf-return-handwritten.svg" alt="Handwritten: What does `printf()` return?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-does-printf-return-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-does-printf-return-diagram.svg" alt="Diagram: What does `printf()` return?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-does-printf-return-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-does-printf-return-sticky.svg" alt="Sticky Note: What does `printf()` return?" width="30%">
-</a>
 
 
 ```c
@@ -2018,16 +1438,6 @@ int main(void) {
 
 ### Q4: What does `main()` return and why?
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-does-main-return-and-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-does-main-return-and-why-handwritten.svg" alt="Handwritten: What does `main()` return and why?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-does-main-return-and-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-does-main-return-and-why-diagram.svg" alt="Diagram: What does `main()` return and why?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-does-main-return-and-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-does-main-return-and-why-sticky.svg" alt="Sticky Note: What does `main()` return and why?" width="30%">
-</a>
-
 
 ```c
 int main(void)       // Returns int —” conventional
@@ -2047,16 +1457,6 @@ echo $?    # On Linux/macOS —” prints the return value
 
 ### Q5: What is the difference between `int main()` and `int main(void)`?
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-int-main-and-int-main-void-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-int-main-and-int-main-void-handwritten.svg" alt="Handwritten: What is the difference between `int main()` and `int main(void)`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-int-main-and-int-main-void-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-int-main-and-int-main-void-diagram.svg" alt="Diagram: What is the difference between `int main()` and `int main(void)`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-int-main-and-int-main-void-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-the-difference-between-int-main-and-int-main-void-sticky.svg" alt="Sticky Note: What is the difference between `int main()` and `int main(void)`?" width="30%">
-</a>
-
 
 ```c
 int main()       // In C: accepts any number of arguments (unspecified)
@@ -2066,16 +1466,6 @@ int main(void)   // In C: accepts exactly zero arguments
 **Best practice:** Always use `int main(void)` in C. In C++, both mean "no parameters."
 
 ### Q6: Is `sizeof` a function or an operator?
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/is-sizeof-a-function-or-an-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/is-sizeof-a-function-or-an-operator-handwritten.svg" alt="Handwritten: Is `sizeof` a function or an operator?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/is-sizeof-a-function-or-an-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/is-sizeof-a-function-or-an-operator-diagram.svg" alt="Diagram: Is `sizeof` a function or an operator?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/is-sizeof-a-function-or-an-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/is-sizeof-a-function-or-an-operator-sticky.svg" alt="Sticky Note: Is `sizeof` a function or an operator?" width="30%">
-</a>
 
 
 `sizeof` is a **compile-time unary operator**, not a function. Parentheses are only needed when the operand is a type name:
@@ -2088,16 +1478,6 @@ sizeof int        // âŒ Syntax error: parentheses required for type names
 ```
 
 ### Q7: What is undefined behavior (UB) in C?
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-undefined-behavior-ub-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-undefined-behavior-ub-in-c-handwritten.svg" alt="Handwritten: What is undefined behavior (UB) in C?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-undefined-behavior-ub-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-undefined-behavior-ub-in-c-diagram.svg" alt="Diagram: What is undefined behavior (UB) in C?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/what-is-undefined-behavior-ub-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/what-is-undefined-behavior-ub-in-c-sticky.svg" alt="Sticky Note: What is undefined behavior (UB) in C?" width="30%">
-</a>
 
 
 **Undefined behavior** means the C standard imposes no requirements on what happens. The program may crash, produce wrong results, or appear to work correctly —” until it doesn't.
@@ -2112,16 +1492,6 @@ int y = 5; y = y++;     // UB: multiple side effects on same variable between se
 ```
 
 ### Q8: Explain sequence points in C.
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explain-sequence-points-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explain-sequence-points-in-c-handwritten.svg" alt="Handwritten: Explain sequence points in C." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explain-sequence-points-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explain-sequence-points-in-c-diagram.svg" alt="Diagram: Explain sequence points in C." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/explain-sequence-points-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/explain-sequence-points-in-c-sticky.svg" alt="Sticky Note: Explain sequence points in C." width="30%">
-</a>
 
 
 A **sequence point** is a point in the execution where all side effects of previous evaluations are complete. Between sequence points, you can modify a variable at most once.
@@ -2141,16 +1511,6 @@ i = ++i + 1;    // UB in C (ok in C++11+)
 ```
 
 ### Q9: Can you compile a C program without `main()`?
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/can-you-compile-a-c-program-without-main-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/can-you-compile-a-c-program-without-main-handwritten.svg" alt="Handwritten: Can you compile a C program without `main()`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/can-you-compile-a-c-program-without-main-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/can-you-compile-a-c-program-without-main-diagram.svg" alt="Diagram: Can you compile a C program without `main()`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/can-you-compile-a-c-program-without-main-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/can-you-compile-a-c-program-without-main-sticky.svg" alt="Sticky Note: Can you compile a C program without `main()`?" width="30%">
-</a>
 
 
 **No** for executables —” the linker will report `undefined reference to 'main'`. **Yes** for libraries, kernel modules, and object files:
@@ -2181,16 +1541,6 @@ gcc -shared library.c -o lib.so   # Shared library —” no main needed
 
 ### Operating Systems
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/operating-systems-handwritten.svg" alt="Handwritten: Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/operating-systems-diagram.svg" alt="Diagram: Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/operating-systems-sticky.svg" alt="Sticky Note: Operating Systems" width="30%">
-</a>
-
 
 | System | Written In | C's Role |
 |--------|-----------|----------|
@@ -2212,16 +1562,6 @@ struct kmem_cache {
 ```
 
 ### Embedded Systems
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/embedded-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/embedded-systems-handwritten.svg" alt="Handwritten: Embedded Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/embedded-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/embedded-systems-diagram.svg" alt="Diagram: Embedded Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/embedded-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/embedded-systems-sticky.svg" alt="Sticky Note: Embedded Systems" width="30%">
-</a>
 
 
 C dominates embedded programming due to its efficiency, low memory footprint, and direct hardware access:
@@ -2245,16 +1585,6 @@ int main(void) {
 
 ### Databases
 
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/databases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/databases-handwritten.svg" alt="Handwritten: Databases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/databases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/databases-diagram.svg" alt="Diagram: Databases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/databases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/databases-sticky.svg" alt="Sticky Note: Databases" width="30%">
-</a>
-
 
 | Database | C Usage | Key Component |
 |----------|---------|---------------|
@@ -2263,16 +1593,6 @@ int main(void) {
 | **Redis** | C | In-memory data store, event loop, network layer |
 
 ### Compilers and Interpreters
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/compilers-and-interpreters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/compilers-and-interpreters-handwritten.svg" alt="Handwritten: Compilers and Interpreters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/compilers-and-interpreters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/compilers-and-interpreters-diagram.svg" alt="Diagram: Compilers and Interpreters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/compilers-and-interpreters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/compilers-and-interpreters-sticky.svg" alt="Sticky Note: Compilers and Interpreters" width="30%">
-</a>
 
 
 | Tool | Written In | Role |
@@ -2283,16 +1603,6 @@ int main(void) {
 | **Node.js (V8)** | C++ | JavaScript engine (core data structures) |
 
 ### Game Engines
-
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/game-engines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/game-engines-handwritten.svg" alt="Handwritten: Game Engines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/game-engines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/game-engines-diagram.svg" alt="Diagram: Game Engines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/01-introduction/game-engines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/01-introduction/game-engines-sticky.svg" alt="Sticky Note: Game Engines" width="30%">
-</a>
 
 
 ```c

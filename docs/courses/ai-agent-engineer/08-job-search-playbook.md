@@ -47,16 +47,6 @@
 
 ### Types of AI Agent Engineer roles
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/types-of-ai-agent-engineer-roles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/types-of-ai-agent-engineer-roles-handwritten.svg" alt="Handwritten: Types of AI Agent Engineer roles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/types-of-ai-agent-engineer-roles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/types-of-ai-agent-engineer-roles-diagram.svg" alt="Diagram: Types of AI Agent Engineer roles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/types-of-ai-agent-engineer-roles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/types-of-ai-agent-engineer-roles-sticky.svg" alt="Sticky Note: Types of AI Agent Engineer roles" width="30%">
-</a>
-
 
 | Role type | What you do | Where they exist | Typical salary |
 |-----------|------------|-----------------|----------------|
@@ -66,16 +56,6 @@
 | **Freelance AI Developer** | Build RAG APIs + agent workflows per project | Upwork, Toptal, referrals | $50-120/hr |
 
 ### Which companies hire
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/which-companies-hire-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/which-companies-hire-handwritten.svg" alt="Handwritten: Which companies hire" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/which-companies-hire-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/which-companies-hire-diagram.svg" alt="Diagram: Which companies hire" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/which-companies-hire-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/which-companies-hire-sticky.svg" alt="Sticky Note: Which companies hire" width="30%">
-</a>
 
 
 | Category | Examples | How to find them |
@@ -87,16 +67,6 @@
 | **Enterprise AI teams** | Banks, e-commerce, logistics (all regions) | LinkedIn, recruiter outreach |
 
 ### Decision framework: Freelance vs Full-time
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/decision-framework-freelance-vs-full-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/decision-framework-freelance-vs-full-time-handwritten.svg" alt="Handwritten: Decision framework: Freelance vs Full-time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/decision-framework-freelance-vs-full-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/decision-framework-freelance-vs-full-time-diagram.svg" alt="Diagram: Decision framework: Freelance vs Full-time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/decision-framework-freelance-vs-full-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/decision-framework-freelance-vs-full-time-sticky.svg" alt="Sticky Note: Decision framework: Freelance vs Full-time" width="30%">
-</a>
 
 
 | Factor | Freelance | Full-time |
@@ -114,16 +84,6 @@
 ## 2. Where to Find Jobs
 
 ### Platform deep-dive
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/platform-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/platform-deep-dive-handwritten.svg" alt="Handwritten: Platform deep-dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/platform-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/platform-deep-dive-diagram.svg" alt="Diagram: Platform deep-dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/platform-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/platform-deep-dive-sticky.svg" alt="Sticky Note: Platform deep-dive" width="30%">
-</a>
 
 
 #### LinkedIn (your primary channel)
@@ -217,16 +177,6 @@ Happy to jump on a quick call this week to discuss your specific needs.
 
 ### Comprehensive job site list
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/comprehensive-job-site-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/comprehensive-job-site-list-handwritten.svg" alt="Handwritten: Comprehensive job site list" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/comprehensive-job-site-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/comprehensive-job-site-list-diagram.svg" alt="Diagram: Comprehensive job site list" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/comprehensive-job-site-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/comprehensive-job-site-list-sticky.svg" alt="Sticky Note: Comprehensive job site list" width="30%">
-</a>
-
 
 | Site | Best for | URL |
 |------|----------|-----|
@@ -249,16 +199,6 @@ Happy to jump on a quick call this week to discuss your specific needs.
 
 ### The 50-application rule
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/the-50-application-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/the-50-application-rule-handwritten.svg" alt="Handwritten: The 50-application rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/the-50-application-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/the-50-application-rule-diagram.svg" alt="Diagram: The 50-application rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/the-50-application-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/the-50-application-rule-sticky.svg" alt="Sticky Note: The 50-application rule" width="30%">
-</a>
-
 
 The first 50 applications are practice. You won't get responses. You're testing:
 - Does your headline attract attention?
@@ -268,16 +208,6 @@ The first 50 applications are practice. You won't get responses. You're testing:
 Track everything from application 1. By application 25, you should see patterns. By application 50, you should have at least 3 active conversations.
 
 ### Application templates
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/application-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/application-templates-handwritten.svg" alt="Handwritten: Application templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/application-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/application-templates-diagram.svg" alt="Diagram: Application templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/application-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/application-templates-sticky.svg" alt="Sticky Note: Application templates" width="30%">
-</a>
 
 
 **Template A: Upwork / Freelance (detailed)**
@@ -350,16 +280,6 @@ Would you be open to a 15-minute call this week?
 
 ### Follow-up system
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/follow-up-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/follow-up-system-handwritten.svg" alt="Handwritten: Follow-up system" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/follow-up-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/follow-up-system-diagram.svg" alt="Diagram: Follow-up system" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/follow-up-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/follow-up-system-sticky.svg" alt="Sticky Note: Follow-up system" width="30%">
-</a>
-
 
 | After sending | Action |
 |---------------|--------|
@@ -391,16 +311,6 @@ Happy to do a brief call this week if there's interest.
 
 ### Why networking matters
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/why-networking-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/why-networking-matters-handwritten.svg" alt="Handwritten: Why networking matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/why-networking-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/why-networking-matters-diagram.svg" alt="Diagram: Why networking matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/why-networking-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/why-networking-matters-sticky.svg" alt="Sticky Note: Why networking matters" width="30%">
-</a>
-
 
 80% of jobs are never publicly listed. They're filled through:
 - Internal referrals
@@ -408,16 +318,6 @@ Happy to do a brief call this week if there's interest.
 - Network word-of-mouth
 
 ### LinkedIn networking system
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-networking-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-networking-system-handwritten.svg" alt="Handwritten: LinkedIn networking system" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-networking-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-networking-system-diagram.svg" alt="Diagram: LinkedIn networking system" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-networking-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-networking-system-sticky.svg" alt="Sticky Note: LinkedIn networking system" width="30%">
-</a>
 
 
 **Daily actions (15 minutes):**
@@ -436,16 +336,6 @@ Happy to do a brief call this week if there's interest.
 3. Review your network growth — target 50 new connections/month
 
 ### LinkedIn engagement templates
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-engagement-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-engagement-templates-handwritten.svg" alt="Handwritten: LinkedIn engagement templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-engagement-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-engagement-templates-diagram.svg" alt="Diagram: LinkedIn engagement templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-engagement-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/linkedin-engagement-templates-sticky.svg" alt="Sticky Note: LinkedIn engagement templates" width="30%">
-</a>
 
 
 **Comment on a post:**
@@ -476,16 +366,6 @@ there's interest.
 
 ### Twitter/X strategy
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/twitter-x-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/twitter-x-strategy-handwritten.svg" alt="Handwritten: Twitter/X strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/twitter-x-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/twitter-x-strategy-diagram.svg" alt="Diagram: Twitter/X strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/twitter-x-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/twitter-x-strategy-sticky.svg" alt="Sticky Note: Twitter/X strategy" width="30%">
-</a>
-
 
 - **Bio:** `AI Agent Engineer | LangGraph · RAG · MCP · FastAPI | Building agent systems | Ex-Laravel`
 - **Daily:** Reply to AI engineering posts with value-add comments
@@ -493,16 +373,6 @@ there's interest.
 - **Hashtags to follow:** #LangGraph #RAG #AIAgents #FastAPI #MCP
 
 ### Communities to join
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/communities-to-join-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/communities-to-join-handwritten.svg" alt="Handwritten: Communities to join" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/communities-to-join-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/communities-to-join-diagram.svg" alt="Diagram: Communities to join" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/communities-to-join-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/communities-to-join-sticky.svg" alt="Sticky Note: Communities to join" width="30%">
-</a>
 
 
 | Community | Why join | How to engage |
@@ -518,16 +388,6 @@ there's interest.
 ## 5. Personal Branding
 
 ### GitHub profile optimization
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/github-profile-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/github-profile-optimization-handwritten.svg" alt="Handwritten: GitHub profile optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/github-profile-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/github-profile-optimization-diagram.svg" alt="Diagram: GitHub profile optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/github-profile-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/github-profile-optimization-sticky.svg" alt="Sticky Note: GitHub profile optimization" width="30%">
-</a>
 
 
 Your GitHub profile is your resume. Optimize it.
@@ -570,16 +430,6 @@ MCP server, booking module port, and any open-source contributions]
 
 ### Writing case studies
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/writing-case-studies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/writing-case-studies-handwritten.svg" alt="Handwritten: Writing case studies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/writing-case-studies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/writing-case-studies-diagram.svg" alt="Diagram: Writing case studies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/writing-case-studies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/writing-case-studies-sticky.svg" alt="Sticky Note: Writing case studies" width="30%">
-</a>
-
 
 **Structure for dev.to posts:**
 
@@ -614,16 +464,6 @@ Python, FastAPI, ChromaDB, Redis, OpenAI, Docker
 
 ### Content calendar (weekly)
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/content-calendar-weekly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/content-calendar-weekly-handwritten.svg" alt="Handwritten: Content calendar (weekly)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/content-calendar-weekly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/content-calendar-weekly-diagram.svg" alt="Diagram: Content calendar (weekly)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/content-calendar-weekly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/content-calendar-weekly-sticky.svg" alt="Sticky Note: Content calendar (weekly)" width="30%">
-</a>
-
 
 | Day | Action |
 |-----|--------|
@@ -638,16 +478,6 @@ Python, FastAPI, ChromaDB, Redis, OpenAI, Docker
 
 ### Interview process breakdown
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/interview-process-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/interview-process-breakdown-handwritten.svg" alt="Handwritten: Interview process breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/interview-process-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/interview-process-breakdown-diagram.svg" alt="Diagram: Interview process breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/interview-process-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/interview-process-breakdown-sticky.svg" alt="Sticky Note: Interview process breakdown" width="30%">
-</a>
-
 
 | Stage | What they test | Duration | How to prepare |
 |-------|---------------|----------|----------------|
@@ -660,30 +490,10 @@ Python, FastAPI, ChromaDB, Redis, OpenAI, Docker
 
 ### 60-second pitch (for phone screens)
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/60-second-pitch-for-phone-screens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/60-second-pitch-for-phone-screens-handwritten.svg" alt="Handwritten: 60-second pitch (for phone screens)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/60-second-pitch-for-phone-screens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/60-second-pitch-for-phone-screens-diagram.svg" alt="Diagram: 60-second pitch (for phone screens)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/60-second-pitch-for-phone-screens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/60-second-pitch-for-phone-screens-sticky.svg" alt="Sticky Note: 60-second pitch (for phone screens)" width="30%">
-</a>
-
 
 > "I'm an AI Agent Engineer with 5 years of production backend experience. I build RAG systems and LangGraph agent pipelines deployed on Docker with CI/CD. Most recently, I ported a visual n8n workflow to a LangGraph state machine with checkpoint persistence and human-in-the-loop — and I have a live RAG API running on my own infrastructure that I can show you right now."
 
 ### Additional interview questions (beyond the 10 in Phase 5)
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/additional-interview-questions-beyond-the-10-in-phase-5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/additional-interview-questions-beyond-the-10-in-phase-5-handwritten.svg" alt="Handwritten: Additional interview questions (beyond the 10 in Phase 5)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/additional-interview-questions-beyond-the-10-in-phase-5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/additional-interview-questions-beyond-the-10-in-phase-5-diagram.svg" alt="Diagram: Additional interview questions (beyond the 10 in Phase 5)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/additional-interview-questions-beyond-the-10-in-phase-5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/additional-interview-questions-beyond-the-10-in-phase-5-sticky.svg" alt="Sticky Note: Additional interview questions (beyond the 10 in Phase 5)" width="30%">
-</a>
 
 
 **Q11: How do you handle streaming responses in a RAG system?**
@@ -733,16 +543,6 @@ Three strategies:
 
 ### System design: Whiteboard a RAG system
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/system-design-whiteboard-a-rag-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/system-design-whiteboard-a-rag-system-handwritten.svg" alt="Handwritten: System design: Whiteboard a RAG system" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/system-design-whiteboard-a-rag-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/system-design-whiteboard-a-rag-system-diagram.svg" alt="Diagram: System design: Whiteboard a RAG system" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/system-design-whiteboard-a-rag-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/system-design-whiteboard-a-rag-system-sticky.svg" alt="Sticky Note: System design: Whiteboard a RAG system" width="30%">
-</a>
-
 
 Be ready to draw this on a whiteboard (or Miro):
 
@@ -772,16 +572,6 @@ Be ready to draw this on a whiteboard (or Miro):
 ```
 
 ### Behavioral questions (STAR method)
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/behavioral-questions-star-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/behavioral-questions-star-method-handwritten.svg" alt="Handwritten: Behavioral questions (STAR method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/behavioral-questions-star-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/behavioral-questions-star-method-diagram.svg" alt="Diagram: Behavioral questions (STAR method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/behavioral-questions-star-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/behavioral-questions-star-method-sticky.svg" alt="Sticky Note: Behavioral questions (STAR method)" width="30%">
-</a>
 
 
 Have 5 stories ready using Situation ? Task ? Action ? Result.
@@ -819,16 +609,6 @@ Have 5 stories ready using Situation ? Task ? Action ? Result.
 
 ### Take-home project strategy
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/take-home-project-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/take-home-project-strategy-handwritten.svg" alt="Handwritten: Take-home project strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/take-home-project-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/take-home-project-strategy-diagram.svg" alt="Diagram: Take-home project strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/take-home-project-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/take-home-project-strategy-sticky.svg" alt="Sticky Note: Take-home project strategy" width="30%">
-</a>
-
 
 If you get a take-home assignment, here's how to ace it:
 
@@ -846,16 +626,6 @@ If you get a take-home assignment, here's how to ace it:
 
 ### Work visa process
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/work-visa-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/work-visa-process-handwritten.svg" alt="Handwritten: Work visa process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/work-visa-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/work-visa-process-diagram.svg" alt="Diagram: Work visa process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/work-visa-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/work-visa-process-sticky.svg" alt="Sticky Note: Work visa process" width="30%">
-</a>
-
 
 | Route | How it works | Time | Cost |
 |-------|-------------|------|------|
@@ -868,16 +638,6 @@ If you get a take-home assignment, here's how to ace it:
 
 ### Free zones vs Mainland
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/free-zones-vs-mainland-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/free-zones-vs-mainland-handwritten.svg" alt="Handwritten: Free zones vs Mainland" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/free-zones-vs-mainland-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/free-zones-vs-mainland-diagram.svg" alt="Diagram: Free zones vs Mainland" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/free-zones-vs-mainland-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/free-zones-vs-mainland-sticky.svg" alt="Sticky Note: Free zones vs Mainland" width="30%">
-</a>
-
 
 | Free zone | Best for | Cost | Visa |
 |-----------|----------|------|------|
@@ -887,16 +647,6 @@ If you get a take-home assignment, here's how to ace it:
 | TwoFour54 | Media + AI | ~20K AED/year | 3-year freelance |
 
 ### Cost of living for salary negotiation
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/cost-of-living-for-salary-negotiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/cost-of-living-for-salary-negotiation-handwritten.svg" alt="Handwritten: Cost of living for salary negotiation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/cost-of-living-for-salary-negotiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/cost-of-living-for-salary-negotiation-diagram.svg" alt="Diagram: Cost of living for salary negotiation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/cost-of-living-for-salary-negotiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/cost-of-living-for-salary-negotiation-sticky.svg" alt="Sticky Note: Cost of living for salary negotiation" width="30%">
-</a>
 
 
 | Expense | Monthly (AED) | Notes |
@@ -913,16 +663,6 @@ If you get a take-home assignment, here's how to ace it:
 
 ### Best recruitment agencies for Dubai AI roles
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/best-recruitment-agencies-for-dubai-ai-roles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/best-recruitment-agencies-for-dubai-ai-roles-handwritten.svg" alt="Handwritten: Best recruitment agencies for Dubai AI roles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/best-recruitment-agencies-for-dubai-ai-roles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/best-recruitment-agencies-for-dubai-ai-roles-diagram.svg" alt="Diagram: Best recruitment agencies for Dubai AI roles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/best-recruitment-agencies-for-dubai-ai-roles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/best-recruitment-agencies-for-dubai-ai-roles-sticky.svg" alt="Sticky Note: Best recruitment agencies for Dubai AI roles" width="30%">
-</a>
-
 
 | Agency | Specialty | How to approach |
 |--------|-----------|----------------|
@@ -934,16 +674,6 @@ If you get a take-home assignment, here's how to ace it:
 | **Charterhouse** | Tech, digital, marketing | Portal application |
 
 ### Dubai networking events
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/dubai-networking-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/dubai-networking-events-handwritten.svg" alt="Handwritten: Dubai networking events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/dubai-networking-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/dubai-networking-events-diagram.svg" alt="Diagram: Dubai networking events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/dubai-networking-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/dubai-networking-events-sticky.svg" alt="Sticky Note: Dubai networking events" width="30%">
-</a>
 
 
 | Event | Frequency | Where to find |
@@ -960,16 +690,6 @@ If you get a take-home assignment, here's how to ace it:
 ## 8. Pipeline Management
 
 ### Proposal tracker template
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/proposal-tracker-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/proposal-tracker-template-handwritten.svg" alt="Handwritten: Proposal tracker template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/proposal-tracker-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/proposal-tracker-template-diagram.svg" alt="Diagram: Proposal tracker template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/proposal-tracker-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/proposal-tracker-template-sticky.svg" alt="Sticky Note: Proposal tracker template" width="30%">
-</a>
 
 
 Create `docs/profile/proposal-tracker.md` with this structure:
@@ -1001,16 +721,6 @@ C: LinkedIn direct approach
 
 ### Pipeline metrics to track
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/pipeline-metrics-to-track-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/pipeline-metrics-to-track-handwritten.svg" alt="Handwritten: Pipeline metrics to track" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/pipeline-metrics-to-track-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/pipeline-metrics-to-track-diagram.svg" alt="Diagram: Pipeline metrics to track" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/pipeline-metrics-to-track-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/pipeline-metrics-to-track-sticky.svg" alt="Sticky Note: Pipeline metrics to track" width="30%">
-</a>
-
 
 | Metric | Target | What to do if below target |
 |--------|--------|---------------------------|
@@ -1020,16 +730,6 @@ C: LinkedIn direct approach
 | Applications/week | 5+ | Increase daily LinkedIn time |
 
 ### Handling rejection
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/handling-rejection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/handling-rejection-handwritten.svg" alt="Handwritten: Handling rejection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/handling-rejection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/handling-rejection-diagram.svg" alt="Diagram: Handling rejection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/handling-rejection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/handling-rejection-sticky.svg" alt="Sticky Note: Handling rejection" width="30%">
-</a>
 
 
 1. **Rejection is data, not judgment.** If you get rejected after an interview, ask for feedback: "What was the deciding factor?"
@@ -1108,16 +808,6 @@ export { Logger, Tracer, MetricsCollector, LogEntry, Span, Metric }
 
 ### Daily checklist (during job search)
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/daily-checklist-during-job-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/daily-checklist-during-job-search-handwritten.svg" alt="Handwritten: Daily checklist (during job search)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/daily-checklist-during-job-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/daily-checklist-during-job-search-diagram.svg" alt="Diagram: Daily checklist (during job search)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/daily-checklist-during-job-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/daily-checklist-during-job-search-sticky.svg" alt="Sticky Note: Daily checklist (during job search)" width="30%">
-</a>
-
 
 ```
 ? LinkedIn: Connect with 5 new people
@@ -1130,16 +820,6 @@ export { Logger, Tracer, MetricsCollector, LogEntry, Span, Metric }
 
 ### Weekly checklist
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/weekly-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/weekly-checklist-handwritten.svg" alt="Handwritten: Weekly checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/weekly-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/weekly-checklist-diagram.svg" alt="Diagram: Weekly checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/weekly-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/weekly-checklist-sticky.svg" alt="Sticky Note: Weekly checklist" width="30%">
-</a>
-
 
 ```
 ? 5-10 applications sent
@@ -1151,16 +831,6 @@ export { Logger, Tracer, MetricsCollector, LogEntry, Span, Metric }
 ```
 
 ### Tools to use
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/tools-to-use-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/tools-to-use-handwritten.svg" alt="Handwritten: Tools to use" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/tools-to-use-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/tools-to-use-diagram.svg" alt="Diagram: Tools to use" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/tools-to-use-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/08-job-search-playbook/tools-to-use-sticky.svg" alt="Sticky Note: Tools to use" width="30%">
-</a>
 
 
 | Tool | Purpose | Cost |

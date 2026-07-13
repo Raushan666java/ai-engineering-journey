@@ -104,16 +104,6 @@ flowchart TD
 
 ### Kubernetes Architecture
 
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/kubernetes-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/kubernetes-architecture-handwritten.svg" alt="Handwritten: Kubernetes Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/kubernetes-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/kubernetes-architecture-diagram.svg" alt="Diagram: Kubernetes Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/kubernetes-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/kubernetes-architecture-sticky.svg" alt="Sticky Note: Kubernetes Architecture" width="30%">
-</a>
-
 
 **Control Plane (Master):**
 - **API Server (kube-apiserver):** Front-end to the control plane. Exposes the Kubernetes API. All communication (kubectl, SDKs, internal components) goes through the API server.
@@ -127,16 +117,6 @@ flowchart TD
 - **Container Runtime:** Runs containers (containerd, CRI-O, Docker).
 
 ### Pods
-
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/pods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/pods-handwritten.svg" alt="Handwritten: Pods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/pods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/pods-diagram.svg" alt="Diagram: Pods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/pods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/pods-sticky.svg" alt="Sticky Note: Pods" width="30%">
-</a>
 
 
 A pod is the smallest and simplest Kubernetes object. It represents a single instance of a running process.
@@ -175,16 +155,6 @@ spec:
 ```
 
 ### Deployments
-
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/deployments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/deployments-handwritten.svg" alt="Handwritten: Deployments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/deployments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/deployments-diagram.svg" alt="Diagram: Deployments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/deployments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/deployments-sticky.svg" alt="Sticky Note: Deployments" width="30%">
-</a>
 
 
 A Deployment provides declarative updates for Pods and ReplicaSets.
@@ -230,16 +200,6 @@ spec:
 
 ### Services
 
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/services-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/services-handwritten.svg" alt="Handwritten: Services" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/services-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/services-diagram.svg" alt="Diagram: Services" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/services-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/services-sticky.svg" alt="Sticky Note: Services" width="30%">
-</a>
-
 
 A Service exposes a set of pods as a network service:
 
@@ -265,16 +225,6 @@ spec:
 - **ExternalName:** Returns a CNAME record.
 
 ### Ingress
-
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/ingress-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/ingress-handwritten.svg" alt="Handwritten: Ingress" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/ingress-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/ingress-diagram.svg" alt="Diagram: Ingress" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/ingress-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/ingress-sticky.svg" alt="Sticky Note: Ingress" width="30%">
-</a>
 
 
 Ingress manages external HTTP/HTTPS access to services:
@@ -314,16 +264,6 @@ spec:
 
 ### ConfigMaps and Secrets
 
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/configmaps-and-secrets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/configmaps-and-secrets-handwritten.svg" alt="Handwritten: ConfigMaps and Secrets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/configmaps-and-secrets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/configmaps-and-secrets-diagram.svg" alt="Diagram: ConfigMaps and Secrets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/configmaps-and-secrets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/configmaps-and-secrets-sticky.svg" alt="Sticky Note: ConfigMaps and Secrets" width="30%">
-</a>
-
 
 **ConfigMap:** Non-confidential configuration data:
 
@@ -354,16 +294,6 @@ data:
 ```
 
 ### Storage
-
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/storage-handwritten.svg" alt="Handwritten: Storage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/storage-diagram.svg" alt="Diagram: Storage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/storage-sticky.svg" alt="Sticky Note: Storage" width="30%">
-</a>
 
 
 **PersistentVolume (PV):** Cluster storage resource provisioned by an administrator.
@@ -398,16 +328,6 @@ spec:
 
 ### Autoscaling
 
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/autoscaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/autoscaling-handwritten.svg" alt="Handwritten: Autoscaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/autoscaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/autoscaling-diagram.svg" alt="Diagram: Autoscaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/autoscaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/autoscaling-sticky.svg" alt="Sticky Note: Autoscaling" width="30%">
-</a>
-
 
 **Horizontal Pod Autoscaler (HPA):**
 ```yaml
@@ -432,16 +352,6 @@ spec:
 ```
 
 ### kubectl Cheatsheet
-
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/kubectl-cheatsheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/kubectl-cheatsheet-handwritten.svg" alt="Handwritten: kubectl Cheatsheet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/kubectl-cheatsheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/kubectl-cheatsheet-diagram.svg" alt="Diagram: kubectl Cheatsheet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/07-kubernetes/kubectl-cheatsheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/07-kubernetes/kubectl-cheatsheet-sticky.svg" alt="Sticky Note: kubectl Cheatsheet" width="30%">
-</a>
 
 
 ```text

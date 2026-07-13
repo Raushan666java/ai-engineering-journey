@@ -48,7 +48,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Problem Classification Flow
 
 `mermaid
@@ -116,16 +115,6 @@ flowchart LR
 
 ### Problem 1: Subsets (Power Set)
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-1-subsets-power-set-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-1-subsets-power-set-handwritten.svg" alt="Handwritten: Problem 1: Subsets (Power Set)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-1-subsets-power-set-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-1-subsets-power-set-diagram.svg" alt="Diagram: Problem 1: Subsets (Power Set)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-1-subsets-power-set-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-1-subsets-power-set-sticky.svg" alt="Sticky Note: Problem 1: Subsets (Power Set)" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Backtracking, Array, Bit Manipulation]
@@ -178,16 +167,6 @@ console.log(subsets([0])); // [[], [0]]
 
 ### Problem 2: Binary Watch
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-2-binary-watch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-2-binary-watch-handwritten.svg" alt="Handwritten: Problem 2: Binary Watch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-2-binary-watch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-2-binary-watch-diagram.svg" alt="Diagram: Problem 2: Binary Watch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-2-binary-watch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-2-binary-watch-sticky.svg" alt="Sticky Note: Problem 2: Binary Watch" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Backtracking, Bit Manipulation]
@@ -239,16 +218,6 @@ console.log(readBinaryWatch(1));
 ---
 
 ### Problem 3: Letter Case Permutation
-
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-3-letter-case-permutation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-3-letter-case-permutation-handwritten.svg" alt="Handwritten: Problem 3: Letter Case Permutation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-3-letter-case-permutation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-3-letter-case-permutation-diagram.svg" alt="Diagram: Problem 3: Letter Case Permutation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-3-letter-case-permutation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-3-letter-case-permutation-sticky.svg" alt="Sticky Note: Problem 3: Letter Case Permutation" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
@@ -311,16 +280,6 @@ console.log(letterCasePermutation(\"3z4\")); // [\"3z4\",\"3Z4\"]
 
 ### Problem 4: Permutations
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-4-permutations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-4-permutations-handwritten.svg" alt="Handwritten: Problem 4: Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-4-permutations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-4-permutations-diagram.svg" alt="Diagram: Problem 4: Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-4-permutations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-4-permutations-sticky.svg" alt="Sticky Note: Problem 4: Permutations" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
@@ -376,16 +335,6 @@ console.log(permute([0, 1])); // [[0,1],[1,0]]
 
 ### Problem 5: Permutations II (with duplicates)
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-5-permutations-ii-with-duplicates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-5-permutations-ii-with-duplicates-handwritten.svg" alt="Handwritten: Problem 5: Permutations II (with duplicates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-5-permutations-ii-with-duplicates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-5-permutations-ii-with-duplicates-diagram.svg" alt="Diagram: Problem 5: Permutations II (with duplicates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-5-permutations-ii-with-duplicates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-5-permutations-ii-with-duplicates-sticky.svg" alt="Sticky Note: Problem 5: Permutations II (with duplicates)" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
@@ -440,16 +389,6 @@ console.log(permuteUnique([1, 1, 2]));
 
 ### Problem 6: Combination Sum
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-6-combination-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-6-combination-sum-handwritten.svg" alt="Handwritten: Problem 6: Combination Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-6-combination-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-6-combination-sum-diagram.svg" alt="Diagram: Problem 6: Combination Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-6-combination-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-6-combination-sum-sticky.svg" alt="Sticky Note: Problem 6: Combination Sum" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
@@ -503,16 +442,6 @@ console.log(combinationSum([2, 3, 5], 8));
 
 ### Problem 7: Combination Sum II
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-7-combination-sum-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-7-combination-sum-ii-handwritten.svg" alt="Handwritten: Problem 7: Combination Sum II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-7-combination-sum-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-7-combination-sum-ii-diagram.svg" alt="Diagram: Problem 7: Combination Sum II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-7-combination-sum-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-7-combination-sum-ii-sticky.svg" alt="Sticky Note: Problem 7: Combination Sum II" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
@@ -564,16 +493,6 @@ console.log(combinationSum2([10,1,2,7,6,1,5], 8));
 
 ### Problem 8: Subsets II (with duplicates)
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-8-subsets-ii-with-duplicates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-8-subsets-ii-with-duplicates-handwritten.svg" alt="Handwritten: Problem 8: Subsets II (with duplicates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-8-subsets-ii-with-duplicates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-8-subsets-ii-with-duplicates-diagram.svg" alt="Diagram: Problem 8: Subsets II (with duplicates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-8-subsets-ii-with-duplicates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-8-subsets-ii-with-duplicates-sticky.svg" alt="Sticky Note: Problem 8: Subsets II (with duplicates)" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, Array]
@@ -619,16 +538,6 @@ console.log(subsetsWithDup([1, 2, 2]));
 ---
 
 ### Problem 9: Word Search
-
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-9-word-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-9-word-search-handwritten.svg" alt="Handwritten: Problem 9: Word Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-9-word-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-9-word-search-diagram.svg" alt="Diagram: Problem 9: Word Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-9-word-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-9-word-search-sticky.svg" alt="Sticky Note: Problem 9: Word Search" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -696,16 +605,6 @@ console.log(exist(board, \"ABCB\")); // false
 
 ### Problem 10: Generate Parentheses
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-10-generate-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-10-generate-parentheses-handwritten.svg" alt="Handwritten: Problem 10: Generate Parentheses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-10-generate-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-10-generate-parentheses-diagram.svg" alt="Diagram: Problem 10: Generate Parentheses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-10-generate-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-10-generate-parentheses-sticky.svg" alt="Sticky Note: Problem 10: Generate Parentheses" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, String]
@@ -753,16 +652,6 @@ console.log(generateParenthesis(1)); // [\"()\"]
 ---
 
 ### Problem 11: Palindrome Partitioning
-
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-11-palindrome-partitioning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-11-palindrome-partitioning-handwritten.svg" alt="Handwritten: Problem 11: Palindrome Partitioning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-11-palindrome-partitioning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-11-palindrome-partitioning-diagram.svg" alt="Diagram: Problem 11: Palindrome Partitioning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-11-palindrome-partitioning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-11-palindrome-partitioning-sticky.svg" alt="Sticky Note: Problem 11: Palindrome Partitioning" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -828,16 +717,6 @@ console.log(partition(\"a\")); // [[\"a\"]]
 
 ### Problem 12: Restore IP Addresses
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-12-restore-ip-addresses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-12-restore-ip-addresses-handwritten.svg" alt="Handwritten: Problem 12: Restore IP Addresses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-12-restore-ip-addresses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-12-restore-ip-addresses-diagram.svg" alt="Diagram: Problem 12: Restore IP Addresses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-12-restore-ip-addresses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-12-restore-ip-addresses-sticky.svg" alt="Sticky Note: Problem 12: Restore IP Addresses" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Backtracking, String]
@@ -896,16 +775,6 @@ console.log(restoreIpAddresses(\"0000\")); // [\"0.0.0.0\"]
 ---
 
 ### Problem 13: N-Queens
-
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-13-n-queens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-13-n-queens-handwritten.svg" alt="Handwritten: Problem 13: N-Queens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-13-n-queens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-13-n-queens-diagram.svg" alt="Diagram: Problem 13: N-Queens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-13-n-queens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-13-n-queens-sticky.svg" alt="Sticky Note: Problem 13: N-Queens" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
@@ -976,16 +845,6 @@ console.log(solveNQueens(1)); // [[\"Q\"]]
 ---
 
 ### Problem 14: Sudoku Solver
-
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-14-sudoku-solver-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-14-sudoku-solver-handwritten.svg" alt="Handwritten: Problem 14: Sudoku Solver" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-14-sudoku-solver-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-14-sudoku-solver-diagram.svg" alt="Diagram: Problem 14: Sudoku Solver" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-14-sudoku-solver-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-14-sudoku-solver-sticky.svg" alt="Sticky Note: Problem 14: Sudoku Solver" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
@@ -1084,16 +943,6 @@ console.log(board);
 
 ### Problem 15: Combinations
 
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-15-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-15-combinations-handwritten.svg" alt="Handwritten: Problem 15: Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-15-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-15-combinations-diagram.svg" alt="Diagram: Problem 15: Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-15-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/problem-15-combinations-sticky.svg" alt="Sticky Note: Problem 15: Combinations" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy (but included as Hard for completeness)
 📂 **Topics:** [Backtracking, Combinatorics]
@@ -1145,16 +994,6 @@ console.log(combine(3, 1)); // [[1],[2],[3]]
 ---
 
 ### Advanced Backtracking Concepts
-
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/advanced-backtracking-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/advanced-backtracking-concepts-handwritten.svg" alt="Handwritten: Advanced Backtracking Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/advanced-backtracking-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/advanced-backtracking-concepts-diagram.svg" alt="Diagram: Advanced Backtracking Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/09-backtracking/advanced-backtracking-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/09-backtracking/advanced-backtracking-concepts-sticky.svg" alt="Sticky Note: Advanced Backtracking Concepts" width="30%">
-</a>
 
 
 #### Pruning Strategies

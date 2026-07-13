@@ -83,16 +83,6 @@ flowchart LR
 
 ### Bottom-Up Parsing and the Handle
 
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-handwritten.svg" alt="Handwritten: Bottom-Up Parsing and the Handle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-diagram.svg" alt="Diagram: Bottom-Up Parsing and the Handle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/bottom-up-parsing-and-the-handle-sticky.svg" alt="Sticky Note: Bottom-Up Parsing and the Handle" width="30%">
-</a>
-
 
 Bottom-up parsing constructs a parse tree starting from the leaves (input terminals) and working upward toward the start symbol. The process corresponds to the **reverse of a rightmost derivation**: a rightmost derivation is reduced step by step to the start symbol. At each step, the parser identifies a substring of the current sentential form that can be reduced to a nonterminal.
 
@@ -103,16 +93,6 @@ Formally, for a rightmost derivation `S ?*_rm aAw ?_rm a?w`, the handle is `A ? 
 > **One-Sentence Takeaway:** Bottom-up parsing is the reverse of a rightmost derivation ? you reduce handles instead of expanding nonterminals.
 
 ### Shift-Reduce Parsing
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-handwritten.svg" alt="Handwritten: Shift-Reduce Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-diagram.svg" alt="Diagram: Shift-Reduce Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/shift-reduce-parsing-sticky.svg" alt="Sticky Note: Shift-Reduce Parsing" width="30%">
-</a>
 
 
 A shift-reduce parser uses a stack for grammar symbols and an input buffer. Four operations are possible:
@@ -127,16 +107,6 @@ A shift-reduce parser uses a stack for grammar symbols and an input buffer. Four
 **Conflicts** arise when both shift and reduce are possible on the same input (shift-reduce conflict) or when two different reductions are possible (reduce-reduce conflict). LR parsers resolve these conflicts by consulting a parsing table.
 
 ### LR Parsing Framework
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-handwritten.svg" alt="Handwritten: LR Parsing Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-diagram.svg" alt="Diagram: LR Parsing Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-parsing-framework-sticky.svg" alt="Sticky Note: LR Parsing Framework" width="30%">
-</a>
 
 
 LR(k) parsers scan input Left-to-right and produce a Rightmost derivation in reverse with k tokens of lookahead. The variants are LR(0), SLR(1), CLR(1), and LALR(1). All share the same algorithm but differ in table construction.
@@ -173,16 +143,6 @@ while true:
 ```
 
 ### LR(0) Items and the LR(0) Automaton
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-handwritten.svg" alt="Handwritten: LR(0) Items and the LR(0) Automaton" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-diagram.svg" alt="Diagram: LR(0) Items and the LR(0) Automaton" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lr-0-items-and-the-lr-0-automaton-sticky.svg" alt="Sticky Note: LR(0) Items and the LR(0) Automaton" width="30%">
-</a>
 
 
 An **LR(0) item** is a production with a dot marker indicating how much of the right-hand side has been seen. For `A ? XY`, the items are:
@@ -231,16 +191,6 @@ while worklist is not empty:
 
 ### SLR(1) Parsing
 
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-handwritten.svg" alt="Handwritten: SLR(1) Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-diagram.svg" alt="Diagram: SLR(1) Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/slr-1-parsing-sticky.svg" alt="Sticky Note: SLR(1) Parsing" width="30%">
-</a>
-
 
 SLR(1) uses the LR(0) automaton but restricts reductions using FOLLOW sets. For state `i` with an item `A ? a?`, a reduction is placed only for terminals `a ? FOLLOW(A)`. This eliminates many LR(0) conflicts.
 
@@ -261,16 +211,6 @@ function BuildSLR1(grammar, LR0automaton, FOLLOW):
 ```
 
 ### CLR(1) ? Canonical LR(1) Parsing
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-handwritten.svg" alt="Handwritten: CLR(1) ? Canonical LR(1) Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-diagram.svg" alt="Diagram: CLR(1) ? Canonical LR(1) Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/clr-1-canonical-lr-1-parsing-sticky.svg" alt="Sticky Note: CLR(1) ? Canonical LR(1) Parsing" width="30%">
-</a>
 
 
 CLR(1) uses LR(1) items with explicit lookahead: `[A ? a??, a]`. The lookahead `a` is the set of terminals that can follow this particular occurrence of `A`.
@@ -300,16 +240,6 @@ CLR(1) tables are large (often thousands of states) but eliminate virtually all 
 
 ### LALR(1) Parsing
 
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-handwritten.svg" alt="Handwritten: LALR(1) Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-diagram.svg" alt="Diagram: LALR(1) Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/lalr-1-parsing-sticky.svg" alt="Sticky Note: LALR(1) Parsing" width="30%">
-</a>
-
 
 LALR(1) merges CLR(1) states with the same **core** (LR(0) portion) but different lookaheads. The lookahead sets are unioned. The resulting table matches SLR(1) in size but approaches CLR(1) in conflict-resolving power.
 
@@ -326,16 +256,6 @@ LALR(1) is the algorithm used by Yacc and Bison. Merging can introduce reduce-re
 > **One-Sentence Takeaway:** LALR(1) is the sweet spot ? SLR(1)-sized tables with CLR(1)-near resolving power ? which is why Yacc and Bison use it.
 
 ### Complete TypeScript LR Parser Implementation
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-handwritten.svg" alt="Handwritten: Complete TypeScript LR Parser Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-diagram.svg" alt="Diagram: Complete TypeScript LR Parser Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/complete-typescript-lr-parser-implementation-sticky.svg" alt="Sticky Note: Complete TypeScript LR Parser Implementation" width="30%">
-</a>
 
 
 ```typescript
@@ -687,16 +607,6 @@ lr.parse(["id", "+", "id", "*", "id"]);
 
 ### Precedence and Associativity
 
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-handwritten.svg" alt="Handwritten: Precedence and Associativity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-diagram.svg" alt="Diagram: Precedence and Associativity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/precedence-and-associativity-sticky.svg" alt="Sticky Note: Precedence and Associativity" width="30%">
-</a>
-
 
 Precedence and associativity declarations resolve shift-reduce conflicts without rewriting the grammar. In Yacc/Bison:
 
@@ -715,16 +625,6 @@ The parser generator assigns each token a precedence level and direction. For a 
 **The dangling-else ambiguity** is resolved by declaring `%nonassoc THEN` and assigning higher precedence to shift over reduce on `else`.
 
 ### Yacc and Bison
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-handwritten.svg" alt="Handwritten: Yacc and Bison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-diagram.svg" alt="Diagram: Yacc and Bison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/yacc-and-bison-sticky.svg" alt="Sticky Note: Yacc and Bison" width="30%">
-</a>
 
 
 Yacc and Bison generate LALR(1) parsers from grammar specifications with embedded semantic actions. A Bison specification has three sections:
@@ -756,16 +656,6 @@ int main() { return yyparse(); }
 Bison generates `yyparse()` which calls `yylex()` for tokens. The `-v` flag produces a `.output` file showing every state and conflict, essential for debugging.
 
 ### Error Handling in LR Parsing
-
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-handwritten.svg" alt="Handwritten: Error Handling in LR Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-diagram.svg" alt="Diagram: Error Handling in LR Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/04-parsing-bottomup/error-handling-in-lr-parsing-sticky.svg" alt="Sticky Note: Error Handling in LR Parsing" width="30%">
-</a>
 
 
 When ACTION entry is error, the parser invokes recovery. **Panic-mode recovery** discards input symbols until a synchronizing token (semicolon, `end`, `}`) is found, then pops the stack to a state with a non-error GOTO entry. TypeScript error recovery is shown in the `parse` method above.

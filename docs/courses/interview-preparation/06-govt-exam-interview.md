@@ -47,7 +47,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Government Interview Landscape
 
 ```mermaid
@@ -81,17 +80,6 @@ flowchart TD
 
 ### Interview Panel Composition
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-handwritten.svg" alt="Handwritten: Interview Panel Composition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-diagram.svg" alt="Diagram: Interview Panel Composition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-panel-composition-sticky.svg" alt="Sticky Note: Interview Panel Composition" width="30%">
-</a>
-
-
 | Organization | Panel Members | Duration | Focus Areas |
 |-------------|---------------|----------|-------------|
 | IBPS SO | 3-5 members: Chairman, Tech Expert, HR Expert, Banking Expert | 15-30 min | Tech fundamentals, banking IT, current affairs |
@@ -107,17 +95,6 @@ flowchart TD
 
 ### Exam Pattern Overview
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-handwritten.svg" alt="Handwritten: Exam Pattern Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-diagram.svg" alt="Diagram: Exam Pattern Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/exam-pattern-overview-sticky.svg" alt="Sticky Note: Exam Pattern Overview" width="30%">
-</a>
-
-
 | Stage | Description | Marks |
 |-------|-------------|-------|
 | Preliminary | Reasoning, Quant, English (online) | 100 |
@@ -127,17 +104,6 @@ flowchart TD
 **Minimum qualifying marks:** UR: 40%, OBC: 35%, SC/ST: 30%
 
 ### Common IBPS SO Interview Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-handwritten.svg" alt="Handwritten: Common IBPS SO Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-diagram.svg" alt="Diagram: Common IBPS SO Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-ibps-so-interview-questions-sticky.svg" alt="Sticky Note: Common IBPS SO Interview Questions" width="30%">
-</a>
-
 
 #### Q1: What are the functions of an IT officer in a bank?
 
@@ -257,17 +223,6 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 
 ### SBI Interview — Key Facts
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-handwritten.svg" alt="Handwritten: SBI Interview — Key Facts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-diagram.svg" alt="Diagram: SBI Interview — Key Facts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sbi-interview-key-facts-sticky.svg" alt="Sticky Note: SBI Interview — Key Facts" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Panel | 5 members (Senior GM, AGM, HR, Tech Expert, Language Expert) |
@@ -276,17 +231,6 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 | Topics | Banking awareness, current affairs, tech fundamentals, HR, project |
 
 ### Common SBI Interview Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-handwritten.svg" alt="Handwritten: Common SBI Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-diagram.svg" alt="Diagram: Common SBI Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-sbi-interview-questions-sticky.svg" alt="Sticky Note: Common SBI Interview Questions" width="30%">
-</a>
-
 
 #### Q6: What are the differences between SBI and private banks?
 
@@ -421,17 +365,6 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 
 ### NIC Interview Facts
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-handwritten.svg" alt="Handwritten: NIC Interview Facts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-diagram.svg" alt="Diagram: NIC Interview Facts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/nic-interview-facts-sticky.svg" alt="Sticky Note: NIC Interview Facts" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Selection Process | GATE Score + Interview OR Written Test + Interview |
@@ -441,17 +374,6 @@ User → UPI App (Google Pay/PhonePe) → UPI Platform (NPCI) → Payer Bank →
 | Location | NIC Headquarters, New Delhi |
 
 ### Common NIC Interview Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-handwritten.svg" alt="Handwritten: Common NIC Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-diagram.svg" alt="Diagram: Common NIC Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-nic-interview-questions-sticky.svg" alt="Sticky Note: Common NIC Interview Questions" width="30%">
-</a>
-
 
 #### Q11: What are the major projects of NIC?
 
@@ -589,17 +511,6 @@ India's rank improved from 118 (2014) to 46 (2024). Parameters:
 
 ### PSU Interview Facts
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-handwritten.svg" alt="Handwritten: PSU Interview Facts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-diagram.svg" alt="Diagram: PSU Interview Facts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-interview-facts-sticky.svg" alt="Sticky Note: PSU Interview Facts" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Selection | GATE Score + Interview or Written + Interview |
@@ -609,17 +520,6 @@ India's rank improved from 118 (2014) to 46 (2024). Parameters:
 | Key Requirement | Current awareness about the specific PSU |
 
 ### Common PSU Interview Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-handwritten.svg" alt="Handwritten: Common PSU Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-diagram.svg" alt="Diagram: Common PSU Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-psu-interview-questions-sticky.svg" alt="Sticky Note: Common PSU Interview Questions" width="30%">
-</a>
-
 
 #### Q16: What do you know about [PSU Name]?
 
@@ -726,17 +626,6 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### Key Current Affairs Topics for 2024-2026
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-handwritten.svg" alt="Handwritten: Key Current Affairs Topics for 2024-2026" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-diagram.svg" alt="Diagram: Key Current Affairs Topics for 2024-2026" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-current-affairs-topics-for-2024-2026-sticky.svg" alt="Sticky Note: Key Current Affairs Topics for 2024-2026" width="30%">
-</a>
-
-
 | Category | Topics |
 |----------|--------|
 | Banking | UPI growth, Digital Rupee (e-Rupee), bank mergers, NPAs |
@@ -747,17 +636,6 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 | RBI | MPC decisions, financial stability report, digital payments |
 
 ### Banking Terminology
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-handwritten.svg" alt="Handwritten: Banking Terminology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-diagram.svg" alt="Diagram: Banking Terminology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/banking-terminology-sticky.svg" alt="Sticky Note: Banking Terminology" width="30%">
-</a>
-
 
 | Term | Definition |
 |------|------------|
@@ -786,17 +664,6 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### Budget and Finance Quick Revision
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-handwritten.svg" alt="Handwritten: Budget and Finance Quick Revision" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-diagram.svg" alt="Diagram: Budget and Finance Quick Revision" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/budget-and-finance-quick-revision-sticky.svg" alt="Sticky Note: Budget and Finance Quick Revision" width="30%">
-</a>
-
-
 | Term | Current Value (2024-25) |
 |------|------------------------|
 | GDP Growth | ~7.2% (estimated) |
@@ -815,17 +682,6 @@ The IT department manages SAP implementation, seismic data processing, ERP syste
 
 ### How to Present Your Project in Government Interviews
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-handwritten.svg" alt="Handwritten: How to Present Your Project in Government Interviews" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-diagram.svg" alt="Diagram: How to Present Your Project in Government Interviews" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/how-to-present-your-project-in-government-interviews-sticky.svg" alt="Sticky Note: How to Present Your Project in Government Interviews" width="30%">
-</a>
-
-
 ```mermaid
 flowchart TD
     A[Project Title + Tech Stack] --> B[Problem Statement]
@@ -841,17 +697,6 @@ flowchart TD
 
 ### Project Defense Template
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-handwritten.svg" alt="Handwritten: Project Defense Template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-diagram.svg" alt="Diagram: Project Defense Template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/project-defense-template-sticky.svg" alt="Sticky Note: Project Defense Template" width="30%">
-</a>
-
-
 **Structure your 2-minute project intro:**
 1. **Title & Stack:** "My final year project is 'Real-time Bus Tracking System' built with Node.js, React, MongoDB, and WebSocket."
 2. **Problem:** "Our university had 15 buses for 5000+ students, but there was no way to track them. Students waited 20-30 minutes without knowing when the bus would arrive."
@@ -862,17 +707,6 @@ flowchart TD
 7. **Learning:** "I learned about real-time systems, WebSocket optimization, and the importance of throughput testing."
 
 ### Questions the Panel May Ask About Your Project
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-handwritten.svg" alt="Handwritten: Questions the Panel May Ask About Your Project" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-diagram.svg" alt="Diagram: Questions the Panel May Ask About Your Project" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/questions-the-panel-may-ask-about-your-project-sticky.svg" alt="Sticky Note: Questions the Panel May Ask About Your Project" width="30%">
-</a>
-
 
 | Question Type | Examples |
 |--------------|----------|
@@ -886,17 +720,6 @@ flowchart TD
 | Improvements | "What would you do differently?" |
 
 ### Sample Project Defense Script
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-handwritten.svg" alt="Handwritten: Sample Project Defense Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-diagram.svg" alt="Diagram: Sample Project Defense Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/sample-project-defense-script-sticky.svg" alt="Sticky Note: Sample Project Defense Script" width="30%">
-</a>
-
 
 ```typescript
 // If your project has code, be ready to explain key implementations
@@ -942,17 +765,6 @@ function calculateETA(
 
 ### Generic Questions to Prepare
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-handwritten.svg" alt="Handwritten: Generic Questions to Prepare" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-diagram.svg" alt="Diagram: Generic Questions to Prepare" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/generic-questions-to-prepare-sticky.svg" alt="Sticky Note: Generic Questions to Prepare" width="30%">
-</a>
-
-
 <details>
 <summary>Click to reveal 20 common questions</summary>
 
@@ -984,17 +796,6 @@ function calculateETA(
 
 ### Pay Scales for Government IT Positions
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-handwritten.svg" alt="Handwritten: Pay Scales for Government IT Positions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-diagram.svg" alt="Diagram: Pay Scales for Government IT Positions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/pay-scales-for-government-it-positions-sticky.svg" alt="Sticky Note: Pay Scales for Government IT Positions" width="30%">
-</a>
-
-
 | Position | Pay Band (7th CPC) | Pay Level | Approx Gross Monthly (₹) |
 |----------|-------------------|-----------|-------------------------|
 | Scientist-B (NIC) | ₹56,100 - ₹1,77,500 | Level 10 | ₹75,000 - ₹85,000 |
@@ -1005,17 +806,6 @@ function calculateETA(
 | DRDO Scientist | ₹56,100 - ₹1,77,500 | Level 10 | ₹80,000 - ₹95,000 |
 
 ### PSU Selection Process (Typical)
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-handwritten.svg" alt="Handwritten: PSU Selection Process (Typical)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-diagram.svg" alt="Diagram: PSU Selection Process (Typical)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/psu-selection-process-typical-sticky.svg" alt="Sticky Note: PSU Selection Process (Typical)" width="30%">
-</a>
-
 
 | PSU | Selection Criteria | Weightage (Written/Interview) |
 |-----|-------------------|-------------------------------|
@@ -1031,17 +821,6 @@ function calculateETA(
 | IBPS SO | Prelim + Mains + Interview | 80:20 |
 
 ### Interview Dos and Don'ts for Government Panels
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-handwritten.svg" alt="Handwritten: Interview Dos and Don'ts for Government Panels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-diagram.svg" alt="Diagram: Interview Dos and Don'ts for Government Panels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/interview-dos-and-don-ts-for-government-panels-sticky.svg" alt="Sticky Note: Interview Dos and Don'ts for Government Panels" width="30%">
-</a>
-
 
 | Do's | Don'ts |
 |------|--------|
@@ -1064,17 +843,6 @@ function calculateETA(
 
 ### Before the Interview (24 Hours Prior)
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-handwritten.svg" alt="Handwritten: Before the Interview (24 Hours Prior)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-diagram.svg" alt="Diagram: Before the Interview (24 Hours Prior)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/before-the-interview-24-hours-prior-sticky.svg" alt="Sticky Note: Before the Interview (24 Hours Prior)" width="30%">
-</a>
-
-
 | Action | Details |
 |--------|---------|
 | Documents | Print 5 copies of resume, mark sheets, certificates, ID proof |
@@ -1085,17 +853,6 @@ function calculateETA(
 | Questions | Prepare 3 questions to ask the panel |
 
 ### Document Checklist for Government Interviews
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-handwritten.svg" alt="Handwritten: Document Checklist for Government Interviews" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-diagram.svg" alt="Diagram: Document Checklist for Government Interviews" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/document-checklist-for-government-interviews-sticky.svg" alt="Sticky Note: Document Checklist for Government Interviews" width="30%">
-</a>
-
 
 ```markdown
 Essential Documents (Originals + Self-attested Copies):
@@ -1117,17 +874,6 @@ Organize in transparent file folders, labeled clearly.
 
 ### The Night Before
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-handwritten.svg" alt="Handwritten: The Night Before" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-diagram.svg" alt="Diagram: The Night Before" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/the-night-before-sticky.svg" alt="Sticky Note: The Night Before" width="30%">
-</a>
-
-
 | Do | Don't |
 |----|-------|
 | Light revision of key formulas/concepts | Study new topics for the first time |
@@ -1137,17 +883,6 @@ Organize in transparent file folders, labeled clearly.
 | Visualize a successful interview | Think about negative outcomes |
 
 ### During the Interview
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-handwritten.svg" alt="Handwritten: During the Interview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-diagram.svg" alt="Diagram: During the Interview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/during-the-interview-sticky.svg" alt="Sticky Note: During the Interview" width="30%">
-</a>
-
 
 | Phase | Strategy |
 |-------|----------|
@@ -1160,17 +895,6 @@ Organize in transparent file folders, labeled clearly.
 
 ### Common Panel Dynamics
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-handwritten.svg" alt="Handwritten: Common Panel Dynamics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-diagram.svg" alt="Diagram: Common Panel Dynamics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/common-panel-dynamics-sticky.svg" alt="Sticky Note: Common Panel Dynamics" width="30%">
-</a>
-
-
 | Panelist Type | Behavior | How to Handle |
 |---------------|----------|---------------|
 | Friendly | Smiling, encouraging | Relax, engage naturally, don't get too casual |
@@ -1180,17 +904,6 @@ Organize in transparent file folders, labeled clearly.
 | Language Expert | Tests communication | Speak clearly, avoid fillers |
 
 ### After the Interview
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-handwritten.svg" alt="Handwritten: After the Interview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-diagram.svg" alt="Diagram: After the Interview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/after-the-interview-sticky.svg" alt="Sticky Note: After the Interview" width="30%">
-</a>
-
 
 | Action | Timing | Details |
 |--------|--------|---------|
@@ -1205,17 +918,6 @@ Organize in transparent file folders, labeled clearly.
 ## Section 9: Mock Questions with Evaluation Rubric
 
 ### Mock Interview Simulation
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-handwritten.svg" alt="Handwritten: Mock Interview Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-diagram.svg" alt="Diagram: Mock Interview Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/mock-interview-simulation-sticky.svg" alt="Sticky Note: Mock Interview Simulation" width="30%">
-</a>
-
 
 **Sample Question 1:** Explain the difference between Abstract Class and Interface in Java.
 
@@ -1237,17 +939,6 @@ Organize in transparent file folders, labeled clearly.
 
 ### Self-Evaluation Checklist
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-handwritten.svg" alt="Handwritten: Self-Evaluation Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-diagram.svg" alt="Diagram: Self-Evaluation Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/self-evaluation-checklist-sticky.svg" alt="Sticky Note: Self-Evaluation Checklist" width="30%">
-</a>
-
-
 After each mock interview, rate yourself:
 
 | Criterion | Score (1-5) |
@@ -1264,17 +955,6 @@ After each mock interview, rate yourself:
 ## Section 10: Vocabulary for Government Interviews
 
 ### Key Banking and Finance Terms
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-handwritten.svg" alt="Handwritten: Key Banking and Finance Terms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-diagram.svg" alt="Diagram: Key Banking and Finance Terms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-banking-and-finance-terms-sticky.svg" alt="Sticky Note: Key Banking and Finance Terms" width="30%">
-</a>
-
 
 | Term | Definition |
 |------|------------|
@@ -1302,17 +982,6 @@ After each mock interview, rate yourself:
 
 ### Key Government IT Terms
 
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-handwritten.svg" alt="Handwritten: Key Government IT Terms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-diagram.svg" alt="Diagram: Key Government IT Terms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/key-government-it-terms-sticky.svg" alt="Sticky Note: Key Government IT Terms" width="30%">
-</a>
-
-
 | Term | Description |
 |------|-------------|
 | Aadhaar | 12-digit biometric identity number (UIDAI) |
@@ -1334,17 +1003,6 @@ After each mock interview, rate yourself:
 | NICSI | National Informatics Centre Services Inc. |
 
 ### Important Abbreviations
-
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-handwritten.svg" alt="Handwritten: Important Abbreviations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-diagram.svg" alt="Diagram: Important Abbreviations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/06-govt-exam-interview/important-abbreviations-sticky.svg" alt="Sticky Note: Important Abbreviations" width="30%">
-</a>
-
 
 | Abbreviation | Full Form |
 |-------------|-----------|

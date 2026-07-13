@@ -208,16 +208,6 @@ console.log('Equivalent state pairs:', [...equiv]);
 
 ### 1.1 What is a Finite Automaton?
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-1-what-is-a-finite-automaton-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-1-what-is-a-finite-automaton-handwritten.svg" alt="Handwritten: 1.1 What is a Finite Automaton?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-1-what-is-a-finite-automaton-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-1-what-is-a-finite-automaton-diagram.svg" alt="Diagram: 1.1 What is a Finite Automaton?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-1-what-is-a-finite-automaton-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-1-what-is-a-finite-automaton-sticky.svg" alt="Sticky Note: 1.1 What is a Finite Automaton?" width="30%">
-</a>
-
 
 A finite automaton is a simplest computational model with **finite memory**. It reads an input string one symbol at a time, moves through a sequence of states, and decides whether to accept or reject the string. The memory is limited → the automaton cannot store arbitrary amounts of data; only its current state matters.
 
@@ -228,16 +218,6 @@ A finite automaton is a simplest computational model with **finite memory**. It 
 > **Warning:** Every DFA state must have exactly one transition for each input symbol. Missing transitions mean the automaton is incomplete.
 
 ### 1.2 Formal Definition of a DFA
-
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-2-formal-definition-of-a-dfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-2-formal-definition-of-a-dfa-handwritten.svg" alt="Handwritten: 1.2 Formal Definition of a DFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-2-formal-definition-of-a-dfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-2-formal-definition-of-a-dfa-diagram.svg" alt="Diagram: 1.2 Formal Definition of a DFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-2-formal-definition-of-a-dfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-2-formal-definition-of-a-dfa-sticky.svg" alt="Sticky Note: 1.2 Formal Definition of a DFA" width="30%">
-</a>
 
 
 A **deterministic finite automaton (DFA)** is a 5-tuple (Q, Î£, Î´, qâ‚€, F) where:
@@ -253,16 +233,6 @@ The term *deterministic* means that for each state and each input symbol, there 
 > **One-Sentence Takeaway:** Transition diagrams and tables are equivalent visual and tabular representations of the same DFA transition function.
 
 ### 1.3 Transition Diagrams and Transition Tables
-
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-3-transition-diagrams-and-transition-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-3-transition-diagrams-and-transition-tables-handwritten.svg" alt="Handwritten: 1.3 Transition Diagrams and Transition Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-3-transition-diagrams-and-transition-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-3-transition-diagrams-and-transition-tables-diagram.svg" alt="Diagram: 1.3 Transition Diagrams and Transition Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-3-transition-diagrams-and-transition-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-3-transition-diagrams-and-transition-tables-sticky.svg" alt="Sticky Note: 1.3 Transition Diagrams and Transition Tables" width="30%">
-</a>
 
 
 **Transition Diagram:** A directed graph where:
@@ -294,16 +264,6 @@ Transition Table:
 
 ### 1.4 Language of a DFA
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-4-language-of-a-dfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-4-language-of-a-dfa-handwritten.svg" alt="Handwritten: 1.4 Language of a DFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-4-language-of-a-dfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-4-language-of-a-dfa-diagram.svg" alt="Diagram: 1.4 Language of a DFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-4-language-of-a-dfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-4-language-of-a-dfa-sticky.svg" alt="Sticky Note: 1.4 Language of a DFA" width="30%">
-</a>
-
 
 The **extended transition function** Î´Ì‚: Q Ã— Î£* → Q generalizes Î´ to strings:
 - Î´Ì‚(q, Îµ) = q
@@ -320,16 +280,6 @@ A language is called **regular** if some DFA recognizes it.
 
 ### 1.5 DFA Design Methodology
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-5-dfa-design-methodology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-5-dfa-design-methodology-handwritten.svg" alt="Handwritten: 1.5 DFA Design Methodology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-5-dfa-design-methodology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-5-dfa-design-methodology-diagram.svg" alt="Diagram: 1.5 DFA Design Methodology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-5-dfa-design-methodology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-5-dfa-design-methodology-sticky.svg" alt="Sticky Note: 1.5 DFA Design Methodology" width="30%">
-</a>
-
 
 To design a DFA for a language L:
 
@@ -344,16 +294,6 @@ To design a DFA for a language L:
 
 ### 1.6 Formal Description of DFA Computation
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-6-formal-description-of-dfa-computation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-6-formal-description-of-dfa-computation-handwritten.svg" alt="Handwritten: 1.6 Formal Description of DFA Computation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-6-formal-description-of-dfa-computation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-6-formal-description-of-dfa-computation-diagram.svg" alt="Diagram: 1.6 Formal Description of DFA Computation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-6-formal-description-of-dfa-computation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-6-formal-description-of-dfa-computation-sticky.svg" alt="Sticky Note: 1.6 Formal Description of DFA Computation" width="30%">
-</a>
-
 
 A DFA M = (Q, Î£, Î´, qâ‚€, F) on input w = wâ‚wâ‚‚â€¦wâ‚™ (each wáµ¢ âˆˆ Î£) computes as follows:
 - Start in state qâ‚€.
@@ -364,16 +304,6 @@ A DFA M = (Q, Î£, Î´, qâ‚€, F) on input w = wâ‚wâ‚‚â€¦wâ
 
 ### 1.7 Regular Languages
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-7-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-7-regular-languages-handwritten.svg" alt="Handwritten: 1.7 Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-7-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-7-regular-languages-diagram.svg" alt="Diagram: 1.7 Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-7-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/1-7-regular-languages-sticky.svg" alt="Sticky Note: 1.7 Regular Languages" width="30%">
-</a>
-
 
 A language is **regular** if there exists some DFA that recognizes it. The class of regular languages has important closure properties (Chapter 4) and corresponds exactly to what can be expressed with regular expressions (Chapter 3).
 
@@ -382,16 +312,6 @@ A language is **regular** if there exists some DFA that recognizes it. The class
 Given two DFAs, we can construct a single DFA that recognizes the union or intersection of their languages using the **Cartesian product** of states.
 
 ### Formal Definition
-
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
-</a>
 
 
 Let \(M_1 = (Q_1, \Sigma, \delta_1, q_1, F_1)\) and \(M_2 = (Q_2, \Sigma, \delta_2, q_2, F_2)\) be two DFAs over the same alphabet. The **product DFA** \(M_\times\) is:
@@ -435,16 +355,6 @@ class ProductDFA {
 ```
 
 ### Mermaid: Product Construction Visualization
-
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/mermaid-product-construction-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/mermaid-product-construction-visualization-handwritten.svg" alt="Handwritten: Mermaid: Product Construction Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/mermaid-product-construction-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/mermaid-product-construction-visualization-diagram.svg" alt="Diagram: Mermaid: Product Construction Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/mermaid-product-construction-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/mermaid-product-construction-visualization-sticky.svg" alt="Sticky Note: Mermaid: Product Construction Visualization" width="30%">
-</a>
 
 
 ```mermaid
@@ -649,16 +559,6 @@ Check: On input "110" (binary for 6): qâ‚€ → qâ‚ (1) → qâ‚€ (
 Two DFAs \(M_1\) and \(M_2\) are **equivalent** if they recognize the same language, i.e., \(L(M_1) = L(M_2)\). We can test equivalence in polynomial time using the **table-filling algorithm** on the product automaton.
 
 ### Algorithm
-
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/algorithm-handwritten.svg" alt="Handwritten: Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/algorithm-diagram.svg" alt="Diagram: Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/algorithm-sticky.svg" alt="Sticky Note: Algorithm" width="30%">
-</a>
 
 
 1. Construct a DFA \(M_\times\) with start state \((q_1, q_2)\) and no accepting states.
@@ -1081,16 +981,6 @@ export { Processor, Task }
 
 ### Basic
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/basic-handwritten.svg" alt="Handwritten: Basic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/basic-diagram.svg" alt="Diagram: Basic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/basic-sticky.svg" alt="Sticky Note: Basic" width="30%">
-</a>
-
 
 1. Design a DFA over Î£ = {a, b} that accepts strings ending with "aa".
 2. Design a DFA over Î£ = {0, 1} that accepts strings of odd length.
@@ -1100,16 +990,6 @@ export { Processor, Task }
 
 ### Intermediate
 
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/intermediate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/intermediate-handwritten.svg" alt="Handwritten: Intermediate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/intermediate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/intermediate-diagram.svg" alt="Diagram: Intermediate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/intermediate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/intermediate-sticky.svg" alt="Sticky Note: Intermediate" width="30%">
-</a>
-
 
 6. Design a DFA for binary strings that contain an even number of 0s and an odd number of 1s.
 7. Design a DFA over Î£ = {a, b} that accepts strings where every occurrence of "ab" is followed immediately by "a".
@@ -1118,16 +998,6 @@ export { Processor, Task }
 10. Prove that the language L = { w âˆˆ {0,1}* | w = reverse(w) } (palindromes) is NOT regular, using the pigeonhole principle and DFA state arguments. (Hint: assume a DFA with k states exists and consider strings 0â±1 for i = 1,â€¦,k+1.)
 
 ### Advanced
-
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/advanced-handwritten.svg" alt="Handwritten: Advanced" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/advanced-diagram.svg" alt="Diagram: Advanced" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/02-dfa/advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/02-dfa/advanced-sticky.svg" alt="Sticky Note: Advanced" width="30%">
-</a>
 
 
 11. Let L = { w âˆˆ {0,1}* | the number of occurrences of "01" as a substring equals the number of occurrences of "10" }. Design a DFA for L.

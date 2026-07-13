@@ -78,16 +78,6 @@ graph LR
 
 ### 13.2.1 Nyquist-Shannon Theorem
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-1-nyquist-shannon-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-1-nyquist-shannon-theorem-handwritten.svg" alt="Handwritten: 13.2.1 Nyquist-Shannon Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-1-nyquist-shannon-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-1-nyquist-shannon-theorem-diagram.svg" alt="Diagram: 13.2.1 Nyquist-Shannon Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-1-nyquist-shannon-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-1-nyquist-shannon-theorem-sticky.svg" alt="Sticky Note: 13.2.1 Nyquist-Shannon Theorem" width="30%">
-</a>
-
 
 A signal with bandwidth B can be perfectly reconstructed from samples taken at a rate f_s > 2B.
 
@@ -121,16 +111,6 @@ console.log(`Aliased samples (first 8): ${aliased.slice(0, 8).map(v => v.toFixed
 
 ### 13.2.2 Anti-Aliasing Filter
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-2-anti-aliasing-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-2-anti-aliasing-filter-handwritten.svg" alt="Handwritten: 13.2.2 Anti-Aliasing Filter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-2-anti-aliasing-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-2-anti-aliasing-filter-diagram.svg" alt="Diagram: 13.2.2 Anti-Aliasing Filter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-2-anti-aliasing-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-2-2-anti-aliasing-filter-sticky.svg" alt="Sticky Note: 13.2.2 Anti-Aliasing Filter" width="30%">
-</a>
-
 
 An anti-aliasing filter is a low-pass filter with cutoff at f_s/2. Practical filters have a transition band that limits the usable signal bandwidth.
 
@@ -162,16 +142,6 @@ Quantisation maps a continuous amplitude to one of 2? discrete levels.
 
 ### 13.3.1 Quantisation Error
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-1-quantisation-error-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-1-quantisation-error-handwritten.svg" alt="Handwritten: 13.3.1 Quantisation Error" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-1-quantisation-error-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-1-quantisation-error-diagram.svg" alt="Diagram: 13.3.1 Quantisation Error" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-1-quantisation-error-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-1-quantisation-error-sticky.svg" alt="Sticky Note: 13.3.1 Quantisation Error" width="30%">
-</a>
-
 
 ```
 Quantisation step size:  ? = V_ref / 2?
@@ -200,16 +170,6 @@ console.log(`2.7 V ? code ${result.code} (${(result.code * 19.53 + 9.77).toFixed
 ```
 
 ### 13.3.2 Quantisation Noise
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-2-quantisation-noise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-2-quantisation-noise-handwritten.svg" alt="Handwritten: 13.3.2 Quantisation Noise" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-2-quantisation-noise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-2-quantisation-noise-diagram.svg" alt="Diagram: 13.3.2 Quantisation Noise" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-2-quantisation-noise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-3-2-quantisation-noise-sticky.svg" alt="Sticky Note: 13.3.2 Quantisation Noise" width="30%">
-</a>
 
 
 ```
@@ -245,16 +205,6 @@ for (const bits of [8, 10, 12, 14, 16, 24]) {
 ## 13.4 DAC Architectures
 
 ### 13.4.1 Binary-Weighted Resistor DAC
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-1-binary-weighted-resistor-dac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-1-binary-weighted-resistor-dac-handwritten.svg" alt="Handwritten: 13.4.1 Binary-Weighted Resistor DAC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-1-binary-weighted-resistor-dac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-1-binary-weighted-resistor-dac-diagram.svg" alt="Diagram: 13.4.1 Binary-Weighted Resistor DAC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-1-binary-weighted-resistor-dac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-1-binary-weighted-resistor-dac-sticky.svg" alt="Sticky Note: 13.4.1 Binary-Weighted Resistor DAC" width="30%">
-</a>
 
 
 Uses resistors with binary-weighted values (R, 2R, 4R, ..., 2???R).
@@ -304,16 +254,6 @@ console.log(`DAC: code 255 ? ${dac8.convert(255).toFixed(3)} V`); // ~5.000 V
 ```
 
 ### 13.4.2 R-2R Ladder DAC
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-2-r-2r-ladder-dac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-2-r-2r-ladder-dac-handwritten.svg" alt="Handwritten: 13.4.2 R-2R Ladder DAC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-2-r-2r-ladder-dac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-2-r-2r-ladder-dac-diagram.svg" alt="Diagram: 13.4.2 R-2R Ladder DAC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-2-r-2r-ladder-dac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-2-r-2r-ladder-dac-sticky.svg" alt="Sticky Note: 13.4.2 R-2R Ladder DAC" width="30%">
-</a>
 
 
 The R-2R ladder uses only two resistor values, making it practical for monolithic integration.
@@ -366,16 +306,6 @@ console.log(`R-2R: code 1 ? ${r2r.convert(1).toFixed(3)} V`);    // 0.0195 V
 
 ### 13.4.3 Sigma-Delta DAC
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-3-sigma-delta-dac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-3-sigma-delta-dac-handwritten.svg" alt="Handwritten: 13.4.3 Sigma-Delta DAC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-3-sigma-delta-dac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-3-sigma-delta-dac-diagram.svg" alt="Diagram: 13.4.3 Sigma-Delta DAC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-3-sigma-delta-dac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-3-sigma-delta-dac-sticky.svg" alt="Sticky Note: 13.4.3 Sigma-Delta DAC" width="30%">
-</a>
-
 
 Oversampling + noise shaping + 1-bit DAC achieves high resolution with relaxed analog precision.
 
@@ -415,16 +345,6 @@ console.log(`SD DAC: input=${testInput}, decoded=${sdDac.decode(bitstream).toFix
 
 ### 13.4.4 DAC Comparison
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-4-dac-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-4-dac-comparison-handwritten.svg" alt="Handwritten: 13.4.4 DAC Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-4-dac-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-4-dac-comparison-diagram.svg" alt="Diagram: 13.4.4 DAC Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-4-dac-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-4-4-dac-comparison-sticky.svg" alt="Sticky Note: 13.4.4 DAC Comparison" width="30%">
-</a>
-
 
 | Type | Resolution | Speed | Monotonic | Area | Cost |
 |------|-----------|-------|-----------|------|------|
@@ -438,16 +358,6 @@ console.log(`SD DAC: input=${testInput}, decoded=${sdDac.decode(bitstream).toFix
 ## 13.5 ADC Architectures
 
 ### 13.5.1 Flash ADC
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-1-flash-adc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-1-flash-adc-handwritten.svg" alt="Handwritten: 13.5.1 Flash ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-1-flash-adc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-1-flash-adc-diagram.svg" alt="Diagram: 13.5.1 Flash ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-1-flash-adc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-1-flash-adc-sticky.svg" alt="Sticky Note: 13.5.1 Flash ADC" width="30%">
-</a>
 
 
 The fastest ADC type, using 2?-1 comparators in parallel.
@@ -523,16 +433,6 @@ console.log(`Comparators: ${flash.area}`); // 7
 
 ### 13.5.2 Successive Approximation Register (SAR) ADC
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-2-successive-approximation-register-sar-adc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-2-successive-approximation-register-sar-adc-handwritten.svg" alt="Handwritten: 13.5.2 Successive Approximation Register (SAR) ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-2-successive-approximation-register-sar-adc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-2-successive-approximation-register-sar-adc-diagram.svg" alt="Diagram: 13.5.2 Successive Approximation Register (SAR) ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-2-successive-approximation-register-sar-adc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-2-successive-approximation-register-sar-adc-sticky.svg" alt="Sticky Note: 13.5.2 Successive Approximation Register (SAR) ADC" width="30%">
-</a>
-
 
 The SAR ADC uses a binary search algorithm with a single comparator and a DAC.
 
@@ -582,16 +482,6 @@ console.log(`SAR: conversion cycles: ${sar.conversionCycles}`); // 12
 ```
 
 ### 13.5.3 Pipelined ADC
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-3-pipelined-adc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-3-pipelined-adc-handwritten.svg" alt="Handwritten: 13.5.3 Pipelined ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-3-pipelined-adc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-3-pipelined-adc-diagram.svg" alt="Diagram: 13.5.3 Pipelined ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-3-pipelined-adc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-3-pipelined-adc-sticky.svg" alt="Sticky Note: 13.5.3 Pipelined ADC" width="30%">
-</a>
 
 
 The pipelined ADC divides the conversion across multiple stages, achieving high speed at medium resolution.
@@ -657,16 +547,6 @@ console.log(`Pipelined: 2.5 V ? code ${pipelined.convert(2.5)}`);
 
 ### 13.5.4 Sigma-Delta ADC
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-4-sigma-delta-adc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-4-sigma-delta-adc-handwritten.svg" alt="Handwritten: 13.5.4 Sigma-Delta ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-4-sigma-delta-adc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-4-sigma-delta-adc-diagram.svg" alt="Diagram: 13.5.4 Sigma-Delta ADC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-4-sigma-delta-adc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-4-sigma-delta-adc-sticky.svg" alt="Sticky Note: 13.5.4 Sigma-Delta ADC" width="30%">
-</a>
-
 
 Oversampling + noise shaping + digital decimation filter achieves very high resolution.
 
@@ -702,16 +582,6 @@ console.log(`SD ADC: 0.3 ? ${sdAdc.convert(0.3).toFixed(4)}`);
 
 ### 13.5.5 ADC Comparison
 
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-5-adc-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-5-adc-comparison-handwritten.svg" alt="Handwritten: 13.5.5 ADC Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-5-adc-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-5-adc-comparison-diagram.svg" alt="Diagram: 13.5.5 ADC Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-5-adc-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-5-5-adc-comparison-sticky.svg" alt="Sticky Note: 13.5.5 ADC Comparison" width="30%">
-</a>
-
 
 | Type | Resolution | Speed (MSPS) | Latency | Power | Area |
 |------|-----------|-------------|---------|-------|------|
@@ -725,16 +595,6 @@ console.log(`SD ADC: 0.3 ? ${sdAdc.convert(0.3).toFixed(4)}`);
 ## 13.6 Performance Metrics
 
 ### 13.6.1 Static Specifications
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-1-static-specifications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-1-static-specifications-handwritten.svg" alt="Handwritten: 13.6.1 Static Specifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-1-static-specifications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-1-static-specifications-diagram.svg" alt="Diagram: 13.6.1 Static Specifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-1-static-specifications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-1-static-specifications-sticky.svg" alt="Sticky Note: 13.6.1 Static Specifications" width="30%">
-</a>
 
 
 ```typescript
@@ -756,16 +616,6 @@ function sfdr(fundamentalPower: number, maxSpurPower: number): number {
 ```
 
 ### 13.6.2 Dynamic Specifications
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-2-dynamic-specifications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-2-dynamic-specifications-handwritten.svg" alt="Handwritten: 13.6.2 Dynamic Specifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-2-dynamic-specifications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-2-dynamic-specifications-diagram.svg" alt="Diagram: 13.6.2 Dynamic Specifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-2-dynamic-specifications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-6-2-dynamic-specifications-sticky.svg" alt="Sticky Note: 13.6.2 Dynamic Specifications" width="30%">
-</a>
 
 
 ```typescript
@@ -805,16 +655,6 @@ class ADCDynamicSpec {
 ## 13.7 Interface Circuits
 
 ### 13.7.1 Serial Peripheral Interface (SPI) for ADCs
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-7-1-serial-peripheral-interface-spi-for-adcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-7-1-serial-peripheral-interface-spi-for-adcs-handwritten.svg" alt="Handwritten: 13.7.1 Serial Peripheral Interface (SPI) for ADCs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-7-1-serial-peripheral-interface-spi-for-adcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-7-1-serial-peripheral-interface-spi-for-adcs-diagram.svg" alt="Diagram: 13.7.1 Serial Peripheral Interface (SPI) for ADCs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-7-1-serial-peripheral-interface-spi-for-adcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/13-7-1-serial-peripheral-interface-spi-for-adcs-sticky.svg" alt="Sticky Note: 13.7.1 Serial Peripheral Interface (SPI) for ADCs" width="30%">
-</a>
 
 
 ```typescript
@@ -1158,16 +998,6 @@ c) N
 d) 2?
 
 ### Answers
-
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/answers-diagram.svg" alt="Diagram: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/13-dac-adc/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/13-dac-adc/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
-</a>
 
 
 Q1: b | Q2: b | Q3: c | Q4: d | Q5: b

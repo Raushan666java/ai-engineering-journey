@@ -82,32 +82,12 @@ flowchart LR
 
 ### 3.1 The Virtual Machine Model in the Cloud
 
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-handwritten.svg" alt="Handwritten: 3.1 The Virtual Machine Model in the Cloud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-diagram.svg" alt="Diagram: 3.1 The Virtual Machine Model in the Cloud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-1-the-virtual-machine-model-in-the-cloud-sticky.svg" alt="Sticky Note: 3.1 The Virtual Machine Model in the Cloud" width="30%">
-</a>
-
 
 Cloud compute services provide resizable, on-demand virtual machine (VM) instances. These services form the fundamental "Infrastructure as a Service" (IaaS) layer. While the underlying hypervisors vary ? AWS uses Nitro (KVM-based), Azure uses Hyper-V, and GCP uses KVM ? the abstraction provided to the consumer is a consistent set of virtual CPU (vCPU), memory, storage, and networking resources.
 
 The primary advantage of cloud compute is the shift from physical hardware procurement to software-defined provisioning. This enables "just-in-time" infrastructure where resources are created in seconds and terminated when no longer needed, supporting the cloud's core promise of agility and elasticity.
 
 ### 3.2 Provider Service Comparison
-
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-handwritten.svg" alt="Handwritten: 3.2 Provider Service Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-diagram.svg" alt="Diagram: 3.2 Provider Service Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-2-provider-service-comparison-sticky.svg" alt="Sticky Note: 3.2 Provider Service Comparison" width="30%">
-</a>
 
 
 | Feature | AWS EC2 | Azure Virtual Machines | GCP Compute Engine |
@@ -120,16 +100,6 @@ The primary advantage of cloud compute is the shift from physical hardware procu
 | Dedicated Hosts | Dedicated Hosts | Dedicated Hosts | Sole-Tenant Nodes |
 
 ### 3.3 Instance Families and Selection
-
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-handwritten.svg" alt="Handwritten: 3.3 Instance Families and Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-diagram.svg" alt="Diagram: 3.3 Instance Families and Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-3-instance-families-and-selection-sticky.svg" alt="Sticky Note: 3.3 Instance Families and Selection" width="30%">
-</a>
 
 
 Providers organize instances into families optimized for different workloads. Naming conventions typically include a family identifier, a generation number, and a size (e.g., AWS `m5.large`, Azure `D2s_v5`, GCP `n2-standard-2`).
@@ -169,16 +139,6 @@ graph TB
 
 ### 3.4 Detailed Instance Type Specifications
 
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-handwritten.svg" alt="Handwritten: 3.4 Detailed Instance Type Specifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-diagram.svg" alt="Diagram: 3.4 Detailed Instance Type Specifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-4-detailed-instance-type-specifications-sticky.svg" alt="Sticky Note: 3.4 Detailed Instance Type Specifications" width="30%">
-</a>
-
 
 | AWS Type | vCPUs | Memory (GB) | Network (Gbps) | Price/hr (On-Demand) | Best For |
 |----------|-------|-------------|----------------|---------------------|----------|
@@ -191,16 +151,6 @@ graph TB
 | i3.2xlarge | 8 | 61 | Up to 10 | $0.624 | NoSQL, NVMe SSD |
 
 ### 3.5 Lifecycle and Pricing Models
-
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-handwritten.svg" alt="Handwritten: 3.5 Lifecycle and Pricing Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-diagram.svg" alt="Diagram: 3.5 Lifecycle and Pricing Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-5-lifecycle-and-pricing-models-sticky.svg" alt="Sticky Note: 3.5 Lifecycle and Pricing Models" width="30%">
-</a>
 
 
 Cloud compute economics allow for significant cost optimization through tiered pricing:
@@ -242,16 +192,6 @@ sequenceDiagram
 ```
 
 ### 3.6 Storage for Compute
-
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-handwritten.svg" alt="Handwritten: 3.6 Storage for Compute" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-diagram.svg" alt="Diagram: 3.6 Storage for Compute" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-6-storage-for-compute-sticky.svg" alt="Sticky Note: 3.6 Storage for Compute" width="30%">
-</a>
 
 
 VMs typically interact with two types of block storage:
@@ -330,16 +270,6 @@ Cache storage: {
 
 ### 3.7 Scaling and Availability Patterns
 
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-handwritten.svg" alt="Handwritten: 3.7 Scaling and Availability Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-diagram.svg" alt="Diagram: 3.7 Scaling and Availability Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-7-scaling-and-availability-patterns-sticky.svg" alt="Sticky Note: 3.7 Scaling and Availability Patterns" width="30%">
-</a>
-
 
 **Horizontal Scaling** involves adding more instances to a fleet, while **Vertical Scaling** involves increasing the size of an existing instance.
 
@@ -412,16 +342,6 @@ console.log(configureAutoScaling("steady"));
 - **Health Checks:** The scaling service monitors instance health and automatically replaces failed instances.
 
 ### 3.8 Load Balancing
-
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-handwritten.svg" alt="Handwritten: 3.8 Load Balancing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-diagram.svg" alt="Diagram: 3.8 Load Balancing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/03-cloud-compute/3-8-load-balancing-sticky.svg" alt="Sticky Note: 3.8 Load Balancing" width="30%">
-</a>
 
 
 Load balancers distribute incoming traffic across a pool of healthy VM instances.

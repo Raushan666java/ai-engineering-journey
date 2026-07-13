@@ -48,7 +48,6 @@ After completing this chapter you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - Explain key RBI cybersecurity guidelines for scheduled commercial banks (BCSBI, cyber fraud reporting, outsourcing).
 - Describe PCI DSS requirements for cardholder data protection (encryption, access control, logging, quarterly scans).
 - Walk through the 3D Secure (3DS) authentication flow — merchant, issuer, ACS.
@@ -66,17 +65,6 @@ After completing this chapter you will be able to:
 ## Theory
 
 ### 5.1 RBI Cybersecurity Guidelines
-
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-handwritten.svg" alt="Handwritten: 5.1 RBI Cybersecurity Guidelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-diagram.svg" alt="Diagram: 5.1 RBI Cybersecurity Guidelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-1-rbi-cybersecurity-guidelines-sticky.svg" alt="Sticky Note: 5.1 RBI Cybersecurity Guidelines" width="30%">
-</a>
-
 
 The Reserve Bank of India (RBI) has issued comprehensive cybersecurity frameworks for scheduled commercial banks. Key guidelines include:
 
@@ -130,17 +118,6 @@ flowchart TD
 
 ### 5.2 PCI DSS (Payment Card Industry Data Security Standard)
 
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-handwritten.svg" alt="Handwritten: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-diagram.svg" alt="Diagram: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-2-pci-dss-payment-card-industry-data-security-standard-sticky.svg" alt="Sticky Note: 5.2 PCI DSS (Payment Card Industry Data Security Standard)" width="30%">
-</a>
-
-
 PCI DSS is a set of security standards for organizations handling branded credit cards, established by the PCI Security Standards Council (founded by Visa, Mastercard, Amex, Discover, JCB).
 
 #### 5.2.1 PCI DSS 4.0 — Six Goals and 12 Requirements
@@ -183,17 +160,6 @@ PCI DSS is a set of security standards for organizations handling branded credit
 
 ### 5.3 3D Secure (3DS)
 
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-handwritten.svg" alt="Handwritten: 5.3 3D Secure (3DS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-diagram.svg" alt="Diagram: 5.3 3D Secure (3DS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-3-3d-secure-3ds-sticky.svg" alt="Sticky Note: 5.3 3D Secure (3DS)" width="30%">
-</a>
-
-
 3D Secure (Three-Domain Secure) is an authentication protocol for card-not-present (CNP) transactions, adding an additional factor of authentication (AFA) to verify the cardholder's identity.
 
 #### 5.3.1 3DS Domains
@@ -231,17 +197,6 @@ PCI DSS is a set of security standards for organizations handling branded credit
 
 ### 5.4 EMV Chip Technology
 
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-handwritten.svg" alt="Handwritten: 5.4 EMV Chip Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-diagram.svg" alt="Diagram: 5.4 EMV Chip Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-4-emv-chip-technology-sticky.svg" alt="Sticky Note: 5.4 EMV Chip Technology" width="30%">
-</a>
-
-
 EMV (Europay, Mastercard, Visa) is the global standard for chip-based payment cards (smart cards) that replaced magnetic stripe technology.
 
 #### 5.4.1 EMV Transaction Flow (Chip Card at POS)
@@ -276,17 +231,6 @@ EMV (Europay, Mastercard, Visa) is the global standard for chip-based payment ca
 | Global adoption | Phasing out | Standard (everywhere except USA had slow adoption) |
 
 ### 5.5 Tokenization
-
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-handwritten.svg" alt="Handwritten: 5.5 Tokenization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-diagram.svg" alt="Diagram: 5.5 Tokenization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-5-tokenization-sticky.svg" alt="Sticky Note: 5.5 Tokenization" width="30%">
-</a>
-
 
 Tokenization replaces sensitive payment data (PAN — Primary Account Number) with a non-sensitive surrogate value (token) that has no exploitable value.
 
@@ -356,17 +300,6 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 
 ### 5.6 Secure Element and TEE
 
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-handwritten.svg" alt="Handwritten: 5.6 Secure Element and TEE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-diagram.svg" alt="Diagram: 5.6 Secure Element and TEE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-6-secure-element-and-tee-sticky.svg" alt="Sticky Note: 5.6 Secure Element and TEE" width="30%">
-</a>
-
-
 #### 5.6.1 Secure Element (SE)
 
 - **Definition:** Tamper-resistant hardware chip that securely stores and processes sensitive data (payment credentials, cryptographic keys)
@@ -396,17 +329,6 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 
 ### 5.7 Mobile Banking Security — OWASP Mobile Top 10
 
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-handwritten.svg" alt="Handwritten: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-diagram.svg" alt="Diagram: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-7-mobile-banking-security-owasp-mobile-top-10-sticky.svg" alt="Sticky Note: 5.7 Mobile Banking Security — OWASP Mobile Top 10" width="30%">
-</a>
-
-
 | ID | Risk | Description | Banking Relevance |
 |----|------|-------------|------------------|
 | **M1** | Improper Platform Usage | Misuse of platform features (intents, custom URL schemes) | Deep linking attacks on banking apps |
@@ -429,17 +351,6 @@ Used by Apple Pay, Google Pay, Samsung Pay for contactless payments at POS.
 - **Transaction signing** — sensitive transactions require re-authentication
 
 ### 5.8 UPI Security Architecture
-
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-handwritten.svg" alt="Handwritten: 5.8 UPI Security Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-diagram.svg" alt="Diagram: 5.8 UPI Security Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-8-upi-security-architecture-sticky.svg" alt="Sticky Note: 5.8 UPI Security Architecture" width="30%">
-</a>
-
 
 Unified Payments Interface (UPI) is an India-origin real-time payment system developed by NPCI (National Payments Corporation of India).
 
@@ -511,17 +422,6 @@ sequenceDiagram
 
 ### 5.9 Digital Payment Fraud Detection
 
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-handwritten.svg" alt="Handwritten: 5.9 Digital Payment Fraud Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-diagram.svg" alt="Diagram: 5.9 Digital Payment Fraud Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-9-digital-payment-fraud-detection-sticky.svg" alt="Sticky Note: 5.9 Digital Payment Fraud Detection" width="30%">
-</a>
-
-
 #### 5.9.1 Fraud Detection Techniques
 
 | Technique | Description | Example |
@@ -560,17 +460,6 @@ Transaction                         Rules          Decision
 ```
 
 ### 5.10 Biometric Authentication in Banking
-
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-handwritten.svg" alt="Handwritten: 5.10 Biometric Authentication in Banking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-diagram.svg" alt="Diagram: 5.10 Biometric Authentication in Banking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/05-banking-payment-security/5-10-biometric-authentication-in-banking-sticky.svg" alt="Sticky Note: 5.10 Biometric Authentication in Banking" width="30%">
-</a>
-
 
 #### 5.10.1 Biometric Types Used in Banking
 

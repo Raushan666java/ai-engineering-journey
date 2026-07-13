@@ -93,16 +93,6 @@ flowchart LR
 
 ### 19.1.1 The requests Library
 
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-1-the-requests-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-1-the-requests-library-handwritten.svg" alt="Handwritten: 19.1.1 The requests Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-1-the-requests-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-1-the-requests-library-diagram.svg" alt="Diagram: 19.1.1 The requests Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-1-the-requests-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-1-the-requests-library-sticky.svg" alt="Sticky Note: 19.1.1 The requests Library" width="30%">
-</a>
-
 
 ```python
 import requests
@@ -148,16 +138,6 @@ except requests.Timeout:
 
 ### 19.1.2 Sessions
 
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-2-sessions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-2-sessions-handwritten.svg" alt="Handwritten: 19.1.2 Sessions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-2-sessions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-2-sessions-diagram.svg" alt="Diagram: 19.1.2 Sessions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-2-sessions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-2-sessions-sticky.svg" alt="Sticky Note: 19.1.2 Sessions" width="30%">
-</a>
-
 
 ```python
 # Sessions reuse TCP connections and persist cookies
@@ -169,16 +149,6 @@ with requests.Session() as session:
 ```
 
 ### 19.1.3 httpx → Async HTTP
-
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-3-httpx-async-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-3-httpx-async-http-handwritten.svg" alt="Handwritten: 19.1.3 httpx → Async HTTP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-3-httpx-async-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-3-httpx-async-http-diagram.svg" alt="Diagram: 19.1.3 httpx → Async HTTP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-3-httpx-async-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-1-3-httpx-async-http-sticky.svg" alt="Sticky Note: 19.1.3 httpx → Async HTTP" width="30%">
-</a>
 
 
 ```python
@@ -391,16 +361,6 @@ def test_add():
 
 ### 19.5.1 Assertions
 
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-1-assertions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-1-assertions-handwritten.svg" alt="Handwritten: 19.5.1 Assertions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-1-assertions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-1-assertions-diagram.svg" alt="Diagram: 19.5.1 Assertions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-1-assertions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-1-assertions-sticky.svg" alt="Sticky Note: 19.5.1 Assertions" width="30%">
-</a>
-
 
 pytest uses plain `assert` → no need for `self.assertEqual`:
 
@@ -418,16 +378,6 @@ def test_lists():
 ```
 
 ### 19.5.2 Fixtures
-
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-2-fixtures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-2-fixtures-handwritten.svg" alt="Handwritten: 19.5.2 Fixtures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-2-fixtures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-2-fixtures-diagram.svg" alt="Diagram: 19.5.2 Fixtures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-2-fixtures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-2-fixtures-sticky.svg" alt="Sticky Note: 19.5.2 Fixtures" width="30%">
-</a>
 
 
 Fixtures provide reusable test setup:
@@ -455,16 +405,6 @@ def test_connection_active(db_connection):
 
 ### 19.5.3 Fixture Scope
 
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-3-fixture-scope-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-3-fixture-scope-handwritten.svg" alt="Handwritten: 19.5.3 Fixture Scope" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-3-fixture-scope-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-3-fixture-scope-diagram.svg" alt="Diagram: 19.5.3 Fixture Scope" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-3-fixture-scope-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-3-fixture-scope-sticky.svg" alt="Sticky Note: 19.5.3 Fixture Scope" width="30%">
-</a>
-
 
 ```python
 @pytest.fixture(scope="module")
@@ -479,16 +419,6 @@ def global_config():
 ```
 
 ### 19.5.4 Parametrization
-
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-4-parametrization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-4-parametrization-handwritten.svg" alt="Handwritten: 19.5.4 Parametrization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-4-parametrization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-4-parametrization-diagram.svg" alt="Diagram: 19.5.4 Parametrization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-4-parametrization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-4-parametrization-sticky.svg" alt="Sticky Note: 19.5.4 Parametrization" width="30%">
-</a>
 
 
 ```python
@@ -512,16 +442,6 @@ def test_factorial(n, expected):
 ```
 
 ### 19.5.5 Mocking
-
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-5-mocking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-5-mocking-handwritten.svg" alt="Handwritten: 19.5.5 Mocking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-5-mocking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-5-mocking-diagram.svg" alt="Diagram: 19.5.5 Mocking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-5-mocking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-5-mocking-sticky.svg" alt="Sticky Note: 19.5.5 Mocking" width="30%">
-</a>
 
 
 ```python
@@ -555,16 +475,6 @@ def test_external_call(mocker):
 
 ### 19.5.6 Testing Exceptions
 
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-6-testing-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-6-testing-exceptions-handwritten.svg" alt="Handwritten: 19.5.6 Testing Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-6-testing-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-6-testing-exceptions-diagram.svg" alt="Diagram: 19.5.6 Testing Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-6-testing-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-6-testing-exceptions-sticky.svg" alt="Sticky Note: 19.5.6 Testing Exceptions" width="30%">
-</a>
-
 
 ```python
 def test_negative_input():
@@ -577,16 +487,6 @@ def test_multiple_exceptions():
 ```
 
 ### 19.5.7 Conftest
-
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-7-conftest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-7-conftest-handwritten.svg" alt="Handwritten: 19.5.7 Conftest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-7-conftest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-7-conftest-diagram.svg" alt="Diagram: 19.5.7 Conftest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-7-conftest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/19-apis-testing/19-5-7-conftest-sticky.svg" alt="Sticky Note: 19.5.7 Conftest" width="30%">
-</a>
 
 
 Shared fixtures go in `conftest.py` at the test directory root:

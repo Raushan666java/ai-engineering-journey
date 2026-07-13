@@ -13,7 +13,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/modern-ai-engineering/08-ai-agents-and-tool-use/hero.svg" target="_blank" rel="noopener">

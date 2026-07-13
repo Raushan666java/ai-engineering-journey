@@ -83,16 +83,6 @@ Graph traversals power: **web crawling** (Google discovers pages level by level)
 
 ### Chapter Roadmap
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
-
 
 \\\mermaid
 flowchart TD
@@ -119,30 +109,10 @@ flowchart TD
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 Depth-First Search (DFS) explores as far as possible along each branch before backtracking. It uses recursion (implicitly the call stack) to remember which vertices to visit next. The algorithm marks vertices as **visited** to avoid infinite loops in cyclic graphs.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Mark the starting vertex as visited.
@@ -152,16 +122,6 @@ Depth-First Search (DFS) explores as far as possible along each branch before ba
 5. Repeat until all reachable vertices from the source are visited.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 \\\
@@ -174,16 +134,6 @@ DFS(G, v):
 \\\
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Input graph (undirected):
@@ -217,16 +167,6 @@ Start: vertex 0. Neighbors visited in ascending order.
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -240,16 +180,6 @@ Start: vertex 0. Neighbors visited in ascending order.
 **Why O(V) space?** In a linear chain of V vertices, the recursion depth reaches V. DFS from the first vertex goes V levels deep before the first backtrack.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -345,16 +275,6 @@ class Graph {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -363,16 +283,6 @@ class Graph {
 | Natural for connectivity and cycle detection | Doesn't guarantee shortest paths |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Disconnected graph:** DFS from a source only visits one component. Loop over all vertices for full coverage.
@@ -388,30 +298,10 @@ class Graph {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 Iterative DFS uses an explicit stack (LIFO) instead of the call stack. This avoids recursion depth limits. The key structural difference from BFS: we use a stack instead of a queue.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Create an empty stack. Push the starting vertex and mark it visited.
@@ -421,16 +311,6 @@ Iterative DFS uses an explicit stack (LIFO) instead of the call stack. This avoi
    c. For each unvisited neighbor, mark it visited and push it onto the stack.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 \\\
@@ -447,16 +327,6 @@ DFS_Iterative(G, s):
 \\\
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Same graph: 0-1-3-4 / 0-2-5-6
@@ -485,16 +355,6 @@ Start: vertex 0.
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -504,16 +364,6 @@ Start: vertex 0.
 **Why same complexity as recursive DFS?** The algorithm does the same number of operations — each vertex pushed/popped once, each edge examined once. The only difference is where memory is allocated (heap vs call stack).
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -579,16 +429,6 @@ void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -597,16 +437,6 @@ void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
 | Memory usage on heap, not call stack | Must carefully manage neighbor ordering |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Deep linear chain:** Explicit stack on the heap avoids stack overflow — production-safe for graphs with 10^6+ depth.
@@ -619,30 +449,10 @@ void dfsIterative(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 BFS visits vertices in order of increasing distance from the source using a **queue** (FIFO). Vertices closer to the source are processed before farther ones. BFS is the traversal of choice for shortest paths in unweighted graphs.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Mark the starting vertex visited with distance 0 and enqueue it.
@@ -652,16 +462,6 @@ BFS visits vertices in order of increasing distance from the source using a **qu
    c. For each unvisited neighbor: mark it visited, set its distance = current + 1, enqueue it.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 \\\
@@ -680,16 +480,6 @@ BFS(G, s):
 \\\
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Graph: 0-1-3-4 / 0-2-5-6
@@ -717,16 +507,6 @@ Start: vertex 0.
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -738,16 +518,6 @@ Start: vertex 0.
 **BFS queue vs DFS stack:** BFS's queue grows to the "width" of the graph (worst: O(V) for a star graph where the center is processed and all leaves are enqueued). DFS's stack grows to the "depth" (worst: O(V) for a chain). Both are O(V) worst-case but BFS tends to use more memory on wide graphs.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -813,16 +583,6 @@ List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -831,16 +591,6 @@ List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
 | No recursion — safe for any depth | Not as natural for deep connectivity problems |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Disconnected graph:** BFS from a source reaches one component. Use outer loop for all components.
@@ -856,30 +606,10 @@ List&lt;Integer&gt; bfs(List&lt;List<Integer&gt;> adj, int s) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 A **connected component** in an undirected graph is a maximal set of vertices where every pair is connected by some path. Algorithm: run DFS/BFS from each unvisited vertex; each new traversal discovers one component.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Initialize component_id array to -1 (unassigned).
@@ -888,16 +618,6 @@ A **connected component** in an undirected graph is a maximal set of vertices wh
 4. Increment current_id and continue.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 \\\
@@ -918,16 +638,6 @@ DFS_Label(G, v, comp, id):
 \\\
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Graph with two components:
@@ -956,16 +666,6 @@ Component 0:     Component 1:
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -975,16 +675,6 @@ Component 0:     Component 1:
 **Why O(V + E) total?** The outer loop visits each vertex exactly once. Each DFS call only processes unvisited vertices. An edge is examined only when its source vertex is processed. Every vertex and edge is processed exactly once in total — regardless of how many components exist. This is a key property: even with 100 components, we still do O(V + E) total work.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -1063,16 +753,6 @@ int[] findComponents(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1081,16 +761,6 @@ int[] findComponents(List&lt;List<Integer&gt;> adj) {
 | Foundation for clustering and graph analysis | |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Empty graph (V=0):** 0 components.
@@ -1105,16 +775,6 @@ int[] findComponents(List&lt;List<Integer&gt;> adj) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 A **cycle** is a path of length >= 3 that starts and ends at the same vertex with no repeated edges. Detection differs by graph type:
 
@@ -1123,16 +783,6 @@ A **cycle** is a path of length >= 3 that starts and ends at the same vertex wit
 
 ### Algorithm Steps — Undirected
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-handwritten.svg" alt="Handwritten: Algorithm Steps — Undirected" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-diagram.svg" alt="Diagram: Algorithm Steps — Undirected" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-undirected-sticky.svg" alt="Sticky Note: Algorithm Steps — Undirected" width="30%">
-</a>
-
 
 1. For each unvisited vertex, start DFS with parent = -1.
 2. For each neighbor:
@@ -1140,16 +790,6 @@ A **cycle** is a path of length >= 3 that starts and ends at the same vertex wit
    - If visited AND neighbor != parent: **cycle detected**.
 
 ### Algorithm Steps — Directed
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-handwritten.svg" alt="Handwritten: Algorithm Steps — Directed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-diagram.svg" alt="Diagram: Algorithm Steps — Directed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-directed-sticky.svg" alt="Sticky Note: Algorithm Steps — Directed" width="30%">
-</a>
 
 
 1. For each unvisited vertex, start DFS.
@@ -1160,16 +800,6 @@ A **cycle** is a path of length >= 3 that starts and ends at the same vertex wit
 4. Remove current from recStack before returning.
 
 ### Pseudocode — Undirected
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-handwritten.svg" alt="Handwritten: Pseudocode — Undirected" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-diagram.svg" alt="Diagram: Pseudocode — Undirected" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-undirected-sticky.svg" alt="Sticky Note: Pseudocode — Undirected" width="30%">
-</a>
 
 
 \\\
@@ -1193,16 +823,6 @@ DFS_Cycle_Undirected(G, v, parent, visited):
 \\\
 
 ### Pseudocode — Directed
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-handwritten.svg" alt="Handwritten: Pseudocode — Directed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-diagram.svg" alt="Diagram: Pseudocode — Directed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-directed-sticky.svg" alt="Sticky Note: Pseudocode — Directed" width="30%">
-</a>
 
 
 \\\
@@ -1230,16 +850,6 @@ DFS_Cycle_Directed(G, v, visited, recStack):
 
 ### Step-by-Step Dry Run — Directed
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Directed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Directed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-directed-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Directed" width="30%">
-</a>
-
 
 Graph: 0 -> 1 -> 2 -> 0
 
@@ -1253,16 +863,6 @@ Graph: 0 -> 1 -> 2 -> 0
 
 ### Step-by-Step Dry Run — Undirected
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Undirected" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Undirected" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-undirected-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Undirected" width="30%">
-</a>
-
 
 Graph: 0-1-2-0 (triangle)
 
@@ -1275,16 +875,6 @@ Graph: 0-1-2-0 (triangle)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -1294,16 +884,6 @@ Graph: 0-1-2-0 (triangle)
 **Why O(V + E)?** Each vertex is visited once. Each edge is examined once. The recStack check is O(1) — a simple array lookup. Adding the parent parameter for undirected doesn't change the complexity. This is optimal — you cannot detect a cycle without examining at least V + E elements in the worst case.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -1425,16 +1005,6 @@ boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1443,16 +1013,6 @@ boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
 | Simple extension of standard DFS | Undirected version needs parent tracking |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Self-loop:** edge from vertex to itself is a cycle. In undirected check, the parent check would miss a self-loop (u == parent catches it? No, u == v is the self-loop case). Handle by checking u == v explicitly.
@@ -1468,30 +1028,10 @@ boolean dfsUndirected(int v, int parent, List&lt;List<Integer&gt;> adj,
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 A graph is **bipartite** if vertices can be divided into two disjoint sets such that every edge connects vertices from different sets. Equivalently: 2-colorable with no adjacent vertices sharing a color. A graph is bipartite **iff** it contains no odd-length cycles.
 
 ### Algorithm Steps (BFS)
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-handwritten.svg" alt="Handwritten: Algorithm Steps (BFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-diagram.svg" alt="Diagram: Algorithm Steps (BFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-bfs-sticky.svg" alt="Sticky Note: Algorithm Steps (BFS)" width="30%">
-</a>
 
 
 1. Initialize color array to -1 (uncolored).
@@ -1504,16 +1044,6 @@ A graph is **bipartite** if vertices can be divided into two disjoint sets such 
           - If color[w] == color[u]: NOT bipartite.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 \\\
@@ -1535,16 +1065,6 @@ IsBipartite(G):
 \\\
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Graph (bipartite — 4-cycle):
@@ -1580,16 +1100,6 @@ Now test a triangle (3-cycle — NOT bipartite):
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -1601,16 +1111,6 @@ Now test a triangle (3-cycle — NOT bipartite):
 **Why does it detect odd cycles?** A graph has an odd cycle iff it's not bipartite. The BFS coloring will detect a color conflict exactly when two vertices at odd distance from each other are forced to share a color — which happens precisely when there's an odd-length cycle.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -1692,16 +1192,6 @@ boolean isBipartite(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1710,16 +1200,6 @@ boolean isBipartite(List&lt;List<Integer&gt;> adj) {
 | Detects all odd cycles | BFS queue can be large for wide graphs |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Empty graph:** Vacuously bipartite (no edges).
@@ -1736,16 +1216,6 @@ boolean isBipartite(List&lt;List<Integer&gt;> adj) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 A **topological ordering** of a DAG is a linear ordering where for every edge u -> v, u appears before v. Exists **iff** graph is a DAG (no cycles). Two main algorithms:
 
@@ -1753,16 +1223,6 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 - **DFS-based:** Perform DFS; push vertices onto a stack after all neighbors processed (post-order).
 
 ### Algorithm Steps — Kahn's
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-handwritten.svg" alt="Handwritten: Algorithm Steps — Kahn's" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-diagram.svg" alt="Diagram: Algorithm Steps — Kahn's" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-kahn-s-sticky.svg" alt="Sticky Note: Algorithm Steps — Kahn's" width="30%">
-</a>
 
 
 1. Compute in-degree for all vertices.
@@ -1774,16 +1234,6 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 
 ### Algorithm Steps — DFS
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-handwritten.svg" alt="Handwritten: Algorithm Steps — DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-diagram.svg" alt="Diagram: Algorithm Steps — DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/algorithm-steps-dfs-sticky.svg" alt="Sticky Note: Algorithm Steps — DFS" width="30%">
-</a>
-
 
 1. For each unvisited vertex, call DFS.
 2. In DFS: mark visited, recurse on unvisited neighbors.
@@ -1791,16 +1241,6 @@ A **topological ordering** of a DAG is a linear ordering where for every edge u 
 4. After all vertices processed, pop stack for topological order.
 
 ### Pseudocode — Kahn's
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-handwritten.svg" alt="Handwritten: Pseudocode — Kahn's" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-diagram.svg" alt="Diagram: Pseudocode — Kahn's" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-kahn-s-sticky.svg" alt="Sticky Note: Pseudocode — Kahn's" width="30%">
-</a>
 
 
 \\\
@@ -1831,16 +1271,6 @@ KahnTopologicalSort(G):
 
 ### Pseudocode — DFS
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-handwritten.svg" alt="Handwritten: Pseudocode — DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-diagram.svg" alt="Diagram: Pseudocode — DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-dfs-sticky.svg" alt="Sticky Note: Pseudocode — DFS" width="30%">
-</a>
-
 
 \\\
 DFSTopologicalSort(G):
@@ -1860,16 +1290,6 @@ DFS_Topo(G, v, visited, stack):
 \\\
 
 ### Step-by-Step Dry Run — Kahn's
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Kahn's" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Kahn's" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-kahn-s-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Kahn's" width="30%">
-</a>
 
 
 Graph (DAG):
@@ -1900,16 +1320,6 @@ Initial in-degrees: in[0]=2, in[1]=2, in[2]=1, in[3]=1, in[4]=0, in[5]=0
 
 ### Step-by-Step Dry Run — DFS
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-diagram.svg" alt="Diagram: Step-by-Step Dry Run — DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-dfs-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — DFS" width="30%">
-</a>
-
 
 Same graph.
 
@@ -1939,16 +1349,6 @@ Both 4, 5, 0, 2, 3, 1 (Kahn's) and 5, 4, 2, 3, 1, 0 (DFS) are valid topological 
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Kahn's Algorithm | DFS-Based |
 |--------|-----------------|-----------|
@@ -1959,16 +1359,6 @@ Both 4, 5, 0, 2, 3, 1 (Kahn's) and 5, 4, 2, 3, 1, 0 (DFS) are valid topological 
 **Why O(V + E) for both?** Kahn's: computing in-degrees takes O(E). The while loop processes each vertex and edge once. DFS: each vertex visited once, each edge examined once. The constant factors differ but the asymptotic complexity is identical.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -2095,16 +1485,6 @@ List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Algorithm | Advantages | Disadvantages |
 |-----------|-----------|--------------|
@@ -2112,16 +1492,6 @@ List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
 | **DFS-based** | Simpler recursion; natural ordering | No cycle detection; needs separate check |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Graph with cycle:** Kahn's result shorter than V. DFS needs explicit cycle detection.
@@ -2136,30 +1506,10 @@ List&lt;Integer&gt; topologicalSortDFS(List&lt;List<Integer&gt;> adj) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 A **strongly connected component (SCC)** of a directed graph is a maximal set of vertices where every pair (u, v) has a path u -> v AND v -> u in the original graph. Kosaraju's algorithm finds all SCCs in O(V + E) time using two DFS passes.
 
 ### Kosaraju's Algorithm — Steps
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-handwritten.svg" alt="Handwritten: Kosaraju's Algorithm — Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-diagram.svg" alt="Diagram: Kosaraju's Algorithm — Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/kosaraju-s-algorithm-steps-sticky.svg" alt="Sticky Note: Kosaraju's Algorithm — Steps" width="30%">
-</a>
 
 
 1. Perform DFS on the original graph. Push vertices to a stack **after** they finish (post-order).
@@ -2167,16 +1517,6 @@ A **strongly connected component (SCC)** of a directed graph is a maximal set of
 3. Pop vertices from the stack. For each unvisited vertex in the transpose graph, run DFS. Each DFS tree yields one SCC.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 \\\
@@ -2217,16 +1557,6 @@ DFS_Collect(G, v, visited):
 \\\
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Graph:
@@ -2290,16 +1620,6 @@ Transpose adj:
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -2311,16 +1631,6 @@ Transpose adj:
 **Why can't we do it in one pass?** Reachability in directed graphs is asymmetric. u may reach v but not vice versa. The first pass determines a global ordering; the second pass on the transpose leverages the property that SCCs are preserved under graph transposition.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 \\\cpp
@@ -2457,16 +1767,6 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -2475,16 +1775,6 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 | Produces SCCs in reverse topological order | Can't easily find SCCs incrementally |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **DAG:** Every vertex is its own SCC (V components).
@@ -2519,16 +1809,6 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Common Questions
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
-</a>
-
 
 1. **Clone Graph** (LeetCode 133)\
    Given a reference to a node in a connected undirected graph, return a deep copy.\
@@ -2552,16 +1832,6 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 
 ### Pro Tips
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
-</a>
-
 
 - **BFS for shortest path:** When the problem says "minimum number of edges", "shortest transformation", "closest" — that's BFS.
 - **DFS for connectivity:** "Is there a path?", "Count components", "Detect cycle" — that's DFS.
@@ -2570,16 +1840,6 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 - **Bidirectional BFS:** For large graphs where BFS from source would explore too many nodes, run BFS from both source and target simultaneously. Cuts the search space from O(b^d) to roughly O(2 * b^(d/2)).
 
 ### Common Pitfalls
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
-</a>
 
 
 | Pitfall | Solution |
@@ -2663,16 +1923,6 @@ List&lt;List<Integer&gt;> kosaraju(List&lt;List<Integer&gt;> adj) {
 ## Common Mistakes & GFG Deepening
 
 ### Common Mistakes (GFG-Style)
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
-</a>
 
 
 | Mistake | Why It's Wrong | Correct Approach |
@@ -2801,16 +2051,6 @@ function bidirectionalBFS(graph: Graph, start: number, target: number): number[]
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
-</a>
-
 
 9. **What is the worst-case time complexity of DFS on a graph with V vertices and E edges?**
    - a) O(V)
@@ -2852,16 +2092,6 @@ function bidirectionalBFS(graph: Graph, start: number, target: number): number[]
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
-</a>
-
 
 12. **Word ladder (BFS)**: Given a start word, end word, and a dictionary, find the length of the shortest transformation sequence from start to end, changing one letter at a time.
 
@@ -2884,16 +2114,6 @@ function bidirectionalBFS(graph: Graph, start: number, target: number): number[]
 21. **Find the shortest cycle in an undirected graph**: Use BFS from each vertex, stop when finding an already-visited neighbor (not parent).
 
 ### Traversal Comparison
-
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-handwritten.svg" alt="Handwritten: Traversal Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-diagram.svg" alt="Diagram: Traversal Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/12-graph-traversals/traversal-comparison-sticky.svg" alt="Sticky Note: Traversal Comparison" width="30%">
-</a>
 
 
 | Property | BFS | DFS (Recursive) | DFS (Iterative) | Bidirectional BFS |

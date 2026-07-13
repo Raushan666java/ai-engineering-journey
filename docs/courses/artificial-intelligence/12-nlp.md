@@ -102,16 +102,6 @@ P(w_{1:n}) = \prod_{i=1}^n P(w_i | w_{1:i-1})
 
 ### 12.1.1 N-Gram Models
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-handwritten.svg" alt="Handwritten: 12.1.1 N-Gram Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-diagram.svg" alt="Diagram: 12.1.1 N-Gram Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-1-n-gram-models-sticky.svg" alt="Sticky Note: 12.1.1 N-Gram Models" width="30%">
-</a>
-
 
 **Analogy:** If you hear "I ordered a pepperoni ___," you predict "pizza" because in your experience, "pepperoni" is almost always followed by "pizza." N-gram models capture exactly this — which word follows which previous words.
 
@@ -225,16 +215,6 @@ print("Perplexity:", lm.perplexity("the cat ran"))
 
 ### 12.1.2 Perplexity
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-handwritten.svg" alt="Handwritten: 12.1.2 Perplexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-diagram.svg" alt="Diagram: 12.1.2 Perplexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-1-2-perplexity-sticky.svg" alt="Sticky Note: 12.1.2 Perplexity" width="30%">
-</a>
-
 
 **Perplexity** measures how "surprised" the model is by test data — lower = better.
 
@@ -249,16 +229,6 @@ Human text perplexity typically ranges 50–1000. Modern neural LMs (GPT-3) achi
 Text classification assigns a document to one or more predefined categories.
 
 ### 12.2.1 Naive Bayes Classifier
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-handwritten.svg" alt="Handwritten: 12.2.1 Naive Bayes Classifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-diagram.svg" alt="Diagram: 12.2.1 Naive Bayes Classifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-1-naive-bayes-classifier-sticky.svg" alt="Sticky Note: 12.2.1 Naive Bayes Classifier" width="30%">
-</a>
 
 
 **Algorithm Steps:**
@@ -366,16 +336,6 @@ print("Prediction:", nb.predict("awful film"))
 
 ### 12.2.2 Logistic Regression
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-handwritten.svg" alt="Handwritten: 12.2.2 Logistic Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-diagram.svg" alt="Diagram: 12.2.2 Logistic Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-2-2-logistic-regression-sticky.svg" alt="Sticky Note: 12.2.2 Logistic Regression" width="30%">
-</a>
-
 
 Logistic regression learns weights θ for feature vector φ(d):
 
@@ -409,16 +369,6 @@ print(pipeline.predict(["boring film"]))
 Tokenization is the process of splitting text into smaller units called tokens (words, subwords, or characters).
 
 ### 12.3.1 Word Tokenization
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-handwritten.svg" alt="Handwritten: 12.3.1 Word Tokenization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-diagram.svg" alt="Diagram: 12.3.1 Word Tokenization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-1-word-tokenization-sticky.svg" alt="Sticky Note: 12.3.1 Word Tokenization" width="30%">
-</a>
 
 
 **Algorithm Steps:**
@@ -506,16 +456,6 @@ print("Char tokens (first 15):", char_tokens[:15])
 **Edge Cases:** URLs (www.example.com), emoji sequences, hashtags (#NLP), at-mentions (@user), multi-word entities ("New York"), languages without spaces (Chinese, Japanese, Thai), mixed-script text, numbers with commas (1,234,567).
 
 ### 12.3.2 Subword Tokenization (BPE)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-handwritten.svg" alt="Handwritten: 12.3.2 Subword Tokenization (BPE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-diagram.svg" alt="Diagram: 12.3.2 Subword Tokenization (BPE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-3-2-subword-tokenization-bpe-sticky.svg" alt="Sticky Note: 12.3.2 Subword Tokenization (BPE)" width="30%">
-</a>
 
 
 Byte-Pair Encoding (BPE) merges the most frequent character pairs iteratively. Used by GPT, BERT, RoBERTa.
@@ -643,16 +583,6 @@ Stemming chops off affixes heuristically; lemmatization uses vocabulary and morp
 
 ### 12.4.1 Porter Stemmer
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-handwritten.svg" alt="Handwritten: 12.4.1 Porter Stemmer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-diagram.svg" alt="Diagram: 12.4.1 Porter Stemmer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-4-1-porter-stemmer-sticky.svg" alt="Sticky Note: 12.4.1 Porter Stemmer" width="30%">
-</a>
-
 
 **Algorithm Steps:**
 1. Remove plural suffixes (-sses → -ss, -ies → -i, -s → remove if short).
@@ -747,16 +677,6 @@ POS tagging assigns a grammatical tag (e.g., noun, verb, adjective, adverb) to e
 
 ### 12.5.1 HMM-Based POS Tagging
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-handwritten.svg" alt="Handwritten: 12.5.1 HMM-Based POS Tagging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-diagram.svg" alt="Diagram: 12.5.1 HMM-Based POS Tagging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-1-hmm-based-pos-tagging-sticky.svg" alt="Sticky Note: 12.5.1 HMM-Based POS Tagging" width="30%">
-</a>
-
 
 **Algorithm Steps:**
 1. Define the tag set (e.g., 12 universal tags or 45 Penn Treebank tags).
@@ -846,16 +766,6 @@ for token in doc:
 **Complexity:** Viterbi O(T^2 × n) where T = number of tags, n = words. **Why:** For each of n positions, we consider T tags, and each tag computes a max over T previous tags — hence T^2 per position.
 
 ### 12.5.2 CRF-Based Tagging
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-handwritten.svg" alt="Handwritten: 12.5.2 CRF-Based Tagging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-diagram.svg" alt="Diagram: 12.5.2 CRF-Based Tagging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-5-2-crf-based-tagging-sticky.svg" alt="Sticky Note: 12.5.2 CRF-Based Tagging" width="30%">
-</a>
 
 
 A CRF models P(t_{1:n} | w_{1:n}) directly and allows arbitrary overlapping features:
@@ -983,16 +893,6 @@ print("\n".join(f"  - {p}" for p in people))
 **Analogy:** Parsing is like diagramming sentences in grammar class — you draw tree structures showing how "the cat" forms a noun phrase that combines with "sat" to form a sentence. The parse tree reveals who did what to whom — the grammatical backbone of the sentence.
 
 ### 12.7.1 Constituency Parsing (CKY Algorithm)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-handwritten.svg" alt="Handwritten: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-diagram.svg" alt="Diagram: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-1-constituency-parsing-cky-algorithm-sticky.svg" alt="Sticky Note: 12.7.1 Constituency Parsing (CKY Algorithm)" width="30%">
-</a>
 
 
 **Analogy:** Like assembling a puzzle — you start with pieces (words), combine into larger pieces (phrases), until the whole picture (sentence) emerges from the bottom up.
@@ -1140,16 +1040,6 @@ for tree in parser.parse(sentence):
 
 ### 12.7.2 Statistical Parsing (PCFG)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-handwritten.svg" alt="Handwritten: 12.7.2 Statistical Parsing (PCFG)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-diagram.svg" alt="Diagram: 12.7.2 Statistical Parsing (PCFG)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-2-statistical-parsing-pcfg-sticky.svg" alt="Sticky Note: 12.7.2 Statistical Parsing (PCFG)" width="30%">
-</a>
-
 
 Probabilistic CFGs assign probabilities to rules. The probability of a parse tree is the product of its rule probabilities. CKY+ finds the most probable parse.
 
@@ -1172,16 +1062,6 @@ print(f"Learned {len(grammar.productions())} productions from Treebank")
 ```
 
 ### 12.7.3 Dependency Parsing
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-handwritten.svg" alt="Handwritten: 12.7.3 Dependency Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-diagram.svg" alt="Diagram: 12.7.3 Dependency Parsing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-7-3-dependency-parsing-sticky.svg" alt="Sticky Note: 12.7.3 Dependency Parsing" width="30%">
-</a>
 
 
 **Analogy:** Dependency parsing is like a family tree where each person has exactly one parent. "I saw the cat" — "saw" is the root, "I" depends on "saw" (nsubj), "cat" depends on "saw" (dobj), "the" depends on "cat" (det).
@@ -1215,16 +1095,6 @@ displacy.render(doc, style="dep", jupyter=False)
 **Analogy:** Word embeddings are like arranging a library where similar books are shelved together — fiction, history, science each have their own section. In vector space, "king" - "man" + "woman" ≈ "queen". Proximity encodes semantic similarity; vector arithmetic captures analogies.
 
 ### 12.8.1 Word2Vec (Skip-Gram)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-handwritten.svg" alt="Handwritten: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-diagram.svg" alt="Diagram: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-1-word2vec-skip-gram-sticky.svg" alt="Sticky Note: 12.8.1 Word2Vec (Skip-Gram)" width="30%">
-</a>
 
 
 **Algorithm Steps (Skip-Gram):**
@@ -1302,16 +1172,6 @@ print("Similarity(cat, the):", model.wv.similarity("cat", "the"))
 
 ### 12.8.2 GloVe (Global Vectors)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-handwritten.svg" alt="Handwritten: 12.8.2 GloVe (Global Vectors)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-diagram.svg" alt="Diagram: 12.8.2 GloVe (Global Vectors)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-2-glove-global-vectors-sticky.svg" alt="Sticky Note: 12.8.2 GloVe (Global Vectors)" width="30%">
-</a>
-
 
 GloVe learns embeddings by factorizing the word co-occurrence matrix.
 
@@ -1326,16 +1186,6 @@ GloVe learns embeddings by factorizing the word co-occurrence matrix.
 **Complexity:** O(V²) memory if storing full matrix — GloVe prunes to top k co-occurrences per word (k=100-200). **Why:** The co-occurrence matrix is sparse but still very large; pruning is essential for tractability.
 
 ### 12.8.3 FastText
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-handwritten.svg" alt="Handwritten: 12.8.3 FastText" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-diagram.svg" alt="Diagram: 12.8.3 FastText" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-8-3-fasttext-sticky.svg" alt="Sticky Note: 12.8.3 FastText" width="30%">
-</a>
 
 
 FastText extends Word2Vec by representing each word as a bag of character n-grams (3-6 characters).
@@ -1380,16 +1230,6 @@ print("Most similar to 'cat':", ft_model.wv.most_similar("cat", topn=3))
 **Analogy:** If RNNs read a sentence one word at a time (left to right), the Transformer reads ALL words at once and figures out which relate to which — like looking at a photograph where you see the whole scene simultaneously, not pixel by pixel.
 
 ### 12.9.1 The Transformer Architecture
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-handwritten.svg" alt="Handwritten: 12.9.1 The Transformer Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-diagram.svg" alt="Diagram: 12.9.1 The Transformer Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-1-the-transformer-architecture-sticky.svg" alt="Sticky Note: 12.9.1 The Transformer Architecture" width="30%">
-</a>
 
 
 **Algorithm Steps:**
@@ -1504,16 +1344,6 @@ print(f"Max position embeddings: {config.max_position_embeddings}")
 
 ### 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-handwritten.svg" alt="Handwritten: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-diagram.svg" alt="Diagram: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-2-bert-bidirectional-encoder-representations-from-transformers-sticky.svg" alt="Sticky Note: 12.9.2 BERT (Bidirectional Encoder Representations from Transformers)" width="30%">
-</a>
-
 
 **Analogy:** BERT is like a student who reads sentences with blanks and must fill them using surrounding context — it learns language by playing "fill in the masked word" on billions of sentences.
 
@@ -1553,16 +1383,6 @@ print(f"\nAnswer: {result['answer']} (confidence: {result['score']:.3f})")
 
 ### 12.9.3 GPT (Generative Pre-trained Transformer)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-handwritten.svg" alt="Handwritten: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-diagram.svg" alt="Diagram: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-3-gpt-generative-pre-trained-transformer-sticky.svg" alt="Sticky Note: 12.9.3 GPT (Generative Pre-trained Transformer)" width="30%">
-</a>
-
 
 **Analogy:** GPT is like a student who reads left-to-right and must predict the next word — it learns language by generating continuations. Starting with GPT-1 (117M), scaling to GPT-3 (175B), it discovers grammar, reasoning, and world knowledge purely from next-token prediction.
 
@@ -1597,16 +1417,6 @@ unmasker = pipeline("fill-mask", model="distilbert-base-uncased")
 ```
 
 ### 12.9.4 BERT vs GPT
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-handwritten.svg" alt="Handwritten: 12.9.4 BERT vs GPT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-diagram.svg" alt="Diagram: 12.9.4 BERT vs GPT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/12-9-4-bert-vs-gpt-sticky.svg" alt="Sticky Note: 12.9.4 BERT vs GPT" width="30%">
-</a>
 
 
 | Aspect | BERT | GPT |
@@ -1751,16 +1561,6 @@ print("BERT:", ner(text)[:3])
 
 ### Q1: Explain the attention mechanism in Transformers.
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-handwritten.svg" alt="Handwritten: Explain the attention mechanism in Transformers." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-diagram.svg" alt="Diagram: Explain the attention mechanism in Transformers." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-attention-mechanism-in-transformers-sticky.svg" alt="Sticky Note: Explain the attention mechanism in Transformers." width="30%">
-</a>
-
 
 **Answer:** Attention computes a weighted sum of values, where weights are determined by the compatibility between a query and keys. Given input embeddings, each token projects to three vectors: Query (what am I looking for?), Key (what do I contain?), and Value (what information do I carry?). The process:
 
@@ -1773,16 +1573,6 @@ The scaling factor is critical — without it, large values push softmax to near
 
 ### Q2: Compare BERT and GPT. When would you use each?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-handwritten.svg" alt="Handwritten: Compare BERT and GPT. When would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-diagram.svg" alt="Diagram: Compare BERT and GPT. When would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/compare-bert-and-gpt-when-would-you-use-each-sticky.svg" alt="Sticky Note: Compare BERT and GPT. When would you use each?" width="30%">
-</a>
-
 
 **Answer:** BERT is an encoder-only model with bidirectional attention — it sees the full context left and right. GPT is decoder-only with causal (masked) attention — it only sees left context. BERT excels at understanding tasks: classification, NER, QA, entailment. GPT excels at generation: text completion, creative writing, code generation, dialogue.
 
@@ -1791,16 +1581,6 @@ Choose BERT for: sentiment analysis, spam detection, entity extraction, document
 BERT requires fine-tuning per task; GPT works with prompting (few-shot or zero-shot).
 
 ### Q3: How do modern NLP systems handle out-of-vocabulary (OOV) words?
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-handwritten.svg" alt="Handwritten: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-diagram.svg" alt="Diagram: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/how-do-modern-nlp-systems-handle-out-of-vocabulary-oov-words-sticky.svg" alt="Sticky Note: How do modern NLP systems handle out-of-vocabulary (OOV) words?" width="30%">
-</a>
 
 
 **Answer:** Four main approaches:
@@ -1811,45 +1591,15 @@ BERT requires fine-tuning per task; GPT works with prompting (few-shot or zero-s
 
 ### Q4: What is the difference between static and contextual embeddings?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-handwritten.svg" alt="Handwritten: What is the difference between static and contextual embeddings?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-diagram.svg" alt="Diagram: What is the difference between static and contextual embeddings?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/what-is-the-difference-between-static-and-contextual-embeddings-sticky.svg" alt="Sticky Note: What is the difference between static and contextual embeddings?" width="30%">
-</a>
-
 
 Static embeddings (Word2Vec, GloVe, FastText) assign one fixed vector per word regardless of context. "bank" has the same vector in "river bank" and "investment bank." Contextual embeddings (BERT, GPT, ELMo) assign different vectors based on surrounding words — "bank" in "river bank" and "investment bank" get different representations because self-attention incorporates the full sentence context.
 
 ### Q5: Why does the Transformer use multi-head attention instead of single-head?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-handwritten.svg" alt="Handwritten: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-diagram.svg" alt="Diagram: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/why-does-the-transformer-use-multi-head-attention-instead-of-single-head-sticky.svg" alt="Sticky Note: Why does the Transformer use multi-head attention instead of single-head?" width="30%">
-</a>
-
 
 Different attention heads learn different relationship types. In "The cat sat on the mat," one head might capture subject-verb dependency ("cat" → "sat"), another captures adjective-noun or determiner-noun ("the" → "cat"), another captures spatial relation ("on" → "mat"), another captures self-attention for positional encoding. The concatenation of all heads provides a richer representation than any single head.
 
 ### Q6: Explain the significance of positional encoding in Transformers.
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-handwritten.svg" alt="Handwritten: Explain the significance of positional encoding in Transformers." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-diagram.svg" alt="Diagram: Explain the significance of positional encoding in Transformers." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/explain-the-significance-of-positional-encoding-in-transformers-sticky.svg" alt="Sticky Note: Explain the significance of positional encoding in Transformers." width="30%">
-</a>
 
 
 Unlike RNNs which process tokens sequentially (inherently ordered), Transformers process all tokens in parallel and have no built-in notion of position. Positional encoding adds a unique signal for each position. The original Transformer used sinusoidal functions: PE(pos, 2i) = sin(pos/10000^(2i/d)) and PE(pos, 2i+1) = cos(pos/10000^(2i/d)). This allows the model to learn relative positions (PE(pos+k) is a linear function of PE(pos)), enabling length generalization beyond the training context window.
@@ -1873,30 +1623,10 @@ Unlike RNNs which process tokens sequentially (inherently ordered), Transformers
 
 ### Case Study: Google Search BERT Integration
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-handwritten.svg" alt="Handwritten: Case Study: Google Search BERT Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-diagram.svg" alt="Diagram: Case Study: Google Search BERT Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-google-search-bert-integration-sticky.svg" alt="Sticky Note: Case Study: Google Search BERT Integration" width="30%">
-</a>
-
 
 Before BERT, Google Search struggled with prepositions. For "2019 brazil traveler to USA need visa," the system ignored "to" and returned results about Brazilians visiting other countries. After BERT's 2019 integration, the model correctly understood the directional relationship — a Brazilian wanting to travel TO the USA. This single change improved 1 in 10 search queries, the largest improvement in Google Search history.
 
 ### Case Study: Gmail Spam Filter
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-handwritten.svg" alt="Handwritten: Case Study: Gmail Spam Filter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-diagram.svg" alt="Diagram: Case Study: Gmail Spam Filter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/12-nlp/case-study-gmail-spam-filter-sticky.svg" alt="Sticky Note: Case Study: Gmail Spam Filter" width="30%">
-</a>
 
 
 Gmail's spam filter processes billions of messages daily using:

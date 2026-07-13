@@ -88,16 +88,6 @@ flowchart LR
 
 ### 8.1 Project Overview
 
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-handwritten.svg" alt="Handwritten: 8.1 Project Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-diagram.svg" alt="Diagram: 8.1 Project Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-1-project-overview-sticky.svg" alt="Sticky Note: 8.1 Project Overview" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Apply all concepts from the course in a single comprehensive capstone project.
@@ -116,16 +106,6 @@ TeamSynth is a team collaboration platform that embeds AI agents directly into t
 4. Exposing the knowledge base and agent capabilities through MCP servers for external AI tools.
 
 ### 8.2 Part A Ã¢â‚¬â€ System Architecture
-
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-handwritten.svg" alt="Handwritten: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-diagram.svg" alt="Diagram: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-2-part-a-system-architecture-sticky.svg" alt="Sticky Note: 8.2 Part A Ã¢â‚¬â€ System Architecture" width="30%">
-</a>
 
 
 **High-Level Topology**
@@ -160,16 +140,6 @@ AI SDK Layer (DocumentAnalysis, MeetingSummarizer, CodeReview, SearchAgent)
 | Separate AI worker queues | AI generation can take 30-60 seconds. Isolating prevents head-of-line blocking on request queues. |
 
 ### 8.3 Part B Ã¢â‚¬â€ Data Model
-
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-handwritten.svg" alt="Handwritten: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-diagram.svg" alt="Diagram: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-3-part-b-data-model-sticky.svg" alt="Sticky Note: 8.3 Part B Ã¢â‚¬â€ Data Model" width="30%">
-</a>
 
 
 The data model supports five domain entities: User, Team, Project, Document, Meeting, and CodeReview. Each entity is team-scoped via a team_id foreign key. The embedding_cache table stores pgvector embeddings polymorphically across all content types.
@@ -401,16 +371,6 @@ CREATE TABLE agent_logs (
 
 ### 8.4 Part C Ã¢â‚¬â€ AI Agent Layer
 
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-handwritten.svg" alt="Handwritten: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-diagram.svg" alt="Diagram: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-4-part-c-ai-agent-layer-sticky.svg" alt="Sticky Note: 8.4 Part C Ã¢â‚¬â€ AI Agent Layer" width="30%">
-</a>
-
 
 TeamSynth defines four specialized agents built on a shared `BaseAgent` class. Each agent logs every execution to `agent_logs` for observability and cost tracking.
 
@@ -461,16 +421,6 @@ public function runFullReview(int $codeReviewId): array
 
 ### 8.5 Part D Ã¢â‚¬â€ MCP Servers
 
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-handwritten.svg" alt="Handwritten: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-diagram.svg" alt="Diagram: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-5-part-d-mcp-servers-sticky.svg" alt="Sticky Note: 8.5 Part D Ã¢â‚¬â€ MCP Servers" width="30%">
-</a>
-
 
 MCP servers expose TeamSynth capabilities to external AI clients via JSON-RPC endpoints.
 
@@ -498,16 +448,6 @@ Each MCP endpoint validates the JSON-RPC envelope (jsonrpc version, method, para
 
 ### 8.6 Part E Ã¢â‚¬â€ Search and RAG
 
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-handwritten.svg" alt="Handwritten: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-diagram.svg" alt="Diagram: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-6-part-e-search-and-rag-sticky.svg" alt="Sticky Note: 8.6 Part E Ã¢â‚¬â€ Search and RAG" width="30%">
-</a>
-
 
 Search operates at three tiers with progressive fallback:
 
@@ -530,16 +470,6 @@ Search operates at three tiers with progressive fallback:
 7. Result cached via semantic key (query embedding hash + options hash) for 5-60 min TTL.
 
 ### 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration
-
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-handwritten.svg" alt="Handwritten: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-diagram.svg" alt="Diagram: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-7-part-f-real-time-collaboration-sticky.svg" alt="Sticky Note: 8.7 Part F Ã¢â‚¬â€ Real-Time Collaboration" width="30%">
-</a>
 
 
 Reverb with Laravel Echo powers four real-time features:
@@ -582,16 +512,6 @@ class AgentProgressUpdated implements ShouldBroadcast
 
 ### 8.8 Part G Ã¢â‚¬â€ Deployment
 
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-handwritten.svg" alt="Handwritten: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-diagram.svg" alt="Diagram: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-8-part-g-deployment-sticky.svg" alt="Sticky Note: 8.8 Part G Ã¢â‚¬â€ Deployment" width="30%">
-</a>
-
 
 TeamSynth uses Laravel Vapor for serverless API deployment paired with managed infrastructure.
 
@@ -619,16 +539,6 @@ Git push Ã¢â€ â€™ GitHub Actions:
 ```
 
 ### 8.9 Part H Ã¢â‚¬â€ Testing Strategy
-
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-handwritten.svg" alt="Handwritten: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-diagram.svg" alt="Diagram: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-9-part-h-testing-strategy-sticky.svg" alt="Sticky Note: 8.9 Part H Ã¢â‚¬â€ Testing Strategy" width="30%">
-</a>
 
 
 ```php
@@ -682,16 +592,6 @@ class DocumentAnalysisAgentTest extends TestCase
 
 ### 8.10 Part I Ã¢â‚¬â€ Performance Budget
 
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-handwritten.svg" alt="Handwritten: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-diagram.svg" alt="Diagram: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-10-part-i-performance-budget-sticky.svg" alt="Sticky Note: 8.10 Part I Ã¢â‚¬â€ Performance Budget" width="30%">
-</a>
-
 
 | Metric | Target (p95) | Measurement Tool |
 |---|---|---|
@@ -707,16 +607,6 @@ class DocumentAnalysisAgentTest extends TestCase
 **Budget Enforcement** Ã¢â‚¬â€ A custom middleware tags every response with `X-TeamSynth-Time: {duration_ms}`. A CI pipeline step runs Lighthouse CI to catch regressions. Alert thresholds in Pulse trigger notifications when any metric exceeds 120% of the budget for 5 consecutive minutes.
 
 ### 8.11 Part J Ã¢â‚¬â€ Monitoring
-
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-handwritten.svg" alt="Handwritten: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-diagram.svg" alt="Diagram: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/24-capstone/8-11-part-j-monitoring-sticky.svg" alt="Sticky Note: 8.11 Part J Ã¢â‚¬â€ Monitoring" width="30%">
-</a>
 
 
 **Pulse Dashboard** Ã¢â‚¬â€ Laravel Pulse provides at-a-glance monitoring for slow queries, slow requests, queue throughput, cache hit ratio, and Redis memory usage. Custom Pulse cards display AI token usage per agent type and content type distribution.

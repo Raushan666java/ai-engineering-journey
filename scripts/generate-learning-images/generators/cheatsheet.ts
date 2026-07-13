@@ -1,90 +1,182 @@
 import { ConceptData } from '../types';
 import { escapeXml, truncate } from '../utils';
+import { C, defs, badge, sectionTitle, card } from '../svg-utils';
 
-function chew(text: string, max: number): string[] {
+function wrap(text: string, max: number): string[] {
   const words = text.split(' ');
   const lines: string[] = [];
   let cur = '';
   for (const w of words) {
-    if ((cur + ' ' + w).trim().length > max) { lines.push(cur.trim()); cur = w; }
-    else { cur = cur ? cur + ' ' + w : w; }
+    if ((cur + ' ' + w).trim().length > max) {
+      lines.push(cur.trim());
+      cur = w;
+    } else {
+      cur = cur ? cur + ' ' + w : w;
+    }
   }
   if (cur.trim()) lines.push(cur.trim());
   return lines;
 }
 
 export function generateCheatsheet(data: ConceptData): string {
-  const w = 600, h = 900;
+  const w = 600;
+  const h = 900;
   const parts: string[] = [];
-  let y = 70;
-  const colW = (w - 80) / 2;
 
-  // Title
-  parts.push(`  <text x="${w / 2}" y="${y}" font-size="16" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">${escapeXml(truncate(data.title, 40))}</text>`);
-  y += 30;
+  const margin = 28;
+  const colGap = 16;
+  const colW = (w - margin * 2 - colGap) / 2; // ~264
+  const pad = 10;
 
-  // Left column: Concepts
-  parts.push(`  <text x="30" y="${y}" font-size="12" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">KEY CONCEPTS</text>
-  <line x1="30" y1="${y + 4}" x2="${30 + colW}" y2="${y + 4}" stroke="#2563eb" stroke-width="1"/>`);
-  y += 24;
-  for (const c of data.concepts.slice(0, 6)) {
-    const clines = chew(escapeXml(`${c.term}: ${truncate(c.definition, 50)}`), 24);
-    for (const cl of clines) {
-      if (y > 400) break;
-      parts.push(`  <text x="35" y="${y}" font-size="9" fill="#475569" font-family="Arial, sans-serif">${cl}</text>`);
-      y += 13;
+  const leftX = margin;
+  const rightX = leftX + colW + colGap;
+  const dividerX = leftX + colW + colGap / 2;
+
+  // ── Title section ──
+  const titleY = 68;
+  parts.push(`  <text x="${w / 2}" y="${titleY}" font-size="18" font-weight="bold" fill="${C.text}" text-anchor="middle" font-family="Arial, sans-serif" letter-spacing="0.5">${escapeXml(truncate(data.title, 44))}</text>`);
+
+  const badgeY = titleY + 24;
+  if (data.keywords.length > 0) {
+    const cat = data.keywords[0].category || data.keywords[0].term;
+    const bw = cat.length * 7 + 20;
+    parts.push(`  <rect x="${(w - bw) / 2}" y="${badgeY - 10}" width="${bw}" height="20" rx="10" fill="${C.primary}" opacity="0.10"/>
+      <text x="${w / 2}" y="${badgeY + 4}" font-size="10" font-weight="bold" fill="${C.primary}" text-anchor="middle" font-family="Arial, sans-serif">${escapeXml(cat)}</text>`);
+  }
+
+  // ── Top section divider ──
+  const topSectionTop = badgeY + 22;
+
+  // ──── LEFT COLUMN: Key Concepts ────
+  const topSectionHeight = 340;
+  const topSectionBottom = topSectionTop + topSectionHeight;
+
+  parts.push(`  <g filter="url(#shadowSm)">${card(leftX, topSectionTop, colW, topSectionHeight, C.primary)}</g>`);
+  parts.push(`  ${sectionTitle('Key Concepts', leftX + pad, topSectionTop + 20, C.primary)}`);
+
+  let ly = topSectionTop + 34;
+  for (const c of data.concepts.slice(0, 8)) {
+    if (ly > topSectionBottom - 18) break;
+    const term = escapeXml(c.term);
+    const def = escapeXml(truncate(c.definition, 58));
+    const lines = wrap(`${term}: ${def}`, 26);
+    for (const l of lines) {
+      if (ly > topSectionBottom - 18) break;
+      parts.push(`  <text x="${leftX + pad + 4}" y="${ly}" font-size="9" fill="${C.text}" font-family="Arial, sans-serif">${l}</text>`);
+      ly += 13;
     }
-    y += 2;
+    ly += 3;
   }
 
-  // Right column: Formulas & Tips
-  let ry = 70;
-  parts.push(`  <text x="${30 + colW + 20}" y="${ry}" font-size="12" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">FORMULAS & TIPS</text>
-  <line x1="${30 + colW + 20}" y1="${ry + 4}" x2="${w - 30}" y2="${ry + 4}" stroke="#059669" stroke-width="1"/>`);
-  ry += 24;
-  for (const f of data.formulas.slice(0, 4)) {
-    if (ry > 300) break;
-    parts.push(`  <text x="${30 + colW + 25}" y="${ry}" font-size="9" fill="#059669" font-weight="bold" font-family="Arial, sans-serif">${escapeXml(f.name)}:</text>
-    <text x="${30 + colW + 25}" y="${ry + 13}" font-size="9" fill="#475569" font-family="Arial, sans-serif">${escapeXml(truncate(f.expression, 35))}</text>`);
-    ry += 28;
+  // ──── RIGHT COLUMN: Formulas & Tips ────
+  parts.push(`  <g filter="url(#shadowSm)">${card(rightX, topSectionTop, colW, topSectionHeight, C.secondary)}</g>`);
+  parts.push(`  ${sectionTitle('Formulas & Tips', rightX + pad, topSectionTop + 20, C.secondary)}`);
+
+  let ry = topSectionTop + 34;
+  for (const f of data.formulas.slice(0, 5)) {
+    if (ry > topSectionBottom - 18) break;
+    parts.push(`  <text x="${rightX + pad + 4}" y="${ry}" font-size="9" font-weight="bold" fill="${C.secondary}" font-family="Arial, sans-serif">${escapeXml(f.name)}</text>`);
+    ry += 13;
+    const expr = escapeXml(truncate(f.expression, 40));
+    const eLines = wrap(expr, 26);
+    for (const el of eLines) {
+      if (ry > topSectionBottom - 18) break;
+      parts.push(`  <text x="${rightX + pad + 4}" y="${ry}" font-size="8" fill="${C.textMuted}" font-family="Arial, sans-serif" font-style="italic">${el}</text>`);
+      ry += 12;
+    }
+    ry += 4;
   }
 
-  // Bottom section: Interview & Mistakes
-  const bottomY = Math.max(y + 40, 480);
-  let by = bottomY;
+  // ── Horizontal divider between top and bottom sections ──
+  const midDividerY = topSectionBottom + 8;
+  parts.push(`  <line x1="${margin + 10}" y1="${midDividerY}" x2="${w - margin - 10}" y2="${midDividerY}" stroke="${C.border}" stroke-width="0.5" stroke-dasharray="4,3"/>`);
 
-  parts.push(`  <line x1="30" y1="${by - 10}" x2="${w - 30}" y2="${by - 10}" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="30" y="${by + 4}" font-size="12" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">INTERVIEW PREP</text>
-  <line x1="30" y1="${by + 8}" x2="${30 + colW}" y2="${by + 8}" stroke="#dc2626" stroke-width="1"/>`);
-  by += 24;
+  // ── Bottom section ──
+  const bottomSectionTop = midDividerY + 8;
+  const bottomSectionHeight = h - bottomSectionTop - 44;
+
+  // ──── LEFT COLUMN: Interview Prep ────
+  parts.push(`  <g filter="url(#shadowSm)">${card(leftX, bottomSectionTop, colW, bottomSectionHeight, C.danger)}</g>`);
+  parts.push(`  ${sectionTitle('Interview Prep', leftX + pad, bottomSectionTop + 20, C.danger)}`);
+
+  let by = bottomSectionTop + 34;
   for (const iq of data.interviewQuestions.slice(0, 3)) {
-    if (by > h - 100) break;
-    parts.push(`  <text x="35" y="${by}" font-size="9" fill="#7f1d1d" font-family="Arial, sans-serif">Q: ${escapeXml(truncate(iq.question, 55))}</text>`);
-    by += 14;
-    parts.push(`  <text x="35" y="${by}" font-size="8" fill="#64748b" font-family="Arial, sans-serif">${escapeXml(truncate(iq.answer, 55))}</text>`);
-    by += 20;
+    if (by > h - 56) break;
+    const q = escapeXml(iq.question);
+    const a = escapeXml(truncate(iq.answer, 58));
+    parts.push(`  <text x="${leftX + pad + 4}" y="${by}" font-size="9" font-weight="bold" fill="${C.danger}" font-family="Arial, sans-serif">Q:</text>`);
+    const qLines = wrap(q, 24);
+    let qy = by;
+    for (const l of qLines) {
+      parts.push(`  <text x="${leftX + pad + 14}" y="${qy}" font-size="8" fill="${C.text}" font-family="Arial, sans-serif">${l}</text>`);
+      qy += 12;
+    }
+    by = qy + 1;
+    const aLines = wrap(a, 24);
+    for (const l of aLines) {
+      if (by > h - 56) break;
+      parts.push(`  <text x="${leftX + pad + 14}" y="${by}" font-size="7" fill="${C.textMuted}" font-family="Arial, sans-serif">${l}</text>`);
+      by += 11;
+    }
+    by += 3;
   }
 
-  // Mistakes column right
-  let my = bottomY;
-  parts.push(`  <text x="${30 + colW + 20}" y="${my + 4}" font-size="12" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">COMMON MISTAKES</text>
-  <line x1="${30 + colW + 20}" y1="${my + 8}" x2="${w - 30}" y2="${my + 8}" stroke="#d97706" stroke-width="1"/>`);
-  my += 24;
-  for (const m of data.commonMistakes.slice(0, 4)) {
-    if (my > h - 100) break;
-    parts.push(`  <text x="${30 + colW + 25}" y="${my}" font-size="9" fill="#92400e" font-family="Arial, sans-serif">⚠ ${escapeXml(truncate(m.mistake, 35))}</text>`);
-    my += 16;
+  // ──── RIGHT COLUMN: Common Mistakes ────
+  parts.push(`  <g filter="url(#shadowSm)">${card(rightX, bottomSectionTop, colW, bottomSectionHeight, C.warning)}</g>`);
+  parts.push(`  ${sectionTitle('Common Mistakes', rightX + pad, bottomSectionTop + 20, C.warning)}`);
+
+  let my = bottomSectionTop + 34;
+  for (const m of data.commonMistakes.slice(0, 5)) {
+    if (my > h - 56) break;
+    const mistake = escapeXml(m.mistake);
+    parts.push(`  <text x="${rightX + pad + 4}" y="${my}" font-size="10" fill="${C.warning}" font-family="Arial, sans-serif">⚠</text>`);
+    const mLines = wrap(mistake, 24);
+    let my2 = my;
+    for (const l of mLines) {
+      parts.push(`  <text x="${rightX + pad + 16}" y="${my2}" font-size="8" fill="${C.text}" font-family="Arial, sans-serif">${l}</text>`);
+      my2 += 12;
+    }
+    my = my2 + 3;
+    if (m.correction) {
+      const corr = escapeXml(truncate(m.correction, 55));
+      const cLines = wrap(corr, 24);
+      for (const l of cLines) {
+        if (my > h - 56) break;
+        parts.push(`  <text x="${rightX + pad + 16}" y="${my}" font-size="7" fill="${C.textMuted}" font-family="Arial, sans-serif" font-style="italic">→ ${l}</text>`);
+        my += 11;
+      }
+    }
+    my += 2;
   }
 
-  // Footer
-  parts.push(`  <text x="${w / 2}" y="${h - 20}" font-size="9" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">${escapeXml(truncate(data.title, 50))} — Quick Reference</text>`);
+  // ── Footer ──
+  parts.push(`  <text x="${w / 2}" y="${h - 20}" font-size="9" fill="${C.textLight}" text-anchor="middle" font-family="Arial, sans-serif">${escapeXml(truncate(data.title, 50))} — Quick Reference · AI Engineering Journey</text>`);
 
+  // ── Algorithms column ──
+  // If there's spare room in the bottom-left for a small algo tip
+  const algoEndY = bottomSectionTop + bottomSectionHeight;
+  if (data.algorithms.length > 0 && by < algoEndY - 30) {
+    parts.push(`  <text x="${leftX + pad + 4}" y="${by}" font-size="8" font-weight="bold" fill="${C.primary}" font-family="Arial, sans-serif">Algo: ${escapeXml(truncate(data.algorithms[0].name, 22))}</text>`);
+    by += 11;
+    const descLines = wrap(escapeXml(truncate(data.algorithms[0].description, 55)), 24);
+    for (const l of descLines) {
+      if (by > algoEndY - 4) break;
+      parts.push(`  <text x="${leftX + pad + 4}" y="${by}" font-size="7" fill="${C.textMuted}" font-family="Arial, sans-serif">${l}</text>`);
+      by += 10;
+    }
+  }
+
+  // ── Assemble SVG ──
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <rect width="${w}" height="${h}" fill="#ffffff" rx="6"/>
+  ${defs()}
+  <!-- Background -->
+  <rect width="${w}" height="${h}" fill="${C.white}"/>
+  <rect width="${w}" height="${h}" fill="url(#gBg)"/>
+  <rect width="${w}" height="${h}" fill="url(#lineGrid)"/>
   <!-- Top accent bar -->
-  <rect x="0" y="0" width="${w}" height="4" fill="#2563eb"/>
-  <!-- Column dividers -->
-  <line x1="${30 + colW + 10}" y1="60" x2="${30 + colW + 10}" y2="${h - 40}" stroke="#e2e8f0" stroke-width="0.5" stroke-dasharray="4,3"/>
+  <rect x="0" y="0" width="${w}" height="4" fill="url(#gBlue)"/>
+  <!-- Column divider (dashed vertical) -->
+  <line x1="${dividerX}" y1="${topSectionTop - 4}" x2="${dividerX}" y2="${h - 40}" stroke="${C.border}" stroke-width="1" stroke-dasharray="5,4"/>
   ${parts.join('\n')}
 </svg>`;
 }

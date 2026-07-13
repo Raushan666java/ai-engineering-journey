@@ -51,21 +51,9 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### The Nature of Software Project Management
-
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-handwritten.svg" alt="Handwritten: The Nature of Software Project Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-diagram.svg" alt="Diagram: The Nature of Software Project Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/the-nature-of-software-project-management-sticky.svg" alt="Sticky Note: The Nature of Software Project Management" width="30%">
-</a>
-
 
 Software project management is the discipline of planning, organising, monitoring, and controlling software projects. Unlike many engineering disciplines, software projects are characterised by high uncertainty, rapid technological change, and difficulty measuring progress.
 
@@ -98,17 +86,6 @@ graph TD
 
 ### Project Planning
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-handwritten.svg" alt="Handwritten: Project Planning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-diagram.svg" alt="Diagram: Project Planning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/project-planning-sticky.svg" alt="Sticky Note: Project Planning" width="30%">
-</a>
-
-
 Project planning begins with defining the project scope — the boundary between what the project will deliver and what it will not. The scope is documented in a **project charter** or **statement of work**.
 
 **Key planning activities:**
@@ -124,17 +101,6 @@ Project planning begins with defining the project scope — the boundary between
 10. Establish a change control process
 
 ### Work Breakdown Structure
-
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-handwritten.svg" alt="Handwritten: Work Breakdown Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-diagram.svg" alt="Diagram: Work Breakdown Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/work-breakdown-structure-sticky.svg" alt="Sticky Note: Work Breakdown Structure" width="30%">
-</a>
-
 
 The WBS decomposes the project into hierarchical work packages. Each level provides increasing detail:
 
@@ -183,17 +149,6 @@ graph TD
 
 ### Estimation Techniques
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-handwritten.svg" alt="Handwritten: Estimation Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-diagram.svg" alt="Diagram: Estimation Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/estimation-techniques-sticky.svg" alt="Sticky Note: Estimation Techniques" width="30%">
-</a>
-
-
 | Technique | Description | Strengths | Weaknesses | Best Used For |
 |-----------|-------------|-----------|------------|---------------|
 | **Expert judgement** | Based on experienced individuals' knowledge | Quick, uses domain expertise | Subjective, biased by recent experience | Early-stage estimates |
@@ -204,17 +159,6 @@ graph TD
 | **Function points** | Measures functionality size | Language-independent, early estimation | Training required, subjectivity in ratings | Projects with clear requirements |
 
 ### Function Points
-
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-handwritten.svg" alt="Handwritten: Function Points" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-diagram.svg" alt="Diagram: Function Points" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/function-points-sticky.svg" alt="Sticky Note: Function Points" width="30%">
-</a>
-
 
 Function points measure the functional size of a system from the user's perspective, independent of technology choices.
 
@@ -294,17 +238,6 @@ class FunctionPointCalculator {
 
 ### COCOMO II
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-handwritten.svg" alt="Handwritten: COCOMO II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-diagram.svg" alt="Diagram: COCOMO II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/cocomo-ii-sticky.svg" alt="Sticky Note: COCOMO II" width="30%">
-</a>
-
-
 COCOMO II addresses modern development practices with three submodels:
 
 1. **Application Composition:** For projects built with integrated tools (RAD environments)
@@ -379,17 +312,6 @@ class COCOMOSimulator {
 
 ### PERT and Scheduling
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-handwritten.svg" alt="Handwritten: PERT and Scheduling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-diagram.svg" alt="Diagram: PERT and Scheduling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/pert-and-scheduling-sticky.svg" alt="Sticky Note: PERT and Scheduling" width="30%">
-</a>
-
-
 PERT (Program Evaluation and Review Technique) uses three time estimates per activity to account for uncertainty:
 - **Optimistic (O):** Best-case duration (everything goes right)
 - **Most Likely (M):** Normal duration (typical conditions)
@@ -442,17 +364,6 @@ gantt
 
 ### Earned Value Management (EVM)
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-handwritten.svg" alt="Handwritten: Earned Value Management (EVM)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-diagram.svg" alt="Diagram: Earned Value Management (EVM)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/earned-value-management-evm-sticky.svg" alt="Sticky Note: Earned Value Management (EVM)" width="30%">
-</a>
-
-
 EVM integrates scope, schedule, and cost data into a unified performance measurement framework.
 
 | Metric | Formula | Meaning |
@@ -493,17 +404,6 @@ At current efficiency, the project will cost $574,713 and be ~25% late.
 
 ### Risk Management
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-handwritten.svg" alt="Handwritten: Risk Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-diagram.svg" alt="Diagram: Risk Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/risk-management-sticky.svg" alt="Sticky Note: Risk Management" width="30%">
-</a>
-
-
 ```mermaid
 graph LR
     classDef id fill:#fce4ec,stroke:#c62828,stroke-width:2px
@@ -538,17 +438,6 @@ graph LR
 
 ### Team Organisation
 
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-handwritten.svg" alt="Handwritten: Team Organisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-diagram.svg" alt="Diagram: Team Organisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/team-organisation-sticky.svg" alt="Sticky Note: Team Organisation" width="30%">
-</a>
-
-
 | Model | Description | Best For | Limitations |
 |-------|-------------|----------|-------------|
 | **Chief Programmer** | Centralised authority in senior developer | Projects with critical technical decisions | Single point of failure, burnout risk |
@@ -558,17 +447,6 @@ graph LR
 | **Component Team** | Team owns a system component | Large systems with clear modularity | Integration challenges, silo mentality |
 
 ### Planning Poker Estimation
-
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-handwritten.svg" alt="Handwritten: Planning Poker Estimation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-diagram.svg" alt="Diagram: Planning Poker Estimation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/08-project-management/planning-poker-estimation-sticky.svg" alt="Sticky Note: Planning Poker Estimation" width="30%">
-</a>
-
 
 Planning poker is a consensus-based estimation technique used in Agile teams:
 

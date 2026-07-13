@@ -80,16 +80,6 @@ Java exceptions are objects representing abnormal conditions. The root class is 
 
 ### 1.1 Hierarchy Overview
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-1-hierarchy-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-1-hierarchy-overview-handwritten.svg" alt="Handwritten: 1.1 Hierarchy Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-1-hierarchy-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-1-hierarchy-overview-diagram.svg" alt="Diagram: 1.1 Hierarchy Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-1-hierarchy-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-1-hierarchy-overview-sticky.svg" alt="Sticky Note: 1.1 Hierarchy Overview" width="30%">
-</a>
-
 
 ```
 Throwable
@@ -118,16 +108,6 @@ Throwable
 **RuntimeException** → unchecked; indicates a programming mistake (null check, bounds check, etc.).
 
 ### 1.2 Checked vs. Unchecked Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-2-checked-vs-unchecked-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-2-checked-vs-unchecked-exceptions-handwritten.svg" alt="Handwritten: 1.2 Checked vs. Unchecked Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-2-checked-vs-unchecked-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-2-checked-vs-unchecked-exceptions-diagram.svg" alt="Diagram: 1.2 Checked vs. Unchecked Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-2-checked-vs-unchecked-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-2-checked-vs-unchecked-exceptions-sticky.svg" alt="Sticky Note: 1.2 Checked vs. Unchecked Exceptions" width="30%">
-</a>
 
 
 ```java
@@ -176,16 +156,6 @@ public class CheckedVsUnchecked {
 ```
 
 ### 1.3 Common Runtime Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-3-common-runtime-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-3-common-runtime-exceptions-handwritten.svg" alt="Handwritten: 1.3 Common Runtime Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-3-common-runtime-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-3-common-runtime-exceptions-diagram.svg" alt="Diagram: 1.3 Common Runtime Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/1-3-common-runtime-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/1-3-common-runtime-exceptions-sticky.svg" alt="Sticky Note: 1.3 Common Runtime Exceptions" width="30%">
-</a>
 
 
 ```java
@@ -260,16 +230,6 @@ public class CommonRuntimeExceptions {
 
 ### 2.1 Basic Syntax
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-1-basic-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-1-basic-syntax-handwritten.svg" alt="Handwritten: 2.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-1-basic-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-1-basic-syntax-diagram.svg" alt="Diagram: 2.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-1-basic-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-1-basic-syntax-sticky.svg" alt="Sticky Note: 2.1 Basic Syntax" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -308,16 +268,6 @@ public class TryCatchFinallyBasics {
 
 ### 2.2 Multi-Catch
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-2-multi-catch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-2-multi-catch-handwritten.svg" alt="Handwritten: 2.2 Multi-Catch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-2-multi-catch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-2-multi-catch-diagram.svg" alt="Diagram: 2.2 Multi-Catch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-2-multi-catch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-2-multi-catch-sticky.svg" alt="Sticky Note: 2.2 Multi-Catch" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -353,16 +303,6 @@ public class MultiCatchExample {
 ```
 
 ### 2.3 try-with-resources (Java 7+)
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-3-try-with-resources-java-7-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-3-try-with-resources-java-7-handwritten.svg" alt="Handwritten: 2.3 try-with-resources (Java 7+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-3-try-with-resources-java-7-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-3-try-with-resources-java-7-diagram.svg" alt="Diagram: 2.3 try-with-resources (Java 7+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-3-try-with-resources-java-7-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-3-try-with-resources-java-7-sticky.svg" alt="Sticky Note: 2.3 try-with-resources (Java 7+)" width="30%">
-</a>
 
 
 Resources that implement `AutoCloseable` are closed automatically at the end of the try block.
@@ -407,16 +347,6 @@ public class TryWithResourcesExample {
 ```
 
 ### 2.4 AutoCloseable Interface
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-4-autocloseable-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-4-autocloseable-interface-handwritten.svg" alt="Handwritten: 2.4 AutoCloseable Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-4-autocloseable-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-4-autocloseable-interface-diagram.svg" alt="Diagram: 2.4 AutoCloseable Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-4-autocloseable-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-4-autocloseable-interface-sticky.svg" alt="Sticky Note: 2.4 AutoCloseable Interface" width="30%">
-</a>
 
 
 ```java
@@ -466,16 +396,6 @@ public class CustomResource implements AutoCloseable {
 ```
 
 ### 2.5 Suppressed Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-5-suppressed-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-5-suppressed-exceptions-handwritten.svg" alt="Handwritten: 2.5 Suppressed Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-5-suppressed-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-5-suppressed-exceptions-diagram.svg" alt="Diagram: 2.5 Suppressed Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-5-suppressed-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-5-suppressed-exceptions-sticky.svg" alt="Sticky Note: 2.5 Suppressed Exceptions" width="30%">
-</a>
 
 
 When both the try block and the close() method throw exceptions, the close exception is *suppressed*.
@@ -533,16 +453,6 @@ public class SuppressedExceptionDemo {
 
 ### 2.6 try-with-resources via Reflection (Java 9+)
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-6-try-with-resources-via-reflection-java-9-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-6-try-with-resources-via-reflection-java-9-handwritten.svg" alt="Handwritten: 2.6 try-with-resources via Reflection (Java 9+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-6-try-with-resources-via-reflection-java-9-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-6-try-with-resources-via-reflection-java-9-diagram.svg" alt="Diagram: 2.6 try-with-resources via Reflection (Java 9+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/2-6-try-with-resources-via-reflection-java-9-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/2-6-try-with-resources-via-reflection-java-9-sticky.svg" alt="Sticky Note: 2.6 try-with-resources via Reflection (Java 9+)" width="30%">
-</a>
-
 
 With Java 9, you can use a resource variable declared outside the try block as long as it is effectively final.
 
@@ -580,16 +490,6 @@ public class TryWithResourcesJava9 {
 
 ### 3.1 Extending Exception (Checked)
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-1-extending-exception-checked-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-1-extending-exception-checked-handwritten.svg" alt="Handwritten: 3.1 Extending Exception (Checked)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-1-extending-exception-checked-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-1-extending-exception-checked-diagram.svg" alt="Diagram: 3.1 Extending Exception (Checked)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-1-extending-exception-checked-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-1-extending-exception-checked-sticky.svg" alt="Sticky Note: 3.1 Extending Exception (Checked)" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -621,16 +521,6 @@ public class UserNotFoundException extends Exception {
 ```
 
 ### 3.2 Extending RuntimeException (Unchecked)
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-2-extending-runtimeexception-unchecked-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-2-extending-runtimeexception-unchecked-handwritten.svg" alt="Handwritten: 3.2 Extending RuntimeException (Unchecked)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-2-extending-runtimeexception-unchecked-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-2-extending-runtimeexception-unchecked-diagram.svg" alt="Diagram: 3.2 Extending RuntimeException (Unchecked)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-2-extending-runtimeexception-unchecked-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-2-extending-runtimeexception-unchecked-sticky.svg" alt="Sticky Note: 3.2 Extending RuntimeException (Unchecked)" width="30%">
-</a>
 
 
 ```java
@@ -669,16 +559,6 @@ public class ValidationException extends RuntimeException {
 ```
 
 ### 3.3 Using Custom Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-3-using-custom-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-3-using-custom-exceptions-handwritten.svg" alt="Handwritten: 3.3 Using Custom Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-3-using-custom-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-3-using-custom-exceptions-diagram.svg" alt="Diagram: 3.3 Using Custom Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-3-using-custom-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-3-using-custom-exceptions-sticky.svg" alt="Sticky Note: 3.3 Using Custom Exceptions" width="30%">
-</a>
 
 
 ```java
@@ -758,16 +638,6 @@ public class CustomExceptionDemo {
 
 ### 3.4 Exception Chaining
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-4-exception-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-4-exception-chaining-handwritten.svg" alt="Handwritten: 3.4 Exception Chaining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-4-exception-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-4-exception-chaining-diagram.svg" alt="Diagram: 3.4 Exception Chaining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/3-4-exception-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/3-4-exception-chaining-sticky.svg" alt="Sticky Note: 3.4 Exception Chaining" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -825,16 +695,6 @@ public class ExceptionChainingDemo {
 
 ### 4.1 Fail-Fast
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-1-fail-fast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-1-fail-fast-handwritten.svg" alt="Handwritten: 4.1 Fail-Fast" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-1-fail-fast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-1-fail-fast-diagram.svg" alt="Diagram: 4.1 Fail-Fast" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-1-fail-fast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-1-fail-fast-sticky.svg" alt="Sticky Note: 4.1 Fail-Fast" width="30%">
-</a>
-
 
 Validate inputs early and throw exceptions at the point of failure, not later.
 
@@ -877,16 +737,6 @@ public class OrderService {
 
 ### 4.2 Exception Wrapping
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-2-exception-wrapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-2-exception-wrapping-handwritten.svg" alt="Handwritten: 4.2 Exception Wrapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-2-exception-wrapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-2-exception-wrapping-diagram.svg" alt="Diagram: 4.2 Exception Wrapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-2-exception-wrapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-2-exception-wrapping-sticky.svg" alt="Sticky Note: 4.2 Exception Wrapping" width="30%">
-</a>
-
 
 Wrap low-level exceptions into meaningful higher-level exceptions.
 
@@ -922,16 +772,6 @@ class ConfigService {
 ```
 
 ### 4.3 Logging Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-3-logging-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-3-logging-exceptions-handwritten.svg" alt="Handwritten: 4.3 Logging Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-3-logging-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-3-logging-exceptions-diagram.svg" alt="Diagram: 4.3 Logging Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-3-logging-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-3-logging-exceptions-sticky.svg" alt="Sticky Note: 4.3 Logging Exceptions" width="30%">
-</a>
 
 
 Always log exceptions at the appropriate level. Never silently swallow.
@@ -1003,16 +843,6 @@ public class LoggingExceptions {
 ```
 
 ### 4.4 Never Swallow Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-4-never-swallow-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-4-never-swallow-exceptions-handwritten.svg" alt="Handwritten: 4.4 Never Swallow Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-4-never-swallow-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-4-never-swallow-exceptions-diagram.svg" alt="Diagram: 4.4 Never Swallow Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-4-never-swallow-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-4-never-swallow-exceptions-sticky.svg" alt="Sticky Note: 4.4 Never Swallow Exceptions" width="30%">
-</a>
 
 
 ```java
@@ -1090,16 +920,6 @@ class ServiceException extends RuntimeException {
 ```
 
 ### 4.5 API Design with Exceptions
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-5-api-design-with-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-5-api-design-with-exceptions-handwritten.svg" alt="Handwritten: 4.5 API Design with Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-5-api-design-with-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-5-api-design-with-exceptions-diagram.svg" alt="Diagram: 4.5 API Design with Exceptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/4-5-api-design-with-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/4-5-api-design-with-exceptions-sticky.svg" alt="Sticky Note: 4.5 API Design with Exceptions" width="30%">
-</a>
 
 
 ```java
@@ -1182,16 +1002,6 @@ class Result<T> {
 
 ### 5.1 The File Class
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-1-the-file-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-1-the-file-class-handwritten.svg" alt="Handwritten: 5.1 The File Class" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-1-the-file-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-1-the-file-class-diagram.svg" alt="Diagram: 5.1 The File Class" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-1-the-file-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-1-the-file-class-sticky.svg" alt="Sticky Note: 5.1 The File Class" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -1247,16 +1057,6 @@ public class FileClassDemo {
 ```
 
 ### 5.2 Byte Streams: FileInputStream / FileOutputStream
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-2-byte-streams-fileinputstream-fileoutputstream-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-2-byte-streams-fileinputstream-fileoutputstream-handwritten.svg" alt="Handwritten: 5.2 Byte Streams: FileInputStream / FileOutputStream" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-2-byte-streams-fileinputstream-fileoutputstream-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-2-byte-streams-fileinputstream-fileoutputstream-diagram.svg" alt="Diagram: 5.2 Byte Streams: FileInputStream / FileOutputStream" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-2-byte-streams-fileinputstream-fileoutputstream-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-2-byte-streams-fileinputstream-fileoutputstream-sticky.svg" alt="Sticky Note: 5.2 Byte Streams: FileInputStream / FileOutputStream" width="30%">
-</a>
 
 
 ```java
@@ -1320,16 +1120,6 @@ public class ByteStreamDemo {
 ```
 
 ### 5.3 Buffered Streams
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-3-buffered-streams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-3-buffered-streams-handwritten.svg" alt="Handwritten: 5.3 Buffered Streams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-3-buffered-streams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-3-buffered-streams-diagram.svg" alt="Diagram: 5.3 Buffered Streams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-3-buffered-streams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-3-buffered-streams-sticky.svg" alt="Sticky Note: 5.3 Buffered Streams" width="30%">
-</a>
 
 
 ```java
@@ -1395,16 +1185,6 @@ public class BufferedStreamDemo {
 
 ### 5.4 Character Streams: Reader / Writer
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-4-character-streams-reader-writer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-4-character-streams-reader-writer-handwritten.svg" alt="Handwritten: 5.4 Character Streams: Reader / Writer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-4-character-streams-reader-writer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-4-character-streams-reader-writer-diagram.svg" alt="Diagram: 5.4 Character Streams: Reader / Writer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-4-character-streams-reader-writer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-4-character-streams-reader-writer-sticky.svg" alt="Sticky Note: 5.4 Character Streams: Reader / Writer" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -1446,16 +1226,6 @@ public class CharacterStreamDemo {
 ```
 
 ### 5.5 InputStreamReader / OutputStreamWriter (Bridges)
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-5-inputstreamreader-outputstreamwriter-bridges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-5-inputstreamreader-outputstreamwriter-bridges-handwritten.svg" alt="Handwritten: 5.5 InputStreamReader / OutputStreamWriter (Bridges)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-5-inputstreamreader-outputstreamwriter-bridges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-5-inputstreamreader-outputstreamwriter-bridges-diagram.svg" alt="Diagram: 5.5 InputStreamReader / OutputStreamWriter (Bridges)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-5-inputstreamreader-outputstreamwriter-bridges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-5-inputstreamreader-outputstreamwriter-bridges-sticky.svg" alt="Sticky Note: 5.5 InputStreamReader / OutputStreamWriter (Bridges)" width="30%">
-</a>
 
 
 ```java
@@ -1501,16 +1271,6 @@ public class StreamBridgeDemo {
 ```
 
 ### 5.6 BufferedReader / BufferedWriter
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-6-bufferedreader-bufferedwriter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-6-bufferedreader-bufferedwriter-handwritten.svg" alt="Handwritten: 5.6 BufferedReader / BufferedWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-6-bufferedreader-bufferedwriter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-6-bufferedreader-bufferedwriter-diagram.svg" alt="Diagram: 5.6 BufferedReader / BufferedWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-6-bufferedreader-bufferedwriter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-6-bufferedreader-bufferedwriter-sticky.svg" alt="Sticky Note: 5.6 BufferedReader / BufferedWriter" width="30%">
-</a>
 
 
 ```java
@@ -1569,16 +1329,6 @@ public class BufferedReadWriteDemo {
 
 ### 5.7 PrintWriter
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-7-printwriter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-7-printwriter-handwritten.svg" alt="Handwritten: 5.7 PrintWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-7-printwriter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-7-printwriter-diagram.svg" alt="Diagram: 5.7 PrintWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-7-printwriter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-7-printwriter-sticky.svg" alt="Sticky Note: 5.7 PrintWriter" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -1614,16 +1364,6 @@ public class PrintWriterDemo {
 ```
 
 ### 5.8 DataInputStream / DataOutputStream
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-8-datainputstream-dataoutputstream-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-8-datainputstream-dataoutputstream-handwritten.svg" alt="Handwritten: 5.8 DataInputStream / DataOutputStream" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-8-datainputstream-dataoutputstream-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-8-datainputstream-dataoutputstream-diagram.svg" alt="Diagram: 5.8 DataInputStream / DataOutputStream" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-8-datainputstream-dataoutputstream-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-8-datainputstream-dataoutputstream-sticky.svg" alt="Sticky Note: 5.8 DataInputStream / DataOutputStream" width="30%">
-</a>
 
 
 ```java
@@ -1672,16 +1412,6 @@ public class DataStreamDemo {
 ```
 
 ### 5.9 ObjectInputStream / ObjectOutputStream (Serialization)
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-9-objectinputstream-objectoutputstream-serialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-9-objectinputstream-objectoutputstream-serialization-handwritten.svg" alt="Handwritten: 5.9 ObjectInputStream / ObjectOutputStream (Serialization)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-9-objectinputstream-objectoutputstream-serialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-9-objectinputstream-objectoutputstream-serialization-diagram.svg" alt="Diagram: 5.9 ObjectInputStream / ObjectOutputStream (Serialization)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/5-9-objectinputstream-objectoutputstream-serialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/5-9-objectinputstream-objectoutputstream-serialization-sticky.svg" alt="Sticky Note: 5.9 ObjectInputStream / ObjectOutputStream (Serialization)" width="30%">
-</a>
 
 
 ```java
@@ -1757,16 +1487,6 @@ public class ObjectStreamDemo {
 
 ### 6.1 Path
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-1-path-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-1-path-handwritten.svg" alt="Handwritten: 6.1 Path" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-1-path-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-1-path-diagram.svg" alt="Diagram: 6.1 Path" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-1-path-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-1-path-sticky.svg" alt="Sticky Note: 6.1 Path" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -1820,16 +1540,6 @@ public class PathDemo {
 ```
 
 ### 6.2 The Files Utility Class
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-2-the-files-utility-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-2-the-files-utility-class-handwritten.svg" alt="Handwritten: 6.2 The Files Utility Class" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-2-the-files-utility-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-2-the-files-utility-class-diagram.svg" alt="Diagram: 6.2 The Files Utility Class" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-2-the-files-utility-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-2-the-files-utility-class-sticky.svg" alt="Sticky Note: 6.2 The Files Utility Class" width="30%">
-</a>
 
 
 ```java
@@ -1913,16 +1623,6 @@ public class FilesUtilityDemo {
 ```
 
 ### 6.3 Walking the File Tree
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-3-walking-the-file-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-3-walking-the-file-tree-handwritten.svg" alt="Handwritten: 6.3 Walking the File Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-3-walking-the-file-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-3-walking-the-file-tree-diagram.svg" alt="Diagram: 6.3 Walking the File Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-3-walking-the-file-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-3-walking-the-file-tree-sticky.svg" alt="Sticky Note: 6.3 Walking the File Tree" width="30%">
-</a>
 
 
 ```java
@@ -2024,16 +1724,6 @@ public class FileTreeWalkDemo {
 
 ### 6.4 Directory Stream and Find
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-4-directory-stream-and-find-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-4-directory-stream-and-find-handwritten.svg" alt="Handwritten: 6.4 Directory Stream and Find" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-4-directory-stream-and-find-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-4-directory-stream-and-find-diagram.svg" alt="Diagram: 6.4 Directory Stream and Find" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-4-directory-stream-and-find-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-4-directory-stream-and-find-sticky.svg" alt="Sticky Note: 6.4 Directory Stream and Find" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2094,16 +1784,6 @@ public class DirectoryStreamDemo {
 
 ### 6.5 WatchService → File Change Monitoring
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-5-watchservice-file-change-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-5-watchservice-file-change-monitoring-handwritten.svg" alt="Handwritten: 6.5 WatchService → File Change Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-5-watchservice-file-change-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-5-watchservice-file-change-monitoring-diagram.svg" alt="Diagram: 6.5 WatchService → File Change Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-5-watchservice-file-change-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-5-watchservice-file-change-monitoring-sticky.svg" alt="Sticky Note: 6.5 WatchService → File Change Monitoring" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2156,16 +1836,6 @@ public class WatchServiceDemo {
 ```
 
 ### 6.6 FileChannel and Memory-Mapped Files
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-6-filechannel-and-memory-mapped-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-6-filechannel-and-memory-mapped-files-handwritten.svg" alt="Handwritten: 6.6 FileChannel and Memory-Mapped Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-6-filechannel-and-memory-mapped-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-6-filechannel-and-memory-mapped-files-diagram.svg" alt="Diagram: 6.6 FileChannel and Memory-Mapped Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-6-filechannel-and-memory-mapped-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-6-filechannel-and-memory-mapped-files-sticky.svg" alt="Sticky Note: 6.6 FileChannel and Memory-Mapped Files" width="30%">
-</a>
 
 
 ```java
@@ -2241,16 +1911,6 @@ public class FileChannelDemo {
 
 ### 6.7 Scatter / Gather I/O
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-7-scatter-gather-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-7-scatter-gather-i-o-handwritten.svg" alt="Handwritten: 6.7 Scatter / Gather I/O" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-7-scatter-gather-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-7-scatter-gather-i-o-diagram.svg" alt="Diagram: 6.7 Scatter / Gather I/O" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-7-scatter-gather-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-7-scatter-gather-i-o-sticky.svg" alt="Sticky Note: 6.7 Scatter / Gather I/O" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2313,16 +1973,6 @@ public class ScatterGatherDemo {
 
 ### 6.8 FileChannel Transfer (Zero-Copy)
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-8-filechannel-transfer-zero-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-8-filechannel-transfer-zero-copy-handwritten.svg" alt="Handwritten: 6.8 FileChannel Transfer (Zero-Copy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-8-filechannel-transfer-zero-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-8-filechannel-transfer-zero-copy-diagram.svg" alt="Diagram: 6.8 FileChannel Transfer (Zero-Copy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/6-8-filechannel-transfer-zero-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/6-8-filechannel-transfer-zero-copy-sticky.svg" alt="Sticky Note: 6.8 FileChannel Transfer (Zero-Copy)" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2374,16 +2024,6 @@ public class FileTransferDemo {
 ## 7. Serialization Deep Dive
 
 ### 7.1 Serializable Interface and serialVersionUID
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-1-serializable-interface-and-serialversionuid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-1-serializable-interface-and-serialversionuid-handwritten.svg" alt="Handwritten: 7.1 Serializable Interface and serialVersionUID" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-1-serializable-interface-and-serialversionuid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-1-serializable-interface-and-serialversionuid-diagram.svg" alt="Diagram: 7.1 Serializable Interface and serialVersionUID" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-1-serializable-interface-and-serialversionuid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-1-serializable-interface-and-serialversionuid-sticky.svg" alt="Sticky Note: 7.1 Serializable Interface and serialVersionUID" width="30%">
-</a>
 
 
 ```java
@@ -2476,16 +2116,6 @@ class Files {
 
 ### 7.2 The transient Keyword
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-2-the-transient-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-2-the-transient-keyword-handwritten.svg" alt="Handwritten: 7.2 The transient Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-2-the-transient-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-2-the-transient-keyword-diagram.svg" alt="Diagram: 7.2 The transient Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-2-the-transient-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-2-the-transient-keyword-sticky.svg" alt="Sticky Note: 7.2 The transient Keyword" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2548,16 +2178,6 @@ public class TransientFieldDemo {
 ```
 
 ### 7.3 Custom readObject / writeObject
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-3-custom-readobject-writeobject-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-3-custom-readobject-writeobject-handwritten.svg" alt="Handwritten: 7.3 Custom readObject / writeObject" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-3-custom-readobject-writeobject-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-3-custom-readobject-writeobject-diagram.svg" alt="Diagram: 7.3 Custom readObject / writeObject" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-3-custom-readobject-writeobject-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-3-custom-readobject-writeobject-sticky.svg" alt="Sticky Note: 7.3 Custom readObject / writeObject" width="30%">
-</a>
 
 
 ```java
@@ -2644,16 +2264,6 @@ class SecuredDocument implements Serializable {
 
 ### 7.4 Externalizable Interface
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-4-externalizable-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-4-externalizable-interface-handwritten.svg" alt="Handwritten: 7.4 Externalizable Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-4-externalizable-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-4-externalizable-interface-diagram.svg" alt="Diagram: 7.4 Externalizable Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-4-externalizable-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-4-externalizable-interface-sticky.svg" alt="Sticky Note: 7.4 Externalizable Interface" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2733,16 +2343,6 @@ class CompactPoint implements Externalizable {
 ```
 
 ### 7.5 Serialization Proxy Pattern
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-5-serialization-proxy-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-5-serialization-proxy-pattern-handwritten.svg" alt="Handwritten: 7.5 Serialization Proxy Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-5-serialization-proxy-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-5-serialization-proxy-pattern-diagram.svg" alt="Diagram: 7.5 Serialization Proxy Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/7-5-serialization-proxy-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/7-5-serialization-proxy-pattern-sticky.svg" alt="Sticky Note: 7.5 Serialization Proxy Pattern" width="30%">
-</a>
 
 
 ```java
@@ -2859,16 +2459,6 @@ final class Period implements Serializable {
 
 ### 8.1 ByteBuffer → Heap vs. Direct
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-1-bytebuffer-heap-vs-direct-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-1-bytebuffer-heap-vs-direct-handwritten.svg" alt="Handwritten: 8.1 ByteBuffer → Heap vs. Direct" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-1-bytebuffer-heap-vs-direct-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-1-bytebuffer-heap-vs-direct-diagram.svg" alt="Diagram: 8.1 ByteBuffer → Heap vs. Direct" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-1-bytebuffer-heap-vs-direct-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-1-bytebuffer-heap-vs-direct-sticky.svg" alt="Sticky Note: 8.1 ByteBuffer → Heap vs. Direct" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -2947,16 +2537,6 @@ public class ByteBufferDemo {
 ```
 
 ### 8.2 SocketChannel and ServerSocketChannel
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-2-socketchannel-and-serversocketchannel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-2-socketchannel-and-serversocketchannel-handwritten.svg" alt="Handwritten: 8.2 SocketChannel and ServerSocketChannel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-2-socketchannel-and-serversocketchannel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-2-socketchannel-and-serversocketchannel-diagram.svg" alt="Diagram: 8.2 SocketChannel and ServerSocketChannel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-2-socketchannel-and-serversocketchannel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-2-socketchannel-and-serversocketchannel-sticky.svg" alt="Sticky Note: 8.2 SocketChannel and ServerSocketChannel" width="30%">
-</a>
 
 
 ```java
@@ -3046,16 +2626,6 @@ public class SocketChannelDemo {
 
 ### 8.3 Non-Blocking Mode with Selector
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-3-non-blocking-mode-with-selector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-3-non-blocking-mode-with-selector-handwritten.svg" alt="Handwritten: 8.3 Non-Blocking Mode with Selector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-3-non-blocking-mode-with-selector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-3-non-blocking-mode-with-selector-diagram.svg" alt="Diagram: 8.3 Non-Blocking Mode with Selector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/8-3-non-blocking-mode-with-selector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/8-3-non-blocking-mode-with-selector-sticky.svg" alt="Sticky Note: 8.3 Non-Blocking Mode with Selector" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -3134,16 +2704,6 @@ public class NonBlockingSelectorDemo {
 ## 9. File Handling Patterns
 
 ### 9.1 Reading Large Files
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-1-reading-large-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-1-reading-large-files-handwritten.svg" alt="Handwritten: 9.1 Reading Large Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-1-reading-large-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-1-reading-large-files-diagram.svg" alt="Diagram: 9.1 Reading Large Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-1-reading-large-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-1-reading-large-files-sticky.svg" alt="Sticky Note: 9.1 Reading Large Files" width="30%">
-</a>
 
 
 ```java
@@ -3228,16 +2788,6 @@ public class LargeFileReadingDemo {
 
 ### 9.2 Temporary Files
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-2-temporary-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-2-temporary-files-handwritten.svg" alt="Handwritten: 9.2 Temporary Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-2-temporary-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-2-temporary-files-diagram.svg" alt="Diagram: 9.2 Temporary Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-2-temporary-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-2-temporary-files-sticky.svg" alt="Sticky Note: 9.2 Temporary Files" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -3294,16 +2844,6 @@ public class TempFileDemo {
 ```
 
 ### 9.3 File Attributes
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-3-file-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-3-file-attributes-handwritten.svg" alt="Handwritten: 9.3 File Attributes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-3-file-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-3-file-attributes-diagram.svg" alt="Diagram: 9.3 File Attributes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-3-file-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-3-file-attributes-sticky.svg" alt="Sticky Note: 9.3 File Attributes" width="30%">
-</a>
 
 
 ```java
@@ -3383,16 +2923,6 @@ public class FileAttributesDemo {
 
 ### 9.4 Symbolic Links
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-4-symbolic-links-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-4-symbolic-links-handwritten.svg" alt="Handwritten: 9.4 Symbolic Links" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-4-symbolic-links-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-4-symbolic-links-diagram.svg" alt="Diagram: 9.4 Symbolic Links" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/9-4-symbolic-links-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/9-4-symbolic-links-sticky.svg" alt="Sticky Note: 9.4 Symbolic Links" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -3443,16 +2973,6 @@ public class SymbolicLinkDemo {
 ## 10. Compression
 
 ### 10.1 GZIP Compression
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-1-gzip-compression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-1-gzip-compression-handwritten.svg" alt="Handwritten: 10.1 GZIP Compression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-1-gzip-compression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-1-gzip-compression-diagram.svg" alt="Diagram: 10.1 GZIP Compression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-1-gzip-compression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-1-gzip-compression-sticky.svg" alt="Sticky Note: 10.1 GZIP Compression" width="30%">
-</a>
 
 
 ```java
@@ -3531,16 +3051,6 @@ public class GzipDemo {
 ```
 
 ### 10.2 ZIP File Handling
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-2-zip-file-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-2-zip-file-handling-handwritten.svg" alt="Handwritten: 10.2 ZIP File Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-2-zip-file-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-2-zip-file-handling-diagram.svg" alt="Diagram: 10.2 ZIP File Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-2-zip-file-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-2-zip-file-handling-sticky.svg" alt="Sticky Note: 10.2 ZIP File Handling" width="30%">
-</a>
 
 
 ```java
@@ -3635,16 +3145,6 @@ public class ZipFileDemo {
 
 ### 10.3 ZipInputStream with Directories
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-3-zipinputstream-with-directories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-3-zipinputstream-with-directories-handwritten.svg" alt="Handwritten: 10.3 ZipInputStream with Directories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-3-zipinputstream-with-directories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-3-zipinputstream-with-directories-diagram.svg" alt="Diagram: 10.3 ZipInputStream with Directories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/10-3-zipinputstream-with-directories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/10-3-zipinputstream-with-directories-sticky.svg" alt="Sticky Note: 10.3 ZipInputStream with Directories" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -3730,16 +3230,6 @@ public class ZipDirectoryDemo {
 
 ### 11.1 Reading from the Classpath
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/11-1-reading-from-the-classpath-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/11-1-reading-from-the-classpath-handwritten.svg" alt="Handwritten: 11.1 Reading from the Classpath" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/11-1-reading-from-the-classpath-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/11-1-reading-from-the-classpath-diagram.svg" alt="Diagram: 11.1 Reading from the Classpath" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/11-1-reading-from-the-classpath-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/11-1-reading-from-the-classpath-sticky.svg" alt="Sticky Note: 11.1 Reading from the Classpath" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -3797,16 +3287,6 @@ public class ClasspathResourceDemo {
 
 ### 11.2 Spring Boot ResourceLoader
 
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/11-2-spring-boot-resourceloader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/11-2-spring-boot-resourceloader-handwritten.svg" alt="Handwritten: 11.2 Spring Boot ResourceLoader" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/11-2-spring-boot-resourceloader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/11-2-spring-boot-resourceloader-diagram.svg" alt="Diagram: 11.2 Spring Boot ResourceLoader" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/11-2-spring-boot-resourceloader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/11-2-spring-boot-resourceloader-sticky.svg" alt="Sticky Note: 11.2 Spring Boot ResourceLoader" width="30%">
-</a>
-
 
 ```java
 package chapter4;
@@ -3863,16 +3343,6 @@ public class SpringResourceDemo {
 ## 12. Error Handling Patterns for I/O
 
 ### 12.1 Retry Pattern
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/12-1-retry-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/12-1-retry-pattern-handwritten.svg" alt="Handwritten: 12.1 Retry Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/12-1-retry-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/12-1-retry-pattern-diagram.svg" alt="Diagram: 12.1 Retry Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/12-1-retry-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/12-1-retry-pattern-sticky.svg" alt="Sticky Note: 12.1 Retry Pattern" width="30%">
-</a>
 
 
 ```java
@@ -3945,16 +3415,6 @@ public class RetryPatternDemo {
 ```
 
 ### 12.2 Fallback Pattern
-
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/12-2-fallback-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/12-2-fallback-pattern-handwritten.svg" alt="Handwritten: 12.2 Fallback Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/12-2-fallback-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/12-2-fallback-pattern-diagram.svg" alt="Diagram: 12.2 Fallback Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p4-exceptions-io/12-2-fallback-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p4-exceptions-io/12-2-fallback-pattern-sticky.svg" alt="Sticky Note: 12.2 Fallback Pattern" width="30%">
-</a>
 
 
 ```java

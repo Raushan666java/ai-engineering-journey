@@ -91,16 +91,6 @@ flowchart LR
 
 ### 1.1 Why Validate?
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-1-why-validate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-1-why-validate-handwritten.svg" alt="Handwritten: 1.1 Why Validate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-1-why-validate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-1-why-validate-diagram.svg" alt="Diagram: 1.1 Why Validate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-1-why-validate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-1-why-validate-sticky.svg" alt="Sticky Note: 1.1 Why Validate?" width="30%">
-</a>
-
 
 Invalid data is the root cause of most application defects. Without validation, you risk:
 
@@ -128,16 +118,6 @@ Persistence (@Column constraints, DB constraints)
 Validation should happen at **every boundary** where external data enters the system. The controller is the first and most important boundary.
 
 ### 1.2 Jakarta Bean Validation → The JSR-380 Standard
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-2-jakarta-bean-validation-the-jsr-380-standard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-2-jakarta-bean-validation-the-jsr-380-standard-handwritten.svg" alt="Handwritten: 1.2 Jakarta Bean Validation → The JSR-380 Standard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-2-jakarta-bean-validation-the-jsr-380-standard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-2-jakarta-bean-validation-the-jsr-380-standard-diagram.svg" alt="Diagram: 1.2 Jakarta Bean Validation → The JSR-380 Standard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-2-jakarta-bean-validation-the-jsr-380-standard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-2-jakarta-bean-validation-the-jsr-380-standard-sticky.svg" alt="Sticky Note: 1.2 Jakarta Bean Validation → The JSR-380 Standard" width="30%">
-</a>
 
 
 Spring Boot 4.x uses **Jakarta Bean Validation 3.0+** (formerly JSR-380 / Bean Validation 2.0). The reference implementation is **Hibernate Validator** 8+, which is automatically included when you add `spring-boot-starter-web`.
@@ -263,16 +243,6 @@ public class ProductRequest {
 ```
 
 ### 1.3 @Valid on Controller Parameters
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-3-valid-on-controller-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-3-valid-on-controller-parameters-handwritten.svg" alt="Handwritten: 1.3 @Valid on Controller Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-3-valid-on-controller-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-3-valid-on-controller-parameters-diagram.svg" alt="Diagram: 1.3 @Valid on Controller Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-3-valid-on-controller-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-3-valid-on-controller-parameters-sticky.svg" alt="Sticky Note: 1.3 @Valid on Controller Parameters" width="30%">
-</a>
 
 
 The `@Valid` annotation (from Jakarta) triggers Bean Validation on a method parameter. In Spring MVC, place it on `@RequestBody`, `@RequestParam`, or `@ModelAttribute` parameters:
@@ -494,16 +464,6 @@ public ResponseEntity<Integer> importProducts(
 
 ### 1.4 @Validated Groups
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-4-validated-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-4-validated-groups-handwritten.svg" alt="Handwritten: 1.4 @Validated Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-4-validated-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-4-validated-groups-diagram.svg" alt="Diagram: 1.4 @Validated Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-4-validated-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-4-validated-groups-sticky.svg" alt="Sticky Note: 1.4 @Validated Groups" width="30%">
-</a>
-
 
 Sometimes the same DTO needs different validation rules in different contexts. For example, when creating a resource you require all fields, but when updating you only require the ID:
 
@@ -631,16 +591,6 @@ public class OrderWithGroupConversion {
 Now when the parent is validated with `Default.class`, the nested `customer` is validated with `CreateGroup.class`.
 
 ### 1.5 Custom Validators
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-5-custom-validators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-5-custom-validators-handwritten.svg" alt="Handwritten: 1.5 Custom Validators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-5-custom-validators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-5-custom-validators-diagram.svg" alt="Diagram: 1.5 Custom Validators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-5-custom-validators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-5-custom-validators-sticky.svg" alt="Sticky Note: 1.5 Custom Validators" width="30%">
-</a>
 
 
 When built-in constraints aren't enough, create custom ones.
@@ -929,16 +879,6 @@ public class PasswordChangeRequest {
 ```
 
 ### 1.6 Error Responses
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-6-error-responses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-6-error-responses-handwritten.svg" alt="Handwritten: 1.6 Error Responses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-6-error-responses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-6-error-responses-diagram.svg" alt="Diagram: 1.6 Error Responses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-6-error-responses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-6-error-responses-sticky.svg" alt="Sticky Note: 1.6 Error Responses" width="30%">
-</a>
 
 
 When validation fails, Spring throws exceptions. You need to handle them to return structured responses.
@@ -1310,16 +1250,6 @@ for (FieldError fe : fieldErrors) {
 
 ### 1.7 @InitBinder
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-7-initbinder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-7-initbinder-handwritten.svg" alt="Handwritten: 1.7 @InitBinder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-7-initbinder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-7-initbinder-diagram.svg" alt="Diagram: 1.7 @InitBinder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-7-initbinder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-7-initbinder-sticky.svg" alt="Sticky Note: 1.7 @InitBinder" width="30%">
-</a>
-
 
 `@InitBinder` methods in a controller configure `WebDataBinder` for that controller. They let you:
 
@@ -1465,16 +1395,6 @@ public class PromoCodeController {
 
 ### 1.8 @ControllerAdvice / @RestControllerAdvice
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-8-controlleradvice-restcontrolleradvice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-8-controlleradvice-restcontrolleradvice-handwritten.svg" alt="Handwritten: 1.8 @ControllerAdvice / @RestControllerAdvice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-8-controlleradvice-restcontrolleradvice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-8-controlleradvice-restcontrolleradvice-diagram.svg" alt="Diagram: 1.8 @ControllerAdvice / @RestControllerAdvice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-8-controlleradvice-restcontrolleradvice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-8-controlleradvice-restcontrolleradvice-sticky.svg" alt="Sticky Note: 1.8 @ControllerAdvice / @RestControllerAdvice" width="30%">
-</a>
-
 
 These annotations create **global** (or **scoped**) exception handlers, data binders, and model attributes that apply across multiple controllers.
 
@@ -1600,16 +1520,6 @@ public class GlobalFallbackHandler {
 ```
 
 ### 1.9 Request Entity Binding
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-9-request-entity-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-9-request-entity-binding-handwritten.svg" alt="Handwritten: 1.9 Request Entity Binding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-9-request-entity-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-9-request-entity-binding-diagram.svg" alt="Diagram: 1.9 Request Entity Binding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-9-request-entity-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-9-request-entity-binding-sticky.svg" alt="Sticky Note: 1.9 Request Entity Binding" width="30%">
-</a>
 
 
 #### 1.9.1 @ModelAttribute
@@ -1864,16 +1774,6 @@ public class ServiceValidationController {
 
 ### 1.10 Message Interpolation
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-10-message-interpolation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-10-message-interpolation-handwritten.svg" alt="Handwritten: 1.10 Message Interpolation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-10-message-interpolation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-10-message-interpolation-diagram.svg" alt="Diagram: 1.10 Message Interpolation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-10-message-interpolation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-10-message-interpolation-sticky.svg" alt="Sticky Note: 1.10 Message Interpolation" width="30%">
-</a>
-
 
 Bean Validation supports message interpolation → replacing `{parameters}` in constraint messages with actual values.
 
@@ -2038,16 +1938,6 @@ You can use `${validatedValue}`, `${formatter.format(...)}`, ternary operators, 
 
 ### 1.11 Spring Validation
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-11-spring-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-11-spring-validation-handwritten.svg" alt="Handwritten: 1.11 Spring Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-11-spring-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-11-spring-validation-diagram.svg" alt="Diagram: 1.11 Spring Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-11-spring-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-11-spring-validation-sticky.svg" alt="Sticky Note: 1.11 Spring Validation" width="30%">
-</a>
-
 
 Spring provides its own `Validator` interface alongside Bean Validation. It's useful when you need Spring-injected dependencies (like services, repositories) in validation logic.
 
@@ -2158,16 +2048,6 @@ ValidationUtils.invokeValidator(nestedValidator, nestedTarget, errors);
 ```
 
 ### 1.12 DTO Patterns
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-12-dto-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-12-dto-patterns-handwritten.svg" alt="Handwritten: 1.12 DTO Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-12-dto-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-12-dto-patterns-diagram.svg" alt="Diagram: 1.12 DTO Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-12-dto-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-12-dto-patterns-sticky.svg" alt="Sticky Note: 1.12 DTO Patterns" width="30%">
-</a>
 
 
 #### 1.12.1 Request DTO vs Response DTO vs Entity
@@ -2510,16 +2390,6 @@ public class ProductService {
 
 ### 1.13 @Validated at Class Level for Method Validation
 
-<a href="../../../assets/images/diagrams/java/16-validation/1-13-validated-at-class-level-for-method-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-13-validated-at-class-level-for-method-validation-handwritten.svg" alt="Handwritten: 1.13 @Validated at Class Level for Method Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-13-validated-at-class-level-for-method-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-13-validated-at-class-level-for-method-validation-diagram.svg" alt="Diagram: 1.13 @Validated at Class Level for Method Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-13-validated-at-class-level-for-method-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-13-validated-at-class-level-for-method-validation-sticky.svg" alt="Sticky Note: 1.13 @Validated at Class Level for Method Validation" width="30%">
-</a>
-
 
 Spring supports method-level validation on any Spring bean using `@Validated`:
 
@@ -2551,16 +2421,6 @@ public class PaymentService {
 ```
 
 ### 1.14 Complete Working Example
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-14-complete-working-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-14-complete-working-example-handwritten.svg" alt="Handwritten: 1.14 Complete Working Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-14-complete-working-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-14-complete-working-example-diagram.svg" alt="Diagram: 1.14 Complete Working Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-14-complete-working-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-14-complete-working-example-sticky.svg" alt="Sticky Note: 1.14 Complete Working Example" width="30%">
-</a>
 
 
 Putting it all together:
@@ -2713,16 +2573,6 @@ public class UserController {
 ```
 
 ### 1.15 Testing Validation
-
-<a href="../../../assets/images/diagrams/java/16-validation/1-15-testing-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-15-testing-validation-handwritten.svg" alt="Handwritten: 1.15 Testing Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-15-testing-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-15-testing-validation-diagram.svg" alt="Diagram: 1.15 Testing Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/16-validation/1-15-testing-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/16-validation/1-15-testing-validation-sticky.svg" alt="Sticky Note: 1.15 Testing Validation" width="30%">
-</a>
 
 
 ```java

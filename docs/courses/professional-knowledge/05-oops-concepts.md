@@ -47,7 +47,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## 1. OOP Pillars
@@ -61,16 +60,6 @@ graph TD
 ```
 
 ### Encapsulation
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-handwritten.svg" alt="Handwritten: Encapsulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-diagram.svg" alt="Diagram: Encapsulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-sticky.svg" alt="Sticky Note: Encapsulation" width="30%">
-</a>
 
 Bundling data (variables) and methods (functions) within a class, restricting direct access to internal state.
 
@@ -89,16 +78,6 @@ public:
 ```
 
 ### Abstraction
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/abstraction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/abstraction-handwritten.svg" alt="Handwritten: Abstraction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/abstraction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/abstraction-diagram.svg" alt="Diagram: Abstraction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/abstraction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/abstraction-sticky.svg" alt="Sticky Note: Abstraction" width="30%">
-</a>
 
 Showing only essential features, hiding implementation details.
 
@@ -120,29 +99,9 @@ public:
 
 ### Inheritance
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/inheritance-handwritten.svg" alt="Handwritten: Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/inheritance-diagram.svg" alt="Diagram: Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/inheritance-sticky.svg" alt="Sticky Note: Inheritance" width="30%">
-</a>
-
 Derived class acquires properties and behavior of base class — enables code reuse and hierarchical classification.
 
 ### Polymorphism
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-handwritten.svg" alt="Handwritten: Polymorphism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-diagram.svg" alt="Diagram: Polymorphism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-sticky.svg" alt="Sticky Note: Polymorphism" width="30%">
-</a>
 
 Same interface, different implementations — compile-time (overloading) and runtime (overriding via virtual functions).
 
@@ -204,17 +163,6 @@ graph TD
 
 ### Diamond Problem (Multiple Inheritance)
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/diamond-problem-multiple-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/diamond-problem-multiple-inheritance-handwritten.svg" alt="Handwritten: Diamond Problem (Multiple Inheritance)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/diamond-problem-multiple-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/diamond-problem-multiple-inheritance-diagram.svg" alt="Diagram: Diamond Problem (Multiple Inheritance)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/diamond-problem-multiple-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/diamond-problem-multiple-inheritance-sticky.svg" alt="Sticky Note: Diamond Problem (Multiple Inheritance)" width="30%">
-</a>
-
-
 ```cpp
 class A { public: void show() {} };
 class B : public A {};
@@ -232,16 +180,6 @@ class C : virtual public A {};
 ## 4. Virtual Functions &amp; vtable
 
 ### Virtual Function Mechanism
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-mechanism-handwritten.svg" alt="Handwritten: Virtual Function Mechanism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-mechanism-diagram.svg" alt="Diagram: Virtual Function Mechanism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-mechanism-sticky.svg" alt="Sticky Note: Virtual Function Mechanism" width="30%">
-</a>
 
 - Base class declares `virtual` function
 - Derived class overrides it with `override` keyword (C++11)
@@ -263,32 +201,12 @@ public:
 
 ### vtable Layout
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/vtable-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/vtable-layout-handwritten.svg" alt="Handwritten: vtable Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/vtable-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/vtable-layout-diagram.svg" alt="Diagram: vtable Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/vtable-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/vtable-layout-sticky.svg" alt="Sticky Note: vtable Layout" width="30%">
-</a>
-
 ```
 Base object: [vptr → Base_vtable → Base::display()]
 Derived object: [vptr → Derived_vtable → Derived::display()]
 ```
 
 ### Pure Virtual Function
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/pure-virtual-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/pure-virtual-function-handwritten.svg" alt="Handwritten: Pure Virtual Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/pure-virtual-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/pure-virtual-function-diagram.svg" alt="Diagram: Pure Virtual Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/pure-virtual-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/pure-virtual-function-sticky.svg" alt="Sticky Note: Pure Virtual Function" width="30%">
-</a>
 
 ```cpp
 virtual void func() = 0;    // class becomes abstract, cannot instantiate
@@ -309,16 +227,6 @@ virtual void func() = 0;    // class becomes abstract, cannot instantiate
 | Example | `int add(int,int)` vs `double add(double,double)` | `Base::draw()` vs `Derived::draw()` |
 
 ### Operator Overloading (C++)
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/operator-overloading-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/operator-overloading-c-handwritten.svg" alt="Handwritten: Operator Overloading (C++)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/operator-overloading-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/operator-overloading-c-diagram.svg" alt="Diagram: Operator Overloading (C++)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/operator-overloading-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/operator-overloading-c-sticky.svg" alt="Sticky Note: Operator Overloading (C++)" width="30%">
-</a>
 
 ```cpp
 class Complex {
@@ -368,16 +276,6 @@ interface Drawable {
 
 ### C++ Try-Catch
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/c-try-catch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/c-try-catch-handwritten.svg" alt="Handwritten: C++ Try-Catch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/c-try-catch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/c-try-catch-diagram.svg" alt="Diagram: C++ Try-Catch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/c-try-catch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/c-try-catch-sticky.svg" alt="Sticky Note: C++ Try-Catch" width="30%">
-</a>
-
 ```cpp
 try {
     if (age < 18) throw runtime_error("Underage");
@@ -389,16 +287,6 @@ try {
 ```
 
 ### Java Try-Catch-Finally
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/java-try-catch-finally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/java-try-catch-finally-handwritten.svg" alt="Handwritten: Java Try-Catch-Finally" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/java-try-catch-finally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/java-try-catch-finally-diagram.svg" alt="Diagram: Java Try-Catch-Finally" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/java-try-catch-finally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/java-try-catch-finally-sticky.svg" alt="Sticky Note: Java Try-Catch-Finally" width="30%">
-</a>
 
 ```java
 try {
@@ -416,16 +304,6 @@ try {
 
 ### Checked vs Unchecked (Java)
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/checked-vs-unchecked-java-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/checked-vs-unchecked-java-handwritten.svg" alt="Handwritten: Checked vs Unchecked (Java)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/checked-vs-unchecked-java-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/checked-vs-unchecked-java-diagram.svg" alt="Diagram: Checked vs Unchecked (Java)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/checked-vs-unchecked-java-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/checked-vs-unchecked-java-sticky.svg" alt="Sticky Note: Checked vs Unchecked (Java)" width="30%">
-</a>
-
 | Type | Checked Exception | Unchecked Exception (Runtime) |
 |------|-------------------|-------------------------------|
 | Must handle? | ✅ Must catch/declare | ❌ Optional |
@@ -441,16 +319,6 @@ try {
 | `super` | Call parent via scope (`Base::func()`) | `super()` calls parent constructor; `super.method()` calls parent method |
 
 ### Constructor Chaining (Java)
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-java-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-java-handwritten.svg" alt="Handwritten: Constructor Chaining (Java)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-java-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-java-diagram.svg" alt="Diagram: Constructor Chaining (Java)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-java-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-java-sticky.svg" alt="Sticky Note: Constructor Chaining (Java)" width="30%">
-</a>
 
 ```java
 class Parent {
@@ -476,16 +344,6 @@ class Child extends Parent {
 | **Move (C++11)** | `ClassName(ClassName&& o) {}` | Not applicable |
 
 ### Constructor Details
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-details-handwritten.svg" alt="Handwritten: Constructor Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-details-diagram.svg" alt="Diagram: Constructor Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-details-sticky.svg" alt="Sticky Note: Constructor Details" width="30%">
-</a>
 
 - **Default constructor:** Provided by compiler if no constructor defined
 - **Copy constructor (C++):** Used when passed by value, returned by value
@@ -597,17 +455,6 @@ public static &lt;T extends Comparable&lt;T&gt;&gt; T max(T a, T b) {
 
 ### Virtual Function Table (vtable) — Deep Explanation
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-table-vtable-deep-explanation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-table-vtable-deep-explanation-handwritten.svg" alt="Handwritten: Virtual Function Table (vtable) — Deep Explanation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-table-vtable-deep-explanation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-table-vtable-deep-explanation-diagram.svg" alt="Diagram: Virtual Function Table (vtable) — Deep Explanation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-table-vtable-deep-explanation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/virtual-function-table-vtable-deep-explanation-sticky.svg" alt="Sticky Note: Virtual Function Table (vtable) — Deep Explanation" width="30%">
-</a>
-
-
 ```typescript
 // TypeScript simulation of C++ vtable mechanism
 interface VTableEntry {
@@ -676,17 +523,6 @@ Derived object:
 
 ### Interface vs Abstract Class — In-Depth with Code
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/interface-vs-abstract-class-in-depth-with-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/interface-vs-abstract-class-in-depth-with-code-handwritten.svg" alt="Handwritten: Interface vs Abstract Class — In-Depth with Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/interface-vs-abstract-class-in-depth-with-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/interface-vs-abstract-class-in-depth-with-code-diagram.svg" alt="Diagram: Interface vs Abstract Class — In-Depth with Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/interface-vs-abstract-class-in-depth-with-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/interface-vs-abstract-class-in-depth-with-code-sticky.svg" alt="Sticky Note: Interface vs Abstract Class — In-Depth with Code" width="30%">
-</a>
-
-
 > **PYQ 2024:** Can a Java interface have a constructor? Explain abstract class vs interface for multiple inheritance.
 
 **Java Interface (Java 8+):**
@@ -752,17 +588,6 @@ class Circle extends Shape implements Drawable, Resizable {
 
 ### Encapsulation — Protection Against Invariant Violation
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-protection-against-invariant-violation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-protection-against-invariant-violation-handwritten.svg" alt="Handwritten: Encapsulation — Protection Against Invariant Violation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-protection-against-invariant-violation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-protection-against-invariant-violation-diagram.svg" alt="Diagram: Encapsulation — Protection Against Invariant Violation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-protection-against-invariant-violation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/encapsulation-protection-against-invariant-violation-sticky.svg" alt="Sticky Note: Encapsulation — Protection Against Invariant Violation" width="30%">
-</a>
-
-
 ```typescript
 class BankAccount {
   private _balance: number;
@@ -792,17 +617,6 @@ class BankAccount {
 
 ### Polymorphism — Compile-time vs Runtime in TypeScript
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-compile-time-vs-runtime-in-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-compile-time-vs-runtime-in-typescript-handwritten.svg" alt="Handwritten: Polymorphism — Compile-time vs Runtime in TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-compile-time-vs-runtime-in-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-compile-time-vs-runtime-in-typescript-diagram.svg" alt="Diagram: Polymorphism — Compile-time vs Runtime in TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-compile-time-vs-runtime-in-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/polymorphism-compile-time-vs-runtime-in-typescript-sticky.svg" alt="Sticky Note: Polymorphism — Compile-time vs Runtime in TypeScript" width="30%">
-</a>
-
-
 ```typescript
 // Compile-time polymorphism (overloading — TypeScript via union types)
 function add(a: number, b: number): number;
@@ -827,17 +641,6 @@ function makeSound(animal: Animal): string {
 
 ### Constructor Chaining in Inheritance
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-in-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-in-inheritance-handwritten.svg" alt="Handwritten: Constructor Chaining in Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-in-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-in-inheritance-diagram.svg" alt="Diagram: Constructor Chaining in Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-in-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/constructor-chaining-in-inheritance-sticky.svg" alt="Sticky Note: Constructor Chaining in Inheritance" width="30%">
-</a>
-
-
 ```typescript
 class GrandParent {
   constructor() { console.log('GrandParent CTOR'); }
@@ -861,17 +664,6 @@ class Child extends Parent {
 ```
 
 ### Exception Handling — Java-style with TypeScript
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/exception-handling-java-style-with-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/exception-handling-java-style-with-typescript-handwritten.svg" alt="Handwritten: Exception Handling — Java-style with TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/exception-handling-java-style-with-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/exception-handling-java-style-with-typescript-diagram.svg" alt="Diagram: Exception Handling — Java-style with TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/exception-handling-java-style-with-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/exception-handling-java-style-with-typescript-sticky.svg" alt="Sticky Note: Exception Handling — Java-style with TypeScript" width="30%">
-</a>
-
 
 ```typescript
 class InsufficientFundsError extends Error {
@@ -906,17 +698,6 @@ class AccountService {
 
 ### Static vs Dynamic Binding — Detailed Analysis
 
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/static-vs-dynamic-binding-detailed-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/static-vs-dynamic-binding-detailed-analysis-handwritten.svg" alt="Handwritten: Static vs Dynamic Binding — Detailed Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/static-vs-dynamic-binding-detailed-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/static-vs-dynamic-binding-detailed-analysis-diagram.svg" alt="Diagram: Static vs Dynamic Binding — Detailed Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/static-vs-dynamic-binding-detailed-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/static-vs-dynamic-binding-detailed-analysis-sticky.svg" alt="Sticky Note: Static vs Dynamic Binding — Detailed Analysis" width="30%">
-</a>
-
-
 > **PYQ 2025:** What is the output? `Base b = new Derived(); b.display();` where Base has `public void display() { System.out.println("Base"); }` and Derived overrides it.
 
 **Answer:** "Derived" — dynamic binding. JVM checks actual object type (Derived) at runtime, not reference type (Base). This is because display() is a virtual method (all Java methods are virtual by default except static/final/private).
@@ -945,17 +726,6 @@ function notify(notification: Notification): string {
 ```
 
 ### Shallow vs Deep Copy
-
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/shallow-vs-deep-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/shallow-vs-deep-copy-handwritten.svg" alt="Handwritten: Shallow vs Deep Copy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/shallow-vs-deep-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/shallow-vs-deep-copy-diagram.svg" alt="Diagram: Shallow vs Deep Copy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/shallow-vs-deep-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/05-oops-concepts/shallow-vs-deep-copy-sticky.svg" alt="Sticky Note: Shallow vs Deep Copy" width="30%">
-</a>
-
 
 ```typescript
 class Address {

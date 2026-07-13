@@ -4,7 +4,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/abhyas-diary/hero.svg" target="_blank" rel="noopener">
@@ -63,17 +62,6 @@
 > प्रतिदिन ध्यान के बाद यह फ़ॉर्म भरें। इसमें 5 मिनट से अधिक न लगाएँ।
 
 ### दैनिक प्रविष्टि फ़ॉर्म
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: दैनिक प्रविष्टि फ़ॉर्म" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: दैनिक प्रविष्टि फ़ॉर्म" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: दैनिक प्रविष्टि फ़ॉर्म" width="30%">
-</a>
-
 
 ╔═══════════════════════════════════════════════════════════════╗
 ║              साधना डायरी — दैनिक प्रविष्टि                    ║
@@ -147,17 +135,6 @@
 
 ### दैनिक प्रविष्टि के निर्देश
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: दैनिक प्रविष्टि के निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: दैनिक प्रविष्टि के निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: दैनिक प्रविष्टि के निर्देश" width="30%">
-</a>
-
-
 1. **ध्यान के तुरंत बाद भरें** — अनुभव ताज़ा रहते हुए लिखें। देरी से विवरण धुंधले हो जाते हैं।
 2. **ईमानदार रहें** — यह डायरी आपके लिए है। अच्छे या बुरे अनुभव, दोनों को ईमानदारी से लिखें।
 3. **संक्षिप्त रहें** — प्रविष्टि में 5 मिनट से अधिक न लगाएँ।
@@ -168,17 +145,6 @@
 8. **सपने भी नोट करें** — यदि ध्यान के बाद या रात में कोई सपना याद रहे, तो उसे भी लिखें। सपने अवचेतन के द्वार हैं।
 
 ### दैनिक प्रविष्टि उदाहरण
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: दैनिक प्रविष्टि उदाहरण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: दैनिक प्रविष्टि उदाहरण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: दैनिक प्रविष्टि उदाहरण" width="30%">
-</a>
-
 
 ```
 दिनांक: 15 जनवरी 2026  दिन: बुधवार
@@ -215,17 +181,6 @@
 
 ### सप्ताह क्रमांक: _____ दिनांक: _____ से _____
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: सप्ताह क्रमांक: _____ दिनांक: _____ से _____" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: सप्ताह क्रमांक: _____ दिनांक: _____ से _____" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: सप्ताह क्रमांक: _____ दिनांक: _____ से _____" width="30%">
-</a>
-
-
 ╔═══════════════════════════════════════════════════════════════╗
 ║              साप्ताहिक समीक्षा — प्रश्नावली                   ║
 ╠═══════════════════════════════════════════════════════════════╣
@@ -259,17 +214,6 @@
 
 ### साप्ताहिक मेट्रिक्स तालिका
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: साप्ताहिक मेट्रिक्स तालिका" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: साप्ताहिक मेट्रिक्स तालिका" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: साप्ताहिक मेट्रिक्स तालिका" width="30%">
-</a>
-
-
 | मीट्रिक | सोम | मंगल | बुध | गुरु | शुक्र | शनि | रवि |
 |---------|:---:|:----:|:---:|:----:|:----:|:---:|:---:|
 | ध्यान किया? (✓/✗) | | | | | | | |
@@ -279,17 +223,6 @@
 | विधि संख्या | | | | | | | |
 
 ### सप्ताह का सारांश
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: सप्ताह का सारांश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: सप्ताह का सारांश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: सप्ताह का सारांश" width="30%">
-</a>
-
 
 **इस सप्ताह की मुख्य उपलब्धि:**
 ________________________________________________________
@@ -304,17 +237,6 @@ ________________________________________________________
 
 ### साप्ताहिक समीक्षा के निर्देश
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: साप्ताहिक समीक्षा के निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: साप्ताहिक समीक्षा के निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: साप्ताहिक समीक्षा के निर्देश" width="30%">
-</a>
-
-
 1. **नियत समय पर करें** — हर रविवार को एक ही समय पर समीक्षा करें।
 2. **ईमानदारी से उत्तर दें** — कोई सही या गलत उत्तर नहीं है।
 3. **पैटर्न पहचानें** — क्या आप देख सकते हैं कि किन दिनों ध्यान गहरा होता है?
@@ -322,17 +244,6 @@ ________________________________________________________
 5. **स्वयं को प्रोत्साहित करें** — भले ही सप्ताह अच्छा न गया हो, हर दिन एक नई शुरुआत है।
 
 ### साप्ताहिक डेटा विश्लेषण
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: साप्ताहिक डेटा विश्लेषण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: साप्ताहिक डेटा विश्लेषण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: साप्ताहिक डेटा विश्लेषण" width="30%">
-</a>
-
 
 | सप्ताह | कुल दिन | कुल समय | औसत समय | औसत एकाग्रता | सर्वश्रेष्ठ विधि |
 |--------|:-------:|:--------:|:--------:|:-------------:|:----------------:|
@@ -360,17 +271,6 @@ ________________________________________________________
 > प्रत्येक माह के अंत में यह गहन समीक्षा करें। इसमें 30-45 मिनट लगाएँ।
 
 ### मासिक प्रगति रिपोर्ट
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: मासिक प्रगति रिपोर्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: मासिक प्रगति रिपोर्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: मासिक प्रगति रिपोर्ट" width="30%">
-</a>
-
 
 ╔═══════════════════════════════════════════════════════════════╗
 ║              मासिक प्रगति — आत्म-मूल्यांकन                   ║
@@ -440,17 +340,6 @@ ________________________________________________________
 
 ### मासिक प्रगति ग्राफ़ (अपने आँकड़े भरें)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: मासिक प्रगति ग्राफ़ (अपने आँकड़े भरें)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: मासिक प्रगति ग्राफ़ (अपने आँकड़े भरें)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: मासिक प्रगति ग्राफ़ (अपने आँकड़े भरें)" width="30%">
-</a>
-
-
 ```
 सप्ताह 1     ████████████░░░░░░░░░░░░░░  __% (___/7 दिन)
 सप्ताह 2     ████████████████░░░░░░░░░░  __% (___/7 दिन)
@@ -460,17 +349,6 @@ ________________________________________________________
 ```
 
 ### मासिक तुलनात्मक तालिका
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: मासिक तुलनात्मक तालिका" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: मासिक तुलनात्मक तालिका" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: मासिक तुलनात्मक तालिका" width="30%">
-</a>
-
 
 | मीट्रिक | माह 1 | माह 2 | माह 3 | माह 4 |
 |---------|:-----:|:-----:|:-----:|:-----:|
@@ -483,17 +361,6 @@ ________________________________________________________
 | कल्याण रेटिंग | | | | |
 
 ### मासिक समीक्षा के निर्देश
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: मासिक समीक्षा के निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: मासिक समीक्षा के निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: मासिक समीक्षा के निर्देश" width="30%">
-</a>
-
 
 1. **गहन आत्म-निरीक्षण** — मासिक समीक्षा केवल आँकड़ों के लिए नहीं, बल्कि गहन आत्म-निरीक्षण के लिए है।
 2. **प्रगति को सेलिब्रेट करें** — छोटी से छोटी प्रगति को भी पहचानें और सराहें।
@@ -511,17 +378,6 @@ ________________________________________________________
 
 ### उपयोग विधि
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: उपयोग विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: उपयोग विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: उपयोग विधि" width="30%">
-</a>
-
-
 1. जब भी कोई नई विधि करें, इस तालिका में दिनांक और अनुभव नोट करें।
 2. प्रत्येक विधि को कम से कम 3 बार करने का प्रयास करें।
 3. अनुभव को संक्षेप में लिखें — 2-3 वाक्य पर्याप्त।
@@ -529,17 +385,6 @@ ________________________________________________________
 5. जिन विधियों को अभी आज़माना है, उनके सामने ➤ चिह्न लगाएँ।
 
 ### 112 विधियों की श्रेणियाँ
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-handwritten.svg" alt="Handwritten: 112 विधियों की श्रेणियाँ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-diagram.svg" alt="Diagram: 112 विधियों की श्रेणियाँ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-sticky.svg" alt="Sticky Note: 112 विधियों की श्रेणियाँ" width="30%">
-</a>
-
 
 | श्रेणी | विधि संख्या | विवरण |
 |--------|-------------|-------|
@@ -550,17 +395,6 @@ ________________________________________________________
 | भाव और साक्षी विधियाँ (Emotion & Witnessing) | 77-112 | भावना, साक्षी, चेतना |
 
 ### विधि अनुभव तालिका
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: विधि अनुभव तालिका" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: विधि अनुभव तालिका" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: विधि अनुभव तालिका" width="30%">
-</a>
-
 
 #### श्वास विधियाँ (1-20)
 
@@ -701,17 +535,6 @@ ________________________________________________________
 
 ### विधि मूल्यांकन कुंजी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: विधि मूल्यांकन कुंजी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: विधि मूल्यांकन कुंजी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: विधि मूल्यांकन कुंजी" width="30%">
-</a>
-
-
 | ★ | अर्थ |
 |---|------|
 | ★ | प्रभावी नहीं / पसंद नहीं आई |
@@ -721,17 +544,6 @@ ________________________________________________________
 | ★★★★★ | अत्यधिक प्रभावी — यह मेरी विधि है |
 
 ### श्रेणी-वार सारांश
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: श्रेणी-वार सारांश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: श्रेणी-वार सारांश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: श्रेणी-वार सारांश" width="30%">
-</a>
-
 
 | श्रेणी | विधियाँ | आज़माईं | ★★★+ | सर्वश्रेष्ठ विधि |
 |--------|:-------:|:--------:|:----:|:----------------:|
@@ -749,17 +561,6 @@ ________________________________________________________
 > 30 प्रेरणादायक उद्धरण जिन्हें आप प्रतिदिन पढ़ सकते हैं और अपनी साधना में शामिल कर सकते हैं।
 
 ### दिन 1-15
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-15-handwritten.svg" alt="Handwritten: दिन 1-15" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-15-diagram.svg" alt="Diagram: दिन 1-15" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-15-sticky.svg" alt="Sticky Note: दिन 1-15" width="30%">
-</a>
-
 
 | दिन | प्रेरणा वचन |
 |:---:|------------|
@@ -781,17 +582,6 @@ ________________________________________________________
 
 ### दिन 16-30
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/16-30-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/16-30-handwritten.svg" alt="Handwritten: दिन 16-30" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/16-30-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/16-30-diagram.svg" alt="Diagram: दिन 16-30" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/16-30-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/16-30-sticky.svg" alt="Sticky Note: दिन 16-30" width="30%">
-</a>
-
-
 | दिन | प्रेरणा वचन |
 |:---:|------------|
 | 16 | **"जब तक तुम स्वयं नहीं जानते, तब तक किसी और का ज्ञान तुम्हारे काम नहीं आएगा।"** |
@@ -812,17 +602,6 @@ ________________________________________________________
 
 ### अतिरिक्त प्रेरणा वचन (विस्तार)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: अतिरिक्त प्रेरणा वचन (विस्तार)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: अतिरिक्त प्रेरणा वचन (विस्तार)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: अतिरिक्त प्रेरणा वचन (विस्तार)" width="30%">
-</a>
-
-
 | दिन | प्रेरणा वचन |
 |:---:|------------|
 | 31 | **"प्रकाश की तलाश मत करो — अंधकार को देखो। अंधकार में ही प्रकाश छिपा है।"** |
@@ -837,17 +616,6 @@ ________________________________________________________
 | 40 | **"जीवन कोई पहेली नहीं है जिसे सुलझाना है — वह एक रहस्य है जिसे जीना है।"** |
 
 ### प्रेरणा वचनों का उपयोग कैसे करें
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: प्रेरणा वचनों का उपयोग कैसे करें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: प्रेरणा वचनों का उपयोग कैसे करें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: प्रेरणा वचनों का उपयोग कैसे करें" width="30%">
-</a>
-
 
 1. **प्रतिदिन एक वचन** — हर सुबह एक वचन पढ़ें और पूरे दिन उसे याद रखें।
 2. **ध्यान से पहले** — ध्यान शुरू करने से पहले वचन को पढ़ें और उस पर एक मिनट मनन करें।
@@ -864,17 +632,6 @@ ________________________________________________________
 > सरल टेक्स्ट-आधारित टेम्पलेट जिन्हें आप प्रिंट करके अपनी फ़िज़िकल डायरी में उपयोग कर सकते हैं।
 
 ### टेम्पलेट 1: दैनिक प्रविष्टि (कार्ड फ़ॉर्मैट)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-handwritten.svg" alt="Handwritten: टेम्पलेट 1: दैनिक प्रविष्टि (कार्ड फ़ॉर्मैट)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-diagram.svg" alt="Diagram: टेम्पलेट 1: दैनिक प्रविष्टि (कार्ड फ़ॉर्मैट)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/1-sticky.svg" alt="Sticky Note: टेम्पलेट 1: दैनिक प्रविष्टि (कार्ड फ़ॉर्मैट)" width="30%">
-</a>
-
 
 ┌─────────────────────────────────────────────────────────────────┐
 │ दिनांक: __________  विधि #: ___  समय: ___ मि  सत्र: सु/दो/शा/रा │
@@ -894,17 +651,6 @@ ________________________________________________________
 
 ### टेम्पलेट 2: साप्ताहिक अवलोकन (एक पृष्ठ)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/2-handwritten.svg" alt="Handwritten: टेम्पलेट 2: साप्ताहिक अवलोकन (एक पृष्ठ)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/2-diagram.svg" alt="Diagram: टेम्पलेट 2: साप्ताहिक अवलोकन (एक पृष्ठ)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/2-sticky.svg" alt="Sticky Note: टेम्पलेट 2: साप्ताहिक अवलोकन (एक पृष्ठ)" width="30%">
-</a>
-
-
 ┌─────────────────────────────────────────────────────────────────┐
 │ सप्ताह: ____ से ____ तक  ●  ध्यान दिन: ___/7  ●  कुल समय: ___मि │
 ├──────┬──────┬──────┬──────┬──────┬──────┬──────┬──────┬────────┤
@@ -920,17 +666,6 @@ ________________________________________________________
 └─────────────────────────────────────────────────────────────────┘
 
 ### टेम्पलेट 3: मासिक सारांश (एक पृष्ठ)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/3-handwritten.svg" alt="Handwritten: टेम्पलेट 3: मासिक सारांश (एक पृष्ठ)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/3-diagram.svg" alt="Diagram: टेम्पलेट 3: मासिक सारांश (एक पृष्ठ)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/3-sticky.svg" alt="Sticky Note: टेम्पलेट 3: मासिक सारांश (एक पृष्ठ)" width="30%">
-</a>
-
 
 ┌─────────────────────────────────────────────────────────────────┐
 │ माह: ___________  ●  ध्यान दिन: ___/___  ●  नई विधियाँ: ___    │
@@ -956,17 +691,6 @@ ________________________________________________________
 
 ### टेम्पलेट 4: 7-दिवसीय मिनी-डायरी (जेब के आकार का)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/4-7-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/4-7-handwritten.svg" alt="Handwritten: टेम्पलेट 4: 7-दिवसीय मिनी-डायरी (जेब के आकार का)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/4-7-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/4-7-diagram.svg" alt="Diagram: टेम्पलेट 4: 7-दिवसीय मिनी-डायरी (जेब के आकार का)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/4-7-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/4-7-sticky.svg" alt="Sticky Note: टेम्पलेट 4: 7-दिवसीय मिनी-डायरी (जेब के आकार का)" width="30%">
-</a>
-
-
 ┌──────────┬──────────┬────────┬────────┬──────────┬──────────┐
 │ दिन      │ विधि #   │ समय   │ ★      │ अनुभव    │ अंतर्दृष्टि│
 ├──────────┼──────────┼────────┼────────┼──────────┼──────────┤
@@ -980,17 +704,6 @@ ________________________________________________________
 └──────────┴──────────┴────────┴────────┴──────────┴──────────┘
 
 ### टेम्पलेट 5: 112 विधियाँ — त्वरित संदर्भ चेकलिस्ट
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/5-112-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/5-112-handwritten.svg" alt="Handwritten: टेम्पलेट 5: 112 विधियाँ — त्वरित संदर्भ चेकलिस्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/5-112-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/5-112-diagram.svg" alt="Diagram: टेम्पलेट 5: 112 विधियाँ — त्वरित संदर्भ चेकलिस्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/5-112-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/5-112-sticky.svg" alt="Sticky Note: टेम्पलेट 5: 112 विधियाँ — त्वरित संदर्भ चेकलिस्ट" width="30%">
-</a>
-
 
 ┌─────────────────────────────────────────────────────────────────┐
 │ □ 01-20 श्वास विधियाँ  □ 21-42 शारीरिक विधियाँ                 │
@@ -1010,17 +723,6 @@ ________________________________________________________
 
 ### टेम्पलेट 6: ध्यान सत्र टाइमर लॉग
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/6-handwritten.svg" alt="Handwritten: टेम्पलेट 6: ध्यान सत्र टाइमर लॉग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/6-diagram.svg" alt="Diagram: टेम्पलेट 6: ध्यान सत्र टाइमर लॉग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/6-sticky.svg" alt="Sticky Note: टेम्पलेट 6: ध्यान सत्र टाइमर लॉग" width="30%">
-</a>
-
-
 ┌──────┬────────┬────────┬────────┬────────┬────────┬────────┐
 │ सत्र│ समय   │ विधि   │ गहराई  │ बाधा  │ ऊर्जा  │ नोट्स │
 ├──────┼────────┼────────┼────────┼────────┼────────┼────────┤
@@ -1030,17 +732,6 @@ ________________________________________________________
 └──────┴────────┴────────┴────────┴────────┴────────┴────────┘
 
 ### टेम्पलेट 7: अध्याय-वार प्रगति ट्रैकर
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/7-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/7-handwritten.svg" alt="Handwritten: टेम्पलेट 7: अध्याय-वार प्रगति ट्रैकर" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/7-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/7-diagram.svg" alt="Diagram: टेम्पलेट 7: अध्याय-वार प्रगति ट्रैकर" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/7-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/7-sticky.svg" alt="Sticky Note: टेम्पलेट 7: अध्याय-वार प्रगति ट्रैकर" width="30%">
-</a>
-
 
 ┌──────┬───────────────────┬──────┬──────┬──────┬────────────────┐
 │ अ.   │ शीर्षक           │ पढ़ा │ समझ │ अभ्यास│ नोट्स         │
@@ -1066,17 +757,6 @@ ________________________________________________________
 └──────┴───────────────────┴──────┴──────┴──────┴────────────────┘
 
 ### Printable Templates Usage Guide
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/printable-templates-usage-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/printable-templates-usage-guide-handwritten.svg" alt="Handwritten: Printable Templates Usage Guide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/printable-templates-usage-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/printable-templates-usage-guide-diagram.svg" alt="Diagram: Printable Templates Usage Guide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/printable-templates-usage-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/printable-templates-usage-guide-sticky.svg" alt="Sticky Note: Printable Templates Usage Guide" width="30%">
-</a>
-
 
 1. **Print on A4 paper** — All templates are designed for A4 size.
 2. **Use a binder** — Print multiple copies and keep them in a ring binder.
@@ -1882,17 +1562,6 @@ export { SadhnaDiary, DailyEntry, WeeklyReview, MonthlyProgress, TechniqueRecord
 
 ### 112 दिनों की साधना यात्रा — साप्ताहिक योजना
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-handwritten.svg" alt="Handwritten: 112 दिनों की साधना यात्रा — साप्ताहिक योजना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-diagram.svg" alt="Diagram: 112 दिनों की साधना यात्रा — साप्ताहिक योजना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/112-sticky.svg" alt="Sticky Note: 112 दिनों की साधना यात्रा — साप्ताहिक योजना" width="30%">
-</a>
-
-
 | सप्ताह | अध्याय | विधि श्रेणी | फ़ोकस |
 |:------:|:------:|:-----------:|-------|
 | 1 | 01-02 | परिचय | तंत्र को समझना, दृष्टि विकसित करना |
@@ -1908,17 +1577,6 @@ export { SadhnaDiary, DailyEntry, WeeklyReview, MonthlyProgress, TechniqueRecord
 
 ### प्रगति मील के पत्थर
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: प्रगति मील के पत्थर" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: प्रगति मील के पत्थर" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: प्रगति मील के पत्थर" width="30%">
-</a>
-
-
 | मील का पत्थर | समय सीमा | पुरस्कार / आत्म-सराहना |
 |:-----------:|:--------:|----------------------|
 | 7 दिन लगातार ध्यान | सप्ताह 1 | एक विशेष भोजन या प्रकृति में समय बिताएँ |
@@ -1929,17 +1587,6 @@ export { SadhnaDiary, DailyEntry, WeeklyReview, MonthlyProgress, TechniqueRecord
 | 112 दिन पूरे | सप्ताह 16 | एक डायरी लिखें — अपनी यात्रा का सारांश |
 
 ### सामान्य प्रश्न (साधना संबंधी)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-handwritten.svg" alt="Handwritten: सामान्य प्रश्न (साधना संबंधी)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-diagram.svg" alt="Diagram: सामान्य प्रश्न (साधना संबंधी)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/abhyas-diary/-sticky.svg" alt="Sticky Note: सामान्य प्रश्न (साधना संबंधी)" width="30%">
-</a>
-
 
 **प्रश्न: क्या एक दिन में एक से अधिक विधि कर सकते हैं?**
 उत्तर: हाँ, लेकिन ओशो की सलाह है कि एक समय में एक ही विधि को कम से कम 3 दिन लगातार करें, फिर बदलें।

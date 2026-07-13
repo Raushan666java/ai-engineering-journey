@@ -82,16 +82,6 @@ flowchart LR
 
 ### 7.1 Pumping Lemma for Context-Free Languages
 
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-1-pumping-lemma-for-context-free-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-1-pumping-lemma-for-context-free-languages-handwritten.svg" alt="Handwritten: 7.1 Pumping Lemma for Context-Free Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-1-pumping-lemma-for-context-free-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-1-pumping-lemma-for-context-free-languages-diagram.svg" alt="Diagram: 7.1 Pumping Lemma for Context-Free Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-1-pumping-lemma-for-context-free-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-1-pumping-lemma-for-context-free-languages-sticky.svg" alt="Sticky Note: 7.1 Pumping Lemma for Context-Free Languages" width="30%">
-</a>
-
 
 Just as regular languages have a pumping lemma, context-free languages have one too → but it's more complex because derivation trees provide two pumpable subtrees.
 
@@ -107,16 +97,6 @@ If L is a CFL, then there exists an integer **p â‰¥ 1** (the pumping length)
 
 ### 7.2 Ogden's Lemma
 
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-2-ogden-s-lemma-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-2-ogden-s-lemma-handwritten.svg" alt="Handwritten: 7.2 Ogden's Lemma" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-2-ogden-s-lemma-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-2-ogden-s-lemma-diagram.svg" alt="Diagram: 7.2 Ogden's Lemma" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-2-ogden-s-lemma-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-2-ogden-s-lemma-sticky.svg" alt="Sticky Note: 7.2 Ogden's Lemma" width="30%">
-</a>
-
 
 Ogden's lemma strengthens the pumping lemma by allowing us to "mark" certain positions in the string and guarantee that the pumpable part contains marked positions. This is useful for languages where the basic pumping lemma's constraint |vxy| â‰¤ p is too restrictive.
 
@@ -126,16 +106,6 @@ Ogden's lemma strengthens the pumping lemma by allowing us to "mark" certain pos
 3. vxy has at most p marked positions.
 
 ### 7.3 Closure Properties of CFLs
-
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-3-closure-properties-of-cfls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-3-closure-properties-of-cfls-handwritten.svg" alt="Handwritten: 7.3 Closure Properties of CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-3-closure-properties-of-cfls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-3-closure-properties-of-cfls-diagram.svg" alt="Diagram: 7.3 Closure Properties of CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-3-closure-properties-of-cfls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-3-closure-properties-of-cfls-sticky.svg" alt="Sticky Note: 7.3 Closure Properties of CFLs" width="30%">
-</a>
 
 
 Context-free languages are closed under:
@@ -159,16 +129,6 @@ CFLs are **NOT** closed under:
 
 ### 7.4 Chomsky Normal Form (CNF)
 
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-4-chomsky-normal-form-cnf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-4-chomsky-normal-form-cnf-handwritten.svg" alt="Handwritten: 7.4 Chomsky Normal Form (CNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-4-chomsky-normal-form-cnf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-4-chomsky-normal-form-cnf-diagram.svg" alt="Diagram: 7.4 Chomsky Normal Form (CNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-4-chomsky-normal-form-cnf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-4-chomsky-normal-form-cnf-sticky.svg" alt="Sticky Note: 7.4 Chomsky Normal Form (CNF)" width="30%">
-</a>
-
 
 A CFG is in **Chomsky Normal Form** if every production is of the form:
 - A → BC (two non-terminals)
@@ -187,16 +147,6 @@ Every CFG can be converted to an equivalent grammar in CNF. The parse trees in C
 
 ### 7.5 Greibach Normal Form (GNF)
 
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-5-greibach-normal-form-gnf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-5-greibach-normal-form-gnf-handwritten.svg" alt="Handwritten: 7.5 Greibach Normal Form (GNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-5-greibach-normal-form-gnf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-5-greibach-normal-form-gnf-diagram.svg" alt="Diagram: 7.5 Greibach Normal Form (GNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-5-greibach-normal-form-gnf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-5-greibach-normal-form-gnf-sticky.svg" alt="Sticky Note: 7.5 Greibach Normal Form (GNF)" width="30%">
-</a>
-
 
 A CFG is in **Greibach Normal Form** if every production is of the form:
 - A → aÎ± (a terminal followed by a string of variables)
@@ -210,16 +160,6 @@ A CFG is in **Greibach Normal Form** if every production is of the form:
 GNF is useful for constructing PDAs with a single state (where the PDA can deterministically pop and push based on the next input symbol).
 
 ### 7.6 CYK Algorithm
-
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-6-cyk-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-6-cyk-algorithm-handwritten.svg" alt="Handwritten: 7.6 CYK Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-6-cyk-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-6-cyk-algorithm-diagram.svg" alt="Diagram: 7.6 CYK Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-6-cyk-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-6-cyk-algorithm-sticky.svg" alt="Sticky Note: 7.6 CYK Algorithm" width="30%">
-</a>
 
 
 The **Cocke-Younger-Kasami (CYK) algorithm** determines whether a string w is generated by a given CFG in CNF. It uses dynamic programming in O(nÂ³) time where n = |w|.
@@ -238,16 +178,6 @@ Output: Whether w âˆˆ L(G).
 4. Accept if S âˆˆ T[1,n].
 
 ### 7.7 Decision Properties of CFLs
-
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-7-decision-properties-of-cfls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-7-decision-properties-of-cfls-handwritten.svg" alt="Handwritten: 7.7 Decision Properties of CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-7-decision-properties-of-cfls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-7-decision-properties-of-cfls-diagram.svg" alt="Diagram: 7.7 Decision Properties of CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-7-decision-properties-of-cfls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/08-cfl/7-7-decision-properties-of-cfls-sticky.svg" alt="Sticky Note: 7.7 Decision Properties of CFLs" width="30%">
-</a>
 
 
 | Problem | Status | Notes |

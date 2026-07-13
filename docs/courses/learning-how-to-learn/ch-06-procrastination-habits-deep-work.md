@@ -75,16 +75,6 @@ After completing this chapter, you will be able to:
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -1638,57 +1628,17 @@ class MonthlyRetrospective {
 
 ### 1. What worked this month?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/1-what-worked-this-month-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/1-what-worked-this-month-handwritten.svg" alt="Handwritten: 1. What worked this month?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/1-what-worked-this-month-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/1-what-worked-this-month-diagram.svg" alt="Diagram: 1. What worked this month?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/1-what-worked-this-month-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/1-what-worked-this-month-sticky.svg" alt="Sticky Note: 1. What worked this month?" width="30%">
-</a>
-
 (List 3-5 things that went well. Be specific.)
 
 ### 2. What didn't work?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/2-what-didn-t-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/2-what-didn-t-work-handwritten.svg" alt="Handwritten: 2. What didn't work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/2-what-didn-t-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/2-what-didn-t-work-diagram.svg" alt="Diagram: 2. What didn't work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/2-what-didn-t-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/2-what-didn-t-work-sticky.svg" alt="Sticky Note: 2. What didn't work?" width="30%">
-</a>
 
 (List 3-5 things. No sugar-coating. This is data, not judgment.)
 
 ### 3. What will I change?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/3-what-will-i-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/3-what-will-i-change-handwritten.svg" alt="Handwritten: 3. What will I change?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/3-what-will-i-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/3-what-will-i-change-diagram.svg" alt="Diagram: 3. What will I change?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/3-what-will-i-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/3-what-will-i-change-sticky.svg" alt="Sticky Note: 3. What will I change?" width="30%">
-</a>
-
 (For each thing that didn't work, propose a concrete change.)
 
 ### 4. Stop / Start / Continue
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/4-stop-start-continue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/4-stop-start-continue-handwritten.svg" alt="Handwritten: 4. Stop / Start / Continue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/4-stop-start-continue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/4-stop-start-continue-diagram.svg" alt="Diagram: 4. Stop / Start / Continue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/4-stop-start-continue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/4-stop-start-continue-sticky.svg" alt="Sticky Note: 4. Stop / Start / Continue" width="30%">
-</a>
 
 
 Stop doing:    _______  (one low-value activity to eliminate)
@@ -1697,32 +1647,12 @@ Continue doing: _______  (one high-value behavior to maintain)
 
 ### 5. Progress on quarterly WIG
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/5-progress-on-quarterly-wig-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/5-progress-on-quarterly-wig-handwritten.svg" alt="Handwritten: 5. Progress on quarterly WIG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/5-progress-on-quarterly-wig-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/5-progress-on-quarterly-wig-diagram.svg" alt="Diagram: 5. Progress on quarterly WIG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/5-progress-on-quarterly-wig-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/5-progress-on-quarterly-wig-sticky.svg" alt="Sticky Note: 5. Progress on quarterly WIG" width="30%">
-</a>
-
 - [WIG statement]:
 - Progress: ___%
 - On track? Yes / No
 - If no, what needs to change?
 
 ### 6. Key insight this month
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/6-key-insight-this-month-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/6-key-insight-this-month-handwritten.svg" alt="Handwritten: 6. Key insight this month" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/6-key-insight-this-month-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/6-key-insight-this-month-diagram.svg" alt="Diagram: 6. Key insight this month" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/6-key-insight-this-month-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/6-key-insight-this-month-sticky.svg" alt="Sticky Note: 6. Key insight this month" width="30%">
-</a>
 
 (A single sentence capturing the most important thing you learned about learning itself.)
 ```
@@ -2119,16 +2049,6 @@ They quit during the seed phase. They compare their Day 30 to someone else's Yea
 
 
 ### Self-Assessment Quiz
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-06-procrastination-habits-deep-work/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
-</a>
 
 
 **1. What are the four components of the procrastination loop, in order?**

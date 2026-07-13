@@ -197,16 +197,6 @@ describe("TaskCard", () => {
 
 ### Custom Hook Testing
 
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/custom-hook-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/custom-hook-testing-handwritten.svg" alt="Handwritten: Custom Hook Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/custom-hook-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/custom-hook-testing-diagram.svg" alt="Diagram: Custom Hook Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/custom-hook-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/custom-hook-testing-sticky.svg" alt="Sticky Note: Custom Hook Testing" width="30%">
-</a>
-
 
 ```typescript
 // hooks/useLocalStorage.test.ts
@@ -469,16 +459,6 @@ export default defineConfig({
 
 ### Accessibility Testing with axe-core
 
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/accessibility-testing-with-axe-core-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/accessibility-testing-with-axe-core-handwritten.svg" alt="Handwritten: Accessibility Testing with axe-core" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/accessibility-testing-with-axe-core-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/accessibility-testing-with-axe-core-diagram.svg" alt="Diagram: Accessibility Testing with axe-core" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/accessibility-testing-with-axe-core-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/accessibility-testing-with-axe-core-sticky.svg" alt="Sticky Note: Accessibility Testing with axe-core" width="30%">
-</a>
-
 
 Automated accessibility testing catches common WCAG violations.
 
@@ -511,16 +491,6 @@ test("dashboard page is accessible", async ({ page }) => {
 
 ### Test-Driven Development (TDD) Workflow
 
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/test-driven-development-tdd-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/test-driven-development-tdd-workflow-handwritten.svg" alt="Handwritten: Test-Driven Development (TDD) Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/test-driven-development-tdd-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/test-driven-development-tdd-workflow-diagram.svg" alt="Diagram: Test-Driven Development (TDD) Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/test-driven-development-tdd-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/test-driven-development-tdd-workflow-sticky.svg" alt="Sticky Note: Test-Driven Development (TDD) Workflow" width="30%">
-</a>
-
 
 ```mermaid
 graph LR
@@ -533,16 +503,6 @@ graph LR
 ```
 
 ### Debugging Flaky Tests
-
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/debugging-flaky-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/debugging-flaky-tests-handwritten.svg" alt="Handwritten: Debugging Flaky Tests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/debugging-flaky-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/debugging-flaky-tests-diagram.svg" alt="Diagram: Debugging Flaky Tests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/debugging-flaky-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/debugging-flaky-tests-sticky.svg" alt="Sticky Note: Debugging Flaky Tests" width="30%">
-</a>
 
 
 ```typescript
@@ -910,16 +870,6 @@ Testing follows the pyramid model: many unit tests for isolated logic, some inte
 
 ### Application Projects
 
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
-</a>
-
 
 1. Add snapshot testing for a React component
 2. Write integration tests for all CRUD endpoints of an API
@@ -933,30 +883,10 @@ Testing follows the pyramid model: many unit tests for isolated logic, some inte
 
 ### Challenge Project
 
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
-</a>
-
 
 Achieve 90%+ code coverage on a web application with unit tests for utility functions, component tests with all states (loading, empty, error, populated), integration tests for all API routes, and E2E tests covering the complete user journey from registration to task completion.
 
 ### Practical Takeaways
-
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/practical-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/practical-takeaways-handwritten.svg" alt="Handwritten: Practical Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/practical-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/practical-takeaways-diagram.svg" alt="Diagram: Practical Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/16-testing-web/practical-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/16-testing-web/practical-takeaways-sticky.svg" alt="Sticky Note: Practical Takeaways" width="30%">
-</a>
 
 
 1. **Test behavior, not implementation** — use `getByRole` and `getByText` over `getByTestId` to test what users actually experience.

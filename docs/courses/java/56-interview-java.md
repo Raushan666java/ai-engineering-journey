@@ -64,16 +64,6 @@ flowchart LR
 
 ### Q1: How does Java implement polymorphism?
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/how-does-java-implement-polymorphism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/how-does-java-implement-polymorphism-handwritten.svg" alt="Handwritten: How does Java implement polymorphism?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/how-does-java-implement-polymorphism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/how-does-java-implement-polymorphism-diagram.svg" alt="Diagram: How does Java implement polymorphism?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/how-does-java-implement-polymorphism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/how-does-java-implement-polymorphism-sticky.svg" alt="Sticky Note: How does Java implement polymorphism?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -114,16 +104,6 @@ public class PolymorphismExample {
 The JVM uses a vtable per class. At runtime, it looks up the method in the actual object's class. Static/private/final methods and fields are not polymorphic.
 
 ### Q2: Inheritance vs Composition → when to use which?
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/inheritance-vs-composition-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/inheritance-vs-composition-when-to-use-which-handwritten.svg" alt="Handwritten: Inheritance vs Composition → when to use which?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/inheritance-vs-composition-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/inheritance-vs-composition-when-to-use-which-diagram.svg" alt="Diagram: Inheritance vs Composition → when to use which?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/inheritance-vs-composition-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/inheritance-vs-composition-when-to-use-which-sticky.svg" alt="Sticky Note: Inheritance vs Composition → when to use which?" width="30%">
-</a>
 
 
 **Answer:** Inheritance models is-a (Dog extends Animal). Composition models has-a (Car has Engine). Favor composition over inheritance because inheritance breaks encapsulation.
@@ -166,16 +146,6 @@ Use inheritance for true is-a with Liskov substitution. Use composition for has-
 
 ### Q3: SOLID principles.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/solid-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/solid-principles-handwritten.svg" alt="Handwritten: SOLID principles." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/solid-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/solid-principles-diagram.svg" alt="Diagram: SOLID principles." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/solid-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/solid-principles-sticky.svg" alt="Sticky Note: SOLID principles." width="30%">
-</a>
-
 
 **Answer:** SOLID is five design principles by Robert C. Martin.
 
@@ -217,16 +187,6 @@ class UserService { private final UserRepository r; UserService(UserRepository r
 
 ### Q4: HashMap internals.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/hashmap-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/hashmap-internals-handwritten.svg" alt="Handwritten: HashMap internals." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/hashmap-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/hashmap-internals-diagram.svg" alt="Diagram: HashMap internals." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/hashmap-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/hashmap-internals-sticky.svg" alt="Sticky Note: HashMap internals." width="30%">
-</a>
-
 
 **Answer:** HashMap stores entries in a Node array. Uses hashCode() for bucket, equals() for entry within bucket. Default capacity 16, load factor 0.75, threshold 12.
 
@@ -253,16 +213,6 @@ put(): hash spread -> index -> if empty, place; else traverse list/tree -> repla
 
 ### Q5: ConcurrentHashMap thread-safety.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/concurrenthashmap-thread-safety-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/concurrenthashmap-thread-safety-handwritten.svg" alt="Handwritten: ConcurrentHashMap thread-safety." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/concurrenthashmap-thread-safety-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/concurrenthashmap-thread-safety-diagram.svg" alt="Diagram: ConcurrentHashMap thread-safety." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/concurrenthashmap-thread-safety-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/concurrenthashmap-thread-safety-sticky.svg" alt="Sticky Note: ConcurrentHashMap thread-safety." width="30%">
-</a>
-
 
 **Answer:** Java 8+ CHM uses CAS on individual nodes, synchronized only for tree ops, volatile reads. Java 7 used 16 segments with separate locks.
 
@@ -287,16 +237,6 @@ public class CHMDeepDive {
 Key ops: putIfAbsent, compute, computeIfAbsent, merge. Reads lock-free. Iterators weakly consistent. Null keys/values not allowed. Size uses LongAdder-style counters.
 
 ### Q6: TreeMap vs HashMap vs LinkedHashMap.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/treemap-vs-hashmap-vs-linkedhashmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/treemap-vs-hashmap-vs-linkedhashmap-handwritten.svg" alt="Handwritten: TreeMap vs HashMap vs LinkedHashMap." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/treemap-vs-hashmap-vs-linkedhashmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/treemap-vs-hashmap-vs-linkedhashmap-diagram.svg" alt="Diagram: TreeMap vs HashMap vs LinkedHashMap." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/treemap-vs-hashmap-vs-linkedhashmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/treemap-vs-hashmap-vs-linkedhashmap-sticky.svg" alt="Sticky Note: TreeMap vs HashMap vs LinkedHashMap." width="30%">
-</a>
 
 
 **Answer:** All implement Map but differ in ordering, performance, and memory.
@@ -327,16 +267,6 @@ HashMap O(1), no order, allows null. LinkedHashMap O(1), insertion/access order,
 
 ### Q7: Fail-fast vs fail-safe iterators.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/fail-fast-vs-fail-safe-iterators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/fail-fast-vs-fail-safe-iterators-handwritten.svg" alt="Handwritten: Fail-fast vs fail-safe iterators." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/fail-fast-vs-fail-safe-iterators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/fail-fast-vs-fail-safe-iterators-diagram.svg" alt="Diagram: Fail-fast vs fail-safe iterators." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/fail-fast-vs-fail-safe-iterators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/fail-fast-vs-fail-safe-iterators-sticky.svg" alt="Sticky Note: Fail-fast vs fail-safe iterators." width="30%">
-</a>
-
 
 **Answer:** Fail-fast: throw ConcurrentModificationException on structural mod after iterator creation. Fail-safe: tolerant of concurrent mods.
 
@@ -362,16 +292,6 @@ public class FailFastFailSafe {
 ArrayList checks modCount on next()/remove(). CopyOnWriteArrayList snapshots array at creation. ConcurrentHashMap weakly consistent.
 
 ### Q8: Comparable vs Comparator.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/comparable-vs-comparator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/comparable-vs-comparator-handwritten.svg" alt="Handwritten: Comparable vs Comparator." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/comparable-vs-comparator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/comparable-vs-comparator-diagram.svg" alt="Diagram: Comparable vs Comparator." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/comparable-vs-comparator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/comparable-vs-comparator-sticky.svg" alt="Sticky Note: Comparable vs Comparator." width="30%">
-</a>
 
 
 **Answer:** Comparable defines natural order (a.compareTo(b)). Comparator defines external order. A class has one Comparable but many Comparators.
@@ -407,16 +327,6 @@ If compareTo() inconsistent with equals(), TreeSet/TreeMap use compareTo() for u
 
 ### Q9: Thread lifecycle states.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/thread-lifecycle-states-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/thread-lifecycle-states-handwritten.svg" alt="Handwritten: Thread lifecycle states." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/thread-lifecycle-states-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/thread-lifecycle-states-diagram.svg" alt="Diagram: Thread lifecycle states." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/thread-lifecycle-states-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/thread-lifecycle-states-sticky.svg" alt="Sticky Note: Thread lifecycle states." width="30%">
-</a>
-
 
 **Answer:** NEW, RUNNABLE, BLOCKED, WAITING, TIMED_WAITING, TERMINATED.
 
@@ -444,16 +354,6 @@ BLOCKED = waiting for monitor. WAITING = wait/park/join without timeout. TIMED_W
 
 ### Q10: synchronized keyword.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/synchronized-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/synchronized-keyword-handwritten.svg" alt="Handwritten: synchronized keyword." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/synchronized-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/synchronized-keyword-diagram.svg" alt="Diagram: synchronized keyword." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/synchronized-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/synchronized-keyword-sticky.svg" alt="Sticky Note: synchronized keyword." width="30%">
-</a>
-
 
 **Answer:** synchronized provides mutual exclusion and happens-before visibility. Instance methods lock on this. Static methods lock on Class object.
 
@@ -480,16 +380,6 @@ public class SyncDemo {
 Object header lock states: biased -> lightweight -> heavyweight (one-way escalation). synchronized is reentrant (same thread can re-acquire). Lock on mutable fields/String literals is dangerous.
 
 ### Q11: volatile keyword.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/volatile-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/volatile-keyword-handwritten.svg" alt="Handwritten: volatile keyword." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/volatile-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/volatile-keyword-diagram.svg" alt="Diagram: volatile keyword." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/volatile-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/volatile-keyword-sticky.svg" alt="Sticky Note: volatile keyword." width="30%">
-</a>
 
 
 **Answer:** volatile guarantees visibility across threads. Write happens-before subsequent read. Does NOT provide atomicity.
@@ -519,16 +409,6 @@ class VolatileNotAtomic {
 Prevents reordering (memory barriers). Acquire semantics on read. Release semantics on write. Double-checked locking requires volatile.
 
 ### Q12: Lock vs synchronized.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/lock-vs-synchronized-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/lock-vs-synchronized-handwritten.svg" alt="Handwritten: Lock vs synchronized." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/lock-vs-synchronized-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/lock-vs-synchronized-diagram.svg" alt="Diagram: Lock vs synchronized." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/lock-vs-synchronized-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/lock-vs-synchronized-sticky.svg" alt="Sticky Note: Lock vs synchronized." width="30%">
-</a>
 
 
 **Answer:** Lock provides try-lock with timeout, interruptible locking, fairness, multiple Conditions. synchronized is simpler and JVM-optimized.
@@ -582,16 +462,6 @@ Use synchronized for simple mutex with short critical sections. Use ReentrantLoc
 
 ### Q13: ReentrantLock features.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/reentrantlock-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/reentrantlock-features-handwritten.svg" alt="Handwritten: ReentrantLock features." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/reentrantlock-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/reentrantlock-features-diagram.svg" alt="Diagram: ReentrantLock features." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/reentrantlock-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/reentrantlock-features-sticky.svg" alt="Sticky Note: ReentrantLock features." width="30%">
-</a>
-
 
 **Answer:** Reentrancy, fairness, Conditions, tryLock with timeout, lock introspection.
 
@@ -625,16 +495,6 @@ public class ReentrantLockFeatures {
 getHoldCount(), isHeldByCurrentThread(), isLocked(), getQueueLength(). Condition.await() releases lock atomically, re-acquires on signal. Fair lock: FIFO. Unfair: barging (better throughput).
 
 ### Q14: CountDownLatch vs CyclicBarrier vs Semaphore.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/countdownlatch-vs-cyclicbarrier-vs-semaphore-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/countdownlatch-vs-cyclicbarrier-vs-semaphore-handwritten.svg" alt="Handwritten: CountDownLatch vs CyclicBarrier vs Semaphore." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/countdownlatch-vs-cyclicbarrier-vs-semaphore-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/countdownlatch-vs-cyclicbarrier-vs-semaphore-diagram.svg" alt="Diagram: CountDownLatch vs CyclicBarrier vs Semaphore." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/countdownlatch-vs-cyclicbarrier-vs-semaphore-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/countdownlatch-vs-cyclicbarrier-vs-semaphore-sticky.svg" alt="Sticky Note: CountDownLatch vs CyclicBarrier vs Semaphore." width="30%">
-</a>
 
 
 **Answer:** All AQS-based with different use cases.
@@ -672,16 +532,6 @@ Latch: one-shot, cannot reset. Barrier: reusable, BrokenBarrierException on fail
 
 ### Q15: ExecutorService thread pools.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/executorservice-thread-pools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/executorservice-thread-pools-handwritten.svg" alt="Handwritten: ExecutorService thread pools." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/executorservice-thread-pools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/executorservice-thread-pools-diagram.svg" alt="Diagram: ExecutorService thread pools." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/executorservice-thread-pools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/executorservice-thread-pools-sticky.svg" alt="Sticky Note: ExecutorService thread pools." width="30%">
-</a>
-
 
 **Answer:** ExecutorService decouples task submission from execution. Five pool types via Executors.
 
@@ -716,16 +566,6 @@ public class ExecutorServiceDemo {
 
 CPU-bound: cores+1. I/O-bound: cores*(1+wait/compute). Rejection: AbortPolicy, CallerRunsPolicy, DiscardPolicy, DiscardOldestPolicy. Thread starvation deadlock: task submits to same pool and blocks on get().
 ### Q16: ForkJoinPool and work-stealing.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/forkjoinpool-and-work-stealing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/forkjoinpool-and-work-stealing-handwritten.svg" alt="Handwritten: ForkJoinPool and work-stealing." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/forkjoinpool-and-work-stealing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/forkjoinpool-and-work-stealing-diagram.svg" alt="Diagram: ForkJoinPool and work-stealing." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/forkjoinpool-and-work-stealing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/forkjoinpool-and-work-stealing-sticky.svg" alt="Sticky Note: ForkJoinPool and work-stealing." width="30%">
-</a>
 
 
 **Answer:** ForkJoinPool implements work-stealing for divide-and-conquer parallelism. Each worker has a deque. Owner pushes/pops one end (LIFO/cache locality). Idle threads steal from the other end (FIFO/minimizes contention).
@@ -763,16 +603,6 @@ public class ForkJoinDemo {
 invokeAll() is optimized: forks tasks, runs current thread's task while waiting (stealing). ManagedBlocker handles blocking tasks within FJP. ForkJoinPool.commonPool() is default for parallel streams and CompletableFuture.
 
 ### Q17: CompletableFuture → chaining, composition, error handling.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/completablefuture-chaining-composition-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/completablefuture-chaining-composition-error-handling-handwritten.svg" alt="Handwritten: CompletableFuture → chaining, composition, error handling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/completablefuture-chaining-composition-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/completablefuture-chaining-composition-error-handling-diagram.svg" alt="Diagram: CompletableFuture → chaining, composition, error handling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/completablefuture-chaining-composition-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/completablefuture-chaining-composition-error-handling-sticky.svg" alt="Sticky Note: CompletableFuture → chaining, composition, error handling." width="30%">
-</a>
 
 
 **Answer:** CompletableFuture enables declarative non-blocking async composition with transformation, combination, and error recovery.
@@ -828,16 +658,6 @@ thenApply vs thenApplyAsync: thenApply runs on completing thread; thenApplyAsync
 
 ### Q18: Virtual Threads (Project Loom).
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/virtual-threads-project-loom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/virtual-threads-project-loom-handwritten.svg" alt="Handwritten: Virtual Threads (Project Loom)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/virtual-threads-project-loom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/virtual-threads-project-loom-diagram.svg" alt="Diagram: Virtual Threads (Project Loom)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/virtual-threads-project-loom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/virtual-threads-project-loom-sticky.svg" alt="Sticky Note: Virtual Threads (Project Loom)." width="30%">
-</a>
-
 
 **Answer:** Virtual threads (Java 21+) are lightweight JVM-managed threads. No 1:1 OS mapping → millions on one platform thread. Blocking yields the carrier.
 
@@ -880,16 +700,6 @@ Pinning: when VT can't unmount (synchronized block, native method). Use Reentran
 
 ### Q19: JVM memory model.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/jvm-memory-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/jvm-memory-model-handwritten.svg" alt="Handwritten: JVM memory model." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/jvm-memory-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/jvm-memory-model-diagram.svg" alt="Diagram: JVM memory model." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/jvm-memory-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/jvm-memory-model-sticky.svg" alt="Sticky Note: JVM memory model." width="30%">
-</a>
-
 
 **Answer:** Per-thread: PC register and stack. Shared: heap and metaspace.
 
@@ -915,16 +725,6 @@ public class JVMMemoryDemo {
 Stack stores primitives and object references. Heap stores objects. Metaspace stores class metadata in native memory. String pool moved from PermGen to heap in Java 7. -XX:StringTableSize (default 60013).
 
 ### Q20: GC algorithms.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/gc-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/gc-algorithms-handwritten.svg" alt="Handwritten: GC algorithms." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/gc-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/gc-algorithms-diagram.svg" alt="Diagram: GC algorithms." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/gc-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/gc-algorithms-sticky.svg" alt="Sticky Note: GC algorithms." width="30%">
-</a>
 
 
 **Answer:** Serial (single-threaded), Parallel (throughput), G1 (low-pause, default), ZGC (sub-ms), Shenandoah (concurrent compaction).
@@ -956,16 +756,6 @@ Throughput -> ParallelGC. Latency -> ZGC/Shenandoah. Footprint limited -> Serial
 
 ### Q21: Class loading mechanism.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/class-loading-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/class-loading-mechanism-handwritten.svg" alt="Handwritten: Class loading mechanism." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/class-loading-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/class-loading-mechanism-diagram.svg" alt="Diagram: Class loading mechanism." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/class-loading-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/class-loading-mechanism-sticky.svg" alt="Sticky Note: Class loading mechanism." width="30%">
-</a>
-
 
 **Answer:** Bootstrap -> Platform -> Application. Parent delegation model.
 
@@ -987,16 +777,6 @@ public class ClassLoaderDemo {
 Delegation: child delegates to parent first. Only if parent can't load does child try. Linking: verification -> preparation -> resolution. Initialization: static blocks. Custom CLs can break delegation (security risk).
 
 ### Q22: String pool and interning.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/string-pool-and-interning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/string-pool-and-interning-handwritten.svg" alt="Handwritten: String pool and interning." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/string-pool-and-interning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/string-pool-and-interning-diagram.svg" alt="Diagram: String pool and interning." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/string-pool-and-interning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/string-pool-and-interning-sticky.svg" alt="Sticky Note: String pool and interning." width="30%">
-</a>
 
 
 **Answer:** String literals are interned in the pool (heap since Java 7). String.intern() adds heap strings to pool.
@@ -1026,16 +806,6 @@ public class StringPoolDemo {
 Compile-time constants interned. Runtime concat creates new String. Always use equals() for comparison unless you control interning.
 
 ### Q23: Lambda expressions and functional interfaces.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/lambda-expressions-and-functional-interfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/lambda-expressions-and-functional-interfaces-handwritten.svg" alt="Handwritten: Lambda expressions and functional interfaces." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/lambda-expressions-and-functional-interfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/lambda-expressions-and-functional-interfaces-diagram.svg" alt="Diagram: Lambda expressions and functional interfaces." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/lambda-expressions-and-functional-interfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/lambda-expressions-and-functional-interfaces-sticky.svg" alt="Sticky Note: Lambda expressions and functional interfaces." width="30%">
-</a>
 
 
 **Answer:** Lambdas implement SAM (Single Abstract Method) interfaces. Compiled to invokedynamic, not anonymous inner classes.
@@ -1070,16 +840,6 @@ public class LambdaDemo {
 Lambdas compile to invokedynamic with LambdaMetafactory. Runtime generates implementation once. No anonymous class overhead per call site.
 
 ### Q24: Streams API.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/streams-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/streams-api-handwritten.svg" alt="Handwritten: Streams API." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/streams-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/streams-api-diagram.svg" alt="Diagram: Streams API." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/streams-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/streams-api-sticky.svg" alt="Sticky Note: Streams API." width="30%">
-</a>
 
 
 **Answer:** Streams process sequences with functional operations. Intermediate ops are lazy. Terminal ops are eager.
@@ -1127,16 +887,6 @@ Stream pipeline: source -> intermediate ops (filter, map, sorted, distinct, limi
 
 ### Q25: Optional best practices.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/optional-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/optional-best-practices-handwritten.svg" alt="Handwritten: Optional best practices." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/optional-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/optional-best-practices-diagram.svg" alt="Diagram: Optional best practices." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/optional-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/optional-best-practices-sticky.svg" alt="Sticky Note: Optional best practices." width="30%">
-</a>
-
 
 **Answer:** Optional is a return type container for nullable values. Never as field, parameter, or in collections.
 
@@ -1175,16 +925,6 @@ Never use Optional.get() without isPresent(). Not serializable. orElse vs orElse
 
 ### Q26: Method references.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/method-references-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/method-references-handwritten.svg" alt="Handwritten: Method references." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/method-references-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/method-references-diagram.svg" alt="Diagram: Method references." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/method-references-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/method-references-sticky.svg" alt="Sticky Note: Method references." width="30%">
-</a>
-
 
 **Answer:** Four types: static method, instance of particular object, instance of arbitrary object of a type, constructor.
 
@@ -1218,16 +958,6 @@ Method references require compatible functional interface. Constructor refs work
 
 ### Q27: Generics → type erasure.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/generics-type-erasure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/generics-type-erasure-handwritten.svg" alt="Handwritten: Generics → type erasure." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/generics-type-erasure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/generics-type-erasure-diagram.svg" alt="Diagram: Generics → type erasure." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/generics-type-erasure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/generics-type-erasure-sticky.svg" alt="Sticky Note: Generics → type erasure." width="30%">
-</a>
-
 
 **Answer:** Java generics use erasure → type info only at compile time. Erased to bounds (or Object) in bytecode. Compiler inserts casts.
 
@@ -1255,16 +985,6 @@ public class ErasureDemo {
 No generic type at runtime. Bridge methods generated for parameterized subtypes. Cannot use instanceof, arrays, or primitives with generics.
 
 ### Q28: Wildcards and PECS.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/wildcards-and-pecs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/wildcards-and-pecs-handwritten.svg" alt="Handwritten: Wildcards and PECS." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/wildcards-and-pecs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/wildcards-and-pecs-diagram.svg" alt="Diagram: Wildcards and PECS." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/wildcards-and-pecs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/wildcards-and-pecs-sticky.svg" alt="Sticky Note: Wildcards and PECS." width="30%">
-</a>
 
 
 **Answer:** PECS: Producer Extends, Consumer Super. ? extends T for reading (covariant). ? super T for writing (contravariant).
@@ -1304,16 +1024,6 @@ Read-only: ? extends T. Write-only: ? super T. Both read+write: T. Unbounded ?: 
 
 ### Q29: Checked vs unchecked exceptions.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/checked-vs-unchecked-exceptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/checked-vs-unchecked-exceptions-handwritten.svg" alt="Handwritten: Checked vs unchecked exceptions." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/checked-vs-unchecked-exceptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/checked-vs-unchecked-exceptions-diagram.svg" alt="Diagram: Checked vs unchecked exceptions." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/checked-vs-unchecked-exceptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/checked-vs-unchecked-exceptions-sticky.svg" alt="Sticky Note: Checked vs unchecked exceptions." width="30%">
-</a>
-
 
 **Answer:** Checked (extends Exception) must be handled/declared. Unchecked (RuntimeException) do not. Checked for recoverable, unchecked for bugs.
 
@@ -1352,16 +1062,6 @@ public class CheckedVsUnchecked {
 Checked for recoverable (caller retries). Unchecked for programming errors. Never swallow exceptions in empty catch. Always log or rethrow with context.
 
 ### Q30: Try-with-resources.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/try-with-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/try-with-resources-handwritten.svg" alt="Handwritten: Try-with-resources." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/try-with-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/try-with-resources-diagram.svg" alt="Diagram: Try-with-resources." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/try-with-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/try-with-resources-sticky.svg" alt="Sticky Note: Try-with-resources." width="30%">
-</a>
 
 
 **Answer:** Auto-closes AutoCloseable resources in reverse order. Suppressed exceptions attached if both try and close throw.
@@ -1408,16 +1108,6 @@ public class TwrDemo {
 
 Before Java 7: finally blocks with null checks. try-with-resources eliminates boilerplate. Suppressed exceptions: call getSuppressed().
 ### Q31: Exception handling best practices.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/exception-handling-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/exception-handling-best-practices-handwritten.svg" alt="Handwritten: Exception handling best practices." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/exception-handling-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/exception-handling-best-practices-diagram.svg" alt="Diagram: Exception handling best practices." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/exception-handling-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/exception-handling-best-practices-sticky.svg" alt="Sticky Note: Exception handling best practices." width="30%">
-</a>
 
 
 **Answer:** Design for recoverability, clarity, and diagnostic value.
@@ -1478,16 +1168,6 @@ Catch specific exceptions. Never swallow. Log full exception with stack trace. E
 
 ### Q32: Performance profiling.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/performance-profiling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/performance-profiling-handwritten.svg" alt="Handwritten: Performance profiling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/performance-profiling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/performance-profiling-diagram.svg" alt="Diagram: Performance profiling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/performance-profiling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/performance-profiling-sticky.svg" alt="Sticky Note: Performance profiling." width="30%">
-</a>
-
 
 **Answer:** Profile CPU, memory, I/O, lock contention. Tools: jstack, jmap, jstat, async-profiler, JFR, VisualVM.
 
@@ -1521,16 +1201,6 @@ Workflow: baseline -> identify bottleneck -> hypothesis -> measure -> validate. 
 
 ### Q33: JIT compilation.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/jit-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/jit-compilation-handwritten.svg" alt="Handwritten: JIT compilation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/jit-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/jit-compilation-diagram.svg" alt="Diagram: JIT compilation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/jit-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/jit-compilation-sticky.svg" alt="Sticky Note: JIT compilation." width="30%">
-</a>
-
 
 **Answer:** JIT compiles hot methods to native code. Tiered compilation: 0 (interpreted) -> 1-3 (C1 profiling) -> 4 (C2 fully optimized).
 
@@ -1560,16 +1230,6 @@ public class JITDemo {
 -XX:+PrintCompilation shows compilation. -XX:CompileThreshold (default 10000). C2 is most aggressive. Tiered compilation default since Java 8.
 
 ### Q34: Escape analysis and stack allocation.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/escape-analysis-and-stack-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/escape-analysis-and-stack-allocation-handwritten.svg" alt="Handwritten: Escape analysis and stack allocation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/escape-analysis-and-stack-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/escape-analysis-and-stack-allocation-diagram.svg" alt="Diagram: Escape analysis and stack allocation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/escape-analysis-and-stack-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/escape-analysis-and-stack-allocation-sticky.svg" alt="Sticky Note: Escape analysis and stack allocation." width="30%">
-</a>
 
 
 **Answer:** If object reference doesn't escape method/thread, JIT can stack-allocate or scalar-replace, eliminating GC pressure.
@@ -1606,16 +1266,6 @@ public class EscapeAnalysisDemo {
 Enabled by default in C2. -XX:+DoEscapeAnalysis. Stack allocation eliminates GC. Scalar replacement: fields replaced with locals/registers. Lock coarsening: non-escaping sync ops eliminated.
 
 ### Q35: Record classes (Java 14+).
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/record-classes-java-14-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/record-classes-java-14-handwritten.svg" alt="Handwritten: Record classes (Java 14+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/record-classes-java-14-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/record-classes-java-14-diagram.svg" alt="Diagram: Record classes (Java 14+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/record-classes-java-14-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/record-classes-java-14-sticky.svg" alt="Sticky Note: Record classes (Java 14+)." width="30%">
-</a>
 
 
 **Answer:** Records are transparent immutable data carriers. Auto-generate constructor, accessors, equals, hashCode, toString.
@@ -1667,16 +1317,6 @@ Records are final. Cannot extend other classes. Can implement interfaces. Access
 
 ### Q36: Sealed classes (Java 17+).
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/sealed-classes-java-17-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/sealed-classes-java-17-handwritten.svg" alt="Handwritten: Sealed classes (Java 17+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/sealed-classes-java-17-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/sealed-classes-java-17-diagram.svg" alt="Diagram: Sealed classes (Java 17+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/sealed-classes-java-17-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/sealed-classes-java-17-sticky.svg" alt="Sticky Note: Sealed classes (Java 17+)." width="30%">
-</a>
-
 
 **Answer:** Sealed classes restrict which classes can extend/implement them. Permitted subclasses declared at definition.
 
@@ -1709,16 +1349,6 @@ public class SealedDemo {
 Permitted subclasses: final, sealed, or non-sealed. Enables exhaustive pattern matching without default. Compiler confirms all permits are covered.
 
 ### Q37: Pattern matching (Java 16+).
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/pattern-matching-java-16-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/pattern-matching-java-16-handwritten.svg" alt="Handwritten: Pattern matching (Java 16+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/pattern-matching-java-16-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/pattern-matching-java-16-diagram.svg" alt="Diagram: Pattern matching (Java 16+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/pattern-matching-java-16-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/pattern-matching-java-16-sticky.svg" alt="Sticky Note: Pattern matching (Java 16+)." width="30%">
-</a>
 
 
 **Answer:** Eliminates type check + cast boilerplate. Pattern variable scoped to applicable block.
@@ -1768,16 +1398,6 @@ Pattern variables in scope when pattern matches AND condition passes. Switch eva
 
 ### Q38: Switch expressions (Java 14+).
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/switch-expressions-java-14-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/switch-expressions-java-14-handwritten.svg" alt="Handwritten: Switch expressions (Java 14+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/switch-expressions-java-14-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/switch-expressions-java-14-diagram.svg" alt="Diagram: Switch expressions (Java 14+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/switch-expressions-java-14-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/switch-expressions-java-14-sticky.svg" alt="Sticky Note: Switch expressions (Java 14+)." width="30%">
-</a>
-
 
 **Answer:** Switch expressions return a value, are exhaustive, eliminate fall-through. Arrow syntax or yield for blocks.
 
@@ -1822,16 +1442,6 @@ public class SwitchExprDemo {
 Arrow (->) no fall-through. yield returns from block case. Must be exhaustive: all enum values, sealed types, or default.
 
 ### Q39: Text blocks (Java 15+).
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/text-blocks-java-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/text-blocks-java-15-handwritten.svg" alt="Handwritten: Text blocks (Java 15+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/text-blocks-java-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/text-blocks-java-15-diagram.svg" alt="Diagram: Text blocks (Java 15+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/text-blocks-java-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/text-blocks-java-15-sticky.svg" alt="Sticky Note: Text blocks (Java 15+)." width="30%">
-</a>
 
 
 **Answer:** Multi-line string literals with automatic indentation stripping. Delimited by triple quotes.
@@ -1878,16 +1488,6 @@ public class TextBlockDemo {
 Common whitespace stripped based on closing delimiter position. Trailing whitespace stripped (use \s to preserve). \ at end suppresses newline (continuation). formatted() for interpolation. No escape needed for double quotes inside.
 
 ### Q40: Memory leak detection.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/memory-leak-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/memory-leak-detection-handwritten.svg" alt="Handwritten: Memory leak detection." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/memory-leak-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/memory-leak-detection-diagram.svg" alt="Diagram: Memory leak detection." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/memory-leak-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/memory-leak-detection-sticky.svg" alt="Sticky Note: Memory leak detection." width="30%">
-</a>
 
 
 **Answer:** Memory leaks occur when objects are unintentionally reachable from GC roots. Common causes: static collections, ThreadLocal, unclosed resources, inner class refs, class loader leaks.
@@ -1949,16 +1549,6 @@ Detection: jmap heap dump, Eclipse MAT dominator tree, VisualVM. Enable HeapDump
 
 ### Q41: Concurrent collections beyond ConcurrentHashMap.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/concurrent-collections-beyond-concurrenthashmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/concurrent-collections-beyond-concurrenthashmap-handwritten.svg" alt="Handwritten: Concurrent collections beyond ConcurrentHashMap." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/concurrent-collections-beyond-concurrenthashmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/concurrent-collections-beyond-concurrenthashmap-diagram.svg" alt="Diagram: Concurrent collections beyond ConcurrentHashMap." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/concurrent-collections-beyond-concurrenthashmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/concurrent-collections-beyond-concurrenthashmap-sticky.svg" alt="Sticky Note: Concurrent collections beyond ConcurrentHashMap." width="30%">
-</a>
-
 
 **Answer:** java.util.concurrent provides CopyOnWriteArrayList, CopyOnWriteArraySet, ConcurrentLinkedQueue, ConcurrentLinkedDeque, BlockingQueue implementations.
 
@@ -1999,16 +1589,6 @@ public class ConcurrentCollections {
 CopyOnWriteArrayList: iterator reflects snapshots at creation, write O(n) copies array. ConcurrentLinkedQueue: CAS-based, unbounded, no blocking. BlockingQueue: bounded, blocking put/take. ConcurrentSkipListMap: O(log n), sorted, concurrent, range queries.
 
 ### Q42: Atomic classes and CAS.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/atomic-classes-and-cas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/atomic-classes-and-cas-handwritten.svg" alt="Handwritten: Atomic classes and CAS." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/atomic-classes-and-cas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/atomic-classes-and-cas-diagram.svg" alt="Diagram: Atomic classes and CAS." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/atomic-classes-and-cas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/atomic-classes-and-cas-sticky.svg" alt="Sticky Note: Atomic classes and CAS." width="30%">
-</a>
 
 
 **Answer:** Atomic classes (AtomicInteger, AtomicReference, LongAdder, etc.) provide lock-free thread-safe operations using Compare-And-Swap CPU instructions.
@@ -2073,16 +1653,6 @@ CAS: CPU instruction (CMPXCHG on x86). Three operands: memory location, expected
 
 ### Q43: String, StringBuilder, StringBuffer.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/string-stringbuilder-stringbuffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/string-stringbuilder-stringbuffer-handwritten.svg" alt="Handwritten: String, StringBuilder, StringBuffer." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/string-stringbuilder-stringbuffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/string-stringbuilder-stringbuffer-diagram.svg" alt="Diagram: String, StringBuilder, StringBuffer." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/string-stringbuilder-stringbuffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/string-stringbuilder-stringbuffer-sticky.svg" alt="Sticky Note: String, StringBuilder, StringBuffer." width="30%">
-</a>
-
 
 **Answer:** String is immutable. StringBuilder is mutable, not thread-safe. StringBuffer is mutable, thread-safe (synchronized). StringBuilder is 2-3x faster than StringBuffer.
 
@@ -2117,16 +1687,6 @@ public class StringPerf {
 String immutability enables string pool, safe HashMap keys, thread-safety. StringBuilder: default capacity 16, grows when needed (newCapacity = old*2+2). Pre-size StringBuilder when possible (50000 in example avoids resizes).
 
 ### Q44: equals() and hashCode() contract.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/equals-and-hashcode-contract-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/equals-and-hashcode-contract-handwritten.svg" alt="Handwritten: equals() and hashCode() contract." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/equals-and-hashcode-contract-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/equals-and-hashcode-contract-diagram.svg" alt="Diagram: equals() and hashCode() contract." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/equals-and-hashcode-contract-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/equals-and-hashcode-contract-sticky.svg" alt="Sticky Note: equals() and hashCode() contract." width="30%">
-</a>
 
 
 **Answer:** If equals() returns true for two objects, hashCode() MUST return the same value. If equals() returns false, hashCode() SHOULD (but not required) return different values.
@@ -2194,16 +1754,6 @@ Always override both equals() AND hashCode(). Use Objects.equals() and Objects.h
 
 ### Q45: NIO and NIO.2 (Java 7+).
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/nio-and-nio-2-java-7-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/nio-and-nio-2-java-7-handwritten.svg" alt="Handwritten: NIO and NIO.2 (Java 7+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/nio-and-nio-2-java-7-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/nio-and-nio-2-java-7-diagram.svg" alt="Diagram: NIO and NIO.2 (Java 7+)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/nio-and-nio-2-java-7-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/nio-and-nio-2-java-7-sticky.svg" alt="Sticky Note: NIO and NIO.2 (Java 7+)." width="30%">
-</a>
-
 
 **Answer:** java.nio.file provides modern file I/O with Path, Files, Paths, FileVisitor, WatchService. Non-blocking NIO channels for networking.
 
@@ -2260,16 +1810,6 @@ public class NIO2Demo {
 Path.of() / Paths.get(). Files.readString/writeString (Java 11+). Files.walk for directory tree traversal. WatchService monitors directory changes. FileChannel.transferTo/transferFrom for zero-copy (OS-level, no user-space buffering). MappedByteBuffer for memory-mapped files.
 
 ### Q46: Reflection API → use cases and performance implications.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/reflection-api-use-cases-and-performance-implications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/reflection-api-use-cases-and-performance-implications-handwritten.svg" alt="Handwritten: Reflection API → use cases and performance implications." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/reflection-api-use-cases-and-performance-implications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/reflection-api-use-cases-and-performance-implications-diagram.svg" alt="Diagram: Reflection API → use cases and performance implications." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/reflection-api-use-cases-and-performance-implications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/reflection-api-use-cases-and-performance-implications-sticky.svg" alt="Sticky Note: Reflection API → use cases and performance implications." width="30%">
-</a>
 
 
 **Answer:** Reflection enables runtime inspection and invocation of classes, methods, fields, and constructors. Used by frameworks (Spring, Hibernate, Jackson), serialization, and dependency injection. Performance is slower due to JIT deoptimization, bounds checks, and boxing.
@@ -2335,16 +1875,6 @@ Use reflection for framework code only. Cache Method/Field/Constructor lookups (
 
 ### Q47: WeakReference, SoftReference, PhantomReference.
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/weakreference-softreference-phantomreference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/weakreference-softreference-phantomreference-handwritten.svg" alt="Handwritten: WeakReference, SoftReference, PhantomReference." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/weakreference-softreference-phantomreference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/weakreference-softreference-phantomreference-diagram.svg" alt="Diagram: WeakReference, SoftReference, PhantomReference." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/weakreference-softreference-phantomreference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/weakreference-softreference-phantomreference-sticky.svg" alt="Sticky Note: WeakReference, SoftReference, PhantomReference." width="30%">
-</a>
-
 
 **Answer:** Reference types allow interaction with GC. SoftReference: cleared only under memory pressure (cache). WeakReference: cleared at next GC (canonical mappings, WeakHashMap). PhantomReference: post-mortem cleanup before finalization, must be polled via ReferenceQueue.
 
@@ -2400,16 +1930,6 @@ public class ReferenceTypes {
 SoftReference: memory-sensitive caches (e.g., image cache evicted before OOM). WeakReference: WeakHashMap, canonical mappings (class Metadata -> ClassLoader). PhantomReference: deterministic cleanup of native resources (vs unreliable finalize()). ReferenceQueue: allows polling or blocking wait for cleared references.
 
 ### Q48: Garbage collection deep dive → G1, ZGC, Shenandoah.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/garbage-collection-deep-dive-g1-zgc-shenandoah-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/garbage-collection-deep-dive-g1-zgc-shenandoah-handwritten.svg" alt="Handwritten: Garbage collection deep dive → G1, ZGC, Shenandoah." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/garbage-collection-deep-dive-g1-zgc-shenandoah-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/garbage-collection-deep-dive-g1-zgc-shenandoah-diagram.svg" alt="Diagram: Garbage collection deep dive → G1, ZGC, Shenandoah." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/garbage-collection-deep-dive-g1-zgc-shenandoah-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/garbage-collection-deep-dive-g1-zgc-shenandoah-sticky.svg" alt="Sticky Note: Garbage collection deep dive → G1, ZGC, Shenandoah." width="30%">
-</a>
 
 
 **Answer:** G1 (default): region-based, concurrent marking, compaction. ZGC: colored pointers, load barriers, multi-TB heaps, sub-1ms pauses. Shenandoah: forwarding pointers, concurrent compaction, no stop-the-world evacuation.
@@ -2471,16 +1991,6 @@ public class GCDeepDive {
 G1: default since Java 9, best balance. ZGC: max throughput with latency, requires 64-bit, large heaps (4TB+). Shenandoah: concurrent compaction with lower CPU cost than ZGC. Tuning: -Xlog:gc* for diagnostics, G1HeapRegionSize=4m (default 2048 regions). ZGC unsupported on 32-bit.
 
 ### Q49: Java Module System (JPMS).
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/java-module-system-jpms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/java-module-system-jpms-handwritten.svg" alt="Handwritten: Java Module System (JPMS)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/java-module-system-jpms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/java-module-system-jpms-diagram.svg" alt="Diagram: Java Module System (JPMS)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/java-module-system-jpms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/java-module-system-jpms-sticky.svg" alt="Sticky Note: Java Module System (JPMS)." width="30%">
-</a>
 
 
 **Answer:** JPMS (Java 9+) provides module descriptors (module-info.java) with requires, exports, opens, provides, uses. Encapsulates packages, enforces dependency contracts, eliminates classpath hell.
@@ -2549,16 +2059,6 @@ Named modules (module-info.java) vs unnamed module (classpath). Automatic module
 
 ### Q50: java.time API (JSR-310).
 
-<a href="../../../assets/images/diagrams/java/56-interview-java/java-time-api-jsr-310-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/java-time-api-jsr-310-handwritten.svg" alt="Handwritten: java.time API (JSR-310)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/java-time-api-jsr-310-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/java-time-api-jsr-310-diagram.svg" alt="Diagram: java.time API (JSR-310)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/java-time-api-jsr-310-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/java-time-api-jsr-310-sticky.svg" alt="Sticky Note: java.time API (JSR-310)." width="30%">
-</a>
-
 
 **Answer:** Modern date/time library replacing java.util.Date and Calendar. Core classes: LocalDate, LocalTime, LocalDateTime, ZonedDateTime, Instant, Duration, Period. All immutable and thread-safe.
 
@@ -2619,16 +2119,6 @@ public class JavaTimeAPI {
 All java.time classes are immutable and thread-safe. Duration = seconds/nanos, Period = years/months/days. Parsing is strict by default (DateTimeFormatter.ofPattern for lenient). ZoneOffset for fixed offsets, ZoneId for full rules (DST aware). Instant for timestamps, ZonedDateTime for human display.
 
 ### Q51: Local variable type inference (var).
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/local-variable-type-inference-var-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/local-variable-type-inference-var-handwritten.svg" alt="Handwritten: Local variable type inference (var)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/local-variable-type-inference-var-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/local-variable-type-inference-var-diagram.svg" alt="Diagram: Local variable type inference (var)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/local-variable-type-inference-var-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/local-variable-type-inference-var-sticky.svg" alt="Sticky Note: Local variable type inference (var)." width="30%">
-</a>
 
 
 **Answer:** var (Java 10+) infers type from initializer on local variables, enhanced for loops, and lambda parameters. Improves readability by eliminating redundant type declarations. Not for fields, method params, or return types.
@@ -2694,16 +2184,6 @@ public class VarDemo {
 var requires initializer on same line. Cannot infer to null, cannot use without assignment. Diamond operator with var: var list = new ArrayList&lt;>() infers ArrayList<Object&gt;. Use var when it improves readability, not for primitive-like types (int, long) where reader needs to see exact type. Good for complex generics, streams, anonymous classes.
 
 ### Q52: Annotations → retention policies, processing, and runtime access.
-
-<a href="../../../assets/images/diagrams/java/56-interview-java/annotations-retention-policies-processing-and-runtime-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/annotations-retention-policies-processing-and-runtime-access-handwritten.svg" alt="Handwritten: Annotations → retention policies, processing, and runtime access." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/annotations-retention-policies-processing-and-runtime-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/annotations-retention-policies-processing-and-runtime-access-diagram.svg" alt="Diagram: Annotations → retention policies, processing, and runtime access." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/56-interview-java/annotations-retention-policies-processing-and-runtime-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/56-interview-java/annotations-retention-policies-processing-and-runtime-access-sticky.svg" alt="Sticky Note: Annotations → retention policies, processing, and runtime access." width="30%">
-</a>
 
 
 **Answer:** Annotations provide metadata for code. Retention: SOURCE (compile only, @Override), CLASS (in bytecode but not runtime, @NonNull), RUNTIME (accessible via reflection, @RequestMapping). Processed by annotation processors (compile-time) or reflection (runtime).

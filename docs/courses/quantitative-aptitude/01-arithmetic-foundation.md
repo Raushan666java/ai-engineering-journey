@@ -48,21 +48,9 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### 1. Percentage
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/1-percentage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/1-percentage-handwritten.svg" alt="Handwritten: 1. Percentage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/1-percentage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/1-percentage-diagram.svg" alt="Diagram: 1. Percentage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/1-percentage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/1-percentage-sticky.svg" alt="Sticky Note: 1. Percentage" width="30%">
-</a>
-
 
 A percentage is a fraction whose denominator is 100. The symbol `%` means per hundred.
 
@@ -112,17 +100,6 @@ Net Discount = a + b - (a × b) / 100
 
 ### 2. Profit & Loss
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/2-profit-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/2-profit-loss-handwritten.svg" alt="Handwritten: 2. Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/2-profit-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/2-profit-loss-diagram.svg" alt="Diagram: 2. Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/2-profit-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/2-profit-loss-sticky.svg" alt="Sticky Note: 2. Profit & Loss" width="30%">
-</a>
-
-
 **Key Terms:**
 - **Cost Price (CP):** The price at which an item is purchased
 - **Selling Price (SP):** The price at which an item is sold
@@ -167,17 +144,6 @@ Profit % = [(True Weight - False Weight) / False Weight] × 100
 
 ### 3. Simple Interest (SI)
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/3-simple-interest-si-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/3-simple-interest-si-handwritten.svg" alt="Handwritten: 3. Simple Interest (SI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/3-simple-interest-si-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/3-simple-interest-si-diagram.svg" alt="Diagram: 3. Simple Interest (SI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/3-simple-interest-si-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/3-simple-interest-si-sticky.svg" alt="Sticky Note: 3. Simple Interest (SI)" width="30%">
-</a>
-
-
 **Formula:**
 
 ```
@@ -199,17 +165,6 @@ SI (monthly) = (P × R × T) / 1200
 ```
 
 ### 4. Compound Interest (CI)
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/4-compound-interest-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/4-compound-interest-ci-handwritten.svg" alt="Handwritten: 4. Compound Interest (CI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/4-compound-interest-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/4-compound-interest-ci-diagram.svg" alt="Diagram: 4. Compound Interest (CI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/4-compound-interest-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/4-compound-interest-ci-sticky.svg" alt="Sticky Note: 4. Compound Interest (CI)" width="30%">
-</a>
-
 
 **Formula:**
 
@@ -244,17 +199,6 @@ CI - SI = P × (R/100)^2 × (3 + R/100)
 
 ### 5. Ratio & Proportion
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/5-ratio-proportion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/5-ratio-proportion-handwritten.svg" alt="Handwritten: 5. Ratio & Proportion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/5-ratio-proportion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/5-ratio-proportion-diagram.svg" alt="Diagram: 5. Ratio & Proportion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/5-ratio-proportion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/5-ratio-proportion-sticky.svg" alt="Sticky Note: 5. Ratio & Proportion" width="30%">
-</a>
-
-
 **Ratio:** A comparison of two quantities by division. `a : b = a/b`
 
 **Proportion:** When two ratios are equal. `a : b = c : d` => `ad = bc`
@@ -273,17 +217,6 @@ If `a/b = c/d`, then `(a+b)/(a-b) = (c+d)/(c-d)`
 - **Compound Partnership:** Profit/loss shared in the ratio of (investment × time)
 
 ### 6. Averages
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/6-averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/6-averages-handwritten.svg" alt="Handwritten: 6. Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/6-averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/6-averages-diagram.svg" alt="Diagram: 6. Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/6-averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/01-arithmetic-foundation/6-averages-sticky.svg" alt="Sticky Note: 6. Averages" width="30%">
-</a>
-
 
 **Basic Formula:**
 

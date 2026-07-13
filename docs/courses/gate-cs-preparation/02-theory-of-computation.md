@@ -80,16 +80,6 @@ flowchart LR
 
 ### 1.1 Deterministic Finite Automaton (DFA)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-1-deterministic-finite-automaton-dfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-1-deterministic-finite-automaton-dfa-handwritten.svg" alt="Handwritten: 1.1 Deterministic Finite Automaton (DFA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-1-deterministic-finite-automaton-dfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-1-deterministic-finite-automaton-dfa-diagram.svg" alt="Diagram: 1.1 Deterministic Finite Automaton (DFA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-1-deterministic-finite-automaton-dfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-1-deterministic-finite-automaton-dfa-sticky.svg" alt="Sticky Note: 1.1 Deterministic Finite Automaton (DFA)" width="30%">
-</a>
-
 
 A DFA is a 5-tuple `M = (Q, ÃƒÅ½Ã‚Â£, ÃƒÅ½Ã‚Â´, qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, F)` where:
 
@@ -102,16 +92,6 @@ A DFA is a 5-tuple `M = (Q, ÃƒÅ½Ã‚Â£, ÃƒÅ½Ã‚Â´, qÃƒÂ¢Ã¢�
 A DFA reads one symbol at a time and moves deterministically. Exactly one transition exists for every `(state, symbol)` pair. This is the defining property Ã¢â€ â€™ no choice, no ÃƒÅ½Ã‚Âµ-moves.
 
 ### 1.2 DFA for Even Number of 0s and Even Number of 1s
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-2-dfa-for-even-number-of-0s-and-even-number-of-1s-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-2-dfa-for-even-number-of-0s-and-even-number-of-1s-handwritten.svg" alt="Handwritten: 1.2 DFA for Even Number of 0s and Even Number of 1s" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-2-dfa-for-even-number-of-0s-and-even-number-of-1s-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-2-dfa-for-even-number-of-0s-and-even-number-of-1s-diagram.svg" alt="Diagram: 1.2 DFA for Even Number of 0s and Even Number of 1s" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-2-dfa-for-even-number-of-0s-and-even-number-of-1s-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-2-dfa-for-even-number-of-0s-and-even-number-of-1s-sticky.svg" alt="Sticky Note: 1.2 DFA for Even Number of 0s and Even Number of 1s" width="30%">
-</a>
 
 
 ```
@@ -133,16 +113,6 @@ The state encodes `(parity_of_0s, parity_of_1s)`. The DFA returns to qÃƒÂ¢Ã
 
 ### 1.3 DFA for Strings Ending with "00"
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-3-dfa-for-strings-ending-with-00-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-3-dfa-for-strings-ending-with-00-handwritten.svg" alt="Handwritten: 1.3 DFA for Strings Ending with "00"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-3-dfa-for-strings-ending-with-00-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-3-dfa-for-strings-ending-with-00-diagram.svg" alt="Diagram: 1.3 DFA for Strings Ending with "00"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-3-dfa-for-strings-ending-with-00-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-3-dfa-for-strings-ending-with-00-sticky.svg" alt="Sticky Note: 1.3 DFA for Strings Ending with "00"" width="30%">
-</a>
-
 
 ```
 Q = {qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, qÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�, qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡}
@@ -163,16 +133,6 @@ qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡    | qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬
 - qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡: last two chars are 00
 
 ### 1.4 Nondeterministic Finite Automaton (NFA)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-4-nondeterministic-finite-automaton-nfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-4-nondeterministic-finite-automaton-nfa-handwritten.svg" alt="Handwritten: 1.4 Nondeterministic Finite Automaton (NFA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-4-nondeterministic-finite-automaton-nfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-4-nondeterministic-finite-automaton-nfa-diagram.svg" alt="Diagram: 1.4 Nondeterministic Finite Automaton (NFA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-4-nondeterministic-finite-automaton-nfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-4-nondeterministic-finite-automaton-nfa-sticky.svg" alt="Sticky Note: 1.4 Nondeterministic Finite Automaton (NFA)" width="30%">
-</a>
 
 
 An NFA is a 5-tuple `M = (Q, ÃƒÅ½Ã‚Â£, ÃƒÅ½Ã‚Â´, qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, F)` where `ÃƒÅ½Ã‚Â´: Q ÃƒÆ’Ã¢â‚¬â€� ÃƒÅ½Ã‚Â£ Ã¢â€ â€™ P(Q)` Ã¢â€ â€™ the transition function maps to a **set** of possible next states.
@@ -200,16 +160,6 @@ The NFA "guesses" when a 1 is the third-last symbol, then verifies exactly two m
 
 ### 1.5 ÃƒÅ½Ã‚Âµ-NFA (NFA with ÃƒÅ½Ã‚Âµ-transitions)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-5-nfa-nfa-with-transitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-5-nfa-nfa-with-transitions-handwritten.svg" alt="Handwritten: 1.5 ÃƒÅ½Ã‚Âµ-NFA (NFA with ÃƒÅ½Ã‚Âµ-transitions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-5-nfa-nfa-with-transitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-5-nfa-nfa-with-transitions-diagram.svg" alt="Diagram: 1.5 ÃƒÅ½Ã‚Âµ-NFA (NFA with ÃƒÅ½Ã‚Âµ-transitions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-5-nfa-nfa-with-transitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-5-nfa-nfa-with-transitions-sticky.svg" alt="Sticky Note: 1.5 ÃƒÅ½Ã‚Âµ-NFA (NFA with ÃƒÅ½Ã‚Âµ-transitions)" width="30%">
-</a>
-
 
 An ÃƒÅ½Ã‚Âµ-NFA allows transitions on ÃƒÅ½Ã‚Âµ (empty string). This adds convenience without increasing power.
 
@@ -218,16 +168,6 @@ Formally, `ÃƒÅ½Ã‚Â´: Q ÃƒÆ’Ã¢â‚¬â€� (ÃƒÅ½Ã‚Â£ 
 Every ÃƒÅ½Ã‚Âµ-NFA can be converted to an equivalent NFA (without ÃƒÅ½Ã‚Âµ) by computing ÃƒÅ½Ã‚Âµ-closure: the set of all states reachable via zero or more ÃƒÅ½Ã‚Âµ-transitions.
 
 ### 1.6 NFA to DFA Conversion (Subset Construction)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-6-nfa-to-dfa-conversion-subset-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-6-nfa-to-dfa-conversion-subset-construction-handwritten.svg" alt="Handwritten: 1.6 NFA to DFA Conversion (Subset Construction)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-6-nfa-to-dfa-conversion-subset-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-6-nfa-to-dfa-conversion-subset-construction-diagram.svg" alt="Diagram: 1.6 NFA to DFA Conversion (Subset Construction)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-6-nfa-to-dfa-conversion-subset-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-6-nfa-to-dfa-conversion-subset-construction-sticky.svg" alt="Sticky Note: 1.6 NFA to DFA Conversion (Subset Construction)" width="30%">
-</a>
 
 
 Algorithm outline:
@@ -253,16 +193,6 @@ NFA states: {qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, qÃƒÂ¢Ã¢â‚¬Å¡Ã
 DFA final states: {D} (contains NFA final qÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™)
 
 ### 1.7 DFA Minimization
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-7-dfa-minimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-7-dfa-minimization-handwritten.svg" alt="Handwritten: 1.7 DFA Minimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-7-dfa-minimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-7-dfa-minimization-diagram.svg" alt="Diagram: 1.7 DFA Minimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-7-dfa-minimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-7-dfa-minimization-sticky.svg" alt="Sticky Note: 1.7 DFA Minimization" width="30%">
-</a>
 
 
 Two states `p` and `q` are **distinguishable** if there exists a string w such that exactly one of ÃƒÅ½Ã‚Â´(p, w) and ÃƒÅ½Ã‚Â´(q, w) is final.
@@ -302,16 +232,6 @@ Result: A ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¡ nothing. All states are distinct. The
 
 ### 1.8 Regular Expressions to NFA (Thompson Construction)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-8-regular-expressions-to-nfa-thompson-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-8-regular-expressions-to-nfa-thompson-construction-handwritten.svg" alt="Handwritten: 1.8 Regular Expressions to NFA (Thompson Construction)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-8-regular-expressions-to-nfa-thompson-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-8-regular-expressions-to-nfa-thompson-construction-diagram.svg" alt="Diagram: 1.8 Regular Expressions to NFA (Thompson Construction)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-8-regular-expressions-to-nfa-thompson-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-8-regular-expressions-to-nfa-thompson-construction-sticky.svg" alt="Sticky Note: 1.8 Regular Expressions to NFA (Thompson Construction)" width="30%">
-</a>
-
 
 Given a regex, build an ÃƒÅ½Ã‚Âµ-NFA compositionally:
 
@@ -345,16 +265,6 @@ Step 3: N((a|b)*abb) Ã¢â€ â€™ chain the * NFA with N(a), N(b), N(b)
 Thompson construction yields an ÃƒÅ½Ã‚Âµ-NFA with at most `2 ÃƒÆ’Ã¢â‚¬â€� |regex|` states.
 
 ### 1.9 DFA to Regular Expression (State Elimination Method)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-9-dfa-to-regular-expression-state-elimination-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-9-dfa-to-regular-expression-state-elimination-method-handwritten.svg" alt="Handwritten: 1.9 DFA to Regular Expression (State Elimination Method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-9-dfa-to-regular-expression-state-elimination-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-9-dfa-to-regular-expression-state-elimination-method-diagram.svg" alt="Diagram: 1.9 DFA to Regular Expression (State Elimination Method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-9-dfa-to-regular-expression-state-elimination-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-9-dfa-to-regular-expression-state-elimination-method-sticky.svg" alt="Sticky Note: 1.9 DFA to Regular Expression (State Elimination Method)" width="30%">
-</a>
 
 
 1. Add a new start state with ÃƒÅ½Ã‚Âµ to old start, and a new final state with ÃƒÅ½Ã‚Âµ from all old finals.
@@ -395,16 +305,6 @@ Eliminate B:
 
 ### 1.10 Closure Properties of Regular Languages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-10-closure-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-10-closure-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 1.10 Closure Properties of Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-10-closure-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-10-closure-properties-of-regular-languages-diagram.svg" alt="Diagram: 1.10 Closure Properties of Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-10-closure-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-10-closure-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 1.10 Closure Properties of Regular Languages" width="30%">
-</a>
-
 
 Regular languages are closed under:
 
@@ -423,16 +323,6 @@ Regular languages are closed under:
 **GATE Tip:** Regular languages are **not** closed under subset, superset, or infinite union/intersection.
 
 ### 1.11 Pumping Lemma for Regular Languages
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-11-pumping-lemma-for-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-11-pumping-lemma-for-regular-languages-handwritten.svg" alt="Handwritten: 1.11 Pumping Lemma for Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-11-pumping-lemma-for-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-11-pumping-lemma-for-regular-languages-diagram.svg" alt="Diagram: 1.11 Pumping Lemma for Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-11-pumping-lemma-for-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-11-pumping-lemma-for-regular-languages-sticky.svg" alt="Sticky Note: 1.11 Pumping Lemma for Regular Languages" width="30%">
-</a>
 
 
 > **Pumping Lemma:** If L is regular, then ÃƒÂ¢Ã‹â€ Ã†â€™ p > 0 (pumping length) such that ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ w ÃƒÂ¢Ã‹â€ Ã‹â€  L with |w| ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ p, w can be split as w = xyz where:
@@ -473,16 +363,6 @@ So aÃƒÂ¢Ã‚Â�Ã‚Â± Ã¢â€ â€™ aÃƒÅ Ã‚Â². Infinite
 ```
 
 ### 1.12 GATE Practice Problems Ã¢â€ â€™ Finite Automata
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-12-gate-practice-problems-finite-automata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-12-gate-practice-problems-finite-automata-handwritten.svg" alt="Handwritten: 1.12 GATE Practice Problems Ã¢â€ â€™ Finite Automata" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-12-gate-practice-problems-finite-automata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-12-gate-practice-problems-finite-automata-diagram.svg" alt="Diagram: 1.12 GATE Practice Problems Ã¢â€ â€™ Finite Automata" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-12-gate-practice-problems-finite-automata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/1-12-gate-practice-problems-finite-automata-sticky.svg" alt="Sticky Note: 1.12 GATE Practice Problems Ã¢â€ â€™ Finite Automata" width="30%">
-</a>
 
 
 **Q1.** How many states does the minimal DFA for the language `{w ÃƒÂ¢Ã‹â€ Ã‹â€  {0,1}* | w has odd number of 0s and even number of 1s}` have?
@@ -582,16 +462,6 @@ Explanation: The pattern `(0|1)*0(0|1)(0|1)` means: any prefix, then a 0, then e
 
 ### 2.1 Context-Free Grammar (CFG) Definition
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-1-context-free-grammar-cfg-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-1-context-free-grammar-cfg-definition-handwritten.svg" alt="Handwritten: 2.1 Context-Free Grammar (CFG) Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-1-context-free-grammar-cfg-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-1-context-free-grammar-cfg-definition-diagram.svg" alt="Diagram: 2.1 Context-Free Grammar (CFG) Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-1-context-free-grammar-cfg-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-1-context-free-grammar-cfg-definition-sticky.svg" alt="Sticky Note: 2.1 Context-Free Grammar (CFG) Definition" width="30%">
-</a>
-
 
 A CFG is a 4-tuple `G = (V, T, P, S)` where:
 
@@ -615,16 +485,6 @@ Derivation of id * id + id:
 
 ### 2.2 Parse Trees
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-2-parse-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-2-parse-trees-handwritten.svg" alt="Handwritten: 2.2 Parse Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-2-parse-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-2-parse-trees-diagram.svg" alt="Diagram: 2.2 Parse Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-2-parse-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-2-parse-trees-sticky.svg" alt="Sticky Note: 2.2 Parse Trees" width="30%">
-</a>
-
 
 A parse tree shows the hierarchical structure of a derivation. The root is the start symbol. Each internal node is a nonterminal. Children correspond to the RHS of the production applied. Leaves are terminals (yielding the derived string).
 
@@ -643,16 +503,6 @@ Parse tree for id * id + id:
 ```
 
 ### 2.3 Leftmost and Rightmost Derivations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-3-leftmost-and-rightmost-derivations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-3-leftmost-and-rightmost-derivations-handwritten.svg" alt="Handwritten: 2.3 Leftmost and Rightmost Derivations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-3-leftmost-and-rightmost-derivations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-3-leftmost-and-rightmost-derivations-diagram.svg" alt="Diagram: 2.3 Leftmost and Rightmost Derivations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-3-leftmost-and-rightmost-derivations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-3-leftmost-and-rightmost-derivations-sticky.svg" alt="Sticky Note: 2.3 Leftmost and Rightmost Derivations" width="30%">
-</a>
 
 
 - **Leftmost derivation:** always replace the leftmost nonterminal.
@@ -677,16 +527,6 @@ These produce different parse trees (addition vs multiplication at root), making
 **Inherent ambiguity:** A language is inherently ambiguous if EVERY grammar for it is ambiguous. Example: `{aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¢Ã‚Â�Ã‚Â¿cÃƒÂ¡Ã‚ÂµÃ‚Â�dÃƒÂ¡Ã‚ÂµÃ‚Â� | n,m ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 0} ÃƒÂ¢Ã‹â€ Ã‚Âª {aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¡Ã‚ÂµÃ‚Â�cÃƒÂ¡Ã‚ÂµÃ‚Â�dÃƒÂ¢Ã‚Â�Ã‚Â¿ | n,m ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 0}`.
 
 ### 2.4 Chomsky Normal Form (CNF)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-4-chomsky-normal-form-cnf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-4-chomsky-normal-form-cnf-handwritten.svg" alt="Handwritten: 2.4 Chomsky Normal Form (CNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-4-chomsky-normal-form-cnf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-4-chomsky-normal-form-cnf-diagram.svg" alt="Diagram: 2.4 Chomsky Normal Form (CNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-4-chomsky-normal-form-cnf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-4-chomsky-normal-form-cnf-sticky.svg" alt="Sticky Note: 2.4 Chomsky Normal Form (CNF)" width="30%">
-</a>
 
 
 A CFG is in CNF if every production has the form:
@@ -727,16 +567,6 @@ Final CNF:
 
 ### 2.5 Greibach Normal Form (GNF)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-5-greibach-normal-form-gnf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-5-greibach-normal-form-gnf-handwritten.svg" alt="Handwritten: 2.5 Greibach Normal Form (GNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-5-greibach-normal-form-gnf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-5-greibach-normal-form-gnf-diagram.svg" alt="Diagram: 2.5 Greibach Normal Form (GNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-5-greibach-normal-form-gnf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-5-greibach-normal-form-gnf-sticky.svg" alt="Sticky Note: 2.5 Greibach Normal Form (GNF)" width="30%">
-</a>
-
 
 A CFG is in GNF if every production is of the form `A Ã¢â€ â€™ aÃƒÅ½Ã‚Â±` where `a ÃƒÂ¢Ã‹â€ Ã‹â€  T` and `ÃƒÅ½Ã‚Â± ÃƒÂ¢Ã‹â€ Ã‹â€  V*`. Each step generates exactly one terminal, making it ideal for PDA construction.
 
@@ -750,16 +580,6 @@ Apply left-recursion elimination:
 - A' Ã¢â€ â€™ ÃƒÅ½Ã‚Â±ÃƒÂ¡Ã‚ÂµÃ‚Â¢A' | ÃƒÅ½Ã‚Âµ for each ÃƒÅ½Ã‚Â±ÃƒÂ¡Ã‚ÂµÃ‚Â¢
 
 ### 2.6 Pushdown Automaton (PDA)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-6-pushdown-automaton-pda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-6-pushdown-automaton-pda-handwritten.svg" alt="Handwritten: 2.6 Pushdown Automaton (PDA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-6-pushdown-automaton-pda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-6-pushdown-automaton-pda-diagram.svg" alt="Diagram: 2.6 Pushdown Automaton (PDA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-6-pushdown-automaton-pda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-6-pushdown-automaton-pda-sticky.svg" alt="Sticky Note: 2.6 Pushdown Automaton (PDA)" width="30%">
-</a>
 
 
 A PDA is a 6-tuple `M = (Q, ÃƒÅ½Ã‚Â£, ÃƒÅ½Ã¢â‚¬Å“, ÃƒÅ½Ã‚Â´, qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, ZÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, F)` where:
@@ -795,16 +615,6 @@ F = {qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡}
 
 ### 2.7 CFG to PDA Conversion
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-7-cfg-to-pda-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-7-cfg-to-pda-conversion-handwritten.svg" alt="Handwritten: 2.7 CFG to PDA Conversion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-7-cfg-to-pda-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-7-cfg-to-pda-conversion-diagram.svg" alt="Diagram: 2.7 CFG to PDA Conversion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-7-cfg-to-pda-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-7-cfg-to-pda-conversion-sticky.svg" alt="Sticky Note: 2.7 CFG to PDA Conversion" width="30%">
-</a>
-
 
 Given CFG G, construct PDA P that accepts by empty stack:
 
@@ -839,16 +649,6 @@ Run on "aabb":
 
 ### 2.8 PDA to CFG Conversion
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-8-pda-to-cfg-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-8-pda-to-cfg-conversion-handwritten.svg" alt="Handwritten: 2.8 PDA to CFG Conversion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-8-pda-to-cfg-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-8-pda-to-cfg-conversion-diagram.svg" alt="Diagram: 2.8 PDA to CFG Conversion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-8-pda-to-cfg-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-8-pda-to-cfg-conversion-sticky.svg" alt="Sticky Note: 2.8 PDA to CFG Conversion" width="30%">
-</a>
-
 
 Given PDA P, construct CFG G such that L(G) = L(P):
 
@@ -857,16 +657,6 @@ Create nonterminals `[qXp]` meaning "starting in state q with stack symbol X, en
 Productions simulate stack operations. This is rarely tested in GATE but conceptually important.
 
 ### 2.9 Pumping Lemma for Context-Free Languages
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-9-pumping-lemma-for-context-free-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-9-pumping-lemma-for-context-free-languages-handwritten.svg" alt="Handwritten: 2.9 Pumping Lemma for Context-Free Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-9-pumping-lemma-for-context-free-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-9-pumping-lemma-for-context-free-languages-diagram.svg" alt="Diagram: 2.9 Pumping Lemma for Context-Free Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-9-pumping-lemma-for-context-free-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-9-pumping-lemma-for-context-free-languages-sticky.svg" alt="Sticky Note: 2.9 Pumping Lemma for Context-Free Languages" width="30%">
-</a>
 
 
 > **Pumping Lemma for CFLs:** If L is context-free, then ÃƒÂ¢Ã‹â€ Ã†â€™ p > 0 such that ÃƒÂ¢Ã‹â€ Ã¢â€šÂ¬ w ÃƒÂ¢Ã‹â€ Ã‹â€  L with |w| ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ p, w can be split as w = uvxyz where:
@@ -894,16 +684,6 @@ Contradiction Ã¢â€ â€™ L is not context-free.
 
 ### 2.10 Closure Properties of CFLs
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-10-closure-properties-of-cfls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-10-closure-properties-of-cfls-handwritten.svg" alt="Handwritten: 2.10 Closure Properties of CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-10-closure-properties-of-cfls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-10-closure-properties-of-cfls-diagram.svg" alt="Diagram: 2.10 Closure Properties of CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-10-closure-properties-of-cfls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-10-closure-properties-of-cfls-sticky.svg" alt="Sticky Note: 2.10 Closure Properties of CFLs" width="30%">
-</a>
-
 
 | Operation | Closed? | Notes |
 |-----------|---------|-------|
@@ -920,16 +700,6 @@ Contradiction Ã¢â€ â€™ L is not context-free.
 
 ### 2.11 Deterministic Context-Free Languages (DCFL)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-11-deterministic-context-free-languages-dcfl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-11-deterministic-context-free-languages-dcfl-handwritten.svg" alt="Handwritten: 2.11 Deterministic Context-Free Languages (DCFL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-11-deterministic-context-free-languages-dcfl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-11-deterministic-context-free-languages-dcfl-diagram.svg" alt="Diagram: 2.11 Deterministic Context-Free Languages (DCFL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-11-deterministic-context-free-languages-dcfl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-11-deterministic-context-free-languages-dcfl-sticky.svg" alt="Sticky Note: 2.11 Deterministic Context-Free Languages (DCFL)" width="30%">
-</a>
-
 
 A language is DCFL if it has a deterministic PDA (DPDA) Ã¢â€ â€™ at most one transition per (state, input, stack top) combination.
 
@@ -941,16 +711,6 @@ A language is DCFL if it has a deterministic PDA (DPDA) Ã¢â€ â€™ at m
 - `L = {aÃƒÂ¢Ã‚Â�Ã‚Â±bÃƒÅ Ã‚Â²cÃƒÂ¡Ã‚ÂµÃ‚Â� | i = j or j = k}` is CFL but not DCFL
 
 ### 2.12 GATE Practice Problems Ã¢â€ â€™ CFG & PDA
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-12-gate-practice-problems-cfg-pda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-12-gate-practice-problems-cfg-pda-handwritten.svg" alt="Handwritten: 2.12 GATE Practice Problems Ã¢â€ â€™ CFG & PDA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-12-gate-practice-problems-cfg-pda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-12-gate-practice-problems-cfg-pda-diagram.svg" alt="Diagram: 2.12 GATE Practice Problems Ã¢â€ â€™ CFG & PDA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-12-gate-practice-problems-cfg-pda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/2-12-gate-practice-problems-cfg-pda-sticky.svg" alt="Sticky Note: 2.12 GATE Practice Problems Ã¢â€ â€™ CFG & PDA" width="30%">
-</a>
 
 
 **Q1.** Consider `L = {aÃƒÂ¡Ã‚ÂµÃ‚Â�bÃƒÂ¢Ã‚Â�Ã‚Â¿ | m ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  n}`. Which is true?
@@ -1055,16 +815,6 @@ Explanation: Regular ÃƒÂ¢Ã…Â Ã¢â‚¬Å¡ DCFL ÃƒÂ¢Ã…Â Ã¢
 
 ### 3.1 Turing Machine Definition
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-1-turing-machine-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-1-turing-machine-definition-handwritten.svg" alt="Handwritten: 3.1 Turing Machine Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-1-turing-machine-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-1-turing-machine-definition-diagram.svg" alt="Diagram: 3.1 Turing Machine Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-1-turing-machine-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-1-turing-machine-definition-sticky.svg" alt="Sticky Note: 3.1 Turing Machine Definition" width="30%">
-</a>
-
 
 A TM is a 7-tuple `M = (Q, ÃƒÅ½Ã‚Â£, ÃƒÅ½Ã¢â‚¬Å“, ÃƒÅ½Ã‚Â´, qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, B, F)` where:
 
@@ -1081,16 +831,6 @@ A TM is a 7-tuple `M = (Q, ÃƒÅ½Ã‚Â£, ÃƒÅ½Ã¢â‚¬Å“, ÃƒÅ½
 **Transition notation:** `ÃƒÅ½Ã‚Â´(q, X) = (p, Y, L)` means in state q, reading X, write Y, move left, enter state p.
 
 ### 3.2 TM for `{aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¢Ã‚Â�Ã‚Â¿cÃƒÂ¢Ã‚Â�Ã‚Â¿ | n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1}`
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-2-tm-for-a-b-c-n-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-2-tm-for-a-b-c-n-1-handwritten.svg" alt="Handwritten: 3.2 TM for `{aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¢Ã‚Â�Ã‚Â¿cÃƒÂ¢Ã‚Â�Ã‚Â¿ | n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1}`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-2-tm-for-a-b-c-n-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-2-tm-for-a-b-c-n-1-diagram.svg" alt="Diagram: 3.2 TM for `{aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¢Ã‚Â�Ã‚Â¿cÃƒÂ¢Ã‚Â�Ã‚Â¿ | n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1}`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-2-tm-for-a-b-c-n-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-2-tm-for-a-b-c-n-1-sticky.svg" alt="Sticky Note: 3.2 TM for `{aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¢Ã‚Â�Ã‚Â¿cÃƒÂ¢Ã‚Â�Ã‚Â¿ | n ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1}`" width="30%">
-</a>
 
 
 This language is context-sensitive (not context-free). A TM can recognize it:
@@ -1131,16 +871,6 @@ Q = {qÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬, qÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�
 
 ### 3.3 TM for Palindrome Recognition
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-3-tm-for-palindrome-recognition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-3-tm-for-palindrome-recognition-handwritten.svg" alt="Handwritten: 3.3 TM for Palindrome Recognition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-3-tm-for-palindrome-recognition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-3-tm-for-palindrome-recognition-diagram.svg" alt="Diagram: 3.3 TM for Palindrome Recognition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-3-tm-for-palindrome-recognition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-3-tm-for-palindrome-recognition-sticky.svg" alt="Sticky Note: 3.3 TM for Palindrome Recognition" width="30%">
-</a>
-
 
 ```
 Language: {wwÃƒÂ¡Ã‚Â´Ã‚Â¿ | w ÃƒÂ¢Ã‹â€ Ã‹â€  {a,b}*}
@@ -1164,16 +894,6 @@ Key states needed:
 
 ### 3.4 TM Variations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-4-tm-variations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-4-tm-variations-handwritten.svg" alt="Handwritten: 3.4 TM Variations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-4-tm-variations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-4-tm-variations-diagram.svg" alt="Diagram: 3.4 TM Variations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-4-tm-variations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-4-tm-variations-sticky.svg" alt="Sticky Note: 3.4 TM Variations" width="30%">
-</a>
-
 
 | Variation | Power |
 |-----------|-------|
@@ -1189,16 +909,6 @@ Key states needed:
 
 ### 3.5 Recursively Enumerable vs Recursive Languages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-5-recursively-enumerable-vs-recursive-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-5-recursively-enumerable-vs-recursive-languages-handwritten.svg" alt="Handwritten: 3.5 Recursively Enumerable vs Recursive Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-5-recursively-enumerable-vs-recursive-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-5-recursively-enumerable-vs-recursive-languages-diagram.svg" alt="Diagram: 3.5 Recursively Enumerable vs Recursive Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-5-recursively-enumerable-vs-recursive-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-5-recursively-enumerable-vs-recursive-languages-sticky.svg" alt="Sticky Note: 3.5 Recursively Enumerable vs Recursive Languages" width="30%">
-</a>
-
 
 | Property | Recursive (R) | Recursively Enumerable (RE) |
 |----------|---------------|-----------------------------|
@@ -1210,16 +920,6 @@ Key states needed:
 **Hierarchy:** Regular ÃƒÂ¢Ã…Â Ã¢â‚¬Å¡ CFL ÃƒÂ¢Ã…Â Ã¢â‚¬Å¡ CSL ÃƒÂ¢Ã…Â Ã¢â‚¬Å¡ R ÃƒÂ¢Ã…Â Ã¢â‚¬Å¡ RE
 
 ### 3.6 Undecidability Ã¢â€ â€™ The Halting Problem
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-6-undecidability-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-6-undecidability-the-halting-problem-handwritten.svg" alt="Handwritten: 3.6 Undecidability Ã¢â€ â€™ The Halting Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-6-undecidability-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-6-undecidability-the-halting-problem-diagram.svg" alt="Diagram: 3.6 Undecidability Ã¢â€ â€™ The Halting Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-6-undecidability-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-6-undecidability-the-halting-problem-sticky.svg" alt="Sticky Note: 3.6 Undecidability Ã¢â€ â€™ The Halting Problem" width="30%">
-</a>
 
 
 > **Halting Problem:** Given a TM M and input w, determine whether M halts on w.
@@ -1236,16 +936,6 @@ Proof sketch (by contradiction):
 4. Therefore H cannot exist. The halting problem is undecidable.
 
 ### 3.7 Reduction Proofs
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-7-reduction-proofs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-7-reduction-proofs-handwritten.svg" alt="Handwritten: 3.7 Reduction Proofs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-7-reduction-proofs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-7-reduction-proofs-diagram.svg" alt="Diagram: 3.7 Reduction Proofs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-7-reduction-proofs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-7-reduction-proofs-sticky.svg" alt="Sticky Note: 3.7 Reduction Proofs" width="30%">
-</a>
 
 
 To prove problem P is undecidable: reduce a known undecidable problem (like Halting) to P.
@@ -1269,16 +959,6 @@ Reduce Halting to Empty-String Acceptance (ESA):
 
 ### 3.8 Rice's Theorem
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-8-rice-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-8-rice-s-theorem-handwritten.svg" alt="Handwritten: 3.8 Rice's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-8-rice-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-8-rice-s-theorem-diagram.svg" alt="Diagram: 3.8 Rice's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-8-rice-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-8-rice-s-theorem-sticky.svg" alt="Sticky Note: 3.8 Rice's Theorem" width="30%">
-</a>
-
 
 > **Rice's Theorem:** Any nontrivial property of the language of a TM is undecidable.
 
@@ -1297,16 +977,6 @@ Reduce Halting to Empty-String Acceptance (ESA):
 - Does M halt within 100 steps? (Bounded halting Ã¢â€ â€™ decidable by simulation)
 
 ### 3.9 Post Correspondence Problem (PCP)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-9-post-correspondence-problem-pcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-9-post-correspondence-problem-pcp-handwritten.svg" alt="Handwritten: 3.9 Post Correspondence Problem (PCP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-9-post-correspondence-problem-pcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-9-post-correspondence-problem-pcp-diagram.svg" alt="Diagram: 3.9 Post Correspondence Problem (PCP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-9-post-correspondence-problem-pcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-9-post-correspondence-problem-pcp-sticky.svg" alt="Sticky Note: 3.9 Post Correspondence Problem (PCP)" width="30%">
-</a>
 
 
 > **PCP Instance:** A set of dominos `{(uÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�/vÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�), (uÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡/vÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡), ..., (uÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬â€œ/vÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬â€œ)}` where each uÃƒÂ¡Ã‚ÂµÃ‚Â¢, vÃƒÂ¡Ã‚ÂµÃ‚Â¢ is a string over some alphabet. Question: does there exist a sequence of indices iÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�, iÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡, ..., iÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢ (with repetition allowed) such that uÃƒÂ¡Ã‚ÂµÃ‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�uÃƒÂ¡Ã‚ÂµÃ‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡...uÃƒÂ¡Ã‚ÂµÃ‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢ = vÃƒÂ¡Ã‚ÂµÃ‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�vÃƒÂ¡Ã‚ÂµÃ‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡...vÃƒÂ¡Ã‚ÂµÃ‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢?
@@ -1336,16 +1006,6 @@ PCP is often used in reductions to prove other problems undecidable (e.g., ambig
 
 ### 3.10 Linear Bounded Automata (LBA) and CSL
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-10-linear-bounded-automata-lba-and-csl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-10-linear-bounded-automata-lba-and-csl-handwritten.svg" alt="Handwritten: 3.10 Linear Bounded Automata (LBA) and CSL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-10-linear-bounded-automata-lba-and-csl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-10-linear-bounded-automata-lba-and-csl-diagram.svg" alt="Diagram: 3.10 Linear Bounded Automata (LBA) and CSL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-10-linear-bounded-automata-lba-and-csl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-10-linear-bounded-automata-lba-and-csl-sticky.svg" alt="Sticky Note: 3.10 Linear Bounded Automata (LBA) and CSL" width="30%">
-</a>
-
 
 An LBA is a TM whose tape is limited to the input length (plus possibly a constant factor). LBAs accept exactly the **context-sensitive languages** (CSL).
 
@@ -1354,16 +1014,6 @@ An LBA is a TM whose tape is limited to the input length (plus possibly a consta
 - Equivalence of two LBAs is undecidable
 
 ### 3.11 GATE Practice Problems Ã¢â€ â€™ TM & Undecidability
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-11-gate-practice-problems-tm-undecidability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-11-gate-practice-problems-tm-undecidability-handwritten.svg" alt="Handwritten: 3.11 GATE Practice Problems Ã¢â€ â€™ TM & Undecidability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-11-gate-practice-problems-tm-undecidability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-11-gate-practice-problems-tm-undecidability-diagram.svg" alt="Diagram: 3.11 GATE Practice Problems Ã¢â€ â€™ TM & Undecidability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-11-gate-practice-problems-tm-undecidability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/3-11-gate-practice-problems-tm-undecidability-sticky.svg" alt="Sticky Note: 3.11 GATE Practice Problems Ã¢â€ â€™ TM & Undecidability" width="30%">
-</a>
 
 
 **Q1.** Which of the following problems is decidable?
@@ -1461,16 +1111,6 @@ Explanation: This is a nontrivial semantic property Ã¢â€ â€™ undecida
 
 ### 4.1 Time Complexity Classes
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-1-time-complexity-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-1-time-complexity-classes-handwritten.svg" alt="Handwritten: 4.1 Time Complexity Classes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-1-time-complexity-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-1-time-complexity-classes-diagram.svg" alt="Diagram: 4.1 Time Complexity Classes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-1-time-complexity-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-1-time-complexity-classes-sticky.svg" alt="Sticky Note: 4.1 Time Complexity Classes" width="30%">
-</a>
-
 
 A language L belongs to **TIME(f(n))** if there exists a deterministic TM deciding L in O(f(n)) time.
 
@@ -1484,16 +1124,6 @@ A language L belongs to **TIME(f(n))** if there exists a deterministic TM decidi
 | **NEXPTIME** | ÃƒÂ¢Ã¢â‚¬Â¹Ã†â€™_{kÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥1} NTIME(2^{nÃƒÂ¡Ã‚ÂµÃ‚Â�}) | Nondeterministic exponential time |
 
 ### 4.2 P vs NP
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-2-p-vs-np-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-2-p-vs-np-handwritten.svg" alt="Handwritten: 4.2 P vs NP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-2-p-vs-np-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-2-p-vs-np-diagram.svg" alt="Diagram: 4.2 P vs NP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-2-p-vs-np-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-2-p-vs-np-sticky.svg" alt="Sticky Note: 4.2 P vs NP" width="30%">
-</a>
 
 
 **P:** Problems solvable in polynomial time by a deterministic TM.
@@ -1509,16 +1139,6 @@ A language L belongs to **TIME(f(n))** if there exists a deterministic TM decidi
 - If any NP-complete problem is in P, then P = NP
 
 ### 4.3 NP-Completeness
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-3-np-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-3-np-completeness-handwritten.svg" alt="Handwritten: 4.3 NP-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-3-np-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-3-np-completeness-diagram.svg" alt="Diagram: 4.3 NP-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-3-np-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-3-np-completeness-sticky.svg" alt="Sticky Note: 4.3 NP-Completeness" width="30%">
-</a>
 
 
 A problem A is **NP-complete** if:
@@ -1544,16 +1164,6 @@ This was the first problem proved NP-complete. All later proofs reduce SAT (or a
 3-SAT is NP-complete (reduction from SAT: split longer clauses, pad shorter ones).
 
 ### 4.4 Key NP-Complete Problems
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-4-key-np-complete-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-4-key-np-complete-problems-handwritten.svg" alt="Handwritten: 4.4 Key NP-Complete Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-4-key-np-complete-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-4-key-np-complete-problems-diagram.svg" alt="Diagram: 4.4 Key NP-Complete Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-4-key-np-complete-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-4-key-np-complete-problems-sticky.svg" alt="Sticky Note: 4.4 Key NP-Complete Problems" width="30%">
-</a>
 
 
 #### Vertex Cover
@@ -1583,16 +1193,6 @@ Subset Sum is NP-complete but "weakly" Ã¢â€ â€™ it has a pseudopolyno
 
 ### 4.5 Polynomial-Time Reductions
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-5-polynomial-time-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-5-polynomial-time-reductions-handwritten.svg" alt="Handwritten: 4.5 Polynomial-Time Reductions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-5-polynomial-time-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-5-polynomial-time-reductions-diagram.svg" alt="Diagram: 4.5 Polynomial-Time Reductions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-5-polynomial-time-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-5-polynomial-time-reductions-sticky.svg" alt="Sticky Note: 4.5 Polynomial-Time Reductions" width="30%">
-</a>
-
 
 A reduction from A to B is a polynomial-time computable function f such that `x ÃƒÂ¢Ã‹â€ Ã‹â€  A Ã¢â€¡â€� f(x) ÃƒÂ¢Ã‹â€ Ã‹â€  B`.
 
@@ -1613,16 +1213,6 @@ Subset Sum Ã¢â€ â€™ Knapsack
 ```
 
 ### 4.6 Space Complexity
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-6-space-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-6-space-complexity-handwritten.svg" alt="Handwritten: 4.6 Space Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-6-space-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-6-space-complexity-diagram.svg" alt="Diagram: 4.6 Space Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-6-space-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-6-space-complexity-sticky.svg" alt="Sticky Note: 4.6 Space Complexity" width="30%">
-</a>
 
 
 | Class | Definition | Key Properties |
@@ -1646,16 +1236,6 @@ Proper inclusions known: L ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â  PSPACE, P ÃƒÂ¢Ã
 
 ### 4.7 PSPACE-Completeness
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-7-pspace-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-7-pspace-completeness-handwritten.svg" alt="Handwritten: 4.7 PSPACE-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-7-pspace-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-7-pspace-completeness-diagram.svg" alt="Diagram: 4.7 PSPACE-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-7-pspace-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-7-pspace-completeness-sticky.svg" alt="Sticky Note: 4.7 PSPACE-Completeness" width="30%">
-</a>
-
 
 A problem is **PSPACE-complete** if:
 1. It is in PSPACE
@@ -1668,16 +1248,6 @@ A problem is **PSPACE-complete** if:
 - **REACH in LxL matrix** (regular expression equivalence with shuffle)
 
 ### 4.8 NL-Completeness
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-8-nl-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-8-nl-completeness-handwritten.svg" alt="Handwritten: 4.8 NL-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-8-nl-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-8-nl-completeness-diagram.svg" alt="Diagram: 4.8 NL-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-8-nl-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-8-nl-completeness-sticky.svg" alt="Sticky Note: 4.8 NL-Completeness" width="30%">
-</a>
 
 
 **NL-complete problems:**
@@ -1694,16 +1264,6 @@ A problem is **PSPACE-complete** if:
 
 ### 4.9 The Polynomial Hierarchy
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-9-the-polynomial-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-9-the-polynomial-hierarchy-handwritten.svg" alt="Handwritten: 4.9 The Polynomial Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-9-the-polynomial-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-9-the-polynomial-hierarchy-diagram.svg" alt="Diagram: 4.9 The Polynomial Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-9-the-polynomial-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-9-the-polynomial-hierarchy-sticky.svg" alt="Sticky Note: 4.9 The Polynomial Hierarchy" width="30%">
-</a>
-
 
 The polynomial hierarchy extends P and NP:
 
@@ -1716,16 +1276,6 @@ The polynomial hierarchy extends P and NP:
 **Conjecture:** PH is infinite (strict hierarchy). If P = NP, then PH collapses to P.
 
 ### 4.10 GATE Practice Problems Ã¢â€ â€™ Complexity
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-10-gate-practice-problems-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-10-gate-practice-problems-complexity-handwritten.svg" alt="Handwritten: 4.10 GATE Practice Problems Ã¢â€ â€™ Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-10-gate-practice-problems-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-10-gate-practice-problems-complexity-diagram.svg" alt="Diagram: 4.10 GATE Practice Problems Ã¢â€ â€™ Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-10-gate-practice-problems-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/4-10-gate-practice-problems-complexity-sticky.svg" alt="Sticky Note: 4.10 GATE Practice Problems Ã¢â€ â€™ Complexity" width="30%">
-</a>
 
 
 **Q1.** Which of the following is TRUE?
@@ -1881,16 +1431,6 @@ Explanation: The time hierarchy theorem states that more time allows more proble
 ## Previous Year Questions (GATE 2019-2025)
 
 ### Regular Languages & Finite Automata (12 Questions)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-languages-finite-automata-12-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-languages-finite-automata-12-questions-handwritten.svg" alt="Handwritten: Regular Languages & Finite Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-languages-finite-automata-12-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-languages-finite-automata-12-questions-diagram.svg" alt="Diagram: Regular Languages & Finite Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-languages-finite-automata-12-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-languages-finite-automata-12-questions-sticky.svg" alt="Sticky Note: Regular Languages & Finite Automata (12 Questions)" width="30%">
-</a>
 
 
 ---
@@ -2086,16 +1626,6 @@ LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã‹â€ Ã‚Â© LÃƒÂ¢Ã¢â
 
 ### Context-Free Languages & Pushdown Automata (12 Questions)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-handwritten.svg" alt="Handwritten: Context-Free Languages & Pushdown Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-diagram.svg" alt="Diagram: Context-Free Languages & Pushdown Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-sticky.svg" alt="Sticky Note: Context-Free Languages & Pushdown Automata (12 Questions)" width="30%">
-</a>
-
 
 ---
 
@@ -2279,16 +1809,6 @@ L = all strings of a's followed by b's where the counts are NOT equal. This is {
 
 ### Turing Machines (10 Questions)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-handwritten.svg" alt="Handwritten: Turing Machines (10 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-diagram.svg" alt="Diagram: Turing Machines (10 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-sticky.svg" alt="Sticky Note: Turing Machines (10 Questions)" width="30%">
-</a>
-
 
 ---
 
@@ -2434,16 +1954,6 @@ K = {ÃƒÂ¢Ã…Â¸Ã‚Â¨MÃƒÂ¢Ã…Â¸Ã‚Â© | |L(M)| ÃƒÂ¢Ã¢
 
 ### Undecidability (8 Questions)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-8-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-8-questions-handwritten.svg" alt="Handwritten: Undecidability (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-8-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-8-questions-diagram.svg" alt="Diagram: Undecidability (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-8-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-8-questions-sticky.svg" alt="Sticky Note: Undecidability (8 Questions)" width="30%">
-</a>
-
 
 ---
 
@@ -2560,16 +2070,6 @@ Recursive languages are closed under all Boolean operations (union, intersection
 ---
 
 ### Complexity Theory (8 Questions)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-theory-8-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-theory-8-questions-handwritten.svg" alt="Handwritten: Complexity Theory (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-theory-8-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-theory-8-questions-diagram.svg" alt="Diagram: Complexity Theory (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-theory-8-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-theory-8-questions-sticky.svg" alt="Sticky Note: Complexity Theory (8 Questions)" width="30%">
-</a>
 
 
 ---
@@ -2688,16 +2188,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 
 ### Summary of PYQs by Topic
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/summary-of-pyqs-by-topic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/summary-of-pyqs-by-topic-handwritten.svg" alt="Handwritten: Summary of PYQs by Topic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/summary-of-pyqs-by-topic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/summary-of-pyqs-by-topic-diagram.svg" alt="Diagram: Summary of PYQs by Topic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/summary-of-pyqs-by-topic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/summary-of-pyqs-by-topic-sticky.svg" alt="Sticky Note: Summary of PYQs by Topic" width="30%">
-</a>
-
 
 | Topic | Questions | Years Covered |
 |-------|-----------|--------------|
@@ -2720,16 +2210,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 
 ### Primary Textbooks
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/primary-textbooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/primary-textbooks-handwritten.svg" alt="Handwritten: Primary Textbooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/primary-textbooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/primary-textbooks-diagram.svg" alt="Diagram: Primary Textbooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/primary-textbooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/primary-textbooks-sticky.svg" alt="Sticky Note: Primary Textbooks" width="30%">
-</a>
-
 
 | # | Book | Authors | Coverage in TOC |
 |-----|------|---------|-----------------|
@@ -2740,16 +2220,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 | 5 | **GATE Computer Science and Information Technology** | G. K. Publications | Section on Theory of Computation: Topic-wise previous year questions from all GATE sessions, detailed solutions, chapter-topic mapping to standard textbooks |
 
 ### Chapter/Topic Mapping
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chapter-topic-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chapter-topic-mapping-handwritten.svg" alt="Handwritten: Chapter/Topic Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chapter-topic-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chapter-topic-mapping-diagram.svg" alt="Diagram: Chapter/Topic Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chapter-topic-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chapter-topic-mapping-sticky.svg" alt="Sticky Note: Chapter/Topic Mapping" width="30%">
-</a>
 
 
 | Topic | Hopcroft-Ullman-Motwani | Sipser | Kozen | Mishra-Chandrasekaran |
@@ -2777,16 +2247,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 
 ### GATE-Specific Preparation Roadmap
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/gate-specific-preparation-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/gate-specific-preparation-roadmap-handwritten.svg" alt="Handwritten: GATE-Specific Preparation Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/gate-specific-preparation-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/gate-specific-preparation-roadmap-diagram.svg" alt="Diagram: GATE-Specific Preparation Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/gate-specific-preparation-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/gate-specific-preparation-roadmap-sticky.svg" alt="Sticky Note: GATE-Specific Preparation Roadmap" width="30%">
-</a>
-
 
 **Phase 1 Ã¢â€ â€™ Foundation (30 days):**
 - Sipser Chapters 1ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“3 (core automata theory and TMs) Ã¢â€ â€™ 15 days
@@ -2810,16 +2270,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 
 ### Recommended Problem-Solving Resources
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/recommended-problem-solving-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/recommended-problem-solving-resources-handwritten.svg" alt="Handwritten: Recommended Problem-Solving Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/recommended-problem-solving-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/recommended-problem-solving-resources-diagram.svg" alt="Diagram: Recommended Problem-Solving Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/recommended-problem-solving-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/recommended-problem-solving-resources-sticky.svg" alt="Sticky Note: Recommended Problem-Solving Resources" width="30%">
-</a>
-
 
 | Resource | Focus Area | How to Use |
 |----------|-----------|------------|
@@ -2832,16 +2282,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 | **NPTEL: Theory of Computation (IIT KGP)** | Complete syllabus | Video lectures complementing Sipser; excellent for self-study |
 
 ### Quick Reference: Which Book for Which Proof
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/quick-reference-which-book-for-which-proof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/quick-reference-which-book-for-which-proof-handwritten.svg" alt="Handwritten: Quick Reference: Which Book for Which Proof" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/quick-reference-which-book-for-which-proof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/quick-reference-which-book-for-which-proof-diagram.svg" alt="Diagram: Quick Reference: Which Book for Which Proof" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/quick-reference-which-book-for-which-proof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/quick-reference-which-book-for-which-proof-sticky.svg" alt="Sticky Note: Quick Reference: Which Book for Which Proof" width="30%">
-</a>
 
 
 | Proof Technique | Best Reference |
@@ -2862,16 +2302,6 @@ If LÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã
 ## Additional Previous Year Questions (GATE 2010-2018)
 
 ### Regular Language & Finite Automata (12 Questions)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-language-finite-automata-12-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-language-finite-automata-12-questions-handwritten.svg" alt="Handwritten: Regular Language & Finite Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-language-finite-automata-12-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-language-finite-automata-12-questions-diagram.svg" alt="Diagram: Regular Language & Finite Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-language-finite-automata-12-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/regular-language-finite-automata-12-questions-sticky.svg" alt="Sticky Note: Regular Language & Finite Automata (12 Questions)" width="30%">
-</a>
 
 
 ---
@@ -3057,16 +2487,6 @@ The maximum number of strings of length n accepted by ANY DFA with any number of
 ---
 
 ### Context-Free Languages & Pushdown Automata (12 Questions)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-handwritten.svg" alt="Handwritten: Context-Free Languages & Pushdown Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-diagram.svg" alt="Diagram: Context-Free Languages & Pushdown Automata (12 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/context-free-languages-pushdown-automata-12-questions-sticky.svg" alt="Sticky Note: Context-Free Languages & Pushdown Automata (12 Questions)" width="30%">
-</a>
 
 
 ---
@@ -3255,16 +2675,6 @@ Total steps = n + (n ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ 1) = 2n ÃƒÂ¢Ã�
 
 ### Turing Machines (10 Questions)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-handwritten.svg" alt="Handwritten: Turing Machines (10 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-diagram.svg" alt="Diagram: Turing Machines (10 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/turing-machines-10-questions-sticky.svg" alt="Sticky Note: Turing Machines (10 Questions)" width="30%">
-</a>
-
 
 ---
 
@@ -3419,16 +2829,6 @@ Standard TM transition notation: ÃƒÅ½Ã‚Â´(current_state, read_symbol) =
 
 ### Undecidability & Reductions (8 Questions)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-reductions-8-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-reductions-8-questions-handwritten.svg" alt="Handwritten: Undecidability & Reductions (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-reductions-8-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-reductions-8-questions-diagram.svg" alt="Diagram: Undecidability & Reductions (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-reductions-8-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/undecidability-reductions-8-questions-sticky.svg" alt="Sticky Note: Undecidability & Reductions (8 Questions)" width="30%">
-</a>
-
 
 ---
 
@@ -3545,16 +2945,6 @@ To prove B is undecidable, reduce A (known undecidable) to B (A ÃƒÂ¢Ã¢â�
 ---
 
 ### Complexity Classes (8 Questions)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-classes-8-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-classes-8-questions-handwritten.svg" alt="Handwritten: Complexity Classes (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-classes-8-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-classes-8-questions-diagram.svg" alt="Diagram: Complexity Classes (8 Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-classes-8-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/complexity-classes-8-questions-sticky.svg" alt="Sticky Note: Complexity Classes (8 Questions)" width="30%">
-</a>
 
 
 ---
@@ -3675,16 +3065,6 @@ NP ÃƒÂ¢Ã…Â Ã¢â‚¬Â  PSPACE: a polynomial-time NTM can be simulat
 
 ### 15 GATE-Specific Traps in TOC
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/15-gate-specific-traps-in-toc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/15-gate-specific-traps-in-toc-handwritten.svg" alt="Handwritten: 15 GATE-Specific Traps in TOC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/15-gate-specific-traps-in-toc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/15-gate-specific-traps-in-toc-diagram.svg" alt="Diagram: 15 GATE-Specific Traps in TOC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/15-gate-specific-traps-in-toc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/15-gate-specific-traps-in-toc-sticky.svg" alt="Sticky Note: 15 GATE-Specific Traps in TOC" width="30%">
-</a>
-
 
 **Trap 1: Confusing DCFL vs CFL**
 Key distinction:
@@ -3767,16 +3147,6 @@ CFLs are closed under homomorphism (including erasing homomorphisms). This means
 
 ### Decision Procedure Table
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/decision-procedure-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/decision-procedure-table-handwritten.svg" alt="Handwritten: Decision Procedure Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/decision-procedure-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/decision-procedure-table-diagram.svg" alt="Diagram: Decision Procedure Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/decision-procedure-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/decision-procedure-table-sticky.svg" alt="Sticky Note: Decision Procedure Table" width="30%">
-</a>
-
 
 | Problem | Regular | DCFL | CFL | CSL | Recursive | RE |
 |---------|:-------:|:----:|:---:|:---:|:---------:|:--:|
@@ -3797,16 +3167,6 @@ Key pattern: Everything decidable for Regular; emptiness/finiteness/membership d
 ---
 
 ### Closure Properties Quick Reference
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/closure-properties-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/closure-properties-quick-reference-handwritten.svg" alt="Handwritten: Closure Properties Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/closure-properties-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/closure-properties-quick-reference-diagram.svg" alt="Diagram: Closure Properties Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/closure-properties-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/closure-properties-quick-reference-sticky.svg" alt="Sticky Note: Closure Properties Quick Reference" width="30%">
-</a>
 
 
 | Operation | Regular | DCFL | CFL | CSL | Recursive | RE |
@@ -3834,16 +3194,6 @@ Memory aid for CFL: **UNION, CONCAT, KLEENE, REVERSE, HOM** Ã¢â€ â€™ 
 
 ### Chomsky Hierarchy Comparison
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chomsky-hierarchy-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chomsky-hierarchy-comparison-handwritten.svg" alt="Handwritten: Chomsky Hierarchy Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chomsky-hierarchy-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chomsky-hierarchy-comparison-diagram.svg" alt="Diagram: Chomsky Hierarchy Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chomsky-hierarchy-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/chomsky-hierarchy-comparison-sticky.svg" alt="Sticky Note: Chomsky Hierarchy Comparison" width="30%">
-</a>
-
 
 | Type | Name | Grammar Rule Form | Automaton | Language Class |
 |:----:|------|:-----------------:|-----------|:--------------:|
@@ -3867,16 +3217,6 @@ Memory aid for CFL: **UNION, CONCAT, KLEENE, REVERSE, HOM** Ã¢â€ â€™ 
 
 ### Key Reduction Examples for Undecidability Proofs
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/key-reduction-examples-for-undecidability-proofs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/key-reduction-examples-for-undecidability-proofs-handwritten.svg" alt="Handwritten: Key Reduction Examples for Undecidability Proofs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/key-reduction-examples-for-undecidability-proofs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/key-reduction-examples-for-undecidability-proofs-diagram.svg" alt="Diagram: Key Reduction Examples for Undecidability Proofs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/key-reduction-examples-for-undecidability-proofs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/key-reduction-examples-for-undecidability-proofs-sticky.svg" alt="Sticky Note: Key Reduction Examples for Undecidability Proofs" width="30%">
-</a>
-
 
 **1. A_TM ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ÃƒÂ¢Ã¢â‚¬Å¡Ã‹Å“ HALT_TM**
 Given ÃƒÂ¢Ã…Â¸Ã‚Â¨M,wÃƒÂ¢Ã…Â¸Ã‚Â©, construct M': simulate M on w; if M accepts, halt; if M rejects, loop. Then ÃƒÂ¢Ã…Â¸Ã‚Â¨M,wÃƒÂ¢Ã…Â¸Ã‚Â© ÃƒÂ¢Ã‹â€ Ã‹â€  A_TM ÃƒÂ¢Ã…Â¸Ã‚Âº ÃƒÂ¢Ã…Â¸Ã‚Â¨M'ÃƒÂ¢Ã…Â¸Ã‚Â© ÃƒÂ¢Ã‹â€ Ã‹â€  HALT_TM. This shows HALT is undecidable given A_TM is undecidable.
@@ -3895,16 +3235,6 @@ Given PCP instance (A,B) over ÃƒÅ½Ã‚Â£, construct CFG with productions 
 ---
 
 ### Exam Time-Saving Insights
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/exam-time-saving-insights-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/exam-time-saving-insights-handwritten.svg" alt="Handwritten: Exam Time-Saving Insights" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/exam-time-saving-insights-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/exam-time-saving-insights-diagram.svg" alt="Diagram: Exam Time-Saving Insights" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/exam-time-saving-insights-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/02-theory-of-computation/exam-time-saving-insights-sticky.svg" alt="Sticky Note: Exam Time-Saving Insights" width="30%">
-</a>
 
 
 1. **Quick Regularity Test for {aÃƒÂ¢Ã‚Â�Ã‚Â¿bÃƒÂ¡Ã‚ÂµÃ‚Â�}:**

@@ -89,30 +89,10 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Think of a chessboard at the start of a match. The board is the **state**, the rules define legal **actions**, each move transitions to a new **state**, and checkmate is the **terminal** condition. The entire set of possible move sequences — every game that could ever be played — forms a tree rooted at the starting position. This tree is the **game tree**, and navigating it intelligently is the central challenge of game-playing AI.
 
 ### Formal Definition of a Game
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-handwritten.svg" alt="Handwritten: Formal Definition of a Game" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-diagram.svg" alt="Diagram: Formal Definition of a Game" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/formal-definition-of-a-game-sticky.svg" alt="Sticky Note: Formal Definition of a Game" width="30%">
-</a>
 
 
 A **game** is formally defined by six components:
@@ -130,16 +110,6 @@ The **game tree** represents all possible play sequences. The root is the initia
 
 ### 5.1.1 Types of Games
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-handwritten.svg" alt="Handwritten: 5.1.1 Types of Games" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-diagram.svg" alt="Diagram: 5.1.1 Types of Games" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-1-types-of-games-sticky.svg" alt="Sticky Note: 5.1.1 Types of Games" width="30%">
-</a>
-
 
 Games in AI are classified along three axes:
 
@@ -153,16 +123,6 @@ Games in AI are classified along three axes:
 | | Non-zero-sum | Both can win or lose together | Prisoner's Dilemma, trade games | Separate utility per player |
 
 ### 5.1.2 Game Complexity
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-handwritten.svg" alt="Handwritten: 5.1.2 Game Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-diagram.svg" alt="Diagram: 5.1.2 Game Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/5-1-2-game-complexity-sticky.svg" alt="Sticky Note: 5.1.2 Game Complexity" width="30%">
-</a>
 
 
 | Game | Branching Factor (b) | Game Depth (d) | Approximate Tree Size | AI Method |
@@ -179,30 +139,10 @@ Games in AI are classified along three axes:
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A chess grandmaster doesn't just ask "what's my best move?" — she asks "if I move here, what will my opponent do?" then "if my opponent does that, what can I do next?" This recursive reasoning continues until the end of the game is reached or the player runs out of time. Minimax formalizes this: **MAX chooses the move leading to the highest-value position assuming MIN will always choose the move that leaves MAX with the lowest-value position.**
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. **Check for terminal state** — if the current state is terminal, return its utility value
@@ -213,16 +153,6 @@ A chess grandmaster doesn't just ask "what's my best move?" — she asks "if I m
 6. **Return the value** (or the action associated with the optimal value)
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -252,16 +182,6 @@ function MIN-VALUE(state) returns value
 ```
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Consider this game tree. The MAX player moves first, followed by MIN:
@@ -329,16 +249,6 @@ Trace table showing recursive backpropagation:
 
 ### Python Implementation
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
-
 
 ```python
 import math
@@ -391,16 +301,6 @@ def tic_tac_toe_example():
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Time Complexity:** $O(b^d)$ where $b$ is the branching factor and $d$ is the maximum depth of the game tree.
 
@@ -409,16 +309,6 @@ def tic_tac_toe_example():
 **Space Complexity:** $O(b \times d)$ — the algorithm is depth-first, storing at most $b$ branches at each of $d$ levels on the call stack.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -430,16 +320,6 @@ def tic_tac_toe_example():
 | Works for any two-player zero-sum game | Pure version cannot **stop early** for time-limited play |
 
 ### Depth-Limited Minimax & Evaluation Functions
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-handwritten.svg" alt="Handwritten: Depth-Limited Minimax & Evaluation Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-diagram.svg" alt="Diagram: Depth-Limited Minimax & Evaluation Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/depth-limited-minimax-evaluation-functions-sticky.svg" alt="Sticky Note: Depth-Limited Minimax & Evaluation Functions" width="30%">
-</a>
 
 
 Since full tree search is infeasible for deep games, we use **depth-limited** minimax:
@@ -459,16 +339,6 @@ The evaluation function `EVAL(state)` estimates the utility without exploring to
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 | Edge Case | Description | Handling |
 |-----------|-------------|----------|
@@ -484,30 +354,10 @@ The evaluation function `EVAL(state)` estimates the utility without exploring to
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A detective investigating a crime doesn't need to read every page of every document — once she finds conclusive evidence of guilt, she stops reading and moves on. Alpha-beta pruning does exactly this: **if a branch of the game tree is provably worse than something already found, it is discarded without full exploration.** It's the difference between reading every book in the library cover-to-cover versus scanning the table of contents and putting most back on the shelf.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. **Initialize α = -∞, β = +∞** at the root
@@ -517,16 +367,6 @@ A detective investigating a crime doesn't need to read every page of every docum
 5. A child node receives its **parent's α and β** and may tighten them based on its own evaluation
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -560,16 +400,6 @@ function MIN-VALUE(state, α, β) returns value
 ```
 
 ### Step-by-Step Dry Run (With Pruning)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run (With Pruning)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-diagram.svg" alt="Diagram: Step-by-Step Dry Run (With Pruning)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-with-pruning-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run (With Pruning)" width="30%">
-</a>
 
 
 Consider the same tree, evaluated left-to-right:
@@ -774,16 +604,6 @@ Now let me revise the dry run trace:
 
 ### Python Implementation
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
-
 
 ```python
 import math
@@ -832,16 +652,6 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Time Complexity:**
 - Best case (optimal move ordering): $O(b^{d/2})$ — doubling the searchable depth
@@ -854,16 +664,6 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -875,16 +675,6 @@ def best_action_alphabeta(state, utility_fn, terminal_fn, actions_fn, result_fn)
 
 ### Move Ordering Heuristics
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-handwritten.svg" alt="Handwritten: Move Ordering Heuristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-diagram.svg" alt="Diagram: Move Ordering Heuristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/move-ordering-heuristics-sticky.svg" alt="Sticky Note: Move Ordering Heuristics" width="30%">
-</a>
-
 
 Pruning efficiency depends critically on the order moves are examined. The three key heuristics:
 
@@ -893,16 +683,6 @@ Pruning efficiency depends critically on the order moves are examined. The three
 - **Iterative deepening:** Search to depth $d$, then order moves at depth $d+1$ by their values from depth $d$
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Description | Handling |
@@ -919,30 +699,10 @@ Pruning efficiency depends critically on the order moves are examined. The three
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A backgammon player doesn't know what numbers the dice will show, but they know the probability distribution — each of the 36 die-roll pairs has a known chance. Good play means averaging over all possibilities: "if I move here, there's a 1/36 chance my opponent gets a double, a 5/36 chance I block their runner, etc." **Expectiminimax** formalizes this by adding **chance nodes** where the value is the weighted average (expectation) over all random outcomes.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. **Check for terminal state** — return utility if the game is over
@@ -955,16 +715,6 @@ A backgammon player doesn't know what numbers the dice will show, but they know 
 5. **Propagate values upward** using max, min, or weighted sum depending on node type
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -991,16 +741,6 @@ function EXPECTIMINIMAX(state) returns value
 ```
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Consider a simple game where MAX moves, then CHANCE rolls a die, then MIN moves:
@@ -1069,16 +809,6 @@ Trace table:
 
 ### Python Implementation
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
-
 
 ```python
 import math
@@ -1137,16 +867,6 @@ def dice_game_example():
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Time Complexity:** $O(b^d \times c^d)$ where $b$ is the action branching factor and $c$ is the number of chance outcomes per node.
 
@@ -1155,16 +875,6 @@ def dice_game_example():
 **Space Complexity:** $O(b \times d \times c)$ — same depth-first structure, but each level may need to store chance outcomes.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -1175,16 +885,6 @@ def dice_game_example():
 | Can be combined with depth-limiting | Evaluation functions harder to design for stochastic games |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Description | Handling |
@@ -1201,30 +901,10 @@ def dice_game_example():
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Imagine learning to play a new board game. You don't read the rulebook cover-to-cover and compute every possible sequence (that's minimax). Instead, you play the game against yourself hundreds of times in your head, trying different moves, and noticing which ones lead to wins. Over time, you develop an intuition: "when I open with the center gambit, I seem to win more." **MCTS** is exactly this — it builds a search tree by **simulating random playouts** from promising states, then **focusing more simulations** where they've been most successful.
 
 ### The Four-Phase MCTS Loop
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-handwritten.svg" alt="Handwritten: The Four-Phase MCTS Loop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-diagram.svg" alt="Diagram: The Four-Phase MCTS Loop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/the-four-phase-mcts-loop-sticky.svg" alt="Sticky Note: The Four-Phase MCTS Loop" width="30%">
-</a>
 
 
 MCTS runs a repeated four-phase cycle:
@@ -1241,16 +921,6 @@ These four steps repeat until a computational budget (time or iterations) is exh
 
 ### UCT Selection Formula
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-handwritten.svg" alt="Handwritten: UCT Selection Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-diagram.svg" alt="Diagram: UCT Selection Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/uct-selection-formula-sticky.svg" alt="Sticky Note: UCT Selection Formula" width="30%">
-</a>
-
 
 The most common selection policy is **Upper Confidence Bounds for Trees (UCT)**:
 
@@ -1266,16 +936,6 @@ The first term (exploitation / win rate) favors moves that have performed well. 
 
 ### Algorithm Steps
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
-
 
 1. **Initialize** — create a root node for the current game state
 2. **Repeat** until time/iteration budget runs out:
@@ -1286,16 +946,6 @@ The first term (exploitation / win rate) favors moves that have performed well. 
 3. **Return** — the action with the highest visit count (or win rate) at the root
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1337,16 +987,6 @@ function BACKPROPAGATE(node, result)
 ```
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Let's trace MCTS on a small game tree over 5 iterations.
@@ -1415,16 +1055,6 @@ Trace table after 5 iterations:
 **Result after 5 iterations:** Choose D (highest UCT at root). As iterations increase, the visit counts converge toward optimality.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1507,16 +1137,6 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Time Complexity:** $O(I \times (L + S))$ where $I$ is the number of iterations, $L$ is the average selection path length, and $S$ is the average simulation length.
 
@@ -1525,16 +1145,6 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 **Space Complexity:** $O(I \times \log I)$ — only expanded nodes are stored. The tree grows linearly with iterations, not exponentially with depth.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -1547,16 +1157,6 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 | Edge Case | Description | Handling |
 |-----------|-------------|----------|
@@ -1568,16 +1168,6 @@ def mcts_search(root_state, iterations, actions_fn, result_fn,
 | **Transpositions** | Same state via different paths | Convert to DAG (directed acyclic graph) with transposition table |
 
 ### MCTS with Neural Networks
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-handwritten.svg" alt="Handwritten: MCTS with Neural Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-diagram.svg" alt="Diagram: MCTS with Neural Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/mcts-with-neural-networks-sticky.svg" alt="Sticky Note: MCTS with Neural Networks" width="30%">
-</a>
 
 
 Modern MCTS (AlphaGo, Lc0, KataGo) replaces the random simulation policy with a **neural network** that predicts:
@@ -1679,16 +1269,6 @@ Alpha-beta pruning relies on the **order-preserving** property of min and max ov
 
 ### Chess — Stockfish & Leela Chess Zero (Lc0)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-handwritten.svg" alt="Handwritten: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-diagram.svg" alt="Diagram: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/chess-stockfish-leela-chess-zero-lc0-sticky.svg" alt="Sticky Note: Chess — Stockfish & Leela Chess Zero (Lc0)" width="30%">
-</a>
-
 
 | System | Method | Key Innovation |
 |--------|--------|---------------|
@@ -1699,16 +1279,6 @@ Alpha-beta pruning relies on the **order-preserving** property of min and max ov
 Stockfish uses alpha-beta with **negamax** framework, **iterative deepening**, **transposition tables** (Zobrist hashing), and the **NNUE** (Efficiently Updatable Neural Network) evaluation function that computes board evaluation in O(1) after each move. It achieves an ELO of ~3600, far surpassing any human.
 
 ### Go — AlphaGo, AlphaGo Zero, KataGo
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-handwritten.svg" alt="Handwritten: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-diagram.svg" alt="Diagram: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/go-alphago-alphago-zero-katago-sticky.svg" alt="Sticky Note: Go — AlphaGo, AlphaGo Zero, KataGo" width="30%">
-</a>
 
 
 | System | Method | Breakthrough |
@@ -1721,16 +1291,6 @@ AlphaGo's MCTS used a **dual neural network**: a policy network (suggesting good
 
 ### Poker — Pluribus (2019)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-handwritten.svg" alt="Handwritten: Poker — Pluribus (2019)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-diagram.svg" alt="Diagram: Poker — Pluribus (2019)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/poker-pluribus-2019-sticky.svg" alt="Sticky Note: Poker — Pluribus (2019)" width="30%">
-</a>
-
 
 Pluribus achieved superhuman performance in six-player no-limit Texas Hold'em using **Monte Carlo CFR (MCCFR)** — an MCTS variant applied to counterfactual regret minimization. Unlike chess and Go, poker has **imperfect information** (hidden cards) and **multiple players** (not two-player zero-sum). Pluribus used:
 
@@ -1739,16 +1299,6 @@ Pluribus achieved superhuman performance in six-player no-limit Texas Hold'em us
 - **Abstraction:** Reduced 10¹⁶¹ information sets to manageable clusters
 
 ### Atari — DQN and Beyond
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-handwritten.svg" alt="Handwritten: Atari — DQN and Beyond" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-diagram.svg" alt="Diagram: Atari — DQN and Beyond" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-game-playing/atari-dqn-and-beyond-sticky.svg" alt="Sticky Note: Atari — DQN and Beyond" width="30%">
-</a>
 
 
 Deep Q-Networks (DQN, 2015) used **deep reinforcement learning** to play 49 Atari games directly from pixel input. While not using game-tree search per se, DQN's Q-learning approximates the minimax value function — learning to evaluate state-action pairs without explicit tree construction. AlphaZero's framework later unified MCTS with learned neural networks across chess, shogi, and Go.

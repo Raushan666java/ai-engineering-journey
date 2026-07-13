@@ -88,16 +88,6 @@ flowchart LR
 
 ### Event System Deep Dive
 
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/event-system-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/event-system-deep-dive-handwritten.svg" alt="Handwritten: Event System Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/event-system-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/event-system-deep-dive-diagram.svg" alt="Diagram: Event System Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/event-system-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/event-system-deep-dive-sticky.svg" alt="Sticky Note: Event System Deep Dive" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Events are lightweight data carriers while listeners contain business logic; ShouldBroadcast pushes events to WebSocket clients.
 
@@ -164,16 +154,6 @@ class MessageSent implements ShouldBroadcast
 
 ### Laravel Reverb
 
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/laravel-reverb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/laravel-reverb-handwritten.svg" alt="Handwritten: Laravel Reverb" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/laravel-reverb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/laravel-reverb-diagram.svg" alt="Diagram: Laravel Reverb" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/laravel-reverb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/laravel-reverb-sticky.svg" alt="Sticky Note: Laravel Reverb" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Reverb is a first-party Laravel WebSocket server that scales horizontally with Redis, eliminating the need for third-party services like Pusher.
 
@@ -220,16 +200,6 @@ autorestart=true
 ```
 
 ### Broadcasting
-
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/broadcasting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/broadcasting-handwritten.svg" alt="Handwritten: Broadcasting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/broadcasting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/broadcasting-diagram.svg" alt="Diagram: Broadcasting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/broadcasting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/broadcasting-sticky.svg" alt="Sticky Note: Broadcasting" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Channels come in three types: public (no auth), private (user authorization), and presence (with visible connected member list).
@@ -291,16 +261,6 @@ new PresenceChannel('game.'.$id);      // Presence
 
 ### Pusher Integration
 
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/pusher-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/pusher-integration-handwritten.svg" alt="Handwritten: Pusher Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/pusher-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/pusher-integration-diagram.svg" alt="Diagram: Pusher Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/pusher-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/pusher-integration-sticky.svg" alt="Sticky Note: Pusher Integration" width="30%">
-</a>
-
 
 Configure in `config/broadcasting.php` for the Pusher service:
 
@@ -315,16 +275,6 @@ Configure in `config/broadcasting.php` for the Pusher service:
 ```
 
 ### Echo Client Library
-
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/echo-client-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/echo-client-library-handwritten.svg" alt="Handwritten: Echo Client Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/echo-client-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/echo-client-library-diagram.svg" alt="Diagram: Echo Client Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/echo-client-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/echo-client-library-sticky.svg" alt="Sticky Note: Echo Client Library" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Echo subscribes to channels using .listen(), .notification(), .whisper(), and presence methods like .here(), .joining(), .leaving().
@@ -393,16 +343,6 @@ Echo.leaveAll();
 
 ### Presence Channels
 
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/presence-channels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/presence-channels-handwritten.svg" alt="Handwritten: Presence Channels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/presence-channels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/presence-channels-diagram.svg" alt="Diagram: Presence Channels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/presence-channels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/presence-channels-sticky.svg" alt="Sticky Note: Presence Channels" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Presence channels expose real-time user awareness — showing who is online, joining, or leaving a specific channel.
 
@@ -435,16 +375,6 @@ $users = Broadcast::getChannelUsers('presence-game.1');
 
 ### Server-Sent Events
 
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/server-sent-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/server-sent-events-handwritten.svg" alt="Handwritten: Server-Sent Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/server-sent-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/server-sent-events-diagram.svg" alt="Diagram: Server-Sent Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/server-sent-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/server-sent-events-sticky.svg" alt="Sticky Note: Server-Sent Events" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** SSE provides a simpler WebSocket alternative for unidirectional server-to-client streaming over plain HTTP.
 
@@ -474,16 +404,6 @@ source.addEventListener('notification', (e) => {
 ```
 
 ### Notification Events
-
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/notification-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/notification-events-handwritten.svg" alt="Handwritten: Notification Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/notification-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/notification-events-diagram.svg" alt="Diagram: Notification Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/notification-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/notification-events-sticky.svg" alt="Sticky Note: Notification Events" width="30%">
-</a>
 
 
 The broadcast channel sends notifications to connected clients:
@@ -516,16 +436,6 @@ public function receivesBroadcastNotificationsOn(): string
 ```
 
 ### Queueing Events
-
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/queueing-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/queueing-events-handwritten.svg" alt="Handwritten: Queueing Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/queueing-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/queueing-events-diagram.svg" alt="Diagram: Queueing Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/queueing-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/08-broadcasting-realtime/queueing-events-sticky.svg" alt="Sticky Note: Queueing Events" width="30%">
-</a>
 
 
 ```php

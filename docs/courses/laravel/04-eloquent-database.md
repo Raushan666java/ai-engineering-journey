@@ -85,16 +85,6 @@ flowchart LR
 
 ### Migration System
 
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/migration-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/migration-system-handwritten.svg" alt="Handwritten: Migration System" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/migration-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/migration-system-diagram.svg" alt="Diagram: Migration System" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/migration-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/migration-system-sticky.svg" alt="Sticky Note: Migration System" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Migrations act as version control for your database schema, with reversible up()/down() methods for deterministic team collaboration.
 
@@ -174,16 +164,6 @@ php artisan schema:dump --prune
 When squashed migrations exist, Laravel loads the schema dump first, then runs any remaining individual migrations.
 
 ### Schema Builder
-
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/schema-builder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/schema-builder-handwritten.svg" alt="Handwritten: Schema Builder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/schema-builder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/schema-builder-diagram.svg" alt="Diagram: Schema Builder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/schema-builder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/schema-builder-sticky.svg" alt="Sticky Note: Schema Builder" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** The Schema Builder offers a fluent interface for defining column types, modifiers, indexes, and foreign key constraints across all supported databases.
@@ -333,16 +313,6 @@ Schema::table('comments', function (Blueprint $table) {
 ```
 
 ### Seeders & Factories
-
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/seeders-factories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/seeders-factories-handwritten.svg" alt="Handwritten: Seeders & Factories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/seeders-factories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/seeders-factories-diagram.svg" alt="Diagram: Seeders & Factories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/seeders-factories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/seeders-factories-sticky.svg" alt="Sticky Note: Seeders & Factories" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Factories with Faker generate realistic test data; states and sequences enable fine-grained variation for comprehensive testing scenarios.
@@ -526,16 +496,6 @@ Book::factory()->count(20)->hasReviews(3)->create();
 ```
 
 ### Eloquent Models
-
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-models-handwritten.svg" alt="Handwritten: Eloquent Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-models-diagram.svg" alt="Diagram: Eloquent Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-models-sticky.svg" alt="Sticky Note: Eloquent Models" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Eloquent follows convention-over-configuration for table names and primary keys, with fillable/guarded protection against mass-assignment vulnerabilities.
@@ -787,16 +747,6 @@ protected static function booted(): void
 
 ### Relationships
 
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/relationships-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/relationships-handwritten.svg" alt="Handwritten: Relationships" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/relationships-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/relationships-diagram.svg" alt="Diagram: Relationships" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/relationships-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/relationships-sticky.svg" alt="Sticky Note: Relationships" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Laravel supports six relationship types including polymorphic variants, with clean fluent syntax for defining and querying related models.
 
@@ -1027,16 +977,6 @@ $tag->posts; // All posts with this tag
 
 ### Eager Loading
 
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eager-loading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eager-loading-handwritten.svg" alt="Handwritten: Eager Loading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eager-loading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eager-loading-diagram.svg" alt="Diagram: Eager Loading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eager-loading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eager-loading-sticky.svg" alt="Sticky Note: Eager Loading" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Eager loading via with() eliminates the N+1 query problem, reducing database queries from 1+N to just 2 for parent-child relationship loops.
 
@@ -1115,16 +1055,6 @@ $user->loadCount('posts');
 
 ### N+1 Problem
 
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/n-1-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/n-1-problem-handwritten.svg" alt="Handwritten: N+1 Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/n-1-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/n-1-problem-diagram.svg" alt="Diagram: N+1 Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/n-1-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/n-1-problem-sticky.svg" alt="Sticky Note: N+1 Problem" width="30%">
-</a>
-
 
 The N+1 problem occurs when you fetch a collection of N records, then access a relationship on each one, producing 1 query for the parent collection + N queries for the relationship.
 
@@ -1165,16 +1095,6 @@ Model::handleLazyLoadingViolationUsing(function ($model, $relation) {
 ```
 
 ### Accessors, Mutators, and Casts
-
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/accessors-mutators-and-casts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/accessors-mutators-and-casts-handwritten.svg" alt="Handwritten: Accessors, Mutators, and Casts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/accessors-mutators-and-casts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/accessors-mutators-and-casts-diagram.svg" alt="Diagram: Accessors, Mutators, and Casts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/accessors-mutators-and-casts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/accessors-mutators-and-casts-sticky.svg" alt="Sticky Note: Accessors, Mutators, and Casts" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Modern Laravel uses Attribute::make with explicit get/set closures for transforming attribute values between database and PHP representations.
@@ -1258,16 +1178,6 @@ public function setNameAttribute($value)
 ```
 
 ### Eloquent Collections
-
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-collections-handwritten.svg" alt="Handwritten: Eloquent Collections" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-collections-diagram.svg" alt="Diagram: Eloquent Collections" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/eloquent-collections-sticky.svg" alt="Sticky Note: Eloquent Collections" width="30%">
-</a>
 
 
 Eloquent returns `Illuminate\Database\Eloquent\Collection` instances, which extend Laravel's `Support\Collection` with extra methods.
@@ -1363,16 +1273,6 @@ $users->active()->admins();
 
 ### Local Scopes
 
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/local-scopes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/local-scopes-handwritten.svg" alt="Handwritten: Local Scopes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/local-scopes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/local-scopes-diagram.svg" alt="Diagram: Local Scopes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/local-scopes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/local-scopes-sticky.svg" alt="Sticky Note: Local Scopes" width="30%">
-</a>
-
 
 Local scopes allow you to define reusable query constraints.
 
@@ -1415,16 +1315,6 @@ $recentPopular = Post::popular()->where('created_at', '>=', now()->subWeek())->g
 ```
 
 ### Model Events & Observers
-
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/model-events-observers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/model-events-observers-handwritten.svg" alt="Handwritten: Model Events & Observers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/model-events-observers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/model-events-observers-diagram.svg" alt="Diagram: Model Events & Observers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/04-eloquent-database/model-events-observers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/04-eloquent-database/model-events-observers-sticky.svg" alt="Sticky Note: Model Events & Observers" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Observers centralize model lifecycle logic into single classes, keeping controllers clean and ensuring consistent behavior across all model interactions.

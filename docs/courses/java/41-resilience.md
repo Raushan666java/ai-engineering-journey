@@ -122,16 +122,6 @@ flowchart TD
 
 ### Resilience4j Overview
 
-<a href="../../../assets/images/diagrams/java/41-resilience/resilience4j-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/resilience4j-overview-handwritten.svg" alt="Handwritten: Resilience4j Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/resilience4j-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/resilience4j-overview-diagram.svg" alt="Diagram: Resilience4j Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/resilience4j-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/resilience4j-overview-sticky.svg" alt="Sticky Note: Resilience4j Overview" width="30%">
-</a>
-
 
 Resilience4j is a lightweight, easy-to-use fault tolerance library inspired by Netflix Hystrix. It provides modules for circuit breaking, retry, rate limiting, time limiting, and bulkheading.
 
@@ -148,45 +138,15 @@ Resilience4j is a lightweight, easy-to-use fault tolerance library inspired by N
 
 ### Retry
 
-<a href="../../../assets/images/diagrams/java/41-resilience/retry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/retry-handwritten.svg" alt="Handwritten: Retry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/retry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/retry-diagram.svg" alt="Diagram: Retry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/retry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/retry-sticky.svg" alt="Sticky Note: Retry" width="30%">
-</a>
-
 
 Retries allow a failed operation to be reattempted. Resilience4j supports exponential backoff, where the delay between retries increases exponentially.
 
 ### Rate Limiter
 
-<a href="../../../assets/images/diagrams/java/41-resilience/rate-limiter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/rate-limiter-handwritten.svg" alt="Handwritten: Rate Limiter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/rate-limiter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/rate-limiter-diagram.svg" alt="Diagram: Rate Limiter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/rate-limiter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/rate-limiter-sticky.svg" alt="Sticky Note: Rate Limiter" width="30%">
-</a>
-
 
 Rate limiting controls how many requests can pass in a given time period. The `RateLimiter` uses a token bucket algorithm.
 
 ### Bulkhead
-
-<a href="../../../assets/images/diagrams/java/41-resilience/bulkhead-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/bulkhead-handwritten.svg" alt="Handwritten: Bulkhead" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/bulkhead-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/bulkhead-diagram.svg" alt="Diagram: Bulkhead" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/41-resilience/bulkhead-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/41-resilience/bulkhead-sticky.svg" alt="Sticky Note: Bulkhead" width="30%">
-</a>
 
 
 Bulkhead limits the number of concurrent calls to a service. Two implementations:

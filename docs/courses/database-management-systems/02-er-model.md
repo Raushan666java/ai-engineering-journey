@@ -81,16 +81,6 @@ flowchart LR
 ```
 ### 2.1 The Entity-Relationship Model
 
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-handwritten.svg" alt="Handwritten: 2.1 The Entity-Relationship Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-diagram.svg" alt="Diagram: 2.1 The Entity-Relationship Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-1-the-entity-relationship-model-sticky.svg" alt="Sticky Note: 2.1 The Entity-Relationship Model" width="30%">
-</a>
-
 ```
 The Entity-Relationship (ER) model, introduced by Peter Chen in 1976, is a conceptual data model that provides a high-level description of a database. It is used primarily in the database design phase to capture user requirements and represent them in a visual, intuitive form before implementation.
 ```
@@ -596,16 +586,6 @@ A weak entity needs a discriminator to distinguish entities within the same owne
 ```
 ### 2.2 Entities and Entity Sets
 
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-handwritten.svg" alt="Handwritten: 2.2 Entities and Entity Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-diagram.svg" alt="Diagram: 2.2 Entities and Entity Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-2-entities-and-entity-sets-sticky.svg" alt="Sticky Note: 2.2 Entities and Entity Sets" width="30%">
-</a>
-
 ```
 An **entity** is a distinguishable object that exists in the real world. Each entity has a unique identity. For example, a specific student named "Alice Chen" with student ID "1001" is an entity.
 ```
@@ -655,16 +635,6 @@ END PROCEDURE
 ```
 ```
 ### 2.3 Attributes
-
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-handwritten.svg" alt="Handwritten: 2.3 Attributes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-diagram.svg" alt="Diagram: 2.3 Attributes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-3-attributes-sticky.svg" alt="Sticky Note: 2.3 Attributes" width="30%">
-</a>
 
 ```
 Attributes describe the properties of entities. Each entity has a value for each of its attributes.
@@ -830,16 +800,6 @@ if __name__ == "__main__":
 **WHY multi-valued attributes require O(P+E):** To map a multi-valued attribute like phone_numbers, we must read the entity's primary key (P) and create a new row for each value (V). The total work is proportional to the number of values. This cannot be O(1) because each value becomes its own row in the separate table.
 ```
 ### 2.4 Relationship Types and Relationship Sets
-
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-handwritten.svg" alt="Handwritten: 2.4 Relationship Types and Relationship Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-diagram.svg" alt="Diagram: 2.4 Relationship Types and Relationship Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-4-relationship-types-and-relationship-sets-sticky.svg" alt="Sticky Note: 2.4 Relationship Types and Relationship Sets" width="30%">
-</a>
 
 ```
 A **relationship** is an association among two or more entities. For example, Alice Chen (a STUDENT entity) takes CS101 (a COURSE entity).
@@ -1127,16 +1087,6 @@ if __name__ == "__main__":
 ```
 ### 2.5 Weak Entity Sets
 
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-handwritten.svg" alt="Handwritten: 2.5 Weak Entity Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-diagram.svg" alt="Diagram: 2.5 Weak Entity Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-5-weak-entity-sets-sticky.svg" alt="Sticky Note: 2.5 Weak Entity Sets" width="30%">
-</a>
-
 ```
 A **weak entity set** is an entity set whose existence depends on another entity set (the **identifying** or **owner** entity set).
 ```
@@ -1420,16 +1370,6 @@ A weak entity can participate in relationships with other entities.
 ```
 ### 2.6 ER Diagram Notation
 
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-handwritten.svg" alt="Handwritten: 2.6 ER Diagram Notation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-diagram.svg" alt="Diagram: 2.6 ER Diagram Notation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-6-er-diagram-notation-sticky.svg" alt="Sticky Note: 2.6 ER Diagram Notation" width="30%">
-</a>
-
 ```
 ER diagrams use standard symbols:
 ```
@@ -1578,16 +1518,6 @@ int main() {
 ```
 ```
 ### 2.7 Generalization, Specialization, and Aggregation
-
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-handwritten.svg" alt="Handwritten: 2.7 Generalization, Specialization, and Aggregation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-diagram.svg" alt="Diagram: 2.7 Generalization, Specialization, and Aggregation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-7-generalization-specialization-and-aggregation-sticky.svg" alt="Sticky Note: 2.7 Generalization, Specialization, and Aggregation" width="30%">
-</a>
 
 ```
 **Generalization:** The process of defining a more general entity set from lower-level entity sets. Example: PERSON is a generalization of STUDENT and FACULTY. The common attributes (name, address, phone) are moved to PERSON, while specific attributes (GPA for STUDENT, salary for FACULTY) remain in the specialized sets.
@@ -1862,16 +1792,6 @@ if __name__ == "__main__":
 ```
 ```
 ### 2.8 From ER to Relational Mapping
-
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-handwritten.svg" alt="Handwritten: 2.8 From ER to Relational Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-diagram.svg" alt="Diagram: 2.8 From ER to Relational Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/02-er-model/2-8-from-er-to-relational-mapping-sticky.svg" alt="Sticky Note: 2.8 From ER to Relational Mapping" width="30%">
-</a>
 
 ```
 ER diagrams are conceptual â†’ they must be converted to relational schemas for implementation. The mapping rules:

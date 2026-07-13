@@ -88,16 +88,6 @@ flowchart LR
 
 ### Git Object Model
 
-<a href="../../../assets/images/diagrams/devops/02-git/git-object-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-object-model-handwritten.svg" alt="Handwritten: Git Object Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-object-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-object-model-diagram.svg" alt="Diagram: Git Object Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-object-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-object-model-sticky.svg" alt="Sticky Note: Git Object Model" width="30%">
-</a>
-
 
 Git is fundamentally a content-addressable filesystem with a VCS interface. Every Git object is identified by its SHA-1 hash and stored in `.git/objects/`.
 
@@ -150,16 +140,6 @@ flowchart TD
 
 ### Branching Strategies
 
-<a href="../../../assets/images/diagrams/devops/02-git/branching-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/branching-strategies-handwritten.svg" alt="Handwritten: Branching Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/branching-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/branching-strategies-diagram.svg" alt="Diagram: Branching Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/branching-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/branching-strategies-sticky.svg" alt="Sticky Note: Branching Strategies" width="30%">
-</a>
-
 
 **GitFlow (Vincent Driessen, 2010):**
 - `main` — Production-ready code
@@ -184,16 +164,6 @@ Trunk-based development is the recommended approach for DevOps teams practicing 
 - Maintained primarily in open-source projects
 
 ### Merging vs Rebasing
-
-<a href="../../../assets/images/diagrams/devops/02-git/merging-vs-rebasing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/merging-vs-rebasing-handwritten.svg" alt="Handwritten: Merging vs Rebasing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/merging-vs-rebasing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/merging-vs-rebasing-diagram.svg" alt="Diagram: Merging vs Rebasing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/merging-vs-rebasing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/merging-vs-rebasing-sticky.svg" alt="Sticky Note: Merging vs Rebasing" width="30%">
-</a>
 
 
 **Fast-forward merge:** When the target branch hasn't diverged, Git simply moves the pointer forward. No merge commit.
@@ -229,16 +199,6 @@ Rebasing rewrites history — never rebase shared/published branches.
 
 ### Interactive Rebase
 
-<a href="../../../assets/images/diagrams/devops/02-git/interactive-rebase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/interactive-rebase-handwritten.svg" alt="Handwritten: Interactive Rebase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/interactive-rebase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/interactive-rebase-diagram.svg" alt="Diagram: Interactive Rebase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/interactive-rebase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/interactive-rebase-sticky.svg" alt="Sticky Note: Interactive Rebase" width="30%">
-</a>
-
 
 Interactive rebase (`git rebase -i HEAD~N`) enables editing commits before applying. Options per commit:
 
@@ -252,16 +212,6 @@ Interactive rebase (`git rebase -i HEAD~N`) enables editing commits before apply
 
 ### Cherry-Picking
 
-<a href="../../../assets/images/diagrams/devops/02-git/cherry-picking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/cherry-picking-handwritten.svg" alt="Handwritten: Cherry-Picking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/cherry-picking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/cherry-picking-diagram.svg" alt="Diagram: Cherry-Picking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/cherry-picking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/cherry-picking-sticky.svg" alt="Sticky Note: Cherry-Picking" width="30%">
-</a>
-
 
 Cherry-picking applies a specific commit to the current HEAD:
 
@@ -271,16 +221,6 @@ git cherry-pick -x <commit-hash>  # Adds source reference
 ```
 
 ### Git Hooks
-
-<a href="../../../assets/images/diagrams/devops/02-git/git-hooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-hooks-handwritten.svg" alt="Handwritten: Git Hooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-hooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-hooks-diagram.svg" alt="Diagram: Git Hooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-hooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-hooks-sticky.svg" alt="Sticky Note: Git Hooks" width="30%">
-</a>
 
 
 Hooks are scripts that run automatically at specific Git lifecycle events. They live in `.git/hooks/` and must be executable.
@@ -318,16 +258,6 @@ npx eslint src/
 
 ### Conflict Resolution
 
-<a href="../../../assets/images/diagrams/devops/02-git/conflict-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/conflict-resolution-handwritten.svg" alt="Handwritten: Conflict Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/conflict-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/conflict-resolution-diagram.svg" alt="Diagram: Conflict Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/conflict-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/conflict-resolution-sticky.svg" alt="Sticky Note: Conflict Resolution" width="30%">
-</a>
-
 
 When Git cannot automatically merge, it marks conflict markers:
 
@@ -347,16 +277,6 @@ Incoming change in feature
 5. For large conflicts, break resolution into smaller chunks
 
 ### Git Large File Storage (LFS)
-
-<a href="../../../assets/images/diagrams/devops/02-git/git-large-file-storage-lfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-large-file-storage-lfs-handwritten.svg" alt="Handwritten: Git Large File Storage (LFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-large-file-storage-lfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-large-file-storage-lfs-diagram.svg" alt="Diagram: Git Large File Storage (LFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-large-file-storage-lfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-large-file-storage-lfs-sticky.svg" alt="Sticky Note: Git Large File Storage (LFS)" width="30%">
-</a>
 
 
 Git LFS replaces large files (binaries, datasets, assets) with text pointers in the repository while storing the actual content on a remote server:
@@ -396,16 +316,6 @@ git commit -m "chore: configure Git LFS for binary files"
 
 ### Git Submodules and Subtrees
 
-<a href="../../../assets/images/diagrams/devops/02-git/git-submodules-and-subtrees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-submodules-and-subtrees-handwritten.svg" alt="Handwritten: Git Submodules and Subtrees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-submodules-and-subtrees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-submodules-and-subtrees-diagram.svg" alt="Diagram: Git Submodules and Subtrees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/git-submodules-and-subtrees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/git-submodules-and-subtrees-sticky.svg" alt="Sticky Note: Git Submodules and Subtrees" width="30%">
-</a>
-
 
 Managing dependencies across repositories:
 
@@ -434,16 +344,6 @@ git subtree push --prefix=lib/ https://github.com/example/lib.git main
 - Use **subtrees** for vendoring dependencies when you need to modify them
 
 ### Squash Merge vs Rebase Merge vs Regular Merge
-
-<a href="../../../assets/images/diagrams/devops/02-git/squash-merge-vs-rebase-merge-vs-regular-merge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/squash-merge-vs-rebase-merge-vs-regular-merge-handwritten.svg" alt="Handwritten: Squash Merge vs Rebase Merge vs Regular Merge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/squash-merge-vs-rebase-merge-vs-regular-merge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/squash-merge-vs-rebase-merge-vs-regular-merge-diagram.svg" alt="Diagram: Squash Merge vs Rebase Merge vs Regular Merge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/squash-merge-vs-rebase-merge-vs-regular-merge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/squash-merge-vs-rebase-merge-vs-regular-merge-sticky.svg" alt="Sticky Note: Squash Merge vs Rebase Merge vs Regular Merge" width="30%">
-</a>
 
 
 **Squash merge:** Combines all feature branch commits into one commit on main. Clean history but loses granularity.
@@ -477,16 +377,6 @@ flowchart LR
 **Recommendation:** Squash merge feature branches, rebase merge short-lived branches, regular merge long-running release branches.
 
 ### DevOps-Specific Git Patterns
-
-<a href="../../../assets/images/diagrams/devops/02-git/devops-specific-git-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/devops-specific-git-patterns-handwritten.svg" alt="Handwritten: DevOps-Specific Git Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/devops-specific-git-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/devops-specific-git-patterns-diagram.svg" alt="Diagram: DevOps-Specific Git Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/02-git/devops-specific-git-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/02-git/devops-specific-git-patterns-sticky.svg" alt="Sticky Note: DevOps-Specific Git Patterns" width="30%">
-</a>
 
 
 **Semantic commit messages:**

@@ -93,16 +93,6 @@ flowchart TD
 
 ### B-Tree Definition and Properties
 
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-handwritten.svg" alt="Handwritten: B-Tree Definition and Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-diagram.svg" alt="Diagram: B-Tree Definition and Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-tree-definition-and-properties-sticky.svg" alt="Sticky Note: B-Tree Definition and Properties" width="30%">
-</a>
-
 
 **Real-World Analogy (Organization Chart):** A multinational corporation has a CEO (root), regional VPs (internal nodes), and team leads (leaves). No VP reports to a lower-level manager than their peers — all leaves are at the same depth. Each executive manages between a minimum and maximum number of direct reports to avoid both underutilization and overload. This is exactly the B-tree invariant.
 
@@ -136,16 +126,6 @@ A B-tree of **order m** is a balanced search tree satisfying:
 
 ### Height Bound — Why It Matters
 
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-handwritten.svg" alt="Handwritten: Height Bound — Why It Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-diagram.svg" alt="Diagram: Height Bound — Why It Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/height-bound-why-it-matters-sticky.svg" alt="Sticky Note: Height Bound — Why It Matters" width="30%">
-</a>
-
 
 The height \( h \) of a B-tree of order \( m \) with \( n \) keys satisfies:
 
@@ -162,16 +142,6 @@ The height \( h \) of a B-tree of order \( m \) with \( n \) keys satisfies:
 | 1000 | ~3 | 3 |
 
 ### Search Operation
-
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-handwritten.svg" alt="Handwritten: Search Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-diagram.svg" alt="Diagram: Search Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/search-operation-sticky.svg" alt="Sticky Note: Search Operation" width="30%">
-</a>
 
 
 **Real-World Analogy (Dictionary with Guide Tabs):** A dictionary has guide words at the top of each page. To find "elephant", you flip to the section where guide words span "eagle–emerald", then narrow within that page. B-tree search is identical: at each node, you scan the keys (guide words) to pick the correct child pointer (page section).
@@ -381,16 +351,6 @@ class BTree {
 | Supports range queries (B+ tree variant) | Not ideal for in-memory-only workloads |
 
 ### Insertion Operation
-
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-handwritten.svg" alt="Handwritten: Insertion Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-diagram.svg" alt="Diagram: Insertion Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/insertion-operation-sticky.svg" alt="Sticky Note: Insertion Operation" width="30%">
-</a>
 
 
 **Real-World Analogy (Cafeteria Trays):** A cafeteria stacks trays in columns. Each column holds at most 5 trays. When a column is full and a new tray arrives, you split the column into two columns of 2 and 3 trays, and the middle tray becomes the label for both columns. If the row above is also full, the split propagates upward — sometimes requiring a new row entirely.
@@ -764,16 +724,6 @@ class BTree {
 | Single pass down (find + insert) | Requires parent pointers or stack |
 
 ### Deletion Operation
-
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-handwritten.svg" alt="Handwritten: Deletion Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-diagram.svg" alt="Diagram: Deletion Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/deletion-operation-sticky.svg" alt="Sticky Note: Deletion Operation" width="30%">
-</a>
 
 
 **Real-World Analogy (Library Shelf Restocking):** When books are removed from a shelf, the shelf must stay at least half-full. If it drops below, you either borrow a book from a neighboring shelf (redistribution) or merge two half-empty shelves into one (merge). The librarian may need to adjust the section labels (parent keys) accordingly.
@@ -1291,16 +1241,6 @@ class BTree {
 | No garbage accumulation (unlike BST) | Must handle predecessor/successor swap |
 
 ### B+ Trees
-
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-handwritten.svg" alt="Handwritten: B+ Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-diagram.svg" alt="Diagram: B+ Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/15-b-trees/b-trees-sticky.svg" alt="Sticky Note: B+ Trees" width="30%">
-</a>
 
 
 **Real-World Analogy (Library Index Card Catalog):** Imagine a library where the card catalog (internal nodes) only lists topic ranges — "A-F", "G-M", "N-Z" — with no actual books. To find a specific book, you look up the range, then go directly to the shelf (leaf) where all books in that range are stored. The shelves themselves are connected in alphabetical order, so browsing "G through K" means finding the first G-book, then walking forward shelf by shelf.

@@ -10,7 +10,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/01-parichay/hero.svg" target="_blank" rel="noopener">
@@ -65,17 +64,6 @@
 
 ### एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: एक विवादास्पद संत, एक क्रांतिकारी दार्शनिक" width="30%">
-</a>
-
-
 ओशो (१९३१-१९९०) — जिन्हें पहले आचार्य रजनीश और फिर भगवान श्री रजनीश के नाम से जाना जाता था — बीसवीं सदी के सबसे विवादास्पद और प्रभावशाली आध्यात्मिक गुरुओं में से एक हैं। उन्होंने कभी कोई परंपरा नहीं बनाई — उन्होंने एक क्रांति बनाई। उनके प्रवचन किसी धर्म या पंथ के लिए नहीं थे — वे मनुष्य की चेतना के लिए थे।
 
 **ओशो वाणी:**
@@ -93,34 +81,12 @@
 
 ### ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: ओशो का बचपन और उनकी मृत्यु के प्रति जागरूकता" width="30%">
-</a>
-
-
 ओशो का बचपन किसी और से अलग था। वे स्वयं कहते हैं कि उन्हें अपनी पिछले जन्मों की याद थी। सात वर्ष की आयु में उनके नाना की मृत्यु ने उनके जीवन को गहराई से प्रभावित किया। वे मृत्यु के रहस्य में डूब गए।
 
 **ओशो वाणी:**
 > "जब मैं सात साल का था, मेरे नाना मर गए। वह मेरे सबसे करीबी व्यक्ति थे। उनकी मृत्यु ने मुझे झकझोर दिया। मैंने देखा — वे थे, और फिर वे नहीं रहे। वह शरीर जो हिलता-डुलता था, अब केवल एक चीज़ था। इस घटना ने मेरी पूरी ज़िंदगी बदल दी। मैं मृत्यु का सामना करना चाहता था — उससे भागना नहीं। और यही मेरे सारे ध्यान का आधार बना।"
 
 ### इक्कीस मार्च १९५३ — समाधि का अनुभव
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: इक्कीस मार्च १९५३ — समाधि का अनुभव" width="30%">
-</a>
-
 
 ओशो के जीवन की सबसे महत्वपूर्ण घटना २१ मार्च १९५३ को घटित हुई। उनकी आयु तब २१ वर्ष थी। वे सागर के एक पार्क में बैठे थे, और अचानक — सब कुछ बदल गया।
 
@@ -195,17 +161,6 @@ flowchart TB
 
 ### संदर्भ और वातावरण
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: संदर्भ और वातावरण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: संदर्भ और वातावरण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: संदर्भ और वातावरण" width="30%">
-</a>
-
-
 १९७२ में ओशो बॉम्बे (मुंबई) में रहते थे — वुडलैंड्स अपार्टमेंट, पेडर रोड पर। वहाँ उनके कमरे में प्रतिदिन शाम को प्रवचन होते थे। श्रोता सीमित थे — कुछ सैकड़े। कोई बड़ा आयोजन नहीं था। कोई माइक नहीं, कोई स्टेज नहीं। बस ओशो बोलते थे, और लोग सुनते थे।
 
 **ओशो वाणी:**
@@ -214,17 +169,6 @@ flowchart TB
 हर दिन एक प्रवचन — एक तकनीक। ११२ दिन, ११२ तकनीकें। ओशो हर श्लोक को लेते, उसे पढ़ते, और फिर उसकी गहनतम व्याख्या करते — कभी मनोवैज्ञानिक दृष्टि से, कभी ज़ेन कहानियों से, कभी अपने अनुभव से।
 
 ### प्रवचनों की अनूठी शैली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रवचनों की अनूठी शैली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रवचनों की अनूठी शैली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रवचनों की अनूठी शैली" width="30%">
-</a>
-
 
 | पहलू | ओशो की शैली |
 |------|-------------|
@@ -237,17 +181,6 @@ flowchart TB
 | **रुकना** | बीच-बीच में मौन — श्रोताओं को पचने देते |
 
 ### "द बुक ऑफ़ सीक्रेट्स" का जन्म
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: "द बुक ऑफ़ सीक्रेट्स" का जन्म" width="30%">
-</a>
-
 
 ये ११२ प्रवचन बाद में पाँच खंडों में प्रकाशित हुए — **"द बुक ऑफ़ सीक्रेट्स"** के नाम से। यह ओशो की सबसे महत्वपूर्ण कृतियों में से एक मानी जाती है।
 
@@ -264,17 +197,6 @@ flowchart TB
 ## ओशो के तीन केंद्रीय सिद्धांत
 
 ### १. साक्षी (Witnessing) — सबसे बड़ी क्रांति
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-handwritten.svg" alt="Handwritten: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-diagram.svg" alt="Diagram: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/witnessing-sticky.svg" alt="Sticky Note: १. साक्षी (Witnessing) — सबसे बड़ी क्रांति" width="30%">
-</a>
-
 
 **ओशो वाणी:**
 > "मैं तुम्हें एक ही चीज़ सिखा सकता हूँ — और वह है साक्षी। बाकी सब कुछ तो उसकी तैयारी है। श्वास पर ध्यान करो — ताकि तुम साक्षी बन सको। शरीर को देखो — ताकि तुम साक्षी बन सको। विचारों को देखो — ताकि तुम साक्षी बन सको। साक्षी ही ध्यान है। साक्षी ही समाधि है। साक्षी ही मोक्ष है।"
@@ -316,17 +238,6 @@ flowchart LR
 
 ### २. सम्पूर्ण स्वीकार (Total Acceptance)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-handwritten.svg" alt="Handwritten: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-diagram.svg" alt="Diagram: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/total-acceptance-sticky.svg" alt="Sticky Note: २. सम्पूर्ण स्वीकार (Total Acceptance)" width="30%">
-</a>
-
-
 **ओशो वाणी:**
 > "तंत्र का पहला सूत्र है — सम्पूर्ण स्वीकार। जो कुछ भी है, उसे स्वीकार करो। क्रोध है? स्वीकार करो। कामवासना है? स्वीकार करो। लोभ है? स्वीकार करो। जब तुम स्वीकार करते हो, तब उसे देखना शुरू होता है। और देखना ही परिवर्तन है।"
 
@@ -341,17 +252,6 @@ flowchart LR
 | संसार छोड़ो | संसार में जागो — वही परमात्मा है |
 
 ### ३. नो-माइंड (No-Mind)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-handwritten.svg" alt="Handwritten: ३. नो-माइंड (No-Mind)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-diagram.svg" alt="Diagram: ३. नो-माइंड (No-Mind)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/no-mind-sticky.svg" alt="Sticky Note: ३. नो-माइंड (No-Mind)" width="30%">
-</a>
-
 
 **ओशो वाणी:**
 > "मन से परे जाना ही ध्यान है। मन एक खूबसूरत यंत्र है — लेकिन यंत्र ही है। तुम यंत्र नहीं हो। तुम वह हो जो यंत्र का उपयोग करता है। जब तुम यह जान लेते हो — कि मैं मन नहीं हूँ, मैं देखने वाला हूँ — तब मन अपनी जगह आ जाता है। वह सेवक बन जाता है, स्वामी नहीं।"
@@ -376,17 +276,6 @@ flowchart LR
 ## ओशो के प्रमुख कार्य और प्रवचन श्रृंखलाएँ
 
 ### ओशो के कार्य का वर्गीकरण
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: ओशो के कार्य का वर्गीकरण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: ओशो के कार्य का वर्गीकरण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: ओशो के कार्य का वर्गीकरण" width="30%">
-</a>
-
 
 ```mermaid
 mindmap
@@ -414,17 +303,6 @@ mindmap
 ```
 
 ### महत्वपूर्ण प्रवचन श्रृंखलाएँ
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: महत्वपूर्ण प्रवचन श्रृंखलाएँ" width="30%">
-</a>
-
 
 | वर्ष | श्रृंखला | विषय | महत्व |
 |------|----------|------|-------|
@@ -923,16 +801,6 @@ runOshoDiscourseBrowser();
 
 ### प्रश्न १
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
-</a>
-
 ओशो का जन्म कब और कहाँ हुआ?
 
 a) १५ अगस्त १९४७, दिल्ली
@@ -946,16 +814,6 @@ b) ११ दिसंबर १९३१, कुचवाड़ा, मध्�
 </details>
 
 ### प्रश्न २
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
-</a>
 
 ओशो के जीवन की सबसे महत्वपूर्ण घटना कौन सी थी?
 
@@ -971,16 +829,6 @@ b) २१ मार्च १९५३ को सागर के पार्�
 
 ### प्रश्न ३
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
-</a>
-
 ओशो ने विज्ञान भैरव तंत्र पर प्रवचन कहाँ दिए?
 
 a) पूना आश्रम
@@ -994,16 +842,6 @@ b) बॉम्बे के वुडलैंड्स अपार्टम�
 </details>
 
 ### प्रश्न ४
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
-</a>
 
 ओशो के अनुसार, सभी ध्यान तकनीकों का मूल क्या है?
 
@@ -1019,16 +857,6 @@ b) साक्षी (Witnessing) — बाकी सब उसकी तै�
 
 ### प्रश्न ५
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
-</a>
-
 "द बुक ऑफ़ सीक्रेट्स" में कितने खंड हैं?
 
 a) २
@@ -1042,16 +870,6 @@ b) ५ खंड — ११२ तकनीकों के अनुसार�
 </details>
 
 ### प्रश्न ६
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
-</a>
 
 ओशो के अनुसार "सम्पूर्ण स्वीकार" का क्या अर्थ है?
 
@@ -1067,16 +885,6 @@ b) जो कुछ भी है — क्रोध, काम, लोभ — 
 
 ### प्रश्न ७
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
-</a>
-
 ओशो ने कितने वर्ष की आयु में समाधि का अनुभव किया?
 
 a) ७ वर्ष
@@ -1090,16 +898,6 @@ b) २१ वर्ष — १९५३ में।
 </details>
 
 ### प्रश्न ८
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
-</a>
 
 ओशो के अनुसार "नो-माइंड" का क्या अर्थ है?
 
@@ -1119,17 +917,6 @@ b) मन से पहचान न होना — मन को एक य�
 
 ### अभ्यास १: ओशो जीवन समयरेखा
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास १: ओशो जीवन समयरेखा" width="30%">
-</a>
-
-
 **निर्देश:** `OshoLifeTimeline` क्लास का उपयोग करके निम्नलिखित करें:
 
 1. ओशो के जीवन की सभी "क्रांतिकारी" घटनाएँ प्राप्त करें।
@@ -1147,17 +934,6 @@ revolutionary.forEach(e => {
 ```
 
 ### अभ्यास २: प्रवचन अन्वेषक
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास २: प्रवचन अन्वेषक" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास २: प्रवचन अन्वेषक" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास २: प्रवचन अन्वेषक" width="30%">
-</a>
-
 
 **निर्देश:** `OshoDiscourseLibrary` का उपयोग करके:
 
@@ -1191,17 +967,6 @@ console.log('अक्टूबर १९७२ के प्रवचन:', oct
 
 ### अभ्यास ३: ओशो उद्धरण संग्रह
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो उद्धरण संग्रह" width="30%">
-</a>
-
-
 **निर्देश:** एक फंक्शन बनाएँ जो:
 
 1. ११२ तकनीकों में से कोई भी तकनीक चुनकर उसका ओशो-उद्धरण दिखाए।
@@ -1233,17 +998,6 @@ console.log(daily.getDailyQuote());
 ```
 
 ### अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-handwritten.svg" alt="Handwritten: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-diagram.svg" alt="Diagram: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/01-parichay/-sticky.svg" alt="Sticky Note: अभ्यास ४: ओशो के शब्द — लिखें और चिंतन करें" width="30%">
-</a>
-
 
 **निर्देश:** ओशो के इस उद्धरण को पढ़ें और नीचे दिए गए प्रश्नों पर अपने विचार लिखें:
 

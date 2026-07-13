@@ -66,16 +66,6 @@ flowchart LR
 
 ### Q1: How would you design a URL shortener like TinyURL?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-url-shortener-like-tinyurl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-url-shortener-like-tinyurl-handwritten.svg" alt="Handwritten: How would you design a URL shortener like TinyURL?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-url-shortener-like-tinyurl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-url-shortener-like-tinyurl-diagram.svg" alt="Diagram: How would you design a URL shortener like TinyURL?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-url-shortener-like-tinyurl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-url-shortener-like-tinyurl-sticky.svg" alt="Sticky Note: How would you design a URL shortener like TinyURL?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -209,16 +199,6 @@ public class UrlController {
 
 ### Q2: How would you design a chat system (like WhatsApp)?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-chat-system-like-whatsapp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-chat-system-like-whatsapp-handwritten.svg" alt="Handwritten: How would you design a chat system (like WhatsApp)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-chat-system-like-whatsapp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-chat-system-like-whatsapp-diagram.svg" alt="Diagram: How would you design a chat system (like WhatsApp)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-chat-system-like-whatsapp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-chat-system-like-whatsapp-sticky.svg" alt="Sticky Note: How would you design a chat system (like WhatsApp)?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -325,16 +305,6 @@ public class SyncController {
 ---
 
 ### Q3: How would you design an e-commerce system?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-e-commerce-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-e-commerce-system-handwritten.svg" alt="Handwritten: How would you design an e-commerce system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-e-commerce-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-e-commerce-system-diagram.svg" alt="Diagram: How would you design an e-commerce system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-e-commerce-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-e-commerce-system-sticky.svg" alt="Sticky Note: How would you design an e-commerce system?" width="30%">
-</a>
 
 
 **Answer:**
@@ -491,16 +461,6 @@ public class Inventory {
 
 ### Q4: How would you design a notification system?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-notification-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-notification-system-handwritten.svg" alt="Handwritten: How would you design a notification system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-notification-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-notification-system-diagram.svg" alt="Diagram: How would you design a notification system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-notification-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-notification-system-sticky.svg" alt="Sticky Note: How would you design a notification system?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -609,16 +569,6 @@ notifications:
 ---
 
 ### Q5: How would you design a rate limiter?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-rate-limiter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-rate-limiter-handwritten.svg" alt="Handwritten: How would you design a rate limiter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-rate-limiter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-rate-limiter-diagram.svg" alt="Diagram: How would you design a rate limiter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-rate-limiter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-rate-limiter-sticky.svg" alt="Sticky Note: How would you design a rate limiter?" width="30%">
-</a>
 
 
 **Answer:**
@@ -732,16 +682,6 @@ public class RateLimitInterceptor implements HandlerInterceptor {
 ---
 
 ### Q6: How would you design a distributed cache?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-cache-handwritten.svg" alt="Handwritten: How would you design a distributed cache?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-cache-diagram.svg" alt="Diagram: How would you design a distributed cache?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-cache-sticky.svg" alt="Sticky Note: How would you design a distributed cache?" width="30%">
-</a>
 
 
 **Answer:**
@@ -882,16 +822,6 @@ public class StampedePreventionService {
 
 ### Q7: How would you design a distributed ID generator?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-id-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-id-generator-handwritten.svg" alt="Handwritten: How would you design a distributed ID generator?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-id-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-id-generator-diagram.svg" alt="Diagram: How would you design a distributed ID generator?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-id-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-id-generator-sticky.svg" alt="Sticky Note: How would you design a distributed ID generator?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -994,16 +924,6 @@ public String generateId() {
 
 ### Q8: What is CAP theorem and how does it apply to system design?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-is-cap-theorem-and-how-does-it-apply-to-system-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-is-cap-theorem-and-how-does-it-apply-to-system-design-handwritten.svg" alt="Handwritten: What is CAP theorem and how does it apply to system design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-is-cap-theorem-and-how-does-it-apply-to-system-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-is-cap-theorem-and-how-does-it-apply-to-system-design-diagram.svg" alt="Diagram: What is CAP theorem and how does it apply to system design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-is-cap-theorem-and-how-does-it-apply-to-system-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-is-cap-theorem-and-how-does-it-apply-to-system-design-sticky.svg" alt="Sticky Note: What is CAP theorem and how does it apply to system design?" width="30%">
-</a>
-
 
 **Answer:** CAP theorem states that a distributed system can provide at most two of three guarantees:
 
@@ -1066,16 +986,6 @@ public class ShoppingCartService {
 ---
 
 ### Q9: How would you design a search system (like Elasticsearch)?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-search-system-like-elasticsearch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-search-system-like-elasticsearch-handwritten.svg" alt="Handwritten: How would you design a search system (like Elasticsearch)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-search-system-like-elasticsearch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-search-system-like-elasticsearch-diagram.svg" alt="Diagram: How would you design a search system (like Elasticsearch)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-search-system-like-elasticsearch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-search-system-like-elasticsearch-sticky.svg" alt="Sticky Note: How would you design a search system (like Elasticsearch)?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1211,16 +1121,6 @@ public List<String> suggest(@RequestParam String prefix) {
 
 ### Q10: How would you design a distributed logging system?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-logging-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-logging-system-handwritten.svg" alt="Handwritten: How would you design a distributed logging system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-logging-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-logging-system-diagram.svg" alt="Diagram: How would you design a distributed logging system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-logging-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-logging-system-sticky.svg" alt="Sticky Note: How would you design a distributed logging system?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1308,16 +1208,6 @@ public class LogIndexRouter {
 ---
 
 ### Q11: How would you design a payment system?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-payment-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-payment-system-handwritten.svg" alt="Handwritten: How would you design a payment system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-payment-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-payment-system-diagram.svg" alt="Diagram: How would you design a payment system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-payment-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-payment-system-sticky.svg" alt="Sticky Note: How would you design a payment system?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1439,16 +1329,6 @@ public class RefundService {
 
 ### Q12: How would you design a recommendation system?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-recommendation-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-recommendation-system-handwritten.svg" alt="Handwritten: How would you design a recommendation system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-recommendation-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-recommendation-system-diagram.svg" alt="Diagram: How would you design a recommendation system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-recommendation-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-recommendation-system-sticky.svg" alt="Sticky Note: How would you design a recommendation system?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1569,16 +1449,6 @@ public class TrendingService {
 
 ### Q13: How would you design a data pipeline (ETL)?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-data-pipeline-etl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-data-pipeline-etl-handwritten.svg" alt="Handwritten: How would you design a data pipeline (ETL)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-data-pipeline-etl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-data-pipeline-etl-diagram.svg" alt="Diagram: How would you design a data pipeline (ETL)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-data-pipeline-etl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-data-pipeline-etl-sticky.svg" alt="Sticky Note: How would you design a data pipeline (ETL)?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1682,16 +1552,6 @@ public class OrderEtlJobConfig {
 ---
 
 ### Q14: How would you design a task queue (like Celery)?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-task-queue-like-celery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-task-queue-like-celery-handwritten.svg" alt="Handwritten: How would you design a task queue (like Celery)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-task-queue-like-celery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-task-queue-like-celery-diagram.svg" alt="Diagram: How would you design a task queue (like Celery)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-task-queue-like-celery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-task-queue-like-celery-sticky.svg" alt="Sticky Note: How would you design a task queue (like Celery)?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1817,16 +1677,6 @@ public class TaskWorker {
 ---
 
 ### Q15: How would you design a distributed job scheduler?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-job-scheduler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-job-scheduler-handwritten.svg" alt="Handwritten: How would you design a distributed job scheduler?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-job-scheduler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-job-scheduler-diagram.svg" alt="Diagram: How would you design a distributed job scheduler?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-job-scheduler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-job-scheduler-sticky.svg" alt="Sticky Note: How would you design a distributed job scheduler?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1958,16 +1808,6 @@ public class JobInitializer {
 
 ### Q16: How would you design a distributed file storage system?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-file-storage-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-file-storage-system-handwritten.svg" alt="Handwritten: How would you design a distributed file storage system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-file-storage-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-file-storage-system-diagram.svg" alt="Diagram: How would you design a distributed file storage system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-file-storage-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-file-storage-system-sticky.svg" alt="Sticky Note: How would you design a distributed file storage system?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2082,16 +1922,6 @@ public class ChunkedUploadService {
 ---
 
 ### Q17: How would you design a leader election system?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-leader-election-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-leader-election-system-handwritten.svg" alt="Handwritten: How would you design a leader election system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-leader-election-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-leader-election-system-diagram.svg" alt="Diagram: How would you design a leader election system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-leader-election-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-leader-election-system-sticky.svg" alt="Sticky Note: How would you design a leader election system?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2209,16 +2039,6 @@ public class RedisLeaderElection {
 
 ### Q18: How would you design a content delivery network (CDN)?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-delivery-network-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-delivery-network-cdn-handwritten.svg" alt="Handwritten: How would you design a content delivery network (CDN)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-delivery-network-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-delivery-network-cdn-diagram.svg" alt="Diagram: How would you design a content delivery network (CDN)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-delivery-network-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-delivery-network-cdn-sticky.svg" alt="Sticky Note: How would you design a content delivery network (CDN)?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2294,16 +2114,6 @@ public ResponseEntity<List<Product>> getProducts() {
 ---
 
 ### Q19: How would you design an API gateway?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-api-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-api-gateway-handwritten.svg" alt="Handwritten: How would you design an API gateway?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-api-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-api-gateway-diagram.svg" alt="Diagram: How would you design an API gateway?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-api-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-an-api-gateway-sticky.svg" alt="Sticky Note: How would you design an API gateway?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2398,16 +2208,6 @@ public class ProductDetailsAggregator {
 ---
 
 ### Q20: How would you design a distributed configuration system?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-configuration-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-configuration-system-handwritten.svg" alt="Handwritten: How would you design a distributed configuration system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-configuration-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-configuration-system-diagram.svg" alt="Diagram: How would you design a distributed configuration system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-configuration-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-configuration-system-sticky.svg" alt="Sticky Note: How would you design a distributed configuration system?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2507,16 +2307,6 @@ curl -X POST http://order-service:8080/actuator/busrefresh
 
 ### Q21: How would you design a service discovery system?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-service-discovery-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-service-discovery-system-handwritten.svg" alt="Handwritten: How would you design a service discovery system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-service-discovery-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-service-discovery-system-diagram.svg" alt="Diagram: How would you design a service discovery system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-service-discovery-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-service-discovery-system-sticky.svg" alt="Sticky Note: How would you design a service discovery system?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2589,16 +2379,6 @@ public class OrderClient {
 
 ### Q22: How would you design a distributed tracing system?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-tracing-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-tracing-system-handwritten.svg" alt="Handwritten: How would you design a distributed tracing system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-tracing-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-tracing-system-diagram.svg" alt="Diagram: How would you design a distributed tracing system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-tracing-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-distributed-tracing-system-sticky.svg" alt="Sticky Note: How would you design a distributed tracing system?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2667,16 +2447,6 @@ public class OrderService {
 ---
 
 ### Q23: How would you design a content management system (CMS)?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-management-system-cms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-management-system-cms-handwritten.svg" alt="Handwritten: How would you design a content management system (CMS)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-management-system-cms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-management-system-cms-diagram.svg" alt="Diagram: How would you design a content management system (CMS)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-management-system-cms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-content-management-system-cms-sticky.svg" alt="Sticky Note: How would you design a content management system (CMS)?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2754,16 +2524,6 @@ public class ContentService {
 ---
 
 ### Q24: How would you design a social media feed?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-social-media-feed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-social-media-feed-handwritten.svg" alt="Handwritten: How would you design a social media feed?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-social-media-feed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-social-media-feed-diagram.svg" alt="Diagram: How would you design a social media feed?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-social-media-feed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-social-media-feed-sticky.svg" alt="Sticky Note: How would you design a social media feed?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2845,16 +2605,6 @@ public class FeedFanoutService {
 ---
 
 ### Q25: How would you design a ticket booking system?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-ticket-booking-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-ticket-booking-system-handwritten.svg" alt="Handwritten: How would you design a ticket booking system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-ticket-booking-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-ticket-booking-system-diagram.svg" alt="Diagram: How would you design a ticket booking system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-ticket-booking-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-ticket-booking-system-sticky.svg" alt="Sticky Note: How would you design a ticket booking system?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2958,16 +2708,6 @@ public class FlashSaleQueue {
 
 ### Q26: What is the difference between SQL and NoSQL databases in system design?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-is-the-difference-between-sql-and-nosql-databases-in-system-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-is-the-difference-between-sql-and-nosql-databases-in-system-design-handwritten.svg" alt="Handwritten: What is the difference between SQL and NoSQL databases in system design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-is-the-difference-between-sql-and-nosql-databases-in-system-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-is-the-difference-between-sql-and-nosql-databases-in-system-design-diagram.svg" alt="Diagram: What is the difference between SQL and NoSQL databases in system design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-is-the-difference-between-sql-and-nosql-databases-in-system-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-is-the-difference-between-sql-and-nosql-databases-in-system-design-sticky.svg" alt="Sticky Note: What is the difference between SQL and NoSQL databases in system design?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3007,16 +2747,6 @@ public class UserActivityService {
 ---
 
 ### Q27: How would you design a database sharding strategy?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-sharding-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-sharding-strategy-handwritten.svg" alt="Handwritten: How would you design a database sharding strategy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-sharding-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-sharding-strategy-diagram.svg" alt="Diagram: How would you design a database sharding strategy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-sharding-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-sharding-strategy-sticky.svg" alt="Sticky Note: How would you design a database sharding strategy?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3076,16 +2806,6 @@ public class DirectoryShardRouter {
 
 ### Q28: How would you design a database replication strategy?
 
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-replication-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-replication-strategy-handwritten.svg" alt="Handwritten: How would you design a database replication strategy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-replication-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-replication-strategy-diagram.svg" alt="Diagram: How would you design a database replication strategy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-replication-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-database-replication-strategy-sticky.svg" alt="Sticky Note: How would you design a database replication strategy?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3142,16 +2862,6 @@ public class ConsistentReadService {
 ---
 
 ### Q29: How would you design a monitoring and alerting system?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-monitoring-and-alerting-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-monitoring-and-alerting-system-handwritten.svg" alt="Handwritten: How would you design a monitoring and alerting system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-monitoring-and-alerting-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-monitoring-and-alerting-system-diagram.svg" alt="Diagram: How would you design a monitoring and alerting system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-monitoring-and-alerting-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/how-would-you-design-a-monitoring-and-alerting-system-sticky.svg" alt="Sticky Note: How would you design a monitoring and alerting system?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3234,16 +2944,6 @@ groups:
 ---
 
 ### Q30: What are the trade-offs between REST, GraphQL, and gRPC?
-
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-are-the-trade-offs-between-rest-graphql-and-grpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-are-the-trade-offs-between-rest-graphql-and-grpc-handwritten.svg" alt="Handwritten: What are the trade-offs between REST, GraphQL, and gRPC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-are-the-trade-offs-between-rest-graphql-and-grpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-are-the-trade-offs-between-rest-graphql-and-grpc-diagram.svg" alt="Diagram: What are the trade-offs between REST, GraphQL, and gRPC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/65-interview-system-design/what-are-the-trade-offs-between-rest-graphql-and-grpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/65-interview-system-design/what-are-the-trade-offs-between-rest-graphql-and-grpc-sticky.svg" alt="Sticky Note: What are the trade-offs between REST, GraphQL, and gRPC?" width="30%">
-</a>
 
 
 **Answer:**

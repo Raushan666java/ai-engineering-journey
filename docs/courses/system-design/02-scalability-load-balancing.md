@@ -107,16 +107,6 @@ flowchart LR
 
 ### Vertical Scaling (Scale Up)
 
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/vertical-scaling-scale-up-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/vertical-scaling-scale-up-handwritten.svg" alt="Handwritten: Vertical Scaling (Scale Up)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/vertical-scaling-scale-up-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/vertical-scaling-scale-up-diagram.svg" alt="Diagram: Vertical Scaling (Scale Up)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/vertical-scaling-scale-up-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/vertical-scaling-scale-up-sticky.svg" alt="Sticky Note: Vertical Scaling (Scale Up)" width="30%">
-</a>
-
 
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
@@ -145,16 +135,6 @@ Vertical scaling is appropriate for legacy applications, stateful systems that c
 
 ### Horizontal Scaling (Scale Out)
 
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/horizontal-scaling-scale-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/horizontal-scaling-scale-out-handwritten.svg" alt="Handwritten: Horizontal Scaling (Scale Out)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/horizontal-scaling-scale-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/horizontal-scaling-scale-out-diagram.svg" alt="Diagram: Horizontal Scaling (Scale Out)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/horizontal-scaling-scale-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/horizontal-scaling-scale-out-sticky.svg" alt="Sticky Note: Horizontal Scaling (Scale Out)" width="30%">
-</a>
-
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -178,16 +158,6 @@ Horizontal scaling adds more machines to the pool. Each machine handles a fracti
 ---
 
 ### L4 vs L7 Load Balancing
-
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/l4-vs-l7-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/l4-vs-l7-load-balancing-handwritten.svg" alt="Handwritten: L4 vs L7 Load Balancing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/l4-vs-l7-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/l4-vs-l7-load-balancing-diagram.svg" alt="Diagram: L4 vs L7 Load Balancing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/l4-vs-l7-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/l4-vs-l7-load-balancing-sticky.svg" alt="Sticky Note: L4 vs L7 Load Balancing" width="30%">
-</a>
 
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
@@ -226,16 +196,6 @@ Load balancers operate at different layers of the OSI model:
 ---
 
 ### Load Balancing Algorithms
-
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/load-balancing-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/load-balancing-algorithms-handwritten.svg" alt="Handwritten: Load Balancing Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/load-balancing-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/load-balancing-algorithms-diagram.svg" alt="Diagram: Load Balancing Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/load-balancing-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/load-balancing-algorithms-sticky.svg" alt="Sticky Note: Load Balancing Algorithms" width="30%">
-</a>
 
 
 #### Round Robin
@@ -319,16 +279,6 @@ Select a server uniformly at random. With a sufficient number of requests, this 
 
 ### Reverse Proxy
 
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/reverse-proxy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/reverse-proxy-handwritten.svg" alt="Handwritten: Reverse Proxy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/reverse-proxy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/reverse-proxy-diagram.svg" alt="Diagram: Reverse Proxy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/reverse-proxy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/reverse-proxy-sticky.svg" alt="Sticky Note: Reverse Proxy" width="30%">
-</a>
-
 
 A reverse proxy sits in front of application servers, accepting client requests and forwarding them to backend servers on behalf of the client. Unlike a forward proxy (which acts on behalf of clients), a reverse proxy acts on behalf of servers.
 
@@ -393,16 +343,6 @@ backend app_servers
 
 ### DNS Load Balancing
 
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/dns-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/dns-load-balancing-handwritten.svg" alt="Handwritten: DNS Load Balancing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/dns-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/dns-load-balancing-diagram.svg" alt="Diagram: DNS Load Balancing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/dns-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/dns-load-balancing-sticky.svg" alt="Sticky Note: DNS Load Balancing" width="30%">
-</a>
-
 
 DNS load balancing distributes traffic by returning different IP addresses for the same domain name.
 
@@ -450,16 +390,6 @@ Client in New York ? returns us-east-1 IP (10.2.1.1)
 ---
 
 ### Global Server Load Balancing (GSLB)
-
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/global-server-load-balancing-gslb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/global-server-load-balancing-gslb-handwritten.svg" alt="Handwritten: Global Server Load Balancing (GSLB)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/global-server-load-balancing-gslb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/global-server-load-balancing-gslb-diagram.svg" alt="Diagram: Global Server Load Balancing (GSLB)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/global-server-load-balancing-gslb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/global-server-load-balancing-gslb-sticky.svg" alt="Sticky Note: Global Server Load Balancing (GSLB)" width="30%">
-</a>
 
 
 GSLB distributes traffic across data centers or cloud regions. It is the cross-region counterpart of local load balancing.
@@ -529,16 +459,6 @@ Traffic from Mumbai reaches ap-northeast-1.
 
 ### Health Checks
 
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/health-checks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/health-checks-handwritten.svg" alt="Handwritten: Health Checks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/health-checks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/health-checks-diagram.svg" alt="Diagram: Health Checks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/health-checks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/health-checks-sticky.svg" alt="Sticky Note: Health Checks" width="30%">
-</a>
-
 
 Load balancers must distinguish healthy from unhealthy servers. Two approaches:
 
@@ -573,16 +493,6 @@ Every 5 seconds, send GET /health to each server.
 ---
 
 ### Auto-Scaling
-
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/auto-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/auto-scaling-handwritten.svg" alt="Handwritten: Auto-Scaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/auto-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/auto-scaling-diagram.svg" alt="Diagram: Auto-Scaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/auto-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/auto-scaling-sticky.svg" alt="Sticky Note: Auto-Scaling" width="30%">
-</a>
 
 
 Auto-scaling automatically adjusts the number of compute instances based on demand. Two approaches:
@@ -623,16 +533,6 @@ Action: proactively scale from 10 to 30 instances at 8:45 AM
 ---
 
 ### The Sticky Sessions Problem
-
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/the-sticky-sessions-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/the-sticky-sessions-problem-handwritten.svg" alt="Handwritten: The Sticky Sessions Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/the-sticky-sessions-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/the-sticky-sessions-problem-diagram.svg" alt="Diagram: The Sticky Sessions Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/the-sticky-sessions-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/the-sticky-sessions-problem-sticky.svg" alt="Sticky Note: The Sticky Sessions Problem" width="30%">
-</a>
 
 
 Sticky sessions (session affinity) means routing a client to the same application server for the duration of their session. This seems natural but is fundamentally incompatible with resilient horizontal scaling.
@@ -676,16 +576,6 @@ Any server can serve any request by reading/writing session data to Redis. This 
 ---
 
 ### Real-World Systems
-
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/real-world-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/real-world-systems-handwritten.svg" alt="Handwritten: Real-World Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/real-world-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/real-world-systems-diagram.svg" alt="Diagram: Real-World Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/real-world-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/02-scalability-load-balancing/real-world-systems-sticky.svg" alt="Sticky Note: Real-World Systems" width="30%">
-</a>
 
 
 **AWS Elastic Load Balancer (ELB).** Three tiers: Classic Load Balancer (L4/L7 hybrid, legacy), Application Load Balancer (L7, HTTP/HTTPS, content-based routing, path patterns, host-based routing), Network Load Balancer (L4, ultra-low latency, TCP/UDP/TLS, handles millions of requests/second). ALB supports weighted target groups, stickiness via cookies, native WebSocket support.

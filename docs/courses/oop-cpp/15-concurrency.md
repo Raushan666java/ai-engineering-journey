@@ -88,16 +88,6 @@ flowchart LR
 
 ### What is Concurrency?
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-concurrency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-concurrency-handwritten.svg" alt="Handwritten: What is Concurrency?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-concurrency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-concurrency-diagram.svg" alt="Diagram: What is Concurrency?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-concurrency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-concurrency-sticky.svg" alt="Sticky Note: What is Concurrency?" width="30%">
-</a>
-
 
 **Concurrency** is the ability of a program to make progress on more than one task at the same time. The tasks may not execute simultaneously → they just need to appear to. Concurrency is a *design property* of the program.
 
@@ -105,32 +95,12 @@ flowchart LR
 
 ### What is Parallelism?
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-parallelism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-parallelism-handwritten.svg" alt="Handwritten: What is Parallelism?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-parallelism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-parallelism-diagram.svg" alt="Diagram: What is Parallelism?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-parallelism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-parallelism-sticky.svg" alt="Sticky Note: What is Parallelism?" width="30%">
-</a>
-
 
 **Parallelism** is the ability of a program to execute more than one task *simultaneously*. This requires multiple cores or processors.
 
 > **Real-World Analogy:** Three chefs in the same kitchen → one chops, one stirs, one answers the phone. All three tasks run at the same time on different hardware resources.
 
 ### Concurrency vs Parallelism → Detailed Comparison
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/concurrency-vs-parallelism-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/concurrency-vs-parallelism-detailed-comparison-handwritten.svg" alt="Handwritten: Concurrency vs Parallelism → Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/concurrency-vs-parallelism-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/concurrency-vs-parallelism-detailed-comparison-diagram.svg" alt="Diagram: Concurrency vs Parallelism → Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/concurrency-vs-parallelism-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/concurrency-vs-parallelism-detailed-comparison-sticky.svg" alt="Sticky Note: Concurrency vs Parallelism → Detailed Comparison" width="30%">
-</a>
 
 
 | Aspect | Concurrency | Parallelism |
@@ -150,16 +120,6 @@ flowchart LR
 
 ### Why C++ Concurrency Matters
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/why-c-concurrency-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/why-c-concurrency-matters-handwritten.svg" alt="Handwritten: Why C++ Concurrency Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/why-c-concurrency-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/why-c-concurrency-matters-diagram.svg" alt="Diagram: Why C++ Concurrency Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/why-c-concurrency-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/why-c-concurrency-matters-sticky.svg" alt="Sticky Note: Why C++ Concurrency Matters" width="30%">
-</a>
-
 
 Before C++11, threading was platform-specific (pthreads on POSIX, Windows Threads on Win32). C++11 introduced a standardized memory model and threading library that guarantees portable, well-defined behavior across all architectures.
 
@@ -173,16 +133,6 @@ Before C++11, threading was platform-specific (pthreads on POSIX, Windows Thread
 
 ### The Two Fundamental Problems
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/the-two-fundamental-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/the-two-fundamental-problems-handwritten.svg" alt="Handwritten: The Two Fundamental Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/the-two-fundamental-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/the-two-fundamental-problems-diagram.svg" alt="Diagram: The Two Fundamental Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/the-two-fundamental-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/the-two-fundamental-problems-sticky.svg" alt="Sticky Note: The Two Fundamental Problems" width="30%">
-</a>
-
 
 1. **Data Race:** Two or more threads access the same memory location concurrently, at least one is a write, and there is no synchronization.
 2. **Deadlock:** Two or more threads are each waiting for a resource the other holds, so none can proceed.
@@ -194,16 +144,6 @@ Every concurrency technique in this chapter exists to solve these two problems.
 ## 15.2 std::thread → Deep Dive
 
 ### 15.2.1 Creating Threads
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-1-creating-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-1-creating-threads-handwritten.svg" alt="Handwritten: 15.2.1 Creating Threads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-1-creating-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-1-creating-threads-diagram.svg" alt="Diagram: 15.2.1 Creating Threads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-1-creating-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-1-creating-threads-sticky.svg" alt="Sticky Note: 15.2.1 Creating Threads" width="30%">
-</a>
 
 
 `std::thread` represents a single thread of execution. You construct it with a callable and its arguments.
@@ -304,16 +244,6 @@ Main: all threads joined
 
 ### 15.2.2 join() vs detach() → Thread Lifecycle
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-2-join-vs-detach-thread-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-2-join-vs-detach-thread-lifecycle-handwritten.svg" alt="Handwritten: 15.2.2 join() vs detach() → Thread Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-2-join-vs-detach-thread-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-2-join-vs-detach-thread-lifecycle-diagram.svg" alt="Diagram: 15.2.2 join() vs detach() → Thread Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-2-join-vs-detach-thread-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-2-join-vs-detach-thread-lifecycle-sticky.svg" alt="Sticky Note: 15.2.2 join() vs detach() → Thread Lifecycle" width="30%">
-</a>
-
 
 | Operation | Behavior | When to Use |
 |-----------|----------|-------------|
@@ -378,16 +308,6 @@ Main ending (t2 may still run)
 
 ### 15.2.3 RAII Wrapper for std::thread
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-3-raii-wrapper-for-std-thread-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-3-raii-wrapper-for-std-thread-handwritten.svg" alt="Handwritten: 15.2.3 RAII Wrapper for std::thread" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-3-raii-wrapper-for-std-thread-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-3-raii-wrapper-for-std-thread-diagram.svg" alt="Diagram: 15.2.3 RAII Wrapper for std::thread" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-3-raii-wrapper-for-std-thread-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-3-raii-wrapper-for-std-thread-sticky.svg" alt="Sticky Note: 15.2.3 RAII Wrapper for std::thread" width="30%">
-</a>
-
 
 Manually ensuring every thread is joined or detached is error-prone (especially with exceptions). An RAII wrapper automates this:
 
@@ -439,16 +359,6 @@ Caught: Something went wrong (thread was joined)
 
 ### 15.2.4 std::this_thread Utilities
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-4-std-this-thread-utilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-4-std-this-thread-utilities-handwritten.svg" alt="Handwritten: 15.2.4 std::this_thread Utilities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-4-std-this-thread-utilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-4-std-this-thread-utilities-diagram.svg" alt="Diagram: 15.2.4 std::this_thread Utilities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-4-std-this-thread-utilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-4-std-this-thread-utilities-sticky.svg" alt="Sticky Note: 15.2.4 std::this_thread Utilities" width="30%">
-</a>
-
 
 | Function | Purpose |
 |----------|---------|
@@ -483,16 +393,6 @@ int main() {
 
 ### 15.2.5 Edge Cases with std::thread
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-5-edge-cases-with-std-thread-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-5-edge-cases-with-std-thread-handwritten.svg" alt="Handwritten: 15.2.5 Edge Cases with std::thread" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-5-edge-cases-with-std-thread-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-5-edge-cases-with-std-thread-diagram.svg" alt="Diagram: 15.2.5 Edge Cases with std::thread" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-5-edge-cases-with-std-thread-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-5-edge-cases-with-std-thread-sticky.svg" alt="Sticky Note: 15.2.5 Edge Cases with std::thread" width="30%">
-</a>
-
 
 | Edge Case | What Happens | Solution |
 |-----------|-------------|----------|
@@ -520,16 +420,6 @@ int main() {
 
 ### 15.2.6 Dry Run → Interleaved Thread Execution
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-6-dry-run-interleaved-thread-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-6-dry-run-interleaved-thread-execution-handwritten.svg" alt="Handwritten: 15.2.6 Dry Run → Interleaved Thread Execution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-6-dry-run-interleaved-thread-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-6-dry-run-interleaved-thread-execution-diagram.svg" alt="Diagram: 15.2.6 Dry Run → Interleaved Thread Execution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-6-dry-run-interleaved-thread-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-6-dry-run-interleaved-thread-execution-sticky.svg" alt="Sticky Note: 15.2.6 Dry Run → Interleaved Thread Execution" width="30%">
-</a>
-
 
 Consider two threads incrementing a shared counter without mutex protection:
 
@@ -546,16 +436,6 @@ The lost update at T3 is a **data race**. Both threads read 0 before either writ
 
 ### 15.2.7 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-7-complexity-analysis-handwritten.svg" alt="Handwritten: 15.2.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-7-complexity-analysis-diagram.svg" alt="Diagram: 15.2.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-2-7-complexity-analysis-sticky.svg" alt="Sticky Note: 15.2.7 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity |
 |-----------|----------------|-----------------|
@@ -571,16 +451,6 @@ The lost update at T3 is a **data race**. Both threads read 0 before either writ
 ## 15.3 Mutex Family → Complete Reference
 
 ### 15.3.1 std::mutex → The Foundation
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-1-std-mutex-the-foundation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-1-std-mutex-the-foundation-handwritten.svg" alt="Handwritten: 15.3.1 std::mutex → The Foundation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-1-std-mutex-the-foundation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-1-std-mutex-the-foundation-diagram.svg" alt="Diagram: 15.3.1 std::mutex → The Foundation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-1-std-mutex-the-foundation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-1-std-mutex-the-foundation-sticky.svg" alt="Sticky Note: 15.3.1 std::mutex → The Foundation" width="30%">
-</a>
 
 
 `std::mutex` provides **mutual exclusion**: only one thread can hold the lock at a time.
@@ -642,16 +512,6 @@ int main() {
 
 ### 15.3.2 std::lock_guard → Basic RAII Lock
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-2-std-lock-guard-basic-raii-lock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-2-std-lock-guard-basic-raii-lock-handwritten.svg" alt="Handwritten: 15.3.2 std::lock_guard → Basic RAII Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-2-std-lock-guard-basic-raii-lock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-2-std-lock-guard-basic-raii-lock-diagram.svg" alt="Diagram: 15.3.2 std::lock_guard → Basic RAII Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-2-std-lock-guard-basic-raii-lock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-2-std-lock-guard-basic-raii-lock-sticky.svg" alt="Sticky Note: 15.3.2 std::lock_guard → Basic RAII Lock" width="30%">
-</a>
-
 
 `std::lock_guard` locks the mutex on construction and unlocks on destruction. Simplest and most efficient RAII wrapper.
 
@@ -693,16 +553,6 @@ int main() {
 - Best for: simple scoped locking where you never need manual unlock
 
 ### 15.3.3 std::unique_lock → Flexible RAII Lock
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-3-std-unique-lock-flexible-raii-lock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-3-std-unique-lock-flexible-raii-lock-handwritten.svg" alt="Handwritten: 15.3.3 std::unique_lock → Flexible RAII Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-3-std-unique-lock-flexible-raii-lock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-3-std-unique-lock-flexible-raii-lock-diagram.svg" alt="Diagram: 15.3.3 std::unique_lock → Flexible RAII Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-3-std-unique-lock-flexible-raii-lock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-3-std-unique-lock-flexible-raii-lock-sticky.svg" alt="Sticky Note: 15.3.3 std::unique_lock → Flexible RAII Lock" width="30%">
-</a>
 
 
 `std::unique_lock` provides everything `lock_guard` does, plus:
@@ -780,16 +630,6 @@ int main() {
 
 ### 15.3.4 std::scoped_lock (C++17) → Deadlock-Free Multi-Lock
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-4-std-scoped-lock-c-17-deadlock-free-multi-lock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-4-std-scoped-lock-c-17-deadlock-free-multi-lock-handwritten.svg" alt="Handwritten: 15.3.4 std::scoped_lock (C++17) → Deadlock-Free Multi-Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-4-std-scoped-lock-c-17-deadlock-free-multi-lock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-4-std-scoped-lock-c-17-deadlock-free-multi-lock-diagram.svg" alt="Diagram: 15.3.4 std::scoped_lock (C++17) → Deadlock-Free Multi-Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-4-std-scoped-lock-c-17-deadlock-free-multi-lock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-4-std-scoped-lock-c-17-deadlock-free-multi-lock-sticky.svg" alt="Sticky Note: 15.3.4 std::scoped_lock (C++17) → Deadlock-Free Multi-Lock" width="30%">
-</a>
-
 
 `std::scoped_lock` locks multiple mutexes at once using a deadlock-avoidance algorithm (like `std::lock`).
 
@@ -821,16 +661,6 @@ int main() {
 ```
 
 ### 15.3.5 std::timed_mutex → Lock with Timeout
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-5-std-timed-mutex-lock-with-timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-5-std-timed-mutex-lock-with-timeout-handwritten.svg" alt="Handwritten: 15.3.5 std::timed_mutex → Lock with Timeout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-5-std-timed-mutex-lock-with-timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-5-std-timed-mutex-lock-with-timeout-diagram.svg" alt="Diagram: 15.3.5 std::timed_mutex → Lock with Timeout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-5-std-timed-mutex-lock-with-timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-5-std-timed-mutex-lock-with-timeout-sticky.svg" alt="Sticky Note: 15.3.5 std::timed_mutex → Lock with Timeout" width="30%">
-</a>
 
 
 `std::timed_mutex` extends mutex with `try_lock_for()` and `try_lock_until()`.
@@ -876,16 +706,6 @@ Thread 140703517642816 could not acquire lock within 100ms
 
 ### 15.3.6 std::recursive_mutex → Reentrant Locking
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-6-std-recursive-mutex-reentrant-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-6-std-recursive-mutex-reentrant-locking-handwritten.svg" alt="Handwritten: 15.3.6 std::recursive_mutex → Reentrant Locking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-6-std-recursive-mutex-reentrant-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-6-std-recursive-mutex-reentrant-locking-diagram.svg" alt="Diagram: 15.3.6 std::recursive_mutex → Reentrant Locking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-6-std-recursive-mutex-reentrant-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-6-std-recursive-mutex-reentrant-locking-sticky.svg" alt="Sticky Note: 15.3.6 std::recursive_mutex → Reentrant Locking" width="30%">
-</a>
-
 
 Allows the same thread to lock the mutex multiple times without deadlocking. A count is maintained; unlock must be called the same number of times.
 
@@ -929,16 +749,6 @@ Depth 3 unlocked
 
 ### 15.3.7 Mutex Types → Complete Comparison
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-7-mutex-types-complete-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-7-mutex-types-complete-comparison-handwritten.svg" alt="Handwritten: 15.3.7 Mutex Types → Complete Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-7-mutex-types-complete-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-7-mutex-types-complete-comparison-diagram.svg" alt="Diagram: 15.3.7 Mutex Types → Complete Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-7-mutex-types-complete-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-3-7-mutex-types-complete-comparison-sticky.svg" alt="Sticky Note: 15.3.7 Mutex Types → Complete Comparison" width="30%">
-</a>
-
 
 | Feature | mutex | timed_mutex | recursive_mutex | shared_mutex (C++17) | shared_timed_mutex (C++14) |
 |---------|-------|-------------|-----------------|----------------------|---------------------------|
@@ -953,16 +763,6 @@ Depth 3 unlocked
 ## 15.4 Deadlock Prevention → Systematic Approach
 
 ### 15.4.1 What is Deadlock?
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-1-what-is-deadlock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-1-what-is-deadlock-handwritten.svg" alt="Handwritten: 15.4.1 What is Deadlock?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-1-what-is-deadlock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-1-what-is-deadlock-diagram.svg" alt="Diagram: 15.4.1 What is Deadlock?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-1-what-is-deadlock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-1-what-is-deadlock-sticky.svg" alt="Sticky Note: 15.4.1 What is Deadlock?" width="30%">
-</a>
 
 
 A **deadlock** occurs when two or more threads are each waiting for a resource the other holds, so neither can proceed.
@@ -979,16 +779,6 @@ A **deadlock** occurs when two or more threads are each waiting for a resource t
 Breaking any one condition prevents deadlock. In practice, we break **circular wait**.
 
 ### 15.4.2 Deadlock Example
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-2-deadlock-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-2-deadlock-example-handwritten.svg" alt="Handwritten: 15.4.2 Deadlock Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-2-deadlock-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-2-deadlock-example-diagram.svg" alt="Diagram: 15.4.2 Deadlock Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-2-deadlock-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-2-deadlock-example-sticky.svg" alt="Sticky Note: 15.4.2 Deadlock Example" width="30%">
-</a>
 
 
 ```cpp
@@ -1029,16 +819,6 @@ void philosopher_right_handed(int id) {
 
 ### 15.4.3 Strategy 1: Consistent Lock Ordering
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-3-strategy-1-consistent-lock-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-3-strategy-1-consistent-lock-ordering-handwritten.svg" alt="Handwritten: 15.4.3 Strategy 1: Consistent Lock Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-3-strategy-1-consistent-lock-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-3-strategy-1-consistent-lock-ordering-diagram.svg" alt="Diagram: 15.4.3 Strategy 1: Consistent Lock Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-3-strategy-1-consistent-lock-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-3-strategy-1-consistent-lock-ordering-sticky.svg" alt="Sticky Note: 15.4.3 Strategy 1: Consistent Lock Ordering" width="30%">
-</a>
-
 
 Always acquire locks in the same global order across all threads.
 
@@ -1063,16 +843,6 @@ void safe_thread_b() {
 > **Problem:** Requires global discipline. Easy to screw up in large codebases.
 
 ### 15.4.4 Strategy 2: std::lock → Atomic Multi-Lock
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-4-strategy-2-std-lock-atomic-multi-lock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-4-strategy-2-std-lock-atomic-multi-lock-handwritten.svg" alt="Handwritten: 15.4.4 Strategy 2: std::lock → Atomic Multi-Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-4-strategy-2-std-lock-atomic-multi-lock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-4-strategy-2-std-lock-atomic-multi-lock-diagram.svg" alt="Diagram: 15.4.4 Strategy 2: std::lock → Atomic Multi-Lock" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-4-strategy-2-std-lock-atomic-multi-lock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-4-strategy-2-std-lock-atomic-multi-lock-sticky.svg" alt="Sticky Note: 15.4.4 Strategy 2: std::lock → Atomic Multi-Lock" width="30%">
-</a>
 
 
 `std::lock(m1, m2, ...)` locks all mutexes atomically using a deadlock-avoidance algorithm (try_lock in various orders, backing off on contention).
@@ -1108,16 +878,6 @@ int main() {
 
 ### 15.4.5 Strategy 3: std::scoped_lock (C++17) → The Cleanest Way
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-5-strategy-3-std-scoped-lock-c-17-the-cleanest-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-5-strategy-3-std-scoped-lock-c-17-the-cleanest-way-handwritten.svg" alt="Handwritten: 15.4.5 Strategy 3: std::scoped_lock (C++17) → The Cleanest Way" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-5-strategy-3-std-scoped-lock-c-17-the-cleanest-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-5-strategy-3-std-scoped-lock-c-17-the-cleanest-way-diagram.svg" alt="Diagram: 15.4.5 Strategy 3: std::scoped_lock (C++17) → The Cleanest Way" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-5-strategy-3-std-scoped-lock-c-17-the-cleanest-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-5-strategy-3-std-scoped-lock-c-17-the-cleanest-way-sticky.svg" alt="Sticky Note: 15.4.5 Strategy 3: std::scoped_lock (C++17) → The Cleanest Way" width="30%">
-</a>
-
 
 `std::scoped_lock` wraps `std::lock` internally. No need for adopt_lock:
 
@@ -1139,16 +899,6 @@ void super_safe() {
 
 ### 15.4.6 Strategy 4: Lock Hierarchies
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-6-strategy-4-lock-hierarchies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-6-strategy-4-lock-hierarchies-handwritten.svg" alt="Handwritten: 15.4.6 Strategy 4: Lock Hierarchies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-6-strategy-4-lock-hierarchies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-6-strategy-4-lock-hierarchies-diagram.svg" alt="Diagram: 15.4.6 Strategy 4: Lock Hierarchies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-6-strategy-4-lock-hierarchies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-6-strategy-4-lock-hierarchies-sticky.svg" alt="Sticky Note: 15.4.6 Strategy 4: Lock Hierarchies" width="30%">
-</a>
-
 
 Assign levels to mutexes and enforce that a thread can only lock mutexes with strictly decreasing levels.
 
@@ -1161,16 +911,6 @@ Assign levels to mutexes and enforce that a thread can only lock mutexes with st
 A thread holding level-20 can only lock level-30 or higher numbers (never level-10).
 
 ### 15.4.7 Deadlock Prevention → Quick Reference
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-7-deadlock-prevention-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-7-deadlock-prevention-quick-reference-handwritten.svg" alt="Handwritten: 15.4.7 Deadlock Prevention → Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-7-deadlock-prevention-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-7-deadlock-prevention-quick-reference-diagram.svg" alt="Diagram: 15.4.7 Deadlock Prevention → Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-7-deadlock-prevention-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-4-7-deadlock-prevention-quick-reference-sticky.svg" alt="Sticky Note: 15.4.7 Deadlock Prevention → Quick Reference" width="30%">
-</a>
 
 
 | Strategy | Technique | C++ Tool | Complexity |
@@ -1187,32 +927,12 @@ A thread holding level-20 can only lock level-30 or higher numbers (never level-
 
 ### 15.5.1 The Problem
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-1-the-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-1-the-problem-handwritten.svg" alt="Handwritten: 15.5.1 The Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-1-the-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-1-the-problem-diagram.svg" alt="Diagram: 15.5.1 The Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-1-the-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-1-the-problem-sticky.svg" alt="Sticky Note: 15.5.1 The Problem" width="30%">
-</a>
-
 
 One thread produces data; another consumes it. The consumer must wait when the queue is empty, and the producer must notify when new data arrives.
 
 **Real-World Analogy:** A coffee shop with one barista and one customer. The barista (producer) makes coffee and yells "Order up!" (notification). The customer (consumer) waits at the counter until called. If the customer checks every 2 seconds without being called, that's **busy-waiting** (wasteful). The condition variable lets the customer sleep until notified.
 
 ### 15.5.2 Core Concepts
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-2-core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-2-core-concepts-handwritten.svg" alt="Handwritten: 15.5.2 Core Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-2-core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-2-core-concepts-diagram.svg" alt="Diagram: 15.5.2 Core Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-2-core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-2-core-concepts-sticky.svg" alt="Sticky Note: 15.5.2 Core Concepts" width="30%">
-</a>
 
 
 | Concept | Description |
@@ -1323,16 +1043,6 @@ Consumed: 9
 
 ### 15.5.3 Dry Run → condition_variable Wait Sequence
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-3-dry-run-condition-variable-wait-sequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-3-dry-run-condition-variable-wait-sequence-handwritten.svg" alt="Handwritten: 15.5.3 Dry Run → condition_variable Wait Sequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-3-dry-run-condition-variable-wait-sequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-3-dry-run-condition-variable-wait-sequence-diagram.svg" alt="Diagram: 15.5.3 Dry Run → condition_variable Wait Sequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-3-dry-run-condition-variable-wait-sequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-3-dry-run-condition-variable-wait-sequence-sticky.svg" alt="Sticky Note: 15.5.3 Dry Run → condition_variable Wait Sequence" width="30%">
-</a>
-
 
 | Time | Producer | Consumer | Queue | Mutex State |
 |------|----------|----------|-------|-------------|
@@ -1345,16 +1055,6 @@ Consumed: 9
 | T6 | Unlock, sleep | Wait: check (!empty=true) | [1] | Locked by consumer |
 
 ### 15.5.4 notify_one vs notify_all
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-4-notify-one-vs-notify-all-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-4-notify-one-vs-notify-all-handwritten.svg" alt="Handwritten: 15.5.4 notify_one vs notify_all" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-4-notify-one-vs-notify-all-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-4-notify-one-vs-notify-all-diagram.svg" alt="Diagram: 15.5.4 notify_one vs notify_all" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-4-notify-one-vs-notify-all-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-4-notify-one-vs-notify-all-sticky.svg" alt="Sticky Note: 15.5.4 notify_one vs notify_all" width="30%">
-</a>
 
 
 | Aspect | notify_one | notify_all |
@@ -1408,16 +1108,6 @@ Worker 2 starting
 
 ### 15.5.5 Spurious Wakeups
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-5-spurious-wakeups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-5-spurious-wakeups-handwritten.svg" alt="Handwritten: 15.5.5 Spurious Wakeups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-5-spurious-wakeups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-5-spurious-wakeups-diagram.svg" alt="Diagram: 15.5.5 Spurious Wakeups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-5-spurious-wakeups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-5-spurious-wakeups-sticky.svg" alt="Sticky Note: 15.5.5 Spurious Wakeups" width="30%">
-</a>
-
 
 The C++ standard allows `wait()` to return without a notification (spurious wakeup). Always use the predicate overload:
 
@@ -1430,16 +1120,6 @@ cv.wait(lock);   // may return even if queue is empty
 ```
 
 ### 15.5.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-6-edge-cases-handwritten.svg" alt="Handwritten: 15.5.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-6-edge-cases-diagram.svg" alt="Diagram: 15.5.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-5-6-edge-cases-sticky.svg" alt="Sticky Note: 15.5.6 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Symptom | Fix |
@@ -1455,16 +1135,6 @@ cv.wait(lock);   // may return even if queue is empty
 ## 15.6 std::async, std::future, std::promise, std::packaged_task
 
 ### 15.6.1 std::async → The Easiest Async Task
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-1-std-async-the-easiest-async-task-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-1-std-async-the-easiest-async-task-handwritten.svg" alt="Handwritten: 15.6.1 std::async → The Easiest Async Task" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-1-std-async-the-easiest-async-task-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-1-std-async-the-easiest-async-task-diagram.svg" alt="Diagram: 15.6.1 std::async → The Easiest Async Task" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-1-std-async-the-easiest-async-task-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-1-std-async-the-easiest-async-task-sticky.svg" alt="Sticky Note: 15.6.1 std::async → The Easiest Async Task" width="30%">
-</a>
 
 
 `std::async` runs a function asynchronously and returns a `std::future` that will hold the result.
@@ -1528,16 +1198,6 @@ f3: 110
 
 ### 15.6.2 std::future → Getting the Result
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-2-std-future-getting-the-result-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-2-std-future-getting-the-result-handwritten.svg" alt="Handwritten: 15.6.2 std::future → Getting the Result" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-2-std-future-getting-the-result-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-2-std-future-getting-the-result-diagram.svg" alt="Diagram: 15.6.2 std::future → Getting the Result" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-2-std-future-getting-the-result-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-2-std-future-getting-the-result-sticky.svg" alt="Sticky Note: 15.6.2 std::future → Getting the Result" width="30%">
-</a>
-
 
 - `get()` → blocks until result is ready (can only call once)
 - `wait()` → blocks until ready, does not retrieve result
@@ -1573,16 +1233,6 @@ int main() {
 
 ### 15.6.3 std::shared_future → Multiple Waiters
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-3-std-shared-future-multiple-waiters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-3-std-shared-future-multiple-waiters-handwritten.svg" alt="Handwritten: 15.6.3 std::shared_future → Multiple Waiters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-3-std-shared-future-multiple-waiters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-3-std-shared-future-multiple-waiters-diagram.svg" alt="Diagram: 15.6.3 std::shared_future → Multiple Waiters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-3-std-shared-future-multiple-waiters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-3-std-shared-future-multiple-waiters-sticky.svg" alt="Sticky Note: 15.6.3 std::shared_future → Multiple Waiters" width="30%">
-</a>
-
 
 Unlike `std::future` (move-only, get() once), `std::shared_future` is copyable and allows multiple threads to `get()` the same result.
 
@@ -1614,16 +1264,6 @@ int main() {
 ```
 
 ### 15.6.4 std::promise → Manual Value Channel
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-4-std-promise-manual-value-channel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-4-std-promise-manual-value-channel-handwritten.svg" alt="Handwritten: 15.6.4 std::promise → Manual Value Channel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-4-std-promise-manual-value-channel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-4-std-promise-manual-value-channel-diagram.svg" alt="Diagram: 15.6.4 std::promise → Manual Value Channel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-4-std-promise-manual-value-channel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-4-std-promise-manual-value-channel-sticky.svg" alt="Sticky Note: 15.6.4 std::promise → Manual Value Channel" width="30%">
-</a>
 
 
 `std::promise<T>` provides a write end of a channel whose read end is `std::future<T>`.
@@ -1683,16 +1323,6 @@ Caught: Negative inputs not allowed
 
 ### 15.6.5 std::packaged_task → Wrap Callable as Future
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-5-std-packaged-task-wrap-callable-as-future-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-5-std-packaged-task-wrap-callable-as-future-handwritten.svg" alt="Handwritten: 15.6.5 std::packaged_task → Wrap Callable as Future" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-5-std-packaged-task-wrap-callable-as-future-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-5-std-packaged-task-wrap-callable-as-future-diagram.svg" alt="Diagram: 15.6.5 std::packaged_task → Wrap Callable as Future" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-5-std-packaged-task-wrap-callable-as-future-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-5-std-packaged-task-wrap-callable-as-future-sticky.svg" alt="Sticky Note: 15.6.5 std::packaged_task → Wrap Callable as Future" width="30%">
-</a>
-
 
 `std::packaged_task<Signature>` wraps any callable so its return value becomes a `std::future`.
 
@@ -1735,16 +1365,6 @@ Lambda result: 42
 
 ### 15.6.6 async vs thread → Detailed Comparison
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-6-async-vs-thread-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-6-async-vs-thread-detailed-comparison-handwritten.svg" alt="Handwritten: 15.6.6 async vs thread → Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-6-async-vs-thread-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-6-async-vs-thread-detailed-comparison-diagram.svg" alt="Diagram: 15.6.6 async vs thread → Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-6-async-vs-thread-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-6-async-vs-thread-detailed-comparison-sticky.svg" alt="Sticky Note: 15.6.6 async vs thread → Detailed Comparison" width="30%">
-</a>
-
 
 | Criterion | std::async | std::thread |
 |-----------|------------|-------------|
@@ -1761,16 +1381,6 @@ Lambda result: 42
 
 ### 15.6.7 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-7-complexity-analysis-handwritten.svg" alt="Handwritten: 15.6.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-7-complexity-analysis-diagram.svg" alt="Diagram: 15.6.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-6-7-complexity-analysis-sticky.svg" alt="Sticky Note: 15.6.7 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Notes |
 |-----------|----------------|-------|
@@ -1783,32 +1393,12 @@ Lambda result: 42
 
 ### 15.7.1 What is an Atomic Operation?
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-1-what-is-an-atomic-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-1-what-is-an-atomic-operation-handwritten.svg" alt="Handwritten: 15.7.1 What is an Atomic Operation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-1-what-is-an-atomic-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-1-what-is-an-atomic-operation-diagram.svg" alt="Diagram: 15.7.1 What is an Atomic Operation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-1-what-is-an-atomic-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-1-what-is-an-atomic-operation-sticky.svg" alt="Sticky Note: 15.7.1 What is an Atomic Operation?" width="30%">
-</a>
-
 
 An **atomic operation** is indivisible → no other thread can observe the operation in a partially-completed state.
 
 **Real-World Analogy:** A bank ATM withdrawal: checking balance, deducting amount, dispensing cash. If you're interrupted between "check balance" and "deduct amount", two withdrawals could happen on the same balance. An atomic transaction prevents this.
 
 ### 15.7.2 Basic Usage
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-2-basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-2-basic-usage-handwritten.svg" alt="Handwritten: 15.7.2 Basic Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-2-basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-2-basic-usage-diagram.svg" alt="Diagram: 15.7.2 Basic Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-2-basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-2-basic-usage-sticky.svg" alt="Sticky Note: 15.7.2 Basic Usage" width="30%">
-</a>
 
 
 `std::atomic<T>` provides atomic operations on trivially-copyable types (integers, pointers, and custom trivially-copyable structs). On most platforms, operations on `std::atomic<int>` are lock-free (use CPU atomic instructions).
@@ -1851,16 +1441,6 @@ int main() {
 | CAS (strong) | `x.compare_exchange_strong(expected, desired, order)` | Like weak but no spurious failure |
 
 ### 15.7.3 Atomic vs Mutex → Performance Comparison
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-3-atomic-vs-mutex-performance-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-3-atomic-vs-mutex-performance-comparison-handwritten.svg" alt="Handwritten: 15.7.3 Atomic vs Mutex → Performance Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-3-atomic-vs-mutex-performance-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-3-atomic-vs-mutex-performance-comparison-diagram.svg" alt="Diagram: 15.7.3 Atomic vs Mutex → Performance Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-3-atomic-vs-mutex-performance-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-3-atomic-vs-mutex-performance-comparison-sticky.svg" alt="Sticky Note: 15.7.3 Atomic vs Mutex → Performance Comparison" width="30%">
-</a>
 
 
 | Aspect | std::atomic | std::mutex |
@@ -1909,16 +1489,6 @@ Approximate results on modern hardware:
 > **Key Insight:** Atomics are faster because they use CPU instructions with no OS involvement. But they only protect ONE variable. Mutexes can protect complex data structures spanning many variables.
 
 ### 15.7.4 Atomic Flag → Minimal Synchronization
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-4-atomic-flag-minimal-synchronization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-4-atomic-flag-minimal-synchronization-handwritten.svg" alt="Handwritten: 15.7.4 Atomic Flag → Minimal Synchronization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-4-atomic-flag-minimal-synchronization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-4-atomic-flag-minimal-synchronization-diagram.svg" alt="Diagram: 15.7.4 Atomic Flag → Minimal Synchronization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-4-atomic-flag-minimal-synchronization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-7-4-atomic-flag-minimal-synchronization-sticky.svg" alt="Sticky Note: 15.7.4 Atomic Flag → Minimal Synchronization" width="30%">
-</a>
 
 
 `std::atomic_flag` is the simplest atomic type → guaranteed lock-free, supports only `test_and_set()` and `clear()`. Used to build spinlocks.
@@ -1970,32 +1540,12 @@ int main() {
 
 ### 15.8.1 What is Memory Ordering?
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-1-what-is-memory-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-1-what-is-memory-ordering-handwritten.svg" alt="Handwritten: 15.8.1 What is Memory Ordering?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-1-what-is-memory-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-1-what-is-memory-ordering-diagram.svg" alt="Diagram: 15.8.1 What is Memory Ordering?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-1-what-is-memory-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-1-what-is-memory-ordering-sticky.svg" alt="Sticky Note: 15.8.1 What is Memory Ordering?" width="30%">
-</a>
-
 
 Memory ordering controls how operations on different threads become visible to each other. Without ordering constraints, compilers and CPUs may reorder operations, leading to surprising results.
 
 **Real-World Analogy:** A postcard (relaxed) vs a registered letter (sequentially consistent). With a postcard, you know you sent it, but the recipient might get it before or after other mail. With registered mail, delivery is tracked and ordered relative to other mail.
 
 ### 15.8.2 The Six Memory Orders
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-2-the-six-memory-orders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-2-the-six-memory-orders-handwritten.svg" alt="Handwritten: 15.8.2 The Six Memory Orders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-2-the-six-memory-orders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-2-the-six-memory-orders-diagram.svg" alt="Diagram: 15.8.2 The Six Memory Orders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-2-the-six-memory-orders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-2-the-six-memory-orders-sticky.svg" alt="Sticky Note: 15.8.2 The Six Memory Orders" width="30%">
-</a>
 
 
 | Memory Order | Direction | Description | Cost |
@@ -2008,16 +1558,6 @@ Memory ordering controls how operations on different threads become visible to e
 | `memory_order_seq_cst` | Global | Single total order across all threads | Most expensive |
 
 ### 15.8.3 Acquire-Release Semantics (The Key Concept)
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-3-acquire-release-semantics-the-key-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-3-acquire-release-semantics-the-key-concept-handwritten.svg" alt="Handwritten: 15.8.3 Acquire-Release Semantics (The Key Concept)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-3-acquire-release-semantics-the-key-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-3-acquire-release-semantics-the-key-concept-diagram.svg" alt="Diagram: 15.8.3 Acquire-Release Semantics (The Key Concept)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-3-acquire-release-semantics-the-key-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-3-acquire-release-semantics-the-key-concept-sticky.svg" alt="Sticky Note: 15.8.3 Acquire-Release Semantics (The Key Concept)" width="30%">
-</a>
 
 
 | Operation | Prevents Reordering |
@@ -2080,16 +1620,6 @@ With `memory_order_relaxed`, the compiler/CPU could reorder T0 and T1. The consu
 
 ### 15.8.4 Sequentially Consistent Ordering
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-4-sequentially-consistent-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-4-sequentially-consistent-ordering-handwritten.svg" alt="Handwritten: 15.8.4 Sequentially Consistent Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-4-sequentially-consistent-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-4-sequentially-consistent-ordering-diagram.svg" alt="Diagram: 15.8.4 Sequentially Consistent Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-4-sequentially-consistent-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-4-sequentially-consistent-ordering-sticky.svg" alt="Sticky Note: 15.8.4 Sequentially Consistent Ordering" width="30%">
-</a>
-
 
 `memory_order_seq_cst` imposes a **single total order** across all threads. All threads observe all atomic operations in the same order. This is the default and the safest, but also the most expensive.
 
@@ -2125,16 +1655,6 @@ int main() {
 
 ### 15.8.5 Relaxed Ordering → When It's Safe
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-5-relaxed-ordering-when-it-s-safe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-5-relaxed-ordering-when-it-s-safe-handwritten.svg" alt="Handwritten: 15.8.5 Relaxed Ordering → When It's Safe" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-5-relaxed-ordering-when-it-s-safe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-5-relaxed-ordering-when-it-s-safe-diagram.svg" alt="Diagram: 15.8.5 Relaxed Ordering → When It's Safe" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-5-relaxed-ordering-when-it-s-safe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-5-relaxed-ordering-when-it-s-safe-sticky.svg" alt="Sticky Note: 15.8.5 Relaxed Ordering → When It's Safe" width="30%">
-</a>
-
 
 `memory_order_relaxed` guarantees only atomicity (no torn reads/writes). No ordering across variables.
 
@@ -2164,16 +1684,6 @@ void print_stats() {
 
 ### 15.8.6 Memory Ordering → Summary Table
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-6-memory-ordering-summary-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-6-memory-ordering-summary-table-handwritten.svg" alt="Handwritten: 15.8.6 Memory Ordering → Summary Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-6-memory-ordering-summary-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-6-memory-ordering-summary-table-diagram.svg" alt="Diagram: 15.8.6 Memory Ordering → Summary Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-6-memory-ordering-summary-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-8-6-memory-ordering-summary-table-sticky.svg" alt="Sticky Note: 15.8.6 Memory Ordering → Summary Table" width="30%">
-</a>
-
 
 | Order | Load Behavior | Store Behavior | Use When |
 |-------|---------------|----------------|----------|
@@ -2190,16 +1700,6 @@ void print_stats() {
 ## 15.9 Data Races and Race Conditions
 
 ### 15.9.1 Data Race → The Definition
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-1-data-race-the-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-1-data-race-the-definition-handwritten.svg" alt="Handwritten: 15.9.1 Data Race → The Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-1-data-race-the-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-1-data-race-the-definition-diagram.svg" alt="Diagram: 15.9.1 Data Race → The Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-1-data-race-the-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-1-data-race-the-definition-sticky.svg" alt="Sticky Note: 15.9.1 Data Race → The Definition" width="30%">
-</a>
 
 
 A **data race** occurs when:
@@ -2232,16 +1732,6 @@ int main() {
 ```
 
 ### 15.9.2 Race Condition → The Broader Concept
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-2-race-condition-the-broader-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-2-race-condition-the-broader-concept-handwritten.svg" alt="Handwritten: 15.9.2 Race Condition → The Broader Concept" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-2-race-condition-the-broader-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-2-race-condition-the-broader-concept-diagram.svg" alt="Diagram: 15.9.2 Race Condition → The Broader Concept" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-2-race-condition-the-broader-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-2-race-condition-the-broader-concept-sticky.svg" alt="Sticky Note: 15.9.2 Race Condition → The Broader Concept" width="30%">
-</a>
 
 
 A **race condition** is a flaw in the timing or ordering of events that leads to incorrect behavior. All data races are race conditions, but not all race conditions are data races.
@@ -2282,16 +1772,6 @@ void withdraw_correct(int amount) {
 
 ### 15.9.3 Race Condition Types
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-3-race-condition-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-3-race-condition-types-handwritten.svg" alt="Handwritten: 15.9.3 Race Condition Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-3-race-condition-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-3-race-condition-types-diagram.svg" alt="Diagram: 15.9.3 Race Condition Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-3-race-condition-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-3-race-condition-types-sticky.svg" alt="Sticky Note: 15.9.3 Race Condition Types" width="30%">
-</a>
-
 
 | Type | Description | Example |
 |------|-------------|---------|
@@ -2301,16 +1781,6 @@ void withdraw_correct(int amount) {
 | **Lost update** | Two updates overwrite each other | Two bank transfers |
 
 ### 15.9.4 Detecting Data Races
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-4-detecting-data-races-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-4-detecting-data-races-handwritten.svg" alt="Handwritten: 15.9.4 Detecting Data Races" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-4-detecting-data-races-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-4-detecting-data-races-diagram.svg" alt="Diagram: 15.9.4 Detecting Data Races" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-4-detecting-data-races-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-4-detecting-data-races-sticky.svg" alt="Sticky Note: 15.9.4 Detecting Data Races" width="30%">
-</a>
 
 
 | Tool | Platform | Command |
@@ -2329,16 +1799,6 @@ g++ -fsanitize=thread -g -O1 -o program program.cpp
 ```
 
 ### 15.9.5 Critical Section Concept
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-5-critical-section-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-5-critical-section-concept-handwritten.svg" alt="Handwritten: 15.9.5 Critical Section Concept" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-5-critical-section-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-5-critical-section-concept-diagram.svg" alt="Diagram: 15.9.5 Critical Section Concept" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-5-critical-section-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/15-9-5-critical-section-concept-sticky.svg" alt="Sticky Note: 15.9.5 Critical Section Concept" width="30%">
-</a>
 
 
 A **critical section** is a block of code that accesses shared resources and must not be executed by more than one thread at a time.
@@ -2365,16 +1825,6 @@ A **critical section** is a block of code that accesses shared resources and mus
 ## 15.10 Interview Corner → Concurrency
 
 ### Q1: What is the difference between a data race and a race condition?
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-the-difference-between-a-data-race-and-a-race-condition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-the-difference-between-a-data-race-and-a-race-condition-handwritten.svg" alt="Handwritten: What is the difference between a data race and a race condition?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-the-difference-between-a-data-race-and-a-race-condition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-the-difference-between-a-data-race-and-a-race-condition-diagram.svg" alt="Diagram: What is the difference between a data race and a race condition?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-the-difference-between-a-data-race-and-a-race-condition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-the-difference-between-a-data-race-and-a-race-condition-sticky.svg" alt="Sticky Note: What is the difference between a data race and a race condition?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2411,16 +1861,6 @@ int balance = 100;
 
 ### Q2: When would you use std::atomic instead of std::mutex, and vice versa?
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/when-would-you-use-std-atomic-instead-of-std-mutex-and-vice-versa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/when-would-you-use-std-atomic-instead-of-std-mutex-and-vice-versa-handwritten.svg" alt="Handwritten: When would you use std::atomic instead of std::mutex, and vice versa?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/when-would-you-use-std-atomic-instead-of-std-mutex-and-vice-versa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/when-would-you-use-std-atomic-instead-of-std-mutex-and-vice-versa-diagram.svg" alt="Diagram: When would you use std::atomic instead of std::mutex, and vice versa?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/when-would-you-use-std-atomic-instead-of-std-mutex-and-vice-versa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/when-would-you-use-std-atomic-instead-of-std-mutex-and-vice-versa-sticky.svg" alt="Sticky Note: When would you use std::atomic instead of std::mutex, and vice versa?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2450,16 +1890,6 @@ Default choice ─────────────────────�
 
 ### Q3: Explain the difference between std::lock_guard, std::unique_lock, and std::scoped_lock.
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-difference-between-std-lock-guard-std-unique-lock-and-std-scoped-lock-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-difference-between-std-lock-guard-std-unique-lock-and-std-scoped-lock-handwritten.svg" alt="Handwritten: Explain the difference between std::lock_guard, std::unique_lock, and std::scoped_lock." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-difference-between-std-lock-guard-std-unique-lock-and-std-scoped-lock-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-difference-between-std-lock-guard-std-unique-lock-and-std-scoped-lock-diagram.svg" alt="Diagram: Explain the difference between std::lock_guard, std::unique_lock, and std::scoped_lock." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-difference-between-std-lock-guard-std-unique-lock-and-std-scoped-lock-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-difference-between-std-lock-guard-std-unique-lock-and-std-scoped-lock-sticky.svg" alt="Sticky Note: Explain the difference between std::lock_guard, std::unique_lock, and std::scoped_lock." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2480,16 +1910,6 @@ Default choice ─────────────────────�
 - **scoped_lock** → need multiple mutexes simultaneously (C++17+)
 
 ### Q4: What happens when a std::thread is destroyed while still joinable?
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-happens-when-a-std-thread-is-destroyed-while-still-joinable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-happens-when-a-std-thread-is-destroyed-while-still-joinable-handwritten.svg" alt="Handwritten: What happens when a std::thread is destroyed while still joinable?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-happens-when-a-std-thread-is-destroyed-while-still-joinable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-happens-when-a-std-thread-is-destroyed-while-still-joinable-diagram.svg" alt="Diagram: What happens when a std::thread is destroyed while still joinable?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-happens-when-a-std-thread-is-destroyed-while-still-joinable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-happens-when-a-std-thread-is-destroyed-while-still-joinable-sticky.svg" alt="Sticky Note: What happens when a std::thread is destroyed while still joinable?" width="30%">
-</a>
 
 
 **Answer:** `std::terminate()` is called, which aborts the program.
@@ -2527,16 +1947,6 @@ std::jthread jt([]{ /* ... */ });  // auto-joins on destruction
 
 ### Q5: Explain the ABA problem in the context of compare-and-swap.
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-aba-problem-in-the-context-of-compare-and-swap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-aba-problem-in-the-context-of-compare-and-swap-handwritten.svg" alt="Handwritten: Explain the ABA problem in the context of compare-and-swap." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-aba-problem-in-the-context-of-compare-and-swap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-aba-problem-in-the-context-of-compare-and-swap-diagram.svg" alt="Diagram: Explain the ABA problem in the context of compare-and-swap." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-aba-problem-in-the-context-of-compare-and-swap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/explain-the-aba-problem-in-the-context-of-compare-and-swap-sticky.svg" alt="Sticky Note: Explain the ABA problem in the context of compare-and-swap." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2566,16 +1976,6 @@ But Node B was already popped → corruption!
 
 ### Q6: How does std::condition_variable::wait() work internally?
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-does-std-condition-variable-wait-work-internally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-does-std-condition-variable-wait-work-internally-handwritten.svg" alt="Handwritten: How does std::condition_variable::wait() work internally?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-does-std-condition-variable-wait-work-internally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-does-std-condition-variable-wait-work-internally-diagram.svg" alt="Diagram: How does std::condition_variable::wait() work internally?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-does-std-condition-variable-wait-work-internally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-does-std-condition-variable-wait-work-internally-sticky.svg" alt="Sticky Note: How does std::condition_variable::wait() work internally?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2600,16 +2000,6 @@ while (!pred()) {
 ```
 
 ### Q7: What is a spinlock and when would you use it?
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-a-spinlock-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-a-spinlock-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is a spinlock and when would you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-a-spinlock-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-a-spinlock-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is a spinlock and when would you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-a-spinlock-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/what-is-a-spinlock-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is a spinlock and when would you use it?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2641,16 +2031,6 @@ public:
 - Single-core systems (spinner prevents holder from running!)
 
 ### Q8: How do you prevent deadlocks in C++?
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-do-you-prevent-deadlocks-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-do-you-prevent-deadlocks-in-c-handwritten.svg" alt="Handwritten: How do you prevent deadlocks in C++?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-do-you-prevent-deadlocks-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-do-you-prevent-deadlocks-in-c-diagram.svg" alt="Diagram: How do you prevent deadlocks in C++?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-do-you-prevent-deadlocks-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/how-do-you-prevent-deadlocks-in-c-sticky.svg" alt="Sticky Note: How do you prevent deadlocks in C++?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2709,16 +2089,6 @@ Five strategies, in order of preference:
 
 ### Real-World Case Study: Lock-Free Order Book
 
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/real-world-case-study-lock-free-order-book-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/real-world-case-study-lock-free-order-book-handwritten.svg" alt="Handwritten: Real-World Case Study: Lock-Free Order Book" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/real-world-case-study-lock-free-order-book-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/real-world-case-study-lock-free-order-book-diagram.svg" alt="Diagram: Real-World Case Study: Lock-Free Order Book" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/real-world-case-study-lock-free-order-book-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/real-world-case-study-lock-free-order-book-sticky.svg" alt="Sticky Note: Real-World Case Study: Lock-Free Order Book" width="30%">
-</a>
-
 
 In high-frequency trading (HFT), an order book must handle millions of orders/second with microsecond latency:
 
@@ -2747,16 +2117,6 @@ struct PriceLevel {
 ```
 
 ### Design Pattern: Thread Pool
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/design-pattern-thread-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/design-pattern-thread-pool-handwritten.svg" alt="Handwritten: Design Pattern: Thread Pool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/design-pattern-thread-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/design-pattern-thread-pool-diagram.svg" alt="Diagram: Design Pattern: Thread Pool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/design-pattern-thread-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/design-pattern-thread-pool-sticky.svg" alt="Sticky Note: Design Pattern: Thread Pool" width="30%">
-</a>
 
 
 A reusable thread pool is one of the most common production concurrency patterns:
@@ -2896,16 +2256,6 @@ The two fundamental enemies are **data races** (use synchronization) and **deadl
 5. Why is `compare_exchange_weak()` allowed to fail spuriously? When would you use it over `compare_exchange_strong()`?
 
 ### Coding Problems
-
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/15-concurrency/coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/15-concurrency/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
-</a>
 
 
 **1. Parallel Sum (std::async):**

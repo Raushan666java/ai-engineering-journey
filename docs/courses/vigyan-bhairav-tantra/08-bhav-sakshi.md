@@ -75,16 +75,6 @@
 
 ### तीन-आयामी मॉडल:
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: तीन-आयामी मॉडल:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: तीन-आयामी मॉडल:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: तीन-आयामी मॉडल:" width="30%">
-</a>
-
 
 | क्रिया | परिणाम | दीर्घकालिक प्रभाव |
 |-------|--------|-------------------|
@@ -97,16 +87,6 @@
 ## विज्ञान भैरव तंत्र की भावना तकनीकें — ओशो की व्याख्या
 
 ### तकनीक १: क्रोध साक्षी (Anger Witnessing)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/anger-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/anger-witnessing-handwritten.svg" alt="Handwritten: तकनीक १: क्रोध साक्षी (Anger Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/anger-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/anger-witnessing-diagram.svg" alt="Diagram: तकनीक १: क्रोध साक्षी (Anger Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/anger-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/anger-witnessing-sticky.svg" alt="Sticky Note: तकनीक १: क्रोध साक्षी (Anger Witnessing)" width="30%">
-</a>
 
 
 **मूल श्लोक:**
@@ -134,16 +114,6 @@
 
 ### तकनीक २: प्रेम साक्षी (Love Witnessing)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/love-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/love-witnessing-handwritten.svg" alt="Handwritten: तकनीक २: प्रेम साक्षी (Love Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/love-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/love-witnessing-diagram.svg" alt="Diagram: तकनीक २: प्रेम साक्षी (Love Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/love-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/love-witnessing-sticky.svg" alt="Sticky Note: तकनीक २: प्रेम साक्षी (Love Witnessing)" width="30%">
-</a>
-
 
 **मूल श्लोक:**
 > *"प्रेमे चित्तं समालोक्य तन्मात्रां परिचिन्तयेत्। प्रेम्णा च समाविष्टो भैरवत्वमवाप्नुयात्॥"*
@@ -163,16 +133,6 @@
 ---
 
 ### तकनीक ३: भय साक्षी (Fear Witnessing)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/fear-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/fear-witnessing-handwritten.svg" alt="Handwritten: तकनीक ३: भय साक्षी (Fear Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/fear-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/fear-witnessing-diagram.svg" alt="Diagram: तकनीक ३: भय साक्षी (Fear Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/fear-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/fear-witnessing-sticky.svg" alt="Sticky Note: तकनीक ३: भय साक्षी (Fear Witnessing)" width="30%">
-</a>
 
 
 **मूल श्लोक:**
@@ -194,16 +154,6 @@
 
 ### तकनीक ४: उदासी साक्षी (Sadness Witnessing)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sadness-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sadness-witnessing-handwritten.svg" alt="Handwritten: तकनीक ४: उदासी साक्षी (Sadness Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sadness-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sadness-witnessing-diagram.svg" alt="Diagram: तकनीक ४: उदासी साक्षी (Sadness Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sadness-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sadness-witnessing-sticky.svg" alt="Sticky Note: तकनीक ४: उदासी साक्षी (Sadness Witnessing)" width="30%">
-</a>
-
 
 **मूल श्लोक:**
 > *"दुःखे चित्तं समालोक्य तन्मात्रां परिचिन्तयेत्। दुःखेन च समाविष्टो भैरवत्वमवाप्नुयात्॥"*
@@ -216,16 +166,6 @@
 ---
 
 ### तकनीक ५: आनंद साक्षी (Joy Witnessing)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/joy-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/joy-witnessing-handwritten.svg" alt="Handwritten: तकनीक ५: आनंद साक्षी (Joy Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/joy-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/joy-witnessing-diagram.svg" alt="Diagram: तकनीक ५: आनंद साक्षी (Joy Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/joy-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/joy-witnessing-sticky.svg" alt="Sticky Note: तकनीक ५: आनंद साक्षी (Joy Witnessing)" width="30%">
-</a>
 
 
 **मूल श्लोक:**
@@ -240,16 +180,6 @@
 
 ### तकनीक ६: काम साक्षी (Sexual Energy Witnessing)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sexual-energy-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sexual-energy-witnessing-handwritten.svg" alt="Handwritten: तकनीक ६: काम साक्षी (Sexual Energy Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sexual-energy-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sexual-energy-witnessing-diagram.svg" alt="Diagram: तकनीक ६: काम साक्षी (Sexual Energy Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sexual-energy-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/sexual-energy-witnessing-sticky.svg" alt="Sticky Note: तकनीक ६: काम साक्षी (Sexual Energy Witnessing)" width="30%">
-</a>
-
 
 **मूल श्लोक:**
 > *"कामे चित्तं समालोक्य तन्मात्रां परिचिन्तयेत्। कामेन च समाविष्टो भैरवत्वमवाप्नुयात्॥"*
@@ -262,16 +192,6 @@
 ---
 
 ### तकनीक ७: सभी भावनाओं का एक साथ साक्षी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: तकनीक ७: सभी भावनाओं का एक साथ साक्षी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: तकनीक ७: सभी भावनाओं का एक साथ साक्षी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: तकनीक ७: सभी भावनाओं का एक साथ साक्षी" width="30%">
-</a>
 
 
 **मूल श्लोक:**
@@ -423,16 +343,6 @@ w.witness("anger", 7);
 
 ### प्रश्न १
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न १" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न १" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न १" width="30%">
-</a>
-
 **ओशो के अनुसार भावनाओं के साथ क्या करना चाहिए?**
 
 क) दबाना चाहिए
@@ -441,16 +351,6 @@ w.witness("anger", 7);
 घ) भावनाओं को नष्ट करना चाहिए
 
 ### प्रश्न २
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न २" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न २" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न २" width="30%">
-</a>
 
 **ओशो के अनुसार, क्रोध क्या है?**
 
@@ -461,16 +361,6 @@ w.witness("anger", 7);
 
 ### प्रश्न ३
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ३" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ३" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ३" width="30%">
-</a>
-
 **क्रोध पर साक्षी होने से क्या होता है — ओशो के अनुसार?**
 
 क) क्रोध और शक्तिशाली होता है
@@ -479,16 +369,6 @@ w.witness("anger", 7);
 घ) क्रोध दब जाता है
 
 ### प्रश्न ४
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ४" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ४" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ४" width="30%">
-</a>
 
 **भावनाओं को दबाने से क्या होता है?**
 
@@ -499,16 +379,6 @@ w.witness("anger", 7);
 
 ### प्रश्न ५
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ५" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ५" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ५" width="30%">
-</a>
-
 **भावनाओं को व्यक्त करने से क्या होता है — ओशो के अनुसार?**
 
 क) भावना समाप्त हो जाती है
@@ -517,16 +387,6 @@ w.witness("anger", 7);
 घ) मुक्ति मिलती है
 
 ### प्रश्न ६
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ६" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ६" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ६" width="30%">
-</a>
 
 **आनंद साक्षी में सबसे कठिन क्या है?**
 
@@ -537,16 +397,6 @@ w.witness("anger", 7);
 
 ### प्रश्न ७
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ७" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ७" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ७" width="30%">
-</a>
-
 **भय साक्षी में भय को किस रूप में देखा जाता है?**
 
 क) एक दुश्मन
@@ -555,16 +405,6 @@ w.witness("anger", 7);
 घ) एक बीमारी
 
 ### प्रश्न ८
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ८" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ८" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ८" width="30%">
-</a>
 
 **काम ऊर्जा पर साक्षी होने से क्या होता है — ओशो के अनुसार?**
 
@@ -575,16 +415,6 @@ w.witness("anger", 7);
 
 ### प्रश्न ९
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न ९" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न ९" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न ९" width="30%">
-</a>
-
 **प्रेम साक्षी से प्रेम क्या बन जाता है — ओशो के अनुसार?**
 
 क) जुनून
@@ -593,16 +423,6 @@ w.witness("anger", 7);
 घ) आसक्ति
 
 ### प्रश्न १०
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: प्रश्न १०" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: प्रश्न १०" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: प्रश्न १०" width="30%">
-</a>
 
 **सर्वभाव एकत्व तकनीक में क्या करना है — ओशो के अनुसार?**
 
@@ -614,16 +434,6 @@ w.witness("anger", 7);
 ---
 
 ### उत्तर कुंजी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: उत्तर कुंजी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: उत्तर कुंजी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: उत्तर कुंजी" width="30%">
-</a>
 
 
 | प्रश्न | उत्तर | स्पष्टीकरण |
@@ -645,105 +455,35 @@ w.witness("anger", 7);
 
 ### अभ्यास १: ७ दिन — भावना डायरी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: अभ्यास १: ७ दिन — भावना डायरी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: अभ्यास १: ७ दिन — भावना डायरी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: अभ्यास १: ७ दिन — भावना डायरी" width="30%">
-</a>
-
 
 एक सप्ताह तक रोज़ अपनी तीन मुख्य भावनाओं को पहचानें और उन पर साक्षी बनें। हर भावना के लिए ५ मिनट दें। डायरी में लिखें — भावना क्या थी, तीव्रता कितनी थी, शरीर में कहाँ महसूस हुई, और साक्षी होने के बाद क्या हुआ।
 
 ### अभ्यास २: क्रोध साक्षी — ११ मिनट
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: अभ्यास २: क्रोध साक्षी — ११ मिनट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: अभ्यास २: क्रोध साक्षी — ११ मिनट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: अभ्यास २: क्रोध साक्षी — ११ मिनट" width="30%">
-</a>
 
 
 जब भी क्रोध उठे — तुरंत ११ मिनट का साक्षी सत्र करें। क्रोध को न दबाएँ, न व्यक्त करें — बस देखें। ७ दिनों में जितनी बार क्रोध उठे, उतनी बार यह अभ्यास करें। देखें कि क्रोध की तीव्रता और आवृत्ति में क्या परिवर्तन आता है।
 
 ### अभ्यास ३: भय साक्षी — ७ दिन
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: अभ्यास ३: भय साक्षी — ७ दिन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: अभ्यास ३: भय साक्षी — ७ दिन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: अभ्यास ३: भय साक्षी — ७ दिन" width="30%">
-</a>
-
 
 प्रतिदिन ११ मिनट भय साक्षी का अभ्यास करें। भय को याद करें — पुराना भय या काल्पनिक भय — और उसे देखें। भय के शारीरिक लक्षणों को पहचानें। भय के पार झाँकें — वहाँ क्या है?
 
 ### अभ्यास ४: प्रेम साक्षी — २१ मिनट
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: अभ्यास ४: प्रेम साक्षी — २१ मिनट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: अभ्यास ४: प्रेम साक्षी — २१ मिनट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: अभ्यास ४: प्रेम साक्षी — २१ मिनट" width="30%">
-</a>
 
 
 प्रतिदिन २१ मिनट प्रेम साक्षी का अभ्यास करें। किसी ऐसे व्यक्ति को याद करें जिससे आप प्रेम करते हैं — लेकिन उस प्रेम की भावना को देखें, उसमें न खोएँ। प्रेम को ऊर्जा के रूप में महसूस करें।
 
 ### अभ्यास ५: TypeScript कोड विस्तार
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/typescript-handwritten.svg" alt="Handwritten: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/typescript-diagram.svg" alt="Diagram: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/typescript-sticky.svg" alt="Sticky Note: अभ्यास ५: TypeScript कोड विस्तार" width="30%">
-</a>
-
 
 दिए गए TypeScript कोड में दो नई भावनाएँ जोड़ें — **ईर्ष्या** और **कृतज्ञता**। प्रत्येक के लिए ओशो के निर्देश, शारीरिक संकेत और साक्षी विधि जोड़ें।
 
 ### अभ्यास ६: भावना रूपांतरण चार्ट
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: अभ्यास ६: भावना रूपांतरण चार्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: अभ्यास ६: भावना रूपांतरण चार्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: अभ्यास ६: भावना रूपांतरण चार्ट" width="30%">
-</a>
-
 
 एक तालिका बनाएँ जिसमें ७ भावनाओं (क्रोध, प्रेम, भय, उदासी, आनंद, काम, ईर्ष्या) के लिए तीन कॉलम हों — दबाने का परिणाम, व्यक्त करने का परिणाम, साक्षी का परिणाम। ओशो के सिद्धांत के अनुसार भरें।
 
 ### अभ्यास ७ (चुनौती): पूरे दिन का साक्षी प्रयोग
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: अभ्यास ७ (चुनौती): पूरे दिन का साक्षी प्रयोग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: अभ्यास ७ (चुनौती): पूरे दिन का साक्षी प्रयोग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: अभ्यास ७ (चुनौती): पूरे दिन का साक्षी प्रयोग" width="30%">
-</a>
 
 
 एक पूरे दिन — जागने से सोने तक — हर भावना को साक्षी भाव से देखने का प्रयोग करें। कोई भी भावना न दबाएँ, न व्यक्त करें — केवल देखें। दिन के अंत में लिखें — कौन सी भावना सबसे अधिक बार उठी? किस भावना पर साक्षी सबसे कठिन था? क्या कोई भावना बिना दबाए या व्यक्त किए अपने आप समाप्त हो गई?
@@ -767,16 +507,6 @@ w.witness("anger", 7);
 
 ### तकनीक ८: ईर्ष्या साक्षी (Jealousy Witnessing)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/jealousy-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/jealousy-witnessing-handwritten.svg" alt="Handwritten: तकनीक ८: ईर्ष्या साक्षी (Jealousy Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/jealousy-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/jealousy-witnessing-diagram.svg" alt="Diagram: तकनीक ८: ईर्ष्या साक्षी (Jealousy Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/jealousy-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/jealousy-witnessing-sticky.svg" alt="Sticky Note: तकनीक ८: ईर्ष्या साक्षी (Jealousy Witnessing)" width="30%">
-</a>
-
 
 **मूल श्लोक:**
 > *"ईर्ष्यायां चित्तं स्थाप्य तन्मात्रां परिचिन्तयेत्। ईर्ष्यया च समाविष्टो भैरवत्वमवाप्नुयात्॥"*
@@ -798,16 +528,6 @@ w.witness("anger", 7);
 
 ### तकनीक ९: घृणा साक्षी (Hatred Witnessing)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/hatred-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/hatred-witnessing-handwritten.svg" alt="Handwritten: तकनीक ९: घृणा साक्षी (Hatred Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/hatred-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/hatred-witnessing-diagram.svg" alt="Diagram: तकनीक ९: घृणा साक्षी (Hatred Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/hatred-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/hatred-witnessing-sticky.svg" alt="Sticky Note: तकनीक ९: घृणा साक्षी (Hatred Witnessing)" width="30%">
-</a>
-
 
 **मूल श्लोक:**
 > *"द्वेषे चित्तं समालोक्य तन्मात्रां परिचिन्तयेत्। द्वेषेण च समाविष्टो भैरवत्वमवाप्नुयात्॥"*
@@ -820,16 +540,6 @@ w.witness("anger", 7);
 ---
 
 ### तकनीक १०: मोह साक्षी (Attachment Witnessing)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/attachment-witnessing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/attachment-witnessing-handwritten.svg" alt="Handwritten: तकनीक १०: मोह साक्षी (Attachment Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/attachment-witnessing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/attachment-witnessing-diagram.svg" alt="Diagram: तकनीक १०: मोह साक्षी (Attachment Witnessing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/attachment-witnessing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/attachment-witnessing-sticky.svg" alt="Sticky Note: तकनीक १०: मोह साक्षी (Attachment Witnessing)" width="30%">
-</a>
 
 
 **मूल श्लोक:**
@@ -902,57 +612,17 @@ w.witness("anger", 7);
 
 ### बाधा १: भावना से पहचान (Identification)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/identification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/identification-handwritten.svg" alt="Handwritten: बाधा १: भावना से पहचान (Identification)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/identification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/identification-diagram.svg" alt="Diagram: बाधा १: भावना से पहचान (Identification)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/identification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/identification-sticky.svg" alt="Sticky Note: बाधा १: भावना से पहचान (Identification)" width="30%">
-</a>
-
 "मैं क्रोध हूँ" — यह सबसे बड़ी बाधा है। ओशो कहते हैं — तुम क्रोध नहीं हो, तुम क्रोध को देखने वाले हो। जैसे आकाश बादलों को देखता है — बादल आते हैं, जाते हैं — आकाश रहता है। तुम वह आकाश हो।
 
 ### बाधा २: भावना को दूर करने की जल्दी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: बाधा २: भावना को दूर करने की जल्दी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: बाधा २: भावना को दूर करने की जल्दी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: बाधा २: भावना को दूर करने की जल्दी" width="30%">
-</a>
 
 हम भावना से जल्दी छुटकारा पाना चाहते हैं। ओशो कहते हैं — जल्दी मत करो। भावना को रहने दो। उसे अपनी यात्रा पूरी करने दो। जब उसका समय पूरा होगा, वह अपने आप चली जाएगी।
 
 ### बाधा ३: भावना का निर्णय (Judgment)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/judgment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/judgment-handwritten.svg" alt="Handwritten: बाधा ३: भावना का निर्णय (Judgment)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/judgment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/judgment-diagram.svg" alt="Diagram: बाधा ३: भावना का निर्णय (Judgment)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/judgment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/judgment-sticky.svg" alt="Sticky Note: बाधा ३: भावना का निर्णय (Judgment)" width="30%">
-</a>
-
 "यह भावना अच्छी है, यह बुरी है" — यह निर्णय ही बाधा है। ओशो कहते हैं — कोई अच्छी या बुरी भावना नहीं है। सब ऊर्जा के रूप हैं। निर्णय मत करो — केवल देखो।
 
 ### बाधा ४: भावना को दबाने की आदत
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-handwritten.svg" alt="Handwritten: बाधा ४: भावना को दबाने की आदत" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-diagram.svg" alt="Diagram: बाधा ४: भावना को दबाने की आदत" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/08-bhav-sakshi/-sticky.svg" alt="Sticky Note: बाधा ४: भावना को दबाने की आदत" width="30%">
-</a>
 
 सालों की आदत है — जैसे ही भावना उठती है, हम उसे दबा देते हैं। ओशो कहते हैं — यह आदत टूट सकती है। हर बार जब तुम भावना को दबाने के बजाय देखोगे, तुम एक नई आदत बनाओगे — साक्षी की आदत।
 

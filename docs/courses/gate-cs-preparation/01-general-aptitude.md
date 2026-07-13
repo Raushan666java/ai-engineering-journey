@@ -79,16 +79,6 @@ General Aptitude is a compulsory section in GATE CS, carrying **15 marks** (15% 
 
 ### 1.1 Number Systems
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-1-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-1-number-systems-handwritten.svg" alt="Handwritten: 1.1 Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-1-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-1-number-systems-diagram.svg" alt="Diagram: 1.1 Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-1-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-1-number-systems-sticky.svg" alt="Sticky Note: 1.1 Number Systems" width="30%">
-</a>
-
 
 **Q1: What are the key properties of prime numbers relevant to GATE?**
 
@@ -151,16 +141,6 @@ Verification: 93 ÃƒÆ’Ã‚Â· 6 = 15 remainder 3 ÃƒÂ¢Ã…â€œÃ¢�
 
 ### 1.2 Percentages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-2-percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-2-percentages-handwritten.svg" alt="Handwritten: 1.2 Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-2-percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-2-percentages-diagram.svg" alt="Diagram: 1.2 Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-2-percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-2-percentages-sticky.svg" alt="Sticky Note: 1.2 Percentages" width="30%">
-</a>
-
 
 **Q5: A student's marks increased from 320 to 384. What is the percentage increase?**
 
@@ -204,16 +184,6 @@ Alternative: P ÃƒÆ’Ã¢â‚¬â€� (1 + r/100)^n = 50,000 ÃƒÆ’Ã¢
 
 ### 1.3 Profit and Loss
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-3-profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-3-profit-and-loss-handwritten.svg" alt="Handwritten: 1.3 Profit and Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-3-profit-and-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-3-profit-and-loss-diagram.svg" alt="Diagram: 1.3 Profit and Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-3-profit-and-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-3-profit-and-loss-sticky.svg" alt="Sticky Note: 1.3 Profit and Loss" width="30%">
-</a>
-
 
 **Q9: A shopkeeper sells an item at a 20% profit. If the cost price is ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹250, find the selling price.**
 
@@ -245,16 +215,6 @@ Actual profit % = (20 / 80) ÃƒÆ’Ã¢â‚¬â€� 100% = 25%
 
 ### 1.4 Simple and Compound Interest
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-4-simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-4-simple-and-compound-interest-handwritten.svg" alt="Handwritten: 1.4 Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-4-simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-4-simple-and-compound-interest-diagram.svg" alt="Diagram: 1.4 Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-4-simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-4-simple-and-compound-interest-sticky.svg" alt="Sticky Note: 1.4 Simple and Compound Interest" width="30%">
-</a>
-
 
 **Q12: A sum of ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹5000 is invested at 8% simple interest per annum. Find the amount after 3 years.**
 
@@ -283,16 +243,6 @@ P = 25 / 0.0025 = ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹10,000
 ---
 
 ### 1.5 Time, Speed, and Distance
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-5-time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-5-time-speed-and-distance-handwritten.svg" alt="Handwritten: 1.5 Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-5-time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-5-time-speed-and-distance-diagram.svg" alt="Diagram: 1.5 Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-5-time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-5-time-speed-and-distance-sticky.svg" alt="Sticky Note: 1.5 Time, Speed, and Distance" width="30%">
-</a>
 
 
 **Q15: A train 150 m long passes a platform 250 m long in 20 seconds. Find the speed of the train.**
@@ -339,16 +289,6 @@ Speed of stream = (6 - 4) / 2 = 1 km/h
 
 ### 1.6 Time and Work
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-6-time-and-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-6-time-and-work-handwritten.svg" alt="Handwritten: 1.6 Time and Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-6-time-and-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-6-time-and-work-diagram.svg" alt="Diagram: 1.6 Time and Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-6-time-and-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-6-time-and-work-sticky.svg" alt="Sticky Note: 1.6 Time and Work" width="30%">
-</a>
-
 
 **Q19: A can complete a work in 10 days and B in 15 days. How many days will they take together?**
 
@@ -383,16 +323,6 @@ B's total days = 48/5 = 9.6 days
 
 ### 1.7 Pipes and Cisterns
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-7-pipes-and-cisterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-7-pipes-and-cisterns-handwritten.svg" alt="Handwritten: 1.7 Pipes and Cisterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-7-pipes-and-cisterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-7-pipes-and-cisterns-diagram.svg" alt="Diagram: 1.7 Pipes and Cisterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-7-pipes-and-cisterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-7-pipes-and-cisterns-sticky.svg" alt="Sticky Note: 1.7 Pipes and Cisterns" width="30%">
-</a>
-
 
 **Q22: Pipe A fills a tank in 8 hours, Pipe B in 12 hours. Pipe C empties it in 24 hours. If all are opened together, how long to fill the tank?**
 
@@ -416,16 +346,6 @@ Time for B alone = (7/12) / (1/30) = (7/12) ÃƒÆ’Ã¢â‚¬â€� 30 = 17
 ---
 
 ### 1.8 Ratio and Proportion
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-8-ratio-and-proportion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-8-ratio-and-proportion-handwritten.svg" alt="Handwritten: 1.8 Ratio and Proportion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-8-ratio-and-proportion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-8-ratio-and-proportion-diagram.svg" alt="Diagram: 1.8 Ratio and Proportion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-8-ratio-and-proportion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-8-ratio-and-proportion-sticky.svg" alt="Sticky Note: 1.8 Ratio and Proportion" width="30%">
-</a>
 
 
 **Q24: If A : B = 2 : 3 and B : C = 5 : 7, find A : C.**
@@ -460,16 +380,6 @@ Total = 2x + 3x + 5x = 10x = 10 ÃƒÆ’Ã¢â‚¬â€� 150 = ÃƒÂ¢Ã¢�
 ---
 
 ### 1.9 Mixtures and Alligations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-9-mixtures-and-alligations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-9-mixtures-and-alligations-handwritten.svg" alt="Handwritten: 1.9 Mixtures and Alligations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-9-mixtures-and-alligations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-9-mixtures-and-alligations-diagram.svg" alt="Diagram: 1.9 Mixtures and Alligations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-9-mixtures-and-alligations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-9-mixtures-and-alligations-sticky.svg" alt="Sticky Note: 1.9 Mixtures and Alligations" width="30%">
-</a>
 
 
 **Q27: In what ratio must rice at ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹50/kg be mixed with rice at ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹70/kg to get a mixture worth ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹62/kg?**
@@ -511,16 +421,6 @@ Milk = 5 ÃƒÆ’Ã¢â‚¬â€� 4 = 20 liters
 
 ### 1.10 Averages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-10-averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-10-averages-handwritten.svg" alt="Handwritten: 1.10 Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-10-averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-10-averages-diagram.svg" alt="Diagram: 1.10 Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-10-averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-10-averages-sticky.svg" alt="Sticky Note: 1.10 Averages" width="30%">
-</a>
-
 
 **Q30: The average of 5 numbers is 27. If one number is removed, the average becomes 24. Find the removed number.**
 
@@ -551,16 +451,6 @@ Sum of last 6 = 6 ÃƒÆ’Ã¢â‚¬â€� 53 = 318
 ---
 
 ### 1.11 Permutations and Combinations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-11-permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-11-permutations-and-combinations-handwritten.svg" alt="Handwritten: 1.11 Permutations and Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-11-permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-11-permutations-and-combinations-diagram.svg" alt="Diagram: 1.11 Permutations and Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-11-permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-11-permutations-and-combinations-sticky.svg" alt="Sticky Note: 1.11 Permutations and Combinations" width="30%">
-</a>
 
 
 **Q33: How many 3-digit numbers can be formed from digits 1, 2, 3, 4, 5 without repetition?**
@@ -598,16 +488,6 @@ Total = 24 ÃƒÆ’Ã¢â‚¬â€� 10 ÃƒÆ’Ã¢â‚¬â€� 6 = 1440
 ---
 
 ### 1.12 Probability
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-12-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-12-probability-handwritten.svg" alt="Handwritten: 1.12 Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-12-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-12-probability-diagram.svg" alt="Diagram: 1.12 Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-12-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-12-probability-sticky.svg" alt="Sticky Note: 1.12 Probability" width="30%">
-</a>
 
 
 **Q37: A bag contains 5 red and 3 green balls. Two balls are drawn at random. Find the probability that both are red.**
@@ -652,16 +532,6 @@ P = (0.8 ÃƒÆ’Ã¢â‚¬â€� 0.4) + (0.2 ÃƒÆ’Ã¢â‚¬â€� 0
 ---
 
 ### 1.13 Data Interpretation
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-13-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-13-data-interpretation-handwritten.svg" alt="Handwritten: 1.13 Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-13-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-13-data-interpretation-diagram.svg" alt="Diagram: 1.13 Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-13-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-13-data-interpretation-sticky.svg" alt="Sticky Note: 1.13 Data Interpretation" width="30%">
-</a>
 
 
 **Q41: Study the table and answer the question.**
@@ -742,16 +612,6 @@ Average growth rate = (27,500/200,000) ÃƒÆ’Ã¢â‚¬â€� 100% = 13.75
 
 ### Quantitative Aptitude Ã¢â€ â€™ Practice Problems
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-practice-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-practice-problems-handwritten.svg" alt="Handwritten: Quantitative Aptitude Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-practice-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-practice-problems-diagram.svg" alt="Diagram: Quantitative Aptitude Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-practice-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-practice-problems-sticky.svg" alt="Sticky Note: Quantitative Aptitude Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-
 
 **Practice 1:** Find the greatest 4-digit number divisible by 12, 18, and 27.
 
@@ -798,16 +658,6 @@ Average growth rate = (27,500/200,000) ÃƒÆ’Ã¢â‚¬â€� 100% = 13.75
 ## Section 2: Logical Reasoning
 
 ### 2.1 Blood Relations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-1-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-1-blood-relations-handwritten.svg" alt="Handwritten: 2.1 Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-1-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-1-blood-relations-diagram.svg" alt="Diagram: 2.1 Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-1-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-1-blood-relations-sticky.svg" alt="Sticky Note: 2.1 Blood Relations" width="30%">
-</a>
 
 
 **Q45: A is the brother of B. B is the daughter of C. D is the father of C. How is A related to D?**
@@ -857,16 +707,6 @@ So G is **great-grandfather** of F (or F is great-grandchild of G).
 
 ### 2.2 Direction Sense
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-2-direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-2-direction-sense-handwritten.svg" alt="Handwritten: 2.2 Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-2-direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-2-direction-sense-diagram.svg" alt="Diagram: 2.2 Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-2-direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-2-direction-sense-sticky.svg" alt="Sticky Note: 2.2 Direction Sense" width="30%">
-</a>
-
 
 **Q49: A man walks 5 km East, turns right and walks 4 km, turns right and walks 10 km, turns left and walks 4 km. How far is he from the starting point?**
 
@@ -905,16 +745,6 @@ Since X is talking to Y, X faces Y, so X is facing **South**.
 ---
 
 ### 2.3 Syllogisms (Venn Diagram Method)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-3-syllogisms-venn-diagram-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-3-syllogisms-venn-diagram-method-handwritten.svg" alt="Handwritten: 2.3 Syllogisms (Venn Diagram Method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-3-syllogisms-venn-diagram-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-3-syllogisms-venn-diagram-method-diagram.svg" alt="Diagram: 2.3 Syllogisms (Venn Diagram Method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-3-syllogisms-venn-diagram-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-3-syllogisms-venn-diagram-method-sticky.svg" alt="Sticky Note: 2.3 Syllogisms (Venn Diagram Method)" width="30%">
-</a>
 
 
 **Q52: Determine validity using Venn diagrams:**
@@ -956,16 +786,6 @@ Draw a Venn diagram where: Animals (outermost circle) contains Mammals (inner ci
 ---
 
 ### 2.4 Seating Arrangements
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-4-seating-arrangements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-4-seating-arrangements-handwritten.svg" alt="Handwritten: 2.4 Seating Arrangements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-4-seating-arrangements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-4-seating-arrangements-diagram.svg" alt="Diagram: 2.4 Seating Arrangements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-4-seating-arrangements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-4-seating-arrangements-sticky.svg" alt="Sticky Note: 2.4 Seating Arrangements" width="30%">
-</a>
 
 
 **Q55: Six people A, B, C, D, E, F sit in a row facing North.**
@@ -1118,16 +938,6 @@ The method to solve circular arrangements:
 
 ### 2.5 Coding-Decoding
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-5-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-5-coding-decoding-handwritten.svg" alt="Handwritten: 2.5 Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-5-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-5-coding-decoding-diagram.svg" alt="Diagram: 2.5 Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-5-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-5-coding-decoding-sticky.svg" alt="Sticky Note: 2.5 Coding-Decoding" width="30%">
-</a>
-
 
 **Q57: In a certain code, HOUSE is written as 8-15-21-19-5. How is FLOWER written?**
 
@@ -1181,16 +991,6 @@ The code for "dark" is **1**.
 
 ### 2.6 Analogies
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-6-analogies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-6-analogies-handwritten.svg" alt="Handwritten: 2.6 Analogies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-6-analogies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-6-analogies-diagram.svg" alt="Diagram: 2.6 Analogies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-6-analogies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-6-analogies-sticky.svg" alt="Sticky Note: 2.6 Analogies" width="30%">
-</a>
-
 
 **Q60: Doctor : Patient :: Teacher : ?**
 
@@ -1217,16 +1017,6 @@ The code for "dark" is **1**.
 ---
 
 ### 2.7 Statement-Conclusion
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-7-statement-conclusion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-7-statement-conclusion-handwritten.svg" alt="Handwritten: 2.7 Statement-Conclusion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-7-statement-conclusion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-7-statement-conclusion-diagram.svg" alt="Diagram: 2.7 Statement-Conclusion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-7-statement-conclusion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-7-statement-conclusion-sticky.svg" alt="Sticky Note: 2.7 Statement-Conclusion" width="30%">
-</a>
 
 
 **Q63: Statement: All roses are flowers. Some flowers are red.**
@@ -1258,16 +1048,6 @@ Which conclusion(s) follow?
 ---
 
 ### 2.8 Statement-Assumption
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-8-statement-assumption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-8-statement-assumption-handwritten.svg" alt="Handwritten: 2.8 Statement-Assumption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-8-statement-assumption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-8-statement-assumption-diagram.svg" alt="Diagram: 2.8 Statement-Assumption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-8-statement-assumption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-8-statement-assumption-sticky.svg" alt="Sticky Note: 2.8 Statement-Assumption" width="30%">
-</a>
 
 
 **Q65: Statement: "If you want to succeed in the competitive exam, join ABC Coaching Center." Ã¢â€ â€™ An advertisement.**
@@ -1302,16 +1082,6 @@ Which are valid assumptions?
 
 ### Logical Reasoning Ã¢â€ â€™ Practice Problems
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-practice-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-practice-problems-handwritten.svg" alt="Handwritten: Logical Reasoning Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-practice-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-practice-problems-diagram.svg" alt="Diagram: Logical Reasoning Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-practice-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-practice-problems-sticky.svg" alt="Sticky Note: Logical Reasoning Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-
 
 **Practice 11:** A is the father of B. B is the sister of C. D is the mother of C. E is the brother of D. How is A related to E?
 
@@ -1342,16 +1112,6 @@ Which are valid assumptions?
 ## Section 3: Verbal Ability
 
 ### 3.1 Vocabulary Ã¢â€ â€™ Synonyms and Antonyms
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-1-vocabulary-synonyms-and-antonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-1-vocabulary-synonyms-and-antonyms-handwritten.svg" alt="Handwritten: 3.1 Vocabulary Ã¢â€ â€™ Synonyms and Antonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-1-vocabulary-synonyms-and-antonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-1-vocabulary-synonyms-and-antonyms-diagram.svg" alt="Diagram: 3.1 Vocabulary Ã¢â€ â€™ Synonyms and Antonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-1-vocabulary-synonyms-and-antonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-1-vocabulary-synonyms-and-antonyms-sticky.svg" alt="Sticky Note: 3.1 Vocabulary Ã¢â€ â€™ Synonyms and Antonyms" width="30%">
-</a>
 
 
 **Q67: Find the synonym of "UBIQUITOUS".**
@@ -1404,16 +1164,6 @@ Which are valid assumptions?
 
 ### 3.2 Word Groups / One-word Substitutions
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-2-word-groups-one-word-substitutions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-2-word-groups-one-word-substitutions-handwritten.svg" alt="Handwritten: 3.2 Word Groups / One-word Substitutions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-2-word-groups-one-word-substitutions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-2-word-groups-one-word-substitutions-diagram.svg" alt="Diagram: 3.2 Word Groups / One-word Substitutions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-2-word-groups-one-word-substitutions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-2-word-groups-one-word-substitutions-sticky.svg" alt="Sticky Note: 3.2 Word Groups / One-word Substitutions" width="30%">
-</a>
-
 
 **Q73: One who is a specialist in heart diseases is called a ___.**
 
@@ -1452,16 +1202,6 @@ Which are valid assumptions?
 
 ### 3.3 Grammar Ã¢â€ â€™ Subject-Verb Agreement
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-3-grammar-subject-verb-agreement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-3-grammar-subject-verb-agreement-handwritten.svg" alt="Handwritten: 3.3 Grammar Ã¢â€ â€™ Subject-Verb Agreement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-3-grammar-subject-verb-agreement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-3-grammar-subject-verb-agreement-diagram.svg" alt="Diagram: 3.3 Grammar Ã¢â€ â€™ Subject-Verb Agreement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-3-grammar-subject-verb-agreement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-3-grammar-subject-verb-agreement-sticky.svg" alt="Sticky Note: 3.3 Grammar Ã¢â€ â€™ Subject-Verb Agreement" width="30%">
-</a>
-
 
 **Q76: Choose the correct option: "Neither the teacher nor the students ___ (is/are) present."**
 
@@ -1499,16 +1239,6 @@ If the members act individually: "The committee have disagreed on several points
 
 ### 3.4 Grammar Ã¢â€ â€™ Tenses
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-4-grammar-tenses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-4-grammar-tenses-handwritten.svg" alt="Handwritten: 3.4 Grammar Ã¢â€ â€™ Tenses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-4-grammar-tenses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-4-grammar-tenses-diagram.svg" alt="Diagram: 3.4 Grammar Ã¢â€ â€™ Tenses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-4-grammar-tenses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-4-grammar-tenses-sticky.svg" alt="Sticky Note: 3.4 Grammar Ã¢â€ â€™ Tenses" width="30%">
-</a>
-
 
 **Q80: "She ___ (work) here since 2015." Fill with correct tense.**
 
@@ -1536,16 +1266,6 @@ If the members act individually: "The committee have disagreed on several points
 
 ### 3.5 Grammar Ã¢â€ â€™ Articles
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-5-grammar-articles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-5-grammar-articles-handwritten.svg" alt="Handwritten: 3.5 Grammar Ã¢â€ â€™ Articles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-5-grammar-articles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-5-grammar-articles-diagram.svg" alt="Diagram: 3.5 Grammar Ã¢â€ â€™ Articles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-5-grammar-articles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-5-grammar-articles-sticky.svg" alt="Sticky Note: 3.5 Grammar Ã¢â€ â€™ Articles" width="30%">
-</a>
-
 
 **Q83: Fill the blanks: "___ elephant is ___ largest land animal."**
 
@@ -1572,16 +1292,6 @@ If the members act individually: "The committee have disagreed on several points
 ---
 
 ### 3.6 Reading Comprehension
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-6-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-6-reading-comprehension-handwritten.svg" alt="Handwritten: 3.6 Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-6-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-6-reading-comprehension-diagram.svg" alt="Diagram: 3.6 Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-6-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-6-reading-comprehension-sticky.svg" alt="Sticky Note: 3.6 Reading Comprehension" width="30%">
-</a>
 
 
 **Q86: Read the passage and answer the questions.**
@@ -1616,16 +1326,6 @@ If the members act individually: "The committee have disagreed on several points
 
 ### 3.7 Sentence Completion
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-7-sentence-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-7-sentence-completion-handwritten.svg" alt="Handwritten: 3.7 Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-7-sentence-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-7-sentence-completion-diagram.svg" alt="Diagram: 3.7 Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-7-sentence-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-7-sentence-completion-sticky.svg" alt="Sticky Note: 3.7 Sentence Completion" width="30%">
-</a>
-
 
 **Q88: The professor's lecture was so ___ that most students struggled to follow the thread of his argument.**
 
@@ -1658,16 +1358,6 @@ Options: a) Penchant b) Aversion c) Disdain d) Indifference
 ---
 
 ### 3.8 Para-jumbles
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-8-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-8-para-jumbles-handwritten.svg" alt="Handwritten: 3.8 Para-jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-8-para-jumbles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-8-para-jumbles-diagram.svg" alt="Diagram: 3.8 Para-jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-8-para-jumbles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-8-para-jumbles-sticky.svg" alt="Sticky Note: 3.8 Para-jumbles" width="30%">
-</a>
 
 
 **Q91: Arrange the following sentences into a coherent paragraph:**
@@ -1723,16 +1413,6 @@ D continues with another example (mass conservation).
 
 ### 3.9 Critical Reasoning
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-9-critical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-9-critical-reasoning-handwritten.svg" alt="Handwritten: 3.9 Critical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-9-critical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-9-critical-reasoning-diagram.svg" alt="Diagram: 3.9 Critical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-9-critical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-9-critical-reasoning-sticky.svg" alt="Sticky Note: 3.9 Critical Reasoning" width="30%">
-</a>
-
 
 **Q94: All oranges are fruits. All fruits grow on plants. Therefore, all oranges grow on plants. This is an example of:**
 
@@ -1758,16 +1438,6 @@ D continues with another example (mass conservation).
 
 ### Verbal Ability Ã¢â€ â€™ Practice Problems
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-practice-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-practice-problems-handwritten.svg" alt="Handwritten: Verbal Ability Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-practice-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-practice-problems-diagram.svg" alt="Diagram: Verbal Ability Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-practice-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-practice-problems-sticky.svg" alt="Sticky Note: Verbal Ability Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-
 
 **Practice 17:** Synonym of "PERFIDIOUS" Ã¢â€ â€™ Answer: Treacherous
 
@@ -1792,16 +1462,6 @@ D continues with another example (mass conservation).
 ## Section 4: Spatial and Analytical Reasoning
 
 ### 4.1 Visual Reasoning
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-1-visual-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-1-visual-reasoning-handwritten.svg" alt="Handwritten: 4.1 Visual Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-1-visual-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-1-visual-reasoning-diagram.svg" alt="Diagram: 4.1 Visual Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-1-visual-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-1-visual-reasoning-sticky.svg" alt="Sticky Note: 4.1 Visual Reasoning" width="30%">
-</a>
 
 
 **Q97: What comes next in the sequence?**
@@ -1857,16 +1517,6 @@ Total triangles = 4 + 2 + 1 = 7
 
 ### 4.2 Cube and Dice Problems
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-2-cube-and-dice-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-2-cube-and-dice-problems-handwritten.svg" alt="Handwritten: 4.2 Cube and Dice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-2-cube-and-dice-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-2-cube-and-dice-problems-diagram.svg" alt="Diagram: 4.2 Cube and Dice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-2-cube-and-dice-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-2-cube-and-dice-problems-sticky.svg" alt="Sticky Note: 4.2 Cube and Dice Problems" width="30%">
-</a>
-
 
 **Q100: A cube is painted on all faces and cut into 125 smaller cubes of equal size. How many smaller cubes have exactly 2 faces painted?**
 
@@ -1920,16 +1570,6 @@ Standard dice: opposite of 3 is 4. So the answer is **4**.
 
 ### 4.3 Mirror Images
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-3-mirror-images-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-3-mirror-images-handwritten.svg" alt="Handwritten: 4.3 Mirror Images" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-3-mirror-images-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-3-mirror-images-diagram.svg" alt="Diagram: 4.3 Mirror Images" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-3-mirror-images-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-3-mirror-images-sticky.svg" alt="Sticky Note: 4.3 Mirror Images" width="30%">
-</a>
-
 
 **Q103: If the time on a clock shows 3:45, what will it look like in a mirror?**
 
@@ -1959,16 +1599,6 @@ So GATE Ã¢â€ â€™ ÃƒÂ°Ã‚Â�Ã…Â¾Ã¢â‚¬Â�TÃƒÅ½
 
 ### 4.4 Paper Folding
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-4-paper-folding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-4-paper-folding-handwritten.svg" alt="Handwritten: 4.4 Paper Folding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-4-paper-folding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-4-paper-folding-diagram.svg" alt="Diagram: 4.4 Paper Folding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-4-paper-folding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-4-paper-folding-sticky.svg" alt="Sticky Note: 4.4 Paper Folding" width="30%">
-</a>
-
 
 **Q105: A square paper is folded in half, then in half again (quarter). A hole is punched through all layers at a specific location. How many holes are in the unfolded paper?**
 
@@ -1994,16 +1624,6 @@ Where will the holes appear?
 ---
 
 ### 4.5 Pattern Recognition
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-5-pattern-recognition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-5-pattern-recognition-handwritten.svg" alt="Handwritten: 4.5 Pattern Recognition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-5-pattern-recognition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-5-pattern-recognition-diagram.svg" alt="Diagram: 4.5 Pattern Recognition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-5-pattern-recognition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-5-pattern-recognition-sticky.svg" alt="Sticky Note: 4.5 Pattern Recognition" width="30%">
-</a>
 
 
 **Q107: Find the next term: 1, 4, 9, 16, 25, ?**
@@ -2041,16 +1661,6 @@ Or: n(n+1): 1ÃƒÆ’Ã¢â‚¬â€�2, 2ÃƒÆ’Ã¢â‚¬â€�3, 3Ã�
 ---
 
 ### Spatial & Analytical Reasoning Ã¢â€ â€™ Practice Problems
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-practice-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-practice-problems-handwritten.svg" alt="Handwritten: Spatial & Analytical Reasoning Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-practice-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-practice-problems-diagram.svg" alt="Diagram: Spatial & Analytical Reasoning Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-practice-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-practice-problems-sticky.svg" alt="Sticky Note: Spatial & Analytical Reasoning Ã¢â€ â€™ Practice Problems" width="30%">
-</a>
 
 
 **Practice 26:** A 3 ÃƒÆ’Ã¢â‚¬â€� 3 ÃƒÆ’Ã¢â‚¬â€� 3 cube is painted red and cut into unit cubes. How many cubes have exactly 1 face painted?
@@ -2116,16 +1726,6 @@ Or: n(n+1): 1ÃƒÆ’Ã¢â‚¬â€�2, 2ÃƒÆ’Ã¢â‚¬â€�3, 3Ã�
 
 ### Quantitative Aptitude
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-handwritten.svg" alt="Handwritten: Quantitative Aptitude" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-diagram.svg" alt="Diagram: Quantitative Aptitude" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-sticky.svg" alt="Sticky Note: Quantitative Aptitude" width="30%">
-</a>
-
 
 | Concept | Formula |
 |---------|---------|
@@ -2144,16 +1744,6 @@ Or: n(n+1): 1ÃƒÆ’Ã¢â‚¬â€�2, 2ÃƒÆ’Ã¢â‚¬â€�3, 3Ã�
 
 ### Logical Reasoning
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-handwritten.svg" alt="Handwritten: Logical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-diagram.svg" alt="Diagram: Logical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-sticky.svg" alt="Sticky Note: Logical Reasoning" width="30%">
-</a>
-
 
 | Concept | Method |
 |---------|--------|
@@ -2166,16 +1756,6 @@ Or: n(n+1): 1ÃƒÆ’Ã¢â‚¬â€�2, 2ÃƒÆ’Ã¢â‚¬â€�3, 3Ã�
 
 ### Verbal Ability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-handwritten.svg" alt="Handwritten: Verbal Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-diagram.svg" alt="Diagram: Verbal Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-sticky.svg" alt="Sticky Note: Verbal Ability" width="30%">
-</a>
-
 
 | Concept | Tip |
 |---------|-----|
@@ -2186,16 +1766,6 @@ Or: n(n+1): 1ÃƒÆ’Ã¢â‚¬â€�2, 2ÃƒÆ’Ã¢â‚¬â€�3, 3Ã�
 | Reading comprehension | Read questions first, then skim passage |
 
 ### Spatial Reasoning
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-reasoning-handwritten.svg" alt="Handwritten: Spatial Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-reasoning-diagram.svg" alt="Diagram: Spatial Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-reasoning-sticky.svg" alt="Sticky Note: Spatial Reasoning" width="30%">
-</a>
 
 
 | Cube Type | Zero Faces | One Face | Two Faces | Three Faces |
@@ -2212,30 +1782,10 @@ Or: n(n+1): 1ÃƒÆ’Ã¢â‚¬â€�2, 2ÃƒÆ’Ã¢â‚¬â€�3, 3Ã�
 
 ### Quantitative Aptitude (20 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-20-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-20-problems-handwritten.svg" alt="Handwritten: Quantitative Aptitude (20 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-20-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-20-problems-diagram.svg" alt="Diagram: Quantitative Aptitude (20 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-20-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-20-problems-sticky.svg" alt="Sticky Note: Quantitative Aptitude (20 Problems)" width="30%">
-</a>
-
 
 **Cross-Reference:** R.S. Aggarwal Ã¢â€ â€™ Quantitative Aptitude, Chapters: Time & Work (Ch. 15), Probability (Ch. 31), Profit & Loss (Ch. 10), Number Systems (Ch. 1-2), Pipes & Cisterns (Ch. 16), Permutations (Ch. 30), Ratio (Ch. 8), Averages (Ch. 6), Interest (Ch. 11-12), Speed/Distance (Ch. 17), Mixture (Ch. 20), Set Theory (Ch. 13), Data Interpretation (Ch. 35-38). Also see Arun Sharma Ã¢â€ â€™ Quantitative Aptitude, Chapters 7-14.
 
 ### PYQ-1 (GATE 2019) Ã¢â€ â€™ Time & Work
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-1-gate-2019-time-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-1-gate-2019-time-work-handwritten.svg" alt="Handwritten: PYQ-1 (GATE 2019) Ã¢â€ â€™ Time & Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-1-gate-2019-time-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-1-gate-2019-time-work-diagram.svg" alt="Diagram: PYQ-1 (GATE 2019) Ã¢â€ â€™ Time & Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-1-gate-2019-time-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-1-gate-2019-time-work-sticky.svg" alt="Sticky Note: PYQ-1 (GATE 2019) Ã¢â€ â€™ Time & Work" width="30%">
-</a>
 
 
 A can complete a work in 12 days, B in 18 days. They work together for 4 days, then A leaves. How many more days will B take to finish the remaining work?
@@ -2256,16 +1806,6 @@ Time for B alone = (4/9) / (1/18) = (4/9) ÃƒÆ’Ã¢â‚¬â€� 18 = 8 da
 
 ### PYQ-2 (GATE 2020) Ã¢â€ â€™ Probability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-2-gate-2020-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-2-gate-2020-probability-handwritten.svg" alt="Handwritten: PYQ-2 (GATE 2020) Ã¢â€ â€™ Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-2-gate-2020-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-2-gate-2020-probability-diagram.svg" alt="Diagram: PYQ-2 (GATE 2020) Ã¢â€ â€™ Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-2-gate-2020-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-2-gate-2020-probability-sticky.svg" alt="Sticky Note: PYQ-2 (GATE 2020) Ã¢â€ â€™ Probability" width="30%">
-</a>
-
 
 A bag contains 4 red, 5 green, and 6 blue balls. Three balls are drawn at random. What is the probability that all three are of different colors?
 
@@ -2282,16 +1822,6 @@ Probability = 120/455 = 24/91
 **Answer: 24/91**
 
 ### PYQ-3 (GATE 2021) Ã¢â€ â€™ Profit & Loss
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-3-gate-2021-profit-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-3-gate-2021-profit-loss-handwritten.svg" alt="Handwritten: PYQ-3 (GATE 2021) Ã¢â€ â€™ Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-3-gate-2021-profit-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-3-gate-2021-profit-loss-diagram.svg" alt="Diagram: PYQ-3 (GATE 2021) Ã¢â€ â€™ Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-3-gate-2021-profit-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-3-gate-2021-profit-loss-sticky.svg" alt="Sticky Note: PYQ-3 (GATE 2021) Ã¢â€ â€™ Profit & Loss" width="30%">
-</a>
 
 
 A shopkeeper marks goods 30% above the cost price and gives a 10% discount on the marked price. Find his profit percentage.
@@ -2314,16 +1844,6 @@ Profit % = (17/100) ÃƒÆ’Ã¢â‚¬â€� 100% = 17%
 
 ### PYQ-4 (GATE 2022) Ã¢â€ â€™ Number Systems
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-4-gate-2022-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-4-gate-2022-number-systems-handwritten.svg" alt="Handwritten: PYQ-4 (GATE 2022) Ã¢â€ â€™ Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-4-gate-2022-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-4-gate-2022-number-systems-diagram.svg" alt="Diagram: PYQ-4 (GATE 2022) Ã¢â€ â€™ Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-4-gate-2022-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-4-gate-2022-number-systems-sticky.svg" alt="Sticky Note: PYQ-4 (GATE 2022) Ã¢â€ â€™ Number Systems" width="30%">
-</a>
-
 
 Find the remainder when 2ÃƒÂ¢Ã‚Â�Ã‚Â¸ÃƒÂ¢Ã‚Â�Ã‚Â° is divided by 17.
 
@@ -2338,16 +1858,6 @@ By Fermat's Little Theorem: a^(p-1) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¡ 1 (mod p) w
 **Answer: 1**
 
 ### PYQ-5 (GATE 2019) Ã¢â€ â€™ Pipes & Cisterns
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-5-gate-2019-pipes-cisterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-5-gate-2019-pipes-cisterns-handwritten.svg" alt="Handwritten: PYQ-5 (GATE 2019) Ã¢â€ â€™ Pipes & Cisterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-5-gate-2019-pipes-cisterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-5-gate-2019-pipes-cisterns-diagram.svg" alt="Diagram: PYQ-5 (GATE 2019) Ã¢â€ â€™ Pipes & Cisterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-5-gate-2019-pipes-cisterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-5-gate-2019-pipes-cisterns-sticky.svg" alt="Sticky Note: PYQ-5 (GATE 2019) Ã¢â€ â€™ Pipes & Cisterns" width="30%">
-</a>
 
 
 Two pipes A and B fill a tank in 15 and 20 hours respectively. A third pipe C empties the tank in 30 hours. All three are opened together for 5 hours, then C is closed. How many more hours are needed to fill the tank completely?
@@ -2374,16 +1884,6 @@ Time needed = (7/12) / (7/60) = (7/12) ÃƒÆ’Ã¢â‚¬â€� (60/7) = 5 h
 
 ### PYQ-6 (GATE 2023) Ã¢â€ â€™ Permutations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-6-gate-2023-permutations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-6-gate-2023-permutations-handwritten.svg" alt="Handwritten: PYQ-6 (GATE 2023) Ã¢â€ â€™ Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-6-gate-2023-permutations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-6-gate-2023-permutations-diagram.svg" alt="Diagram: PYQ-6 (GATE 2023) Ã¢â€ â€™ Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-6-gate-2023-permutations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-6-gate-2023-permutations-sticky.svg" alt="Sticky Note: PYQ-6 (GATE 2023) Ã¢â€ â€™ Permutations" width="30%">
-</a>
-
 
 How many 4-digit numbers greater than 5000 can be formed using the digits 3, 5, 6, 7, 8 without repetition?
 
@@ -2400,16 +1900,6 @@ Total = 4 ÃƒÆ’Ã¢â‚¬â€� 24 = 96
 **Answer: 96**
 
 ### PYQ-7 (GATE 2024) Ã¢â€ â€™ Ratio & Proportion
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-7-gate-2024-ratio-proportion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-7-gate-2024-ratio-proportion-handwritten.svg" alt="Handwritten: PYQ-7 (GATE 2024) Ã¢â€ â€™ Ratio & Proportion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-7-gate-2024-ratio-proportion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-7-gate-2024-ratio-proportion-diagram.svg" alt="Diagram: PYQ-7 (GATE 2024) Ã¢â€ â€™ Ratio & Proportion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-7-gate-2024-ratio-proportion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-7-gate-2024-ratio-proportion-sticky.svg" alt="Sticky Note: PYQ-7 (GATE 2024) Ã¢â€ â€™ Ratio & Proportion" width="30%">
-</a>
 
 
 The ratio of the ages of A and B is 3:5. After 6 years, the ratio becomes 2:3. Find A's present age.
@@ -2432,16 +1922,6 @@ A's present age = 3 ÃƒÆ’Ã¢â‚¬â€� 6 = 18 years
 
 ### PYQ-8 (GATE 2020) Ã¢â€ â€™ Averages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-8-gate-2020-averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-8-gate-2020-averages-handwritten.svg" alt="Handwritten: PYQ-8 (GATE 2020) Ã¢â€ â€™ Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-8-gate-2020-averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-8-gate-2020-averages-diagram.svg" alt="Diagram: PYQ-8 (GATE 2020) Ã¢â€ â€™ Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-8-gate-2020-averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-8-gate-2020-averages-sticky.svg" alt="Sticky Note: PYQ-8 (GATE 2020) Ã¢â€ â€™ Averages" width="30%">
-</a>
-
 
 The average weight of 8 people increases by 2.5 kg when a new person replaces one weighing 65 kg. Find the weight of the new person.
 
@@ -2456,16 +1936,6 @@ New person's weight = 65 + 20 = 85 kg
 **Answer: 85 kg**
 
 ### PYQ-9 (GATE 2022) Ã¢â€ â€™ Simple Interest
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-9-gate-2022-simple-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-9-gate-2022-simple-interest-handwritten.svg" alt="Handwritten: PYQ-9 (GATE 2022) Ã¢â€ â€™ Simple Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-9-gate-2022-simple-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-9-gate-2022-simple-interest-diagram.svg" alt="Diagram: PYQ-9 (GATE 2022) Ã¢â€ â€™ Simple Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-9-gate-2022-simple-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-9-gate-2022-simple-interest-sticky.svg" alt="Sticky Note: PYQ-9 (GATE 2022) Ã¢â€ â€™ Simple Interest" width="30%">
-</a>
 
 
 A sum of money doubles itself in 5 years at simple interest. In how many years will it become 4 times at the same rate?
@@ -2485,16 +1955,6 @@ T = (3P ÃƒÆ’Ã¢â‚¬â€� 100) / (P ÃƒÆ’Ã¢â‚¬â€� 20) 
 **Answer: 15 years**
 
 ### PYQ-10 (GATE 2021) Ã¢â€ â€™ Time, Speed & Distance
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-10-gate-2021-time-speed-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-10-gate-2021-time-speed-distance-handwritten.svg" alt="Handwritten: PYQ-10 (GATE 2021) Ã¢â€ â€™ Time, Speed & Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-10-gate-2021-time-speed-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-10-gate-2021-time-speed-distance-diagram.svg" alt="Diagram: PYQ-10 (GATE 2021) Ã¢â€ â€™ Time, Speed & Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-10-gate-2021-time-speed-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-10-gate-2021-time-speed-distance-sticky.svg" alt="Sticky Note: PYQ-10 (GATE 2021) Ã¢â€ â€™ Time, Speed & Distance" width="30%">
-</a>
 
 
 A train passes a standing man in 12 seconds and a 240-meter-long platform in 36 seconds. Find the length and speed of the train.
@@ -2523,16 +1983,6 @@ L = 12 ÃƒÆ’Ã¢â‚¬â€� 10 = 120 m
 
 ### PYQ-11 (GATE 2023) Ã¢â€ â€™ Mixtures & Alligations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-11-gate-2023-mixtures-alligations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-11-gate-2023-mixtures-alligations-handwritten.svg" alt="Handwritten: PYQ-11 (GATE 2023) Ã¢â€ â€™ Mixtures & Alligations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-11-gate-2023-mixtures-alligations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-11-gate-2023-mixtures-alligations-diagram.svg" alt="Diagram: PYQ-11 (GATE 2023) Ã¢â€ â€™ Mixtures & Alligations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-11-gate-2023-mixtures-alligations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-11-gate-2023-mixtures-alligations-sticky.svg" alt="Sticky Note: PYQ-11 (GATE 2023) Ã¢â€ â€™ Mixtures & Alligations" width="30%">
-</a>
-
 
 A 20-liter mixture contains milk and water in the ratio 3:2. How much milk should be added to make the ratio 4:1?
 
@@ -2554,16 +2004,6 @@ x = 20 L
 
 ### PYQ-12 (GATE 2019) Ã¢â€ â€™ Set Theory
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-12-gate-2019-set-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-12-gate-2019-set-theory-handwritten.svg" alt="Handwritten: PYQ-12 (GATE 2019) Ã¢â€ â€™ Set Theory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-12-gate-2019-set-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-12-gate-2019-set-theory-diagram.svg" alt="Diagram: PYQ-12 (GATE 2019) Ã¢â€ â€™ Set Theory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-12-gate-2019-set-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-12-gate-2019-set-theory-sticky.svg" alt="Sticky Note: PYQ-12 (GATE 2019) Ã¢â€ â€™ Set Theory" width="30%">
-</a>
-
 
 In a class, 60% of students like Cricket, 50% like Football, and 30% like both. What percentage of students like at least one sport?
 
@@ -2576,16 +2016,6 @@ n(C ÃƒÂ¢Ã‹â€ Ã‚Âª F) = n(C) + n(F) - n(C ÃƒÂ¢Ã‹â€ Ã�
 **Answer: 80%**
 
 ### PYQ-13 (GATE 2024) Ã¢â€ â€™ Probability
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-13-gate-2024-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-13-gate-2024-probability-handwritten.svg" alt="Handwritten: PYQ-13 (GATE 2024) Ã¢â€ â€™ Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-13-gate-2024-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-13-gate-2024-probability-diagram.svg" alt="Diagram: PYQ-13 (GATE 2024) Ã¢â€ â€™ Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-13-gate-2024-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-13-gate-2024-probability-sticky.svg" alt="Sticky Note: PYQ-13 (GATE 2024) Ã¢â€ â€™ Probability" width="30%">
-</a>
 
 
 A fair die is rolled twice. What is the probability that the sum of the two numbers obtained is divisible by 3?
@@ -2612,16 +2042,6 @@ Probability = 12/36 = 1/3
 
 ### PYQ-14 (GATE 2025) Ã¢â€ â€™ Percentages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-14-gate-2025-percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-14-gate-2025-percentages-handwritten.svg" alt="Handwritten: PYQ-14 (GATE 2025) Ã¢â€ â€™ Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-14-gate-2025-percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-14-gate-2025-percentages-diagram.svg" alt="Diagram: PYQ-14 (GATE 2025) Ã¢â€ â€™ Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-14-gate-2025-percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-14-gate-2025-percentages-sticky.svg" alt="Sticky Note: PYQ-14 (GATE 2025) Ã¢â€ â€™ Percentages" width="30%">
-</a>
-
 
 In an examination, a student scores 35% of the maximum marks and fails by 15 marks. Another student scores 45% and gets 25 marks more than the passing marks. Find the maximum marks and the passing marks.
 
@@ -2640,16 +2060,6 @@ From first equation: 0.35 ÃƒÆ’Ã¢â‚¬â€� 400 = P - 15 Ã¢â€ �
 **Answer: Maximum marks = 400, Passing marks = 155**
 
 ### PYQ-15 (GATE 2025) Ã¢â€ â€™ Time & Work
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-15-gate-2025-time-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-15-gate-2025-time-work-handwritten.svg" alt="Handwritten: PYQ-15 (GATE 2025) Ã¢â€ â€™ Time & Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-15-gate-2025-time-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-15-gate-2025-time-work-diagram.svg" alt="Diagram: PYQ-15 (GATE 2025) Ã¢â€ â€™ Time & Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-15-gate-2025-time-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-15-gate-2025-time-work-sticky.svg" alt="Sticky Note: PYQ-15 (GATE 2025) Ã¢â€ â€™ Time & Work" width="30%">
-</a>
 
 
 20 men can complete a work in 15 days. After working for 5 days, 5 more men join them. How many total days are needed to complete the work?
@@ -2671,16 +2081,6 @@ Total days = 5 + 8 = 13 days
 **Answer: 13 days**
 
 ### PYQ-16 (GATE 2020) Ã¢â€ â€™ Number Systems
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-16-gate-2020-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-16-gate-2020-number-systems-handwritten.svg" alt="Handwritten: PYQ-16 (GATE 2020) Ã¢â€ â€™ Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-16-gate-2020-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-16-gate-2020-number-systems-diagram.svg" alt="Diagram: PYQ-16 (GATE 2020) Ã¢â€ â€™ Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-16-gate-2020-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-16-gate-2020-number-systems-sticky.svg" alt="Sticky Note: PYQ-16 (GATE 2020) Ã¢â€ â€™ Number Systems" width="30%">
-</a>
 
 
 What is the smallest 4-digit number that is divisible by 6, 8, and 15?
@@ -2707,16 +2107,6 @@ Next multiple: 9 ÃƒÆ’Ã¢â‚¬â€� 120 = 1080
 
 ### PYQ-17 (GATE 2021) Ã¢â€ â€™ Permutations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-17-gate-2021-permutations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-17-gate-2021-permutations-handwritten.svg" alt="Handwritten: PYQ-17 (GATE 2021) Ã¢â€ â€™ Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-17-gate-2021-permutations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-17-gate-2021-permutations-diagram.svg" alt="Diagram: PYQ-17 (GATE 2021) Ã¢â€ â€™ Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-17-gate-2021-permutations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-17-gate-2021-permutations-sticky.svg" alt="Sticky Note: PYQ-17 (GATE 2021) Ã¢â€ â€™ Permutations" width="30%">
-</a>
-
 
 In how many ways can the letters of the word "MISSISSIPPI" be arranged?
 
@@ -2738,16 +2128,6 @@ Number of distinct arrangements = 11! / (4! ÃƒÆ’Ã¢â‚¬â€� 4! Ãƒ
 
 ### PYQ-18 (GATE 2023) Ã¢â€ â€™ Data Interpretation
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-18-gate-2023-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-18-gate-2023-data-interpretation-handwritten.svg" alt="Handwritten: PYQ-18 (GATE 2023) Ã¢â€ â€™ Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-18-gate-2023-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-18-gate-2023-data-interpretation-diagram.svg" alt="Diagram: PYQ-18 (GATE 2023) Ã¢â€ â€™ Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-18-gate-2023-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-18-gate-2023-data-interpretation-sticky.svg" alt="Sticky Note: PYQ-18 (GATE 2023) Ã¢â€ â€™ Data Interpretation" width="30%">
-</a>
-
 
 A company's revenue (in ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹crore) for 2019-2022: 2019=200, 2020=250, 2021=300, 2022=360. Find the Compound Annual Growth Rate (CAGR) from 2019 to 2022.
 
@@ -2767,16 +2147,6 @@ CAGR = (End Value / Start Value)^(1/n) - 1
 
 ### PYQ-19 (GATE 2024) Ã¢â€ â€™ Averages
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-19-gate-2024-averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-19-gate-2024-averages-handwritten.svg" alt="Handwritten: PYQ-19 (GATE 2024) Ã¢â€ â€™ Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-19-gate-2024-averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-19-gate-2024-averages-diagram.svg" alt="Diagram: PYQ-19 (GATE 2024) Ã¢â€ â€™ Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-19-gate-2024-averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-19-gate-2024-averages-sticky.svg" alt="Sticky Note: PYQ-19 (GATE 2024) Ã¢â€ â€™ Averages" width="30%">
-</a>
-
 
 The average of 5 numbers is 24. If one number is excluded, the average of the remaining 4 numbers becomes 20. Find the excluded number.
 
@@ -2791,16 +2161,6 @@ Excluded number = 120 - 80 = 40
 **Answer: 40**
 
 ### PYQ-20 (GATE 2025) Ã¢â€ â€™ Profit & Loss
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-20-gate-2025-profit-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-20-gate-2025-profit-loss-handwritten.svg" alt="Handwritten: PYQ-20 (GATE 2025) Ã¢â€ â€™ Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-20-gate-2025-profit-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-20-gate-2025-profit-loss-diagram.svg" alt="Diagram: PYQ-20 (GATE 2025) Ã¢â€ â€™ Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-20-gate-2025-profit-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-20-gate-2025-profit-loss-sticky.svg" alt="Sticky Note: PYQ-20 (GATE 2025) Ã¢â€ â€™ Profit & Loss" width="30%">
-</a>
 
 
 A fruit vendor sells oranges at ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹120 per dozen and gains 20%. How many oranges did he buy for ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹100?
@@ -2819,30 +2179,10 @@ For ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¹100: Number of oranges = 100 / (25/3) = 100 
 
 ### Logical Reasoning (15 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-15-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-15-problems-handwritten.svg" alt="Handwritten: Logical Reasoning (15 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-15-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-15-problems-diagram.svg" alt="Diagram: Logical Reasoning (15 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-15-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-15-problems-sticky.svg" alt="Sticky Note: Logical Reasoning (15 Problems)" width="30%">
-</a>
-
 
 **Cross-Reference:** R.S. Aggarwal Ã¢â€ â€™ Logical Reasoning, Chapters: Blood Relations (Ch. 4), Direction Sense (Ch. 5), Syllogisms (Ch. 6), Coding-Decoding (Ch. 2), Seating Arrangements (Ch. 8-9), Analogies (Ch. 1). See also Arun Sharma Ã¢â€ â€™ Logical Reasoning, Chapters 1-6.
 
 ### PYQ-21 (GATE 2019) Ã¢â€ â€™ Blood Relations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-21-gate-2019-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-21-gate-2019-blood-relations-handwritten.svg" alt="Handwritten: PYQ-21 (GATE 2019) Ã¢â€ â€™ Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-21-gate-2019-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-21-gate-2019-blood-relations-diagram.svg" alt="Diagram: PYQ-21 (GATE 2019) Ã¢â€ â€™ Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-21-gate-2019-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-21-gate-2019-blood-relations-sticky.svg" alt="Sticky Note: PYQ-21 (GATE 2019) Ã¢â€ â€™ Blood Relations" width="30%">
-</a>
 
 
 A is the mother of B. B is the sister of C. D is the son of C. E is the brother of D. How is A related to E?
@@ -2859,16 +2199,6 @@ A is E's **grandmother**.
 **Answer: Grandmother**
 
 ### PYQ-22 (GATE 2020) Ã¢â€ â€™ Direction Sense
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-22-gate-2020-direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-22-gate-2020-direction-sense-handwritten.svg" alt="Handwritten: PYQ-22 (GATE 2020) Ã¢â€ â€™ Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-22-gate-2020-direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-22-gate-2020-direction-sense-diagram.svg" alt="Diagram: PYQ-22 (GATE 2020) Ã¢â€ â€™ Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-22-gate-2020-direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-22-gate-2020-direction-sense-sticky.svg" alt="Sticky Note: PYQ-22 (GATE 2020) Ã¢â€ â€™ Direction Sense" width="30%">
-</a>
 
 
 A person walks 10 m towards East, then turns right and walks 15 m, then turns left and walks 20 m, then turns left and walks 15 m. How far is he from the starting point and in which direction?
@@ -2893,16 +2223,6 @@ Direction: East
 
 ### PYQ-23 (GATE 2021) Ã¢â€ â€™ Syllogisms
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-23-gate-2021-syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-23-gate-2021-syllogisms-handwritten.svg" alt="Handwritten: PYQ-23 (GATE 2021) Ã¢â€ â€™ Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-23-gate-2021-syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-23-gate-2021-syllogisms-diagram.svg" alt="Diagram: PYQ-23 (GATE 2021) Ã¢â€ â€™ Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-23-gate-2021-syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-23-gate-2021-syllogisms-sticky.svg" alt="Sticky Note: PYQ-23 (GATE 2021) Ã¢â€ â€™ Syllogisms" width="30%">
-</a>
-
 
 Statements:
 1. All squares are rectangles.
@@ -2925,16 +2245,6 @@ II. Some polygons are squares: TRUE (since all squares are polygons, there exist
 **Answer: Both I and II follow**
 
 ### PYQ-24 (GATE 2022) Ã¢â€ â€™ Coding-Decoding
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-24-gate-2022-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-24-gate-2022-coding-decoding-handwritten.svg" alt="Handwritten: PYQ-24 (GATE 2022) Ã¢â€ â€™ Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-24-gate-2022-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-24-gate-2022-coding-decoding-diagram.svg" alt="Diagram: PYQ-24 (GATE 2022) Ã¢â€ â€™ Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-24-gate-2022-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-24-gate-2022-coding-decoding-sticky.svg" alt="Sticky Note: PYQ-24 (GATE 2022) Ã¢â€ â€™ Coding-Decoding" width="30%">
-</a>
 
 
 In a certain code, "CRICKET" is coded as "DSJDLFU". How is "FOOTBALL" coded?
@@ -2967,16 +2277,6 @@ F Ã¢â€ â€™ G, O Ã¢â€ â€™ P, O Ã¢â€ â€™ P, T Ã�
 
 ### PYQ-25 (GATE 2023) Ã¢â€ â€™ Seating Arrangement (Linear)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-25-gate-2023-seating-arrangement-linear-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-25-gate-2023-seating-arrangement-linear-handwritten.svg" alt="Handwritten: PYQ-25 (GATE 2023) Ã¢â€ â€™ Seating Arrangement (Linear)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-25-gate-2023-seating-arrangement-linear-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-25-gate-2023-seating-arrangement-linear-diagram.svg" alt="Diagram: PYQ-25 (GATE 2023) Ã¢â€ â€™ Seating Arrangement (Linear)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-25-gate-2023-seating-arrangement-linear-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-25-gate-2023-seating-arrangement-linear-sticky.svg" alt="Sticky Note: PYQ-25 (GATE 2023) Ã¢â€ â€™ Seating Arrangement (Linear)" width="30%">
-</a>
-
 
 Five friends P, Q, R, S, T sit in a row facing North. Q sits to the immediate left of R. S sits between P and T. T sits at one of the extreme ends. P is not adjacent to Q. Find the arrangement.
 
@@ -3008,16 +2308,6 @@ Final arrangement (left to right): Q, R, P, S, T
 
 ### PYQ-26 (GATE 2019) Ã¢â€ â€™ Statement-Conclusion
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-26-gate-2019-statement-conclusion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-26-gate-2019-statement-conclusion-handwritten.svg" alt="Handwritten: PYQ-26 (GATE 2019) Ã¢â€ â€™ Statement-Conclusion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-26-gate-2019-statement-conclusion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-26-gate-2019-statement-conclusion-diagram.svg" alt="Diagram: PYQ-26 (GATE 2019) Ã¢â€ â€™ Statement-Conclusion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-26-gate-2019-statement-conclusion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-26-gate-2019-statement-conclusion-sticky.svg" alt="Sticky Note: PYQ-26 (GATE 2019) Ã¢â€ â€™ Statement-Conclusion" width="30%">
-</a>
-
 
 Statement: Some birds are flying creatures. All flying creatures have wings.
 
@@ -3036,16 +2326,6 @@ II. Some flying creatures are birds: Follows. Since some birds are flying creatu
 **Answer: Only II follows**
 
 ### PYQ-27 (GATE 2024) Ã¢â€ â€™ Analogies
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-27-gate-2024-analogies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-27-gate-2024-analogies-handwritten.svg" alt="Handwritten: PYQ-27 (GATE 2024) Ã¢â€ â€™ Analogies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-27-gate-2024-analogies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-27-gate-2024-analogies-diagram.svg" alt="Diagram: PYQ-27 (GATE 2024) Ã¢â€ â€™ Analogies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-27-gate-2024-analogies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-27-gate-2024-analogies-sticky.svg" alt="Sticky Note: PYQ-27 (GATE 2024) Ã¢â€ â€™ Analogies" width="30%">
-</a>
 
 
 Select the pair that has the same relationship as "Gravity : Pull"
@@ -3076,16 +2356,6 @@ D) Heat is opposite of cold Ã¢â€ â€™ antonym
 
 ### PYQ-28 (GATE 2021) Ã¢â€ â€™ Direction Sense
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-28-gate-2021-direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-28-gate-2021-direction-sense-handwritten.svg" alt="Handwritten: PYQ-28 (GATE 2021) Ã¢â€ â€™ Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-28-gate-2021-direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-28-gate-2021-direction-sense-diagram.svg" alt="Diagram: PYQ-28 (GATE 2021) Ã¢â€ â€™ Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-28-gate-2021-direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-28-gate-2021-direction-sense-sticky.svg" alt="Sticky Note: PYQ-28 (GATE 2021) Ã¢â€ â€™ Direction Sense" width="30%">
-</a>
-
 
 A man starts from his house and walks 6 km towards South. He turns right and walks 4 km. Then he turns right again and walks 12 km. Then he turns left and walks 4 km. How far is he from his house?
 
@@ -3107,16 +2377,6 @@ Distance from (0,0): ÃƒÂ¢Ã‹â€ Ã…Â¡((-8)Ãƒâ€šÃ‚Â² + 6�
 
 ### PYQ-29 (GATE 2025) Ã¢â€ â€™ Blood Relations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-29-gate-2025-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-29-gate-2025-blood-relations-handwritten.svg" alt="Handwritten: PYQ-29 (GATE 2025) Ã¢â€ â€™ Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-29-gate-2025-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-29-gate-2025-blood-relations-diagram.svg" alt="Diagram: PYQ-29 (GATE 2025) Ã¢â€ â€™ Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-29-gate-2025-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-29-gate-2025-blood-relations-sticky.svg" alt="Sticky Note: PYQ-29 (GATE 2025) Ã¢â€ â€™ Blood Relations" width="30%">
-</a>
-
 
 A + B means A is the father of B. A - B means A is the mother of B. A ÃƒÆ’Ã¢â‚¬â€� B means A is the brother of B. A ÃƒÆ’Ã‚Â· B means A is the sister of B.
 
@@ -3137,16 +2397,6 @@ P is grandparent of S (specifically, P is S's **maternal grandfather**).
 **Answer: Maternal grandfather**
 
 ### PYQ-30 (GATE 2020) Ã¢â€ â€™ Seating Arrangement (Circular)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-30-gate-2020-seating-arrangement-circular-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-30-gate-2020-seating-arrangement-circular-handwritten.svg" alt="Handwritten: PYQ-30 (GATE 2020) Ã¢â€ â€™ Seating Arrangement (Circular)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-30-gate-2020-seating-arrangement-circular-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-30-gate-2020-seating-arrangement-circular-diagram.svg" alt="Diagram: PYQ-30 (GATE 2020) Ã¢â€ â€™ Seating Arrangement (Circular)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-30-gate-2020-seating-arrangement-circular-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-30-gate-2020-seating-arrangement-circular-sticky.svg" alt="Sticky Note: PYQ-30 (GATE 2020) Ã¢â€ â€™ Seating Arrangement (Circular)" width="30%">
-</a>
 
 
 Six persons A, B, C, D, E, F sit around a circular table facing the center. A sits second to the right of B. C sits between D and E. F is not adjacent to B. If D is opposite to A, find the arrangement (clockwise starting from A).
@@ -3220,16 +2470,6 @@ Clockwise from A (position 3): A, E(4), C(5), D(6), B(1), F(2)
 **Answer: A, E, C, D, B, F (clockwise)**
 
 ### PYQ-31 (GATE 2024) Ã¢â€ â€™ Coding-Decoding
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-31-gate-2024-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-31-gate-2024-coding-decoding-handwritten.svg" alt="Handwritten: PYQ-31 (GATE 2024) Ã¢â€ â€™ Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-31-gate-2024-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-31-gate-2024-coding-decoding-diagram.svg" alt="Diagram: PYQ-31 (GATE 2024) Ã¢â€ â€™ Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-31-gate-2024-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-31-gate-2024-coding-decoding-sticky.svg" alt="Sticky Note: PYQ-31 (GATE 2024) Ã¢â€ â€™ Coding-Decoding" width="30%">
-</a>
 
 
 If 682 = "gate exam ready", 285 = "exam is tough", 861 = "gate is open", find the code for "open".
@@ -3343,16 +2583,6 @@ Then: open = 1 (from 861: gate(6), is(8), open(1)).
 
 ### PYQ-32 (GATE 2022) Ã¢â€ â€™ Syllogisms
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-32-gate-2022-syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-32-gate-2022-syllogisms-handwritten.svg" alt="Handwritten: PYQ-32 (GATE 2022) Ã¢â€ â€™ Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-32-gate-2022-syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-32-gate-2022-syllogisms-diagram.svg" alt="Diagram: PYQ-32 (GATE 2022) Ã¢â€ â€™ Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-32-gate-2022-syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-32-gate-2022-syllogisms-sticky.svg" alt="Sticky Note: PYQ-32 (GATE 2022) Ã¢â€ â€™ Syllogisms" width="30%">
-</a>
-
 
 Statements:
 1. No stone is metal.
@@ -3375,16 +2605,6 @@ II. Some stones are gold: Does NOT follow as established above. ÃƒÂ¢Ã…â�
 **Answer: Only I follows**
 
 ### PYQ-33 (GATE 2025) Ã¢â€ â€™ Analogies
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-33-gate-2025-analogies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-33-gate-2025-analogies-handwritten.svg" alt="Handwritten: PYQ-33 (GATE 2025) Ã¢â€ â€™ Analogies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-33-gate-2025-analogies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-33-gate-2025-analogies-diagram.svg" alt="Diagram: PYQ-33 (GATE 2025) Ã¢â€ â€™ Analogies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-33-gate-2025-analogies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-33-gate-2025-analogies-sticky.svg" alt="Sticky Note: PYQ-33 (GATE 2025) Ã¢â€ â€™ Analogies" width="30%">
-</a>
 
 
 Tree : Forest :: ___ : ___
@@ -3419,16 +2639,6 @@ The best analogy is Star : Galaxy (individual constituent of a collection).
 
 ### PYQ-34 (GATE 2023) Ã¢â€ â€™ Statement-Assumption
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-34-gate-2023-statement-assumption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-34-gate-2023-statement-assumption-handwritten.svg" alt="Handwritten: PYQ-34 (GATE 2023) Ã¢â€ â€™ Statement-Assumption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-34-gate-2023-statement-assumption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-34-gate-2023-statement-assumption-diagram.svg" alt="Diagram: PYQ-34 (GATE 2023) Ã¢â€ â€™ Statement-Assumption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-34-gate-2023-statement-assumption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-34-gate-2023-statement-assumption-sticky.svg" alt="Sticky Note: PYQ-34 (GATE 2023) Ã¢â€ â€™ Statement-Assumption" width="30%">
-</a>
-
 
 Statement: "The government has decided to make toilet building a priority in rural areas."
 
@@ -3447,16 +2657,6 @@ II. Implicit. The purpose of building toilets is to improve sanitation. The gove
 **Answer: Both I and II are implicit**
 
 ### PYQ-35 (GATE 2019) Ã¢â€ â€™ Circular Arrangement
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-35-gate-2019-circular-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-35-gate-2019-circular-arrangement-handwritten.svg" alt="Handwritten: PYQ-35 (GATE 2019) Ã¢â€ â€™ Circular Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-35-gate-2019-circular-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-35-gate-2019-circular-arrangement-diagram.svg" alt="Diagram: PYQ-35 (GATE 2019) Ã¢â€ â€™ Circular Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-35-gate-2019-circular-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-35-gate-2019-circular-arrangement-sticky.svg" alt="Sticky Note: PYQ-35 (GATE 2019) Ã¢â€ â€™ Circular Arrangement" width="30%">
-</a>
 
 
 Seven people A, B, C, D, E, F, G sit around a circular table. C sits second to the right of A. B sits third to the left of D. E sits between F and G. A is adjacent to G. If D sits opposite C, find the positions.
@@ -3568,30 +2768,10 @@ The method: Fix one person, place relative positions, then check constraints.
 
 ### Verbal Ability (10 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-10-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-10-problems-handwritten.svg" alt="Handwritten: Verbal Ability (10 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-10-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-10-problems-diagram.svg" alt="Diagram: Verbal Ability (10 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-10-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-10-problems-sticky.svg" alt="Sticky Note: Verbal Ability (10 Problems)" width="30%">
-</a>
-
 
 **Cross-Reference:** R.S. Aggarwal Ã¢â€ â€™ Verbal Reasoning, Chapters: Synonyms/Antonyms (Ch. 3), Sentence Completion (Ch. 7-8), Para-jumbles (Ch. 11), Reading Comprehension (Ch. 12), Grammar (Ch. 15-16). Also see Arun Sharma Ã¢â€ â€™ Verbal Ability, Chapters 1-5.
 
 ### PYQ-36 (GATE 2020) Ã¢â€ â€™ Synonyms
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-36-gate-2020-synonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-36-gate-2020-synonyms-handwritten.svg" alt="Handwritten: PYQ-36 (GATE 2020) Ã¢â€ â€™ Synonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-36-gate-2020-synonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-36-gate-2020-synonyms-diagram.svg" alt="Diagram: PYQ-36 (GATE 2020) Ã¢â€ â€™ Synonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-36-gate-2020-synonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-36-gate-2020-synonyms-sticky.svg" alt="Sticky Note: PYQ-36 (GATE 2020) Ã¢â€ â€™ Synonyms" width="30%">
-</a>
 
 
 Choose the synonym of "PERSPICACIOUS".
@@ -3622,16 +2802,6 @@ D) Careless Ã¢â€ â€™ opposite
 
 ### PYQ-37 (GATE 2021) Ã¢â€ â€™ Antonyms
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-37-gate-2021-antonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-37-gate-2021-antonyms-handwritten.svg" alt="Handwritten: PYQ-37 (GATE 2021) Ã¢â€ â€™ Antonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-37-gate-2021-antonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-37-gate-2021-antonyms-diagram.svg" alt="Diagram: PYQ-37 (GATE 2021) Ã¢â€ â€™ Antonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-37-gate-2021-antonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-37-gate-2021-antonyms-sticky.svg" alt="Sticky Note: PYQ-37 (GATE 2021) Ã¢â€ â€™ Antonyms" width="30%">
-</a>
-
 
 Choose the antonym of "LACONIC".
 
@@ -3660,16 +2830,6 @@ D) Silent Ã¢â€ â€™ related but not an antonym
 **Answer: A) Verbose**
 
 ### PYQ-38 (GATE 2022) Ã¢â€ â€™ Sentence Completion
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-38-gate-2022-sentence-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-38-gate-2022-sentence-completion-handwritten.svg" alt="Handwritten: PYQ-38 (GATE 2022) Ã¢â€ â€™ Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-38-gate-2022-sentence-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-38-gate-2022-sentence-completion-diagram.svg" alt="Diagram: PYQ-38 (GATE 2022) Ã¢â€ â€™ Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-38-gate-2022-sentence-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-38-gate-2022-sentence-completion-sticky.svg" alt="Sticky Note: PYQ-38 (GATE 2022) Ã¢â€ â€™ Sentence Completion" width="30%">
-</a>
 
 
 Despite the ___ evidence, the jury remained ___ of the defendant's guilt.
@@ -3700,16 +2860,6 @@ D) "Sparse evidence, unsure" Ã¢â€ â€™ no contrast (sparse evidence lo
 
 ### PYQ-39 (GATE 2023) Ã¢â€ â€™ Para-jumbles
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-39-gate-2023-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-39-gate-2023-para-jumbles-handwritten.svg" alt="Handwritten: PYQ-39 (GATE 2023) Ã¢â€ â€™ Para-jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-39-gate-2023-para-jumbles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-39-gate-2023-para-jumbles-diagram.svg" alt="Diagram: PYQ-39 (GATE 2023) Ã¢â€ â€™ Para-jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-39-gate-2023-para-jumbles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-39-gate-2023-para-jumbles-sticky.svg" alt="Sticky Note: PYQ-39 (GATE 2023) Ã¢â€ â€™ Para-jumbles" width="30%">
-</a>
-
 
 Arrange the following sentences into a coherent paragraph:
 
@@ -3729,16 +2879,6 @@ D summarizes the revolutionary nature of the shift.
 
 ### PYQ-40 (GATE 2019) Ã¢â€ â€™ Subject-Verb Agreement
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-40-gate-2019-subject-verb-agreement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-40-gate-2019-subject-verb-agreement-handwritten.svg" alt="Handwritten: PYQ-40 (GATE 2019) Ã¢â€ â€™ Subject-Verb Agreement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-40-gate-2019-subject-verb-agreement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-40-gate-2019-subject-verb-agreement-diagram.svg" alt="Diagram: PYQ-40 (GATE 2019) Ã¢â€ â€™ Subject-Verb Agreement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-40-gate-2019-subject-verb-agreement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-40-gate-2019-subject-verb-agreement-sticky.svg" alt="Sticky Note: PYQ-40 (GATE 2019) Ã¢â€ â€™ Subject-Verb Agreement" width="30%">
-</a>
-
 
 Choose the correct option:
 
@@ -3755,16 +2895,6 @@ Therefore: **are**
 **Answer: are**
 
 ### PYQ-41 (GATE 2024) Ã¢â€ â€™ Reading Comprehension
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-41-gate-2024-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-41-gate-2024-reading-comprehension-handwritten.svg" alt="Handwritten: PYQ-41 (GATE 2024) Ã¢â€ â€™ Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-41-gate-2024-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-41-gate-2024-reading-comprehension-diagram.svg" alt="Diagram: PYQ-41 (GATE 2024) Ã¢â€ â€™ Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-41-gate-2024-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-41-gate-2024-reading-comprehension-sticky.svg" alt="Sticky Note: PYQ-41 (GATE 2024) Ã¢â€ â€™ Reading Comprehension" width="30%">
-</a>
 
 
 Passage: "Machine learning models are only as good as the data they are trained on. Biased training data leads to biased models, which can perpetuate and amplify existing societal inequalities. This has been demonstrated in hiring algorithms, facial recognition systems, and predictive policing tools. Addressing this requires not just technical solutions but also diverse teams, ethical guidelines, and regulatory oversight."
@@ -3797,16 +2927,6 @@ D) Contradicts the passage, which says "not just technical solutions."
 
 ### PYQ-42 (GATE 2020) Ã¢â€ â€™ One-Word Substitution
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-42-gate-2020-one-word-substitution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-42-gate-2020-one-word-substitution-handwritten.svg" alt="Handwritten: PYQ-42 (GATE 2020) Ã¢â€ â€™ One-Word Substitution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-42-gate-2020-one-word-substitution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-42-gate-2020-one-word-substitution-diagram.svg" alt="Diagram: PYQ-42 (GATE 2020) Ã¢â€ â€™ One-Word Substitution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-42-gate-2020-one-word-substitution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-42-gate-2020-one-word-substitution-sticky.svg" alt="Sticky Note: PYQ-42 (GATE 2020) Ã¢â€ â€™ One-Word Substitution" width="30%">
-</a>
-
 
 What is the one-word substitute for "a person who is motivated by a desire to help others without personal gain"?
 
@@ -3833,16 +2953,6 @@ D) Hedonist Ã¢â€ â€™ one who pursues pleasure as the highest good
 **Answer: A) Altruist**
 
 ### PYQ-43 (GATE 2025) Ã¢â€ â€™ Critical Reasoning
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-43-gate-2025-critical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-43-gate-2025-critical-reasoning-handwritten.svg" alt="Handwritten: PYQ-43 (GATE 2025) Ã¢â€ â€™ Critical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-43-gate-2025-critical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-43-gate-2025-critical-reasoning-diagram.svg" alt="Diagram: PYQ-43 (GATE 2025) Ã¢â€ â€™ Critical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-43-gate-2025-critical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-43-gate-2025-critical-reasoning-sticky.svg" alt="Sticky Note: PYQ-43 (GATE 2025) Ã¢â€ â€™ Critical Reasoning" width="30%">
-</a>
 
 
 Argument: "All successful startups in the past decade have used cloud computing. Therefore, any new startup must use cloud computing to be successful."
@@ -3873,16 +2983,6 @@ C) Appeal to popularity Ã¢â€ â€™ "everyone did it, so you must too" �
 
 ### PYQ-44 (GATE 2022) Ã¢â€ â€™ Tenses
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-44-gate-2022-tenses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-44-gate-2022-tenses-handwritten.svg" alt="Handwritten: PYQ-44 (GATE 2022) Ã¢â€ â€™ Tenses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-44-gate-2022-tenses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-44-gate-2022-tenses-diagram.svg" alt="Diagram: PYQ-44 (GATE 2022) Ã¢â€ â€™ Tenses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-44-gate-2022-tenses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-44-gate-2022-tenses-sticky.svg" alt="Sticky Note: PYQ-44 (GATE 2022) Ã¢â€ â€™ Tenses" width="30%">
-</a>
-
 
 Fill in the blank with the correct tense:
 
@@ -3907,16 +3007,6 @@ D) had completed
 **Answer: C) will have completed**
 
 ### PYQ-45 (GATE 2021) Ã¢â€ â€™ Sentence Completion
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-45-gate-2021-sentence-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-45-gate-2021-sentence-completion-handwritten.svg" alt="Handwritten: PYQ-45 (GATE 2021) Ã¢â€ â€™ Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-45-gate-2021-sentence-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-45-gate-2021-sentence-completion-diagram.svg" alt="Diagram: PYQ-45 (GATE 2021) Ã¢â€ â€™ Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-45-gate-2021-sentence-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-45-gate-2021-sentence-completion-sticky.svg" alt="Sticky Note: PYQ-45 (GATE 2021) Ã¢â€ â€™ Sentence Completion" width="30%">
-</a>
 
 
 The professor's remarks were so ___ that even his colleagues found them hard to decipher.
@@ -3947,16 +3037,6 @@ D) Superficial Ã¢â€ â€™ shallow (not related to clarity/difficulty)
 
 ### PYQ-46 (GATE 2025) Ã¢â€ â€™ Idioms
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-46-gate-2025-idioms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-46-gate-2025-idioms-handwritten.svg" alt="Handwritten: PYQ-46 (GATE 2025) Ã¢â€ â€™ Idioms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-46-gate-2025-idioms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-46-gate-2025-idioms-diagram.svg" alt="Diagram: PYQ-46 (GATE 2025) Ã¢â€ â€™ Idioms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-46-gate-2025-idioms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-46-gate-2025-idioms-sticky.svg" alt="Sticky Note: PYQ-46 (GATE 2025) Ã¢â€ â€™ Idioms" width="30%">
-</a>
-
 
 Choose the correct meaning of the idiom "To burn the midnight oil."
 
@@ -3977,16 +3057,6 @@ D) To spend money recklessly
 **Answer: B) To work or study late into the night**
 
 ### PYQ-47 (GATE 2023) Ã¢â€ â€™ Grammar Ã¢â€ â€™ Prepositions
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-47-gate-2023-grammar-prepositions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-47-gate-2023-grammar-prepositions-handwritten.svg" alt="Handwritten: PYQ-47 (GATE 2023) Ã¢â€ â€™ Grammar Ã¢â€ â€™ Prepositions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-47-gate-2023-grammar-prepositions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-47-gate-2023-grammar-prepositions-diagram.svg" alt="Diagram: PYQ-47 (GATE 2023) Ã¢â€ â€™ Grammar Ã¢â€ â€™ Prepositions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-47-gate-2023-grammar-prepositions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-47-gate-2023-grammar-prepositions-sticky.svg" alt="Sticky Note: PYQ-47 (GATE 2023) Ã¢â€ â€™ Grammar Ã¢â€ â€™ Prepositions" width="30%">
-</a>
 
 
 Fill in the blank: "She is proficient ___ multiple programming languages."
@@ -4011,16 +3081,6 @@ The correct preposition with "proficient" is "in."
 
 ### PYQ-48 (GATE 2019) Ã¢â€ â€™ Reading Comprehension (Short)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-48-gate-2019-reading-comprehension-short-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-48-gate-2019-reading-comprehension-short-handwritten.svg" alt="Handwritten: PYQ-48 (GATE 2019) Ã¢â€ â€™ Reading Comprehension (Short)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-48-gate-2019-reading-comprehension-short-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-48-gate-2019-reading-comprehension-short-diagram.svg" alt="Diagram: PYQ-48 (GATE 2019) Ã¢â€ â€™ Reading Comprehension (Short)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-48-gate-2019-reading-comprehension-short-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-48-gate-2019-reading-comprehension-short-sticky.svg" alt="Sticky Note: PYQ-48 (GATE 2019) Ã¢â€ â€™ Reading Comprehension (Short)" width="30%">
-</a>
-
 
 Passage: "Economics is not a science of wealth but a science of human welfare. It studies how people make choices under conditions of scarcity. Every choice involves a trade-off Ã¢â€ â€™ choosing one thing means giving up another. The value of the next best alternative foregone is called opportunity cost."
 
@@ -4033,16 +3093,6 @@ The passage explicitly defines it: "The value of the next best alternative foreg
 **Answer: The value of the next best alternative that is given up when a choice is made.**
 
 ### PYQ-49 (GATE 2024) Ã¢â€ â€™ Error Detection
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-49-gate-2024-error-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-49-gate-2024-error-detection-handwritten.svg" alt="Handwritten: PYQ-49 (GATE 2024) Ã¢â€ â€™ Error Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-49-gate-2024-error-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-49-gate-2024-error-detection-diagram.svg" alt="Diagram: PYQ-49 (GATE 2024) Ã¢â€ â€™ Error Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-49-gate-2024-error-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-49-gate-2024-error-detection-sticky.svg" alt="Sticky Note: PYQ-49 (GATE 2024) Ã¢â€ â€™ Error Detection" width="30%">
-</a>
 
 
 Identify the error in the sentence:
@@ -4071,16 +3121,6 @@ Also, "their" with "each" can be debated, but in modern usage, "their" with "eac
 
 ### PYQ-50 (GATE 2025) Ã¢â€ â€™ Para-jumbles
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-50-gate-2025-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-50-gate-2025-para-jumbles-handwritten.svg" alt="Handwritten: PYQ-50 (GATE 2025) Ã¢â€ â€™ Para-jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-50-gate-2025-para-jumbles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-50-gate-2025-para-jumbles-diagram.svg" alt="Diagram: PYQ-50 (GATE 2025) Ã¢â€ â€™ Para-jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-50-gate-2025-para-jumbles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-50-gate-2025-para-jumbles-sticky.svg" alt="Sticky Note: PYQ-50 (GATE 2025) Ã¢â€ â€™ Para-jumbles" width="30%">
-</a>
-
 
 A. This process is called photosynthesis.
 
@@ -4104,30 +3144,10 @@ A names the process.
 
 ### Spatial / Analytical Reasoning (5 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-5-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-5-problems-handwritten.svg" alt="Handwritten: Spatial / Analytical Reasoning (5 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-5-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-5-problems-diagram.svg" alt="Diagram: Spatial / Analytical Reasoning (5 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-5-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-analytical-reasoning-5-problems-sticky.svg" alt="Sticky Note: Spatial / Analytical Reasoning (5 Problems)" width="30%">
-</a>
-
 
 **Cross-Reference:** R.S. Aggarwal Ã¢â€ â€™ Analytical Reasoning, Chapters: Dice & Cubes (Ch. 10), Mirror Images (Ch. 11-12), Paper Folding (Ch. 13), Pattern Recognition (Ch. 14-15). Also see Arun Sharma Ã¢â€ â€™ Logical Reasoning, Chapter 7 (Spatial).
 
 ### PYQ-51 (GATE 2019) Ã¢â€ â€™ Cube Painting
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-51-gate-2019-cube-painting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-51-gate-2019-cube-painting-handwritten.svg" alt="Handwritten: PYQ-51 (GATE 2019) Ã¢â€ â€™ Cube Painting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-51-gate-2019-cube-painting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-51-gate-2019-cube-painting-diagram.svg" alt="Diagram: PYQ-51 (GATE 2019) Ã¢â€ â€™ Cube Painting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-51-gate-2019-cube-painting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-51-gate-2019-cube-painting-sticky.svg" alt="Sticky Note: PYQ-51 (GATE 2019) Ã¢â€ â€™ Cube Painting" width="30%">
-</a>
 
 
 A 4 ÃƒÆ’Ã¢â‚¬â€� 4 ÃƒÆ’Ã¢â‚¬â€� 4 cube is painted entirely red on all six faces and then cut into 64 unit cubes. How many unit cubes have exactly one face painted?
@@ -4149,16 +3169,6 @@ Formula verification: 6(n-2)Ãƒâ€šÃ‚Â² = 6(2)Ãƒâ€šÃ‚Â² = 24
 **Answer: 24 cubes**
 
 ### PYQ-52 (GATE 2020) Ã¢â€ â€™ Pattern Recognition
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-52-gate-2020-pattern-recognition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-52-gate-2020-pattern-recognition-handwritten.svg" alt="Handwritten: PYQ-52 (GATE 2020) Ã¢â€ â€™ Pattern Recognition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-52-gate-2020-pattern-recognition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-52-gate-2020-pattern-recognition-diagram.svg" alt="Diagram: PYQ-52 (GATE 2020) Ã¢â€ â€™ Pattern Recognition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-52-gate-2020-pattern-recognition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-52-gate-2020-pattern-recognition-sticky.svg" alt="Sticky Note: PYQ-52 (GATE 2020) Ã¢â€ â€™ Pattern Recognition" width="30%">
-</a>
 
 
 Find the next term in the series: 3, 12, 27, 48, 75, ?
@@ -4183,16 +3193,6 @@ Next term = 3 ÃƒÆ’Ã¢â‚¬â€� 6Ãƒâ€šÃ‚Â² = 3 ÃƒÆ’Ã
 
 ### PYQ-53 (GATE 2022) Ã¢â€ â€™ Mirror Image
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-53-gate-2022-mirror-image-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-53-gate-2022-mirror-image-handwritten.svg" alt="Handwritten: PYQ-53 (GATE 2022) Ã¢â€ â€™ Mirror Image" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-53-gate-2022-mirror-image-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-53-gate-2022-mirror-image-diagram.svg" alt="Diagram: PYQ-53 (GATE 2022) Ã¢â€ â€™ Mirror Image" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-53-gate-2022-mirror-image-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-53-gate-2022-mirror-image-sticky.svg" alt="Sticky Note: PYQ-53 (GATE 2022) Ã¢â€ â€™ Mirror Image" width="30%">
-</a>
-
 
 If the time on an analog clock shows 7:20, what approximate time will be seen in a mirror placed vertically?
 
@@ -4207,16 +3207,6 @@ Verification: In a mirror, the hour hand between 7 and 8 appears between 4 and 5
 **Answer: 4:40**
 
 ### PYQ-54 (GATE 2023) Ã¢â€ â€™ Dice
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-54-gate-2023-dice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-54-gate-2023-dice-handwritten.svg" alt="Handwritten: PYQ-54 (GATE 2023) Ã¢â€ â€™ Dice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-54-gate-2023-dice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-54-gate-2023-dice-diagram.svg" alt="Diagram: PYQ-54 (GATE 2023) Ã¢â€ â€™ Dice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-54-gate-2023-dice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-54-gate-2023-dice-sticky.svg" alt="Sticky Note: PYQ-54 (GATE 2023) Ã¢â€ â€™ Dice" width="30%">
-</a>
 
 
 Two positions of the same dice are shown:
@@ -4416,16 +3406,6 @@ In many dice, 3 is opposite to 5. Let me go with that.
 
 ### PYQ-55 (GATE 2024) Ã¢â€ â€™ Paper Folding / Spatial Visualization
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-55-gate-2024-paper-folding-spatial-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-55-gate-2024-paper-folding-spatial-visualization-handwritten.svg" alt="Handwritten: PYQ-55 (GATE 2024) Ã¢â€ â€™ Paper Folding / Spatial Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-55-gate-2024-paper-folding-spatial-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-55-gate-2024-paper-folding-spatial-visualization-diagram.svg" alt="Diagram: PYQ-55 (GATE 2024) Ã¢â€ â€™ Paper Folding / Spatial Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-55-gate-2024-paper-folding-spatial-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/pyq-55-gate-2024-paper-folding-spatial-visualization-sticky.svg" alt="Sticky Note: PYQ-55 (GATE 2024) Ã¢â€ â€™ Paper Folding / Spatial Visualization" width="30%">
-</a>
-
 
 A rectangular sheet of paper is folded as follows:
 1. Fold the bottom edge to the top edge (fold in half horizontally).
@@ -4459,16 +3439,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 
 ### 1. R.S. Aggarwal Ã¢â€ â€™ Quantitative Aptitude for Competitive Examinations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-r-s-aggarwal-quantitative-aptitude-for-competitive-examinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-r-s-aggarwal-quantitative-aptitude-for-competitive-examinations-handwritten.svg" alt="Handwritten: 1. R.S. Aggarwal Ã¢â€ â€™ Quantitative Aptitude for Competitive Examinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-r-s-aggarwal-quantitative-aptitude-for-competitive-examinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-r-s-aggarwal-quantitative-aptitude-for-competitive-examinations-diagram.svg" alt="Diagram: 1. R.S. Aggarwal Ã¢â€ â€™ Quantitative Aptitude for Competitive Examinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-r-s-aggarwal-quantitative-aptitude-for-competitive-examinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/1-r-s-aggarwal-quantitative-aptitude-for-competitive-examinations-sticky.svg" alt="Sticky Note: 1. R.S. Aggarwal Ã¢â€ â€™ Quantitative Aptitude for Competitive Examinations" width="30%">
-</a>
-
 
 | Chapter | Pages | Topics Covered | GATE Relevance |
 |---------|-------|----------------|----------------|
@@ -4486,16 +3456,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 | 35-38 | 649-730 | Data Interpretation / Charts | PYQ-18 |
 
 ### 2. R.S. Aggarwal Ã¢â€ â€™ A Modern Approach to Verbal & Non-Verbal Reasoning
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-r-s-aggarwal-a-modern-approach-to-verbal-non-verbal-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-r-s-aggarwal-a-modern-approach-to-verbal-non-verbal-reasoning-handwritten.svg" alt="Handwritten: 2. R.S. Aggarwal Ã¢â€ â€™ A Modern Approach to Verbal & Non-Verbal Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-r-s-aggarwal-a-modern-approach-to-verbal-non-verbal-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-r-s-aggarwal-a-modern-approach-to-verbal-non-verbal-reasoning-diagram.svg" alt="Diagram: 2. R.S. Aggarwal Ã¢â€ â€™ A Modern Approach to Verbal & Non-Verbal Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-r-s-aggarwal-a-modern-approach-to-verbal-non-verbal-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/2-r-s-aggarwal-a-modern-approach-to-verbal-non-verbal-reasoning-sticky.svg" alt="Sticky Note: 2. R.S. Aggarwal Ã¢â€ â€™ A Modern Approach to Verbal & Non-Verbal Reasoning" width="30%">
-</a>
 
 
 | Chapter | Pages | Topics Covered | GATE Relevance |
@@ -4515,16 +3475,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 
 ### 3. Arun Sharma Ã¢â€ â€™ How to Prepare for Quantitative Aptitude
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-arun-sharma-how-to-prepare-for-quantitative-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-arun-sharma-how-to-prepare-for-quantitative-aptitude-handwritten.svg" alt="Handwritten: 3. Arun Sharma Ã¢â€ â€™ How to Prepare for Quantitative Aptitude" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-arun-sharma-how-to-prepare-for-quantitative-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-arun-sharma-how-to-prepare-for-quantitative-aptitude-diagram.svg" alt="Diagram: 3. Arun Sharma Ã¢â€ â€™ How to Prepare for Quantitative Aptitude" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-arun-sharma-how-to-prepare-for-quantitative-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/3-arun-sharma-how-to-prepare-for-quantitative-aptitude-sticky.svg" alt="Sticky Note: 3. Arun Sharma Ã¢â€ â€™ How to Prepare for Quantitative Aptitude" width="30%">
-</a>
-
 
 | Chapter | Pages | Topics |
 |---------|-------|--------|
@@ -4537,16 +3487,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 
 ### 4. Arun Sharma Ã¢â€ â€™ How to Prepare for Verbal Ability & Reading Comprehension
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-arun-sharma-how-to-prepare-for-verbal-ability-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-arun-sharma-how-to-prepare-for-verbal-ability-reading-comprehension-handwritten.svg" alt="Handwritten: 4. Arun Sharma Ã¢â€ â€™ How to Prepare for Verbal Ability & Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-arun-sharma-how-to-prepare-for-verbal-ability-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-arun-sharma-how-to-prepare-for-verbal-ability-reading-comprehension-diagram.svg" alt="Diagram: 4. Arun Sharma Ã¢â€ â€™ How to Prepare for Verbal Ability & Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-arun-sharma-how-to-prepare-for-verbal-ability-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/4-arun-sharma-how-to-prepare-for-verbal-ability-reading-comprehension-sticky.svg" alt="Sticky Note: 4. Arun Sharma Ã¢â€ â€™ How to Prepare for Verbal Ability & Reading Comprehension" width="30%">
-</a>
-
 
 | Chapter | Pages | Topics |
 |---------|-------|--------|
@@ -4556,16 +3496,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 | 7-8 | 261-360 | Reading Comprehension, Critical Reasoning |
 
 ### 5. Indiabix (Online Resource)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/5-indiabix-online-resource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/5-indiabix-online-resource-handwritten.svg" alt="Handwritten: 5. Indiabix (Online Resource)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/5-indiabix-online-resource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/5-indiabix-online-resource-diagram.svg" alt="Diagram: 5. Indiabix (Online Resource)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/5-indiabix-online-resource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/5-indiabix-online-resource-sticky.svg" alt="Sticky Note: 5. Indiabix (Online Resource)" width="30%">
-</a>
 
 
 **URL:** https://www.indiabix.com
@@ -4577,16 +3507,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 
 ### 6. GATE Previous Year Papers (Compilations)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/6-gate-previous-year-papers-compilations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/6-gate-previous-year-papers-compilations-handwritten.svg" alt="Handwritten: 6. GATE Previous Year Papers (Compilations)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/6-gate-previous-year-papers-compilations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/6-gate-previous-year-papers-compilations-diagram.svg" alt="Diagram: 6. GATE Previous Year Papers (Compilations)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/6-gate-previous-year-papers-compilations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/6-gate-previous-year-papers-compilations-sticky.svg" alt="Sticky Note: 6. GATE Previous Year Papers (Compilations)" width="30%">
-</a>
-
 
 | Publisher | Description | Best For |
 |-----------|-------------|----------|
@@ -4595,16 +3515,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 | Ace Engineering Academy GATE | Topic-wise previous year questions with analysis | Targeted practice by weak areas |
 
 ### 7. Aptitude Test (Online Resource)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/7-aptitude-test-online-resource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/7-aptitude-test-online-resource-handwritten.svg" alt="Handwritten: 7. Aptitude Test (Online Resource)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/7-aptitude-test-online-resource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/7-aptitude-test-online-resource-diagram.svg" alt="Diagram: 7. Aptitude Test (Online Resource)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/7-aptitude-test-online-resource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/7-aptitude-test-online-resource-sticky.svg" alt="Sticky Note: 7. Aptitude Test (Online Resource)" width="30%">
-</a>
 
 
 **URL:** https://www.aptitude-test.com
@@ -4617,16 +3527,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 
 ### 8. Competitive Exam Apps (Mobile Resources)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/8-competitive-exam-apps-mobile-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/8-competitive-exam-apps-mobile-resources-handwritten.svg" alt="Handwritten: 8. Competitive Exam Apps (Mobile Resources)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/8-competitive-exam-apps-mobile-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/8-competitive-exam-apps-mobile-resources-diagram.svg" alt="Diagram: 8. Competitive Exam Apps (Mobile Resources)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/8-competitive-exam-apps-mobile-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/8-competitive-exam-apps-mobile-resources-sticky.svg" alt="Sticky Note: 8. Competitive Exam Apps (Mobile Resources)" width="30%">
-</a>
-
 
 | App | Features | Platform |
 |-----|----------|----------|
@@ -4635,16 +3535,6 @@ These form a symmetric pattern in a 2ÃƒÆ’Ã¢â‚¬â€�2 grid.
 | Adda247 | Video solutions, topic-wise practice, GATE aptitude focus | Android / iOS |
 
 ### Topic-wise Book Page Cross-Reference Matrix
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/topic-wise-book-page-cross-reference-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/topic-wise-book-page-cross-reference-matrix-handwritten.svg" alt="Handwritten: Topic-wise Book Page Cross-Reference Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/topic-wise-book-page-cross-reference-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/topic-wise-book-page-cross-reference-matrix-diagram.svg" alt="Diagram: Topic-wise Book Page Cross-Reference Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/topic-wise-book-page-cross-reference-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/topic-wise-book-page-cross-reference-matrix-sticky.svg" alt="Sticky Note: Topic-wise Book Page Cross-Reference Matrix" width="30%">
-</a>
 
 
 | GATE Topic | R.S. Aggarwal (Quant) | R.S. Aggarwal (Reasoning) | Arun Sharma (Quant) |
@@ -4689,16 +3579,6 @@ This section provides 50 additional PYQs spanning GATE 2010-2018, covering 20 Qu
 ---
 
 ### Quantitative Aptitude (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q70)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-q51-q70-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-q51-q70-handwritten.svg" alt="Handwritten: Quantitative Aptitude (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q70)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-q51-q70-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-q51-q70-diagram.svg" alt="Diagram: Quantitative Aptitude (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q70)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-q51-q70-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/quantitative-aptitude-q51-q70-sticky.svg" alt="Sticky Note: Quantitative Aptitude (Q51ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q70)" width="30%">
-</a>
 
 
 **Q51. [GATE 2010]**
@@ -4948,16 +3828,6 @@ Bring terms: 7x/10 ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ 9x/10 = ÃƒÂ¢Ã‹�
 
 ### Logical Reasoning (Q71ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q85)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-q71-q85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-q71-q85-handwritten.svg" alt="Handwritten: Logical Reasoning (Q71ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q85)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-q71-q85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-q71-q85-diagram.svg" alt="Diagram: Logical Reasoning (Q71ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q85)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-q71-q85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/logical-reasoning-q71-q85-sticky.svg" alt="Sticky Note: Logical Reasoning (Q71ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q85)" width="30%">
-</a>
-
 
 **Q71. [GATE 2010]**
 If CLOCK is coded as 36153 and WATCH is coded as 52148, how is CLOTH coded?
@@ -5198,16 +4068,6 @@ Angle between hands = |97.5Ãƒâ€šÃ‚Â° ÃƒÂ¢Ã‹â€ Ã¢â‚¬�
 
 ### Verbal Ability (Q86ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q95)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-q86-q95-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-q86-q95-handwritten.svg" alt="Handwritten: Verbal Ability (Q86ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q95)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-q86-q95-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-q86-q95-diagram.svg" alt="Diagram: Verbal Ability (Q86ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q95)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-q86-q95-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/verbal-ability-q86-q95-sticky.svg" alt="Sticky Note: Verbal Ability (Q86ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q95)" width="30%">
-</a>
-
 
 **Q86. [GATE 2010]**
 Choose the synonym of "Benevolent":
@@ -5336,16 +4196,6 @@ So: 2, 1, 3, 4.
 
 ### Spatial Ability (Q96ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-ability-q96-q100-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-ability-q96-q100-handwritten.svg" alt="Handwritten: Spatial Ability (Q96ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-ability-q96-q100-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-ability-q96-q100-diagram.svg" alt="Diagram: Spatial Ability (Q96ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-ability-q96-q100-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/spatial-ability-q96-q100-sticky.svg" alt="Sticky Note: Spatial Ability (Q96ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“Q100)" width="30%">
-</a>
-
 
 **Q96. [GATE 2011]**
 A cube is painted red on all faces and then cut into 64 smaller cubes of equal size. How many small cubes have no painted face?
@@ -5403,16 +4253,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 ---
 
 ### 20 Common GATE Traps in Aptitude
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/20-common-gate-traps-in-aptitude-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/20-common-gate-traps-in-aptitude-handwritten.svg" alt="Handwritten: 20 Common GATE Traps in Aptitude" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/20-common-gate-traps-in-aptitude-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/20-common-gate-traps-in-aptitude-diagram.svg" alt="Diagram: 20 Common GATE Traps in Aptitude" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/20-common-gate-traps-in-aptitude-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/20-common-gate-traps-in-aptitude-sticky.svg" alt="Sticky Note: 20 Common GATE Traps in Aptitude" width="30%">
-</a>
 
 
 #### Trap 1: Profit/Loss Base Confusion
@@ -5510,16 +4350,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 ### Shortcut Techniques by Topic
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/shortcut-techniques-by-topic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/shortcut-techniques-by-topic-handwritten.svg" alt="Handwritten: Shortcut Techniques by Topic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/shortcut-techniques-by-topic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/shortcut-techniques-by-topic-diagram.svg" alt="Diagram: Shortcut Techniques by Topic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/shortcut-techniques-by-topic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/shortcut-techniques-by-topic-sticky.svg" alt="Sticky Note: Shortcut Techniques by Topic" width="30%">
-</a>
-
 
 #### Number System
 - **Unit Digit Cyclicity:** Every digit has a cycle of length 1, 2, or 4 for its powers.
@@ -5596,16 +4426,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 
 ### Complete Formula Reference Table
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/complete-formula-reference-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/complete-formula-reference-table-handwritten.svg" alt="Handwritten: Complete Formula Reference Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/complete-formula-reference-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/complete-formula-reference-table-diagram.svg" alt="Diagram: Complete Formula Reference Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/complete-formula-reference-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/complete-formula-reference-table-sticky.svg" alt="Sticky Note: Complete Formula Reference Table" width="30%">
-</a>
-
 
 | Topic | Formula | Notes |
 |-------|---------|-------|
@@ -5680,16 +4500,6 @@ When a diagonal exists from top-left to bottom-right (\) and we fold along the v
 ---
 
 ### Time Management Strategy
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/time-management-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/time-management-strategy-handwritten.svg" alt="Handwritten: Time Management Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/time-management-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/time-management-strategy-diagram.svg" alt="Diagram: Time Management Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/time-management-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/01-general-aptitude/time-management-strategy-sticky.svg" alt="Sticky Note: Time Management Strategy" width="30%">
-</a>
 
 
 | Section | Number of Qs | Suggested Time (min) | Time per Q (min) |

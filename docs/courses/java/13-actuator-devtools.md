@@ -88,16 +88,6 @@ flowchart LR
 
 ### 1.1 Introduction to Spring Boot Actuator
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-1-introduction-to-spring-boot-actuator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-1-introduction-to-spring-boot-actuator-handwritten.svg" alt="Handwritten: 1.1 Introduction to Spring Boot Actuator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-1-introduction-to-spring-boot-actuator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-1-introduction-to-spring-boot-actuator-diagram.svg" alt="Diagram: 1.1 Introduction to Spring Boot Actuator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-1-introduction-to-spring-boot-actuator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-1-introduction-to-spring-boot-actuator-sticky.svg" alt="Sticky Note: 1.1 Introduction to Spring Boot Actuator" width="30%">
-</a>
-
 
 Spring Boot Actuator is a production-grade tool for monitoring and managing Spring Boot applications. It exposes operational information such as health, metrics, environment properties, thread dumps, and more via HTTP endpoints or JMX MBeans.
 
@@ -119,16 +109,6 @@ implementation 'org.springframework.boot:spring-boot-starter-actuator'
 ```
 
 ### 1.2 Core Actuator Endpoints Reference
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-2-core-actuator-endpoints-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-2-core-actuator-endpoints-reference-handwritten.svg" alt="Handwritten: 1.2 Core Actuator Endpoints Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-2-core-actuator-endpoints-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-2-core-actuator-endpoints-reference-diagram.svg" alt="Diagram: 1.2 Core Actuator Endpoints Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-2-core-actuator-endpoints-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-2-core-actuator-endpoints-reference-sticky.svg" alt="Sticky Note: 1.2 Core Actuator Endpoints Reference" width="30%">
-</a>
 
 
 Actuator provides many built-in endpoints. Here is the complete reference:
@@ -152,16 +132,6 @@ Actuator provides many built-in endpoints. Here is the complete reference:
 | `integrationgraph` | `/actuator/integrationgraph` | Spring Integration graph |
 
 ### 1.3 Enabling and Exposing Endpoints
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-3-enabling-and-exposing-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-3-enabling-and-exposing-endpoints-handwritten.svg" alt="Handwritten: 1.3 Enabling and Exposing Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-3-enabling-and-exposing-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-3-enabling-and-exposing-endpoints-diagram.svg" alt="Diagram: 1.3 Enabling and Exposing Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-3-enabling-and-exposing-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-3-enabling-and-exposing-endpoints-sticky.svg" alt="Sticky Note: 1.3 Enabling and Exposing Endpoints" width="30%">
-</a>
 
 
 By default, only the `health` endpoint is exposed over HTTP. All others are exposed via JMX.
@@ -228,16 +198,6 @@ management:
 ```
 
 ### 1.4 The /actuator/health Endpoint
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-4-the-actuator-health-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-4-the-actuator-health-endpoint-handwritten.svg" alt="Handwritten: 1.4 The /actuator/health Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-4-the-actuator-health-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-4-the-actuator-health-endpoint-diagram.svg" alt="Diagram: 1.4 The /actuator/health Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-4-the-actuator-health-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-4-the-actuator-health-endpoint-sticky.svg" alt="Sticky Note: 1.4 The /actuator/health Endpoint" width="30%">
-</a>
 
 
 The health endpoint aggregates health information from all registered `HealthIndicator` beans.
@@ -461,16 +421,6 @@ public class DatabaseClusterHealthContributor implements CompositeHealthContribu
 
 ### 1.5 The /actuator/info Endpoint
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-5-the-actuator-info-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-5-the-actuator-info-endpoint-handwritten.svg" alt="Handwritten: 1.5 The /actuator/info Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-5-the-actuator-info-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-5-the-actuator-info-endpoint-diagram.svg" alt="Diagram: 1.5 The /actuator/info Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-5-the-actuator-info-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-5-the-actuator-info-endpoint-sticky.svg" alt="Sticky Note: 1.5 The /actuator/info Endpoint" width="30%">
-</a>
-
 
 The info endpoint exposes arbitrary application information, often build metadata and environment details.
 
@@ -582,16 +532,6 @@ public class RuntimeInfoContributor implements InfoContributor {
 ```
 
 ### 1.6 The /actuator/metrics Endpoint
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-6-the-actuator-metrics-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-6-the-actuator-metrics-endpoint-handwritten.svg" alt="Handwritten: 1.6 The /actuator/metrics Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-6-the-actuator-metrics-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-6-the-actuator-metrics-endpoint-diagram.svg" alt="Diagram: 1.6 The /actuator/metrics Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-6-the-actuator-metrics-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-6-the-actuator-metrics-endpoint-sticky.svg" alt="Sticky Note: 1.6 The /actuator/metrics Endpoint" width="30%">
-</a>
 
 
 Metrics provides access to Micrometer application metrics.
@@ -828,16 +768,6 @@ public class QueueMetricsService {
 
 ### 1.7 The /actuator/env Endpoint
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-7-the-actuator-env-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-7-the-actuator-env-endpoint-handwritten.svg" alt="Handwritten: 1.7 The /actuator/env Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-7-the-actuator-env-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-7-the-actuator-env-endpoint-diagram.svg" alt="Diagram: 1.7 The /actuator/env Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-7-the-actuator-env-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-7-the-actuator-env-endpoint-sticky.svg" alt="Sticky Note: 1.7 The /actuator/env Endpoint" width="30%">
-</a>
-
 
 The environment endpoint exposes all property sources and their values.
 
@@ -917,16 +847,6 @@ curl http://localhost:8080/actuator/env/server.port
 
 ### 1.8 The /actuator/beans Endpoint
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-8-the-actuator-beans-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-8-the-actuator-beans-endpoint-handwritten.svg" alt="Handwritten: 1.8 The /actuator/beans Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-8-the-actuator-beans-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-8-the-actuator-beans-endpoint-diagram.svg" alt="Diagram: 1.8 The /actuator/beans Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-8-the-actuator-beans-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-8-the-actuator-beans-endpoint-sticky.svg" alt="Sticky Note: 1.8 The /actuator/beans Endpoint" width="30%">
-</a>
-
 
 Lists all Spring beans with their scope, type, and dependencies.
 
@@ -956,16 +876,6 @@ Response:
 ```
 
 ### 1.9 The /actuator/configprops Endpoint
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-9-the-actuator-configprops-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-9-the-actuator-configprops-endpoint-handwritten.svg" alt="Handwritten: 1.9 The /actuator/configprops Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-9-the-actuator-configprops-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-9-the-actuator-configprops-endpoint-diagram.svg" alt="Diagram: 1.9 The /actuator/configprops Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-9-the-actuator-configprops-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-9-the-actuator-configprops-endpoint-sticky.svg" alt="Sticky Note: 1.9 The /actuator/configprops Endpoint" width="30%">
-</a>
 
 
 Shows all `@ConfigurationProperties` beans with their current values:
@@ -1000,16 +910,6 @@ Output:
 ```
 
 ### 1.10 The /actuator/loggers Endpoint
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-10-the-actuator-loggers-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-10-the-actuator-loggers-endpoint-handwritten.svg" alt="Handwritten: 1.10 The /actuator/loggers Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-10-the-actuator-loggers-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-10-the-actuator-loggers-endpoint-diagram.svg" alt="Diagram: 1.10 The /actuator/loggers Endpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-10-the-actuator-loggers-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-10-the-actuator-loggers-endpoint-sticky.svg" alt="Sticky Note: 1.10 The /actuator/loggers Endpoint" width="30%">
-</a>
 
 
 View and change log levels at runtime → one of the most useful features for debugging production issues.
@@ -1083,16 +983,6 @@ public class LoggingController {
 
 ### 1.11 Endpoint /actuator/shutdown
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-11-endpoint-actuator-shutdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-11-endpoint-actuator-shutdown-handwritten.svg" alt="Handwritten: 1.11 Endpoint /actuator/shutdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-11-endpoint-actuator-shutdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-11-endpoint-actuator-shutdown-diagram.svg" alt="Diagram: 1.11 Endpoint /actuator/shutdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-11-endpoint-actuator-shutdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-11-endpoint-actuator-shutdown-sticky.svg" alt="Sticky Note: 1.11 Endpoint /actuator/shutdown" width="30%">
-</a>
-
 
 Gracefully shutdown the application:
 
@@ -1119,16 +1009,6 @@ In production, secure this endpoint or keep it disabled. Use platform-level (Kub
 
 ### 1.12 Endpoint /actuator/heapdump
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-12-endpoint-actuator-heapdump-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-12-endpoint-actuator-heapdump-handwritten.svg" alt="Handwritten: 1.12 Endpoint /actuator/heapdump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-12-endpoint-actuator-heapdump-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-12-endpoint-actuator-heapdump-diagram.svg" alt="Diagram: 1.12 Endpoint /actuator/heapdump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-12-endpoint-actuator-heapdump-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-12-endpoint-actuator-heapdump-sticky.svg" alt="Sticky Note: 1.12 Endpoint /actuator/heapdump" width="30%">
-</a>
-
 
 Download a JVM heap dump for memory analysis:
 
@@ -1139,16 +1019,6 @@ curl http://localhost:8080/actuator/heapdump -o heapdump.hprof
 The resulting `.hprof` file can be opened with tools like Eclipse MAT, VisualVM, or JProfiler.
 
 ### 1.13 Endpoint /actuator/threaddump
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-13-endpoint-actuator-threaddump-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-13-endpoint-actuator-threaddump-handwritten.svg" alt="Handwritten: 1.13 Endpoint /actuator/threaddump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-13-endpoint-actuator-threaddump-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-13-endpoint-actuator-threaddump-diagram.svg" alt="Diagram: 1.13 Endpoint /actuator/threaddump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-13-endpoint-actuator-threaddump-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-13-endpoint-actuator-threaddump-sticky.svg" alt="Sticky Note: 1.13 Endpoint /actuator/threaddump" width="30%">
-</a>
 
 
 Get a JVM thread dump:
@@ -1194,16 +1064,6 @@ Returns a JSON array of all threads with stack traces, thread state, and lock in
 
 ### 1.14 Endpoint /actuator/mappings
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-14-endpoint-actuator-mappings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-14-endpoint-actuator-mappings-handwritten.svg" alt="Handwritten: 1.14 Endpoint /actuator/mappings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-14-endpoint-actuator-mappings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-14-endpoint-actuator-mappings-diagram.svg" alt="Diagram: 1.14 Endpoint /actuator/mappings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-14-endpoint-actuator-mappings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-14-endpoint-actuator-mappings-sticky.svg" alt="Sticky Note: 1.14 Endpoint /actuator/mappings" width="30%">
-</a>
-
 
 Shows all request mappings in the application:
 
@@ -1235,16 +1095,6 @@ Output:
 ```
 
 ### 1.15 Endpoint /actuator/scheduledtasks
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-15-endpoint-actuator-scheduledtasks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-15-endpoint-actuator-scheduledtasks-handwritten.svg" alt="Handwritten: 1.15 Endpoint /actuator/scheduledtasks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-15-endpoint-actuator-scheduledtasks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-15-endpoint-actuator-scheduledtasks-diagram.svg" alt="Diagram: 1.15 Endpoint /actuator/scheduledtasks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-15-endpoint-actuator-scheduledtasks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-15-endpoint-actuator-scheduledtasks-sticky.svg" alt="Sticky Note: 1.15 Endpoint /actuator/scheduledtasks" width="30%">
-</a>
 
 
 Shows all scheduled tasks with their schedule:
@@ -1280,16 +1130,6 @@ curl http://localhost:8080/actuator/scheduledtasks
 ```
 
 ### 1.16 Custom Actuator Endpoints
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-16-custom-actuator-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-16-custom-actuator-endpoints-handwritten.svg" alt="Handwritten: 1.16 Custom Actuator Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-16-custom-actuator-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-16-custom-actuator-endpoints-diagram.svg" alt="Diagram: 1.16 Custom Actuator Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-16-custom-actuator-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-16-custom-actuator-endpoints-sticky.svg" alt="Sticky Note: 1.16 Custom Actuator Endpoints" width="30%">
-</a>
 
 
 #### 1.16.1 @Endpoint with @ReadOperation
@@ -1432,16 +1272,6 @@ public class MessageStreamEndpoint {
 
 ### 1.17 JMX vs HTTP Endpoint Exposure
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-17-jmx-vs-http-endpoint-exposure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-17-jmx-vs-http-endpoint-exposure-handwritten.svg" alt="Handwritten: 1.17 JMX vs HTTP Endpoint Exposure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-17-jmx-vs-http-endpoint-exposure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-17-jmx-vs-http-endpoint-exposure-diagram.svg" alt="Diagram: 1.17 JMX vs HTTP Endpoint Exposure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-17-jmx-vs-http-endpoint-exposure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-17-jmx-vs-http-endpoint-exposure-sticky.svg" alt="Sticky Note: 1.17 JMX vs HTTP Endpoint Exposure" width="30%">
-</a>
-
 
 #### 1.17.1 JMX Endpoints
 
@@ -1501,16 +1331,6 @@ management:
 ```
 
 ### 1.18 Securing Actuator Endpoints
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-18-securing-actuator-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-18-securing-actuator-endpoints-handwritten.svg" alt="Handwritten: 1.18 Securing Actuator Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-18-securing-actuator-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-18-securing-actuator-endpoints-diagram.svg" alt="Diagram: 1.18 Securing Actuator Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-18-securing-actuator-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-18-securing-actuator-endpoints-sticky.svg" alt="Sticky Note: 1.18 Securing Actuator Endpoints" width="30%">
-</a>
 
 
 #### 1.18.1 With Spring Security
@@ -1590,16 +1410,6 @@ public class RoleBasedActuatorSecurity {
 ```
 
 ### 1.19 Spring Boot DevTools
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-19-spring-boot-devtools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-19-spring-boot-devtools-handwritten.svg" alt="Handwritten: 1.19 Spring Boot DevTools" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-19-spring-boot-devtools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-19-spring-boot-devtools-diagram.svg" alt="Diagram: 1.19 Spring Boot DevTools" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-19-spring-boot-devtools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-19-spring-boot-devtools-sticky.svg" alt="Sticky Note: 1.19 Spring Boot DevTools" width="30%">
-</a>
 
 
 DevTools provides development-time productivity features: automatic restart, live reload, property defaults, remote debugging, and more.
@@ -1805,16 +1615,6 @@ Then set `spring.devtools.remote.url=http://localhost:8080` in your IDE.
 
 ### 1.20 Excluding DevTools from the Production Build
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-20-excluding-devtools-from-the-production-build-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-20-excluding-devtools-from-the-production-build-handwritten.svg" alt="Handwritten: 1.20 Excluding DevTools from the Production Build" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-20-excluding-devtools-from-the-production-build-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-20-excluding-devtools-from-the-production-build-diagram.svg" alt="Diagram: 1.20 Excluding DevTools from the Production Build" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-20-excluding-devtools-from-the-production-build-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-20-excluding-devtools-from-the-production-build-sticky.svg" alt="Sticky Note: 1.20 Excluding DevTools from the Production Build" width="30%">
-</a>
-
 
 Maven:
 
@@ -1831,16 +1631,6 @@ Maven:
 Or ensure it's only in `provided`/`optional` scope as shown earlier.
 
 ### 1.21 Complete Secure Actuator Example
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-21-complete-secure-actuator-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-21-complete-secure-actuator-example-handwritten.svg" alt="Handwritten: 1.21 Complete Secure Actuator Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-21-complete-secure-actuator-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-21-complete-secure-actuator-example-diagram.svg" alt="Diagram: 1.21 Complete Secure Actuator Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-21-complete-secure-actuator-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-21-complete-secure-actuator-example-sticky.svg" alt="Sticky Note: 1.21 Complete Secure Actuator Example" width="30%">
-</a>
 
 
 ```java
@@ -1917,16 +1707,6 @@ public class SecurityConfig {
 
 ### 1.22 Prometheus and Grafana Integration
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-22-prometheus-and-grafana-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-22-prometheus-and-grafana-integration-handwritten.svg" alt="Handwritten: 1.22 Prometheus and Grafana Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-22-prometheus-and-grafana-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-22-prometheus-and-grafana-integration-diagram.svg" alt="Diagram: 1.22 Prometheus and Grafana Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-22-prometheus-and-grafana-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-22-prometheus-and-grafana-integration-sticky.svg" alt="Sticky Note: 1.22 Prometheus and Grafana Integration" width="30%">
-</a>
-
 
 Add the Micrometer Prometheus registry:
 
@@ -1975,16 +1755,6 @@ Grafana dashboard panels:
 
 ### 1.23 Custom Health Aggregator
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-23-custom-health-aggregator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-23-custom-health-aggregator-handwritten.svg" alt="Handwritten: 1.23 Custom Health Aggregator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-23-custom-health-aggregator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-23-custom-health-aggregator-diagram.svg" alt="Diagram: 1.23 Custom Health Aggregator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-23-custom-health-aggregator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-23-custom-health-aggregator-sticky.svg" alt="Sticky Note: 1.23 Custom Health Aggregator" width="30%">
-</a>
-
 
 Define custom health status aggregation:
 
@@ -2026,16 +1796,6 @@ public class CustomStatusAggregator implements StatusAggregator {
 
 ### 1.24 Metrics with @Timed on All Endpoints
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-24-metrics-with-timed-on-all-endpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-24-metrics-with-timed-on-all-endpoints-handwritten.svg" alt="Handwritten: 1.24 Metrics with @Timed on All Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-24-metrics-with-timed-on-all-endpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-24-metrics-with-timed-on-all-endpoints-diagram.svg" alt="Diagram: 1.24 Metrics with @Timed on All Endpoints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-24-metrics-with-timed-on-all-endpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-24-metrics-with-timed-on-all-endpoints-sticky.svg" alt="Sticky Note: 1.24 Metrics with @Timed on All Endpoints" width="30%">
-</a>
-
 
 Enable auto-timing for all Spring MVC endpoints:
 
@@ -2053,16 +1813,6 @@ management:
 
 ### 1.25 Excluding Specific Metrics
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-25-excluding-specific-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-25-excluding-specific-metrics-handwritten.svg" alt="Handwritten: 1.25 Excluding Specific Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-25-excluding-specific-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-25-excluding-specific-metrics-diagram.svg" alt="Diagram: 1.25 Excluding Specific Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-25-excluding-specific-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-25-excluding-specific-metrics-sticky.svg" alt="Sticky Note: 1.25 Excluding Specific Metrics" width="30%">
-</a>
-
 
 ```yaml
 management:
@@ -2074,16 +1824,6 @@ management:
 ```
 
 ### 1.26 Custom Actuator Endpoint with Filtering
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-26-custom-actuator-endpoint-with-filtering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-26-custom-actuator-endpoint-with-filtering-handwritten.svg" alt="Handwritten: 1.26 Custom Actuator Endpoint with Filtering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-26-custom-actuator-endpoint-with-filtering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-26-custom-actuator-endpoint-with-filtering-diagram.svg" alt="Diagram: 1.26 Custom Actuator Endpoint with Filtering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-26-custom-actuator-endpoint-with-filtering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-26-custom-actuator-endpoint-with-filtering-sticky.svg" alt="Sticky Note: 1.26 Custom Actuator Endpoint with Filtering" width="30%">
-</a>
 
 
 ```java
@@ -2153,16 +1893,6 @@ public class CacheManagerEndpoint {
 
 ### 1.27 Complete DevTools Configuration for Development
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-27-complete-devtools-configuration-for-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-27-complete-devtools-configuration-for-development-handwritten.svg" alt="Handwritten: 1.27 Complete DevTools Configuration for Development" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-27-complete-devtools-configuration-for-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-27-complete-devtools-configuration-for-development-diagram.svg" alt="Diagram: 1.27 Complete DevTools Configuration for Development" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-27-complete-devtools-configuration-for-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-27-complete-devtools-configuration-for-development-sticky.svg" alt="Sticky Note: 1.27 Complete DevTools Configuration for Development" width="30%">
-</a>
-
 
 ```yaml
 # application-dev.yml
@@ -2206,16 +1936,6 @@ server:
 
 ### 1.28 Disabling DevTools in Production
 
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-28-disabling-devtools-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-28-disabling-devtools-in-production-handwritten.svg" alt="Handwritten: 1.28 Disabling DevTools in Production" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-28-disabling-devtools-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-28-disabling-devtools-in-production-diagram.svg" alt="Diagram: 1.28 Disabling DevTools in Production" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-28-disabling-devtools-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-28-disabling-devtools-in-production-sticky.svg" alt="Sticky Note: 1.28 Disabling DevTools in Production" width="30%">
-</a>
-
 
 ```yaml
 # application-prod.yml
@@ -2233,16 +1953,6 @@ logging:
 ```
 
 ### 1.29 Best Practices
-
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-29-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-29-best-practices-handwritten.svg" alt="Handwritten: 1.29 Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-29-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-29-best-practices-diagram.svg" alt="Diagram: 1.29 Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/13-actuator-devtools/1-29-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/13-actuator-devtools/1-29-best-practices-sticky.svg" alt="Sticky Note: 1.29 Best Practices" width="30%">
-</a>
 
 
 1. **Always mark DevTools as optional** to exclude from production.

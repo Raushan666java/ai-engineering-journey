@@ -88,16 +88,6 @@ flowchart LR
 
 ### The Core of DevOps
 
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-handwritten.svg" alt="Handwritten: The Core of DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-diagram.svg" alt="Diagram: The Core of DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-core-of-devops-sticky.svg" alt="Sticky Note: The Core of DevOps" width="30%">
-</a>
-
 
 DevOps is not a software tool or a specific job title, but a cultural and professional movement that stresses communication, collaboration, and integration between software developers and information technology operations professionals. It aims to automate the process of software delivery and infrastructure changes. The core principles are often summarized by the CALMS model:
 
@@ -108,16 +98,6 @@ DevOps is not a software tool or a specific job title, but a cultural and profes
 - **Sharing:** Open feedback loops and shared responsibility. Blameless postmortems, cross-functional teams, and transparency create a learning organization.
 
 ### The Historical Evolution
-
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-handwritten.svg" alt="Handwritten: The Historical Evolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-diagram.svg" alt="Diagram: The Historical Evolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-historical-evolution-sticky.svg" alt="Sticky Note: The Historical Evolution" width="30%">
-</a>
 
 
 Traditional software development followed the Waterfall model, where requirements, design, implementation, and testing occurred in linear, isolated phases. This led to long release cycles, late discovery of defects, and misaligned incentives between teams responsible for different phases.
@@ -130,32 +110,12 @@ Traditional software development followed the Waterfall model, where requirement
 
 ### Breaking the Silos
 
-<a href="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-handwritten.svg" alt="Handwritten: Breaking the Silos" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-diagram.svg" alt="Diagram: Breaking the Silos" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/breaking-the-silos-sticky.svg" alt="Sticky Note: Breaking the Silos" width="30%">
-</a>
-
 
 In traditional organizations, developers were incentivized to deliver features quickly, while operations were incentivized to maintain stability (often by resisting change). This created the "Wall of Confusion" — a communication barrier where developers throw code over the wall to operations, who must figure out how to run it.
 
 DevOps aligns these incentives by making both teams responsible for the end-to-end delivery and stability of the service. When both teams share the same goals (frequent, reliable releases), they naturally collaborate to build automation, share knowledge, and improve processes.
 
 ### The Three Ways of DevOps
-
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-handwritten.svg" alt="Handwritten: The Three Ways of DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-diagram.svg" alt="Diagram: The Three Ways of DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/the-three-ways-of-devops-sticky.svg" alt="Sticky Note: The Three Ways of DevOps" width="30%">
-</a>
 
 
 Gene Kim's _The DevOps Handbook_ and _The Phoenix Project_ introduced the Three Ways, which form the philosophical foundation of DevOps:
@@ -181,16 +141,6 @@ Foster a culture that takes risks, learns from failure, and understands that rep
 
 ### DevOps vs Traditional IT
 
-<a href="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-handwritten.svg" alt="Handwritten: DevOps vs Traditional IT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-diagram.svg" alt="Diagram: DevOps vs Traditional IT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-vs-traditional-it-sticky.svg" alt="Sticky Note: DevOps vs Traditional IT" width="30%">
-</a>
-
 
 | Aspect | Traditional IT | DevOps |
 |--------|---------------|--------|
@@ -204,16 +154,6 @@ Foster a culture that takes risks, learns from failure, and understands that rep
 | Communication | Tickets, handoffs | ChatOps, shared dashboards |
 
 ### Value Stream Mapping
-
-<a href="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-handwritten.svg" alt="Handwritten: Value Stream Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-diagram.svg" alt="Diagram: Value Stream Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/value-stream-mapping-sticky.svg" alt="Sticky Note: Value Stream Mapping" width="30%">
-</a>
 
 
 Value stream mapping (VSM) is a Lean management technique that visualizes every step required to deliver software from idea to production. It identifies delays, waste, and bottlenecks.
@@ -247,16 +187,6 @@ flowchart LR
 
 ### DevOps ROI and Maturity Model
 
-<a href="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-handwritten.svg" alt="Handwritten: DevOps ROI and Maturity Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-diagram.svg" alt="Diagram: DevOps ROI and Maturity Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/devops-roi-and-maturity-model-sticky.svg" alt="Sticky Note: DevOps ROI and Maturity Model" width="30%">
-</a>
-
 
 **ROI dimensions:**
 - **Faster time-to-market** — Shorter lead time from commit to production
@@ -277,16 +207,6 @@ flowchart LR
 | 5 | Autonomous | Self-healing systems, automated governance, AI-driven operations |
 
 ### State of DevOps Report Findings
-
-<a href="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-handwritten.svg" alt="Handwritten: State of DevOps Report Findings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-diagram.svg" alt="Diagram: State of DevOps Report Findings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/01-introduction/state-of-devops-report-findings-sticky.svg" alt="Sticky Note: State of DevOps Report Findings" width="30%">
-</a>
 
 
 The annual State of DevOps report by DORA (DevOps Research and Assessment) identifies key capabilities that drive high performance:

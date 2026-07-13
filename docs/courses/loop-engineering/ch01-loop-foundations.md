@@ -64,16 +64,6 @@ After completing this chapter you will be able to:
 
 ### 1. Open vs Closed Control Loops
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/1-open-vs-closed-control-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/1-open-vs-closed-control-loops-handwritten.svg" alt="Handwritten: 1. Open vs Closed Control Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/1-open-vs-closed-control-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/1-open-vs-closed-control-loops-diagram.svg" alt="Diagram: 1. Open vs Closed Control Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/1-open-vs-closed-control-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/1-open-vs-closed-control-loops-sticky.svg" alt="Sticky Note: 1. Open vs Closed Control Loops" width="30%">
-</a>
-
 
 A **control loop** is any system that compares a current state against a desired state and takes action to close the gap. The two fundamental topologies are open and closed.
 
@@ -103,16 +93,6 @@ Closed loops add two things: a **sensor** that measures output and a **comparato
 | Agent analogy | Single-shot LLM call | ReAct / Reflexion |
 
 ### 2. Positive vs Negative Feedback
-
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/2-positive-vs-negative-feedback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/2-positive-vs-negative-feedback-handwritten.svg" alt="Handwritten: 2. Positive vs Negative Feedback" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/2-positive-vs-negative-feedback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/2-positive-vs-negative-feedback-diagram.svg" alt="Diagram: 2. Positive vs Negative Feedback" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/2-positive-vs-negative-feedback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/2-positive-vs-negative-feedback-sticky.svg" alt="Sticky Note: 2. Positive vs Negative Feedback" width="30%">
-</a>
 
 
 Feedback is the signal path from output back to input. Its **sign** determines the loop's behavior.
@@ -145,16 +125,6 @@ adjustment = gain * deviation; // accelerates away from baseline
 
 ### 3. Loop Stability
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/3-loop-stability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/3-loop-stability-handwritten.svg" alt="Handwritten: 3. Loop Stability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/3-loop-stability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/3-loop-stability-diagram.svg" alt="Diagram: 3. Loop Stability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/3-loop-stability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/3-loop-stability-sticky.svg" alt="Sticky Note: 3. Loop Stability" width="30%">
-</a>
-
 
 A stable loop converges to a bounded region around the target. An unstable loop diverges, oscillates, or enters a limit cycle. Stability is governed by **gain** — the amplification factor applied to the error signal per cycle.
 
@@ -185,16 +155,6 @@ In plain English: an agent oscillates when its corrections are strong enough AND
 
 ### 4. Convergence Rate, Error per Cycle, Settling Time
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/4-convergence-rate-error-per-cycle-settling-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/4-convergence-rate-error-per-cycle-settling-time-handwritten.svg" alt="Handwritten: 4. Convergence Rate, Error per Cycle, Settling Time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/4-convergence-rate-error-per-cycle-settling-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/4-convergence-rate-error-per-cycle-settling-time-diagram.svg" alt="Diagram: 4. Convergence Rate, Error per Cycle, Settling Time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/4-convergence-rate-error-per-cycle-settling-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/4-convergence-rate-error-per-cycle-settling-time-sticky.svg" alt="Sticky Note: 4. Convergence Rate, Error per Cycle, Settling Time" width="30%">
-</a>
-
 
 These three numbers describe **how fast** a loop reaches its target.
 
@@ -222,16 +182,6 @@ t_settle = log(threshold / e_0) / log(1 - r)
 With `r = 0.3` and a 5% threshold: `t_settle = log(0.05) / log(0.7) ≈ 8.4` cycles.
 
 ### 5. Measuring Loop Quality
-
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/5-measuring-loop-quality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/5-measuring-loop-quality-handwritten.svg" alt="Handwritten: 5. Measuring Loop Quality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/5-measuring-loop-quality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/5-measuring-loop-quality-diagram.svg" alt="Diagram: 5. Measuring Loop Quality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/5-measuring-loop-quality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch01-loop-foundations/5-measuring-loop-quality-sticky.svg" alt="Sticky Note: 5. Measuring Loop Quality" width="30%">
-</a>
 
 
 Production agent loops need four observability signals:

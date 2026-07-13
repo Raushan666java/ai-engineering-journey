@@ -218,16 +218,6 @@ Strings are immutable -- all methods return a new string.
 
 ### 5.3.1 Searching and Counting
 
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-1-searching-and-counting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-1-searching-and-counting-handwritten.svg" alt="Handwritten: 5.3.1 Searching and Counting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-1-searching-and-counting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-1-searching-and-counting-diagram.svg" alt="Diagram: 5.3.1 Searching and Counting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-1-searching-and-counting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-1-searching-and-counting-sticky.svg" alt="Sticky Note: 5.3.1 Searching and Counting" width="30%">
-</a>
-
 
 ```python
 text = "hello world, hello universe"
@@ -258,16 +248,6 @@ console.log(text.endsWith("verse"));   // true
 ```
 
 ### 5.3.2 Case Manipulation
-
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-2-case-manipulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-2-case-manipulation-handwritten.svg" alt="Handwritten: 5.3.2 Case Manipulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-2-case-manipulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-2-case-manipulation-diagram.svg" alt="Diagram: 5.3.2 Case Manipulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-2-case-manipulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-2-case-manipulation-sticky.svg" alt="Sticky Note: 5.3.2 Case Manipulation" width="30%">
-</a>
 
 
 ```python
@@ -303,16 +283,6 @@ console.log("ß".toLocaleLowerCase("de"));  // ß (no automatic decomposition)
 ```
 
 ### 5.3.3 Stripping and Padding
-
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-3-stripping-and-padding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-3-stripping-and-padding-handwritten.svg" alt="Handwritten: 5.3.3 Stripping and Padding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-3-stripping-and-padding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-3-stripping-and-padding-diagram.svg" alt="Diagram: 5.3.3 Stripping and Padding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-3-stripping-and-padding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-3-stripping-and-padding-sticky.svg" alt="Sticky Note: 5.3.3 Stripping and Padding" width="30%">
-</a>
 
 
 ```python
@@ -353,16 +323,6 @@ function center(str: string, width: number): string {
 
 ### 5.3.4 Splitting and Joining
 
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-4-splitting-and-joining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-4-splitting-and-joining-handwritten.svg" alt="Handwritten: 5.3.4 Splitting and Joining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-4-splitting-and-joining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-4-splitting-and-joining-diagram.svg" alt="Diagram: 5.3.4 Splitting and Joining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-4-splitting-and-joining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-4-splitting-and-joining-sticky.svg" alt="Sticky Note: 5.3.4 Splitting and Joining" width="30%">
-</a>
-
 
 ```python
 csv = "a,b,c,d"
@@ -395,16 +355,6 @@ console.log(parts.join(", "));            // "Python, is, fun"
 
 ### 5.3.5 Replacement
 
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-5-replacement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-5-replacement-handwritten.svg" alt="Handwritten: 5.3.5 Replacement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-5-replacement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-5-replacement-diagram.svg" alt="Diagram: 5.3.5 Replacement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-5-replacement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-5-replacement-sticky.svg" alt="Sticky Note: 5.3.5 Replacement" width="30%">
-</a>
-
 
 ```python
 s = "hello world"
@@ -429,16 +379,6 @@ console.log(s.replace(/l/g, "L").replace(/l/, "L"));
 ```
 
 ### 5.3.6 Character Classification
-
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-6-character-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-6-character-classification-handwritten.svg" alt="Handwritten: 5.3.6 Character Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-6-character-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-6-character-classification-diagram.svg" alt="Diagram: 5.3.6 Character Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-6-character-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-6-character-classification-sticky.svg" alt="Sticky Note: 5.3.6 Character Classification" width="30%">
-</a>
 
 
 ```python
@@ -468,16 +408,6 @@ console.log(/^\s+$/.test("   "));               // isspace
 
 ### 5.3.7 Prefix and Suffix
 
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-7-prefix-and-suffix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-7-prefix-and-suffix-handwritten.svg" alt="Handwritten: 5.3.7 Prefix and Suffix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-7-prefix-and-suffix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-7-prefix-and-suffix-diagram.svg" alt="Diagram: 5.3.7 Prefix and Suffix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-3-7-prefix-and-suffix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-3-7-prefix-and-suffix-sticky.svg" alt="Sticky Note: 5.3.7 Prefix and Suffix" width="30%">
-</a>
-
 
 ```python
 url = "https://python.org"
@@ -501,16 +431,6 @@ console.log(url.replace(/\.org$/, ""));         // https://python
 
 ### 5.4.1 f-strings (Python 3.6+)
 
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-1-f-strings-python-3-6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-1-f-strings-python-3-6-handwritten.svg" alt="Handwritten: 5.4.1 f-strings (Python 3.6+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-1-f-strings-python-3-6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-1-f-strings-python-3-6-diagram.svg" alt="Diagram: 5.4.1 f-strings (Python 3.6+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-1-f-strings-python-3-6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-1-f-strings-python-3-6-sticky.svg" alt="Sticky Note: 5.4.1 f-strings (Python 3.6+)" width="30%">
-</a>
-
 
 f-strings embed expressions inside `{}`:
 
@@ -523,16 +443,6 @@ print(f"{2 * 21}")                     # 42
 ```
 
 ### 5.4.2 Format Specifiers
-
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-2-format-specifiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-2-format-specifiers-handwritten.svg" alt="Handwritten: 5.4.2 Format Specifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-2-format-specifiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-2-format-specifiers-diagram.svg" alt="Diagram: 5.4.2 Format Specifiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-2-format-specifiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-2-format-specifiers-sticky.svg" alt="Sticky Note: 5.4.2 Format Specifiers" width="30%">
-</a>
 
 
 ```python
@@ -594,16 +504,6 @@ console.log(big.toLocaleString());  // "1,234,567"
 
 ### 5.4.3 str.format()
 
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-3-str-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-3-str-format-handwritten.svg" alt="Handwritten: 5.4.3 str.format()" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-3-str-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-3-str-format-diagram.svg" alt="Diagram: 5.4.3 str.format()" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-3-str-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-3-str-format-sticky.svg" alt="Sticky Note: 5.4.3 str.format()" width="30%">
-</a>
-
 
 ```python
 template = "{} x {} = {}"
@@ -617,16 +517,6 @@ print("({0[0]}, {0[1]})".format(point))
 ```
 
 ### 5.4.4 %-formatting (Legacy)
-
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-4-formatting-legacy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-4-formatting-legacy-handwritten.svg" alt="Handwritten: 5.4.4 %-formatting (Legacy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-4-formatting-legacy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-4-formatting-legacy-diagram.svg" alt="Diagram: 5.4.4 %-formatting (Legacy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/5-4-4-formatting-legacy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/5-4-4-formatting-legacy-sticky.svg" alt="Sticky Note: 5.4.4 %-formatting (Legacy)" width="30%">
-</a>
 
 
 ```python
@@ -909,16 +799,6 @@ console.log("hello".endsWith("lo"));    // true
 ```
 
 ### More TypeScript String Patterns
-
-<a href="../../../assets/images/diagrams/python-programming/05-strings/more-typescript-string-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/more-typescript-string-patterns-handwritten.svg" alt="Handwritten: More TypeScript String Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/more-typescript-string-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/more-typescript-string-patterns-diagram.svg" alt="Diagram: More TypeScript String Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/05-strings/more-typescript-string-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/05-strings/more-typescript-string-patterns-sticky.svg" alt="Sticky Note: More TypeScript String Patterns" width="30%">
-</a>
 
 
 ```typescript

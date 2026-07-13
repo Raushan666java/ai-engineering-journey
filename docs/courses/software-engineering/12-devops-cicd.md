@@ -49,21 +49,9 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### What is DevOps?
-
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-handwritten.svg" alt="Handwritten: What is DevOps?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-diagram.svg" alt="Diagram: What is DevOps?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/what-is-devops-sticky.svg" alt="Sticky Note: What is DevOps?" width="30%">
-</a>
-
 
 DevOps is a cultural and technical movement that bridges the gap between development (Dev) and operations (Ops). It emphasises automation, measurement, sharing, and short feedback loops to deliver software faster and more reliably.
 
@@ -85,17 +73,6 @@ graph TD
 
 ### The Three Ways of DevOps (Gene Kim)
 
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-handwritten.svg" alt="Handwritten: The Three Ways of DevOps (Gene Kim)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-diagram.svg" alt="Diagram: The Three Ways of DevOps (Gene Kim)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-three-ways-of-devops-gene-kim-sticky.svg" alt="Sticky Note: The Three Ways of DevOps (Gene Kim)" width="30%">
-</a>
-
-
 | Way | Principle | Practice | Anti-Pattern |
 |-----|-----------|----------|--------------|
 | **First Way** | Systems thinking (flow) | Small batches, CI/CD, trunk-based development | Handoffs, large batches, silos |
@@ -103,17 +80,6 @@ graph TD
 | **Third Way** | Culture of experimentation | Chaos engineering, fault injection, continuous improvement | Fear of change, risk aversion |
 
 ### The CALMS Framework
-
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-handwritten.svg" alt="Handwritten: The CALMS Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-diagram.svg" alt="Diagram: The CALMS Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/the-calms-framework-sticky.svg" alt="Sticky Note: The CALMS Framework" width="30%">
-</a>
-
 
 CALMS is a framework for assessing DevOps adoption across five dimensions:
 
@@ -135,17 +101,6 @@ CALMS is a framework for assessing DevOps adoption across five dimensions:
 | **Time to Restore Service** | < 1 hour | < 1 day | < 1 day | > 1 week |
 
 ### Continuous Integration (CI)
-
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-handwritten.svg" alt="Handwritten: Continuous Integration (CI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-diagram.svg" alt="Diagram: Continuous Integration (CI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-integration-ci-sticky.svg" alt="Sticky Note: Continuous Integration (CI)" width="30%">
-</a>
-
 
 CI is the practice of merging all developer code into a shared mainline multiple times per day, with each merge verified by an automated build and test suite.
 
@@ -187,17 +142,6 @@ graph LR
 
 ### Continuous Delivery (CD)
 
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-handwritten.svg" alt="Handwritten: Continuous Delivery (CD)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-diagram.svg" alt="Diagram: Continuous Delivery (CD)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/continuous-delivery-cd-sticky.svg" alt="Sticky Note: Continuous Delivery (CD)" width="30%">
-</a>
-
-
 Continuous Delivery ensures that every change passing all tests is potentially releasable to production. Continuous Deployment goes further — every passing change is automatically deployed.
 
 | Practice | Frequency | Approval Gate | Risk Level |
@@ -223,17 +167,6 @@ graph LR
 
 ### Infrastructure as Code (IaC)
 
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-handwritten.svg" alt="Handwritten: Infrastructure as Code (IaC)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-diagram.svg" alt="Diagram: Infrastructure as Code (IaC)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/infrastructure-as-code-iac-sticky.svg" alt="Sticky Note: Infrastructure as Code (IaC)" width="30%">
-</a>
-
-
 IaC manages infrastructure (networks, VMs, load balancers) through machine-readable definition files rather than manual configuration.
 
 | Tool | Language | State Management | Best For | Type |
@@ -254,17 +187,6 @@ IaC manages infrastructure (networks, VMs, load balancers) through machine-reada
 - **Testable:** Infrastructure can be validated in CI (Terratest, tflint)
 
 ### Containerisation
-
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-handwritten.svg" alt="Handwritten: Containerisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-diagram.svg" alt="Diagram: Containerisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/containerisation-sticky.svg" alt="Sticky Note: Containerisation" width="30%">
-</a>
-
 
 Containers package an application with all its dependencies into a single, portable unit.
 
@@ -308,17 +230,6 @@ Multi-stage:  120 MB (90% reduction)
 
 ### Container Orchestration (Kubernetes)
 
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-handwritten.svg" alt="Handwritten: Container Orchestration (Kubernetes)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-diagram.svg" alt="Diagram: Container Orchestration (Kubernetes)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/container-orchestration-kubernetes-sticky.svg" alt="Sticky Note: Container Orchestration (Kubernetes)" width="30%">
-</a>
-
-
 Kubernetes is an open-source container orchestration platform.
 
 | Resource | Purpose | Example |
@@ -354,17 +265,6 @@ graph TD
 
 ### Deployment Strategies
 
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-handwritten.svg" alt="Handwritten: Deployment Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-diagram.svg" alt="Diagram: Deployment Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/deployment-strategies-sticky.svg" alt="Sticky Note: Deployment Strategies" width="30%">
-</a>
-
-
 | Strategy | Description | Downtime | Rollback | Cost | Complexity |
 |----------|-------------|----------|----------|------|------------|
 | **Recreate** | Terminate old, deploy new | Yes | Re-deploy old | Low | Low |
@@ -391,17 +291,6 @@ graph LR
 ```
 
 ### Monitoring and Observability
-
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-handwritten.svg" alt="Handwritten: Monitoring and Observability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-diagram.svg" alt="Diagram: Monitoring and Observability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/monitoring-and-observability-sticky.svg" alt="Sticky Note: Monitoring and Observability" width="30%">
-</a>
-
 
 **Observability pillars:**
 
@@ -433,17 +322,6 @@ graph LR
 | **Error Budget** | Allowed time of SLO violation | 100% - SLO = 0.1% (43.2 min/month) |
 
 ### Security in DevOps (DevSecOps)
-
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-handwritten.svg" alt="Handwritten: Security in DevOps (DevSecOps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-diagram.svg" alt="Diagram: Security in DevOps (DevSecOps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/12-devops-cicd/security-in-devops-devsecops-sticky.svg" alt="Sticky Note: Security in DevOps (DevSecOps)" width="30%">
-</a>
-
 
 Shift security left — integrate security into every stage of DevOps:
 

@@ -99,16 +99,6 @@ flowchart LR
 
 ### Doubly Linked List — Node Structure
 
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/doubly-linked-list-node-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/doubly-linked-list-node-structure-handwritten.svg" alt="Handwritten: Doubly Linked List — Node Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/doubly-linked-list-node-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/doubly-linked-list-node-structure-diagram.svg" alt="Diagram: Doubly Linked List — Node Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/doubly-linked-list-node-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/doubly-linked-list-node-structure-sticky.svg" alt="Sticky Note: Doubly Linked List — Node Structure" width="30%">
-</a>
-
 
 Each node in a doubly linked list has three components:
 
@@ -129,16 +119,6 @@ nullptr <- [prev|data|next] <-> [prev|data|next] <-> [prev|data|next] -> nullptr
 
 ### Advantages over Singly Linked List
 
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/advantages-over-singly-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/advantages-over-singly-linked-list-handwritten.svg" alt="Handwritten: Advantages over Singly Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/advantages-over-singly-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/advantages-over-singly-linked-list-diagram.svg" alt="Diagram: Advantages over Singly Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/advantages-over-singly-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/advantages-over-singly-linked-list-sticky.svg" alt="Sticky Note: Advantages over Singly Linked List" width="30%">
-</a>
-
 
 - **Delete at tail:** $O(1)$ instead of $O(n)$ — `tail.prev` gives direct access to the new tail.
 - **Delete a given node:** $O(1)$ if the node pointer is known — no need to find the predecessor.
@@ -147,30 +127,10 @@ nullptr <- [prev|data|next] <-> [prev|data|next] <-> [prev|data|next] -> nullptr
 
 ### Disadvantage
 
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/disadvantage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/disadvantage-handwritten.svg" alt="Handwritten: Disadvantage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/disadvantage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/disadvantage-diagram.svg" alt="Diagram: Disadvantage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/disadvantage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/disadvantage-sticky.svg" alt="Sticky Note: Disadvantage" width="30%">
-</a>
-
 
 Each node requires one extra pointer (8 bytes on 64-bit systems). For 1 million nodes, that is ~8 MB extra memory vs a singly linked list.
 
 ### Circular Linked List
-
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/circular-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/circular-linked-list-handwritten.svg" alt="Handwritten: Circular Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/circular-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/circular-linked-list-diagram.svg" alt="Diagram: Circular Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/circular-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/04-doubly-linked-list/circular-linked-list-sticky.svg" alt="Sticky Note: Circular Linked List" width="30%">
-</a>
 
 
 The last node points back to the first node (singly circular) or the first node's `prev` points to the last (doubly circular). Useful for **round-robin scheduling**, cyclic buffers, and turn-based games where traversal loops indefinitely.

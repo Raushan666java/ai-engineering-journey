@@ -55,16 +55,6 @@ By the end of this chapter, you will be able to:
 
 ### 5.1 Constitutional AI
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-handwritten.svg" alt="Handwritten: 5.1 Constitutional AI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-diagram.svg" alt="Diagram: 5.1 Constitutional AI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-1-constitutional-ai-sticky.svg" alt="Sticky Note: 5.1 Constitutional AI" width="30%">
-</a>
-
 
 Constitutional AI (CAI) replaces expensive human feedback with a written constitution: a set of natural-language principles the model uses to critique and revise its own outputs. The core loop has three phases:
 
@@ -89,16 +79,6 @@ The process can iterate: a revised response may still violate a subtler principl
 Critique and revision share the same underlying LLM, making CAI a pure self-supervision loop. The constitution is immutable during inference but can be updated between training cycles.
 
 ### 5.2 RLAIF / RLHF
-
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-handwritten.svg" alt="Handwritten: 5.2 RLAIF / RLHF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-diagram.svg" alt="Diagram: 5.2 RLAIF / RLHF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-2-rlaif-rlhf-sticky.svg" alt="Sticky Note: 5.2 RLAIF / RLHF" width="30%">
-</a>
 
 
 Reinforcement Learning from Human (RLHF) or AI Feedback (RLAIF) follows a three-stage pipeline:
@@ -130,16 +110,6 @@ RLAIF scales preference labeling to arbitrary volumes since the judge is an LLM 
 
 ### 5.3 STaR / ReST
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-handwritten.svg" alt="Handwritten: 5.3 STaR / ReST" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-diagram.svg" alt="Diagram: 5.3 STaR / ReST" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-3-star-rest-sticky.svg" alt="Sticky Note: 5.3 STaR / ReST" width="30%">
-</a>
-
 
 STaR (Self-Taught Reasoner) and ReST (Reinforced Self-Training) are bootstrap loops that generate training data from the model itself.
 
@@ -168,16 +138,6 @@ STaR (Self-Taught Reasoner) and ReST (Reinforced Self-Training) are bootstrap lo
 These loops close the gap between generation quality and training signal without external annotation.
 
 ### 5.4 Direct Preference Optimization
-
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-handwritten.svg" alt="Handwritten: 5.4 Direct Preference Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-diagram.svg" alt="Diagram: 5.4 Direct Preference Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch05-self-improvement-loops/5-4-direct-preference-optimization-sticky.svg" alt="Sticky Note: 5.4 Direct Preference Optimization" width="30%">
-</a>
 
 
 DPO simplifies RLHF by eliminating the separate reward model. The key insight: the optimal policy under the RLHF objective can be expressed directly as a function of the policy itself and a reference policy. DPO optimizes:

@@ -80,16 +80,6 @@ flowchart LR
 
 ### 6.1 Advanced Puzzles
 
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-1-advanced-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-1-advanced-puzzles-handwritten.svg" alt="Handwritten: 6.1 Advanced Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-1-advanced-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-1-advanced-puzzles-diagram.svg" alt="Diagram: 6.1 Advanced Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-1-advanced-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-1-advanced-puzzles-sticky.svg" alt="Sticky Note: 6.1 Advanced Puzzles" width="30%">
-</a>
-
 
 **Types of Puzzles:**
 
@@ -158,16 +148,6 @@ P --- M    (P married to M)
 
 ### 6.2 Multi-Statement Syllogisms
 
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-2-multi-statement-syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-2-multi-statement-syllogisms-handwritten.svg" alt="Handwritten: 6.2 Multi-Statement Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-2-multi-statement-syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-2-multi-statement-syllogisms-diagram.svg" alt="Diagram: 6.2 Multi-Statement Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-2-multi-statement-syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-2-multi-statement-syllogisms-sticky.svg" alt="Sticky Note: 6.2 Multi-Statement Syllogisms" width="30%">
-</a>
-
 
 Syllogisms with 3-5 statements followed by multiple conclusions. Determine which conclusions follow.
 
@@ -195,16 +175,6 @@ Draw overlapping circles for each category. Shade regions that must be empty. Pu
 **Complementary Pair:** "Some A are B" and "Some A are not B" ? an "either-or" conclusion where one must be true.
 
 ### 6.3 Critical Reasoning
-
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-3-critical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-3-critical-reasoning-handwritten.svg" alt="Handwritten: 6.3 Critical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-3-critical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-3-critical-reasoning-diagram.svg" alt="Diagram: 6.3 Critical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-3-critical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-3-critical-reasoning-sticky.svg" alt="Sticky Note: 6.3 Critical Reasoning" width="30%">
-</a>
 
 
 **Argument Structure:**
@@ -247,16 +217,6 @@ Draw overlapping circles for each category. Shade regions that must be empty. Pu
 
 ### 6.4 Input-Output Machines
 
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-4-input-output-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-4-input-output-machines-handwritten.svg" alt="Handwritten: 6.4 Input-Output Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-4-input-output-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-4-input-output-machines-diagram.svg" alt="Diagram: 6.4 Input-Output Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-4-input-output-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-4-input-output-machines-sticky.svg" alt="Sticky Note: 6.4 Input-Output Machines" width="30%">
-</a>
-
 
 A machine transforms input words/numbers step by step through a fixed rule until output is produced.
 
@@ -280,16 +240,6 @@ Step II: 18 27 42 95 63 51 (second smallest moved to second position)
 ...
 
 ### 6.5 Cause-Effect
-
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-5-cause-effect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-5-cause-effect-handwritten.svg" alt="Handwritten: 6.5 Cause-Effect" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-5-cause-effect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-5-cause-effect-diagram.svg" alt="Diagram: 6.5 Cause-Effect" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-5-cause-effect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-5-cause-effect-sticky.svg" alt="Sticky Note: 6.5 Cause-Effect" width="30%">
-</a>
 
 
 Determine whether one event is the cause of another.
@@ -315,16 +265,6 @@ Determine whether one event is the cause of another.
 
 ### 6.6 Statement-Assumption
 
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-6-statement-assumption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-6-statement-assumption-handwritten.svg" alt="Handwritten: 6.6 Statement-Assumption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-6-statement-assumption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-6-statement-assumption-diagram.svg" alt="Diagram: 6.6 Statement-Assumption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-6-statement-assumption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-6-statement-assumption-sticky.svg" alt="Sticky Note: 6.6 Statement-Assumption" width="30%">
-</a>
-
 
 Identify the implicit assumption (unstated premise) in a given statement.
 
@@ -347,16 +287,6 @@ Assumption: "Renewable energy currently receives insufficient investment."
 2. If negation breaks the argument, it is a necessary assumption.
 
 ### 6.7 Course of Action
-
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-7-course-of-action-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-7-course-of-action-handwritten.svg" alt="Handwritten: 6.7 Course of Action" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-7-course-of-action-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-7-course-of-action-diagram.svg" alt="Diagram: 6.7 Course of Action" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-7-course-of-action-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/06-advanced-reasoning/6-7-course-of-action-sticky.svg" alt="Sticky Note: 6.7 Course of Action" width="30%">
-</a>
 
 
 A problem situation is described, followed by proposed courses of action. Determine which to take.

@@ -94,16 +94,6 @@ flowchart TD
 
 ### 2.1 Request Lifecycle
 
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-1-request-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-1-request-lifecycle-handwritten.svg" alt="Handwritten: 2.1 Request Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-1-request-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-1-request-lifecycle-diagram.svg" alt="Diagram: 2.1 Request Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-1-request-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-1-request-lifecycle-sticky.svg" alt="Sticky Note: 2.1 Request Lifecycle" width="30%">
-</a>
-
 
 Every HTTP request follows a precise path through the framework.
 
@@ -150,16 +140,6 @@ protected $middlewareGroups = [
 
 ### 2.2 Service Container
 
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-2-service-container-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-2-service-container-handwritten.svg" alt="Handwritten: 2.2 Service Container" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-2-service-container-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-2-service-container-diagram.svg" alt="Diagram: 2.2 Service Container" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-2-service-container-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-2-service-container-sticky.svg" alt="Sticky Note: 2.2 Service Container" width="30%">
-</a>
-
 
 The service container is Laravel's dependency injection engine:
 
@@ -196,16 +176,6 @@ class InvoiceController extends Controller
 No binding needed. The container reflects on `InvoiceService`, resolves its own dependencies, and returns a fully constructed object. Any class that does not depend on interface bindings or unresolved primitives can be auto-resolved.
 
 ### 2.3 Routing
-
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-3-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-3-routing-handwritten.svg" alt="Handwritten: 2.3 Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-3-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-3-routing-diagram.svg" alt="Diagram: 2.3 Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-3-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-3-routing-sticky.svg" alt="Sticky Note: 2.3 Routing" width="30%">
-</a>
 
 
 **Basic routes**:
@@ -296,16 +266,6 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 
 ### 2.4 Middleware
 
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-4-middleware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-4-middleware-handwritten.svg" alt="Handwritten: 2.4 Middleware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-4-middleware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-4-middleware-diagram.svg" alt="Diagram: 2.4 Middleware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-4-middleware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-4-middleware-sticky.svg" alt="Sticky Note: 2.4 Middleware" width="30%">
-</a>
-
 
 Middleware filters HTTP requests entering and responses leaving your application.
 
@@ -384,16 +344,6 @@ class TerminateAfterResponse
 
 ### 2.5 Controllers
 
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-5-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-5-controllers-handwritten.svg" alt="Handwritten: 2.5 Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-5-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-5-controllers-diagram.svg" alt="Diagram: 2.5 Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-5-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-5-controllers-sticky.svg" alt="Sticky Note: 2.5 Controllers" width="30%">
-</a>
-
 
 Controllers group related route handling into organized classes.
 
@@ -468,16 +418,6 @@ class UserController extends Controller
 
 ### 2.6 Route Model Binding
 
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-6-route-model-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-6-route-model-binding-handwritten.svg" alt="Handwritten: 2.6 Route Model Binding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-6-route-model-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-6-route-model-binding-diagram.svg" alt="Diagram: 2.6 Route Model Binding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-6-route-model-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-6-route-model-binding-sticky.svg" alt="Sticky Note: 2.6 Route Model Binding" width="30%">
-</a>
-
 
 Route model binding automatically fetches Eloquent models from route parameters.
 
@@ -525,16 +465,6 @@ Route::get('/users/{user}', [UserController::class, 'show'])->withTrashed();
 ```
 
 ### 2.7 Request and Response
-
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-7-request-and-response-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-7-request-and-response-handwritten.svg" alt="Handwritten: 2.7 Request and Response" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-7-request-and-response-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-7-request-and-response-diagram.svg" alt="Diagram: 2.7 Request and Response" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-7-request-and-response-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-7-request-and-response-sticky.svg" alt="Sticky Note: 2.7 Request and Response" width="30%">
-</a>
 
 
 **The Request object**:
@@ -604,16 +534,6 @@ Response::macro('apiError', function (string $message, int $status = 400) {
 
 ### 2.8 CSRF Protection
 
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-8-csrf-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-8-csrf-protection-handwritten.svg" alt="Handwritten: 2.8 CSRF Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-8-csrf-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-8-csrf-protection-diagram.svg" alt="Diagram: 2.8 CSRF Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-8-csrf-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-8-csrf-protection-sticky.svg" alt="Sticky Note: 2.8 CSRF Protection" width="30%">
-</a>
-
 
 Laravel automatically protects state-changing requests (POST, PUT, PATCH, DELETE) against cross-site request forgery. Every form must include the CSRF token:
 
@@ -646,16 +566,6 @@ protected $except = [
 ```
 
 ### 2.9 Full CRUD Example
-
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-9-full-crud-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-9-full-crud-example-handwritten.svg" alt="Handwritten: 2.9 Full CRUD Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-9-full-crud-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-9-full-crud-example-diagram.svg" alt="Diagram: 2.9 Full CRUD Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/02-architecture-routing/2-9-full-crud-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/02-architecture-routing/2-9-full-crud-example-sticky.svg" alt="Sticky Note: 2.9 Full CRUD Example" width="30%">
-</a>
 
 
 ```php

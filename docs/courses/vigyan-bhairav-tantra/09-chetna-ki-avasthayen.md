@@ -5,7 +5,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/hero.svg" target="_blank" rel="noopener">
@@ -110,17 +109,6 @@ flowchart TB
 
 ### ओशो की मछली वाली कहानी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो की मछली वाली कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो की मछली वाली कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो की मछली वाली कहानी" width="30%">
-</a>
-
-
 एक बार की बात है। एक छोटी मछली ने अपनी माँ से पूछा — "माँ, मैं समुद्र के बारे में बहुत सुनती हूँ। वह कहाँ है? मैं उसे देखना चाहती हूँ।"
 
 माँ मछली मुस्कुराई। उसने कहा — "बेटी, तू समुद्र में ही है। जहाँ भी जाती है, समुद्र ही है। तू समुद्र में तैर रही है, समुद्र में साँस ले रही है, समुद्र में खेल रही है — और तू पूछ रही है कि समुद्र कहाँ है?"
@@ -135,17 +123,6 @@ flowchart TB
 ## १. जाग्रत अवस्था — ओशो की नज़र
 
 ### "जाग्रत भी एक सपना है"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "जाग्रत भी एक सपना है"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "जाग्रत भी एक सपना है"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "जाग्रत भी एक सपना है"" width="30%">
-</a>
-
 
 > **ओशो वाणी:**
 > *"जब मैं कहता हूँ कि जाग्रत भी एक सपना है, तो तुम चौंक जाते हो। लेकिन सोचो — जाग्रत में तुम जो देखते हो, वह तुम्हारी इंद्रियों का अनुवाद है। रंग वास्तविक नहीं हैं — वे तरंगें हैं जिन्हें तुम्हारा मस्तिष्क रंग में बदल देता है। ध्वनि वास्तविक नहीं है — वह हवा में कंपन है। तुम एक अनुवादित संसार में जी रहे हो। और अनुवाद कभी भी मूल नहीं होता। तुम्हारा तथाकथित जाग्रत सिर्फ एक सुसंगत सपना है।"*
@@ -162,17 +139,6 @@ flowchart TB
 
 ### जाग्रत के लिए ओशो की तकनीक
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: जाग्रत के लिए ओशो की तकनीक" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: जाग्रत के लिए ओशो की तकनीक" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: जाग्रत के लिए ओशो की तकनीक" width="30%">
-</a>
-
-
 ओशो कहते हैं — जाग्रत में ही ध्यान शुरू होता है। तुम्हें जाग्रत को ही समाधि बनाना है।
 
 **विधि — ओशो की "डबल अवेयरनेस" (दोहरी चेतना):**
@@ -186,17 +152,6 @@ flowchart TB
 > *"जाग्रत में समाधि का अर्थ यह नहीं कि तुम आँखें बंद करके बैठ जाओ। नहीं। इसका अर्थ है — बाजार में चलते हुए, काम करते हुए, बातें करते हुए — भीतर एक कोने में कोई जागा हुआ है, जो सब देख रहा है। यही सच्ची समाधि है। यही जीवन्मुक्ति है।"*
 
 ### एक ज़ेन कहानी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: एक ज़ेन कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी" width="30%">
-</a>
-
 
 एक ज़ेन गुरु से किसी ने पूछा — "गुरुजी, आप कैसे ध्यान करते हैं?"
 
@@ -228,34 +183,12 @@ sequenceDiagram
 
 ### "स्वप्न से भागो मत, स्वप्न में जागो"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "स्वप्न से भागो मत, स्वप्न में जागो"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"स्वप्न तुम्हारे अचेतन मन का दर्पण है। जाग्रत में तुम जो दबाते हो, वह स्वप्न में प्रकट होता है। स्वप्न कोई बीमारी नहीं है — यह चेतना का एक और आयाम है। और यदि तुम स्वप्न में जाग सको, तो तुम मृत्यु को भी जीत सकते हो।"*
 
 ओशो स्वप्न को बहुत महत्व देते हैं। फ्रायड ने स्वप्न को दबी हुई इच्छाओं का प्रतीक माना — ओशो उससे भी आगे जाते हैं। वे कहते हैं, स्वप्न चेतना का एक द्वार है। यदि तुम स्वप्न में जागरूक हो सको, तो तुम उस द्वार को पार कर सकते हो।
 
 ### स्वप्न-योग — ओशो की विधि
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: स्वप्न-योग — ओशो की विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: स्वप्न-योग — ओशो की विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: स्वप्न-योग — ओशो की विधि" width="30%">
-</a>
-
 
 **विधि — ओशो की स्वप्न-जागरूकता:**
 
@@ -267,17 +200,6 @@ sequenceDiagram
 ६. देखते-देखते स्वप्न विलीन हो जाएगा, और शुद्ध चैतन्य प्रकट होगा।
 
 ### ओशो और फ्रायड — एक तुलना
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो और फ्रायड — एक तुलना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो और फ्रायड — एक तुलना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो और फ्रायड — एक तुलना" width="30%">
-</a>
-
 
 | विषय | फ्रायड | ओशो |
 |------|--------|------|
@@ -296,17 +218,6 @@ sequenceDiagram
 
 ### "सुषुप्ति तुरीय का द्वार है"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "सुषुप्ति तुरीय का द्वार है"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "सुषुप्ति तुरीय का द्वार है"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "सुषुप्ति तुरीय का द्वार है"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"सुषुप्ति — गहन निद्रा — तुरीय के सबसे निकट है। इतना निकट कि यदि तुम सुषुप्ति में जागरूक हो सको, तो तुरीय तुम्हारे हाथ में है। लेकिन यहीं सबसे बड़ी कठिनाई है — तुम जागरूकता को खो देते हो। तुम चेतना के गर्भ में समा जाते हो, और भूल जाते हो कि तुम कौन हो।"*
 
@@ -321,17 +232,6 @@ sequenceDiagram
 | तुरीय से अंतर | सुषुप्ति में चेतना है, लेकिन उसका बोध नहीं |
 
 ### सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: सुषुप्ति के लिए ओशो की तकनीक — "चेतन निद्रा"" width="30%">
-</a>
-
 
 **विधि:**
 
@@ -362,17 +262,6 @@ flowchart LR
 
 ### एक सूफी कहानी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: एक सूफी कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: एक सूफी कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: एक सूफी कहानी" width="30%">
-</a>
-
-
 एक सूफी फकीर से किसी ने पूछा — "आप सोते कैसे हैं?"
 
 फकीर ने कहा — "मैं सोता नहीं। मैं केवल आँखें बंद करता हूँ और अपने शरीर को आराम करने देता हूँ। लेकिन मैं जाग रहता हूँ।"
@@ -386,17 +275,6 @@ flowchart LR
 ## ४. तुरीय — ओशो का क्रांतिकारी दृष्टिकोण
 
 ### "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "तुरीय कोई अवस्था नहीं है — यह तुम्हारी पहचान है"" width="30%">
-</a>
-
 
 यह ओशो का सबसे महत्वपूर्ण संदेश है। वे कहते हैं —
 
@@ -429,17 +307,6 @@ stateDiagram-v2
 
 ### ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो की "तुरीय तुम्हारा जन्मसिद्ध अधिकार है" — पूरा प्रवचन" width="30%">
-</a>
-
-
 यह ओशो का सबसे प्रसिद्ध कथन है। वे कहते हैं —
 
 > **ओशो वाणी:**
@@ -448,17 +315,6 @@ stateDiagram-v2
 > *— कुछ मत करो। बस देखो। यही एकमात्र ध्यान है। देखो कि तुम पहले से ही वहाँ हो।"*
 
 ### ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: ओशो का निष्कर्ष — ११२ तकनीकें किसलिए?" width="30%">
-</a>
-
 
 यदि तुरीय पहले से ही है, तो ११२ तकनीकों की जरूरत क्यों?
 
@@ -470,17 +326,6 @@ stateDiagram-v2
 ## तुरीयातीत — ओशो की व्याख्या
 
 ### "अवस्था से परे की अवस्था"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: "अवस्था से परे की अवस्था"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: "अवस्था से परे की अवस्था"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: "अवस्था से परे की अवस्था"" width="30%">
-</a>
-
 
 > **ओशो वाणी:**
 > *"तुरीयातीत — चौथी से परे। पर क्या चौथी से परे कुछ है? हाँ, है। लेकिन वह कोई पाँचवी अवस्था नहीं है। तुरीयातीत का अर्थ है — सभी अवस्थाओं में एक साथ जीना। जाग्रत में रहते हुए स्वप्न को जानना, स्वप्न में रहते हुए सुषुप्ति को जानना, और तीनों में तुरीय को जानना। यह पूर्ण चेतना है — समग्र जागरूकता।"*
@@ -517,17 +362,6 @@ flowchart TB
 
 ### चरण १: शरीर को देखो
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण १: शरीर को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण १: शरीर को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण १: शरीर को देखो" width="30%">
-</a>
-
-
 एक कुर्सी पर आराम से बैठो। आँखें बंद करो। अब अपने शरीर को देखो — जैसे कोई और देख रहा हो।
 
 - पैरों में क्या हो रहा है? कोई तनाव है? कोई दर्द है? बस देखो।
@@ -539,17 +373,6 @@ flowchart TB
 
 ### चरण २: विचारों को देखो
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण २: विचारों को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण २: विचारों को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण २: विचारों को देखो" width="30%">
-</a>
-
-
 अब विचारों को देखो। विचार आते हैं, जाते हैं — तुम केवल देख रहे हो।
 
 - विचार बादलों की तरह हैं — तुम आकाश हो।
@@ -560,17 +383,6 @@ flowchart TB
 
 ### चरण ३: भावनाओं को देखो
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण ३: भावनाओं को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण ३: भावनाओं को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण ३: भावनाओं को देखो" width="30%">
-</a>
-
-
 अब भावनाओं को देखो। क्रोध आता है, प्रेम आता है, उदासी आती है — बस देखो।
 
 - भावनाएँ शरीर में कहाँ महसूस होती हैं? छाती में? पेट में? गले में?
@@ -580,17 +392,6 @@ flowchart TB
 तुम भावनाओं को देख रहे हो — तुम भावना नहीं हो।
 
 ### चरण ४: देखने वाले को देखो
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: चरण ४: देखने वाले को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: चरण ४: देखने वाले को देखो" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: चरण ४: देखने वाले को देखो" width="30%">
-</a>
-
 
 अब — इस सबको देखने वाला कौन है?
 
@@ -1244,17 +1045,6 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास १: ओशो का साक्षी ध्यान — ७ दिन का अभ्यास" width="30%">
-</a>
-
-
 एक सप्ताह तक प्रतिदिन ओशो की साक्षी ध्यान विधि का अभ्यास करें:
 
 - **दिन १-२:** केवल शरीर को देखें (१५ मिनट)
@@ -1266,61 +1056,17 @@ demonstrateOshoWitnessTracker();
 
 ### अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास २: डबल अवेयरनेस — पूरे दिन का अभ्यास" width="30%">
-</a>
-
-
 एक पूरे दिन — सुबह उठने से लेकर रात सोने तक — डबल अवेयरनेस का अभ्यास करें। हर घंटे एक पल रुकें और पूछें — "क्या मैं साक्षी हूँ या क्रिया में खो गया हूँ?"
 
 ### अभ्यास ३: ओशो की कहानी पर ध्यान
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ३: ओशो की कहानी पर ध्यान" width="30%">
-</a>
-
 
 ओशो की मछली वाली कहानी को पढ़ें और उस पर ध्यान करें। १० मिनट तक बैठकर इस भावना में रहें — "मैं पहले से ही वहाँ हूँ। मैं वही हूँ जिसे मैं खोज रहा हूँ।" कोई प्रयास न करें — केवल इस भावना में रहें।
 
 ### अभ्यास ४: चेतन निद्रा
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ४: चेतन निद्रा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ४: चेतन निद्रा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ४: चेतन निद्रा" width="30%">
-</a>
-
-
 रात को सोने से पहले चेतन निद्रा का अभ्यास करें। बिस्तर पर लेटें, शरीर को ढीला छोड़ें। निद्रा को आने दें — लेकिन चेतना की एक लौ जलाए रखें। देखें कि निद्रा कैसे आती है। यदि सो जाएँ, तो कोई बात नहीं — प्रयास जारी रखें।
 
 ### अभ्यास ५: स्वप्न-योग
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ५: स्वप्न-योग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ५: स्वप्न-योग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ५: स्वप्न-योग" width="30%">
-</a>
-
 
 एक सप्ताह तक ओशो की स्वप्न-योग विधि का अभ्यास करें:
 - दिन में बार-बार पूछें — "क्या यह स्वप्न है?"
@@ -1329,17 +1075,6 @@ demonstrateOshoWitnessTracker();
 - जब ल्यूसिड स्वप्न आए, तो उसमें साक्षी बनें
 
 ### अभ्यास ६: समूह चर्चा
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/09-chetna-ki-avasthayen/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-
 
 निम्नलिखित प्रश्नों पर समूह में ओशो के दृष्टिकोण से चर्चा करें:
 

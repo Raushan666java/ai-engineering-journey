@@ -93,16 +93,6 @@ flowchart LR
 
 ### 27.1 Healthcare Data Models & Compliance (HIPAA)
 
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-1-healthcare-data-models-compliance-hipaa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-1-healthcare-data-models-compliance-hipaa-handwritten.svg" alt="Handwritten: 27.1 Healthcare Data Models & Compliance (HIPAA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-1-healthcare-data-models-compliance-hipaa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-1-healthcare-data-models-compliance-hipaa-diagram.svg" alt="Diagram: 27.1 Healthcare Data Models & Compliance (HIPAA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-1-healthcare-data-models-compliance-hipaa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-1-healthcare-data-models-compliance-hipaa-sticky.svg" alt="Sticky Note: 27.1 Healthcare Data Models & Compliance (HIPAA)" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** PHI fields are encrypted at rest and in transit with strict access controls and audit trails.
@@ -642,16 +632,6 @@ class PatientController extends Controller
 
 ### 27.2 Patient Management Agents
 
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-2-patient-management-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-2-patient-management-agents-handwritten.svg" alt="Handwritten: 27.2 Patient Management Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-2-patient-management-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-2-patient-management-agents-diagram.svg" alt="Diagram: 27.2 Patient Management Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-2-patient-management-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-2-patient-management-agents-sticky.svg" alt="Sticky Note: 27.2 Patient Management Agents" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Patient agents handle CRUD operations on patient records with role-based access and audit logging.
@@ -837,16 +817,6 @@ class ProcessReferralsCommand extends Command
 ---
 
 ### 27.3 Clinical Decision Support Agents
-
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-3-clinical-decision-support-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-3-clinical-decision-support-agents-handwritten.svg" alt="Handwritten: 27.3 Clinical Decision Support Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-3-clinical-decision-support-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-3-clinical-decision-support-agents-diagram.svg" alt="Diagram: 27.3 Clinical Decision Support Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-3-clinical-decision-support-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-3-clinical-decision-support-agents-sticky.svg" alt="Sticky Note: 27.3 Clinical Decision Support Agents" width="30%">
-</a>
 
 
 
@@ -1167,16 +1137,6 @@ class ClinicalDecisionController extends Controller
 
 ### 27.4 Medical Record RAG
 
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-4-medical-record-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-4-medical-record-rag-handwritten.svg" alt="Handwritten: 27.4 Medical Record RAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-4-medical-record-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-4-medical-record-rag-diagram.svg" alt="Diagram: 27.4 Medical Record RAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-4-medical-record-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-4-medical-record-rag-sticky.svg" alt="Sticky Note: 27.4 Medical Record RAG" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Medical RAG retrieves relevant literature from a vector store of medical documents to support clinical decisions.
@@ -1380,16 +1340,6 @@ class EmbedMedicalRecordsCommand extends Command
 ---
 
 ### 27.5 Appointment Scheduling Automation
-
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-5-appointment-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-5-appointment-scheduling-automation-handwritten.svg" alt="Handwritten: 27.5 Appointment Scheduling Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-5-appointment-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-5-appointment-scheduling-automation-diagram.svg" alt="Diagram: 27.5 Appointment Scheduling Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-5-appointment-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-5-appointment-scheduling-automation-sticky.svg" alt="Sticky Note: 27.5 Appointment Scheduling Automation" width="30%">
-</a>
 
 
 
@@ -1722,16 +1672,6 @@ class SendAppointmentRemindersCommand extends Command
 
 ### 27.6 Claims Processing Automation
 
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-6-claims-processing-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-6-claims-processing-automation-handwritten.svg" alt="Handwritten: 27.6 Claims Processing Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-6-claims-processing-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-6-claims-processing-automation-diagram.svg" alt="Diagram: 27.6 Claims Processing Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-6-claims-processing-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-6-claims-processing-automation-sticky.svg" alt="Sticky Note: 27.6 Claims Processing Automation" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Claims agents validate submissions, check coverage, process payments, and handle denials with appeal workflows.
@@ -2011,16 +1951,6 @@ class ClaimStatusHistory extends Model
 
 ### 27.7 Diagnostic Assistance Agents
 
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-7-diagnostic-assistance-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-7-diagnostic-assistance-agents-handwritten.svg" alt="Handwritten: 27.7 Diagnostic Assistance Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-7-diagnostic-assistance-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-7-diagnostic-assistance-agents-diagram.svg" alt="Diagram: 27.7 Diagnostic Assistance Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-7-diagnostic-assistance-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-7-diagnostic-assistance-agents-sticky.svg" alt="Sticky Note: 27.7 Diagnostic Assistance Agents" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Diagnostic agents suggest possible conditions based on symptoms and flag urgent cases for immediate review.
@@ -2272,16 +2202,6 @@ class ReviewLabResultsCommand extends Command
 
 ### 27.8 Medication Management Agents
 
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-8-medication-management-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-8-medication-management-agents-handwritten.svg" alt="Handwritten: 27.8 Medication Management Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-8-medication-management-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-8-medication-management-agents-diagram.svg" alt="Diagram: 27.8 Medication Management Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-8-medication-management-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-8-medication-management-agents-sticky.svg" alt="Sticky Note: 27.8 Medication Management Agents" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Medication agents check for drug interactions, allergies, and dosage compliance.
@@ -2500,16 +2420,6 @@ class Medication extends Model
 ---
 
 ### 27.9 Healthcare Analytics & Reporting
-
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-9-healthcare-analytics-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-9-healthcare-analytics-reporting-handwritten.svg" alt="Handwritten: 27.9 Healthcare Analytics & Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-9-healthcare-analytics-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-9-healthcare-analytics-reporting-diagram.svg" alt="Diagram: 27.9 Healthcare Analytics & Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/27-healthcare/27-9-healthcare-analytics-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/27-healthcare/27-9-healthcare-analytics-reporting-sticky.svg" alt="Sticky Note: 27.9 Healthcare Analytics & Reporting" width="30%">
-</a>
 
 
 

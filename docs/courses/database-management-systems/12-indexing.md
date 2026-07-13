@@ -94,16 +94,6 @@ flowchart LR
 
 ### 12.1 Why Indexes?
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-handwritten.svg" alt="Handwritten: 12.1 Why Indexes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-diagram.svg" alt="Diagram: 12.1 Why Indexes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-1-why-indexes-sticky.svg" alt="Sticky Note: 12.1 Why Indexes?" width="30%">
-</a>
-
 
 **Real-World Analogy:** A book's index. Without an index, finding "database indexing" in a 1000-page book means reading every page (full scan). With the index at the back, you look up "indexing' p. 342, 410, 512" and flip directly. A database index works identically -- it maps search-key values to physical locations (page ID, row ID, or tuple pointer).
 
@@ -132,16 +122,6 @@ flowchart LR
 
 ### 12.2 Index Types Overview
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-handwritten.svg" alt="Handwritten: 12.2 Index Types Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-diagram.svg" alt="Diagram: 12.2 Index Types Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-2-index-types-overview-sticky.svg" alt="Sticky Note: 12.2 Index Types Overview" width="30%">
-</a>
-
 
 **Classification by Organization:**
 
@@ -167,16 +147,6 @@ flowchart LR
 | **Can have multiple?** | Only one (physical order) | Many | Many | Few (requires ordering) |
 
 ### 12.3 Ordered Indices: Primary (Clustering) vs Secondary
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-handwritten.svg" alt="Handwritten: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-diagram.svg" alt="Diagram: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-3-ordered-indices-primary-clustering-vs-secondary-sticky.svg" alt="Sticky Note: 12.3 Ordered Indices: Primary (Clustering) vs Secondary" width="30%">
-</a>
 
 
 **12.3.1 Primary Index (Clustered Index)**
@@ -227,16 +197,6 @@ Search for name='Alice' in secondary index:
 **"Wider" Secondary Indexes (InnoDB):** In InnoDB, secondary index leaves store the PRIMARY KEY value, not a direct row pointer. If the PK is large (e.g., UUID), all secondary indexes become larger.
 
 ### 12.4 Dense vs Sparse Indices
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-handwritten.svg" alt="Handwritten: 12.4 Dense vs Sparse Indices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-diagram.svg" alt="Diagram: 12.4 Dense vs Sparse Indices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-4-dense-vs-sparse-indices-sticky.svg" alt="Sticky Note: 12.4 Dense vs Sparse Indices" width="30%">
-</a>
 
 
 **Real-World Analogy:**
@@ -297,16 +257,6 @@ Sparse Index:
 | **Typical use** | Secondary indexes | Primary (clustered) indexes |
 
 ### 12.5 B-Tree Indexes
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-handwritten.svg" alt="Handwritten: 12.5 B-Tree Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-diagram.svg" alt="Diagram: 12.5 B-Tree Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-5-b-tree-indexes-sticky.svg" alt="Sticky Note: 12.5 B-Tree Indexes" width="30%">
-</a>
 
 
 **Real-World Analogy:** A phone book with hierarchical tabs. You don't read every name -- you go to the right letter tab (root), then sub-tab (internal), then find the specific name (leaf). Every tab holds some names directly.
@@ -724,16 +674,6 @@ B-Tree internal nodes hold hundreds of keys (node size approx disk page). Binary
 
 ### 12.6 B+Tree Indexes
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-handwritten.svg" alt="Handwritten: 12.6 B+Tree Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-diagram.svg" alt="Diagram: 12.6 B+Tree Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-6-b-tree-indexes-sticky.svg" alt="Sticky Note: 12.6 B+Tree Indexes" width="30%">
-</a>
-
 
 **Real-World Analogy:** A library with a card catalog system. The catalog drawers (internal nodes) tell you which aisle/shelf range to check. The actual book locations (leaf nodes) contain the final shelf number plus links to the next location. You go to one catalog find the range go to the aisle find the book follow the shelf link to the next book.
 
@@ -1074,16 +1014,6 @@ class BPlusTree:
 
 ### 12.7 B-Tree vs B+Tree Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-handwritten.svg" alt="Handwritten: 12.7 B-Tree vs B+Tree Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-diagram.svg" alt="Diagram: 12.7 B-Tree vs B+Tree Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-7-b-tree-vs-b-tree-comparison-sticky.svg" alt="Sticky Note: 12.7 B-Tree vs B+Tree Comparison" width="30%">
-</a>
-
 
 | Feature | B-Tree | B+Tree |
 |---------|--------|--------|
@@ -1109,16 +1039,6 @@ class BPlusTree:
 - When you want maximum fan-out per page
 
 ### 12.8 B+Tree Order Calculation
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-handwritten.svg" alt="Handwritten: 12.8 B+Tree Order Calculation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-diagram.svg" alt="Diagram: 12.8 B+Tree Order Calculation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-8-b-tree-order-calculation-sticky.svg" alt="Sticky Note: 12.8 B+Tree Order Calculation" width="30%">
-</a>
 
 
 **Order (m)** = maximum number of children per node. Typically determined by page size.
@@ -1159,16 +1079,6 @@ For m = 500, n = 10^9:
 **Practical insight:** With typical page sizes (8-16 KB) and key sizes (4-8 bytes), a B+Tree can index billions of rows in 3-4 I/Os.
 
 ### 12.9 ISAM (Indexed Sequential Access Method)
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-handwritten.svg" alt="Handwritten: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-diagram.svg" alt="Diagram: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-9-isam-indexed-sequential-access-method-sticky.svg" alt="Sticky Note: 12.9 ISAM (Indexed Sequential Access Method)" width="30%">
-</a>
 
 
 **Real-World Analogy:** A book's table of contents combined with a fixed appendix. You look up a chapter in the TOC (static top-level index), then the page range is fixed -- you can't insert new chapters without reprinting.
@@ -1217,16 +1127,6 @@ ISAM Structure:
 | **Use case** | Read-only or append-mostly workloads | General-purpose OLTP/OLAP |
 
 ### 12.10 Hash Indexing
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-handwritten.svg" alt="Handwritten: 12.10 Hash Indexing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-diagram.svg" alt="Diagram: 12.10 Hash Indexing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-10-hash-indexing-sticky.svg" alt="Sticky Note: 12.10 Hash Indexing" width="30%">
-</a>
 
 
 **Real-World Analogy:** Parking garage valet -- you hand over your keys, they give you a ticket with a slot number (hash). When you return, you give the ticket and go directly to slot 42. No searching or range queries ("find all cars parked between 10am and 11am" requires checking every slot).
@@ -1391,16 +1291,6 @@ Search for 99:
 
 ### 12.11 Hash vs B+Tree vs Bitmap Index Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-handwritten.svg" alt="Handwritten: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-diagram.svg" alt="Diagram: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-11-hash-vs-b-tree-vs-bitmap-index-comparison-sticky.svg" alt="Sticky Note: 12.11 Hash vs B+Tree vs Bitmap Index Comparison" width="30%">
-</a>
-
 
 | Aspect | Hash Index | B+Tree Index | Bitmap Index |
 |--------|-----------|-------------|-------------|
@@ -1417,16 +1307,6 @@ Search for 99:
 | **Example** | `WHERE pk = 42` | `WHERE date > '2024-01-01'` | `WHERE gender='M' AND dept=10` |
 
 ### 12.12 Bitmap Indexing
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-handwritten.svg" alt="Handwritten: 12.12 Bitmap Indexing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-diagram.svg" alt="Diagram: 12.12 Bitmap Indexing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-bitmap-indexing-sticky.svg" alt="Sticky Note: 12.12 Bitmap Indexing" width="30%">
-</a>
 
 
 **Real-World Analogy:** A restaurant reservation seating chart. Each table (distinct value) has a row of seats (bitmap). You check who's at which table by looking at the column of lights -- AND two columns to find male diners at table 3.
@@ -1541,16 +1421,6 @@ print(f"Male rows: {bitmap_idx.query_between(male_bitmap)}")
 
 ### 12.13 Function-Based Indexes (Expression Indexes)
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-handwritten.svg" alt="Handwritten: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-diagram.svg" alt="Diagram: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-13-function-based-indexes-expression-indexes-sticky.svg" alt="Sticky Note: 12.13 Function-Based Indexes (Expression Indexes)" width="30%">
-</a>
-
 
 **Real-World Analogy:** A restaurant menu organized by dietary tags. You can't easily find "gluten-free" options, so you create a secondary listing organized by dietary restriction (the function), even though the main menu is sorted by course.
 
@@ -1591,16 +1461,6 @@ CREATE INDEX idx_order_total ON orders(((items->>'total')::DECIMAL));
 - Statistics on expression values may be less accurate
 
 ### 12.14 Composite Indexes and Covering Indexes
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-handwritten.svg" alt="Handwritten: 12.14 Composite Indexes and Covering Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-diagram.svg" alt="Diagram: 12.14 Composite Indexes and Covering Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-14-composite-indexes-and-covering-indexes-sticky.svg" alt="Sticky Note: 12.14 Composite Indexes and Covering Indexes" width="30%">
-</a>
 
 
 **Real-World Analogy:** A phone book sorted by (last_name, first_name). You can quickly find "Smith, John" -- but you cannot easily find everyone named John. The leftmost prefix (last_name) is mandatory for efficient lookup.
@@ -1699,16 +1559,6 @@ WHERE dept_id = 10 AND last_name LIKE 'S%';
 
 ### 12.15 Clustered vs Non-Clustered Index Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-handwritten.svg" alt="Handwritten: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-diagram.svg" alt="Diagram: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-15-clustered-vs-non-clustered-index-comparison-sticky.svg" alt="Sticky Note: 12.15 Clustered vs Non-Clustered Index Comparison" width="30%">
-</a>
-
 
 | Aspect | Clustered Index | Non-Clustered Index |
 |--------|----------------|---------------------|
@@ -1735,16 +1585,6 @@ WHERE dept_id = 10 AND last_name LIKE 'S%';
 - Heap-only tuples (HOT) optimize updates
 
 ### 12.16 Index Selection
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-handwritten.svg" alt="Handwritten: 12.16 Index Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-diagram.svg" alt="Diagram: 12.16 Index Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-16-index-selection-sticky.svg" alt="Sticky Note: 12.16 Index Selection" width="30%">
-</a>
 
 
 **When to Create an Index:**
@@ -1778,16 +1618,6 @@ WHERE idx_scan = 0 AND indexrelid NOT IN (
 
 ### 12.17 Index-Organized Tables (IOT)
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-handwritten.svg" alt="Handwritten: 12.17 Index-Organized Tables (IOT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-diagram.svg" alt="Diagram: 12.17 Index-Organized Tables (IOT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-17-index-organized-tables-iot-sticky.svg" alt="Sticky Note: 12.17 Index-Organized Tables (IOT)" width="30%">
-</a>
-
 
 Some databases (Oracle, MySQL InnoDB) store the table as a clustered index:
 - The data IS the index
@@ -1807,16 +1637,6 @@ CREATE TABLE employees (
 
 ### 12.18 Partial Indexes
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-handwritten.svg" alt="Handwritten: 12.18 Partial Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-diagram.svg" alt="Diagram: 12.18 Partial Indexes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-18-partial-indexes-sticky.svg" alt="Sticky Note: 12.18 Partial Indexes" width="30%">
-</a>
-
 
 **Partial Index:** Indexes only a subset of rows.
 
@@ -1830,16 +1650,6 @@ SELECT * FROM orders WHERE status = 'pending';  -- Uses the partial index
 > **One-Sentence Takeaway:** Partial indexes reduce storage and maintenance by indexing only relevant rows (WHERE clause).
 
 ### 12.19 B+Tree Order Calculation (Detailed)
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-handwritten.svg" alt="Handwritten: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-diagram.svg" alt="Diagram: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-19-b-tree-order-calculation-detailed-sticky.svg" alt="Sticky Note: 12.19 B+Tree Order Calculation (Detailed)" width="30%">
-</a>
 
 
 **Step-by-step calculation for a typical database page (8 KB):**
@@ -1883,16 +1693,6 @@ Level 3: 586^3 x 409 approx 82,303,092,904
 This is why a table with 100M rows needs only 3 I/Os for a lookup -- 2 internal levels + 1 leaf.
 
 ### 12.20 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-handwritten.svg" alt="Handwritten: 12.20 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-diagram.svg" alt="Diagram: 12.20 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-20-applications-in-real-systems-sticky.svg" alt="Sticky Note: 12.20 Applications in Real Systems" width="30%">
-</a>
 
 
 **12.20.1 MySQL InnoDB**
@@ -1955,16 +1755,6 @@ db.orders.find(
 ```
 
 ### 12.21 Interview Corner
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-handwritten.svg" alt="Handwritten: 12.21 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-diagram.svg" alt="Diagram: 12.21 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-21-interview-corner-sticky.svg" alt="Sticky Note: 12.21 Interview Corner" width="30%">
-</a>
 
 
 **Q1: When does a database NOT use an index, even though one exists?**
@@ -2089,16 +1879,6 @@ SELECT * FROM employees WHERE salary > 100000;
 
 ### 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-handwritten.svg" alt="Handwritten: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-diagram.svg" alt="Diagram: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-22-hash-index-dry-run-extendable-hashing-with-collision-resolution-sticky.svg" alt="Sticky Note: 12.22 Hash Index Dry Run -- Extendable Hashing with Collision Resolution" width="30%">
-</a>
-
 
 ```
 Setup: bucket size = 2 keys, global depth d = 1
@@ -2216,17 +1996,6 @@ EXPLAIN ANALYZE SELECT * FROM orders WHERE customer_id = 42;
 ```
 
 ### 12.12 TypeScript B+ Tree Index Simulator
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-handwritten.svg" alt="Handwritten: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-diagram.svg" alt="Diagram: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/12-12-typescript-b-tree-index-simulator-sticky.svg" alt="Sticky Note: 12.12 TypeScript B+ Tree Index Simulator" width="30%">
-</a>
-
 
 The code implements a minimal B+ Tree index with search, insert, and range scan capabilities.
 
@@ -2396,17 +2165,6 @@ flowchart TD
 
 ### Additional Chapter Quiz Questions
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
-</a>
-
-
 11. The main advantage of a B+ Tree over a B-Tree is:
     a) Faster point lookups
     b) All keys are stored in leaves, enabling efficient range scans
@@ -2437,16 +2195,6 @@ flowchart TD
 
 ### Pro Tips
 
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-handwritten.svg" alt="Handwritten: Pro Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-diagram.svg" alt="Diagram: Pro Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/pro-tips-sticky.svg" alt="Sticky Note: Pro Tips" width="30%">
-</a>
-
 
 1. **Index the WHERE clause columns first** -- columns in WHERE, JOIN, and ORDER BY are the highest priority.
 2. **Composite index column order matters enormously** -- put high-selectivity columns first.
@@ -2458,16 +2206,6 @@ flowchart TD
 8. **Covering indexes eliminate table access** -- the single biggest query optimization for critical queries.
 
 ### One-Sentence Takeaways
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-handwritten.svg" alt="Handwritten: One-Sentence Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-diagram.svg" alt="Diagram: One-Sentence Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/one-sentence-takeaways-sticky.svg" alt="Sticky Note: One-Sentence Takeaways" width="30%">
-</a>
 
 
 - **12.1:** Indexes are auxiliary data structures that speed up data retrieval at the cost of slower writes and additional storage.
@@ -2614,16 +2352,6 @@ flowchart TD
 **Answers:** 1-b, 2-b, 3-b, 4-a, 5-b, 6-a, 7-c, 8-b, 9-b, 10-b, 11-c, 12-b
 
 ### Summary
-
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-handwritten.svg" alt="Handwritten: Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-diagram.svg" alt="Diagram: Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/12-indexing/summary-sticky.svg" alt="Sticky Note: Summary" width="30%">
-</a>
 
 
 - Indexes are auxiliary structures that accelerate data retrieval at the cost of write overhead and storage.

@@ -42,7 +42,6 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - Describe the major physical divisions of India: Himalayas, Peninsular Plateau, Coastal Plains, Islands
 - Explain the Indian monsoon mechanism and seasonal climatic variations
 - Identify major river systems, soil types, and natural vegetation zones
@@ -56,17 +55,6 @@ By the end of this chapter, you will be able to:
 ## Theory
 
 ### 2.1 India — Physical Overview
-
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-handwritten.svg" alt="Handwritten: 2.1 India — Physical Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-diagram.svg" alt="Diagram: 2.1 India — Physical Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-1-india-physical-overview-sticky.svg" alt="Sticky Note: 2.1 India — Physical Overview" width="30%">
-</a>
-
 
 India is the seventh-largest country in the world by area (3.287 million sq km) and the second-most populous (over 1.4 billion). It lies entirely in the Northern Hemisphere, extending from 8°4'N to 37°6'N latitude and 68°7'E to 97°25'E longitude.
 
@@ -101,17 +89,6 @@ mindmap
 
 ### 2.2 The Himalayas
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-handwritten.svg" alt="Handwritten: 2.2 The Himalayas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-diagram.svg" alt="Diagram: 2.2 The Himalayas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-2-the-himalayas-sticky.svg" alt="Sticky Note: 2.2 The Himalayas" width="30%">
-</a>
-
-
 The Himalayan mountain range stretches 2,500 km from the Indus River in the west to the Brahmaputra River in the east. It consists of three parallel ranges:
 
 | Range | Average Height | Key Peaks | Features |
@@ -131,17 +108,6 @@ The Himalayan mountain range stretches 2,500 km from the Indus River in the west
 | Khardung La | Ladakh | Highest motorable road |
 
 ### 2.3 The Peninsular Plateau
-
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-handwritten.svg" alt="Handwritten: 2.3 The Peninsular Plateau" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-diagram.svg" alt="Diagram: 2.3 The Peninsular Plateau" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-3-the-peninsular-plateau-sticky.svg" alt="Sticky Note: 2.3 The Peninsular Plateau" width="30%">
-</a>
-
 
 The Peninsular Plateau is the oldest landmass of India (part of Gondwanaland). It is composed of igneous and metamorphic rocks.
 
@@ -165,17 +131,6 @@ The Peninsular Plateau is the oldest landmass of India (part of Gondwanaland). I
 | Highest Peak | Anamudi (2,695m) | Jindhagada (1,690m) |
 
 ### 2.4 River Systems of India
-
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-handwritten.svg" alt="Handwritten: 2.4 River Systems of India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-diagram.svg" alt="Diagram: 2.4 River Systems of India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-4-river-systems-of-india-sticky.svg" alt="Sticky Note: 2.4 River Systems of India" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -217,17 +172,6 @@ flowchart TD
 
 ### 2.5 Climate — The Indian Monsoon
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-handwritten.svg" alt="Handwritten: 2.5 Climate — The Indian Monsoon" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-diagram.svg" alt="Diagram: 2.5 Climate — The Indian Monsoon" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-5-climate-the-indian-monsoon-sticky.svg" alt="Sticky Note: 2.5 Climate — The Indian Monsoon" width="30%">
-</a>
-
-
 ```mermaid
 flowchart TD
     A[Indian Monsoon Mechanism] --> B[Summer]
@@ -267,17 +211,6 @@ flowchart TD
 
 ### 2.6 Soils of India
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-handwritten.svg" alt="Handwritten: 2.6 Soils of India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-diagram.svg" alt="Diagram: 2.6 Soils of India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-6-soils-of-india-sticky.svg" alt="Sticky Note: 2.6 Soils of India" width="30%">
-</a>
-
-
 ```mermaid
 pie title Soil Distribution in India
     "Alluvial Soil" : 43
@@ -299,17 +232,6 @@ pie title Soil Distribution in India
 
 ### 2.7 Natural Vegetation & Forests
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-handwritten.svg" alt="Handwritten: 2.7 Natural Vegetation & Forests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-diagram.svg" alt="Diagram: 2.7 Natural Vegetation & Forests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-7-natural-vegetation-forests-sticky.svg" alt="Sticky Note: 2.7 Natural Vegetation & Forests" width="30%">
-</a>
-
-
 **Forest Types (India State of Forest Report 2023):**
 - Total forest cover: 7,15,343 sq km (21.76% of geographical area)
 - Very dense forest: 3.04%, Moderately dense: 9.33%, Open forest: 9.39%
@@ -323,17 +245,6 @@ pie title Soil Distribution in India
 | Mangrove | Tidal | Sunderbans, Andaman | Sundari, Avicennia |
 
 ### 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves
-
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-handwritten.svg" alt="Handwritten: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-diagram.svg" alt="Diagram: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-8-national-parks-wildlife-sanctuaries-biosphere-reserves-sticky.svg" alt="Sticky Note: 2.8 National Parks, Wildlife Sanctuaries & Biosphere Reserves" width="30%">
-</a>
-
 
 **Important National Parks:**
 
@@ -363,17 +274,6 @@ pie title Soil Distribution in India
 
 ### 2.9 Agriculture & Irrigation
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-handwritten.svg" alt="Handwritten: 2.9 Agriculture & Irrigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-diagram.svg" alt="Diagram: 2.9 Agriculture & Irrigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-9-agriculture-irrigation-sticky.svg" alt="Sticky Note: 2.9 Agriculture & Irrigation" width="30%">
-</a>
-
-
 **Cropping Seasons:**
 
 | Season | Months | Crops | States |
@@ -401,17 +301,6 @@ pie title Soil Distribution in India
 
 ### 2.10 Minerals & Energy Resources
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-handwritten.svg" alt="Handwritten: 2.10 Minerals & Energy Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-diagram.svg" alt="Diagram: 2.10 Minerals & Energy Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-10-minerals-energy-resources-sticky.svg" alt="Sticky Note: 2.10 Minerals & Energy Resources" width="30%">
-</a>
-
-
 | Mineral | Largest Producer | Major States |
 |---------|-----------------|--------------|
 | Iron Ore | Odisha | Odisha, Jharkhand, Chhattisgarh |
@@ -426,17 +315,6 @@ pie title Soil Distribution in India
 
 ### 2.11 Population Geography
 
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-handwritten.svg" alt="Handwritten: 2.11 Population Geography" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-diagram.svg" alt="Diagram: 2.11 Population Geography" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-11-population-geography-sticky.svg" alt="Sticky Note: 2.11 Population Geography" width="30%">
-</a>
-
-
 - India's population (2024): ~1.44 billion
 - Population density (2011 Census): 382 persons/sq km
 - Highest density: Bihar (1,106), lowest: Arunachal Pradesh (17)
@@ -445,17 +323,6 @@ pie title Soil Distribution in India
 - Most populous state: Uttar Pradesh (200M+), least: Sikkim (~700K)
 
 ### 2.12 Environment, Biodiversity & Conservation
-
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-handwritten.svg" alt="Handwritten: 2.12 Environment, Biodiversity & Conservation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-diagram.svg" alt="Diagram: 2.12 Environment, Biodiversity & Conservation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/02-indian-geography/2-12-environment-biodiversity-conservation-sticky.svg" alt="Sticky Note: 2.12 Environment, Biodiversity & Conservation" width="30%">
-</a>
-
 
 **Key Environmental Issues:**
 - Air pollution: 22 of world's 30 most polluted cities are in India (IQAir 2024)

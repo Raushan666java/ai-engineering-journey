@@ -48,7 +48,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## 1. Array vs Linked List
@@ -71,29 +70,7 @@
 
 ### Stack Operations: push, pop, peek, isEmpty — all O(1)
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/stack-operations-push-pop-peek-isempty-all-o-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/stack-operations-push-pop-peek-isempty-all-o-1-handwritten.svg" alt="Handwritten: Stack Operations: push, pop, peek, isEmpty — all O(1)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/stack-operations-push-pop-peek-isempty-all-o-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/stack-operations-push-pop-peek-isempty-all-o-1-diagram.svg" alt="Diagram: Stack Operations: push, pop, peek, isEmpty — all O(1)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/stack-operations-push-pop-peek-isempty-all-o-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/stack-operations-push-pop-peek-isempty-all-o-1-sticky.svg" alt="Sticky Note: Stack Operations: push, pop, peek, isEmpty — all O(1)" width="30%">
-</a>
-
-
 ### Infix → Postfix (Shunting-Yard Algorithm)
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/infix-postfix-shunting-yard-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/infix-postfix-shunting-yard-algorithm-handwritten.svg" alt="Handwritten: Infix → Postfix (Shunting-Yard Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/infix-postfix-shunting-yard-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/infix-postfix-shunting-yard-algorithm-diagram.svg" alt="Diagram: Infix → Postfix (Shunting-Yard Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/infix-postfix-shunting-yard-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/infix-postfix-shunting-yard-algorithm-sticky.svg" alt="Sticky Note: Infix → Postfix (Shunting-Yard Algorithm)" width="30%">
-</a>
-
 
 **Operator precedence:** ^ (highest, right-assoc), * / (middle, left-assoc), + − (lowest, left-assoc)
 
@@ -124,16 +101,6 @@ end    |          | A B C * D − E / +
 
 ### Balanced Parentheses
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/balanced-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/balanced-parentheses-handwritten.svg" alt="Handwritten: Balanced Parentheses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/balanced-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/balanced-parentheses-diagram.svg" alt="Diagram: Balanced Parentheses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/balanced-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/balanced-parentheses-sticky.svg" alt="Sticky Note: Balanced Parentheses" width="30%">
-</a>
-
 - Scan string: '(' → push; ')' → if stack empty ⇒ unbalanced, else pop
 - At end: stack should be empty
 
@@ -154,32 +121,12 @@ end    |          | A B C * D − E / +
 
 ### Properties
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/properties-handwritten.svg" alt="Handwritten: Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/properties-diagram.svg" alt="Diagram: Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/properties-sticky.svg" alt="Sticky Note: Properties" width="30%">
-</a>
-
 - **Maximum nodes at level i:** 2^i (0-indexed level)
 - **Maximum nodes in tree of height h:** 2^(h+1) − 1 (height = levels − 1)
 - **Minimum height for n nodes:** ⌈log2(n+1)⌉ − 1
 - **Height of n-node complete binary tree:** ⌊log2 n⌋
 
 ### Tree Types
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-types-handwritten.svg" alt="Handwritten: Tree Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-types-diagram.svg" alt="Diagram: Tree Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-types-sticky.svg" alt="Sticky Note: Tree Types" width="30%">
-</a>
 
 | Type | Definition |
 |------|------------|
@@ -190,32 +137,11 @@ end    |          | A B C * D − E / +
 
 ### Binary Search Tree (BST)
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-search-tree-bst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-search-tree-bst-handwritten.svg" alt="Handwritten: Binary Search Tree (BST)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-search-tree-bst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-search-tree-bst-diagram.svg" alt="Diagram: Binary Search Tree (BST)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-search-tree-bst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-search-tree-bst-sticky.svg" alt="Sticky Note: Binary Search Tree (BST)" width="30%">
-</a>
-
 - **Left subtree:** All keys &lt; root. **Right subtree:** All keys &gt; root.
 - **Search/Insert/Delete:** O(h). Balanced case O(log n), skewed O(n).
 - **In-order traversal** of BST gives sorted order.
 
 ### Tree Traversals
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-traversals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-traversals-handwritten.svg" alt="Handwritten: Tree Traversals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-traversals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-traversals-diagram.svg" alt="Diagram: Tree Traversals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-traversals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/tree-traversals-sticky.svg" alt="Sticky Note: Tree Traversals" width="30%">
-</a>
-
 
 ```mermaid
 graph TD
@@ -263,31 +189,11 @@ Insert: 30, 20, 10
 
 ### Binary Heap Properties
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-heap-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-heap-properties-handwritten.svg" alt="Handwritten: Binary Heap Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-heap-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-heap-properties-diagram.svg" alt="Diagram: Binary Heap Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-heap-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/binary-heap-properties-sticky.svg" alt="Sticky Note: Binary Heap Properties" width="30%">
-</a>
-
 - Complete binary tree (filled left to right)
 - **Max heap:** Parent ≥ children. **Min heap:** Parent ≤ children.
 - **Array representation:** left(i) = 2i+1, right(i) = 2i+2, parent(i) = ⌊(i−1)/2⌋
 
 ### Operations
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/operations-handwritten.svg" alt="Handwritten: Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/operations-diagram.svg" alt="Diagram: Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/operations-sticky.svg" alt="Sticky Note: Operations" width="30%">
-</a>
 
 | Operation | Time | Description |
 |-----------|------|-------------|
@@ -297,16 +203,6 @@ Insert: 30, 20, 10
 | Heapify | O(log n) | Restore heap property from a node |
 
 ### Heap Sort
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-sort-handwritten.svg" alt="Handwritten: Heap Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-sort-diagram.svg" alt="Diagram: Heap Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-sort-sticky.svg" alt="Sticky Note: Heap Sort" width="30%">
-</a>
 
 ```c
 Build max-heap (O(n))
@@ -329,17 +225,6 @@ For i = n−1 down to 1:
 **When to use which:** Dense graphs (E ≈ V^2) → matrix. Sparse graphs (E ≪ V^2) → list.
 
 ### BFS vs DFS
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bfs-vs-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bfs-vs-dfs-handwritten.svg" alt="Handwritten: BFS vs DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bfs-vs-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bfs-vs-dfs-diagram.svg" alt="Diagram: BFS vs DFS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bfs-vs-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bfs-vs-dfs-sticky.svg" alt="Sticky Note: BFS vs DFS" width="30%">
-</a>
-
 
 | Aspect | BFS | DFS |
 |--------|-----|-----|
@@ -375,30 +260,10 @@ For i = n−1 down to 1:
 
 ### Hash Functions
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/hash-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/hash-functions-handwritten.svg" alt="Handwritten: Hash Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/hash-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/hash-functions-diagram.svg" alt="Diagram: Hash Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/hash-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/hash-functions-sticky.svg" alt="Sticky Note: Hash Functions" width="30%">
-</a>
-
 - **Division method:** h(k) = k mod m (m prime recommended)
 - **Multiplication method:** h(k) = ⌊m × (kA mod 1)⌋, A = (√5−1)/2 ≈ 0.618
 
 ### Collision Resolution
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/collision-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/collision-resolution-handwritten.svg" alt="Handwritten: Collision Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/collision-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/collision-resolution-diagram.svg" alt="Diagram: Collision Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/collision-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/collision-resolution-sticky.svg" alt="Sticky Note: Collision Resolution" width="30%">
-</a>
 
 | Method | Description | Pros | Cons |
 |--------|-------------|------|------|
@@ -407,31 +272,11 @@ For i = n−1 down to 1:
 
 ### Open Addressing Techniques
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/open-addressing-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/open-addressing-techniques-handwritten.svg" alt="Handwritten: Open Addressing Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/open-addressing-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/open-addressing-techniques-diagram.svg" alt="Diagram: Open Addressing Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/open-addressing-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/open-addressing-techniques-sticky.svg" alt="Sticky Note: Open Addressing Techniques" width="30%">
-</a>
-
 - **Linear probing:** h(k,i) = (h(k) + i) mod m — primary clustering
 - **Quadratic probing:** h(k,i) = (h(k) + c1i + c2i^2) mod m — secondary clustering
 - **Double hashing:** h(k,i) = (h1(k) + i×h2(k)) mod m — best performance
 
 ### Load Factor α = n/m (n = keys, m = table size)
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/load-factor-n-m-n-keys-m-table-size-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/load-factor-n-m-n-keys-m-table-size-handwritten.svg" alt="Handwritten: Load Factor α = n/m (n = keys, m = table size)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/load-factor-n-m-n-keys-m-table-size-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/load-factor-n-m-n-keys-m-table-size-diagram.svg" alt="Diagram: Load Factor α = n/m (n = keys, m = table size)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/load-factor-n-m-n-keys-m-table-size-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/load-factor-n-m-n-keys-m-table-size-sticky.svg" alt="Sticky Note: Load Factor α = n/m (n = keys, m = table size)" width="30%">
-</a>
 
 - Chaining: α can exceed 1; average chain length = α
 - Open addressing: α must be &lt; 1; too high → probe count explodes
@@ -501,33 +346,12 @@ For i = n−1 down to 1:
 
 ### Dijkstra's Shortest Path
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/dijkstra-s-shortest-path-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/dijkstra-s-shortest-path-handwritten.svg" alt="Handwritten: Dijkstra's Shortest Path" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/dijkstra-s-shortest-path-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/dijkstra-s-shortest-path-diagram.svg" alt="Diagram: Dijkstra's Shortest Path" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/dijkstra-s-shortest-path-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/dijkstra-s-shortest-path-sticky.svg" alt="Sticky Note: Dijkstra's Shortest Path" width="30%">
-</a>
-
 - Single-source shortest path (non-negative weights)
 - **Data structure:** Priority queue (min-heap)
 - **Time:** O((V + E) log V) with binary heap
 - **Greedy:** Always picks the vertex with smallest distance
 
 ### Minimum Spanning Tree (MST)
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/minimum-spanning-tree-mst-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/minimum-spanning-tree-mst-handwritten.svg" alt="Handwritten: Minimum Spanning Tree (MST)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/minimum-spanning-tree-mst-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/minimum-spanning-tree-mst-diagram.svg" alt="Diagram: Minimum Spanning Tree (MST)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/minimum-spanning-tree-mst-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/minimum-spanning-tree-mst-sticky.svg" alt="Sticky Note: Minimum Spanning Tree (MST)" width="30%">
-</a>
-
 
 | Algorithm | Strategy | Time | Data Structure |
 |-----------|----------|------|----------------|
@@ -536,30 +360,10 @@ For i = n−1 down to 1:
 
 ### Topological Sort
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/topological-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/topological-sort-handwritten.svg" alt="Handwritten: Topological Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/topological-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/topological-sort-diagram.svg" alt="Diagram: Topological Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/topological-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/topological-sort-sticky.svg" alt="Sticky Note: Topological Sort" width="30%">
-</a>
-
 - DAG (Directed Acyclic Graph) vertices in order: for every edge u→v, u appears before v
 - **Methods:** DFS-based (push post-order) or Kahn's algorithm (in-degree queue)
 
 ### Graph Cycle Detection
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-cycle-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-cycle-detection-handwritten.svg" alt="Handwritten: Graph Cycle Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-cycle-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-cycle-detection-diagram.svg" alt="Diagram: Graph Cycle Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-cycle-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-cycle-detection-sticky.svg" alt="Sticky Note: Graph Cycle Detection" width="30%">
-</a>
 
 | Graph Type | Method |
 |-------------|--------|
@@ -570,16 +374,6 @@ For i = n−1 down to 1:
 
 ### Counting Sort
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/counting-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/counting-sort-handwritten.svg" alt="Handwritten: Counting Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/counting-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/counting-sort-diagram.svg" alt="Diagram: Counting Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/counting-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/counting-sort-sticky.svg" alt="Sticky Note: Counting Sort" width="30%">
-</a>
-
 - **Range:** Input values in range [0, k]
 - **Time:** O(n + k), **Space:** O(k)
 - **Stable:** Yes
@@ -587,32 +381,12 @@ For i = n−1 down to 1:
 
 ### Radix Sort
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/radix-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/radix-sort-handwritten.svg" alt="Handwritten: Radix Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/radix-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/radix-sort-diagram.svg" alt="Diagram: Radix Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/radix-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/radix-sort-sticky.svg" alt="Sticky Note: Radix Sort" width="30%">
-</a>
-
 - Sort digit by digit (LSD first or MSD first)
 - Uses counting sort as subroutine
 - **Time:** O(d × (n + b)) where d = digits, b = base
 - **When:** Fixed-length keys (integers, strings)
 
 ### Bucket Sort
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bucket-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bucket-sort-handwritten.svg" alt="Handwritten: Bucket Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bucket-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bucket-sort-diagram.svg" alt="Diagram: Bucket Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bucket-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bucket-sort-sticky.svg" alt="Sticky Note: Bucket Sort" width="30%">
-</a>
 
 - Distribute elements into buckets, sort each bucket (insertion sort)
 - **Average:** O(n), **Worst:** O(n²)
@@ -622,31 +396,11 @@ For i = n−1 down to 1:
 
 ### Rehashing
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/rehashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/rehashing-handwritten.svg" alt="Handwritten: Rehashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/rehashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/rehashing-diagram.svg" alt="Diagram: Rehashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/rehashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/rehashing-sticky.svg" alt="Sticky Note: Rehashing" width="30%">
-</a>
-
 - When load factor α exceeds threshold, create larger table, rehash all entries
 - Typically double table size (prime near 2×)
 - **Cost:** O(n) but amortized O(1) per insertion
 
 ### Perfect Hashing
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/perfect-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/perfect-hashing-handwritten.svg" alt="Handwritten: Perfect Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/perfect-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/perfect-hashing-diagram.svg" alt="Diagram: Perfect Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/perfect-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/perfect-hashing-sticky.svg" alt="Sticky Note: Perfect Hashing" width="30%">
-</a>
 
 - Two-level hashing scheme with no collisions
 - First level: hash to bucket
@@ -654,16 +408,6 @@ For i = n−1 down to 1:
 - **Space:** O(n), **Lookup:** O(1) worst-case
 
 ### Consistent Hashing
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/consistent-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/consistent-hashing-handwritten.svg" alt="Handwritten: Consistent Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/consistent-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/consistent-hashing-diagram.svg" alt="Diagram: Consistent Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/consistent-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/consistent-hashing-sticky.svg" alt="Sticky Note: Consistent Hashing" width="30%">
-</a>
 
 - Hash both keys and servers onto a ring
 - Each key assigned to nearest server clockwise
@@ -686,17 +430,6 @@ For i = n−1 down to 1:
 ## 📌 Extended Theory — Deep Dive for IBPS SO Mains (2024–2026 Trends)
 
 ### Sorting Algorithm Visualizer — TypeScript
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/sorting-algorithm-visualizer-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/sorting-algorithm-visualizer-typescript-handwritten.svg" alt="Handwritten: Sorting Algorithm Visualizer — TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/sorting-algorithm-visualizer-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/sorting-algorithm-visualizer-typescript-diagram.svg" alt="Diagram: Sorting Algorithm Visualizer — TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/sorting-algorithm-visualizer-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/sorting-algorithm-visualizer-typescript-sticky.svg" alt="Sticky Note: Sorting Algorithm Visualizer — TypeScript" width="30%">
-</a>
-
 
 ```typescript
 type SortStep = { array: number[]; comparing: [number, number]; swapped: boolean };
@@ -747,17 +480,6 @@ function quickSortSteps(arr: number[]): SortStep[] {
 ```
 
 ### BST Implementation — TypeScript
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bst-implementation-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bst-implementation-typescript-handwritten.svg" alt="Handwritten: BST Implementation — TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bst-implementation-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bst-implementation-typescript-diagram.svg" alt="Diagram: BST Implementation — TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bst-implementation-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/bst-implementation-typescript-sticky.svg" alt="Sticky Note: BST Implementation — TypeScript" width="30%">
-</a>
-
 
 ```typescript
 class BSTNode {
@@ -834,17 +556,6 @@ class BST {
 
 ### AVL Tree — TypeScript
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/avl-tree-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/avl-tree-typescript-handwritten.svg" alt="Handwritten: AVL Tree — TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/avl-tree-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/avl-tree-typescript-diagram.svg" alt="Diagram: AVL Tree — TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/avl-tree-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/avl-tree-typescript-sticky.svg" alt="Sticky Note: AVL Tree — TypeScript" width="30%">
-</a>
-
-
 ```typescript
 class AVLNode {
   height: number = 1;
@@ -918,17 +629,6 @@ class AVLTree {
 
 ### Graph Traversal — BFS / DFS TypeScript
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-traversal-bfs-dfs-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-traversal-bfs-dfs-typescript-handwritten.svg" alt="Handwritten: Graph Traversal — BFS / DFS TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-traversal-bfs-dfs-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-traversal-bfs-dfs-typescript-diagram.svg" alt="Diagram: Graph Traversal — BFS / DFS TypeScript" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-traversal-bfs-dfs-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/graph-traversal-bfs-dfs-typescript-sticky.svg" alt="Sticky Note: Graph Traversal — BFS / DFS TypeScript" width="30%">
-</a>
-
-
 ```typescript
 class Graph {
   private adj: Map<number, number[]> = new Map();
@@ -984,17 +684,6 @@ Final tree: A(B(D,E), C(F,G))
 
 ### Complexity Analysis — Master Theorem
 
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/complexity-analysis-master-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/complexity-analysis-master-theorem-handwritten.svg" alt="Handwritten: Complexity Analysis — Master Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/complexity-analysis-master-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/complexity-analysis-master-theorem-diagram.svg" alt="Diagram: Complexity Analysis — Master Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/complexity-analysis-master-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/complexity-analysis-master-theorem-sticky.svg" alt="Sticky Note: Complexity Analysis — Master Theorem" width="30%">
-</a>
-
-
 **Master Theorem:** For T(n) = aT(n/b) + f(n):
 1. If f(n) = O(n^(log_b a - ε)) → T(n) = Θ(n^(log_b a))
 2. If f(n) = Θ(n^(log_b a) × log^k n) → T(n) = Θ(n^(log_b a) × log^(k+1) n)
@@ -1006,17 +695,6 @@ Final tree: A(B(D,E), C(F,G))
 - T(n) = T(n/2) + n → a=1, b=2, log_b a = 0, f(n)=n^1 → Case 3: T(n) = Θ(n)
 
 ### Heap Operations — Detailed Tracing
-
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-operations-detailed-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-operations-detailed-tracing-handwritten.svg" alt="Handwritten: Heap Operations — Detailed Tracing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-operations-detailed-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-operations-detailed-tracing-diagram.svg" alt="Diagram: Heap Operations — Detailed Tracing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-operations-detailed-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/professional-knowledge/04-data-structures/heap-operations-detailed-tracing-sticky.svg" alt="Sticky Note: Heap Operations — Detailed Tracing" width="30%">
-</a>
-
 
 **Max-Heap Insert:** Insert 15 into [20, 14, 17, 10, 8, 12, 6]
 ```

@@ -56,16 +56,6 @@ This chapter teaches you how to measure your learning systematically. You'll bui
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -94,16 +84,6 @@ flowchart LR
 ---
 
 ### Q1: What are the five core learning metrics you should track?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/what-are-the-five-core-learning-metrics-you-should-track-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/what-are-the-five-core-learning-metrics-you-should-track-handwritten.svg" alt="Handwritten: What are the five core learning metrics you should track?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/what-are-the-five-core-learning-metrics-you-should-track-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/what-are-the-five-core-learning-metrics-you-should-track-diagram.svg" alt="Diagram: What are the five core learning metrics you should track?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/what-are-the-five-core-learning-metrics-you-should-track-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/what-are-the-five-core-learning-metrics-you-should-track-sticky.svg" alt="Sticky Note: What are the five core learning metrics you should track?" width="30%">
-</a>
 
 
 **Answer:** Most learners track nothing — they study by feel. The five metrics below give you a complete picture of your learning health. Track all five for at least 2 weeks to establish a baseline.
@@ -371,16 +351,6 @@ class LearningMetricsTracker {
 
 ### Q2: How do you detect learning plateaus before they derail you?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-detect-learning-plateaus-before-they-derail-you-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-detect-learning-plateaus-before-they-derail-you-handwritten.svg" alt="Handwritten: How do you detect learning plateaus before they derail you?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-detect-learning-plateaus-before-they-derail-you-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-detect-learning-plateaus-before-they-derail-you-diagram.svg" alt="Diagram: How do you detect learning plateaus before they derail you?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-detect-learning-plateaus-before-they-derail-you-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-detect-learning-plateaus-before-they-derail-you-sticky.svg" alt="Sticky Note: How do you detect learning plateaus before they derail you?" width="30%">
-</a>
-
 
 **Answer:** A learning plateau is when your velocity (concepts mastered per day/week) flattens or declines despite consistent effort. Plateaus are normal, but undetected plateaus lead to demotivation and giving up.
 
@@ -515,16 +485,6 @@ class PlateauDetector {
 ---
 
 ### Q3: How do you measure knowledge coverage against a syllabus?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-knowledge-coverage-against-a-syllabus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-knowledge-coverage-against-a-syllabus-handwritten.svg" alt="Handwritten: How do you measure knowledge coverage against a syllabus?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-knowledge-coverage-against-a-syllabus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-knowledge-coverage-against-a-syllabus-diagram.svg" alt="Diagram: How do you measure knowledge coverage against a syllabus?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-knowledge-coverage-against-a-syllabus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-knowledge-coverage-against-a-syllabus-sticky.svg" alt="Sticky Note: How do you measure knowledge coverage against a syllabus?" width="30%">
-</a>
 
 
 **Answer:** Knowledge coverage measures what percentage of a topic's complete concept graph you've mastered. Without a coverage map, you might spend all your time on 20% of the content while neglecting the other 80%.
@@ -675,16 +635,6 @@ class CoverageMapper {
 
 ### Q4: How do you measure retention (forgetting curve) accurately?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-retention-forgetting-curve-accurately-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-retention-forgetting-curve-accurately-handwritten.svg" alt="Handwritten: How do you measure retention (forgetting curve) accurately?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-retention-forgetting-curve-accurately-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-retention-forgetting-curve-accurately-diagram.svg" alt="Diagram: How do you measure retention (forgetting curve) accurately?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-retention-forgetting-curve-accurately-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-retention-forgetting-curve-accurately-sticky.svg" alt="Sticky Note: How do you measure retention (forgetting curve) accurately?" width="30%">
-</a>
-
 
 **Answer:** The forgetting curve is the decline in recall probability over time without review. Measuring your personal forgetting curve lets you schedule reviews at the optimal moment — just before you would have forgotten the material.
 
@@ -804,16 +754,6 @@ For each concept you learn, test yourself at these three intervals. Record wheth
 ---
 
 ### Q5: How do you measure session quality objectively?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-session-quality-objectively-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-session-quality-objectively-handwritten.svg" alt="Handwritten: How do you measure session quality objectively?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-session-quality-objectively-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-session-quality-objectively-diagram.svg" alt="Diagram: How do you measure session quality objectively?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-session-quality-objectively-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-session-quality-objectively-sticky.svg" alt="Sticky Note: How do you measure session quality objectively?" width="30%">
-</a>
 
 
 **Answer:** Session quality is subjective but can be made measurable by tracking specific dimensions. A simple 1-10 score is useful, but dimensional scoring gives you actionable data.
@@ -945,16 +885,6 @@ After each session, rate:
 ---
 
 ### Q6: How do you run A/B tests on your own learning methods?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-run-a-b-tests-on-your-own-learning-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-run-a-b-tests-on-your-own-learning-methods-handwritten.svg" alt="Handwritten: How do you run A/B tests on your own learning methods?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-run-a-b-tests-on-your-own-learning-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-run-a-b-tests-on-your-own-learning-methods-diagram.svg" alt="Diagram: How do you run A/B tests on your own learning methods?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-run-a-b-tests-on-your-own-learning-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-run-a-b-tests-on-your-own-learning-methods-sticky.svg" alt="Sticky Note: How do you run A/B tests on your own learning methods?" width="30%">
-</a>
 
 
 **Answer:** The most powerful use of learning analytics is running experiments on yourself. Instead of guessing whether Pomodoro or deep work blocks work better for you, measure it.
@@ -1104,16 +1034,6 @@ class LearningABTest {
 
 ### Q7: How do you conduct a weekly learning review?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-conduct-a-weekly-learning-review-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-conduct-a-weekly-learning-review-handwritten.svg" alt="Handwritten: How do you conduct a weekly learning review?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-conduct-a-weekly-learning-review-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-conduct-a-weekly-learning-review-diagram.svg" alt="Diagram: How do you conduct a weekly learning review?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-conduct-a-weekly-learning-review-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-conduct-a-weekly-learning-review-sticky.svg" alt="Sticky Note: How do you conduct a weekly learning review?" width="30%">
-</a>
-
 
 **Answer:** A weekly review is a structured 30-minute session where you analyze your learning data, identify patterns, and adjust your approach for the coming week.
 
@@ -1250,16 +1170,6 @@ class WeeklyReviewer {
 
 ### Q8: How do you measure learning ROI (return on time invested)?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-learning-roi-return-on-time-invested-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-learning-roi-return-on-time-invested-handwritten.svg" alt="Handwritten: How do you measure learning ROI (return on time invested)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-learning-roi-return-on-time-invested-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-learning-roi-return-on-time-invested-diagram.svg" alt="Diagram: How do you measure learning ROI (return on time invested)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-learning-roi-return-on-time-invested-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-measure-learning-roi-return-on-time-invested-sticky.svg" alt="Sticky Note: How do you measure learning ROI (return on time invested)?" width="30%">
-</a>
-
 
 **Answer:** Not all study time is equal. Learning ROI measures how much retention you get per minute of study. This tells you which methods, topics, and times of day give you the best return.
 
@@ -1369,16 +1279,6 @@ recall or teaching. Expected efficiency gain: 3-5x per hour.`;
 ---
 
 ### Q9: How do you set measurable learning goals?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-set-measurable-learning-goals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-set-measurable-learning-goals-handwritten.svg" alt="Handwritten: How do you set measurable learning goals?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-set-measurable-learning-goals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-set-measurable-learning-goals-diagram.svg" alt="Diagram: How do you set measurable learning goals?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-set-measurable-learning-goals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-set-measurable-learning-goals-sticky.svg" alt="Sticky Note: How do you set measurable learning goals?" width="30%">
-</a>
 
 
 **Answer:** Most learning goals fail because they're vague ("get better at algorithms"). Measurable learning goals use the SMART framework adapted for learning: Specific, Measurable, Achievable, Relevant, Time-bound.
@@ -1504,16 +1404,6 @@ class GoalPlanner {
 
 ### Q10: How do you prevent gaming the metrics?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-prevent-gaming-the-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-prevent-gaming-the-metrics-handwritten.svg" alt="Handwritten: How do you prevent gaming the metrics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-prevent-gaming-the-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-prevent-gaming-the-metrics-diagram.svg" alt="Diagram: How do you prevent gaming the metrics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-prevent-gaming-the-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/how-do-you-prevent-gaming-the-metrics-sticky.svg" alt="Sticky Note: How do you prevent gaming the metrics?" width="30%">
-</a>
-
 
 **Answer:** When you measure learning, what you measure is what you'll optimize — but optimizing the metric isn't the same as optimizing learning. You need safeguards against metric gaming.
 
@@ -1602,16 +1492,6 @@ class AntiGamingSystem {
 ---
 
 ### Self-Assessment Quiz
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-13-learning-analytics/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
-</a>
 
 
 **1. What is the most important leading indicator of long-term learning success?**

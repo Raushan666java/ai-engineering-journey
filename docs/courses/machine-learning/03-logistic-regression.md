@@ -89,16 +89,6 @@ flowchart LR
 
 ### Classification vs. Regression
 
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/classification-vs-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/classification-vs-regression-handwritten.svg" alt="Handwritten: Classification vs. Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/classification-vs-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/classification-vs-regression-diagram.svg" alt="Diagram: Classification vs. Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/classification-vs-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/classification-vs-regression-sticky.svg" alt="Sticky Note: Classification vs. Regression" width="30%">
-</a>
-
 
 Linear regression is designed for continuous outputs. Using it for classification has fundamental problems:
 
@@ -109,16 +99,6 @@ Linear regression is designed for continuous outputs. Using it for classificatio
 Logistic Regression solves these problems by passing the linear output through a non-linear squashing function (sigmoid) and using a convex loss (cross-entropy) designed for classification.
 
 ### The Sigmoid Function
-
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/the-sigmoid-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/the-sigmoid-function-handwritten.svg" alt="Handwritten: The Sigmoid Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/the-sigmoid-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/the-sigmoid-function-diagram.svg" alt="Diagram: The Sigmoid Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/the-sigmoid-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/the-sigmoid-function-sticky.svg" alt="Sticky Note: The Sigmoid Function" width="30%">
-</a>
 
 
 The sigmoid (logistic) function maps any real-valued number to the $(0, 1)$ interval:
@@ -139,16 +119,6 @@ $$h_w(x) = P(y=1 | x; w) = \sigma(\mathbf{w}^T\mathbf{x})$$
 
 ### Odds and Log-Odds
 
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/odds-and-log-odds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/odds-and-log-odds-handwritten.svg" alt="Handwritten: Odds and Log-Odds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/odds-and-log-odds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/odds-and-log-odds-diagram.svg" alt="Diagram: Odds and Log-Odds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/odds-and-log-odds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/odds-and-log-odds-sticky.svg" alt="Sticky Note: Odds and Log-Odds" width="30%">
-</a>
-
 
 **Odds** are the ratio of the probability of an event happening to the probability of it not happening:
 
@@ -164,16 +134,6 @@ $$\log\left(\frac{p}{1-p}\right) = \mathbf{w}^T\mathbf{x}$$
 This reveals that logistic regression is **linear in the log-odds space** ? each unit increase in $x_j$ multiplies the odds by $e^{w_j}$.
 
 ### Decision Boundary
-
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/decision-boundary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/decision-boundary-handwritten.svg" alt="Handwritten: Decision Boundary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/decision-boundary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/decision-boundary-diagram.svg" alt="Diagram: Decision Boundary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/decision-boundary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/decision-boundary-sticky.svg" alt="Sticky Note: Decision Boundary" width="30%">
-</a>
 
 
 The model predicts a class by comparing the probability to a threshold, typically 0.5:
@@ -198,16 +158,6 @@ flowchart TD
 
 ### Cross-Entropy Loss (Log Loss)
 
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/cross-entropy-loss-log-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/cross-entropy-loss-log-loss-handwritten.svg" alt="Handwritten: Cross-Entropy Loss (Log Loss)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/cross-entropy-loss-log-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/cross-entropy-loss-log-loss-diagram.svg" alt="Diagram: Cross-Entropy Loss (Log Loss)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/cross-entropy-loss-log-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/cross-entropy-loss-log-loss-sticky.svg" alt="Sticky Note: Cross-Entropy Loss (Log Loss)" width="30%">
-</a>
-
 
 Mean Squared Error is unsuitable for logistic regression because it creates a non-convex loss surface (due to the sigmoid non-linearity). Instead, we use **Binary Cross-Entropy**:
 
@@ -225,16 +175,6 @@ This is identical to the gradient of MSE for linear regression! The difference l
 
 ### Gradient Descent for Logistic Regression
 
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/gradient-descent-for-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/gradient-descent-for-logistic-regression-handwritten.svg" alt="Handwritten: Gradient Descent for Logistic Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/gradient-descent-for-logistic-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/gradient-descent-for-logistic-regression-diagram.svg" alt="Diagram: Gradient Descent for Logistic Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/gradient-descent-for-logistic-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/gradient-descent-for-logistic-regression-sticky.svg" alt="Sticky Note: Gradient Descent for Logistic Regression" width="30%">
-</a>
-
 
 The update rule:
 
@@ -245,16 +185,6 @@ With L2 regularization (Ridge), the cost function becomes:
 $$J(w) = -\frac{1}{n} \sum_{i=1}^{n} \left[ y^{(i)} \log(h_w(x^{(i)})) + (1 - y^{(i)}) \log(1 - h_w(x^{(i)})) \right] + \frac{\lambda}{2n} \sum_{j=1}^{d} w_j^2$$
 
 ### Confusion Matrix and Derived Metrics
-
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/confusion-matrix-and-derived-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/confusion-matrix-and-derived-metrics-handwritten.svg" alt="Handwritten: Confusion Matrix and Derived Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/confusion-matrix-and-derived-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/confusion-matrix-and-derived-metrics-diagram.svg" alt="Diagram: Confusion Matrix and Derived Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/confusion-matrix-and-derived-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/confusion-matrix-and-derived-metrics-sticky.svg" alt="Sticky Note: Confusion Matrix and Derived Metrics" width="30%">
-</a>
 
 
 The confusion matrix summarizes classification results:
@@ -289,16 +219,6 @@ flowchart TD
 
 ### ROC Curves and AUC
 
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/roc-curves-and-auc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/roc-curves-and-auc-handwritten.svg" alt="Handwritten: ROC Curves and AUC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/roc-curves-and-auc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/roc-curves-and-auc-diagram.svg" alt="Diagram: ROC Curves and AUC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/roc-curves-and-auc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/roc-curves-and-auc-sticky.svg" alt="Sticky Note: ROC Curves and AUC" width="30%">
-</a>
-
 
 The **Receiver Operating Characteristic (ROC)** curve plots the True Positive Rate (Recall) against the False Positive Rate (1 - Specificity) across all classification thresholds.
 
@@ -325,16 +245,6 @@ flowchart LR
 
 ### Multi-Class Classification
 
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/multi-class-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/multi-class-classification-handwritten.svg" alt="Handwritten: Multi-Class Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/multi-class-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/multi-class-classification-diagram.svg" alt="Diagram: Multi-Class Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/multi-class-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/multi-class-classification-sticky.svg" alt="Sticky Note: Multi-Class Classification" width="30%">
-</a>
-
 
 **One-vs-Rest (OvR)**: Train $K$ binary classifiers (one per class vs. all others). Predict the class with the highest confidence score. Used by sklearn's `LogisticRegression(multi_class='ovr')`.
 
@@ -349,16 +259,6 @@ The loss function for softmax regression is **Categorical Cross-Entropy**:
 $$J(W) = -\frac{1}{n} \sum_{i=1}^{n} \sum_{k=1}^{K} \mathbf{1}\{y^{(i)} = k\} \log P(y^{(i)} = k | x^{(i)}; W)$$
 
 ### Regularization for Logistic Regression
-
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/regularization-for-logistic-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/regularization-for-logistic-regression-handwritten.svg" alt="Handwritten: Regularization for Logistic Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/regularization-for-logistic-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/regularization-for-logistic-regression-diagram.svg" alt="Diagram: Regularization for Logistic Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/03-logistic-regression/regularization-for-logistic-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/03-logistic-regression/regularization-for-logistic-regression-sticky.svg" alt="Sticky Note: Regularization for Logistic Regression" width="30%">
-</a>
 
 
 Same principles as linear regression:

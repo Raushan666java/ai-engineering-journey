@@ -57,16 +57,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -80,16 +70,6 @@
 | SACK | Selective ACKs for multiple losses | Efficient recovery in burst-loss scenarios |
 
 ### Chapter Roadmap
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
 
 
 ```mermaid
@@ -112,16 +92,6 @@ flowchart LR
 ```
 
 ### TCP Congestion Control Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-congestion-control-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-congestion-control-architecture-handwritten.svg" alt="Handwritten: TCP Congestion Control Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-congestion-control-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-congestion-control-architecture-diagram.svg" alt="Diagram: TCP Congestion Control Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-congestion-control-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-congestion-control-architecture-sticky.svg" alt="Sticky Note: TCP Congestion Control Architecture" width="30%">
-</a>
 
 
 ```mermaid
@@ -175,16 +145,6 @@ The key distinction: flow control addresses receiver capacity — a known, stati
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Aspect | Flow Control | Congestion Control |
 |--------|-------------|-------------------|
@@ -196,16 +156,6 @@ The key distinction: flow control addresses receiver capacity — a known, stati
 | Control type | Preventive | Reactive (loss-based) or proactive (model-based) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **rwnd = 0 persist**: Sender enters persist state, sending 1-byte probes. If probes are lost, deadlock can occur without the persist timer.
@@ -231,16 +181,6 @@ If the receiver stops reading data, rwnd shrinks to zero. The sender stops trans
 
 ### Congestion Window vs Receive Window — Detailed Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-detailed-comparison-handwritten.svg" alt="Handwritten: Congestion Window vs Receive Window — Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-detailed-comparison-diagram.svg" alt="Diagram: Congestion Window vs Receive Window — Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-detailed-comparison-sticky.svg" alt="Sticky Note: Congestion Window vs Receive Window — Detailed Comparison" width="30%">
-</a>
-
 
 | Property | Congestion Window (cwnd) | Receive Window (rwnd) |
 |----------|------------------------|----------------------|
@@ -255,16 +195,6 @@ If the receiver stops reading data, rwnd shrinks to zero. The sender stops trans
 | Algorithmic driver | AIMD, Cubic, BBR | Application read rate + buffer sizing |
 
 ### Why the Effective Window Is min(cwnd, rwnd)
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-the-effective-window-is-min-cwnd-rwnd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-the-effective-window-is-min-cwnd-rwnd-handwritten.svg" alt="Handwritten: Why the Effective Window Is min(cwnd, rwnd)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-the-effective-window-is-min-cwnd-rwnd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-the-effective-window-is-min-cwnd-rwnd-diagram.svg" alt="Diagram: Why the Effective Window Is min(cwnd, rwnd)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-the-effective-window-is-min-cwnd-rwnd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-the-effective-window-is-min-cwnd-rwnd-sticky.svg" alt="Sticky Note: Why the Effective Window Is min(cwnd, rwnd)" width="30%">
-</a>
 
 
 The effective window must satisfy both constraints simultaneously:
@@ -281,16 +211,6 @@ EffectiveWindow = min(cwnd, rwnd)
 
 ### Real-World Analogy: Highway Traffic
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-highway-traffic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-highway-traffic-handwritten.svg" alt="Handwritten: Real-World Analogy: Highway Traffic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-highway-traffic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-highway-traffic-diagram.svg" alt="Diagram: Real-World Analogy: Highway Traffic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-highway-traffic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-highway-traffic-sticky.svg" alt="Sticky Note: Real-World Analogy: Highway Traffic" width="30%">
-</a>
-
 
 Imagine a multi-lane highway connecting two cities. Cars (packets) travel from City A (sender) to City B (receiver).
 
@@ -304,16 +224,6 @@ Imagine a multi-lane highway connecting two cities. Cars (packets) travel from C
 
 ### Causes of Congestion
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/causes-of-congestion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/causes-of-congestion-handwritten.svg" alt="Handwritten: Causes of Congestion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/causes-of-congestion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/causes-of-congestion-diagram.svg" alt="Diagram: Causes of Congestion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/causes-of-congestion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/causes-of-congestion-sticky.svg" alt="Sticky Note: Causes of Congestion" width="30%">
-</a>
-
 
 | Cause | Description | Real-World Example |
 |-------|-------------|-------------------|
@@ -326,16 +236,6 @@ Imagine a multi-lane highway connecting two cities. Cars (packets) travel from C
 
 ### Effects of Congestion
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/effects-of-congestion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/effects-of-congestion-handwritten.svg" alt="Handwritten: Effects of Congestion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/effects-of-congestion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/effects-of-congestion-diagram.svg" alt="Diagram: Effects of Congestion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/effects-of-congestion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/effects-of-congestion-sticky.svg" alt="Sticky Note: Effects of Congestion" width="30%">
-</a>
-
 
 - **Packet loss**: Router tail-drop when buffer exceeds capacity.
 - **Increased latency**: Queuing delay dominates; RTT grows from 10 ms to 500+ ms.
@@ -345,16 +245,6 @@ Imagine a multi-lane highway connecting two cities. Cars (packets) travel from C
 - **Global synchronization**: All TCP flows lose packets simultaneously and reduce window together, then increase together — creating synchronized sawtooth patterns that underutilize the link.
 
 ### Complexity Analysis
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
 
 
 | Operation | Time Complexity | Space Complexity | Why |
@@ -372,16 +262,6 @@ Imagine a multi-lane highway connecting two cities. Cars (packets) travel from C
 
 ### Real-World Analogy: Test-Driving a New Car
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-test-driving-a-new-car-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-test-driving-a-new-car-handwritten.svg" alt="Handwritten: Real-World Analogy: Test-Driving a New Car" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-test-driving-a-new-car-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-test-driving-a-new-car-diagram.svg" alt="Diagram: Real-World Analogy: Test-Driving a New Car" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-test-driving-a-new-car-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-test-driving-a-new-car-sticky.svg" alt="Sticky Note: Real-World Analogy: Test-Driving a New Car" width="30%">
-</a>
-
 
 When you get a new car, you don't floor it immediately. You take short trips to the grocery store, gradually extending to highway distances. Slow start does the same: it begins conservatively (cwnd = 10 MSS), and each successful round trip (ACK received) proves the network path can handle more data.
 
@@ -391,16 +271,6 @@ When you get a new car, you don't floor it immediately. You take short trips to 
 - **Trip 4**: Drive 80 blocks — hit a traffic jam. (cwnd exceeds network capacity; loss detected.)
 
 ### Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
-</a>
 
 
 1. **Initialize**: Set cwnd = 10 MSS (RFC 6928), ssthresh = initial value (commonly 64 KB or arbitrarily high).
@@ -414,16 +284,6 @@ When you get a new car, you don't floor it immediately. You take short trips to 
 6. **Repeat** from step 2 until loss or ssthresh is reached.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -460,16 +320,6 @@ OnLoss(timeout_or_3dup):
 
 ### Dry Run Trace Table — Slow Start (cwnd evolution)
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-table-slow-start-cwnd-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-table-slow-start-cwnd-evolution-handwritten.svg" alt="Handwritten: Dry Run Trace Table — Slow Start (cwnd evolution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-table-slow-start-cwnd-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-table-slow-start-cwnd-evolution-diagram.svg" alt="Diagram: Dry Run Trace Table — Slow Start (cwnd evolution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-table-slow-start-cwnd-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-table-slow-start-cwnd-evolution-sticky.svg" alt="Sticky Note: Dry Run Trace Table — Slow Start (cwnd evolution)" width="30%">
-</a>
-
 
 Parameters: MSS = 1460 bytes, initial cwnd = 10 MSS, ssthresh = 64 KB (≈ 44 MSS), no loss.
 
@@ -483,16 +333,6 @@ Parameters: MSS = 1460 bytes, initial cwnd = 10 MSS, ssthresh = 64 KB (≈ 44 MS
 At RTT 3, cwnd (80 MSS) exceeds ssthresh (~44 MSS), so TCP transitions to Congestion Avoidance.
 
 ### Dry Run Trace — Slow Start with Loss
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-slow-start-with-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-slow-start-with-loss-handwritten.svg" alt="Handwritten: Dry Run Trace — Slow Start with Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-slow-start-with-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-slow-start-with-loss-diagram.svg" alt="Diagram: Dry Run Trace — Slow Start with Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-slow-start-with-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/dry-run-trace-slow-start-with-loss-sticky.svg" alt="Sticky Note: Dry Run Trace — Slow Start with Loss" width="30%">
-</a>
 
 
 Parameters: initial cwnd = 10 MSS, ssthresh = 64 MSS, loss occurs at RTT 4 (cwnd = 160).
@@ -510,16 +350,6 @@ Parameters: initial cwnd = 10 MSS, ssthresh = 64 MSS, loss occurs at RTT 4 (cwnd
 | N | cwnd = 40 | 40 | — | 40 | Transition to Congestion Avoidance |
 
 ### C++ Implementation — Slow Start and Congestion Avoidance
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-slow-start-and-congestion-avoidance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-slow-start-and-congestion-avoidance-handwritten.svg" alt="Handwritten: C++ Implementation — Slow Start and Congestion Avoidance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-slow-start-and-congestion-avoidance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-slow-start-and-congestion-avoidance-diagram.svg" alt="Diagram: C++ Implementation — Slow Start and Congestion Avoidance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-slow-start-and-congestion-avoidance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-slow-start-and-congestion-avoidance-sticky.svg" alt="Sticky Note: C++ Implementation — Slow Start and Congestion Avoidance" width="30%">
-</a>
 
 
 ```cpp
@@ -652,16 +482,6 @@ int main() {
 ```
 
 ### Python Implementation — TCP Reno Cwnd Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-tcp-reno-cwnd-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-tcp-reno-cwnd-simulator-handwritten.svg" alt="Handwritten: Python Implementation — TCP Reno Cwnd Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-tcp-reno-cwnd-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-tcp-reno-cwnd-simulator-diagram.svg" alt="Diagram: Python Implementation — TCP Reno Cwnd Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-tcp-reno-cwnd-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-tcp-reno-cwnd-simulator-sticky.svg" alt="Sticky Note: Python Implementation — TCP Reno Cwnd Simulator" width="30%">
-</a>
 
 
 ```python
@@ -827,16 +647,6 @@ if __name__ == "__main__":
 
 ### Complexity Analysis — Slow Start
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-slow-start-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-slow-start-handwritten.svg" alt="Handwritten: Complexity Analysis — Slow Start" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-slow-start-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-slow-start-diagram.svg" alt="Diagram: Complexity Analysis — Slow Start" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-slow-start-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-slow-start-sticky.svg" alt="Sticky Note: Complexity Analysis — Slow Start" width="30%">
-</a>
-
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -897,16 +707,6 @@ class CongestionWindowSimulator {
 
 ### Real-World Analogy: Elevator Loading
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-elevator-loading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-elevator-loading-handwritten.svg" alt="Handwritten: Real-World Analogy: Elevator Loading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-elevator-loading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-elevator-loading-diagram.svg" alt="Diagram: Real-World Analogy: Elevator Loading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-elevator-loading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-elevator-loading-sticky.svg" alt="Sticky Note: Real-World Analogy: Elevator Loading" width="30%">
-</a>
-
 
 You're loading an elevator with unknown weight capacity.
 
@@ -916,16 +716,6 @@ You're loading an elevator with unknown weight capacity.
 The sawtooth pattern in performance: load increases linearly until a failure forces a sharp reduction, then the cycle repeats.
 
 ### Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
-</a>
 
 
 1. **Transition**: When cwnd >= ssthresh, enter congestion avoidance from slow start.
@@ -938,16 +728,6 @@ The sawtooth pattern in performance: load increases linearly until a failure for
 5. **Return**: After recovery, resume congestion avoidance from ssthresh (Reno) or after slow start reaches ssthresh (Tahoe).
 
 ### AIMD Sawtooth Pattern — Dry Run Trace
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-dry-run-trace-handwritten.svg" alt="Handwritten: AIMD Sawtooth Pattern — Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-dry-run-trace-diagram.svg" alt="Diagram: AIMD Sawtooth Pattern — Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-dry-run-trace-sticky.svg" alt="Sticky Note: AIMD Sawtooth Pattern — Dry Run Trace" width="30%">
-</a>
 
 
 Parameters: MSS = 1460, initial cwnd = 10, ssthresh = 32.
@@ -973,16 +753,6 @@ Note the sawtooth pattern: each loss event cuts cwnd in half, then it grows line
 
 ### AIMD Pseudocode
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-pseudocode-handwritten.svg" alt="Handwritten: AIMD Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-pseudocode-diagram.svg" alt="Diagram: AIMD Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-pseudocode-sticky.svg" alt="Sticky Note: AIMD Pseudocode" width="30%">
-</a>
-
 
 ```
 // Additive Increase
@@ -1003,16 +773,6 @@ OnLoss():
 
 ### Congestion Avoidance vs Slow Start — Phase Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-avoidance-vs-slow-start-phase-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-avoidance-vs-slow-start-phase-comparison-handwritten.svg" alt="Handwritten: Congestion Avoidance vs Slow Start — Phase Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-avoidance-vs-slow-start-phase-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-avoidance-vs-slow-start-phase-comparison-diagram.svg" alt="Diagram: Congestion Avoidance vs Slow Start — Phase Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-avoidance-vs-slow-start-phase-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-avoidance-vs-slow-start-phase-comparison-sticky.svg" alt="Sticky Note: Congestion Avoidance vs Slow Start — Phase Comparison" width="30%">
-</a>
-
 
 | Aspect | Slow Start | Congestion Avoidance |
 |--------|-----------|---------------------|
@@ -1026,16 +786,6 @@ OnLoss():
 | Phase after loss | Slow start again (Tahoe) or fast recovery (Reno) | Fast recovery then congestion avoidance |
 
 ### Complexity Analysis — Congestion Avoidance
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-congestion-avoidance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-congestion-avoidance-handwritten.svg" alt="Handwritten: Complexity Analysis — Congestion Avoidance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-congestion-avoidance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-congestion-avoidance-diagram.svg" alt="Diagram: Complexity Analysis — Congestion Avoidance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-congestion-avoidance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-congestion-avoidance-sticky.svg" alt="Sticky Note: Complexity Analysis — Congestion Avoidance" width="30%">
-</a>
 
 
 | Operation | Complexity | Why |
@@ -1111,16 +861,6 @@ class AIMDSimulator {
 
 ### Real-World Analogy: Conference Call with Missing Audio
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-conference-call-with-missing-audio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-conference-call-with-missing-audio-handwritten.svg" alt="Handwritten: Real-World Analogy: Conference Call with Missing Audio" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-conference-call-with-missing-audio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-conference-call-with-missing-audio-diagram.svg" alt="Diagram: Real-World Analogy: Conference Call with Missing Audio" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-conference-call-with-missing-audio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-conference-call-with-missing-audio-sticky.svg" alt="Sticky Note: Real-World Analogy: Conference Call with Missing Audio" width="30%">
-</a>
-
 
 You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 
@@ -1131,16 +871,6 @@ You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 
 ### Fast Retransmit — Numbered Steps
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-numbered-steps-handwritten.svg" alt="Handwritten: Fast Retransmit — Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-numbered-steps-diagram.svg" alt="Diagram: Fast Retransmit — Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-numbered-steps-sticky.svg" alt="Sticky Note: Fast Retransmit — Numbered Steps" width="30%">
-</a>
-
 
 1. **Receiver detects gap**: Receives out-of-order segment. Immediately sends duplicate ACK for the last in-order byte.
 2. **Sender counts ACKs**: Tracks duplicate ACKs for the same sequence number.
@@ -1149,16 +879,6 @@ You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 
 ### Fast Recovery — Numbered Steps (Reno)
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-recovery-numbered-steps-reno-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-recovery-numbered-steps-reno-handwritten.svg" alt="Handwritten: Fast Recovery — Numbered Steps (Reno)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-recovery-numbered-steps-reno-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-recovery-numbered-steps-reno-diagram.svg" alt="Diagram: Fast Recovery — Numbered Steps (Reno)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-recovery-numbered-steps-reno-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-recovery-numbered-steps-reno-sticky.svg" alt="Sticky Note: Fast Recovery — Numbered Steps (Reno)" width="30%">
-</a>
-
 
 1. **On 3rd dup ACK**: ssthresh = cwnd / 2. cwnd = ssthresh + 3 (inflated for the 3 dup ACKs that have left the network).
 2. **For each additional dup ACK**: cwnd += 1 MSS. This accounts for a packet leaving the network (the dup ACK indicates one out-of-order packet arrived).
@@ -1166,16 +886,6 @@ You're on a conference call. Speaker A says segment 1, 2, 3, 4, 5.
 4. **On partial ACK** (ACKs the retransmitted segment but not all data sent before loss): cwnd = ssthresh. Enter congestion avoidance.
 
 ### Fast Retransmit/Recovery — Dry Run Trace
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-recovery-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-recovery-dry-run-trace-handwritten.svg" alt="Handwritten: Fast Retransmit/Recovery — Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-recovery-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-recovery-dry-run-trace-diagram.svg" alt="Diagram: Fast Retransmit/Recovery — Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-recovery-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/fast-retransmit-recovery-dry-run-trace-sticky.svg" alt="Sticky Note: Fast Retransmit/Recovery — Dry Run Trace" width="30%">
-</a>
 
 
 Parameters: cwnd = 48 MSS, packets 1-48 in flight. Packet 10 is lost.
@@ -1194,16 +904,6 @@ Parameters: cwnd = 48 MSS, packets 1-48 in flight. Packet 10 is lost.
 | N | Partial ACK for P10 (ACKs up to P48) | 24 | cwnd = ssthresh, enter CA |
 
 ### Pseudocode — Fast Retransmit and Recovery
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-fast-retransmit-and-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-fast-retransmit-and-recovery-handwritten.svg" alt="Handwritten: Pseudocode — Fast Retransmit and Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-fast-retransmit-and-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-fast-retransmit-and-recovery-diagram.svg" alt="Diagram: Pseudocode — Fast Retransmit and Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-fast-retransmit-and-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pseudocode-fast-retransmit-and-recovery-sticky.svg" alt="Sticky Note: Pseudocode — Fast Retransmit and Recovery" width="30%">
-</a>
 
 
 ```
@@ -1243,16 +943,6 @@ OnPartialAck(ack):
 
 ### Complexity Analysis — Fast Retransmit/Recovery
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-fast-retransmit-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-fast-retransmit-recovery-handwritten.svg" alt="Handwritten: Complexity Analysis — Fast Retransmit/Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-fast-retransmit-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-fast-retransmit-recovery-diagram.svg" alt="Diagram: Complexity Analysis — Fast Retransmit/Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-fast-retransmit-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-fast-retransmit-recovery-sticky.svg" alt="Sticky Note: Complexity Analysis — Fast Retransmit/Recovery" width="30%">
-</a>
-
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -1265,16 +955,6 @@ OnPartialAck(ack):
 **Why fast retransmit matters**: Without it, TCP waits for the RTO (minimum 1 second per RFC 6298) to detect loss. At 10 Gbps, a 1-second RTO wastes 1.25 GB of potential throughput. Fast retransmit detects loss in ~1 RTT instead.
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Problem | Solution |
@@ -1359,16 +1039,6 @@ TCP Tahoe predates fast recovery. On triple duplicate ACK:
 
 ### Tahoe Dry Run — Loss at cwnd = 48
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tahoe-dry-run-loss-at-cwnd-48-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tahoe-dry-run-loss-at-cwnd-48-handwritten.svg" alt="Handwritten: Tahoe Dry Run — Loss at cwnd = 48" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tahoe-dry-run-loss-at-cwnd-48-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tahoe-dry-run-loss-at-cwnd-48-diagram.svg" alt="Diagram: Tahoe Dry Run — Loss at cwnd = 48" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tahoe-dry-run-loss-at-cwnd-48-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tahoe-dry-run-loss-at-cwnd-48-sticky.svg" alt="Sticky Note: Tahoe Dry Run — Loss at cwnd = 48" width="30%">
-</a>
-
 
 | RTT | Event | cwnd | ssthresh | Action |
 |-----|-------|------|---------|--------|
@@ -1394,16 +1064,6 @@ TCP Reno improved Tahoe by adding fast recovery. Instead of resetting to cwnd = 
 
 ### Reno Dry Run — Single Loss at cwnd = 48
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-dry-run-single-loss-at-cwnd-48-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-dry-run-single-loss-at-cwnd-48-handwritten.svg" alt="Handwritten: Reno Dry Run — Single Loss at cwnd = 48" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-dry-run-single-loss-at-cwnd-48-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-dry-run-single-loss-at-cwnd-48-diagram.svg" alt="Diagram: Reno Dry Run — Single Loss at cwnd = 48" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-dry-run-single-loss-at-cwnd-48-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-dry-run-single-loss-at-cwnd-48-sticky.svg" alt="Sticky Note: Reno Dry Run — Single Loss at cwnd = 48" width="30%">
-</a>
-
 
 | RTT | Event | cwnd | ssthresh | Phase | Packets Sent |
 |-----|-------|------|---------|-------|-------------|
@@ -1420,32 +1080,12 @@ TCP Reno improved Tahoe by adding fast recovery. Instead of resetting to cwnd = 
 
 ### Reno Limitations
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-limitations-handwritten.svg" alt="Handwritten: Reno Limitations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-limitations-diagram.svg" alt="Diagram: Reno Limitations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/reno-limitations-sticky.svg" alt="Sticky Note: Reno Limitations" width="30%">
-</a>
-
 
 1. **Multiple losses in one window**: If multiple packets are lost, the partial ACK (which ACKs the retransmitted packet + some later packets) doesn't provide enough information to retransmit the remaining losses. Reno exits recovery after the first partial ACK.
 2. **RTT unfairness**: Throughput ≈ (1/RTT) * sqrt(3/(2p)) for Reno. Shorter RTT flows get proportionally higher throughput.
 3. **Loss-signal dependency**: Reno relies entirely on packet loss as congestion signal. In deep-buffer networks, loss occurs long after queues are full (bufferbloat).
 
 ### Complexity Analysis — TCP Reno
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-tcp-reno-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-tcp-reno-handwritten.svg" alt="Handwritten: Complexity Analysis — TCP Reno" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-tcp-reno-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-tcp-reno-diagram.svg" alt="Diagram: Complexity Analysis — TCP Reno" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-tcp-reno-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-tcp-reno-sticky.svg" alt="Sticky Note: Complexity Analysis — TCP Reno" width="30%">
-</a>
 
 
 | Metric | Value | Why |
@@ -1461,30 +1101,10 @@ TCP NewReno (RFC 6582, now RFC 6675) addresses Reno's multiple-loss weakness.
 
 ### Key Innovation: Partial ACK Handling
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/key-innovation-partial-ack-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/key-innovation-partial-ack-handling-handwritten.svg" alt="Handwritten: Key Innovation: Partial ACK Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/key-innovation-partial-ack-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/key-innovation-partial-ack-handling-diagram.svg" alt="Diagram: Key Innovation: Partial ACK Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/key-innovation-partial-ack-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/key-innovation-partial-ack-handling-sticky.svg" alt="Sticky Note: Key Innovation: Partial ACK Handling" width="30%">
-</a>
-
 
 Instead of exiting fast recovery on the first partial ACK, NewReno retransmits the next unacknowledged segment. It stays in fast recovery until all data sent before the loss event is acknowledged.
 
 ### Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
-</a>
 
 
 1. Same as Reno up to 3 duplicate ACKs.
@@ -1497,16 +1117,6 @@ Instead of exiting fast recovery on the first partial ACK, NewReno retransmits t
    - Enter congestion avoidance.
 
 ### NewReno Dry Run — Multiple Losses
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/newreno-dry-run-multiple-losses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/newreno-dry-run-multiple-losses-handwritten.svg" alt="Handwritten: NewReno Dry Run — Multiple Losses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/newreno-dry-run-multiple-losses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/newreno-dry-run-multiple-losses-diagram.svg" alt="Diagram: NewReno Dry Run — Multiple Losses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/newreno-dry-run-multiple-losses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/newreno-dry-run-multiple-losses-sticky.svg" alt="Sticky Note: NewReno Dry Run — Multiple Losses" width="30%">
-</a>
 
 
 Scenario: Packets 10, 12, 14 lost in a window of cwnd = 48.
@@ -1522,16 +1132,6 @@ Scenario: Packets 10, 12, 14 lost in a window of cwnd = 48.
 
 ### Complexity Analysis — NewReno vs Reno
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-newreno-vs-reno-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-newreno-vs-reno-handwritten.svg" alt="Handwritten: Complexity Analysis — NewReno vs Reno" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-newreno-vs-reno-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-newreno-vs-reno-diagram.svg" alt="Diagram: Complexity Analysis — NewReno vs Reno" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-newreno-vs-reno-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-newreno-vs-reno-sticky.svg" alt="Sticky Note: Complexity Analysis — NewReno vs Reno" width="30%">
-</a>
-
 
 | Aspect | Reno | NewReno |
 |--------|------|---------|
@@ -1546,16 +1146,6 @@ Scenario: Packets 10, 12, 14 lost in a window of cwnd = 48.
 
 ### Real-World Analogy: Race Car Acceleration
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-race-car-acceleration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-race-car-acceleration-handwritten.svg" alt="Handwritten: Real-World Analogy: Race Car Acceleration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-race-car-acceleration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-race-car-acceleration-diagram.svg" alt="Diagram: Real-World Analogy: Race Car Acceleration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-race-car-acceleration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-race-car-acceleration-sticky.svg" alt="Sticky Note: Real-World Analogy: Race Car Acceleration" width="30%">
-</a>
-
 
 Cubic is like a race car accelerating on a straightaway:
 
@@ -1564,16 +1154,6 @@ Cubic is like a race car accelerating on a straightaway:
 - **Beyond previous best**: The car pushes past its old record, accelerating faster as it explores new territory (accelerating growth above Wmax).
 
 ### Detailed Cubic Mechanism
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-cubic-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-cubic-mechanism-handwritten.svg" alt="Handwritten: Detailed Cubic Mechanism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-cubic-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-cubic-mechanism-diagram.svg" alt="Diagram: Detailed Cubic Mechanism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-cubic-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-cubic-mechanism-sticky.svg" alt="Sticky Note: Detailed Cubic Mechanism" width="30%">
-</a>
 
 
 TCP Cubic (RFC 8312) replaces the linear AIMD with a cubic function:
@@ -1589,16 +1169,6 @@ Where:
 
 ### Cubic Growth Regions
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-growth-regions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-growth-regions-handwritten.svg" alt="Handwritten: Cubic Growth Regions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-growth-regions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-growth-regions-diagram.svg" alt="Diagram: Cubic Growth Regions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-growth-regions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-growth-regions-sticky.svg" alt="Sticky Note: Cubic Growth Regions" width="30%">
-</a>
-
 
 1. **After loss** ($t \approx 0$): Window drops to $W_{max} \cdot \beta$. Then grows rapidly because the cubic function is steepest far from $K$.
 2. **Near $W_{max}$** ($t \approx K$): Growth plateaus — the cubic function flattens. The flow "hovers" near the previously known congestion point, gently probing whether bandwidth has increased.
@@ -1606,30 +1176,10 @@ Where:
 
 ### RTT Independence
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/rtt-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/rtt-independence-handwritten.svg" alt="Handwritten: RTT Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/rtt-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/rtt-independence-diagram.svg" alt="Diagram: RTT Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/rtt-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/rtt-independence-sticky.svg" alt="Sticky Note: RTT Independence" width="30%">
-</a>
-
 
 Since $t$ is measured in seconds (not RTTs), Cubic's growth rate is independent of the flow's RTT. Two Cubic flows with different RTTs achieve similar throughput — unlike Reno where a 10 ms RTT flow gets 5x the throughput of a 50 ms RTT flow.
 
 ### Cubic Dry Run Trace
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-dry-run-trace-handwritten.svg" alt="Handwritten: Cubic Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-dry-run-trace-diagram.svg" alt="Diagram: Cubic Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cubic-dry-run-trace-sticky.svg" alt="Sticky Note: Cubic Dry Run Trace" width="30%">
-</a>
 
 
 Parameters: C = 0.4, beta = 0.7, initial Wmax = 100 MSS, loss at RTT 0.
@@ -1651,16 +1201,6 @@ Parameters: C = 0.4, beta = 0.7, initial Wmax = 100 MSS, loss at RTT 0.
 
 ### Complexity Analysis — Cubic
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-cubic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-cubic-handwritten.svg" alt="Handwritten: Complexity Analysis — Cubic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-cubic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-cubic-diagram.svg" alt="Diagram: Complexity Analysis — Cubic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-cubic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-cubic-sticky.svg" alt="Sticky Note: Complexity Analysis — Cubic" width="30%">
-</a>
-
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -1675,16 +1215,6 @@ Parameters: C = 0.4, beta = 0.7, initial Wmax = 100 MSS, loss at RTT 0.
 
 ### Real-World Analogy: Smart Cruise Control
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-smart-cruise-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-smart-cruise-control-handwritten.svg" alt="Handwritten: Real-World Analogy: Smart Cruise Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-smart-cruise-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-smart-cruise-control-diagram.svg" alt="Diagram: Real-World Analogy: Smart Cruise Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-smart-cruise-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-smart-cruise-control-sticky.svg" alt="Sticky Note: Real-World Analogy: Smart Cruise Control" width="30%">
-</a>
-
 
 Standard TCP (Reno) is like cruise control that brakes only when you hit something (loss). BBR is like smart cruise control that maintains a safe following distance by constantly measuring the gap:
 
@@ -1693,16 +1223,6 @@ Standard TCP (Reno) is like cruise control that brakes only when you hit somethi
 - It adjusts speed to match the lead car + safe gap, never needing to hit anything.
 
 ### How BBR Works
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-bbr-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-bbr-works-handwritten.svg" alt="Handwritten: How BBR Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-bbr-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-bbr-works-diagram.svg" alt="Diagram: How BBR Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-bbr-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-bbr-works-sticky.svg" alt="Sticky Note: How BBR Works" width="30%">
-</a>
 
 
 BBR has four phases that cycle continuously:
@@ -1713,16 +1233,6 @@ BBR has four phases that cycle continuously:
 4. **ProbeRTT**: If RTprop hasn't been updated in 10 seconds, enter a brief drain to measure the minimum RTT.
 
 ### BBR vs Loss-Based Algorithms
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/bbr-vs-loss-based-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/bbr-vs-loss-based-algorithms-handwritten.svg" alt="Handwritten: BBR vs Loss-Based Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/bbr-vs-loss-based-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/bbr-vs-loss-based-algorithms-diagram.svg" alt="Diagram: BBR vs Loss-Based Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/bbr-vs-loss-based-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/bbr-vs-loss-based-algorithms-sticky.svg" alt="Sticky Note: BBR vs Loss-Based Algorithms" width="30%">
-</a>
 
 
 | Feature | BBR | Reno/Cubic |
@@ -1737,16 +1247,6 @@ BBR has four phases that cycle continuously:
 
 ### Complexity Analysis — BBR
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-bbr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-bbr-handwritten.svg" alt="Handwritten: Complexity Analysis — BBR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-bbr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-bbr-diagram.svg" alt="Diagram: Complexity Analysis — BBR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-bbr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-bbr-sticky.svg" alt="Sticky Note: Complexity Analysis — BBR" width="30%">
-</a>
-
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -1760,30 +1260,10 @@ BBR has four phases that cycle continuously:
 
 ### Real-World Analogy: Lost Luggage Claim
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-lost-luggage-claim-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-lost-luggage-claim-handwritten.svg" alt="Handwritten: Real-World Analogy: Lost Luggage Claim" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-lost-luggage-claim-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-lost-luggage-claim-diagram.svg" alt="Diagram: Real-World Analogy: Lost Luggage Claim" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-lost-luggage-claim-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-analogy-lost-luggage-claim-sticky.svg" alt="Sticky Note: Real-World Analogy: Lost Luggage Claim" width="30%">
-</a>
-
 
 Reno is like saying "I'm missing something between bag 10 and bag 48" (cumulative ACK). The airline has no idea which specific bags you're missing. SACK is like providing a precise list: "I have bags 1-9, 11, 13-47, 49. Missing: 10, 12, 48." The airline can resend exactly those three.
 
 ### SACK Mechanism
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-mechanism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-mechanism-handwritten.svg" alt="Handwritten: SACK Mechanism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-mechanism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-mechanism-diagram.svg" alt="Diagram: SACK Mechanism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-mechanism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-mechanism-sticky.svg" alt="Sticky Note: SACK Mechanism" width="30%">
-</a>
 
 
 1. **SACK option in TCP header**: Reports up to 4 non-contiguous blocks of received data (RFC 2018, extended in RFC 2883 for DSACK).
@@ -1791,16 +1271,6 @@ Reno is like saying "I'm missing something between bag 10 and bag 48" (cumulativ
 3. **Selective retransmission**: On loss, sender retransmits only the specific segments marked as missing in the scoreboard.
 
 ### SACK Dry Run Trace
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-dry-run-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-dry-run-trace-handwritten.svg" alt="Handwritten: SACK Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-dry-run-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-dry-run-trace-diagram.svg" alt="Diagram: SACK Dry Run Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-dry-run-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-dry-run-trace-sticky.svg" alt="Sticky Note: SACK Dry Run Trace" width="30%">
-</a>
 
 
 Sent packets: 1 through 20. Lost: 5, 10, 15.
@@ -1826,16 +1296,6 @@ Without SACK, Reno would retransmit only P10 and then exit fast recovery on the 
 
 ### SACK vs No-SACK Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-vs-no-sack-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-vs-no-sack-comparison-handwritten.svg" alt="Handwritten: SACK vs No-SACK Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-vs-no-sack-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-vs-no-sack-comparison-diagram.svg" alt="Diagram: SACK vs No-SACK Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-vs-no-sack-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sack-vs-no-sack-comparison-sticky.svg" alt="Sticky Note: SACK vs No-SACK Comparison" width="30%">
-</a>
-
 
 | Metric | No SACK (Reno/NewReno) | SACK |
 |--------|----------------------|------|
@@ -1847,16 +1307,6 @@ Without SACK, Reno would retransmit only P10 and then exit fast recovery on the 
 | Performance on lossy links | Degrades significantly | Maintains throughput |
 
 ### Complexity Analysis — SACK
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sack-handwritten.svg" alt="Handwritten: Complexity Analysis — SACK" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sack-diagram.svg" alt="Diagram: Complexity Analysis — SACK" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/complexity-analysis-sack-sticky.svg" alt="Sticky Note: Complexity Analysis — SACK" width="30%">
-</a>
 
 
 | Operation | Complexity | Why |
@@ -1870,16 +1320,6 @@ Without SACK, Reno would retransmit only P10 and then exit fast recovery on the 
 
 ### Recovery Behavior on Loss
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/recovery-behavior-on-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/recovery-behavior-on-loss-handwritten.svg" alt="Handwritten: Recovery Behavior on Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/recovery-behavior-on-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/recovery-behavior-on-loss-diagram.svg" alt="Diagram: Recovery Behavior on Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/recovery-behavior-on-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/recovery-behavior-on-loss-sticky.svg" alt="Sticky Note: Recovery Behavior on Loss" width="30%">
-</a>
-
 
 | Variant | 3 Dup ACK Action | Multiple Loss Recovery | Timeout Recovery | RTT Unfairness |
 |---------|-----------------|----------------------|-----------------|---------------|
@@ -1888,16 +1328,6 @@ Without SACK, Reno would retransmit only P10 and then exit fast recovery on the 
 | NewReno | cwnd = cwnd/2, stay in FR | Good (1 loss/RTT, stay until full ACK) | cwnd = 1, slow start | High |
 
 ### Cwnd Graph — Tahoe vs Reno Recovery
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cwnd-graph-tahoe-vs-reno-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cwnd-graph-tahoe-vs-reno-recovery-handwritten.svg" alt="Handwritten: Cwnd Graph — Tahoe vs Reno Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cwnd-graph-tahoe-vs-reno-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cwnd-graph-tahoe-vs-reno-recovery-diagram.svg" alt="Diagram: Cwnd Graph — Tahoe vs Reno Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cwnd-graph-tahoe-vs-reno-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cwnd-graph-tahoe-vs-reno-recovery-sticky.svg" alt="Sticky Note: Cwnd Graph — Tahoe vs Reno Recovery" width="30%">
-</a>
 
 
 Scenario: cwnd = 48 MSS, loss at RTT 10.
@@ -1929,16 +1359,6 @@ Reno:  drops to 24, fast recovery, resumes CA at ~17-24
 
 ### When to Use Each
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/when-to-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/when-to-use-each-handwritten.svg" alt="Handwritten: When to Use Each" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/when-to-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/when-to-use-each-diagram.svg" alt="Diagram: When to Use Each" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/when-to-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/when-to-use-each-sticky.svg" alt="Sticky Note: When to Use Each" width="30%">
-</a>
-
 
 | Use Case | Best Variant | Why |
 |----------|-------------|-----|
@@ -1951,16 +1371,6 @@ Reno:  drops to 24, fast recovery, resumes CA at ~17-24
 ## 9.14 AIMD Detailed Analysis with Sawtooth Pattern
 
 ### The AIMD Equation
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/the-aimd-equation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/the-aimd-equation-handwritten.svg" alt="Handwritten: The AIMD Equation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/the-aimd-equation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/the-aimd-equation-diagram.svg" alt="Diagram: The AIMD Equation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/the-aimd-equation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/the-aimd-equation-sticky.svg" alt="Sticky Note: The AIMD Equation" width="30%">
-</a>
 
 
 For TCP Reno, the throughput is governed by:
@@ -1978,16 +1388,6 @@ Where p = packet loss rate. The derivation:
    - Throughput = avg_cwnd × MSS / RTT = (MSS / RTT) × sqrt(3/(2p)).
 
 ### Sawtooth Pattern Dry Run (30 RTTs)
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sawtooth-pattern-dry-run-30-rtts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sawtooth-pattern-dry-run-30-rtts-handwritten.svg" alt="Handwritten: Sawtooth Pattern Dry Run (30 RTTs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sawtooth-pattern-dry-run-30-rtts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sawtooth-pattern-dry-run-30-rtts-diagram.svg" alt="Diagram: Sawtooth Pattern Dry Run (30 RTTs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sawtooth-pattern-dry-run-30-rtts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/sawtooth-pattern-dry-run-30-rtts-sticky.svg" alt="Sticky Note: Sawtooth Pattern Dry Run (30 RTTs)" width="30%">
-</a>
 
 
 | RTT | cwnd | Phase | Loss? |
@@ -2029,16 +1429,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 
 ### Detailed Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-comparison-handwritten.svg" alt="Handwritten: Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-comparison-diagram.svg" alt="Diagram: Detailed Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/detailed-comparison-sticky.svg" alt="Sticky Note: Detailed Comparison" width="30%">
-</a>
-
 
 | Property | Tahoe | Reno | NewReno | Cubic | BBR |
 |----------|-------|------|---------|-------|-----|
@@ -2056,16 +1446,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 
 ### Pros and Cons of Each Variant
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pros-and-cons-of-each-variant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pros-and-cons-of-each-variant-handwritten.svg" alt="Handwritten: Pros and Cons of Each Variant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pros-and-cons-of-each-variant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pros-and-cons-of-each-variant-diagram.svg" alt="Diagram: Pros and Cons of Each Variant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pros-and-cons-of-each-variant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/pros-and-cons-of-each-variant-sticky.svg" alt="Sticky Note: Pros and Cons of Each Variant" width="30%">
-</a>
-
 
 | Variant | Pros | Cons |
 |---------|------|------|
@@ -2079,30 +1459,10 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 
 ### Q1: What is the difference between cwnd and rwnd?
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-cwnd-and-rwnd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-cwnd-and-rwnd-handwritten.svg" alt="Handwritten: What is the difference between cwnd and rwnd?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-cwnd-and-rwnd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-cwnd-and-rwnd-diagram.svg" alt="Diagram: What is the difference between cwnd and rwnd?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-cwnd-and-rwnd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-cwnd-and-rwnd-sticky.svg" alt="Sticky Note: What is the difference between cwnd and rwnd?" width="30%">
-</a>
-
 
 **Answer**: cwnd (congestion window) is maintained by the sender to prevent network overload. It adapts dynamically to network conditions using AIMD or other algorithms. rwnd (receive window) is advertised by the receiver to prevent sender overflow of the receiver's buffer. The effective window is min(cwnd, rwnd). cwnd protects the network; rwnd protects the receiver.
 
 ### Q2: Explain the difference between jitter and delay in the context of congestion control.
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/explain-the-difference-between-jitter-and-delay-in-the-context-of-congestion-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/explain-the-difference-between-jitter-and-delay-in-the-context-of-congestion-control-handwritten.svg" alt="Handwritten: Explain the difference between jitter and delay in the context of congestion control." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/explain-the-difference-between-jitter-and-delay-in-the-context-of-congestion-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/explain-the-difference-between-jitter-and-delay-in-the-context-of-congestion-control-diagram.svg" alt="Diagram: Explain the difference between jitter and delay in the context of congestion control." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/explain-the-difference-between-jitter-and-delay-in-the-context-of-congestion-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/explain-the-difference-between-jitter-and-delay-in-the-context-of-congestion-control-sticky.svg" alt="Sticky Note: Explain the difference between jitter and delay in the context of congestion control." width="30%">
-</a>
 
 
 **Answer**: 
@@ -2111,16 +1471,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 - **Role in congestion**: Jitter is an early indicator of congestion (queues are fluctuating), while increasing delay is a medium indicator (queue is growing), and packet loss is a late indicator (queue is full).
 
 ### Q3: How do you detect bufferbloat in a network?
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-do-you-detect-bufferbloat-in-a-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-do-you-detect-bufferbloat-in-a-network-handwritten.svg" alt="Handwritten: How do you detect bufferbloat in a network?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-do-you-detect-bufferbloat-in-a-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-do-you-detect-bufferbloat-in-a-network-diagram.svg" alt="Diagram: How do you detect bufferbloat in a network?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-do-you-detect-bufferbloat-in-a-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/how-do-you-detect-bufferbloat-in-a-network-sticky.svg" alt="Sticky Note: How do you detect bufferbloat in a network?" width="30%">
-</a>
 
 
 **Answer**: Bufferbloat occurs when router buffers are excessively large, causing high latency without packet loss. Detection methods:
@@ -2132,30 +1482,10 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 
 ### Q4: Why does CUBIC have better fairness than Reno across different RTTs?
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-does-cubic-have-better-fairness-than-reno-across-different-rtts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-does-cubic-have-better-fairness-than-reno-across-different-rtts-handwritten.svg" alt="Handwritten: Why does CUBIC have better fairness than Reno across different RTTs?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-does-cubic-have-better-fairness-than-reno-across-different-rtts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-does-cubic-have-better-fairness-than-reno-across-different-rtts-diagram.svg" alt="Diagram: Why does CUBIC have better fairness than Reno across different RTTs?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-does-cubic-have-better-fairness-than-reno-across-different-rtts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/why-does-cubic-have-better-fairness-than-reno-across-different-rtts-sticky.svg" alt="Sticky Note: Why does CUBIC have better fairness than Reno across different RTTs?" width="30%">
-</a>
-
 
 **Answer**: Reno's congestion avoidance growth depends on RTT: cwnd increases by 1 MSS per RTT, so a 10 ms RTT flow adds 100 MSS/second while a 100 ms RTT flow adds only 10 MSS/second. This gives short-RTT flows 10x the throughput. Cubic measures time in seconds (not RTTs) using the cubic function W(t) = C·(t-K)³ + Wmax. Since t is wall-clock time, two Cubic flows with different RTTs grow identically over time, achieving similar throughput regardless of RTT.
 
 ### Q5: What is global synchronization and how do modern algorithms avoid it?
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-global-synchronization-and-how-do-modern-algorithms-avoid-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-global-synchronization-and-how-do-modern-algorithms-avoid-it-handwritten.svg" alt="Handwritten: What is global synchronization and how do modern algorithms avoid it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-global-synchronization-and-how-do-modern-algorithms-avoid-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-global-synchronization-and-how-do-modern-algorithms-avoid-it-diagram.svg" alt="Diagram: What is global synchronization and how do modern algorithms avoid it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-global-synchronization-and-how-do-modern-algorithms-avoid-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-global-synchronization-and-how-do-modern-algorithms-avoid-it-sticky.svg" alt="Sticky Note: What is global synchronization and how do modern algorithms avoid it?" width="30%">
-</a>
 
 
 **Answer**: Global synchronization occurs when multiple TCP flows sharing a bottleneck all lose packets simultaneously (e.g., when the router buffer overflows). All flows halve their windows at once, the link underutilizes, they all increase together, hit the same buffer limit again, and repeat. This creates synchronized sawtooth patterns that waste up to 50% of bandwidth. Mitigations:
@@ -2167,16 +1497,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 
 ### Q6: What happens when BBR and Reno share a bottleneck link?
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-happens-when-bbr-and-reno-share-a-bottleneck-link-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-happens-when-bbr-and-reno-share-a-bottleneck-link-handwritten.svg" alt="Handwritten: What happens when BBR and Reno share a bottleneck link?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-happens-when-bbr-and-reno-share-a-bottleneck-link-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-happens-when-bbr-and-reno-share-a-bottleneck-link-diagram.svg" alt="Diagram: What happens when BBR and Reno share a bottleneck link?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-happens-when-bbr-and-reno-share-a-bottleneck-link-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-happens-when-bbr-and-reno-share-a-bottleneck-link-sticky.svg" alt="Sticky Note: What happens when BBR and Reno share a bottleneck link?" width="30%">
-</a>
-
 
 **Answer**: BBR can be aggressive toward loss-based flows (Reno/Cubic) in certain configurations. BBR paces at estimated BtlBw and doesn't reduce on loss. When Reno loses packets and halves its window, BBR doesn't yield bandwidth — it continues sending at BtlBw, potentially starving Reno. The mitigation:
 1. Pair BBR with FQ (fair queuing) at the bottleneck to enforce per-flow isolation.
@@ -2184,16 +1504,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 3. In practice, BBR with FQ provides good multi-flow fairness. BBR without FQ can be 2-5x more aggressive than Reno.
 
 ### Q7: Describe the TCP throughput formula and its implications.
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/describe-the-tcp-throughput-formula-and-its-implications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/describe-the-tcp-throughput-formula-and-its-implications-handwritten.svg" alt="Handwritten: Describe the TCP throughput formula and its implications." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/describe-the-tcp-throughput-formula-and-its-implications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/describe-the-tcp-throughput-formula-and-its-implications-diagram.svg" alt="Diagram: Describe the TCP throughput formula and its implications." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/describe-the-tcp-throughput-formula-and-its-implications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/describe-the-tcp-throughput-formula-and-its-implications-sticky.svg" alt="Sticky Note: Describe the TCP throughput formula and its implications." width="30%">
-</a>
 
 
 **Answer**: For Reno: T = (MSS / RTT) × sqrt(3 / (2p)). Key implications:
@@ -2204,16 +1514,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 5. **100 Mbps link with same loss/RTT**: T = same formula — but max at 100 Mbps. Loss limits prevent hitting line rate.
 
 ### Q8: What is the difference between packet loss and congestion ambiguity?
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-packet-loss-and-congestion-ambiguity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-packet-loss-and-congestion-ambiguity-handwritten.svg" alt="Handwritten: What is the difference between packet loss and congestion ambiguity?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-packet-loss-and-congestion-ambiguity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-packet-loss-and-congestion-ambiguity-diagram.svg" alt="Diagram: What is the difference between packet loss and congestion ambiguity?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-packet-loss-and-congestion-ambiguity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/what-is-the-difference-between-packet-loss-and-congestion-ambiguity-sticky.svg" alt="Sticky Note: What is the difference between packet loss and congestion ambiguity?" width="30%">
-</a>
 
 
 **Answer**: Packet loss ≠ always congestion. Loss can occur from:
@@ -2230,16 +1530,6 @@ The sawtooth: each loss event cuts cwnd in half, then it grows linearly at +1/RT
 ## 9.17 Applications in Real Systems
 
 ### Linux TCP Congestion Control
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/linux-tcp-congestion-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/linux-tcp-congestion-control-handwritten.svg" alt="Handwritten: Linux TCP Congestion Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/linux-tcp-congestion-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/linux-tcp-congestion-control-diagram.svg" alt="Diagram: Linux TCP Congestion Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/linux-tcp-congestion-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/linux-tcp-congestion-control-sticky.svg" alt="Sticky Note: Linux TCP Congestion Control" width="30%">
-</a>
 
 
 Linux supports pluggable congestion control modules. Check and configure:
@@ -2267,16 +1557,6 @@ Available algorithms vary by kernel:
 - **HTCP**: High-speed TCP for long-fat pipes.
 
 ### C++ Implementation — Multi-Variant Cwnd Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-multi-variant-cwnd-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-multi-variant-cwnd-simulator-handwritten.svg" alt="Handwritten: C++ Implementation — Multi-Variant Cwnd Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-multi-variant-cwnd-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-multi-variant-cwnd-simulator-diagram.svg" alt="Diagram: C++ Implementation — Multi-Variant Cwnd Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-multi-variant-cwnd-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/c-implementation-multi-variant-cwnd-simulator-sticky.svg" alt="Sticky Note: C++ Implementation — Multi-Variant Cwnd Simulator" width="30%">
-</a>
 
 
 ```cpp
@@ -2420,16 +1700,6 @@ int main() {
 ```
 
 ### Python Implementation — Complete Multi-Variant Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-complete-multi-variant-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-complete-multi-variant-simulator-handwritten.svg" alt="Handwritten: Python Implementation — Complete Multi-Variant Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-complete-multi-variant-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-complete-multi-variant-simulator-diagram.svg" alt="Diagram: Python Implementation — Complete Multi-Variant Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-complete-multi-variant-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/python-implementation-complete-multi-variant-simulator-sticky.svg" alt="Sticky Note: Python Implementation — Complete Multi-Variant Simulator" width="30%">
-</a>
 
 
 ```python
@@ -2692,16 +1962,6 @@ if __name__ == "__main__":
 
 ### Google BBR Deployment
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/google-bbr-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/google-bbr-deployment-handwritten.svg" alt="Handwritten: Google BBR Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/google-bbr-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/google-bbr-deployment-diagram.svg" alt="Diagram: Google BBR Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/google-bbr-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/google-bbr-deployment-sticky.svg" alt="Sticky Note: Google BBR Deployment" width="30%">
-</a>
-
 
 BBR was developed at Google and deployed on:
 - **B4 WAN**: Google's software-defined WAN connecting data centers. BBR improved utilization from ~80% to >95% on long-haul links.
@@ -2709,16 +1969,6 @@ BBR was developed at Google and deployed on:
 - **Google Cloud CDN**: BBR is used for content delivery, especially beneficial for mobile and WiFi users with variable link quality.
 
 ### CDN TCP Tuning
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cdn-tcp-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cdn-tcp-tuning-handwritten.svg" alt="Handwritten: CDN TCP Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cdn-tcp-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cdn-tcp-tuning-diagram.svg" alt="Diagram: CDN TCP Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cdn-tcp-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/cdn-tcp-tuning-sticky.svg" alt="Sticky Note: CDN TCP Tuning" width="30%">
-</a>
 
 
 Content delivery networks optimize TCP for their specific workloads:
@@ -2731,16 +1981,6 @@ Content delivery networks optimize TCP for their specific workloads:
 | CloudFront | Custom congestion control with RTT-based adaptation | ECN + Cubic tuned for AWS global infrastructure |
 
 ### Real-World Configuration Examples
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-configuration-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-configuration-examples-handwritten.svg" alt="Handwritten: Real-World Configuration Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-configuration-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-configuration-examples-diagram.svg" alt="Diagram: Real-World Configuration Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-configuration-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/real-world-configuration-examples-sticky.svg" alt="Sticky Note: Real-World Configuration Examples" width="30%">
-</a>
 
 
 ```bash
@@ -2763,16 +2003,6 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 
 ### TCP Variants at a Glance
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-variants-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-variants-at-a-glance-handwritten.svg" alt="Handwritten: TCP Variants at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-variants-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-variants-at-a-glance-diagram.svg" alt="Diagram: TCP Variants at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-variants-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/tcp-variants-at-a-glance-sticky.svg" alt="Sticky Note: TCP Variants at a Glance" width="30%">
-</a>
-
 
 | Feature | Tahoe | Reno | NewReno | Cubic | BBR |
 |---------|-------|------|---------|-------|-----|
@@ -2789,16 +2019,6 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 
 ### Congestion Window vs Receive Window
 
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-handwritten.svg" alt="Handwritten: Congestion Window vs Receive Window" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-diagram.svg" alt="Diagram: Congestion Window vs Receive Window" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/congestion-window-vs-receive-window-sticky.svg" alt="Sticky Note: Congestion Window vs Receive Window" width="30%">
-</a>
-
 
 | Dimension | cwnd | rwnd |
 |-----------|------|------|
@@ -2811,16 +2031,6 @@ sysctl -w net.core.default_qdisc=fq_codel    # Fair queuing + CoDel
 | Relationship to BDP | Should be ≈ BDP for full utilization | Must be ≥ BDP for full utilization |
 
 ### AIMD Sawtooth Pattern Properties
-
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-properties-handwritten.svg" alt="Handwritten: AIMD Sawtooth Pattern Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-properties-diagram.svg" alt="Diagram: AIMD Sawtooth Pattern Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/09-tcp-congestion/aimd-sawtooth-pattern-properties-sticky.svg" alt="Sticky Note: AIMD Sawtooth Pattern Properties" width="30%">
-</a>
 
 
 | Property | Value | Implication |

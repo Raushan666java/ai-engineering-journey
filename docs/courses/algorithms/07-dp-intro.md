@@ -99,16 +99,6 @@ flowchart LR
 
 ### 7.1 The Dynamic Programming Paradigm
 
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-handwritten.svg" alt="Handwritten: 7.1 The Dynamic Programming Paradigm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-diagram.svg" alt="Diagram: 7.1 The Dynamic Programming Paradigm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-1-the-dynamic-programming-paradigm-sticky.svg" alt="Sticky Note: 7.1 The Dynamic Programming Paradigm" width="30%">
-</a>
-
 
 Dynamic programming (DP) is a method for solving complex problems by breaking them down into simpler subproblems, solving each subproblem once, and storing the results for reuse. It was pioneered by Richard Bellman in the 1950s — the name "dynamic programming" was chosen to hide the mathematical nature from his skeptical Pentagon boss.
 
@@ -156,16 +146,6 @@ The same subproblems recur multiple times, and the total number of distinct subp
 ---
 
 ### 7.2 Fibonacci Numbers
-
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-handwritten.svg" alt="Handwritten: 7.2 Fibonacci Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-diagram.svg" alt="Diagram: 7.2 Fibonacci Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-2-fibonacci-numbers-sticky.svg" alt="Sticky Note: 7.2 Fibonacci Numbers" width="30%">
-</a>
 
 
 **Real-world analogy — rabbit population growth:** The Fibonacci sequence originally modeled idealized rabbit reproduction: each pair matures in one month, then produces one pair per month forever. While biologically simplified, the same recurrence appears in stock option pricing (binomial trees), computer science (AVL tree height analysis, Fibonacci heap operations), and even nature (phyllotaxis, nautilus shells). The real lesson: recurrences that branch into overlapping subproblems are everywhere.
@@ -315,16 +295,6 @@ int fib(int n) {
 ---
 
 ### 7.3 Rod Cutting
-
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-handwritten.svg" alt="Handwritten: 7.3 Rod Cutting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-diagram.svg" alt="Diagram: 7.3 Rod Cutting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-3-rod-cutting-sticky.svg" alt="Sticky Note: 7.3 Rod Cutting" width="30%">
-</a>
 
 
 **Real-world analogy — lumber mill optimization:** A lumber mill receives logs of fixed length 10 meters. Customers want rods of lengths 1–10 meters at known prices. Should they sell one 10m rod? Cut into 4m + 6m? 3m + 3m + 4m? Each cut reduces total usable wood (kerf loss), and different markets value different lengths differently. The mill must compute optimal cutting patterns to maximize revenue. This is rod cutting — every sawmill, paper mill, and metal fabrication plant solves this exact problem.
@@ -536,16 +506,6 @@ class RodCutting {
 ---
 
 ### 7.4 Steps for DP Problem Solving
-
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-handwritten.svg" alt="Handwritten: 7.4 Steps for DP Problem Solving" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-diagram.svg" alt="Diagram: 7.4 Steps for DP Problem Solving" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/07-dp-intro/7-4-steps-for-dp-problem-solving-sticky.svg" alt="Sticky Note: 7.4 Steps for DP Problem Solving" width="30%">
-</a>
 
 
 The classic **4-step DP framework:**

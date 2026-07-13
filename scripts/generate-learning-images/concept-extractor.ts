@@ -1,5 +1,13 @@
 import { ConceptData } from './types';
 
+function cleanMd(s: string): string {
+  return s.replace(/\*\*/g, '').replace(/\|/g, '').replace(/#{1,6}\s*/g, '').replace(/`/g, '').replace(/\s+/g, ' ').trim();
+}
+
+function isTableRow(line: string): boolean {
+  return /^\s*\|/.test(line) || /\|\s*$/.test(line) || /^\|[\s:-]+\|/.test(line);
+}
+
 function getSections(markdown: string): Map<string, string> {
   const sections = new Map<string, string>();
   const lines = markdown.split('\n');
@@ -46,6 +54,8 @@ function extractBoldTerms(text: string): string[] {
   let m: RegExpExecArray | null;
   while ((m = regex.exec(text)) !== null) {
     const t = m[1].trim();
+    const before = text.slice(Math.max(0, m.index - 20), m.index);
+    if (isTableRow(before)) continue;
     if (t.length > 2 && t.length < 80 && !t.startsWith('Chapter') && !/^\d+/.test(t)) {
       terms.push(t);
     }
@@ -78,19 +88,34 @@ function extractCodeBlocks(text: string): { lang: string; code: string }[] {
 
 function extractDefinitions(text: string): { term: string; definition: string }[] {
   const result: { term: string; definition: string }[] = [];
-  const patterns = [
-    /\*\*([^*]+)\*\*\s*[:\u2013]\s*(.{10,200})/g,
-    /\*\*([^*]+)\*\*\s+is\s+(a|an|the)\s+(.{10,200})/gi,
-    /\*\*([^*]+)\*\*\s+refers?\s+to\s+(.{10,200})/gi,
-    /([A-Z][a-z]+(?:[\s-][A-Z][a-z]+)*)\s*(?:is|are)\s+(.{10,200})/g,
-  ];
-  for (const pattern of patterns) {
-    let m: RegExpExecArray | null;
-    while ((m = pattern.exec(text)) !== null) {
+  const lines = text.split('\n');
+  for (let i = 0; i < lines.length; i++) {
+    if (isTableRow(lines[i])) continue;
+    const trimmed = lines[i].trim();
+    const m = trimmed.match(/^\*\*([^*]+)\*\*\s*[:\u2013\u2014]\s*(.{10,200})/);
+    if (m) {
       const term = m[1].trim();
-      const def = (m[2] + ' ' + (m[3] || '')).trim();
-      if (term.length < 60 && def.length < 300) {
-        result.push({ term, definition: def.replace(/\*\*/g, '').replace(/\s+/g, ' ') });
+      const def = m[2].replace(/\*\*/g, '').replace(/\|/g, '').trim();
+      if (term.length < 60 && def.length < 300 && !isTableRow(def)) {
+        result.push({ term, definition: cleanMd(def) });
+      }
+    }
+  }
+  if (result.length < 3) {
+    const patterns = [
+      /\*\*([^*]+)\*\*\s+is\s+(a|an|the)\s+(.{10,200})/gi,
+      /\*\*([^*]+)\*\*\s+refers?\s+to\s+(.{10,200})/gi,
+    ];
+    for (const pattern of patterns) {
+      let m: RegExpExecArray | null;
+      while ((m = pattern.exec(text)) !== null) {
+        const term = m[1].trim();
+        const before = text.slice(Math.max(0, m.index - 20), m.index);
+        if (isTableRow(before)) continue;
+        const def = (m[2] + ' ' + (m[3] || '')).trim();
+        if (term.length < 60 && def.length < 300) {
+          result.push({ term, definition: cleanMd(def) });
+        }
       }
     }
   }
@@ -99,30 +124,37 @@ function extractDefinitions(text: string): { term: string; definition: string }[
 
 function extractFormulas(text: string): { name: string; expression: string; description: string }[] {
   const result: { name: string; expression: string; description: string }[] = [];
+  const seen = new Set<string>();
+
+  function addExpr(expr: string, beforeText: string, nameDefault: string) {
+    const clean = expr.replace(/[\[\]{}()]/g, '').replace(/\s+/g, ' ').trim();
+    if (clean.length < 3 || seen.has(clean)) return;
+    const nameMatch = beforeText.match(/\*\*([^*]+)\*\*/);
+    const name = nameMatch ? nameMatch[1].replace(/\*\*/g, '').trim() : nameDefault;
+    if (name.length > 50) return;
+    seen.add(clean);
+    result.push({ name, expression: clean.slice(0, 120), description: '' });
+  }
+
   const displayMath = /\$\$([\s\S]*?)\$\$/g;
   let m: RegExpExecArray | null;
   while ((m = displayMath.exec(text)) !== null) {
-    const expr = m[1].trim();
-    const before = text.slice(Math.max(0, m.index - 120), m.index);
-    const nameMatch = before.match(/\*\*([^*]+)\*\*/g);
-    const name = nameMatch ? nameMatch[nameMatch.length - 1].replace(/\*\*/g, '') : (result.length + 1).toString();
-    result.push({ name, expression: expr.replace(/\s+/g, ' ').slice(0, 150), description: '' });
+    addExpr(m[1], text.slice(Math.max(0, m.index - 120), m.index), `Formula ${result.length + 1}`);
   }
+
   const inlineMath = /\$([^$]+)\$/g;
   while ((m = inlineMath.exec(text)) !== null) {
     const expr = m[1].trim();
-    if (expr.length > 5 && /[=\\^_]/.test(expr)) {
-      const before = text.slice(Math.max(0, m.index - 80), m.index);
-      const nameMatch = before.match(/\*\*([^*]+)\*\*/);
-      const name = nameMatch ? nameMatch[1] : (result.length + 1).toString();
-      result.push({ name, expression: expr.slice(0, 100), description: '' });
+    if (expr.length > 4 && /[=\\^_/\{\}\(\)\sum\int\bar\sim]/.test(expr)) {
+      addExpr(expr, text.slice(Math.max(0, m.index - 80), m.index), `Formula ${result.length + 1}`);
     }
   }
-  return result;
+
+  return result.slice(0, 8);
 }
 
-function extractTables(text: string): { headers: string[]; rows: string[][] }[] {
-  const tables: { headers: string[]; rows: string[][] }[] = [];
+function extractTables(text: string): { title: string; headers: string[]; rows: string[][] }[] {
+  const tables: { title: string; headers: string[]; rows: string[][] }[] = [];
   const lines = text.split('\n');
   let i = 0;
   while (i < lines.length) {
@@ -135,7 +167,7 @@ function extractTables(text: string): { headers: string[]; rows: string[][] }[] 
         if (cells.length > 0) rows.push(cells);
         j++;
       }
-      if (headers.length > 1) tables.push({ headers, rows });
+      if (headers.length > 1) tables.push({ title: '', headers, rows });
       i = j;
     } else {
       i++;
@@ -191,39 +223,41 @@ function extractArchitecture(text: string): { component: string; description: st
 
   for (const line of lines) {
     const trimmed = line.trim();
-    if (trimmed.startsWith('|') || !trimmed) continue;
+    if (isTableRow(trimmed) || !trimmed || trimmed.startsWith('```')) continue;
     const bold = trimmed.match(/^\*\*([^*]+)\*\*/);
     if (bold) {
+      const term = bold[1];
+      if (['Source', 'Topic', 'Key Insight', 'Practical', 'Feature', 'Concept'].includes(term)) continue;
       if (currentComponent) {
-        result.push({ component: currentComponent, description: currentDesc.slice(0, 200).replace(/\|/g, ''), connections: [] });
+        result.push({ component: currentComponent, description: cleanMd(currentDesc).slice(0, 200), connections: [] });
       }
-      currentComponent = bold[1];
+      currentComponent = term;
       currentDesc = trimmed.replace(/^\*\*[^*]+\*\*\s*/, '');
     } else if (currentComponent && trimmed.length > 5) {
       currentDesc += ' ' + trimmed;
     }
   }
   if (currentComponent) {
-    result.push({ component: currentComponent, description: currentDesc.slice(0, 200), connections: [] });
+    result.push({ component: currentComponent, description: cleanMd(currentDesc).slice(0, 200), connections: [] });
   }
 
   if (result.length === 0) {
-    const archPatterns = ['layer', 'component', 'module', 'service', 'pipeline', 'agent', 'stack', 'tier'];
+    const archPatterns = ['layer', 'component', 'module', 'service', 'pipeline', 'agent', 'stack', 'tier', 'system'];
     for (const line of lines) {
       const trimmed = line.trim();
-      if (trimmed.startsWith('|') || trimmed.startsWith('```') || !trimmed) continue;
+      if (isTableRow(trimmed) || trimmed.startsWith('```') || !trimmed) continue;
       const lower = trimmed.toLowerCase();
       if (archPatterns.some(p => lower.includes(p)) && trimmed.length > 10 && trimmed.length < 200) {
         result.push({
-          component: trimmed.split(/[:\u2013-]/)[0].replace(/\*\*/g, '').trim().slice(0, 40),
-          description: trimmed.replace(/\*\*/g, '').trim().slice(0, 200),
+          component: trimmed.split(/[:\u2013-]/)[0].replace(/\*\*/g, '').replace(/\|/g, '').trim().slice(0, 40),
+          description: cleanMd(trimmed).slice(0, 200),
           connections: [],
         });
       }
     }
   }
 
-  return result.slice(0, 8);
+  return result.slice(0, 6);
 }
 
 function extractAlgorithms(text: string): { name: string; description: string; steps: string[] }[] {
@@ -331,29 +365,33 @@ function extractInterviewQA(text: string): { question: string; answer: string }[
 
 function extractMistakes(text: string): { mistake: string; correction: string }[] {
   const result: { mistake: string; correction: string }[] = [];
-  const lines = text.split('\n');
 
-  for (let i = 0; i < lines.length; i++) {
-    const trimmed = lines[i].trim();
-    const lower = trimmed.toLowerCase();
-    if (lower.includes('common mistake') || lower.includes('pitfall') || lower.includes('warning') ||
-        lower.includes('wrong') || lower.includes('incorrect')) {
-      const correction = lines[i + 1] ? lines[i + 1].replace(/\*\*/g, '').trim() : '';
+  const blockquoteMistakes = text.matchAll(/>\s*\*\*(?:Warning|Mistake|Caution|Common Mistake)\*\*:?\s*(.+?)(?=\n>|\n\n|\n##)/gis);
+  for (const m of blockquoteMistakes) {
+    const full = m[1].trim();
+    const parts = full.split(/[.;]/);
+    if (parts[0] && parts[0].length > 5) {
       result.push({
-        mistake: trimmed.replace(/\*\*/g, '').slice(0, 150),
-        correction: correction.slice(0, 200) || 'Avoid this error',
+        mistake: cleanMd(parts[0]).slice(0, 150),
+        correction: (parts[1] ? cleanMd(parts[1]) : 'Review the correct approach').trim().slice(0, 200),
       });
     }
   }
 
-  const blockquoteMistakes = text.matchAll(/>\s*\*\*(?:Warning|Mistake|Caution)\*\*:?\s*(.+?)(?=\n>|\n\n|\n##)/gis);
-  for (const m of blockquoteMistakes) {
-    const full = m[1].trim();
-    const parts = full.split(/[.;]/);
-    result.push({
-      mistake: (parts[0] || full).replace(/\*\*/g, '').slice(0, 150),
-      correction: (parts[1] || 'Review the correct approach').trim().slice(0, 200),
-    });
+  if (result.length < 2) {
+    const lines = text.split('\n');
+    for (let i = 0; i < lines.length; i++) {
+      const trimmed = lines[i].trim();
+      if (isTableRow(trimmed)) continue;
+      const lower = trimmed.toLowerCase();
+      if (lower.includes('common mistake') || lower.includes('pitfall') || lower.includes('caution')) {
+        const correction = lines[i + 1] ? cleanMd(lines[i + 1]) : '';
+        result.push({
+          mistake: cleanMd(trimmed).slice(0, 150),
+          correction: correction.slice(0, 200) || 'Avoid this error',
+        });
+      }
+    }
   }
 
   return result.slice(0, 6);

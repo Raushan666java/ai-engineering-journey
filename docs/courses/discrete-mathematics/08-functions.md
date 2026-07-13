@@ -95,16 +95,6 @@ flowchart LR
 
 ### 8.1 Definition
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-handwritten.svg" alt="Handwritten: 8.1 Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-diagram.svg" alt="Diagram: 8.1 Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-1-definition-sticky.svg" alt="Sticky Note: 8.1 Definition" width="30%">
-</a>
-
 
 A **function** (or **mapping**) $f: A \rightarrow B$ assigns to each $a \in A$ exactly one $b \in B$. We write $f(a) = b$.
 
@@ -117,16 +107,6 @@ Two functions $f$ and $g$ are **equal** if they have the same domain and $f(a) =
 > **One-Sentence Takeaway:** A function assigns every element of the domain exactly one element of the codomain; the range (image) may be a proper subset of the codomain.
 
 ### 8.2 Injective, Surjective, Bijective
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-handwritten.svg" alt="Handwritten: 8.2 Injective, Surjective, Bijective" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-diagram.svg" alt="Diagram: 8.2 Injective, Surjective, Bijective" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-2-injective-surjective-bijective-sticky.svg" alt="Sticky Note: 8.2 Injective, Surjective, Bijective" width="30%">
-</a>
 
 
 **Injective (one-to-one):** $f(a_1) = f(a_2) \implies a_1 = a_2$.
@@ -170,16 +150,6 @@ console.log(isInjective(domain, x => Math.floor(x / 2))); // false
 
 ### 8.3 Composition
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-handwritten.svg" alt="Handwritten: 8.3 Composition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-diagram.svg" alt="Diagram: 8.3 Composition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-3-composition-sticky.svg" alt="Sticky Note: 8.3 Composition" width="30%">
-</a>
-
 
 If $f: A \rightarrow B$ and $g: B \rightarrow C$, then the **composition** $g \circ f: A \rightarrow C$ is:
 $$(g \circ f)(a) = g(f(a))$$
@@ -196,16 +166,6 @@ Composition is associative: $(h \circ g) \circ f = h \circ (g \circ f)$.
 
 ### 8.4 Inverse Functions
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-handwritten.svg" alt="Handwritten: 8.4 Inverse Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-diagram.svg" alt="Diagram: 8.4 Inverse Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-4-inverse-functions-sticky.svg" alt="Sticky Note: 8.4 Inverse Functions" width="30%">
-</a>
-
 
 If $f: A \rightarrow B$ is bijective, there exists an **inverse** $f^{-1}: B \rightarrow A$ such that:
 $$f^{-1}(b) = a \iff f(a) = b$$
@@ -218,16 +178,6 @@ Properties:
 > **One-Sentence Takeaway:** Only bijective functions have inverses; the inverse reverses the mapping and satisfies $f^{-1}(f(x)) = x$.
 
 ### 8.5 Special Functions
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-handwritten.svg" alt="Handwritten: 8.5 Special Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-diagram.svg" alt="Diagram: 8.5 Special Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-5-special-functions-sticky.svg" alt="Sticky Note: 8.5 Special Functions" width="30%">
-</a>
 
 
 **Floor function:** $\lfloor x \rfloor$ = the greatest integer $\leq x$.
@@ -251,16 +201,6 @@ Properties:
 > **One-Sentence Takeaway:** Floor rounds down toward $-\infty$, ceiling rounds up toward $+\infty$; factorial grows faster than any exponential.
 
 ### 8.6 Growth of Functions
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-handwritten.svg" alt="Handwritten: 8.6 Growth of Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-diagram.svg" alt="Diagram: 8.6 Growth of Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-6-growth-of-functions-sticky.svg" alt="Sticky Note: 8.6 Growth of Functions" width="30%">
-</a>
 
 
 **Big-O Notation:** $f(x) = O(g(x))$ if there exist constants $C > 0$ and $k$ such that $|f(x)| \leq C|g(x)|$ for all $x > k$.
@@ -314,16 +254,6 @@ console.log(isQuadraticGrowth(n => 3 * n * n + 2 * n + 1)); // roughly true
 
 ### 8.7 Partial Functions
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-handwritten.svg" alt="Handwritten: 8.7 Partial Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-diagram.svg" alt="Diagram: 8.7 Partial Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-7-partial-functions-sticky.svg" alt="Sticky Note: 8.7 Partial Functions" width="30%">
-</a>
-
 
 A **partial function** $f: A \rightharpoonup B$ is a function defined on a subset of $A$. If $f$ is defined for all $a \in A$, it is a **total function**.
 
@@ -332,16 +262,6 @@ A **partial function** $f: A \rightharpoonup B$ is a function defined on a subse
 > **One-Sentence Takeaway:** A partial function may be undefined for some domain elements; a total function is a partial function that is defined everywhere.
 
 ### 8.8 Recursive Functions
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-handwritten.svg" alt="Handwritten: 8.8 Recursive Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-diagram.svg" alt="Diagram: 8.8 Recursive Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/08-functions/8-8-recursive-functions-sticky.svg" alt="Sticky Note: 8.8 Recursive Functions" width="30%">
-</a>
 
 
 Some functions are defined recursively (in terms of themselves):

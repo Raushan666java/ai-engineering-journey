@@ -98,16 +98,6 @@ A profiler observes a running application and reports where it spends CPU time, 
 
 ### 1.1 Java Mission Control & Flight Recorder
 
-<a href="../../../assets/images/diagrams/java/06-performance/1-1-java-mission-control-flight-recorder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-1-java-mission-control-flight-recorder-handwritten.svg" alt="Handwritten: 1.1 Java Mission Control & Flight Recorder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-1-java-mission-control-flight-recorder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-1-java-mission-control-flight-recorder-diagram.svg" alt="Diagram: 1.1 Java Mission Control & Flight Recorder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-1-java-mission-control-flight-recorder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-1-java-mission-control-flight-recorder-sticky.svg" alt="Sticky Note: 1.1 Java Mission Control & Flight Recorder" width="30%">
-</a>
-
 
 JDK Flight Recorder (JFR) is a low-overhead event-recording engine built into the JVM. Java Mission Control (JMC) is the GUI for browsing JFR recordings. JFR is the **first tool you should reach for** in production because its overhead is typically under 1%.
 
@@ -236,16 +226,6 @@ jcmd 12345 JFR.stop name=hotspot
 
 ### 1.2 JProfiler
 
-<a href="../../../assets/images/diagrams/java/06-performance/1-2-jprofiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-2-jprofiler-handwritten.svg" alt="Handwritten: 1.2 JProfiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-2-jprofiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-2-jprofiler-diagram.svg" alt="Diagram: 1.2 JProfiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-2-jprofiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-2-jprofiler-sticky.svg" alt="Sticky Note: 1.2 JProfiler" width="30%">
-</a>
-
 
 JProfiler is a commercial profiler with a rich GUI for CPU, memory, thread, and JDBC profiling. It supports **offline profiling** via heap dumps and saved snapshots and **live attach** to local and remote JVMs.
 
@@ -303,16 +283,6 @@ class ConnectionLeakSimulator {
 
 ### 1.3 YourKit
 
-<a href="../../../assets/images/diagrams/java/06-performance/1-3-yourkit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-3-yourkit-handwritten.svg" alt="Handwritten: 1.3 YourKit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-3-yourkit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-3-yourkit-diagram.svg" alt="Diagram: 1.3 YourKit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-3-yourkit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-3-yourkit-sticky.svg" alt="Sticky Note: 1.3 YourKit" width="30%">
-</a>
-
 
 YourKit is another commercial profiler similar to JProfiler. It provides **offline CPU and memory snapshots**, **allocation profiling**, and **thread analysis**.
 
@@ -359,16 +329,6 @@ class StringDuplicationSimulator {
 
 ### 1.4 VisualVM
 
-<a href="../../../assets/images/diagrams/java/06-performance/1-4-visualvm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-4-visualvm-handwritten.svg" alt="Handwritten: 1.4 VisualVM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-4-visualvm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-4-visualvm-diagram.svg" alt="Diagram: 1.4 VisualVM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-4-visualvm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-4-visualvm-sticky.svg" alt="Sticky Note: 1.4 VisualVM" width="30%">
-</a>
-
 
 VisualVM is a free, open-source profiler bundled with older JDK distributions. For JDK 9+, download it separately from visualvm.github.io.
 
@@ -413,16 +373,6 @@ class CpuHotspotSimulator {
 VisualVM's **Sampler** tab shows methods sorted by self time. The method `CpuHotspotSimulator.expensiveComputation` appears at the top. Double-clicking reveals the call tree and line-level hot spots.
 
 ### 1.5 async-profiler
-
-<a href="../../../assets/images/diagrams/java/06-performance/1-5-async-profiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-5-async-profiler-handwritten.svg" alt="Handwritten: 1.5 async-profiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-5-async-profiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-5-async-profiler-diagram.svg" alt="Diagram: 1.5 async-profiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-5-async-profiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-5-async-profiler-sticky.svg" alt="Sticky Note: 1.5 async-profiler" width="30%">
-</a>
 
 
 async-profiler (github.com/async-profiler/async-profiler) uses Linux `perf_events` to collect stack traces with **zero safepoint bias**. It is the most accurate CPU profiler for Java and also supports allocation profiling, wall-clock profiling, and Java execution samples.
@@ -474,16 +424,6 @@ class AsyncProfilerDemo {
 
 ### 1.6 IntelliJ Profiler
 
-<a href="../../../assets/images/diagrams/java/06-performance/1-6-intellij-profiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-6-intellij-profiler-handwritten.svg" alt="Handwritten: 1.6 IntelliJ Profiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-6-intellij-profiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-6-intellij-profiler-diagram.svg" alt="Diagram: 1.6 IntelliJ Profiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/1-6-intellij-profiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/1-6-intellij-profiler-sticky.svg" alt="Sticky Note: 1.6 IntelliJ Profiler" width="30%">
-</a>
-
 
 IntelliJ IDEA Ultimate includes an embedded async-profiler-based profiler. It integrates CPU and memory profiling into the IDE's run/debug configuration.
 
@@ -529,16 +469,6 @@ When the JVM runs out of memory or you suspect a memory leak, a **heap dump** ca
 
 ### 2.1 Capturing a Heap Dump
 
-<a href="../../../assets/images/diagrams/java/06-performance/2-1-capturing-a-heap-dump-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-1-capturing-a-heap-dump-handwritten.svg" alt="Handwritten: 2.1 Capturing a Heap Dump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-1-capturing-a-heap-dump-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-1-capturing-a-heap-dump-diagram.svg" alt="Diagram: 2.1 Capturing a Heap Dump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-1-capturing-a-heap-dump-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-1-capturing-a-heap-dump-sticky.svg" alt="Sticky Note: 2.1 Capturing a Heap Dump" width="30%">
-</a>
-
 
 ```java
 // Method 1: jcmd (JDK 8+)
@@ -575,16 +505,6 @@ class HeapDumpCreator {
 ```
 
 ### 2.2 Dominator Tree
-
-<a href="../../../assets/images/diagrams/java/06-performance/2-2-dominator-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-2-dominator-tree-handwritten.svg" alt="Handwritten: 2.2 Dominator Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-2-dominator-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-2-dominator-tree-diagram.svg" alt="Diagram: 2.2 Dominator Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-2-dominator-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-2-dominator-tree-sticky.svg" alt="Sticky Note: 2.2 Dominator Tree" width="30%">
-</a>
 
 
 The dominator tree is MAT's most important view. It shows the retained object set for each object → every object that would be garbage collected when that object is collected.
@@ -648,16 +568,6 @@ class Employee {
 
 ### 2.3 Leak Suspect Report
 
-<a href="../../../assets/images/diagrams/java/06-performance/2-3-leak-suspect-report-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-3-leak-suspect-report-handwritten.svg" alt="Handwritten: 2.3 Leak Suspect Report" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-3-leak-suspect-report-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-3-leak-suspect-report-diagram.svg" alt="Diagram: 2.3 Leak Suspect Report" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-3-leak-suspect-report-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-3-leak-suspect-report-sticky.svg" alt="Sticky Note: 2.3 Leak Suspect Report" width="30%">
-</a>
-
 
 MAT's **Leak Suspect Report** automatically identifies the objects most likely causing a memory leak.
 
@@ -707,16 +617,6 @@ Problem Suspect 1
 
 ### 2.4 Shallow vs Retained Heap
 
-<a href="../../../assets/images/diagrams/java/06-performance/2-4-shallow-vs-retained-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-4-shallow-vs-retained-heap-handwritten.svg" alt="Handwritten: 2.4 Shallow vs Retained Heap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-4-shallow-vs-retained-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-4-shallow-vs-retained-heap-diagram.svg" alt="Diagram: 2.4 Shallow vs Retained Heap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-4-shallow-vs-retained-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-4-shallow-vs-retained-heap-sticky.svg" alt="Sticky Note: 2.4 Shallow vs Retained Heap" width="30%">
-</a>
-
 
 Understanding the distinction is critical:
 
@@ -764,16 +664,6 @@ class Node {
 In MAT, the **Retained Heap column** on the dominator tree shows the true cost of each object. A seemingly small `HashMap` can have a huge retained heap if it references millions of entries.
 
 ### 2.5 OQL → Object Query Language
-
-<a href="../../../assets/images/diagrams/java/06-performance/2-5-oql-object-query-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-5-oql-object-query-language-handwritten.svg" alt="Handwritten: 2.5 OQL → Object Query Language" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-5-oql-object-query-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-5-oql-object-query-language-diagram.svg" alt="Diagram: 2.5 OQL → Object Query Language" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-5-oql-object-query-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-5-oql-object-query-language-sticky.svg" alt="Sticky Note: 2.5 OQL → Object Query Language" width="30%">
-</a>
 
 
 MAT includes an OQL (Object Query Language) console for SQL-like queries against the heap.
@@ -832,16 +722,6 @@ SELECT * FROM OBJECTS
 
 ### 2.6 Eclipse MAT Advanced: JOverflow
 
-<a href="../../../assets/images/diagrams/java/06-performance/2-6-eclipse-mat-advanced-joverflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-6-eclipse-mat-advanced-joverflow-handwritten.svg" alt="Handwritten: 2.6 Eclipse MAT Advanced: JOverflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-6-eclipse-mat-advanced-joverflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-6-eclipse-mat-advanced-joverflow-diagram.svg" alt="Diagram: 2.6 Eclipse MAT Advanced: JOverflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/2-6-eclipse-mat-advanced-joverflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/2-6-eclipse-mat-advanced-joverflow-sticky.svg" alt="Sticky Note: 2.6 Eclipse MAT Advanced: JOverflow" width="30%">
-</a>
-
 
 JOverflow is a lesser-known tool that combines heap analysis with **outage pattern detection**. While MAT shows the static state, JOverflow (and tools like it) look for:
 
@@ -889,16 +769,6 @@ class ThreadLocalLeak {
 A **thread dump** is a snapshot of every thread's stack trace at a given moment. It reveals deadlocks, lock contention, and threads stuck in unexpected states.
 
 ### 3.1 Capturing Thread Dumps
-
-<a href="../../../assets/images/diagrams/java/06-performance/3-1-capturing-thread-dumps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-1-capturing-thread-dumps-handwritten.svg" alt="Handwritten: 3.1 Capturing Thread Dumps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-1-capturing-thread-dumps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-1-capturing-thread-dumps-diagram.svg" alt="Diagram: 3.1 Capturing Thread Dumps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-1-capturing-thread-dumps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-1-capturing-thread-dumps-sticky.svg" alt="Sticky Note: 3.1 Capturing Thread Dumps" width="30%">
-</a>
 
 
 ```bash
@@ -991,16 +861,6 @@ class DeadlockCandidate implements Runnable {
 ```
 
 ### 3.2 Thread States in Dumps
-
-<a href="../../../assets/images/diagrams/java/06-performance/3-2-thread-states-in-dumps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-2-thread-states-in-dumps-handwritten.svg" alt="Handwritten: 3.2 Thread States in Dumps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-2-thread-states-in-dumps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-2-thread-states-in-dumps-diagram.svg" alt="Diagram: 3.2 Thread States in Dumps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-2-thread-states-in-dumps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-2-thread-states-in-dumps-sticky.svg" alt="Sticky Note: 3.2 Thread States in Dumps" width="30%">
-</a>
 
 
 Every thread in a dump shows its state. The key states are:
@@ -1096,16 +956,6 @@ class ThreadStateDemo {
 
 ### 3.3 Deadlock Detection
 
-<a href="../../../assets/images/diagrams/java/06-performance/3-3-deadlock-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-3-deadlock-detection-handwritten.svg" alt="Handwritten: 3.3 Deadlock Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-3-deadlock-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-3-deadlock-detection-diagram.svg" alt="Diagram: 3.3 Deadlock Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-3-deadlock-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-3-deadlock-detection-sticky.svg" alt="Sticky Note: 3.3 Deadlock Detection" width="30%">
-</a>
-
 
 `jstack -l <PID>` automatically detects deadlocks and prints them at the end of the dump:
 
@@ -1132,16 +982,6 @@ Java stack information for the threads listed above:
 ```
 
 ### 3.4 CPU Hotspots from Thread Stacks
-
-<a href="../../../assets/images/diagrams/java/06-performance/3-4-cpu-hotspots-from-thread-stacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-4-cpu-hotspots-from-thread-stacks-handwritten.svg" alt="Handwritten: 3.4 CPU Hotspots from Thread Stacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-4-cpu-hotspots-from-thread-stacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-4-cpu-hotspots-from-thread-stacks-diagram.svg" alt="Diagram: 3.4 CPU Hotspots from Thread Stacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-4-cpu-hotspots-from-thread-stacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-4-cpu-hotspots-from-thread-stacks-sticky.svg" alt="Sticky Note: 3.4 CPU Hotspots from Thread Stacks" width="30%">
-</a>
 
 
 Thread dumps capture **where the thread is executing right now**. By taking **multiple thread dumps** (e.g., 5 dumps spaced 3 seconds apart) and finding stack frames that appear in all of them, you locate CPU hotspots.
@@ -1181,16 +1021,6 @@ class CpuHotspotDemo {
 The heuristic: if a stack frame appears in 4 out of 5 dumps, that method is likely consuming most of the CPU. Tools like **fastthread.io** automate this analysis.
 
 ### 3.5 Thread Dump Analyzers (fastthread.io, etc.)
-
-<a href="../../../assets/images/diagrams/java/06-performance/3-5-thread-dump-analyzers-fastthread-io-etc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-5-thread-dump-analyzers-fastthread-io-etc-handwritten.svg" alt="Handwritten: 3.5 Thread Dump Analyzers (fastthread.io, etc.)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-5-thread-dump-analyzers-fastthread-io-etc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-5-thread-dump-analyzers-fastthread-io-etc-diagram.svg" alt="Diagram: 3.5 Thread Dump Analyzers (fastthread.io, etc.)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-5-thread-dump-analyzers-fastthread-io-etc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-5-thread-dump-analyzers-fastthread-io-etc-sticky.svg" alt="Sticky Note: 3.5 Thread Dump Analyzers (fastthread.io, etc.)" width="30%">
-</a>
 
 
 Manual thread dump analysis is tedious. Online analyzers parse and summarize dumps:
@@ -1240,16 +1070,6 @@ Garbage collection pauses are the single largest source of latency spikes in Jav
 
 ### 4.1 Enabling GC Logging
 
-<a href="../../../assets/images/diagrams/java/06-performance/4-1-enabling-gc-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-1-enabling-gc-logging-handwritten.svg" alt="Handwritten: 4.1 Enabling GC Logging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/4-1-enabling-gc-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-1-enabling-gc-logging-diagram.svg" alt="Diagram: 4.1 Enabling GC Logging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/4-1-enabling-gc-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-1-enabling-gc-logging-sticky.svg" alt="Sticky Note: 4.1 Enabling GC Logging" width="30%">
-</a>
-
 
 ```bash
 # JDK 8 style
@@ -1266,16 +1086,6 @@ Garbage collection pauses are the single largest source of latency spikes in Jav
 ```
 
 ### 4.2 Reading GC Logs
-
-<a href="../../../assets/images/diagrams/java/06-performance/4-2-reading-gc-logs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-2-reading-gc-logs-handwritten.svg" alt="Handwritten: 4.2 Reading GC Logs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/4-2-reading-gc-logs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-2-reading-gc-logs-diagram.svg" alt="Diagram: 4.2 Reading GC Logs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/4-2-reading-gc-logs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-2-reading-gc-logs-sticky.svg" alt="Sticky Note: 4.2 Reading GC Logs" width="30%">
-</a>
 
 
 ```java
@@ -1335,16 +1145,6 @@ A sample GC log entry (G1GC):
 
 ### 4.3 GCeasy & GCViewer
 
-<a href="../../../assets/images/diagrams/java/06-performance/4-3-gceasy-gcviewer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-3-gceasy-gcviewer-handwritten.svg" alt="Handwritten: 4.3 GCeasy & GCViewer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/4-3-gceasy-gcviewer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-3-gceasy-gcviewer-diagram.svg" alt="Diagram: 4.3 GCeasy & GCViewer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/4-3-gceasy-gcviewer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/4-3-gceasy-gcviewer-sticky.svg" alt="Sticky Note: 4.3 GCeasy & GCViewer" width="30%">
-</a>
-
 
 **GCeasy** (gceasy.io) and **GCViewer** parse GC logs and produce interactive reports:
 
@@ -1379,16 +1179,6 @@ A sample GC log entry (G1GC):
 ```
 
 ### 3.4 Allocation Rate & Promotion Rate
-
-<a href="../../../assets/images/diagrams/java/06-performance/3-4-allocation-rate-promotion-rate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-4-allocation-rate-promotion-rate-handwritten.svg" alt="Handwritten: 3.4 Allocation Rate & Promotion Rate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-4-allocation-rate-promotion-rate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-4-allocation-rate-promotion-rate-diagram.svg" alt="Diagram: 3.4 Allocation Rate & Promotion Rate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-4-allocation-rate-promotion-rate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-4-allocation-rate-promotion-rate-sticky.svg" alt="Sticky Note: 3.4 Allocation Rate & Promotion Rate" width="30%">
-</a>
 
 
 High allocation rate causes frequent young GC. High promotion rate means objects are tenuring prematurely, causing concurrent-mark phases in G1 or full GC in Parallel/Serial collectors.
@@ -1458,16 +1248,6 @@ class AllocationRateMonitor {
 ```
 
 ### 3.5 GC Frequency Tuning
-
-<a href="../../../assets/images/diagrams/java/06-performance/3-5-gc-frequency-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-5-gc-frequency-tuning-handwritten.svg" alt="Handwritten: 3.5 GC Frequency Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-5-gc-frequency-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-5-gc-frequency-tuning-diagram.svg" alt="Diagram: 3.5 GC Frequency Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/3-5-gc-frequency-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/3-5-gc-frequency-tuning-sticky.svg" alt="Sticky Note: 3.5 GC Frequency Tuning" width="30%">
-</a>
 
 
 The relationship between allocation rate, heap size, and GC frequency:
@@ -1541,16 +1321,6 @@ Java Microbenchmark Harness (JMH) is the standard framework for writing correct 
 
 ### 5.1 Basic JMH Setup
 
-<a href="../../../assets/images/diagrams/java/06-performance/5-1-basic-jmh-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-1-basic-jmh-setup-handwritten.svg" alt="Handwritten: 5.1 Basic JMH Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-1-basic-jmh-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-1-basic-jmh-setup-diagram.svg" alt="Diagram: 5.1 Basic JMH Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-1-basic-jmh-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-1-basic-jmh-setup-sticky.svg" alt="Sticky Note: 5.1 Basic JMH Setup" width="30%">
-</a>
-
 
 Add to `pom.xml`:
 
@@ -1582,16 +1352,6 @@ mvn archetype:generate \
 ```
 
 ### 5.2 Your First @Benchmark
-
-<a href="../../../assets/images/diagrams/java/06-performance/5-2-your-first-benchmark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-2-your-first-benchmark-handwritten.svg" alt="Handwritten: 5.2 Your First @Benchmark" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-2-your-first-benchmark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-2-your-first-benchmark-diagram.svg" alt="Diagram: 5.2 Your First @Benchmark" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-2-your-first-benchmark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-2-your-first-benchmark-sticky.svg" alt="Sticky Note: 5.2 Your First @Benchmark" width="30%">
-</a>
 
 
 ```java
@@ -1657,16 +1417,6 @@ public class StringConcatBenchmark {
 
 ### 5.3 @BenchmarkMode
 
-<a href="../../../assets/images/diagrams/java/06-performance/5-3-benchmarkmode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-3-benchmarkmode-handwritten.svg" alt="Handwritten: 5.3 @BenchmarkMode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-3-benchmarkmode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-3-benchmarkmode-diagram.svg" alt="Diagram: 5.3 @BenchmarkMode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-3-benchmarkmode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-3-benchmarkmode-sticky.svg" alt="Sticky Note: 5.3 @BenchmarkMode" width="30%">
-</a>
-
 
 | Mode                     | What It Measures                        | Use Case                          |
 |--------------------------|----------------------------------------|-----------------------------------|
@@ -1722,16 +1472,6 @@ public class ListBenchmark {
 
 ### 5.4 @State
 
-<a href="../../../assets/images/diagrams/java/06-performance/5-4-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-4-state-handwritten.svg" alt="Handwritten: 5.4 @State" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-4-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-4-state-diagram.svg" alt="Diagram: 5.4 @State" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-4-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-4-state-sticky.svg" alt="Sticky Note: 5.4 @State" width="30%">
-</a>
-
 
 `@State` defines scope of benchmark state:
 
@@ -1776,16 +1516,6 @@ public class SharedStateBenchmark {
 
 ### 5.5 @Warmup, @Measurement, @Fork
 
-<a href="../../../assets/images/diagrams/java/06-performance/5-5-warmup-measurement-fork-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-5-warmup-measurement-fork-handwritten.svg" alt="Handwritten: 5.5 @Warmup, @Measurement, @Fork" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-5-warmup-measurement-fork-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-5-warmup-measurement-fork-diagram.svg" alt="Diagram: 5.5 @Warmup, @Measurement, @Fork" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-5-warmup-measurement-fork-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-5-warmup-measurement-fork-sticky.svg" alt="Sticky Note: 5.5 @Warmup, @Measurement, @Fork" width="30%">
-</a>
-
 
 ```java
 @BenchmarkMode(Mode.AverageTime)
@@ -1826,16 +1556,6 @@ public class MathBenchmark {
 - **Total time**: 3 forks Ã— (5 warmup + 5 measurement) Ã— 2 sec = 60 seconds minimum per benchmark method.
 
 ### 5.6 Blackhole
-
-<a href="../../../assets/images/diagrams/java/06-performance/5-6-blackhole-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-6-blackhole-handwritten.svg" alt="Handwritten: 5.6 Blackhole" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-6-blackhole-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-6-blackhole-diagram.svg" alt="Diagram: 5.6 Blackhole" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-6-blackhole-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-6-blackhole-sticky.svg" alt="Sticky Note: 5.6 Blackhole" width="30%">
-</a>
 
 
 `Blackhole.consumeCPU()` prevents the JIT from optimizing away a computation. Use it when you want to measure the cost of generating a value but don't want the JIT to eliminate the call because the result is unused.
@@ -1893,16 +1613,6 @@ public class BlackholeExample {
 
 ### 5.7 Compiler Control
 
-<a href="../../../assets/images/diagrams/java/06-performance/5-7-compiler-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-7-compiler-control-handwritten.svg" alt="Handwritten: 5.7 Compiler Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-7-compiler-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-7-compiler-control-diagram.svg" alt="Diagram: 5.7 Compiler Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-7-compiler-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-7-compiler-control-sticky.svg" alt="Sticky Note: 5.7 Compiler Control" width="30%">
-</a>
-
 
 JMH provides `@CompilerControl` to influence JIT decisions:
 
@@ -1957,16 +1667,6 @@ public class CompilerControlExample {
 
 ### 5.8 Profilers in JMH
 
-<a href="../../../assets/images/diagrams/java/06-performance/5-8-profilers-in-jmh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-8-profilers-in-jmh-handwritten.svg" alt="Handwritten: 5.8 Profilers in JMH" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-8-profilers-in-jmh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-8-profilers-in-jmh-diagram.svg" alt="Diagram: 5.8 Profilers in JMH" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-8-profilers-in-jmh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-8-profilers-in-jmh-sticky.svg" alt="Sticky Note: 5.8 Profilers in JMH" width="30%">
-</a>
-
 
 JMH can attach profilers during the benchmark run:
 
@@ -1995,16 +1695,6 @@ public void profiledBenchmark(Blackhole bh) {
 ```
 
 ### 5.9 Proper Benchmark Writing Rules
-
-<a href="../../../assets/images/diagrams/java/06-performance/5-9-proper-benchmark-writing-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-9-proper-benchmark-writing-rules-handwritten.svg" alt="Handwritten: 5.9 Proper Benchmark Writing Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-9-proper-benchmark-writing-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-9-proper-benchmark-writing-rules-diagram.svg" alt="Diagram: 5.9 Proper Benchmark Writing Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/5-9-proper-benchmark-writing-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/5-9-proper-benchmark-writing-rules-sticky.svg" alt="Sticky Note: 5.9 Proper Benchmark Writing Rules" width="30%">
-</a>
 
 
 ```java
@@ -2119,16 +1809,6 @@ This section catalogs the most common performance problems in Java and Spring Bo
 
 ### 6.1 Unnecessary Object Creation
 
-<a href="../../../assets/images/diagrams/java/06-performance/6-1-unnecessary-object-creation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-1-unnecessary-object-creation-handwritten.svg" alt="Handwritten: 6.1 Unnecessary Object Creation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-1-unnecessary-object-creation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-1-unnecessary-object-creation-diagram.svg" alt="Diagram: 6.1 Unnecessary Object Creation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-1-unnecessary-object-creation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-1-unnecessary-object-creation-sticky.svg" alt="Sticky Note: 6.1 Unnecessary Object Creation" width="30%">
-</a>
-
 
 ```java
 import java.util.ArrayList;
@@ -2221,16 +1901,6 @@ public class ObjectCreationAntiPatterns {
 
 ### 6.2 Excessive Synchronization
 
-<a href="../../../assets/images/diagrams/java/06-performance/6-2-excessive-synchronization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-2-excessive-synchronization-handwritten.svg" alt="Handwritten: 6.2 Excessive Synchronization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-2-excessive-synchronization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-2-excessive-synchronization-diagram.svg" alt="Diagram: 6.2 Excessive Synchronization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-2-excessive-synchronization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-2-excessive-synchronization-sticky.svg" alt="Sticky Note: 6.2 Excessive Synchronization" width="30%">
-</a>
-
 
 ```java
 import java.util.*;
@@ -2308,16 +1978,6 @@ public class SynchronizationAntiPatterns {
 
 ### 6.3 Connection Pool Leaks
 
-<a href="../../../assets/images/diagrams/java/06-performance/6-3-connection-pool-leaks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-3-connection-pool-leaks-handwritten.svg" alt="Handwritten: 6.3 Connection Pool Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-3-connection-pool-leaks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-3-connection-pool-leaks-diagram.svg" alt="Diagram: 6.3 Connection Pool Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-3-connection-pool-leaks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-3-connection-pool-leaks-sticky.svg" alt="Sticky Note: 6.3 Connection Pool Leaks" width="30%">
-</a>
-
 
 ```java
 import com.zaxxer.hikari.HikariConfig;
@@ -2394,16 +2054,6 @@ class ConnectionPoolLeak {
 ```
 
 ### 6.4 N+1 Queries (Hibernate)
-
-<a href="../../../assets/images/diagrams/java/06-performance/6-4-n-1-queries-hibernate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-4-n-1-queries-hibernate-handwritten.svg" alt="Handwritten: 6.4 N+1 Queries (Hibernate)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-4-n-1-queries-hibernate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-4-n-1-queries-hibernate-diagram.svg" alt="Diagram: 6.4 N+1 Queries (Hibernate)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-4-n-1-queries-hibernate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-4-n-1-queries-hibernate-sticky.svg" alt="Sticky Note: 6.4 N+1 Queries (Hibernate)" width="30%">
-</a>
 
 
 ```java
@@ -2519,16 +2169,6 @@ interface BookRepository extends org.springframework.data.jpa.repository.JpaRepo
 ```
 
 ### 6.5 Memory Leaks
-
-<a href="../../../assets/images/diagrams/java/06-performance/6-5-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-5-memory-leaks-handwritten.svg" alt="Handwritten: 6.5 Memory Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-5-memory-leaks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-5-memory-leaks-diagram.svg" alt="Diagram: 6.5 Memory Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/6-5-memory-leaks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/6-5-memory-leaks-sticky.svg" alt="Sticky Note: 6.5 Memory Leaks" width="30%">
-</a>
 
 
 ```java
@@ -2698,16 +2338,6 @@ Understanding JIT compiler behavior helps you write code that the JVM can optimi
 
 ### 7.1 JIT Warmup
 
-<a href="../../../assets/images/diagrams/java/06-performance/7-1-jit-warmup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-1-jit-warmup-handwritten.svg" alt="Handwritten: 7.1 JIT Warmup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-1-jit-warmup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-1-jit-warmup-diagram.svg" alt="Diagram: 7.1 JIT Warmup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-1-jit-warmup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-1-jit-warmup-sticky.svg" alt="Sticky Note: 7.1 JIT Warmup" width="30%">
-</a>
-
 
 The JVM starts interpreting bytecode. Methods that execute frequently (the **hot** threshold, default 10,000 invocations) are compiled to native code by the C1 compiler. Methods that are even hotter are recompiled by C2 with more aggressive optimizations.
 
@@ -2809,16 +2439,6 @@ class WarmupStrategies {
 
 ### 7.2 Inlining
 
-<a href="../../../assets/images/diagrams/java/06-performance/7-2-inlining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-2-inlining-handwritten.svg" alt="Handwritten: 7.2 Inlining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-2-inlining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-2-inlining-diagram.svg" alt="Diagram: 7.2 Inlining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-2-inlining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-2-inlining-sticky.svg" alt="Sticky Note: 7.2 Inlining" width="30%">
-</a>
-
 
 Inlining replaces a method call with the method body, eliminating call overhead and enabling further optimizations. The JIT inlines aggressively → methods smaller than 325 bytes of bytecode (default `-XX:MaxInlineSize=325`) and call sites with high frequency.
 
@@ -2884,16 +2504,6 @@ class InlineExample {
 ```
 
 ### 7.3 Dead Code Elimination (DCE)
-
-<a href="../../../assets/images/diagrams/java/06-performance/7-3-dead-code-elimination-dce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-3-dead-code-elimination-dce-handwritten.svg" alt="Handwritten: 7.3 Dead Code Elimination (DCE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-3-dead-code-elimination-dce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-3-dead-code-elimination-dce-diagram.svg" alt="Diagram: 7.3 Dead Code Elimination (DCE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-3-dead-code-elimination-dce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-3-dead-code-elimination-dce-sticky.svg" alt="Sticky Note: 7.3 Dead Code Elimination (DCE)" width="30%">
-</a>
 
 
 The JIT can eliminate code whose results are never used. This is why JMH uses `Blackhole`.
@@ -2968,16 +2578,6 @@ class ExpensiveDependency {
 
 ### 7.4 Loop Unrolling
 
-<a href="../../../assets/images/diagrams/java/06-performance/7-4-loop-unrolling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-4-loop-unrolling-handwritten.svg" alt="Handwritten: 7.4 Loop Unrolling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-4-loop-unrolling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-4-loop-unrolling-diagram.svg" alt="Diagram: 7.4 Loop Unrolling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-4-loop-unrolling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-4-loop-unrolling-sticky.svg" alt="Sticky Note: 7.4 Loop Unrolling" width="30%">
-</a>
-
 
 The JIT unrolls loops to reduce branch overhead and expose instruction-level parallelism.
 
@@ -3046,16 +2646,6 @@ class LoopUnrolling {
 
 ### 7.5 Intrinsics
 
-<a href="../../../assets/images/diagrams/java/06-performance/7-5-intrinsics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-5-intrinsics-handwritten.svg" alt="Handwritten: 7.5 Intrinsics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-5-intrinsics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-5-intrinsics-diagram.svg" alt="Diagram: 7.5 Intrinsics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-5-intrinsics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-5-intrinsics-sticky.svg" alt="Sticky Note: 7.5 Intrinsics" width="30%">
-</a>
-
 
 Intrinsics are methods that the JIT recognizes and replaces with hand-written machine code → usually a CPU instruction.
 
@@ -3117,16 +2707,6 @@ class IntrinsicChecker {
 ```
 
 ### 7.6 Branch Prediction
-
-<a href="../../../assets/images/diagrams/java/06-performance/7-6-branch-prediction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-6-branch-prediction-handwritten.svg" alt="Handwritten: 7.6 Branch Prediction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-6-branch-prediction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-6-branch-prediction-diagram.svg" alt="Diagram: 7.6 Branch Prediction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-6-branch-prediction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-6-branch-prediction-sticky.svg" alt="Sticky Note: 7.6 Branch Prediction" width="30%">
-</a>
 
 
 Modern CPUs predict branch outcomes. A mispredicted branch costs 10--20 cycles. Code that is unpredictable hurts performance.
@@ -3204,16 +2784,6 @@ class BranchPredictionMitigation {
 ```
 
 ### 7.7 False Sharing (@Contended)
-
-<a href="../../../assets/images/diagrams/java/06-performance/7-7-false-sharing-contended-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-7-false-sharing-contended-handwritten.svg" alt="Handwritten: 7.7 False Sharing (@Contended)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-7-false-sharing-contended-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-7-false-sharing-contended-diagram.svg" alt="Diagram: 7.7 False Sharing (@Contended)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/7-7-false-sharing-contended-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/7-7-false-sharing-contended-sticky.svg" alt="Sticky Note: 7.7 False Sharing (@Contended)" width="30%">
-</a>
 
 
 False sharing occurs when two threads write to different fields that share the same CPU cache line (typically 64 bytes). The CPU cache coherence protocol forces the line to ping-pong between cores, destroying performance.
@@ -3319,16 +2889,6 @@ JVM flags control memory allocation, garbage collection, compilation, and runtim
 
 ### 8.1 Heap Sizing
 
-<a href="../../../assets/images/diagrams/java/06-performance/8-1-heap-sizing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-1-heap-sizing-handwritten.svg" alt="Handwritten: 8.1 Heap Sizing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/8-1-heap-sizing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-1-heap-sizing-diagram.svg" alt="Diagram: 8.1 Heap Sizing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/8-1-heap-sizing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-1-heap-sizing-sticky.svg" alt="Sticky Note: 8.1 Heap Sizing" width="30%">
-</a>
-
 
 ```bash
 # Minimum and maximum heap size (set equal to avoid resizing)
@@ -3382,16 +2942,6 @@ class HeapConfig {
 ```
 
 ### 8.2 GC Selection & Tuning
-
-<a href="../../../assets/images/diagrams/java/06-performance/8-2-gc-selection-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-2-gc-selection-tuning-handwritten.svg" alt="Handwritten: 8.2 GC Selection & Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/8-2-gc-selection-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-2-gc-selection-tuning-diagram.svg" alt="Diagram: 8.2 GC Selection & Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/8-2-gc-selection-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-2-gc-selection-tuning-sticky.svg" alt="Sticky Note: 8.2 GC Selection & Tuning" width="30%">
-</a>
 
 
 ```bash
@@ -3460,16 +3010,6 @@ class GcComparison {
 ```
 
 ### 8.3 Additional JVM Tuning Flags
-
-<a href="../../../assets/images/diagrams/java/06-performance/8-3-additional-jvm-tuning-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-3-additional-jvm-tuning-flags-handwritten.svg" alt="Handwritten: 8.3 Additional JVM Tuning Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/8-3-additional-jvm-tuning-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-3-additional-jvm-tuning-flags-diagram.svg" alt="Diagram: 8.3 Additional JVM Tuning Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/8-3-additional-jvm-tuning-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/8-3-additional-jvm-tuning-flags-sticky.svg" alt="Sticky Note: 8.3 Additional JVM Tuning Flags" width="30%">
-</a>
 
 
 ```bash
@@ -3558,16 +3098,6 @@ Spring Boot convenience comes with an overhead. This section covers the tuning k
 
 ### 9.1 Lazy Initialization
 
-<a href="../../../assets/images/diagrams/java/06-performance/9-1-lazy-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-1-lazy-initialization-handwritten.svg" alt="Handwritten: 9.1 Lazy Initialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-1-lazy-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-1-lazy-initialization-diagram.svg" alt="Diagram: 9.1 Lazy Initialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-1-lazy-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-1-lazy-initialization-sticky.svg" alt="Sticky Note: 9.1 Lazy Initialization" width="30%">
-</a>
-
 
 By default, Spring Boot creates all singleton beans at startup. Lazy initialization defers bean creation until first use.
 
@@ -3633,16 +3163,6 @@ class LazyInitDemo {
 | High-traffic services | Not recommended → first request pays full initialization tax |
 
 ### 9.2 Connection Pool Tuning
-
-<a href="../../../assets/images/diagrams/java/06-performance/9-2-connection-pool-tuning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-2-connection-pool-tuning-handwritten.svg" alt="Handwritten: 9.2 Connection Pool Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-2-connection-pool-tuning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-2-connection-pool-tuning-diagram.svg" alt="Diagram: 9.2 Connection Pool Tuning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-2-connection-pool-tuning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-2-connection-pool-tuning-sticky.svg" alt="Sticky Note: 9.2 Connection Pool Tuning" width="30%">
-</a>
 
 
 HikariCP is Spring Boot's default connection pool. Tuning it is the single highest-impact per-database optimization.
@@ -3741,16 +3261,6 @@ class HikariTuning {
 
 ### 9.3 AOT Processing
 
-<a href="../../../assets/images/diagrams/java/06-performance/9-3-aot-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-3-aot-processing-handwritten.svg" alt="Handwritten: 9.3 AOT Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-3-aot-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-3-aot-processing-diagram.svg" alt="Diagram: 9.3 AOT Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-3-aot-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-3-aot-processing-sticky.svg" alt="Sticky Note: 9.3 AOT Processing" width="30%">
-</a>
-
 
 Spring Boot 3.x introduced Ahead-of-Time (AOT) processing for GraalVM native images and optimized startup.
 
@@ -3823,16 +3333,6 @@ class SomeSerializableClass implements java.io.Serializable {
 ```
 
 ### 9.4 Graceful Shutdown
-
-<a href="../../../assets/images/diagrams/java/06-performance/9-4-graceful-shutdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-4-graceful-shutdown-handwritten.svg" alt="Handwritten: 9.4 Graceful Shutdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-4-graceful-shutdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-4-graceful-shutdown-diagram.svg" alt="Diagram: 9.4 Graceful Shutdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-4-graceful-shutdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-4-graceful-shutdown-sticky.svg" alt="Sticky Note: 9.4 Graceful Shutdown" width="30%">
-</a>
 
 
 Graceful shutdown allows in-flight requests to complete before the application stops.
@@ -3914,16 +3414,6 @@ class LongRunningTaskService {
 ```
 
 ### 9.5 Virtual Threads
-
-<a href="../../../assets/images/diagrams/java/06-performance/9-5-virtual-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-5-virtual-threads-handwritten.svg" alt="Handwritten: 9.5 Virtual Threads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-5-virtual-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-5-virtual-threads-diagram.svg" alt="Diagram: 9.5 Virtual Threads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/06-performance/9-5-virtual-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/06-performance/9-5-virtual-threads-sticky.svg" alt="Sticky Note: 9.5 Virtual Threads" width="30%">
-</a>
 
 
 Virtual threads (Project Loom, JDK 21+) dramatically reduce the overhead of thread-per-request models.

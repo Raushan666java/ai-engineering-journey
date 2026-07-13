@@ -1,65 +1,99 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
   <defs>
-    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#f1f5f9" stroke-width="0.3"/>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowSm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowMd" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#e2e8f0"/>
+    </pattern>
+    <pattern id="lineGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
     </pattern>
   </defs>
-  <!-- Paper background -->
+  <!-- Paper background -- warm cream -->
   <rect width="600" height="800" fill="#FEFCF8" rx="6"/>
-  <rect width="600" height="800" fill="url(#grid)"/>
+  <rect width="600" height="800" fill="url(#lineGrid)" opacity="0.3"/>
   <!-- Red margin line -->
-  <line x1="50" y1="0" x2="50" y2="800" stroke="#fecaca" stroke-width="2"/>
+  <line x1="50" y1="10" x2="50" y2="790" stroke="#fecaca" stroke-width="2"/>
   <!-- Guide lines -->
-  <line x1="55" y1="90" x2="560" y2="90" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="122" x2="560" y2="122" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="154" x2="560" y2="154" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="186" x2="560" y2="186" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="218" x2="560" y2="218" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="250" x2="560" y2="250" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="282" x2="560" y2="282" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="314" x2="560" y2="314" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="346" x2="560" y2="346" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="378" x2="560" y2="378" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="410" x2="560" y2="410" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="442" x2="560" y2="442" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="474" x2="560" y2="474" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="506" x2="560" y2="506" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="538" x2="560" y2="538" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="570" x2="560" y2="570" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="602" x2="560" y2="602" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="634" x2="560" y2="634" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="666" x2="560" y2="666" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="698" x2="560" y2="698" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="730" x2="560" y2="730" stroke="#e2e8f0" stroke-width="0.5"/>
-  <line x1="55" y1="762" x2="560" y2="762" stroke="#e2e8f0" stroke-width="0.5"/>
+  <line x1="55" y1="85" x2="555" y2="85" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="113" x2="555" y2="113" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="141" x2="555" y2="141" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="169" x2="555" y2="169" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="197" x2="555" y2="197" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="225" x2="555" y2="225" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="253" x2="555" y2="253" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="281" x2="555" y2="281" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="309" x2="555" y2="309" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="337" x2="555" y2="337" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="365" x2="555" y2="365" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="393" x2="555" y2="393" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="421" x2="555" y2="421" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="449" x2="555" y2="449" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="477" x2="555" y2="477" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="505" x2="555" y2="505" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="533" x2="555" y2="533" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="561" x2="555" y2="561" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="589" x2="555" y2="589" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="617" x2="555" y2="617" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="645" x2="555" y2="645" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="673" x2="555" y2="673" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="701" x2="555" y2="701" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="729" x2="555" y2="729" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <line x1="55" y1="757" x2="555" y2="757" stroke="#e2e8f0" stroke-width="0.5" opacity="0.6"/>
+  <!-- Notebook hole punch dots -->
+  <circle cx="30" cy="40" r="5" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
+  <circle cx="30" cy="400" r="5" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
+  <circle cx="30" cy="760" r="5" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.5"/>
   <!-- Page number -->
-  <text x="300" y="788" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
+  <text x="300" y="786" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">— 1 —</text>
   <!-- Content -->
-    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 3: Build Tools</text>
-    <line x1="55" y1="128" x2="560" y2="128" stroke="#2563eb" stroke-width="2" stroke-dasharray="4,2"/>
-    <text x="60" y="152" font-size="15" font-weight="bold" fill="#2563eb" font-family="'Segoe Print', 'Comic Sans MS', cursive">Key Definitions</text>
-    <text x="60" y="180" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">Why</tspan>: this dependency needed</text>
-    <text x="60" y="202" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold">What</tspan>: the purpose of a lock file (package-lock.json)?&lt;/summary&gt;A) Lock the package...</text>
-    <text x="60" y="224" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">(package-lock.json)?&lt;/summary&gt;A)</text>
-    <text x="60" y="246" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Lock the package...</text>
-    <text x="60" y="276" font-size="15" font-weight="bold" fill="#dc2626" font-family="'Segoe Print', 'Comic Sans MS', cursive">Formulas</text>
-    <text x="60" y="304" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1: /, use: &apos;ts-loader&apos;, exclude: /node_modules/ },
-    ],
-  },
-  optimization: {
-    splitChunks: {</text>
-    <text x="60" y="326" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2: {this.config.entry}`);
-  }
-
-  private setEnvironmentVariables(): void {
-    Object.entries(this.</text>
-    <text x="60" y="348" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3: {this.config.outDir}`,
-      `--platform=</text>
-    <text x="60" y="378" font-size="15" font-weight="bold" fill="#059669" font-family="'Segoe Print', 'Comic Sans MS', cursive">Workflow</text>
-    <text x="60" y="406" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">1. Default package manager for Node.js</text>
-    <text x="60" y="428" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">2. `package.json` defines dependencies and scripts</text>
-    <text x="60" y="450" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">3. `package-lock.json` ensures deterministic installs</text>
-    <text x="60" y="472" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">4. `node_modules` holds installed packages</text>
-    <line x1="55" y1="734" x2="560" y2="734" stroke="#94a3b8" stroke-width="1"/>
-    <text x="60" y="754" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">- Build tools transform source code into deployable artifacts as the first...</text>
+    <text x="65" y="100" font-size="22" font-weight="bold" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive">Chapter 3: Build Tools</text>
+    <line x1="60" y1="138" x2="550" y2="138" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="142" x2="400" y2="142" stroke="#2563eb" stroke-width="1" stroke-linecap="round" opacity="0.3"/>
+    <text x="60" y="166" font-size="14" font-weight="bold" fill="#dc2626" font-family="Arial, sans-serif">Formulas</text>
+    <line x1="60" y1="169" x2="160" y2="169" stroke="#dc2626" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="190" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 1</tspan>: /, use: &apos;ts-loader&apos;, exclude: /node_modules/ , , , optimization: splitChunks: chunks: &apos;all&apos; , minimize: true, , ; ``` **</text>
+    <text x="65" y="212" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 2</tspan>: hashFiles&apos;**/package-lock.json&apos; restore-keys: |</text>
+    <text x="65" y="234" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan font-weight="bold" fill="#dc2626">Formula 3</tspan>: this.config.outDir`; private validateEntry: void if !existsSyncthis.config.entry throw new Error`Entry point not found:</text>
+    <text x="60" y="262" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Workflow</text>
+    <line x1="60" y1="265" x2="160" y2="265" stroke="#059669" stroke-width="2" stroke-linecap="round"/>
+    <text x="65" y="286" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">1.</tspan> Default package manager for Node.js</text>
+    <text x="65" y="308" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">2.</tspan> `package.json` defines dependencies and scripts</text>
+    <text x="65" y="330" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">3.</tspan> `package-lock.json` ensures deterministic installs</text>
+    <text x="65" y="352" font-size="13" fill="#1e293b" font-family="'Segoe Print', 'Comic Sans MS', cursive"><tspan fill="#059669" font-weight="bold">4.</tspan> `node_modules` holds installed packages</text>
+    <line x1="60" y1="716" x2="550" y2="716" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="65" y="736" font-size="12" font-style="italic" fill="#64748b" font-family="'Segoe Print', 'Comic Sans MS', cursive">💡 - Build tools transform source code into deployable artifacts as the first automated...</text>
 </svg>

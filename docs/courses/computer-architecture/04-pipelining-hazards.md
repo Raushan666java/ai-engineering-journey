@@ -50,23 +50,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 1. Instruction Pipeline Overview
-
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-handwritten.svg" alt="Handwritten: 1. Instruction Pipeline Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-diagram.svg" alt="Diagram: 1. Instruction Pipeline Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/1-instruction-pipeline-overview-sticky.svg" alt="Sticky Note: 1. Instruction Pipeline Overview" width="30%">
-</a>
-
 
 Pipelining is a technique where multiple instructions are overlapped in execution. Each instruction passes through stages, and different instructions occupy different stages simultaneously.
 
@@ -100,17 +88,6 @@ With pipeline: 1 / cycle_time (ideally)
 
 ### 2. Five-Stage RISC Pipeline (Classic)
 
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-handwritten.svg" alt="Handwritten: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-diagram.svg" alt="Diagram: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/2-five-stage-risc-pipeline-classic-sticky.svg" alt="Sticky Note: 2. Five-Stage RISC Pipeline (Classic)" width="30%">
-</a>
-
-
 | Stage | Name | Operations |
 |-------|------|------------|
 | IF | Instruction Fetch | Read instruction from memory using PC; update PC |
@@ -136,17 +113,6 @@ After the pipeline is full (cycle 5 onward), one instruction completes per cycle
 **Throughput = 1 CPI (in ideal case)**
 
 ### 3. Pipeline Hazards
-
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-handwritten.svg" alt="Handwritten: 3. Pipeline Hazards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-diagram.svg" alt="Diagram: 3. Pipeline Hazards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/3-pipeline-hazards-sticky.svg" alt="Sticky Note: 3. Pipeline Hazards" width="30%">
-</a>
-
 
 Hazards are situations that prevent the next instruction from executing in the next clock cycle.
 
@@ -267,17 +233,6 @@ ADD R3, R1, R4      // Now R1 is available
 
 ### 4. Control Hazards (Branch Hazards)
 
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-handwritten.svg" alt="Handwritten: 4. Control Hazards (Branch Hazards)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-diagram.svg" alt="Diagram: 4. Control Hazards (Branch Hazards)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/4-control-hazards-branch-hazards-sticky.svg" alt="Sticky Note: 4. Control Hazards (Branch Hazards)" width="30%">
-</a>
-
-
 Occur when the pipeline makes decisions based on instructions that haven't executed yet (branches, jumps).
 
 **Problem:** The next instruction address (PC+4) is known after IF, but the branch outcome is known after EX.
@@ -363,17 +318,6 @@ For a 5-stage pipeline with branch resolution at EX:
 
 ### 5. Pipeline Stalls vs Flushes
 
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-handwritten.svg" alt="Handwritten: 5. Pipeline Stalls vs Flushes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-diagram.svg" alt="Diagram: 5. Pipeline Stalls vs Flushes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/5-pipeline-stalls-vs-flushes-sticky.svg" alt="Sticky Note: 5. Pipeline Stalls vs Flushes" width="30%">
-</a>
-
-
 | Action | Description | When Used |
 |--------|-------------|-----------|
 | Stall (bubble) | Insert NOP in pipeline; stop earlier stages | Data hazards, load-use hazard |
@@ -383,17 +327,6 @@ For a 5-stage pipeline with branch resolution at EX:
 **Pipeline interlock:** Hardware that detects hazards and inserts stalls automatically.
 
 ### 6. Pipelining Speedup Formula — Numerical Problems
-
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-handwritten.svg" alt="Handwritten: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-diagram.svg" alt="Diagram: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/6-pipelining-speedup-formula-numerical-problems-sticky.svg" alt="Sticky Note: 6. Pipelining Speedup Formula — Numerical Problems" width="30%">
-</a>
-
 
 **Problem 1:** Non-pipelined CPU has 5 ns cycle time. Pipelined version has 6 ns cycle time (extra pipeline register overhead). Calculate speedup for 1000 instructions.
 
@@ -426,17 +359,6 @@ Performance impact = 17% slowdown from ideal pipelining.
 ```
 
 ### 7. Superscalar and VLIW
-
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-handwritten.svg" alt="Handwritten: 7. Superscalar and VLIW" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-diagram.svg" alt="Diagram: 7. Superscalar and VLIW" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/7-superscalar-and-vliw-sticky.svg" alt="Sticky Note: 7. Superscalar and VLIW" width="30%">
-</a>
-
 
 #### Superscalar Processors
 
@@ -476,34 +398,12 @@ Multiple thread contexts share pipeline resources. One physical core appears as 
 
 ### 8. Pipeline Stages for Different Architectures
 
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-handwritten.svg" alt="Handwritten: 8. Pipeline Stages for Different Architectures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-diagram.svg" alt="Diagram: 8. Pipeline Stages for Different Architectures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/8-pipeline-stages-for-different-architectures-sticky.svg" alt="Sticky Note: 8. Pipeline Stages for Different Architectures" width="30%">
-</a>
-
-
 **Standard 5-stage RISC:** IF → ID → EX → MEM → WB
 **MIPS 5-stage:** IF → ID → EX → MEM → WB
 **ARM9 5-stage:** Fetch → Decode → Execute → Memory → Write
 **x86 modern:** Complex fronted (fetch, decode, micro-op fusion) → out-of-order execution → retire
 
 ### 9. Important Exam Formulae
-
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-handwritten.svg" alt="Handwritten: 9. Important Exam Formulae" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-diagram.svg" alt="Diagram: 9. Important Exam Formulae" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-architecture/04-pipelining-hazards/9-important-exam-formulae-sticky.svg" alt="Sticky Note: 9. Important Exam Formulae" width="30%">
-</a>
-
 
 - **Pipeline speedup = (k × n) / (k + n − 1), approaches k for large n**
 - **Effective CPI = 1 + Stall cycles per instruction (ideal pipelining)**

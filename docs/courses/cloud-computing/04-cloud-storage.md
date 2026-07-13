@@ -84,16 +84,6 @@ flowchart LR
 
 ### 4.1 Taxonomy of Cloud Storage
 
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-1-taxonomy-of-cloud-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-1-taxonomy-of-cloud-storage-handwritten.svg" alt="Handwritten: 4.1 Taxonomy of Cloud Storage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-1-taxonomy-of-cloud-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-1-taxonomy-of-cloud-storage-diagram.svg" alt="Diagram: 4.1 Taxonomy of Cloud Storage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-1-taxonomy-of-cloud-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-1-taxonomy-of-cloud-storage-sticky.svg" alt="Sticky Note: 4.1 Taxonomy of Cloud Storage" width="30%">
-</a>
-
 
 Cloud providers offer three primary categories of storage, each optimized for different data access patterns and architectural requirements:
 
@@ -122,16 +112,6 @@ graph TB
 
 ### 4.2 Object Storage: S3, Blob, and GCS
 
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-2-object-storage-s3-blob-and-gcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-2-object-storage-s3-blob-and-gcs-handwritten.svg" alt="Handwritten: 4.2 Object Storage: S3, Blob, and GCS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-2-object-storage-s3-blob-and-gcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-2-object-storage-s3-blob-and-gcs-diagram.svg" alt="Diagram: 4.2 Object Storage: S3, Blob, and GCS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-2-object-storage-s3-blob-and-gcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-2-object-storage-s3-blob-and-gcs-sticky.svg" alt="Sticky Note: 4.2 Object Storage: S3, Blob, and GCS" width="30%">
-</a>
-
 
 Object storage is the "Swiss Army Knife" of cloud storage, offering virtually infinite scale.
 
@@ -152,16 +132,6 @@ Object storage is the "Swiss Army Knife" of cloud storage, offering virtually in
 **Durability and Availability:** Providers typically guarantee "11 nines" (99.999999999%) durability by replicating data across multiple physical disks and data centers (Availability Zones). For 10 million objects, this means statistically one object might be lost every 10 million years.
 
 ### 4.3 Object Versioning and Lifecycle Policies
-
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-3-object-versioning-and-lifecycle-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-3-object-versioning-and-lifecycle-policies-handwritten.svg" alt="Handwritten: 4.3 Object Versioning and Lifecycle Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-3-object-versioning-and-lifecycle-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-3-object-versioning-and-lifecycle-policies-diagram.svg" alt="Diagram: 4.3 Object Versioning and Lifecycle Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-3-object-versioning-and-lifecycle-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-3-object-versioning-and-lifecycle-policies-sticky.svg" alt="Sticky Note: 4.3 Object Versioning and Lifecycle Policies" width="30%">
-</a>
 
 
 **Versioning:** Protects against accidental deletion and allows recovery of previous object states. When enabled, every object modification creates a new version. Delete operations create delete markers instead of permanently removing data.
@@ -275,16 +245,6 @@ Output:
 
 ### 4.4 Block Storage: EBS, Azure Disk, and Persistent Disk
 
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-4-block-storage-ebs-azure-disk-and-persistent-disk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-4-block-storage-ebs-azure-disk-and-persistent-disk-handwritten.svg" alt="Handwritten: 4.4 Block Storage: EBS, Azure Disk, and Persistent Disk" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-4-block-storage-ebs-azure-disk-and-persistent-disk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-4-block-storage-ebs-azure-disk-and-persistent-disk-diagram.svg" alt="Diagram: 4.4 Block Storage: EBS, Azure Disk, and Persistent Disk" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-4-block-storage-ebs-azure-disk-and-persistent-disk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-4-block-storage-ebs-azure-disk-and-persistent-disk-sticky.svg" alt="Sticky Note: 4.4 Block Storage: EBS, Azure Disk, and Persistent Disk" width="30%">
-</a>
-
 
 Block storage behaves like a physical hard drive. It is typically confined to a specific Availability Zone because it requires low-latency connection to the host.
 
@@ -304,16 +264,6 @@ Block storage behaves like a physical hard drive. It is typically confined to a 
 
 ### 4.5 File Storage: Managed Network Shares
 
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-5-file-storage-managed-network-shares-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-5-file-storage-managed-network-shares-handwritten.svg" alt="Handwritten: 4.5 File Storage: Managed Network Shares" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-5-file-storage-managed-network-shares-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-5-file-storage-managed-network-shares-diagram.svg" alt="Diagram: 4.5 File Storage: Managed Network Shares" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-5-file-storage-managed-network-shares-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-5-file-storage-managed-network-shares-sticky.svg" alt="Sticky Note: 4.5 File Storage: Managed Network Shares" width="30%">
-</a>
-
 
 Managed file services eliminate the overhead of managing file servers.
 
@@ -330,16 +280,6 @@ Managed file services eliminate the overhead of managing file servers.
 | Filestore | NFSv3 | Up to 320 GB/s | High-performance shared storage |
 
 ### 4.6 Storage Replication and Data Protection
-
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-6-storage-replication-and-data-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-6-storage-replication-and-data-protection-handwritten.svg" alt="Handwritten: 4.6 Storage Replication and Data Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-6-storage-replication-and-data-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-6-storage-replication-and-data-protection-diagram.svg" alt="Diagram: 4.6 Storage Replication and Data Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-6-storage-replication-and-data-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-6-storage-replication-and-data-protection-sticky.svg" alt="Sticky Note: 4.6 Storage Replication and Data Protection" width="30%">
-</a>
 
 
 \\\mermaid
@@ -374,16 +314,6 @@ graph TB
 - **Snapshots:** Point-in-time backups of block storage volumes. Incremental ? only changed data is saved.
 
 ### 4.7 Content Delivery Networks (CDN)
-
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-7-content-delivery-networks-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-7-content-delivery-networks-cdn-handwritten.svg" alt="Handwritten: 4.7 Content Delivery Networks (CDN)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-7-content-delivery-networks-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-7-content-delivery-networks-cdn-diagram.svg" alt="Diagram: 4.7 Content Delivery Networks (CDN)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-7-content-delivery-networks-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/04-cloud-storage/4-7-content-delivery-networks-cdn-sticky.svg" alt="Sticky Note: 4.7 Content Delivery Networks (CDN)" width="30%">
-</a>
 
 
 CDNs cache content at "Edge Locations" closer to the end-users to reduce latency.

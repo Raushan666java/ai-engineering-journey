@@ -56,16 +56,6 @@ By the end of this chapter, you will be able to:
 
 ### 6.1 Production Deployment Pipeline
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-handwritten.svg" alt="Handwritten: 6.1 Production Deployment Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-diagram.svg" alt="Diagram: 6.1 Production Deployment Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-1-production-deployment-pipeline-sticky.svg" alt="Sticky Note: 6.1 Production Deployment Pipeline" width="30%">
-</a>
-
 
 The standard production loop for AI agents follows a continuous lifecycle:
 
@@ -92,16 +82,6 @@ Each phase has specific responsibilities:
 
 ### 6.2 Shadow and Canary Deployment
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-handwritten.svg" alt="Handwritten: 6.2 Shadow and Canary Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-diagram.svg" alt="Diagram: 6.2 Shadow and Canary Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-2-shadow-and-canary-deployment-sticky.svg" alt="Sticky Note: 6.2 Shadow and Canary Deployment" width="30%">
-</a>
-
 
 **Shadow deployment.** Route production traffic to both the current model and a candidate model simultaneously, but only serve the current model's response to the user. The candidate's response is recorded and scored offline. Shadow deployment has zero user-facing risk because the candidate never affects the user.
 
@@ -127,16 +107,6 @@ Traffic: [████████████████░░░░] 80% prod
 
 ### 6.3 Cost Governor Loops
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-handwritten.svg" alt="Handwritten: 6.3 Cost Governor Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-diagram.svg" alt="Diagram: 6.3 Cost Governor Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-3-cost-governor-loops-sticky.svg" alt="Sticky Note: 6.3 Cost Governor Loops" width="30%">
-</a>
-
 
 Agent loops can execute hundreds of LLM calls per task. Without a cost governor, a runaway agent can burn through budget in minutes. The cost governor implements three controls:
 
@@ -160,16 +130,6 @@ Agent loops can execute hundreds of LLM calls per task. Without a cost governor,
 
 ### 6.4 Observability Loops
 
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-handwritten.svg" alt="Handwritten: 6.4 Observability Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-diagram.svg" alt="Diagram: 6.4 Observability Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-4-observability-loops-sticky.svg" alt="Sticky Note: 6.4 Observability Loops" width="30%">
-</a>
-
 
 Observability for AI systems goes beyond traditional application monitoring. The three pillars apply, but with agent-specific extensions:
 
@@ -188,16 +148,6 @@ Observability for AI systems goes beyond traditional application monitoring. The
 - Drift score > 0.15 relative to 24h baseline → investigate
 
 ### 6.5 SRE for AI Systems
-
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-handwritten.svg" alt="Handwritten: 6.5 SRE for AI Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-diagram.svg" alt="Diagram: 6.5 SRE for AI Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/loop-engineering/ch06-production-loops/6-5-sre-for-ai-systems-sticky.svg" alt="Sticky Note: 6.5 SRE for AI Systems" width="30%">
-</a>
 
 
 Service-Level Objectives for agent loops require careful definition because quality is multi-dimensional:

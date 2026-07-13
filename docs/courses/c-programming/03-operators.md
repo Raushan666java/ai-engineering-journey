@@ -52,16 +52,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -132,16 +122,6 @@ C operators fall into distinct categories. This table shows every category, its 
 
 ### 3.2.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.2.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-1-real-world-analogy-diagram.svg" alt="Diagram: 3.2.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.2.1 Real-World Analogy" width="30%">
-</a>
-
 
 Think of arithmetic operators like a **cash register**. You put in two numbers (operands), press an operation button (operator), and the register displays a result. The `+` button adds item prices, the `*` button calculates 3 items x 4 each = 12, the `%` button gives the remainder when splitting a bill unevenly.
 
@@ -152,16 +132,6 @@ Think of arithmetic operators like a **cash register**. You put in two numbers (
 - `%` --- what's left after splitting evenly
 
 ### 3.2.2 Syntax and Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-2-syntax-and-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-2-syntax-and-numbered-steps-handwritten.svg" alt="Handwritten: 3.2.2 Syntax and Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-2-syntax-and-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-2-syntax-and-numbered-steps-diagram.svg" alt="Diagram: 3.2.2 Syntax and Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-2-syntax-and-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-2-syntax-and-numbered-steps-sticky.svg" alt="Sticky Note: 3.2.2 Syntax and Numbered Steps" width="30%">
-</a>
 
 
 ```
@@ -177,16 +147,6 @@ result = operand1  operator  operand2
 6. Store or use the result
 
 ### 3.2.3 Pseudocode
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-3-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-3-pseudocode-handwritten.svg" alt="Handwritten: 3.2.3 Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-3-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-3-pseudocode-diagram.svg" alt="Diagram: 3.2.3 Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-3-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-3-pseudocode-sticky.svg" alt="Sticky Note: 3.2.3 Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -207,16 +167,6 @@ END
 
 ### 3.2.4 Dry Run --- Integer Division and Modulus
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-4-dry-run-integer-division-and-modulus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-4-dry-run-integer-division-and-modulus-handwritten.svg" alt="Handwritten: 3.2.4 Dry Run --- Integer Division and Modulus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-4-dry-run-integer-division-and-modulus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-4-dry-run-integer-division-and-modulus-diagram.svg" alt="Diagram: 3.2.4 Dry Run --- Integer Division and Modulus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-4-dry-run-integer-division-and-modulus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-4-dry-run-integer-division-and-modulus-sticky.svg" alt="Sticky Note: 3.2.4 Dry Run --- Integer Division and Modulus" width="30%">
-</a>
-
 
 | Step | Expression | Operation | Intermediate | Final Result |
 |------|-----------|-----------|-------------|--------------|
@@ -231,16 +181,6 @@ END
 | 9 | `7 / 3` (both int) | int division first | 2, then if assigned to double -> 2.0 | 2.0 |
 
 ### 3.2.5 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-5-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-5-c-code-examples-handwritten.svg" alt="Handwritten: 3.2.5 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-5-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-5-c-code-examples-diagram.svg" alt="Diagram: 3.2.5 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-5-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-5-c-code-examples-sticky.svg" alt="Sticky Note: 3.2.5 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -282,32 +222,12 @@ x = 2.333333, y = 2.000000, z = 2.333333
 
 ### 3.2.6 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-6-complexity-analysis-handwritten.svg" alt="Handwritten: 3.2.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-6-complexity-analysis-diagram.svg" alt="Diagram: 3.2.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-6-complexity-analysis-sticky.svg" alt="Sticky Note: 3.2.6 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Reason |
 |-----------|------|-------|--------|
 | All arithmetic operators | **O(1)** | **O(1)** | Single CPU instruction (or a few) |
 
 ### 3.2.7 Advantages and Disadvantages
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-7-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-7-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 3.2.7 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-7-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-7-advantages-and-disadvantages-diagram.svg" alt="Diagram: 3.2.7 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-7-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-7-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 3.2.7 Advantages and Disadvantages" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -318,16 +238,6 @@ x = 2.333333, y = 2.000000, z = 2.333333
 | Fast --- single cycle on modern CPUs | Division and modulus are slower (10-30 cycles) |
 
 ### 3.2.8 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-8-edge-cases-handwritten.svg" alt="Handwritten: 3.2.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-8-edge-cases-diagram.svg" alt="Diagram: 3.2.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-2-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-2-8-edge-cases-sticky.svg" alt="Sticky Note: 3.2.8 Edge Cases" width="30%">
-</a>
 
 
 1. **Division by zero** -> undefined behavior (program may crash or produce garbage)
@@ -343,30 +253,10 @@ x = 2.333333, y = 2.000000, z = 2.333333
 
 ### 3.3.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.3.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-1-real-world-analogy-diagram.svg" alt="Diagram: 3.3.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.3.1 Real-World Analogy" width="30%">
-</a>
-
 
 Relational operators are like a **height comparison at a theme park**. You compare two heights: "Is the child tall enough for this ride?" ( `>=` ), "Is this person shorter than that one?" ( `<` ). The answer is always a clear **yes** (1) or **no** (0).
 
 ### 3.3.2 Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-2-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-2-numbered-steps-handwritten.svg" alt="Handwritten: 3.3.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-2-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-2-numbered-steps-diagram.svg" alt="Diagram: 3.3.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-2-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-2-numbered-steps-sticky.svg" alt="Sticky Note: 3.3.2 Numbered Steps" width="30%">
-</a>
 
 
 1. Evaluate `operand1` to its value
@@ -375,16 +265,6 @@ Relational operators are like a **height comparison at a theme park**. You compa
 4. Return `int` --- `1` if true, `0` if false
 
 ### 3.3.3 Pseudocode
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-3-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-3-pseudocode-handwritten.svg" alt="Handwritten: 3.3.3 Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-3-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-3-pseudocode-diagram.svg" alt="Diagram: 3.3.3 Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-3-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-3-pseudocode-sticky.svg" alt="Sticky Note: 3.3.3 Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -400,16 +280,6 @@ END
 
 ### 3.3.4 Dry Run --- Trace Table
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-4-dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-4-dry-run-trace-table-handwritten.svg" alt="Handwritten: 3.3.4 Dry Run --- Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-4-dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-4-dry-run-trace-table-diagram.svg" alt="Diagram: 3.3.4 Dry Run --- Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-4-dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-4-dry-run-trace-table-sticky.svg" alt="Sticky Note: 3.3.4 Dry Run --- Trace Table" width="30%">
-</a>
-
 
 | Expression | a | b | c | Operation | Result |
 |------------|---|---|---|-----------|--------|
@@ -421,16 +291,6 @@ END
 | `b >= c` | 5 | 10 | 5 | `10 >= 5` | 1 |
 
 ### 3.3.5 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-5-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-5-c-code-examples-handwritten.svg" alt="Handwritten: 3.3.5 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-5-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-5-c-code-examples-diagram.svg" alt="Diagram: 3.3.5 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-5-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-5-c-code-examples-sticky.svg" alt="Sticky Note: 3.3.5 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -468,32 +328,12 @@ a < b < c : 1 (WRONG for math comparison!)
 
 ### 3.3.6 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-6-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-6-complexity-handwritten.svg" alt="Handwritten: 3.3.6 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-6-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-6-complexity-diagram.svg" alt="Diagram: 3.3.6 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-6-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-6-complexity-sticky.svg" alt="Sticky Note: 3.3.6 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | All relational operators | **O(1)** | **O(1)** |
 
 ### 3.3.7 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-7-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-7-a-d-table-handwritten.svg" alt="Handwritten: 3.3.7 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-7-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-7-a-d-table-diagram.svg" alt="Diagram: 3.3.7 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-7-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-7-a-d-table-sticky.svg" alt="Sticky Note: 3.3.7 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -503,16 +343,6 @@ a < b < c : 1 (WRONG for math comparison!)
 | Work with any arithmetic type | `==` on structs is not allowed (must compare field-by-field) |
 
 ### 3.3.8 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-8-edge-cases-handwritten.svg" alt="Handwritten: 3.3.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-8-edge-cases-diagram.svg" alt="Diagram: 3.3.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-3-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-3-8-edge-cases-sticky.svg" alt="Sticky Note: 3.3.8 Edge Cases" width="30%">
-</a>
 
 
 1. **`=` vs `==`** --- most common C bug: `if (x = 5)` assigns 5, always true
@@ -526,16 +356,6 @@ a < b < c : 1 (WRONG for math comparison!)
 
 ### 3.4.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.4.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-1-real-world-analogy-diagram.svg" alt="Diagram: 3.4.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.4.1 Real-World Analogy" width="30%">
-</a>
-
 
 Logical operators are like **security checkpoint gates**:
 - `&&` (AND) --- Two guards must both approve entry; if the first says "no", the second never speaks (short-circuit)
@@ -543,16 +363,6 @@ Logical operators are like **security checkpoint gates**:
 - `!` (NOT) --- A gate that opens when the guard is NOT present
 
 ### 3.4.2 Syntax and Truth Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-2-syntax-and-truth-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-2-syntax-and-truth-table-handwritten.svg" alt="Handwritten: 3.4.2 Syntax and Truth Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-2-syntax-and-truth-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-2-syntax-and-truth-table-diagram.svg" alt="Diagram: 3.4.2 Syntax and Truth Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-2-syntax-and-truth-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-2-syntax-and-truth-table-sticky.svg" alt="Sticky Note: 3.4.2 Syntax and Truth Table" width="30%">
-</a>
 
 
 | A | B | A && B | A || B | !A |
@@ -563,16 +373,6 @@ Logical operators are like **security checkpoint gates**:
 | 1 (true)  | 1 (true)  | 1 | 1 | 0 |
 
 ### 3.4.3 Short-Circuit Evaluation --- Dry Run
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-3-short-circuit-evaluation-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-3-short-circuit-evaluation-dry-run-handwritten.svg" alt="Handwritten: 3.4.3 Short-Circuit Evaluation --- Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-3-short-circuit-evaluation-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-3-short-circuit-evaluation-dry-run-diagram.svg" alt="Diagram: 3.4.3 Short-Circuit Evaluation --- Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-3-short-circuit-evaluation-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-3-short-circuit-evaluation-dry-run-sticky.svg" alt="Sticky Note: 3.4.3 Short-Circuit Evaluation --- Dry Run" width="30%">
-</a>
 
 
 Short-circuit means: for `A && B`, if `A` is false, `B` is never evaluated. For `A || B`, if `A` is true, `B` is never evaluated.
@@ -592,16 +392,6 @@ Short-circuit means: for `A && B`, if `A` is false, `B` is never evaluated. For 
 | 2 | `b / a > 1` | `10 / 2 = 5 > 1` -> **1 (true)** | Entire expression is true |
 
 ### 3.4.4 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-4-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-4-c-code-examples-handwritten.svg" alt="Handwritten: 3.4.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-4-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-4-c-code-examples-diagram.svg" alt="Diagram: 3.4.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-4-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-4-c-code-examples-sticky.svg" alt="Sticky Note: 3.4.4 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -641,32 +431,12 @@ flag is false (zero), so !flag is true
 
 ### 3.4.5 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-5-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-5-complexity-handwritten.svg" alt="Handwritten: 3.4.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-5-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-5-complexity-diagram.svg" alt="Diagram: 3.4.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-5-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-5-complexity-sticky.svg" alt="Sticky Note: 3.4.5 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | `&&`, `||`, `!` | **O(1)** | **O(1)** |
 
 ### 3.4.6 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-6-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-6-a-d-table-handwritten.svg" alt="Handwritten: 3.4.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-6-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-6-a-d-table-diagram.svg" alt="Diagram: 3.4.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-6-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-6-a-d-table-sticky.svg" alt="Sticky Note: 3.4.6 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -676,16 +446,6 @@ flag is false (zero), so !flag is true
 | `!` works on any scalar: zero = false, non-zero = true | Double `!!` idiom needed to normalize to 0/1 |
 
 ### 3.4.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-7-edge-cases-handwritten.svg" alt="Handwritten: 3.4.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-7-edge-cases-diagram.svg" alt="Diagram: 3.4.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-4-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-4-7-edge-cases-sticky.svg" alt="Sticky Note: 3.4.7 Edge Cases" width="30%">
-</a>
 
 
 1. **Side effects in RHS** --- code in the right operand may never execute
@@ -700,16 +460,6 @@ flag is false (zero), so !flag is true
 
 ### 3.5.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.5.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-1-real-world-analogy-diagram.svg" alt="Diagram: 3.5.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.5.1 Real-World Analogy" width="30%">
-</a>
-
 
 Bitwise operators are like a **bank of light switches**. Each bit is one switch:
 - `&` (AND) --- Two switches in series; current flows only if BOTH are on
@@ -720,16 +470,6 @@ Bitwise operators are like a **bank of light switches**. Each bit is one switch:
 - `>>` (RIGHT SHIFT) --- Moving every switch one position to the right
 
 ### 3.5.2 Truth Tables for All Bitwise Operators
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-2-truth-tables-for-all-bitwise-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-2-truth-tables-for-all-bitwise-operators-handwritten.svg" alt="Handwritten: 3.5.2 Truth Tables for All Bitwise Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-2-truth-tables-for-all-bitwise-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-2-truth-tables-for-all-bitwise-operators-diagram.svg" alt="Diagram: 3.5.2 Truth Tables for All Bitwise Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-2-truth-tables-for-all-bitwise-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-2-truth-tables-for-all-bitwise-operators-sticky.svg" alt="Sticky Note: 3.5.2 Truth Tables for All Bitwise Operators" width="30%">
-</a>
 
 
 **AND (`&`):** Result bit is 1 only if BOTH operand bits are 1
@@ -786,16 +526,6 @@ Bitwise operators are like a **bank of light switches**. Each bit is one switch:
 
 ### 3.5.3 Dry Run --- Bitwise on 8-bit Values
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-3-dry-run-bitwise-on-8-bit-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-3-dry-run-bitwise-on-8-bit-values-handwritten.svg" alt="Handwritten: 3.5.3 Dry Run --- Bitwise on 8-bit Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-3-dry-run-bitwise-on-8-bit-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-3-dry-run-bitwise-on-8-bit-values-diagram.svg" alt="Diagram: 3.5.3 Dry Run --- Bitwise on 8-bit Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-3-dry-run-bitwise-on-8-bit-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-3-dry-run-bitwise-on-8-bit-values-sticky.svg" alt="Sticky Note: 3.5.3 Dry Run --- Bitwise on 8-bit Values" width="30%">
-</a>
-
 
 **Operands: a = 0x6D (0110 1101), b = 0xB7 (1011 0111)**
 
@@ -809,16 +539,6 @@ Bitwise operators are like a **bank of light switches**. Each bit is one switch:
 | `a >> 3` | 0110 1101 >> 3 = **0000 1101** | 0x0D | 13 |
 
 ### 3.5.4 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-4-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-4-c-code-examples-handwritten.svg" alt="Handwritten: 3.5.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-4-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-4-c-code-examples-diagram.svg" alt="Diagram: 3.5.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-4-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-4-c-code-examples-sticky.svg" alt="Sticky Note: 3.5.4 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -873,32 +593,12 @@ unsigned 240 >> 1 = 120
 
 ### 3.5.5 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-5-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-5-complexity-handwritten.svg" alt="Handwritten: 3.5.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-5-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-5-complexity-diagram.svg" alt="Diagram: 3.5.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-5-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-5-complexity-sticky.svg" alt="Sticky Note: 3.5.5 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | All bitwise operators | **O(1)** | **O(1)** |
 
 ### 3.5.6 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-6-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-6-a-d-table-handwritten.svg" alt="Handwritten: 3.5.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-6-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-6-a-d-table-diagram.svg" alt="Diagram: 3.5.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-6-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-6-a-d-table-sticky.svg" alt="Sticky Note: 3.5.6 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -909,16 +609,6 @@ unsigned 240 >> 1 = 120
 | XOR swap trick avoids temporary variable | Shift count >= width is undefined behavior |
 
 ### 3.5.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-7-edge-cases-handwritten.svg" alt="Handwritten: 3.5.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-7-edge-cases-diagram.svg" alt="Diagram: 3.5.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-5-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-5-7-edge-cases-sticky.svg" alt="Sticky Note: 3.5.7 Edge Cases" width="30%">
-</a>
 
 
 1. **Shift count >= type width** -> undefined behavior (e.g., `1 << 32` on 32-bit int)
@@ -933,30 +623,10 @@ unsigned 240 >> 1 = 120
 
 ### 3.6.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.6.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-1-real-world-analogy-diagram.svg" alt="Diagram: 3.6.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.6.1 Real-World Analogy" width="30%">
-</a>
-
 
 Assignment is like **labeling a storage box**: `x = 5` means "take the number 5 and put it in the box labeled x". Compound assignment `x += 3` means "open box x, add 3 to what's inside, put the result back in box x".
 
 ### 3.6.2 Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-2-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-2-numbered-steps-handwritten.svg" alt="Handwritten: 3.6.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-2-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-2-numbered-steps-diagram.svg" alt="Diagram: 3.6.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-2-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-2-numbered-steps-sticky.svg" alt="Sticky Note: 3.6.2 Numbered Steps" width="30%">
-</a>
 
 
 **Simple assignment (`x = expr`):**
@@ -973,16 +643,6 @@ Assignment is like **labeling a storage box**: `x = 5` means "take the number 5 
 
 ### 3.6.3 Dry Run --- Compound Assignment Chain
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-3-dry-run-compound-assignment-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-3-dry-run-compound-assignment-chain-handwritten.svg" alt="Handwritten: 3.6.3 Dry Run --- Compound Assignment Chain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-3-dry-run-compound-assignment-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-3-dry-run-compound-assignment-chain-diagram.svg" alt="Diagram: 3.6.3 Dry Run --- Compound Assignment Chain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-3-dry-run-compound-assignment-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-3-dry-run-compound-assignment-chain-sticky.svg" alt="Sticky Note: 3.6.3 Dry Run --- Compound Assignment Chain" width="30%">
-</a>
-
 
 | Code | Step | x Before | Operation | x After | Expression Value |
 |------|------|---------|-----------|---------|-----------------|
@@ -996,16 +656,6 @@ Assignment is like **labeling a storage box**: `x = 5` means "take the number 5 
 | `x &= 0xF` | 8 | 4 | `x = 4 & 15` | 4 | 4 |
 
 ### 3.6.4 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-4-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-4-c-code-examples-handwritten.svg" alt="Handwritten: 3.6.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-4-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-4-c-code-examples-diagram.svg" alt="Diagram: 3.6.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-4-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-4-c-code-examples-sticky.svg" alt="Sticky Note: 3.6.4 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -1057,32 +707,12 @@ a=10, b=10, c=10
 
 ### 3.6.5 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-5-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-5-complexity-handwritten.svg" alt="Handwritten: 3.6.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-5-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-5-complexity-diagram.svg" alt="Diagram: 3.6.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-5-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-5-complexity-sticky.svg" alt="Sticky Note: 3.6.5 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | All assignment operators | **O(1)** | **O(1)** |
 
 ### 3.6.6 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-6-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-6-a-d-table-handwritten.svg" alt="Handwritten: 3.6.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-6-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-6-a-d-table-diagram.svg" alt="Diagram: 3.6.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-6-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-6-a-d-table-sticky.svg" alt="Sticky Note: 3.6.6 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1093,16 +723,6 @@ a=10, b=10, c=10
 | Right-to-left associativity enables useful patterns | Prevents `a = (b = 4) + 2` style (works but odd) |
 
 ### 3.6.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-7-edge-cases-handwritten.svg" alt="Handwritten: 3.6.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-7-edge-cases-diagram.svg" alt="Diagram: 3.6.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-6-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-6-7-edge-cases-sticky.svg" alt="Sticky Note: 3.6.7 Edge Cases" width="30%">
-</a>
 
 
 1. **Assignment in `if` condition** --- `if (x = 5)` is always true; use `-Wparentheses` in GCC to warn
@@ -1116,32 +736,12 @@ a=10, b=10, c=10
 
 ### 3.7.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.7.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-1-real-world-analogy-diagram.svg" alt="Diagram: 3.7.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.7.1 Real-World Analogy" width="30%">
-</a>
-
 
 **Prefix (`++x`)** --- "Eat your dinner, then go outside." Action first, then the result is available.
 
 **Postfix (`x++`)** --- "Go outside, then do your homework." The current value is used first, then the change happens.
 
 ### 3.7.2 Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-2-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-2-numbered-steps-handwritten.svg" alt="Handwritten: 3.7.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-2-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-2-numbered-steps-diagram.svg" alt="Diagram: 3.7.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-2-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-2-numbered-steps-sticky.svg" alt="Sticky Note: 3.7.2 Numbered Steps" width="30%">
-</a>
 
 
 **Postfix `x++`:**
@@ -1157,16 +757,6 @@ a=10, b=10, c=10
 
 ### 3.7.3 Dry Run --- Postfix vs Prefix
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-3-dry-run-postfix-vs-prefix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-3-dry-run-postfix-vs-prefix-handwritten.svg" alt="Handwritten: 3.7.3 Dry Run --- Postfix vs Prefix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-3-dry-run-postfix-vs-prefix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-3-dry-run-postfix-vs-prefix-diagram.svg" alt="Diagram: 3.7.3 Dry Run --- Postfix vs Prefix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-3-dry-run-postfix-vs-prefix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-3-dry-run-postfix-vs-prefix-sticky.svg" alt="Sticky Note: 3.7.3 Dry Run --- Postfix vs Prefix" width="30%">
-</a>
-
 
 | Code | Step | x (before) | Operation | Expression Value | x (after) |
 |------|------|-----------|-----------|-----------------|-----------|
@@ -1177,16 +767,6 @@ a=10, b=10, c=10
 | (cont) | 2 | 6 | `y = new = 6` | 6 | 6 |
 
 ### 3.7.4 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-4-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-4-c-code-examples-handwritten.svg" alt="Handwritten: 3.7.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-4-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-4-c-code-examples-diagram.svg" alt="Diagram: 3.7.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-4-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-4-c-code-examples-sticky.svg" alt="Sticky Note: 3.7.4 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -1228,32 +808,12 @@ For loop with i++: 0 1 2
 
 ### 3.7.5 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-5-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-5-complexity-handwritten.svg" alt="Handwritten: 3.7.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-5-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-5-complexity-diagram.svg" alt="Diagram: 3.7.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-5-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-5-complexity-sticky.svg" alt="Sticky Note: 3.7.5 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | `++x`, `x++`, `--x`, `x--` | **O(1)** | **O(1)** |
 
 ### 3.7.6 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-6-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-6-a-d-table-handwritten.svg" alt="Handwritten: 3.7.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-6-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-6-a-d-table-diagram.svg" alt="Diagram: 3.7.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-6-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-6-a-d-table-sticky.svg" alt="Sticky Note: 3.7.6 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1263,16 +823,6 @@ For loop with i++: 0 1 2
 | Two forms give precise control of timing | `++x` and `x++` in same expression -> undefined behavior |
 
 ### 3.7.7 Edge Cases --- Sequence Points
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-7-edge-cases-sequence-points-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-7-edge-cases-sequence-points-handwritten.svg" alt="Handwritten: 3.7.7 Edge Cases --- Sequence Points" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-7-edge-cases-sequence-points-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-7-edge-cases-sequence-points-diagram.svg" alt="Diagram: 3.7.7 Edge Cases --- Sequence Points" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-7-7-edge-cases-sequence-points-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-7-7-edge-cases-sequence-points-sticky.svg" alt="Sticky Note: 3.7.7 Edge Cases --- Sequence Points" width="30%">
-</a>
 
 
 Between two sequence points, a variable may be modified at most once. Violating this is **undefined behavior**.
@@ -1298,30 +848,10 @@ if (a[i++] > 5) continue;     /* OK if i not used elsewhere in same statement */
 
 ### 3.8.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.8.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-1-real-world-analogy-diagram.svg" alt="Diagram: 3.8.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.8.1 Real-World Analogy" width="30%">
-</a>
-
 
 The ternary operator is like a **vending machine** that asks one question: "Do you have enough money?" If yes -> dispense soda. If no -> show "insufficient funds". The result is whatever was produced (the soda or the message).
 
 ### 3.8.2 Syntax
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-2-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-2-syntax-handwritten.svg" alt="Handwritten: 3.8.2 Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-2-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-2-syntax-diagram.svg" alt="Diagram: 3.8.2 Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-2-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-2-syntax-sticky.svg" alt="Sticky Note: 3.8.2 Syntax" width="30%">
-</a>
 
 
 ```
@@ -1329,16 +859,6 @@ condition ? expression_if_true : expression_if_false
 ```
 
 ### 3.8.3 Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-3-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-3-numbered-steps-handwritten.svg" alt="Handwritten: 3.8.3 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-3-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-3-numbered-steps-diagram.svg" alt="Diagram: 3.8.3 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-3-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-3-numbered-steps-sticky.svg" alt="Sticky Note: 3.8.3 Numbered Steps" width="30%">
-</a>
 
 
 1. Evaluate `condition` (which must be scalar --- any non-zero is true)
@@ -1348,16 +868,6 @@ condition ? expression_if_true : expression_if_false
 
 ### 3.8.4 Dry Run
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-4-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-4-dry-run-handwritten.svg" alt="Handwritten: 3.8.4 Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-4-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-4-dry-run-diagram.svg" alt="Diagram: 3.8.4 Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-4-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-4-dry-run-sticky.svg" alt="Sticky Note: 3.8.4 Dry Run" width="30%">
-</a>
-
 
 | Condition | True Expr | False Expr | What Evaluates | Result |
 |-----------|-----------|------------|----------------|--------|
@@ -1365,16 +875,6 @@ condition ? expression_if_true : expression_if_false
 | `a > b` (20 > 10 -> 1) | `a` (20) | `b` (10) | True branch: `a` | 20 |
 
 ### 3.8.5 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-5-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-5-c-code-examples-handwritten.svg" alt="Handwritten: 3.8.5 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-5-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-5-c-code-examples-diagram.svg" alt="Diagram: 3.8.5 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-5-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-5-c-code-examples-sticky.svg" alt="Sticky Note: 3.8.5 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -1416,32 +916,12 @@ side = 99, val = 99
 
 ### 3.8.6 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-6-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-6-complexity-handwritten.svg" alt="Handwritten: 3.8.6 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-6-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-6-complexity-diagram.svg" alt="Diagram: 3.8.6 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-6-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-6-complexity-sticky.svg" alt="Sticky Note: 3.8.6 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | `?:` | **O(1)** | **O(1)** |
 
 ### 3.8.7 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-7-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-7-a-d-table-handwritten.svg" alt="Handwritten: 3.8.7 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-7-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-7-a-d-table-diagram.svg" alt="Diagram: 3.8.7 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-7-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-7-a-d-table-sticky.svg" alt="Sticky Note: 3.8.7 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1451,16 +931,6 @@ side = 99, val = 99
 | Only evaluates chosen branch (short-circuit like `||`) | Easy to hide side effects |
 
 ### 3.8.8 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-8-edge-cases-handwritten.svg" alt="Handwritten: 3.8.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-8-edge-cases-diagram.svg" alt="Diagram: 3.8.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-8-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-8-8-edge-cases-sticky.svg" alt="Sticky Note: 3.8.8 Edge Cases" width="30%">
-</a>
 
 
 1. **Type compatibility** --- both branches must have compatible types (or one is `void*`)
@@ -1474,30 +944,10 @@ side = 99, val = 99
 
 ### 3.9.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.9.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-1-real-world-analogy-diagram.svg" alt="Diagram: 3.9.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.9.1 Real-World Analogy" width="30%">
-</a>
-
 
 The comma operator is like an **assembly line with two stations**: the product passes through station 1 (first expression), then station 2 (second expression). The final product is whatever came out of station 2. What happened at station 1 is a side effect.
 
 ### 3.9.2 Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-2-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-2-numbered-steps-handwritten.svg" alt="Handwritten: 3.9.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-2-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-2-numbered-steps-diagram.svg" alt="Diagram: 3.9.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-2-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-2-numbered-steps-sticky.svg" alt="Sticky Note: 3.9.2 Numbered Steps" width="30%">
-</a>
 
 
 1. Evaluate the left operand (including all side effects)
@@ -1506,16 +956,6 @@ The comma operator is like an **assembly line with two stations**: the product p
 4. The value of the right operand becomes the result of the comma expression
 
 ### 3.9.3 Dry Run
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-3-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-3-dry-run-handwritten.svg" alt="Handwritten: 3.9.3 Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-3-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-3-dry-run-diagram.svg" alt="Diagram: 3.9.3 Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-3-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-3-dry-run-sticky.svg" alt="Sticky Note: 3.9.3 Dry Run" width="30%">
-</a>
 
 
 | Expression | Step | Evaluates To | Side Effects | Final Value |
@@ -1528,16 +968,6 @@ The comma operator is like an **assembly line with two stations**: the product p
 | (cont) | 3: `a + b = 3 + 5` | 8 | --- | **8** |
 
 ### 3.9.4 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-4-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-4-c-code-examples-handwritten.svg" alt="Handwritten: 3.9.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-4-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-4-c-code-examples-diagram.svg" alt="Diagram: 3.9.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-4-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-4-c-code-examples-sticky.svg" alt="Sticky Note: 3.9.4 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -1577,32 +1007,12 @@ With parens:    1 2 3
 
 ### 3.9.5 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-5-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-5-complexity-handwritten.svg" alt="Handwritten: 3.9.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-5-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-5-complexity-diagram.svg" alt="Diagram: 3.9.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-5-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-5-complexity-sticky.svg" alt="Sticky Note: 3.9.5 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | `,` | **O(1)** | **O(1)** |
 
 ### 3.9.6 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-6-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-6-a-d-table-handwritten.svg" alt="Handwritten: 3.9.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-6-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-6-a-d-table-diagram.svg" alt="Diagram: 3.9.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-6-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-6-a-d-table-sticky.svg" alt="Sticky Note: 3.9.6 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1611,16 +1021,6 @@ With parens:    1 2 3
 | Sequence point: left operand fully evaluated before right | Easy to confuse with function argument separator |
 
 ### 3.9.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-7-edge-cases-handwritten.svg" alt="Handwritten: 3.9.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-7-edge-cases-diagram.svg" alt="Diagram: 3.9.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-9-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-9-7-edge-cases-sticky.svg" alt="Sticky Note: 3.9.7 Edge Cases" width="30%">
-</a>
 
 
 1. **Comma vs argument separator** --- `f((1, 2))` passes `2`; `f(1, 2)` passes two arguments
@@ -1633,30 +1033,10 @@ With parens:    1 2 3
 
 ### 3.10.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.10.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-1-real-world-analogy-diagram.svg" alt="Diagram: 3.10.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.10.1 Real-World Analogy" width="30%">
-</a>
-
 
 `sizeof` is like a **tape measure for data types**. Ask "how long is this couch?" and it tells you in feet (bytes). Importantly, measuring doesn't change the couch --- the couch stays exactly where it is. Similarly, `sizeof(expr)` never evaluates `expr`.
 
 ### 3.10.2 Syntax
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-2-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-2-syntax-handwritten.svg" alt="Handwritten: 3.10.2 Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-2-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-2-syntax-diagram.svg" alt="Diagram: 3.10.2 Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-2-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-2-syntax-sticky.svg" alt="Sticky Note: 3.10.2 Syntax" width="30%">
-</a>
 
 
 ```c
@@ -1666,32 +1046,12 @@ sizeof expression    /* parentheses optional with expression */
 
 ### 3.10.3 Numbered Steps
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-3-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-3-numbered-steps-handwritten.svg" alt="Handwritten: 3.10.3 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-3-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-3-numbered-steps-diagram.svg" alt="Diagram: 3.10.3 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-3-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-3-numbered-steps-sticky.svg" alt="Sticky Note: 3.10.3 Numbered Steps" width="30%">
-</a>
-
 
 1. Determine the type of the operand (at compile time)
 2. Return the size in bytes as `size_t` (an unsigned integer type)
 3. If the operand is an expression, it is **not evaluated** at runtime
 
 ### 3.10.4 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-4-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-4-c-code-examples-handwritten.svg" alt="Handwritten: 3.10.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-4-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-4-c-code-examples-diagram.svg" alt="Diagram: 3.10.4 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-4-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-4-c-code-examples-sticky.svg" alt="Sticky Note: 3.10.4 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -1743,32 +1103,12 @@ sizeof(struct Packed) = 8 (includes padding)
 
 ### 3.10.5 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-5-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-5-complexity-handwritten.svg" alt="Handwritten: 3.10.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-5-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-5-complexity-diagram.svg" alt="Diagram: 3.10.5 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-5-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-5-complexity-sticky.svg" alt="Sticky Note: 3.10.5 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
 | `sizeof` | **Compile-time O(1)** | **O(1)** --- no runtime cost |
 
 ### 3.10.6 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-6-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-6-a-d-table-handwritten.svg" alt="Handwritten: 3.10.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-6-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-6-a-d-table-diagram.svg" alt="Diagram: 3.10.6 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-6-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-6-a-d-table-sticky.svg" alt="Sticky Note: 3.10.6 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1778,16 +1118,6 @@ sizeof(struct Packed) = 8 (includes padding)
 | Essential for `malloc(sizeof(T))` | Struct size includes padding --- may be larger than field sum |
 
 ### 3.10.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-7-edge-cases-handwritten.svg" alt="Handwritten: 3.10.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-7-edge-cases-diagram.svg" alt="Diagram: 3.10.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-10-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-10-7-edge-cases-sticky.svg" alt="Sticky Note: 3.10.7 Edge Cases" width="30%">
-</a>
 
 
 1. **Array vs pointer decay** --- `sizeof(arr)` in the declaring scope gives total array size; after decay to pointer parameter, gives pointer size
@@ -1800,31 +1130,11 @@ sizeof(struct Packed) = 8 (includes padding)
 
 ### 3.11.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.11.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-1-real-world-analogy-diagram.svg" alt="Diagram: 3.11.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.11.1 Real-World Analogy" width="30%">
-</a>
-
 
 - `&x` (address-of) --- Like getting the **street address** of a house. Instead of the contents, you get the location.
 - `*ptr` (dereference) --- Like going to that street address and **opening the front door** to see what's inside.
 
 ### 3.11.2 Numbered Steps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-2-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-2-numbered-steps-handwritten.svg" alt="Handwritten: 3.11.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-2-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-2-numbered-steps-diagram.svg" alt="Diagram: 3.11.2 Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-2-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-2-numbered-steps-sticky.svg" alt="Sticky Note: 3.11.2 Numbered Steps" width="30%">
-</a>
 
 
 **Address-of (`&x`):**
@@ -1837,16 +1147,6 @@ sizeof(struct Packed) = 8 (includes padding)
 3. The expression `*ptr` acts as an lvalue --- you can read or write through it
 
 ### 3.11.3 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-3-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-3-c-code-examples-handwritten.svg" alt="Handwritten: 3.11.3 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-3-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-3-c-code-examples-diagram.svg" alt="Diagram: 3.11.3 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-3-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-3-c-code-examples-sticky.svg" alt="Sticky Note: 3.11.3 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -1885,16 +1185,6 @@ arr = 0x7ffd12345690, &arr[0] = 0x7ffd12345690 (same address)
 
 ### 3.11.4 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-4-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-4-complexity-handwritten.svg" alt="Handwritten: 3.11.4 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-4-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-4-complexity-diagram.svg" alt="Diagram: 3.11.4 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-4-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-4-complexity-sticky.svg" alt="Sticky Note: 3.11.4 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
@@ -1902,16 +1192,6 @@ arr = 0x7ffd12345690, &arr[0] = 0x7ffd12345690 (same address)
 | `*ptr` | **O(1)** | **O(1)** |
 
 ### 3.11.5 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-5-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-5-a-d-table-handwritten.svg" alt="Handwritten: 3.11.5 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-5-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-5-a-d-table-diagram.svg" alt="Diagram: 3.11.5 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-5-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-5-a-d-table-sticky.svg" alt="Sticky Note: 3.11.5 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1921,16 +1201,6 @@ arr = 0x7ffd12345690, &arr[0] = 0x7ffd12345690 (same address)
 | Allows pass-by-reference semantics in C | Requires careful initialization and bounds checking |
 
 ### 3.11.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-6-edge-cases-handwritten.svg" alt="Handwritten: 3.11.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-6-edge-cases-diagram.svg" alt="Diagram: 3.11.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-11-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-11-6-edge-cases-sticky.svg" alt="Sticky Note: 3.11.6 Edge Cases" width="30%">
-</a>
 
 
 1. **Dereferencing NULL pointer** -> undefined behavior (segmentation fault on most systems)
@@ -1945,31 +1215,11 @@ arr = 0x7ffd12345690, &arr[0] = 0x7ffd12345690 (same address)
 
 ### 3.12.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.12.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-1-real-world-analogy-diagram.svg" alt="Diagram: 3.12.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.12.1 Real-World Analogy" width="30%">
-</a>
-
 
 - `.` (dot) --- Direct access: like opening a **person's file folder** that's right in front of you
 - `->` (arrow) --- Indirect access: like following a **reference number** to a filing cabinet, then opening the folder
 
 ### 3.12.2 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-2-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-2-c-code-examples-handwritten.svg" alt="Handwritten: 3.12.2 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-2-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-2-c-code-examples-diagram.svg" alt="Diagram: 3.12.2 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-2-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-2-c-code-examples-sticky.svg" alt="Sticky Note: 3.12.2 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -2016,16 +1266,6 @@ Area: 8000
 
 ### 3.12.3 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-3-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-3-complexity-handwritten.svg" alt="Handwritten: 3.12.3 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-3-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-3-complexity-diagram.svg" alt="Diagram: 3.12.3 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-3-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-3-complexity-sticky.svg" alt="Sticky Note: 3.12.3 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
@@ -2033,16 +1273,6 @@ Area: 8000
 | `->` | **O(1)** | **O(1)** --- pointer + offset |
 
 ### 3.12.4 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-4-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-4-a-d-table-handwritten.svg" alt="Handwritten: 3.12.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-4-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-4-a-d-table-diagram.svg" alt="Diagram: 3.12.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-4-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-4-a-d-table-sticky.svg" alt="Sticky Note: 3.12.4 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -2052,16 +1282,6 @@ Area: 8000
 | Both are compile-time resolved, zero overhead | Nested access chains can be verbose |
 
 ### 3.12.5 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-5-edge-cases-handwritten.svg" alt="Handwritten: 3.12.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-5-edge-cases-diagram.svg" alt="Diagram: 3.12.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-12-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-12-5-edge-cases-sticky.svg" alt="Sticky Note: 3.12.5 Edge Cases" width="30%">
-</a>
 
 
 1. **`->` with NULL pointer** -> undefined behavior (dereferences NULL)
@@ -2074,30 +1294,10 @@ Area: 8000
 
 ### 3.13.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.13.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-1-real-world-analogy-diagram.svg" alt="Diagram: 3.13.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.13.1 Real-World Analogy" width="30%">
-</a>
-
 
 Casting is like **repurposing a container**. You have a large box (double) and you need to fit its contents into a small box (int). You can force it, but you might lose some packing material (precision). Or you have a signed container and need to view its contents as unsigned --- the bits don't change, just how you interpret them.
 
 ### 3.13.2 C Code Examples
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-2-c-code-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-2-c-code-examples-handwritten.svg" alt="Handwritten: 3.13.2 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-2-c-code-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-2-c-code-examples-diagram.svg" alt="Diagram: 3.13.2 C Code Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-2-c-code-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-2-c-code-examples-sticky.svg" alt="Sticky Note: 3.13.2 C Code Examples" width="30%">
-</a>
 
 
 ```c
@@ -2139,16 +1339,6 @@ Bytes of 0x12345678 (little-endian): 78 56 34 12
 
 ### 3.13.3 Complexity
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-3-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-3-complexity-handwritten.svg" alt="Handwritten: 3.13.3 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-3-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-3-complexity-diagram.svg" alt="Diagram: 3.13.3 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-3-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-3-complexity-sticky.svg" alt="Sticky Note: 3.13.3 Complexity" width="30%">
-</a>
-
 
 | Operation | Time | Space |
 |-----------|------|-------|
@@ -2156,16 +1346,6 @@ Bytes of 0x12345678 (little-endian): 78 56 34 12
 | Pointer cast | **O(1)** | **O(1)** --- no bits change |
 
 ### 3.13.4 A&D Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-4-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-4-a-d-table-handwritten.svg" alt="Handwritten: 3.13.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-4-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-4-a-d-table-diagram.svg" alt="Diagram: 3.13.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-4-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-4-a-d-table-sticky.svg" alt="Sticky Note: 3.13.4 A&D Table" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -2175,16 +1355,6 @@ Bytes of 0x12345678 (little-endian): 78 56 34 12
 | Enables mixed-type arithmetic safely | Incorrect pointer casts break aliasing rules (strict aliasing) |
 
 ### 3.13.5 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-5-edge-cases-handwritten.svg" alt="Handwritten: 3.13.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-5-edge-cases-diagram.svg" alt="Diagram: 3.13.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-13-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-13-5-edge-cases-sticky.svg" alt="Sticky Note: 3.13.5 Edge Cases" width="30%">
-</a>
 
 
 1. **Narrowing cast** --- converting `double` to `int` loses fractional part; undefined if value out of range
@@ -2198,30 +1368,10 @@ Bytes of 0x12345678 (little-endian): 78 56 34 12
 
 ### 3.14.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-1-real-world-analogy-handwritten.svg" alt="Handwritten: 3.14.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-1-real-world-analogy-diagram.svg" alt="Diagram: 3.14.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-1-real-world-analogy-sticky.svg" alt="Sticky Note: 3.14.1 Real-World Analogy" width="30%">
-</a>
-
 
 Precedence is like **order of operations in math** (PEMDAS/BODMAS): multiplication before addition. Associativity is like a **tiebreaker** --- when two operators have equal precedence, do we go left-to-right (addition and subtraction) or right-to-left (assignment)?
 
 ### 3.14.2 Full 15-Level Precedence Table
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-2-full-15-level-precedence-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-2-full-15-level-precedence-table-handwritten.svg" alt="Handwritten: 3.14.2 Full 15-Level Precedence Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-2-full-15-level-precedence-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-2-full-15-level-precedence-table-diagram.svg" alt="Diagram: 3.14.2 Full 15-Level Precedence Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-2-full-15-level-precedence-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-2-full-15-level-precedence-table-sticky.svg" alt="Sticky Note: 3.14.2 Full 15-Level Precedence Table" width="30%">
-</a>
 
 
 | Level | Category | Operators | Associativity | Example |
@@ -2244,16 +1394,6 @@ Precedence is like **order of operations in math** (PEMDAS/BODMAS): multiplicati
 
 ### 3.14.3 Dry Run --- Complex Expression Evaluation
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-3-dry-run-complex-expression-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-3-dry-run-complex-expression-evaluation-handwritten.svg" alt="Handwritten: 3.14.3 Dry Run --- Complex Expression Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-3-dry-run-complex-expression-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-3-dry-run-complex-expression-evaluation-diagram.svg" alt="Diagram: 3.14.3 Dry Run --- Complex Expression Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-3-dry-run-complex-expression-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-3-dry-run-complex-expression-evaluation-sticky.svg" alt="Sticky Note: 3.14.3 Dry Run --- Complex Expression Evaluation" width="30%">
-</a>
-
 
 **Expression: `int result = ++x * 3 + (y = 5) > 10 ? a : b;`**
 Assume: `int x = 2, y = 0, a = 1, b = 0;`
@@ -2269,16 +1409,6 @@ Assume: `int x = 2, y = 0, a = 1, b = 0;`
 | 7 | `result = 1` | = level 14, R->L | result=1 |
 
 ### 3.14.4 Common Precedence Traps
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-4-common-precedence-traps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-4-common-precedence-traps-handwritten.svg" alt="Handwritten: 3.14.4 Common Precedence Traps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-4-common-precedence-traps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-4-common-precedence-traps-diagram.svg" alt="Diagram: 3.14.4 Common Precedence Traps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-4-common-precedence-traps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-4-common-precedence-traps-sticky.svg" alt="Sticky Note: 3.14.4 Common Precedence Traps" width="30%">
-</a>
 
 
 ```c
@@ -2319,16 +1449,6 @@ a & b == 5 = 1 (== binds tighter than &!)
 
 ### 3.14.5 Golden Rule
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-5-golden-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-5-golden-rule-handwritten.svg" alt="Handwritten: 3.14.5 Golden Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-5-golden-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-5-golden-rule-diagram.svg" alt="Diagram: 3.14.5 Golden Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-14-5-golden-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-14-5-golden-rule-sticky.svg" alt="Sticky Note: 3.14.5 Golden Rule" width="30%">
-</a>
-
 
 **When in doubt, use parentheses.** They are free (zero runtime cost) and make intent explicit:
 
@@ -2346,16 +1466,6 @@ if ((a & b) == c) ...
 
 ### 3.15.1 Definition
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-1-definition-handwritten.svg" alt="Handwritten: 3.15.1 Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-1-definition-diagram.svg" alt="Diagram: 3.15.1 Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-1-definition-sticky.svg" alt="Sticky Note: 3.15.1 Definition" width="30%">
-</a>
-
 
 Short-circuit evaluation means the second operand of `&&` or `||` is evaluated only if necessary to determine the overall result.
 
@@ -2365,16 +1475,6 @@ Short-circuit evaluation means the second operand of `&&` or `||` is evaluated o
 | `||` | LHS is **false** (zero) | LHS is **true** (non-zero) |
 
 ### 3.15.2 Dry Run --- Short-Circuit Scenarios
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-2-dry-run-short-circuit-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-2-dry-run-short-circuit-scenarios-handwritten.svg" alt="Handwritten: 3.15.2 Dry Run --- Short-Circuit Scenarios" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-2-dry-run-short-circuit-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-2-dry-run-short-circuit-scenarios-diagram.svg" alt="Diagram: 3.15.2 Dry Run --- Short-Circuit Scenarios" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-2-dry-run-short-circuit-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-2-dry-run-short-circuit-scenarios-sticky.svg" alt="Sticky Note: 3.15.2 Dry Run --- Short-Circuit Scenarios" width="30%">
-</a>
 
 
 **Scenario 1: `int a = 0, b = 5; if (a != 0 && b / a > 1)`**
@@ -2394,16 +1494,6 @@ Short-circuit evaluation means the second operand of `&&` or `||` is evaluated o
 | 3 | b remains | 5 | Surprising if you expected b=0 |
 
 ### 3.15.3 Common Short-Circuit Patterns
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-3-common-short-circuit-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-3-common-short-circuit-patterns-handwritten.svg" alt="Handwritten: 3.15.3 Common Short-Circuit Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-3-common-short-circuit-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-3-common-short-circuit-patterns-diagram.svg" alt="Diagram: 3.15.3 Common Short-Circuit Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-15-3-common-short-circuit-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-15-3-common-short-circuit-patterns-sticky.svg" alt="Sticky Note: 3.15.3 Common Short-Circuit Patterns" width="30%">
-</a>
 
 
 ```c
@@ -2426,30 +1516,10 @@ int result = (cache_valid) ? cache : compute_expensive();
 
 ### Q1: What is the difference between `++i` and `i++`? Which is faster?
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-difference-between-i-and-i-which-is-faster-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-difference-between-i-and-i-which-is-faster-handwritten.svg" alt="Handwritten: What is the difference between `++i` and `i++`? Which is faster?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-difference-between-i-and-i-which-is-faster-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-difference-between-i-and-i-which-is-faster-diagram.svg" alt="Diagram: What is the difference between `++i` and `i++`? Which is faster?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-difference-between-i-and-i-which-is-faster-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-difference-between-i-and-i-which-is-faster-sticky.svg" alt="Sticky Note: What is the difference between `++i` and `i++`? Which is faster?" width="30%">
-</a>
-
 
 **Answer:** `++i` (prefix) increments and returns the new value. `i++` (postfix) saves the old value, increments, and returns the old value. For built-in types, modern compilers optimize both identically. For user-defined types (C++ iterators), prefix is faster because postfix needs to make a copy. In C with `int`, they are equivalent after optimization.
 
 ### Q2: What are sequence points? Give examples of undefined behavior.
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-are-sequence-points-give-examples-of-undefined-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-are-sequence-points-give-examples-of-undefined-behavior-handwritten.svg" alt="Handwritten: What are sequence points? Give examples of undefined behavior." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-are-sequence-points-give-examples-of-undefined-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-are-sequence-points-give-examples-of-undefined-behavior-diagram.svg" alt="Diagram: What are sequence points? Give examples of undefined behavior." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-are-sequence-points-give-examples-of-undefined-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-are-sequence-points-give-examples-of-undefined-behavior-sticky.svg" alt="Sticky Note: What are sequence points? Give examples of undefined behavior." width="30%">
-</a>
 
 
 **Answer:** A sequence point is a point in execution where all side effects of previous evaluations are guaranteed to be complete. Between two sequence points, a variable may be modified at most once. Violations:
@@ -2465,16 +1535,6 @@ Sequence points occur at: `;` end of statement, `&&`, `||`, `?:`, `,` operator, 
 
 ### Q3: When would you use bitwise AND (`&`) vs logical AND (`&&`)?
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/when-would-you-use-bitwise-and-vs-logical-and-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/when-would-you-use-bitwise-and-vs-logical-and-handwritten.svg" alt="Handwritten: When would you use bitwise AND (`&`) vs logical AND (`&&`)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/when-would-you-use-bitwise-and-vs-logical-and-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/when-would-you-use-bitwise-and-vs-logical-and-diagram.svg" alt="Diagram: When would you use bitwise AND (`&`) vs logical AND (`&&`)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/when-would-you-use-bitwise-and-vs-logical-and-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/when-would-you-use-bitwise-and-vs-logical-and-sticky.svg" alt="Sticky Note: When would you use bitwise AND (`&`) vs logical AND (`&&`)?" width="30%">
-</a>
-
 
 **Answer:** Use `&` when you need to operate on individual bits (mask testing, flag extraction). Use `&&` for boolean logic with short-circuit. Example:
 
@@ -2487,16 +1547,6 @@ if (is_ready() && can_write())  /* logical: both must be true, short-circuit saf
 **Critical difference:** `&` always evaluates both operands; `&&` may skip the second.
 
 ### Q4: Explain `sizeof` on an array vs a pointer.
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/explain-sizeof-on-an-array-vs-a-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/explain-sizeof-on-an-array-vs-a-pointer-handwritten.svg" alt="Handwritten: Explain `sizeof` on an array vs a pointer." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/explain-sizeof-on-an-array-vs-a-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/explain-sizeof-on-an-array-vs-a-pointer-diagram.svg" alt="Diagram: Explain `sizeof` on an array vs a pointer." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/explain-sizeof-on-an-array-vs-a-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/explain-sizeof-on-an-array-vs-a-pointer-sticky.svg" alt="Sticky Note: Explain `sizeof` on an array vs a pointer." width="30%">
-</a>
 
 
 **Answer:**
@@ -2517,16 +1567,6 @@ void func(int param[]) {
 
 ### Q5: What is the comma operator and when is it useful?
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-comma-operator-and-when-is-it-useful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-comma-operator-and-when-is-it-useful-handwritten.svg" alt="Handwritten: What is the comma operator and when is it useful?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-comma-operator-and-when-is-it-useful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-comma-operator-and-when-is-it-useful-diagram.svg" alt="Diagram: What is the comma operator and when is it useful?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-comma-operator-and-when-is-it-useful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-the-comma-operator-and-when-is-it-useful-sticky.svg" alt="Sticky Note: What is the comma operator and when is it useful?" width="30%">
-</a>
-
 
 **Answer:** The comma operator evaluates both operands left-to-right, has a sequence point between them, and yields the value of the right operand. Useful in `for` loops and macros:
 
@@ -2539,16 +1579,6 @@ for (int i = 0, j = 10; i < j; i++, j--)   /* comma to update both */
 But beware: `f((a, b))` passes `b`; `f(a, b)` passes two arguments.
 
 ### Q6: Explain the ternary operator. Can it replace `if-else`?
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/explain-the-ternary-operator-can-it-replace-if-else-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/explain-the-ternary-operator-can-it-replace-if-else-handwritten.svg" alt="Handwritten: Explain the ternary operator. Can it replace `if-else`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/explain-the-ternary-operator-can-it-replace-if-else-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/explain-the-ternary-operator-can-it-replace-if-else-diagram.svg" alt="Diagram: Explain the ternary operator. Can it replace `if-else`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/explain-the-ternary-operator-can-it-replace-if-else-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/explain-the-ternary-operator-can-it-replace-if-else-sticky.svg" alt="Sticky Note: Explain the ternary operator. Can it replace `if-else`?" width="30%">
-</a>
 
 
 **Answer:** The ternary operator `?:` is an expression that yields a value, while `if-else` is a statement. Ternary can be used inside larger expressions:
@@ -2566,16 +1596,6 @@ Do NOT use ternary for complex branching --- readability suffers.
 
 ### Q7: What happens when you shift by a negative count or by the bit width?
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-happens-when-you-shift-by-a-negative-count-or-by-the-bit-width-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-happens-when-you-shift-by-a-negative-count-or-by-the-bit-width-handwritten.svg" alt="Handwritten: What happens when you shift by a negative count or by the bit width?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-happens-when-you-shift-by-a-negative-count-or-by-the-bit-width-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-happens-when-you-shift-by-a-negative-count-or-by-the-bit-width-diagram.svg" alt="Diagram: What happens when you shift by a negative count or by the bit width?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-happens-when-you-shift-by-a-negative-count-or-by-the-bit-width-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-happens-when-you-shift-by-a-negative-count-or-by-the-bit-width-sticky.svg" alt="Sticky Note: What happens when you shift by a negative count or by the bit width?" width="30%">
-</a>
-
 
 **Answer:** Both are undefined behavior:
 
@@ -2586,16 +1606,6 @@ x << 32;              /* UB: shift >= width of int (on 32-bit system) */
 ```
 
 ### Q8: Signed vs unsigned right shift --- what's the difference?
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/signed-vs-unsigned-right-shift-what-s-the-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/signed-vs-unsigned-right-shift-what-s-the-difference-handwritten.svg" alt="Handwritten: Signed vs unsigned right shift --- what's the difference?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/signed-vs-unsigned-right-shift-what-s-the-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/signed-vs-unsigned-right-shift-what-s-the-difference-diagram.svg" alt="Diagram: Signed vs unsigned right shift --- what's the difference?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/signed-vs-unsigned-right-shift-what-s-the-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/signed-vs-unsigned-right-shift-what-s-the-difference-sticky.svg" alt="Sticky Note: Signed vs unsigned right shift --- what's the difference?" width="30%">
-</a>
 
 
 **Answer:** For unsigned types, right shift is **logical** (fills with 0). For signed types, right shift is **implementation-defined** but almost always **arithmetic** (fills with sign bit).
@@ -2610,16 +1620,6 @@ u >> 1;                    /* 0111 1000 = 120 (logical) */
 
 ### Q9: How do you swap two integers without a temporary variable?
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/how-do-you-swap-two-integers-without-a-temporary-variable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/how-do-you-swap-two-integers-without-a-temporary-variable-handwritten.svg" alt="Handwritten: How do you swap two integers without a temporary variable?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/how-do-you-swap-two-integers-without-a-temporary-variable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/how-do-you-swap-two-integers-without-a-temporary-variable-diagram.svg" alt="Diagram: How do you swap two integers without a temporary variable?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/how-do-you-swap-two-integers-without-a-temporary-variable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/how-do-you-swap-two-integers-without-a-temporary-variable-sticky.svg" alt="Sticky Note: How do you swap two integers without a temporary variable?" width="30%">
-</a>
-
 
 **Answer:** Using XOR swap (works with integers only):
 
@@ -2633,16 +1633,6 @@ a = a ^ b;    /* a = 15 ^ 5 = 10 */
 **Warning:** Fails if `a` and `b` refer to the same memory location (both become 0). Also slower than temp-variable swap on modern CPUs.
 
 ### Q10: What is operator precedence? Give an example where it matters.
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-operator-precedence-give-an-example-where-it-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-operator-precedence-give-an-example-where-it-matters-handwritten.svg" alt="Handwritten: What is operator precedence? Give an example where it matters." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-operator-precedence-give-an-example-where-it-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-operator-precedence-give-an-example-where-it-matters-diagram.svg" alt="Diagram: What is operator precedence? Give an example where it matters." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/what-is-operator-precedence-give-an-example-where-it-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/what-is-operator-precedence-give-an-example-where-it-matters-sticky.svg" alt="Sticky Note: What is operator precedence? Give an example where it matters." width="30%">
-</a>
 
 
 **Answer:** Precedence determines which operator is evaluated first in an expression without parentheses. Example:
@@ -2660,16 +1650,6 @@ Without knowing that `+` has higher precedence than `<<`, you'd guess `x = (1 <<
 
 ### 3.17.1 Embedded Systems / GPIO
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-1-embedded-systems-gpio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-1-embedded-systems-gpio-handwritten.svg" alt="Handwritten: 3.17.1 Embedded Systems / GPIO" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-1-embedded-systems-gpio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-1-embedded-systems-gpio-diagram.svg" alt="Diagram: 3.17.1 Embedded Systems / GPIO" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-1-embedded-systems-gpio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-1-embedded-systems-gpio-sticky.svg" alt="Sticky Note: 3.17.1 Embedded Systems / GPIO" width="30%">
-</a>
-
 
 ```c
 /* Set pin 3 high on a microcontroller port */
@@ -2683,16 +1663,6 @@ Without knowing that `+` has higher precedence than `<<`, you'd guess `x = (1 <<
 ```
 
 ### 3.17.2 Linux Kernel Macros
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-2-linux-kernel-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-2-linux-kernel-macros-handwritten.svg" alt="Handwritten: 3.17.2 Linux Kernel Macros" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-2-linux-kernel-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-2-linux-kernel-macros-diagram.svg" alt="Diagram: 3.17.2 Linux Kernel Macros" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-2-linux-kernel-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-2-linux-kernel-macros-sticky.svg" alt="Sticky Note: 3.17.2 Linux Kernel Macros" width="30%">
-</a>
 
 
 ```c
@@ -2716,16 +1686,6 @@ Without knowing that `+` has higher precedence than `<<`, you'd guess `x = (1 <<
 
 ### 3.17.3 Graphics / Color Packing
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-3-graphics-color-packing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-3-graphics-color-packing-handwritten.svg" alt="Handwritten: 3.17.3 Graphics / Color Packing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-3-graphics-color-packing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-3-graphics-color-packing-diagram.svg" alt="Diagram: 3.17.3 Graphics / Color Packing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-3-graphics-color-packing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-3-graphics-color-packing-sticky.svg" alt="Sticky Note: 3.17.3 Graphics / Color Packing" width="30%">
-</a>
-
 
 ```c
 /* Pack RGBA into a 32-bit integer */
@@ -2739,16 +1699,6 @@ Without knowing that `+` has higher precedence than `<<`, you'd guess `x = (1 <<
 ```
 
 ### 3.17.4 Networking / Checksum
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-4-networking-checksum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-4-networking-checksum-handwritten.svg" alt="Handwritten: 3.17.4 Networking / Checksum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-4-networking-checksum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-4-networking-checksum-diagram.svg" alt="Diagram: 3.17.4 Networking / Checksum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-4-networking-checksum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-4-networking-checksum-sticky.svg" alt="Sticky Note: 3.17.4 Networking / Checksum" width="30%">
-</a>
 
 
 ```c
@@ -2769,16 +1719,6 @@ unsigned short ip_checksum(unsigned short *buf, int len)
 
 ### 3.17.5 Permission Masks (Unix-style)
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-5-permission-masks-unix-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-5-permission-masks-unix-style-handwritten.svg" alt="Handwritten: 3.17.5 Permission Masks (Unix-style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-5-permission-masks-unix-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-5-permission-masks-unix-style-diagram.svg" alt="Diagram: 3.17.5 Permission Masks (Unix-style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-5-permission-masks-unix-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-5-permission-masks-unix-style-sticky.svg" alt="Sticky Note: 3.17.5 Permission Masks (Unix-style)" width="30%">
-</a>
-
 
 ```c
 #define IS_READABLE(mode)  ((mode) & S_IRUSR)
@@ -2791,16 +1731,6 @@ if (IS_READABLE(mode)) printf("Owner can read\n");
 ```
 
 ### 3.17.6 Game Development / Collision Detection
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-6-game-development-collision-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-6-game-development-collision-detection-handwritten.svg" alt="Handwritten: 3.17.6 Game Development / Collision Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-6-game-development-collision-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-6-game-development-collision-detection-diagram.svg" alt="Diagram: 3.17.6 Game Development / Collision Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/3-17-6-game-development-collision-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/3-17-6-game-development-collision-detection-sticky.svg" alt="Sticky Note: 3.17.6 Game Development / Collision Detection" width="30%">
-</a>
 
 
 ```c
@@ -2932,16 +1862,6 @@ if (state & ENTITY_ALIVE)    /* check alive */
 
 ### Additional Interview Questions
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/additional-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/additional-interview-questions-handwritten.svg" alt="Handwritten: Additional Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/additional-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/additional-interview-questions-diagram.svg" alt="Diagram: Additional Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/additional-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/additional-interview-questions-sticky.svg" alt="Sticky Note: Additional Interview Questions" width="30%">
-</a>
-
 
 **Q11: What is the output of `printf("%d", (1, 2, 3));` vs `printf("%d %d %d", 1, 2, 3);`?**
 
@@ -3000,16 +1920,6 @@ This is useful when you need to guarantee a 0 or 1 result (e.g., for mathematica
 
 ### Common Mistakes and Anti-Patterns
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/common-mistakes-and-anti-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/common-mistakes-and-anti-patterns-handwritten.svg" alt="Handwritten: Common Mistakes and Anti-Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/common-mistakes-and-anti-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/common-mistakes-and-anti-patterns-diagram.svg" alt="Diagram: Common Mistakes and Anti-Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/common-mistakes-and-anti-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/common-mistakes-and-anti-patterns-sticky.svg" alt="Sticky Note: Common Mistakes and Anti-Patterns" width="30%">
-</a>
-
 
 **Mistake 1: Assignment in conditions**
 ```c
@@ -3047,16 +1957,6 @@ int y = SQUARE(++x);  /* expands to ((++x) * (++x)) --- UB! */
 ```
 
 ### Advanced Topics
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/advanced-topics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/advanced-topics-handwritten.svg" alt="Handwritten: Advanced Topics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/advanced-topics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/advanced-topics-diagram.svg" alt="Diagram: Advanced Topics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/advanced-topics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/advanced-topics-sticky.svg" alt="Sticky Note: Advanced Topics" width="30%">
-</a>
 
 
 **Strict Aliasing Rule**
@@ -3099,30 +1999,10 @@ while (!(*status_reg & 0x80));   /* compiler must re-read each time */
 
 ### Operator Overloading (not in C)
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/operator-overloading-not-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/operator-overloading-not-in-c-handwritten.svg" alt="Handwritten: Operator Overloading (not in C)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/operator-overloading-not-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/operator-overloading-not-in-c-diagram.svg" alt="Diagram: Operator Overloading (not in C)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/operator-overloading-not-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/operator-overloading-not-in-c-sticky.svg" alt="Sticky Note: Operator Overloading (not in C)" width="30%">
-</a>
-
 
 Unlike C++, C does **not** support operator overloading. In C, `+` always means addition --- you cannot define `+` for struct types. All operators in C work only on built-in types (integers, floats, pointers). This is a key difference from C++ where operator overloading is a central feature.
 
 ### Memory-Mapped Register Access (Real-World Embedded)
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/memory-mapped-register-access-real-world-embedded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/memory-mapped-register-access-real-world-embedded-handwritten.svg" alt="Handwritten: Memory-Mapped Register Access (Real-World Embedded)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/memory-mapped-register-access-real-world-embedded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/memory-mapped-register-access-real-world-embedded-diagram.svg" alt="Diagram: Memory-Mapped Register Access (Real-World Embedded)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/memory-mapped-register-access-real-world-embedded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/memory-mapped-register-access-real-world-embedded-sticky.svg" alt="Sticky Note: Memory-Mapped Register Access (Real-World Embedded)" width="30%">
-</a>
 
 
 ```c
@@ -3150,16 +2030,6 @@ GPIOA->ODR |= (1 << 5);
 ```
 
 ### XOR Linked List (Memory-Efficient Data Structure)
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/xor-linked-list-memory-efficient-data-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/xor-linked-list-memory-efficient-data-structure-handwritten.svg" alt="Handwritten: XOR Linked List (Memory-Efficient Data Structure)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/xor-linked-list-memory-efficient-data-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/xor-linked-list-memory-efficient-data-structure-diagram.svg" alt="Diagram: XOR Linked List (Memory-Efficient Data Structure)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/xor-linked-list-memory-efficient-data-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/xor-linked-list-memory-efficient-data-structure-sticky.svg" alt="Sticky Note: XOR Linked List (Memory-Efficient Data Structure)" width="30%">
-</a>
 
 
 ```c
@@ -3192,16 +2062,6 @@ void traverse(struct XOR_Node *head) {
 ```
 
 ### Compiler Built-ins for Bit Operations
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/compiler-built-ins-for-bit-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/compiler-built-ins-for-bit-operations-handwritten.svg" alt="Handwritten: Compiler Built-ins for Bit Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/compiler-built-ins-for-bit-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/compiler-built-ins-for-bit-operations-diagram.svg" alt="Diagram: Compiler Built-ins for Bit Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/compiler-built-ins-for-bit-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/compiler-built-ins-for-bit-operations-sticky.svg" alt="Sticky Note: Compiler Built-ins for Bit Operations" width="30%">
-</a>
 
 
 Modern compilers provide built-in functions for efficient bit manipulation:
@@ -3243,16 +2103,6 @@ int main(void)
 
 ### Cheat Sheet Quick Reference
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/cheat-sheet-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/cheat-sheet-quick-reference-handwritten.svg" alt="Handwritten: Cheat Sheet Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/cheat-sheet-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/cheat-sheet-quick-reference-diagram.svg" alt="Diagram: Cheat Sheet Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/cheat-sheet-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/cheat-sheet-quick-reference-sticky.svg" alt="Sticky Note: Cheat Sheet Quick Reference" width="30%">
-</a>
-
 
 | Expression | Result | Notes |
 |------------|--------|-------|
@@ -3284,16 +2134,6 @@ int main(void)
 | Checksum/CRC | `byte ^= byte << 4; byte ^= byte >> 5;` (simple CRC step) |
 
 ### Additional Quiz Questions
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/additional-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/additional-quiz-questions-handwritten.svg" alt="Handwritten: Additional Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/additional-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/additional-quiz-questions-diagram.svg" alt="Diagram: Additional Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/additional-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/additional-quiz-questions-sticky.svg" alt="Sticky Note: Additional Quiz Questions" width="30%">
-</a>
 
 
 **9. What is the output of `int x = 5; printf("%d", x++ + ++x);`?**
@@ -3334,16 +2174,6 @@ int main(void)
 
 ### Complete Mini-Reference: Operator Precedence Hand-Rule
 
-<a href="../../../assets/images/diagrams/c-programming/03-operators/complete-mini-reference-operator-precedence-hand-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/complete-mini-reference-operator-precedence-hand-rule-handwritten.svg" alt="Handwritten: Complete Mini-Reference: Operator Precedence Hand-Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/complete-mini-reference-operator-precedence-hand-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/complete-mini-reference-operator-precedence-hand-rule-diagram.svg" alt="Diagram: Complete Mini-Reference: Operator Precedence Hand-Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/complete-mini-reference-operator-precedence-hand-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/complete-mini-reference-operator-precedence-hand-rule-sticky.svg" alt="Sticky Note: Complete Mini-Reference: Operator Precedence Hand-Rule" width="30%">
-</a>
-
 
 ```
 Postfix:       () [] . -> ++ --
@@ -3366,16 +2196,6 @@ Comma:          ,
 Remember: **PUMARSEBLATAC** (Postfix, Unary, Mult, Add, Rel/Shift, Equality, Bitwise/Logical, Assignment, Ternary, Comma). Or just remember that only assignment and ternary go right-to-left.
 
 ### Quick Memory Aid: `++*p++`
-
-<a href="../../../assets/images/diagrams/c-programming/03-operators/quick-memory-aid-p-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/quick-memory-aid-p-handwritten.svg" alt="Handwritten: Quick Memory Aid: `++*p++`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/quick-memory-aid-p-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/quick-memory-aid-p-diagram.svg" alt="Diagram: Quick Memory Aid: `++*p++`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/03-operators/quick-memory-aid-p-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/03-operators/quick-memory-aid-p-sticky.svg" alt="Sticky Note: Quick Memory Aid: `++*p++`" width="30%">
-</a>
 
 
 ```c

@@ -81,16 +81,6 @@ flowchart LR
 
 ### 16.1 Full-Text Search
 
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-handwritten.svg" alt="Handwritten: 16.1 Full-Text Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-diagram.svg" alt="Diagram: 16.1 Full-Text Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-1-full-text-search-sticky.svg" alt="Sticky Note: 16.1 Full-Text Search" width="30%">
-</a>
-
 
 Full-text search searches within documents for exact or stemmed keyword matches. Laravel's query builder provides a cross-database `whereFullText()` method:
 
@@ -204,16 +194,6 @@ $articles = Article::select('*')
 
 ### 16.2 Semantic Search Concept
 
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-handwritten.svg" alt="Handwritten: 16.2 Semantic Search Concept" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-diagram.svg" alt="Diagram: 16.2 Semantic Search Concept" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-2-semantic-search-concept-sticky.svg" alt="Sticky Note: 16.2 Semantic Search Concept" width="30%">
-</a>
-
 
 Semantic search understands the *meaning* of a query, not just its keywords. Instead of matching character sequences, it compares numerical representations called **embeddings** → arrays of floating-point numbers produced by a machine learning model.
 
@@ -233,16 +213,6 @@ cosine_similarity(A, B) = (A Â· B) / (||A|| * ||B||)
 Values range from -1 (opposite meaning) to 1 (identical meaning). A threshold of 0.4 to 0.6 typically indicates semantically related content.
 
 ### 16.3 pgvector Installation
-
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-handwritten.svg" alt="Handwritten: 16.3 pgvector Installation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-diagram.svg" alt="Diagram: 16.3 pgvector Installation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-3-pgvector-installation-sticky.svg" alt="Sticky Note: 16.3 pgvector Installation" width="30%">
-</a>
 
 
 pgvector is a PostgreSQL extension that adds vector data types and similarity search operators. Install it on your PostgreSQL server:
@@ -356,16 +326,6 @@ The HNSW index parameters balance build time against query accuracy:
 
 ### 16.4 Generating Embeddings
 
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-handwritten.svg" alt="Handwritten: 16.4 Generating Embeddings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-diagram.svg" alt="Diagram: 16.4 Generating Embeddings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-4-generating-embeddings-sticky.svg" alt="Sticky Note: 16.4 Generating Embeddings" width="30%">
-</a>
-
 
 Laravel's AI SDK provides embedding generation. Use `Str::toEmbeddings()` for single texts:
 
@@ -456,16 +416,6 @@ return [
 
 ### 16.5 Storing Vectors
 
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-handwritten.svg" alt="Handwritten: 16.5 Storing Vectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-diagram.svg" alt="Diagram: 16.5 Storing Vectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-5-storing-vectors-sticky.svg" alt="Sticky Note: 16.5 Storing Vectors" width="30%">
-</a>
-
 
 On the Eloquent model, cast the vector column to an array so it serializes and deserializes automatically:
 
@@ -524,16 +474,6 @@ class DocumentController extends Controller
 ```
 
 ### 16.6 Complete Search Pipeline
-
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-handwritten.svg" alt="Handwritten: 16.6 Complete Search Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-diagram.svg" alt="Diagram: 16.6 Complete Search Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-6-complete-search-pipeline-sticky.svg" alt="Sticky Note: 16.6 Complete Search Pipeline" width="30%">
-</a>
 
 
 The core of semantic search is the `whereVectorSimilarTo` query builder method. It accepts a plain-text query or an embedding array and returns results ordered by cosine similarity:
@@ -613,16 +553,6 @@ LIMIT 10
 
 ### 16.7 Reranking
 
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-handwritten.svg" alt="Handwritten: 16.7 Reranking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-diagram.svg" alt="Diagram: 16.7 Reranking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-7-reranking-sticky.svg" alt="Sticky Note: 16.7 Reranking" width="30%">
-</a>
-
 
 Reranking improves search quality by applying a second, more expensive model to reorder the initial results. This is the "retrieve then rerank" pattern:
 
@@ -693,16 +623,6 @@ foreach ($reranked as $document) {
 This pattern is computationally efficient: the vector search runs in O(log n) with HNSW indexing, while the expensive cross-encoder reranks only the top 50 candidates rather than the entire corpus.
 
 ### 16.8 Laravel Scout
-
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-handwritten.svg" alt="Handwritten: 16.8 Laravel Scout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-diagram.svg" alt="Diagram: 16.8 Laravel Scout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-8-laravel-scout-sticky.svg" alt="Sticky Note: 16.8 Laravel Scout" width="30%">
-</a>
 
 
 Laravel Scout provides a unified interface for full-text search across multiple engines including the database engine, Meilisearch, Typesense, and Algolia.
@@ -777,16 +697,6 @@ class Product extends Model
 `#[SearchUsingFullText]` generates MATCH/AGAINST (MySQL) or to_tsvector (PostgreSQL). `#[SearchUsingPrefix]` uses a LIKE query with the prefix appended with `*`, ideal for SKU or partial ID searches.
 
 ### 16.9 RAG Patterns
-
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-handwritten.svg" alt="Handwritten: 16.9 RAG Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-diagram.svg" alt="Diagram: 16.9 RAG Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-9-rag-patterns-sticky.svg" alt="Sticky Note: 16.9 RAG Patterns" width="30%">
-</a>
 
 
 Retrieval-Augmented Generation (RAG) combines retrieval (search) with generation (LLM). Here are three common patterns:
@@ -910,16 +820,6 @@ class RagHybridController extends Controller
 ```
 
 ### 16.10 Complete Example: RAG Documentation Search
-
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-handwritten.svg" alt="Handwritten: 16.10 Complete Example: RAG Documentation Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-diagram.svg" alt="Diagram: 16.10 Complete Example: RAG Documentation Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/16-search-rag/16-10-complete-example-rag-documentation-search-sticky.svg" alt="Sticky Note: 16.10 Complete Example: RAG Documentation Search" width="30%">
-</a>
 
 
 This example builds a complete documentation search system with full-text retrieval, vector reranking, and Scout:

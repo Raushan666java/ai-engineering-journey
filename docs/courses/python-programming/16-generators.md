@@ -258,16 +258,6 @@ def chain_without(*iterables):
 
 ### 16.5.1 Flatten Nested Sequences
 
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-5-1-flatten-nested-sequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-5-1-flatten-nested-sequences-handwritten.svg" alt="Handwritten: 16.5.1 Flatten Nested Sequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-5-1-flatten-nested-sequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-5-1-flatten-nested-sequences-diagram.svg" alt="Diagram: 16.5.1 Flatten Nested Sequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-5-1-flatten-nested-sequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-5-1-flatten-nested-sequences-sticky.svg" alt="Sticky Note: 16.5.1 Flatten Nested Sequences" width="30%">
-</a>
-
 
 ```python
 def flatten(nested):
@@ -288,16 +278,6 @@ print(list(flatten(nested)))  # [1, 2, 3, 4, 5, 6]
 
 
 ### 16.6.1 Infinite Iterators
-
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-1-infinite-iterators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-1-infinite-iterators-handwritten.svg" alt="Handwritten: 16.6.1 Infinite Iterators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-1-infinite-iterators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-1-infinite-iterators-diagram.svg" alt="Diagram: 16.6.1 Infinite Iterators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-1-infinite-iterators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-1-infinite-iterators-sticky.svg" alt="Sticky Note: 16.6.1 Infinite Iterators" width="30%">
-</a>
 
 
 ```python
@@ -324,16 +304,6 @@ print()
 
 ### 16.6.2 Combinatoric Iterators
 
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-2-combinatoric-iterators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-2-combinatoric-iterators-handwritten.svg" alt="Handwritten: 16.6.2 Combinatoric Iterators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-2-combinatoric-iterators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-2-combinatoric-iterators-diagram.svg" alt="Diagram: 16.6.2 Combinatoric Iterators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-2-combinatoric-iterators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-2-combinatoric-iterators-sticky.svg" alt="Sticky Note: 16.6.2 Combinatoric Iterators" width="30%">
-</a>
-
 
 ```python
 from itertools import permutations, combinations, combinations_with_replacement, product
@@ -359,16 +329,6 @@ print(list(product(items, repeat=2)))
 
 ### 16.6.3 groupby
 
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-3-groupby-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-3-groupby-handwritten.svg" alt="Handwritten: 16.6.3 groupby" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-3-groupby-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-3-groupby-diagram.svg" alt="Diagram: 16.6.3 groupby" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-3-groupby-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-3-groupby-sticky.svg" alt="Sticky Note: 16.6.3 groupby" width="30%">
-</a>
-
 
 `groupby` groups consecutive elements by a key function:
 
@@ -387,16 +347,6 @@ for key, group in groupby(sorted_data, key=lambda x: x[0]):
 ```
 
 ### 16.6.4 chain, zip, and More
-
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-4-chain-zip-and-more-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-4-chain-zip-and-more-handwritten.svg" alt="Handwritten: 16.6.4 chain, zip, and More" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-4-chain-zip-and-more-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-4-chain-zip-and-more-diagram.svg" alt="Diagram: 16.6.4 chain, zip, and More" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/16-6-4-chain-zip-and-more-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/16-6-4-chain-zip-and-more-sticky.svg" alt="Sticky Note: 16.6.4 chain, zip, and More" width="30%">
-</a>
 
 
 ```python
@@ -592,16 +542,6 @@ for (const n of new RangeIterable(1, 5)) console.log(n);  // 1, 2, 3, 4, 5
 
 ### Python vs TypeScript Generators
 
-<a href="../../../assets/images/diagrams/python-programming/16-generators/python-vs-typescript-generators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/python-vs-typescript-generators-handwritten.svg" alt="Handwritten: Python vs TypeScript Generators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/python-vs-typescript-generators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/python-vs-typescript-generators-diagram.svg" alt="Diagram: Python vs TypeScript Generators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/python-vs-typescript-generators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/python-vs-typescript-generators-sticky.svg" alt="Sticky Note: Python vs TypeScript Generators" width="30%">
-</a>
-
 
 | Concept | Python | TypeScript |
 |---------|--------|------------|
@@ -614,16 +554,6 @@ for (const n of new RangeIterable(1, 5)) console.log(n);  // 1, 2, 3, 4, 5
 | Lazy by default | `range()`, `map()`, `filter()` | `.map()`/`.filter()` on arrays (eager) |
 
 ### Practical Generator Applications
-
-<a href="../../../assets/images/diagrams/python-programming/16-generators/practical-generator-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/practical-generator-applications-handwritten.svg" alt="Handwritten: Practical Generator Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/practical-generator-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/practical-generator-applications-diagram.svg" alt="Diagram: Practical Generator Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/practical-generator-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/practical-generator-applications-sticky.svg" alt="Sticky Note: Practical Generator Applications" width="30%">
-</a>
 
 
 Generators shine in real-world scenarios where memory efficiency and lazy evaluation matter:
@@ -709,16 +639,6 @@ print(sm.send("stop"))        # stopped
 ```
 
 ### When NOT to Use Generators
-
-<a href="../../../assets/images/diagrams/python-programming/16-generators/when-not-to-use-generators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/when-not-to-use-generators-handwritten.svg" alt="Handwritten: When NOT to Use Generators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/when-not-to-use-generators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/when-not-to-use-generators-diagram.svg" alt="Diagram: When NOT to Use Generators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/16-generators/when-not-to-use-generators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/16-generators/when-not-to-use-generators-sticky.svg" alt="Sticky Note: When NOT to Use Generators" width="30%">
-</a>
 
 
 | Situation | Use Instead | Why |

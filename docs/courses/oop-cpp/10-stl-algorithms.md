@@ -92,16 +92,6 @@ STL algorithms operate on **iterator ranges** rather than containers directly. T
 
 ### How It Works
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-it-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-it-works-handwritten.svg" alt="Handwritten: How It Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-it-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-it-works-diagram.svg" alt="Diagram: How It Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-it-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-it-works-sticky.svg" alt="Sticky Note: How It Works" width="30%">
-</a>
-
 
 1. Algorithms ask for a **begin iterator** and an **end iterator** marking the half-open range [begin, end)
 2. The algorithm advances the iterator from egin toward end using ++it
@@ -109,16 +99,6 @@ STL algorithms operate on **iterator ranges** rather than containers directly. T
 4. The container is never mentioned — only iterators
 
 ### Iterator Category Requirements
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/iterator-category-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/iterator-category-requirements-handwritten.svg" alt="Handwritten: Iterator Category Requirements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/iterator-category-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/iterator-category-requirements-diagram.svg" alt="Diagram: Iterator Category Requirements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/iterator-category-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/iterator-category-requirements-sticky.svg" alt="Sticky Note: Iterator Category Requirements" width="30%">
-</a>
 
 
 | Algorithm Example | Minimum Iterator Required | Supported Containers |
@@ -155,16 +135,6 @@ int main() {
 
 ### Categories of STL Algorithms
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/categories-of-stl-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/categories-of-stl-algorithms-handwritten.svg" alt="Handwritten: Categories of STL Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/categories-of-stl-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/categories-of-stl-algorithms-diagram.svg" alt="Diagram: Categories of STL Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/categories-of-stl-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/categories-of-stl-algorithms-sticky.svg" alt="Sticky Note: Categories of STL Algorithms" width="30%">
-</a>
-
 
 | Category | Behavior | Examples |
 |----------|----------|---------|
@@ -183,16 +153,6 @@ int main() {
 Non-modifying algorithms read elements through input iterators and never write. They are safe for const containers.
 
 ### 10.2.1 std::find — Linear Search
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-1-std-find-linear-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-1-std-find-linear-search-handwritten.svg" alt="Handwritten: 10.2.1 std::find — Linear Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-1-std-find-linear-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-1-std-find-linear-search-diagram.svg" alt="Diagram: 10.2.1 std::find — Linear Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-1-std-find-linear-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-1-std-find-linear-search-sticky.svg" alt="Sticky Note: 10.2.1 std::find — Linear Search" width="30%">
-</a>
 
 
 **Analogy:** You dropped your keys somewhere in the house. You walk from room to room, check each table, and stop the moment you see them — exactly the position where they are.
@@ -246,16 +206,6 @@ Found 30 at position: 2
 
 ### 10.2.2 std::count and std::count_if — Count Occurrences
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-2-std-count-and-std-count-if-count-occurrences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-2-std-count-and-std-count-if-count-occurrences-handwritten.svg" alt="Handwritten: 10.2.2 std::count and std::count_if — Count Occurrences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-2-std-count-and-std-count-if-count-occurrences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-2-std-count-and-std-count-if-count-occurrences-diagram.svg" alt="Diagram: 10.2.2 std::count and std::count_if — Count Occurrences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-2-std-count-and-std-count-if-count-occurrences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-2-std-count-and-std-count-if-count-occurrences-sticky.svg" alt="Sticky Note: 10.2.2 std::count and std::count_if — Count Occurrences" width="30%">
-</a>
-
 
 **Analogy:** A supermarket cashier scans every item in your cart and counts how many are dairy products. She does not stop after finding one — she needs the total.
 
@@ -293,16 +243,6 @@ Passing scores (>=80): 5
 **Complexity:** O(n). **WHY:** Every element must be inspected to count occurrences. Unlike ind which short-circuits, count must visit every element even if the answer is obvious early. The lambda predicate adds a small constant overhead per element.
 
 ### 10.2.3 std::equal — Range Equality
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-3-std-equal-range-equality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-3-std-equal-range-equality-handwritten.svg" alt="Handwritten: 10.2.3 std::equal — Range Equality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-3-std-equal-range-equality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-3-std-equal-range-equality-diagram.svg" alt="Diagram: 10.2.3 std::equal — Range Equality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-3-std-equal-range-equality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-3-std-equal-range-equality-sticky.svg" alt="Sticky Note: 10.2.3 std::equal — Range Equality" width="30%">
-</a>
 
 
 **Analogy:** Two chefs each prepare the same 5-course menu. You taste course 1 from both, course 2 from both, etc. If any pair differs, the meals are not equal.
@@ -349,16 +289,6 @@ x approx == y: true
 **Complexity:** O(n). **WHY:** The algorithm compares the shorter prefix of both ranges element-by-element. At most min(len1, len2) comparisons occur. Each comparison is O(1).
 
 ### 10.2.4 std::mismatch — First Differing Position
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-4-std-mismatch-first-differing-position-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-4-std-mismatch-first-differing-position-handwritten.svg" alt="Handwritten: 10.2.4 std::mismatch — First Differing Position" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-4-std-mismatch-first-differing-position-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-4-std-mismatch-first-differing-position-diagram.svg" alt="Diagram: 10.2.4 std::mismatch — First Differing Position" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-4-std-mismatch-first-differing-position-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-4-std-mismatch-first-differing-position-sticky.svg" alt="Sticky Note: 10.2.4 std::mismatch — First Differing Position" width="30%">
-</a>
 
 
 **Analogy:** Two students submit the same homework. The TA lines them up side by side and moves down line by line. At the first line that differs, the TA stamps "HERE!" on both papers.
@@ -407,16 +337,6 @@ DNA differs at position 4: G vs T
 **Complexity:** O(n). **WHY:** In the worst case, the ranges match fully or the mismatch is at the last position. Every position up to the mismatch must be compared.
 
 ### 10.2.5 std::search — Subrange Search
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-5-std-search-subrange-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-5-std-search-subrange-search-handwritten.svg" alt="Handwritten: 10.2.5 std::search — Subrange Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-5-std-search-subrange-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-5-std-search-subrange-search-diagram.svg" alt="Diagram: 10.2.5 std::search — Subrange Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-5-std-search-subrange-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-2-5-std-search-subrange-search-sticky.svg" alt="Sticky Note: 10.2.5 std::search — Subrange Search" width="30%">
-</a>
 
 
 **Analogy:** You are scanning a long document for the phrase "confidential". You check position 0: 'c' matches, 'o' matches ... 'l' at position 10 fails. You slide to position 1: 'o' != 'c'. Position 2: 'n' != 'c'. Continue until you find a full match or reach the end.
@@ -467,16 +387,6 @@ Boyer-Moore found at position 10
 
 ### Non-Modifying Algorithm Summary
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/non-modifying-algorithm-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/non-modifying-algorithm-summary-handwritten.svg" alt="Handwritten: Non-Modifying Algorithm Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/non-modifying-algorithm-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/non-modifying-algorithm-summary-diagram.svg" alt="Diagram: Non-Modifying Algorithm Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/non-modifying-algorithm-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/non-modifying-algorithm-summary-sticky.svg" alt="Sticky Note: Non-Modifying Algorithm Summary" width="30%">
-</a>
-
 
 | Algorithm | Returns | Stop-on-Find? |
 |-----------|---------|---------------|
@@ -494,16 +404,6 @@ one_of | bool | Yes (short-circuits) |
 Modifying algorithms change elements — either in-place (within the source range) or by writing to a separate output iterator.
 
 ### 10.3.1 std::copy — Range Copy
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-1-std-copy-range-copy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-1-std-copy-range-copy-handwritten.svg" alt="Handwritten: 10.3.1 std::copy — Range Copy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-1-std-copy-range-copy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-1-std-copy-range-copy-diagram.svg" alt="Diagram: 10.3.1 std::copy — Range Copy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-1-std-copy-range-copy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-1-std-copy-range-copy-sticky.svg" alt="Sticky Note: 10.3.1 std::copy — Range Copy" width="30%">
-</a>
 
 
 **Analogy:** A photocopier scans each page of a document and produces an identical copy on fresh paper. The original remains untouched.
@@ -563,16 +463,6 @@ int main() {
 **Complexity:** O(n). **WHY:** Exactly n assignments execute — one per element. Each assignment is O(1). No comparisons are performed.
 
 ### 10.3.2 std::transform — Apply Function to Range
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-2-std-transform-apply-function-to-range-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-2-std-transform-apply-function-to-range-handwritten.svg" alt="Handwritten: 10.3.2 std::transform — Apply Function to Range" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-2-std-transform-apply-function-to-range-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-2-std-transform-apply-function-to-range-diagram.svg" alt="Diagram: 10.3.2 std::transform — Apply Function to Range" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-2-std-transform-apply-function-to-range-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-2-std-transform-apply-function-to-range-sticky.svg" alt="Sticky Note: 10.3.2 std::transform — Apply Function to Range" width="30%">
-</a>
 
 
 **Analogy:** A factory assembly line. Each raw part enters the machine, gets processed (drilled, painted, assembled), and exits as a finished product. The machine applies the same operation to every part.
@@ -648,16 +538,6 @@ Element-wise sum: 11 22 33
 
 ### 10.3.3 std::replace and std::replace_if — Substitute Elements
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-3-std-replace-and-std-replace-if-substitute-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-3-std-replace-and-std-replace-if-substitute-elements-handwritten.svg" alt="Handwritten: 10.3.3 std::replace and std::replace_if — Substitute Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-3-std-replace-and-std-replace-if-substitute-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-3-std-replace-and-std-replace-if-substitute-elements-diagram.svg" alt="Diagram: 10.3.3 std::replace and std::replace_if — Substitute Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-3-std-replace-and-std-replace-if-substitute-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-3-std-replace-and-std-replace-if-substitute-elements-sticky.svg" alt="Sticky Note: 10.3.3 std::replace and std::replace_if — Substitute Elements" width="30%">
-</a>
-
 
 **Analogy:** A recall notice: every copy of "Batch 7A" medicine on the shelf must be replaced with "Batch 8B". A pharmacist walks the aisle, replaces each match, and leaves everything else alone.
 
@@ -705,16 +585,6 @@ After replace_if > 50 -> 0: 30 0 45 0 20
 
 ### 10.3.4 std::fill and std::fill_n — Assign Same Value
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-4-std-fill-and-std-fill-n-assign-same-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-4-std-fill-and-std-fill-n-assign-same-value-handwritten.svg" alt="Handwritten: 10.3.4 std::fill and std::fill_n — Assign Same Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-4-std-fill-and-std-fill-n-assign-same-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-4-std-fill-and-std-fill-n-assign-same-value-diagram.svg" alt="Diagram: 10.3.4 std::fill and std::fill_n — Assign Same Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-4-std-fill-and-std-fill-n-assign-same-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-4-std-fill-and-std-fill-n-assign-same-value-sticky.svg" alt="Sticky Note: 10.3.4 std::fill and std::fill_n — Assign Same Value" width="30%">
-</a>
-
 
 **Analogy:** A hotel cleaner puts a "Welcome" card on every pillow in a 50-room hotel. Same card, every room — no exceptions.
 
@@ -748,16 +618,6 @@ After fill_n first 5 with 99: 99 99 99 99 99 42 42 42 42 42
 **Complexity:** O(n). **WHY:** Exactly n assignments. Each assignment is O(1). No comparisons.
 
 ### 10.3.5 std::generate and std::generate_n — Assign from Generator
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-5-std-generate-and-std-generate-n-assign-from-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-5-std-generate-and-std-generate-n-assign-from-generator-handwritten.svg" alt="Handwritten: 10.3.5 std::generate and std::generate_n — Assign from Generator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-5-std-generate-and-std-generate-n-assign-from-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-5-std-generate-and-std-generate-n-assign-from-generator-diagram.svg" alt="Diagram: 10.3.5 std::generate and std::generate_n — Assign from Generator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-5-std-generate-and-std-generate-n-assign-from-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-5-std-generate-and-std-generate-n-assign-from-generator-sticky.svg" alt="Sticky Note: 10.3.5 std::generate and std::generate_n — Assign from Generator" width="30%">
-</a>
 
 
 **Analogy:** A lottery machine spits out a random numbered ball for each participant. The machine (generator) produces a fresh value each time it is called.
@@ -800,16 +660,6 @@ Random: 47 83 12 65 91 34 58 22
 **Complexity:** O(n). **WHY:** The generator function is called exactly n times. Each call is O(1) for simple generators.
 
 ### 10.3.6 std::remove and std::remove_if — The Erase-Remove Idiom
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-6-std-remove-and-std-remove-if-the-erase-remove-idiom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-6-std-remove-and-std-remove-if-the-erase-remove-idiom-handwritten.svg" alt="Handwritten: 10.3.6 std::remove and std::remove_if — The Erase-Remove Idiom" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-6-std-remove-and-std-remove-if-the-erase-remove-idiom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-6-std-remove-and-std-remove-if-the-erase-remove-idiom-diagram.svg" alt="Diagram: 10.3.6 std::remove and std::remove_if — The Erase-Remove Idiom" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-6-std-remove-and-std-remove-if-the-erase-remove-idiom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-6-std-remove-and-std-remove-if-the-erase-remove-idiom-sticky.svg" alt="Sticky Note: 10.3.6 std::remove and std::remove_if — The Erase-Remove Idiom" width="30%">
-</a>
 
 
 **Critical Insight:** `std::remove` does NOT erase elements. It **partitions** the range so that kept elements are at the front, and returns an iterator to the new logical end. The removed elements remain at the tail in unspecified state.
@@ -880,16 +730,6 @@ After remove_if odds: 2 4 6 8
 
 ### 10.3.7 std::unique — Remove Consecutive Duplicates
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-7-std-unique-remove-consecutive-duplicates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-7-std-unique-remove-consecutive-duplicates-handwritten.svg" alt="Handwritten: 10.3.7 std::unique — Remove Consecutive Duplicates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-7-std-unique-remove-consecutive-duplicates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-7-std-unique-remove-consecutive-duplicates-diagram.svg" alt="Diagram: 10.3.7 std::unique — Remove Consecutive Duplicates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-7-std-unique-remove-consecutive-duplicates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-3-7-std-unique-remove-consecutive-duplicates-sticky.svg" alt="Sticky Note: 10.3.7 std::unique — Remove Consecutive Duplicates" width="30%">
-</a>
-
 
 **Analogy:** You have a sorted deck of cards: A♠ A♠ A♠ K♠ K♠ Q♠ Q♠ Q♠ Q♠. You go through and keep only the first card of each rank. The result: A♠ K♠ Q♠.
 
@@ -932,16 +772,6 @@ Sort + unique: 1 2 3 4 5
 
 ### Additional Modifying Algorithms
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/additional-modifying-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/additional-modifying-algorithms-handwritten.svg" alt="Handwritten: Additional Modifying Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/additional-modifying-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/additional-modifying-algorithms-diagram.svg" alt="Diagram: Additional Modifying Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/additional-modifying-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/additional-modifying-algorithms-sticky.svg" alt="Sticky Note: Additional Modifying Algorithms" width="30%">
-</a>
-
 
 **C++ Code (reverse, rotate, random_shuffle):**
 ```cpp
@@ -982,16 +812,6 @@ Shuffle: 2 5 4 3 1
 Sorting rearranges elements into a specified order. The STL provides four sorting algorithms with different guarantees.
 
 ### 10.4.1 std::sort — Default Sort (Introsort)
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-1-std-sort-default-sort-introsort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-1-std-sort-default-sort-introsort-handwritten.svg" alt="Handwritten: 10.4.1 std::sort — Default Sort (Introsort)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-1-std-sort-default-sort-introsort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-1-std-sort-default-sort-introsort-diagram.svg" alt="Diagram: 10.4.1 std::sort — Default Sort (Introsort)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-1-std-sort-default-sort-introsort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-1-std-sort-default-sort-introsort-sticky.svg" alt="Sticky Note: 10.4.1 std::sort — Default Sort (Introsort)" width="30%">
-</a>
 
 
 **Analogy:** A mailroom clerk needs to sort 10,000 letters by zip code. They use a fast hybrid approach: start with QuickSort for speed, but if the partitions become too unbalanced (danger of O(n^2)), switch to HeapSort. For very small piles, use InsertionSort.
@@ -1047,16 +867,6 @@ By absolute: -1 -2 3 4 -5 8
 
 ### 10.4.2 std::stable_sort — Stable Sort (MergeSort + InsertionSort)
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-2-std-stable-sort-stable-sort-mergesort-insertionsort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-2-std-stable-sort-stable-sort-mergesort-insertionsort-handwritten.svg" alt="Handwritten: 10.4.2 std::stable_sort — Stable Sort (MergeSort + InsertionSort)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-2-std-stable-sort-stable-sort-mergesort-insertionsort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-2-std-stable-sort-stable-sort-mergesort-insertionsort-diagram.svg" alt="Diagram: 10.4.2 std::stable_sort — Stable Sort (MergeSort + InsertionSort)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-2-std-stable-sort-stable-sort-mergesort-insertionsort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-2-std-stable-sort-stable-sort-mergesort-insertionsort-sticky.svg" alt="Sticky Note: 10.4.2 std::stable_sort — Stable Sort (MergeSort + InsertionSort)" width="30%">
-</a>
-
 
 **Preserves relative order of equivalent elements.**
 
@@ -1109,16 +919,6 @@ Notice Bob comes before Diana (both 85), and Alice before Charlie (both 90) — 
 
 ### 10.4.3 std::partial_sort — Top N in Order
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-3-std-partial-sort-top-n-in-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-3-std-partial-sort-top-n-in-order-handwritten.svg" alt="Handwritten: 10.4.3 std::partial_sort — Top N in Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-3-std-partial-sort-top-n-in-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-3-std-partial-sort-top-n-in-order-diagram.svg" alt="Diagram: 10.4.3 std::partial_sort — Top N in Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-3-std-partial-sort-top-n-in-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-3-std-partial-sort-top-n-in-order-sticky.svg" alt="Sticky Note: 10.4.3 std::partial_sort — Top N in Order" width="30%">
-</a>
-
 
 **Places the top N elements in sorted order at the front. The rest are in unspecified order.**
 
@@ -1155,16 +955,6 @@ Top 3 scores: 95 92 91
 **Complexity:** O(n log k) where k = middle - first. **WHY:** Building the initial heap is O(n). Each of the k top elements requires a pop-heap operation taking O(log n). Total: O(n + k log n) = O(n log k) when k &lt;< n. This is significantly faster than full sort when k is small.
 
 ### 10.4.4 std::nth_element — Single Element in Correct Position
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-4-std-nth-element-single-element-in-correct-position-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-4-std-nth-element-single-element-in-correct-position-handwritten.svg" alt="Handwritten: 10.4.4 std::nth_element — Single Element in Correct Position" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-4-std-nth-element-single-element-in-correct-position-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-4-std-nth-element-single-element-in-correct-position-diagram.svg" alt="Diagram: 10.4.4 std::nth_element — Single Element in Correct Position" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-4-std-nth-element-single-element-in-correct-position-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-4-4-std-nth-element-single-element-in-correct-position-sticky.svg" alt="Sticky Note: 10.4.4 std::nth_element — Single Element in Correct Position" width="30%">
-</a>
 
 
 **Places exactly one element (the nth) at its sorted position. All elements before are ≤ it; all after are ≥ it. Neither side is sorted.**
@@ -1217,16 +1007,6 @@ Median: 5
 
 ### Dry Run — std::sort on {9, 3, 7, 1, 6, 2, 8, 4, 5, 0}
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-sort-on-9-3-7-1-6-2-8-4-5-0-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-sort-on-9-3-7-1-6-2-8-4-5-0-handwritten.svg" alt="Handwritten: Dry Run — std::sort on {9, 3, 7, 1, 6, 2, 8, 4, 5, 0}" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-sort-on-9-3-7-1-6-2-8-4-5-0-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-sort-on-9-3-7-1-6-2-8-4-5-0-diagram.svg" alt="Diagram: Dry Run — std::sort on {9, 3, 7, 1, 6, 2, 8, 4, 5, 0}" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-sort-on-9-3-7-1-6-2-8-4-5-0-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-sort-on-9-3-7-1-6-2-8-4-5-0-sticky.svg" alt="Sticky Note: Dry Run — std::sort on {9, 3, 7, 1, 6, 2, 8, 4, 5, 0}" width="30%">
-</a>
-
 
 | Step | Action | Range | Pivot | Partitioned State |
 |------|--------|-------|-------|-------------------|
@@ -1243,16 +1023,6 @@ Median: 5
 
 ### Dry Run — std::nth_element for Median on {7, 2, 9, 4, 1, 8, 5, 3, 6}
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-nth-element-for-median-on-7-2-9-4-1-8-5-3-6-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-nth-element-for-median-on-7-2-9-4-1-8-5-3-6-handwritten.svg" alt="Handwritten: Dry Run — std::nth_element for Median on {7, 2, 9, 4, 1, 8, 5, 3, 6}" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-nth-element-for-median-on-7-2-9-4-1-8-5-3-6-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-nth-element-for-median-on-7-2-9-4-1-8-5-3-6-diagram.svg" alt="Diagram: Dry Run — std::nth_element for Median on {7, 2, 9, 4, 1, 8, 5, 3, 6}" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-nth-element-for-median-on-7-2-9-4-1-8-5-3-6-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-std-nth-element-for-median-on-7-2-9-4-1-8-5-3-6-sticky.svg" alt="Sticky Note: Dry Run — std::nth_element for Median on {7, 2, 9, 4, 1, 8, 5, 3, 6}" width="30%">
-</a>
-
 
 Target: position 4 (0-indexed, the 5th element = median)
 
@@ -1264,16 +1034,6 @@ Target: position 4 (0-indexed, the 5th element = median)
 After partition, elements before position 4: {3,2,4,1} ≤ 5. Elements after: {8,7,9,6} ≥ 5. Neither side is sorted, but the median is at the correct position.
 
 ### Sorting Algorithm Comparison
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/sorting-algorithm-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/sorting-algorithm-comparison-handwritten.svg" alt="Handwritten: Sorting Algorithm Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/sorting-algorithm-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/sorting-algorithm-comparison-diagram.svg" alt="Diagram: Sorting Algorithm Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/sorting-algorithm-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/sorting-algorithm-comparison-sticky.svg" alt="Sticky Note: Sorting Algorithm Comparison" width="30%">
-</a>
 
 
 | Algorithm | Guarantee | Stable? | Memory | Use Case |
@@ -1288,16 +1048,6 @@ After partition, elements before position 4: {3,2,4,1} ≤ 5. Elements after: {8
 Binary search algorithms require a **sorted range**. They provide O(log n) lookup by repeatedly halving the search space.
 
 ### 10.5.1 std::lower_bound — First Element Not Less Than Value
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-1-std-lower-bound-first-element-not-less-than-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-1-std-lower-bound-first-element-not-less-than-value-handwritten.svg" alt="Handwritten: 10.5.1 std::lower_bound — First Element Not Less Than Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-1-std-lower-bound-first-element-not-less-than-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-1-std-lower-bound-first-element-not-less-than-value-diagram.svg" alt="Diagram: 10.5.1 std::lower_bound — First Element Not Less Than Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-1-std-lower-bound-first-element-not-less-than-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-1-std-lower-bound-first-element-not-less-than-value-sticky.svg" alt="Sticky Note: 10.5.1 std::lower_bound — First Element Not Less Than Value" width="30%">
-</a>
 
 
 **Analogy:** You have a sorted stack of exam papers graded 0-100. You want the first paper with grade ≥ 75. You open the middle — 68. Discard left half. Open middle of right half — 82. Discard right half. Continue until you hold exactly the first paper ≥ 75.
@@ -1364,16 +1114,6 @@ lower_bound(100) = end (all elements < 100)
 
 ### 10.5.2 std::upper_bound — First Element Greater Than Value
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-2-std-upper-bound-first-element-greater-than-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-2-std-upper-bound-first-element-greater-than-value-handwritten.svg" alt="Handwritten: 10.5.2 std::upper_bound — First Element Greater Than Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-2-std-upper-bound-first-element-greater-than-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-2-std-upper-bound-first-element-greater-than-value-diagram.svg" alt="Diagram: 10.5.2 std::upper_bound — First Element Greater Than Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-2-std-upper-bound-first-element-greater-than-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-2-std-upper-bound-first-element-greater-than-value-sticky.svg" alt="Sticky Note: 10.5.2 std::upper_bound — First Element Greater Than Value" width="30%">
-</a>
-
 
 **Analogy:** Same exam papers. You want the first paper with grade > 75. Binary search again, but this time the comparison is `mid <= value`.
 
@@ -1409,16 +1149,6 @@ Occurrences of 30: 3
 ```
 
 ### 10.5.3 std::binary_search — Existence Check
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-3-std-binary-search-existence-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-3-std-binary-search-existence-check-handwritten.svg" alt="Handwritten: 10.5.3 std::binary_search — Existence Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-3-std-binary-search-existence-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-3-std-binary-search-existence-check-diagram.svg" alt="Diagram: 10.5.3 std::binary_search — Existence Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-3-std-binary-search-existence-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-3-std-binary-search-existence-check-sticky.svg" alt="Sticky Note: 10.5.3 std::binary_search — Existence Check" width="30%">
-</a>
 
 
 **Simply returns whether the value exists in sorted range.** Implemented as `*lower_bound(...) == value`.
@@ -1456,16 +1186,6 @@ int main() {
 
 ### 10.5.4 std::equal_range — Complete Range of Equal Values
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-4-std-equal-range-complete-range-of-equal-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-4-std-equal-range-complete-range-of-equal-values-handwritten.svg" alt="Handwritten: 10.5.4 std::equal_range — Complete Range of Equal Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-4-std-equal-range-complete-range-of-equal-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-4-std-equal-range-complete-range-of-equal-values-diagram.svg" alt="Diagram: 10.5.4 std::equal_range — Complete Range of Equal Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-4-std-equal-range-complete-range-of-equal-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-5-4-std-equal-range-complete-range-of-equal-values-sticky.svg" alt="Sticky Note: 10.5.4 std::equal_range — Complete Range of Equal Values" width="30%">
-</a>
-
 
 **Returns a pair of iterators: `{lower_bound, upper_bound}` in one call.**
 
@@ -1499,16 +1219,6 @@ Count of 20: 3
 
 ### Dry Run — lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-lower-bound-30-on-10-20-30-30-30-40-50-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-lower-bound-30-on-10-20-30-30-30-40-50-handwritten.svg" alt="Handwritten: Dry Run — lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-lower-bound-30-on-10-20-30-30-30-40-50-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-lower-bound-30-on-10-20-30-30-30-40-50-diagram.svg" alt="Diagram: Dry Run — lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-lower-bound-30-on-10-20-30-30-30-40-50-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/dry-run-lower-bound-30-on-10-20-30-30-30-40-50-sticky.svg" alt="Sticky Note: Dry Run — lower_bound(30) on {10, 20, 30, 30, 30, 40, 50}" width="30%">
-</a>
-
 
 | Iteration | first | count | step | mid | *mid | *mid &lt; 30? | Action |
 |-----------|-------|-------|------|-----|------|------------|--------|
@@ -1520,16 +1230,6 @@ Count of 20: 3
 **Result:** Iterator to position 2 (first 30). Only 3 comparisons needed for n=7.
 
 ### Binary Search Complexity Analysis
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/binary-search-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/binary-search-complexity-analysis-handwritten.svg" alt="Handwritten: Binary Search Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/binary-search-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/binary-search-complexity-analysis-diagram.svg" alt="Diagram: Binary Search Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/binary-search-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/binary-search-complexity-analysis-sticky.svg" alt="Sticky Note: Binary Search Complexity Analysis" width="30%">
-</a>
 
 
 | Algorithm | Complexity | Comparisons | WHY |
@@ -1547,16 +1247,6 @@ Count of 20: 3
 Set operations require **sorted input** and produce **sorted output**. They operate on arbitrary ranges, not just std::set.
 
 ### 10.6.1 std::merge — Merge Two Sorted Ranges
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-1-std-merge-merge-two-sorted-ranges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-1-std-merge-merge-two-sorted-ranges-handwritten.svg" alt="Handwritten: 10.6.1 std::merge — Merge Two Sorted Ranges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-1-std-merge-merge-two-sorted-ranges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-1-std-merge-merge-two-sorted-ranges-diagram.svg" alt="Diagram: 10.6.1 std::merge — Merge Two Sorted Ranges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-1-std-merge-merge-two-sorted-ranges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-1-std-merge-merge-two-sorted-ranges-sticky.svg" alt="Sticky Note: 10.6.1 std::merge — Merge Two Sorted Ranges" width="30%">
-</a>
 
 
 **Analogy:** Two sorted piles of numbered cards. You compare the top card of each pile, take the smaller one, and place it on the output pile. Repeat until both piles are empty.
@@ -1592,16 +1282,6 @@ Merged: 1 2 3 4 5 6 7 8 9 10
 
 ### 10.6.2 std::set_union — Union of Two Sorted Ranges
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-2-std-set-union-union-of-two-sorted-ranges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-2-std-set-union-union-of-two-sorted-ranges-handwritten.svg" alt="Handwritten: 10.6.2 std::set_union — Union of Two Sorted Ranges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-2-std-set-union-union-of-two-sorted-ranges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-2-std-set-union-union-of-two-sorted-ranges-diagram.svg" alt="Diagram: 10.6.2 std::set_union — Union of Two Sorted Ranges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-2-std-set-union-union-of-two-sorted-ranges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-2-std-set-union-union-of-two-sorted-ranges-sticky.svg" alt="Sticky Note: 10.6.2 std::set_union — Union of Two Sorted Ranges" width="30%">
-</a>
-
 
 **C++ Code:**
 ```cpp
@@ -1631,16 +1311,6 @@ Union: 1 2 3 4 5 6 7
 ```
 
 ### 10.6.3 std::set_intersection — Common Elements
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-3-std-set-intersection-common-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-3-std-set-intersection-common-elements-handwritten.svg" alt="Handwritten: 10.6.3 std::set_intersection — Common Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-3-std-set-intersection-common-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-3-std-set-intersection-common-elements-diagram.svg" alt="Diagram: 10.6.3 std::set_intersection — Common Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-3-std-set-intersection-common-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-3-std-set-intersection-common-elements-sticky.svg" alt="Sticky Note: 10.6.3 std::set_intersection — Common Elements" width="30%">
-</a>
 
 
 **C++ Code:**
@@ -1672,16 +1342,6 @@ Intersection: 3 4 5
 
 ### 10.6.4 std::set_difference — Elements in First but Not Second
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-4-std-set-difference-elements-in-first-but-not-second-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-4-std-set-difference-elements-in-first-but-not-second-handwritten.svg" alt="Handwritten: 10.6.4 std::set_difference — Elements in First but Not Second" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-4-std-set-difference-elements-in-first-but-not-second-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-4-std-set-difference-elements-in-first-but-not-second-diagram.svg" alt="Diagram: 10.6.4 std::set_difference — Elements in First but Not Second" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-4-std-set-difference-elements-in-first-but-not-second-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-4-std-set-difference-elements-in-first-but-not-second-sticky.svg" alt="Sticky Note: 10.6.4 std::set_difference — Elements in First but Not Second" width="30%">
-</a>
-
 
 **C++ Code:**
 ```cpp
@@ -1711,16 +1371,6 @@ Difference: 1 2
 ```
 
 ### 10.6.5 std::set_symmetric_difference — Elements in Either but Not Both
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-5-std-set-symmetric-difference-elements-in-either-but-not-both-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-5-std-set-symmetric-difference-elements-in-either-but-not-both-handwritten.svg" alt="Handwritten: 10.6.5 std::set_symmetric_difference — Elements in Either but Not Both" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-5-std-set-symmetric-difference-elements-in-either-but-not-both-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-5-std-set-symmetric-difference-elements-in-either-but-not-both-diagram.svg" alt="Diagram: 10.6.5 std::set_symmetric_difference — Elements in Either but Not Both" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-5-std-set-symmetric-difference-elements-in-either-but-not-both-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-6-5-std-set-symmetric-difference-elements-in-either-but-not-both-sticky.svg" alt="Sticky Note: 10.6.5 std::set_symmetric_difference — Elements in Either but Not Both" width="30%">
-</a>
 
 
 **C++ Code:**
@@ -1752,16 +1402,6 @@ Symmetric difference: 1 2 6 7
 
 ### Set Operations Complexity
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/set-operations-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/set-operations-complexity-handwritten.svg" alt="Handwritten: Set Operations Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/set-operations-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/set-operations-complexity-diagram.svg" alt="Diagram: Set Operations Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/set-operations-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/set-operations-complexity-sticky.svg" alt="Sticky Note: Set Operations Complexity" width="30%">
-</a>
-
 
 | Operation | Complexity | WHY |
 |-----------|-----------|-----|
@@ -1774,16 +1414,6 @@ Symmetric difference: 1 2 6 7
 ## 10.7 Min / Max Algorithms
 
 ### 10.7.1 min, max, minmax — Single Pair Functions
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-1-min-max-minmax-single-pair-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-1-min-max-minmax-single-pair-functions-handwritten.svg" alt="Handwritten: 10.7.1 min, max, minmax — Single Pair Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-1-min-max-minmax-single-pair-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-1-min-max-minmax-single-pair-functions-diagram.svg" alt="Diagram: 10.7.1 min, max, minmax — Single Pair Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-1-min-max-minmax-single-pair-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-1-min-max-minmax-single-pair-functions-sticky.svg" alt="Sticky Note: 10.7.1 min, max, minmax — Single Pair Functions" width="30%">
-</a>
 
 
 ```cpp
@@ -1817,16 +1447,6 @@ min by abs: 3
 ```
 
 ### 10.7.2 min_element, max_element, minmax_element — Range Functions
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-2-min-element-max-element-minmax-element-range-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-2-min-element-max-element-minmax-element-range-functions-handwritten.svg" alt="Handwritten: 10.7.2 min_element, max_element, minmax_element — Range Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-2-min-element-max-element-minmax-element-range-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-2-min-element-max-element-minmax-element-range-functions-diagram.svg" alt="Diagram: 10.7.2 min_element, max_element, minmax_element — Range Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-2-min-element-max-element-minmax-element-range-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-7-2-min-element-max-element-minmax-element-range-functions-sticky.svg" alt="Sticky Note: 10.7.2 min_element, max_element, minmax_element — Range Functions" width="30%">
-</a>
 
 
 **C++ Code:**
@@ -1877,16 +1497,6 @@ Defined in `<numeric>`. These algorithms perform arithmetic reductions and trans
 
 ### 10.8.1 std::accumulate — Reduce (Fold Left)
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-1-std-accumulate-reduce-fold-left-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-1-std-accumulate-reduce-fold-left-handwritten.svg" alt="Handwritten: 10.8.1 std::accumulate — Reduce (Fold Left)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-1-std-accumulate-reduce-fold-left-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-1-std-accumulate-reduce-fold-left-diagram.svg" alt="Diagram: 10.8.1 std::accumulate — Reduce (Fold Left)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-1-std-accumulate-reduce-fold-left-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-1-std-accumulate-reduce-fold-left-sticky.svg" alt="Sticky Note: 10.8.1 std::accumulate — Reduce (Fold Left)" width="30%">
-</a>
-
 
 **Analogy:** You have a bucket (initial value 0). You pick up each number from the conveyor belt and add it to the bucket. At the end, the bucket contains the sum.
 
@@ -1934,16 +1544,6 @@ Concatenated: Hello World!
 
 ### 10.8.2 std::inner_product — Dot Product
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-2-std-inner-product-dot-product-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-2-std-inner-product-dot-product-handwritten.svg" alt="Handwritten: 10.8.2 std::inner_product — Dot Product" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-2-std-inner-product-dot-product-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-2-std-inner-product-dot-product-diagram.svg" alt="Diagram: 10.8.2 std::inner_product — Dot Product" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-2-std-inner-product-dot-product-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-2-std-inner-product-dot-product-sticky.svg" alt="Sticky Note: 10.8.2 std::inner_product — Dot Product" width="30%">
-</a>
-
 
 **Analogy:** Two vectors of prices and quantities. The total order value is price[0]×qty[0] + price[1]×qty[1] + ...
 
@@ -1984,16 +1584,6 @@ Matches: 3
 
 ### 10.8.3 std::partial_sum — Running Totals
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-3-std-partial-sum-running-totals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-3-std-partial-sum-running-totals-handwritten.svg" alt="Handwritten: 10.8.3 std::partial_sum — Running Totals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-3-std-partial-sum-running-totals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-3-std-partial-sum-running-totals-diagram.svg" alt="Diagram: 10.8.3 std::partial_sum — Running Totals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-3-std-partial-sum-running-totals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-3-std-partial-sum-running-totals-sticky.svg" alt="Sticky Note: 10.8.3 std::partial_sum — Running Totals" width="30%">
-</a>
-
 
 **C++ Code:**
 ```cpp
@@ -2033,16 +1623,6 @@ Partial products: 1 2 6 24 120
 
 ### 10.8.4 std::adjacent_difference — Differences Between Neighbors
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-4-std-adjacent-difference-differences-between-neighbors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-4-std-adjacent-difference-differences-between-neighbors-handwritten.svg" alt="Handwritten: 10.8.4 std::adjacent_difference — Differences Between Neighbors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-4-std-adjacent-difference-differences-between-neighbors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-4-std-adjacent-difference-differences-between-neighbors-diagram.svg" alt="Diagram: 10.8.4 std::adjacent_difference — Differences Between Neighbors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-4-std-adjacent-difference-differences-between-neighbors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-4-std-adjacent-difference-differences-between-neighbors-sticky.svg" alt="Sticky Note: 10.8.4 std::adjacent_difference — Differences Between Neighbors" width="30%">
-</a>
-
 
 **C++ Code:**
 ```cpp
@@ -2070,16 +1650,6 @@ Adjacent differences: 1 2 3 4 5
 ```
 
 ### 10.8.5 std::iota — Fill with Sequential Values (C++11)
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-5-std-iota-fill-with-sequential-values-c-11-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-5-std-iota-fill-with-sequential-values-c-11-handwritten.svg" alt="Handwritten: 10.8.5 std::iota — Fill with Sequential Values (C++11)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-5-std-iota-fill-with-sequential-values-c-11-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-5-std-iota-fill-with-sequential-values-c-11-diagram.svg" alt="Diagram: 10.8.5 std::iota — Fill with Sequential Values (C++11)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-5-std-iota-fill-with-sequential-values-c-11-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-8-5-std-iota-fill-with-sequential-values-c-11-sticky.svg" alt="Sticky Note: 10.8.5 std::iota — Fill with Sequential Values (C++11)" width="30%">
-</a>
 
 
 **C++ Code:**
@@ -2114,16 +1684,6 @@ iota 100: 100 101 102 103 104
 
 ### Numeric Algorithm Summary
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/numeric-algorithm-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/numeric-algorithm-summary-handwritten.svg" alt="Handwritten: Numeric Algorithm Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/numeric-algorithm-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/numeric-algorithm-summary-diagram.svg" alt="Diagram: Numeric Algorithm Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/numeric-algorithm-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/numeric-algorithm-summary-sticky.svg" alt="Sticky Note: Numeric Algorithm Summary" width="30%">
-</a>
-
 
 | Algorithm | Operation | Default Result |
 |-----------|-----------|----------------|
@@ -2138,16 +1698,6 @@ Lambda expressions (C++11) are inline callable objects that capture variables fr
 
 ### 10.9.1 Lambda Syntax
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-1-lambda-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-1-lambda-syntax-handwritten.svg" alt="Handwritten: 10.9.1 Lambda Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-1-lambda-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-1-lambda-syntax-diagram.svg" alt="Diagram: 10.9.1 Lambda Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-1-lambda-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-1-lambda-syntax-sticky.svg" alt="Sticky Note: 10.9.1 Lambda Syntax" width="30%">
-</a>
-
 
 ```cpp
 [capture](parameters) -> return_type { body };
@@ -2161,16 +1711,6 @@ Lambda expressions (C++11) are inline callable objects that capture variables fr
 | `{ body }` | Function body | `{ return a < b; }` |
 
 ### 10.9.2 Capture Modes
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-2-capture-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-2-capture-modes-handwritten.svg" alt="Handwritten: 10.9.2 Capture Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-2-capture-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-2-capture-modes-diagram.svg" alt="Diagram: 10.9.2 Capture Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-2-capture-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-2-capture-modes-sticky.svg" alt="Sticky Note: 10.9.2 Capture Modes" width="30%">
-</a>
 
 
 ```cpp
@@ -2214,16 +1754,6 @@ Evens: 5
 ```
 
 ### 10.9.3 Common Lambda + Algorithm Patterns
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-3-common-lambda-algorithm-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-3-common-lambda-algorithm-patterns-handwritten.svg" alt="Handwritten: 10.9.3 Common Lambda + Algorithm Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-3-common-lambda-algorithm-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-3-common-lambda-algorithm-patterns-diagram.svg" alt="Diagram: 10.9.3 Common Lambda + Algorithm Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-3-common-lambda-algorithm-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/10-9-3-common-lambda-algorithm-patterns-sticky.svg" alt="Sticky Note: 10.9.3 Common Lambda + Algorithm Patterns" width="30%">
-</a>
 
 
 **Pattern 1 — Sorting with Custom Key:**
@@ -2435,16 +1965,6 @@ Sum of squares of evens (sorted): 120
 
 ### Category Selection Guide
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/category-selection-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/category-selection-guide-handwritten.svg" alt="Handwritten: Category Selection Guide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/category-selection-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/category-selection-guide-diagram.svg" alt="Diagram: Category Selection Guide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/category-selection-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/category-selection-guide-sticky.svg" alt="Sticky Note: Category Selection Guide" width="30%">
-</a>
-
 
 ```
 Need to process data?
@@ -2477,16 +1997,6 @@ Need to process data?
 | **Partial result** | Full sort | Full sort | First k sorted | Only position n correct |
 
 ### Which to Choose?
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/which-to-choose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/which-to-choose-handwritten.svg" alt="Handwritten: Which to Choose?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/which-to-choose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/which-to-choose-diagram.svg" alt="Diagram: Which to Choose?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/which-to-choose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/which-to-choose-sticky.svg" alt="Sticky Note: Which to Choose?" width="30%">
-</a>
 
 
 ```cpp
@@ -2521,16 +2031,6 @@ int main() {
 
 ### Performance Insight (n = 10,000,000)
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/performance-insight-n-10-000-000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/performance-insight-n-10-000-000-handwritten.svg" alt="Handwritten: Performance Insight (n = 10,000,000)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/performance-insight-n-10-000-000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/performance-insight-n-10-000-000-diagram.svg" alt="Diagram: Performance Insight (n = 10,000,000)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/performance-insight-n-10-000-000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/performance-insight-n-10-000-000-sticky.svg" alt="Sticky Note: Performance Insight (n = 10,000,000)" width="30%">
-</a>
-
 
 | Algorithm | Relative Time | WHY |
 |-----------|-------------|-----|
@@ -2545,16 +2045,6 @@ int main() {
 Every STL algorithm documents its minimum iterator category requirement. Using an iterator that does not meet this requirement causes a **compile error**.
 
 ### The Five Iterator Categories
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-five-iterator-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-five-iterator-categories-handwritten.svg" alt="Handwritten: The Five Iterator Categories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-five-iterator-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-five-iterator-categories-diagram.svg" alt="Diagram: The Five Iterator Categories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-five-iterator-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-five-iterator-categories-sticky.svg" alt="Sticky Note: The Five Iterator Categories" width="30%">
-</a>
 
 
 ```
@@ -2572,16 +2062,6 @@ InputIterator  <-  ForwardIterator  <-  BidirectionalIterator  <-  RandomAccessI
 | **RandomAccess** | All Bidirectional + `it+n`, `it-n`, `it[n]`, `it1-it2`, `<`, `>` | Read/Write | `vector`, `deque`, `array`, `string` | `sort`, `nth_element`, `binary_search` |
 
 ### Algorithm to Iterator Category Mapping
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/algorithm-to-iterator-category-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/algorithm-to-iterator-category-mapping-handwritten.svg" alt="Handwritten: Algorithm to Iterator Category Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/algorithm-to-iterator-category-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/algorithm-to-iterator-category-mapping-diagram.svg" alt="Diagram: Algorithm to Iterator Category Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/algorithm-to-iterator-category-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/algorithm-to-iterator-category-mapping-sticky.svg" alt="Sticky Note: Algorithm to Iterator Category Mapping" width="30%">
-</a>
 
 
 ```cpp
@@ -2681,16 +2161,6 @@ std::transform(celsius.begin(), celsius.end(),
 
 ### When Raw Loops Are Acceptable
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-raw-loops-are-acceptable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-raw-loops-are-acceptable-handwritten.svg" alt="Handwritten: When Raw Loops Are Acceptable" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-raw-loops-are-acceptable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-raw-loops-are-acceptable-diagram.svg" alt="Diagram: When Raw Loops Are Acceptable" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-raw-loops-are-acceptable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-raw-loops-are-acceptable-sticky.svg" alt="Sticky Note: When Raw Loops Are Acceptable" width="30%">
-</a>
-
 
 1. **Complex control flow** — multiple break/continue conditions easier to read inline
 2. **Performance-critical hot path** — though algorithms usually compile to identical assembly
@@ -2699,46 +2169,16 @@ std::transform(celsius.begin(), celsius.end(),
 
 ### The Sean Parent Rule
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-sean-parent-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-sean-parent-rule-handwritten.svg" alt="Handwritten: The Sean Parent Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-sean-parent-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-sean-parent-rule-diagram.svg" alt="Diagram: The Sean Parent Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-sean-parent-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/the-sean-parent-rule-sticky.svg" alt="Sticky Note: The Sean Parent Rule" width="30%">
-</a>
-
 
 > If you see a for loop over a range, ask: could an algorithm express this more clearly?
 ## 10.14 Interview Corner
 
 ### Q1: Why does std::sort fail to compile for std::list?
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-does-std-sort-fail-to-compile-for-std-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-does-std-sort-fail-to-compile-for-std-list-handwritten.svg" alt="Handwritten: Why does std::sort fail to compile for std::list?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-does-std-sort-fail-to-compile-for-std-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-does-std-sort-fail-to-compile-for-std-list-diagram.svg" alt="Diagram: Why does std::sort fail to compile for std::list?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-does-std-sort-fail-to-compile-for-std-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-does-std-sort-fail-to-compile-for-std-list-sticky.svg" alt="Sticky Note: Why does std::sort fail to compile for std::list?" width="30%">
-</a>
-
 
 **Answer:** std::sort requires **RandomAccessIterators**, but std::list provides only **BidirectionalIterators**. RandomAccessIterators support `it + n` and `it - n` for pivot calculation during QuickSort partitioning. List iterators cannot jump — they can only step forward/backward one position at a time. std::list provides its own `list::sort()` member using MergeSort, which works with bidirectional iterators and is also stable.
 
 ### Q2: When would you use nth_element instead of sort + index?
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-would-you-use-nth-element-instead-of-sort-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-would-you-use-nth-element-instead-of-sort-index-handwritten.svg" alt="Handwritten: When would you use nth_element instead of sort + index?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-would-you-use-nth-element-instead-of-sort-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-would-you-use-nth-element-instead-of-sort-index-diagram.svg" alt="Diagram: When would you use nth_element instead of sort + index?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-would-you-use-nth-element-instead-of-sort-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-would-you-use-nth-element-instead-of-sort-index-sticky.svg" alt="Sticky Note: When would you use nth_element instead of sort + index?" width="30%">
-</a>
 
 
 **Answer:** When you need only the k-th smallest element (or median) without sorting the entire range. For n = 10,000,000:
@@ -2748,16 +2188,6 @@ std::transform(celsius.begin(), celsius.end(),
 Use cases: computing the **median**, finding **percentiles** (25th, 75th, 90th), splitting data at a **threshold** for divide-and-conquer algorithms, QuickSelect-based pivot selection.
 
 ### Q3: What is the erase-remove idiom and why is it necessary?
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/what-is-the-erase-remove-idiom-and-why-is-it-necessary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/what-is-the-erase-remove-idiom-and-why-is-it-necessary-handwritten.svg" alt="Handwritten: What is the erase-remove idiom and why is it necessary?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/what-is-the-erase-remove-idiom-and-why-is-it-necessary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/what-is-the-erase-remove-idiom-and-why-is-it-necessary-diagram.svg" alt="Diagram: What is the erase-remove idiom and why is it necessary?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/what-is-the-erase-remove-idiom-and-why-is-it-necessary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/what-is-the-erase-remove-idiom-and-why-is-it-necessary-sticky.svg" alt="Sticky Note: What is the erase-remove idiom and why is it necessary?" width="30%">
-</a>
 
 
 **Answer:** std::remove does NOT erase elements. It reorganizes the range so kept elements are at the front and returns an iterator to the new logical end. Removed elements remain at the tail in unspecified state.
@@ -2770,16 +2200,6 @@ v.erase(new_end, v.end());
 **WHY two steps:** (1) remove works with iterators only — it has no knowledge of the container's erase method. (2) The STL separates algorithms (operations) from containers (storage). (3) remove returns a "watermark" — erase acts on it. (4) This separation allows remove to work with arrays, std::string, std::vector, std::deque, etc.
 
 ### Q4: Compare lower_bound vs binary_search for finding values.
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/compare-lower-bound-vs-binary-search-for-finding-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/compare-lower-bound-vs-binary-search-for-finding-values-handwritten.svg" alt="Handwritten: Compare lower_bound vs binary_search for finding values." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/compare-lower-bound-vs-binary-search-for-finding-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/compare-lower-bound-vs-binary-search-for-finding-values-diagram.svg" alt="Diagram: Compare lower_bound vs binary_search for finding values." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/compare-lower-bound-vs-binary-search-for-finding-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/compare-lower-bound-vs-binary-search-for-finding-values-sticky.svg" alt="Sticky Note: Compare lower_bound vs binary_search for finding values." width="30%">
-</a>
 
 
 | Aspect | binary_search | lower_bound |
@@ -2804,16 +2224,6 @@ v.insert(pos, 35);  // v stays sorted: 10 20 30 30 30 35 40
 
 ### Q5: Why is std::accumulate initial value important for type deduction?
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-is-std-accumulate-initial-value-important-for-type-deduction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-is-std-accumulate-initial-value-important-for-type-deduction-handwritten.svg" alt="Handwritten: Why is std::accumulate initial value important for type deduction?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-is-std-accumulate-initial-value-important-for-type-deduction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-is-std-accumulate-initial-value-important-for-type-deduction-diagram.svg" alt="Diagram: Why is std::accumulate initial value important for type deduction?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-is-std-accumulate-initial-value-important-for-type-deduction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/why-is-std-accumulate-initial-value-important-for-type-deduction-sticky.svg" alt="Sticky Note: Why is std::accumulate initial value important for type deduction?" width="30%">
-</a>
-
 
 **Answer:** The initial value parameter determines the return type:
 
@@ -2836,16 +2246,6 @@ double sum = std::accumulate(vals.begin(), vals.end(), 0.0);
 
 ### Q6: How does std::sort avoid O(n^2) worst-case behavior?
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-does-std-sort-avoid-o-n-2-worst-case-behavior-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-does-std-sort-avoid-o-n-2-worst-case-behavior-handwritten.svg" alt="Handwritten: How does std::sort avoid O(n^2) worst-case behavior?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-does-std-sort-avoid-o-n-2-worst-case-behavior-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-does-std-sort-avoid-o-n-2-worst-case-behavior-diagram.svg" alt="Diagram: How does std::sort avoid O(n^2) worst-case behavior?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-does-std-sort-avoid-o-n-2-worst-case-behavior-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/how-does-std-sort-avoid-o-n-2-worst-case-behavior-sticky.svg" alt="Sticky Note: How does std::sort avoid O(n^2) worst-case behavior?" width="30%">
-</a>
-
 
 **Answer:** std::sort uses **Introsort**, a hybrid algorithm:
 1. **QuickSort** with median-of-3 partitioning for good pivot selection
@@ -2856,16 +2256,6 @@ double sum = std::accumulate(vals.begin(), vals.end(), 0.0);
 This guarantees O(n log n) worst-case while maintaining QuickSort's speed and cache-friendly behavior. Pure QuickSort degrades to O(n^2) on already-sorted data with naive pivot selection.
 
 ### Q7: When is std::for_each preferred over a range-based for loop?
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-is-std-for-each-preferred-over-a-range-based-for-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-is-std-for-each-preferred-over-a-range-based-for-loop-handwritten.svg" alt="Handwritten: When is std::for_each preferred over a range-based for loop?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-is-std-for-each-preferred-over-a-range-based-for-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-is-std-for-each-preferred-over-a-range-based-for-loop-diagram.svg" alt="Diagram: When is std::for_each preferred over a range-based for loop?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-is-std-for-each-preferred-over-a-range-based-for-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/when-is-std-for-each-preferred-over-a-range-based-for-loop-sticky.svg" alt="Sticky Note: When is std::for_each preferred over a range-based for loop?" width="30%">
-</a>
 
 
 **Answer:** for_each is useful when: (1) composing with other algorithms in a pipeline, (2) using an existing function object, (3) extracting accumulated state (C++17 returns the functor):
@@ -2882,16 +2272,6 @@ std::cout << c.count << '\n';  // 3
 
 ### Q8: Explain why std::partial_sort(first, middle, last) is O(n log k).
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/explain-why-std-partial-sort-first-middle-last-is-o-n-log-k-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/explain-why-std-partial-sort-first-middle-last-is-o-n-log-k-handwritten.svg" alt="Handwritten: Explain why std::partial_sort(first, middle, last) is O(n log k)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/explain-why-std-partial-sort-first-middle-last-is-o-n-log-k-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/explain-why-std-partial-sort-first-middle-last-is-o-n-log-k-diagram.svg" alt="Diagram: Explain why std::partial_sort(first, middle, last) is O(n log k)." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/explain-why-std-partial-sort-first-middle-last-is-o-n-log-k-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/explain-why-std-partial-sort-first-middle-last-is-o-n-log-k-sticky.svg" alt="Sticky Note: Explain why std::partial_sort(first, middle, last) is O(n log k)." width="30%">
-</a>
-
 
 **Answer:** The algorithm:
 1. Builds a max-heap of the first k elements: O(k)
@@ -2903,16 +2283,6 @@ Total: O(k + (n-k) log k + k log k) = O(n log k). When k is small (e.g., top 10 
 ## 10.15 Applications in Real Systems
 
 ### std::sort in Databases
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-sort-in-databases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-sort-in-databases-handwritten.svg" alt="Handwritten: std::sort in Databases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-sort-in-databases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-sort-in-databases-diagram.svg" alt="Diagram: std::sort in Databases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-sort-in-databases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-sort-in-databases-sticky.svg" alt="Sticky Note: std::sort in Databases" width="30%">
-</a>
 
 
 Database engines use sorting for ORDER BY, GROUP BY aggregation, B-tree index creation, merge join (both inputs sorted by key), and deduplication.
@@ -2971,16 +2341,6 @@ Top 3 results:
 ```
 
 ### std::transform in ETL Pipelines
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-transform-in-etl-pipelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-transform-in-etl-pipelines-handwritten.svg" alt="Handwritten: std::transform in ETL Pipelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-transform-in-etl-pipelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-transform-in-etl-pipelines-diagram.svg" alt="Diagram: std::transform in ETL Pipelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-transform-in-etl-pipelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-transform-in-etl-pipelines-sticky.svg" alt="Sticky Note: std::transform in ETL Pipelines" width="30%">
-</a>
 
 
 Extract-Transform-Load pipelines use transform for data cleaning and normalization:
@@ -3043,16 +2403,6 @@ Charlie | charlie@example.com | 78
 
 ### std::accumulate in Financial Calculations
 
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-accumulate-in-financial-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-accumulate-in-financial-calculations-handwritten.svg" alt="Handwritten: std::accumulate in Financial Calculations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-accumulate-in-financial-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-accumulate-in-financial-calculations-diagram.svg" alt="Diagram: std::accumulate in Financial Calculations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-accumulate-in-financial-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-accumulate-in-financial-calculations-sticky.svg" alt="Sticky Note: std::accumulate in Financial Calculations" width="30%">
-</a>
-
 
 ```cpp
 #include <numeric>
@@ -3103,16 +2453,6 @@ MA(3): 101 102.667 105.333 107.667 108.333
 ```
 
 ### std::set_intersection in Recommendation Systems
-
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-set-intersection-in-recommendation-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-set-intersection-in-recommendation-systems-handwritten.svg" alt="Handwritten: std::set_intersection in Recommendation Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-set-intersection-in-recommendation-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-set-intersection-in-recommendation-systems-diagram.svg" alt="Diagram: std::set_intersection in Recommendation Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-set-intersection-in-recommendation-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/10-stl-algorithms/std-set-intersection-in-recommendation-systems-sticky.svg" alt="Sticky Note: std::set_intersection in Recommendation Systems" width="30%">
-</a>
 
 
 ```cpp

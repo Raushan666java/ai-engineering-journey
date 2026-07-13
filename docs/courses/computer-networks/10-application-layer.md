@@ -78,16 +78,6 @@
 
 ### Chapter Roadmap
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -129,16 +119,6 @@ flowchart TD
 The application layer is Layer 7 of the OSI model and the top of the TCP/IP model. It provides network services directly to end-user applications. Two dominant architectures exist: **client-server** and **peer-to-peer (P2P)**.
 
 ### 10.1.1 Client-Server Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-handwritten.svg" alt="Handwritten: 10.1.1 Client-Server Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-diagram.svg" alt="Diagram: 10.1.1 Client-Server Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-1-client-server-architecture-sticky.svg" alt="Sticky Note: 10.1.1 Client-Server Architecture" width="30%">
-</a>
 
 
 **Real-World Analogy:** A restaurant kitchen (server) serves many diners (clients). Diners place orders and wait. The kitchen never eats; it only serves. If too many diners arrive, the kitchen is the bottleneck.
@@ -185,16 +165,6 @@ SERVER:
 
 ### 10.1.2 Peer-to-Peer (P2P) Architecture
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-handwritten.svg" alt="Handwritten: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-diagram.svg" alt="Diagram: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-2-peer-to-peer-p2p-architecture-sticky.svg" alt="Sticky Note: 10.1.2 Peer-to-Peer (P2P) Architecture" width="30%">
-</a>
-
 
 **Real-World Analogy:** A potluck dinner → every guest brings a dish. If you want food, you can get it from anyone. There is no central kitchen. The more guests arrive, the more food there is (self-scaling).
 
@@ -240,16 +210,6 @@ TRACKER:
 
 ### 10.1.3 Client-Server vs P2P Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-handwritten.svg" alt="Handwritten: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-diagram.svg" alt="Diagram: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-3-client-server-vs-p2p-comparison-table-sticky.svg" alt="Sticky Note: 10.1.3 Client-Server vs P2P Comparison Table" width="30%">
-</a>
-
 
 | Feature | Client-Server | Peer-to-Peer |
 |---------|---------------|-------------|
@@ -265,16 +225,6 @@ TRACKER:
 | Legal liability | Server operator liable | Harder to sue individuals |
 
 ### 10.1.4 Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-handwritten.svg" alt="Handwritten: 10.1.4 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-diagram.svg" alt="Diagram: 10.1.4 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-4-advantages-disadvantages-sticky.svg" alt="Sticky Note: 10.1.4 Advantages & Disadvantages" width="30%">
-</a>
 
 
 **Client-Server**
@@ -295,16 +245,6 @@ TRACKER:
 
 ### 10.1.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 10.1.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-diagram.svg" alt="Diagram: 10.1.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 10.1.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Architecture | Time to Serve N Clients | Space per Server | Why |
 |-------------|----------------------|-----------------|-----|
@@ -315,16 +255,6 @@ TRACKER:
 **Why it matters:** In client-server, the server handles all N clients, so CPU/memory grows linearly with the user base. In P2P, each new peer contributes resources, so total system capacity grows with demand → this is called "self-scaling." However, P2P has higher lookup overhead (DHT is O(log N) per lookup).
 
 ### 10.1.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-handwritten.svg" alt="Handwritten: 10.1.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-diagram.svg" alt="Diagram: 10.1.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-1-6-edge-cases-sticky.svg" alt="Sticky Note: 10.1.6 Edge Cases" width="30%">
-</a>
 
 
 - **Flash crowd (client-server):** Thousands of clients request simultaneously. Server may crash. Mitigation: auto-scaling groups, CDN caching, rate limiting.
@@ -340,16 +270,6 @@ TRACKER:
 HTTP is the foundation of data communication on the Web. It is a stateless, application-layer protocol operating over TCP (HTTP/1.x, HTTP/2) or QUIC (HTTP/3).
 
 ### 10.2.1 HTTP/1.0 and HTTP/1.1
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-handwritten.svg" alt="Handwritten: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-diagram.svg" alt="Diagram: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-1-http-1-0-and-http-1-1-sticky.svg" alt="Sticky Note: 10.2.1 HTTP/1.0 and HTTP/1.1" width="30%">
-</a>
 
 
 **Real-World Analogy:** HTTP/1.0 is like calling a store, asking for one item, hanging up, then calling again for the next item. HTTP/1.1 is like calling once and asking for several items in sequence on the same call.
@@ -634,16 +554,6 @@ if __name__ == "__main__":
 
 ### 10.2.2 HTTP/2
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-handwritten.svg" alt="Handwritten: 10.2.2 HTTP/2" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-diagram.svg" alt="Diagram: 10.2.2 HTTP/2" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-2-http-2-sticky.svg" alt="Sticky Note: 10.2.2 HTTP/2" width="30%">
-</a>
-
 
 **Real-World Analogy:** HTTP/2 is like a multi-lane highway in a single tunnel (one TCP connection). HTTP/1.1 is like a single-lane road → only one car at a time. HTTP/2 allows multiple cars (streams) to travel simultaneously in the same tunnel.
 
@@ -883,16 +793,6 @@ def build_get_request_frame(stream_id: int, path: str) -> Http2Frame:
 
 ### 10.2.3 HTTP/3
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-handwritten.svg" alt="Handwritten: 10.2.3 HTTP/3" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-diagram.svg" alt="Diagram: 10.2.3 HTTP/3" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-2-3-http-3-sticky.svg" alt="Sticky Note: 10.2.3 HTTP/3" width="30%">
-</a>
-
 
 **Real-World Analogy:** HTTP/3 is like having a separate tunnel for each package delivery. If one tunnel collapses, only the package inside it is delayed. HTTP/2 is like putting all packages in one tunnel → if the tunnel collapses, everything stops.
 
@@ -1061,16 +961,6 @@ class HTTPClient {
 
 ### 10.3.1 DNS Architecture
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-handwritten.svg" alt="Handwritten: 10.3.1 DNS Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-diagram.svg" alt="Diagram: 10.3.1 DNS Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-1-dns-architecture-sticky.svg" alt="Sticky Note: 10.3.1 DNS Architecture" width="30%">
-</a>
-
 
 DNS is a hierarchical, distributed database that maps domain names to IP addresses and other resources.
 
@@ -1117,16 +1007,6 @@ Root (.)
 | DNAME | Delegation Name | Redirect entire subtree (not single name) | Similar to CNAME but for subdomains |
 
 ### 10.3.2 DNS Resolution Process
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-handwritten.svg" alt="Handwritten: 10.3.2 DNS Resolution Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-diagram.svg" alt="Diagram: 10.3.2 DNS Resolution Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-2-dns-resolution-process-sticky.svg" alt="Sticky Note: 10.3.2 DNS Resolution Process" width="30%">
-</a>
 
 
 **Real-World Analogy:** You ask a receptionist (local resolver) to find someone in a large office building. The receptionist calls building reception (root), who says "floor 3 handles .com." Then floor 3's reception (TLD) says "room 305 handles example.com." Room 305 (authoritative) gives the answer. The receptionist writes it down for next time (caching).
@@ -1190,16 +1070,6 @@ FUNCTION dns_resolve(domain, type="A"):
 ```
 
 ### 10.3.3 DNS Security
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-handwritten.svg" alt="Handwritten: 10.3.3 DNS Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-diagram.svg" alt="Diagram: 10.3.3 DNS Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-3-3-dns-security-sticky.svg" alt="Sticky Note: 10.3.3 DNS Security" width="30%">
-</a>
 
 
 - **DNS Cache Poisoning (Kaminsky Attack):** Attacker sends forged DNS responses with extra records to poison resolver's cache. Mitigation: DNSSEC (RFC 4033), query source port randomization, TXID randomization.
@@ -1474,16 +1344,6 @@ class DNSResolver {
 
 ### 10.4.1 SMTP → Simple Mail Transfer Protocol
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-handwritten.svg" alt="Handwritten: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-diagram.svg" alt="Diagram: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-1-smtp-simple-mail-transfer-protocol-sticky.svg" alt="Sticky Note: 10.4.1 SMTP → Simple Mail Transfer Protocol" width="30%">
-</a>
-
 
 **Real-World Analogy:** SMTP is the postal service for email. You drop a letter at your local post office (SMTP client), which sends it to the recipient's post office (SMTP server), which holds it until the recipient picks it up (POP3/IMAP). The message may pass through multiple sorting facilities (MTAs) along the way (store-and-forward).
 
@@ -1722,16 +1582,6 @@ if __name__ == "__main__":
 
 ### 10.4.2 POP3 → Post Office Protocol v3
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-handwritten.svg" alt="Handwritten: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-diagram.svg" alt="Diagram: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-2-pop3-post-office-protocol-v3-sticky.svg" alt="Sticky Note: 10.4.2 POP3 → Post Office Protocol v3" width="30%">
-</a>
-
 
 **Real-World Analogy:** POP3 is like checking your PO box, taking everything, and leaving the box empty. You have the mail on your device, and the server has nothing.
 
@@ -1789,16 +1639,6 @@ FUNCTION pop3_retrieve(server, port, user, password):
 
 ### 10.4.3 IMAP → Internet Message Access Protocol
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-handwritten.svg" alt="Handwritten: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-diagram.svg" alt="Diagram: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-3-imap-internet-message-access-protocol-sticky.svg" alt="Sticky Note: 10.4.3 IMAP → Internet Message Access Protocol" width="30%">
-</a>
-
 
 **Real-World Analogy:** IMAP is like having your filing cabinet in the cloud. You open a drawer, look at file names, open the one you want, leave it there. Changes sync across all devices.
 
@@ -1850,16 +1690,6 @@ FUNCTION imap_fetch_inbox(server, port, user, password):
 ```
 
 ### 10.4.4 Email Protocols Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-handwritten.svg" alt="Handwritten: 10.4.4 Email Protocols Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-diagram.svg" alt="Diagram: 10.4.4 Email Protocols Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-4-4-email-protocols-comparison-sticky.svg" alt="Sticky Note: 10.4.4 Email Protocols Comparison" width="30%">
-</a>
 
 
 | Feature | SMTP | POP3 | IMAP |
@@ -1967,16 +1797,6 @@ class SMTPValidator {
 
 ### 10.5.1 FTP Architecture
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-handwritten.svg" alt="Handwritten: 10.5.1 FTP Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-diagram.svg" alt="Diagram: 10.5.1 FTP Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-1-ftp-architecture-sticky.svg" alt="Sticky Note: 10.5.1 FTP Architecture" width="30%">
-</a>
-
 
 FTP (RFC 959) uses two separate connections:
 - **Control connection:** Port 21. Carries commands (USER, PASS, LIST, RETR, STOR) and responses. Persistent throughout session.
@@ -2001,16 +1821,6 @@ FTP (RFC 959) uses two separate connections:
 | QUIT | End session | 221 Bye |
 
 ### 10.5.2 Active vs Passive Mode
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-handwritten.svg" alt="Handwritten: 10.5.2 Active vs Passive Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-diagram.svg" alt="Diagram: 10.5.2 Active vs Passive Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-5-2-active-vs-passive-mode-sticky.svg" alt="Sticky Note: 10.5.2 Active vs Passive Mode" width="30%">
-</a>
 
 
 **Active Mode:**
@@ -2462,16 +2272,6 @@ if __name__ == "__main__":
 **Real-World Analogy:** DHCP is like a hotel front desk. When a guest (device) checks in, the front desk assigns them a room number (IP address), tells them the hotel rules (subnet mask), where the exit is (gateway), and where the concierge is (DNS server). The room is rented for a limited time (lease).
 
 ### 10.7.1 DORA Process
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-handwritten.svg" alt="Handwritten: 10.7.1 DORA Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-diagram.svg" alt="Diagram: 10.7.1 DORA Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/10-7-1-dora-process-sticky.svg" alt="Sticky Note: 10.7.1 DORA Process" width="30%">
-</a>
 
 
 **Numbered Steps → DHCP DORA:**
@@ -3209,16 +3009,6 @@ HTTP/3 (QUIC):
 
 ### Protocol Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-handwritten.svg" alt="Handwritten: Protocol Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-diagram.svg" alt="Diagram: Protocol Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/protocol-comparison-table-sticky.svg" alt="Sticky Note: Protocol Comparison Table" width="30%">
-</a>
-
 
 | Protocol | Transport | Architecture | Port(s) | Persistent | Encryption | Model |
 |----------|-----------|-------------|---------|------------|------------|-------|
@@ -3238,16 +3028,6 @@ HTTP/3 (QUIC):
 
 ### Application Layer vs Other Layers
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-handwritten.svg" alt="Handwritten: Application Layer vs Other Layers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-diagram.svg" alt="Diagram: Application Layer vs Other Layers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-layer-vs-other-layers-sticky.svg" alt="Sticky Note: Application Layer vs Other Layers" width="30%">
-</a>
-
 
 | OSI Layer | Unit | Protocols | Addressing |
 |-----------|------|-----------|------------|
@@ -3260,16 +3040,6 @@ HTTP/3 (QUIC):
 | Physical (1) | Bit | 10BASE-T, 1000BASE-T | Signal |
 
 ### Application Domain Matrix
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-handwritten.svg" alt="Handwritten: Application Domain Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-diagram.svg" alt="Diagram: Application Domain Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/application-domain-matrix-sticky.svg" alt="Sticky Note: Application Domain Matrix" width="30%">
-</a>
 
 
 | Application Domain | Preferred Protocol | Why |
@@ -3285,16 +3055,6 @@ HTTP/3 (QUIC):
 | Microservices RPC | gRPC | High performance, streaming |
 
 ### Quick Reference: HTTP Status Codes
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-handwritten.svg" alt="Handwritten: Quick Reference: HTTP Status Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-diagram.svg" alt="Diagram: Quick Reference: HTTP Status Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/quick-reference-http-status-codes-sticky.svg" alt="Sticky Note: Quick Reference: HTTP Status Codes" width="30%">
-</a>
 
 
 | Code | Meaning | Typical Use |
@@ -3322,16 +3082,6 @@ HTTP/3 (QUIC):
 
 ### Q1: Difference between DNS Recursive and Iterative Resolution?
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-handwritten.svg" alt="Handwritten: Difference between DNS Recursive and Iterative Resolution?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-diagram.svg" alt="Diagram: Difference between DNS Recursive and Iterative Resolution?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-dns-recursive-and-iterative-resolution-sticky.svg" alt="Sticky Note: Difference between DNS Recursive and Iterative Resolution?" width="30%">
-</a>
-
 
 | Aspect | Recursive | Iterative |
 |--------|-----------|-----------|
@@ -3348,16 +3098,6 @@ HTTP/3 (QUIC):
 
 ### Q2: Difference between HTTP Persistent and Non-Persistent Connections?
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-handwritten.svg" alt="Handwritten: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-diagram.svg" alt="Diagram: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-http-persistent-and-non-persistent-connections-sticky.svg" alt="Sticky Note: Difference between HTTP Persistent and Non-Persistent Connections?" width="30%">
-</a>
-
 
 | Aspect | Non-Persistent (HTTP/1.0) | Persistent (HTTP/1.1) |
 |--------|--------------------------|----------------------|
@@ -3371,16 +3111,6 @@ HTTP/3 (QUIC):
 **Answer:** Non-persistent HTTP opens a new TCP connection for each object, requiring 2 RTT per object (TCP handshake + request/response). Persistent HTTP keeps the connection open for multiple requests, saving the TCP handshake overhead. HTTP/1.1 uses persistent connections by default, but still processes requests sequentially (response ordering). HTTP/2 improved this with true multiplexing.
 
 ### Q3: Difference between SMTP and HTTP?
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-handwritten.svg" alt="Handwritten: Difference between SMTP and HTTP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-diagram.svg" alt="Diagram: Difference between SMTP and HTTP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-smtp-and-http-sticky.svg" alt="Sticky Note: Difference between SMTP and HTTP?" width="30%">
-</a>
 
 
 | Aspect | SMTP | HTTP |
@@ -3397,16 +3127,6 @@ HTTP/3 (QUIC):
 **Answer:** SMTP is a **push** protocol → the sender initiates the connection and pushes the message toward the receiver. The message may pass through multiple relay servers (store-and-forward). HTTP is a **pull** protocol → the client initiates a connection and pulls data from the server. SMTP also has different message structure (RFC 5322: headers + blank line + body) and handles binary data differently (MIME encoding).
 
 ### Q4: Difference between WebSocket and HTTP?
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-handwritten.svg" alt="Handwritten: Difference between WebSocket and HTTP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-diagram.svg" alt="Diagram: Difference between WebSocket and HTTP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/difference-between-websocket-and-http-sticky.svg" alt="Sticky Note: Difference between WebSocket and HTTP?" width="30%">
-</a>
 
 
 | Aspect | HTTP | WebSocket |
@@ -3426,45 +3146,15 @@ HTTP/3 (QUIC):
 
 ### Q5: How does FTP Active Mode differ from Passive Mode?
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-handwritten.svg" alt="Handwritten: How does FTP Active Mode differ from Passive Mode?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-diagram.svg" alt="Diagram: How does FTP Active Mode differ from Passive Mode?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-ftp-active-mode-differ-from-passive-mode-sticky.svg" alt="Sticky Note: How does FTP Active Mode differ from Passive Mode?" width="30%">
-</a>
-
 
 **Answer:** In active mode, the client opens a random port, tells the server via PORT command, and the server connects from port 20 to the client's port. This fails behind NAT/firewall because the server cannot initiate a connection to the client's private IP. In passive mode (PASV), the server opens a random port and tells the client. The client then connects to the server's port for data. Since the client initiates both connections, NAT/firewall traversal works. Passive mode is standard for modern FTP, especially for clients behind NAT.
 
 ### Q6: What is DNS Caching and why is TTL important?
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-handwritten.svg" alt="Handwritten: What is DNS Caching and why is TTL important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-diagram.svg" alt="Diagram: What is DNS Caching and why is TTL important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-dns-caching-and-why-is-ttl-important-sticky.svg" alt="Sticky Note: What is DNS Caching and why is TTL important?" width="30%">
-</a>
-
 
 **Answer:** DNS caching stores resolved domain-IP mappings at various levels (browser, OS, resolver, ISP). TTL (Time-to-Live) in seconds controls how long a record stays cached. Short TTL (60s) means clients get updated IP quickly but increases DNS query load. Long TTL (86400s = 24h) reduces load but causes stale IPs during server migration. Best practice: lower TTL (300s) before planned IP changes, then raise back after.
 
 ### Q7: What is the N+1 Query Problem?
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-handwritten.svg" alt="Handwritten: What is the N+1 Query Problem?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-diagram.svg" alt="Diagram: What is the N+1 Query Problem?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-the-n-1-query-problem-sticky.svg" alt="Sticky Note: What is the N+1 Query Problem?" width="30%">
-</a>
 
 
 **Context:** Common in API/database design interviews.
@@ -3473,45 +3163,15 @@ HTTP/3 (QUIC):
 
 ### Q8: What is HTTP Request Smuggling?
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-handwritten.svg" alt="Handwritten: What is HTTP Request Smuggling?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-diagram.svg" alt="Diagram: What is HTTP Request Smuggling?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/what-is-http-request-smuggling-sticky.svg" alt="Sticky Note: What is HTTP Request Smuggling?" width="30%">
-</a>
-
 
 **Answer:** HTTP request smuggling exploits differences in how frontend (proxy/CDN) and backend servers parse HTTP messages, especially Content-Length vs Transfer-Encoding. An attacker crafts a request that the frontend sees as one request but the backend sees as two. This can bypass security controls, poison caches, or hijack user sessions. Mitigations: consistent parsing, HTTP/2 (binary framing avoids ambiguity), disable HTTP/1.1 downgrade.
 
 ### Q9: How does HTTPS differ from HTTP?
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-handwritten.svg" alt="Handwritten: How does HTTPS differ from HTTP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-diagram.svg" alt="Diagram: How does HTTPS differ from HTTP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/how-does-https-differ-from-http-sticky.svg" alt="Sticky Note: How does HTTPS differ from HTTP?" width="30%">
-</a>
-
 
 **Answer:** HTTPS = HTTP over TLS (SSL). TLS provides: encryption (no eavesdropping), authentication (verify server identity via certificates), integrity (tamper detection). HTTPS uses port 443. TLS handshake involves: ClientHello, ServerHello + certificate, key exchange, then encrypted HTTP. Performance overhead: ~1 extra RTT for TLS 1.3 (vs HTTP plaintext).
 
 ### Q10: Explain the Three-Way Handshake and its Application Layer Impact
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-handwritten.svg" alt="Handwritten: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-diagram.svg" alt="Diagram: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/explain-the-three-way-handshake-and-its-application-layer-impact-sticky.svg" alt="Sticky Note: Explain the Three-Way Handshake and its Application Layer Impact" width="30%">
-</a>
 
 
 **Answer:** The TCP three-way handshake (SYN, SYN-ACK, ACK) adds 1 RTT before any application data flows. For HTTP/1.1, this means 2 RTTs per new connection (handshake + request/response). HTTP/2 reduces impact by reusing one connection. HTTP/3 over QUIC combines handshake + TLS in 1 RTT. For short requests (API calls), the handshake overhead dominates latency.
@@ -3521,16 +3181,6 @@ HTTP/3 (QUIC):
 ## 10.14 Applications in Real Systems
 
 ### Nginx and Apache (HTTP Servers)
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-handwritten.svg" alt="Handwritten: Nginx and Apache (HTTP Servers)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-diagram.svg" alt="Diagram: Nginx and Apache (HTTP Servers)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/nginx-and-apache-http-servers-sticky.svg" alt="Sticky Note: Nginx and Apache (HTTP Servers)" width="30%">
-</a>
 
 
 | Feature | Nginx | Apache |
@@ -3548,16 +3198,6 @@ HTTP/3 (QUIC):
 
 ### Chrome HTTP/3 Implementation
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-handwritten.svg" alt="Handwritten: Chrome HTTP/3 Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-diagram.svg" alt="Diagram: Chrome HTTP/3 Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/chrome-http-3-implementation-sticky.svg" alt="Sticky Note: Chrome HTTP/3 Implementation" width="30%">
-</a>
-
 
 Chrome was the first major browser to enable HTTP/3 by default (2020). Implementation details:
 - Uses **quiche** (Cloudflare's QUIC implementation) or **QUICHE** (Google's).
@@ -3568,16 +3208,6 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 
 ### Cloudflare DNS (1.1.1.1)
 
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-handwritten.svg" alt="Handwritten: Cloudflare DNS (1.1.1.1)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-diagram.svg" alt="Diagram: Cloudflare DNS (1.1.1.1)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/cloudflare-dns-1-1-1-1-sticky.svg" alt="Sticky Note: Cloudflare DNS (1.1.1.1)" width="30%">
-</a>
-
 
 - **Anycast:** 1.1.1.1 is routed globally via BGP anycast to the nearest of 330+ data centers.
 - **Performance:** Median DNS lookup time: 10ms (vs ISP average: 30-80ms).
@@ -3587,16 +3217,6 @@ Chrome was the first major browser to enable HTTP/3 by default (2020). Implement
 - **DNSSEC:** Validates DNSSEC-signed responses.
 
 ### Sendmail vs Postfix (MTA)
-
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-handwritten.svg" alt="Handwritten: Sendmail vs Postfix (MTA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-diagram.svg" alt="Diagram: Sendmail vs Postfix (MTA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/10-application-layer/sendmail-vs-postfix-mta-sticky.svg" alt="Sticky Note: Sendmail vs Postfix (MTA)" width="30%">
-</a>
 
 
 | Feature | Sendmail | Postfix |

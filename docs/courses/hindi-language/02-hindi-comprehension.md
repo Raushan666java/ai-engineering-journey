@@ -47,23 +47,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)
-
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-handwritten.svg" alt="Handwritten: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-diagram.svg" alt="Diagram: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-1-what-is-unseen-passage-comprehension-sticky.svg" alt="Sticky Note: 2.1 अपठित गद्यांश क्या है? (What is Unseen Passage Comprehension?)" width="30%">
-</a>
-
 
 अपठित गद्यांश एक ऐसा गद्यांश होता है जिसे छात्र ने पहले कभी नहीं पढ़ा होता। सरकारी परीक्षाओं में हिंदी खंड में 2–3 अपठित गद्यांश दिए जाते हैं, जिन पर आधारित प्रश्न पूछे जाते हैं। यह छात्र की भाषा समझ, शब्द ज्ञान और विश्लेषण क्षमता का परीक्षण करता है।
 
@@ -76,17 +64,6 @@ By the end of this chapter, you will be able to:
 
 ### 2.2 गद्यांश के प्रकार (Types of Passages)
 
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-handwritten.svg" alt="Handwritten: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-diagram.svg" alt="Diagram: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-2-types-of-passages-sticky.svg" alt="Sticky Note: 2.2 गद्यांश के प्रकार (Types of Passages)" width="30%">
-</a>
-
-
 | प्रकार | विषय क्षेत्र | उदाहरण विषय |
 |--------|-------------|-------------|
 | **वैज्ञानिक** (Scientific) | विज्ञान, प्रौद्योगिकी | AI, Climate Change, Space |
@@ -97,17 +74,6 @@ By the end of this chapter, you will be able to:
 | **पर्यावरणीय** (Environmental) | पारिस्थितिकी, जलवायु | जल संरक्षण, वन्य जीव |
 
 ### 2.3 प्रश्नों के प्रकार (Types of Questions)
-
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-handwritten.svg" alt="Handwritten: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-diagram.svg" alt="Diagram: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-3-types-of-questions-sticky.svg" alt="Sticky Note: 2.3 प्रश्नों के प्रकार (Types of Questions)" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -162,17 +128,6 @@ flowchart TD
 
 ### 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)
 
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-handwritten.svg" alt="Handwritten: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-diagram.svg" alt="Diagram: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-4-strategy-for-unseen-passages-sticky.svg" alt="Sticky Note: 2.4 अपठित गद्यांश की रणनीति (Strategy for Unseen Passages)" width="30%">
-</a>
-
-
 ```mermaid
 flowchart LR
     A[गद्यांश को 30 सेकंड में स्किम करें] --> B[प्रश्न पहले पढ़ें]
@@ -198,17 +153,6 @@ flowchart LR
 
 ### 2.5 समय प्रबंधन (Time Management)
 
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-handwritten.svg" alt="Handwritten: 2.5 समय प्रबंधन (Time Management)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-diagram.svg" alt="Diagram: 2.5 समय प्रबंधन (Time Management)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-5-time-management-sticky.svg" alt="Sticky Note: 2.5 समय प्रबंधन (Time Management)" width="30%">
-</a>
-
-
 | चरण | समय |
 |------|------|
 | सर्वेक्षण (Survey) | 30 सेकंड |
@@ -218,17 +162,6 @@ flowchart LR
 | **कुल प्रति गद्यांश** | **7–9 मिनट** |
 
 ### 2.6 सामान्य गलतियाँ (Common Mistakes)
-
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-handwritten.svg" alt="Handwritten: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-diagram.svg" alt="Diagram: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/hindi-language/02-hindi-comprehension/2-6-common-mistakes-sticky.svg" alt="Sticky Note: 2.6 सामान्य गलतियाँ (Common Mistakes)" width="30%">
-</a>
-
 
 1. **बिना गद्यांश पढ़े उत्तर देना:** पिछले ज्ञान के आधार पर उत्तर चुनना — गलतियों का सबसे बड़ा कारण।
 2. **चरम शब्दों को अनदेखा करना:** हमेशा, कभी नहीं, पूर्णतः — ऐसे शब्दों वाले विकल्प प्रायः गलत होते हैं।

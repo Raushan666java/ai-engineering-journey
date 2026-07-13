@@ -83,16 +83,6 @@ flowchart LR
 
 ### Stack ADT
 
-<a href="../../../assets/images/diagrams/data-structures/05-stacks/stack-adt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/05-stacks/stack-adt-handwritten.svg" alt="Handwritten: Stack ADT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/05-stacks/stack-adt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/05-stacks/stack-adt-diagram.svg" alt="Diagram: Stack ADT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/05-stacks/stack-adt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/05-stacks/stack-adt-sticky.svg" alt="Sticky Note: Stack ADT" width="30%">
-</a>
-
 
 > **Pro Tip:** Array-based stacks are cache-friendly and faster for most use cases; linked-list stacks avoid resizing but have higher per-element overhead.
 

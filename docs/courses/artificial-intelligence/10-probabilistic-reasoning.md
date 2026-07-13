@@ -79,16 +79,6 @@ flowchart LR
 
 ### Real-World Analogy -- Diagnosing Car Problems
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-handwritten.svg" alt="Handwritten: Real-World Analogy -- Diagnosing Car Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-diagram.svg" alt="Diagram: Real-World Analogy -- Diagnosing Car Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-diagnosing-car-problems-sticky.svg" alt="Sticky Note: Real-World Analogy -- Diagnosing Car Problems" width="30%">
-</a>
-
 
 Imagine your car won't start. Multiple faults could be responsible: a dead battery, a failed starter motor, an empty fuel tank, or a blown fuse. You cannot see the root cause directly -- you can only observe symptoms: the dashboard lights dim when you turn the key, the engine doesn't crank, or you hear a clicking sound.
 
@@ -102,30 +92,10 @@ Probabilistic reasoning gives us the mathematical tools to quantify this kind of
 
 ### Real-World Analogy -- Family Medical History
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-handwritten.svg" alt="Handwritten: Real-World Analogy -- Family Medical History" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-diagram.svg" alt="Diagram: Real-World Analogy -- Family Medical History" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-medical-history-sticky.svg" alt="Sticky Note: Real-World Analogy -- Family Medical History" width="30%">
-</a>
-
 
 A doctor wants to assess a patient's risk of developing hereditary heart disease. Multiple factors interact: family history (genetic predisposition), lifestyle (diet, exercise), age, and cholesterol levels. Some factors directly influence others -- poor diet raises cholesterol, which increases heart disease risk. The BN structure captures which factors directly influence which outcomes, and the conditional probabilities quantify the strength of those influences. Once built, the network answers queries like "given high cholesterol and family history, what is the probability of heart disease?"
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 A **Bayesian network** (BN) is a pair $(G, \Theta)$ where:
@@ -137,16 +107,6 @@ The BN encodes the joint distribution via the **chain rule**:
 $$P(X_1, X_2, \ldots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$
 
 ### Algorithm: Constructing a Bayesian Network
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-handwritten.svg" alt="Handwritten: Algorithm: Constructing a Bayesian Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-diagram.svg" alt="Diagram: Algorithm: Constructing a Bayesian Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-constructing-a-bayesian-network-sticky.svg" alt="Sticky Note: Algorithm: Constructing a Bayesian Network" width="30%">
-</a>
 
 
 **Input:** Set of random variables $\{X_1, \ldots, X_n\}$, causal domain knowledge.
@@ -168,16 +128,6 @@ $$P(X_1, X_2, \ldots, X_n) = \prod_{i=1}^n P(X_i \mid \text{Parents}(X_i))$$
 
 ### Pseudocode
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
-
 
 ```
 function BUILD-BAYESIAN-NETWORK(vars, ordering, domain_knowledge) returns BN
@@ -194,16 +144,6 @@ function BUILD-BAYESIAN-NETWORK(vars, ordering, domain_knowledge) returns BN
 ```
 
 ### Step-by-Step Dry Run -- Alarm Network
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network" width="30%">
-</a>
 
 
 Construct the classic Alarm network (Pearl, 1988): **Burglary**, **Earthquake**, **Alarm**, **JohnCalls**, **MaryCalls**.
@@ -244,16 +184,6 @@ $$P(B, E, A, J, M) = P(B) P(E) P(A \mid B, E) P(J \mid A) P(M \mid A)$$
 Total parameters: $1 + 1 + 4 + 2 + 2 = 10$ versus $2^5 - 1 = 31$ for the full joint table -- a 68% reduction.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -361,30 +291,10 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why O(n * d^(k+1)):** Each of the $n$ variables requires a CPT with $d^k$ entries (where $d$ is the maximum domain size and $k$ is the maximum number of parents). Each entry stores one probability value. The total storage is $O(n \cdot d^{k+1})$. For binary variables ($d = 2$) with at most $k$ parents, this is $O(n \cdot 2^k)$. Without the BN structure, the full joint table requires $O(d^n)$ entries -- exponential in $n$. The BN reduces this to exponential only in $k$, the maximum **in-degree**, which is typically small ($k \ll n$).
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -396,16 +306,6 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 | Well-understood inference algorithms available | Sensitive to probability estimation errors in CPTs |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **No parents (root node):** CPT is just the prior distribution $P(X_i)$ -- a single probability vector. No edges incident to the node.
@@ -420,32 +320,12 @@ P(B=true, E=false, A=true, J=true, M=false) = 2.531e-04
 
 ### Real-World Analogy -- Weather and Clothing Choices
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-handwritten.svg" alt="Handwritten: Real-World Analogy -- Weather and Clothing Choices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-diagram.svg" alt="Diagram: Real-World Analogy -- Weather and Clothing Choices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-weather-and-clothing-choices-sticky.svg" alt="Sticky Note: Real-World Analogy -- Weather and Clothing Choices" width="30%">
-</a>
-
 
 Suppose you observe that someone is carrying an umbrella. You might infer it is likely raining. Now suppose you also observe that the ground is wet. Given that you already know the ground is wet, knowing they carry an umbrella adds little information about whether it is raining -- the umbrella and ground-wetness are **conditionally independent** given rain. Rain is the common cause of both observations; once you fix the cause, the effects become independent.
 
 This idea -- that variables become independent once we condition on their common causes -- is the backbone of Bayesian network factorization.
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 Variables $X$ and $Y$ are **conditionally independent** given a set of variables $\mathcal{Z}$, denoted $X \perp\!\!\!\perp Y \mid \mathcal{Z}$, if:
@@ -455,16 +335,6 @@ $$P(X, Y \mid \mathcal{Z}) = P(X \mid \mathcal{Z}) \, P(Y \mid \mathcal{Z})$$
 Equivalently: $P(X \mid Y, \mathcal{Z}) = P(X \mid \mathcal{Z})$ -- knowing $Y$ tells us nothing about $X$ once we know $\mathcal{Z}$.
 
 ### The Markov Blanket
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-handwritten.svg" alt="Handwritten: The Markov Blanket" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-diagram.svg" alt="Diagram: The Markov Blanket" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/the-markov-blanket-sticky.svg" alt="Sticky Note: The Markov Blanket" width="30%">
-</a>
 
 
 The **Markov blanket** of a node $X$ is the minimal set of nodes that renders $X$ conditionally independent of all other nodes in the network. It consists of:
@@ -477,16 +347,6 @@ $$P(X \mid \text{all other nodes}) = P(X \mid \text{MarkovBlanket}(X))$$
 This property is critical for Gibbs sampling (Section 10.5): to resample $X$, we only need its Markov blanket, not the full network.
 
 ### Algorithm: Testing Conditional Independence
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-handwritten.svg" alt="Handwritten: Algorithm: Testing Conditional Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-diagram.svg" alt="Diagram: Algorithm: Testing Conditional Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-testing-conditional-independence-sticky.svg" alt="Sticky Note: Algorithm: Testing Conditional Independence" width="30%">
-</a>
 
 
 **Input:** BN $G$, query variables $X, Y$, evidence set $\mathcal{Z}$.
@@ -504,16 +364,6 @@ This property is critical for Gibbs sampling (Section 10.5): to resample $X$, we
    $$\max_{x, y, z} |P(x, y \mid z) - P(x \mid z)P(y \mid z)| < \epsilon$$
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -535,16 +385,6 @@ function CHECK-CONDITIONAL-INDEPENDENCE(BN, X, Y, Z) returns boolean
 ```
 
 ### Step-by-Step Dry Run -- Alarm Network Independence
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-independence-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network Independence" width="30%">
-</a>
 
 
 Check if **JohnCalls** and **MaryCalls** are conditionally independent given **Alarm**.
@@ -579,16 +419,6 @@ P(J=true) * P(M=true) = 0.05214 * 0.01174 = 0.000612
 ```
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -667,30 +497,10 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why O(d^n):** The numeric test for conditional independence requires enumerating all possible assignments in the worst case. For $n$ binary variables, there are $2^n$ assignments. For each assignment, computing the joint probability involves multiplying $n$ CPT entries -- $O(n)$. Total: $O(n \cdot 2^n)$. This is why **d-separation** (a purely structural test, Section 10.3) is preferred -- it runs in $O(|E|)$ time where $|E|$ is the number of edges, completely avoiding exponential enumeration.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -701,16 +511,6 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 | Drives efficient inference algorithm design | Continuous variables complicate independence testing |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Empty evidence set** $\mathcal{Z} = \varnothing$: Reduces to marginal independence. $X \perp\!\!\!\perp Y$ means $P(X, Y) = P(X) P(Y)$.
@@ -724,32 +524,12 @@ JohnCalls _|_ MaryCalls: False -- Not independent at JohnCalls=1, MaryCalls=1, Z
 
 ### Real-World Analogy -- Family Genetics
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-handwritten.svg" alt="Handwritten: Real-World Analogy -- Family Genetics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-diagram.svg" alt="Diagram: Real-World Analogy -- Family Genetics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-family-genetics-sticky.svg" alt="Sticky Note: Real-World Analogy -- Family Genetics" width="30%">
-</a>
-
 
 Consider three generations: Grandparent (G), Parent (P), and Child (C). The genetic trait flows G -> P -> C. If we know Parent's genetic makeup, then knowing Grandparent's genetics tells us nothing additional about Child's genetics -- Child depends only on Parent. This is a **chain** (G -> P -> C), and conditioning on P blocks the flow of information.
 
 Now consider a trait influenced by two independent genes from Mother and Father, expressed in Child. If Child has the trait, suddenly Mother's and Father's genetics become dependent -- if Mother didn't pass the gene, Father must have. This is a **collider** (M -> C &lt;- F), and conditioning on C creates an association between M and F (explaining away).
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 **d-separation** (directional separation) is a graphical criterion for reading conditional independencies from a BN's DAG. A path between $X$ and $Y$ is **blocked** by evidence set $\mathcal{Z}$ if any node on the path satisfies:
@@ -761,16 +541,6 @@ Now consider a trait influenced by two independent genes from Mother and Father,
 $X$ and $Y$ are **d-separated** by $\mathcal{Z}$ if **every** undirected path between them is blocked. If d-separated, then $X \perp\!\!\!\perp Y \mid \mathcal{Z}$ is guaranteed.
 
 ### Algorithm: d-Separation Test
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-handwritten.svg" alt="Handwritten: Algorithm: d-Separation Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-diagram.svg" alt="Diagram: Algorithm: d-Separation Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-d-separation-test-sticky.svg" alt="Sticky Note: Algorithm: d-Separation Test" width="30%">
-</a>
 
 
 **Input:** Graph $G = (V, E)$, nodes $X, Y$, evidence set $\mathcal{Z} \subseteq V$.
@@ -790,16 +560,6 @@ $X$ and $Y$ are **d-separated** by $\mathcal{Z}$ if **every** undirected path be
 4. **Return** -- If all paths are blocked, return True ($X$ d-separated from $Y$). If any path is active, return False.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -849,16 +609,6 @@ function HAS-BLOCKING-TRIPLE(path, A, B, Z, ev_desc) returns boolean
 
 ### Step-by-Step Dry Run -- d-Separation in Alarm Network
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-d-separation-in-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- d-Separation in Alarm Network" width="30%">
-</a>
-
 
 **Scenario 1:** Check if **Burglary** _|_ **Earthquake** given **Alarm**.
 
@@ -895,16 +645,6 @@ This captures the intuition: if the alarm goes off, knowing whether a burglary o
 | 5 | Result | **Not d-separated** -- B and J are dependent |
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1023,30 +763,10 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why O(|V| + |E|):** The Bayes-Ball / BFS-based d-separation algorithm visits each node at most twice (once in 'up' direction, once in 'down' direction). For each visit, it examines outgoing and incoming edges. Total: $O(|V| + |E|)$ -- **linear** in the size of the graph. This makes d-separation vastly more efficient than numeric independence testing ($O(n \cdot 2^n)$), which is why it is the primary tool for reading independencies from a BN.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -1057,16 +777,6 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 | Enables efficient inference by identifying irrelevant variables | Implementation must correctly handle collider semantics (counterintuitive) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Same node:** $X = Y$. Trivially not d-separated (a node is always dependent with itself).
@@ -1082,30 +792,10 @@ OK B _|_ J | E? Should be FALSE: d-sep=False (expected=False)
 
 ### Real-World Analogy -- Accounting Ledger
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-handwritten.svg" alt="Handwritten: Real-World Analogy -- Accounting Ledger" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-diagram.svg" alt="Diagram: Real-World Analogy -- Accounting Ledger" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-accounting-ledger-sticky.svg" alt="Sticky Note: Real-World Analogy -- Accounting Ledger" width="30%">
-</a>
-
 
 Imagine you have a large accounting ledger with 50 columns of financial data. You want to know total revenue for Q3. The full ledger contains irrelevant columns (cost of goods sold, inventory turnover, etc.). Instead of computing everything, you **sum out** the irrelevant columns -- you eliminate them one by one, each time collapsing a table of numbers into a smaller table. This is exactly what variable elimination does: it sums out (marginalizes) irrelevant variables one at a time, never constructing the full joint distribution.
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 **Variable elimination (VE)** computes the posterior probability $P(Q \mid E = e)$ for query variables $Q$ given evidence $E$ by:
@@ -1115,16 +805,6 @@ Imagine you have a large accounting ledger with 50 columns of financial data. Yo
 The algorithm operates on **factors** -- multi-dimensional arrays that represent unnormalized distributions over subsets of variables.
 
 ### Algorithm: Variable Elimination
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-handwritten.svg" alt="Handwritten: Algorithm: Variable Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-diagram.svg" alt="Diagram: Algorithm: Variable Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-variable-elimination-sticky.svg" alt="Sticky Note: Algorithm: Variable Elimination" width="30%">
-</a>
 
 
 **Input:** BN with variables $\{X_1, \ldots, X_n\}$, query $Q$, evidence $E = e$.
@@ -1147,16 +827,6 @@ The algorithm operates on **factors** -- multi-dimensional arrays that represent
 5. **Normalize** -- Divide by the total probability of the evidence $P(E = e)$ (the normalization constant) to obtain $P(Q \mid E = e)$.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1188,16 +858,6 @@ function VARIABLE-ELIMINATION(BN, Q, E, e) returns distribution P(Q | E=e)
 ```
 
 ### Step-by-Step Dry Run -- Alarm Network Variable Elimination
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-alarm-network-variable-elimination-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Alarm Network Variable Elimination" width="30%">
-</a>
 
 
 **Query:** $P(B \mid J = \text{true}, M = \text{true})$ -- probability of burglary given both John and Mary call.
@@ -1262,16 +922,6 @@ Step 5: Multiply with P(B) and normalize
 **Result:** Given both John and Mary call, there is a 28.4% chance of a burglary -- much higher than the prior 0.1%.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1432,16 +1082,6 @@ P(Burglary | JohnCalls=true, MaryCalls=true):
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why O(n * exp(treewidth)):** The complexity of variable elimination depends critically on the **elimination order**. During each elimination step, the product of related factors creates an intermediate factor whose scope is the union of all variables in those factors. The size of this factor is exponential in its scope size. The **treewidth** of the BN (given an elimination order) is the size of the largest factor created minus 1. Complexity is $O(n \cdot d^{\text{tw}+1})$:
 - $n$ variables to eliminate.
@@ -1451,16 +1091,6 @@ P(Burglary | JohnCalls=true, MaryCalls=true):
 Finding the optimal elimination order is NP-hard, but heuristics (min-degree, min-fill) work well in practice. For low-treewidth networks (treewidth &lt;= 10), VE is practical. For high-treewidth networks, switch to approximate inference (Section 10.5).
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -1472,16 +1102,6 @@ Finding the optimal elimination order is NP-hard, but heuristics (min-degree, mi
 | Well-understood with efficient implementations | Memory blowup from large intermediate factors |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **No evidence:** $P(E = e) = 1$ (no conditioning). The normalization step is a no-op; the result is the marginal $P(Q)$.
@@ -1497,32 +1117,12 @@ Finding the optimal elimination order is NP-hard, but heuristics (min-degree, mi
 
 ### Real-World Analogy -- Opinion Polling
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-handwritten.svg" alt="Handwritten: Real-World Analogy -- Opinion Polling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-diagram.svg" alt="Diagram: Real-World Analogy -- Opinion Polling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/real-world-analogy-opinion-polling-sticky.svg" alt="Sticky Note: Real-World Analogy -- Opinion Polling" width="30%">
-</a>
-
 
 Imagine you want to estimate the average height of all people in a country. Instead of measuring everyone (impossible), you take a random sample of 1,000 people and compute their average. The sample average approximates the true average, and the approximation improves as you increase sample size.
 
 Gibbs sampling does the same for probability distributions. Instead of computing the exact posterior (expensive or impossible for large BNs), it generates samples from the posterior distribution and estimates probabilities from those samples. Each sample is generated by updating one variable at a time, conditioned on the current values of all other variables.
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 **Gibbs sampling** is a Markov Chain Monte Carlo (MCMC) method that generates a sequence of samples from the joint posterior distribution $P(X \mid E = e)$. Each iteration resamples one non-evidence variable $X_i$ from its conditional distribution given its **Markov blanket**:
@@ -1532,16 +1132,6 @@ $$P(X_i \mid \text{MarkovBlanket}(X_i)) \propto P(X_i \mid \text{Parents}(X_i)) 
 After a **burn-in** period, the samples converge to the true posterior.
 
 ### Algorithm: Gibbs Sampling
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-handwritten.svg" alt="Handwritten: Algorithm: Gibbs Sampling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-diagram.svg" alt="Diagram: Algorithm: Gibbs Sampling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/algorithm-gibbs-sampling-sticky.svg" alt="Sticky Note: Algorithm: Gibbs Sampling" width="30%">
-</a>
 
 
 **Input:** BN, evidence $E = e$, number of samples $N$, burn-in $B$.
@@ -1567,16 +1157,6 @@ After a **burn-in** period, the samples converge to the true posterior.
 4. **Estimate** -- For each query $P(Q = q \mid E = e)$, compute the fraction of samples (after burn-in) where $Q = q$.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1606,16 +1186,6 @@ function GIBBS-SAMPLING(BN, evidence, N, B) returns samples
 ```
 
 ### Step-by-Step Dry Run -- Gibbs on Alarm Network
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/step-by-step-dry-run-gibbs-on-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run -- Gibbs on Alarm Network" width="30%">
-</a>
 
 
 **Evidence:** $J=1, M=1$. **Non-evidence:** $B, E, A$.
@@ -1659,16 +1229,6 @@ function GIBBS-SAMPLING(BN, evidence, N, B) returns samples
 **Estimate:** $P(B=1 \mid J=1, M=1) \approx 4/10 = 0.40$ (True value: 0.284 -- with N=10, error is large. Increasing N to 10,000 gives ~ 0.285.)
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1782,16 +1342,6 @@ Error: 0.0017
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why O(N * M * K):** Each Gibbs iteration resamples each of $M$ non-evidence variables. For each variable, computing the Markov blanket probability involves looking up its own CPT plus the CPTs of its children -- $O(K)$ operations where $K$ is the number of variables in the Markov blanket. With $N$ samples and $B$ burn-in:
 - Burn-in: $O(B \cdot M \cdot K)$
@@ -1801,16 +1351,6 @@ Total: $O((B+N) \cdot M \cdot K)$
 This is **linear** in the graph size, unlike variable elimination which is exponential in treewidth. This makes Gibbs sampling the method of choice for large BNs.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -1822,16 +1362,6 @@ This is **linear** in the graph size, unlike variable elimination which is expon
 | Memory efficient (stores only current state) | Slow mixing for tightly coupled variables |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Deterministic nodes:** If a variable is deterministic given its parents ($P=0$ or $1$), the Markov blanket probability is also 0 or 1. The sampler may get stuck (never flips that variable).
@@ -1945,16 +1475,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Q1: How do you know when MCMC (Gibbs sampling) has converged?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-handwritten.svg" alt="Handwritten: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-diagram.svg" alt="Diagram: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-know-when-mcmc-gibbs-sampling-has-converged-sticky.svg" alt="Sticky Note: How do you know when MCMC (Gibbs sampling) has converged?" width="30%">
-</a>
-
 
 **Answer:** Convergence diagnosis is critical because MCMC may appear to converge prematurely. Standard approaches:
 
@@ -1975,16 +1495,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Q2: Can Bayesian network structure be learned from data? What are the main challenges?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-handwritten.svg" alt="Handwritten: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-diagram.svg" alt="Diagram: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/can-bayesian-network-structure-be-learned-from-data-what-are-the-main-challenges-sticky.svg" alt="Sticky Note: Can Bayesian network structure be learned from data? What are the main challenges?" width="30%">
-</a>
-
 
 **Answer:** Yes, BN structure learning from data is an active research area with three main paradigms:
 
@@ -2001,16 +1511,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 - **Computational cost:** Finding the optimal DAG is NP-hard. Even with greedy search, computing BIC for each candidate structure requires estimating parameters.
 
 ### Q3: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-handwritten.svg" alt="Handwritten: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-diagram.svg" alt="Diagram: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/how-do-you-perform-inference-in-very-large-bayesian-networks-hundreds-to-thousands-of-nodes-sticky.svg" alt="Sticky Note: How do you perform inference in very large Bayesian networks (hundreds to thousands of nodes)?" width="30%">
-</a>
 
 
 **Answer:** For large BNs, exact inference is impossible (treewidth grows with network size). Practical strategies:
@@ -2035,16 +1535,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Medical Diagnosis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-handwritten.svg" alt="Handwritten: Medical Diagnosis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-diagram.svg" alt="Diagram: Medical Diagnosis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/medical-diagnosis-sticky.svg" alt="Sticky Note: Medical Diagnosis" width="30%">
-</a>
-
 
 **System:** PathFinder (Heckerman, 1992) -- a Bayesian network for diagnosing lymph-node pathology.
 - Network: ~60 nodes, each representing a disease or finding.
@@ -2055,16 +1545,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 **Modern use:** Bayesian networks power clinical decision support systems in radiology (CAD), ICU monitoring (detecting sepsis onset), and genomics (identifying disease-gene associations from GWAS data).
 
 ### Fault Diagnosis
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-handwritten.svg" alt="Handwritten: Fault Diagnosis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-diagram.svg" alt="Diagram: Fault Diagnosis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/fault-diagnosis-sticky.svg" alt="Sticky Note: Fault Diagnosis" width="30%">
-</a>
 
 
 **System:** Microsoft's printer fault diagnosis (Windows Troubleshooter).
@@ -2079,16 +1559,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 
 ### Bioinformatics
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-handwritten.svg" alt="Handwritten: Bioinformatics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-diagram.svg" alt="Diagram: Bioinformatics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/bioinformatics-sticky.svg" alt="Sticky Note: Bioinformatics" width="30%">
-</a>
-
 
 **System:** Gene regulatory network inference.
 - Network: Nodes = genes, edges = regulatory relationships (activation/repression).
@@ -2099,16 +1569,6 @@ Where $d$ = number of parameters, $N$ = sample size.
 **Key challenges:** The number of genes ($n$) far exceeds the number of samples ($N$) -- the $n \gg N$ problem. Regularization (sparsity priors) and pathway-level aggregation (grouping genes into pathways) mitigate this.
 
 ### Other Real-World Applications
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-handwritten.svg" alt="Handwritten: Other Real-World Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-diagram.svg" alt="Diagram: Other Real-World Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/10-probabilistic-reasoning/other-real-world-applications-sticky.svg" alt="Sticky Note: Other Real-World Applications" width="30%">
-</a>
 
 
 | Domain | Application | BN Size | Inference Method |

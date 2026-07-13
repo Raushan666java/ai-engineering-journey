@@ -83,32 +83,12 @@ flowchart LR
 
 ### 2.1 Introduction to Virtualization
 
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-handwritten.svg" alt="Handwritten: 2.1 Introduction to Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-diagram.svg" alt="Diagram: 2.1 Introduction to Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-1-introduction-to-virtualization-sticky.svg" alt="Sticky Note: 2.1 Introduction to Virtualization" width="30%">
-</a>
-
 
 Virtualization is the process of creating a software-based, virtual version of a resource, such as a server, storage device, network, or operating system. It abstracts the physical hardware, allowing multiple virtual resources to share the same physical infrastructure. Virtualization is the enabling technology that makes cloud computing possible, as it allows cloud providers to partition physical resources among multiple tenants efficiently and securely.
 
 The concept of virtualization dates to the 1960s with IBM's CP-40 and CP-67 mainframe systems, which allowed multiple operating systems to run on a single mainframe. The technology remained largely in the mainframe world until the late 1990s when VMware introduced x86 virtualization for commodity hardware. This breakthrough made virtualization accessible to the broader computing industry and laid the groundwork for modern cloud computing.
 
 ### 2.2 Hypervisors
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-handwritten.svg" alt="Handwritten: 2.2 Hypervisors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-diagram.svg" alt="Diagram: 2.2 Hypervisors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-2-hypervisors-sticky.svg" alt="Sticky Note: 2.2 Hypervisors" width="30%">
-</a>
 
 
 A hypervisor, also called a virtual machine monitor (VMM), is the software layer that creates and runs virtual machines by abstracting the physical hardware. It sits between the physical hardware and the virtual machines, managing the allocation of physical resources to each VM and ensuring isolation between VMs.
@@ -128,16 +108,6 @@ Oracle VirtualBox is a popular open-source Type 2 hypervisor supporting Windows,
 VMware Workstation and VMware Fusion are Type 2 hypervisors for Windows/Linux and macOS respectively. They offer advanced features such as Unity mode, which integrates guest applications into the host desktop, and support for complex networking configurations.
 
 ### 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-handwritten.svg" alt="Handwritten: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-diagram.svg" alt="Diagram: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-3-full-virtualization-vs-paravirtualization-vs-hardware-assisted-sticky.svg" alt="Sticky Note: 2.3 Full Virtualization vs Paravirtualization vs Hardware-Assisted" width="30%">
-</a>
 
 
 ```mermaid
@@ -175,16 +145,6 @@ Modern hypervisors use a hybrid approach. For most operations, hardware-assisted
 
 ### 2.4 KVM vs Xen vs VMware
 
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-handwritten.svg" alt="Handwritten: 2.4 KVM vs Xen vs VMware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-diagram.svg" alt="Diagram: 2.4 KVM vs Xen vs VMware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-4-kvm-vs-xen-vs-vmware-sticky.svg" alt="Sticky Note: 2.4 KVM vs Xen vs VMware" width="30%">
-</a>
-
 
 | Feature | KVM | Xen | VMware ESXi |
 |---------|-----|-----|-------------|
@@ -201,16 +161,6 @@ Modern hypervisors use a hybrid approach. For most operations, hardware-assisted
 KVM dominates public cloud because it is open source, integrated into Linux (leverages existing kernel subsystems), and provides excellent performance with virtio drivers. AWS built its Nitro hypervisor on KVM. VMware dominates enterprise on-premises virtualization because of its mature management tooling (vCenter, vSphere) and advanced features (vMotion, DRS, HA).
 
 ### 2.5 Server Virtualization
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-handwritten.svg" alt="Handwritten: 2.5 Server Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-diagram.svg" alt="Diagram: 2.5 Server Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-5-server-virtualization-sticky.svg" alt="Sticky Note: 2.5 Server Virtualization" width="30%">
-</a>
 
 
 Server virtualization partitions a physical server into multiple virtual servers, each running its own operating system and applications. This consolidation dramatically improves hardware utilization. Typical on-premises servers run at 5-15% CPU utilization; virtualization can increase this to 60-80% or higher while maintaining application performance.
@@ -266,16 +216,6 @@ Annual Savings: $6,000
 
 ### 2.6 Storage Virtualization
 
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-handwritten.svg" alt="Handwritten: 2.6 Storage Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-diagram.svg" alt="Diagram: 2.6 Storage Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-6-storage-virtualization-sticky.svg" alt="Sticky Note: 2.6 Storage Virtualization" width="30%">
-</a>
-
 
 Storage virtualization abstracts physical storage resources into a unified logical storage pool. This allows storage to be provisioned, managed, and scaled independently from the physical storage hardware.
 
@@ -286,16 +226,6 @@ File-level virtualization presents a unified file system interface across multip
 Object storage virtualization abstracts storage at the object level, where data is stored as objects with unique identifiers and metadata, rather than as files in a hierarchy. Object storage is the foundation of cloud storage services such as AWS S3, Azure Blob Storage, and Google Cloud Storage.
 
 ### 2.7 Network Virtualization
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-handwritten.svg" alt="Handwritten: 2.7 Network Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-diagram.svg" alt="Diagram: 2.7 Network Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-7-network-virtualization-sticky.svg" alt="Sticky Note: 2.7 Network Virtualization" width="30%">
-</a>
 
 
 Network virtualization abstracts physical network hardware (switches, routers, firewalls, load balancers) into software-defined logical networks. This enables the creation of isolated virtual networks on top of shared physical infrastructure.
@@ -309,16 +239,6 @@ Virtual eXtensible LANs (VXLANs) overcome VLAN limitations by using MAC-in-UDP e
 Network functions virtualization (NFV) replaces dedicated network appliances (routers, firewalls, load balancers, WAN optimizers) with software running on commodity hardware. This enables dynamic provisioning, scaling, and placement of network functions. Examples include virtual firewalls (pfSense, VyOS), virtual routers, and virtual load balancers.
 
 ### 2.8 Containers vs Virtual Machines
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-handwritten.svg" alt="Handwritten: 2.8 Containers vs Virtual Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-diagram.svg" alt="Diagram: 2.8 Containers vs Virtual Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-8-containers-vs-virtual-machines-sticky.svg" alt="Sticky Note: 2.8 Containers vs Virtual Machines" width="30%">
-</a>
 
 
 Containers provide operating-system-level virtualization, where multiple isolated user-space instances share the same kernel. Unlike VMs, containers do not include a guest operating system; they package only the application and its dependencies (libraries, binaries, configuration files).
@@ -364,16 +284,6 @@ graph TB
 
 ### 2.9 Docker Architecture
 
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-handwritten.svg" alt="Handwritten: 2.9 Docker Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-diagram.svg" alt="Diagram: 2.9 Docker Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-9-docker-architecture-sticky.svg" alt="Sticky Note: 2.9 Docker Architecture" width="30%">
-</a>
-
 
 Docker is the dominant container platform. Its layered architecture separates client operations from container management:
 
@@ -409,16 +319,6 @@ CMD ["node", "app.js"]  # Layer 6: startup command (0B - metadata)
 Layers are cached: rebuilding after changing `src/` only rebuilds Layer 5 and later. This makes Docker builds extremely efficient for development iteration.
 
 ### 2.10 Namespaces and Control Groups
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-handwritten.svg" alt="Handwritten: 2.10 Namespaces and Control Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-diagram.svg" alt="Diagram: 2.10 Namespaces and Control Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-10-namespaces-and-control-groups-sticky.svg" alt="Sticky Note: 2.10 Namespaces and Control Groups" width="30%">
-</a>
 
 
 Linux kernel namespaces provide isolation by giving each container its own view of system resources:
@@ -479,16 +379,6 @@ PIDs: 128 max processes
 
 ### 2.11 Virtualization vs Bare Metal
 
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-handwritten.svg" alt="Handwritten: 2.11 Virtualization vs Bare Metal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-diagram.svg" alt="Diagram: 2.11 Virtualization vs Bare Metal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-11-virtualization-vs-bare-metal-sticky.svg" alt="Sticky Note: 2.11 Virtualization vs Bare Metal" width="30%">
-</a>
-
 
 Bare-metal servers provide dedicated physical hardware without a hypervisor layer. They eliminate the virtualization overhead entirely, offering maximum performance for CPU-intensive, I/O-intensive, or latency-sensitive workloads.
 
@@ -499,16 +389,6 @@ Bare-metal servers provide dedicated physical hardware without a hypervisor laye
 Many cloud providers offer both options. AWS offers bare-metal EC2 instances (i3.metal, m5.metal) for workloads requiring direct hardware access. Azure offers bare-metal instances in certain series. The choice depends on workload requirements, with the majority of cloud workloads benefiting from virtualization's flexibility.
 
 ### 2.12 Performance Considerations
-
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-handwritten.svg" alt="Handwritten: 2.12 Performance Considerations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-diagram.svg" alt="Diagram: 2.12 Performance Considerations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/02-virtualization/2-12-performance-considerations-sticky.svg" alt="Sticky Note: 2.12 Performance Considerations" width="30%">
-</a>
 
 
 **CPU Overhead.** Hypervisors introduce minimal CPU overhead for compute-bound workloads, typically less than 5% with hardware-assisted virtualization. CPU-intensive applications such as scientific computing and video encoding experience negligible degradation.

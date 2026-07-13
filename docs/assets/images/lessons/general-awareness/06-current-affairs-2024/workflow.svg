@@ -1,78 +1,123 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-  <defs>
-    <marker id="warrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+<defs>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowSm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowMd" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
     </marker>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#e2e8f0"/>
+    </pattern>
+    <pattern id="lineGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
+    </pattern>
   </defs>
-  <rect width="800" height="600" fill="#ffffff" rx="4"/>
+  <rect width="800" height="600" fill="url(#gBg)"/>
+  <rect width="800" height="600" fill="url(#lineGrid)" opacity="0.35"/>
+  <!-- Title -->
   <text x="400" y="40" font-size="18" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Chapter 6: Current Affairs 2024</text>
-  <rect x="380" y="50" width="40" height="3" rx="2" fill="#2563eb"/>
-    <rect x="-460" y="275" width="180" height="50" rx="25" fill="#2563eb" stroke="none" stroke-width="2"/>
-    <text x="-370" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">1</text>
-    <text x="-370" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">The Ram Mandir in...</text>
-  <line x1="-275" y1="300" x2="-245" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="-260" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="-240" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-    <text x="-150" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">2</text>
-    <text x="-150" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Built after the...</text>
-  <line x1="-55" y1="300" x2="-25" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="-40" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="-20" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-    <text x="70" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
-    <text x="70" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Prime Minister...</text>
-  <line x1="165" y1="300" x2="195" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="180" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="200" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-    <text x="290" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
-    <text x="290" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">The temple is built...</text>
-  <line x1="385" y1="300" x2="415" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="400" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="420" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-    <text x="510" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">5</text>
-    <text x="510" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">India&apos;s 18th Lok...</text>
-  <line x1="605" y1="300" x2="635" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="620" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="640" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-    <text x="730" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">6</text>
-    <text x="730" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Results declared on 4...</text>
-  <line x1="825" y1="300" x2="855" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="840" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="860" y="275" width="180" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/>
-    <text x="950" y="295" font-size="22" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">7</text>
-    <text x="950" y="315" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">National Democratic...</text>
-  <line x1="1045" y1="300" x2="1075" y2="300" stroke="#94a3b8" stroke-width="2" marker-end="url(#warrow)"/>
-      <text x="1060" y="292" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">next</text>
-  <rect x="1080" y="275" width="180" height="50" rx="25" fill="#059669" stroke="none" stroke-width="2"/>
-    <text x="1170" y="295" font-size="22" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">8</text>
-    <text x="1170" y="315" font-size="10" fill="#e2e8f0" text-anchor="middle" font-family="Arial, sans-serif">Indian National...</text>
-  <rect x="-455" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="-370" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">The Ram Mandir in</text>
-  <text x="-370" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Ayodhya (Uttar</text>
-  <text x="-370" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Pradesh) was...</text>
-  <rect x="-235" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="-150" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Built after the</text>
-  <text x="-150" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Supreme Court&apos;s</text>
-  <text x="-150" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">landmark verdict...</text>
-  <rect x="-15" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="70" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Prime Minister</text>
-  <text x="70" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Narendra Modi</text>
-  <text x="70" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">performed the Pran...</text>
-  <rect x="205" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="290" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">The temple is built in</text>
-  <text x="290" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">the Nagara style of...</text>
-  <rect x="425" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="510" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">India&apos;s 18th Lok</text>
-  <text x="510" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Sabha elections were</text>
-  <text x="510" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">held in 7...</text>
-  <rect x="645" y="345" width="170" height="42" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="730" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Results declared on 4</text>
-  <text x="730" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">June 2024</text>
-  <rect x="865" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="950" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">National Democratic</text>
-  <text x="950" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Alliance (NDA) won 293</text>
-  <text x="950" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">seats,...</text>
-  <rect x="1085" y="345" width="170" height="58" rx="4" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
-  <text x="1170" y="361" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Indian National</text>
-  <text x="1170" y="377" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Developmental</text>
-  <text x="1170" y="393" font-size="10" fill="#475569" text-anchor="middle" font-family="Arial, sans-serif">Inclusive Alliance...</text>
+  <rect x="375" y="50" width="50" height="3" rx="1.5" fill="#2563eb"/>
+  <!-- Step 1: The Ram Mandir in Ayodhya (Uttar Pradesh) was consecrated on 22 January 2024 -->
+    <rect x="5" y="100" width="130" height="80" rx="40" fill="url(#gBlue)" filter="url(#shadowMd)"/>
+  <circle cx="70" cy="126" r="15" fill="#ffffff" opacity="0.25"/>
+      <text x="70" y="131" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">1</text>
+  <text x="70" y="160" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">The Ram Mandir in...</text>
+  <!-- Arrow 1 → 2 -->
+    <line x1="139" y1="140" x2="166" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <!-- Description for step 1 -->
+    <rect x="9" y="202" width="122" height="80" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
+    <rect x="9" y="202" width="122" height="80" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="19" y1="212" x2="121" y2="212" stroke="#2563eb" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <text x="70" y="226" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">The Ram Mandir in</text>
+  <text x="70" y="242" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Ayodhya (Uttar Pradesh)</text>
+  <text x="70" y="258" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">was consecrated on 22</text>
+  <text x="70" y="274" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">January 2024</text>
+  <rect x="170" y="100" width="130" height="80" rx="40" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadowSm)"/>
+  <circle cx="235" cy="126" r="15" fill="#2563eb" opacity="0.1"/>
+      <circle cx="235" cy="126" r="15" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+      <text x="235" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">2</text>
+  <text x="235" y="160" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Built after the...</text>
+  <!-- Arrow 2 → 3 -->
+    <line x1="304" y1="140" x2="331" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <!-- Description for step 2 -->
+    <rect x="174" y="202" width="122" height="96" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
+    <rect x="174" y="202" width="122" height="96" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="184" y1="212" x2="286" y2="212" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <text x="235" y="226" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Built after the Supreme</text>
+  <text x="235" y="242" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Court&apos;s landmark</text>
+  <text x="235" y="258" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">verdict (9 November</text>
+  <text x="235" y="274" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">2019) on the Ayodhya</text>
+  <text x="235" y="290" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">land dispute</text>
+  <rect x="335" y="100" width="130" height="80" rx="40" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadowSm)"/>
+  <circle cx="400" cy="126" r="15" fill="#2563eb" opacity="0.1"/>
+      <circle cx="400" cy="126" r="15" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+      <text x="400" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">3</text>
+  <text x="400" y="160" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">Prime Minister...</text>
+  <!-- Arrow 3 → 4 -->
+    <line x1="469" y1="140" x2="496" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <!-- Description for step 3 -->
+    <rect x="339" y="202" width="122" height="80" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
+    <rect x="339" y="202" width="122" height="80" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="349" y1="212" x2="451" y2="212" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <text x="400" y="226" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Prime Minister Narendra</text>
+  <text x="400" y="242" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Modi performed the Pran</text>
+  <text x="400" y="258" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Pratishtha</text>
+  <text x="400" y="274" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">(consecration) ceremony</text>
+  <rect x="500" y="100" width="130" height="80" rx="40" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" filter="url(#shadowSm)"/>
+  <circle cx="565" cy="126" r="15" fill="#2563eb" opacity="0.1"/>
+      <circle cx="565" cy="126" r="15" fill="none" stroke="#2563eb" stroke-width="1.5" opacity="0.5"/>
+      <text x="565" y="131" font-size="14" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">4</text>
+  <text x="565" y="160" font-size="11" font-weight="bold" fill="#1e293b" text-anchor="middle" font-family="Arial, sans-serif">The temple is built...</text>
+  <!-- Arrow 4 → 5 -->
+    <line x1="634" y1="140" x2="661" y2="140" stroke="#2563eb" stroke-width="2" marker-end="url(#arrowBlue)"/>
+  <!-- Description for step 4 -->
+    <rect x="504" y="202" width="122" height="80" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
+    <rect x="504" y="202" width="122" height="80" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="514" y1="212" x2="616" y2="212" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <text x="565" y="226" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">The temple is built in</text>
+  <text x="565" y="242" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">the Nagara style of</text>
+  <text x="565" y="258" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">architecture, 250m long,</text>
+  <text x="565" y="274" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">160m wide, and 161m high</text>
+  <rect x="665" y="100" width="130" height="80" rx="40" fill="url(#gGreen)" filter="url(#shadowMd)"/>
+  <circle cx="730" cy="126" r="15" fill="#ffffff" opacity="0.25"/>
+      <text x="730" y="131" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">5</text>
+  <text x="730" y="160" font-size="11" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">India&apos;s 18th Lok...</text>
+  <!-- Description for step 5 -->
+    <rect x="669" y="202" width="122" height="80" rx="6" fill="#ffffff" filter="url(#shadowSm)"/>
+    <rect x="669" y="202" width="122" height="80" rx="6" fill="none" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="679" y1="212" x2="781" y2="212" stroke="#059669" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+  <text x="730" y="226" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">India&apos;s 18th Lok</text>
+  <text x="730" y="242" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">Sabha elections were</text>
+  <text x="730" y="258" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">held in 7 phases (19</text>
+  <text x="730" y="274" font-size="10" fill="#64748b" text-anchor="middle" font-family="Arial, sans-serif">April to 1 June 2024)</text>
 </svg>

@@ -46,7 +46,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## TCS NQT Exam Pattern
 
 ```mermaid
@@ -93,17 +92,6 @@ pie showData
 ## Section 1: Coding Problems (TCS Pattern)
 
 ### Problem 1: Find the Majority Element
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-handwritten.svg" alt="Handwritten: Problem 1: Find the Majority Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-diagram.svg" alt="Diagram: Problem 1: Find the Majority Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-1-find-the-majority-element-sticky.svg" alt="Sticky Note: Problem 1: Find the Majority Element" width="30%">
-</a>
-
 
 **Problem:** Given an array of size `n`, find the element that appears more than `n/2` times. Assume the array is non-empty and the majority element always exists.
 
@@ -183,17 +171,6 @@ function findMajorityElementOptimal(nums: number[]): number {
 
 ### Problem 2: Equilibrium Index (Pivot Index)
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-handwritten.svg" alt="Handwritten: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-diagram.svg" alt="Diagram: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-2-equilibrium-index-pivot-index-sticky.svg" alt="Sticky Note: Problem 2: Equilibrium Index (Pivot Index)" width="30%">
-</a>
-
-
 **Problem:** Find an index such that the sum of elements to its left equals the sum of elements to its right. If no such index exists, return -1.
 
 **TCS Pattern Context:** This is a recurring TCS NQT coding problem testing prefix sum technique.
@@ -238,17 +215,6 @@ function findEquilibriumIndex(nums: number[]): number {
 ---
 
 ### Problem 3: Longest Substring Without Repeating Characters
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Problem 3: Longest Substring Without Repeating Characters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Problem 3: Longest Substring Without Repeating Characters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-3-longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Problem 3: Longest Substring Without Repeating Characters" width="30%">
-</a>
-
 
 **Problem:** Given a string `s`, find the length of the longest substring without repeating characters.
 
@@ -304,17 +270,6 @@ function lengthOfLongestSubstring(s: string): number {
 ---
 
 ### Problem 4: 0-1 Knapsack (DP)
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-handwritten.svg" alt="Handwritten: Problem 4: 0-1 Knapsack (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-diagram.svg" alt="Diagram: Problem 4: 0-1 Knapsack (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-4-0-1-knapsack-dp-sticky.svg" alt="Sticky Note: Problem 4: 0-1 Knapsack (DP)" width="30%">
-</a>
-
 
 **Problem:** Given weights and values of `n` items, and a knapsack capacity `W`, find the maximum value that can be carried. Each item can be taken or left (0-1 property).
 
@@ -383,17 +338,6 @@ function knapsack01Optimized(values: number[], weights: number[], W: number): nu
 
 ### Problem 5: Count Pairs with Given Sum
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-handwritten.svg" alt="Handwritten: Problem 5: Count Pairs with Given Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-diagram.svg" alt="Diagram: Problem 5: Count Pairs with Given Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-5-count-pairs-with-given-sum-sticky.svg" alt="Sticky Note: Problem 5: Count Pairs with Given Sum" width="30%">
-</a>
-
-
 **Problem:** Given an array of integers and a target sum `k`, count the number of distinct pairs `(i, j)` such that `i < j` and `arr[i] + arr[j] = k`.
 
 **TCS Pattern Context:** TCS NQT frequently asks pair-counting problems to test hash map optimization skills.
@@ -438,17 +382,6 @@ function countPairsWithSum(arr: number[], k: number): number {
 ---
 
 ### Problem 6: Longest Common Subsequence (LCS)
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-handwritten.svg" alt="Handwritten: Problem 6: Longest Common Subsequence (LCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-diagram.svg" alt="Diagram: Problem 6: Longest Common Subsequence (LCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/problem-6-longest-common-subsequence-lcs-sticky.svg" alt="Sticky Note: Problem 6: Longest Common Subsequence (LCS)" width="30%">
-</a>
-
 
 **Problem:** Given two strings, find the length of the longest subsequence that appears in both. A subsequence is a sequence derived by deleting some characters without changing order.
 
@@ -524,17 +457,6 @@ function longestCommonSubsequenceOptimized(text1: string, text2: string): number
 
 ### Time, Speed, and Distance
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-handwritten.svg" alt="Handwritten: Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-diagram.svg" alt="Diagram: Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/time-speed-and-distance-sticky.svg" alt="Sticky Note: Time, Speed, and Distance" width="30%">
-</a>
-
-
 **Q1.** A train 150 m long passes a platform 250 m long in 30 seconds. Find the speed of the train in km/h.
 
 <details>
@@ -601,17 +523,6 @@ Time = 600 / 20 = 30 seconds
 </details>
 
 ### Profit and Loss
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-handwritten.svg" alt="Handwritten: Profit and Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-diagram.svg" alt="Diagram: Profit and Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/profit-and-loss-sticky.svg" alt="Sticky Note: Profit and Loss" width="30%">
-</a>
-
 
 **Q6.** A shopkeeper sells an article at 20% profit. If he had bought it at 10% less and sold it at 30% profit, he would have gained ₹ 42 more. Find the cost price.
 
@@ -686,17 +597,6 @@ Profit % = 28%
 </details>
 
 ### Percentages
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-handwritten.svg" alt="Handwritten: Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-diagram.svg" alt="Diagram: Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/percentages-sticky.svg" alt="Sticky Note: Percentages" width="30%">
-</a>
-
 
 **Q11.** If A's income is 25% more than B's, then B's income is what percentage less than A's?
 
@@ -774,17 +674,6 @@ P = 168000
 
 ### Ratios and Proportions
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-handwritten.svg" alt="Handwritten: Ratios and Proportions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-diagram.svg" alt="Diagram: Ratios and Proportions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/ratios-and-proportions-sticky.svg" alt="Sticky Note: Ratios and Proportions" width="30%">
-</a>
-
-
 **Q16.** If A:B = 2:3, B:C = 4:5, and C:D = 6:7, find A:D.
 
 <details>
@@ -830,17 +719,6 @@ Numbers: 4 × 20 = 80, 7 × 20 = 140
 
 ### Averages
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-handwritten.svg" alt="Handwritten: Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-diagram.svg" alt="Diagram: Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/averages-sticky.svg" alt="Sticky Note: Averages" width="30%">
-</a>
-
-
 **Q19.** The average of 20 numbers is 45. If two numbers 25 and 35 are removed, find the new average.
 
 <details>
@@ -871,17 +749,6 @@ Teacher's age = 403 - 360 = 43
 ## Section 3: Reasoning Ability (15 Questions)
 
 ### Coding-Decoding
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-handwritten.svg" alt="Handwritten: Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-diagram.svg" alt="Diagram: Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/coding-decoding-sticky.svg" alt="Sticky Note: Coding-Decoding" width="30%">
-</a>
-
 
 **Q1.** In a code language, SUMMER is written as RUNNER. How is WINTER written?
 
@@ -961,17 +828,6 @@ The question asks: what is "cherry"? → "date"
 
 ### Blood Relations
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-handwritten.svg" alt="Handwritten: Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-diagram.svg" alt="Diagram: Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/blood-relations-sticky.svg" alt="Sticky Note: Blood Relations" width="30%">
-</a>
-
-
 **Q6.** Pointing to a photograph, a man said, "This girl is the daughter of the wife of the only son of my mother." How is the girl related to the man?
 
 <details>
@@ -1014,17 +870,6 @@ So the woman is the niece of the man
 </details>
 
 ### Direction Sense
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-handwritten.svg" alt="Handwritten: Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-diagram.svg" alt="Diagram: Direction Sense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/direction-sense-sticky.svg" alt="Sticky Note: Direction Sense" width="30%">
-</a>
-
 
 **Q9.** A person walks 10 m north, turns right, walks 15 m, turns right, walks 20 m, turns left, walks 10 m. How far is he from the starting point?
 
@@ -1075,17 +920,6 @@ Final position: 7 km East, 7 km South → Southeast direction from start
 </details>
 
 ### Syllogisms
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-handwritten.svg" alt="Handwritten: Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-diagram.svg" alt="Diagram: Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/syllogisms-sticky.svg" alt="Sticky Note: Syllogisms" width="30%">
-</a>
-
 
 **Q12.** Statements: All dogs are cats. All cats are rats.
 Conclusions: I. All dogs are rats. II. Some rats are dogs.
@@ -1143,17 +977,6 @@ Both follow independently.
 
 ### Synonyms
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-handwritten.svg" alt="Handwritten: Synonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-diagram.svg" alt="Diagram: Synonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/synonyms-sticky.svg" alt="Sticky Note: Synonyms" width="30%">
-</a>
-
-
 **Q1.** Select the synonym of **AMELIORATE**:
 a) Worsen  b) Improve  c) Maintain  d) Ignore
 
@@ -1186,17 +1009,6 @@ Enervate means to cause someone to feel drained of energy or weakened.
 
 ### Antonyms
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-handwritten.svg" alt="Handwritten: Antonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-diagram.svg" alt="Diagram: Antonyms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/antonyms-sticky.svg" alt="Sticky Note: Antonyms" width="30%">
-</a>
-
-
 **Q4.** Select the antonym of **EXTENUATE**:
 a) Aggravate  b) Excuse  c) Reduce  d) Diminish
 
@@ -1228,17 +1040,6 @@ Obfuscate means to render obscure or unclear. Antonym is clarify.
 </details>
 
 ### Sentence Completion
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-handwritten.svg" alt="Handwritten: Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-diagram.svg" alt="Diagram: Sentence Completion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/sentence-completion-sticky.svg" alt="Sticky Note: Sentence Completion" width="30%">
-</a>
-
 
 **Q7.** The manager's ___________ speech motivated the team to achieve their targets.
 a) lackluster  b) inspiring  c) ambiguous  d) monotonous
@@ -1286,16 +1087,6 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 
 ### For TCS NQT Foundation:
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-handwritten.svg" alt="Handwritten: For TCS NQT Foundation:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-diagram.svg" alt="Diagram: For TCS NQT Foundation:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-foundation-sticky.svg" alt="Sticky Note: For TCS NQT Foundation:" width="30%">
-</a>
-
 | Section | Tips |
 |---------|------|
 | **Numerical Ability** | Focus on speed — 20 Qs in 25 mins. Practice percentage, ratio, and time-speed-distance heavily |
@@ -1304,16 +1095,6 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 
 ### For TCS NQT Advanced (Digital):
 
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-handwritten.svg" alt="Handwritten: For TCS NQT Advanced (Digital):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-diagram.svg" alt="Diagram: For TCS NQT Advanced (Digital):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/for-tcs-nqt-advanced-digital-sticky.svg" alt="Sticky Note: For TCS NQT Advanced (Digital):" width="30%">
-</a>
-
 | Area | Focus |
 |------|-------|
 | **Advanced Quant** | Probability, permutations, complex geometry |
@@ -1321,16 +1102,6 @@ a) convoluted  b) esoteric  c) lucid  d) ambiguous
 | **Coding** | 2 problems in 70 mins. One easy (arrays/strings), one medium (DP/graphs) |
 
 ### Email Writing Template (TCS-specific):
-
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-handwritten.svg" alt="Handwritten: Email Writing Template (TCS-specific):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-diagram.svg" alt="Diagram: Email Writing Template (TCS-specific):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/11-company-tcs-nqt/email-writing-template-tcs-specific-sticky.svg" alt="Sticky Note: Email Writing Template (TCS-specific):" width="30%">
-</a>
 
 ```
 Subject: [Purpose] - [Your Name]

@@ -42,7 +42,6 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - Navigate all major government job portals and understand their notification patterns
 - Set up a comprehensive notification tracking system to never miss deadlines
 - Prepare complete application documentation for each type of government/PSU vacancy
@@ -55,17 +54,6 @@ By the end of this chapter, you will be able to:
 ## Government Job Ecosystem Overview
 
 ### Types of Government Recruiting Bodies
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/types-of-government-recruiting-bodies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/types-of-government-recruiting-bodies-handwritten.svg" alt="Handwritten: Types of Government Recruiting Bodies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/types-of-government-recruiting-bodies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/types-of-government-recruiting-bodies-diagram.svg" alt="Diagram: Types of Government Recruiting Bodies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/types-of-government-recruiting-bodies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/types-of-government-recruiting-bodies-sticky.svg" alt="Sticky Note: Types of Government Recruiting Bodies" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -92,17 +80,6 @@ flowchart TD
 
 ### Recruitment Volume (Annual Estimates)
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/recruitment-volume-annual-estimates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/recruitment-volume-annual-estimates-handwritten.svg" alt="Handwritten: Recruitment Volume (Annual Estimates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/recruitment-volume-annual-estimates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/recruitment-volume-annual-estimates-diagram.svg" alt="Diagram: Recruitment Volume (Annual Estimates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/recruitment-volume-annual-estimates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/recruitment-volume-annual-estimates-sticky.svg" alt="Sticky Note: Recruitment Volume (Annual Estimates)" width="30%">
-</a>
-
-
 | Organization | Total Vacancies | IT/Tech Specific | Exam Cycle |
 |-------------|----------------|-----------------|------------|
 | SSC | 20,000+ | 500-800 (IT/CGL) | Annual |
@@ -122,17 +99,6 @@ flowchart TD
 
 ### Central Government Portals
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/central-government-portals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/central-government-portals-handwritten.svg" alt="Handwritten: Central Government Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/central-government-portals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/central-government-portals-diagram.svg" alt="Diagram: Central Government Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/central-government-portals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/central-government-portals-sticky.svg" alt="Sticky Note: Central Government Portals" width="30%">
-</a>
-
-
 | Portal | URL | Purpose | Notifications | Application Mode |
 |--------|-----|---------|---------------|-----------------|
 | SSC Official | ssc.nic.in | Combined Graduate Level, CHSL, JE, etc. | CGLE, CHSLE, JE, Selection Posts | Online |
@@ -148,17 +114,6 @@ flowchart TD
 
 ### Banking Sector Portals
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/banking-sector-portals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/banking-sector-portals-handwritten.svg" alt="Handwritten: Banking Sector Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/banking-sector-portals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/banking-sector-portals-diagram.svg" alt="Diagram: Banking Sector Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/banking-sector-portals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/banking-sector-portals-sticky.svg" alt="Sticky Note: Banking Sector Portals" width="30%">
-</a>
-
-
 | Portal | URL | Exams Conducted | IT-Specific Posts |
 |--------|-----|----------------|-------------------|
 | IBPS | ibps.in | PO, SO (IT), Clerk, RRB | Specialist Officer (IT) |
@@ -173,17 +128,6 @@ flowchart TD
 | IFSCA | ifsca.gov.in | Grade A | Technology Officer |
 
 ### PSU Recruitment Portals
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/psu-recruitment-portals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/psu-recruitment-portals-handwritten.svg" alt="Handwritten: PSU Recruitment Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/psu-recruitment-portals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/psu-recruitment-portals-diagram.svg" alt="Diagram: PSU Recruitment Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/psu-recruitment-portals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/psu-recruitment-portals-sticky.svg" alt="Sticky Note: PSU Recruitment Portals" width="30%">
-</a>
-
 
 | PSU | Website | Career Page | Typical Roles |
 |-----|---------|-------------|---------------|
@@ -209,17 +153,6 @@ flowchart TD
 
 ### State Government Portals
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/state-government-portals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/state-government-portals-handwritten.svg" alt="Handwritten: State Government Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/state-government-portals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/state-government-portals-diagram.svg" alt="Diagram: State Government Portals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/state-government-portals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/state-government-portals-sticky.svg" alt="Sticky Note: State Government Portals" width="30%">
-</a>
-
-
 | State | PSC Portal | Exam Types | IT-Related Posts |
 |-------|-----------|------------|-----------------|
 | Uttar Pradesh | uppsc.up.nic.in | PCS, Technical | Programmer, IT Officer |
@@ -240,17 +173,6 @@ flowchart TD
 
 ### Aggregator/Notification Sites
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/aggregator-notification-sites-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/aggregator-notification-sites-handwritten.svg" alt="Handwritten: Aggregator/Notification Sites" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/aggregator-notification-sites-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/aggregator-notification-sites-diagram.svg" alt="Diagram: Aggregator/Notification Sites" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/aggregator-notification-sites-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/aggregator-notification-sites-sticky.svg" alt="Sticky Note: Aggregator/Notification Sites" width="30%">
-</a>
-
-
 | Site | URL | Coverage | Features |
 |------|-----|----------|----------|
 | Sarkari Result | sarkariresult.com | All central/state govt jobs | Daily updates, exam calendar |
@@ -268,17 +190,6 @@ flowchart TD
 
 ### Why You Need a Tracking System
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/why-you-need-a-tracking-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/why-you-need-a-tracking-system-handwritten.svg" alt="Handwritten: Why You Need a Tracking System" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/why-you-need-a-tracking-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/why-you-need-a-tracking-system-diagram.svg" alt="Diagram: Why You Need a Tracking System" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/why-you-need-a-tracking-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/why-you-need-a-tracking-system-sticky.svg" alt="Sticky Note: Why You Need a Tracking System" width="30%">
-</a>
-
-
 Government vacancies have strict deadlines, often 2-4 weeks from notification to application close. Missing a deadline means waiting another year for some exams (SSC CGL, UPSC). A systematic tracker ensures:
 
 1. **No missed deadlines** — automated reminders
@@ -289,17 +200,6 @@ Government vacancies have strict deadlines, often 2-4 weeks from notification to
 6. **Results tracking** — know when and where results are published
 
 ### Tracking Spreadsheet Structure
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/tracking-spreadsheet-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/tracking-spreadsheet-structure-handwritten.svg" alt="Handwritten: Tracking Spreadsheet Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/tracking-spreadsheet-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/tracking-spreadsheet-structure-diagram.svg" alt="Diagram: Tracking Spreadsheet Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/tracking-spreadsheet-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/tracking-spreadsheet-structure-sticky.svg" alt="Sticky Note: Tracking Spreadsheet Structure" width="30%">
-</a>
-
 
 Create a master spreadsheet with the following tabs:
 
@@ -848,17 +748,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Standard Document Checklist
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/standard-document-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/standard-document-checklist-handwritten.svg" alt="Handwritten: Standard Document Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/standard-document-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/standard-document-checklist-diagram.svg" alt="Diagram: Standard Document Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/standard-document-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/standard-document-checklist-sticky.svg" alt="Sticky Note: Standard Document Checklist" width="30%">
-</a>
-
-
 | Document | Format Required | Size Limit | Color/B&W | Self-Attestation |
 |----------|----------------|------------|-----------|------------------|
 | Passport Photo | JPG/JPEG | 20-50 KB | Color | Not needed |
@@ -878,17 +767,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Document Preparation Guidelines
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/document-preparation-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/document-preparation-guidelines-handwritten.svg" alt="Handwritten: Document Preparation Guidelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/document-preparation-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/document-preparation-guidelines-diagram.svg" alt="Diagram: Document Preparation Guidelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/document-preparation-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/document-preparation-guidelines-sticky.svg" alt="Sticky Note: Document Preparation Guidelines" width="30%">
-</a>
-
-
 | Guideline | Details |
 |-----------|---------|
 | Scanning resolution | 200-300 DPI is sufficient |
@@ -907,17 +785,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Phase 1: Registration
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-1-registration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-1-registration-handwritten.svg" alt="Handwritten: Phase 1: Registration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-1-registration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-1-registration-diagram.svg" alt="Diagram: Phase 1: Registration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-1-registration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-1-registration-sticky.svg" alt="Sticky Note: Phase 1: Registration" width="30%">
-</a>
-
-
 | Step | Details | Common Mistakes |
 |------|---------|-----------------|
 | 1. Visit official portal | Verify you're on `.gov.in` or `.nic.in` | Fake websites mimicking govt portals |
@@ -933,17 +800,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Phase 2: Admit Card
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-2-admit-card-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-2-admit-card-handwritten.svg" alt="Handwritten: Phase 2: Admit Card" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-2-admit-card-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-2-admit-card-diagram.svg" alt="Diagram: Phase 2: Admit Card" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-2-admit-card-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-2-admit-card-sticky.svg" alt="Sticky Note: Phase 2: Admit Card" width="30%">
-</a>
-
-
 | Action | Timeline | Checklist |
 |--------|----------|-----------|
 | Check admit card release | 2-3 weeks before exam | Visit portal daily during expected period |
@@ -955,17 +811,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 | Plan travel | Book transport, accommodation if needed | Visit exam center a day before if unfamiliar |
 
 ### Phase 3: Exam Day
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-3-exam-day-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-3-exam-day-handwritten.svg" alt="Handwritten: Phase 3: Exam Day" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-3-exam-day-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-3-exam-day-diagram.svg" alt="Diagram: Phase 3: Exam Day" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-3-exam-day-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-3-exam-day-sticky.svg" alt="Sticky Note: Phase 3: Exam Day" width="30%">
-</a>
-
 
 | Item | Allowed? | Notes |
 |------|----------|-------|
@@ -982,17 +827,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Phase 4: Result & After
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-4-result-after-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-4-result-after-handwritten.svg" alt="Handwritten: Phase 4: Result & After" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-4-result-after-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-4-result-after-diagram.svg" alt="Diagram: Phase 4: Result & After" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-4-result-after-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/phase-4-result-after-sticky.svg" alt="Sticky Note: Phase 4: Result & After" width="30%">
-</a>
-
-
 | Stage | Action | Notes |
 |-------|--------|-------|
 | Preliminary result | Check on official portal | May have cut-off marks |
@@ -1006,17 +840,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 ## Expected Exam Calendar 2026-2027
 
 ### Month-Wise Expected Notifications
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/month-wise-expected-notifications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/month-wise-expected-notifications-handwritten.svg" alt="Handwritten: Month-Wise Expected Notifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/month-wise-expected-notifications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/month-wise-expected-notifications-diagram.svg" alt="Diagram: Month-Wise Expected Notifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/month-wise-expected-notifications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/month-wise-expected-notifications-sticky.svg" alt="Sticky Note: Month-Wise Expected Notifications" width="30%">
-</a>
-
 
 | Month | Expected Notifications | Typical Application Period | Exam Period |
 |-------|----------------------|--------------------------|-------------|
@@ -1034,17 +857,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 | **December** | Next year planning, early PSU notifications | Dec-Jan | Throughout next year |
 
 ### Priority Timeline — IT Professionals
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/priority-timeline-it-professionals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/priority-timeline-it-professionals-handwritten.svg" alt="Handwritten: Priority Timeline — IT Professionals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/priority-timeline-it-professionals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/priority-timeline-it-professionals-diagram.svg" alt="Diagram: Priority Timeline — IT Professionals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/priority-timeline-it-professionals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/priority-timeline-it-professionals-sticky.svg" alt="Sticky Note: Priority Timeline — IT Professionals" width="30%">
-</a>
-
 
 | Month | High Priority | Medium Priority | Low Priority |
 |-------|---------------|-----------------|--------------|
@@ -1065,17 +877,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### How Many Exams to Target?
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/how-many-exams-to-target-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/how-many-exams-to-target-handwritten.svg" alt="Handwritten: How Many Exams to Target?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/how-many-exams-to-target-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/how-many-exams-to-target-diagram.svg" alt="Diagram: How Many Exams to Target?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/how-many-exams-to-target-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/how-many-exams-to-target-sticky.svg" alt="Sticky Note: How Many Exams to Target?" width="30%">
-</a>
-
-
 | Profile | Recommended Exams to Target | Strategy |
 |---------|----------------------------|----------|
 | Fresher (No job) | 8-10 | Apply widely, aim for 3-4 strong preparations |
@@ -1086,17 +887,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Application Volume Strategy
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-volume-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-volume-strategy-handwritten.svg" alt="Handwritten: Application Volume Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-volume-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-volume-strategy-diagram.svg" alt="Diagram: Application Volume Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-volume-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-volume-strategy-sticky.svg" alt="Sticky Note: Application Volume Strategy" width="30%">
-</a>
-
-
 | Strategy | Monthly Applications | Time Investment | Success Rate |
 |----------|---------------------|-----------------|--------------|
 | Intensive (Focus on 3-4 exams) | 1-2 | 4-6 hours/day | High for targeted exams |
@@ -1106,17 +896,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 **Recommended**: Moderate strategy for working professionals (prepare for 5-8 exams, apply for 3-5 per month).
 
 ### Application Efficiency Tips
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-efficiency-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-efficiency-tips-handwritten.svg" alt="Handwritten: Application Efficiency Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-efficiency-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-efficiency-tips-diagram.svg" alt="Diagram: Application Efficiency Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-efficiency-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-efficiency-tips-sticky.svg" alt="Sticky Note: Application Efficiency Tips" width="30%">
-</a>
-
 
 | Tip | Why It Matters |
 |-----|----------------|
@@ -1135,17 +914,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Fee Structure by Category (Typical)
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/fee-structure-by-category-typical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/fee-structure-by-category-typical-handwritten.svg" alt="Handwritten: Fee Structure by Category (Typical)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/fee-structure-by-category-typical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/fee-structure-by-category-typical-diagram.svg" alt="Diagram: Fee Structure by Category (Typical)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/fee-structure-by-category-typical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/fee-structure-by-category-typical-sticky.svg" alt="Sticky Note: Fee Structure by Category (Typical)" width="30%">
-</a>
-
-
 | Organization | General | OBC | SC/ST | PwD | Female |
 |-------------|---------|-----|-------|-----|--------|
 | SSC | Rs. 100 | Rs. 100 | Exempt | Exempt | Exempt |
@@ -1161,17 +929,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 
 ### Age Relaxation Summary
 
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/age-relaxation-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/age-relaxation-summary-handwritten.svg" alt="Handwritten: Age Relaxation Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/age-relaxation-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/age-relaxation-summary-diagram.svg" alt="Diagram: Age Relaxation Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/age-relaxation-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/age-relaxation-summary-sticky.svg" alt="Sticky Note: Age Relaxation Summary" width="30%">
-</a>
-
-
 | Category | Central Govt | State Govt | PSUs | Banking |
 |----------|--------------|------------|------|---------|
 | General | As notified | As notified | As notified | As notified |
@@ -1184,17 +941,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 | Govt Employees (Group B/C) | Up to 40 years | Variable | N/A | N/A |
 
 ### Important Government Job Portals URLs
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/important-government-job-portals-urls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/important-government-job-portals-urls-handwritten.svg" alt="Handwritten: Important Government Job Portals URLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/important-government-job-portals-urls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/important-government-job-portals-urls-diagram.svg" alt="Diagram: Important Government Job Portals URLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/important-government-job-portals-urls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/important-government-job-portals-urls-sticky.svg" alt="Sticky Note: Important Government Job Portals URLs" width="30%">
-</a>
-
 
 | Portal | URL | Save As |
 |--------|-----|---------|
@@ -1212,17 +958,6 @@ tracker.generateApplicationChecklist('SSC-CGL-2026').forEach((item, i) => {
 | Free Alerts | https://www.freealerts.in | Bookmark |
 
 ### Application Status Codes
-
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-status-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-status-codes-handwritten.svg" alt="Handwritten: Application Status Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-status-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-status-codes-diagram.svg" alt="Diagram: Application Status Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-status-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/06-govt-job-portal-notification-tracker/application-status-codes-sticky.svg" alt="Sticky Note: Application Status Codes" width="30%">
-</a>
-
 
 | Status | Meaning | Action Needed |
 |--------|---------|---------------|

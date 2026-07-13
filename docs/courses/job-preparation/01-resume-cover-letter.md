@@ -42,7 +42,6 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - Craft a professional, ATS-optimized resume tailored to Indian IT recruitment standards
 - Choose between 5 different resume templates based on your career stage and target sector
 - Write compelling cover letters for private sector, government, and PSU applications
@@ -55,17 +54,6 @@ By the end of this chapter, you will be able to:
 ## Understanding the Indian IT Resume Landscape
 
 ### Key Differences: Private vs Government Resumes
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/key-differences-private-vs-government-resumes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/key-differences-private-vs-government-resumes-handwritten.svg" alt="Handwritten: Key Differences: Private vs Government Resumes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/key-differences-private-vs-government-resumes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/key-differences-private-vs-government-resumes-diagram.svg" alt="Diagram: Key Differences: Private vs Government Resumes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/key-differences-private-vs-government-resumes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/key-differences-private-vs-government-resumes-sticky.svg" alt="Sticky Note: Key Differences: Private vs Government Resumes" width="30%">
-</a>
-
 
 | Aspect | Private Sector | Government / PSU |
 |--------|---------------|------------------|
@@ -82,17 +70,6 @@ By the end of this chapter, you will be able to:
 
 ### Indian IT Resume Standards (2026)
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/indian-it-resume-standards-2026-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/indian-it-resume-standards-2026-handwritten.svg" alt="Handwritten: Indian IT Resume Standards (2026)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/indian-it-resume-standards-2026-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/indian-it-resume-standards-2026-diagram.svg" alt="Diagram: Indian IT Resume Standards (2026)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/indian-it-resume-standards-2026-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/indian-it-resume-standards-2026-sticky.svg" alt="Sticky Note: Indian IT Resume Standards (2026)" width="30%">
-</a>
-
-
 | Requirement | Standard |
 |------------|----------|
 | Font | Calibri, Arial, or Garamond (10-12pt) |
@@ -107,17 +84,6 @@ By the end of this chapter, you will be able to:
 ## Resume Templates
 
 ### Template 1: Fresher (Campus Placement / Off-Campus)
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-1-fresher-campus-placement-off-campus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-1-fresher-campus-placement-off-campus-handwritten.svg" alt="Handwritten: Template 1: Fresher (Campus Placement / Off-Campus)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-1-fresher-campus-placement-off-campus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-1-fresher-campus-placement-off-campus-diagram.svg" alt="Diagram: Template 1: Fresher (Campus Placement / Off-Campus)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-1-fresher-campus-placement-off-campus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-1-fresher-campus-placement-off-campus-sticky.svg" alt="Sticky Note: Template 1: Fresher (Campus Placement / Off-Campus)" width="30%">
-</a>
-
 
 ```
 [NAME]
@@ -195,17 +161,6 @@ EXTRA-CURRICULAR
 
 ### Template 2: Experienced Professional (Private Sector)
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-2-experienced-professional-private-sector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-2-experienced-professional-private-sector-handwritten.svg" alt="Handwritten: Template 2: Experienced Professional (Private Sector)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-2-experienced-professional-private-sector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-2-experienced-professional-private-sector-diagram.svg" alt="Diagram: Template 2: Experienced Professional (Private Sector)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-2-experienced-professional-private-sector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-2-experienced-professional-private-sector-sticky.svg" alt="Sticky Note: Template 2: Experienced Professional (Private Sector)" width="30%">
-</a>
-
-
 ```
 [NAME]
 [Phone] | [Email] | [LinkedIn URL] | [GitHub URL]
@@ -269,17 +224,6 @@ PUBLICATIONS / PATENTS (Optional)
 ```
 
 ### Template 3: Government Job (SSC / UPSC / State Govt)
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-3-government-job-ssc-upsc-state-govt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-3-government-job-ssc-upsc-state-govt-handwritten.svg" alt="Handwritten: Template 3: Government Job (SSC / UPSC / State Govt)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-3-government-job-ssc-upsc-state-govt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-3-government-job-ssc-upsc-state-govt-diagram.svg" alt="Diagram: Template 3: Government Job (SSC / UPSC / State Govt)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-3-government-job-ssc-upsc-state-govt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-3-government-job-ssc-upsc-state-govt-sticky.svg" alt="Sticky Note: Template 3: Government Job (SSC / UPSC / State Govt)" width="30%">
-</a>
-
 
 ```
 [NAME]
@@ -349,17 +293,6 @@ to the best of my knowledge and belief.
 ```
 
 ### Template 4: PSU Application (GATE-Based)
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-4-psu-application-gate-based-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-4-psu-application-gate-based-handwritten.svg" alt="Handwritten: Template 4: PSU Application (GATE-Based)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-4-psu-application-gate-based-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-4-psu-application-gate-based-diagram.svg" alt="Diagram: Template 4: PSU Application (GATE-Based)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-4-psu-application-gate-based-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-4-psu-application-gate-based-sticky.svg" alt="Sticky Note: Template 4: PSU Application (GATE-Based)" width="30%">
-</a>
-
 
 ```
 [NAME]
@@ -443,17 +376,6 @@ I have not been debarred from any examination.
 ```
 
 ### Template 5: Tech Lead / Architect (10+ Years)
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-5-tech-lead-architect-10-years-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-5-tech-lead-architect-10-years-handwritten.svg" alt="Handwritten: Template 5: Tech Lead / Architect (10+ Years)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-5-tech-lead-architect-10-years-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-5-tech-lead-architect-10-years-diagram.svg" alt="Diagram: Template 5: Tech Lead / Architect (10+ Years)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-5-tech-lead-architect-10-years-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/template-5-tech-lead-architect-10-years-sticky.svg" alt="Sticky Note: Template 5: Tech Lead / Architect (10+ Years)" width="30%">
-</a>
-
 
 ```
 [NAME]
@@ -544,17 +466,6 @@ LEADERSHIP & COMMUNITY
 
 ### Cover Letter 1: Private Sector (Fresher)
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-1-private-sector-fresher-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-1-private-sector-fresher-handwritten.svg" alt="Handwritten: Cover Letter 1: Private Sector (Fresher)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-1-private-sector-fresher-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-1-private-sector-fresher-diagram.svg" alt="Diagram: Cover Letter 1: Private Sector (Fresher)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-1-private-sector-fresher-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-1-private-sector-fresher-sticky.svg" alt="Sticky Note: Cover Letter 1: Private Sector (Fresher)" width="30%">
-</a>
-
-
 ```
 [Your Name]
 [Phone] | [Email] | [LinkedIn]
@@ -601,17 +512,6 @@ Sincerely,
 
 ### Cover Letter 2: Private Sector (Experienced)
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-2-private-sector-experienced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-2-private-sector-experienced-handwritten.svg" alt="Handwritten: Cover Letter 2: Private Sector (Experienced)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-2-private-sector-experienced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-2-private-sector-experienced-diagram.svg" alt="Diagram: Cover Letter 2: Private Sector (Experienced)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-2-private-sector-experienced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-2-private-sector-experienced-sticky.svg" alt="Sticky Note: Cover Letter 2: Private Sector (Experienced)" width="30%">
-</a>
-
-
 ```
 [Your Name]
 [Phone] | [Email] | [LinkedIn]
@@ -653,17 +553,6 @@ Best regards,
 ```
 
 ### Cover Letter 3: Government Job Application
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-3-government-job-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-3-government-job-application-handwritten.svg" alt="Handwritten: Cover Letter 3: Government Job Application" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-3-government-job-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-3-government-job-application-diagram.svg" alt="Diagram: Cover Letter 3: Government Job Application" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-3-government-job-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-3-government-job-application-sticky.svg" alt="Sticky Note: Cover Letter 3: Government Job Application" width="30%">
-</a>
-
 
 ```
 [Your Name]
@@ -717,17 +606,6 @@ Yours faithfully,
 
 ### Cover Letter 4: PSU Application (GATE)
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-4-psu-application-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-4-psu-application-gate-handwritten.svg" alt="Handwritten: Cover Letter 4: PSU Application (GATE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-4-psu-application-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-4-psu-application-gate-diagram.svg" alt="Diagram: Cover Letter 4: PSU Application (GATE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-4-psu-application-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-4-psu-application-gate-sticky.svg" alt="Sticky Note: Cover Letter 4: PSU Application (GATE)" width="30%">
-</a>
-
-
 ```
 [Your Name]
 [Father's Name]
@@ -779,17 +657,6 @@ Yours faithfully,
 
 ### Cover Letter 5: Referral Request (LinkedIn / Email)
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-5-referral-request-linkedin-email-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-5-referral-request-linkedin-email-handwritten.svg" alt="Handwritten: Cover Letter 5: Referral Request (LinkedIn / Email)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-5-referral-request-linkedin-email-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-5-referral-request-linkedin-email-diagram.svg" alt="Diagram: Cover Letter 5: Referral Request (LinkedIn / Email)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-5-referral-request-linkedin-email-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/cover-letter-5-referral-request-linkedin-email-sticky.svg" alt="Sticky Note: Cover Letter 5: Referral Request (LinkedIn / Email)" width="30%">
-</a>
-
-
 ```
 Subject: Referral for [Position] at [Company]
 
@@ -821,31 +688,9 @@ Best regards,
 
 ### What is ATS?
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/what-is-ats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/what-is-ats-handwritten.svg" alt="Handwritten: What is ATS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/what-is-ats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/what-is-ats-diagram.svg" alt="Diagram: What is ATS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/what-is-ats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/what-is-ats-sticky.svg" alt="Sticky Note: What is ATS?" width="30%">
-</a>
-
-
 Applicant Tracking Systems (ATS) are software tools used by 90%+ of Indian IT companies to filter resumes before they reach human reviewers. Understanding how ATS works is critical to getting shortlisted.
 
 ### ATS-Friendly Resume Rules
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-friendly-resume-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-friendly-resume-rules-handwritten.svg" alt="Handwritten: ATS-Friendly Resume Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-friendly-resume-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-friendly-resume-rules-diagram.svg" alt="Diagram: ATS-Friendly Resume Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-friendly-resume-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-friendly-resume-rules-sticky.svg" alt="Sticky Note: ATS-Friendly Resume Rules" width="30%">
-</a>
-
 
 | Rule | Why It Matters | Implementation |
 |------|---------------|----------------|
@@ -861,17 +706,6 @@ Applicant Tracking Systems (ATS) are software tools used by 90%+ of Indian IT co
 | Remove images and icons | ATS cannot read images | Text only for ATS, images in portfolio |
 
 ### Keyword Optimization Strategy
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/keyword-optimization-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/keyword-optimization-strategy-handwritten.svg" alt="Handwritten: Keyword Optimization Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/keyword-optimization-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/keyword-optimization-strategy-diagram.svg" alt="Diagram: Keyword Optimization Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/keyword-optimization-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/keyword-optimization-strategy-sticky.svg" alt="Sticky Note: Keyword Optimization Strategy" width="30%">
-</a>
-
 
 ```typescript
 interface JobDescription {
@@ -1004,17 +838,6 @@ console.log('Suggestions:', analysis.suggestions);
 
 ### ATS Pass Score Targets
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-pass-score-targets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-pass-score-targets-handwritten.svg" alt="Handwritten: ATS Pass Score Targets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-pass-score-targets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-pass-score-targets-diagram.svg" alt="Diagram: ATS Pass Score Targets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-pass-score-targets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-pass-score-targets-sticky.svg" alt="Sticky Note: ATS Pass Score Targets" width="30%">
-</a>
-
-
 | Company Type | Minimum Score | Competitive Score |
 |-------------|--------------|-------------------|
 | TCS, Infosys, Wipro | 60% | 75%+ |
@@ -1027,17 +850,6 @@ console.log('Suggestions:', analysis.suggestions);
 ## Common Resume Mistakes — Before & After
 
 ### Mistake 1: Objective Statement Instead of Summary
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-1-objective-statement-instead-of-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-1-objective-statement-instead-of-summary-handwritten.svg" alt="Handwritten: Mistake 1: Objective Statement Instead of Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-1-objective-statement-instead-of-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-1-objective-statement-instead-of-summary-diagram.svg" alt="Diagram: Mistake 1: Objective Statement Instead of Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-1-objective-statement-instead-of-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-1-objective-statement-instead-of-summary-sticky.svg" alt="Sticky Note: Mistake 1: Objective Statement Instead of Summary" width="30%">
-</a>
-
 
 **Before:**
 ```
@@ -1056,17 +868,6 @@ PostgreSQL.
 
 ### Mistake 2: Listing Responsibilities Instead of Achievements
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-2-listing-responsibilities-instead-of-achievements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-2-listing-responsibilities-instead-of-achievements-handwritten.svg" alt="Handwritten: Mistake 2: Listing Responsibilities Instead of Achievements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-2-listing-responsibilities-instead-of-achievements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-2-listing-responsibilities-instead-of-achievements-diagram.svg" alt="Diagram: Mistake 2: Listing Responsibilities Instead of Achievements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-2-listing-responsibilities-instead-of-achievements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-2-listing-responsibilities-instead-of-achievements-sticky.svg" alt="Sticky Note: Mistake 2: Listing Responsibilities Instead of Achievements" width="30%">
-</a>
-
-
 **Before:**
 ```
 - Worked on the payment module
@@ -1084,17 +885,6 @@ PostgreSQL.
 ```
 
 ### Mistake 3: Too Many Irrelevant Skills
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-3-too-many-irrelevant-skills-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-3-too-many-irrelevant-skills-handwritten.svg" alt="Handwritten: Mistake 3: Too Many Irrelevant Skills" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-3-too-many-irrelevant-skills-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-3-too-many-irrelevant-skills-diagram.svg" alt="Diagram: Mistake 3: Too Many Irrelevant Skills" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-3-too-many-irrelevant-skills-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-3-too-many-irrelevant-skills-sticky.svg" alt="Sticky Note: Mistake 3: Too Many Irrelevant Skills" width="30%">
-</a>
-
 
 **Before:**
 ```
@@ -1115,17 +905,6 @@ Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, GitHub Actions
 
 ### Mistake 4: No Quantifiable Impact
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-4-no-quantifiable-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-4-no-quantifiable-impact-handwritten.svg" alt="Handwritten: Mistake 4: No Quantifiable Impact" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-4-no-quantifiable-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-4-no-quantifiable-impact-diagram.svg" alt="Diagram: Mistake 4: No Quantifiable Impact" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-4-no-quantifiable-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-4-no-quantifiable-impact-sticky.svg" alt="Sticky Note: Mistake 4: No Quantifiable Impact" width="30%">
-</a>
-
-
 **Before:**
 ```
 - Improved application performance
@@ -1142,17 +921,6 @@ Cloud & DevOps: AWS (EC2, S3, Lambda), Docker, GitHub Actions
 
 ### Mistake 5: Using First Person or Third Person
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-5-using-first-person-or-third-person-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-5-using-first-person-or-third-person-handwritten.svg" alt="Handwritten: Mistake 5: Using First Person or Third Person" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-5-using-first-person-or-third-person-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-5-using-first-person-or-third-person-diagram.svg" alt="Diagram: Mistake 5: Using First Person or Third Person" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-5-using-first-person-or-third-person-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-5-using-first-person-or-third-person-sticky.svg" alt="Sticky Note: Mistake 5: Using First Person or Third Person" width="30%">
-</a>
-
-
 **Before:**
 ```
 I worked on the backend system. I implemented APIs. I also
@@ -1166,17 +934,6 @@ Achieved 90% unit test coverage across the backend codebase
 ```
 
 ### Mistake 6: Incorrect Tense
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-6-incorrect-tense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-6-incorrect-tense-handwritten.svg" alt="Handwritten: Mistake 6: Incorrect Tense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-6-incorrect-tense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-6-incorrect-tense-diagram.svg" alt="Diagram: Mistake 6: Incorrect Tense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-6-incorrect-tense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-6-incorrect-tense-sticky.svg" alt="Sticky Note: Mistake 6: Incorrect Tense" width="30%">
-</a>
-
 
 **Before:**
 ```
@@ -1201,17 +958,6 @@ Achieved 90% unit test coverage across the backend codebase
 
 ### Mistake 7: Including Irrelevant Personal Details
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-7-including-irrelevant-personal-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-7-including-irrelevant-personal-details-handwritten.svg" alt="Handwritten: Mistake 7: Including Irrelevant Personal Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-7-including-irrelevant-personal-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-7-including-irrelevant-personal-details-diagram.svg" alt="Diagram: Mistake 7: Including Irrelevant Personal Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-7-including-irrelevant-personal-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-7-including-irrelevant-personal-details-sticky.svg" alt="Sticky Note: Mistake 7: Including Irrelevant Personal Details" width="30%">
-</a>
-
-
 **Before:**
 ```
 DOB: 01/01/2000
@@ -1235,17 +981,6 @@ Category: General
 
 ### Mistake 8: Poor Formatting
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-8-poor-formatting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-8-poor-formatting-handwritten.svg" alt="Handwritten: Mistake 8: Poor Formatting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-8-poor-formatting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-8-poor-formatting-diagram.svg" alt="Diagram: Mistake 8: Poor Formatting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-8-poor-formatting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-8-poor-formatting-sticky.svg" alt="Sticky Note: Mistake 8: Poor Formatting" width="30%">
-</a>
-
-
 | Issue | Before | After |
 |-------|--------|-------|
 | Font | Multiple fonts mixed | Single font (Calibri 11pt) |
@@ -1256,17 +991,6 @@ Category: General
 | Alignment | Mixed justified/left | Left-aligned consistently |
 
 ### Mistake 9: Spelling and Grammar Errors
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-9-spelling-and-grammar-errors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-9-spelling-and-grammar-errors-handwritten.svg" alt="Handwritten: Mistake 9: Spelling and Grammar Errors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-9-spelling-and-grammar-errors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-9-spelling-and-grammar-errors-diagram.svg" alt="Diagram: Mistake 9: Spelling and Grammar Errors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-9-spelling-and-grammar-errors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-9-spelling-and-grammar-errors-sticky.svg" alt="Sticky Note: Mistake 9: Spelling and Grammar Errors" width="30%">
-</a>
-
 
 **Before:**
 ```
@@ -1284,17 +1008,6 @@ Category: General
 
 ### Mistake 10: Including Outdated Technology
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-10-including-outdated-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-10-including-outdated-technology-handwritten.svg" alt="Handwritten: Mistake 10: Including Outdated Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-10-including-outdated-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-10-including-outdated-technology-diagram.svg" alt="Diagram: Mistake 10: Including Outdated Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-10-including-outdated-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/mistake-10-including-outdated-technology-sticky.svg" alt="Sticky Note: Mistake 10: Including Outdated Technology" width="30%">
-</a>
-
-
 **Before:**
 ```
 Skills: VB.NET, Silverlight, Flash, jQuery, ASP.NET Web Forms,
@@ -1311,17 +1024,6 @@ PostgreSQL, GraphQL, Next.js, Tailwind CSS
 
 ### LinkedIn Checklist for IT Jobs
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-checklist-for-it-jobs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-checklist-for-it-jobs-handwritten.svg" alt="Handwritten: LinkedIn Checklist for IT Jobs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-checklist-for-it-jobs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-checklist-for-it-jobs-diagram.svg" alt="Diagram: LinkedIn Checklist for IT Jobs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-checklist-for-it-jobs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-checklist-for-it-jobs-sticky.svg" alt="Sticky Note: LinkedIn Checklist for IT Jobs" width="30%">
-</a>
-
-
 | Element | Requirement | Action Item |
 |---------|-------------|-------------|
 | Profile Photo | Professional headshot | Neutral background, business casual attire |
@@ -1336,17 +1038,6 @@ PostgreSQL, GraphQL, Next.js, Tailwind CSS
 | Activity | Weekly posts/comments | Share articles, comment on industry news |
 
 ### 10-Day LinkedIn Optimization Plan
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/10-day-linkedin-optimization-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/10-day-linkedin-optimization-plan-handwritten.svg" alt="Handwritten: 10-Day LinkedIn Optimization Plan" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/10-day-linkedin-optimization-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/10-day-linkedin-optimization-plan-diagram.svg" alt="Diagram: 10-Day LinkedIn Optimization Plan" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/10-day-linkedin-optimization-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/10-day-linkedin-optimization-plan-sticky.svg" alt="Sticky Note: 10-Day LinkedIn Optimization Plan" width="30%">
-</a>
-
 
 | Day | Task | Time Required |
 |-----|------|---------------|
@@ -1363,17 +1054,6 @@ PostgreSQL, GraphQL, Next.js, Tailwind CSS
 
 ### LinkedIn Headline Templates
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-headline-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-headline-templates-handwritten.svg" alt="Handwritten: LinkedIn Headline Templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-headline-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-headline-templates-diagram.svg" alt="Diagram: LinkedIn Headline Templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-headline-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-headline-templates-sticky.svg" alt="Sticky Note: LinkedIn Headline Templates" width="30%">
-</a>
-
-
 | Role | Formula | Example |
 |------|---------|---------|
 | Fresher | [Role] | [Skills] | [College] | "Software Engineer | React & Node.js | IIT Bombay '26" |
@@ -1383,17 +1063,6 @@ PostgreSQL, GraphQL, Next.js, Tailwind CSS
 | Manager | [Role] | [Team Size] | [Expertise] | "Engineering Manager | Led 20-person team | AI/ML Products" |
 
 ### LinkedIn About Section Template
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-about-section-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-about-section-template-handwritten.svg" alt="Handwritten: LinkedIn About Section Template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-about-section-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-about-section-template-diagram.svg" alt="Diagram: LinkedIn About Section Template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-about-section-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/linkedin-about-section-template-sticky.svg" alt="Sticky Note: LinkedIn About Section Template" width="30%">
-</a>
-
 
 ```
 [Paragraph 1 - Who You Are]
@@ -1420,17 +1089,6 @@ Let's connect if you're working on [interesting topic].
 
 ### For Private Sector Applications
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-private-sector-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-private-sector-applications-handwritten.svg" alt="Handwritten: For Private Sector Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-private-sector-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-private-sector-applications-diagram.svg" alt="Diagram: For Private Sector Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-private-sector-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-private-sector-applications-sticky.svg" alt="Sticky Note: For Private Sector Applications" width="30%">
-</a>
-
-
 | Item | Status | Notes |
 |------|--------|-------|
 | Resume (1 page, PDF) | | ATS-optimized |
@@ -1445,17 +1103,6 @@ Let's connect if you're working on [interesting topic].
 | Notice Period Details | | Current + available to join |
 
 ### For Government Sector Applications
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-government-sector-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-government-sector-applications-handwritten.svg" alt="Handwritten: For Government Sector Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-government-sector-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-government-sector-applications-diagram.svg" alt="Diagram: For Government Sector Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-government-sector-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/for-government-sector-applications-sticky.svg" alt="Sticky Note: For Government Sector Applications" width="30%">
-</a>
-
 
 | Document | Status | Self-Attested |
 |----------|--------|---------------|
@@ -1484,17 +1131,6 @@ Let's connect if you're working on [interesting topic].
 
 ### Resume Writing Do's and Don'ts
 
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/resume-writing-do-s-and-don-ts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/resume-writing-do-s-and-don-ts-handwritten.svg" alt="Handwritten: Resume Writing Do's and Don'ts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/resume-writing-do-s-and-don-ts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/resume-writing-do-s-and-don-ts-diagram.svg" alt="Diagram: Resume Writing Do's and Don'ts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/resume-writing-do-s-and-don-ts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/resume-writing-do-s-and-don-ts-sticky.svg" alt="Sticky Note: Resume Writing Do's and Don'ts" width="30%">
-</a>
-
-
 | Do | Don't |
 |----|-------|
 | Use action verbs (Built, Designed, Led, Optimized) | Use passive voice (Was involved in, Was part of) |
@@ -1509,17 +1145,6 @@ Let's connect if you're working on [interesting topic].
 | Proofread 3 times before sending | Rush the submission |
 
 ### ATS Keywords by Role
-
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-keywords-by-role-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-keywords-by-role-handwritten.svg" alt="Handwritten: ATS Keywords by Role" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-keywords-by-role-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-keywords-by-role-diagram.svg" alt="Diagram: ATS Keywords by Role" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-keywords-by-role-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/job-preparation/01-resume-cover-letter/ats-keywords-by-role-sticky.svg" alt="Sticky Note: ATS Keywords by Role" width="30%">
-</a>
-
 
 | Role | Must-Have Keywords | Good-to-Have Keywords |
 |------|-------------------|----------------------|

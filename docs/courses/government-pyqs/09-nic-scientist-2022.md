@@ -4,7 +4,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/government-pyqs/09-nic-scientist-2022/hero.svg" target="_blank" rel="noopener">
@@ -73,17 +72,6 @@
 ## Section A: Computer Science Fundamentals (50 Questions)
 
 ### Data Structures & Algorithms (14 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-handwritten.svg" alt="Handwritten: Data Structures & Algorithms (14 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-diagram.svg" alt="Diagram: Data Structures & Algorithms (14 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/data-structures-algorithms-14-qs-sticky.svg" alt="Sticky Note: Data Structures & Algorithms (14 Qs)" width="30%">
-</a>
-
 
 **Q1.** Which data structure is used for implementing recursion?
 
@@ -555,17 +543,6 @@ console.log(arr); // [10, 5, 7, 3, 2, 1]
 
 ### Operating Systems (10 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-handwritten.svg" alt="Handwritten: Operating Systems (10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-diagram.svg" alt="Diagram: Operating Systems (10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/operating-systems-10-qs-sticky.svg" alt="Sticky Note: Operating Systems (10 Qs)" width="30%">
-</a>
-
-
 **Q15.** Which of the following is a process scheduling algorithm?
 
 A) FIFO  
@@ -864,17 +841,6 @@ D) mkdir
 
 ### Database Management Systems (9 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-handwritten.svg" alt="Handwritten: Database Management Systems (9 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-diagram.svg" alt="Diagram: Database Management Systems (9 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/database-management-systems-9-qs-sticky.svg" alt="Sticky Note: Database Management Systems (9 Qs)" width="30%">
-</a>
-
-
 **Q25.** Which SQL command is used to remove a table from the database?
 
 A) DELETE  
@@ -1072,17 +1038,6 @@ D) A database trigger
 ---
 
 ### Computer Networks (9 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-handwritten.svg" alt="Handwritten: Computer Networks (9 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-diagram.svg" alt="Diagram: Computer Networks (9 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-networks-9-qs-sticky.svg" alt="Sticky Note: Computer Networks (9 Qs)" width="30%">
-</a>
-
 
 **Q34.** Which protocol is used for web browsing?
 
@@ -1283,17 +1238,6 @@ D) Translate domain names
 
 ### Software Engineering (5 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-handwritten.svg" alt="Handwritten: Software Engineering (5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-diagram.svg" alt="Diagram: Software Engineering (5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/software-engineering-5-qs-sticky.svg" alt="Sticky Note: Software Engineering (5 Qs)" width="30%">
-</a>
-
-
 **Q43.** Which model is known as the "V-Model"?
 
 A) Verification and Validation model  
@@ -1404,17 +1348,6 @@ D) Acceptance testing
 
 ### Computer Organization & Architecture (3 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-handwritten.svg" alt="Handwritten: Computer Organization & Architecture (3 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-diagram.svg" alt="Diagram: Computer Organization & Architecture (3 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/computer-organization-architecture-3-qs-sticky.svg" alt="Sticky Note: Computer Organization & Architecture (3 Qs)" width="30%">
-</a>
-
-
 **Q48.** Which of the following is a sequential circuit?
 
 A) Multiplexer  
@@ -1470,17 +1403,6 @@ D) System bus
 ## Section B: Programming & OOP (30 Questions)
 
 ### C Programming (13 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-handwritten.svg" alt="Handwritten: C Programming (13 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-diagram.svg" alt="Diagram: C Programming (13 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/c-programming-13-qs-sticky.svg" alt="Sticky Note: C Programming (13 Qs)" width="30%">
-</a>
-
 
 **Q51.** What is the output of the following C code?
 
@@ -1845,17 +1767,6 @@ D) Compilation error
 ---
 
 ### Java & OOP (17 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-handwritten.svg" alt="Handwritten: Java & OOP (17 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-diagram.svg" alt="Diagram: Java & OOP (17 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/java-oop-17-qs-sticky.svg" alt="Sticky Note: Java & OOP (17 Qs)" width="30%">
-</a>
-
 
 **Q64.** Which of the following is NOT a feature of Java?
 
@@ -2264,17 +2175,6 @@ D) They can be overridden
 
 ### Quantitative Aptitude (8 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-handwritten.svg" alt="Handwritten: Quantitative Aptitude (8 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-diagram.svg" alt="Diagram: Quantitative Aptitude (8 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/quantitative-aptitude-8-qs-sticky.svg" alt="Sticky Note: Quantitative Aptitude (8 Qs)" width="30%">
-</a>
-
-
 **Q81.** If 15 workers can build a wall in 20 days, how many workers are needed to build the same wall in 10 days?
 
 A) 25  
@@ -2420,17 +2320,6 @@ D) 144
 ---
 
 ### Reasoning Ability (7 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-handwritten.svg" alt="Handwritten: Reasoning Ability (7 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-diagram.svg" alt="Diagram: Reasoning Ability (7 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/reasoning-ability-7-qs-sticky.svg" alt="Sticky Note: Reasoning Ability (7 Qs)" width="30%">
-</a>
-
 
 **Q89.** Find the missing number: 2, 6, 18, 54, ?
 
@@ -2591,17 +2480,6 @@ D) 75°
 
 ### English Language (5 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-handwritten.svg" alt="Handwritten: English Language (5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-diagram.svg" alt="Diagram: English Language (5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/english-language-5-qs-sticky.svg" alt="Sticky Note: English Language (5 Qs)" width="30%">
-</a>
-
-
 **Q96.** Choose the correct spelling:
 
 A) Ocassion  
@@ -2734,17 +2612,6 @@ D) with
 
 ### Key Insights for NIC Scientist B
 
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-handwritten.svg" alt="Handwritten: Key Insights for NIC Scientist B" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-diagram.svg" alt="Diagram: Key Insights for NIC Scientist B" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/key-insights-for-nic-scientist-b-sticky.svg" alt="Sticky Note: Key Insights for NIC Scientist B" width="30%">
-</a>
-
-
 1. **DS&A is the most critical section** (13-14 questions) — focus on trees, graphs, sorting, hashing
 2. **C Programming is heavily tested** (13-14 questions) — pointers, macros, arrays, operators
 3. **Java questions focus on OOP principles** — inheritance, polymorphism, collections
@@ -2753,17 +2620,6 @@ D) with
 6. **Difficulty has increased slightly year-over-year** — more code tracing and conceptual depth
 
 ### Recommended Strategy
-
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-handwritten.svg" alt="Handwritten: Recommended Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-diagram.svg" alt="Diagram: Recommended Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/09-nic-scientist-2022/recommended-strategy-sticky.svg" alt="Sticky Note: Recommended Strategy" width="30%">
-</a>
-
 
 - **Phase 1 (Months 1-2)**: Master DS&A fundamentals + C programming
 - **Phase 2 (Month 3)**: OS, DBMS, CN core concepts

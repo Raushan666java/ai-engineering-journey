@@ -93,16 +93,6 @@ flowchart LR
 
 ### 1. The MultipartFile Interface
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/1-the-multipartfile-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/1-the-multipartfile-interface-handwritten.svg" alt="Handwritten: 1. The MultipartFile Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/1-the-multipartfile-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/1-the-multipartfile-interface-diagram.svg" alt="Diagram: 1. The MultipartFile Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/1-the-multipartfile-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/1-the-multipartfile-interface-sticky.svg" alt="Sticky Note: 1. The MultipartFile Interface" width="30%">
-</a>
-
 
 Spring's `org.springframework.web.multipart.MultipartFile` represents an uploaded file received in a multipart request. It wraps the raw HTTP multipart data and provides convenience methods.
 
@@ -126,16 +116,6 @@ The underlying HTTP multipart parsing is handled by the servlet container (Tomca
 ---
 
 ### 2. Single File Upload
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/2-single-file-upload-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/2-single-file-upload-handwritten.svg" alt="Handwritten: 2. Single File Upload" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/2-single-file-upload-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/2-single-file-upload-diagram.svg" alt="Diagram: 2. Single File Upload" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/2-single-file-upload-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/2-single-file-upload-sticky.svg" alt="Sticky Note: 2. Single File Upload" width="30%">
-</a>
 
 
 The simplest upload endpoint accepts a `MultipartFile` bound to a `@RequestParam`.
@@ -180,16 +160,6 @@ public class FileUploadController {
 ```
 
 ### 3. Multiple File Upload
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/3-multiple-file-upload-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/3-multiple-file-upload-handwritten.svg" alt="Handwritten: 3. Multiple File Upload" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/3-multiple-file-upload-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/3-multiple-file-upload-diagram.svg" alt="Diagram: 3. Multiple File Upload" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/3-multiple-file-upload-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/3-multiple-file-upload-sticky.svg" alt="Sticky Note: 3. Multiple File Upload" width="30%">
-</a>
 
 
 ```java
@@ -248,16 +218,6 @@ public class MultipleFileUploadController {
 ```
 
 ### 4. Upload Configuration
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/4-upload-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/4-upload-configuration-handwritten.svg" alt="Handwritten: 4. Upload Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/4-upload-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/4-upload-configuration-diagram.svg" alt="Diagram: 4. Upload Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/4-upload-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/4-upload-configuration-sticky.svg" alt="Sticky Note: 4. Upload Configuration" width="30%">
-</a>
 
 
 All multipart properties live under the `spring.servlet.multipart.*` namespace.
@@ -320,16 +280,6 @@ public class MultipartConfig {
 
 ### 5. File Size Limit Handling
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/5-file-size-limit-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/5-file-size-limit-handling-handwritten.svg" alt="Handwritten: 5. File Size Limit Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/5-file-size-limit-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/5-file-size-limit-handling-diagram.svg" alt="Diagram: 5. File Size Limit Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/5-file-size-limit-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/5-file-size-limit-handling-sticky.svg" alt="Sticky Note: 5. File Size Limit Handling" width="30%">
-</a>
-
 
 When a file exceeds `max-file-size` or `max-request-size`, Spring throws `MaxUploadSizeExceededException` or `MultipartException`. Handle them with `@ControllerAdvice`.
 
@@ -372,16 +322,6 @@ public class FileUploadExceptionHandler {
 ```
 
 ### 6. Custom Storage Service
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/6-custom-storage-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/6-custom-storage-service-handwritten.svg" alt="Handwritten: 6. Custom Storage Service" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/6-custom-storage-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/6-custom-storage-service-diagram.svg" alt="Diagram: 6. Custom Storage Service" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/6-custom-storage-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/6-custom-storage-service-sticky.svg" alt="Sticky Note: 6. Custom Storage Service" width="30%">
-</a>
 
 
 Abstract file operations behind an interface so you can swap implementations (local filesystem, S3, database, etc.).
@@ -599,16 +539,6 @@ public class StorageFileNotFoundException extends StorageException {
 
 ### 7. Upload Controller Using Storage Service
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/7-upload-controller-using-storage-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/7-upload-controller-using-storage-service-handwritten.svg" alt="Handwritten: 7. Upload Controller Using Storage Service" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/7-upload-controller-using-storage-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/7-upload-controller-using-storage-service-diagram.svg" alt="Diagram: 7. Upload Controller Using Storage Service" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/7-upload-controller-using-storage-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/7-upload-controller-using-storage-service-sticky.svg" alt="Sticky Note: 7. Upload Controller Using Storage Service" width="30%">
-</a>
-
 
 ```java
 import org.springframework.core.io.Resource;
@@ -809,16 +739,6 @@ public class UploadResponse {
 
 ### 8. Downloading Files Ã¢â‚¬â€ Resource Implementations
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/8-downloading-files-resource-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/8-downloading-files-resource-implementations-handwritten.svg" alt="Handwritten: 8. Downloading Files Ã¢â‚¬â€ Resource Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/8-downloading-files-resource-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/8-downloading-files-resource-implementations-diagram.svg" alt="Diagram: 8. Downloading Files Ã¢â‚¬â€ Resource Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/8-downloading-files-resource-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/8-downloading-files-resource-implementations-sticky.svg" alt="Sticky Note: 8. Downloading Files Ã¢â‚¬â€ Resource Implementations" width="30%">
-</a>
-
 
 Spring provides several `Resource` implementations for different use cases:
 
@@ -966,16 +886,6 @@ public class ResourceExamplesController {
 ```
 
 ### 9. Streaming Large Files Ã¢â‚¬â€ StreamingResponseBody
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/9-streaming-large-files-streamingresponsebody-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/9-streaming-large-files-streamingresponsebody-handwritten.svg" alt="Handwritten: 9. Streaming Large Files Ã¢â‚¬â€ StreamingResponseBody" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/9-streaming-large-files-streamingresponsebody-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/9-streaming-large-files-streamingresponsebody-diagram.svg" alt="Diagram: 9. Streaming Large Files Ã¢â‚¬â€ StreamingResponseBody" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/9-streaming-large-files-streamingresponsebody-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/9-streaming-large-files-streamingresponsebody-sticky.svg" alt="Sticky Note: 9. Streaming Large Files Ã¢â‚¬â€ StreamingResponseBody" width="30%">
-</a>
 
 
 `StreamingResponseBody` allows writing directly to the response's `OutputStream` without buffering the entire file in memory. It is ideal for large files (100MB+, video, ISO images).
@@ -1166,16 +1076,6 @@ public class StreamingController {
 
 ### 10. InputStreamResource Streaming
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/10-inputstreamresource-streaming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/10-inputstreamresource-streaming-handwritten.svg" alt="Handwritten: 10. InputStreamResource Streaming" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/10-inputstreamresource-streaming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/10-inputstreamresource-streaming-diagram.svg" alt="Diagram: 10. InputStreamResource Streaming" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/10-inputstreamresource-streaming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/10-inputstreamresource-streaming-sticky.svg" alt="Sticky Note: 10. InputStreamResource Streaming" width="30%">
-</a>
-
 
 `InputStreamResource` is an alternative for streaming. Spring automatically uses chunked encoding when the content length is unknown.
 
@@ -1255,16 +1155,6 @@ public class InputStreamResourceController {
 ```
 
 ### 11. Progress Tracking Ã¢â‚¬â€ Temp Then Atomic Move
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/11-progress-tracking-temp-then-atomic-move-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/11-progress-tracking-temp-then-atomic-move-handwritten.svg" alt="Handwritten: 11. Progress Tracking Ã¢â‚¬â€ Temp Then Atomic Move" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/11-progress-tracking-temp-then-atomic-move-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/11-progress-tracking-temp-then-atomic-move-diagram.svg" alt="Diagram: 11. Progress Tracking Ã¢â‚¬â€ Temp Then Atomic Move" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/11-progress-tracking-temp-then-atomic-move-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/11-progress-tracking-temp-then-atomic-move-sticky.svg" alt="Sticky Note: 11. Progress Tracking Ã¢â‚¬â€ Temp Then Atomic Move" width="30%">
-</a>
 
 
 For very large uploads, save to a temp file first, validate, then atomically move to the final location.
@@ -1413,16 +1303,6 @@ public class SafeStorageService {
 ```
 
 ### 12. File Type Validation by Magic Bytes
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/12-file-type-validation-by-magic-bytes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/12-file-type-validation-by-magic-bytes-handwritten.svg" alt="Handwritten: 12. File Type Validation by Magic Bytes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/12-file-type-validation-by-magic-bytes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/12-file-type-validation-by-magic-bytes-diagram.svg" alt="Diagram: 12. File Type Validation by Magic Bytes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/12-file-type-validation-by-magic-bytes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/12-file-type-validation-by-magic-bytes-sticky.svg" alt="Sticky Note: 12. File Type Validation by Magic Bytes" width="30%">
-</a>
 
 
 Relying solely on file extensions is insecure. Validate the file's magic bytes (the first few bytes that identify the file format).
@@ -1592,16 +1472,6 @@ public class FileValidationExceptionHandler {
 ```
 
 ### 13. Malware Scanning Integration
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/13-malware-scanning-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/13-malware-scanning-integration-handwritten.svg" alt="Handwritten: 13. Malware Scanning Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/13-malware-scanning-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/13-malware-scanning-integration-diagram.svg" alt="Diagram: 13. Malware Scanning Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/13-malware-scanning-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/13-malware-scanning-integration-sticky.svg" alt="Sticky Note: 13. Malware Scanning Integration" width="30%">
-</a>
 
 
 ```java
@@ -1848,16 +1718,6 @@ public class UploadResult {
 
 ### 14. File Serving with StaticResourceHandler
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/14-file-serving-with-staticresourcehandler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/14-file-serving-with-staticresourcehandler-handwritten.svg" alt="Handwritten: 14. File Serving with StaticResourceHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/14-file-serving-with-staticresourcehandler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/14-file-serving-with-staticresourcehandler-diagram.svg" alt="Diagram: 14. File Serving with StaticResourceHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/14-file-serving-with-staticresourcehandler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/14-file-serving-with-staticresourcehandler-sticky.svg" alt="Sticky Note: 14. File Serving with StaticResourceHandler" width="30%">
-</a>
-
 
 Spring Boot serves static resources from `classpath:/static/` (or `/public`, `/resources`, `/META-INF/resources`) by default. For uploaded files stored outside the classpath, configure a `WebMvcConfigurer` addResourceHandler.
 
@@ -1972,16 +1832,6 @@ public class FileViewController {
 
 ### 15. Complete Upload Pipeline Ã¢â‚¬â€ End to End
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/15-complete-upload-pipeline-end-to-end-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/15-complete-upload-pipeline-end-to-end-handwritten.svg" alt="Handwritten: 15. Complete Upload Pipeline Ã¢â‚¬â€ End to End" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/15-complete-upload-pipeline-end-to-end-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/15-complete-upload-pipeline-end-to-end-diagram.svg" alt="Diagram: 15. Complete Upload Pipeline Ã¢â‚¬â€ End to End" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/15-complete-upload-pipeline-end-to-end-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/15-complete-upload-pipeline-end-to-end-sticky.svg" alt="Sticky Note: 15. Complete Upload Pipeline Ã¢â‚¬â€ End to End" width="30%">
-</a>
-
 
 ```java
 import org.slf4j.Logger;
@@ -2072,16 +1922,6 @@ public class SecureFileController {
 ```
 
 ### 16. Chunked Upload (Client-Side Splitting)
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/16-chunked-upload-client-side-splitting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/16-chunked-upload-client-side-splitting-handwritten.svg" alt="Handwritten: 16. Chunked Upload (Client-Side Splitting)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/16-chunked-upload-client-side-splitting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/16-chunked-upload-client-side-splitting-diagram.svg" alt="Diagram: 16. Chunked Upload (Client-Side Splitting)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/16-chunked-upload-client-side-splitting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/16-chunked-upload-client-side-splitting-sticky.svg" alt="Sticky Note: 16. Chunked Upload (Client-Side Splitting)" width="30%">
-</a>
 
 
 For extremely large files, the client can split the file into chunks and upload them sequentially.
@@ -2290,16 +2130,6 @@ public class ChunkedUploadController {
 ```
 
 ### 17. Database-Backed File Storage
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/17-database-backed-file-storage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/17-database-backed-file-storage-handwritten.svg" alt="Handwritten: 17. Database-Backed File Storage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/17-database-backed-file-storage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/17-database-backed-file-storage-diagram.svg" alt="Diagram: 17. Database-Backed File Storage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/17-database-backed-file-storage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/17-database-backed-file-storage-sticky.svg" alt="Sticky Note: 17. Database-Backed File Storage" width="30%">
-</a>
 
 
 For small files or when you need transactional consistency, store files in a database alongside metadata.
@@ -2530,16 +2360,6 @@ public class DatabaseFileController {
 
 ### 18. Application Properties Reference
 
-<a href="../../../assets/images/diagrams/java/18-file-handling/18-application-properties-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/18-application-properties-reference-handwritten.svg" alt="Handwritten: 18. Application Properties Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/18-application-properties-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/18-application-properties-reference-diagram.svg" alt="Diagram: 18. Application Properties Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/18-application-properties-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/18-application-properties-reference-sticky.svg" alt="Sticky Note: 18. Application Properties Reference" width="30%">
-</a>
-
 
 ```properties
 # ===== Multipart/Upload Configuration =====
@@ -2605,16 +2425,6 @@ server:
 ```
 
 ### 19. Testing File Operations
-
-<a href="../../../assets/images/diagrams/java/18-file-handling/19-testing-file-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/19-testing-file-operations-handwritten.svg" alt="Handwritten: 19. Testing File Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/19-testing-file-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/19-testing-file-operations-diagram.svg" alt="Diagram: 19. Testing File Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/18-file-handling/19-testing-file-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/18-file-handling/19-testing-file-operations-sticky.svg" alt="Sticky Note: 19. Testing File Operations" width="30%">
-</a>
 
 
 ```java

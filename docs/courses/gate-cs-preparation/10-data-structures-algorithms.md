@@ -81,16 +81,6 @@ flowchart LR
 
 ### 1.1 Asymptotic Notations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-1-asymptotic-notations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-1-asymptotic-notations-handwritten.svg" alt="Handwritten: 1.1 Asymptotic Notations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-1-asymptotic-notations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-1-asymptotic-notations-diagram.svg" alt="Diagram: 1.1 Asymptotic Notations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-1-asymptotic-notations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-1-asymptotic-notations-sticky.svg" alt="Sticky Note: 1.1 Asymptotic Notations" width="30%">
-</a>
-
 
 | Notation | Definition | Intuition |
 |----------|-----------|-----------|
@@ -111,16 +101,6 @@ flowchart LR
 O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢Ã‹â€ Ã…Â¡n) < O(n) < O(n log n) < O(nÃƒâ€šÃ‚Â²) < O(nÃƒâ€šÃ‚Â³) < O(2ÃƒÂ¢Ã‚Â�Ã‚Â¿) < O(n!) < O(nÃƒÂ¢Ã‚Â�Ã‚Â¿)
 
 ### 1.2 Recurrence Relations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-2-recurrence-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-2-recurrence-relations-handwritten.svg" alt="Handwritten: 1.2 Recurrence Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-2-recurrence-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-2-recurrence-relations-diagram.svg" alt="Diagram: 1.2 Recurrence Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-2-recurrence-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-2-recurrence-relations-sticky.svg" alt="Sticky Note: 1.2 Recurrence Relations" width="30%">
-</a>
 
 
 **Substitution Method:** Guess the form, prove by induction.
@@ -151,16 +131,6 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢�
 
 ### 1.3 Amortized Analysis
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-3-amortized-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-3-amortized-analysis-handwritten.svg" alt="Handwritten: 1.3 Amortized Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-3-amortized-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-3-amortized-analysis-diagram.svg" alt="Diagram: 1.3 Amortized Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-3-amortized-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/1-3-amortized-analysis-sticky.svg" alt="Sticky Note: 1.3 Amortized Analysis" width="30%">
-</a>
-
 
 **Aggregate Method:** Compute total cost of n operations, divide by n.
 
@@ -179,16 +149,6 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢�
 
 ### 2.1 Representation in Memory
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-1-representation-in-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-1-representation-in-memory-handwritten.svg" alt="Handwritten: 2.1 Representation in Memory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-1-representation-in-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-1-representation-in-memory-diagram.svg" alt="Diagram: 2.1 Representation in Memory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-1-representation-in-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-1-representation-in-memory-sticky.svg" alt="Sticky Note: 2.1 Representation in Memory" width="30%">
-</a>
-
 
 **Row-major order (C/C++):** Address(A[i][j]) = Base + (i ÃƒÆ’Ã¢â‚¬â€� n + j) ÃƒÆ’Ã¢â‚¬â€� size
 
@@ -198,16 +158,6 @@ O(1) &lt; O(log log n) < O(log n) < O((log n)Ãƒâ€šÃ‚Â²) < O(ÃƒÂ¢�
 - Address = Base + ÃƒÅ½Ã‚Â£_{k=1}^{n} (iÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬â€œ ÃƒÆ’Ã¢â‚¬â€� ÃƒÅ½Ã‚Â _{t=k+1}^{n} dÃƒÂ¢Ã¢â‚¬Å¡Ã…â€œ) ÃƒÆ’Ã¢â‚¬â€� size
 
 ### 2.2 Sparse Matrices
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-2-sparse-matrices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-2-sparse-matrices-handwritten.svg" alt="Handwritten: 2.2 Sparse Matrices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-2-sparse-matrices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-2-sparse-matrices-diagram.svg" alt="Diagram: 2.2 Sparse Matrices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-2-sparse-matrices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-2-sparse-matrices-sticky.svg" alt="Sticky Note: 2.2 Sparse Matrices" width="30%">
-</a>
 
 
 **Definition:** Matrix with mostly zero entries (nnz &lt;< m ÃƒÆ’Ã¢â‚¬â€� n).
@@ -234,16 +184,6 @@ row_ptr   = [0, 2, 3, 5]
 
 ### 2.3 GATE-Related Array Formulas
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-3-gate-related-array-formulas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-3-gate-related-array-formulas-handwritten.svg" alt="Handwritten: 2.3 GATE-Related Array Formulas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-3-gate-related-array-formulas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-3-gate-related-array-formulas-diagram.svg" alt="Diagram: 2.3 GATE-Related Array Formulas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-3-gate-related-array-formulas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/2-3-gate-related-array-formulas-sticky.svg" alt="Sticky Note: 2.3 GATE-Related Array Formulas" width="30%">
-</a>
-
 
 **2D array A[m][n] stored row-major:**
 - A[i][j] = Base + (i ÃƒÆ’Ã¢â‚¬â€� n + j) ÃƒÆ’Ã¢â‚¬â€� element_size
@@ -261,16 +201,6 @@ row_ptr   = [0, 2, 3, 5]
 
 ### 3.1 Types
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-1-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-1-types-handwritten.svg" alt="Handwritten: 3.1 Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-1-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-1-types-diagram.svg" alt="Diagram: 3.1 Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-1-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-1-types-sticky.svg" alt="Sticky Note: 3.1 Types" width="30%">
-</a>
-
 
 | Type | Node Structure | Memory | Traversal |
 |------|---------------|--------|-----------|
@@ -282,16 +212,6 @@ row_ptr   = [0, 2, 3, 5]
 
 ### 3.2 Operations Complexity
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-2-operations-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-2-operations-complexity-handwritten.svg" alt="Handwritten: 3.2 Operations Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-2-operations-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-2-operations-complexity-diagram.svg" alt="Diagram: 3.2 Operations Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-2-operations-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-2-operations-complexity-sticky.svg" alt="Sticky Note: 3.2 Operations Complexity" width="30%">
-</a>
-
 
 | Operation | Singly | Doubly | Circular |
 |-----------|--------|--------|----------|
@@ -302,16 +222,6 @@ row_ptr   = [0, 2, 3, 5]
 | Search | O(n) | O(n) | O(n) |
 
 ### 3.3 Floyd's Cycle Detection (Tortoise & Hare)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-3-floyd-s-cycle-detection-tortoise-hare-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-3-floyd-s-cycle-detection-tortoise-hare-handwritten.svg" alt="Handwritten: 3.3 Floyd's Cycle Detection (Tortoise & Hare)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-3-floyd-s-cycle-detection-tortoise-hare-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-3-floyd-s-cycle-detection-tortoise-hare-diagram.svg" alt="Diagram: 3.3 Floyd's Cycle Detection (Tortoise & Hare)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-3-floyd-s-cycle-detection-tortoise-hare-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/3-3-floyd-s-cycle-detection-tortoise-hare-sticky.svg" alt="Sticky Note: 3.3 Floyd's Cycle Detection (Tortoise & Hare)" width="30%">
-</a>
 
 
 ```
@@ -337,16 +247,6 @@ function hasCycle(head):
 
 ### 4.1 Stack Operations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-1-stack-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-1-stack-operations-handwritten.svg" alt="Handwritten: 4.1 Stack Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-1-stack-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-1-stack-operations-diagram.svg" alt="Diagram: 4.1 Stack Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-1-stack-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-1-stack-operations-sticky.svg" alt="Sticky Note: 4.1 Stack Operations" width="30%">
-</a>
-
 
 | Operation | Array | Linked List |
 |-----------|-------|-------------|
@@ -356,16 +256,6 @@ function hasCycle(head):
 | isEmpty() | O(1) | O(1) |
 
 ### 4.2 Queue Operations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-2-queue-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-2-queue-operations-handwritten.svg" alt="Handwritten: 4.2 Queue Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-2-queue-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-2-queue-operations-diagram.svg" alt="Diagram: 4.2 Queue Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-2-queue-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-2-queue-operations-sticky.svg" alt="Sticky Note: 4.2 Queue Operations" width="30%">
-</a>
 
 
 | Operation | Array (Circular) | Linked List |
@@ -379,16 +269,6 @@ function hasCycle(head):
 **Two-stack queue:** enqueue = push to s1; dequeue = if s2 empty, pop all s1Ã¢â€ â€™s2, then pop s2.
 
 ### 4.3 Applications
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-3-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-3-applications-handwritten.svg" alt="Handwritten: 4.3 Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-3-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-3-applications-diagram.svg" alt="Diagram: 4.3 Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-3-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-3-applications-sticky.svg" alt="Sticky Note: 4.3 Applications" width="30%">
-</a>
 
 
 **Parenthesis Matching:**
@@ -416,16 +296,6 @@ return pop()
 
 ### 4.4 Expression Conversion Summary
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-4-expression-conversion-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-4-expression-conversion-summary-handwritten.svg" alt="Handwritten: 4.4 Expression Conversion Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-4-expression-conversion-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-4-expression-conversion-summary-diagram.svg" alt="Diagram: 4.4 Expression Conversion Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-4-expression-conversion-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/4-4-expression-conversion-summary-sticky.svg" alt="Sticky Note: 4.4 Expression Conversion Summary" width="30%">
-</a>
-
 
 | Expression | Order | Example |
 |------------|-------|---------|
@@ -441,16 +311,6 @@ return pop()
 
 ### 5.1 Binary Tree Terminologies
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-1-binary-tree-terminologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-1-binary-tree-terminologies-handwritten.svg" alt="Handwritten: 5.1 Binary Tree Terminologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-1-binary-tree-terminologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-1-binary-tree-terminologies-diagram.svg" alt="Diagram: 5.1 Binary Tree Terminologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-1-binary-tree-terminologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-1-binary-tree-terminologies-sticky.svg" alt="Sticky Note: 5.1 Binary Tree Terminologies" width="30%">
-</a>
-
 
 | Property | Formula |
 |----------|---------|
@@ -463,16 +323,6 @@ return pop()
 | Perfect binary tree | All levels completely full |
 
 ### 5.2 Binary Tree Traversals
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-2-binary-tree-traversals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-2-binary-tree-traversals-handwritten.svg" alt="Handwritten: 5.2 Binary Tree Traversals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-2-binary-tree-traversals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-2-binary-tree-traversals-diagram.svg" alt="Diagram: 5.2 Binary Tree Traversals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-2-binary-tree-traversals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-2-binary-tree-traversals-sticky.svg" alt="Sticky Note: 5.2 Binary Tree Traversals" width="30%">
-</a>
 
 
 | Traversal | Order | Use Case |
@@ -503,16 +353,6 @@ function morrisInorder(root):
 
 ### 5.3 Binary Search Tree
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-3-binary-search-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-3-binary-search-tree-handwritten.svg" alt="Handwritten: 5.3 Binary Search Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-3-binary-search-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-3-binary-search-tree-diagram.svg" alt="Diagram: 5.3 Binary Search Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-3-binary-search-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-3-binary-search-tree-sticky.svg" alt="Sticky Note: 5.3 Binary Search Tree" width="30%">
-</a>
-
 
 **Operations and complexity (average / worst):**
 
@@ -531,16 +371,6 @@ function morrisInorder(root):
 **Inorder successor:** min of right subtree
 
 ### 5.4 Important Tree Problems
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-4-important-tree-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-4-important-tree-problems-handwritten.svg" alt="Handwritten: 5.4 Important Tree Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-4-important-tree-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-4-important-tree-problems-diagram.svg" alt="Diagram: 5.4 Important Tree Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-4-important-tree-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-4-important-tree-problems-sticky.svg" alt="Sticky Note: 5.4 Important Tree Problems" width="30%">
-</a>
 
 
 **Diameter of a Binary Tree:** Longest path between any two nodes (may not pass through root).
@@ -572,16 +402,6 @@ function lca(root, p, q):
 
 ### 5.5 Threaded Binary Tree
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-5-threaded-binary-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-5-threaded-binary-tree-handwritten.svg" alt="Handwritten: 5.5 Threaded Binary Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-5-threaded-binary-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-5-threaded-binary-tree-diagram.svg" alt="Diagram: 5.5 Threaded Binary Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-5-threaded-binary-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-5-threaded-binary-tree-sticky.svg" alt="Sticky Note: 5.5 Threaded Binary Tree" width="30%">
-</a>
-
 
 **One-way threading:** Right null pointers point to inorder successor.
 **Two-way threading:** Left null pointers point to inorder predecessor.
@@ -589,16 +409,6 @@ function lca(root, p, q):
 **Advantage:** Traversal without stack or recursion (O(1) space).
 
 ### 5.6 Expression Trees
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-6-expression-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-6-expression-trees-handwritten.svg" alt="Handwritten: 5.6 Expression Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-6-expression-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-6-expression-trees-diagram.svg" alt="Diagram: 5.6 Expression Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-6-expression-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-6-expression-trees-sticky.svg" alt="Sticky Note: 5.6 Expression Trees" width="30%">
-</a>
 
 
 - Leaf nodes = operands
@@ -608,16 +418,6 @@ function lca(root, p, q):
 - Postorder = postfix expression
 
 ### 5.7 AVL Trees
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-7-avl-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-7-avl-trees-handwritten.svg" alt="Handwritten: 5.7 AVL Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-7-avl-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-7-avl-trees-diagram.svg" alt="Diagram: 5.7 AVL Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-7-avl-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-7-avl-trees-sticky.svg" alt="Sticky Note: 5.7 AVL Trees" width="30%">
-</a>
 
 
 **Balance Factor:** bf(node) = height(left) ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ height(right) ÃƒÂ¢Ã‹â€ Ã‹â€  {ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1, 0, 1}
@@ -637,16 +437,6 @@ function lca(root, p, q):
 
 ### 5.8 B-Trees and B+ Trees
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-8-b-trees-and-b-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-8-b-trees-and-b-trees-handwritten.svg" alt="Handwritten: 5.8 B-Trees and B+ Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-8-b-trees-and-b-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-8-b-trees-and-b-trees-diagram.svg" alt="Diagram: 5.8 B-Trees and B+ Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-8-b-trees-and-b-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-8-b-trees-and-b-trees-sticky.svg" alt="Sticky Note: 5.8 B-Trees and B+ Trees" width="30%">
-</a>
-
 
 **B-Tree of order m:**
 - Root: 1 to 2m keys
@@ -661,16 +451,6 @@ function lca(root, p, q):
 - Better cache performance, efficient range queries (leaf linked list)
 
 ### 5.9 Red-Black Trees
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-9-red-black-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-9-red-black-trees-handwritten.svg" alt="Handwritten: 5.9 Red-Black Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-9-red-black-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-9-red-black-trees-diagram.svg" alt="Diagram: 5.9 Red-Black Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-9-red-black-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-9-red-black-trees-sticky.svg" alt="Sticky Note: 5.9 Red-Black Trees" width="30%">
-</a>
 
 
 **Properties:**
@@ -690,16 +470,6 @@ function lca(root, p, q):
 
 ### 5.10 Tries
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-10-tries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-10-tries-handwritten.svg" alt="Handwritten: 5.10 Tries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-10-tries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-10-tries-diagram.svg" alt="Diagram: 5.10 Tries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-10-tries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/5-10-tries-sticky.svg" alt="Sticky Note: 5.10 Tries" width="30%">
-</a>
-
 
 **Trie (Prefix Tree):**
 - n-ary tree for string storage/retrieval
@@ -716,16 +486,6 @@ function lca(root, p, q):
 
 ### 6.1 Binary Heap
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-1-binary-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-1-binary-heap-handwritten.svg" alt="Handwritten: 6.1 Binary Heap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-1-binary-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-1-binary-heap-diagram.svg" alt="Diagram: 6.1 Binary Heap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-1-binary-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-1-binary-heap-sticky.svg" alt="Sticky Note: 6.1 Binary Heap" width="30%">
-</a>
-
 
 | Property | Min-Heap | Max-Heap |
 |----------|----------|----------|
@@ -737,16 +497,6 @@ function lca(root, p, q):
 | A[parent] ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ A[child] | No | Yes |
 
 ### 6.2 Operations
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-2-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-2-operations-handwritten.svg" alt="Handwritten: 6.2 Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-2-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-2-operations-diagram.svg" alt="Diagram: 6.2 Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-2-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-2-operations-sticky.svg" alt="Sticky Note: 6.2 Operations" width="30%">
-</a>
 
 
 | Operation | Complexity | Description |
@@ -761,16 +511,6 @@ function lca(root, p, q):
 **Build heap proof:** Sum of heights of nodes = n ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢ (number of leaves at levels except last) = O(n)
 
 ### 6.3 Heap Sort
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-3-heap-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-3-heap-sort-handwritten.svg" alt="Handwritten: 6.3 Heap Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-3-heap-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-3-heap-sort-diagram.svg" alt="Diagram: 6.3 Heap Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-3-heap-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-3-heap-sort-sticky.svg" alt="Sticky Note: 6.3 Heap Sort" width="30%">
-</a>
 
 
 ```
@@ -789,16 +529,6 @@ function heapSort(arr):
 
 ### 6.4 Priority Queue
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-4-priority-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-4-priority-queue-handwritten.svg" alt="Handwritten: 6.4 Priority Queue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-4-priority-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-4-priority-queue-diagram.svg" alt="Diagram: 6.4 Priority Queue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-4-priority-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/6-4-priority-queue-sticky.svg" alt="Sticky Note: 6.4 Priority Queue" width="30%">
-</a>
-
 
 | Implementation | insert | extractMin | decreaseKey | Union |
 |----------------|--------|------------|-------------|-------|
@@ -812,16 +542,6 @@ function heapSort(arr):
 
 ### 7.1 Representations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-1-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-1-representations-handwritten.svg" alt="Handwritten: 7.1 Representations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-1-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-1-representations-diagram.svg" alt="Diagram: 7.1 Representations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-1-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-1-representations-sticky.svg" alt="Sticky Note: 7.1 Representations" width="30%">
-</a>
-
 
 | Representation | Space | Edge Check | Neighbors | Add Edge |
 |----------------|-------|------------|-----------|----------|
@@ -834,16 +554,6 @@ function heapSort(arr):
 - Sparse graph (E &lt;< VÃƒâ€šÃ‚Â²) Ã¢â€ â€™ Adjacency List
 
 ### 7.2 BFS (Breadth-First Search)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-2-bfs-breadth-first-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-2-bfs-breadth-first-search-handwritten.svg" alt="Handwritten: 7.2 BFS (Breadth-First Search)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-2-bfs-breadth-first-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-2-bfs-breadth-first-search-diagram.svg" alt="Diagram: 7.2 BFS (Breadth-First Search)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-2-bfs-breadth-first-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-2-bfs-breadth-first-search-sticky.svg" alt="Sticky Note: 7.2 BFS (Breadth-First Search)" width="30%">
-</a>
 
 
 ```
@@ -865,16 +575,6 @@ function bfs(start):
 - Uses queue
 
 ### 7.3 DFS (Depth-First Search)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-3-dfs-depth-first-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-3-dfs-depth-first-search-handwritten.svg" alt="Handwritten: 7.3 DFS (Depth-First Search)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-3-dfs-depth-first-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-3-dfs-depth-first-search-diagram.svg" alt="Diagram: 7.3 DFS (Depth-First Search)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-3-dfs-depth-first-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-3-dfs-depth-first-search-sticky.svg" alt="Sticky Note: 7.3 DFS (Depth-First Search)" width="30%">
-</a>
 
 
 ```
@@ -906,16 +606,6 @@ function dfs(start):
 
 ### 7.4 Topological Sort
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-4-topological-sort-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-4-topological-sort-handwritten.svg" alt="Handwritten: 7.4 Topological Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-4-topological-sort-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-4-topological-sort-diagram.svg" alt="Diagram: 7.4 Topological Sort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-4-topological-sort-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-4-topological-sort-sticky.svg" alt="Sticky Note: 7.4 Topological Sort" width="30%">
-</a>
-
 
 **Definition:** Linear ordering of DAG vertices such that for every edge uÃ¢â€ â€™v, u appears before v.
 
@@ -938,16 +628,6 @@ function topologicalSort(graph):
 **Complexity:** O(V + E)
 
 ### 7.5 Minimum Spanning Tree
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-5-minimum-spanning-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-5-minimum-spanning-tree-handwritten.svg" alt="Handwritten: 7.5 Minimum Spanning Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-5-minimum-spanning-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-5-minimum-spanning-tree-diagram.svg" alt="Diagram: 7.5 Minimum Spanning Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-5-minimum-spanning-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-5-minimum-spanning-tree-sticky.svg" alt="Sticky Note: 7.5 Minimum Spanning Tree" width="30%">
-</a>
 
 
 **Definition:** Subset of edges connecting all vertices with minimum total weight.
@@ -986,16 +666,6 @@ function kruskal(edges, V):
 ```
 
 ### 7.6 Shortest Path Algorithms
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-6-shortest-path-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-6-shortest-path-algorithms-handwritten.svg" alt="Handwritten: 7.6 Shortest Path Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-6-shortest-path-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-6-shortest-path-algorithms-diagram.svg" alt="Diagram: 7.6 Shortest Path Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-6-shortest-path-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-6-shortest-path-algorithms-sticky.svg" alt="Sticky Note: 7.6 Shortest Path Algorithms" width="30%">
-</a>
 
 
 | Algorithm | Type | Complexity | Limitation |
@@ -1037,16 +707,6 @@ function bellmanFord(edges, V, start):
 
 ### 7.7 Strongly Connected Components
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-7-strongly-connected-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-7-strongly-connected-components-handwritten.svg" alt="Handwritten: 7.7 Strongly Connected Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-7-strongly-connected-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-7-strongly-connected-components-diagram.svg" alt="Diagram: 7.7 Strongly Connected Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-7-strongly-connected-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-7-strongly-connected-components-sticky.svg" alt="Sticky Note: 7.7 Strongly Connected Components" width="30%">
-</a>
-
 
 **Kosaraju's Algorithm:**
 1. Perform DFS on original graph, record finish times
@@ -1061,16 +721,6 @@ function bellmanFord(edges, V, start):
 **Applications:** Condensation graphs, 2-SAT, dependency analysis.
 
 ### 7.8 Union-Find (Disjoint Set Union)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-8-union-find-disjoint-set-union-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-8-union-find-disjoint-set-union-handwritten.svg" alt="Handwritten: 7.8 Union-Find (Disjoint Set Union)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-8-union-find-disjoint-set-union-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-8-union-find-disjoint-set-union-diagram.svg" alt="Diagram: 7.8 Union-Find (Disjoint Set Union)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-8-union-find-disjoint-set-union-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/7-8-union-find-disjoint-set-union-sticky.svg" alt="Sticky Note: 7.8 Union-Find (Disjoint Set Union)" width="30%">
-</a>
 
 
 ```
@@ -1100,16 +750,6 @@ class UnionFind:
 
 ### 8.1 Comparison Sorts Ã¢â€ â€™ Complexity Summary
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-1-comparison-sorts-complexity-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-1-comparison-sorts-complexity-summary-handwritten.svg" alt="Handwritten: 8.1 Comparison Sorts Ã¢â€ â€™ Complexity Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-1-comparison-sorts-complexity-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-1-comparison-sorts-complexity-summary-diagram.svg" alt="Diagram: 8.1 Comparison Sorts Ã¢â€ â€™ Complexity Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-1-comparison-sorts-complexity-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-1-comparison-sorts-complexity-summary-sticky.svg" alt="Sticky Note: 8.1 Comparison Sorts Ã¢â€ â€™ Complexity Summary" width="30%">
-</a>
-
 
 | Algorithm | Best | Average | Worst | Space | Stable | In-place | Adaptive |
 |-----------|------|---------|-------|-------|--------|----------|----------|
@@ -1125,16 +765,6 @@ class UnionFind:
 **Comparison-based sort lower bound:** ÃƒÅ½Ã‚Â©(n log n) Ã¢â€ â€™ proven by decision tree with n! leaves.
 
 ### 8.2 Quick Sort Details
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-2-quick-sort-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-2-quick-sort-details-handwritten.svg" alt="Handwritten: 8.2 Quick Sort Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-2-quick-sort-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-2-quick-sort-details-diagram.svg" alt="Diagram: 8.2 Quick Sort Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-2-quick-sort-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-2-quick-sort-details-sticky.svg" alt="Sticky Note: 8.2 Quick Sort Details" width="30%">
-</a>
 
 
 ```
@@ -1170,16 +800,6 @@ function partition(arr, low, high):
 
 ### 8.3 Merge Sort Details
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-3-merge-sort-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-3-merge-sort-details-handwritten.svg" alt="Handwritten: 8.3 Merge Sort Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-3-merge-sort-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-3-merge-sort-details-diagram.svg" alt="Diagram: 8.3 Merge Sort Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-3-merge-sort-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-3-merge-sort-details-sticky.svg" alt="Sticky Note: 8.3 Merge Sort Details" width="30%">
-</a>
-
 
 ```
 function mergeSort(arr, left, right):
@@ -1193,16 +813,6 @@ function mergeSort(arr, left, right):
 **In-place merge:** O(n log n) with O(1) space possible but more complex.
 
 ### 8.4 Non-Comparison Sorts
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-4-non-comparison-sorts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-4-non-comparison-sorts-handwritten.svg" alt="Handwritten: 8.4 Non-Comparison Sorts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-4-non-comparison-sorts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-4-non-comparison-sorts-diagram.svg" alt="Diagram: 8.4 Non-Comparison Sorts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-4-non-comparison-sorts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-4-non-comparison-sorts-sticky.svg" alt="Sticky Note: 8.4 Non-Comparison Sorts" width="30%">
-</a>
 
 
 | Algorithm | Type | Complexity | Space | Stable | Constraint |
@@ -1223,16 +833,6 @@ function mergeSort(arr, left, right):
 
 ### 8.5 Stability and In-Place Properties
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-5-stability-and-in-place-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-5-stability-and-in-place-properties-handwritten.svg" alt="Handwritten: 8.5 Stability and In-Place Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-5-stability-and-in-place-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-5-stability-and-in-place-properties-diagram.svg" alt="Diagram: 8.5 Stability and In-Place Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-5-stability-and-in-place-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/8-5-stability-and-in-place-properties-sticky.svg" alt="Sticky Note: 8.5 Stability and In-Place Properties" width="30%">
-</a>
-
 
 | Sorting | Stable? | In-Place? | GATE Trap |
 |---------|---------|-----------|-----------|
@@ -1251,32 +851,12 @@ function mergeSort(arr, left, right):
 
 ### 9.1 Linear Search
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-1-linear-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-1-linear-search-handwritten.svg" alt="Handwritten: 9.1 Linear Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-1-linear-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-1-linear-search-diagram.svg" alt="Diagram: 9.1 Linear Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-1-linear-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-1-linear-search-sticky.svg" alt="Sticky Note: 9.1 Linear Search" width="30%">
-</a>
-
 
 - Complexity: O(n)
 - Space: O(1)
 - Works on unsorted data
 
 ### 9.2 Binary Search
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-2-binary-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-2-binary-search-handwritten.svg" alt="Handwritten: 9.2 Binary Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-2-binary-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-2-binary-search-diagram.svg" alt="Diagram: 9.2 Binary Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-2-binary-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-2-binary-search-sticky.svg" alt="Sticky Note: 9.2 Binary Search" width="30%">
-</a>
 
 
 ```
@@ -1296,16 +876,6 @@ function binarySearch(arr, target):
 
 ### 9.3 Interpolation Search
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-3-interpolation-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-3-interpolation-search-handwritten.svg" alt="Handwritten: 9.3 Interpolation Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-3-interpolation-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-3-interpolation-search-diagram.svg" alt="Diagram: 9.3 Interpolation Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-3-interpolation-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-3-interpolation-search-sticky.svg" alt="Sticky Note: 9.3 Interpolation Search" width="30%">
-</a>
-
 
 ```
 function interpolationSearch(arr, target):
@@ -1324,16 +894,6 @@ function interpolationSearch(arr, target):
 
 ### 9.4 Ternary Search
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-4-ternary-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-4-ternary-search-handwritten.svg" alt="Handwritten: 9.4 Ternary Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-4-ternary-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-4-ternary-search-diagram.svg" alt="Diagram: 9.4 Ternary Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-4-ternary-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/9-4-ternary-search-sticky.svg" alt="Sticky Note: 9.4 Ternary Search" width="30%">
-</a>
-
 
 - Divide array into 3 parts, compare target with two midpoints
 - Complexity: O(logÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™ n) Ã¢â€ â€™ same as binary search asymptotically (worse constant)
@@ -1345,16 +905,6 @@ function interpolationSearch(arr, target):
 
 ### 10.1 Hash Functions
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-1-hash-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-1-hash-functions-handwritten.svg" alt="Handwritten: 10.1 Hash Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-1-hash-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-1-hash-functions-diagram.svg" alt="Diagram: 10.1 Hash Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-1-hash-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-1-hash-functions-sticky.svg" alt="Sticky Note: 10.1 Hash Functions" width="30%">
-</a>
-
 
 Good hash function properties: deterministic, uniform distribution, fast computation.
 
@@ -1364,16 +914,6 @@ Good hash function properties: deterministic, uniform distribution, fast computa
 - Universal hashing: h(k) = ((aÃƒâ€šÃ‚Â·k + b) mod p) mod m
 
 ### 10.2 Collision Resolution
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-2-collision-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-2-collision-resolution-handwritten.svg" alt="Handwritten: 10.2 Collision Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-2-collision-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-2-collision-resolution-diagram.svg" alt="Diagram: 10.2 Collision Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-2-collision-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-2-collision-resolution-sticky.svg" alt="Sticky Note: 10.2 Collision Resolution" width="30%">
-</a>
 
 
 **Chaining:**
@@ -1397,16 +937,6 @@ Good hash function properties: deterministic, uniform distribution, fast computa
 
 ### 10.3 Rehashing
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-3-rehashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-3-rehashing-handwritten.svg" alt="Handwritten: 10.3 Rehashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-3-rehashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-3-rehashing-diagram.svg" alt="Diagram: 10.3 Rehashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-3-rehashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-3-rehashing-sticky.svg" alt="Sticky Note: 10.3 Rehashing" width="30%">
-</a>
-
 
 When load factor exceeds threshold (typically 0.75):
 1. Allocate new table (usually 2ÃƒÆ’Ã¢â‚¬â€� size)
@@ -1415,16 +945,6 @@ When load factor exceeds threshold (typically 0.75):
 - Complexity: O(n) per rehash, amortized O(1) per insertion
 
 ### 10.4 Perfect Hashing
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-4-perfect-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-4-perfect-hashing-handwritten.svg" alt="Handwritten: 10.4 Perfect Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-4-perfect-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-4-perfect-hashing-diagram.svg" alt="Diagram: 10.4 Perfect Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-4-perfect-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/10-4-perfect-hashing-sticky.svg" alt="Sticky Note: 10.4 Perfect Hashing" width="30%">
-</a>
 
 
 - No collisions (static key set)
@@ -1436,16 +956,6 @@ When load factor exceeds threshold (typically 0.75):
 ## 11. GATE Previous Year Questions (PYQs)
 
 ### Arrays
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/arrays-handwritten.svg" alt="Handwritten: Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/arrays-diagram.svg" alt="Diagram: Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/arrays-sticky.svg" alt="Sticky Note: Arrays" width="30%">
-</a>
 
 
 **A1** [GATE 2015, 1 mark, Arrays] An array A[10][20] is stored in row-major order. Base address = 100, element size = 2 bytes. Address of A[5][10] is:
@@ -1461,16 +971,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** C. For 1-indexed: i(iÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1)/2 + j. For 0-indexed: i(i+1)/2 + j.
 
 ### Linked Lists
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/linked-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/linked-lists-handwritten.svg" alt="Handwritten: Linked Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/linked-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/linked-lists-diagram.svg" alt="Diagram: Linked Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/linked-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/linked-lists-sticky.svg" alt="Sticky Note: Linked Lists" width="30%">
-</a>
 
 
 **A3** [GATE 2016, 2 marks, Linked Lists] What is the worst-case time for inserting an element at the tail of a singly linked list with a head pointer?
@@ -1492,16 +992,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** A. Copy next node's data to Q, then delete next node.
 
 ### Stacks & Queues
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/stacks-queues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/stacks-queues-handwritten.svg" alt="Handwritten: Stacks & Queues" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/stacks-queues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/stacks-queues-diagram.svg" alt="Diagram: Stacks & Queues" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/stacks-queues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/stacks-queues-sticky.svg" alt="Sticky Note: Stacks & Queues" width="30%">
-</a>
 
 
 **A6** [GATE 2016, 2 marks, Stacks] A stack is implemented with an array of size N. What is the worst-case time for N push operations?
@@ -1529,16 +1019,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** B. Stack: push 2, push 3, push 4 Ã¢â€ â€™ pop 4, pop 3 Ã¢â€ â€™ 3ÃƒÆ’Ã¢â‚¬â€�4=12 push Ã¢â€ â€™ pop 12, pop 2 Ã¢â€ â€™ 2+12=14 push Ã¢â€ â€™ push 5 Ã¢â€ â€™ pop 5, pop 14 Ã¢â€ â€™ 14ÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢5=9.
 
 ### Trees
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trees-handwritten.svg" alt="Handwritten: Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trees-diagram.svg" alt="Diagram: Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trees-sticky.svg" alt="Sticky Note: Trees" width="30%">
-</a>
 
 
 **A10** [GATE 2015, 1 mark, Trees] Number of structurally different binary trees with 3 nodes:
@@ -1592,16 +1072,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Heaps
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/heaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/heaps-handwritten.svg" alt="Handwritten: Heaps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/heaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/heaps-diagram.svg" alt="Diagram: Heaps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/heaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/heaps-sticky.svg" alt="Sticky Note: Heaps" width="30%">
-</a>
-
 
 **A18** [GATE 2015, 2 marks, Heaps] In a min-heap with n elements, the 7th smallest element can be found in:
 
@@ -1622,16 +1092,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** B. Heap sort is in-place but not stable.
 
 ### Graphs
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/graphs-handwritten.svg" alt="Handwritten: Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/graphs-diagram.svg" alt="Diagram: Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/graphs-sticky.svg" alt="Sticky Note: Graphs" width="30%">
-</a>
 
 
 **A21** [GATE 2015, 2 marks, BFS/DFS] BFS of an undirected graph with V vertices and E edges has complexity:
@@ -1686,16 +1146,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Sorting
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/sorting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/sorting-handwritten.svg" alt="Handwritten: Sorting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/sorting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/sorting-diagram.svg" alt="Diagram: Sorting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/sorting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/sorting-sticky.svg" alt="Sticky Note: Sorting" width="30%">
-</a>
-
 
 **A29** [GATE 2015, 1 mark, Sorting] Which sorting algorithm has best-case O(n)?
 
@@ -1742,16 +1192,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Searching & Hashing
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/searching-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/searching-hashing-handwritten.svg" alt="Handwritten: Searching & Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/searching-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/searching-hashing-diagram.svg" alt="Diagram: Searching & Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/searching-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/searching-hashing-sticky.svg" alt="Sticky Note: Searching & Hashing" width="30%">
-</a>
-
 
 **A36** [GATE 2015, 2 marks, Binary Search] Binary search on a sorted array of n elements. Worst case comparisons:
 
@@ -1778,16 +1218,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** C. h(38) = 38 mod 11 = 5. hÃƒÂ¢Ã¢â‚¬Å¡Ã¢â‚¬Å¡(38) = 1 + (38 mod 7) = 1 + 3 = 4. Probe: 5, 9, 2, ...
 
 ### Complexity Analysis
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
 
 
 **A40** [GATE 2015, 2 marks, Recurrence] T(n) = 2T(n/2) + n. T(1) = 1. T(n) = ?
@@ -1828,16 +1258,6 @@ When load factor exceeds threshold (typically 0.75):
 **Answer:** A. Need f(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 1 and g(n) ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¥ 2 for log to be defined and monotonic.
 
 ### Mixed
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/mixed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/mixed-handwritten.svg" alt="Handwritten: Mixed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/mixed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/mixed-diagram.svg" alt="Diagram: Mixed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/mixed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/mixed-sticky.svg" alt="Sticky Note: Mixed" width="30%">
-</a>
 
 
 **A46** [GATE 2022, 2 marks, Trees] A strictly binary tree (every node has 0 or 2 children) with n leaves has how many internal nodes?
@@ -1900,16 +1320,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 1: Complexity of Recursive Functions
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-1-complexity-of-recursive-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-1-complexity-of-recursive-functions-handwritten.svg" alt="Handwritten: Trap 1: Complexity of Recursive Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-1-complexity-of-recursive-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-1-complexity-of-recursive-functions-diagram.svg" alt="Diagram: Trap 1: Complexity of Recursive Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-1-complexity-of-recursive-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-1-complexity-of-recursive-functions-sticky.svg" alt="Sticky Note: Trap 1: Complexity of Recursive Functions" width="30%">
-</a>
-
 
 **Common errors:**
 - Applying Master theorem incorrectly (wrong a, b values)
@@ -1927,16 +1337,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 2: BST Deletion
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-2-bst-deletion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-2-bst-deletion-handwritten.svg" alt="Handwritten: Trap 2: BST Deletion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-2-bst-deletion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-2-bst-deletion-diagram.svg" alt="Diagram: Trap 2: BST Deletion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-2-bst-deletion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-2-bst-deletion-sticky.svg" alt="Sticky Note: Trap 2: BST Deletion" width="30%">
-</a>
-
 
 - **Two-child deletion:** Replace with inorder successor (or predecessor). Do NOT replace with just any child.
 - **Inorder successor:** Minimum of right subtree (leftmost node).
@@ -1944,16 +1344,6 @@ When load factor exceeds threshold (typically 0.75):
 - **Complexity:** O(h) where h = height.
 
 ### Trap 3: Graph Algorithm Correctness
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-3-graph-algorithm-correctness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-3-graph-algorithm-correctness-handwritten.svg" alt="Handwritten: Trap 3: Graph Algorithm Correctness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-3-graph-algorithm-correctness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-3-graph-algorithm-correctness-diagram.svg" alt="Diagram: Trap 3: Graph Algorithm Correctness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-3-graph-algorithm-correctness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-3-graph-algorithm-correctness-sticky.svg" alt="Sticky Note: Trap 3: Graph Algorithm Correctness" width="30%">
-</a>
 
 
 | Algorithm | Fails When | Why |
@@ -1966,16 +1356,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 4: Hash Table Probing Sequences
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-4-hash-table-probing-sequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-4-hash-table-probing-sequences-handwritten.svg" alt="Handwritten: Trap 4: Hash Table Probing Sequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-4-hash-table-probing-sequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-4-hash-table-probing-sequences-diagram.svg" alt="Diagram: Trap 4: Hash Table Probing Sequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-4-hash-table-probing-sequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-4-hash-table-probing-sequences-sticky.svg" alt="Sticky Note: Trap 4: Hash Table Probing Sequences" width="30%">
-</a>
-
 
 - **Linear probing:** Primary clustering Ã¢â€ â€™ long runs of occupied slots
 - **Quadratic probing:** Secondary clustering Ã¢â€ â€™ keys with same initial hash follow same probe sequence
@@ -1985,16 +1365,6 @@ When load factor exceeds threshold (typically 0.75):
 **Common question pattern:** "Key x cannot be inserted due to infinite loop" Ã¢â€ â€™ check if probe sequence covers all slots (depends on m being prime for quadratic probing).
 
 ### Trap 5: Sorting Stability and In-Place
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-5-sorting-stability-and-in-place-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-5-sorting-stability-and-in-place-handwritten.svg" alt="Handwritten: Trap 5: Sorting Stability and In-Place" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-5-sorting-stability-and-in-place-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-5-sorting-stability-and-in-place-diagram.svg" alt="Diagram: Trap 5: Sorting Stability and In-Place" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-5-sorting-stability-and-in-place-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-5-sorting-stability-and-in-place-sticky.svg" alt="Sticky Note: Trap 5: Sorting Stability and In-Place" width="30%">
-</a>
 
 
 | Statement | Truth | Reason |
@@ -2008,16 +1378,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### Trap 6: MST Edge Weights
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-6-mst-edge-weights-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-6-mst-edge-weights-handwritten.svg" alt="Handwritten: Trap 6: MST Edge Weights" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-6-mst-edge-weights-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-6-mst-edge-weights-diagram.svg" alt="Diagram: Trap 6: MST Edge Weights" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-6-mst-edge-weights-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-6-mst-edge-weights-sticky.svg" alt="Sticky Note: Trap 6: MST Edge Weights" width="30%">
-</a>
-
 
 - **Unique MST:** If all edge weights are distinct Ã¢â€ â€™ MST is unique
 - **Non-unique MST:** If edges have equal weights Ã¢â€ â€™ multiple MSTs possible
@@ -2025,16 +1385,6 @@ When load factor exceeds threshold (typically 0.75):
 - **Heaviest edge in a cycle:** Never in any MST (cycle property)
 
 ### Trap 7: Asymptotic Growth Subtleties
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-7-asymptotic-growth-subtleties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-7-asymptotic-growth-subtleties-handwritten.svg" alt="Handwritten: Trap 7: Asymptotic Growth Subtleties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-7-asymptotic-growth-subtleties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-7-asymptotic-growth-subtleties-diagram.svg" alt="Diagram: Trap 7: Asymptotic Growth Subtleties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-7-asymptotic-growth-subtleties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/trap-7-asymptotic-growth-subtleties-sticky.svg" alt="Sticky Note: Trap 7: Asymptotic Growth Subtleties" width="30%">
-</a>
 
 
 - n^{log n} vs 2^{ÃƒÂ¢Ã‹â€ Ã…Â¡n}: Take log of both: (log n)Ãƒâ€šÃ‚Â² vs ÃƒÂ¢Ã‹â€ Ã…Â¡nÃƒâ€šÃ‚Â·log 2. Since (log n)Ãƒâ€šÃ‚Â² = o(ÃƒÂ¢Ã‹â€ Ã…Â¡n), we get n^{log n} = o(2^{ÃƒÂ¢Ã‹â€ Ã…Â¡n})
@@ -2047,16 +1397,6 @@ When load factor exceeds threshold (typically 0.75):
 ## 13. Complexity Cheat Sheet
 
 ### 13.1 Common Algorithm Complexities
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-1-common-algorithm-complexities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-1-common-algorithm-complexities-handwritten.svg" alt="Handwritten: 13.1 Common Algorithm Complexities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-1-common-algorithm-complexities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-1-common-algorithm-complexities-diagram.svg" alt="Diagram: 13.1 Common Algorithm Complexities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-1-common-algorithm-complexities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-1-common-algorithm-complexities-sticky.svg" alt="Sticky Note: 13.1 Common Algorithm Complexities" width="30%">
-</a>
 
 
 | Algorithm | Time | Space |
@@ -2082,16 +1422,6 @@ When load factor exceeds threshold (typically 0.75):
 | BFS/DFS | O(V+E) | O(V) |
 
 ### 13.2 Data Structure Complexities
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-2-data-structure-complexities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-2-data-structure-complexities-handwritten.svg" alt="Handwritten: 13.2 Data Structure Complexities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-2-data-structure-complexities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-2-data-structure-complexities-diagram.svg" alt="Diagram: 13.2 Data Structure Complexities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-2-data-structure-complexities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/13-2-data-structure-complexities-sticky.svg" alt="Sticky Note: 13.2 Data Structure Complexities" width="30%">
-</a>
 
 
 | Data Structure | Access | Search | Insert | Delete | Space |
@@ -2119,16 +1449,6 @@ When load factor exceeds threshold (typically 0.75):
 
 ### 14.1 Master Theorem Ã¢â€ â€™ Detailed Cases
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-1-master-theorem-detailed-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-1-master-theorem-detailed-cases-handwritten.svg" alt="Handwritten: 14.1 Master Theorem Ã¢â€ â€™ Detailed Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-1-master-theorem-detailed-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-1-master-theorem-detailed-cases-diagram.svg" alt="Diagram: 14.1 Master Theorem Ã¢â€ â€™ Detailed Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-1-master-theorem-detailed-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-1-master-theorem-detailed-cases-sticky.svg" alt="Sticky Note: 14.1 Master Theorem Ã¢â€ â€™ Detailed Cases" width="30%">
-</a>
-
 
 Given T(n) = aÃƒâ€šÃ‚Â·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
@@ -2147,16 +1467,6 @@ Given T(n) = aÃƒâ€šÃ‚Â·T(n/b) + f(n), compare f(n) with n^{log_b a}:
 
 ### 14.2 Extended Master Theorem
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-2-extended-master-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-2-extended-master-theorem-handwritten.svg" alt="Handwritten: 14.2 Extended Master Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-2-extended-master-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-2-extended-master-theorem-diagram.svg" alt="Diagram: 14.2 Extended Master Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-2-extended-master-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-2-extended-master-theorem-sticky.svg" alt="Sticky Note: 14.2 Extended Master Theorem" width="30%">
-</a>
-
 
 For T(n) = ÃƒÅ½Ã‚Â£_{i=1}^{k} a_iÃƒâ€šÃ‚Â·T(n/b_i) + f(n):
 - Find p such that ÃƒÅ½Ã‚Â£ a_i / b_i^p = 1
@@ -2164,32 +1474,12 @@ For T(n) = ÃƒÅ½Ã‚Â£_{i=1}^{k} a_iÃƒâ€šÃ‚Â·T(n/b_i) + f(n):
 
 ### 14.3 Akra-Bazzi Method
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-3-akra-bazzi-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-3-akra-bazzi-method-handwritten.svg" alt="Handwritten: 14.3 Akra-Bazzi Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-3-akra-bazzi-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-3-akra-bazzi-method-diagram.svg" alt="Diagram: 14.3 Akra-Bazzi Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-3-akra-bazzi-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-3-akra-bazzi-method-sticky.svg" alt="Sticky Note: 14.3 Akra-Bazzi Method" width="30%">
-</a>
-
 
 For T(n) = ÃƒÅ½Ã‚Â£ a_iÃƒâ€šÃ‚Â·T(b_iÃƒâ€šÃ‚Â·n + h_i(n)) + g(n):
 1. Find p: ÃƒÅ½Ã‚Â£ a_iÃƒâ€šÃ‚Â·b_i^p = 1
 2. T(n) = ÃƒÅ½Ã‹Å“(n^pÃƒâ€šÃ‚Â·(1 + ÃƒÂ¢Ã‹â€ Ã‚Â«ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�ÃƒÂ¢Ã‚Â�Ã‚Â¿ g(u)/u^{p+1} du))
 
 ### 14.4 Special Recurrences
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-4-special-recurrences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-4-special-recurrences-handwritten.svg" alt="Handwritten: 14.4 Special Recurrences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-4-special-recurrences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-4-special-recurrences-diagram.svg" alt="Diagram: 14.4 Special Recurrences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-4-special-recurrences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-4-special-recurrences-sticky.svg" alt="Sticky Note: 14.4 Special Recurrences" width="30%">
-</a>
 
 
 | Recurrence | Method | Result |
@@ -2206,16 +1496,6 @@ For T(n) = ÃƒÅ½Ã‚Â£ a_iÃƒâ€šÃ‚Â·T(b_iÃƒâ€šÃ‚Â·n +
 | T(n) = 4T(n/2) + nÃƒâ€šÃ‚Â² | Master case 2 | ÃƒÅ½Ã‹Å“(nÃƒâ€šÃ‚Â² log n) |
 
 ### 14.5 Generating Functions for Recurrences
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-5-generating-functions-for-recurrences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-5-generating-functions-for-recurrences-handwritten.svg" alt="Handwritten: 14.5 Generating Functions for Recurrences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-5-generating-functions-for-recurrences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-5-generating-functions-for-recurrences-diagram.svg" alt="Diagram: 14.5 Generating Functions for Recurrences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-5-generating-functions-for-recurrences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/10-data-structures-algorithms/14-5-generating-functions-for-recurrences-sticky.svg" alt="Sticky Note: 14.5 Generating Functions for Recurrences" width="30%">
-</a>
 
 
 Fibonacci: F(n) = F(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢1) + F(nÃƒÂ¢Ã‹â€ Ã¢â‚¬â„¢2)

@@ -77,16 +77,6 @@ CSP algorithms explore assignments while using constraints to prune impossible o
 
 ### Chapter Roadmap
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
-
 
 ```mermaid
 flowchart LR
@@ -110,30 +100,10 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Planning a wedding reception: you have tables, guests, and vendors (**variables**), possible seating assignments and available dates (**domains**), and rules like "Aunt Carol and Uncle Bob must not sit together" (**binary constraint**), "vegetarians need the veggie menu" (**unary constraint**), "max 10 per table" (**global constraint**). A CSP solver finds an arrangement satisfying ALL rules without trial-and-error guessing.
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 A **Constraint Satisfaction Problem (CSP)** is a triple $(X, D, C)$:
@@ -149,16 +119,6 @@ A **state** is an assignment of values to some or all variables. An **assignment
 
 ### Types of Constraints
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-constraints-handwritten.svg" alt="Handwritten: Types of Constraints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-constraints-diagram.svg" alt="Diagram: Types of Constraints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-constraints-sticky.svg" alt="Sticky Note: Types of Constraints" width="30%">
-</a>
-
 
 | Constraint Type | Description | Example |
 |----------------|-------------|---------|
@@ -168,16 +128,6 @@ A **state** is an assignment of values to some or all variables. An **assignment
 | **Global** | Involves an arbitrary subset | AllDifferent($A, B, C, D$) |
 
 ### Types of CSPs
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-csps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-csps-handwritten.svg" alt="Handwritten: Types of CSPs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-csps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-csps-diagram.svg" alt="Diagram: Types of CSPs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-csps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/types-of-csps-sticky.svg" alt="Sticky Note: Types of CSPs" width="30%">
-</a>
 
 
 | Type | Domain Nature | Example |
@@ -198,16 +148,6 @@ Constraints: WA ≠ NT, WA ≠ SA, NT ≠ SA, NT ≠ Q,
 ```
 
 ### Python: CSP Representation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-csp-representation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-csp-representation-handwritten.svg" alt="Handwritten: Python: CSP Representation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-csp-representation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-csp-representation-diagram.svg" alt="Diagram: Python: CSP Representation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-csp-representation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-csp-representation-sticky.svg" alt="Sticky Note: Python: CSP Representation" width="30%">
-</a>
 
 
 ```python
@@ -237,45 +177,15 @@ def create_australia_csp():
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Planning a road trip through 10 cities. You pick a first city, then the next, and so on. When you hit a dead end (no unvisited city reachable from your current one), you don't start over — backtrack to the previous city and try a different route. Backtracking for CSPs works identically: assign one variable at a time, and on conflict, undo the last assignment and try the next value.
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 **Backtracking search** is a depth-first search specialized for CSPs. It incrementally extends partial assignments. When a constraint violation is detected, it chronologically backtracks to the most recent decision point and tries an alternative value.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. **Check completeness:** If all variables are assigned, return the current assignment.
@@ -287,16 +197,6 @@ Planning a road trip through 10 cities. You pick a first city, then the next, an
 7. **Return failure:** If no value works, return failure (backtrack to previous variable).
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -316,16 +216,6 @@ Algorithm: BacktrackingSearch(assignment, csp)
 
 ### Step-by-Step Dry Run: Map Coloring (Plain Backtracking)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-map-coloring-plain-backtracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-map-coloring-plain-backtracking-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Map Coloring (Plain Backtracking)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-map-coloring-plain-backtracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-map-coloring-plain-backtracking-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Map Coloring (Plain Backtracking)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-map-coloring-plain-backtracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-map-coloring-plain-backtracking-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Map Coloring (Plain Backtracking)" width="30%">
-</a>
-
 
 **Problem:** Color WA, NT, SA with {R, G, B}, constraints: WA≠NT, WA≠SA, NT≠SA.  
 **Order:** WA → NT → SA. **Values:** R → G → B.
@@ -343,16 +233,6 @@ Algorithm: BacktrackingSearch(assignment, csp)
 
 ### Variable Ordering Heuristics
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/variable-ordering-heuristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/variable-ordering-heuristics-handwritten.svg" alt="Handwritten: Variable Ordering Heuristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/variable-ordering-heuristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/variable-ordering-heuristics-diagram.svg" alt="Diagram: Variable Ordering Heuristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/variable-ordering-heuristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/variable-ordering-heuristics-sticky.svg" alt="Sticky Note: Variable Ordering Heuristics" width="30%">
-</a>
-
 
 | Heuristic | Description | Effect |
 |-----------|-------------|--------|
@@ -361,32 +241,12 @@ Algorithm: BacktrackingSearch(assignment, csp)
 
 ### Value Ordering Heuristic
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/value-ordering-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/value-ordering-heuristic-handwritten.svg" alt="Handwritten: Value Ordering Heuristic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/value-ordering-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/value-ordering-heuristic-diagram.svg" alt="Diagram: Value Ordering Heuristic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/value-ordering-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/value-ordering-heuristic-sticky.svg" alt="Sticky Note: Value Ordering Heuristic" width="30%">
-</a>
-
 
 | Heuristic | Description | Effect |
 |-----------|-------------|--------|
 | **LCV** (Least Constraining Value) | Pick value that rules out fewest choices for neighbors | "Succeed-first" — keeps maximum flexibility |
 
 ### Python: Backtracking with MRV and LCV
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-backtracking-with-mrv-and-lcv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-backtracking-with-mrv-and-lcv-handwritten.svg" alt="Handwritten: Python: Backtracking with MRV and LCV" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-backtracking-with-mrv-and-lcv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-backtracking-with-mrv-and-lcv-diagram.svg" alt="Diagram: Python: Backtracking with MRV and LCV" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-backtracking-with-mrv-and-lcv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-backtracking-with-mrv-and-lcv-sticky.svg" alt="Sticky Note: Python: Backtracking with MRV and LCV" width="30%">
-</a>
 
 
 ```python
@@ -436,16 +296,6 @@ print(solution)
 
 ### Dry Run: With MRV Heuristic
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/dry-run-with-mrv-heuristic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/dry-run-with-mrv-heuristic-handwritten.svg" alt="Handwritten: Dry Run: With MRV Heuristic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/dry-run-with-mrv-heuristic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/dry-run-with-mrv-heuristic-diagram.svg" alt="Diagram: Dry Run: With MRV Heuristic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/dry-run-with-mrv-heuristic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/dry-run-with-mrv-heuristic-sticky.svg" alt="Sticky Note: Dry Run: With MRV Heuristic" width="30%">
-</a>
-
 
 Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's degree 1 — degree tie-breaker picks NT).
 
@@ -459,16 +309,6 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Time | Space | When |
 |------|------|-------|------|
@@ -481,16 +321,6 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -500,16 +330,6 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 | MRV + LCV heuristics dramatically prune search | Uninformed value ordering wastes effort |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. **No solution** — explores entire tree, returns None.
@@ -524,45 +344,15 @@ Same problem, but MRV selects NT first (SA has degree 2 vs NT's degree 2 vs WA's
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 You're assigning conference rooms to meetings. When you book Room A for 10 AM, you immediately cross it off the availability list for every other meeting that overlaps with 10 AM. You don't wait to discover the conflict later — you prune in advance. This is forward checking.
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 **Forward checking** is a look-ahead technique that, after assigning a value to a variable, prunes the domains of all unassigned variables constrained by it. If any domain becomes empty, the assignment is abandoned immediately — saving exponentially deeper search.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Assign value $v$ to variable $X_i$.
@@ -573,16 +363,6 @@ You're assigning conference rooms to meetings. When you book Room A for 10 AM, y
 4. On backtrack, restore all pruned values.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -611,16 +391,6 @@ Algorithm: FORWARD-PRUNE(csp, var)
 
 ### Step-by-Step Dry Run: Forward Checking on Map Coloring
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-forward-checking-on-map-coloring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-forward-checking-on-map-coloring-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Forward Checking on Map Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-forward-checking-on-map-coloring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-forward-checking-on-map-coloring-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Forward Checking on Map Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-forward-checking-on-map-coloring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-forward-checking-on-map-coloring-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Forward Checking on Map Coloring" width="30%">
-</a>
-
 
 **Problem:** WA, NT, SA with {R, G, B}, constraints: WA≠NT, WA≠SA, NT≠SA.
 
@@ -634,16 +404,6 @@ Algorithm: FORWARD-PRUNE(csp, var)
 **No backtracking needed.** Forward checking pruned SA's domain to a single value {B} before we reached it.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -686,16 +446,6 @@ print(solution)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Complexity | Why? |
 |--------|-----------|------|
@@ -707,16 +457,6 @@ print(solution)
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -726,16 +466,6 @@ print(solution)
 | Eliminates backtracking on easy problems | Does not detect all inconsistencies (weak pruning) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. **Domain wipeout** — triggers immediate backtrack, saving deep exploration.
@@ -749,30 +479,10 @@ print(solution)
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 You're planning a dinner party menu. You decide to serve salmon. This propagates: salmon → needs white wine → guest Bob is allergic to sulfites in white wine → Bob needs a different main course. One decision triggers a chain reaction through multiple constraints. This is exactly how **arc consistency** propagates constraints through the variable network.
 
 ### Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
 
 
 **Constraint propagation** uses constraints to reduce variable domains before (and during) search. The most popular algorithm is **AC-3 (Arc Consistency algorithm 3)**.
@@ -782,16 +492,6 @@ An **arc** $(X_i, X_j)$ is **arc-consistent** if for every value $a$ in $D_i$, t
 AC-3 makes the entire CSP arc-consistent by iteratively processing arcs and propagating domain reductions.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Initialize a queue with all directed arcs $(X_i, X_j)$ in the constraint graph.
@@ -804,16 +504,6 @@ AC-3 makes the entire CSP arc-consistent by iteratively processing arcs and prop
 3. Return success (all arcs consistent).
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -839,16 +529,6 @@ Algorithm: REVISE(csp, Xi, Xj)
 
 ### Step-by-Step Dry Run: AC-3 on X &lt; Y < Z
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-ac-3-on-x-lt-y-z-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-ac-3-on-x-lt-y-z-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: AC-3 on X &lt; Y < Z" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-ac-3-on-x-lt-y-z-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-ac-3-on-x-lt-y-z-diagram.svg" alt="Diagram: Step-by-Step Dry Run: AC-3 on X &lt; Y < Z" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-ac-3-on-x-lt-y-z-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-ac-3-on-x-lt-y-z-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: AC-3 on X &lt; Y < Z" width="30%">
-</a>
-
 
 **Problem:** $X, Y, Z \in \{1,2,3\}$ with $X &lt; Y$ and $Y < Z$.
 
@@ -865,16 +545,6 @@ Algorithm: REVISE(csp, Xi, Xj)
 **Final:** X={1}, Y={2}, Z={3}. **Solution found by propagation alone — no search needed!**
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -933,16 +603,6 @@ print(csp_small['domains'])  # {'X': [1], 'Y': [2], 'Z': [3]}
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Complexity | Why? |
 |--------|-----------|------|
@@ -955,16 +615,6 @@ print(csp_small['domains'])  # {'X': [1], 'Y': [2], 'Z': [3]}
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -974,16 +624,6 @@ print(csp_small['domains'])  # {'X': [1], 'Y': [2], 'Z': [3]}
 | Interleaves naturally with backtracking (MAC algorithm) | AC-2001 is strictly faster (O($e \cdot d^2$)) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. **Empty domain after revision** — CSP has no solution.
@@ -997,45 +637,15 @@ print(csp_small['domains'])  # {'X': [1], 'Y': [2], 'Z': [3]}
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 You're arranging 8 queens on a chessboard. Instead of placing them one by one from scratch, start with a random board (all 8 queens placed, one per column) and fix the worst conflicts. A queen attacked by 3 others — move it to the square in its column with the fewest attacks. Repeat. On average, all conflicts disappear within 50 moves.
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 **Min-Conflicts** is a local search algorithm for CSPs. It starts with a complete (but possibly inconsistent) random assignment and iteratively repairs it by selecting a conflicted variable and reassigning it to the value that minimizes constraint violations.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Generate a complete random assignment (all variables assigned).
@@ -1048,16 +658,6 @@ You're arranging 8 queens on a chessboard. Instead of placing them one by one fr
 4. If max_steps exceeded, restart with a new random assignment.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1073,16 +673,6 @@ Algorithm: MinConflicts(csp, max_steps)
 ```
 
 ### Step-by-Step Dry Run: 4-Queens
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-4-queens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-4-queens-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: 4-Queens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-4-queens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-4-queens-diagram.svg" alt="Diagram: Step-by-Step Dry Run: 4-Queens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-4-queens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/step-by-step-dry-run-4-queens-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: 4-Queens" width="30%">
-</a>
 
 
 **Initial random assignment:** Q1=Row1, Q2=Row1, Q3=Row2, Q4=Row4
@@ -1122,16 +712,6 @@ You get the idea. After a few steps, all conflicts disappear.
 For 4-Queens, the algorithm finds a solution very quickly. For N-Queens with N up to $10^6$, Min-Conflicts solves it in under 50 steps on average (when restarts are allowed).
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1200,16 +780,6 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Complexity | Why? |
 |--------|-----------|------|
@@ -1221,16 +791,6 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1240,16 +800,6 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 | Excellent for SAT, N-Queens, scheduling | Performance depends heavily on restart strategy |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. **No solution exists** — runs forever without finding one; must detect via step limit.
@@ -1274,16 +824,6 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 
 ### When to Use What
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/when-to-use-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/when-to-use-what-handwritten.svg" alt="Handwritten: When to Use What" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/when-to-use-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/when-to-use-what-diagram.svg" alt="Diagram: When to Use What" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/when-to-use-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/when-to-use-what-sticky.svg" alt="Sticky Note: When to Use What" width="30%">
-</a>
-
 
 - **Simple problems (n &lt; 20, d < 10)** — plain backtracking is fine.
 - **Moderate problems (n &lt; 100)** — forward checking + MRV/LCV.
@@ -1296,16 +836,6 @@ print(min_conflicts(nqueens_csp(8), max_steps=1000))
 ## Interview Corner
 
 ### N-Queens Problem
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/n-queens-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/n-queens-problem-handwritten.svg" alt="Handwritten: N-Queens Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/n-queens-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/n-queens-problem-diagram.svg" alt="Diagram: N-Queens Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/n-queens-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/n-queens-problem-sticky.svg" alt="Sticky Note: N-Queens Problem" width="30%">
-</a>
 
 
 **Problem:** Place N queens on an N×N chessboard so that no two attack each other (same row, column, or diagonal).
@@ -1353,16 +883,6 @@ print(nqueens_min_conflicts(8))  # e.g., [4, 1, 3, 6, 2, 7, 5, 0]
 
 ### Sudoku Solver Design
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/sudoku-solver-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/sudoku-solver-design-handwritten.svg" alt="Handwritten: Sudoku Solver Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/sudoku-solver-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/sudoku-solver-design-diagram.svg" alt="Diagram: Sudoku Solver Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/sudoku-solver-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/sudoku-solver-design-sticky.svg" alt="Sticky Note: Sudoku Solver Design" width="30%">
-</a>
-
 
 **Problem:** Fill a 9×9 grid so each row, column, and 3×3 box contains digits 1-9 exactly once.
 
@@ -1387,16 +907,6 @@ def sudoku_solve(grid):
 **Complexity:** Empirical average O($n$) for standard puzzles. Worst-case O($9^{81}$) on empty grid, but practically solved in milliseconds.
 
 ### Map Coloring
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/map-coloring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/map-coloring-handwritten.svg" alt="Handwritten: Map Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/map-coloring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/map-coloring-diagram.svg" alt="Diagram: Map Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/map-coloring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/map-coloring-sticky.svg" alt="Sticky Note: Map Coloring" width="30%">
-</a>
 
 
 **Problem:** Given a map with regions and K colors, color regions so adjacent regions differ.
@@ -1427,16 +937,6 @@ def sudoku_solve(grid):
 
 ### Case Study: Employee Shift Scheduling
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/case-study-employee-shift-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/case-study-employee-shift-scheduling-handwritten.svg" alt="Handwritten: Case Study: Employee Shift Scheduling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/case-study-employee-shift-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/case-study-employee-shift-scheduling-diagram.svg" alt="Diagram: Case Study: Employee Shift Scheduling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/case-study-employee-shift-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/case-study-employee-shift-scheduling-sticky.svg" alt="Sticky Note: Case Study: Employee Shift Scheduling" width="30%">
-</a>
-
 
 **Problem:** 50 nurses, 3 shifts/day, 7 days/week.
 
@@ -1463,16 +963,6 @@ def sudoku_solve(grid):
 | MAC (Maintaining Arc Consistency) | Strongest | High | Interleaved with search |
 
 ### Quick Reference — CSP Search & Propagation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/quick-reference-csp-search-propagation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/quick-reference-csp-search-propagation-handwritten.svg" alt="Handwritten: Quick Reference — CSP Search & Propagation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/quick-reference-csp-search-propagation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/quick-reference-csp-search-propagation-diagram.svg" alt="Diagram: Quick Reference — CSP Search & Propagation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/05-csp/quick-reference-csp-search-propagation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/05-csp/quick-reference-csp-search-propagation-sticky.svg" alt="Sticky Note: Quick Reference — CSP Search & Propagation" width="30%">
-</a>
 
 
 | Concept | Definition | Benefit |

@@ -93,16 +93,6 @@ flowchart LR
 
 ### 18.1 The Database Security Landscape
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-1-the-database-security-landscape-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-1-the-database-security-landscape-handwritten.svg" alt="Handwritten: 18.1 The Database Security Landscape" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-1-the-database-security-landscape-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-1-the-database-security-landscape-diagram.svg" alt="Diagram: 18.1 The Database Security Landscape" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-1-the-database-security-landscape-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-1-the-database-security-landscape-sticky.svg" alt="Sticky Note: 18.1 The Database Security Landscape" width="30%">
-</a>
-
 
 **Real-World Analogy â€” The Bank Vault:**
 
@@ -272,16 +262,6 @@ if __name__ == "__main__":
 > **One-Sentence Takeaway:** Database authentication verifies user identity through passwords, Kerberos, certificates, or multi-factor methods.
 
 ### 18.2 Authentication
-
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-2-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-2-authentication-handwritten.svg" alt="Handwritten: 18.2 Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-2-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-2-authentication-diagram.svg" alt="Diagram: 18.2 Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-2-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-2-authentication-sticky.svg" alt="Sticky Note: 18.2 Authentication" width="30%">
-</a>
 
 
 Authentication verifies the identity of a user or application connecting to the database.
@@ -621,16 +601,6 @@ int main() {
 
 ### 18.3 Authorization and Access Control
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-3-authorization-and-access-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-3-authorization-and-access-control-handwritten.svg" alt="Handwritten: 18.3 Authorization and Access Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-3-authorization-and-access-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-3-authorization-and-access-control-diagram.svg" alt="Diagram: 18.3 Authorization and Access Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-3-authorization-and-access-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-3-authorization-and-access-control-sticky.svg" alt="Sticky Note: 18.3 Authorization and Access Control" width="30%">
-</a>
-
 
 Authorization determines what an authenticated user is permitted to do â€” which tables, columns, rows, and operations they can access.
 
@@ -949,16 +919,6 @@ int main() {
 
 ### 18.4 SQL Injection
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-4-sql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-4-sql-injection-handwritten.svg" alt="Handwritten: 18.4 SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-4-sql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-4-sql-injection-diagram.svg" alt="Diagram: 18.4 SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-4-sql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-4-sql-injection-sticky.svg" alt="Sticky Note: 18.4 SQL Injection" width="30%">
-</a>
-
 
 SQL injection is the most critical database security vulnerability. It occurs when user input is directly concatenated into SQL queries, allowing attackers to alter the query structure.
 
@@ -1250,16 +1210,6 @@ for attack in attacks:
 
 ### 18.5 Encryption
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-5-encryption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-5-encryption-handwritten.svg" alt="Handwritten: 18.5 Encryption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-5-encryption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-5-encryption-diagram.svg" alt="Diagram: 18.5 Encryption" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-5-encryption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-5-encryption-sticky.svg" alt="Sticky Note: 18.5 Encryption" width="30%">
-</a>
-
 
 **Real-World Analogy â€” The Locked Briefcase in a Vault:**
 
@@ -1542,16 +1492,6 @@ int main() {
 
 ### 18.6 Auditing
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-6-auditing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-6-auditing-handwritten.svg" alt="Handwritten: 18.6 Auditing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-6-auditing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-6-auditing-diagram.svg" alt="Diagram: 18.6 Auditing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-6-auditing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-6-auditing-sticky.svg" alt="Sticky Note: 18.6 Auditing" width="30%">
-</a>
-
 
 Auditing records all security-relevant database activity for compliance, breach detection, and forensic reconstruction.
 
@@ -1703,16 +1643,6 @@ if __name__ == "__main__":
 
 ### 18.7 Row-Level Security
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-7-row-level-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-7-row-level-security-handwritten.svg" alt="Handwritten: 18.7 Row-Level Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-7-row-level-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-7-row-level-security-diagram.svg" alt="Diagram: 18.7 Row-Level Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-7-row-level-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-7-row-level-security-sticky.svg" alt="Sticky Note: 18.7 Row-Level Security" width="30%">
-</a>
-
 
 Row-level security (RLS) restricts which rows a user can access based on their identity or attributes, without modifying the query itself.
 
@@ -1761,16 +1691,6 @@ CREATE SECURITY POLICY RegionFilter
 ```
 
 ### 18.8 Dynamic Data Masking
-
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-8-dynamic-data-masking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-8-dynamic-data-masking-handwritten.svg" alt="Handwritten: 18.8 Dynamic Data Masking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-8-dynamic-data-masking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-8-dynamic-data-masking-diagram.svg" alt="Diagram: 18.8 Dynamic Data Masking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-8-dynamic-data-masking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-8-dynamic-data-masking-sticky.svg" alt="Sticky Note: 18.8 Dynamic Data Masking" width="30%">
-</a>
 
 
 Dynamic data masking hides sensitive data from non-privileged users at query time without altering the underlying storage.
@@ -1880,16 +1800,6 @@ if __name__ == "__main__":
 
 ### 18.9 Backup Security
 
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-9-backup-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-9-backup-security-handwritten.svg" alt="Handwritten: 18.9 Backup Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-9-backup-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-9-backup-security-diagram.svg" alt="Diagram: 18.9 Backup Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-9-backup-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-9-backup-security-sticky.svg" alt="Sticky Note: 18.9 Backup Security" width="30%">
-</a>
-
 
 ```sql
 -- pg_dump with encryption
@@ -1910,16 +1820,6 @@ mysqldump --all-databases | gzip | openssl enc -aes-256-cbc -out backup.sql.gz.e
 > **One-Sentence Takeaway:** GDPR compliance for databases requires data anonymization, the right to be forgotten, and audit trails for all personal data access.
 
 ### 18.10 GDPR and Data Privacy
-
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-10-gdpr-and-data-privacy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-10-gdpr-and-data-privacy-handwritten.svg" alt="Handwritten: 18.10 GDPR and Data Privacy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-10-gdpr-and-data-privacy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-10-gdpr-and-data-privacy-diagram.svg" alt="Diagram: 18.10 GDPR and Data Privacy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-10-gdpr-and-data-privacy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-10-gdpr-and-data-privacy-sticky.svg" alt="Sticky Note: 18.10 GDPR and Data Privacy" width="30%">
-</a>
 
 
 **GDPR Principles:**
@@ -1954,16 +1854,6 @@ DELETE FROM raw_logs WHERE created_at < NOW() - INTERVAL '90 days';
 ```
 
 ### 18.11 Security Layers (Defense in Depth)
-
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-11-security-layers-defense-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-11-security-layers-defense-in-depth-handwritten.svg" alt="Handwritten: 18.11 Security Layers (Defense in Depth)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-11-security-layers-defense-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-11-security-layers-defense-in-depth-diagram.svg" alt="Diagram: 18.11 Security Layers (Defense in Depth)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-11-security-layers-defense-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-11-security-layers-defense-in-depth-sticky.svg" alt="Sticky Note: 18.11 Security Layers (Defense in Depth)" width="30%">
-</a>
 
 
 **Real-World Analogy â€” Castle Defense:**
@@ -2036,16 +1926,6 @@ END FUNCTION
 
 
 ### 18.12 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-12-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-12-applications-in-real-systems-handwritten.svg" alt="Handwritten: 18.12 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-12-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-12-applications-in-real-systems-diagram.svg" alt="Diagram: 18.12 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/18-security/18-12-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/18-security/18-12-applications-in-real-systems-sticky.svg" alt="Sticky Note: 18.12 Applications in Real Systems" width="30%">
-</a>
 
 
 | Feature | MySQL | PostgreSQL | Oracle | SQL Server | AWS RDS |

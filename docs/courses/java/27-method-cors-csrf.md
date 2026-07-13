@@ -135,16 +135,6 @@ Spring Security 6.0 introduced `@EnableMethodSecurity` as a unified replacement 
 
 ### 1.1 Basic Setup
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-1-basic-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-1-basic-setup-handwritten.svg" alt="Handwritten: 1.1 Basic Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-1-basic-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-1-basic-setup-diagram.svg" alt="Diagram: 1.1 Basic Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-1-basic-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-1-basic-setup-sticky.svg" alt="Sticky Note: 1.1 Basic Setup" width="30%">
-</a>
-
 
 ```java
 package com.course.security.config;
@@ -212,16 +202,6 @@ public class SecurityConfig {
 
 ### 1.2 @EnableMethodSecurity Attributes
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-2-enablemethodsecurity-attributes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-2-enablemethodsecurity-attributes-handwritten.svg" alt="Handwritten: 1.2 @EnableMethodSecurity Attributes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-2-enablemethodsecurity-attributes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-2-enablemethodsecurity-attributes-diagram.svg" alt="Diagram: 1.2 @EnableMethodSecurity Attributes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-2-enablemethodsecurity-attributes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-2-enablemethodsecurity-attributes-sticky.svg" alt="Sticky Note: 1.2 @EnableMethodSecurity Attributes" width="30%">
-</a>
-
 
 ```java
 @Configuration
@@ -241,16 +221,6 @@ public class MethodSecurityConfig {
 | `jsr250Enabled` | `false` | Enable JSR-250 `@RolesAllowed`, `@PermitAll`, `@DenyAll` |
 
 ### 1.3 Method Security Delegating Evaluator
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-3-method-security-delegating-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-3-method-security-delegating-evaluator-handwritten.svg" alt="Handwritten: 1.3 Method Security Delegating Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-3-method-security-delegating-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-3-method-security-delegating-evaluator-diagram.svg" alt="Diagram: 1.3 Method Security Delegating Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/1-3-method-security-delegating-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/1-3-method-security-delegating-evaluator-sticky.svg" alt="Sticky Note: 1.3 Method Security Delegating Evaluator" width="30%">
-</a>
 
 
 Internally, `@EnableMethodSecurity` registers a `MethodSecurityExpressionHandler` that evaluates SpEL expressions against the security context.
@@ -298,16 +268,6 @@ The expression root provides methods like `hasRole()`, `hasAuthority()`, `hasPer
 `@PreAuthorize` evaluates a SpEL expression before the method executes. If the expression returns `false`, an `AccessDeniedException` is thrown.
 
 ### 2.1 Basic Role Checks
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-1-basic-role-checks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-1-basic-role-checks-handwritten.svg" alt="Handwritten: 2.1 Basic Role Checks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-1-basic-role-checks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-1-basic-role-checks-diagram.svg" alt="Diagram: 2.1 Basic Role Checks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-1-basic-role-checks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-1-basic-role-checks-sticky.svg" alt="Sticky Note: 2.1 Basic Role Checks" width="30%">
-</a>
 
 
 ```java
@@ -366,16 +326,6 @@ public class AdminController {
 
 ### 2.2 hasRole vs hasAuthority
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-2-hasrole-vs-hasauthority-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-2-hasrole-vs-hasauthority-handwritten.svg" alt="Handwritten: 2.2 hasRole vs hasAuthority" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-2-hasrole-vs-hasauthority-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-2-hasrole-vs-hasauthority-diagram.svg" alt="Diagram: 2.2 hasRole vs hasAuthority" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-2-hasrole-vs-hasauthority-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-2-hasrole-vs-hasauthority-sticky.svg" alt="Sticky Note: 2.2 hasRole vs hasAuthority" width="30%">
-</a>
-
 
 `hasRole('ADMIN')` internally checks for `ROLE_ADMIN`. `hasAuthority('ROLE_ADMIN')` does the same check explicitly. `hasAuthority('WRITE_ARTICLES')` checks for a custom authority without the `ROLE_` prefix.
 
@@ -405,16 +355,6 @@ public class ArticleController {
 ```
 
 ### 2.3 hasRole, hasAnyRole Ã¢â‚¬â€ Under the Hood
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-3-hasrole-hasanyrole-under-the-hood-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-3-hasrole-hasanyrole-under-the-hood-handwritten.svg" alt="Handwritten: 2.3 hasRole, hasAnyRole Ã¢â‚¬â€ Under the Hood" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-3-hasrole-hasanyrole-under-the-hood-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-3-hasrole-hasanyrole-under-the-hood-diagram.svg" alt="Diagram: 2.3 hasRole, hasAnyRole Ã¢â‚¬â€ Under the Hood" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-3-hasrole-hasanyrole-under-the-hood-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-3-hasrole-hasanyrole-under-the-hood-sticky.svg" alt="Sticky Note: 2.3 hasRole, hasAnyRole Ã¢â‚¬â€ Under the Hood" width="30%">
-</a>
 
 
 ```java
@@ -455,16 +395,6 @@ public class ExpressionHandlerConfig {
 ```
 
 ### 2.4 Accessing Authentication and Principal
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-4-accessing-authentication-and-principal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-4-accessing-authentication-and-principal-handwritten.svg" alt="Handwritten: 2.4 Accessing Authentication and Principal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-4-accessing-authentication-and-principal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-4-accessing-authentication-and-principal-diagram.svg" alt="Diagram: 2.4 Accessing Authentication and Principal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-4-accessing-authentication-and-principal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-4-accessing-authentication-and-principal-sticky.svg" alt="Sticky Note: 2.4 Accessing Authentication and Principal" width="30%">
-</a>
 
 
 The SpEL expression has access to the `Authentication` object and its principal:
@@ -516,16 +446,6 @@ public class UserController {
 ```
 
 ### 2.5 Complex SpEL Expressions
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-5-complex-spel-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-5-complex-spel-expressions-handwritten.svg" alt="Handwritten: 2.5 Complex SpEL Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-5-complex-spel-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-5-complex-spel-expressions-diagram.svg" alt="Diagram: 2.5 Complex SpEL Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-5-complex-spel-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-5-complex-spel-expressions-sticky.svg" alt="Sticky Note: 2.5 Complex SpEL Expressions" width="30%">
-</a>
 
 
 SpEL supports boolean operators, method calls, and type references:
@@ -589,16 +509,6 @@ public class SpELController {
 
 ### 2.6 Matching Method Parameters in SpEL
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-6-matching-method-parameters-in-spel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-6-matching-method-parameters-in-spel-handwritten.svg" alt="Handwritten: 2.6 Matching Method Parameters in SpEL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-6-matching-method-parameters-in-spel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-6-matching-method-parameters-in-spel-diagram.svg" alt="Diagram: 2.6 Matching Method Parameters in SpEL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/2-6-matching-method-parameters-in-spel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/2-6-matching-method-parameters-in-spel-sticky.svg" alt="Sticky Note: 2.6 Matching Method Parameters in SpEL" width="30%">
-</a>
-
 
 Spring Security makes method parameters available in SpEL via `#paramName`:
 
@@ -653,16 +563,6 @@ public class OwnerController {
 
 ### 3.1 Basic PostAuthorize
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-1-basic-postauthorize-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-1-basic-postauthorize-handwritten.svg" alt="Handwritten: 3.1 Basic PostAuthorize" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-1-basic-postauthorize-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-1-basic-postauthorize-diagram.svg" alt="Diagram: 3.1 Basic PostAuthorize" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-1-basic-postauthorize-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-1-basic-postauthorize-sticky.svg" alt="Sticky Note: 3.1 Basic PostAuthorize" width="30%">
-</a>
-
 
 ```java
 package com.course.security.controller;
@@ -710,16 +610,6 @@ public class PostAuthorizeController {
 
 ### 3.2 PostAuthorize with DTO Projection
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-2-postauthorize-with-dto-projection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-2-postauthorize-with-dto-projection-handwritten.svg" alt="Handwritten: 3.2 PostAuthorize with DTO Projection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-2-postauthorize-with-dto-projection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-2-postauthorize-with-dto-projection-diagram.svg" alt="Diagram: 3.2 PostAuthorize with DTO Projection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-2-postauthorize-with-dto-projection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-2-postauthorize-with-dto-projection-sticky.svg" alt="Sticky Note: 3.2 PostAuthorize with DTO Projection" width="30%">
-</a>
-
 
 ```java
 @RestController
@@ -755,16 +645,6 @@ public class AccountController {
 
 ### 3.3 PreAuthorize vs PostAuthorize Decision Table
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-3-preauthorize-vs-postauthorize-decision-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-3-preauthorize-vs-postauthorize-decision-table-handwritten.svg" alt="Handwritten: 3.3 PreAuthorize vs PostAuthorize Decision Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-3-preauthorize-vs-postauthorize-decision-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-3-preauthorize-vs-postauthorize-decision-table-diagram.svg" alt="Diagram: 3.3 PreAuthorize vs PostAuthorize Decision Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/3-3-preauthorize-vs-postauthorize-decision-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/3-3-preauthorize-vs-postauthorize-decision-table-sticky.svg" alt="Sticky Note: 3.3 PreAuthorize vs PostAuthorize Decision Table" width="30%">
-</a>
-
 
 | Aspect | @PreAuthorize | @PostAuthorize |
 |--------|---------------|----------------|
@@ -782,16 +662,6 @@ public class AccountController {
 Spring Security can automatically filter collections based on SpEL expressions.
 
 ### 4.1 @PreFilter Ã¢â‚¬â€ Filter Method Arguments
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-1-prefilter-filter-method-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-1-prefilter-filter-method-arguments-handwritten.svg" alt="Handwritten: 4.1 @PreFilter Ã¢â‚¬â€ Filter Method Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-1-prefilter-filter-method-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-1-prefilter-filter-method-arguments-diagram.svg" alt="Diagram: 4.1 @PreFilter Ã¢â‚¬â€ Filter Method Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-1-prefilter-filter-method-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-1-prefilter-filter-method-arguments-sticky.svg" alt="Sticky Note: 4.1 @PreFilter Ã¢â‚¬â€ Filter Method Arguments" width="30%">
-</a>
 
 
 Filters a collection parameter before the method executes. Elements that do not match the expression are removed.
@@ -839,16 +709,6 @@ public class BatchController {
 ```
 
 ### 4.2 @PostFilter Ã¢â‚¬â€ Filter Return Value
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-2-postfilter-filter-return-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-2-postfilter-filter-return-value-handwritten.svg" alt="Handwritten: 4.2 @PostFilter Ã¢â‚¬â€ Filter Return Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-2-postfilter-filter-return-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-2-postfilter-filter-return-value-diagram.svg" alt="Diagram: 4.2 @PostFilter Ã¢â‚¬â€ Filter Return Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-2-postfilter-filter-return-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-2-postfilter-filter-return-value-sticky.svg" alt="Sticky Note: 4.2 @PostFilter Ã¢â‚¬â€ Filter Return Value" width="30%">
-</a>
 
 
 Filters the returned collection, removing elements that do not match the expression.
@@ -905,16 +765,6 @@ public class PostFilterController {
 
 ### 4.3 PostFilter with Pagination Warning
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-3-postfilter-with-pagination-warning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-3-postfilter-with-pagination-warning-handwritten.svg" alt="Handwritten: 4.3 PostFilter with Pagination Warning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-3-postfilter-with-pagination-warning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-3-postfilter-with-pagination-warning-diagram.svg" alt="Diagram: 4.3 PostFilter with Pagination Warning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-3-postfilter-with-pagination-warning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-3-postfilter-with-pagination-warning-sticky.svg" alt="Sticky Note: 4.3 PostFilter with Pagination Warning" width="30%">
-</a>
-
 
 `@PostFilter` executes on the **entire** result set in memory. For paginated endpoints, this can cause unexpected behavior Ã¢â‚¬â€ the filter runs after the method returns but before Spring MVC serializes the response.
 
@@ -956,16 +806,6 @@ public class PagedFilterController {
 
 ### 4.4 @PreFilter and @PostFilter Summary
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-4-prefilter-and-postfilter-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-4-prefilter-and-postfilter-summary-handwritten.svg" alt="Handwritten: 4.4 @PreFilter and @PostFilter Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-4-prefilter-and-postfilter-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-4-prefilter-and-postfilter-summary-diagram.svg" alt="Diagram: 4.4 @PreFilter and @PostFilter Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/4-4-prefilter-and-postfilter-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/4-4-prefilter-and-postfilter-summary-sticky.svg" alt="Sticky Note: 4.4 @PreFilter and @PostFilter Summary" width="30%">
-</a>
-
 
 | Annotation | Target | Direction | Variable |
 |------------|--------|-----------|----------|
@@ -978,16 +818,6 @@ public class PagedFilterController {
 ## 5. @Secured (Deprecated) and @RolesAllowed (JSR-250)
 
 ### 5.1 @Secured Ã¢â‚¬â€ Legacy Annotation
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-1-secured-legacy-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-1-secured-legacy-annotation-handwritten.svg" alt="Handwritten: 5.1 @Secured Ã¢â‚¬â€ Legacy Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-1-secured-legacy-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-1-secured-legacy-annotation-diagram.svg" alt="Diagram: 5.1 @Secured Ã¢â‚¬â€ Legacy Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-1-secured-legacy-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-1-secured-legacy-annotation-sticky.svg" alt="Sticky Note: 5.1 @Secured Ã¢â‚¬â€ Legacy Annotation" width="30%">
-</a>
 
 
 `@Secured` is the original Spring Security annotation. It supports only role-based checks (no SpEL). Enable it with `@EnableMethodSecurity(securedEnabled = true)`.
@@ -1029,16 +859,6 @@ Limitations of `@Secured`:
 - All roles must use the full `ROLE_` prefix
 
 ### 5.2 @RolesAllowed Ã¢â‚¬â€ JSR-250 Standard
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-2-rolesallowed-jsr-250-standard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-2-rolesallowed-jsr-250-standard-handwritten.svg" alt="Handwritten: 5.2 @RolesAllowed Ã¢â‚¬â€ JSR-250 Standard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-2-rolesallowed-jsr-250-standard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-2-rolesallowed-jsr-250-standard-diagram.svg" alt="Diagram: 5.2 @RolesAllowed Ã¢â‚¬â€ JSR-250 Standard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-2-rolesallowed-jsr-250-standard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-2-rolesallowed-jsr-250-standard-sticky.svg" alt="Sticky Note: 5.2 @RolesAllowed Ã¢â‚¬â€ JSR-250 Standard" width="30%">
-</a>
 
 
 `@RolesAllowed` is the Jakarta EE standard annotation for role-based access. Enable it with `@EnableMethodSecurity(jsr250Enabled = true)`.
@@ -1084,16 +904,6 @@ public class Jsr250Controller {
 
 ### 5.3 @RolesAllowed vs @Secured vs @PreAuthorize
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-3-rolesallowed-vs-secured-vs-preauthorize-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-3-rolesallowed-vs-secured-vs-preauthorize-handwritten.svg" alt="Handwritten: 5.3 @RolesAllowed vs @Secured vs @PreAuthorize" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-3-rolesallowed-vs-secured-vs-preauthorize-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-3-rolesallowed-vs-secured-vs-preauthorize-diagram.svg" alt="Diagram: 5.3 @RolesAllowed vs @Secured vs @PreAuthorize" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/5-3-rolesallowed-vs-secured-vs-preauthorize-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/5-3-rolesallowed-vs-secured-vs-preauthorize-sticky.svg" alt="Sticky Note: 5.3 @RolesAllowed vs @Secured vs @PreAuthorize" width="30%">
-</a>
-
 
 | Feature | @Secured | @RolesAllowed | @PreAuthorize |
 |---------|----------|---------------|---------------|
@@ -1113,16 +923,6 @@ public class Jsr250Controller {
 Create composed annotations to reduce repetition and improve readability.
 
 ### 6.1 @IsAdmin Ã¢â‚¬â€ Custom Meta-Annotation
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-1-isadmin-custom-meta-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-1-isadmin-custom-meta-annotation-handwritten.svg" alt="Handwritten: 6.1 @IsAdmin Ã¢â‚¬â€ Custom Meta-Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-1-isadmin-custom-meta-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-1-isadmin-custom-meta-annotation-diagram.svg" alt="Diagram: 6.1 @IsAdmin Ã¢â‚¬â€ Custom Meta-Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-1-isadmin-custom-meta-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-1-isadmin-custom-meta-annotation-sticky.svg" alt="Sticky Note: 6.1 @IsAdmin Ã¢â‚¬â€ Custom Meta-Annotation" width="30%">
-</a>
 
 
 ```java
@@ -1144,16 +944,6 @@ public @interface IsAdmin {
 
 ### 6.2 @IsEditorOrAdmin
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-2-iseditororadmin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-2-iseditororadmin-handwritten.svg" alt="Handwritten: 6.2 @IsEditorOrAdmin" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-2-iseditororadmin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-2-iseditororadmin-diagram.svg" alt="Diagram: 6.2 @IsEditorOrAdmin" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-2-iseditororadmin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-2-iseditororadmin-sticky.svg" alt="Sticky Note: 6.2 @IsEditorOrAdmin" width="30%">
-</a>
-
 
 ```java
 package com.course.security.annotation;
@@ -1174,16 +964,6 @@ public @interface IsEditorOrAdmin {
 
 ### 6.3 @OwnResource Ã¢â‚¬â€ Parameterized Meta-Annotation
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-3-ownresource-parameterized-meta-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-3-ownresource-parameterized-meta-annotation-handwritten.svg" alt="Handwritten: 6.3 @OwnResource Ã¢â‚¬â€ Parameterized Meta-Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-3-ownresource-parameterized-meta-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-3-ownresource-parameterized-meta-annotation-diagram.svg" alt="Diagram: 6.3 @OwnResource Ã¢â‚¬â€ Parameterized Meta-Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-3-ownresource-parameterized-meta-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-3-ownresource-parameterized-meta-annotation-sticky.svg" alt="Sticky Note: 6.3 @OwnResource Ã¢â‚¬â€ Parameterized Meta-Annotation" width="30%">
-</a>
-
 
 ```java
 package com.course.security.annotation;
@@ -1203,16 +983,6 @@ public @interface OwnResource {
 ```
 
 ### 6.4 Using Meta-Annotations
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-4-using-meta-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-4-using-meta-annotations-handwritten.svg" alt="Handwritten: 6.4 Using Meta-Annotations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-4-using-meta-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-4-using-meta-annotations-diagram.svg" alt="Diagram: 6.4 Using Meta-Annotations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-4-using-meta-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-4-using-meta-annotations-sticky.svg" alt="Sticky Note: 6.4 Using Meta-Annotations" width="30%">
-</a>
 
 
 ```java
@@ -1266,16 +1036,6 @@ public class MetaAnnotationController {
 
 ### 6.5 Composed Annotation with Multiple Expressions
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-5-composed-annotation-with-multiple-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-5-composed-annotation-with-multiple-expressions-handwritten.svg" alt="Handwritten: 6.5 Composed Annotation with Multiple Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-5-composed-annotation-with-multiple-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-5-composed-annotation-with-multiple-expressions-diagram.svg" alt="Diagram: 6.5 Composed Annotation with Multiple Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/6-5-composed-annotation-with-multiple-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/6-5-composed-annotation-with-multiple-expressions-sticky.svg" alt="Sticky Note: 6.5 Composed Annotation with Multiple Expressions" width="30%">
-</a>
-
 
 ```java
 package com.course.security.annotation;
@@ -1304,16 +1064,6 @@ The `hasPermission` expression in SpEL delegates to a `PermissionEvaluator`. Imp
 
 ### 7.1 PermissionEvaluator Interface
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-1-permissionevaluator-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-1-permissionevaluator-interface-handwritten.svg" alt="Handwritten: 7.1 PermissionEvaluator Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-1-permissionevaluator-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-1-permissionevaluator-interface-diagram.svg" alt="Diagram: 7.1 PermissionEvaluator Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-1-permissionevaluator-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-1-permissionevaluator-interface-sticky.svg" alt="Sticky Note: 7.1 PermissionEvaluator Interface" width="30%">
-</a>
-
 
 ```java
 package org.springframework.security.access;
@@ -1334,16 +1084,6 @@ public interface PermissionEvaluator {
 ```
 
 ### 7.2 Custom PermissionEvaluator Implementation
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-2-custom-permissionevaluator-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-2-custom-permissionevaluator-implementation-handwritten.svg" alt="Handwritten: 7.2 Custom PermissionEvaluator Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-2-custom-permissionevaluator-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-2-custom-permissionevaluator-implementation-diagram.svg" alt="Diagram: 7.2 Custom PermissionEvaluator Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-2-custom-permissionevaluator-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-2-custom-permissionevaluator-implementation-sticky.svg" alt="Sticky Note: 7.2 Custom PermissionEvaluator Implementation" width="30%">
-</a>
 
 
 ```java
@@ -1438,16 +1178,6 @@ public class DocumentPermissionEvaluator implements PermissionEvaluator {
 
 ### 7.3 Registering the PermissionEvaluator
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-3-registering-the-permissionevaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-3-registering-the-permissionevaluator-handwritten.svg" alt="Handwritten: 7.3 Registering the PermissionEvaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-3-registering-the-permissionevaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-3-registering-the-permissionevaluator-diagram.svg" alt="Diagram: 7.3 Registering the PermissionEvaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-3-registering-the-permissionevaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-3-registering-the-permissionevaluator-sticky.svg" alt="Sticky Note: 7.3 Registering the PermissionEvaluator" width="30%">
-</a>
-
 
 ```java
 package com.course.security.config;
@@ -1478,16 +1208,6 @@ public class PermissionEvaluatorConfig {
 ```
 
 ### 7.4 Using hasPermission in Controllers
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-4-using-haspermission-in-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-4-using-haspermission-in-controllers-handwritten.svg" alt="Handwritten: 7.4 Using hasPermission in Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-4-using-haspermission-in-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-4-using-haspermission-in-controllers-diagram.svg" alt="Diagram: 7.4 Using hasPermission in Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-4-using-haspermission-in-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-4-using-haspermission-in-controllers-sticky.svg" alt="Sticky Note: 7.4 Using hasPermission in Controllers" width="30%">
-</a>
 
 
 ```java
@@ -1550,16 +1270,6 @@ public class PermissionController {
 ```
 
 ### 7.5 hasPermission with MethodSecurityExpressionHandler
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-5-haspermission-with-methodsecurityexpressionhandler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-5-haspermission-with-methodsecurityexpressionhandler-handwritten.svg" alt="Handwritten: 7.5 hasPermission with MethodSecurityExpressionHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-5-haspermission-with-methodsecurityexpressionhandler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-5-haspermission-with-methodsecurityexpressionhandler-diagram.svg" alt="Diagram: 7.5 hasPermission with MethodSecurityExpressionHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/7-5-haspermission-with-methodsecurityexpressionhandler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/7-5-haspermission-with-methodsecurityexpressionhandler-sticky.svg" alt="Sticky Note: 7.5 hasPermission with MethodSecurityExpressionHandler" width="30%">
-</a>
 
 
 For more control, extend the expression handler to add custom methods:
@@ -1655,16 +1365,6 @@ public String groupAccess(@PathVariable String groupName) {
 When annotations are impractical (e.g., third-party classes, legacy code), use AspectJ pointcuts for method security.
 
 ### 8.1 Aspect-Based Security
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-1-aspect-based-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-1-aspect-based-security-handwritten.svg" alt="Handwritten: 8.1 Aspect-Based Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-1-aspect-based-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-1-aspect-based-security-diagram.svg" alt="Diagram: 8.1 Aspect-Based Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-1-aspect-based-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-1-aspect-based-security-sticky.svg" alt="Sticky Note: 8.1 Aspect-Based Security" width="30%">
-</a>
 
 
 ```java
@@ -1772,16 +1472,6 @@ public class SecurityAuditAspect {
 
 ### 8.2 @AuditLog Annotation
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-2-auditlog-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-2-auditlog-annotation-handwritten.svg" alt="Handwritten: 8.2 @AuditLog Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-2-auditlog-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-2-auditlog-annotation-diagram.svg" alt="Diagram: 8.2 @AuditLog Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-2-auditlog-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-2-auditlog-annotation-sticky.svg" alt="Sticky Note: 8.2 @AuditLog Annotation" width="30%">
-</a>
-
 
 ```java
 package com.course.security.annotation;
@@ -1800,16 +1490,6 @@ public @interface AuditLog {
 ```
 
 ### 8.3 Enabling AspectJ in Spring Boot
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-3-enabling-aspectj-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-3-enabling-aspectj-in-spring-boot-handwritten.svg" alt="Handwritten: 8.3 Enabling AspectJ in Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-3-enabling-aspectj-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-3-enabling-aspectj-in-spring-boot-diagram.svg" alt="Diagram: 8.3 Enabling AspectJ in Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/8-3-enabling-aspectj-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/8-3-enabling-aspectj-in-spring-boot-sticky.svg" alt="Sticky Note: 8.3 Enabling AspectJ in Spring Boot" width="30%">
-</a>
 
 
 ```java
@@ -1832,30 +1512,10 @@ CORS is a browser security mechanism that controls which origins (domains, schem
 
 ### 9.1 Same-Origin Policy
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-1-same-origin-policy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-1-same-origin-policy-handwritten.svg" alt="Handwritten: 9.1 Same-Origin Policy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-1-same-origin-policy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-1-same-origin-policy-diagram.svg" alt="Diagram: 9.1 Same-Origin Policy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-1-same-origin-policy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-1-same-origin-policy-sticky.svg" alt="Sticky Note: 9.1 Same-Origin Policy" width="30%">
-</a>
-
 
 By default, browsers enforce the same-origin policy: a web page at `https://app.example.com` cannot make fetch requests to `https://api.example.com`. CORS relaxes this selectively.
 
 ### 9.2 @CrossOrigin on Controller
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-2-crossorigin-on-controller-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-2-crossorigin-on-controller-handwritten.svg" alt="Handwritten: 9.2 @CrossOrigin on Controller" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-2-crossorigin-on-controller-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-2-crossorigin-on-controller-diagram.svg" alt="Diagram: 9.2 @CrossOrigin on Controller" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-2-crossorigin-on-controller-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-2-crossorigin-on-controller-sticky.svg" alt="Sticky Note: 9.2 @CrossOrigin on Controller" width="30%">
-</a>
 
 
 The simplest way to enable CORS is with `@CrossOrigin` on a controller or method:
@@ -1936,16 +1596,6 @@ public class BookCorsController {
 
 ### 9.3 @CrossOrigin Attribute Reference
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-3-crossorigin-attribute-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-3-crossorigin-attribute-reference-handwritten.svg" alt="Handwritten: 9.3 @CrossOrigin Attribute Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-3-crossorigin-attribute-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-3-crossorigin-attribute-reference-diagram.svg" alt="Diagram: 9.3 @CrossOrigin Attribute Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-3-crossorigin-attribute-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-3-crossorigin-attribute-reference-sticky.svg" alt="Sticky Note: 9.3 @CrossOrigin Attribute Reference" width="30%">
-</a>
-
 
 | Attribute | Type | Default | Description |
 |-----------|------|---------|-------------|
@@ -1958,16 +1608,6 @@ public class BookCorsController {
 | `maxAge` | `long` | `1800` (30 min) | How long the preflight response is cached |
 
 ### 9.4 Global CORS with CorsConfigurationSource
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-4-global-cors-with-corsconfigurationsource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-4-global-cors-with-corsconfigurationsource-handwritten.svg" alt="Handwritten: 9.4 Global CORS with CorsConfigurationSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-4-global-cors-with-corsconfigurationsource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-4-global-cors-with-corsconfigurationsource-diagram.svg" alt="Diagram: 9.4 Global CORS with CorsConfigurationSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-4-global-cors-with-corsconfigurationsource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-4-global-cors-with-corsconfigurationsource-sticky.svg" alt="Sticky Note: 9.4 Global CORS with CorsConfigurationSource" width="30%">
-</a>
 
 
 For centralized CORS configuration, define a `CorsConfigurationSource` bean:
@@ -2023,16 +1663,6 @@ public class CorsGlobalConfig {
 
 ### 9.5 Allowed Origin Patterns
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-5-allowed-origin-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-5-allowed-origin-patterns-handwritten.svg" alt="Handwritten: 9.5 Allowed Origin Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-5-allowed-origin-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-5-allowed-origin-patterns-diagram.svg" alt="Diagram: 9.5 Allowed Origin Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-5-allowed-origin-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-5-allowed-origin-patterns-sticky.svg" alt="Sticky Note: 9.5 Allowed Origin Patterns" width="30%">
-</a>
-
 
 Use `allowedOriginPatterns` instead of `allowedOrigins` when you need wildcard matching or credentials:
 
@@ -2064,16 +1694,6 @@ public class CorsPatternConfig {
 ```
 
 ### 9.6 Per-URL CORS Configuration
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-6-per-url-cors-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-6-per-url-cors-configuration-handwritten.svg" alt="Handwritten: 9.6 Per-URL CORS Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-6-per-url-cors-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-6-per-url-cors-configuration-diagram.svg" alt="Diagram: 9.6 Per-URL CORS Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-6-per-url-cors-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-6-per-url-cors-configuration-sticky.svg" alt="Sticky Note: 9.6 Per-URL CORS Configuration" width="30%">
-</a>
 
 
 Different URL patterns need different CORS rules:
@@ -2120,16 +1740,6 @@ public class PerUrlCorsConfig {
 
 ### 9.7 CORS with Spring Security Filter Chain
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-7-cors-with-spring-security-filter-chain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-7-cors-with-spring-security-filter-chain-handwritten.svg" alt="Handwritten: 9.7 CORS with Spring Security Filter Chain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-7-cors-with-spring-security-filter-chain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-7-cors-with-spring-security-filter-chain-diagram.svg" alt="Diagram: 9.7 CORS with Spring Security Filter Chain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-7-cors-with-spring-security-filter-chain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-7-cors-with-spring-security-filter-chain-sticky.svg" alt="Sticky Note: 9.7 CORS with Spring Security Filter Chain" width="30%">
-</a>
-
 
 CORS must be configured before Spring Security's filter chain processes the request. Use `.cors()` in the security configuration:
 
@@ -2161,16 +1771,6 @@ public class SecurityCorsConfig {
 ```
 
 ### 9.8 Preflight (OPTIONS) Handling
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-8-preflight-options-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-8-preflight-options-handling-handwritten.svg" alt="Handwritten: 9.8 Preflight (OPTIONS) Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-8-preflight-options-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-8-preflight-options-handling-diagram.svg" alt="Diagram: 9.8 Preflight (OPTIONS) Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-8-preflight-options-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-8-preflight-options-handling-sticky.svg" alt="Sticky Note: 9.8 Preflight (OPTIONS) Handling" width="30%">
-</a>
 
 
 Before the actual request, browsers send a preflight OPTIONS request to check CORS permissions:
@@ -2222,16 +1822,6 @@ public class CorsPreflightFilter implements Filter {
 ```
 
 ### 9.9 CORS Error Handling
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-9-cors-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-9-cors-error-handling-handwritten.svg" alt="Handwritten: 9.9 CORS Error Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-9-cors-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-9-cors-error-handling-diagram.svg" alt="Diagram: 9.9 CORS Error Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/9-9-cors-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/9-9-cors-error-handling-sticky.svg" alt="Sticky Note: 9.9 CORS Error Handling" width="30%">
-</a>
 
 
 When CORS validation fails, Spring returns a `403 Forbidden` with an error message. Customize the response:
@@ -2291,16 +1881,6 @@ CSRF (also called XSRF) is an attack that forces an authenticated user to perfor
 
 ### 10.1 How CSRF Works
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-1-how-csrf-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-1-how-csrf-works-handwritten.svg" alt="Handwritten: 10.1 How CSRF Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-1-how-csrf-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-1-how-csrf-works-diagram.svg" alt="Diagram: 10.1 How CSRF Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-1-how-csrf-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-1-how-csrf-works-sticky.svg" alt="Sticky Note: 10.1 How CSRF Works" width="30%">
-</a>
-
 
 An attacker tricks the victim's browser into sending a forged request:
 
@@ -2313,16 +1893,6 @@ An attacker tricks the victim's browser into sending a forged request:
 CSRF tokens prevent this by requiring a token that the attacker cannot predict.
 
 ### 10.2 Default CSRF Protection
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-2-default-csrf-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-2-default-csrf-protection-handwritten.svg" alt="Handwritten: 10.2 Default CSRF Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-2-default-csrf-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-2-default-csrf-protection-diagram.svg" alt="Diagram: 10.2 Default CSRF Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-2-default-csrf-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-2-default-csrf-protection-sticky.svg" alt="Sticky Note: 10.2 Default CSRF Protection" width="30%">
-</a>
 
 
 Spring Security enables CSRF protection by default for state-changing operations (POST, PUT, DELETE, PATCH).
@@ -2349,16 +1919,6 @@ public class CsrfDefaultConfig {
 ```
 
 ### 10.3 CsrfTokenRepository Implementations
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-3-csrftokenrepository-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-3-csrftokenrepository-implementations-handwritten.svg" alt="Handwritten: 10.3 CsrfTokenRepository Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-3-csrftokenrepository-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-3-csrftokenrepository-implementations-diagram.svg" alt="Diagram: 10.3 CsrfTokenRepository Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-3-csrftokenrepository-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-3-csrftokenrepository-implementations-sticky.svg" alt="Sticky Note: 10.3 CsrfTokenRepository Implementations" width="30%">
-</a>
 
 
 Spring Security provides two built-in CSRF token repositories:
@@ -2418,16 +1978,6 @@ public class CookieCsrfConfig {
 `withHttpOnlyFalse()` makes the cookie readable by JavaScript Ã¢â‚¬â€ required for SPAs that need to read the token.
 
 ### 10.4 Custom CsrfTokenRepository
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-4-custom-csrftokenrepository-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-4-custom-csrftokenrepository-handwritten.svg" alt="Handwritten: 10.4 Custom CsrfTokenRepository" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-4-custom-csrftokenrepository-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-4-custom-csrftokenrepository-diagram.svg" alt="Diagram: 10.4 Custom CsrfTokenRepository" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-4-custom-csrftokenrepository-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-4-custom-csrftokenrepository-sticky.svg" alt="Sticky Note: 10.4 Custom CsrfTokenRepository" width="30%">
-</a>
 
 
 ```java
@@ -2518,16 +2068,6 @@ public class CustomCsrfTokenRepository implements CsrfTokenRepository {
 
 ### 10.5 When to Disable CSRF
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-5-when-to-disable-csrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-5-when-to-disable-csrf-handwritten.svg" alt="Handwritten: 10.5 When to Disable CSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-5-when-to-disable-csrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-5-when-to-disable-csrf-diagram.svg" alt="Diagram: 10.5 When to Disable CSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-5-when-to-disable-csrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-5-when-to-disable-csrf-sticky.svg" alt="Sticky Note: 10.5 When to Disable CSRF" width="30%">
-</a>
-
 
 CSRF protection is unnecessary for:
 
@@ -2558,16 +2098,6 @@ public class RestApiSecurityConfig {
 ```
 
 ### 10.6 CSRF with SPA (Single Page Application)
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-6-csrf-with-spa-single-page-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-6-csrf-with-spa-single-page-application-handwritten.svg" alt="Handwritten: 10.6 CSRF with SPA (Single Page Application)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-6-csrf-with-spa-single-page-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-6-csrf-with-spa-single-page-application-diagram.svg" alt="Diagram: 10.6 CSRF with SPA (Single Page Application)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-6-csrf-with-spa-single-page-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-6-csrf-with-spa-single-page-application-sticky.svg" alt="Sticky Note: 10.6 CSRF with SPA (Single Page Application)" width="30%">
-</a>
 
 
 SPAs typically use the double-submit cookie pattern:
@@ -2622,16 +2152,6 @@ function getCookie(name) {
 ```
 
 ### 10.7 CsrfTokenRequestAttributeHandler
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-7-csrftokenrequestattributehandler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-7-csrftokenrequestattributehandler-handwritten.svg" alt="Handwritten: 10.7 CsrfTokenRequestAttributeHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-7-csrftokenrequestattributehandler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-7-csrftokenrequestattributehandler-diagram.svg" alt="Diagram: 10.7 CsrfTokenRequestAttributeHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-7-csrftokenrequestattributehandler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-7-csrftokenrequestattributehandler-sticky.svg" alt="Sticky Note: 10.7 CsrfTokenRequestAttributeHandler" width="30%">
-</a>
 
 
 Controls how the CSRF token is exposed to the request. The default handler makes the token available as a request attribute.
@@ -2713,16 +2233,6 @@ public class CustomCsrfTokenRequestHandler implements CsrfTokenRequestHandler {
 ```
 
 ### 10.8 Custom AccessDeniedHandler for CSRF Failures
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-8-custom-accessdeniedhandler-for-csrf-failures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-8-custom-accessdeniedhandler-for-csrf-failures-handwritten.svg" alt="Handwritten: 10.8 Custom AccessDeniedHandler for CSRF Failures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-8-custom-accessdeniedhandler-for-csrf-failures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-8-custom-accessdeniedhandler-for-csrf-failures-diagram.svg" alt="Diagram: 10.8 Custom AccessDeniedHandler for CSRF Failures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-8-custom-accessdeniedhandler-for-csrf-failures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-8-custom-accessdeniedhandler-for-csrf-failures-sticky.svg" alt="Sticky Note: 10.8 Custom AccessDeniedHandler for CSRF Failures" width="30%">
-</a>
 
 
 When CSRF validation fails, Spring returns a `403 Forbidden`. Customize this response:
@@ -2809,16 +2319,6 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
 ### 10.9 CSRF Protection for Non-Browser Clients
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-9-csrf-protection-for-non-browser-clients-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-9-csrf-protection-for-non-browser-clients-handwritten.svg" alt="Handwritten: 10.9 CSRF Protection for Non-Browser Clients" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-9-csrf-protection-for-non-browser-clients-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-9-csrf-protection-for-non-browser-clients-diagram.svg" alt="Diagram: 10.9 CSRF Protection for Non-Browser Clients" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/10-9-csrf-protection-for-non-browser-clients-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/10-9-csrf-protection-for-non-browser-clients-sticky.svg" alt="Sticky Note: 10.9 CSRF Protection for Non-Browser Clients" width="30%">
-</a>
-
 
 For mobile apps or service-to-service calls, disable CSRF entirely:
 
@@ -2877,16 +2377,6 @@ Content Security Policy (CSP) is a browser security mechanism that helps detect 
 
 ### 11.1 Basic CSP Configuration
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-1-basic-csp-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-1-basic-csp-configuration-handwritten.svg" alt="Handwritten: 11.1 Basic CSP Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-1-basic-csp-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-1-basic-csp-configuration-diagram.svg" alt="Diagram: 11.1 Basic CSP Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-1-basic-csp-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-1-basic-csp-configuration-sticky.svg" alt="Sticky Note: 11.1 Basic CSP Configuration" width="30%">
-</a>
-
 
 ```java
 @Configuration
@@ -2924,16 +2414,6 @@ public class CspSecurityConfig {
 ```
 
 ### 11.2 Comprehensive Security Headers
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-2-comprehensive-security-headers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-2-comprehensive-security-headers-handwritten.svg" alt="Handwritten: 11.2 Comprehensive Security Headers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-2-comprehensive-security-headers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-2-comprehensive-security-headers-diagram.svg" alt="Diagram: 11.2 Comprehensive Security Headers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-2-comprehensive-security-headers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-2-comprehensive-security-headers-sticky.svg" alt="Sticky Note: 11.2 Comprehensive Security Headers" width="30%">
-</a>
 
 
 ```java
@@ -3004,16 +2484,6 @@ public class ComprehensiveHeaderConfig {
 
 ### 11.3 Custom Headers with addHeaderWriter
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-3-custom-headers-with-addheaderwriter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-3-custom-headers-with-addheaderwriter-handwritten.svg" alt="Handwritten: 11.3 Custom Headers with addHeaderWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-3-custom-headers-with-addheaderwriter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-3-custom-headers-with-addheaderwriter-diagram.svg" alt="Diagram: 11.3 Custom Headers with addHeaderWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-3-custom-headers-with-addheaderwriter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-3-custom-headers-with-addheaderwriter-sticky.svg" alt="Sticky Note: 11.3 Custom Headers with addHeaderWriter" width="30%">
-</a>
-
 
 Add custom security headers programmatically:
 
@@ -3053,16 +2523,6 @@ public class CustomHeaderConfig {
 
 ### 11.4 StaticHeadersWriter
 
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-4-staticheaderswriter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-4-staticheaderswriter-handwritten.svg" alt="Handwritten: 11.4 StaticHeadersWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-4-staticheaderswriter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-4-staticheaderswriter-diagram.svg" alt="Diagram: 11.4 StaticHeadersWriter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-4-staticheaderswriter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-4-staticheaderswriter-sticky.svg" alt="Sticky Note: 11.4 StaticHeadersWriter" width="30%">
-</a>
-
 
 ```java
 import org.springframework.security.web.header.writers.StaticHeadersWriter;
@@ -3083,16 +2543,6 @@ public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 ```
 
 ### 11.5 CSP Reporting
-
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-5-csp-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-5-csp-reporting-handwritten.svg" alt="Handwritten: 11.5 CSP Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-5-csp-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-5-csp-reporting-diagram.svg" alt="Diagram: 11.5 CSP Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/27-method-cors-csrf/11-5-csp-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/27-method-cors-csrf/11-5-csp-reporting-sticky.svg" alt="Sticky Note: 11.5 CSP Reporting" width="30%">
-</a>
 
 
 For monitoring CSP violations without full enforcement:

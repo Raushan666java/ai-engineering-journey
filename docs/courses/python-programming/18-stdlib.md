@@ -319,16 +319,6 @@ print(emails)  # ['alice@example.com', 'bob@test.org']
 
 ### 18.7.1 Common Patterns
 
-<a href="../../../assets/images/diagrams/python-programming/18-stdlib/18-7-1-common-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/18-stdlib/18-7-1-common-patterns-handwritten.svg" alt="Handwritten: 18.7.1 Common Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/18-stdlib/18-7-1-common-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/18-stdlib/18-7-1-common-patterns-diagram.svg" alt="Diagram: 18.7.1 Common Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/18-stdlib/18-7-1-common-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/18-stdlib/18-7-1-common-patterns-sticky.svg" alt="Sticky Note: 18.7.1 Common Patterns" width="30%">
-</a>
-
 
 ```python
 # Email

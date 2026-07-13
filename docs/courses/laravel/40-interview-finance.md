@@ -81,16 +81,6 @@ flowchart LR
 
 ### Q1: What is PCI-DSS compliance and how does it affect Laravel application design?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-handwritten.svg" alt="Handwritten: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-diagram.svg" alt="Diagram: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-pci-dss-compliance-and-how-does-it-affect-laravel-application-design-sticky.svg" alt="Sticky Note: What is PCI-DSS compliance and how does it affect Laravel application design?" width="30%">
-</a>
-
 
 PCI-DSS (Payment Card Industry Data Security Standard) mandates that any application storing, processing, or transmitting cardholder data must encrypt data at rest and in transit, restrict access via need-to-know, log all access, and never store sensitive authentication data (CVV, full track data, PIN) after authorization. In Laravel, this means using encrypted casts or `encrypt()`/`decrypt()` on cardholder fields, never logging raw PANs, scoping database access with policies, and using HTTPS everywhere. Payment processing should be tokenized through a gateway like Stripe or Braintree so raw card numbers never touch your database.
 
@@ -108,30 +98,10 @@ protected function cardNumber(): Attribute
 
 ### Q2: Explain the difference between KYC and AML in financial systems.
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-handwritten.svg" alt="Handwritten: Explain the difference between KYC and AML in financial systems." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-diagram.svg" alt="Diagram: Explain the difference between KYC and AML in financial systems." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/explain-the-difference-between-kyc-and-aml-in-financial-systems-sticky.svg" alt="Sticky Note: Explain the difference between KYC and AML in financial systems." width="30%">
-</a>
-
 
 Know Your Customer (KYC) is the identity verification process → collecting and validating government-issued IDs, proof of address, and biometric data to establish who the customer is. Anti-Money Laundering (AML) is the ongoing screening and monitoring process → checking transactions against watchlists (OFAC, UN sanctions), detecting suspicious patterns like structuring or rapid round-tripping, and filing Suspicious Activity Reports (SARs). KYC happens at onboarding; AML runs continuously.
 
 ### Q3: What are the core data models in a financial transaction system?
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-handwritten.svg" alt="Handwritten: What are the core data models in a financial transaction system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-diagram.svg" alt="Diagram: What are the core data models in a financial transaction system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-are-the-core-data-models-in-a-financial-transaction-system-sticky.svg" alt="Sticky Note: What are the core data models in a financial transaction system?" width="30%">
-</a>
 
 
 The core models are `Account`, `Transaction`, `LedgerEntry`, `ComplianceRule`, and `Settlement`. The `Account` model holds the balance and owner. `Transaction` records a single financial movement with type, amount, reference, status, and metadata. `LedgerEntry` implements double-entry bookkeeping → every transaction produces two or more entries (debit/credit). `ComplianceRule` stores configurable screening logic. `Settlement` tracks batch settlement cycles for payment clearing.
@@ -159,30 +129,10 @@ class LedgerEntry extends Model
 
 ### Q4: How does payment processing work end-to-end in a fintech platform?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-handwritten.svg" alt="Handwritten: How does payment processing work end-to-end in a fintech platform?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-diagram.svg" alt="Diagram: How does payment processing work end-to-end in a fintech platform?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-does-payment-processing-work-end-to-end-in-a-fintech-platform-sticky.svg" alt="Sticky Note: How does payment processing work end-to-end in a fintech platform?" width="30%">
-</a>
-
 
 The flow is: 1) Customer initiates payment via checkout form, 2) Frontend tokenizes card details through Stripe Elements or similar (card data never hits your server), 3) Backend creates a `PaymentIntent` via the gateway API with the amount and currency, 4) Gateway authorizes the transaction with the issuing bank, 5) On success, you create a local `Transaction` record and trigger post-payment workflows (invoice generation, inventory update, notification), 6) Settlement happens in batch at end-of-day when the gateway transfers funds to your merchant account. Laravel Cashier wraps Stripe and Paddle for most of this flow.
 
 ### Q5: What is a trading signal and how is it generated programmatically?
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-handwritten.svg" alt="Handwritten: What is a trading signal and how is it generated programmatically?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-diagram.svg" alt="Diagram: What is a trading signal and how is it generated programmatically?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-trading-signal-and-how-is-it-generated-programmatically-sticky.svg" alt="Sticky Note: What is a trading signal and how is it generated programmatically?" width="30%">
-</a>
 
 
 A trading signal is an indicator that suggests buying or selling an asset. Signals are generated by analyzing market data → price movements, volume, technical indicators (moving averages, RSI, MACD), or ML model predictions. A signal typically includes the instrument, direction (buy/sell/hold), confidence score, timestamp, and the reasoning. In Laravel, scheduled agents fetch market data from an exchange API (Alpha Vantage, Binance, Alpaca), apply analysis logic, and persist signal records for downstream execution.
@@ -203,16 +153,6 @@ A trading signal is an indicator that suggests buying or selling an asset. Signa
 
 ### Q6: What is a chargeback and how do you handle it programmatically?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-handwritten.svg" alt="Handwritten: What is a chargeback and how do you handle it programmatically?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-diagram.svg" alt="Diagram: What is a chargeback and how do you handle it programmatically?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/what-is-a-chargeback-and-how-do-you-handle-it-programmatically-sticky.svg" alt="Sticky Note: What is a chargeback and how do you handle it programmatically?" width="30%">
-</a>
-
 
 A chargeback occurs when a cardholder disputes a transaction with their issuing bank. The funds are forcibly reversed from the merchant. In Laravel, you handle it via a webhook from your payment gateway (Stripe's `chargeback.created` event or similar). The webhook handler marks the transaction as disputed, creates a `Dispute` record, subtracts the amount from the merchant's balance in your ledger, and triggers a workflow → notifies the risk team, freezes the related account if thresholds are hit, and archives the transaction's associated order.
 
@@ -221,16 +161,6 @@ A chargeback occurs when a cardholder disputes a transaction with their issuing 
 ## 2. Technical Implementation
 
 ### Q7: Build a fraud detection agent with Laravel AI SDK.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-handwritten.svg" alt="Handwritten: Build a fraud detection agent with Laravel AI SDK." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-diagram.svg" alt="Diagram: Build a fraud detection agent with Laravel AI SDK." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-fraud-detection-agent-with-laravel-ai-sdk-sticky.svg" alt="Sticky Note: Build a fraud detection agent with Laravel AI SDK." width="30%">
-</a>
 
 
 A fraud detection agent combines rule-based checks (velocity, amount thresholds, new account) with AI risk scoring. Create an agent that evaluates every transaction asynchronously.
@@ -299,16 +229,6 @@ class FraudDetectionAgent extends Agent
 ```
 
 ### Q8: How do you implement real-time transaction monitoring with anomaly detection?
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-handwritten.svg" alt="Handwritten: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-diagram.svg" alt="Diagram: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-implement-real-time-transaction-monitoring-with-anomaly-detection-sticky.svg" alt="Sticky Note: How do you implement real-time transaction monitoring with anomaly detection?" width="30%">
-</a>
 
 
 Use queue-backed transaction processing where every transaction passes through a monitoring pipeline. Deploy a Laravel agent that evaluates each transaction against configurable rules and historical baselines, dispatching alerts for anomalous activity.
@@ -389,16 +309,6 @@ class TransactionMonitorAgent extends Agent
 
 ### Q9: Build a KYC/AML verification agent pipeline.
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-handwritten.svg" alt="Handwritten: Build a KYC/AML verification agent pipeline." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-diagram.svg" alt="Diagram: Build a KYC/AML verification agent pipeline." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-kyc-aml-verification-agent-pipeline-sticky.svg" alt="Sticky Note: Build a KYC/AML verification agent pipeline." width="30%">
-</a>
-
 
 The pipeline has three stages: identity document verification, biometric matching, and watchlist screening. Use a supervisor agent that orchestrates the stages.
 
@@ -468,16 +378,6 @@ class KycSupervisorAgent extends Agent
 ```
 
 ### Q10: Implement credit scoring with AI in Laravel.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-handwritten.svg" alt="Handwritten: Implement credit scoring with AI in Laravel." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-diagram.svg" alt="Diagram: Implement credit scoring with AI in Laravel." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/implement-credit-scoring-with-ai-in-laravel-sticky.svg" alt="Sticky Note: Implement credit scoring with AI in Laravel." width="30%">
-</a>
 
 
 A credit scoring agent aggregates financial data → income, existing debts, payment history, bank transaction patterns → and applies an ML model or LLM-based scoring logic. Use a scheduled Artisan command to run batch scoring nightly.
@@ -551,16 +451,6 @@ class CreditScoringAgent extends Agent
 
 ### Q11: How do you build a trading signal automation pipeline?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-handwritten.svg" alt="Handwritten: How do you build a trading signal automation pipeline?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-diagram.svg" alt="Diagram: How do you build a trading signal automation pipeline?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-build-a-trading-signal-automation-pipeline-sticky.svg" alt="Sticky Note: How do you build a trading signal automation pipeline?" width="30%">
-</a>
-
 
 Use a chain of scheduled agents: a data fetcher collects market data from exchange APIs, an analyzer applies technical indicators, a signal generator produces weighted recommendations, and an executor submits trades based on confidence thresholds. Each step is a queued job for reliability.
 
@@ -624,16 +514,6 @@ class TradingSignalGenerator extends Agent
 ```
 
 ### Q12: Build a portfolio management agent with rebalancing logic.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-handwritten.svg" alt="Handwritten: Build a portfolio management agent with rebalancing logic." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-diagram.svg" alt="Diagram: Build a portfolio management agent with rebalancing logic." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/build-a-portfolio-management-agent-with-rebalancing-logic-sticky.svg" alt="Sticky Note: Build a portfolio management agent with rebalancing logic." width="30%">
-</a>
 
 
 The agent evaluates the current portfolio allocation against target percentages, computes required trades to rebalance, and generates a rebalancing order plan. Use it as a scheduled agent that runs weekly or on demand.
@@ -700,16 +580,6 @@ class PortfolioManagementAgent extends Agent
 
 ### Q13: Design a payment reconciliation agent.
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-handwritten.svg" alt="Handwritten: Design a payment reconciliation agent." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-diagram.svg" alt="Diagram: Design a payment reconciliation agent." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-reconciliation-agent-sticky.svg" alt="Sticky Note: Design a payment reconciliation agent." width="30%">
-</a>
-
 
 The agent matches internal transaction records against bank statement lines or gateway settlement reports. It flags unmatched items, suggests corrections for partial matches, and generates reconciliation reports.
 
@@ -774,16 +644,6 @@ class PaymentReconciliationAgent extends Agent
 ```
 
 ### Q14: How do you automate regulatory reporting in Laravel?
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-handwritten.svg" alt="Handwritten: How do you automate regulatory reporting in Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-diagram.svg" alt="Diagram: How do you automate regulatory reporting in Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-automate-regulatory-reporting-in-laravel-sticky.svg" alt="Sticky Note: How do you automate regulatory reporting in Laravel?" width="30%">
-</a>
 
 
 Use a scheduled agent that aggregates transaction data from the compliance tables, applies jurisdiction-specific formatting rules, generates the required report format (PDF, CSV, XML), and logs the filing for audit. Each regulation type gets its own report generator class.
@@ -851,16 +711,6 @@ class RegulatoryReportingAgent extends Agent
 
 ### Q15: How do you design a PCI-DSS compliant Laravel application?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-handwritten.svg" alt="Handwritten: How do you design a PCI-DSS compliant Laravel application?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-diagram.svg" alt="Diagram: How do you design a PCI-DSS compliant Laravel application?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-design-a-pci-dss-compliant-laravel-application-sticky.svg" alt="Sticky Note: How do you design a PCI-DSS compliant Laravel application?" width="30%">
-</a>
-
 
 The architecture follows the tokenization pattern: cardholder data never enters your domain. Use Laravel Cashier (Stripe) to tokenize payment details at the frontend. Store only the payment gateway token and last-four digits. Encrypt any stored PAN data with Laravel's `encrypt()` at the field level using encrypted model casting. Audit all access to payment data via a dedicated `PaymentAuditLog` model. Use database column encryption and TLS everywhere. Restrict payment data endpoints with explicit authorization policies. Never log raw card data or CVV codes.
 
@@ -889,16 +739,6 @@ class PaymentMethod extends Model
 ```
 
 ### Q16: Design a financial transaction audit trail system.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-handwritten.svg" alt="Handwritten: Design a financial transaction audit trail system." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-diagram.svg" alt="Diagram: Design a financial transaction audit trail system." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-financial-transaction-audit-trail-system-sticky.svg" alt="Sticky Note: Design a financial transaction audit trail system." width="30%">
-</a>
 
 
 Every financial mutation must be immutable and verifiable. Use an event-sourced `AuditTrail` model that records every state change. Each entry captures the actor ID, IP, user agent, action type, before/after state, and a SHA-256 hash chained to the previous entry for tamper evidence. Expose query scopes for compliance officers to replay account history.
@@ -945,16 +785,6 @@ class AuditTrail extends Model
 
 ### Q17: How do you ensure high availability for a financial system built with Laravel?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-handwritten.svg" alt="Handwritten: How do you ensure high availability for a financial system built with Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-diagram.svg" alt="Diagram: How do you ensure high availability for a financial system built with Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-ensure-high-availability-for-a-financial-system-built-with-laravel-sticky.svg" alt="Sticky Note: How do you ensure high availability for a financial system built with Laravel?" width="30%">
-</a>
-
 
 Financial systems require multi-layer redundancy. Use Laravel Octane with Swoole/RoadRunner for application-level concurrency. Deploy behind a load balancer across multiple availability zones. Use database read replicas with a robust failover strategy (Laravel's `sticky` option for reads-after-writes). Queue critical processing through SQS or Redis Cluster with Horizon for visibility. Implement circuit breakers for downstream payment gateways using Laravel's cache-based rate limiter. Run health check endpoints and configure auto-scaling groups.
 
@@ -981,16 +811,6 @@ Financial systems require multi-layer redundancy. Use Laravel Octane with Swoole
 ```
 
 ### Q18: Design a multi-currency ledger with double-entry bookkeeping.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-handwritten.svg" alt="Handwritten: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-diagram.svg" alt="Diagram: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-multi-currency-ledger-with-double-entry-bookkeeping-sticky.svg" alt="Sticky Note: Design a multi-currency ledger with double-entry bookkeeping." width="30%">
-</a>
 
 
 Every transaction creates at least two entries → a debit and a credit → that must balance to zero. Use a `JournalEntry` model as the aggregate root. Entries are immutable after creation. Use database transactions to ensure atomicity. Currency conversion uses a `ExchangeRate` model with rate source and timestamp. The ledger supports memo-post (pending) and posted (final) states.
@@ -1031,16 +851,6 @@ class JournalEntry extends Model
 
 ### Q19: How would you architect a fraud detection system that scales to millions of transactions per day?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-handwritten.svg" alt="Handwritten: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-diagram.svg" alt="Diagram: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-architect-a-fraud-detection-system-that-scales-to-millions-of-transactions-per-day-sticky.svg" alt="Sticky Note: How would you architect a fraud detection system that scales to millions of transactions per day?" width="30%">
-</a>
-
 
 Use a layered architecture: Layer 1 is a lightweight pre-filter in middleware that blocks obvious fraud (known bad IPs, velocity checks on Redis counters). Layer 2 is a queue-backed rule engine running Laravel agents that evaluate transactions against 50+ rules. Layer 3 is an ML inference service (separate Python service or ONNX runtime) for deep anomaly detection. Layer 4 is a human review queue with a dashboard for manual adjudication. Use Redis for real-time counters (transactions per minute, per merchant, per card). Store fraud results in a dedicated `FraudFlag` table and cache decisions for 24h to avoid re-screening identical cards.
 
@@ -1050,90 +860,30 @@ Use a layered architecture: Layer 1 is a lightweight pre-filter in middleware th
 
 ### Q20: Design a payment processing system with integrated fraud detection.
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-handwritten.svg" alt="Handwritten: Design a payment processing system with integrated fraud detection." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-diagram.svg" alt="Diagram: Design a payment processing system with integrated fraud detection." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-payment-processing-system-with-integrated-fraud-detection-sticky.svg" alt="Sticky Note: Design a payment processing system with integrated fraud detection." width="30%">
-</a>
-
 
 Walk through the end-to-end design: 1) User submits payment via a frontend form using Stripe Elements (card tokenized client-side). 2) Laravel controller creates a `PaymentIntent` via Cashier and stores a `Transaction` record in `pending` status. 3) Transaction dispatched to the `fraud-detection` queue. 4) `FraudDetectionAgent` evaluates it asynchronously → rules + AI scoring. 5) If score &lt; 0.3, approve automatically and complete the PaymentIntent. 6) If 0.3â€“0.7, flag for manual review and hold settlement. 7) If &gt; 0.7, block immediately and refund. 8) Webhook listener updates transaction status when the gateway confirms settlement. 9) On completion, dispatch post-payment jobs (invoice, notification, ledger entry). The key design decision is separating the payment capture from the fraud verdict by processing fraud asynchronously on the queue.
 
 ### Q21: How would you handle financial data reconciliation between internal records and a bank statement?
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-handwritten.svg" alt="Handwritten: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-diagram.svg" alt="Diagram: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-would-you-handle-financial-data-reconciliation-between-internal-records-and-a-bank-statement-sticky.svg" alt="Sticky Note: How would you handle financial data reconciliation between internal records and a bank statement?" width="30%">
-</a>
 
 
 First, I'd fetch the bank statement via an API feed or CSV import and parse it into a `SettlementLine` model. Then run a scheduled reconciliation agent that performs three passes: Pass 1 matches exact amounts and references (auto-match). Pass 2 allows small date windows and fuzzy reference matching (suggested matches requiring confirmation). Pass 3 flags unmatched items from both sides. Result goes to a reconciliation dashboard where a finance operator approves or corrects suggested matches. Final step: post adjusting journal entries for any net differences and archive the reconciliation report for audit.
 
 ### Q22: Describe the architecture of a fintech platform built on Laravel.
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-handwritten.svg" alt="Handwritten: Describe the architecture of a fintech platform built on Laravel." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-diagram.svg" alt="Diagram: Describe the architecture of a fintech platform built on Laravel." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/describe-the-architecture-of-a-fintech-platform-built-on-laravel-sticky.svg" alt="Sticky Note: Describe the architecture of a fintech platform built on Laravel." width="30%">
-</a>
-
 
 The platform follows a modular monolith pattern with domain modules: Accounts, Transactions, Compliance, Trading, Payments, and Reporting. Each module has its own models, agents, and controllers, communicating through events and the service container. The AI agent layer sits above the modules → agents are autonomous but use tools (scopes, repositories, services) provided by the modules. A supervisor agent orchestrates multi-step workflows like KYC (document verify → watchlist screen → risk assess → approve/reject). External integrations (payment gateways, bank APIs, market data feeds) are abstracted behind interfaces for testability. The queue layer (Redis + Horizon) handles all async work. Telescope and Pulse provide observability. Octane + read replicas provide the performance envelope.
 
 ### Q23: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-handwritten.svg" alt="Handwritten: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-diagram.svg" alt="Diagram: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/a-high-value-transaction-was-incorrectly-flagged-as-fraudulent-walk-through-your-debugging-process-sticky.svg" alt="Sticky Note: A high-value transaction was incorrectly flagged as fraudulent. Walk through your debugging process." width="30%">
-</a>
 
 
 First, check the `FraudFlag` record for that transaction to see which rules triggered and the risk factors the AI identified. Review the `TransactionMonitorAlert` records. Check the account's baseline at the time of the transaction → was there a data gap or stale baseline? If an AI rule triggered, replay the agent input with the current model to see if the behavior is reproducible. Check if the transaction metadata was incomplete (missing IP, device fingerprint). Fix the root cause: add missing data fields to the context, tune the rule threshold, or exclude the specific pattern. Finally, create a regression test case and add it to the evasion test suite so this false positive doesn't recur.
 
 ### Q24: How do you handle real-time balance consistency across distributed services in a financial system?
 
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-handwritten.svg" alt="Handwritten: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-diagram.svg" alt="Diagram: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/how-do-you-handle-real-time-balance-consistency-across-distributed-services-in-a-financial-system-sticky.svg" alt="Sticky Note: How do you handle real-time balance consistency across distributed services in a financial system?" width="30%">
-</a>
-
 
 Use an event-driven saga pattern. The `Account` service owns the balance. Debit/Credit commands are dispatched through a message bus. Each command carries an idempotency key. The account service processes commands sequentially per account (partitioned queue per account ID). Write balance changes to a ledger with optimistic locking via a version column. Reject stale commands. If a command fails, emit a `CompensationRequired` event to trigger a rollback in the originating service. For read-side balance display, accept near-real-time staleness (sub-second) in exchange for throughput, but always verify via the source of truth before authorizing a withdrawal.
 
 ### Q25: Design a system for handling payment disputes and chargebacks at scale.
-
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-handwritten.svg" alt="Handwritten: Design a system for handling payment disputes and chargebacks at scale." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-diagram.svg" alt="Diagram: Design a system for handling payment disputes and chargebacks at scale." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/40-interview-finance/design-a-system-for-handling-payment-disputes-and-chargebacks-at-scale-sticky.svg" alt="Sticky Note: Design a system for handling payment disputes and chargebacks at scale." width="30%">
-</a>
 
 
 Model: `Dispute` (status: opened, under_review, won, lost, archived), `DisputeEvidence` (documents, timestamps, comms logs), `DisputeResponse` (automated evidence submission). When a chargeback webhook arrives, create a `Dispute`, freeze the transaction amount in a hold ledger, and dispatch a dispute agent. The agent analyzes the transaction, gathers supporting evidence (shipping confirmation, customer comms, IP logs), and auto-submits via the gateway API if confidence is high. If confidence is low, route to manual review with a dashboard deadline. Track win/loss ratios per reason code to identify systemic issues (e.g., "merchandise not received" disputes indicate a shipping problem, not a fraud problem). Archive closed disputes after 90 days.

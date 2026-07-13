@@ -72,16 +72,6 @@ flowchart LR
 > **One-Sentence Takeaway:** Theory is the foundation ? master it before moving to examples and exercises.
 ### UML Class Diagram Syntax
 
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-class-diagram-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-class-diagram-syntax-handwritten.svg" alt="Handwritten: UML Class Diagram Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-class-diagram-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-class-diagram-syntax-diagram.svg" alt="Diagram: UML Class Diagram Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-class-diagram-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-class-diagram-syntax-sticky.svg" alt="Sticky Note: UML Class Diagram Syntax" width="30%">
-</a>
-
 
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
@@ -124,16 +114,6 @@ The Unified Modeling Language (UML) provides a standardized notation for visuali
 
 ### UML Sequence Diagrams
 
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-sequence-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-sequence-diagrams-handwritten.svg" alt="Handwritten: UML Sequence Diagrams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-sequence-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-sequence-diagrams-diagram.svg" alt="Diagram: UML Sequence Diagrams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-sequence-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-sequence-diagrams-sticky.svg" alt="Sticky Note: UML Sequence Diagrams" width="30%">
-</a>
-
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -173,16 +153,6 @@ deactivate Controller
 ```
 
 ### UML Activity Diagrams
-
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-activity-diagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-activity-diagrams-handwritten.svg" alt="Handwritten: UML Activity Diagrams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-activity-diagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-activity-diagrams-diagram.svg" alt="Diagram: UML Activity Diagrams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-activity-diagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/12-lld-component-design/uml-activity-diagrams-sticky.svg" alt="Sticky Note: UML Activity Diagrams" width="30%">
-</a>
 
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.

@@ -56,16 +56,6 @@ By the end of this chapter, you will be able to:
 
 ### 5.1 What is Mixed Data Interpretation?
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-1-what-is-mixed-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-1-what-is-mixed-data-interpretation-handwritten.svg" alt="Handwritten: 5.1 What is Mixed Data Interpretation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-1-what-is-mixed-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-1-what-is-mixed-data-interpretation-diagram.svg" alt="Diagram: 5.1 What is Mixed Data Interpretation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-1-what-is-mixed-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-1-what-is-mixed-data-interpretation-sticky.svg" alt="Sticky Note: 5.1 What is Mixed Data Interpretation?" width="30%">
-</a>
-
 
 Mixed DI combines two or more data presentation formats � for example, a table showing production data, a bar graph showing percentage distribution, and a pie chart showing cost breakdown � all in one question set. The questions require you to cross-reference data across formats.
 
@@ -104,16 +94,6 @@ flowchart TD
 
 ### 5.2 Common Mixed DI Configurations
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-2-common-mixed-di-configurations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-2-common-mixed-di-configurations-handwritten.svg" alt="Handwritten: 5.2 Common Mixed DI Configurations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-2-common-mixed-di-configurations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-2-common-mixed-di-configurations-diagram.svg" alt="Diagram: 5.2 Common Mixed DI Configurations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-2-common-mixed-di-configurations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-2-common-mixed-di-configurations-sticky.svg" alt="Sticky Note: 5.2 Common Mixed DI Configurations" width="30%">
-</a>
-
 
 | Configuration | Data Formats | Typical Questions |
 |--------------|-------------|-------------------|
@@ -124,16 +104,6 @@ flowchart TD
 | Multiple Tables | Two or more linked tables | Cross-referencing between tables |
 
 ### 5.3 Maximum-Minimum Questions
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-3-maximum-minimum-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-3-maximum-minimum-questions-handwritten.svg" alt="Handwritten: 5.3 Maximum-Minimum Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-3-maximum-minimum-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-3-maximum-minimum-questions-diagram.svg" alt="Diagram: 5.3 Maximum-Minimum Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-3-maximum-minimum-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-3-maximum-minimum-questions-sticky.svg" alt="Sticky Note: 5.3 Maximum-Minimum Questions" width="30%">
-</a>
 
 
 Maximum-minimum questions ask: "Which year had the highest profit?" or "What is the minimum value of X?"
@@ -152,16 +122,6 @@ Maximum-minimum questions ask: "Which year had the highest profit?" or "What is 
 
 ### 5.4 True/False Statements from Data
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-4-true-false-statements-from-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-4-true-false-statements-from-data-handwritten.svg" alt="Handwritten: 5.4 True/False Statements from Data" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-4-true-false-statements-from-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-4-true-false-statements-from-data-diagram.svg" alt="Diagram: 5.4 True/False Statements from Data" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-4-true-false-statements-from-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-4-true-false-statements-from-data-sticky.svg" alt="Sticky Note: 5.4 True/False Statements from Data" width="30%">
-</a>
-
 
 Questions ask: "Which of the following statements is true?" or "How many statements are correct?"
 
@@ -179,16 +139,6 @@ Questions ask: "Which of the following statements is true?" or "How many stateme
 
 ### 5.5 Data Arrangement from Conditions
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-5-data-arrangement-from-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-5-data-arrangement-from-conditions-handwritten.svg" alt="Handwritten: 5.5 Data Arrangement from Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-5-data-arrangement-from-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-5-data-arrangement-from-conditions-diagram.svg" alt="Diagram: 5.5 Data Arrangement from Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-5-data-arrangement-from-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-5-data-arrangement-from-conditions-sticky.svg" alt="Sticky Note: 5.5 Data Arrangement from Conditions" width="30%">
-</a>
-
 
 Some DI sets require arranging data based on given conditions before answering.
 
@@ -203,16 +153,6 @@ Some DI sets require arranging data based on given conditions before answering.
 **From the example:** P > Q > R > S > T (derived)
 
 ### 5.6 Time and Work DI
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-6-time-and-work-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-6-time-and-work-di-handwritten.svg" alt="Handwritten: 5.6 Time and Work DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-6-time-and-work-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-6-time-and-work-di-diagram.svg" alt="Diagram: 5.6 Time and Work DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-6-time-and-work-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-6-time-and-work-di-sticky.svg" alt="Sticky Note: 5.6 Time and Work DI" width="30%">
-</a>
 
 
 Time and work problems in DI format present data about work rates, time taken, and number of workers � often in tables.
@@ -231,16 +171,6 @@ Time and work problems in DI format present data about work rates, time taken, a
 
 ### 5.7 Probability-Based DI
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-7-probability-based-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-7-probability-based-di-handwritten.svg" alt="Handwritten: 5.7 Probability-Based DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-7-probability-based-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-7-probability-based-di-diagram.svg" alt="Diagram: 5.7 Probability-Based DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-7-probability-based-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-7-probability-based-di-sticky.svg" alt="Sticky Note: 5.7 Probability-Based DI" width="30%">
-</a>
-
 
 Probability problems in DI combine data tables with probability calculations.
 
@@ -254,16 +184,6 @@ Probability problems in DI combine data tables with probability calculations.
 - Probability of drawing two red balls (with/without replacement)
 
 ### 5.8 Profit-Loss DI
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-8-profit-loss-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-8-profit-loss-di-handwritten.svg" alt="Handwritten: 5.8 Profit-Loss DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-8-profit-loss-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-8-profit-loss-di-diagram.svg" alt="Diagram: 5.8 Profit-Loss DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-8-profit-loss-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-8-profit-loss-di-sticky.svg" alt="Sticky Note: 5.8 Profit-Loss DI" width="30%">
-</a>
 
 
 Profit and loss calculations embedded in DI sets.
@@ -282,16 +202,6 @@ Profit and loss calculations embedded in DI sets.
 
 ### 5.9 Complex Multi-Step Calculations
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-9-complex-multi-step-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-9-complex-multi-step-calculations-handwritten.svg" alt="Handwritten: 5.9 Complex Multi-Step Calculations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-9-complex-multi-step-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-9-complex-multi-step-calculations-diagram.svg" alt="Diagram: 5.9 Complex Multi-Step Calculations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-9-complex-multi-step-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-9-complex-multi-step-calculations-sticky.svg" alt="Sticky Note: 5.9 Complex Multi-Step Calculations" width="30%">
-</a>
-
 
 When a single question requires 3+ calculation steps:
 
@@ -308,16 +218,6 @@ When a single question requires 3+ calculation steps:
 - Profit_A_2022 = Revenue_A_2022 - Cost_A_2022
 
 ### 5.10 Approximation in Mixed DI
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-10-approximation-in-mixed-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-10-approximation-in-mixed-di-handwritten.svg" alt="Handwritten: 5.10 Approximation in Mixed DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-10-approximation-in-mixed-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-10-approximation-in-mixed-di-diagram.svg" alt="Diagram: 5.10 Approximation in Mixed DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-10-approximation-in-mixed-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/05-mixed-data-interpretation/5-10-approximation-in-mixed-di-sticky.svg" alt="Sticky Note: 5.10 Approximation in Mixed DI" width="30%">
-</a>
 
 
 When answer choices are far apart, approximation saves time.

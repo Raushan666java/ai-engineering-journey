@@ -87,16 +87,6 @@ flowchart LR
 
 ### 3.1 Fundamental Logic Gates
 
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-handwritten.svg" alt="Handwritten: 3.1 Fundamental Logic Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-diagram.svg" alt="Diagram: 3.1 Fundamental Logic Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-1-fundamental-logic-gates-sticky.svg" alt="Sticky Note: 3.1 Fundamental Logic Gates" width="30%">
-</a>
-
 
 A logic gate is an electronic circuit that implements a Boolean function. The seven fundamental gates are AND, OR, NOT, NAND, NOR, XOR, and XNOR.
 
@@ -208,16 +198,6 @@ graph TD
 
 ### 3.2 Universal Gates
 
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-handwritten.svg" alt="Handwritten: 3.2 Universal Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-diagram.svg" alt="Diagram: 3.2 Universal Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-2-universal-gates-sticky.svg" alt="Sticky Note: 3.2 Universal Gates" width="30%">
-</a>
-
 
 NAND and NOR are termed universal gates because either alone suffices to implement any Boolean expression.
 
@@ -232,16 +212,6 @@ NAND and NOR are termed universal gates because either alone suffices to impleme
 - AND: Apply De Morgan's theorem: A?B = (A' + B')'
 
 ### 3.3 Gate-Level Minimisation
-
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-handwritten.svg" alt="Handwritten: 3.3 Gate-Level Minimisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-diagram.svg" alt="Diagram: 3.3 Gate-Level Minimisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-3-gate-level-minimisation-sticky.svg" alt="Sticky Note: 3.3 Gate-Level Minimisation" width="30%">
-</a>
 
 
 Gate-level minimisation reduces the number of gates (and thus transistors, area, and power) needed to implement a function.
@@ -289,16 +259,6 @@ class GateNetwork {
 ```
 
 ### 3.4 Electrical Characteristics
-
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-handwritten.svg" alt="Handwritten: 3.4 Electrical Characteristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-diagram.svg" alt="Diagram: 3.4 Electrical Characteristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-4-electrical-characteristics-sticky.svg" alt="Sticky Note: 3.4 Electrical Characteristics" width="30%">
-</a>
 
 
 #### 3.4.1 Propagation Delay
@@ -366,16 +326,6 @@ Power dissipation comprises static and dynamic components:
 
 ### 3.5 Logic Families
 
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-handwritten.svg" alt="Handwritten: 3.5 Logic Families" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-diagram.svg" alt="Diagram: 3.5 Logic Families" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-5-logic-families-sticky.svg" alt="Sticky Note: 3.5 Logic Families" width="30%">
-</a>
-
 
 #### 3.5.1 TTL (Transistor-Transistor Logic)
 
@@ -429,16 +379,6 @@ CMOS subfamilies:
 
 ### 3.6 Tri-State Logic
 
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-handwritten.svg" alt="Handwritten: 3.6 Tri-State Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-diagram.svg" alt="Diagram: 3.6 Tri-State Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-6-tri-state-logic-sticky.svg" alt="Sticky Note: 3.6 Tri-State Logic" width="30%">
-</a>
-
 
 A three-state gate exhibits three output states: 0, 1, and high-impedance (Z). The enable input controls whether the gate drives the output or enters the high-impedance state, disconnecting from the bus.
 
@@ -462,16 +402,6 @@ graph LR
 
 ### 3.7 Open-Drain and Open-Collector Outputs
 
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-handwritten.svg" alt="Handwritten: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-diagram.svg" alt="Diagram: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-7-open-drain-and-open-collector-outputs-sticky.svg" alt="Sticky Note: 3.7 Open-Drain and Open-Collector Outputs" width="30%">
-</a>
-
 
 An open-drain (CMOS) or open-collector (TTL) output can only pull the output LOW. When the output should be HIGH, the output transistor turns off (high-impedance). An external pull-up resistor is required to achieve the HIGH state.
 
@@ -483,16 +413,6 @@ Applications:
 - Level shifting (pull-up to different voltage than the gate supply)
 
 ### 3.8 Schmitt Trigger Inputs
-
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-handwritten.svg" alt="Handwritten: 3.8 Schmitt Trigger Inputs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-diagram.svg" alt="Diagram: 3.8 Schmitt Trigger Inputs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/03-logic-gates/3-8-schmitt-trigger-inputs-sticky.svg" alt="Sticky Note: 3.8 Schmitt Trigger Inputs" width="30%">
-</a>
 
 
 Schmitt trigger inputs have hysteresis: the input threshold for LOW-to-HIGH transitions (V_T+) is higher than the threshold for HIGH-to-LOW transitions (V_T-). This provides noise immunity for slow or noisy input signals.

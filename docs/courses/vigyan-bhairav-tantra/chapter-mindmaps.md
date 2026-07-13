@@ -18,7 +18,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/chapter-mindmaps/hero.svg" target="_blank" rel="noopener">
@@ -113,17 +112,6 @@ mindmap
 
 ### मुख्य बिंदु (Key Takeaways)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-handwritten.svg" alt="Handwritten: मुख्य बिंदु (Key Takeaways)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-diagram.svg" alt="Diagram: मुख्य बिंदु (Key Takeaways)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/key-takeaways-sticky.svg" alt="Sticky Note: मुख्य बिंदु (Key Takeaways)" width="30%">
-</a>
-
-
 1. **तंत्र एक धर्म नहीं, एक विज्ञान है** — ओशो तंत्र को एक प्रयोगात्मक विज्ञान के रूप में प्रस्तुत करते हैं।
 2. **विज्ञान भैरव तंत्र का महत्व** — सबसे प्राचीन ध्यान शास्त्र, 112 ध्यान विधियाँ।
 3. **ओशो का आधुनिक संदर्भ** — प्राचीन विधियों को आधुनिक संदर्भ में पुनः व्याख्यायित।
@@ -134,17 +122,6 @@ mindmap
 8. **शास्त्र से अधिक अनुभव** — स्वयं अनुभव किया हुआ ही सत्य है।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -175,17 +152,6 @@ flowchart TD
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **तंत्र = स्वीकार** — जीवन को वैसे स्वीकार करना जैसा वह है।
 2. **त्याग नहीं, उपयोग** — हर चीज़ का उपयोग करो, ऊर्जा का रूपांतरण करो।
 3. **कोई पाप नहीं** — केवल अज्ञान और ज्ञान है।
@@ -195,17 +161,6 @@ flowchart TD
 7. **पूर्ण जागरूकता** — हर क्रिया को पूर्ण जागरूकता से करना।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -239,17 +194,6 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **पाँच मुख्य श्रेणियाँ** — श्वास, शारीरिक, दृश्य, ध्वनि, भाव/साक्षी।
 2. **श्वास विधियाँ (20)** — श्वास पर ध्यान, प्राणायाम, श्वास-विचार संबंध।
 3. **शारीरिक विधियाँ (22)** — शरीर गतिविधियाँ, संवेदनाएँ।
@@ -260,17 +204,6 @@ flowchart LR
 8. **उपाय का सिद्धांत** — प्रत्येक साधक अपनी प्रकृति अनुसार चुन सकता है।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -301,17 +234,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **श्वास = पुल** — शरीर और मन के बीच का पुल है।
 2. **चार श्वास विधियाँ** — देखना, रोकना, लंबाई बदलना, अंतराल में झाँकना।
 3. **श्वास और विचार** — जब विचार बदलता है, श्वास बदलती है।
@@ -321,17 +243,6 @@ flowchart TB
 7. **प्राण और चेतना** — श्वास से प्राण, प्राण से चेतना को समझना।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -361,17 +272,6 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **शरीर = मंदिर** — शरीर कोई बाधा नहीं, चेतना का निवास है।
 2. **शरीर से दोस्ती** — पहला कदम शरीर से दोस्ती करना है।
 3. **संवेदना ध्यान** — एक संवेदना पर ध्यान केंद्रित करना।
@@ -381,17 +281,6 @@ flowchart LR
 7. **चक्र जागरण** — ऊर्जा केंद्रों पर ध्यान।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -420,17 +309,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **दृश्य का उपयोग** — मन स्वाभाविक रूप से दृश्य पर केंद्रित होता है।
 2. **त्राटक विधि** — बिना पलक झपकाए घूरना, आँखों की ऊर्जा भीतर मुड़ती है।
 3. **दीपक ध्यान** — मोमबत्ती की लौ देखना, फिर भीतर प्रतिबिंब।
@@ -440,17 +318,6 @@ flowchart TB
 7. **बिंदु ध्यान** — भौंहों के बीच बिंदु पर ध्यान केंद्रित करना।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -480,17 +347,6 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **ध्वनि = ऊर्जा** — पूरा ब्रह्मांड ध्वनि से बना है।
 2. **मंत्र का रहस्य** — कोई पवित्र शब्द नहीं, ध्वनि उपकरण है।
 3. **ओम् ध्यान** — ब्रह्मांड की मूल ध्वनि, विशेष कंपन पैदा करती है।
@@ -500,17 +356,6 @@ flowchart LR
 7. **नाद योग** — भीतर की सूक्ष्म ध्वनियों पर ध्यान।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -541,17 +386,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **भावनाओं का स्वागत** — दबाना या व्यक्त करना नहीं, जागरूकता से देखना।
 2. **न दमन, न अभिव्यक्ति** — सबसे क्रांतिकारी उपदेश: बस साक्षी बनो।
 3. **क्रोध पर ध्यान** — क्रोध की ऊर्जा को देखो, वह लहर है।
@@ -561,17 +395,6 @@ flowchart TB
 7. **भाव और भावना** — भाव क्षणिक, भाव स्थायी अवस्था।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -601,17 +424,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **चार अवस्थाएँ** — जाग्रति, स्वप्न, सुषुप्ति, तुरीया।
 2. **तुरीया — चौथी** — कोई अवस्था नहीं, अवस्थाओं का साक्षी।
 3. **जाग्रति = बाहर** — इंद्रियाँ सक्रिय, मन विचारों में।
@@ -621,17 +433,6 @@ flowchart TB
 7. **साक्षी चेतना** — तीनों अवस्थाओं को एक साथ देखना।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -661,17 +462,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **उपाय = साधन, साध्य नहीं** — नाव की तरह पार पहुँचने के बाद छोड़ दो।
 2. **तीन प्रकार** — प्रत्यक्ष, अप्रत्यक्ष, सहज।
 3. **प्रत्यक्ष उपाय** — श्वास, मंत्र, दृश्य जैसी सीधी विधियाँ।
@@ -681,17 +471,6 @@ flowchart TB
 7. **निरुपाय** — जहाँ कोई उपाय नहीं बचता, शुद्ध सत्ता।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -722,17 +501,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **प्राचीन ज्ञान, आधुनिक प्रमाण** — तंत्र के सिद्धांत विज्ञान द्वारा प्रमाणित।
 2. **क्वांटम समानता** — प्रेक्षक प्रभाव और साक्षी सिद्धांत।
 3. **मनोविज्ञान और तंत्र** — फ्रायड, जंग, मास्लो से संबंध।
@@ -742,17 +510,6 @@ flowchart TB
 7. **वैज्ञानिक दृष्टिकोण** — परिकल्पना, प्रयोग, अवलोकन, निष्कर्ष।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -779,17 +536,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **बाधाएँ स्वाभाविक** — संकेत हैं कि हम सही दिशा में बढ़ रहे हैं।
 2. **आलस्य — पहली बाधा** — जानते हैं फिर भी नहीं करते।
 3. **अपेक्षाओं का जाल** — विशेष अनुभव की अपेक्षा वर्तमान खो देती है।
@@ -799,17 +545,6 @@ flowchart TB
 7. **पुरानी आदतें** — अपने प्रति दयालु बनो।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -836,17 +571,6 @@ flowchart LR
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **गुरु = उत्प्रेरक** — ज्ञान नहीं देता, भीतर के सत्य को जगाता है।
 2. **संचार (Transmission)** — शब्दों से अधिक, मौन में ऊर्जा संचार।
 3. **गुरु की आवश्यकता** — अकेले भ्रमित हो सकते हैं।
@@ -856,17 +580,6 @@ flowchart LR
 7. **गुरु की खोज** — जब शिष्य तैयार, गुरु प्रकट।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -896,17 +609,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **जागने के साथ** — आँख खुलने के पहले क्षण, ध्यान का सबसे अच्छा समय।
 2. **चलते समय ध्यान** — धीरे-धीरे, जागरूकता से, हर कदम महसूस करना।
 3. **खाते समय ध्यान** — स्वाद, गंध, बनावट — पूरी उपस्थिति।
@@ -916,17 +618,6 @@ flowchart TB
 7. **24x7 ध्यान** — हर क्रिया जागरूकता से, जीवन ही ध्यान।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -954,17 +645,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **मूल्यांकन आवश्यक** — बिना मूल्यांकन के साधना अधूरी है।
 2. **निर्णय नहीं, अवलोकन** — बस देखो क्या हो रहा है।
 3. **पाँच स्तर** — दैनिक, साप्ताहिक, मासिक, त्रैमासिक, वार्षिक।
@@ -974,17 +654,6 @@ flowchart TB
 7. **स्व-प्रश्न** — क्या मैं नियमित? गहराई में जा रहा? ईमानदार?
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -1014,17 +683,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **साक्षी = कुंजी** — सभी 112 विधियाँ अंततः साक्षी की ओर ले जाती हैं।
 2. **शरीर साक्षी** — शरीर की प्रत्येक क्रिया को जागरूकता से देखना।
 3. **मन साक्षी** — विचारों को देखना, मैं वह नहीं जो सोचता है।
@@ -1034,17 +692,6 @@ flowchart TB
 7. **साक्षी और करुणा** — साक्षी पूर्ण होने पर करुणा अपने आप उत्पन्न होती है।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -1071,17 +718,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **समग्र चिकित्सा** — शरीर, मन, चेतना तीनों को स्वस्थ करना।
 2. **रोग का मूल कारण** — दबी भावनाएँ और अवरुद्ध ऊर्जा।
 3. **ध्यान = औषधि** — सबसे बड़ी औषधि, शरीर और मन दोनों के लिए।
@@ -1091,17 +727,6 @@ flowchart TB
 7. **आत्म-चिकित्सा** — आप स्वयं अपने सबसे अच्छे चिकित्सक हैं।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|
@@ -1130,17 +755,6 @@ flowchart TB
 
 ### मुख्य बिंदु
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: मुख्य बिंदु" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: मुख्य बिंदु" width="30%">
-</a>
-
-
 1. **कोई अंत नहीं** — यह एक यात्रा की शुरुआत है, अंत नहीं।
 2. **112 विधियाँ = 112 द्वार** — अपना द्वार खोजें।
 3. **विधि नहीं, दृष्टि** — साक्षी भाव महत्वपूर्ण, विधियाँ औज़ार।
@@ -1150,17 +764,6 @@ flowchart TB
 7. **हँसो और जियो** — ध्यान को गंभीर मत बनाओ, जागरूकता से जियो।
 
 ### संस्कृत शब्दावली
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-handwritten.svg" alt="Handwritten: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-diagram.svg" alt="Diagram: संस्कृत शब्दावली" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/chapter-mindmaps/-sticky.svg" alt="Sticky Note: संस्कृत शब्दावली" width="30%">
-</a>
-
 
 | शब्द | ओशो की परिभाषा |
 |------|-----------------|

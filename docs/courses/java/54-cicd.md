@@ -95,16 +95,6 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Pipeline Stages
 
-<a href="../../../assets/images/diagrams/java/54-cicd/1-1-pipeline-stages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/1-1-pipeline-stages-handwritten.svg" alt="Handwritten: 1.1 Pipeline Stages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/1-1-pipeline-stages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/1-1-pipeline-stages-diagram.svg" alt="Diagram: 1.1 Pipeline Stages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/1-1-pipeline-stages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/1-1-pipeline-stages-sticky.svg" alt="Sticky Note: 1.1 Pipeline Stages" width="30%">
-</a>
-
 
 | Stage | Description | Typical Duration |
 |-------|-------------|-----------------|
@@ -124,16 +114,6 @@ By the end of this chapter, you will be able to:
 ## 2. GitHub Actions
 
 ### 2.1 Full Workflow for Spring Boot with Maven
-
-<a href="../../../assets/images/diagrams/java/54-cicd/2-1-full-workflow-for-spring-boot-with-maven-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-1-full-workflow-for-spring-boot-with-maven-handwritten.svg" alt="Handwritten: 2.1 Full Workflow for Spring Boot with Maven" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-1-full-workflow-for-spring-boot-with-maven-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-1-full-workflow-for-spring-boot-with-maven-diagram.svg" alt="Diagram: 2.1 Full Workflow for Spring Boot with Maven" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-1-full-workflow-for-spring-boot-with-maven-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-1-full-workflow-for-spring-boot-with-maven-sticky.svg" alt="Sticky Note: 2.1 Full Workflow for Spring Boot with Maven" width="30%">
-</a>
 
 
 ```yaml
@@ -464,16 +444,6 @@ jobs:
 
 ### 2.2 Matrix Builds for JDK Versions
 
-<a href="../../../assets/images/diagrams/java/54-cicd/2-2-matrix-builds-for-jdk-versions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-2-matrix-builds-for-jdk-versions-handwritten.svg" alt="Handwritten: 2.2 Matrix Builds for JDK Versions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-2-matrix-builds-for-jdk-versions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-2-matrix-builds-for-jdk-versions-diagram.svg" alt="Diagram: 2.2 Matrix Builds for JDK Versions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-2-matrix-builds-for-jdk-versions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-2-matrix-builds-for-jdk-versions-sticky.svg" alt="Sticky Note: 2.2 Matrix Builds for JDK Versions" width="30%">
-</a>
-
 
 ```yaml
 # Compile and test against multiple JDK versions
@@ -495,16 +465,6 @@ build:
 ```
 
 ### 2.3 Caching Maven Dependencies
-
-<a href="../../../assets/images/diagrams/java/54-cicd/2-3-caching-maven-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-3-caching-maven-dependencies-handwritten.svg" alt="Handwritten: 2.3 Caching Maven Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-3-caching-maven-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-3-caching-maven-dependencies-diagram.svg" alt="Diagram: 2.3 Caching Maven Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-3-caching-maven-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-3-caching-maven-dependencies-sticky.svg" alt="Sticky Note: 2.3 Caching Maven Dependencies" width="30%">
-</a>
 
 
 ```yaml
@@ -532,16 +492,6 @@ build:
 
 ### 2.4 Docker Layer Caching
 
-<a href="../../../assets/images/diagrams/java/54-cicd/2-4-docker-layer-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-4-docker-layer-caching-handwritten.svg" alt="Handwritten: 2.4 Docker Layer Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-4-docker-layer-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-4-docker-layer-caching-diagram.svg" alt="Diagram: 2.4 Docker Layer Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-4-docker-layer-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-4-docker-layer-caching-sticky.svg" alt="Sticky Note: 2.4 Docker Layer Caching" width="30%">
-</a>
-
 
 ```yaml
 - name: Set up Docker Buildx
@@ -558,16 +508,6 @@ build:
 ```
 
 ### 2.5 Quality Gate Workflow
-
-<a href="../../../assets/images/diagrams/java/54-cicd/2-5-quality-gate-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-5-quality-gate-workflow-handwritten.svg" alt="Handwritten: 2.5 Quality Gate Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-5-quality-gate-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-5-quality-gate-workflow-diagram.svg" alt="Diagram: 2.5 Quality Gate Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-5-quality-gate-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-5-quality-gate-workflow-sticky.svg" alt="Sticky Note: 2.5 Quality Gate Workflow" width="30%">
-</a>
 
 
 ```yaml
@@ -646,16 +586,6 @@ jobs:
 
 ### 2.6 Gradle Workflow
 
-<a href="../../../assets/images/diagrams/java/54-cicd/2-6-gradle-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-6-gradle-workflow-handwritten.svg" alt="Handwritten: 2.6 Gradle Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-6-gradle-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-6-gradle-workflow-diagram.svg" alt="Diagram: 2.6 Gradle Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/2-6-gradle-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/2-6-gradle-workflow-sticky.svg" alt="Sticky Note: 2.6 Gradle Workflow" width="30%">
-</a>
-
 
 ```yaml
 name: Gradle CI
@@ -733,16 +663,6 @@ jobs:
 ## 3. GitLab CI
 
 ### 3.1 Full .gitlab-ci.yml
-
-<a href="../../../assets/images/diagrams/java/54-cicd/3-1-full-gitlab-ci-yml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-1-full-gitlab-ci-yml-handwritten.svg" alt="Handwritten: 3.1 Full .gitlab-ci.yml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-1-full-gitlab-ci-yml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-1-full-gitlab-ci-yml-diagram.svg" alt="Diagram: 3.1 Full .gitlab-ci.yml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-1-full-gitlab-ci-yml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-1-full-gitlab-ci-yml-sticky.svg" alt="Sticky Note: 3.1 Full .gitlab-ci.yml" width="30%">
-</a>
 
 
 ```yaml
@@ -1051,16 +971,6 @@ rollback-production:
 
 ### 3.2 GitLab CI with Docker-in-Docker
 
-<a href="../../../assets/images/diagrams/java/54-cicd/3-2-gitlab-ci-with-docker-in-docker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-2-gitlab-ci-with-docker-in-docker-handwritten.svg" alt="Handwritten: 3.2 GitLab CI with Docker-in-Docker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-2-gitlab-ci-with-docker-in-docker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-2-gitlab-ci-with-docker-in-docker-diagram.svg" alt="Diagram: 3.2 GitLab CI with Docker-in-Docker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-2-gitlab-ci-with-docker-in-docker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-2-gitlab-ci-with-docker-in-docker-sticky.svg" alt="Sticky Note: 3.2 GitLab CI with Docker-in-Docker" width="30%">
-</a>
-
 
 ```yaml
 # Docker in Docker configuration
@@ -1087,16 +997,6 @@ build-image:
 ```
 
 ### 3.3 GitLab CI with Maven/Gradle Image
-
-<a href="../../../assets/images/diagrams/java/54-cicd/3-3-gitlab-ci-with-maven-gradle-image-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-3-gitlab-ci-with-maven-gradle-image-handwritten.svg" alt="Handwritten: 3.3 GitLab CI with Maven/Gradle Image" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-3-gitlab-ci-with-maven-gradle-image-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-3-gitlab-ci-with-maven-gradle-image-diagram.svg" alt="Diagram: 3.3 GitLab CI with Maven/Gradle Image" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-3-gitlab-ci-with-maven-gradle-image-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-3-gitlab-ci-with-maven-gradle-image-sticky.svg" alt="Sticky Note: 3.3 GitLab CI with Maven/Gradle Image" width="30%">
-</a>
 
 
 ```yaml
@@ -1127,16 +1027,6 @@ gradle-build:
 ```
 
 ### 3.4 GitLab CI Manual Approvals
-
-<a href="../../../assets/images/diagrams/java/54-cicd/3-4-gitlab-ci-manual-approvals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-4-gitlab-ci-manual-approvals-handwritten.svg" alt="Handwritten: 3.4 GitLab CI Manual Approvals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-4-gitlab-ci-manual-approvals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-4-gitlab-ci-manual-approvals-diagram.svg" alt="Diagram: 3.4 GitLab CI Manual Approvals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/3-4-gitlab-ci-manual-approvals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/3-4-gitlab-ci-manual-approvals-sticky.svg" alt="Sticky Note: 3.4 GitLab CI Manual Approvals" width="30%">
-</a>
 
 
 ```yaml
@@ -1173,16 +1063,6 @@ deploy-production:
 
 ### 4.1 Maven Build Phases
 
-<a href="../../../assets/images/diagrams/java/54-cicd/4-1-maven-build-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-1-maven-build-phases-handwritten.svg" alt="Handwritten: 4.1 Maven Build Phases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-1-maven-build-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-1-maven-build-phases-diagram.svg" alt="Diagram: 4.1 Maven Build Phases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-1-maven-build-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-1-maven-build-phases-sticky.svg" alt="Sticky Note: 4.1 Maven Build Phases" width="30%">
-</a>
-
 
 ```bash
 # Maven build lifecycle:
@@ -1198,16 +1078,6 @@ mvn deploy           # Deploy to remote repository
 ```
 
 ### 4.2 Integration Test Configuration
-
-<a href="../../../assets/images/diagrams/java/54-cicd/4-2-integration-test-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-2-integration-test-configuration-handwritten.svg" alt="Handwritten: 4.2 Integration Test Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-2-integration-test-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-2-integration-test-configuration-diagram.svg" alt="Diagram: 4.2 Integration Test Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-2-integration-test-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-2-integration-test-configuration-sticky.svg" alt="Sticky Note: 4.2 Integration Test Configuration" width="30%">
-</a>
 
 
 ```xml
@@ -1297,16 +1167,6 @@ mvn deploy           # Deploy to remote repository
 ```
 
 ### 4.3 Gradle Build Pipeline
-
-<a href="../../../assets/images/diagrams/java/54-cicd/4-3-gradle-build-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-3-gradle-build-pipeline-handwritten.svg" alt="Handwritten: 4.3 Gradle Build Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-3-gradle-build-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-3-gradle-build-pipeline-diagram.svg" alt="Diagram: 4.3 Gradle Build Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-3-gradle-build-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-3-gradle-build-pipeline-sticky.svg" alt="Sticky Note: 4.3 Gradle Build Pipeline" width="30%">
-</a>
 
 
 ```gradle
@@ -1417,16 +1277,6 @@ bootBuildImage {
 
 ### 4.4 Containerized Build (Maven)
 
-<a href="../../../assets/images/diagrams/java/54-cicd/4-4-containerized-build-maven-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-4-containerized-build-maven-handwritten.svg" alt="Handwritten: 4.4 Containerized Build (Maven)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-4-containerized-build-maven-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-4-containerized-build-maven-diagram.svg" alt="Diagram: 4.4 Containerized Build (Maven)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/4-4-containerized-build-maven-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/4-4-containerized-build-maven-sticky.svg" alt="Sticky Note: 4.4 Containerized Build (Maven)" width="30%">
-</a>
-
 
 ```yaml
 # gitlab-ci.yml using Maven Docker image
@@ -1460,16 +1310,6 @@ jobs:
 ## 5. Artifact Publishing
 
 ### 5.1 Maven Central (via OSSRH)
-
-<a href="../../../assets/images/diagrams/java/54-cicd/5-1-maven-central-via-ossrh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-1-maven-central-via-ossrh-handwritten.svg" alt="Handwritten: 5.1 Maven Central (via OSSRH)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-1-maven-central-via-ossrh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-1-maven-central-via-ossrh-diagram.svg" alt="Diagram: 5.1 Maven Central (via OSSRH)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-1-maven-central-via-ossrh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-1-maven-central-via-ossrh-sticky.svg" alt="Sticky Note: 5.1 Maven Central (via OSSRH)" width="30%">
-</a>
 
 
 ```xml
@@ -1558,16 +1398,6 @@ mvn clean deploy -P release -Dgpg.passphrase=$GPG_PASSPHRASE -DskipTests
 
 ### 5.2 GitHub Packages
 
-<a href="../../../assets/images/diagrams/java/54-cicd/5-2-github-packages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-2-github-packages-handwritten.svg" alt="Handwritten: 5.2 GitHub Packages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-2-github-packages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-2-github-packages-diagram.svg" alt="Diagram: 5.2 GitHub Packages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-2-github-packages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-2-github-packages-sticky.svg" alt="Sticky Note: 5.2 GitHub Packages" width="30%">
-</a>
-
 
 ```xml
 <distributionManagement>
@@ -1613,16 +1443,6 @@ jobs:
 
 ### 5.3 Nexus/Artifactory
 
-<a href="../../../assets/images/diagrams/java/54-cicd/5-3-nexus-artifactory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-3-nexus-artifactory-handwritten.svg" alt="Handwritten: 5.3 Nexus/Artifactory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-3-nexus-artifactory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-3-nexus-artifactory-diagram.svg" alt="Diagram: 5.3 Nexus/Artifactory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-3-nexus-artifactory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-3-nexus-artifactory-sticky.svg" alt="Sticky Note: 5.3 Nexus/Artifactory" width="30%">
-</a>
-
 
 ```xml
 <!-- pom.xml -->
@@ -1660,16 +1480,6 @@ mvn deploy -DskipTests -B
 
 ### 5.4 Docker Hub
 
-<a href="../../../assets/images/diagrams/java/54-cicd/5-4-docker-hub-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-4-docker-hub-handwritten.svg" alt="Handwritten: 5.4 Docker Hub" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-4-docker-hub-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-4-docker-hub-diagram.svg" alt="Diagram: 5.4 Docker Hub" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-4-docker-hub-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-4-docker-hub-sticky.svg" alt="Sticky Note: 5.4 Docker Hub" width="30%">
-</a>
-
 
 ```yaml
 - name: Login to Docker Hub
@@ -1686,16 +1496,6 @@ mvn deploy -DskipTests -B
 ```
 
 ### 5.5 Amazon ECR
-
-<a href="../../../assets/images/diagrams/java/54-cicd/5-5-amazon-ecr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-5-amazon-ecr-handwritten.svg" alt="Handwritten: 5.5 Amazon ECR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-5-amazon-ecr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-5-amazon-ecr-diagram.svg" alt="Diagram: 5.5 Amazon ECR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/5-5-amazon-ecr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/5-5-amazon-ecr-sticky.svg" alt="Sticky Note: 5.5 Amazon ECR" width="30%">
-</a>
 
 
 ```yaml
@@ -1722,16 +1522,6 @@ mvn deploy -DskipTests -B
 ## 6. Automated Deployment
 
 ### 6.1 Deploy to Staging on PR
-
-<a href="../../../assets/images/diagrams/java/54-cicd/6-1-deploy-to-staging-on-pr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-1-deploy-to-staging-on-pr-handwritten.svg" alt="Handwritten: 6.1 Deploy to Staging on PR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-1-deploy-to-staging-on-pr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-1-deploy-to-staging-on-pr-diagram.svg" alt="Diagram: 6.1 Deploy to Staging on PR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-1-deploy-to-staging-on-pr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-1-deploy-to-staging-on-pr-sticky.svg" alt="Sticky Note: 6.1 Deploy to Staging on PR" width="30%">
-</a>
 
 
 ```yaml
@@ -1788,16 +1578,6 @@ jobs:
 
 ### 6.2 Rolling Deployment
 
-<a href="../../../assets/images/diagrams/java/54-cicd/6-2-rolling-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-2-rolling-deployment-handwritten.svg" alt="Handwritten: 6.2 Rolling Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-2-rolling-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-2-rolling-deployment-diagram.svg" alt="Diagram: 6.2 Rolling Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-2-rolling-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-2-rolling-deployment-sticky.svg" alt="Sticky Note: 6.2 Rolling Deployment" width="30%">
-</a>
-
 
 ```bash
 #!/bin/bash
@@ -1839,16 +1619,6 @@ fi
 ```
 
 ### 6.3 Blue-Green Deployment
-
-<a href="../../../assets/images/diagrams/java/54-cicd/6-3-blue-green-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-3-blue-green-deployment-handwritten.svg" alt="Handwritten: 6.3 Blue-Green Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-3-blue-green-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-3-blue-green-deployment-diagram.svg" alt="Diagram: 6.3 Blue-Green Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-3-blue-green-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-3-blue-green-deployment-sticky.svg" alt="Sticky Note: 6.3 Blue-Green Deployment" width="30%">
-</a>
 
 
 ```yaml
@@ -1964,16 +1734,6 @@ echo "Blue-green deployment complete."
 ```
 
 ### 6.4 Canary Release
-
-<a href="../../../assets/images/diagrams/java/54-cicd/6-4-canary-release-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-4-canary-release-handwritten.svg" alt="Handwritten: 6.4 Canary Release" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-4-canary-release-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-4-canary-release-diagram.svg" alt="Diagram: 6.4 Canary Release" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-4-canary-release-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-4-canary-release-sticky.svg" alt="Sticky Note: 6.4 Canary Release" width="30%">
-</a>
 
 
 ```yaml
@@ -2110,16 +1870,6 @@ echo "Canary deployment promoted to stable."
 
 ### 6.5 Feature Flags in CI/CD
 
-<a href="../../../assets/images/diagrams/java/54-cicd/6-5-feature-flags-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-5-feature-flags-in-ci-cd-handwritten.svg" alt="Handwritten: 6.5 Feature Flags in CI/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-5-feature-flags-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-5-feature-flags-in-ci-cd-diagram.svg" alt="Diagram: 6.5 Feature Flags in CI/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/6-5-feature-flags-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/6-5-feature-flags-in-ci-cd-sticky.svg" alt="Sticky Note: 6.5 Feature Flags in CI/CD" width="30%">
-</a>
-
 
 ```yaml
 # Feature flags allow deploying code without enabling the feature
@@ -2162,16 +1912,6 @@ jobs:
 ## 7. Database Migrations in CI
 
 ### 7.1 Flyway CI Pattern
-
-<a href="../../../assets/images/diagrams/java/54-cicd/7-1-flyway-ci-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-1-flyway-ci-pattern-handwritten.svg" alt="Handwritten: 7.1 Flyway CI Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/7-1-flyway-ci-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-1-flyway-ci-pattern-diagram.svg" alt="Diagram: 7.1 Flyway CI Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/7-1-flyway-ci-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-1-flyway-ci-pattern-sticky.svg" alt="Sticky Note: 7.1 Flyway CI Pattern" width="30%">
-</a>
 
 
 ```xml
@@ -2234,16 +1974,6 @@ db-migration:
 ```
 
 ### 7.2 Migration Verification in CI
-
-<a href="../../../assets/images/diagrams/java/54-cicd/7-2-migration-verification-in-ci-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-2-migration-verification-in-ci-handwritten.svg" alt="Handwritten: 7.2 Migration Verification in CI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/7-2-migration-verification-in-ci-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-2-migration-verification-in-ci-diagram.svg" alt="Diagram: 7.2 Migration Verification in CI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/7-2-migration-verification-in-ci-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-2-migration-verification-in-ci-sticky.svg" alt="Sticky Note: 7.2 Migration Verification in CI" width="30%">
-</a>
 
 
 ```yaml
@@ -2312,16 +2042,6 @@ verify-migrations:
 
 ### 7.3 Rollback Testing in Pipeline
 
-<a href="../../../assets/images/diagrams/java/54-cicd/7-3-rollback-testing-in-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-3-rollback-testing-in-pipeline-handwritten.svg" alt="Handwritten: 7.3 Rollback Testing in Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/7-3-rollback-testing-in-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-3-rollback-testing-in-pipeline-diagram.svg" alt="Diagram: 7.3 Rollback Testing in Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/7-3-rollback-testing-in-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/7-3-rollback-testing-in-pipeline-sticky.svg" alt="Sticky Note: 7.3 Rollback Testing in Pipeline" width="30%">
-</a>
-
 
 ```xml
 <profiles>
@@ -2362,16 +2082,6 @@ verify-migrations:
 
 ### 8.1 Manual Approval in GitHub Environments
 
-<a href="../../../assets/images/diagrams/java/54-cicd/8-1-manual-approval-in-github-environments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-1-manual-approval-in-github-environments-handwritten.svg" alt="Handwritten: 8.1 Manual Approval in GitHub Environments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-1-manual-approval-in-github-environments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-1-manual-approval-in-github-environments-diagram.svg" alt="Diagram: 8.1 Manual Approval in GitHub Environments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-1-manual-approval-in-github-environments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-1-manual-approval-in-github-environments-sticky.svg" alt="Sticky Note: 8.1 Manual Approval in GitHub Environments" width="30%">
-</a>
-
 
 ```yaml
 # Required reviewers must approve before deployment
@@ -2395,16 +2105,6 @@ Configure in GitHub:
 3. Wait timer: 10 minutes
 
 ### 8.2 Quality Gates in Pipeline
-
-<a href="../../../assets/images/diagrams/java/54-cicd/8-2-quality-gates-in-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-2-quality-gates-in-pipeline-handwritten.svg" alt="Handwritten: 8.2 Quality Gates in Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-2-quality-gates-in-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-2-quality-gates-in-pipeline-diagram.svg" alt="Diagram: 8.2 Quality Gates in Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-2-quality-gates-in-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-2-quality-gates-in-pipeline-sticky.svg" alt="Sticky Note: 8.2 Quality Gates in Pipeline" width="30%">
-</a>
 
 
 ```yaml
@@ -2432,16 +2132,6 @@ quality-gate:
 ```
 
 ### 8.3 Test Coverage Threshold
-
-<a href="../../../assets/images/diagrams/java/54-cicd/8-3-test-coverage-threshold-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-3-test-coverage-threshold-handwritten.svg" alt="Handwritten: 8.3 Test Coverage Threshold" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-3-test-coverage-threshold-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-3-test-coverage-threshold-diagram.svg" alt="Diagram: 8.3 Test Coverage Threshold" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-3-test-coverage-threshold-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-3-test-coverage-threshold-sticky.svg" alt="Sticky Note: 8.3 Test Coverage Threshold" width="30%">
-</a>
 
 
 ```yaml
@@ -2489,16 +2179,6 @@ print('PASS: Coverage thresholds met')
 
 ### 8.4 SonarQube Quality Gate
 
-<a href="../../../assets/images/diagrams/java/54-cicd/8-4-sonarqube-quality-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-4-sonarqube-quality-gate-handwritten.svg" alt="Handwritten: 8.4 SonarQube Quality Gate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-4-sonarqube-quality-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-4-sonarqube-quality-gate-diagram.svg" alt="Diagram: 8.4 SonarQube Quality Gate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-4-sonarqube-quality-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-4-sonarqube-quality-gate-sticky.svg" alt="Sticky Note: 8.4 SonarQube Quality Gate" width="30%">
-</a>
-
 
 ```yaml
 sonarqube-check:
@@ -2544,16 +2224,6 @@ sonarqube-check:
 
 ### 8.5 Security Scan Passing Gate
 
-<a href="../../../assets/images/diagrams/java/54-cicd/8-5-security-scan-passing-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-5-security-scan-passing-gate-handwritten.svg" alt="Handwritten: 8.5 Security Scan Passing Gate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-5-security-scan-passing-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-5-security-scan-passing-gate-diagram.svg" alt="Diagram: 8.5 Security Scan Passing Gate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/8-5-security-scan-passing-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/8-5-security-scan-passing-gate-sticky.svg" alt="Sticky Note: 8.5 Security Scan Passing Gate" width="30%">
-</a>
-
 
 ```yaml
 security-gate:
@@ -2589,16 +2259,6 @@ security-gate:
 ## 9. Complete CI/CD Configurations
 
 ### 9.1 All-in-One GitHub Actions (Maven)
-
-<a href="../../../assets/images/diagrams/java/54-cicd/9-1-all-in-one-github-actions-maven-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/9-1-all-in-one-github-actions-maven-handwritten.svg" alt="Handwritten: 9.1 All-in-One GitHub Actions (Maven)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/9-1-all-in-one-github-actions-maven-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/9-1-all-in-one-github-actions-maven-diagram.svg" alt="Diagram: 9.1 All-in-One GitHub Actions (Maven)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/9-1-all-in-one-github-actions-maven-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/9-1-all-in-one-github-actions-maven-sticky.svg" alt="Sticky Note: 9.1 All-in-One GitHub Actions (Maven)" width="30%">
-</a>
 
 
 ```yaml
@@ -2706,16 +2366,6 @@ jobs:
 ```
 
 ### 9.2 Gradle Variant
-
-<a href="../../../assets/images/diagrams/java/54-cicd/9-2-gradle-variant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/9-2-gradle-variant-handwritten.svg" alt="Handwritten: 9.2 Gradle Variant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/9-2-gradle-variant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/9-2-gradle-variant-diagram.svg" alt="Diagram: 9.2 Gradle Variant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/54-cicd/9-2-gradle-variant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/54-cicd/9-2-gradle-variant-sticky.svg" alt="Sticky Note: 9.2 Gradle Variant" width="30%">
-</a>
 
 
 ```yaml

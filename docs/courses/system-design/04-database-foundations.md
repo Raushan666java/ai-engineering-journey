@@ -107,16 +107,6 @@ flowchart LR
 
 ### B-Tree Internals
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-internals-handwritten.svg" alt="Handwritten: B-Tree Internals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-internals-diagram.svg" alt="Diagram: B-Tree Internals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-internals-sticky.svg" alt="Sticky Note: B-Tree Internals" width="30%">
-</a>
-
 
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
@@ -232,16 +222,6 @@ def btree_search(node, key):
 
 ### LSM-Tree Internals
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/lsm-tree-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/lsm-tree-internals-handwritten.svg" alt="Handwritten: LSM-Tree Internals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/lsm-tree-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/lsm-tree-internals-diagram.svg" alt="Diagram: LSM-Tree Internals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/lsm-tree-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/lsm-tree-internals-sticky.svg" alt="Sticky Note: LSM-Tree Internals" width="30%">
-</a>
-
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -324,16 +304,6 @@ L2: [A-F] [G-L] [M-R] [S-X] ...  ? non-overlapping, 10x larger
 
 ### B-Tree vs LSM-Tree
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-vs-lsm-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-vs-lsm-tree-handwritten.svg" alt="Handwritten: B-Tree vs LSM-Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-vs-lsm-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-vs-lsm-tree-diagram.svg" alt="Diagram: B-Tree vs LSM-Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-vs-lsm-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/b-tree-vs-lsm-tree-sticky.svg" alt="Sticky Note: B-Tree vs LSM-Tree" width="30%">
-</a>
-
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -357,16 +327,6 @@ L2: [A-F] [G-L] [M-R] [S-X] ...  ? non-overlapping, 10x larger
 ---
 
 ### Single-Leader Replication
-
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/single-leader-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/single-leader-replication-handwritten.svg" alt="Handwritten: Single-Leader Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/single-leader-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/single-leader-replication-diagram.svg" alt="Diagram: Single-Leader Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/single-leader-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/single-leader-replication-sticky.svg" alt="Sticky Note: Single-Leader Replication" width="30%">
-</a>
 
 
 The most common replication pattern. One node (the leader/primary/master) accepts writes. Other nodes (followers/replicas/slaves) apply the same data changes from the leader's replication log.
@@ -418,16 +378,6 @@ If the leader fails, one follower must be promoted to leader:
 ---
 
 ### Multi-Leader Replication
-
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/multi-leader-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/multi-leader-replication-handwritten.svg" alt="Handwritten: Multi-Leader Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/multi-leader-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/multi-leader-replication-diagram.svg" alt="Diagram: Multi-Leader Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/multi-leader-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/multi-leader-replication-sticky.svg" alt="Sticky Note: Multi-Leader Replication" width="30%">
-</a>
 
 
 Multiple nodes accept writes and replicate them to all other nodes. Each leader is also a follower for writes from other leaders.
@@ -493,16 +443,6 @@ A conflict exists if neither vector dominates the other (i.e., vector A is not g
 
 ### Leaderless Replication
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/leaderless-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/leaderless-replication-handwritten.svg" alt="Handwritten: Leaderless Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/leaderless-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/leaderless-replication-diagram.svg" alt="Diagram: Leaderless Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/leaderless-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/leaderless-replication-sticky.svg" alt="Sticky Note: Leaderless Replication" width="30%">
-</a>
-
 
 Dynamo-style replication (from Amazon's DynamoDB paper, 2007). There is no leader. Any replica can accept writes from any client.
 
@@ -563,16 +503,6 @@ Write to key K (N=3):
 
 ### Replication Lag Anomalies
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/replication-lag-anomalies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/replication-lag-anomalies-handwritten.svg" alt="Handwritten: Replication Lag Anomalies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/replication-lag-anomalies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/replication-lag-anomalies-diagram.svg" alt="Diagram: Replication Lag Anomalies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/replication-lag-anomalies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/replication-lag-anomalies-sticky.svg" alt="Sticky Note: Replication Lag Anomalies" width="30%">
-</a>
-
 
 Asynchronous replication introduces a window of inconsistency. Three common anomalies:
 
@@ -604,16 +534,6 @@ A user reads data in the wrong order. Example: a comment thread shows a reply be
 ---
 
 ### Conflict Resolution
-
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/conflict-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/conflict-resolution-handwritten.svg" alt="Handwritten: Conflict Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/conflict-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/conflict-resolution-diagram.svg" alt="Diagram: Conflict Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/conflict-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/conflict-resolution-sticky.svg" alt="Sticky Note: Conflict Resolution" width="30%">
-</a>
 
 
 #### Last-Write-Wins (LWW)
@@ -692,16 +612,6 @@ class ORSet:
 
 ### Transactions: ACID vs BASE
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/transactions-acid-vs-base-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/transactions-acid-vs-base-handwritten.svg" alt="Handwritten: Transactions: ACID vs BASE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/transactions-acid-vs-base-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/transactions-acid-vs-base-diagram.svg" alt="Diagram: Transactions: ACID vs BASE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/transactions-acid-vs-base-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/transactions-acid-vs-base-sticky.svg" alt="Sticky Note: Transactions: ACID vs BASE" width="30%">
-</a>
-
 
 #### ACID (SQL Databases)
 
@@ -741,16 +651,6 @@ BASE is not a formal model like ACID. It describes the consistency trade-offs No
 
 ### SQL vs NoSQL
 
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/sql-vs-nosql-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/sql-vs-nosql-handwritten.svg" alt="Handwritten: SQL vs NoSQL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/sql-vs-nosql-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/sql-vs-nosql-diagram.svg" alt="Diagram: SQL vs NoSQL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/sql-vs-nosql-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/sql-vs-nosql-sticky.svg" alt="Sticky Note: SQL vs NoSQL" width="30%">
-</a>
-
 
 | Criterion | SQL (Relational) | NoSQL |
 |-----------|-----------------|-------|
@@ -768,16 +668,6 @@ BASE is not a formal model like ACID. It describes the consistency trade-offs No
 ---
 
 ### Real-World Systems
-
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/real-world-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/real-world-systems-handwritten.svg" alt="Handwritten: Real-World Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/real-world-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/real-world-systems-diagram.svg" alt="Diagram: Real-World Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/04-database-foundations/real-world-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/04-database-foundations/real-world-systems-sticky.svg" alt="Sticky Note: Real-World Systems" width="30%">
-</a>
 
 
 **Google Spanner.** The first globally distributed, externally consistent database. Spanner uses TrueTime, a hardware-assisted time synchronization service built on GPS and atomic clocks, to provide external consistency (serializable isolation across all nodes globally).

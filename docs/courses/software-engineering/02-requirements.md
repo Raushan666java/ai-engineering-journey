@@ -53,21 +53,9 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### The Requirements Engineering Process
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-handwritten.svg" alt="Handwritten: The Requirements Engineering Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-diagram.svg" alt="Diagram: The Requirements Engineering Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-requirements-engineering-process-sticky.svg" alt="Sticky Note: The Requirements Engineering Process" width="30%">
-</a>
-
 
 Requirements engineering is the branch of software engineering concerned with the real-world goals for, functions of, and constraints on a software system. It encompasses the set of activities from problem understanding through to the production of a validated specification.
 
@@ -90,17 +78,6 @@ The requirements engineering process comprises four high-level activities: **fea
 
 ### Types of Requirements
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-handwritten.svg" alt="Handwritten: Types of Requirements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-diagram.svg" alt="Diagram: Types of Requirements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/types-of-requirements-sticky.svg" alt="Sticky Note: Types of Requirements" width="30%">
-</a>
-
-
 Requirements are classified into three categories:
 
 **Functional requirements** describe the services the system should provide, how it should react to particular inputs, and how it should behave in specific situations. Example: *"The system shall allow registered borrowers to search the catalogue by author, title, or subject."*
@@ -110,17 +87,6 @@ Requirements are classified into three categories:
 **Domain requirements** reflect the characteristics of the application domain. They may be functional or non-functional and are derived from the domain context. Example: *"Interest must be calculated on a daily basis using the compound interest formula."*
 
 ### FURPS+ Classification
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-handwritten.svg" alt="Handwritten: FURPS+ Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-diagram.svg" alt="Diagram: FURPS+ Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/furps-classification-sticky.svg" alt="Sticky Note: FURPS+ Classification" width="30%">
-</a>
-
 
 FURPS+ is a comprehensive taxonomy for classifying requirements originally developed by Hewlett-Packard:
 
@@ -137,17 +103,6 @@ FURPS+ is valuable because it forces teams to explicitly consider all quality di
 
 ### Feasibility Study
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-handwritten.svg" alt="Handwritten: Feasibility Study" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-diagram.svg" alt="Diagram: Feasibility Study" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/feasibility-study-sticky.svg" alt="Sticky Note: Feasibility Study" width="30%">
-</a>
-
-
 A feasibility study assesses whether a proposed software project is viable across three dimensions:
 
 1. **Technical feasibility:** Does the required technology exist? Does the team possess the necessary skills? Can the system integrate with existing infrastructure?
@@ -159,17 +114,6 @@ The output is a feasibility report recommending whether to proceed, with risk as
 **Real-world example:** A hospital evaluating an AI-based diagnostic tool must assess technical feasibility (is the training data available?), economic feasibility (will fewer misdiagnoses save more than the system costs?), and operational feasibility (will doctors trust and use the AI suggestions?).
 
 ### Requirements Elicitation
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-handwritten.svg" alt="Handwritten: Requirements Elicitation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-diagram.svg" alt="Diagram: Requirements Elicitation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-elicitation-sticky.svg" alt="Sticky Note: Requirements Elicitation" width="30%">
-</a>
-
 
 Elicitation is the process of discovering requirements from stakeholders. Multiple techniques exist, each with strengths:
 
@@ -204,17 +148,6 @@ graph TD
 | **Document analysis** | Inexpensive, historical insight | Documentation may be outdated | Legacy system replacement |
 
 ### The INVEST Criteria for User Stories
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-handwritten.svg" alt="Handwritten: The INVEST Criteria for User Stories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-diagram.svg" alt="Diagram: The INVEST Criteria for User Stories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-invest-criteria-for-user-stories-sticky.svg" alt="Sticky Note: The INVEST Criteria for User Stories" width="30%">
-</a>
-
 
 Good user stories follow the **INVEST** principle:
 
@@ -256,17 +189,6 @@ Feature: Book Search
 
 ### Requirements Specification Formats
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-handwritten.svg" alt="Handwritten: Requirements Specification Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-diagram.svg" alt="Diagram: Requirements Specification Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-specification-formats-sticky.svg" alt="Sticky Note: Requirements Specification Formats" width="30%">
-</a>
-
-
 #### IEEE 830 SRS Format
 
 1. **Introduction** — Purpose, scope, definitions, references, overview
@@ -289,17 +211,6 @@ Use cases describe interactions between actors and the system:
 
 ### MoSCoW Prioritisation
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-handwritten.svg" alt="Handwritten: MoSCoW Prioritisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-diagram.svg" alt="Diagram: MoSCoW Prioritisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/moscow-prioritisation-sticky.svg" alt="Sticky Note: MoSCoW Prioritisation" width="30%">
-</a>
-
-
 MoSCoW is a prioritisation technique that categorises requirements:
 
 | Category | Meaning | Allocation | Example |
@@ -312,17 +223,6 @@ MoSCoW is a prioritisation technique that categorises requirements:
 MoSCoW is typically applied at the release level, not for the entire project. Requirements can move between categories across releases as priorities shift.
 
 ### The Kano Model
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-handwritten.svg" alt="Handwritten: The Kano Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-diagram.svg" alt="Diagram: The Kano Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/the-kano-model-sticky.svg" alt="Sticky Note: The Kano Model" width="30%">
-</a>
-
 
 The Kano model, developed by Noriaki Kano, categorises requirements by their effect on customer satisfaction:
 
@@ -359,17 +259,6 @@ The key insight: over time, delighters become performance needs, and performance
 
 ### Requirements Validation
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-handwritten.svg" alt="Handwritten: Requirements Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-diagram.svg" alt="Diagram: Requirements Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-validation-sticky.svg" alt="Sticky Note: Requirements Validation" width="30%">
-</a>
-
-
 Validation ensures the specified requirements accurately reflect stakeholder needs:
 
 | Technique | Description | When to Use |
@@ -390,17 +279,6 @@ Common defects detected:
 
 ### SMART Requirements
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-handwritten.svg" alt="Handwritten: SMART Requirements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-diagram.svg" alt="Diagram: SMART Requirements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/smart-requirements-sticky.svg" alt="Sticky Note: SMART Requirements" width="30%">
-</a>
-
-
 A well-formed requirement should be **SMART**:
 
 | Criterion | Meaning | Example |
@@ -412,17 +290,6 @@ A well-formed requirement should be **SMART**:
 | **T**ime-bound | Has a timeframe or deadline | "By release 2.0" |
 
 ### Requirements Traceability Matrix
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-handwritten.svg" alt="Handwritten: Requirements Traceability Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-diagram.svg" alt="Diagram: Requirements Traceability Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-traceability-matrix-sticky.svg" alt="Sticky Note: Requirements Traceability Matrix" width="30%">
-</a>
-
 
 A Requirements Traceability Matrix (RTM) links requirements to their sources, design artefacts, implementation, and tests:
 
@@ -442,17 +309,6 @@ graph LR
 
 ### Requirements Management
 
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-handwritten.svg" alt="Handwritten: Requirements Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-diagram.svg" alt="Diagram: Requirements Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-management-sticky.svg" alt="Sticky Note: Requirements Management" width="30%">
-</a>
-
-
 Requirements management encompasses maintaining the specification as the system evolves:
 
 - **Traceability:** Links requirements to sources, design, code, and tests
@@ -462,17 +318,6 @@ Requirements management encompasses maintaining the specification as the system 
 - **Versioning:** Tracking changes across requirement revisions
 
 ### Requirements Engineering Workflow
-
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-handwritten.svg" alt="Handwritten: Requirements Engineering Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-diagram.svg" alt="Diagram: Requirements Engineering Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/02-requirements/requirements-engineering-workflow-sticky.svg" alt="Sticky Note: Requirements Engineering Workflow" width="30%">
-</a>
-
 
 ```mermaid
 graph TD

@@ -100,16 +100,6 @@ flowchart LR
 
 ### 16.1 Approximation Ratio
 
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-1-approximation-ratio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-1-approximation-ratio-handwritten.svg" alt="Handwritten: 16.1 Approximation Ratio" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-1-approximation-ratio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-1-approximation-ratio-diagram.svg" alt="Diagram: 16.1 Approximation Ratio" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-1-approximation-ratio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-1-approximation-ratio-sticky.svg" alt="Sticky Note: 16.1 Approximation Ratio" width="30%">
-</a>
-
 
 **Definition 16.1.** An algorithm for a minimization problem has an **approximation ratio** \( \rho \) if for every input instance:
 \[
@@ -126,16 +116,6 @@ A **fully polynomial-time approximation scheme (FPTAS)** runs in time polynomial
 ---
 
 ### 16.2 Vertex Cover: 2-Approximation
-
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-2-vertex-cover-2-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-2-vertex-cover-2-approximation-handwritten.svg" alt="Handwritten: 16.2 Vertex Cover: 2-Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-2-vertex-cover-2-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-2-vertex-cover-2-approximation-diagram.svg" alt="Diagram: 16.2 Vertex Cover: 2-Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-2-vertex-cover-2-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-2-vertex-cover-2-approximation-sticky.svg" alt="Sticky Note: 16.2 Vertex Cover: 2-Approximation" width="30%">
-</a>
 
 
 **Problem:** Find the smallest set of vertices that covers all edges.
@@ -260,16 +240,6 @@ List<Integer> approxVertexCover(int n, int[][] edges) {
 ---
 
 ### 16.3 Traveling Salesman: 2-Approximation
-
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-3-traveling-salesman-2-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-3-traveling-salesman-2-approximation-handwritten.svg" alt="Handwritten: 16.3 Traveling Salesman: 2-Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-3-traveling-salesman-2-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-3-traveling-salesman-2-approximation-diagram.svg" alt="Diagram: 16.3 Traveling Salesman: 2-Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-3-traveling-salesman-2-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-3-traveling-salesman-2-approximation-sticky.svg" alt="Sticky Note: 16.3 Traveling Salesman: 2-Approximation" width="30%">
-</a>
 
 
 **Problem (Metric TSP):** Given a complete graph with edge weights satisfying the triangle inequality, find the shortest tour visiting each vertex exactly once and returning to the start.
@@ -448,16 +418,6 @@ void dfs(int u, int p, List<Integer>[] mst, List<Integer> tour) {
 
 ### 16.4 Set Cover
 
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-4-set-cover-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-4-set-cover-handwritten.svg" alt="Handwritten: 16.4 Set Cover" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-4-set-cover-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-4-set-cover-diagram.svg" alt="Diagram: 16.4 Set Cover" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-4-set-cover-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-4-set-cover-sticky.svg" alt="Sticky Note: 16.4 Set Cover" width="30%">
-</a>
-
 
 **Problem:** Given a universe \( U \) of \( n \) elements and a collection of subsets \( S_1, \ldots, S_m \) with costs, find the minimum-cost collection that covers all elements.
 
@@ -617,16 +577,6 @@ double greedySetCover(List<Set<Integer>> subsets, double[] costs, int universeSi
 
 ### 16.5 MAX-CUT
 
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-5-max-cut-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-5-max-cut-handwritten.svg" alt="Handwritten: 16.5 MAX-CUT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-5-max-cut-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-5-max-cut-diagram.svg" alt="Diagram: 16.5 MAX-CUT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-5-max-cut-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-5-max-cut-sticky.svg" alt="Sticky Note: 16.5 MAX-CUT" width="30%">
-</a>
-
 
 **Problem:** Given an undirected graph, partition the vertices into two sets such that the number of edges crossing between the sets is maximized.
 
@@ -731,16 +681,6 @@ int randomMAXCUT(int n, int[][] edges) {
 ---
 
 ### 16.6 Knapsack Approximation Scheme
-
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-6-knapsack-approximation-scheme-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-6-knapsack-approximation-scheme-handwritten.svg" alt="Handwritten: 16.6 Knapsack Approximation Scheme" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-6-knapsack-approximation-scheme-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-6-knapsack-approximation-scheme-diagram.svg" alt="Diagram: 16.6 Knapsack Approximation Scheme" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-6-knapsack-approximation-scheme-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-6-knapsack-approximation-scheme-sticky.svg" alt="Sticky Note: 16.6 Knapsack Approximation Scheme" width="30%">
-</a>
 
 
 **Problem:** Given n items with weights w_i and profits p_i, and a capacity W, select a subset maximizing total profit without exceeding capacity.
@@ -888,16 +828,6 @@ double approxKnapsack(int[] profit, int[] weight, int W, double eps) {
 ---
 
 ### 16.7 Approximation Scheme Types: PTAS vs FPTAS
-
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-7-approximation-scheme-types-ptas-vs-fptas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-7-approximation-scheme-types-ptas-vs-fptas-handwritten.svg" alt="Handwritten: 16.7 Approximation Scheme Types: PTAS vs FPTAS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-7-approximation-scheme-types-ptas-vs-fptas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-7-approximation-scheme-types-ptas-vs-fptas-diagram.svg" alt="Diagram: 16.7 Approximation Scheme Types: PTAS vs FPTAS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/16-approximation/16-7-approximation-scheme-types-ptas-vs-fptas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/16-approximation/16-7-approximation-scheme-types-ptas-vs-fptas-sticky.svg" alt="Sticky Note: 16.7 Approximation Scheme Types: PTAS vs FPTAS" width="30%">
-</a>
 
 
 Both PTAS and FPTAS give (1+ε)-approximation, but the running time differs crucially.

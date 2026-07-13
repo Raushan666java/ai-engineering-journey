@@ -12,7 +12,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/modern-ai-engineering/07-fine-tuning/hero.svg" target="_blank" rel="noopener">
@@ -196,16 +195,6 @@ Instruction tuning trains a language model to follow natural language instructio
 ```
 ### Llama 3 Chat Template:
 
-<a href="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/llama-3-chat-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/llama-3-chat-template-handwritten.svg" alt="Handwritten: Llama 3 Chat Template:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/llama-3-chat-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/llama-3-chat-template-diagram.svg" alt="Diagram: Llama 3 Chat Template:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/llama-3-chat-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/llama-3-chat-template-sticky.svg" alt="Sticky Note: Llama 3 Chat Template:" width="30%">
-</a>
-
 <|begin_of_text|><|start_header_id|>system<|end_header_id|>
 You are a helpful assistant.
 <|eot_id|><|start_header_id|>user<|end_header_id|>
@@ -214,16 +203,6 @@ What is the capital of France?
 The capital of France is Paris.<|eot_id|>
 
 ### ChatML (GPT-4):
-
-<a href="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/chatml-gpt-4-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/chatml-gpt-4-handwritten.svg" alt="Handwritten: ChatML (GPT-4):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/chatml-gpt-4-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/chatml-gpt-4-diagram.svg" alt="Diagram: ChatML (GPT-4):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/chatml-gpt-4-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/modern-ai-engineering/07-fine-tuning/chatml-gpt-4-sticky.svg" alt="Sticky Note: ChatML (GPT-4):" width="30%">
-</a>
 
 <|im_start|>system
 You are a helpful assistant.<|im_end|>

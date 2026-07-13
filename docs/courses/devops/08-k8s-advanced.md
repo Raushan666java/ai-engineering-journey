@@ -94,16 +94,6 @@ flowchart LR
 
 ### RBAC (Role-Based Access Control)
 
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/rbac-role-based-access-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/rbac-role-based-access-control-handwritten.svg" alt="Handwritten: RBAC (Role-Based Access Control)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/rbac-role-based-access-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/rbac-role-based-access-control-diagram.svg" alt="Diagram: RBAC (Role-Based Access Control)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/rbac-role-based-access-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/rbac-role-based-access-control-sticky.svg" alt="Sticky Note: RBAC (Role-Based Access Control)" width="30%">
-</a>
-
 
 RBAC controls access to Kubernetes resources based on roles and bindings:
 
@@ -155,16 +145,6 @@ rules:
 
 ### Network Policies
 
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/network-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/network-policies-handwritten.svg" alt="Handwritten: Network Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/network-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/network-policies-diagram.svg" alt="Diagram: Network Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/network-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/network-policies-sticky.svg" alt="Sticky Note: Network Policies" width="30%">
-</a>
-
 
 Network Policies control traffic between pods and external endpoints:
 
@@ -214,16 +194,6 @@ spec:
 - **Allow monitoring:** Let Prometheus scrape metrics from all namespaces
 
 ### Custom Resource Definitions (CRDs)
-
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/custom-resource-definitions-crds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/custom-resource-definitions-crds-handwritten.svg" alt="Handwritten: Custom Resource Definitions (CRDs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/custom-resource-definitions-crds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/custom-resource-definitions-crds-diagram.svg" alt="Diagram: Custom Resource Definitions (CRDs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/custom-resource-definitions-crds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/custom-resource-definitions-crds-sticky.svg" alt="Sticky Note: Custom Resource Definitions (CRDs)" width="30%">
-</a>
 
 
 CRDs extend the Kubernetes API with custom resources:
@@ -275,16 +245,6 @@ spec:
 - External Secrets Operator (sync secrets from external providers)
 
 ### Service Mesh
-
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/service-mesh-handwritten.svg" alt="Handwritten: Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/service-mesh-diagram.svg" alt="Diagram: Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/service-mesh-sticky.svg" alt="Sticky Note: Service Mesh" width="30%">
-</a>
 
 
 A service mesh provides a dedicated infrastructure layer for service-to-service communication:
@@ -341,16 +301,6 @@ spec:
 ```
 
 ### Advanced Scheduling
-
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/advanced-scheduling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/advanced-scheduling-handwritten.svg" alt="Handwritten: Advanced Scheduling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/advanced-scheduling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/advanced-scheduling-diagram.svg" alt="Diagram: Advanced Scheduling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/advanced-scheduling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/advanced-scheduling-sticky.svg" alt="Sticky Note: Advanced Scheduling" width="30%">
-</a>
 
 
 **Taints and Tolerations:** Control which pods can run on which nodes:
@@ -421,16 +371,6 @@ spec:
 
 ### GitOps with ArgoCD
 
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/gitops-with-argocd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/gitops-with-argocd-handwritten.svg" alt="Handwritten: GitOps with ArgoCD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/gitops-with-argocd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/gitops-with-argocd-diagram.svg" alt="Diagram: GitOps with ArgoCD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/gitops-with-argocd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/gitops-with-argocd-sticky.svg" alt="Sticky Note: GitOps with ArgoCD" width="30%">
-</a>
-
 
 GitOps uses Git as the single source of truth for declarative infrastructure:
 
@@ -474,16 +414,6 @@ spec:
 
 ### Cluster Autoscaler
 
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/cluster-autoscaler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/cluster-autoscaler-handwritten.svg" alt="Handwritten: Cluster Autoscaler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/cluster-autoscaler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/cluster-autoscaler-diagram.svg" alt="Diagram: Cluster Autoscaler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/cluster-autoscaler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/cluster-autoscaler-sticky.svg" alt="Sticky Note: Cluster Autoscaler" width="30%">
-</a>
-
 
 Dynamically adjusts the number of nodes in the cluster:
 
@@ -507,16 +437,6 @@ managedNodeGroups:
 ```
 
 ### Vertical Pod Autoscaler (VPA)
-
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/vertical-pod-autoscaler-vpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/vertical-pod-autoscaler-vpa-handwritten.svg" alt="Handwritten: Vertical Pod Autoscaler (VPA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/vertical-pod-autoscaler-vpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/vertical-pod-autoscaler-vpa-diagram.svg" alt="Diagram: Vertical Pod Autoscaler (VPA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-k8s-advanced/vertical-pod-autoscaler-vpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-k8s-advanced/vertical-pod-autoscaler-vpa-sticky.svg" alt="Sticky Note: Vertical Pod Autoscaler (VPA)" width="30%">
-</a>
 
 
 Recommends or automatically adjusts CPU/memory requests:

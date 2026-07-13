@@ -67,16 +67,6 @@
 
 ### Pattern 1 — Naive RAG (Basic)
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-1-naive-rag-basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-1-naive-rag-basic-handwritten.svg" alt="Handwritten: Pattern 1 — Naive RAG (Basic)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-1-naive-rag-basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-1-naive-rag-basic-diagram.svg" alt="Diagram: Pattern 1 — Naive RAG (Basic)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-1-naive-rag-basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-1-naive-rag-basic-sticky.svg" alt="Sticky Note: Pattern 1 — Naive RAG (Basic)" width="30%">
-</a>
-
 
 ```
 User Query ? Embed ? Vector Search ? Top-K Chunks ? LLM ? Response
@@ -122,16 +112,6 @@ def naive_rag(query: str) -> str:
 **When to use:** Prototypes, internal tools, low QPS (< 10 req/min).
 
 ### Pattern 2 — Agentic RAG (Advanced)
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-2-agentic-rag-advanced-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-2-agentic-rag-advanced-handwritten.svg" alt="Handwritten: Pattern 2 — Agentic RAG (Advanced)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-2-agentic-rag-advanced-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-2-agentic-rag-advanced-diagram.svg" alt="Diagram: Pattern 2 — Agentic RAG (Advanced)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-2-agentic-rag-advanced-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-2-agentic-rag-advanced-sticky.svg" alt="Sticky Note: Pattern 2 — Agentic RAG (Advanced)" width="30%">
-</a>
 
 
 ```
@@ -231,16 +211,6 @@ def agentic_rag(query: str) -> str:
 
 ### Pattern 3 — Multi-Hop RAG
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-3-multi-hop-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-3-multi-hop-rag-handwritten.svg" alt="Handwritten: Pattern 3 — Multi-Hop RAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-3-multi-hop-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-3-multi-hop-rag-diagram.svg" alt="Diagram: Pattern 3 — Multi-Hop RAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-3-multi-hop-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/pattern-3-multi-hop-rag-sticky.svg" alt="Sticky Note: Pattern 3 — Multi-Hop RAG" width="30%">
-</a>
-
 
 For questions that require synthesizing information from multiple documents where no single chunk contains the answer.
 
@@ -291,16 +261,6 @@ def multi_hop_rag(query: str) -> str:
 
 ### Three Layers of AI Cache
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/three-layers-of-ai-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/three-layers-of-ai-cache-handwritten.svg" alt="Handwritten: Three Layers of AI Cache" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/three-layers-of-ai-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/three-layers-of-ai-cache-diagram.svg" alt="Diagram: Three Layers of AI Cache" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/three-layers-of-ai-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/three-layers-of-ai-cache-sticky.svg" alt="Sticky Note: Three Layers of AI Cache" width="30%">
-</a>
-
 
 ```
 +----------------------------+
@@ -313,16 +273,6 @@ def multi_hop_rag(query: str) -> str:
 ```
 
 ### L1: Prompt Cache (Exact Match)
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l1-prompt-cache-exact-match-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l1-prompt-cache-exact-match-handwritten.svg" alt="Handwritten: L1: Prompt Cache (Exact Match)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l1-prompt-cache-exact-match-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l1-prompt-cache-exact-match-diagram.svg" alt="Diagram: L1: Prompt Cache (Exact Match)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l1-prompt-cache-exact-match-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l1-prompt-cache-exact-match-sticky.svg" alt="Sticky Note: L1: Prompt Cache (Exact Match)" width="30%">
-</a>
 
 
 ```python
@@ -380,16 +330,6 @@ def cached_completion(query: str, system_prompt: str = "You are a helpful assist
 ```
 
 ### L2: Semantic Cache (Similarity Match)
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l2-semantic-cache-similarity-match-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l2-semantic-cache-similarity-match-handwritten.svg" alt="Handwritten: L2: Semantic Cache (Similarity Match)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l2-semantic-cache-similarity-match-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l2-semantic-cache-similarity-match-diagram.svg" alt="Diagram: L2: Semantic Cache (Similarity Match)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l2-semantic-cache-similarity-match-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/l2-semantic-cache-similarity-match-sticky.svg" alt="Sticky Note: L2: Semantic Cache (Similarity Match)" width="30%">
-</a>
 
 
 ```python
@@ -449,16 +389,6 @@ def semantic_cached_rag(query: str) -> str:
 ## 9.3 Cost Architecture & Optimization
 
 ### Per-Request Cost Model
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/per-request-cost-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/per-request-cost-model-handwritten.svg" alt="Handwritten: Per-Request Cost Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/per-request-cost-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/per-request-cost-model-diagram.svg" alt="Diagram: Per-Request Cost Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/per-request-cost-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/per-request-cost-model-sticky.svg" alt="Sticky Note: Per-Request Cost Model" width="30%">
-</a>
 
 
 ```python
@@ -531,16 +461,6 @@ print(f"Estimated daily cost (10K req): ${cost.total_cost * 10000:.2f}")
 
 ### Cost Optimization Strategies
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cost-optimization-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cost-optimization-strategies-handwritten.svg" alt="Handwritten: Cost Optimization Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cost-optimization-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cost-optimization-strategies-diagram.svg" alt="Diagram: Cost Optimization Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cost-optimization-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cost-optimization-strategies-sticky.svg" alt="Sticky Note: Cost Optimization Strategies" width="30%">
-</a>
-
 
 | Strategy | Savings | Tradeoff |
 |----------|---------|----------|
@@ -552,16 +472,6 @@ print(f"Estimated daily cost (10K req): ${cost.total_cost * 10000:.2f}")
 | Batch processing | 50% cost reduction | Postponed responses, not real-time |
 
 ### Model Tiering Router
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/model-tiering-router-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/model-tiering-router-handwritten.svg" alt="Handwritten: Model Tiering Router" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/model-tiering-router-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/model-tiering-router-diagram.svg" alt="Diagram: Model Tiering Router" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/model-tiering-router-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/model-tiering-router-sticky.svg" alt="Sticky Note: Model Tiering Router" width="30%">
-</a>
 
 
 ```python
@@ -610,16 +520,6 @@ def query_with_routing(query: str) -> str:
 ## 9.4 Latency Budgets & Profiling
 
 ### End-to-End Latency Breakdown (RAG)
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/end-to-end-latency-breakdown-rag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/end-to-end-latency-breakdown-rag-handwritten.svg" alt="Handwritten: End-to-End Latency Breakdown (RAG)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/end-to-end-latency-breakdown-rag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/end-to-end-latency-breakdown-rag-diagram.svg" alt="Diagram: End-to-End Latency Breakdown (RAG)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/end-to-end-latency-breakdown-rag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/end-to-end-latency-breakdown-rag-sticky.svg" alt="Sticky Note: End-to-End Latency Breakdown (RAG)" width="30%">
-</a>
 
 
 ```python
@@ -680,16 +580,6 @@ print(json.dumps(result, indent=2))
 
 ### Latency Budget Allocation
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/latency-budget-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/latency-budget-allocation-handwritten.svg" alt="Handwritten: Latency Budget Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/latency-budget-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/latency-budget-allocation-diagram.svg" alt="Diagram: Latency Budget Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/latency-budget-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/latency-budget-allocation-sticky.svg" alt="Sticky Note: Latency Budget Allocation" width="30%">
-</a>
-
 
 | Component | Target (P95) | Optimization lever |
 |-----------|-------------|-------------------|
@@ -704,16 +594,6 @@ print(json.dumps(result, indent=2))
 ## 9.5 Scalability Patterns
 
 ### Horizontal Scaling for RAG API
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/horizontal-scaling-for-rag-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/horizontal-scaling-for-rag-api-handwritten.svg" alt="Handwritten: Horizontal Scaling for RAG API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/horizontal-scaling-for-rag-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/horizontal-scaling-for-rag-api-diagram.svg" alt="Diagram: Horizontal Scaling for RAG API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/horizontal-scaling-for-rag-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/horizontal-scaling-for-rag-api-sticky.svg" alt="Sticky Note: Horizontal Scaling for RAG API" width="30%">
-</a>
 
 
 ```python
@@ -750,16 +630,6 @@ async def get_db() -> AsyncSession:
 ```
 
 ### Read Replicas for Vector Search
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/read-replicas-for-vector-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/read-replicas-for-vector-search-handwritten.svg" alt="Handwritten: Read Replicas for Vector Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/read-replicas-for-vector-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/read-replicas-for-vector-search-diagram.svg" alt="Diagram: Read Replicas for Vector Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/read-replicas-for-vector-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/read-replicas-for-vector-search-sticky.svg" alt="Sticky Note: Read Replicas for Vector Search" width="30%">
-</a>
 
 
 ```python
@@ -798,16 +668,6 @@ async def insert_document(content: str, embedding: list[float]):
 
 ### Vector DB Topology Options
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/vector-db-topology-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/vector-db-topology-options-handwritten.svg" alt="Handwritten: Vector DB Topology Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/vector-db-topology-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/vector-db-topology-options-diagram.svg" alt="Diagram: Vector DB Topology Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/vector-db-topology-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/vector-db-topology-options-sticky.svg" alt="Sticky Note: Vector DB Topology Options" width="30%">
-</a>
-
 
 | Pattern | Description | Best For |
 |---------|-------------|----------|
@@ -817,16 +677,6 @@ async def insert_document(content: str, embedding: list[float]):
 | Global secondary index | One primary write region, multiple read replicas | Most common, reasonable latency |
 
 ### Cross-Region Vector Search
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cross-region-vector-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cross-region-vector-search-handwritten.svg" alt="Handwritten: Cross-Region Vector Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cross-region-vector-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cross-region-vector-search-diagram.svg" alt="Diagram: Cross-Region Vector Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cross-region-vector-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/cross-region-vector-search-sticky.svg" alt="Sticky Note: Cross-Region Vector Search" width="30%">
-</a>
 
 
 ```python
@@ -894,16 +744,6 @@ async def multi_region_search(
 
 ### Multi-Agent System Architecture
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/multi-agent-system-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/multi-agent-system-architecture-handwritten.svg" alt="Handwritten: Multi-Agent System Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/multi-agent-system-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/multi-agent-system-architecture-diagram.svg" alt="Diagram: Multi-Agent System Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/multi-agent-system-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/multi-agent-system-architecture-sticky.svg" alt="Sticky Note: Multi-Agent System Architecture" width="30%">
-</a>
-
 
 ```
                          +-------------+
@@ -939,16 +779,6 @@ async def multi_region_search(
 ```
 
 ### Tool Registry
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/tool-registry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/tool-registry-handwritten.svg" alt="Handwritten: Tool Registry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/tool-registry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/tool-registry-diagram.svg" alt="Diagram: Tool Registry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/tool-registry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/tool-registry-sticky.svg" alt="Sticky Note: Tool Registry" width="30%">
-</a>
 
 
 ```python
@@ -1027,16 +857,6 @@ registry.register(ToolDefinition(
 ## 9.8 Async Processing Pipelines
 
 ### Document Ingestion Pipeline
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/document-ingestion-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/document-ingestion-pipeline-handwritten.svg" alt="Handwritten: Document Ingestion Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/document-ingestion-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/document-ingestion-pipeline-diagram.svg" alt="Diagram: Document Ingestion Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/document-ingestion-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/document-ingestion-pipeline-sticky.svg" alt="Sticky Note: Document Ingestion Pipeline" width="30%">
-</a>
 
 
 ```python
@@ -1157,16 +977,6 @@ async def process_documents(docs: list[Document]):
 
 ### AI Gateway Design
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/ai-gateway-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/ai-gateway-design-handwritten.svg" alt="Handwritten: AI Gateway Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/ai-gateway-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/ai-gateway-design-diagram.svg" alt="Diagram: AI Gateway Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/ai-gateway-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/ai-gateway-design-sticky.svg" alt="Sticky Note: AI Gateway Design" width="30%">
-</a>
-
 
 ```python
 from fastapi import FastAPI, Request, HTTPException
@@ -1265,16 +1075,6 @@ class AIGateway:
 ## 9.10 System Design Interview Prep
 
 ### Mock Interview: "Design a RAG System for Customer Support"
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/mock-interview-design-a-rag-system-for-customer-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/mock-interview-design-a-rag-system-for-customer-support-handwritten.svg" alt="Handwritten: Mock Interview: "Design a RAG System for Customer Support"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/mock-interview-design-a-rag-system-for-customer-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/mock-interview-design-a-rag-system-for-customer-support-diagram.svg" alt="Diagram: Mock Interview: "Design a RAG System for Customer Support"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/mock-interview-design-a-rag-system-for-customer-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/09-ai-system-design/mock-interview-design-a-rag-system-for-customer-support-sticky.svg" alt="Sticky Note: Mock Interview: "Design a RAG System for Customer Support"" width="30%">
-</a>
 
 
 **45-minute structure:**

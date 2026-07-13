@@ -66,16 +66,6 @@ flowchart LR
 
 ### Q1: Tell me about a time you had a conflict with a teammate. How did you resolve it?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-a-conflict-with-a-teammate-how-did-you-resolve-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-a-conflict-with-a-teammate-how-did-you-resolve-it-handwritten.svg" alt="Handwritten: Tell me about a time you had a conflict with a teammate. How did you resolve it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-a-conflict-with-a-teammate-how-did-you-resolve-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-a-conflict-with-a-teammate-how-did-you-resolve-it-diagram.svg" alt="Diagram: Tell me about a time you had a conflict with a teammate. How did you resolve it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-a-conflict-with-a-teammate-how-did-you-resolve-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-a-conflict-with-a-teammate-how-did-you-resolve-it-sticky.svg" alt="Sticky Note: Tell me about a time you had a conflict with a teammate. How did you resolve it?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -98,16 +88,6 @@ flowchart LR
 
 ### Q2: Describe a project that failed or went poorly. What happened and what did you learn?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-project-that-failed-or-went-poorly-what-happened-and-what-did-you-learn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-project-that-failed-or-went-poorly-what-happened-and-what-did-you-learn-handwritten.svg" alt="Handwritten: Describe a project that failed or went poorly. What happened and what did you learn?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-project-that-failed-or-went-poorly-what-happened-and-what-did-you-learn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-project-that-failed-or-went-poorly-what-happened-and-what-did-you-learn-diagram.svg" alt="Diagram: Describe a project that failed or went poorly. What happened and what did you learn?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-project-that-failed-or-went-poorly-what-happened-and-what-did-you-learn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-project-that-failed-or-went-poorly-what-happened-and-what-did-you-learn-sticky.svg" alt="Sticky Note: Describe a project that failed or went poorly. What happened and what did you learn?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -124,16 +104,6 @@ flowchart LR
 ---
 
 ### Q3: Tell me about a time you had to explain a complex technical concept to a non-technical stakeholder.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-explain-a-complex-technical-concept-to-a-non-technical-stakeholder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-explain-a-complex-technical-concept-to-a-non-technical-stakeholder-handwritten.svg" alt="Handwritten: Tell me about a time you had to explain a complex technical concept to a non-technical stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-explain-a-complex-technical-concept-to-a-non-technical-stakeholder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-explain-a-complex-technical-concept-to-a-non-technical-stakeholder-diagram.svg" alt="Diagram: Tell me about a time you had to explain a complex technical concept to a non-technical stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-explain-a-complex-technical-concept-to-a-non-technical-stakeholder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-explain-a-complex-technical-concept-to-a-non-technical-stakeholder-sticky.svg" alt="Sticky Note: Tell me about a time you had to explain a complex technical concept to a non-technical stakeholder." width="30%">
-</a>
 
 
 **Answer:**
@@ -152,16 +122,6 @@ flowchart LR
 
 ### Q4: Describe a situation where you took initiative beyond your job responsibilities.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-took-initiative-beyond-your-job-responsibilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-took-initiative-beyond-your-job-responsibilities-handwritten.svg" alt="Handwritten: Describe a situation where you took initiative beyond your job responsibilities." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-took-initiative-beyond-your-job-responsibilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-took-initiative-beyond-your-job-responsibilities-diagram.svg" alt="Diagram: Describe a situation where you took initiative beyond your job responsibilities." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-took-initiative-beyond-your-job-responsibilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-took-initiative-beyond-your-job-responsibilities-sticky.svg" alt="Sticky Note: Describe a situation where you took initiative beyond your job responsibilities." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -178,16 +138,6 @@ flowchart LR
 ---
 
 ### Q5: Tell me about a time you made a mistake that had significant consequences.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-made-a-mistake-that-had-significant-consequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-made-a-mistake-that-had-significant-consequences-handwritten.svg" alt="Handwritten: Tell me about a time you made a mistake that had significant consequences." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-made-a-mistake-that-had-significant-consequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-made-a-mistake-that-had-significant-consequences-diagram.svg" alt="Diagram: Tell me about a time you made a mistake that had significant consequences." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-made-a-mistake-that-had-significant-consequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-made-a-mistake-that-had-significant-consequences-sticky.svg" alt="Sticky Note: Tell me about a time you made a mistake that had significant consequences." width="30%">
-</a>
 
 
 **Answer:**
@@ -206,16 +156,6 @@ flowchart LR
 
 ### Q6: How do you handle tight deadlines and pressure?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-tight-deadlines-and-pressure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-tight-deadlines-and-pressure-handwritten.svg" alt="Handwritten: How do you handle tight deadlines and pressure?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-tight-deadlines-and-pressure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-tight-deadlines-and-pressure-diagram.svg" alt="Diagram: How do you handle tight deadlines and pressure?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-tight-deadlines-and-pressure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-tight-deadlines-and-pressure-sticky.svg" alt="Sticky Note: How do you handle tight deadlines and pressure?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -232,16 +172,6 @@ flowchart LR
 ---
 
 ### Q7: Describe a time when you mentored a junior developer. What was your approach?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-mentored-a-junior-developer-what-was-your-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-mentored-a-junior-developer-what-was-your-approach-handwritten.svg" alt="Handwritten: Describe a time when you mentored a junior developer. What was your approach?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-mentored-a-junior-developer-what-was-your-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-mentored-a-junior-developer-what-was-your-approach-diagram.svg" alt="Diagram: Describe a time when you mentored a junior developer. What was your approach?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-mentored-a-junior-developer-what-was-your-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-mentored-a-junior-developer-what-was-your-approach-sticky.svg" alt="Sticky Note: Describe a time when you mentored a junior developer. What was your approach?" width="30%">
-</a>
 
 
 **Answer:**
@@ -260,16 +190,6 @@ flowchart LR
 
 ### Q8: Tell me about a time you had to deliver bad news to a manager or stakeholder.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-manager-or-stakeholder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-manager-or-stakeholder-handwritten.svg" alt="Handwritten: Tell me about a time you had to deliver bad news to a manager or stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-manager-or-stakeholder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-manager-or-stakeholder-diagram.svg" alt="Diagram: Tell me about a time you had to deliver bad news to a manager or stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-manager-or-stakeholder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-manager-or-stakeholder-sticky.svg" alt="Sticky Note: Tell me about a time you had to deliver bad news to a manager or stakeholder." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -286,16 +206,6 @@ flowchart LR
 ---
 
 ### Q9: Describe a time you had to learn a new technology quickly for a project.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-for-a-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-for-a-project-handwritten.svg" alt="Handwritten: Describe a time you had to learn a new technology quickly for a project." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-for-a-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-for-a-project-diagram.svg" alt="Diagram: Describe a time you had to learn a new technology quickly for a project." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-for-a-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-for-a-project-sticky.svg" alt="Sticky Note: Describe a time you had to learn a new technology quickly for a project." width="30%">
-</a>
 
 
 **Answer:**
@@ -314,16 +224,6 @@ flowchart LR
 
 ### Q10: Tell me about a time you improved a process or made things more efficient.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-a-process-or-made-things-more-efficient-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-a-process-or-made-things-more-efficient-handwritten.svg" alt="Handwritten: Tell me about a time you improved a process or made things more efficient." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-a-process-or-made-things-more-efficient-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-a-process-or-made-things-more-efficient-diagram.svg" alt="Diagram: Tell me about a time you improved a process or made things more efficient." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-a-process-or-made-things-more-efficient-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-a-process-or-made-things-more-efficient-sticky.svg" alt="Sticky Note: Tell me about a time you improved a process or made things more efficient." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -340,16 +240,6 @@ flowchart LR
 ---
 
 ### Q11: Describe a situation where you had to work with a difficult stakeholder or teammate.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-work-with-a-difficult-stakeholder-or-teammate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-work-with-a-difficult-stakeholder-or-teammate-handwritten.svg" alt="Handwritten: Describe a situation where you had to work with a difficult stakeholder or teammate." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-work-with-a-difficult-stakeholder-or-teammate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-work-with-a-difficult-stakeholder-or-teammate-diagram.svg" alt="Diagram: Describe a situation where you had to work with a difficult stakeholder or teammate." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-work-with-a-difficult-stakeholder-or-teammate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-work-with-a-difficult-stakeholder-or-teammate-sticky.svg" alt="Sticky Note: Describe a situation where you had to work with a difficult stakeholder or teammate." width="30%">
-</a>
 
 
 **Answer:**
@@ -368,16 +258,6 @@ flowchart LR
 
 ### Q12: Tell me about a time you went above and beyond for a customer or user.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-or-user-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-or-user-handwritten.svg" alt="Handwritten: Tell me about a time you went above and beyond for a customer or user." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-or-user-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-or-user-diagram.svg" alt="Diagram: Tell me about a time you went above and beyond for a customer or user." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-or-user-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-went-above-and-beyond-for-a-customer-or-user-sticky.svg" alt="Sticky Note: Tell me about a time you went above and beyond for a customer or user." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -394,16 +274,6 @@ flowchart LR
 ---
 
 ### Q13: Describe a time you had to make a decision with incomplete information.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-make-a-decision-with-incomplete-information-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-make-a-decision-with-incomplete-information-handwritten.svg" alt="Handwritten: Describe a time you had to make a decision with incomplete information." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-make-a-decision-with-incomplete-information-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-make-a-decision-with-incomplete-information-diagram.svg" alt="Diagram: Describe a time you had to make a decision with incomplete information." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-make-a-decision-with-incomplete-information-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-make-a-decision-with-incomplete-information-sticky.svg" alt="Sticky Note: Describe a time you had to make a decision with incomplete information." width="30%">
-</a>
 
 
 **Answer:**
@@ -422,16 +292,6 @@ flowchart LR
 
 ### Q14: Tell me about a time you received constructive criticism. How did you handle it?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-received-constructive-criticism-how-did-you-handle-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-received-constructive-criticism-how-did-you-handle-it-handwritten.svg" alt="Handwritten: Tell me about a time you received constructive criticism. How did you handle it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-received-constructive-criticism-how-did-you-handle-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-received-constructive-criticism-how-did-you-handle-it-diagram.svg" alt="Diagram: Tell me about a time you received constructive criticism. How did you handle it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-received-constructive-criticism-how-did-you-handle-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-received-constructive-criticism-how-did-you-handle-it-sticky.svg" alt="Sticky Note: Tell me about a time you received constructive criticism. How did you handle it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -448,16 +308,6 @@ flowchart LR
 ---
 
 ### Q15: Describe a time you worked effectively as part of a team to achieve a common goal.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-effectively-as-part-of-a-team-to-achieve-a-common-goal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-effectively-as-part-of-a-team-to-achieve-a-common-goal-handwritten.svg" alt="Handwritten: Describe a time you worked effectively as part of a team to achieve a common goal." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-effectively-as-part-of-a-team-to-achieve-a-common-goal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-effectively-as-part-of-a-team-to-achieve-a-common-goal-diagram.svg" alt="Diagram: Describe a time you worked effectively as part of a team to achieve a common goal." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-effectively-as-part-of-a-team-to-achieve-a-common-goal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-effectively-as-part-of-a-team-to-achieve-a-common-goal-sticky.svg" alt="Sticky Note: Describe a time you worked effectively as part of a team to achieve a common goal." width="30%">
-</a>
 
 
 **Answer:**
@@ -476,16 +326,6 @@ flowchart LR
 
 ### Q16: Tell me about a time you had to balance technical excellence with business pragmatism.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-balance-technical-excellence-with-business-pragmatism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-balance-technical-excellence-with-business-pragmatism-handwritten.svg" alt="Handwritten: Tell me about a time you had to balance technical excellence with business pragmatism." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-balance-technical-excellence-with-business-pragmatism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-balance-technical-excellence-with-business-pragmatism-diagram.svg" alt="Diagram: Tell me about a time you had to balance technical excellence with business pragmatism." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-balance-technical-excellence-with-business-pragmatism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-balance-technical-excellence-with-business-pragmatism-sticky.svg" alt="Sticky Note: Tell me about a time you had to balance technical excellence with business pragmatism." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -502,16 +342,6 @@ flowchart LR
 ---
 
 ### Q17: Describe a situation where you had to debug a very difficult production issue.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-debug-a-very-difficult-production-issue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-debug-a-very-difficult-production-issue-handwritten.svg" alt="Handwritten: Describe a situation where you had to debug a very difficult production issue." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-debug-a-very-difficult-production-issue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-debug-a-very-difficult-production-issue-diagram.svg" alt="Diagram: Describe a situation where you had to debug a very difficult production issue." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-debug-a-very-difficult-production-issue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-debug-a-very-difficult-production-issue-sticky.svg" alt="Sticky Note: Describe a situation where you had to debug a very difficult production issue." width="30%">
-</a>
 
 
 **Answer:**
@@ -530,16 +360,6 @@ flowchart LR
 
 ### Q18: Tell me about a time you advocated for a change in technology or tooling.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-change-in-technology-or-tooling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-change-in-technology-or-tooling-handwritten.svg" alt="Handwritten: Tell me about a time you advocated for a change in technology or tooling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-change-in-technology-or-tooling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-change-in-technology-or-tooling-diagram.svg" alt="Diagram: Tell me about a time you advocated for a change in technology or tooling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-change-in-technology-or-tooling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-change-in-technology-or-tooling-sticky.svg" alt="Sticky Note: Tell me about a time you advocated for a change in technology or tooling." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -556,16 +376,6 @@ flowchart LR
 ---
 
 ### Q19: Describe a time when you failed to meet a commitment. What happened?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-failed-to-meet-a-commitment-what-happened-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-failed-to-meet-a-commitment-what-happened-handwritten.svg" alt="Handwritten: Describe a time when you failed to meet a commitment. What happened?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-failed-to-meet-a-commitment-what-happened-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-failed-to-meet-a-commitment-what-happened-diagram.svg" alt="Diagram: Describe a time when you failed to meet a commitment. What happened?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-failed-to-meet-a-commitment-what-happened-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-failed-to-meet-a-commitment-what-happened-sticky.svg" alt="Sticky Note: Describe a time when you failed to meet a commitment. What happened?" width="30%">
-</a>
 
 
 **Answer:**
@@ -584,16 +394,6 @@ flowchart LR
 
 ### Q20: Tell me about a time you had to convince others to adopt a new technology or approach.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-convince-others-to-adopt-a-new-technology-or-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-convince-others-to-adopt-a-new-technology-or-approach-handwritten.svg" alt="Handwritten: Tell me about a time you had to convince others to adopt a new technology or approach." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-convince-others-to-adopt-a-new-technology-or-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-convince-others-to-adopt-a-new-technology-or-approach-diagram.svg" alt="Diagram: Tell me about a time you had to convince others to adopt a new technology or approach." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-convince-others-to-adopt-a-new-technology-or-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-convince-others-to-adopt-a-new-technology-or-approach-sticky.svg" alt="Sticky Note: Tell me about a time you had to convince others to adopt a new technology or approach." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -610,16 +410,6 @@ flowchart LR
 ---
 
 ### Q21: Describe a time when you had to deal with a significant amount of ambiguity in a project.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-significant-amount-of-ambiguity-in-a-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-significant-amount-of-ambiguity-in-a-project-handwritten.svg" alt="Handwritten: Describe a time when you had to deal with a significant amount of ambiguity in a project." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-significant-amount-of-ambiguity-in-a-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-significant-amount-of-ambiguity-in-a-project-diagram.svg" alt="Diagram: Describe a time when you had to deal with a significant amount of ambiguity in a project." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-significant-amount-of-ambiguity-in-a-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-significant-amount-of-ambiguity-in-a-project-sticky.svg" alt="Sticky Note: Describe a time when you had to deal with a significant amount of ambiguity in a project." width="30%">
-</a>
 
 
 **Answer:**
@@ -638,16 +428,6 @@ flowchart LR
 
 ### Q22: Tell me about a time you took a calculated risk that paid off.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-took-a-calculated-risk-that-paid-off-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-took-a-calculated-risk-that-paid-off-handwritten.svg" alt="Handwritten: Tell me about a time you took a calculated risk that paid off." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-took-a-calculated-risk-that-paid-off-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-took-a-calculated-risk-that-paid-off-diagram.svg" alt="Diagram: Tell me about a time you took a calculated risk that paid off." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-took-a-calculated-risk-that-paid-off-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-took-a-calculated-risk-that-paid-off-sticky.svg" alt="Sticky Note: Tell me about a time you took a calculated risk that paid off." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -664,16 +444,6 @@ flowchart LR
 ---
 
 ### Q23: Describe a time you had to work outside your comfort zone or area of expertise.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-outside-your-comfort-zone-or-area-of-expertise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-outside-your-comfort-zone-or-area-of-expertise-handwritten.svg" alt="Handwritten: Describe a time you had to work outside your comfort zone or area of expertise." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-outside-your-comfort-zone-or-area-of-expertise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-outside-your-comfort-zone-or-area-of-expertise-diagram.svg" alt="Diagram: Describe a time you had to work outside your comfort zone or area of expertise." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-outside-your-comfort-zone-or-area-of-expertise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-outside-your-comfort-zone-or-area-of-expertise-sticky.svg" alt="Sticky Note: Describe a time you had to work outside your comfort zone or area of expertise." width="30%">
-</a>
 
 
 **Answer:**
@@ -692,16 +462,6 @@ flowchart LR
 
 ### Q24: Tell me about a time you improved code quality across your team.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-code-quality-across-your-team-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-code-quality-across-your-team-handwritten.svg" alt="Handwritten: Tell me about a time you improved code quality across your team." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-code-quality-across-your-team-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-code-quality-across-your-team-diagram.svg" alt="Diagram: Tell me about a time you improved code quality across your team." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-code-quality-across-your-team-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-improved-code-quality-across-your-team-sticky.svg" alt="Sticky Note: Tell me about a time you improved code quality across your team." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -718,16 +478,6 @@ flowchart LR
 ---
 
 ### Q25: Describe a situation where you had to prioritize competing demands.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-prioritize-competing-demands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-prioritize-competing-demands-handwritten.svg" alt="Handwritten: Describe a situation where you had to prioritize competing demands." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-prioritize-competing-demands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-prioritize-competing-demands-diagram.svg" alt="Diagram: Describe a situation where you had to prioritize competing demands." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-prioritize-competing-demands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-situation-where-you-had-to-prioritize-competing-demands-sticky.svg" alt="Sticky Note: Describe a situation where you had to prioritize competing demands." width="30%">
-</a>
 
 
 **Answer:**
@@ -746,16 +496,6 @@ flowchart LR
 
 ### Q26: Tell me about a time you had to give feedback to a peer or manager.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-give-feedback-to-a-peer-or-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-give-feedback-to-a-peer-or-manager-handwritten.svg" alt="Handwritten: Tell me about a time you had to give feedback to a peer or manager." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-give-feedback-to-a-peer-or-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-give-feedback-to-a-peer-or-manager-diagram.svg" alt="Diagram: Tell me about a time you had to give feedback to a peer or manager." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-give-feedback-to-a-peer-or-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-give-feedback-to-a-peer-or-manager-sticky.svg" alt="Sticky Note: Tell me about a time you had to give feedback to a peer or manager." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -772,16 +512,6 @@ flowchart LR
 ---
 
 ### Q27: Describe a time you had to deal with a legacy codebase. How did you approach it?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-legacy-codebase-how-did-you-approach-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-legacy-codebase-how-did-you-approach-it-handwritten.svg" alt="Handwritten: Describe a time you had to deal with a legacy codebase. How did you approach it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-legacy-codebase-how-did-you-approach-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-legacy-codebase-how-did-you-approach-it-diagram.svg" alt="Diagram: Describe a time you had to deal with a legacy codebase. How did you approach it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-legacy-codebase-how-did-you-approach-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-legacy-codebase-how-did-you-approach-it-sticky.svg" alt="Sticky Note: Describe a time you had to deal with a legacy codebase. How did you approach it?" width="30%">
-</a>
 
 
 **Answer:**
@@ -800,16 +530,6 @@ flowchart LR
 
 ### Q28: Tell me about a time you had to make a trade-off between speed and quality.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-make-a-trade-off-between-speed-and-quality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-make-a-trade-off-between-speed-and-quality-handwritten.svg" alt="Handwritten: Tell me about a time you had to make a trade-off between speed and quality." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-make-a-trade-off-between-speed-and-quality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-make-a-trade-off-between-speed-and-quality-diagram.svg" alt="Diagram: Tell me about a time you had to make a trade-off between speed and quality." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-make-a-trade-off-between-speed-and-quality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-make-a-trade-off-between-speed-and-quality-sticky.svg" alt="Sticky Note: Tell me about a time you had to make a trade-off between speed and quality." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -826,16 +546,6 @@ flowchart LR
 ---
 
 ### Q29: Describe a time you had to work with a distributed or remote team.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-with-a-distributed-or-remote-team-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-with-a-distributed-or-remote-team-handwritten.svg" alt="Handwritten: Describe a time you had to work with a distributed or remote team." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-with-a-distributed-or-remote-team-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-with-a-distributed-or-remote-team-diagram.svg" alt="Diagram: Describe a time you had to work with a distributed or remote team." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-with-a-distributed-or-remote-team-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-work-with-a-distributed-or-remote-team-sticky.svg" alt="Sticky Note: Describe a time you had to work with a distributed or remote team." width="30%">
-</a>
 
 
 **Answer:**
@@ -854,16 +564,6 @@ flowchart LR
 
 ### Q30: Tell me about a time you had to deal with a significant setback or failure in a project.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-significant-setback-or-failure-in-a-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-significant-setback-or-failure-in-a-project-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with a significant setback or failure in a project." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-significant-setback-or-failure-in-a-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-significant-setback-or-failure-in-a-project-diagram.svg" alt="Diagram: Tell me about a time you had to deal with a significant setback or failure in a project." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-significant-setback-or-failure-in-a-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-significant-setback-or-failure-in-a-project-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with a significant setback or failure in a project." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -880,16 +580,6 @@ flowchart LR
 ---
 
 ### Q31: Tell me about a time you had to manage a stakeholder who kept changing requirements.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-stakeholder-who-kept-changing-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-stakeholder-who-kept-changing-requirements-handwritten.svg" alt="Handwritten: Tell me about a time you had to manage a stakeholder who kept changing requirements." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-stakeholder-who-kept-changing-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-stakeholder-who-kept-changing-requirements-diagram.svg" alt="Diagram: Tell me about a time you had to manage a stakeholder who kept changing requirements." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-stakeholder-who-kept-changing-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-stakeholder-who-kept-changing-requirements-sticky.svg" alt="Sticky Note: Tell me about a time you had to manage a stakeholder who kept changing requirements." width="30%">
-</a>
 
 
 **Answer:**
@@ -908,16 +598,6 @@ flowchart LR
 
 ### Q32: What is your biggest weakness? Give a concrete example.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-give-a-concrete-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-give-a-concrete-example-handwritten.svg" alt="Handwritten: What is your biggest weakness? Give a concrete example." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-give-a-concrete-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-give-a-concrete-example-diagram.svg" alt="Diagram: What is your biggest weakness? Give a concrete example." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-give-a-concrete-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-give-a-concrete-example-sticky.svg" alt="Sticky Note: What is your biggest weakness? Give a concrete example." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -935,16 +615,6 @@ flowchart LR
 
 ### Q33: Where do you see yourself in 5 years?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: Where do you see yourself in 5 years?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: Where do you see yourself in 5 years?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: Where do you see yourself in 5 years?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -961,16 +631,6 @@ flowchart LR
 ---
 
 ### Q34: Why do you want to leave your current job?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-leave-your-current-job-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-leave-your-current-job-handwritten.svg" alt="Handwritten: Why do you want to leave your current job?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-leave-your-current-job-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-leave-your-current-job-diagram.svg" alt="Diagram: Why do you want to leave your current job?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-leave-your-current-job-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-leave-your-current-job-sticky.svg" alt="Sticky Note: Why do you want to leave your current job?" width="30%">
-</a>
 
 
 **Answer:**
@@ -991,16 +651,6 @@ I am looking for a new opportunity for three reasons that align well with what t
 
 ### Q35: Tell me about a time you showed leadership when you were not in a formal leadership position.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-showed-leadership-when-you-were-not-in-a-formal-leadership-position-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-showed-leadership-when-you-were-not-in-a-formal-leadership-position-handwritten.svg" alt="Handwritten: Tell me about a time you showed leadership when you were not in a formal leadership position." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-showed-leadership-when-you-were-not-in-a-formal-leadership-position-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-showed-leadership-when-you-were-not-in-a-formal-leadership-position-diagram.svg" alt="Diagram: Tell me about a time you showed leadership when you were not in a formal leadership position." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-showed-leadership-when-you-were-not-in-a-formal-leadership-position-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-showed-leadership-when-you-were-not-in-a-formal-leadership-position-sticky.svg" alt="Sticky Note: Tell me about a time you showed leadership when you were not in a formal leadership position." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1017,16 +667,6 @@ I am looking for a new opportunity for three reasons that align well with what t
 ---
 
 ### Q36: How do you stay current with technology and continue learning?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-technology-and-continue-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-technology-and-continue-learning-handwritten.svg" alt="Handwritten: How do you stay current with technology and continue learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-technology-and-continue-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-technology-and-continue-learning-diagram.svg" alt="Diagram: How do you stay current with technology and continue learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-technology-and-continue-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-technology-and-continue-learning-sticky.svg" alt="Sticky Note: How do you stay current with technology and continue learning?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1047,16 +687,6 @@ I use a three-tier learning system:
 
 ### Q37: Tell me about a time you had to work with a codebase you did not understand.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-codebase-you-did-not-understand-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-codebase-you-did-not-understand-handwritten.svg" alt="Handwritten: Tell me about a time you had to work with a codebase you did not understand." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-codebase-you-did-not-understand-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-codebase-you-did-not-understand-diagram.svg" alt="Diagram: Tell me about a time you had to work with a codebase you did not understand." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-codebase-you-did-not-understand-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-codebase-you-did-not-understand-sticky.svg" alt="Sticky Note: Tell me about a time you had to work with a codebase you did not understand." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1073,16 +703,6 @@ I use a three-tier learning system:
 ---
 
 ### Q38: Describe a time when you had to handle a situation where you disagreed with your manager.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-disagreed-with-your-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-disagreed-with-your-manager-handwritten.svg" alt="Handwritten: Describe a time when you had to handle a situation where you disagreed with your manager." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-disagreed-with-your-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-disagreed-with-your-manager-diagram.svg" alt="Diagram: Describe a time when you had to handle a situation where you disagreed with your manager." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-disagreed-with-your-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-disagreed-with-your-manager-sticky.svg" alt="Sticky Note: Describe a time when you had to handle a situation where you disagreed with your manager." width="30%">
-</a>
 
 
 **Answer:**
@@ -1101,16 +721,6 @@ I use a three-tier learning system:
 
 ### Q39: Tell me about a time you had to handle an underperforming team member.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-an-underperforming-team-member-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-an-underperforming-team-member-handwritten.svg" alt="Handwritten: Tell me about a time you had to handle an underperforming team member." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-an-underperforming-team-member-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-an-underperforming-team-member-diagram.svg" alt="Diagram: Tell me about a time you had to handle an underperforming team member." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-an-underperforming-team-member-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-an-underperforming-team-member-sticky.svg" alt="Sticky Note: Tell me about a time you had to handle an underperforming team member." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1127,16 +737,6 @@ I use a three-tier learning system:
 ---
 
 ### Q40: How do you approach estimating engineering work?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-estimating-engineering-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-estimating-engineering-work-handwritten.svg" alt="Handwritten: How do you approach estimating engineering work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-estimating-engineering-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-estimating-engineering-work-diagram.svg" alt="Diagram: How do you approach estimating engineering work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-estimating-engineering-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-estimating-engineering-work-sticky.svg" alt="Sticky Note: How do you approach estimating engineering work?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1157,16 +757,6 @@ I use a structured estimation approach with three layers:
 
 ### Q41: Describe a time when you had to present technical information to a non-technical audience.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-present-technical-information-to-a-non-technical-audience-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-present-technical-information-to-a-non-technical-audience-handwritten.svg" alt="Handwritten: Describe a time when you had to present technical information to a non-technical audience." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-present-technical-information-to-a-non-technical-audience-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-present-technical-information-to-a-non-technical-audience-diagram.svg" alt="Diagram: Describe a time when you had to present technical information to a non-technical audience." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-present-technical-information-to-a-non-technical-audience-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-present-technical-information-to-a-non-technical-audience-sticky.svg" alt="Sticky Note: Describe a time when you had to present technical information to a non-technical audience." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1183,16 +773,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q42: Tell me about a time you had to debug a performance issue in production.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-debug-a-performance-issue-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-debug-a-performance-issue-in-production-handwritten.svg" alt="Handwritten: Tell me about a time you had to debug a performance issue in production." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-debug-a-performance-issue-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-debug-a-performance-issue-in-production-diagram.svg" alt="Diagram: Tell me about a time you had to debug a performance issue in production." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-debug-a-performance-issue-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-debug-a-performance-issue-in-production-sticky.svg" alt="Sticky Note: Tell me about a time you had to debug a performance issue in production." width="30%">
-</a>
 
 
 **Answer:**
@@ -1211,16 +791,6 @@ I use a structured estimation approach with three layers:
 
 ### Q43: Describe a time when you successfully influenced a team or organizational decision.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-successfully-influenced-a-team-or-organizational-decision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-successfully-influenced-a-team-or-organizational-decision-handwritten.svg" alt="Handwritten: Describe a time when you successfully influenced a team or organizational decision." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-successfully-influenced-a-team-or-organizational-decision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-successfully-influenced-a-team-or-organizational-decision-diagram.svg" alt="Diagram: Describe a time when you successfully influenced a team or organizational decision." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-successfully-influenced-a-team-or-organizational-decision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-successfully-influenced-a-team-or-organizational-decision-sticky.svg" alt="Sticky Note: Describe a time when you successfully influenced a team or organizational decision." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1237,16 +807,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q44: Tell me about a time when you had to say "no" to a stakeholder.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-say-no-to-a-stakeholder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-say-no-to-a-stakeholder-handwritten.svg" alt="Handwritten: Tell me about a time when you had to say "no" to a stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-say-no-to-a-stakeholder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-say-no-to-a-stakeholder-diagram.svg" alt="Diagram: Tell me about a time when you had to say "no" to a stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-say-no-to-a-stakeholder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-say-no-to-a-stakeholder-sticky.svg" alt="Sticky Note: Tell me about a time when you had to say "no" to a stakeholder." width="30%">
-</a>
 
 
 **Answer:**
@@ -1265,16 +825,6 @@ I use a structured estimation approach with three layers:
 
 ### Q45: Describe a time when you had to handle a situation where you were overloaded with work.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-were-overloaded-with-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-were-overloaded-with-work-handwritten.svg" alt="Handwritten: Describe a time when you had to handle a situation where you were overloaded with work." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-were-overloaded-with-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-were-overloaded-with-work-diagram.svg" alt="Diagram: Describe a time when you had to handle a situation where you were overloaded with work." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-were-overloaded-with-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-were-overloaded-with-work-sticky.svg" alt="Sticky Note: Describe a time when you had to handle a situation where you were overloaded with work." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1291,16 +841,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q46: Tell me about a time you had to work with a difficult external vendor or partner.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-difficult-external-vendor-or-partner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-difficult-external-vendor-or-partner-handwritten.svg" alt="Handwritten: Tell me about a time you had to work with a difficult external vendor or partner." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-difficult-external-vendor-or-partner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-difficult-external-vendor-or-partner-diagram.svg" alt="Diagram: Tell me about a time you had to work with a difficult external vendor or partner." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-difficult-external-vendor-or-partner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-difficult-external-vendor-or-partner-sticky.svg" alt="Sticky Note: Tell me about a time you had to work with a difficult external vendor or partner." width="30%">
-</a>
 
 
 **Answer:**
@@ -1319,16 +859,6 @@ I use a structured estimation approach with three layers:
 
 ### Q47: Describe a time you had to refactor a complex piece of code without breaking existing functionality.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-refactor-a-complex-piece-of-code-without-breaking-existing-functionality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-refactor-a-complex-piece-of-code-without-breaking-existing-functionality-handwritten.svg" alt="Handwritten: Describe a time you had to refactor a complex piece of code without breaking existing functionality." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-refactor-a-complex-piece-of-code-without-breaking-existing-functionality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-refactor-a-complex-piece-of-code-without-breaking-existing-functionality-diagram.svg" alt="Diagram: Describe a time you had to refactor a complex piece of code without breaking existing functionality." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-refactor-a-complex-piece-of-code-without-breaking-existing-functionality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-refactor-a-complex-piece-of-code-without-breaking-existing-functionality-sticky.svg" alt="Sticky Note: Describe a time you had to refactor a complex piece of code without breaking existing functionality." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1345,16 +875,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q48: Tell me about a time you had to deal with a situation where you lost data.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-lost-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-lost-data-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with a situation where you lost data." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-lost-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-lost-data-diagram.svg" alt="Diagram: Tell me about a time you had to deal with a situation where you lost data." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-lost-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-lost-data-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with a situation where you lost data." width="30%">
-</a>
 
 
 **Answer:**
@@ -1373,16 +893,6 @@ I use a structured estimation approach with three layers:
 
 ### Q49: Describe a time when you had to make a decision quickly during an incident.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-decision-quickly-during-an-incident-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-decision-quickly-during-an-incident-handwritten.svg" alt="Handwritten: Describe a time when you had to make a decision quickly during an incident." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-decision-quickly-during-an-incident-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-decision-quickly-during-an-incident-diagram.svg" alt="Diagram: Describe a time when you had to make a decision quickly during an incident." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-decision-quickly-during-an-incident-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-decision-quickly-during-an-incident-sticky.svg" alt="Sticky Note: Describe a time when you had to make a decision quickly during an incident." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1400,16 +910,6 @@ I use a structured estimation approach with three layers:
 
 ### Q50: Tell me about a time you mentored someone who was struggling.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-mentored-someone-who-was-struggling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-mentored-someone-who-was-struggling-handwritten.svg" alt="Handwritten: Tell me about a time you mentored someone who was struggling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-mentored-someone-who-was-struggling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-mentored-someone-who-was-struggling-diagram.svg" alt="Diagram: Tell me about a time you mentored someone who was struggling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-mentored-someone-who-was-struggling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-mentored-someone-who-was-struggling-sticky.svg" alt="Sticky Note: Tell me about a time you mentored someone who was struggling." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1426,16 +926,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q51: How do you handle feedback that you disagree with?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feedback-that-you-disagree-with-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feedback-that-you-disagree-with-handwritten.svg" alt="Handwritten: How do you handle feedback that you disagree with?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feedback-that-you-disagree-with-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feedback-that-you-disagree-with-diagram.svg" alt="Diagram: How do you handle feedback that you disagree with?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feedback-that-you-disagree-with-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feedback-that-you-disagree-with-sticky.svg" alt="Sticky Note: How do you handle feedback that you disagree with?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1456,16 +946,6 @@ I use a structured estimation approach with three layers:
 
 ### Q52: Tell me about a time you had to deal with a major change in project requirements mid-way.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-major-change-in-project-requirements-mid-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-major-change-in-project-requirements-mid-way-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with a major change in project requirements mid-way." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-major-change-in-project-requirements-mid-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-major-change-in-project-requirements-mid-way-diagram.svg" alt="Diagram: Tell me about a time you had to deal with a major change in project requirements mid-way." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-major-change-in-project-requirements-mid-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-major-change-in-project-requirements-mid-way-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with a major change in project requirements mid-way." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1482,16 +962,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q53: Describe a time when you had to handle a security vulnerability in your code.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-security-vulnerability-in-your-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-security-vulnerability-in-your-code-handwritten.svg" alt="Handwritten: Describe a time when you had to handle a security vulnerability in your code." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-security-vulnerability-in-your-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-security-vulnerability-in-your-code-diagram.svg" alt="Diagram: Describe a time when you had to handle a security vulnerability in your code." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-security-vulnerability-in-your-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-security-vulnerability-in-your-code-sticky.svg" alt="Sticky Note: Describe a time when you had to handle a security vulnerability in your code." width="30%">
-</a>
 
 
 **Answer:**
@@ -1510,16 +980,6 @@ I use a structured estimation approach with three layers:
 
 ### Q54: Tell me about a time you had to deal with a situation where you were new to a team.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-new-to-a-team-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-new-to-a-team-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with a situation where you were new to a team." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-new-to-a-team-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-new-to-a-team-diagram.svg" alt="Diagram: Tell me about a time you had to deal with a situation where you were new to a team." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-new-to-a-team-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-new-to-a-team-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with a situation where you were new to a team." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1536,16 +996,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q55: Describe a time when you had to choose between two good technical options.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-good-technical-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-good-technical-options-handwritten.svg" alt="Handwritten: Describe a time when you had to choose between two good technical options." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-good-technical-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-good-technical-options-diagram.svg" alt="Diagram: Describe a time when you had to choose between two good technical options." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-good-technical-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-good-technical-options-sticky.svg" alt="Sticky Note: Describe a time when you had to choose between two good technical options." width="30%">
-</a>
 
 
 **Answer:**
@@ -1580,16 +1030,6 @@ I use a structured estimation approach with three layers:
 
 ### Q57: Tell me about a time you had to handle a client or customer who was unhappy.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-a-client-or-customer-who-was-unhappy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-a-client-or-customer-who-was-unhappy-handwritten.svg" alt="Handwritten: Tell me about a time you had to handle a client or customer who was unhappy." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-a-client-or-customer-who-was-unhappy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-a-client-or-customer-who-was-unhappy-diagram.svg" alt="Diagram: Tell me about a time you had to handle a client or customer who was unhappy." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-a-client-or-customer-who-was-unhappy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-handle-a-client-or-customer-who-was-unhappy-sticky.svg" alt="Sticky Note: Tell me about a time you had to handle a client or customer who was unhappy." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1606,16 +1046,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q58: Describe a time when you had to work on something that you were not familiar with.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-on-something-that-you-were-not-familiar-with-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-on-something-that-you-were-not-familiar-with-handwritten.svg" alt="Handwritten: Describe a time when you had to work on something that you were not familiar with." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-on-something-that-you-were-not-familiar-with-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-on-something-that-you-were-not-familiar-with-diagram.svg" alt="Diagram: Describe a time when you had to work on something that you were not familiar with." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-on-something-that-you-were-not-familiar-with-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-on-something-that-you-were-not-familiar-with-sticky.svg" alt="Sticky Note: Describe a time when you had to work on something that you were not familiar with." width="30%">
-</a>
 
 
 **Answer:**
@@ -1649,16 +1079,6 @@ I use a structured estimation approach with three layers:
 ---
 
 ### Q60: What questions do you have for me?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-questions-do-you-have-for-me-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-questions-do-you-have-for-me-handwritten.svg" alt="Handwritten: What questions do you have for me?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-questions-do-you-have-for-me-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-questions-do-you-have-for-me-diagram.svg" alt="Diagram: What questions do you have for me?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-questions-do-you-have-for-me-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-questions-do-you-have-for-me-sticky.svg" alt="Sticky Note: What questions do you have for me?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1705,16 +1125,6 @@ I always end with: "Based on what we have discussed, do you have any concerns ab
 
 ### Q61: How do you approach salary negotiation?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-salary-negotiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-salary-negotiation-handwritten.svg" alt="Handwritten: How do you approach salary negotiation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-salary-negotiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-salary-negotiation-diagram.svg" alt="Diagram: How do you approach salary negotiation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-salary-negotiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-salary-negotiation-sticky.svg" alt="Sticky Note: How do you approach salary negotiation?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1740,16 +1150,6 @@ At my last negotiation, the initial offer was  base +  equity. My target was  ba
 
 ### Q62: Tell me about a time you had to upskill your team on a new technology.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-upskill-your-team-on-a-new-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-upskill-your-team-on-a-new-technology-handwritten.svg" alt="Handwritten: Tell me about a time you had to upskill your team on a new technology." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-upskill-your-team-on-a-new-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-upskill-your-team-on-a-new-technology-diagram.svg" alt="Diagram: Tell me about a time you had to upskill your team on a new technology." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-upskill-your-team-on-a-new-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-upskill-your-team-on-a-new-technology-sticky.svg" alt="Sticky Note: Tell me about a time you had to upskill your team on a new technology." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1766,16 +1166,6 @@ At my last negotiation, the initial offer was  base +  equity. My target was  ba
 ---
 
 ### Q63: Describe a time when you had to handle a situation where you made a promise you could not keep.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-made-a-promise-you-could-not-keep-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-made-a-promise-you-could-not-keep-handwritten.svg" alt="Handwritten: Describe a time when you had to handle a situation where you made a promise you could not keep." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-made-a-promise-you-could-not-keep-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-made-a-promise-you-could-not-keep-diagram.svg" alt="Diagram: Describe a time when you had to handle a situation where you made a promise you could not keep." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-made-a-promise-you-could-not-keep-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-you-made-a-promise-you-could-not-keep-sticky.svg" alt="Sticky Note: Describe a time when you had to handle a situation where you made a promise you could not keep." width="30%">
-</a>
 
 
 **Answer:**
@@ -1794,16 +1184,6 @@ At my last negotiation, the initial offer was  base +  equity. My target was  ba
 
 ### Q64: Describe a time when you had to work with a team that was not performing well.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-with-a-team-that-was-not-performing-well-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-with-a-team-that-was-not-performing-well-handwritten.svg" alt="Handwritten: Describe a time when you had to work with a team that was not performing well." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-with-a-team-that-was-not-performing-well-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-with-a-team-that-was-not-performing-well-diagram.svg" alt="Diagram: Describe a time when you had to work with a team that was not performing well." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-with-a-team-that-was-not-performing-well-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-work-with-a-team-that-was-not-performing-well-sticky.svg" alt="Sticky Note: Describe a time when you had to work with a team that was not performing well." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1821,16 +1201,6 @@ At my last negotiation, the initial offer was  base +  equity. My target was  ba
 
 ### Q65: Tell me about a time when you had to deal with a significant unexpected problem during a deployment.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-deal-with-a-significant-unexpected-problem-during-a-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-deal-with-a-significant-unexpected-problem-during-a-deployment-handwritten.svg" alt="Handwritten: Tell me about a time when you had to deal with a significant unexpected problem during a deployment." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-deal-with-a-significant-unexpected-problem-during-a-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-deal-with-a-significant-unexpected-problem-during-a-deployment-diagram.svg" alt="Diagram: Tell me about a time when you had to deal with a significant unexpected problem during a deployment." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-deal-with-a-significant-unexpected-problem-during-a-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-deal-with-a-significant-unexpected-problem-during-a-deployment-sticky.svg" alt="Sticky Note: Tell me about a time when you had to deal with a significant unexpected problem during a deployment." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1847,16 +1217,6 @@ At my last negotiation, the initial offer was  base +  equity. My target was  ba
 ---
 
 ### Q66: How do you handle situations where you do not know the answer?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-situations-where-you-do-not-know-the-answer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-situations-where-you-do-not-know-the-answer-handwritten.svg" alt="Handwritten: How do you handle situations where you do not know the answer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-situations-where-you-do-not-know-the-answer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-situations-where-you-do-not-know-the-answer-diagram.svg" alt="Diagram: How do you handle situations where you do not know the answer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-situations-where-you-do-not-know-the-answer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-situations-where-you-do-not-know-the-answer-sticky.svg" alt="Sticky Note: How do you handle situations where you do not know the answer?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1893,16 +1253,6 @@ I have a three-step approach:
 
 ### Q68: Tell me about a time when you had to work with a system that had no tests.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-system-that-had-no-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-system-that-had-no-tests-handwritten.svg" alt="Handwritten: Tell me about a time when you had to work with a system that had no tests." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-system-that-had-no-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-system-that-had-no-tests-diagram.svg" alt="Diagram: Tell me about a time when you had to work with a system that had no tests." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-system-that-had-no-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-system-that-had-no-tests-sticky.svg" alt="Sticky Note: Tell me about a time when you had to work with a system that had no tests." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1920,16 +1270,6 @@ I have a three-step approach:
 
 ### Q69: Describe a time when you had to convince an executive or senior leader to change a decision.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-convince-an-executive-or-senior-leader-to-change-a-decision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-convince-an-executive-or-senior-leader-to-change-a-decision-handwritten.svg" alt="Handwritten: Describe a time when you had to convince an executive or senior leader to change a decision." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-convince-an-executive-or-senior-leader-to-change-a-decision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-convince-an-executive-or-senior-leader-to-change-a-decision-diagram.svg" alt="Diagram: Describe a time when you had to convince an executive or senior leader to change a decision." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-convince-an-executive-or-senior-leader-to-change-a-decision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-convince-an-executive-or-senior-leader-to-change-a-decision-sticky.svg" alt="Sticky Note: Describe a time when you had to convince an executive or senior leader to change a decision." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1946,16 +1286,6 @@ I have a three-step approach:
 ---
 
 ### Q70: What motivates you to do your best work?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-handwritten.svg" alt="Handwritten: What motivates you to do your best work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-diagram.svg" alt="Diagram: What motivates you to do your best work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-sticky.svg" alt="Sticky Note: What motivates you to do your best work?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1976,16 +1306,6 @@ Three things motivate me most:
 
 ### Q71: Describe a time when you had to manage multiple stakeholders with conflicting priorities.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-manage-multiple-stakeholders-with-conflicting-priorities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-manage-multiple-stakeholders-with-conflicting-priorities-handwritten.svg" alt="Handwritten: Describe a time when you had to manage multiple stakeholders with conflicting priorities." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-manage-multiple-stakeholders-with-conflicting-priorities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-manage-multiple-stakeholders-with-conflicting-priorities-diagram.svg" alt="Diagram: Describe a time when you had to manage multiple stakeholders with conflicting priorities." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-manage-multiple-stakeholders-with-conflicting-priorities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-manage-multiple-stakeholders-with-conflicting-priorities-sticky.svg" alt="Sticky Note: Describe a time when you had to manage multiple stakeholders with conflicting priorities." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2002,16 +1322,6 @@ Three things motivate me most:
 ---
 
 ### Q72: Tell me about a time you had to deal with technical debt that was causing problems.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-technical-debt-that-was-causing-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-technical-debt-that-was-causing-problems-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with technical debt that was causing problems." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-technical-debt-that-was-causing-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-technical-debt-that-was-causing-problems-diagram.svg" alt="Diagram: Tell me about a time you had to deal with technical debt that was causing problems." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-technical-debt-that-was-causing-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-technical-debt-that-was-causing-problems-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with technical debt that was causing problems." width="30%">
-</a>
 
 
 **Answer:**
@@ -2030,16 +1340,6 @@ Three things motivate me most:
 
 ### Q73: Describe a time when you had to deal with a situation where you were given an unrealistic deadline.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-situation-where-you-were-given-an-unrealistic-deadline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-situation-where-you-were-given-an-unrealistic-deadline-handwritten.svg" alt="Handwritten: Describe a time when you had to deal with a situation where you were given an unrealistic deadline." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-situation-where-you-were-given-an-unrealistic-deadline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-situation-where-you-were-given-an-unrealistic-deadline-diagram.svg" alt="Diagram: Describe a time when you had to deal with a situation where you were given an unrealistic deadline." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-situation-where-you-were-given-an-unrealistic-deadline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-deal-with-a-situation-where-you-were-given-an-unrealistic-deadline-sticky.svg" alt="Sticky Note: Describe a time when you had to deal with a situation where you were given an unrealistic deadline." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2056,16 +1356,6 @@ Three things motivate me most:
 ---
 
 ### Q74: Tell me about a time you had to implement a complex business rule that was hard to model in code.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-implement-a-complex-business-rule-that-was-hard-to-model-in-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-implement-a-complex-business-rule-that-was-hard-to-model-in-code-handwritten.svg" alt="Handwritten: Tell me about a time you had to implement a complex business rule that was hard to model in code." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-implement-a-complex-business-rule-that-was-hard-to-model-in-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-implement-a-complex-business-rule-that-was-hard-to-model-in-code-diagram.svg" alt="Diagram: Tell me about a time you had to implement a complex business rule that was hard to model in code." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-implement-a-complex-business-rule-that-was-hard-to-model-in-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-implement-a-complex-business-rule-that-was-hard-to-model-in-code-sticky.svg" alt="Sticky Note: Tell me about a time you had to implement a complex business rule that was hard to model in code." width="30%">
-</a>
 
 
 **Answer:**
@@ -2100,16 +1390,6 @@ Three things motivate me most:
 
 ### Q76: Tell me about a time you had to persuade a colleague to take a different approach.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-persuade-a-colleague-to-take-a-different-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-persuade-a-colleague-to-take-a-different-approach-handwritten.svg" alt="Handwritten: Tell me about a time you had to persuade a colleague to take a different approach." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-persuade-a-colleague-to-take-a-different-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-persuade-a-colleague-to-take-a-different-approach-diagram.svg" alt="Diagram: Tell me about a time you had to persuade a colleague to take a different approach." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-persuade-a-colleague-to-take-a-different-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-persuade-a-colleague-to-take-a-different-approach-sticky.svg" alt="Sticky Note: Tell me about a time you had to persuade a colleague to take a different approach." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2126,16 +1406,6 @@ Three things motivate me most:
 ---
 
 ### Q77: Describe a time when you had to make a difficult ethical decision at work.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-difficult-ethical-decision-at-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-difficult-ethical-decision-at-work-handwritten.svg" alt="Handwritten: Describe a time when you had to make a difficult ethical decision at work." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-difficult-ethical-decision-at-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-difficult-ethical-decision-at-work-diagram.svg" alt="Diagram: Describe a time when you had to make a difficult ethical decision at work." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-difficult-ethical-decision-at-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-difficult-ethical-decision-at-work-sticky.svg" alt="Sticky Note: Describe a time when you had to make a difficult ethical decision at work." width="30%">
-</a>
 
 
 **Answer:**
@@ -2154,16 +1424,6 @@ Three things motivate me most:
 
 ### Q78: Tell me about a time you had to work with a very large data set that caused performance issues.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-very-large-data-set-that-caused-performance-issues-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-very-large-data-set-that-caused-performance-issues-handwritten.svg" alt="Handwritten: Tell me about a time you had to work with a very large data set that caused performance issues." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-very-large-data-set-that-caused-performance-issues-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-very-large-data-set-that-caused-performance-issues-diagram.svg" alt="Diagram: Tell me about a time you had to work with a very large data set that caused performance issues." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-very-large-data-set-that-caused-performance-issues-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-work-with-a-very-large-data-set-that-caused-performance-issues-sticky.svg" alt="Sticky Note: Tell me about a time you had to work with a very large data set that caused performance issues." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2180,16 +1440,6 @@ Three things motivate me most:
 ---
 
 ### Q79: How do you approach writing documentation?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-documentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-documentation-handwritten.svg" alt="Handwritten: How do you approach writing documentation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-documentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-documentation-diagram.svg" alt="Diagram: How do you approach writing documentation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-documentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-documentation-sticky.svg" alt="Sticky Note: How do you approach writing documentation?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2244,16 +1494,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q82: Tell me about a time you had to manage a project with multiple dependencies on other teams.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-project-with-multiple-dependencies-on-other-teams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-project-with-multiple-dependencies-on-other-teams-handwritten.svg" alt="Handwritten: Tell me about a time you had to manage a project with multiple dependencies on other teams." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-project-with-multiple-dependencies-on-other-teams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-project-with-multiple-dependencies-on-other-teams-diagram.svg" alt="Diagram: Tell me about a time you had to manage a project with multiple dependencies on other teams." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-project-with-multiple-dependencies-on-other-teams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-manage-a-project-with-multiple-dependencies-on-other-teams-sticky.svg" alt="Sticky Note: Tell me about a time you had to manage a project with multiple dependencies on other teams." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2270,16 +1510,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 ---
 
 ### Q83: Describe a time when you had to refactor a critical piece of infrastructure without downtime.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-refactor-a-critical-piece-of-infrastructure-without-downtime-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-refactor-a-critical-piece-of-infrastructure-without-downtime-handwritten.svg" alt="Handwritten: Describe a time when you had to refactor a critical piece of infrastructure without downtime." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-refactor-a-critical-piece-of-infrastructure-without-downtime-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-refactor-a-critical-piece-of-infrastructure-without-downtime-diagram.svg" alt="Diagram: Describe a time when you had to refactor a critical piece of infrastructure without downtime." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-refactor-a-critical-piece-of-infrastructure-without-downtime-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-refactor-a-critical-piece-of-infrastructure-without-downtime-sticky.svg" alt="Sticky Note: Describe a time when you had to refactor a critical piece of infrastructure without downtime." width="30%">
-</a>
 
 
 **Answer:**
@@ -2298,16 +1528,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q84: Tell me about a time you had to deal with burnout or mental health challenges at work.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-burnout-or-mental-health-challenges-at-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-burnout-or-mental-health-challenges-at-work-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with burnout or mental health challenges at work." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-burnout-or-mental-health-challenges-at-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-burnout-or-mental-health-challenges-at-work-diagram.svg" alt="Diagram: Tell me about a time you had to deal with burnout or mental health challenges at work." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-burnout-or-mental-health-challenges-at-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-burnout-or-mental-health-challenges-at-work-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with burnout or mental health challenges at work." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2322,16 +1542,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 **Key lesson:** Burnout is a systemic problem, not a personal failing. The most important step is recognizing it early and asking for help. A good manager will support you. The boundary-setting skills I learned — hard stops, no after-hours Slack, protected focus time — have made me a better engineer and a happier person. Sustainable pace always beats sprinting.
 
 ### Q85: Tell me about a time when you had to optimize a slow API endpoint.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-optimize-a-slow-api-endpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-optimize-a-slow-api-endpoint-handwritten.svg" alt="Handwritten: Tell me about a time when you had to optimize a slow API endpoint." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-optimize-a-slow-api-endpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-optimize-a-slow-api-endpoint-diagram.svg" alt="Diagram: Tell me about a time when you had to optimize a slow API endpoint." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-optimize-a-slow-api-endpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-optimize-a-slow-api-endpoint-sticky.svg" alt="Sticky Note: Tell me about a time when you had to optimize a slow API endpoint." width="30%">
-</a>
 
 
 **Answer:**
@@ -2350,16 +1560,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q86: Describe a time when you had to choose between two competing frameworks or libraries.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-competing-frameworks-or-libraries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-competing-frameworks-or-libraries-handwritten.svg" alt="Handwritten: Describe a time when you had to choose between two competing frameworks or libraries." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-competing-frameworks-or-libraries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-competing-frameworks-or-libraries-diagram.svg" alt="Diagram: Describe a time when you had to choose between two competing frameworks or libraries." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-competing-frameworks-or-libraries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-choose-between-two-competing-frameworks-or-libraries-sticky.svg" alt="Sticky Note: Describe a time when you had to choose between two competing frameworks or libraries." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2377,16 +1577,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q87: Tell me about a time when you had to debug a concurrency issue.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-debug-a-concurrency-issue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-debug-a-concurrency-issue-handwritten.svg" alt="Handwritten: Tell me about a time when you had to debug a concurrency issue." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-debug-a-concurrency-issue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-debug-a-concurrency-issue-diagram.svg" alt="Diagram: Tell me about a time when you had to debug a concurrency issue." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-debug-a-concurrency-issue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-debug-a-concurrency-issue-sticky.svg" alt="Sticky Note: Tell me about a time when you had to debug a concurrency issue." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2403,16 +1593,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 ---
 
 ### Q88: Tell me about a time when you had to work with a difficult code review process.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-difficult-code-review-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-difficult-code-review-process-handwritten.svg" alt="Handwritten: Tell me about a time when you had to work with a difficult code review process." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-difficult-code-review-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-difficult-code-review-process-diagram.svg" alt="Diagram: Tell me about a time when you had to work with a difficult code review process." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-difficult-code-review-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-difficult-code-review-process-sticky.svg" alt="Sticky Note: Tell me about a time when you had to work with a difficult code review process." width="30%">
-</a>
 
 
 **Answer:**
@@ -2432,16 +1612,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q89: Describe a time when you had to make a presentation to senior leadership that went well.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-presentation-to-senior-leadership-that-went-well-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-presentation-to-senior-leadership-that-went-well-handwritten.svg" alt="Handwritten: Describe a time when you had to make a presentation to senior leadership that went well." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-presentation-to-senior-leadership-that-went-well-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-presentation-to-senior-leadership-that-went-well-diagram.svg" alt="Diagram: Describe a time when you had to make a presentation to senior leadership that went well." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-presentation-to-senior-leadership-that-went-well-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-make-a-presentation-to-senior-leadership-that-went-well-sticky.svg" alt="Sticky Note: Describe a time when you had to make a presentation to senior leadership that went well." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2456,16 +1626,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 **Key lesson:** When presenting to senior leadership, structure matters. Lead with wins (build confidence), own failures immediately (build trust), and end with a forward-looking plan (build excitement). Use visuals over text — charts, graphs, timelines. Senior leaders see dozens of presentations; make yours memorable by being honest and structured.
 
 ### Q90: Tell me about a time when you had to work with a team that resisted change.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-team-that-resisted-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-team-that-resisted-change-handwritten.svg" alt="Handwritten: Tell me about a time when you had to work with a team that resisted change." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-team-that-resisted-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-team-that-resisted-change-diagram.svg" alt="Diagram: Tell me about a time when you had to work with a team that resisted change." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-team-that-resisted-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-when-you-had-to-work-with-a-team-that-resisted-change-sticky.svg" alt="Sticky Note: Tell me about a time when you had to work with a team that resisted change." width="30%">
-</a>
 
 
 **Answer:**
@@ -2484,16 +1644,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q91: Describe a time when you had to handle a situation where your manager was not supportive.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-your-manager-was-not-supportive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-your-manager-was-not-supportive-handwritten.svg" alt="Handwritten: Describe a time when you had to handle a situation where your manager was not supportive." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-your-manager-was-not-supportive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-your-manager-was-not-supportive-diagram.svg" alt="Diagram: Describe a time when you had to handle a situation where your manager was not supportive." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-your-manager-was-not-supportive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-when-you-had-to-handle-a-situation-where-your-manager-was-not-supportive-sticky.svg" alt="Sticky Note: Describe a time when you had to handle a situation where your manager was not supportive." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2510,16 +1660,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 ---
 
 ### Q92: How do you handle being interrupted constantly during deep work?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-interrupted-constantly-during-deep-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-interrupted-constantly-during-deep-work-handwritten.svg" alt="Handwritten: How do you handle being interrupted constantly during deep work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-interrupted-constantly-during-deep-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-interrupted-constantly-during-deep-work-diagram.svg" alt="Diagram: How do you handle being interrupted constantly during deep work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-interrupted-constantly-during-deep-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-interrupted-constantly-during-deep-work-sticky.svg" alt="Sticky Note: How do you handle being interrupted constantly during deep work?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2542,16 +1682,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q93: How do you deal with imposter syndrome?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-deal-with-imposter-syndrome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-deal-with-imposter-syndrome-handwritten.svg" alt="Handwritten: How do you deal with imposter syndrome?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-deal-with-imposter-syndrome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-deal-with-imposter-syndrome-diagram.svg" alt="Diagram: How do you deal with imposter syndrome?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-deal-with-imposter-syndrome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-deal-with-imposter-syndrome-sticky.svg" alt="Sticky Note: How do you deal with imposter syndrome?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2570,16 +1700,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 ---
 
 ### Q94: How do you approach code reviews from a human perspective?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-code-reviews-from-a-human-perspective-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-code-reviews-from-a-human-perspective-handwritten.svg" alt="Handwritten: How do you approach code reviews from a human perspective?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-code-reviews-from-a-human-perspective-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-code-reviews-from-a-human-perspective-diagram.svg" alt="Diagram: How do you approach code reviews from a human perspective?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-code-reviews-from-a-human-perspective-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-code-reviews-from-a-human-perspective-sticky.svg" alt="Sticky Note: How do you approach code reviews from a human perspective?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2602,16 +1722,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 
 ### Q95: How do you balance writing tests vs shipping features quickly?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-balance-writing-tests-vs-shipping-features-quickly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-balance-writing-tests-vs-shipping-features-quickly-handwritten.svg" alt="Handwritten: How do you balance writing tests vs shipping features quickly?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-balance-writing-tests-vs-shipping-features-quickly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-balance-writing-tests-vs-shipping-features-quickly-diagram.svg" alt="Diagram: How do you balance writing tests vs shipping features quickly?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-balance-writing-tests-vs-shipping-features-quickly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-balance-writing-tests-vs-shipping-features-quickly-sticky.svg" alt="Sticky Note: How do you balance writing tests vs shipping features quickly?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2632,16 +1742,6 @@ I follow a "documentation as necessity" philosophy — write enough to be useful
 ---
 
 ### Q96: What does "senior engineer" mean to you?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-does-senior-engineer-mean-to-you-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-does-senior-engineer-mean-to-you-handwritten.svg" alt="Handwritten: What does "senior engineer" mean to you?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-does-senior-engineer-mean-to-you-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-does-senior-engineer-mean-to-you-diagram.svg" alt="Diagram: What does "senior engineer" mean to you?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-does-senior-engineer-mean-to-you-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-does-senior-engineer-mean-to-you-sticky.svg" alt="Sticky Note: What does "senior engineer" mean to you?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2664,16 +1764,6 @@ To me, a senior engineer is defined by four dimensions, none of which are about 
 
 ### Q97: How do you handle on-call incidents and post-mortems?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-on-call-incidents-and-post-mortems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-on-call-incidents-and-post-mortems-handwritten.svg" alt="Handwritten: How do you handle on-call incidents and post-mortems?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-on-call-incidents-and-post-mortems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-on-call-incidents-and-post-mortems-diagram.svg" alt="Diagram: How do you handle on-call incidents and post-mortems?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-on-call-incidents-and-post-mortems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-on-call-incidents-and-post-mortems-sticky.svg" alt="Sticky Note: How do you handle on-call incidents and post-mortems?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2690,16 +1780,6 @@ To me, a senior engineer is defined by four dimensions, none of which are about 
 ---
 
 ### Q98: How do you stay motivated when working on a legacy codebase?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-motivated-when-working-on-a-legacy-codebase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-motivated-when-working-on-a-legacy-codebase-handwritten.svg" alt="Handwritten: How do you stay motivated when working on a legacy codebase?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-motivated-when-working-on-a-legacy-codebase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-motivated-when-working-on-a-legacy-codebase-diagram.svg" alt="Diagram: How do you stay motivated when working on a legacy codebase?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-motivated-when-working-on-a-legacy-codebase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-motivated-when-working-on-a-legacy-codebase-sticky.svg" alt="Sticky Note: How do you stay motivated when working on a legacy codebase?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2721,16 +1801,6 @@ To me, a senior engineer is defined by four dimensions, none of which are about 
 ---
 
 ### Q99: How do you prioritize technical debt vs new features?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-prioritize-technical-debt-vs-new-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-prioritize-technical-debt-vs-new-features-handwritten.svg" alt="Handwritten: How do you prioritize technical debt vs new features?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-prioritize-technical-debt-vs-new-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-prioritize-technical-debt-vs-new-features-diagram.svg" alt="Diagram: How do you prioritize technical debt vs new features?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-prioritize-technical-debt-vs-new-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-prioritize-technical-debt-vs-new-features-sticky.svg" alt="Sticky Note: How do you prioritize technical debt vs new features?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2758,16 +1828,6 @@ I compare this to feature ROI estimates from the product team. If a feature is e
 
 ### Q100: Why do you want to work here?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-work-here-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-work-here-handwritten.svg" alt="Handwritten: Why do you want to work here?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-work-here-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-work-here-diagram.svg" alt="Diagram: Why do you want to work here?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-work-here-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/why-do-you-want-to-work-here-sticky.svg" alt="Sticky Note: Why do you want to work here?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2792,16 +1852,6 @@ I want to work here for three specific reasons that align with what I am looking
 
 ### Q101: Describe a time you went above and beyond your job description to help the business.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-went-above-and-beyond-your-job-description-to-help-the-business-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-went-above-and-beyond-your-job-description-to-help-the-business-handwritten.svg" alt="Handwritten: Describe a time you went above and beyond your job description to help the business." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-went-above-and-beyond-your-job-description-to-help-the-business-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-went-above-and-beyond-your-job-description-to-help-the-business-diagram.svg" alt="Diagram: Describe a time you went above and beyond your job description to help the business." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-went-above-and-beyond-your-job-description-to-help-the-business-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-went-above-and-beyond-your-job-description-to-help-the-business-sticky.svg" alt="Sticky Note: Describe a time you went above and beyond your job description to help the business." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2820,16 +1870,6 @@ I want to work here for three specific reasons that align with what I am looking
 ---
 
 ### Q73: How do you approach documentation?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-documentation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-documentation-handwritten.svg" alt="Handwritten: How do you approach documentation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-documentation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-documentation-diagram.svg" alt="Diagram: How do you approach documentation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-documentation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-documentation-sticky.svg" alt="Sticky Note: How do you approach documentation?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2853,16 +1893,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q74: Tell me about a time your project was deprioritized or cancelled.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-your-project-was-deprioritized-or-cancelled-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-your-project-was-deprioritized-or-cancelled-handwritten.svg" alt="Handwritten: Tell me about a time your project was deprioritized or cancelled." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-your-project-was-deprioritized-or-cancelled-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-your-project-was-deprioritized-or-cancelled-diagram.svg" alt="Diagram: Tell me about a time your project was deprioritized or cancelled." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-your-project-was-deprioritized-or-cancelled-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-your-project-was-deprioritized-or-cancelled-sticky.svg" alt="Sticky Note: Tell me about a time your project was deprioritized or cancelled." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2875,16 +1905,6 @@ I treat documentation as a product for the next person who needs to understand o
 ---
 
 ### Q75: How do you ensure quality in your code?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-ensure-quality-in-your-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-ensure-quality-in-your-code-handwritten.svg" alt="Handwritten: How do you ensure quality in your code?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-ensure-quality-in-your-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-ensure-quality-in-your-code-diagram.svg" alt="Diagram: How do you ensure quality in your code?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-ensure-quality-in-your-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-ensure-quality-in-your-code-sticky.svg" alt="Sticky Note: How do you ensure quality in your code?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2903,16 +1923,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q76: Describe a time you worked on a project with a tight deadline.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-project-with-a-tight-deadline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-project-with-a-tight-deadline-handwritten.svg" alt="Handwritten: Describe a time you worked on a project with a tight deadline." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-project-with-a-tight-deadline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-project-with-a-tight-deadline-diagram.svg" alt="Diagram: Describe a time you worked on a project with a tight deadline." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-project-with-a-tight-deadline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-project-with-a-tight-deadline-sticky.svg" alt="Sticky Note: Describe a time you worked on a project with a tight deadline." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2925,16 +1935,6 @@ I treat documentation as a product for the next person who needs to understand o
 ---
 
 ### Q77: How do you handle being the most junior person on the team?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-the-most-junior-person-on-the-team-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-the-most-junior-person-on-the-team-handwritten.svg" alt="Handwritten: How do you handle being the most junior person on the team?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-the-most-junior-person-on-the-team-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-the-most-junior-person-on-the-team-diagram.svg" alt="Diagram: How do you handle being the most junior person on the team?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-the-most-junior-person-on-the-team-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-being-the-most-junior-person-on-the-team-sticky.svg" alt="Sticky Note: How do you handle being the most junior person on the team?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2951,16 +1951,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q78: Tell me about a time you delivered bad news to a stakeholder.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-delivered-bad-news-to-a-stakeholder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-delivered-bad-news-to-a-stakeholder-handwritten.svg" alt="Handwritten: Tell me about a time you delivered bad news to a stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-delivered-bad-news-to-a-stakeholder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-delivered-bad-news-to-a-stakeholder-diagram.svg" alt="Diagram: Tell me about a time you delivered bad news to a stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-delivered-bad-news-to-a-stakeholder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-delivered-bad-news-to-a-stakeholder-sticky.svg" alt="Sticky Note: Tell me about a time you delivered bad news to a stakeholder." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2973,16 +1963,6 @@ I treat documentation as a product for the next person who needs to understand o
 ---
 
 ### Q79: How do you approach learning a new codebase?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-learning-a-new-codebase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-learning-a-new-codebase-handwritten.svg" alt="Handwritten: How do you approach learning a new codebase?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-learning-a-new-codebase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-learning-a-new-codebase-diagram.svg" alt="Diagram: How do you approach learning a new codebase?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-learning-a-new-codebase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-learning-a-new-codebase-sticky.svg" alt="Sticky Note: How do you approach learning a new codebase?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2999,16 +1979,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q80: Describe a time you made a trade-off between speed and quality.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-made-a-trade-off-between-speed-and-quality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-made-a-trade-off-between-speed-and-quality-handwritten.svg" alt="Handwritten: Describe a time you made a trade-off between speed and quality." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-made-a-trade-off-between-speed-and-quality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-made-a-trade-off-between-speed-and-quality-diagram.svg" alt="Diagram: Describe a time you made a trade-off between speed and quality." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-made-a-trade-off-between-speed-and-quality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-made-a-trade-off-between-speed-and-quality-sticky.svg" alt="Sticky Note: Describe a time you made a trade-off between speed and quality." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3024,16 +1994,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q81: Tell me about a time you dealt with an unreliable system.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-dealt-with-an-unreliable-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-dealt-with-an-unreliable-system-handwritten.svg" alt="Handwritten: Tell me about a time you dealt with an unreliable system." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-dealt-with-an-unreliable-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-dealt-with-an-unreliable-system-diagram.svg" alt="Diagram: Tell me about a time you dealt with an unreliable system." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-dealt-with-an-unreliable-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-dealt-with-an-unreliable-system-sticky.svg" alt="Sticky Note: Tell me about a time you dealt with an unreliable system." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3046,16 +2006,6 @@ I treat documentation as a product for the next person who needs to understand o
 ---
 
 ### Q82: How do you handle working with a difficult product manager?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-with-a-difficult-product-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-with-a-difficult-product-manager-handwritten.svg" alt="Handwritten: How do you handle working with a difficult product manager?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-with-a-difficult-product-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-with-a-difficult-product-manager-diagram.svg" alt="Diagram: How do you handle working with a difficult product manager?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-with-a-difficult-product-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-with-a-difficult-product-manager-sticky.svg" alt="Sticky Note: How do you handle working with a difficult product manager?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3071,16 +2021,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q83: Describe a time you worked on a boring task.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-boring-task-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-boring-task-handwritten.svg" alt="Handwritten: Describe a time you worked on a boring task." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-boring-task-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-boring-task-diagram.svg" alt="Diagram: Describe a time you worked on a boring task." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-boring-task-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-worked-on-a-boring-task-sticky.svg" alt="Sticky Note: Describe a time you worked on a boring task." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3094,16 +2034,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q84: Tell me about a time you advocated for a better engineering practice.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-better-engineering-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-better-engineering-practice-handwritten.svg" alt="Handwritten: Tell me about a time you advocated for a better engineering practice." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-better-engineering-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-better-engineering-practice-diagram.svg" alt="Diagram: Tell me about a time you advocated for a better engineering practice." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-better-engineering-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-advocated-for-a-better-engineering-practice-sticky.svg" alt="Sticky Note: Tell me about a time you advocated for a better engineering practice." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3116,16 +2046,6 @@ I treat documentation as a product for the next person who needs to understand o
 ---
 
 ### Q85: How do you approach making technical decisions?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-making-technical-decisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-making-technical-decisions-handwritten.svg" alt="Handwritten: How do you approach making technical decisions?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-making-technical-decisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-making-technical-decisions-diagram.svg" alt="Diagram: How do you approach making technical decisions?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-making-technical-decisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-making-technical-decisions-sticky.svg" alt="Sticky Note: How do you approach making technical decisions?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3143,16 +2063,6 @@ I treat documentation as a product for the next person who needs to understand o
 
 ### Q86: Tell me about a production incident that kept you up all night.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-production-incident-that-kept-you-up-all-night-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-production-incident-that-kept-you-up-all-night-handwritten.svg" alt="Handwritten: Tell me about a production incident that kept you up all night." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-production-incident-that-kept-you-up-all-night-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-production-incident-that-kept-you-up-all-night-diagram.svg" alt="Diagram: Tell me about a production incident that kept you up all night." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-production-incident-that-kept-you-up-all-night-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-production-incident-that-kept-you-up-all-night-sticky.svg" alt="Sticky Note: Tell me about a production incident that kept you up all night." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3165,16 +2075,6 @@ I treat documentation as a product for the next person who needs to understand o
 ---
 
 ### Q87: How do you approach giving feedback to a peer?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-giving-feedback-to-a-peer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-giving-feedback-to-a-peer-handwritten.svg" alt="Handwritten: How do you approach giving feedback to a peer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-giving-feedback-to-a-peer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-giving-feedback-to-a-peer-diagram.svg" alt="Diagram: How do you approach giving feedback to a peer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-giving-feedback-to-a-peer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-giving-feedback-to-a-peer-sticky.svg" alt="Sticky Note: How do you approach giving feedback to a peer?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3193,16 +2093,6 @@ Use Situation-Behavior-Impact (SBI) model:
 
 ### Q88: Describe a time you handled significant ambiguity.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-handled-significant-ambiguity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-handled-significant-ambiguity-handwritten.svg" alt="Handwritten: Describe a time you handled significant ambiguity." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-handled-significant-ambiguity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-handled-significant-ambiguity-diagram.svg" alt="Diagram: Describe a time you handled significant ambiguity." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-handled-significant-ambiguity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-handled-significant-ambiguity-sticky.svg" alt="Sticky Note: Describe a time you handled significant ambiguity." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3215,16 +2105,6 @@ Use Situation-Behavior-Impact (SBI) model:
 ---
 
 ### Q89: Tell me about a time you pushed back on a requirement.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-pushed-back-on-a-requirement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-pushed-back-on-a-requirement-handwritten.svg" alt="Handwritten: Tell me about a time you pushed back on a requirement." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-pushed-back-on-a-requirement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-pushed-back-on-a-requirement-diagram.svg" alt="Diagram: Tell me about a time you pushed back on a requirement." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-pushed-back-on-a-requirement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-pushed-back-on-a-requirement-sticky.svg" alt="Sticky Note: Tell me about a time you pushed back on a requirement." width="30%">
-</a>
 
 
 **Answer:**
@@ -3239,16 +2119,6 @@ Use Situation-Behavior-Impact (SBI) model:
 
 ### Q90: How do you handle feeling overwhelmed or burned out?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feeling-overwhelmed-or-burned-out-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feeling-overwhelmed-or-burned-out-handwritten.svg" alt="Handwritten: How do you handle feeling overwhelmed or burned out?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feeling-overwhelmed-or-burned-out-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feeling-overwhelmed-or-burned-out-diagram.svg" alt="Diagram: How do you handle feeling overwhelmed or burned out?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feeling-overwhelmed-or-burned-out-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-feeling-overwhelmed-or-burned-out-sticky.svg" alt="Sticky Note: How do you handle feeling overwhelmed or burned out?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3261,16 +2131,6 @@ Use Situation-Behavior-Impact (SBI) model:
 ---
 
 ### Q91: Tell me about a time you worked on something with high business impact.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-worked-on-something-with-high-business-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-worked-on-something-with-high-business-impact-handwritten.svg" alt="Handwritten: Tell me about a time you worked on something with high business impact." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-worked-on-something-with-high-business-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-worked-on-something-with-high-business-impact-diagram.svg" alt="Diagram: Tell me about a time you worked on something with high business impact." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-worked-on-something-with-high-business-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-worked-on-something-with-high-business-impact-sticky.svg" alt="Sticky Note: Tell me about a time you worked on something with high business impact." width="30%">
-</a>
 
 
 **Answer:**
@@ -3285,16 +2145,6 @@ Use Situation-Behavior-Impact (SBI) model:
 
 ### Q92: How do you approach decisions with incomplete information?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-decisions-with-incomplete-information-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-decisions-with-incomplete-information-handwritten.svg" alt="Handwritten: How do you approach decisions with incomplete information?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-decisions-with-incomplete-information-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-decisions-with-incomplete-information-diagram.svg" alt="Diagram: How do you approach decisions with incomplete information?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-decisions-with-incomplete-information-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-decisions-with-incomplete-information-sticky.svg" alt="Sticky Note: How do you approach decisions with incomplete information?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3307,16 +2157,6 @@ Use Situation-Behavior-Impact (SBI) model:
 ---
 
 ### Q93: Describe a time you disagreed with your manager.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-disagreed-with-your-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-disagreed-with-your-manager-handwritten.svg" alt="Handwritten: Describe a time you disagreed with your manager." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-disagreed-with-your-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-disagreed-with-your-manager-diagram.svg" alt="Diagram: Describe a time you disagreed with your manager." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-disagreed-with-your-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-disagreed-with-your-manager-sticky.svg" alt="Sticky Note: Describe a time you disagreed with your manager." width="30%">
-</a>
 
 
 **Answer:**
@@ -3331,16 +2171,6 @@ Use Situation-Behavior-Impact (SBI) model:
 
 ### Q94: Tell me about a time you learned from a failure.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-learned-from-a-failure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-learned-from-a-failure-handwritten.svg" alt="Handwritten: Tell me about a time you learned from a failure." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-learned-from-a-failure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-learned-from-a-failure-diagram.svg" alt="Diagram: Tell me about a time you learned from a failure." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-learned-from-a-failure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-learned-from-a-failure-sticky.svg" alt="Sticky Note: Tell me about a time you learned from a failure." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3353,16 +2183,6 @@ Use Situation-Behavior-Impact (SBI) model:
 ---
 
 ### Q95: How do you approach your own career development?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-your-own-career-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-your-own-career-development-handwritten.svg" alt="Handwritten: How do you approach your own career development?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-your-own-career-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-your-own-career-development-diagram.svg" alt="Diagram: How do you approach your own career development?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-your-own-career-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-your-own-career-development-sticky.svg" alt="Sticky Note: How do you approach your own career development?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3380,16 +2200,6 @@ Use Situation-Behavior-Impact (SBI) model:
 
 ### Q96: What motivates you to do your best work?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-handwritten.svg" alt="Handwritten: What motivates you to do your best work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-diagram.svg" alt="Diagram: What motivates you to do your best work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-motivates-you-to-do-your-best-work-sticky.svg" alt="Sticky Note: What motivates you to do your best work?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3403,16 +2213,6 @@ Three things:
 ---
 
 ### Q97: How do you answer "Tell me about yourself"?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-tell-me-about-yourself-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-tell-me-about-yourself-handwritten.svg" alt="Handwritten: How do you answer "Tell me about yourself"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-tell-me-about-yourself-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-tell-me-about-yourself-diagram.svg" alt="Diagram: How do you answer "Tell me about yourself"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-tell-me-about-yourself-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-tell-me-about-yourself-sticky.svg" alt="Sticky Note: How do you answer "Tell me about yourself"?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3428,16 +2228,6 @@ Keep it 60-90 seconds. End with a transition: "That is my background. I would lo
 
 ### Q98: What is your biggest weakness?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-handwritten.svg" alt="Handwritten: What is your biggest weakness?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-diagram.svg" alt="Diagram: What is your biggest weakness?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-biggest-weakness-sticky.svg" alt="Sticky Note: What is your biggest weakness?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3451,16 +2241,6 @@ Choose a real weakness you are actively improving.
 
 ### Q99: Where do you see yourself in 5 years?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-handwritten.svg" alt="Handwritten: Where do you see yourself in 5 years?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-diagram.svg" alt="Diagram: Where do you see yourself in 5 years?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/where-do-you-see-yourself-in-5-years-sticky.svg" alt="Sticky Note: Where do you see yourself in 5 years?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3471,16 +2251,6 @@ Choose a real weakness you are actively improving.
 ---
 
 ### Q100: What are your salary expectations?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-are-your-salary-expectations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-are-your-salary-expectations-handwritten.svg" alt="Handwritten: What are your salary expectations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-are-your-salary-expectations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-are-your-salary-expectations-diagram.svg" alt="Diagram: What are your salary expectations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-are-your-salary-expectations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-are-your-salary-expectations-sticky.svg" alt="Sticky Note: What are your salary expectations?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3494,16 +2264,6 @@ Choose a real weakness you are actively improving.
 ---
 
 ### Q101: Any questions for me?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/any-questions-for-me-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/any-questions-for-me-handwritten.svg" alt="Handwritten: Any questions for me?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/any-questions-for-me-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/any-questions-for-me-diagram.svg" alt="Diagram: Any questions for me?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/any-questions-for-me-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/any-questions-for-me-sticky.svg" alt="Sticky Note: Any questions for me?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3519,16 +2279,6 @@ Choose a real weakness you are actively improving.
 ---
 
 ### Q102: How do you handle a situation where you are given an impossible deadline?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-are-given-an-impossible-deadline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-are-given-an-impossible-deadline-handwritten.svg" alt="Handwritten: How do you handle a situation where you are given an impossible deadline?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-are-given-an-impossible-deadline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-are-given-an-impossible-deadline-diagram.svg" alt="Diagram: How do you handle a situation where you are given an impossible deadline?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-are-given-an-impossible-deadline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-are-given-an-impossible-deadline-sticky.svg" alt="Sticky Note: How do you handle a situation where you are given an impossible deadline?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3553,16 +2303,6 @@ Choose a real weakness you are actively improving.
 ---
 
 ### Q103: Tell me about a time you had to deal with a situation where you were not given clear requirements.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-not-given-clear-requirements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-not-given-clear-requirements-handwritten.svg" alt="Handwritten: Tell me about a time you had to deal with a situation where you were not given clear requirements." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-not-given-clear-requirements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-not-given-clear-requirements-diagram.svg" alt="Diagram: Tell me about a time you had to deal with a situation where you were not given clear requirements." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-not-given-clear-requirements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deal-with-a-situation-where-you-were-not-given-clear-requirements-sticky.svg" alt="Sticky Note: Tell me about a time you had to deal with a situation where you were not given clear requirements." width="30%">
-</a>
 
 
 **Answer:**
@@ -3589,16 +2329,6 @@ Choose a real weakness you are actively improving.
 ---
 
 ### Q104: How do you approach writing a postmortem after an incident?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-a-postmortem-after-an-incident-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-a-postmortem-after-an-incident-handwritten.svg" alt="Handwritten: How do you approach writing a postmortem after an incident?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-a-postmortem-after-an-incident-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-a-postmortem-after-an-incident-diagram.svg" alt="Diagram: How do you approach writing a postmortem after an incident?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-a-postmortem-after-an-incident-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-writing-a-postmortem-after-an-incident-sticky.svg" alt="Sticky Note: How do you approach writing a postmortem after an incident?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3638,16 +2368,6 @@ I follow the blameless postmortem format popularized by Google SRE:
 
 ### Q105: How do you answer "Why do you want to leave your current job?"
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-why-do-you-want-to-leave-your-current-job-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-why-do-you-want-to-leave-your-current-job-handwritten.svg" alt="Handwritten: How do you answer "Why do you want to leave your current job?"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-why-do-you-want-to-leave-your-current-job-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-why-do-you-want-to-leave-your-current-job-diagram.svg" alt="Diagram: How do you answer "Why do you want to leave your current job?"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-why-do-you-want-to-leave-your-current-job-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-why-do-you-want-to-leave-your-current-job-sticky.svg" alt="Sticky Note: How do you answer "Why do you want to leave your current job?"" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3676,16 +2396,6 @@ Frame it as moving toward something positive rather than running away from somet
 
 ### Q106: What do you do when you disagree with a code review comment?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-disagree-with-a-code-review-comment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-disagree-with-a-code-review-comment-handwritten.svg" alt="Handwritten: What do you do when you disagree with a code review comment?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-disagree-with-a-code-review-comment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-disagree-with-a-code-review-comment-diagram.svg" alt="Diagram: What do you do when you disagree with a code review comment?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-disagree-with-a-code-review-comment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-disagree-with-a-code-review-comment-sticky.svg" alt="Sticky Note: What do you do when you disagree with a code review comment?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3708,16 +2418,6 @@ Code review disagreements are normal and healthy. My approach:
 ---
 
 ### Q107: How do you handle working in a remote or distributed team?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-in-a-remote-or-distributed-team-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-in-a-remote-or-distributed-team-handwritten.svg" alt="Handwritten: How do you handle working in a remote or distributed team?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-in-a-remote-or-distributed-team-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-in-a-remote-or-distributed-team-diagram.svg" alt="Diagram: How do you handle working in a remote or distributed team?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-in-a-remote-or-distributed-team-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-working-in-a-remote-or-distributed-team-sticky.svg" alt="Sticky Note: How do you handle working in a remote or distributed team?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3744,16 +2444,6 @@ I have worked on distributed teams for 5 years. Here is what I have learned:
 ---
 
 ### Q108: How do you stay current with new technology?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-new-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-new-technology-handwritten.svg" alt="Handwritten: How do you stay current with new technology?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-new-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-new-technology-diagram.svg" alt="Diagram: How do you stay current with new technology?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-new-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-stay-current-with-new-technology-sticky.svg" alt="Sticky Note: How do you stay current with new technology?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3786,16 +2476,6 @@ I do not try to learn everything. I pick 1-2 topics per quarter to go deep on. T
 
 ### Q109: How do you answer a technical question you do not know in an interview?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-a-technical-question-you-do-not-know-in-an-interview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-a-technical-question-you-do-not-know-in-an-interview-handwritten.svg" alt="Handwritten: How do you answer a technical question you do not know in an interview?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-a-technical-question-you-do-not-know-in-an-interview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-a-technical-question-you-do-not-know-in-an-interview-diagram.svg" alt="Diagram: How do you answer a technical question you do not know in an interview?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-a-technical-question-you-do-not-know-in-an-interview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-a-technical-question-you-do-not-know-in-an-interview-sticky.svg" alt="Sticky Note: How do you answer a technical question you do not know in an interview?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3821,16 +2501,6 @@ This answer shows:
 ---
 
 ### Q110: What advice would you give to a junior developer starting their career?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-advice-would-you-give-to-a-junior-developer-starting-their-career-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-advice-would-you-give-to-a-junior-developer-starting-their-career-handwritten.svg" alt="Handwritten: What advice would you give to a junior developer starting their career?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-advice-would-you-give-to-a-junior-developer-starting-their-career-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-advice-would-you-give-to-a-junior-developer-starting-their-career-diagram.svg" alt="Diagram: What advice would you give to a junior developer starting their career?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-advice-would-you-give-to-a-junior-developer-starting-their-career-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-advice-would-you-give-to-a-junior-developer-starting-their-career-sticky.svg" alt="Sticky Note: What advice would you give to a junior developer starting their career?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3858,16 +2528,6 @@ The difference between a good engineer and a great engineer is often communicati
 
 ### Q111: Describe a time you had to deal with a situation where a team member was not pulling their weight.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-situation-where-a-team-member-was-not-pulling-their-weight-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-situation-where-a-team-member-was-not-pulling-their-weight-handwritten.svg" alt="Handwritten: Describe a time you had to deal with a situation where a team member was not pulling their weight." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-situation-where-a-team-member-was-not-pulling-their-weight-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-situation-where-a-team-member-was-not-pulling-their-weight-diagram.svg" alt="Diagram: Describe a time you had to deal with a situation where a team member was not pulling their weight." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-situation-where-a-team-member-was-not-pulling-their-weight-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-deal-with-a-situation-where-a-team-member-was-not-pulling-their-weight-sticky.svg" alt="Sticky Note: Describe a time you had to deal with a situation where a team member was not pulling their weight." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -3884,16 +2544,6 @@ The difference between a good engineer and a great engineer is often communicati
 ---
 
 ### Q112: Tell me about a time you had to refactor a large, complex system.
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-refactor-a-large-complex-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-refactor-a-large-complex-system-handwritten.svg" alt="Handwritten: Tell me about a time you had to refactor a large, complex system." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-refactor-a-large-complex-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-refactor-a-large-complex-system-diagram.svg" alt="Diagram: Tell me about a time you had to refactor a large, complex system." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-refactor-a-large-complex-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-refactor-a-large-complex-system-sticky.svg" alt="Sticky Note: Tell me about a time you had to refactor a large, complex system." width="30%">
-</a>
 
 
 **Answer:**
@@ -3919,16 +2569,6 @@ The difference between a good engineer and a great engineer is often communicati
 ---
 
 ### Q113: What is the most important quality you look for when hiring?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-the-most-important-quality-you-look-for-when-hiring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-the-most-important-quality-you-look-for-when-hiring-handwritten.svg" alt="Handwritten: What is the most important quality you look for when hiring?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-the-most-important-quality-you-look-for-when-hiring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-the-most-important-quality-you-look-for-when-hiring-diagram.svg" alt="Diagram: What is the most important quality you look for when hiring?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-the-most-important-quality-you-look-for-when-hiring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-the-most-important-quality-you-look-for-when-hiring-sticky.svg" alt="Sticky Note: What is the most important quality you look for when hiring?" width="30%">
-</a>
 
 
 **Answer:**
@@ -3962,16 +2602,6 @@ The most important quality I look for is **learning ability** — the capacity t
 
 ### Q114: How do you handle a situation where you have too many meetings and not enough time to code?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-have-too-many-meetings-and-not-enough-time-to-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-have-too-many-meetings-and-not-enough-time-to-code-handwritten.svg" alt="Handwritten: How do you handle a situation where you have too many meetings and not enough time to code?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-have-too-many-meetings-and-not-enough-time-to-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-have-too-many-meetings-and-not-enough-time-to-code-diagram.svg" alt="Diagram: How do you handle a situation where you have too many meetings and not enough time to code?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-have-too-many-meetings-and-not-enough-time-to-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-situation-where-you-have-too-many-meetings-and-not-enough-time-to-code-sticky.svg" alt="Sticky Note: How do you handle a situation where you have too many meetings and not enough time to code?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4002,16 +2632,6 @@ If there is a meeting where I am not essential, I ask a team member to attend an
 
 ### Q115: What is your approach to testing?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-approach-to-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-approach-to-testing-handwritten.svg" alt="Handwritten: What is your approach to testing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-approach-to-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-approach-to-testing-diagram.svg" alt="Diagram: What is your approach to testing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-approach-to-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-approach-to-testing-sticky.svg" alt="Sticky Note: What is your approach to testing?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4037,16 +2657,6 @@ I follow the Testing Trophy model (coined by Kent C. Dodds) rather than the trad
 ---
 
 ### Q116: How do you approach on-call rotations?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-on-call-rotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-on-call-rotations-handwritten.svg" alt="Handwritten: How do you approach on-call rotations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-on-call-rotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-on-call-rotations-diagram.svg" alt="Diagram: How do you approach on-call rotations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-on-call-rotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-on-call-rotations-sticky.svg" alt="Sticky Note: How do you approach on-call rotations?" width="30%">
-</a>
 
 
 **Answer:**
@@ -4076,16 +2686,6 @@ I treat on-call as a product — the product is reliability. Here is my approach
 
 ### Q117: Tell me about a time you had to deliver bad news to a stakeholder.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-stakeholder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-stakeholder-handwritten.svg" alt="Handwritten: Tell me about a time you had to deliver bad news to a stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-stakeholder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-stakeholder-diagram.svg" alt="Diagram: Tell me about a time you had to deliver bad news to a stakeholder." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-stakeholder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-time-you-had-to-deliver-bad-news-to-a-stakeholder-sticky.svg" alt="Sticky Note: Tell me about a time you had to deliver bad news to a stakeholder." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4102,16 +2702,6 @@ I treat on-call as a product — the product is reliability. Here is my approach
 ---
 
 ### Q118: How do you handle technical debt?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-technical-debt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-technical-debt-handwritten.svg" alt="Handwritten: How do you handle technical debt?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-technical-debt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-technical-debt-diagram.svg" alt="Diagram: How do you handle technical debt?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-technical-debt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-technical-debt-sticky.svg" alt="Sticky Note: How do you handle technical debt?" width="30%">
-</a>
 
 
 **Answer:**
@@ -4146,16 +2736,6 @@ Technical debt is inevitable. The key is to manage it strategically, not elimina
 
 ### Q119: What do you do in the first 30 days at a new job?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-in-the-first-30-days-at-a-new-job-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-in-the-first-30-days-at-a-new-job-handwritten.svg" alt="Handwritten: What do you do in the first 30 days at a new job?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-in-the-first-30-days-at-a-new-job-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-in-the-first-30-days-at-a-new-job-diagram.svg" alt="Diagram: What do you do in the first 30 days at a new job?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-in-the-first-30-days-at-a-new-job-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-in-the-first-30-days-at-a-new-job-sticky.svg" alt="Sticky Note: What do you do in the first 30 days at a new job?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4186,16 +2766,6 @@ My first 30 days focus on learning, not contributing. I resist the urge to "add 
 ---
 
 ### Q120: How do you handle a production incident as the on-call engineer?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-production-incident-as-the-on-call-engineer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-production-incident-as-the-on-call-engineer-handwritten.svg" alt="Handwritten: How do you handle a production incident as the on-call engineer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-production-incident-as-the-on-call-engineer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-production-incident-as-the-on-call-engineer-diagram.svg" alt="Diagram: How do you handle a production incident as the on-call engineer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-production-incident-as-the-on-call-engineer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-a-production-incident-as-the-on-call-engineer-sticky.svg" alt="Sticky Note: How do you handle a production incident as the on-call engineer?" width="30%">
-</a>
 
 
 **Answer:**
@@ -4234,16 +2804,6 @@ For a P0 incident, the goal is to stop user impact, not find the root cause:
 
 ### Q121: How do you approach mentoring junior engineers?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-mentoring-junior-engineers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-mentoring-junior-engineers-handwritten.svg" alt="Handwritten: How do you approach mentoring junior engineers?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-mentoring-junior-engineers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-mentoring-junior-engineers-diagram.svg" alt="Diagram: How do you approach mentoring junior engineers?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-mentoring-junior-engineers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-approach-mentoring-junior-engineers-sticky.svg" alt="Sticky Note: How do you approach mentoring junior engineers?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4273,16 +2833,6 @@ They own features independently. I am available for questions but do not proacti
 
 ### Q122: How do you decide when to push back on a feature request versus when to just implement it?
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-decide-when-to-push-back-on-a-feature-request-versus-when-to-just-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-decide-when-to-push-back-on-a-feature-request-versus-when-to-just-implement-it-handwritten.svg" alt="Handwritten: How do you decide when to push back on a feature request versus when to just implement it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-decide-when-to-push-back-on-a-feature-request-versus-when-to-just-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-decide-when-to-push-back-on-a-feature-request-versus-when-to-just-implement-it-diagram.svg" alt="Diagram: How do you decide when to push back on a feature request versus when to just implement it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-decide-when-to-push-back-on-a-feature-request-versus-when-to-just-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-decide-when-to-push-back-on-a-feature-request-versus-when-to-just-implement-it-sticky.svg" alt="Sticky Note: How do you decide when to push back on a feature request versus when to just implement it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4308,16 +2858,6 @@ If the requirement is clear and not harmful but just not very important, I consi
 
 ### Q123: Describe a time you had to learn a new technology quickly.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-handwritten.svg" alt="Handwritten: Describe a time you had to learn a new technology quickly." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-diagram.svg" alt="Diagram: Describe a time you had to learn a new technology quickly." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/describe-a-time-you-had-to-learn-a-new-technology-quickly-sticky.svg" alt="Sticky Note: Describe a time you had to learn a new technology quickly." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4339,16 +2879,6 @@ If the requirement is clear and not harmful but just not very important, I consi
 ---
 
 ### Q124: How do you answer "What are your weaknesses?"
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-what-are-your-weaknesses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-what-are-your-weaknesses-handwritten.svg" alt="Handwritten: How do you answer "What are your weaknesses?"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-what-are-your-weaknesses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-what-are-your-weaknesses-diagram.svg" alt="Diagram: How do you answer "What are your weaknesses?"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-what-are-your-weaknesses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-answer-what-are-your-weaknesses-sticky.svg" alt="Sticky Note: How do you answer "What are your weaknesses?"" width="30%">
-</a>
 
 
 **Answer:**
@@ -4374,16 +2904,6 @@ The key is to give a real weakness that you are actively working on — not a hu
 ---
 
 ### Q125: What do you do when you are stuck on a difficult problem?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-are-stuck-on-a-difficult-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-are-stuck-on-a-difficult-problem-handwritten.svg" alt="Handwritten: What do you do when you are stuck on a difficult problem?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-are-stuck-on-a-difficult-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-are-stuck-on-a-difficult-problem-diagram.svg" alt="Diagram: What do you do when you are stuck on a difficult problem?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-are-stuck-on-a-difficult-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-do-you-do-when-you-are-stuck-on-a-difficult-problem-sticky.svg" alt="Sticky Note: What do you do when you are stuck on a difficult problem?" width="30%">
-</a>
 
 
 **Answer:**
@@ -4414,16 +2934,6 @@ If nothing else works, I sleep on it. The next morning, the solution is often ob
 
 ### Q126: Tell me about a project you are most proud of.
 
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-project-you-are-most-proud-of-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-project-you-are-most-proud-of-handwritten.svg" alt="Handwritten: Tell me about a project you are most proud of." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-project-you-are-most-proud-of-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-project-you-are-most-proud-of-diagram.svg" alt="Diagram: Tell me about a project you are most proud of." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-project-you-are-most-proud-of-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/tell-me-about-a-project-you-are-most-proud-of-sticky.svg" alt="Sticky Note: Tell me about a project you are most proud of." width="30%">
-</a>
-
 
 **Answer:**
 
@@ -4446,16 +2956,6 @@ If nothing else works, I sleep on it. The next morning, the solution is often ob
 ---
 
 ### Q127: What is your experience with agile methodologies?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-experience-with-agile-methodologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-experience-with-agile-methodologies-handwritten.svg" alt="Handwritten: What is your experience with agile methodologies?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-experience-with-agile-methodologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-experience-with-agile-methodologies-diagram.svg" alt="Diagram: What is your experience with agile methodologies?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-experience-with-agile-methodologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/what-is-your-experience-with-agile-methodologies-sticky.svg" alt="Sticky Note: What is your experience with agile methodologies?" width="30%">
-</a>
 
 
 **Answer:**
@@ -4481,16 +2981,6 @@ I have worked in Scrum, Kanban, and hybrid models across 5 teams. Here is what I
 ---
 
 ### Q128: How do you handle the tension between shipping quickly and writing quality code?
-
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-the-tension-between-shipping-quickly-and-writing-quality-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-the-tension-between-shipping-quickly-and-writing-quality-code-handwritten.svg" alt="Handwritten: How do you handle the tension between shipping quickly and writing quality code?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-the-tension-between-shipping-quickly-and-writing-quality-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-the-tension-between-shipping-quickly-and-writing-quality-code-diagram.svg" alt="Diagram: How do you handle the tension between shipping quickly and writing quality code?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-the-tension-between-shipping-quickly-and-writing-quality-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/66-interview-behavioral/how-do-you-handle-the-tension-between-shipping-quickly-and-writing-quality-code-sticky.svg" alt="Sticky Note: How do you handle the tension between shipping quickly and writing quality code?" width="30%">
-</a>
 
 
 **Answer:**

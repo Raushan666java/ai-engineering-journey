@@ -93,16 +93,6 @@ flowchart LR
 
 ### Dynamic Inventories
 
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/dynamic-inventories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/dynamic-inventories-handwritten.svg" alt="Handwritten: Dynamic Inventories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/dynamic-inventories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/dynamic-inventories-diagram.svg" alt="Diagram: Dynamic Inventories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/dynamic-inventories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/dynamic-inventories-sticky.svg" alt="Sticky Note: Dynamic Inventories" width="30%">
-</a>
-
 
 Static inventory files don't scale. Dynamic inventories query cloud APIs:
 
@@ -140,16 +130,6 @@ compose:
 
 ### Ansible Tower / AWX
 
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-tower-awx-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-tower-awx-handwritten.svg" alt="Handwritten: Ansible Tower / AWX" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-tower-awx-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-tower-awx-diagram.svg" alt="Diagram: Ansible Tower / AWX" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-tower-awx-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-tower-awx-sticky.svg" alt="Sticky Note: Ansible Tower / AWX" width="30%">
-</a>
-
 
 Ansible Tower (Red Hat) / AWX (upstream open-source) provides:
 
@@ -178,16 +158,6 @@ Ansible Tower (Red Hat) / AWX (upstream open-source) provides:
 ```
 
 ### Compliance Automation
-
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/compliance-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/compliance-automation-handwritten.svg" alt="Handwritten: Compliance Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/compliance-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/compliance-automation-diagram.svg" alt="Diagram: Compliance Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/compliance-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/compliance-automation-sticky.svg" alt="Sticky Note: Compliance Automation" width="30%">
-</a>
 
 
 Automated security hardening and compliance verification:
@@ -226,16 +196,6 @@ Automated security hardening and compliance verification:
 ```
 
 ### Ansible and Container Configuration
-
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-and-container-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-and-container-configuration-handwritten.svg" alt="Handwritten: Ansible and Container Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-and-container-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-and-container-configuration-diagram.svg" alt="Diagram: Ansible and Container Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-and-container-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-and-container-configuration-sticky.svg" alt="Sticky Note: Ansible and Container Configuration" width="30%">
-</a>
 
 
 **Building Docker images with Ansible:**
@@ -308,16 +268,6 @@ Automated security hardening and compliance verification:
 
 ### Secrets Integration
 
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/secrets-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/secrets-integration-handwritten.svg" alt="Handwritten: Secrets Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/secrets-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/secrets-integration-diagram.svg" alt="Diagram: Secrets Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/secrets-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/secrets-integration-sticky.svg" alt="Sticky Note: Secrets Integration" width="30%">
-</a>
-
 
 Inject secrets at runtime without storing them in playbooks:
 
@@ -340,16 +290,6 @@ Inject secrets at runtime without storing them in playbooks:
 
 ### Ansible Pull Mode
 
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-pull-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-pull-mode-handwritten.svg" alt="Handwritten: Ansible Pull Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-pull-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-pull-mode-diagram.svg" alt="Diagram: Ansible Pull Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-pull-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-pull-mode-sticky.svg" alt="Sticky Note: Ansible Pull Mode" width="30%">
-</a>
-
 
 In pull mode, nodes fetch configuration from Git and apply locally:
 
@@ -365,16 +305,6 @@ In pull mode, nodes fetch configuration from Git and apply locally:
 - Ephemeral instances that self-configure on boot
 
 ### Ansible Molecule for Testing
-
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-molecule-for-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-molecule-for-testing-handwritten.svg" alt="Handwritten: Ansible Molecule for Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-molecule-for-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-molecule-for-testing-diagram.svg" alt="Diagram: Ansible Molecule for Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-molecule-for-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-molecule-for-testing-sticky.svg" alt="Sticky Note: Ansible Molecule for Testing" width="30%">
-</a>
 
 
 Molecule provides a framework for testing Ansible roles:
@@ -428,16 +358,6 @@ verifier:
 
 ### Ansible Content Collections
 
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-content-collections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-content-collections-handwritten.svg" alt="Handwritten: Ansible Content Collections" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-content-collections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-content-collections-diagram.svg" alt="Diagram: Ansible Content Collections" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-content-collections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-content-collections-sticky.svg" alt="Sticky Note: Ansible Content Collections" width="30%">
-</a>
-
 
 Collections package Ansible content (roles, modules, plugins, playbooks) in distributable bundles:
 
@@ -476,16 +396,6 @@ collections:
 
 ### Delegation and Local Actions
 
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/delegation-and-local-actions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/delegation-and-local-actions-handwritten.svg" alt="Handwritten: Delegation and Local Actions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/delegation-and-local-actions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/delegation-and-local-actions-diagram.svg" alt="Diagram: Delegation and Local Actions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/delegation-and-local-actions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/delegation-and-local-actions-sticky.svg" alt="Sticky Note: Delegation and Local Actions" width="30%">
-</a>
-
 
 Delegate tasks to specific hosts:
 
@@ -512,16 +422,6 @@ Delegate tasks to specific hosts:
 ```
 
 ### Ansible in CI/CD
-
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-in-ci-cd-handwritten.svg" alt="Handwritten: Ansible in CI/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-in-ci-cd-diagram.svg" alt="Diagram: Ansible in CI/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/10-configuration-mgmt/ansible-in-ci-cd-sticky.svg" alt="Sticky Note: Ansible in CI/CD" width="30%">
-</a>
 
 
 ```yaml

@@ -70,16 +70,6 @@ flowchart LR
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-
 What is the smallest 4-digit number divisible by 12, 15, and 20?
 
 (A) 1020  
@@ -109,16 +99,6 @@ console.log(num); // 1020
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-
 If 15% of a number is 45, what is 25% of the same number?
 
 (A) 60  
@@ -147,16 +127,6 @@ console.log(findPercent(15, 45, 25)); // 75
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Verbal Ability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-verbal-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-verbal-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-verbal-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Verbal Ability" width="30%">
-</a>
-
 Choose the correct preposition: "He is adept ______ solving complex problems."
 
 (A) at  
@@ -176,16 +146,6 @@ The correct phrase is "adept at" doing something.
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Logical Reasoning
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-logical-reasoning-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-logical-reasoning-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-logical-reasoning-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Logical Reasoning" width="30%">
-</a>
-
 Which figure is the odd one out? (Given: Circle, Square, Triangle, Rectangle with various properties)
 
 (A) Circle  
@@ -204,16 +164,6 @@ Circle has no straight edges, while square, triangle, and rectangle all have str
 </details>
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Numerical Ability
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-numerical-ability-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
 
 If x + y = 12 and xy = 35, what is the value of xÃ‚Â² + yÃ‚Â²?
 
@@ -240,16 +190,6 @@ console.log(sumSquares(12, 35)); // 74
 </details>
 
 ### Q6 [2 Marks] Ã¢â‚¬â€� Numerical Ability
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
 
 A man can row 6 km/h in still water. If the river flows at 2 km/h, how long will it take to row 8 km upstream and back?
 
@@ -280,16 +220,6 @@ console.log(boatTime(6, 2, 8)); // 3
 </details>
 
 ### Q7 [2 Marks] Ã¢â‚¬â€� Data Interpretation
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-interpretation-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-interpretation-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-interpretation-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Data Interpretation" width="30%">
-</a>
 
 A shopkeeper mixes two types of rice costing Ã¢â€šÂ¹40/kg and Ã¢â€šÂ¹60/kg in ratio 3:2. At what price per kg should he sell to gain 10%?
 
@@ -324,16 +254,6 @@ So with prices Ã¢â€šÂ¹45 and Ã¢â€šÂ¹55 in ratio 1:1, SP = Ã¢â
 </details>
 
 ### Q8 [2 Marks] Ã¢â‚¬â€� Logical Reasoning
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-logical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-logical-reasoning-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-logical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-logical-reasoning-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-logical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-logical-reasoning-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Logical Reasoning" width="30%">
-</a>
 
 In a certain code, COMPUTER is written as FMPSVCUS. How is KEYBOARD written?
 
@@ -468,16 +388,6 @@ OK I give up trying to reverse-engineer. I'll just provide the answer as LZFCPBS
 
 ### Q9 [2 Marks] Ã¢â‚¬â€� Numerical Ability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-numerical-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Numerical Ability" width="30%">
-</a>
-
 Two pipes A and B can fill a tank in 20 min and 30 min respectively. A third pipe C can empty it in 15 min. All three are opened simultaneously. How long to fill the tank?
 
 (A) 30 min  
@@ -513,16 +423,6 @@ console.log(fillTime(20, 30, 15)); // 60
 
 ### Q10 [2 Marks] Ã¢â‚¬â€� Verbal Ability
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-verbal-ability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-verbal-ability-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-verbal-ability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-verbal-ability-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-verbal-ability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-verbal-ability-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Verbal Ability" width="30%">
-</a>
-
 Identify the figure of speech: "The wind whispered through the trees."
 
 (A) Simile  
@@ -545,16 +445,6 @@ Personification gives human qualities to non-human things. "Whispered" is a huma
 ## Section B: Technical (85 marks)
 
 ### Q1 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
 
 What is the value of iÃ¢Â�Â± (where i = Ã¢Ë†Å¡-1)?
 
@@ -579,16 +469,6 @@ console.log(value); // ~0.2079
 </details>
 
 ### Q2 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
 
 How many edges does a graph with 6 vertices, each of degree 3, have?
 
@@ -616,16 +496,6 @@ console.log(edgesFromDegrees(6, 3)); // 9
 
 ### Q3 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-
 Which of the following has the slowest worst-case time complexity for sorting?
 
 (A) Quick Sort  
@@ -644,16 +514,6 @@ Bubble Sort is O(nÃ‚Â²). Quick Sort worst case is O(nÃ‚Â²) too, but av
 </details>
 
 ### Q4 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
 
 A mutex is a special case of a semaphore initialized to:
 
@@ -674,16 +534,6 @@ A mutex (binary semaphore) is a semaphore initialized to 1, allowing only one pr
 
 ### Q5 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-
 Which of the following is a connectionless transport layer protocol?
 
 (A) TCP  
@@ -702,16 +552,6 @@ UDP (User Datagram Protocol) is connectionless at the transport layer. TCP is co
 </details>
 
 ### Q6 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
 
 Which of the following is the correct SQL syntax to create a foreign key?
 
@@ -732,16 +572,6 @@ Foreign keys can be added using: ALTER TABLE child ADD FOREIGN KEY (col) REFEREN
 
 ### Q7 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-
 Which of the following is NOT a valid operation on a DFA?
 
 (A) Union  
@@ -760,16 +590,6 @@ Regular languages (accepted by DFAs) are closed under union, concatenation, and 
 </details>
 
 ### Q8 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
 
 Which register holds the currently executing instruction?
 
@@ -790,16 +610,6 @@ The Instruction Register (IR) holds the currently executing instruction fetched 
 
 ### Q9 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-
 Which phase of a compiler detects syntax errors?
 
 (A) Lexical Analysis  
@@ -819,16 +629,6 @@ The parser (syntax analyzer) checks the token stream against grammar rules and r
 
 ### Q10 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-easy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-easy-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-easy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-easy-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-easy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-easy-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Easy" width="30%">
-</a>
-
 How many input lines does a 16-to-1 multiplexer have?
 
 (A) 2  
@@ -847,16 +647,6 @@ A 16-to-1 multiplexer has 16 input lines, 4 select lines, and 1 output.
 </details>
 
 ### Q11 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 The worst-case time complexity of searching in a binary search tree of n nodes is:
 
@@ -893,16 +683,6 @@ console.log(skewed.search(3)); // O(n)
 
 ### Q12 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-operating-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 The process of swapping a process from main memory to disk is called:
 
 (A) Swapping in  
@@ -921,16 +701,6 @@ Swapping out moves a process from main memory to disk. Swapping in moves it back
 </details>
 
 ### Q13 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-networks-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 Which of the following is a private IP address?
 
@@ -955,16 +725,6 @@ In GATE, 10.0.0.0 is often identified as the classic private IP (Class A private
 
 ### Q14 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-database-management-systems-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 Which normal form eliminates transitive dependencies?
 
 (A) 1NF  
@@ -983,16 +743,6 @@ Which normal form eliminates transitive dependencies?
 </details>
 
 ### Q15 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 The language {ww | w Ã¢Ë†Ë† {a,b}*} is:
 
@@ -1013,16 +763,6 @@ The language {ww | w Ã¢Ë†Ë† {a,b}*} is:
 
 ### Q16 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-compiler-design-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 Which of the following is an example of a synthesized attribute in an SDT?
 
 (A) Type information propagated from parent to child  
@@ -1041,16 +781,6 @@ Synthesized attributes are computed upward (from children to parent). Inherited 
 </details>
 
 ### Q17 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-digital-logic-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 The Boolean function F = A'B + AB' is equivalent to:
 
@@ -1079,16 +809,6 @@ console.log(xor(0, 0), xor(0, 1), xor(1, 0), xor(1, 1)); // 0, 1, 1, 0
 
 ### Q18 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 Which technique resolves control hazards in a pipelined processor?
 
 (A) Forwarding  
@@ -1108,16 +828,6 @@ Control hazards arise from branch instructions. Branch prediction (static or dyn
 
 ### Q19 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 Which of the following is a self-balancing binary search tree?
 
 (A) Binary Trie  
@@ -1136,16 +846,6 @@ AVL Tree is a self-balancing BST where the height difference between left and ri
 </details>
 
 ### Q20 [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-medium-diagram.svg" alt="Diagram: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/1-mark-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [1 Mark] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 If dy/dx = 2x and y(0) = 3, what is y(1)?
 
@@ -1175,16 +875,6 @@ console.log(solveODE(1)); // 4
 
 ### Q21 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 The eigen values of a 3Ãƒâ€”3 identity matrix are:
 
 (A) 1, 0, 0  
@@ -1203,16 +893,6 @@ The identity matrix IÃ¢â€šÆ’ has eigenvalue 1 with algebraic multiplici
 </details>
 
 ### Q22 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 The recurrence T(n) = 9T(n/3) + nÃ‚Â² has time complexity:
 
@@ -1244,16 +924,6 @@ console.log(masterTheorem(9, 3, 'n^2')); // ÃŽËœ(nÃ‚Â² log n)
 
 ### Q23 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 Which of the following RAID levels provides mirroring?
 
 (A) RAID 0  
@@ -1272,16 +942,6 @@ RAID 1 uses mirroring (data duplicated on multiple drives). RAID 0 uses striping
 </details>
 
 ### Q24 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 Consider the SQL query:
 ```sql
@@ -1309,16 +969,6 @@ HAVING COUNT(*) > 2 filters groups to those with count greater than 2, i.e., at 
 
 ### Q25 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 A network with CSMA/CD has a propagation delay of 12.5 ÃŽÂ¼s. The minimum frame size for a 100 Mbps network is:
 
 (A) 1250 bits  
@@ -1344,16 +994,6 @@ console.log(minFrameSize(12.5, 100)); // 2500 bits
 </details>
 
 ### Q26 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 A priority queue is implemented using a max-heap. Insertion of 10 elements followed by 5 deletions takes how much time?
 
@@ -1410,16 +1050,6 @@ class MaxHeap {
 
 ### Q27 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which of the following is NOT a necessary condition for deadlock?
 
 (A) Mutual Exclusion  
@@ -1439,16 +1069,6 @@ The four necessary conditions for deadlock are: Mutual Exclusion, Hold and Wait,
 
 ### Q28 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 The set of all tokens recognized by a lexical analyzer forms:
 
 (A) A context-free language  
@@ -1467,16 +1087,6 @@ Tokens are defined using regular expressions, which generate regular languages. 
 </details>
 
 ### Q29 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
 
 The number of bits in the mantissa of IEEE 754 single-precision floating-point format is:
 
@@ -1504,16 +1114,6 @@ console.log(ieeeSinglePrecision());
 
 ### Q30 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-medium-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-medium-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-medium-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-medium-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-medium-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-medium-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Medium" width="30%">
-</a>
-
 Which of the following problems is undecidable?
 
 (A) Membership problem for regular languages  
@@ -1533,16 +1133,6 @@ CFG equivalence (whether two CFGs generate the same language) is undecidable. Me
 
 ### Q31 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which anomaly does 2NF prevent?
 
 (A) Transitive dependency  
@@ -1561,16 +1151,6 @@ Which anomaly does 2NF prevent?
 </details>
 
 ### Q32 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 The time complexity of Floyd-Warshall algorithm for finding all-pairs shortest paths in a graph with V vertices is:
 
@@ -1604,16 +1184,6 @@ function floydWarshall(graph: number[][]): number[][] {
 
 ### Q33 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 In the TCP/IP protocol suite, which protocol handles error reporting?
 
 (A) TCP  
@@ -1632,16 +1202,6 @@ ICMP (Internet Control Message Protocol) handles error reporting (destination un
 </details>
 
 ### Q34 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 A counting semaphore S is initialized to 5. 7 wait() and 4 signal() operations are performed. The final value of S is:
 
@@ -1670,16 +1230,6 @@ console.log(semaphoreOps(5, 7, 4)); // 2
 
 ### Q35 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 The performance improvement when 80% of a program is parallelized with 4 processors (using Amdahl's Law) is:
 
 (A) 2.0x  
@@ -1706,16 +1256,6 @@ console.log(amdahl(0.8, 4)); // 2.5
 </details>
 
 ### Q36 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 The number of onto (surjective) functions from a set of 5 elements to a set of 3 elements is:
 
@@ -1752,16 +1292,6 @@ console.log(ontoFunctions(5, 3)); // 150
 
 ### Q37 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 The number of spanning trees in a complete graph KÃ¢â€šâ€ž is:
 
 (A) 4  
@@ -1789,16 +1319,6 @@ console.log(spanningTreesK(4)); // 16
 
 ### Q38 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 A Turing machine that writes a symbol and moves left in every transition is called:
 
 (A) A write-only Turing machine  
@@ -1818,16 +1338,6 @@ If a TM only moves left, it can never read any symbol to the right of the starti
 
 ### Q39 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which of the following schedules is allowed under Strict 2PL?
 
 (A) T1 reads, T2 writes same item, T1 commits, T2 commits  
@@ -1846,16 +1356,6 @@ Strict 2PL releases all locks after commit/abort. Reads don't conflict, so (D) i
 </details>
 
 ### Q40 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 Which of the following is correct for subnet mask 255.255.255.240?
 
@@ -1886,16 +1386,6 @@ console.log(subnetInfo(28, 24)); // { subnets: 16, hostsPerSubnet: 14 }
 </details>
 
 ### Q41 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 Consider the following C-like code. What does it compute?
 
@@ -1931,16 +1421,6 @@ console.log(fib(10)); // 55
 
 ### Q42 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 For a disk with 200 cylinders (0-199), the current head is at cylinder 50. Requests: 95, 180, 34, 119, 11, 123, 62, 64. Using SSTF scheduling, the next request served is:
 
 (A) 34  
@@ -1974,16 +1454,6 @@ console.log(sstfNext(50, [95, 180, 34, 119, 11, 123, 62, 64])); // 62
 
 ### Q43 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 The number of address lines required for a 16 KB memory chip is:
 
 (A) 10  
@@ -2010,16 +1480,6 @@ console.log(addressLines(16)); // 14
 
 ### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which of the following is NOT a form of intermediate code?
 
 (A) Three Address Code  
@@ -2036,16 +1496,6 @@ Actually, all of these are forms of intermediate representation (IR). Three addr
 </details>
 
 ### Q44 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-compiler-design-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Compiler Design | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 Which of the following optimization techniques is most effective for loop-invariant expressions?
 
@@ -2065,16 +1515,6 @@ Code motion (loop-invariant code motion) moves computations that produce the sam
 </details>
 
 ### Q45 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 What is the output of the following code?
 
@@ -2101,16 +1541,6 @@ p points to a[0]. p+3 points to a[3] = 4. *(p+3) = 4.
 
 ### Q46 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which of the following is NOT a CFL?
 
 (A) {aÃ¢Â�Â¿bÃ¢Â�Â¿ | n Ã¢â€°Â¥ 0}  
@@ -2129,16 +1559,6 @@ Which of the following is NOT a CFL?
 </details>
 
 ### Q47 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-engineering-mathematics-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Engineering Mathematics | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 The number of ways to arrange the letters of "GATE" such that vowels are together is:
 
@@ -2173,16 +1593,6 @@ console.log(vowelsTogether("GATE")); // 12
 
 ### Q48 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which data structure is used to implement recursion?
 
 (A) Queue  
@@ -2201,16 +1611,6 @@ Recursion uses a call stack to store activation records (return addresses, local
 </details>
 
 ### Q49 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-operating-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Operating Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 In UNIX, which system call creates a new process?
 
@@ -2231,16 +1631,6 @@ fork() creates a new process (child) as a copy of the parent. exec() replaces th
 
 ### Q50 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-database-management-systems-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Database Management Systems | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which type of join returns only rows with matching values in both tables?
 
 (A) LEFT JOIN  
@@ -2259,16 +1649,6 @@ INNER JOIN returns only rows where the join condition is satisfied in both table
 </details>
 
 ### Q51 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-networks-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Networks | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 The port number used by HTTP is:
 
@@ -2289,16 +1669,6 @@ HTTP uses port 80. HTTPS uses 443. FTP uses 21. SMTP uses 25.
 
 ### Q52 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-computer-organization-architecture-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Computer Organization & Architecture | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 Which cache mapping technique allows any block to be stored in any line?
 
 (A) Direct Mapped  
@@ -2317,16 +1687,6 @@ Fully associative cache allows any memory block to be stored in any cache line. 
 </details>
 
 ### Q53 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-theory-of-computation-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Theory of Computation | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 The transition function of a DFA is:
 
@@ -2347,16 +1707,6 @@ For a DFA, the transition function maps (current state, input symbol) to exactly
 
 ### Q54 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-data-structures-algorithms-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Data Structures & Algorithms | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-
 The worst-case time complexity of inserting n elements into an initially empty binary search tree is:
 
 (A) ÃŽËœ(n)  
@@ -2375,16 +1725,6 @@ If elements are inserted in sorted (or reverse sorted) order, the BST becomes sk
 </details>
 
 ### Q55 [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-digital-logic-hard-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-digital-logic-hard-handwritten.svg" alt="Handwritten: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-digital-logic-hard-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-digital-logic-hard-diagram.svg" alt="Diagram: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-digital-logic-hard-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/2-marks-digital-logic-hard-sticky.svg" alt="Sticky Note: [2 Marks] Ã¢â‚¬â€� Ã°Å¸â€œâ€š Digital Logic | Ã°Å¸Â�Â·Ã¯Â¸Â� Hard" width="30%">
-</a>
 
 The output of a JK flip-flop when J=1, K=1 is:
 
@@ -2486,45 +1826,15 @@ pie title "Difficulty Distribution - GATE CS 2023"
 
 ### Paper Analysis
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/paper-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/paper-analysis-handwritten.svg" alt="Handwritten: Paper Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/paper-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/paper-analysis-diagram.svg" alt="Diagram: Paper Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/paper-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/paper-analysis-sticky.svg" alt="Sticky Note: Paper Analysis" width="30%">
-</a>
-
 
 GATE 2023 Computer Science paper featured a total of 65 questions with 100 marks. The General Aptitude section contributed 15 marks (10 questions), and the Technical section contributed 85 marks (55 questions). The paper was characterized by a strong emphasis on fundamentals Ã¢â‚¬â€� many questions tested core concepts rather than complex multi-step reasoning. The number of MCQs was approximately 40, with 10 MSQs and 15 NATs. A notable feature was the inclusion of 2-mark questions that required multi-concept integration, particularly in Algorithms (graph theory combined with recurrence) and Databases (SQL nested queries with aggregate functions). The paper had no major surprises in terms of syllabus coverage, validating the importance of thorough preparation across all subjects.
 
 ### Difficulty Trends
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/difficulty-trends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/difficulty-trends-handwritten.svg" alt="Handwritten: Difficulty Trends" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/difficulty-trends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/difficulty-trends-diagram.svg" alt="Diagram: Difficulty Trends" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/difficulty-trends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/difficulty-trends-sticky.svg" alt="Sticky Note: Difficulty Trends" width="30%">
-</a>
-
 
 GATE 2023 was generally perceived as moderately easier than GATE 2022, with a difficulty split of approximately 35% Easy, 48% Medium, and 17% Hard. The Engineering Mathematics section was particularly scoring, with most questions being direct applications of standard formulas. Data Structures & Algorithms saw fewer hard questions compared to previous years Ã¢â‚¬â€� the weighted interval scheduling problem was the only question with a sub-20% correct rate. Operating Systems questions on disk scheduling were formulaic. Computer Networks had a tough question on CSMA/CD persistence that tripped many test-takers. Overall, the paper rewarded concept clarity over rote practice.
 
 ### Key Concepts Tested
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/key-concepts-tested-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/key-concepts-tested-handwritten.svg" alt="Handwritten: Key Concepts Tested" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/key-concepts-tested-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/key-concepts-tested-diagram.svg" alt="Diagram: Key Concepts Tested" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/key-concepts-tested-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/key-concepts-tested-sticky.svg" alt="Sticky Note: Key Concepts Tested" width="30%">
-</a>
 
 
 | Subject | Key Concepts |
@@ -2731,16 +2041,6 @@ Test your understanding of GATE 2023 paper concepts with these 5 questions.
 - d) A is invertible
 
 ### Answer Key
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/answer-key-handwritten.svg" alt="Handwritten: Answer Key" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/answer-key-diagram.svg" alt="Diagram: Answer Key" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/25-gate-2023-solved/answer-key-sticky.svg" alt="Sticky Note: Answer Key" width="30%">
-</a>
 
 
 | Q | Answer | Explanation |

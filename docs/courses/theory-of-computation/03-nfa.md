@@ -83,32 +83,12 @@ flowchart LR
 
 ### 2.1 The Concept of Nondeterminism
 
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-handwritten.svg" alt="Handwritten: 2.1 The Concept of Nondeterminism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-diagram.svg" alt="Diagram: 2.1 The Concept of Nondeterminism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-1-the-concept-of-nondeterminism-sticky.svg" alt="Sticky Note: 2.1 The Concept of Nondeterminism" width="30%">
-</a>
-
 
 In a DFA, for each state and symbol there is exactly one next state. In an **NFA (nondeterministic finite automaton)**, from a given state and symbol, there may be **zero, one, or multiple** possible next states. When presented with choices, the NFA is said to "guess" the correct path → it accepts the input if *some* sequence of choices leads to an accepting state.
 
 Nondeterminism is a powerful *descriptive* tool: many languages are much easier to describe with an NFA than a DFA. Remarkably, NFAs are **no more powerful** than DFAs → every NFA can be converted to an equivalent DFA, though the DFA may require exponentially more states.
 
 ### 2.2 Formal Definition of an NFA
-
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-handwritten.svg" alt="Handwritten: 2.2 Formal Definition of an NFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-diagram.svg" alt="Diagram: 2.2 Formal Definition of an NFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-2-formal-definition-of-an-nfa-sticky.svg" alt="Sticky Note: 2.2 Formal Definition of an NFA" width="30%">
-</a>
 
 
 An **NFA** is a 5-tuple (Q, Î£, Î´, qâ‚€, F) where:
@@ -122,16 +102,6 @@ An **NFA** is a 5-tuple (Q, Î£, Î´, qâ‚€, F) where:
 The key difference from DFA: Î´ returns a **set** of possible next states rather than a single state.
 
 ### 2.3 Computation of an NFA
-
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-handwritten.svg" alt="Handwritten: 2.3 Computation of an NFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-diagram.svg" alt="Diagram: 2.3 Computation of an NFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-3-computation-of-an-nfa-sticky.svg" alt="Sticky Note: 2.3 Computation of an NFA" width="30%">
-</a>
 
 
 For an NFA on input w = wâ‚wâ‚‚â€¦wâ‚™:
@@ -150,16 +120,6 @@ Language recognized: L(N) = { w | Î´Ì‚(qâ‚€, w) âˆ© F â‰  âˆ�
 
 ### 2.4 NFA with Epsilon Transitions
 
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-handwritten.svg" alt="Handwritten: 2.4 NFA with Epsilon Transitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-diagram.svg" alt="Diagram: 2.4 NFA with Epsilon Transitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-4-nfa-with-epsilon-transitions-sticky.svg" alt="Sticky Note: 2.4 NFA with Epsilon Transitions" width="30%">
-</a>
-
 
 An NFA-Îµ extends the NFA to allow **Îµ-transitions** → transitions that occur without consuming any input symbol. The transition function becomes:
 Î´: Q Ã— (Î£ âˆª {Îµ}) → P(Q)
@@ -173,16 +133,6 @@ To compute the extended transition function for an NFA-Îµ:
 NFA-Îµ are strictly a convenience → they add no computational power. Both standard NFA and NFA-Îµ are equivalent to DFA.
 
 ### 2.5 Equivalence of NFA and DFA: Subset Construction
-
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-handwritten.svg" alt="Handwritten: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-diagram.svg" alt="Diagram: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-5-equivalence-of-nfa-and-dfa-subset-construction-sticky.svg" alt="Sticky Note: 2.5 Equivalence of NFA and DFA: Subset Construction" width="30%">
-</a>
 
 
 The **subset construction** converts any NFA into an equivalent DFA. The key insight: the state of the DFA represents the **set of states** the NFA could be in at that point.
@@ -199,16 +149,6 @@ Given NFA N = (Q_N, Î£, Î´_N, qâ‚€, F_N), construct DFA D = (Q_D, Î£,
 **Number of states:** The DFA may have up to 2^|Q_N| states, though in practice many are unreachable.
 
 ### 2.6 Why Nondeterminism Matters
-
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-handwritten.svg" alt="Handwritten: 2.6 Why Nondeterminism Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-diagram.svg" alt="Diagram: 2.6 Why Nondeterminism Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/03-nfa/2-6-why-nondeterminism-matters-sticky.svg" alt="Sticky Note: 2.6 Why Nondeterminism Matters" width="30%">
-</a>
 
 
 Nondeterminism is a central concept in theoretical computer science. It appears again in:

@@ -1,43 +1,101 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowSm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowMd" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
     </marker>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#e2e8f0"/>
+    </pattern>
+    <pattern id="lineGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
+    </pattern>
   </defs>
-  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
-  <!-- Light grid -->
-  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
-  </pattern>
-  <rect width="1000" height="700" fill="url(#vgrid)"/>
-    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
-  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Java Core Interview Q&amp;A</text>
-  <rect x="60" y="120" width="880" height="75" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
-    <rect x="60" y="120" width="8" height="75" rx="3" fill="#1e40af"/>
-    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
-  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">Th: chapter covers 40+ essential Java Core interview questions ranging</text>
-  <text x="85" y="180" font-size="11" fill="#475569" font-family="Arial, sans-serif">from OOP...</text>
-  <line x1="500" y1="200" x2="500" y2="210" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <rect x="60" y="225" width="880" height="55" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
-    <rect x="60" y="225" width="8" height="55" rx="3" fill="#065f46"/>
-    <text x="85" y="247" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
-  <text x="85" y="267" font-size="11" fill="#475569" font-family="Arial, sans-serif">Answer: → Answer: → Answer: → SRP: → OCP: → LSP:</text>
-  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5"/>
-    <rect x="60" y="310" width="8" height="75" rx="3" fill="#92400e"/>
-    <text x="85" y="332" font-size="13" font-weight="bold" fill="#92400e" font-family="Arial, sans-serif">Workflow</text>
-  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">XX:+PrintCompilation shows compilation. -XX:CompileThreshold (default</text>
-  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">10000). C2 is most aggressive. Tiered compilation default since Java</text>
-  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">8. → What is the difference between equals() and == in Java? → A) They</text>
-  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">are identical → B) equals() compares values, == compares references →</text>
-  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">C) == compares values, equals() compares references → D) equals() is</text>
-  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">for primitives, == is for objects → Which collection guarantees</text>
-  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">insertion order? → A) HashMap</text>
-  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <rect x="60" y="415" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
-    <rect x="60" y="415" width="8" height="55" rx="3" fill="#831843"/>
-    <text x="85" y="437" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
-  <!-- Footer note -->
-  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Java Core Interview Q&amp;A</text>
+  <!-- Background -->
+  <rect width="1000" height="700" fill="url(#gBg)"/>
+  <rect width="1000" height="700" fill="url(#dotGrid)"/>
+  <!-- Side decoration -->
+  <rect x="0" y="0" width="6" height="700" fill="url(#gBlue)" opacity="0.15"/>
+  <!-- Header shade -->
+  <rect x="0" y="0" width="1000" height="6" fill="url(#gBlue)" opacity="0.08"/>
+  <!-- Cards and arrows -->
+    <rect x="40" y="40" width="920" height="56" rx="10" fill="url(#gBlue)" filter="url(#shadowMd)"/>
+  <text x="500" y="76" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Java Core Interview Q&amp;A</text>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="116" width="880" height="60" rx="8" fill="#d1fae5"/>
+    <rect x="60" y="116" width="6" height="60" rx="3" fill="#059669"/>
+    <rect x="60" y="116" width="880" height="60" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g transform="translate(70,124)">
+    <ellipse cx="12" cy="6" rx="9.600000000000001" ry="2.88" fill="#059669" opacity="0.3"/>
+    <path d="M2.4000000000000004,6 L2.4000000000000004,18 C2.4000000000000004,20.4 21.6,20.4 21.6,18 L21.6,6" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M2.4000000000000004,12 C2.4000000000000004,14.399999999999999 21.6,14.399999999999999 21.6,12" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="104" y="136" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Architecture</text>
+  <text x="104" y="154" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Answer: → Answer: → Answer: → SRP: → OCP: → LSP:</text>
+  <line x1="500" y1="182" x2="500" y2="192" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="202" width="880" height="68" rx="8" fill="#fef3c7"/>
+    <rect x="60" y="202" width="6" height="68" rx="3" fill="#d97706"/>
+    <rect x="60" y="202" width="880" height="68" rx="8" fill="none" stroke="#d97706" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g transform="translate(82,222)">
+    <circle cx="0" cy="0" r="4.199999999999999" fill="none" stroke="#d97706" stroke-width="2"/>
+    <rect x="4" y="-3" width="4" height="6" rx="1" fill="#d97706" transform="rotate(0 6 0)"/>
+    <rect x="2.2426406871192857" y="1.2426406871192848" width="4" height="6" rx="1" fill="#d97706" transform="rotate(45 4.242640687119286 4.242640687119285)"/>
+    <rect x="-1.9999999999999996" y="3" width="4" height="6" rx="1" fill="#d97706" transform="rotate(90 3.6739403974420594e-16 6)"/>
+    <rect x="-6.242640687119285" y="1.2426406871192857" width="4" height="6" rx="1" fill="#d97706" transform="rotate(135 -4.242640687119285 4.242640687119286)"/>
+    <rect x="-8" y="-2.999999999999999" width="4" height="6" rx="1" fill="#d97706" transform="rotate(180 -6 7.347880794884119e-16)"/>
+    <rect x="-6.242640687119286" y="-7.242640687119285" width="4" height="6" rx="1" fill="#d97706" transform="rotate(225 -4.242640687119286 -4.242640687119285)"/>
+    <rect x="-2.000000000000001" y="-9" width="4" height="6" rx="1" fill="#d97706" transform="rotate(270 -1.102182119232618e-15 -6)"/>
+    <rect x="2.242640687119284" y="-7.242640687119286" width="4" height="6" rx="1" fill="#d97706" transform="rotate(315 4.242640687119284 -4.242640687119286)"/>
+  </g>
+  <text x="104" y="222" font-size="14" font-weight="bold" fill="#d97706" font-family="Arial, sans-serif">Workflow</text>
+  <text x="104" y="240" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Step 1: XX:+PrintCompilation shows compilation. -XX:CompileThreshold</text>
+  <text x="104" y="258" font-size="12" fill="#64748b" font-family="Arial, sans-serif">(default 10000). C2 is most aggressive....</text>
+  <line x1="500" y1="276" x2="500" y2="286" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="296" width="880" height="60" rx="8" fill="#eff6ff"/>
+    <rect x="60" y="296" width="6" height="60" rx="3" fill="#1e40af"/>
+    <rect x="60" y="296" width="880" height="60" rx="8" fill="none" stroke="#1e40af" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <polygon points="82,304 76,316 80.08,316 79.12,328 85.6,314.8 81.52,314.8" fill="#1e40af" opacity="0.7"/>
+  <text x="104" y="316" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Master the core concepts covered in this chapter</text>
+  <rect x="840" y="300" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
+    <text x="886.5" y="314" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
+  <!-- Spacer -->
+  <!-- Footer -->
+  <text x="500" y="688" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Java Core Interview Q&amp;A · Visual Explanation</text>
 </svg>

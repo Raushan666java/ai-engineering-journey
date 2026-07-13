@@ -85,16 +85,6 @@ flowchart LR
 
 ### Real-World Analogy: The Cookie Cutter
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/real-world-analogy-the-cookie-cutter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/real-world-analogy-the-cookie-cutter-handwritten.svg" alt="Handwritten: Real-World Analogy: The Cookie Cutter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/real-world-analogy-the-cookie-cutter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/real-world-analogy-the-cookie-cutter-diagram.svg" alt="Diagram: Real-World Analogy: The Cookie Cutter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/real-world-analogy-the-cookie-cutter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/real-world-analogy-the-cookie-cutter-sticky.svg" alt="Sticky Note: Real-World Analogy: The Cookie Cutter" width="30%">
-</a>
-
 
 Imagine a bakery that makes three types of cookies: chocolate chip, gingerbread, and sugar. Without a cookie cutter, the baker hand-shapes each cookie individually → exact same labor for every batch. With a single cookie cutter (the **template**), the baker stamps out any dough type in seconds. The cutter is the **blueprint**; each stamped cookie is an **instantiation**.
 
@@ -109,16 +99,6 @@ The cutter never changes → only the dough. This is exactly what templates do: 
 
 ### Analogy: Blueprint and Buildings
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/analogy-blueprint-and-buildings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/analogy-blueprint-and-buildings-handwritten.svg" alt="Handwritten: Analogy: Blueprint and Buildings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/analogy-blueprint-and-buildings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/analogy-blueprint-and-buildings-diagram.svg" alt="Diagram: Analogy: Blueprint and Buildings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/analogy-blueprint-and-buildings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/analogy-blueprint-and-buildings-sticky.svg" alt="Sticky Note: Analogy: Blueprint and Buildings" width="30%">
-</a>
-
 
 A house blueprint describes a structure without specifying the exact materials. The same blueprint can produce a brick house, a wooden house, or a concrete house. The blueprint is the **template**; each constructed house is an **instantiation**.
 
@@ -128,16 +108,6 @@ Blueprint for house<T>  →  house<brick>, house<wood>, house<concrete>
 ```
 
 ### The Problem: Code Duplication Without Templates
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-problem-code-duplication-without-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-problem-code-duplication-without-templates-handwritten.svg" alt="Handwritten: The Problem: Code Duplication Without Templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-problem-code-duplication-without-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-problem-code-duplication-without-templates-diagram.svg" alt="Diagram: The Problem: Code Duplication Without Templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-problem-code-duplication-without-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-problem-code-duplication-without-templates-sticky.svg" alt="Sticky Note: The Problem: Code Duplication Without Templates" width="30%">
-</a>
 
 
 Strong typing forces repetition when the same logic applies to different types:
@@ -160,16 +130,6 @@ Every overload is identical except the type. This violates DRY (Don't Repeat You
 
 ### The Solution: A Single Template
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-solution-a-single-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-solution-a-single-template-handwritten.svg" alt="Handwritten: The Solution: A Single Template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-solution-a-single-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-solution-a-single-template-diagram.svg" alt="Diagram: The Solution: A Single Template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-solution-a-single-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-solution-a-single-template-sticky.svg" alt="Sticky Note: The Solution: A Single Template" width="30%">
-</a>
-
 
 ```cpp
 template <typename T>
@@ -179,16 +139,6 @@ T max_of(T a, T b) {
 ```
 
 ### Numbered Steps of Template Processing
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/numbered-steps-of-template-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/numbered-steps-of-template-processing-handwritten.svg" alt="Handwritten: Numbered Steps of Template Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/numbered-steps-of-template-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/numbered-steps-of-template-processing-diagram.svg" alt="Diagram: Numbered Steps of Template Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/numbered-steps-of-template-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/numbered-steps-of-template-processing-sticky.svg" alt="Sticky Note: Numbered Steps of Template Processing" width="30%">
-</a>
 
 
 ```
@@ -202,16 +152,6 @@ Step 7: Linker resolves calls to the generated function
 ```
 
 ### Pseudocode of Template Expansion
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pseudocode-of-template-expansion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pseudocode-of-template-expansion-handwritten.svg" alt="Handwritten: Pseudocode of Template Expansion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pseudocode-of-template-expansion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pseudocode-of-template-expansion-diagram.svg" alt="Diagram: Pseudocode of Template Expansion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pseudocode-of-template-expansion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pseudocode-of-template-expansion-sticky.svg" alt="Sticky Note: Pseudocode of Template Expansion" width="30%">
-</a>
 
 
 ```
@@ -229,16 +169,6 @@ FUNCTION max_of_double(a: double, b: double) -> double:
 
 ### Complexity Analysis of the Template Approach
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-the-template-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-the-template-approach-handwritten.svg" alt="Handwritten: Complexity Analysis of the Template Approach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-the-template-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-the-template-approach-diagram.svg" alt="Diagram: Complexity Analysis of the Template Approach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-the-template-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-the-template-approach-sticky.svg" alt="Sticky Note: Complexity Analysis of the Template Approach" width="30%">
-</a>
-
 
 | Approach | Lines of Code | Maintenance Cost | Runtime Overhead | Type Safety |
 |----------|--------------|-----------------|------------------|-------------|
@@ -252,16 +182,6 @@ FUNCTION max_of_double(a: double, b: double) -> double:
 ## 7.2 Function Templates
 
 ### 7.2.1 Basic Syntax
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-1-basic-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-1-basic-syntax-handwritten.svg" alt="Handwritten: 7.2.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-1-basic-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-1-basic-syntax-diagram.svg" alt="Diagram: 7.2.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-1-basic-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-1-basic-syntax-sticky.svg" alt="Sticky Note: 7.2.1 Basic Syntax" width="30%">
-</a>
 
 
 A function template declaration begins with the keyword `template` followed by a comma-separated list of template parameters enclosed in angle brackets:
@@ -288,16 +208,6 @@ template  ← keyword indicating a template declaration
 ```
 
 ### 7.2.2 Type Deduction vs Explicit Specification
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-2-type-deduction-vs-explicit-specification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-2-type-deduction-vs-explicit-specification-handwritten.svg" alt="Handwritten: 7.2.2 Type Deduction vs Explicit Specification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-2-type-deduction-vs-explicit-specification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-2-type-deduction-vs-explicit-specification-diagram.svg" alt="Diagram: 7.2.2 Type Deduction vs Explicit Specification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-2-type-deduction-vs-explicit-specification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-2-type-deduction-vs-explicit-specification-sticky.svg" alt="Sticky Note: 7.2.2 Type Deduction vs Explicit Specification" width="30%">
-</a>
 
 
 The compiler can deduce `T` from the function arguments, or you can specify it explicitly:
@@ -340,16 +250,6 @@ orange
 
 ### 7.2.3 Template Instantiation Process → Detailed Dry Run
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-3-template-instantiation-process-detailed-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-3-template-instantiation-process-detailed-dry-run-handwritten.svg" alt="Handwritten: 7.2.3 Template Instantiation Process → Detailed Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-3-template-instantiation-process-detailed-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-3-template-instantiation-process-detailed-dry-run-diagram.svg" alt="Diagram: 7.2.3 Template Instantiation Process → Detailed Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-3-template-instantiation-process-detailed-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-3-template-instantiation-process-detailed-dry-run-sticky.svg" alt="Sticky Note: 7.2.3 Template Instantiation Process → Detailed Dry Run" width="30%">
-</a>
-
 
 When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 
@@ -375,16 +275,6 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 ```
 
 ### Dry Run: Multiple Instantiations
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/dry-run-multiple-instantiations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/dry-run-multiple-instantiations-handwritten.svg" alt="Handwritten: Dry Run: Multiple Instantiations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/dry-run-multiple-instantiations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/dry-run-multiple-instantiations-diagram.svg" alt="Diagram: Dry Run: Multiple Instantiations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/dry-run-multiple-instantiations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/dry-run-multiple-instantiations-sticky.svg" alt="Sticky Note: Dry Run: Multiple Instantiations" width="30%">
-</a>
 
 
 ```
@@ -413,16 +303,6 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 
 ### Complexity Analysis of Template Instantiation
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-template-instantiation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-template-instantiation-handwritten.svg" alt="Handwritten: Complexity Analysis of Template Instantiation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-template-instantiation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-template-instantiation-diagram.svg" alt="Diagram: Complexity Analysis of Template Instantiation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-template-instantiation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/complexity-analysis-of-template-instantiation-sticky.svg" alt="Sticky Note: Complexity Analysis of Template Instantiation" width="30%">
-</a>
-
 
 | Metric | Complexity | Explanation |
 |--------|-----------|-------------|
@@ -440,16 +320,6 @@ When the compiler encounters `max_of(3, 7)`, it performs the following steps:
 - The tradeoff (one definition vs N overloads) is overwhelmingly positive
 
 ### 7.2.4 Function Template Overloading
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-4-function-template-overloading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-4-function-template-overloading-handwritten.svg" alt="Handwritten: 7.2.4 Function Template Overloading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-4-function-template-overloading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-4-function-template-overloading-diagram.svg" alt="Diagram: 7.2.4 Function Template Overloading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-4-function-template-overloading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-4-function-template-overloading-sticky.svg" alt="Sticky Note: 7.2.4 Function Template Overloading" width="30%">
-</a>
 
 
 Multiple function templates (or a template and a non-template function) can coexist for the same name. Overload resolution follows a strict priority:
@@ -492,16 +362,6 @@ Template: 3.14
 
 ### 7.2.5 Function Template with Multiple Type Parameters
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-5-function-template-with-multiple-type-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-5-function-template-with-multiple-type-parameters-handwritten.svg" alt="Handwritten: 7.2.5 Function Template with Multiple Type Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-5-function-template-with-multiple-type-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-5-function-template-with-multiple-type-parameters-diagram.svg" alt="Diagram: 7.2.5 Function Template with Multiple Type Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-5-function-template-with-multiple-type-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-5-function-template-with-multiple-type-parameters-sticky.svg" alt="Sticky Note: 7.2.5 Function Template with Multiple Type Parameters" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -536,16 +396,6 @@ auto product(T a, U b) {      // C++14: auto return type deduction
 ```
 
 ### 7.2.6 Non-Type Template Parameters
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-6-non-type-template-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-6-non-type-template-parameters-handwritten.svg" alt="Handwritten: 7.2.6 Non-Type Template Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-6-non-type-template-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-6-non-type-template-parameters-diagram.svg" alt="Diagram: 7.2.6 Non-Type Template Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-6-non-type-template-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-2-6-non-type-template-parameters-sticky.svg" alt="Sticky Note: 7.2.6 Non-Type Template Parameters" width="30%">
-</a>
 
 
 Template parameters need not be types. Non-type parameters accept compile-time constant values:
@@ -630,16 +480,6 @@ This enables stronger type safety but prevents mixed-size assignments.
 
 ### 7.3.1 Basic Syntax
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-1-basic-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-1-basic-syntax-handwritten.svg" alt="Handwritten: 7.3.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-1-basic-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-1-basic-syntax-diagram.svg" alt="Diagram: 7.3.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-1-basic-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-1-basic-syntax-sticky.svg" alt="Sticky Note: 7.3.1 Basic Syntax" width="30%">
-</a>
-
 
 Class templates parameterize both data members and member functions:
 
@@ -674,16 +514,6 @@ str_stack.push("hello");
 ```
 
 ### 7.3.2 Member Functions Defined Outside the Class Body
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-2-member-functions-defined-outside-the-class-body-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-2-member-functions-defined-outside-the-class-body-handwritten.svg" alt="Handwritten: 7.3.2 Member Functions Defined Outside the Class Body" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-2-member-functions-defined-outside-the-class-body-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-2-member-functions-defined-outside-the-class-body-diagram.svg" alt="Diagram: 7.3.2 Member Functions Defined Outside the Class Body" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-2-member-functions-defined-outside-the-class-body-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-2-member-functions-defined-outside-the-class-body-sticky.svg" alt="Sticky Note: 7.3.2 Member Functions Defined Outside the Class Body" width="30%">
-</a>
 
 
 When member functions are defined outside the class, the template parameter must be repeated and the class scope must be qualified:
@@ -733,16 +563,6 @@ size_t Stack<T>::size() const {
 **Why `Stack<T>::` and not just `Stack::`:** Without `<T>`, the compiler would look for a concrete class named `Stack` (not a class template), which does not exist.
 
 ### 7.3.3 Class Template Instantiation → Detailed Dry Run
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-3-class-template-instantiation-detailed-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-3-class-template-instantiation-detailed-dry-run-handwritten.svg" alt="Handwritten: 7.3.3 Class Template Instantiation → Detailed Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-3-class-template-instantiation-detailed-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-3-class-template-instantiation-detailed-dry-run-diagram.svg" alt="Diagram: 7.3.3 Class Template Instantiation → Detailed Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-3-class-template-instantiation-detailed-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-3-class-template-instantiation-detailed-dry-run-sticky.svg" alt="Sticky Note: 7.3.3 Class Template Instantiation → Detailed Dry Run" width="30%">
-</a>
 
 
 ```cpp
@@ -800,16 +620,6 @@ int main() {
 - **Compile-time cost:** Proportional to number of member functions actually used
 
 ### 7.3.4 Class Template with Non-Type Parameters → Ring Buffer
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-4-class-template-with-non-type-parameters-ring-buffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-4-class-template-with-non-type-parameters-ring-buffer-handwritten.svg" alt="Handwritten: 7.3.4 Class Template with Non-Type Parameters → Ring Buffer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-4-class-template-with-non-type-parameters-ring-buffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-4-class-template-with-non-type-parameters-ring-buffer-diagram.svg" alt="Diagram: 7.3.4 Class Template with Non-Type Parameters → Ring Buffer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-4-class-template-with-non-type-parameters-ring-buffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-4-class-template-with-non-type-parameters-ring-buffer-sticky.svg" alt="Sticky Note: 7.3.4 Class Template with Non-Type Parameters → Ring Buffer" width="30%">
-</a>
 
 
 ```cpp
@@ -875,16 +685,6 @@ Push 40: 1
 ```
 
 ### 7.3.5 Template Template Parameters
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-5-template-template-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-5-template-template-parameters-handwritten.svg" alt="Handwritten: 7.3.5 Template Template Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-5-template-template-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-5-template-template-parameters-diagram.svg" alt="Diagram: 7.3.5 Template Template Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-5-template-template-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-5-template-template-parameters-sticky.svg" alt="Sticky Note: 7.3.5 Template Template Parameters" width="30%">
-</a>
 
 
 A template template parameter is a template that accepts another template as an argument. This enables writing code that works with any container type:
@@ -964,16 +764,6 @@ std::stack<int, std::list<int>> s3;         // list-based stack
 
 ### 7.3.6 Dependent Names and the `typename` Keyword
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-6-dependent-names-and-the-typename-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-6-dependent-names-and-the-typename-keyword-handwritten.svg" alt="Handwritten: 7.3.6 Dependent Names and the `typename` Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-6-dependent-names-and-the-typename-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-6-dependent-names-and-the-typename-keyword-diagram.svg" alt="Diagram: 7.3.6 Dependent Names and the `typename` Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-6-dependent-names-and-the-typename-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-3-6-dependent-names-and-the-typename-keyword-sticky.svg" alt="Sticky Note: 7.3.6 Dependent Names and the `typename` Keyword" width="30%">
-</a>
-
 
 When a name in a template depends on a template parameter, the compiler cannot determine whether it names a type or a value until instantiation. You must disambiguate with `typename`:
 
@@ -1014,16 +804,6 @@ The C++ standard requires `typename` to resolve the ambiguity.
 ## 7.4 Template Specialization
 
 ### 7.4.1 Full (Explicit) Specialization → Deep Dive
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-1-full-explicit-specialization-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-1-full-explicit-specialization-deep-dive-handwritten.svg" alt="Handwritten: 7.4.1 Full (Explicit) Specialization → Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-1-full-explicit-specialization-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-1-full-explicit-specialization-deep-dive-diagram.svg" alt="Diagram: 7.4.1 Full (Explicit) Specialization → Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-1-full-explicit-specialization-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-1-full-explicit-specialization-deep-dive-sticky.svg" alt="Sticky Note: 7.4.1 Full (Explicit) Specialization → Deep Dive" width="30%">
-</a>
 
 
 Full specialization provides a completely different implementation for a specific template argument combination:
@@ -1090,16 +870,6 @@ hello
 ```
 
 ### 7.4.2 Partial Specialization
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-2-partial-specialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-2-partial-specialization-handwritten.svg" alt="Handwritten: 7.4.2 Partial Specialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-2-partial-specialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-2-partial-specialization-diagram.svg" alt="Diagram: 7.4.2 Partial Specialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-2-partial-specialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-2-partial-specialization-sticky.svg" alt="Sticky Note: 7.4.2 Partial Specialization" width="30%">
-</a>
 
 
 Partial specialization matches a subset of types rather than a single type. It is only allowed for class templates (and variable templates in C++14), NOT for function templates:
@@ -1177,16 +947,6 @@ template <typename T> void foo(T* ptr);     // overload → not a specialization
 
 ### 7.4.3 Explicit vs Partial vs Full Specialization → Comparison Table
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-3-explicit-vs-partial-vs-full-specialization-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-3-explicit-vs-partial-vs-full-specialization-comparison-table-handwritten.svg" alt="Handwritten: 7.4.3 Explicit vs Partial vs Full Specialization → Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-3-explicit-vs-partial-vs-full-specialization-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-3-explicit-vs-partial-vs-full-specialization-comparison-table-diagram.svg" alt="Diagram: 7.4.3 Explicit vs Partial vs Full Specialization → Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-3-explicit-vs-partial-vs-full-specialization-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-3-explicit-vs-partial-vs-full-specialization-comparison-table-sticky.svg" alt="Sticky Note: 7.4.3 Explicit vs Partial vs Full Specialization → Comparison Table" width="30%">
-</a>
-
 
 | Aspect | Full (Explicit) Specialization | Partial Specialization | Explicit Instantiation |
 |--------|-------------------------------|----------------------|----------------------|
@@ -1200,16 +960,6 @@ template <typename T> void foo(T* ptr);     // overload → not a specialization
 | **Use case** | Type-specific optimization | Category optimization | Hide definitions, reduce compile time |
 
 ### 7.4.4 Full Specialization of Class Templates → Example
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-4-full-specialization-of-class-templates-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-4-full-specialization-of-class-templates-example-handwritten.svg" alt="Handwritten: 7.4.4 Full Specialization of Class Templates → Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-4-full-specialization-of-class-templates-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-4-full-specialization-of-class-templates-example-diagram.svg" alt="Diagram: 7.4.4 Full Specialization of Class Templates → Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-4-full-specialization-of-class-templates-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-4-full-specialization-of-class-templates-example-sticky.svg" alt="Sticky Note: 7.4.4 Full Specialization of Class Templates → Example" width="30%">
-</a>
 
 
 ```cpp
@@ -1271,16 +1021,6 @@ Bit 1: 0
 ```
 
 ### 7.4.5 When to Specialize vs Overload (Function Templates)
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-5-when-to-specialize-vs-overload-function-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-5-when-to-specialize-vs-overload-function-templates-handwritten.svg" alt="Handwritten: 7.4.5 When to Specialize vs Overload (Function Templates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-5-when-to-specialize-vs-overload-function-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-5-when-to-specialize-vs-overload-function-templates-diagram.svg" alt="Diagram: 7.4.5 When to Specialize vs Overload (Function Templates)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-5-when-to-specialize-vs-overload-function-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-4-5-when-to-specialize-vs-overload-function-templates-sticky.svg" alt="Sticky Note: 7.4.5 When to Specialize vs Overload (Function Templates)" width="30%">
-</a>
 
 
 **Rule of thumb:** For function templates, prefer overloading over specialization.
@@ -1368,16 +1108,6 @@ namespace std {
 
 ### 7.5.1 Basic Syntax
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-1-basic-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-1-basic-syntax-handwritten.svg" alt="Handwritten: 7.5.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-1-basic-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-1-basic-syntax-diagram.svg" alt="Diagram: 7.5.1 Basic Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-1-basic-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-1-basic-syntax-sticky.svg" alt="Sticky Note: 7.5.1 Basic Syntax" width="30%">
-</a>
-
 
 Variadic templates accept an arbitrary number of template parameters:
 
@@ -1413,16 +1143,6 @@ int main() {
 ```
 
 ### 7.5.2 Recursive Variadic Approach (C++11/14)
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-2-recursive-variadic-approach-c-11-14-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-2-recursive-variadic-approach-c-11-14-handwritten.svg" alt="Handwritten: 7.5.2 Recursive Variadic Approach (C++11/14)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-2-recursive-variadic-approach-c-11-14-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-2-recursive-variadic-approach-c-11-14-diagram.svg" alt="Diagram: 7.5.2 Recursive Variadic Approach (C++11/14)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-2-recursive-variadic-approach-c-11-14-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-2-recursive-variadic-approach-c-11-14-sticky.svg" alt="Sticky Note: 7.5.2 Recursive Variadic Approach (C++11/14)" width="30%">
-</a>
 
 
 Before fold expressions (C++17), variadic templates required recursion:
@@ -1483,16 +1203,6 @@ Each level is a separate function template instantiation with a different signat
 - **Alternative (fold expressions):** O(1) instantiation → vastly better
 
 ### 7.5.3 Fold Expressions (C++17)
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-3-fold-expressions-c-17-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-3-fold-expressions-c-17-handwritten.svg" alt="Handwritten: 7.5.3 Fold Expressions (C++17)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-3-fold-expressions-c-17-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-3-fold-expressions-c-17-diagram.svg" alt="Diagram: 7.5.3 Fold Expressions (C++17)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-3-fold-expressions-c-17-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-3-fold-expressions-c-17-sticky.svg" alt="Sticky Note: 7.5.3 Fold Expressions (C++17)" width="30%">
-</a>
 
 
 Fold expressions reduce variadic processing to a single operator application, eliminating recursion and its compile-time cost:
@@ -1560,16 +1270,6 @@ int main() {
 `+` `-` `*` `/` `%` `^` `&` `|` `=` `<` `>` `<<` `>>` `+=` `-=` `*=` `/=` `%=` `^=` `&=` `|=` `<<=` `>>=` `==` `!=` `<=` `>=` `&&` `||` `,` `.*` `->*`
 
 ### 7.5.4 Real-World Application: `std::tuple` Implementation
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-4-real-world-application-std-tuple-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-4-real-world-application-std-tuple-implementation-handwritten.svg" alt="Handwritten: 7.5.4 Real-World Application: `std::tuple` Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-4-real-world-application-std-tuple-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-4-real-world-application-std-tuple-implementation-diagram.svg" alt="Diagram: 7.5.4 Real-World Application: `std::tuple` Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-4-real-world-application-std-tuple-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-5-4-real-world-application-std-tuple-implementation-sticky.svg" alt="Sticky Note: 7.5.4 Real-World Application: `std::tuple` Implementation" width="30%">
-</a>
 
 
 The `std::tuple` type uses variadic templates heavily:
@@ -1677,16 +1377,6 @@ get<2>(t) → GetHelper<2, int, double, string>::get(t)
 
 ### 7.6.1 Core Principle
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-1-core-principle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-1-core-principle-handwritten.svg" alt="Handwritten: 7.6.1 Core Principle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-1-core-principle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-1-core-principle-diagram.svg" alt="Diagram: 7.6.1 Core Principle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-1-core-principle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-1-core-principle-sticky.svg" alt="Sticky Note: 7.6.1 Core Principle" width="30%">
-</a>
-
 
 SFINAE is a C++ rule: when the compiler substitutes template arguments into a function template and the resulting type or expression is invalid, the compiler silently removes that candidate from overload resolution rather than emitting a compilation error.
 
@@ -1709,16 +1399,6 @@ SFINAE is a C++ rule: when the compiler substitutes template arguments into a fu
 **Key rule:** SFINAE applies ONLY to the **immediate context** of a function template declaration (template parameters, function parameter types, return type). Errors in the function body are NOT SFINAE → they are hard errors.
 
 ### 7.6.2 `std::enable_if` → The Classic SFINAE Tool
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-2-std-enable-if-the-classic-sfinae-tool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-2-std-enable-if-the-classic-sfinae-tool-handwritten.svg" alt="Handwritten: 7.6.2 `std::enable_if` → The Classic SFINAE Tool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-2-std-enable-if-the-classic-sfinae-tool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-2-std-enable-if-the-classic-sfinae-tool-diagram.svg" alt="Diagram: 7.6.2 `std::enable_if` → The Classic SFINAE Tool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-2-std-enable-if-the-classic-sfinae-tool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-2-std-enable-if-the-classic-sfinae-tool-sticky.svg" alt="Sticky Note: 7.6.2 `std::enable_if` → The Classic SFINAE Tool" width="30%">
-</a>
 
 
 ```cpp
@@ -1806,16 +1486,6 @@ using enable_if_t = typename enable_if<B, T>::type;
 ```
 
 ### 7.6.3 `void_t` Detection Idiom
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-3-void-t-detection-idiom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-3-void-t-detection-idiom-handwritten.svg" alt="Handwritten: 7.6.3 `void_t` Detection Idiom" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-3-void-t-detection-idiom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-3-void-t-detection-idiom-diagram.svg" alt="Diagram: 7.6.3 `void_t` Detection Idiom" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-3-void-t-detection-idiom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-3-void-t-detection-idiom-sticky.svg" alt="Sticky Note: 7.6.3 `void_t` Detection Idiom" width="30%">
-</a>
 
 
 A powerful SFINAE pattern for detecting whether a type has a specific member:
@@ -1910,16 +1580,6 @@ OtherType:      0
 
 ### 7.6.4 `if constexpr` → The C++17 Alternative
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-4-if-constexpr-the-c-17-alternative-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-4-if-constexpr-the-c-17-alternative-handwritten.svg" alt="Handwritten: 7.6.4 `if constexpr` → The C++17 Alternative" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-4-if-constexpr-the-c-17-alternative-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-4-if-constexpr-the-c-17-alternative-diagram.svg" alt="Diagram: 7.6.4 `if constexpr` → The C++17 Alternative" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-4-if-constexpr-the-c-17-alternative-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-4-if-constexpr-the-c-17-alternative-sticky.svg" alt="Sticky Note: 7.6.4 `if constexpr` → The C++17 Alternative" width="30%">
-</a>
-
 
 For many SFINAE use cases, `if constexpr` provides a cleaner alternative:
 
@@ -1965,16 +1625,6 @@ int main() {
 | **Type-level detection** | Yes (void_t idiom) | No (cannot make types disappear) |
 
 ### 7.6.5 SFINAE vs Concepts (C++20)
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-5-sfinae-vs-concepts-c-20-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-5-sfinae-vs-concepts-c-20-handwritten.svg" alt="Handwritten: 7.6.5 SFINAE vs Concepts (C++20)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-5-sfinae-vs-concepts-c-20-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-5-sfinae-vs-concepts-c-20-diagram.svg" alt="Diagram: 7.6.5 SFINAE vs Concepts (C++20)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-5-sfinae-vs-concepts-c-20-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-6-5-sfinae-vs-concepts-c-20-sticky.svg" alt="Sticky Note: 7.6.5 SFINAE vs Concepts (C++20)" width="30%">
-</a>
 
 
 Concepts are the modern replacement for most SFINAE use cases:
@@ -2023,16 +1673,6 @@ int main() {
 
 ### 7.7.1 The Inclusion Model
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-1-the-inclusion-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-1-the-inclusion-model-handwritten.svg" alt="Handwritten: 7.7.1 The Inclusion Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-1-the-inclusion-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-1-the-inclusion-model-diagram.svg" alt="Diagram: 7.7.1 The Inclusion Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-1-the-inclusion-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-1-the-inclusion-model-sticky.svg" alt="Sticky Note: 7.7.1 The Inclusion Model" width="30%">
-</a>
-
 
 Templates must be visible at the point of instantiation. The compiler needs the full template definition to generate code for each concrete type. This is called the **inclusion model** or **header-only model**:
 
@@ -2068,16 +1708,6 @@ private:
 - Each translation unit that uses the template gets a copy of the definition
 
 ### 7.7.2 The ODR and Multiple Definitions
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-2-the-odr-and-multiple-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-2-the-odr-and-multiple-definitions-handwritten.svg" alt="Handwritten: 7.7.2 The ODR and Multiple Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-2-the-odr-and-multiple-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-2-the-odr-and-multiple-definitions-diagram.svg" alt="Diagram: 7.7.2 The ODR and Multiple Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-2-the-odr-and-multiple-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-2-the-odr-and-multiple-definitions-sticky.svg" alt="Sticky Note: 7.7.2 The ODR and Multiple Definitions" width="30%">
-</a>
 
 
 The One Definition Rule (ODR) allows multiple identical definitions of inline functions and templates across translation units:
@@ -2118,16 +1748,6 @@ The linker deduplicates identical template instantiations via:
 This is why templates do NOT increase binary size proportionally to the number of translation units.
 
 ### 7.7.3 Explicit Instantiation → Hiding Template Definitions
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-3-explicit-instantiation-hiding-template-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-3-explicit-instantiation-hiding-template-definitions-handwritten.svg" alt="Handwritten: 7.7.3 Explicit Instantiation → Hiding Template Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-3-explicit-instantiation-hiding-template-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-3-explicit-instantiation-hiding-template-definitions-diagram.svg" alt="Diagram: 7.7.3 Explicit Instantiation → Hiding Template Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-3-explicit-instantiation-hiding-template-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-3-explicit-instantiation-hiding-template-definitions-sticky.svg" alt="Sticky Note: 7.7.3 Explicit Instantiation → Hiding Template Definitions" width="30%">
-</a>
 
 
 You can keep template definitions in .cpp files by explicitly instantiating the types you need:
@@ -2179,16 +1799,6 @@ int main() {
 
 ### 7.7.4 The `export` Keyword (Historical)
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-4-the-export-keyword-historical-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-4-the-export-keyword-historical-handwritten.svg" alt="Handwritten: 7.7.4 The `export` Keyword (Historical)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-4-the-export-keyword-historical-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-4-the-export-keyword-historical-diagram.svg" alt="Diagram: 7.7.4 The `export` Keyword (Historical)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-4-the-export-keyword-historical-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-4-the-export-keyword-historical-sticky.svg" alt="Sticky Note: 7.7.4 The `export` Keyword (Historical)" width="30%">
-</a>
-
 
 C++98 introduced `export` to allow template definitions in separate files. It was removed in C++11 because compilers universally failed to implement it correctly. Only one compiler (Comeau C++) ever shipped a working implementation.
 
@@ -2203,16 +1813,6 @@ T max_of(T a, T b) {
 **Lesson:** The inclusion model is the only practical compilation model for templates. Always define templates in headers.
 
 ### 7.7.5 Template Compilation Model → Comparison Table
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-5-template-compilation-model-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-5-template-compilation-model-comparison-table-handwritten.svg" alt="Handwritten: 7.7.5 Template Compilation Model → Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-5-template-compilation-model-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-5-template-compilation-model-comparison-table-diagram.svg" alt="Diagram: 7.7.5 Template Compilation Model → Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-5-template-compilation-model-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-7-5-template-compilation-model-comparison-table-sticky.svg" alt="Sticky Note: 7.7.5 Template Compilation Model → Comparison Table" width="30%">
-</a>
 
 
 | Aspect | Inclusion Model | Explicit Instantiation | Separate Model (export) |
@@ -2235,16 +1835,6 @@ template <class T> void func(T);       // âœ“ → identical meaning
 
 ### The Historical Distinction
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-historical-distinction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-historical-distinction-handwritten.svg" alt="Handwritten: The Historical Distinction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-historical-distinction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-historical-distinction-diagram.svg" alt="Diagram: The Historical Distinction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-historical-distinction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-historical-distinction-sticky.svg" alt="Sticky Note: The Historical Distinction" width="30%">
-</a>
-
 
 When templates were first introduced to C++, only `class` was available:
 
@@ -2256,16 +1846,6 @@ Later, the committee recognized that template parameters need not be class types
 
 ### The Practical Difference
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-practical-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-practical-difference-handwritten.svg" alt="Handwritten: The Practical Difference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-practical-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-practical-difference-diagram.svg" alt="Diagram: The Practical Difference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/the-practical-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/the-practical-difference-sticky.svg" alt="Sticky Note: The Practical Difference" width="30%">
-</a>
-
 
 **There is none → for template parameter declarations.** Both declare a type parameter:
 
@@ -2275,16 +1855,6 @@ template <typename T>  // T is ANY type → identical meaning
 ```
 
 ### When `typename` Is Mandatory
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/when-typename-is-mandatory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/when-typename-is-mandatory-handwritten.svg" alt="Handwritten: When `typename` Is Mandatory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/when-typename-is-mandatory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/when-typename-is-mandatory-diagram.svg" alt="Diagram: When `typename` Is Mandatory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/when-typename-is-mandatory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/when-typename-is-mandatory-sticky.svg" alt="Sticky Note: When `typename` Is Mandatory" width="30%">
-</a>
 
 
 `typename` has a crucial SECOND use that `class` cannot replace: disambiguating dependent names:
@@ -2309,16 +1879,6 @@ void func2() {
 
 ### Comparison Table
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
-</a>
-
 
 | Purpose | `typename` | `class` |
 |---------|-----------|---------|
@@ -2329,16 +1889,6 @@ void func2() {
 | Self-documenting that T can be any type | âœ“ | âœ— (misleading name) |
 
 ### Recommendation
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/recommendation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/recommendation-handwritten.svg" alt="Handwritten: Recommendation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/recommendation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/recommendation-diagram.svg" alt="Diagram: Recommendation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/recommendation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/recommendation-sticky.svg" alt="Sticky Note: Recommendation" width="30%">
-</a>
 
 
 Modern style guides (C++ Core Guidelines, Google Style, LLVM) prefer `typename` for most cases because it accurately describes what is allowed (any type). Reserve `class` only when:
@@ -2366,16 +1916,6 @@ Modern style guides (C++ Core Guidelines, Google Style, LLVM) prefer `typename` 
 ## 7.10 Applications in Real Systems
 
 ### 7.10.1 STL Containers → Template Architecture
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-1-stl-containers-template-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-1-stl-containers-template-architecture-handwritten.svg" alt="Handwritten: 7.10.1 STL Containers → Template Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-1-stl-containers-template-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-1-stl-containers-template-architecture-diagram.svg" alt="Diagram: 7.10.1 STL Containers → Template Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-1-stl-containers-template-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-1-stl-containers-template-architecture-sticky.svg" alt="Sticky Note: 7.10.1 STL Containers → Template Architecture" width="30%">
-</a>
 
 
 Every STL container is a class template. The container adaptors use template template parameters:
@@ -2408,16 +1948,6 @@ namespace std {
 ```
 
 ### 7.10.2 `std::enable_if` and Type Traits → Memcpy Optimization
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-2-std-enable-if-and-type-traits-memcpy-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-2-std-enable-if-and-type-traits-memcpy-optimization-handwritten.svg" alt="Handwritten: 7.10.2 `std::enable_if` and Type Traits → Memcpy Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-2-std-enable-if-and-type-traits-memcpy-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-2-std-enable-if-and-type-traits-memcpy-optimization-diagram.svg" alt="Diagram: 7.10.2 `std::enable_if` and Type Traits → Memcpy Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-2-std-enable-if-and-type-traits-memcpy-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-2-std-enable-if-and-type-traits-memcpy-optimization-sticky.svg" alt="Sticky Note: 7.10.2 `std::enable_if` and Type Traits → Memcpy Optimization" width="30%">
-</a>
 
 
 ```cpp
@@ -2477,16 +2007,6 @@ element-wise path (100 elements)
 - **Selection cost:** Zero at runtime → entirely compile-time dispatch via SFINAE
 
 ### 7.10.3 CRTP → Curiously Recurring Template Pattern
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-3-crtp-curiously-recurring-template-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-3-crtp-curiously-recurring-template-pattern-handwritten.svg" alt="Handwritten: 7.10.3 CRTP → Curiously Recurring Template Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-3-crtp-curiously-recurring-template-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-3-crtp-curiously-recurring-template-pattern-diagram.svg" alt="Diagram: 7.10.3 CRTP → Curiously Recurring Template Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-3-crtp-curiously-recurring-template-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-3-crtp-curiously-recurring-template-pattern-sticky.svg" alt="Sticky Note: 7.10.3 CRTP → Curiously Recurring Template Pattern" width="30%">
-</a>
 
 
 CRTP is a technique where a class template accepts a derived class as its template argument, enabling static polymorphism:
@@ -2566,16 +2086,6 @@ Rectangle area: 12
 - Microsoft ATL/WTL → window class hierarchies
 
 ### 7.10.4 Policy-Based Design
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-4-policy-based-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-4-policy-based-design-handwritten.svg" alt="Handwritten: 7.10.4 Policy-Based Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-4-policy-based-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-4-policy-based-design-diagram.svg" alt="Diagram: 7.10.4 Policy-Based Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-4-policy-based-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-4-policy-based-design-sticky.svg" alt="Sticky Note: 7.10.4 Policy-Based Design" width="30%">
-</a>
 
 
 Policy-based design uses template parameters to inject behavioral policies:
@@ -2665,16 +2175,6 @@ int main() {
 
 ### 7.10.5 Type Traits Library
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-5-type-traits-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-5-type-traits-library-handwritten.svg" alt="Handwritten: 7.10.5 Type Traits Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-5-type-traits-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-5-type-traits-library-diagram.svg" alt="Diagram: 7.10.5 Type Traits Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-5-type-traits-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-5-type-traits-library-sticky.svg" alt="Sticky Note: 7.10.5 Type Traits Library" width="30%">
-</a>
-
 
 The `<type_traits>` header is built entirely with templates and specialization:
 
@@ -2718,16 +2218,6 @@ int main() {
 
 ### 7.10.6 `std::enable_shared_from_this` → CRTP in the Standard Library
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-6-std-enable-shared-from-this-crtp-in-the-standard-library-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-6-std-enable-shared-from-this-crtp-in-the-standard-library-handwritten.svg" alt="Handwritten: 7.10.6 `std::enable_shared_from_this` → CRTP in the Standard Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-6-std-enable-shared-from-this-crtp-in-the-standard-library-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-6-std-enable-shared-from-this-crtp-in-the-standard-library-diagram.svg" alt="Diagram: 7.10.6 `std::enable_shared_from_this` → CRTP in the Standard Library" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-6-std-enable-shared-from-this-crtp-in-the-standard-library-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/7-10-6-std-enable-shared-from-this-crtp-in-the-standard-library-sticky.svg" alt="Sticky Note: 7.10.6 `std::enable_shared_from_this` → CRTP in the Standard Library" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -2756,16 +2246,6 @@ The `enable_shared_from_this<T>` template stores a `weak_ptr<T>` when a `shared_
 
 ### Pitfall 1: Forgetting `template` Keyword for Dependent Template Members
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-1-forgetting-template-keyword-for-dependent-template-members-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-1-forgetting-template-keyword-for-dependent-template-members-handwritten.svg" alt="Handwritten: Pitfall 1: Forgetting `template` Keyword for Dependent Template Members" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-1-forgetting-template-keyword-for-dependent-template-members-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-1-forgetting-template-keyword-for-dependent-template-members-diagram.svg" alt="Diagram: Pitfall 1: Forgetting `template` Keyword for Dependent Template Members" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-1-forgetting-template-keyword-for-dependent-template-members-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-1-forgetting-template-keyword-for-dependent-template-members-sticky.svg" alt="Sticky Note: Pitfall 1: Forgetting `template` Keyword for Dependent Template Members" width="30%">
-</a>
-
 
 ```cpp
 template <typename T>
@@ -2778,16 +2258,6 @@ void func(T& container) {
 **Fix:** Use `template` keyword when calling a member function template on a dependent object.
 
 ### Pitfall 2: Code Bloat from Many Template Instantiations
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-2-code-bloat-from-many-template-instantiations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-2-code-bloat-from-many-template-instantiations-handwritten.svg" alt="Handwritten: Pitfall 2: Code Bloat from Many Template Instantiations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-2-code-bloat-from-many-template-instantiations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-2-code-bloat-from-many-template-instantiations-diagram.svg" alt="Diagram: Pitfall 2: Code Bloat from Many Template Instantiations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-2-code-bloat-from-many-template-instantiations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-2-code-bloat-from-many-template-instantiations-sticky.svg" alt="Sticky Note: Pitfall 2: Code Bloat from Many Template Instantiations" width="30%">
-</a>
 
 
 ```cpp
@@ -2802,16 +2272,6 @@ my_swap(short, short);
 
 ### Pitfall 3: Forgetting `typename` for Dependent Types
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-3-forgetting-typename-for-dependent-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-3-forgetting-typename-for-dependent-types-handwritten.svg" alt="Handwritten: Pitfall 3: Forgetting `typename` for Dependent Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-3-forgetting-typename-for-dependent-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-3-forgetting-typename-for-dependent-types-diagram.svg" alt="Diagram: Pitfall 3: Forgetting `typename` for Dependent Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-3-forgetting-typename-for-dependent-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-3-forgetting-typename-for-dependent-types-sticky.svg" alt="Sticky Note: Pitfall 3: Forgetting `typename` for Dependent Types" width="30%">
-</a>
-
 
 ```cpp
 template <typename T>
@@ -2824,16 +2284,6 @@ void func() {
 
 ### Pitfall 4: Non-Type Parameter with Runtime Value
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-4-non-type-parameter-with-runtime-value-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-4-non-type-parameter-with-runtime-value-handwritten.svg" alt="Handwritten: Pitfall 4: Non-Type Parameter with Runtime Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-4-non-type-parameter-with-runtime-value-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-4-non-type-parameter-with-runtime-value-diagram.svg" alt="Diagram: Pitfall 4: Non-Type Parameter with Runtime Value" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-4-non-type-parameter-with-runtime-value-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/pitfall-4-non-type-parameter-with-runtime-value-sticky.svg" alt="Sticky Note: Pitfall 4: Non-Type Parameter with Runtime Value" width="30%">
-</a>
-
 
 ```cpp
 int n = 10;
@@ -2844,16 +2294,6 @@ FixedArray<int, N> arr;  // OK: N is compile-time constant
 ```
 
 ### Best Practice Checklist
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/best-practice-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/best-practice-checklist-handwritten.svg" alt="Handwritten: Best Practice Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/best-practice-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/best-practice-checklist-diagram.svg" alt="Diagram: Best Practice Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/best-practice-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/best-practice-checklist-sticky.svg" alt="Sticky Note: Best Practice Checklist" width="30%">
-</a>
 
 
 1. **Define templates in headers** → inclusion model is the only portable approach
@@ -2871,16 +2311,6 @@ FixedArray<int, N> arr;  // OK: N is compile-time constant
 
 ### Q1: What is the difference between template instantiation and template specialization?
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-difference-between-template-instantiation-and-template-specialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-difference-between-template-instantiation-and-template-specialization-handwritten.svg" alt="Handwritten: What is the difference between template instantiation and template specialization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-difference-between-template-instantiation-and-template-specialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-difference-between-template-instantiation-and-template-specialization-diagram.svg" alt="Diagram: What is the difference between template instantiation and template specialization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-difference-between-template-instantiation-and-template-specialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-difference-between-template-instantiation-and-template-specialization-sticky.svg" alt="Sticky Note: What is the difference between template instantiation and template specialization?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2895,16 +2325,6 @@ FixedArray<int, N> arr;  // OK: N is compile-time constant
 **Key insight:** Instantiation = automatic code generation per type. Specialization = programmer-provided override for specific types.
 
 ### Q2: Why can't function templates be partially specialized?
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/why-can-t-function-templates-be-partially-specialized-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/why-can-t-function-templates-be-partially-specialized-handwritten.svg" alt="Handwritten: Why can't function templates be partially specialized?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/why-can-t-function-templates-be-partially-specialized-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/why-can-t-function-templates-be-partially-specialized-diagram.svg" alt="Diagram: Why can't function templates be partially specialized?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/why-can-t-function-templates-be-partially-specialized-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/why-can-t-function-templates-be-partially-specialized-sticky.svg" alt="Sticky Note: Why can't function templates be partially specialized?" width="30%">
-</a>
 
 
 **Answer:** Function templates already have overloading, which provides the same effect as partial specialization with clearer semantics:
@@ -2921,16 +2341,6 @@ Overload resolution selects the most specialized viable overload → the same be
 For class templates, there is no overloading mechanism, so partial specialization fills a genuine need.
 
 ### Q3: What is SFINAE and when would you use it?
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-sfinae-and-when-would-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-sfinae-and-when-would-you-use-it-handwritten.svg" alt="Handwritten: What is SFINAE and when would you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-sfinae-and-when-would-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-sfinae-and-when-would-you-use-it-diagram.svg" alt="Diagram: What is SFINAE and when would you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-sfinae-and-when-would-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-sfinae-and-when-would-you-use-it-sticky.svg" alt="Sticky Note: What is SFINAE and when would you use it?" width="30%">
-</a>
 
 
 **Answer:** Substitution Failure Is Not An Error is a C++ rule that silently removes invalid template candidates during overload resolution rather than emitting a compilation error.
@@ -2953,16 +2363,6 @@ enable_if_t<is_floating_point_v<T>, T> half(T v) { return v / 2.0; }
 ```
 
 ### Q4: What is the CRTP and why is it useful?
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-crtp-and-why-is-it-useful-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-crtp-and-why-is-it-useful-handwritten.svg" alt="Handwritten: What is the CRTP and why is it useful?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-crtp-and-why-is-it-useful-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-crtp-and-why-is-it-useful-diagram.svg" alt="Diagram: What is the CRTP and why is it useful?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-crtp-and-why-is-it-useful-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-the-crtp-and-why-is-it-useful-sticky.svg" alt="Sticky Note: What is the CRTP and why is it useful?" width="30%">
-</a>
 
 
 **Answer:** The Curiously Recurring Template Pattern is a technique where a derived class passes itself as a template argument to its base class:
@@ -2989,16 +2389,6 @@ class Derived : public Base<Derived> {
 **Real-world uses:** `std::enable_shared_from_this`, Eigen expression templates, Boost.Operators, ATL/WTL, CRTP-based mixins.
 
 ### Q5: Explain the difference between `typename` and `class` in templates.
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/explain-the-difference-between-typename-and-class-in-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/explain-the-difference-between-typename-and-class-in-templates-handwritten.svg" alt="Handwritten: Explain the difference between `typename` and `class` in templates." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/explain-the-difference-between-typename-and-class-in-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/explain-the-difference-between-typename-and-class-in-templates-diagram.svg" alt="Diagram: Explain the difference between `typename` and `class` in templates." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/explain-the-difference-between-typename-and-class-in-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/explain-the-difference-between-typename-and-class-in-templates-sticky.svg" alt="Sticky Note: Explain the difference between `typename` and `class` in templates." width="30%">
-</a>
 
 
 **Answer:**
@@ -3056,16 +2446,6 @@ public:
 
 ### Q7: What is lazy instantiation and how does it affect template design?
 
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-lazy-instantiation-and-how-does-it-affect-template-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-lazy-instantiation-and-how-does-it-affect-template-design-handwritten.svg" alt="Handwritten: What is lazy instantiation and how does it affect template design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-lazy-instantiation-and-how-does-it-affect-template-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-lazy-instantiation-and-how-does-it-affect-template-design-diagram.svg" alt="Diagram: What is lazy instantiation and how does it affect template design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-lazy-instantiation-and-how-does-it-affect-template-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/what-is-lazy-instantiation-and-how-does-it-affect-template-design-sticky.svg" alt="Sticky Note: What is lazy instantiation and how does it affect template design?" width="30%">
-</a>
-
 
 **Answer:** Lazy instantiation means class template member functions are only instantiated when they are actually used:
 
@@ -3122,16 +2502,6 @@ The template system is Turing-complete at compile time, enabling arbitrary compi
 8. Explain the inclusion model for templates. Why is `export` no longer in the standard?
 
 ### Code Problems
-
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/code-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/code-problems-handwritten.svg" alt="Handwritten: Code Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/code-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/code-problems-diagram.svg" alt="Diagram: Code Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/oop-cpp/07-templates/code-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/oop-cpp/07-templates/code-problems-sticky.svg" alt="Sticky Note: Code Problems" width="30%">
-</a>
 
 
 1. **Function template → `find_max`:**

@@ -5,7 +5,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/10-upaya-tantra-osho/hero.svg" target="_blank" rel="noopener">
@@ -117,17 +116,6 @@ flowchart TB
 
 ### "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "आणव का अर्थ है — तुम अभी पर्याप्त नहीं हो"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"आणव उपाय — यह उनके लिए है जो सोचते हैं कि वे छोटे हैं, सीमित हैं, अपूर्ण हैं। आणव का मतलब ही 'अणु' — छोटा — है। और यह उपाय मानता है कि तुम्हें कुछ करना है, कुछ बनना है, कुछ पाना है। यह द्वैत पर आधारित है — साधक और साध्य, कर्ता और कर्म, मार्ग और मंज़िल।"*
 
@@ -143,17 +131,6 @@ flowchart TB
 
 ### ओशो की नाव वाली कहानी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो की नाव वाली कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो की नाव वाली कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो की नाव वाली कहानी" width="30%">
-</a>
-
-
 एक आदमी को नदी पार करनी थी। वह बहुत डरा हुआ था — नदी गहरी थी, धारा तेज़ थी। उसने एक नाव बनाई। बड़ी मेहनत से — दिन-रात काम किया। नाव तैयार हुई। उसने नाव खेई और नदी पार की।
 
 पार उतरने के बाद, वह सोचने लगा — "यह नाव बहुत अच्छी है। इसने मेरी जान बचाई। मैं इसे नहीं छोड़ सकता।" तो वह नाव को अपने सिर पर उठाकर आगे बढ़ने लगा। अब वह नाव उसके लिए बोझ बन गई।
@@ -163,32 +140,10 @@ flowchart TB
 
 ### आणव के लिए कौन उपयुक्त है — ओशो के अनुसार
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: आणव के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"यदि तुम अनुशासन में विश्वास करते हो, यदि तुम क्रमिक प्रगति पसंद करते हो, यदि तुम 'करने' में सहज महसूस करते हो — तो आणव तुम्हारा मार्ग है। इसमें कोई शर्म की बात नहीं है। बुद्ध ने भी इसी मार्ग से शुरुआत की थी। लेकिन याद रखो — यह शुरुआत है, अंत नहीं।"*
 
 ### आणव उपाय की तकनीकों पर ओशो की टिप्पणी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: आणव उपाय की तकनीकों पर ओशो की टिप्पणी" width="30%">
-</a>
-
 
 **श्वास-ध्यान पर ओशो:**
 > *"श्वास को देखना — यह सबसे सरल तकनीक है। और सबसे गहरी भी। श्वास वह पुल है जो शरीर और मन को जोड़ता है। जब तुम श्वास को देखते हो, तो तुम दोनों को देख रहे हो। यहीं से शुरुआत करो।"*
@@ -220,17 +175,6 @@ flowchart LR
 
 ### "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "शाक्त का अर्थ है — तुम ऊर्जा हो, कर्ता नहीं"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"शाक्त उपाय में तुम कुछ नहीं करते — तुम केवल ऊर्जा को प्रवाहित होने देते हो। तुम नदी नहीं खेते — तुम नदी बन जाते हो। तुम नियंत्रण छोड़ देते हो — और फिर पहली बार, तुम पाते हो कि असली नियंत्रण तो यही है।"*
 
@@ -246,17 +190,6 @@ flowchart LR
 
 ### शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: शाक्त उपाय पर ओशो का एक ज़ेन दृष्टांत" width="30%">
-</a>
-
-
 एक ज़ेन गुरु के पास एक विद्वान आया। विद्वान ने कहा — "गुरुजी, मैं बहुत सालों से ध्यान कर रहा हूँ। मैंने सब तकनीकें आज़मा लीं। मुझे कुछ नहीं मिल रहा।"
 
 गुरु ने उसे चाय पिलाई। कप में चाय डालते रहे — कप भर गया, फिर भी डालते रहे। चाय कप से बाहर गिरने लगी।
@@ -269,17 +202,6 @@ flowchart LR
 > *"शाक्त उपाय का अर्थ है — खाली हो जाना। सारी तकनीकें, सारे प्रयास, सारे ज्ञान को एक तरफ रख दो। केवल ऊर्जा को प्रवाहित होने दो। जब तुम खाली होते हो, तब परम तुम्हें भरता है।"*
 
 ### रति-ध्यान — ओशो की व्याख्या
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: रति-ध्यान — ओशो की व्याख्या" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: रति-ध्यान — ओशो की व्याख्या" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: रति-ध्यान — ओशो की व्याख्या" width="30%">
-</a>
-
 
 > **ओशो वाणी:**
 > *"प्रेम — रति — यह शाक्त उपाय की सबसे शक्तिशाली तकनीक है। क्योंकि प्रेम में, तुम करीब होते हो — लेकिन करीबी में भी, एक दूरी होती है। प्रेम में तुम एक होने की कोशिश करते हो — और वही कोशिश तुम्हें चैतन्य के करीब लाती है। प्रेम को निर्विषय कर दो — बिना किसी वस्तु के प्रेम — और वही परम है।"*
@@ -314,17 +236,6 @@ flowchart TB
 
 ### शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: शाक्त उपाय के लिए कौन उपयुक्त है — ओशो के अनुसार" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"यदि तुम भावनाओं में गहरे उतर सकते हो, यदि तुम संगीत में खो सकते हो, यदि तुम प्रेम में पागल हो सकते हो — तो शाक्त तुम्हारा मार्ग है। यह कवियों का, कलाकारों का, प्रेमियों का मार्ग है। यह सहज है, तीव्र है — लेकिन अस्थिर भी है। शाक्त में तुम ऊपर उठ सकते हो — और नीचे गिर भी सकते हो। इसलिए साक्षी बने रहना — यही शाक्त में संतुलन है।"*
 
@@ -333,17 +244,6 @@ flowchart TB
 ## ३. शांभव उपाय — ओशो की क्रांतिकारी व्याख्या
 
 ### "शांभव — उपायों का अंत, चेतना की शुरुआत"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "शांभव — उपायों का अंत, चेतना की शुरुआत"" width="30%">
-</a>
-
 
 यह ओशो का सबसे महत्वपूर्ण संदेश है — शांभव कोई उपाय नहीं है।
 
@@ -362,17 +262,6 @@ flowchart TB
 
 ### ओशो की "नो-मेथड मेथड"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो की "नो-मेथड मेथड"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो की "नो-मेथड मेथड"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो की "नो-मेथड मेथड"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"मैं तुम्हें एक ऐसी विधि देता हूँ जो कोई विधि नहीं है। मैं तुम्हें कुछ ऐसा करने को कहता हूँ जो कोई क्रिया नहीं है। मैं कहता हूँ — बस बैठो। कुछ मत करो। श्वास को मत बदलो, मंत्र मत जपो, कुछ मत सोचो। बस बैठो — और होने दो जो हो रहा है। यही शांभव है।"*
 
@@ -387,17 +276,6 @@ flowchart TB
 ७. यही शांभव है।
 
 ### एक और ज़ेन कहानी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: एक और ज़ेन कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: एक और ज़ेन कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: एक और ज़ेन कहानी" width="30%">
-</a>
-
 
 बुद्ध के एक शिष्य ने पूछा — "भगवान, मैं ध्यान कैसे करूँ?"
 
@@ -431,17 +309,6 @@ flowchart TB
 
 ### "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: "प्रयास आवश्यक है — लेकिन प्रयास में मत उलझो"" width="30%">
-</a>
-
-
 यह ओशो का सबसे व्यावहारिक संदेश है। वे कहते हैं —
 
 > **ओशो वाणी:**
@@ -456,17 +323,6 @@ flowchart TB
 | श्वास देखना | श्वास को होने देना |
 
 ### ओशो का उदाहरण — तीरंदाज़ी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: ओशो का उदाहरण — तीरंदाज़ी" width="30%">
-</a>
-
 
 एक तीरंदाज़ ने सालों अभ्यास किया। उसने लक्ष्य साधना, धनुष खींचना, छोड़ना — सब सीखा। फिर एक दिन, गुरु ने कहा — "अब सब भूल जाओ।"
 
@@ -1112,17 +968,6 @@ demonstrateOshoUpaya();
 
 ### अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास १: तीन उपाय — तीन सप्ताह का प्रयोग" width="30%">
-</a>
-
-
 तीन सप्ताह तक प्रतिदिन अभ्यास करें:
 
 - **सप्ताह १ (आणव):** प्रतिदिन २० मिनट श्वास-ध्यान — पूरे प्रयास और अनुशासन के साथ
@@ -1133,76 +978,21 @@ demonstrateOshoUpaya();
 
 ### अभ्यास २: अपनी नाव को पहचानें
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास २: अपनी नाव को पहचानें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास २: अपनी नाव को पहचानें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास २: अपनी नाव को पहचानें" width="30%">
-</a>
-
-
 ओशो की नाव वाली कहानी पर ध्यान करें। पूछें — "मेरी नाव क्या है? मैं किस तकनीक, किस विश्वास, किस आदत से चिपका हूँ?" उसे पहचानें — और फिर उसे छोड़ने का अभ्यास करें।
 
 ### अभ्यास ३: प्रयास-सहजता संतुलन
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ३: प्रयास-सहजता संतुलन" width="30%">
-</a>
-
 
 एक दिन में तीन बार — सुबह, दोपहर, शाम — अपने प्रयास स्तर को मापें (१-१०)। देखें कि कब आप प्रयास कर रहे हैं और कब सहज हैं। TypeScript ट्रैकर का उपयोग करें।
 
 ### अभ्यास ४: शांभव का क्षण
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ४: शांभव का क्षण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ४: शांभव का क्षण" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ४: शांभव का क्षण" width="30%">
-</a>
-
-
 दिन में एक बार — किसी भी समय — अचानक रुकें। एक गहरी साँस लें। और फिर — कुछ भी मत करें। केवल ३० सेकंड के लिए — बस होने दें। यह शांभव का एक क्षण है।
 
 ### अभ्यास ५: ओशो की कहानियों पर ध्यान
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ५: ओशो की कहानियों पर ध्यान" width="30%">
-</a>
-
-
 इस अध्याय की तीन कहानियाँ — नाव वाली, चाय वाली, तीरंदाज़ वाली — किसी एक कहानी पर १५ मिनट ध्यान करें। कहानी को याद करें, उसके अर्थ में उतरें, और देखें कि वह कहानी आपके भीतर क्या बदलाव लाती है।
 
 ### अभ्यास ६: समूह चर्चा
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/10-upaya-tantra-osho/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-
 
 निम्नलिखित प्रश्नों पर समूह में ओशो के दृष्टिकोण से चर्चा करें:
 

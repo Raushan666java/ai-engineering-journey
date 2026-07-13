@@ -81,16 +81,6 @@ flowchart LR
 
 ### 3.1 Blade Syntax
 
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-1-blade-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-1-blade-syntax-handwritten.svg" alt="Handwritten: 3.1 Blade Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-1-blade-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-1-blade-syntax-diagram.svg" alt="Diagram: 3.1 Blade Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-1-blade-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-1-blade-syntax-sticky.svg" alt="Sticky Note: 3.1 Blade Syntax" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Blade's echo syntax automatically escapes output, preventing XSS while offering clean conditional and loop constructs.
 
@@ -198,16 +188,6 @@ Properties: `$loop->index` (0-based), `$loop->iteration` (1-based), `$loop->rema
 
 ### 3.2 Template Inheritance
 
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-2-template-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-2-template-inheritance-handwritten.svg" alt="Handwritten: 3.2 Template Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-2-template-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-2-template-inheritance-diagram.svg" alt="Diagram: 3.2 Template Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-2-template-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-2-template-inheritance-sticky.svg" alt="Sticky Note: 3.2 Template Inheritance" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Template inheritance via @extends/@section/@yield provides a clean parent-child layout hierarchy.
 
@@ -278,16 +258,6 @@ Key directives:
 ```
 
 ### 3.3 Components
-
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-3-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-3-components-handwritten.svg" alt="Handwritten: 3.3 Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-3-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-3-components-diagram.svg" alt="Diagram: 3.3 Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-3-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-3-components-sticky.svg" alt="Sticky Note: 3.3 Components" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Blade components offer encapsulated, reusable UI elements with slots and attribute bags, superseding @include for most use cases.
@@ -438,16 +408,6 @@ No PHP class → all logic lives in the template:
 
 ### 3.4 Blade with Vite
 
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-4-blade-with-vite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-4-blade-with-vite-handwritten.svg" alt="Handwritten: 3.4 Blade with Vite" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-4-blade-with-vite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-4-blade-with-vite-diagram.svg" alt="Diagram: 3.4 Blade with Vite" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-4-blade-with-vite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-4-blade-with-vite-sticky.svg" alt="Sticky Note: 3.4 Blade with Vite" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Vite integration delivers HMR in development and versioned asset bundles in production through the @vite() directive.
 
@@ -478,16 +438,6 @@ export default defineConfig({
 In development (`npm run dev`), `@vite()` generates HMR module script tags pointing to `localhost:5173`. Save a file and the browser updates without a full reload. In production (`npm run build`), it generates versioned asset links with content hashes for cache busting.
 
 ### 3.5 Layouts: Inheritance vs Components
-
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-5-layouts-inheritance-vs-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-5-layouts-inheritance-vs-components-handwritten.svg" alt="Handwritten: 3.5 Layouts: Inheritance vs Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-5-layouts-inheritance-vs-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-5-layouts-inheritance-vs-components-diagram.svg" alt="Diagram: 3.5 Layouts: Inheritance vs Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-5-layouts-inheritance-vs-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-5-layouts-inheritance-vs-components-sticky.svg" alt="Sticky Note: 3.5 Layouts: Inheritance vs Components" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Use inheritance for single-layout sites and components for multi-layout flexibility.
@@ -541,16 +491,6 @@ Example component-based layout:
 
 ### 3.6 Forms and CSRF
 
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-6-forms-and-csrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-6-forms-and-csrf-handwritten.svg" alt="Handwritten: 3.6 Forms and CSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-6-forms-and-csrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-6-forms-and-csrf-diagram.svg" alt="Diagram: 3.6 Forms and CSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-6-forms-and-csrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-6-forms-and-csrf-sticky.svg" alt="Sticky Note: 3.6 Forms and CSRF" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** CSRF protection is automatic with @csrf, and method spoofing via @method enables PUT/PATCH/DELETE in HTML forms.
 
@@ -592,16 +532,6 @@ Example component-based layout:
 
 ### 3.7 Push, Stack, and One-Time Includes
 
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-7-push-stack-and-one-time-includes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-7-push-stack-and-one-time-includes-handwritten.svg" alt="Handwritten: 3.7 Push, Stack, and One-Time Includes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-7-push-stack-and-one-time-includes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-7-push-stack-and-one-time-includes-diagram.svg" alt="Diagram: 3.7 Push, Stack, and One-Time Includes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-7-push-stack-and-one-time-includes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-7-push-stack-and-one-time-includes-sticky.svg" alt="Sticky Note: 3.7 Push, Stack, and One-Time Includes" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** @push and @stack enable deferred injection of scripts and styles from child to parent layouts.
 
@@ -634,16 +564,6 @@ Example component-based layout:
 ```
 
 ### 3.8 Complete Form with Validation Errors
-
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-8-complete-form-with-validation-errors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-8-complete-form-with-validation-errors-handwritten.svg" alt="Handwritten: 3.8 Complete Form with Validation Errors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-8-complete-form-with-validation-errors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-8-complete-form-with-validation-errors-diagram.svg" alt="Diagram: 3.8 Complete Form with Validation Errors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-8-complete-form-with-validation-errors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-8-complete-form-with-validation-errors-sticky.svg" alt="Sticky Note: 3.8 Complete Form with Validation Errors" width="30%">
-</a>
 
 
 `resources/views/posts/create.blade.php`:
@@ -698,16 +618,6 @@ Example component-based layout:
 ```
 
 ### 3.9 Form Partials with `@each`
-
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-9-form-partials-with-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-9-form-partials-with-each-handwritten.svg" alt="Handwritten: 3.9 Form Partials with `@each`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-9-form-partials-with-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-9-form-partials-with-each-diagram.svg" alt="Diagram: 3.9 Form Partials with `@each`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/03-blade-frontend/3-9-form-partials-with-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/03-blade-frontend/3-9-form-partials-with-each-sticky.svg" alt="Sticky Note: 3.9 Form Partials with `@each`" width="30%">
-</a>
 
 
 For sub-resources like invoice line items, `@each` with partials keeps forms DRY:

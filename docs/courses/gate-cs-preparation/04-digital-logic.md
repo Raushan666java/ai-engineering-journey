@@ -80,16 +80,6 @@ flowchart LR
 
 ### 1.1 Number Base Conversions
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-1-number-base-conversions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-1-number-base-conversions-handwritten.svg" alt="Handwritten: 1.1 Number Base Conversions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-1-number-base-conversions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-1-number-base-conversions-diagram.svg" alt="Diagram: 1.1 Number Base Conversions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-1-number-base-conversions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-1-number-base-conversions-sticky.svg" alt="Sticky Note: 1.1 Number Base Conversions" width="30%">
-</a>
-
 
 **Common bases in GATE:**
 
@@ -143,16 +133,6 @@ Example: 0.625ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€�
 
 ### 1.2 Complements
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-2-complements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-2-complements-handwritten.svg" alt="Handwritten: 1.2 Complements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-2-complements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-2-complements-diagram.svg" alt="Diagram: 1.2 Complements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-2-complements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-2-complements-sticky.svg" alt="Sticky Note: 1.2 Complements" width="30%">
-</a>
-
 
 **1's complement:** Invert all bits (0Ã¢â€ â€™1, 1Ã¢â€ â€™0).
 
@@ -184,16 +164,6 @@ Example: 8-bit representation of -42
 
 ### 1.3 Boolean Algebra
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-3-boolean-algebra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-3-boolean-algebra-handwritten.svg" alt="Handwritten: 1.3 Boolean Algebra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-3-boolean-algebra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-3-boolean-algebra-diagram.svg" alt="Diagram: 1.3 Boolean Algebra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-3-boolean-algebra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-3-boolean-algebra-sticky.svg" alt="Sticky Note: 1.3 Boolean Algebra" width="30%">
-</a>
-
 
 **Basic postulates (Huntington's):**
 
@@ -222,16 +192,6 @@ Complement:   a + a' = 1,  a Ãƒâ€šÃ‚Â· a' = 0
 **Duality principle:** Every algebraic expression remains valid if we swap + with Ãƒâ€šÃ‚Â· and 0 with 1.
 
 ### 1.4 Standard Forms
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-4-standard-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-4-standard-forms-handwritten.svg" alt="Handwritten: 1.4 Standard Forms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-4-standard-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-4-standard-forms-diagram.svg" alt="Diagram: 1.4 Standard Forms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-4-standard-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-4-standard-forms-sticky.svg" alt="Sticky Note: 1.4 Standard Forms" width="30%">
-</a>
 
 
 **Minterm (Standard SOP):** Product term where every variable appears once (complemented or uncomplemented). Each minterm = 1 for exactly one input combination.
@@ -266,16 +226,6 @@ POS: F = (A+B+C)(A+B'+C)(A'+B+C)(A'+B'+C')
 ```
 
 ### 1.5 GATE Practice Problems Ã¢â€ â€™ Number Systems & Boolean Algebra
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-5-gate-practice-problems-number-systems-boolean-algebra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-5-gate-practice-problems-number-systems-boolean-algebra-handwritten.svg" alt="Handwritten: 1.5 GATE Practice Problems Ã¢â€ â€™ Number Systems & Boolean Algebra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-5-gate-practice-problems-number-systems-boolean-algebra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-5-gate-practice-problems-number-systems-boolean-algebra-diagram.svg" alt="Diagram: 1.5 GATE Practice Problems Ã¢â€ â€™ Number Systems & Boolean Algebra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-5-gate-practice-problems-number-systems-boolean-algebra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/1-5-gate-practice-problems-number-systems-boolean-algebra-sticky.svg" alt="Sticky Note: 1.5 GATE Practice Problems Ã¢â€ â€™ Number Systems & Boolean Algebra" width="30%">
-</a>
 
 
 **Problem 1:** Convert (0.375)ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â�ÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ to binary.
@@ -388,16 +338,6 @@ Answer: (C)
 
 ### 2.1 Basic Logic Gates Ã¢â€ â€™ Truth Tables
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-1-basic-logic-gates-truth-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-1-basic-logic-gates-truth-tables-handwritten.svg" alt="Handwritten: 2.1 Basic Logic Gates Ã¢â€ â€™ Truth Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-1-basic-logic-gates-truth-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-1-basic-logic-gates-truth-tables-diagram.svg" alt="Diagram: 2.1 Basic Logic Gates Ã¢â€ â€™ Truth Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-1-basic-logic-gates-truth-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-1-basic-logic-gates-truth-tables-sticky.svg" alt="Sticky Note: 2.1 Basic Logic Gates Ã¢â€ â€™ Truth Tables" width="30%">
-</a>
-
 
 **AND gate:** Output = 1 only when ALL inputs are 1.
 ```
@@ -462,16 +402,6 @@ Answer: (C)
 
 ### 2.2 Universal Gates
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-2-universal-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-2-universal-gates-handwritten.svg" alt="Handwritten: 2.2 Universal Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-2-universal-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-2-universal-gates-diagram.svg" alt="Diagram: 2.2 Universal Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-2-universal-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-2-universal-gates-sticky.svg" alt="Sticky Note: 2.2 Universal Gates" width="30%">
-</a>
-
 
 **NAND as universal gate:**
 
@@ -517,16 +447,6 @@ AND:      AB = (A' NOR B')' = (A NOR A) NOR (B NOR B)
 ```
 
 ### 2.3 Adders
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-3-adders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-3-adders-handwritten.svg" alt="Handwritten: 2.3 Adders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-3-adders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-3-adders-diagram.svg" alt="Diagram: 2.3 Adders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-3-adders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-3-adders-sticky.svg" alt="Sticky Note: 2.3 Adders" width="30%">
-</a>
 
 
 **Half Adder:** Adds 2 bits. Outputs Sum (S) and Carry (C).
@@ -621,16 +541,6 @@ Sum:  SÃƒÂ¡Ã‚ÂµÃ‚Â¢ = PÃƒÂ¡Ã‚ÂµÃ‚Â¢ ÃƒÂ¢Ã…Â�
 
 ### 2.4 Multiplexers (MUX)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-4-multiplexers-mux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-4-multiplexers-mux-handwritten.svg" alt="Handwritten: 2.4 Multiplexers (MUX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-4-multiplexers-mux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-4-multiplexers-mux-diagram.svg" alt="Diagram: 2.4 Multiplexers (MUX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-4-multiplexers-mux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-4-multiplexers-mux-sticky.svg" alt="Sticky Note: 2.4 Multiplexers (MUX)" width="30%">
-</a>
-
 
 A multiplexer selects one of 2ÃƒÂ¢Ã‚Â�Ã‚Â¿ input lines using n select lines.
 
@@ -686,16 +596,6 @@ IÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™ = C          (for AB=11, F=C Ã¢â€ â
 
 ### 2.5 Demultiplexers (DEMUX)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-5-demultiplexers-demux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-5-demultiplexers-demux-handwritten.svg" alt="Handwritten: 2.5 Demultiplexers (DEMUX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-5-demultiplexers-demux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-5-demultiplexers-demux-diagram.svg" alt="Diagram: 2.5 Demultiplexers (DEMUX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-5-demultiplexers-demux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-5-demultiplexers-demux-sticky.svg" alt="Sticky Note: 2.5 Demultiplexers (DEMUX)" width="30%">
-</a>
-
 
 A demultiplexer routes one input to one of 2ÃƒÂ¢Ã‚Â�Ã‚Â¿ outputs based on n select lines.
 
@@ -710,16 +610,6 @@ SÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� SÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ | YÃ
 ```
 
 ### 2.6 Encoders
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-6-encoders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-6-encoders-handwritten.svg" alt="Handwritten: 2.6 Encoders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-6-encoders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-6-encoders-diagram.svg" alt="Diagram: 2.6 Encoders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-6-encoders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-6-encoders-sticky.svg" alt="Sticky Note: 2.6 Encoders" width="30%">
-</a>
 
 
 **Priority Encoder (4:2):** Outputs the binary code of the highest-priority active input.
@@ -737,16 +627,6 @@ SÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� SÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€šÂ¬ | YÃ
 ```
 
 ### 2.7 Decoders
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-7-decoders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-7-decoders-handwritten.svg" alt="Handwritten: 2.7 Decoders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-7-decoders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-7-decoders-diagram.svg" alt="Diagram: 2.7 Decoders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-7-decoders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-7-decoders-sticky.svg" alt="Sticky Note: 2.7 Decoders" width="30%">
-</a>
 
 
 An n-to-2ÃƒÂ¢Ã‚Â�Ã‚Â¿ decoder activates exactly one of 2ÃƒÂ¢Ã‚Â�Ã‚Â¿ outputs based on the n-bit input.
@@ -767,16 +647,6 @@ An n-to-2ÃƒÂ¢Ã‚Â�Ã‚Â¿ decoder activates exactly one of 2ÃƒÂ¢�
 
 ### 2.8 Comparators
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-8-comparators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-8-comparators-handwritten.svg" alt="Handwritten: 2.8 Comparators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-8-comparators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-8-comparators-diagram.svg" alt="Diagram: 2.8 Comparators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-8-comparators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-8-comparators-sticky.svg" alt="Sticky Note: 2.8 Comparators" width="30%">
-</a>
-
 
 **1-bit Magnitude Comparator:**
 
@@ -796,16 +666,6 @@ A<B = A'Ãƒâ€šÃ‚Â·B
 **n-bit comparator:** Compare MSB first. If MSB equal, compare next bit.
 
 ### 2.9 Karnaugh Maps (K-Maps)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-9-karnaugh-maps-k-maps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-9-karnaugh-maps-k-maps-handwritten.svg" alt="Handwritten: 2.9 Karnaugh Maps (K-Maps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-9-karnaugh-maps-k-maps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-9-karnaugh-maps-k-maps-diagram.svg" alt="Diagram: 2.9 Karnaugh Maps (K-Maps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-9-karnaugh-maps-k-maps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-9-karnaugh-maps-k-maps-sticky.svg" alt="Sticky Note: 2.9 Karnaugh Maps (K-Maps)" width="30%">
-</a>
 
 
 **2-variable K-map:**
@@ -933,16 +793,6 @@ Groups can span both planes (eliminating A) if the same rectangle of 1s appears 
 
 ### 2.10 Quine-McCluskey Algorithm
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-10-quine-mccluskey-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-10-quine-mccluskey-algorithm-handwritten.svg" alt="Handwritten: 2.10 Quine-McCluskey Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-10-quine-mccluskey-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-10-quine-mccluskey-algorithm-diagram.svg" alt="Diagram: 2.10 Quine-McCluskey Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-10-quine-mccluskey-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-10-quine-mccluskey-algorithm-sticky.svg" alt="Sticky Note: 2.10 Quine-McCluskey Algorithm" width="30%">
-</a>
-
 
 Systematic tabular method for minimizing Boolean functions (handles >5 variables where K-maps fail).
 
@@ -992,16 +842,6 @@ Prime implicants: A'C' (0-0-), B'C'D (000- if uncombined)... etc.
 
 ### 2.11 ALU Concepts
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-11-alu-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-11-alu-concepts-handwritten.svg" alt="Handwritten: 2.11 ALU Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-11-alu-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-11-alu-concepts-diagram.svg" alt="Diagram: 2.11 ALU Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-11-alu-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-11-alu-concepts-sticky.svg" alt="Sticky Note: 2.11 ALU Concepts" width="30%">
-</a>
-
 
 **Arithmetic Logic Unit (ALU):** Combinational circuit that performs arithmetic and logic operations.
 
@@ -1025,16 +865,6 @@ Function table:
 ```
 
 ### 2.12 GATE Practice Problems Ã¢â€ â€™ Combinational Circuits
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-12-gate-practice-problems-combinational-circuits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-12-gate-practice-problems-combinational-circuits-handwritten.svg" alt="Handwritten: 2.12 GATE Practice Problems Ã¢â€ â€™ Combinational Circuits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-12-gate-practice-problems-combinational-circuits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-12-gate-practice-problems-combinational-circuits-diagram.svg" alt="Diagram: 2.12 GATE Practice Problems Ã¢â€ â€™ Combinational Circuits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-12-gate-practice-problems-combinational-circuits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/2-12-gate-practice-problems-combinational-circuits-sticky.svg" alt="Sticky Note: 2.12 GATE Practice Problems Ã¢â€ â€™ Combinational Circuits" width="30%">
-</a>
 
 
 **Problem 8:** (GATE 2023) How many 4:1 multiplexers are needed to implement an 8:1 multiplexer?
@@ -1122,16 +952,6 @@ Answer: (A) 135 ns
 
 ### 3.1 Latches
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-1-latches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-1-latches-handwritten.svg" alt="Handwritten: 3.1 Latches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-1-latches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-1-latches-diagram.svg" alt="Diagram: 3.1 Latches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-1-latches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-1-latches-sticky.svg" alt="Sticky Note: 3.1 Latches" width="30%">
-</a>
-
 
 Sequential elements store state. Latches are level-sensitive.
 
@@ -1200,16 +1020,6 @@ Q(t+1) = TÃƒâ€šÃ‚Â·Q(t)' + T'Ãƒâ€šÃ‚Â·Q(t) = T ÃƒÂ¢Ã�
 
 ### 3.2 Flip-Flops
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-2-flip-flops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-2-flip-flops-handwritten.svg" alt="Handwritten: 3.2 Flip-Flops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-2-flip-flops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-2-flip-flops-diagram.svg" alt="Diagram: 3.2 Flip-Flops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-2-flip-flops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-2-flip-flops-sticky.svg" alt="Sticky Note: 3.2 Flip-Flops" width="30%">
-</a>
-
 
 Flip-flops are edge-triggered (respond only at clock edge).
 
@@ -1272,16 +1082,6 @@ Flip-flops are edge-triggered (respond only at clock edge).
 
 ### 3.3 Registers
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-3-registers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-3-registers-handwritten.svg" alt="Handwritten: 3.3 Registers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-3-registers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-3-registers-diagram.svg" alt="Diagram: 3.3 Registers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-3-registers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-3-registers-sticky.svg" alt="Sticky Note: 3.3 Registers" width="30%">
-</a>
-
 
 **Shift Register:** Series of flip-flops connected in cascade. Data shifts right (or left) on each clock cycle.
 
@@ -1314,16 +1114,6 @@ Mode Control SÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â� SÃƒÂ¢Ã¢â‚¬Å¡Ã¢â�
 ```
 
 ### 3.4 Counters
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-4-counters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-4-counters-handwritten.svg" alt="Handwritten: 3.4 Counters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-4-counters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-4-counters-diagram.svg" alt="Diagram: 3.4 Counters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-4-counters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-4-counters-sticky.svg" alt="Sticky Note: 3.4 Counters" width="30%">
-</a>
 
 
 **Ripple (Asynchronous) Counter:** Each flip-flop output clocks the next stage.
@@ -1408,16 +1198,6 @@ Mod = 2n (where n = number of flip-flops)
 
 ### 3.5 State Machines
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-5-state-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-5-state-machines-handwritten.svg" alt="Handwritten: 3.5 State Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-5-state-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-5-state-machines-diagram.svg" alt="Diagram: 3.5 State Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-5-state-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-5-state-machines-sticky.svg" alt="Sticky Note: 3.5 State Machines" width="30%">
-</a>
-
 
 **Finite State Machine (FSM):**
 
@@ -1470,16 +1250,6 @@ Step 4: States in same final partition block are equivalent
 
 ### 3.6 Timing Analysis
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-6-timing-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-6-timing-analysis-handwritten.svg" alt="Handwritten: 3.6 Timing Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-6-timing-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-6-timing-analysis-diagram.svg" alt="Diagram: 3.6 Timing Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-6-timing-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-6-timing-analysis-sticky.svg" alt="Sticky Note: 3.6 Timing Analysis" width="30%">
-</a>
-
 
 **Setup time (t_su):** Time data must be stable BEFORE clock edge.
 
@@ -1498,16 +1268,6 @@ where t_combo = worst-case combinational logic delay
 **Solution to race-around:** Master-slave configuration or edge-triggering.
 
 ### 3.7 GATE Practice Problems Ã¢â€ â€™ Sequential Circuits
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-7-gate-practice-problems-sequential-circuits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-7-gate-practice-problems-sequential-circuits-handwritten.svg" alt="Handwritten: 3.7 GATE Practice Problems Ã¢â€ â€™ Sequential Circuits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-7-gate-practice-problems-sequential-circuits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-7-gate-practice-problems-sequential-circuits-diagram.svg" alt="Diagram: 3.7 GATE Practice Problems Ã¢â€ â€™ Sequential Circuits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-7-gate-practice-problems-sequential-circuits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/3-7-gate-practice-problems-sequential-circuits-sticky.svg" alt="Sticky Note: 3.7 GATE Practice Problems Ã¢â€ â€™ Sequential Circuits" width="30%">
-</a>
 
 
 **Problem 13:** (GATE 2023) For a JK flip-flop, if J=1, K=1, and Q(t)=0, what is Q(t+1)?
@@ -1597,16 +1357,6 @@ Note: A Moore machine would need 5 states (one extra state for output=1).
 
 ### 4.1 Memory Classification
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-1-memory-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-1-memory-classification-handwritten.svg" alt="Handwritten: 4.1 Memory Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-1-memory-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-1-memory-classification-diagram.svg" alt="Diagram: 4.1 Memory Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-1-memory-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-1-memory-classification-sticky.svg" alt="Sticky Note: 4.1 Memory Classification" width="30%">
-</a>
-
 
 ```
                                Memory
@@ -1660,16 +1410,6 @@ Example: 4K ÃƒÆ’Ã¢â‚¬â€� 8 memory = 4096 words ÃƒÆ’Ã¢â�
 
 ### 4.2 Chip Select and Memory Decoding
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-2-chip-select-and-memory-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-2-chip-select-and-memory-decoding-handwritten.svg" alt="Handwritten: 4.2 Chip Select and Memory Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-2-chip-select-and-memory-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-2-chip-select-and-memory-decoding-diagram.svg" alt="Diagram: 4.2 Chip Select and Memory Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-2-chip-select-and-memory-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-2-chip-select-and-memory-decoding-sticky.svg" alt="Sticky Note: 4.2 Chip Select and Memory Decoding" width="30%">
-</a>
-
 
 **Memory chip select logic:**
 ```
@@ -1687,16 +1427,6 @@ CSÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™ = A15 Ãƒâ€šÃ‚Â· A14
 ```
 
 ### 4.3 Programmable Logic Devices
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-3-programmable-logic-devices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-3-programmable-logic-devices-handwritten.svg" alt="Handwritten: 4.3 Programmable Logic Devices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-3-programmable-logic-devices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-3-programmable-logic-devices-diagram.svg" alt="Diagram: 4.3 Programmable Logic Devices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-3-programmable-logic-devices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-3-programmable-logic-devices-sticky.svg" alt="Sticky Note: 4.3 Programmable Logic Devices" width="30%">
-</a>
 
 
 **PLA (Programmable Logic Array):**
@@ -1763,16 +1493,6 @@ SW  = Switch Matrix (programmable interconnect)
 
 ### 4.4 GATE Practice Problems Ã¢â€ â€™ Memory & Programmable Logic
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-4-gate-practice-problems-memory-programmable-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-4-gate-practice-problems-memory-programmable-logic-handwritten.svg" alt="Handwritten: 4.4 GATE Practice Problems Ã¢â€ â€™ Memory & Programmable Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-4-gate-practice-problems-memory-programmable-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-4-gate-practice-problems-memory-programmable-logic-diagram.svg" alt="Diagram: 4.4 GATE Practice Problems Ã¢â€ â€™ Memory & Programmable Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-4-gate-practice-problems-memory-programmable-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/4-4-gate-practice-problems-memory-programmable-logic-sticky.svg" alt="Sticky Note: 4.4 GATE Practice Problems Ã¢â€ â€™ Memory & Programmable Logic" width="30%">
-</a>
-
 
 **Problem 21:** A memory system has 16 address lines and 8 data lines. What is its capacity?
 ```
@@ -1827,16 +1547,6 @@ Answer: (B) 16
 
 ### Boolean Algebra Laws
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-algebra-laws-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-algebra-laws-handwritten.svg" alt="Handwritten: Boolean Algebra Laws" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-algebra-laws-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-algebra-laws-diagram.svg" alt="Diagram: Boolean Algebra Laws" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-algebra-laws-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-algebra-laws-sticky.svg" alt="Sticky Note: Boolean Algebra Laws" width="30%">
-</a>
-
 
 | Law | AND Form | OR Form |
 |-----|----------|---------|
@@ -1852,16 +1562,6 @@ Answer: (B) 16
 
 ### Flip-Flop Characteristic Equations
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-characteristic-equations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-characteristic-equations-handwritten.svg" alt="Handwritten: Flip-Flop Characteristic Equations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-characteristic-equations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-characteristic-equations-diagram.svg" alt="Diagram: Flip-Flop Characteristic Equations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-characteristic-equations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-characteristic-equations-sticky.svg" alt="Sticky Note: Flip-Flop Characteristic Equations" width="30%">
-</a>
-
 
 | FF | Q(t+1) |
 |----|--------|
@@ -1872,16 +1572,6 @@ Answer: (B) 16
 
 ### Counter Modulus
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-modulus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-modulus-handwritten.svg" alt="Handwritten: Counter Modulus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-modulus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-modulus-diagram.svg" alt="Diagram: Counter Modulus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-modulus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-modulus-sticky.svg" alt="Sticky Note: Counter Modulus" width="30%">
-</a>
-
 
 | Type | n-bit Modulus |
 |------|--------------|
@@ -1891,16 +1581,6 @@ Answer: (B) 16
 | Decade (BCD) | 10 |
 
 ### Important GATE Formulas
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/important-gate-formulas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/important-gate-formulas-handwritten.svg" alt="Handwritten: Important GATE Formulas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/important-gate-formulas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/important-gate-formulas-diagram.svg" alt="Diagram: Important GATE Formulas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/important-gate-formulas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/important-gate-formulas-sticky.svg" alt="Sticky Note: Important GATE Formulas" width="30%">
-</a>
 
 
 | Concept | Formula |
@@ -1974,16 +1654,6 @@ Answer: (B) 16
 ## Previous Year Questions (GATE 2019-2025)
 
 ### Category A: Number Systems & Boolean Algebra (10 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-handwritten.svg" alt="Handwritten: Category A: Number Systems & Boolean Algebra (10 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-diagram.svg" alt="Diagram: Category A: Number Systems & Boolean Algebra (10 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-sticky.svg" alt="Sticky Note: Category A: Number Systems & Boolean Algebra (10 Problems)" width="30%">
-</a>
 
 
 **Problem 26 (GATE 2024):** The Boolean expression F = (A + B)(A + C)(B + C) simplifies to:
@@ -2126,16 +1796,6 @@ Answer: (D) 0111
 ---
 
 ### Category B: Combinational Circuits (12 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-handwritten.svg" alt="Handwritten: Category B: Combinational Circuits (12 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-diagram.svg" alt="Diagram: Category B: Combinational Circuits (12 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-sticky.svg" alt="Sticky Note: Category B: Combinational Circuits (12 Problems)" width="30%">
-</a>
 
 
 **Problem 36 (GATE 2025):** Minimum NAND gates for a half adder (S, C) is:
@@ -2310,16 +1970,6 @@ Answer: (A) Full adder
 ---
 
 ### Category C: Sequential Circuits (15 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-handwritten.svg" alt="Handwritten: Category C: Sequential Circuits (15 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-diagram.svg" alt="Diagram: Category C: Sequential Circuits (15 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-sticky.svg" alt="Sticky Note: Category C: Sequential Circuits (15 Problems)" width="30%">
-</a>
 
 
 **Problem 48 (GATE 2025):** D flip-flop (negative edge-triggered) with D = Q'. Output frequency relative to clock is:
@@ -2539,16 +2189,6 @@ Answer: (C) 0, Toggle
 ---
 
 ### Category D: Karnaugh Maps (8 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-handwritten.svg" alt="Handwritten: Category D: Karnaugh Maps (8 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-diagram.svg" alt="Diagram: Category D: Karnaugh Maps (8 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-sticky.svg" alt="Sticky Note: Category D: Karnaugh Maps (8 Problems)" width="30%">
-</a>
 
 
 **Problem 64 (GATE 2025):** Minimal SOP for F = ÃƒÅ½Ã‚Â£m(0,2,5,7,8,10,13,15):
@@ -2795,16 +2435,6 @@ Answer: (A) C' + AB
 
 ### Category E: Memory & Programmable Logic (5 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-handwritten.svg" alt="Handwritten: Category E: Memory & Programmable Logic (5 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-diagram.svg" alt="Diagram: Category E: Memory & Programmable Logic (5 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-sticky.svg" alt="Sticky Note: Category E: Memory & Programmable Logic (5 Problems)" width="30%">
-</a>
-
 
 **Problem 71 (GATE 2025):** A memory chip has 12 address lines and 8 data lines. Two such chips are used with one chip providing the upper byte. Total capacity:
 ```
@@ -2872,16 +2502,6 @@ Answer: (B) DRAM
 
 ### Answer Key Ã¢â€ â€™ Previous Year Questions (Problems 26-75)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/answer-key-previous-year-questions-problems-26-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/answer-key-previous-year-questions-problems-26-75-handwritten.svg" alt="Handwritten: Answer Key Ã¢â€ â€™ Previous Year Questions (Problems 26-75)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/answer-key-previous-year-questions-problems-26-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/answer-key-previous-year-questions-problems-26-75-diagram.svg" alt="Diagram: Answer Key Ã¢â€ â€™ Previous Year Questions (Problems 26-75)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/answer-key-previous-year-questions-problems-26-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/answer-key-previous-year-questions-problems-26-75-sticky.svg" alt="Sticky Note: Answer Key Ã¢â€ â€™ Previous Year Questions (Problems 26-75)" width="30%">
-</a>
-
 
 | Problem | Year | Answer | Topic |
 |---------|------|--------|-------|
@@ -2943,16 +2563,6 @@ Answer: (B) DRAM
 This section extends the PYQ bank with 50 problems from **GATE 2010-2018**, organized by topic. These cover the classic GATE pattern before the 2019 syllabus revision Ã¢â€ â€™ heavier on sequential circuit analysis, state machines, and memory interleaving.
 
 ### Category A: Number Systems & Boolean Algebra (10 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-handwritten.svg" alt="Handwritten: Category A: Number Systems & Boolean Algebra (10 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-diagram.svg" alt="Diagram: Category A: Number Systems & Boolean Algebra (10 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-a-number-systems-boolean-algebra-10-problems-sticky.svg" alt="Sticky Note: Category A: Number Systems & Boolean Algebra (10 Problems)" width="30%">
-</a>
 
 
 **Q51 (GATE 2018):** The Boolean expression for the output of a 2-input NAND gate is:
@@ -3088,16 +2698,6 @@ Answer: (A) 11001001
 ---
 
 ### Category B: Combinational Circuits (12 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-handwritten.svg" alt="Handwritten: Category B: Combinational Circuits (12 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-diagram.svg" alt="Diagram: Category B: Combinational Circuits (12 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-b-combinational-circuits-12-problems-sticky.svg" alt="Sticky Note: Category B: Combinational Circuits (12 Problems)" width="30%">
-</a>
 
 
 **Q61 (GATE 2018):** Minimum AND-OR gates for a full adder sum output is:
@@ -3282,16 +2882,6 @@ Answer: (C) 9
 ---
 
 ### Category C: Sequential Circuits (15 Problems)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-handwritten.svg" alt="Handwritten: Category C: Sequential Circuits (15 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-diagram.svg" alt="Diagram: Category C: Sequential Circuits (15 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-c-sequential-circuits-15-problems-sticky.svg" alt="Sticky Note: Category C: Sequential Circuits (15 Problems)" width="30%">
-</a>
 
 
 **Q73 (GATE 2018):** A JK flip-flop in toggle mode has J=K=1. Clock frequency 10 MHz. Output frequency:
@@ -3523,16 +3113,6 @@ Answer: (A) 33.33 MHz
 
 ### Category D: Karnaugh Maps (8 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-handwritten.svg" alt="Handwritten: Category D: Karnaugh Maps (8 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-diagram.svg" alt="Diagram: Category D: Karnaugh Maps (8 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-d-karnaugh-maps-8-problems-sticky.svg" alt="Sticky Note: Category D: Karnaugh Maps (8 Problems)" width="30%">
-</a>
-
 
 **Q88 (GATE 2018):** The minimized SOP for F(A,B,C,D) = ÃƒÅ½Ã‚Â£m(0,1,3,4,5,7,12,13,15) is:
 ```
@@ -3720,16 +3300,6 @@ Answer: (A) A'
 
 ### Category E: Memory & Programmable Logic (5 Problems)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-handwritten.svg" alt="Handwritten: Category E: Memory & Programmable Logic (5 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-diagram.svg" alt="Diagram: Category E: Memory & Programmable Logic (5 Problems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/category-e-memory-programmable-logic-5-problems-sticky.svg" alt="Sticky Note: Category E: Memory & Programmable Logic (5 Problems)" width="30%">
-</a>
-
 
 **Q96 (GATE 2018):** A RAM chip with 15 address lines and 4 data lines has capacity:
 ```
@@ -3797,16 +3367,6 @@ Answer: (B) DRAM
 ## Common Traps, Tricks & Formula Cheat Sheet
 
 ### 15 Common Traps in GATE Digital Logic
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/15-common-traps-in-gate-digital-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/15-common-traps-in-gate-digital-logic-handwritten.svg" alt="Handwritten: 15 Common Traps in GATE Digital Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/15-common-traps-in-gate-digital-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/15-common-traps-in-gate-digital-logic-diagram.svg" alt="Diagram: 15 Common Traps in GATE Digital Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/15-common-traps-in-gate-digital-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/15-common-traps-in-gate-digital-logic-sticky.svg" alt="Sticky Note: 15 Common Traps in GATE Digital Logic" width="30%">
-</a>
 
 
 **Trap 1: Race Condition in JK Flip-Flop**
@@ -3889,16 +3449,6 @@ Answer: (B) DRAM
 
 ### Boolean Simplification Shortcuts (Quine-McCluskey Quick Reference)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-simplification-shortcuts-quine-mccluskey-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-simplification-shortcuts-quine-mccluskey-quick-reference-handwritten.svg" alt="Handwritten: Boolean Simplification Shortcuts (Quine-McCluskey Quick Reference)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-simplification-shortcuts-quine-mccluskey-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-simplification-shortcuts-quine-mccluskey-quick-reference-diagram.svg" alt="Diagram: Boolean Simplification Shortcuts (Quine-McCluskey Quick Reference)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-simplification-shortcuts-quine-mccluskey-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/boolean-simplification-shortcuts-quine-mccluskey-quick-reference-sticky.svg" alt="Sticky Note: Boolean Simplification Shortcuts (Quine-McCluskey Quick Reference)" width="30%">
-</a>
-
 
 **Consensus Theorem:**
 ```
@@ -3951,16 +3501,6 @@ Tabular format for PI generation:
 
 ### K-Map Grouping Patterns for 3/4/5 Variables
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/k-map-grouping-patterns-for-3-4-5-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/k-map-grouping-patterns-for-3-4-5-variables-handwritten.svg" alt="Handwritten: K-Map Grouping Patterns for 3/4/5 Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/k-map-grouping-patterns-for-3-4-5-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/k-map-grouping-patterns-for-3-4-5-variables-diagram.svg" alt="Diagram: K-Map Grouping Patterns for 3/4/5 Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/k-map-grouping-patterns-for-3-4-5-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/k-map-grouping-patterns-for-3-4-5-variables-sticky.svg" alt="Sticky Note: K-Map Grouping Patterns for 3/4/5 Variables" width="30%">
-</a>
-
 
 **3-Variable K-Map (A, B, C):**
 ```
@@ -4010,16 +3550,6 @@ BC   00 01 11 10               BC   00 01 11 10
 
 ### Flip-Flop Excitation Table (Quick Reference)
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-excitation-table-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-excitation-table-quick-reference-handwritten.svg" alt="Handwritten: Flip-Flop Excitation Table (Quick Reference)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-excitation-table-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-excitation-table-quick-reference-diagram.svg" alt="Diagram: Flip-Flop Excitation Table (Quick Reference)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-excitation-table-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/flip-flop-excitation-table-quick-reference-sticky.svg" alt="Sticky Note: Flip-Flop Excitation Table (Quick Reference)" width="30%">
-</a>
-
 
 | Present Q | Next QÃƒÂ¢Ã‚Â�Ã‚Âº | S | R | J | K | D | T |
 |-----------|---------|---|---|---|---|---|---|
@@ -4047,16 +3577,6 @@ D Ã¢â€ â€™ T:    D = T ÃƒÂ¢Ã…Â Ã¢â‚¬Â¢ Q
 ---
 
 ### Counter Design Procedure (Step-by-Step)
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-design-procedure-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-design-procedure-step-by-step-handwritten.svg" alt="Handwritten: Counter Design Procedure (Step-by-Step)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-design-procedure-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-design-procedure-step-by-step-diagram.svg" alt="Diagram: Counter Design Procedure (Step-by-Step)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-design-procedure-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/counter-design-procedure-step-by-step-sticky.svg" alt="Sticky Note: Counter Design Procedure (Step-by-Step)" width="30%">
-</a>
 
 
 **Step 1: Determine Flip-Flop Count**
@@ -4110,16 +3630,6 @@ General: JÃƒÂ¢Ã¢â‚¬Å¡Ã¢â€žÂ¢ = KÃƒÂ¢Ã¢â‚¬Å¡Ã¢�
 
 ### State Machine Design Pattern Templates
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/state-machine-design-pattern-templates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/state-machine-design-pattern-templates-handwritten.svg" alt="Handwritten: State Machine Design Pattern Templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/state-machine-design-pattern-templates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/state-machine-design-pattern-templates-diagram.svg" alt="Diagram: State Machine Design Pattern Templates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/state-machine-design-pattern-templates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/state-machine-design-pattern-templates-sticky.svg" alt="Sticky Note: State Machine Design Pattern Templates" width="30%">
-</a>
-
 
 **Mealy Machine Template:**
 ```
@@ -4163,16 +3673,6 @@ SÃƒÂ¢Ã¢â‚¬Å¡Ã†â€™: "101" (detect on 1)   Ã¢â€ â€™
 ---
 
 ### Signal Timing Analysis Tips
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/signal-timing-analysis-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/signal-timing-analysis-tips-handwritten.svg" alt="Handwritten: Signal Timing Analysis Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/signal-timing-analysis-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/signal-timing-analysis-tips-diagram.svg" alt="Diagram: Signal Timing Analysis Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/signal-timing-analysis-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/signal-timing-analysis-tips-sticky.svg" alt="Sticky Note: Signal Timing Analysis Tips" width="30%">
-</a>
 
 
 **Critical Path Formula:**
@@ -4219,16 +3719,6 @@ Cycle time: minimum time between two consecutive memory operations
 ---
 
 ### Standard Textbooks
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/standard-textbooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/standard-textbooks-handwritten.svg" alt="Handwritten: Standard Textbooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/standard-textbooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/standard-textbooks-diagram.svg" alt="Diagram: Standard Textbooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/standard-textbooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/standard-textbooks-sticky.svg" alt="Sticky Note: Standard Textbooks" width="30%">
-</a>
 
 
 **1. Digital Logic and Computer Design Ã¢â€ â€™ M. Morris Mano**
@@ -4277,16 +3767,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 
 ### GATE-Specific Resources
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/gate-specific-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/gate-specific-resources-handwritten.svg" alt="Handwritten: GATE-Specific Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/gate-specific-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/gate-specific-resources-diagram.svg" alt="Diagram: GATE-Specific Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/gate-specific-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/gate-specific-resources-sticky.svg" alt="Sticky Note: GATE-Specific Resources" width="30%">
-</a>
-
 
 | Resource | Type | Best For |
 |----------|------|----------|
@@ -4297,16 +3777,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 | GATE Overflow | Forum | Doubt resolution, PYQ discussions |
 
 ### Chapter-to-Topic Mapping for GATE
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/chapter-to-topic-mapping-for-gate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/chapter-to-topic-mapping-for-gate-handwritten.svg" alt="Handwritten: Chapter-to-Topic Mapping for GATE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/chapter-to-topic-mapping-for-gate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/chapter-to-topic-mapping-for-gate-diagram.svg" alt="Diagram: Chapter-to-Topic Mapping for GATE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/chapter-to-topic-mapping-for-gate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/chapter-to-topic-mapping-for-gate-sticky.svg" alt="Sticky Note: Chapter-to-Topic Mapping for GATE" width="30%">
-</a>
 
 
 | GATE Topic | Mano Ch. (D&CD) | Mano & Ciletti Ch. | Practice Priority |
@@ -4320,16 +3790,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 | Memory & PLD | 7 | 7 | Medium (1 Q/year) |
 
 ### Weight-Based Study Plan
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/weight-based-study-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/weight-based-study-plan-handwritten.svg" alt="Handwritten: Weight-Based Study Plan" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/weight-based-study-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/weight-based-study-plan-diagram.svg" alt="Diagram: Weight-Based Study Plan" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/weight-based-study-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/weight-based-study-plan-sticky.svg" alt="Sticky Note: Weight-Based Study Plan" width="30%">
-</a>
 
 
 | Topic | Weight | Recommended Hours | Primary Resource |
@@ -4345,16 +3805,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 
 ### Quick Links
 
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/quick-links-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/quick-links-handwritten.svg" alt="Handwritten: Quick Links" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/quick-links-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/quick-links-diagram.svg" alt="Diagram: Quick Links" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/quick-links-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/quick-links-sticky.svg" alt="Sticky Note: Quick Links" width="30%">
-</a>
-
 
 - **NPTEL Digital Circuits:** https://nptel.ac.in/courses/108105113
 - **GATE Overflow:** https://gateoverflow.in (searchable PYQ database)
@@ -4362,16 +3812,6 @@ Theoretical treatment. For GATE: only needed for state minimization and equivale
 - **Practice Platform:** https://practice.geeksforgeeks.org/topics/digital-electronics-and-logic-design
 
 ### Final Advice
-
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/final-advice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/final-advice-handwritten.svg" alt="Handwritten: Final Advice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/final-advice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/final-advice-diagram.svg" alt="Diagram: Final Advice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/final-advice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/gate-cs-preparation/04-digital-logic/final-advice-sticky.svg" alt="Sticky Note: Final Advice" width="30%">
-</a>
 
 
 1. **Solve PYQs first:** Before touching theory, solve all GATE Digital Logic problems from the last 5 years to understand the pattern.

@@ -56,16 +56,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -78,16 +68,6 @@
 | MPLS | Label-based forwarding between L2 and L3 | Enables traffic engineering and L3VPN without IP lookup |
 
 ### Chapter Roadmap
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
 
 
 ```mermaid
@@ -109,16 +89,6 @@ flowchart LR
 ```
 
 ### Learning Bridge Forwarding Decision
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/learning-bridge-forwarding-decision-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/learning-bridge-forwarding-decision-handwritten.svg" alt="Handwritten: Learning Bridge Forwarding Decision" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/learning-bridge-forwarding-decision-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/learning-bridge-forwarding-decision-diagram.svg" alt="Diagram: Learning Bridge Forwarding Decision" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/learning-bridge-forwarding-decision-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/learning-bridge-forwarding-decision-sticky.svg" alt="Sticky Note: Learning Bridge Forwarding Decision" width="30%">
-</a>
 
 
 ```mermaid
@@ -147,16 +117,6 @@ flowchart TD
 ```
 
 ### STP Port State Machine and Convergence
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-state-machine-and-convergence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-state-machine-and-convergence-handwritten.svg" alt="Handwritten: STP Port State Machine and Convergence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-state-machine-and-convergence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-state-machine-and-convergence-diagram.svg" alt="Diagram: STP Port State Machine and Convergence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-state-machine-and-convergence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-state-machine-and-convergence-sticky.svg" alt="Sticky Note: STP Port State Machine and Convergence" width="30%">
-</a>
 
 
 ```mermaid
@@ -189,16 +149,6 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 
 ### 5.1.1 Frame Structure
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-1-frame-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-1-frame-structure-handwritten.svg" alt="Handwritten: 5.1.1 Frame Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-1-frame-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-1-frame-structure-diagram.svg" alt="Diagram: 5.1.1 Frame Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-1-frame-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-1-frame-structure-sticky.svg" alt="Sticky Note: 5.1.1 Frame Structure" width="30%">
-</a>
-
 
 ```
   Bytes:     7         1         6          6         2       46-1500       4
@@ -210,16 +160,6 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 ```
 
 ### 5.1.2 Field-by-Field Breakdown
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-2-field-by-field-breakdown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-2-field-by-field-breakdown-handwritten.svg" alt="Handwritten: 5.1.2 Field-by-Field Breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-2-field-by-field-breakdown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-2-field-by-field-breakdown-diagram.svg" alt="Diagram: 5.1.2 Field-by-Field Breakdown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-2-field-by-field-breakdown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-2-field-by-field-breakdown-sticky.svg" alt="Sticky Note: 5.1.2 Field-by-Field Breakdown" width="30%">
-</a>
 
 
 | Field | Size | Description |
@@ -234,30 +174,10 @@ The Ethernet frame is the fundamental unit of data transfer on Ethernet networks
 
 ### 5.1.3 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-3-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-3-real-world-analogy-handwritten.svg" alt="Handwritten: 5.1.3 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-3-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-3-real-world-analogy-diagram.svg" alt="Diagram: 5.1.3 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-3-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-3-real-world-analogy-sticky.svg" alt="Sticky Note: 5.1.3 Real-World Analogy" width="30%">
-</a>
-
 
 > **A postal envelope.** The Preamble is the postal worker aligning the envelope in the sorting machine. The SFD is the "start here" mark. Destination and source MACs are the recipient and sender addresses. The Length/Type tells the post office whether this is a letter (length) or a package with a tracking number (EtherType). The Payload is the letter inside. The FCS is the tamper-evident seal → if broken, the recipient knows the contents may be damaged.
 
 ### 5.1.4 Frame Processing Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-4-frame-processing-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-4-frame-processing-steps-handwritten.svg" alt="Handwritten: 5.1.4 Frame Processing Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-4-frame-processing-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-4-frame-processing-steps-diagram.svg" alt="Diagram: 5.1.4 Frame Processing Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-4-frame-processing-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-4-frame-processing-steps-sticky.svg" alt="Sticky Note: 5.1.4 Frame Processing Steps" width="30%">
-</a>
 
 
 When a NIC receives a frame from the wire:
@@ -271,16 +191,6 @@ When a NIC receives a frame from the wire:
 7. **CRC validation** → The receiver computes CRC-32 over the received fields (excluding preamble, SFD, and FCS). If the computed CRC matches the FCS field, the frame is accepted; otherwise, it is silently dropped.
 
 ### 5.1.5 Pseudocode: Ethernet Frame Parser
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-5-pseudocode-ethernet-frame-parser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-5-pseudocode-ethernet-frame-parser-handwritten.svg" alt="Handwritten: 5.1.5 Pseudocode: Ethernet Frame Parser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-5-pseudocode-ethernet-frame-parser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-5-pseudocode-ethernet-frame-parser-diagram.svg" alt="Diagram: 5.1.5 Pseudocode: Ethernet Frame Parser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-5-pseudocode-ethernet-frame-parser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-5-pseudocode-ethernet-frame-parser-sticky.svg" alt="Sticky Note: 5.1.5 Pseudocode: Ethernet Frame Parser" width="30%">
-</a>
 
 
 ```
@@ -318,16 +228,6 @@ FUNCTION ParseEthernetFrame(raw_bytes):
 
 ### 5.1.6 Dry Run Trace Table: Frame Reception
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-6-dry-run-trace-table-frame-reception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-6-dry-run-trace-table-frame-reception-handwritten.svg" alt="Handwritten: 5.1.6 Dry Run Trace Table: Frame Reception" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-6-dry-run-trace-table-frame-reception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-6-dry-run-trace-table-frame-reception-diagram.svg" alt="Diagram: 5.1.6 Dry Run Trace Table: Frame Reception" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-6-dry-run-trace-table-frame-reception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-6-dry-run-trace-table-frame-reception-sticky.svg" alt="Sticky Note: 5.1.6 Dry Run Trace Table: Frame Reception" width="30%">
-</a>
-
 
 Consider a switch receiving a 64-byte frame from Host A (MAC: AA:AA:AA:AA:AA:AA) destined to Host B (MAC: BB:BB:BB:BB:BB:BB). Payload is 46 bytes of padding (minimum size).
 
@@ -345,16 +245,6 @@ Consider a switch receiving a 64-byte frame from Host A (MAC: AA:AA:AA:AA:AA:AA)
 | 10 | Protocol | Dispatch payload | Length â‰¤ 1500 → 802.3 frame |
 
 ### 5.1.7 C++ Implementation: Ethernet Frame Analyzer
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-7-c-implementation-ethernet-frame-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-7-c-implementation-ethernet-frame-analyzer-handwritten.svg" alt="Handwritten: 5.1.7 C++ Implementation: Ethernet Frame Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-7-c-implementation-ethernet-frame-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-7-c-implementation-ethernet-frame-analyzer-diagram.svg" alt="Diagram: 5.1.7 C++ Implementation: Ethernet Frame Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-7-c-implementation-ethernet-frame-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-7-c-implementation-ethernet-frame-analyzer-sticky.svg" alt="Sticky Note: 5.1.7 C++ Implementation: Ethernet Frame Analyzer" width="30%">
-</a>
 
 
 ```cpp
@@ -506,16 +396,6 @@ int main() {
 
 ### 5.1.8 Python Implementation: Ethernet Frame Parser
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-8-python-implementation-ethernet-frame-parser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-8-python-implementation-ethernet-frame-parser-handwritten.svg" alt="Handwritten: 5.1.8 Python Implementation: Ethernet Frame Parser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-8-python-implementation-ethernet-frame-parser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-8-python-implementation-ethernet-frame-parser-diagram.svg" alt="Diagram: 5.1.8 Python Implementation: Ethernet Frame Parser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-8-python-implementation-ethernet-frame-parser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-8-python-implementation-ethernet-frame-parser-sticky.svg" alt="Sticky Note: 5.1.8 Python Implementation: Ethernet Frame Parser" width="30%">
-</a>
-
 
 ```python
 import struct
@@ -627,16 +507,6 @@ if __name__ == "__main__":
 
 ### 5.1.9 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-9-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-9-complexity-analysis-handwritten.svg" alt="Handwritten: 5.1.9 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-9-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-9-complexity-analysis-diagram.svg" alt="Diagram: 5.1.9 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-9-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-9-complexity-analysis-sticky.svg" alt="Sticky Note: 5.1.9 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
@@ -650,16 +520,6 @@ if __name__ == "__main__":
 
 ### 5.1.10 Advantages and Disadvantages
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-10-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-10-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 5.1.10 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-10-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-10-advantages-and-disadvantages-diagram.svg" alt="Diagram: 5.1.10 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-10-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-10-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 5.1.10 Advantages and Disadvantages" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -670,16 +530,6 @@ if __name__ == "__main__":
 | Backward compatibility | Same format since 1982 → 10Mbps and 400Gbps NICs speak the same language | No native encryption or authentication at L2 |
 
 ### 5.1.11 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-11-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-11-edge-cases-handwritten.svg" alt="Handwritten: 5.1.11 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-11-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-11-edge-cases-diagram.svg" alt="Diagram: 5.1.11 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-11-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-1-11-edge-cases-sticky.svg" alt="Sticky Note: 5.1.11 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -701,16 +551,6 @@ Ethernet has evolved through seven major speed generations while preserving the 
 
 ### 5.2.1 10 Mbps Ethernet (10Base5, 10Base2, 10BaseT)
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-1-10-mbps-ethernet-10base5-10base2-10baset-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-1-10-mbps-ethernet-10base5-10base2-10baset-handwritten.svg" alt="Handwritten: 5.2.1 10 Mbps Ethernet (10Base5, 10Base2, 10BaseT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-1-10-mbps-ethernet-10base5-10base2-10baset-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-1-10-mbps-ethernet-10base5-10base2-10baset-diagram.svg" alt="Diagram: 5.2.1 10 Mbps Ethernet (10Base5, 10Base2, 10BaseT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-1-10-mbps-ethernet-10base5-10base2-10baset-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-1-10-mbps-ethernet-10base5-10base2-10baset-sticky.svg" alt="Sticky Note: 5.2.1 10 Mbps Ethernet (10Base5, 10Base2, 10BaseT)" width="30%">
-</a>
-
 
 The original Ethernet standard published in 1980 by DEC, Intel, and Xerox (DIX) operated at 10 Mbps over coaxial cable. 10Base5 (thicknet) used a vampire tap to connect stations to a long coaxial segment up to 500 meters. 10Base2 (thinnet) used BNC T-connectors on thinner, more flexible RG-58 cable with 185 m segments. Both were shared-media bus topologies → all stations on a segment belonged to the same collision domain.
 
@@ -718,60 +558,20 @@ The original Ethernet standard published in 1980 by DEC, Intel, and Xerox (DIX) 
 
 ### 5.2.2 Fast Ethernet (100BaseTX, 100BaseFX)
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-2-fast-ethernet-100basetx-100basefx-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-2-fast-ethernet-100basetx-100basefx-handwritten.svg" alt="Handwritten: 5.2.2 Fast Ethernet (100BaseTX, 100BaseFX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-2-fast-ethernet-100basetx-100basefx-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-2-fast-ethernet-100basetx-100basefx-diagram.svg" alt="Diagram: 5.2.2 Fast Ethernet (100BaseTX, 100BaseFX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-2-fast-ethernet-100basetx-100basefx-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-2-fast-ethernet-100basetx-100basefx-sticky.svg" alt="Sticky Note: 5.2.2 Fast Ethernet (100BaseTX, 100BaseFX)" width="30%">
-</a>
-
 
 Fast Ethernet (IEEE 802.3u, 1995) increased speed to 100 Mbps while preserving the CSMA/CD access method and frame format. 100BaseTX uses two pairs of Cat 5 UTP; 100BaseFX uses two multimode fiber strands for runs up to 2 km. The slot time was reduced from 512 bits to 512 bits (shorter time at 100 Mbps required the same minimum frame size but smaller network diameter: 205 m for half-duplex). Auto-negotiation was introduced to allow 10/100 Mbps devices to detect each other's capabilities.
 
 ### 5.2.3 Gigabit Ethernet (1000BaseT, 1000BaseSX, 1000BaseLX)
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-3-gigabit-ethernet-1000baset-1000basesx-1000baselx-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-3-gigabit-ethernet-1000baset-1000basesx-1000baselx-handwritten.svg" alt="Handwritten: 5.2.3 Gigabit Ethernet (1000BaseT, 1000BaseSX, 1000BaseLX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-3-gigabit-ethernet-1000baset-1000basesx-1000baselx-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-3-gigabit-ethernet-1000baset-1000basesx-1000baselx-diagram.svg" alt="Diagram: 5.2.3 Gigabit Ethernet (1000BaseT, 1000BaseSX, 1000BaseLX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-3-gigabit-ethernet-1000baset-1000basesx-1000baselx-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-3-gigabit-ethernet-1000baset-1000basesx-1000baselx-sticky.svg" alt="Sticky Note: 5.2.3 Gigabit Ethernet (1000BaseT, 1000BaseSX, 1000BaseLX)" width="30%">
-</a>
 
 
 Gigabit Ethernet (IEEE 802.3z, 1998; 802.3ab, 1999) pushed the data rate to 1000 Mbps while maintaining compatibility. 1000BaseSX (short-wavelength laser) operates over multimode fiber up to 550 m; 1000BaseLX (long-wavelength) over single-mode fiber up to 5 km; 1000BaseT over Cat 5e UTP up to 100 m. Carrier extension (padding frames to 512 bytes) and frame bursting (transmitting multiple frames consecutively) were introduced to maintain the CSMA/CD collision constraint.
 
 ### 5.2.4 10 Gigabit Ethernet
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-4-10-gigabit-ethernet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-4-10-gigabit-ethernet-handwritten.svg" alt="Handwritten: 5.2.4 10 Gigabit Ethernet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-4-10-gigabit-ethernet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-4-10-gigabit-ethernet-diagram.svg" alt="Diagram: 5.2.4 10 Gigabit Ethernet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-4-10-gigabit-ethernet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-4-10-gigabit-ethernet-sticky.svg" alt="Sticky Note: 5.2.4 10 Gigabit Ethernet" width="30%">
-</a>
-
 
 10GbE (IEEE 802.3ae, 2002) is full-duplex only → CSMA/CD is disabled because switched networks make collisions irrelevant. 10GBASE-SR (short-range, 300 m MMF), 10GBASE-LR (10 km SMF), 10GBASE-ER (40 km SMF), and 10GBASE-T (Cat 6a UTP, 100 m) serve data center and metropolitan applications. FEC (Forward Error Correction) was introduced to maintain BER below 10^-12 over longer fiber runs.
 
 ### 5.2.5 40, 100, 200, 400 Gigabit Ethernet
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-5-40-100-200-400-gigabit-ethernet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-5-40-100-200-400-gigabit-ethernet-handwritten.svg" alt="Handwritten: 5.2.5 40, 100, 200, 400 Gigabit Ethernet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-5-40-100-200-400-gigabit-ethernet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-5-40-100-200-400-gigabit-ethernet-diagram.svg" alt="Diagram: 5.2.5 40, 100, 200, 400 Gigabit Ethernet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-5-40-100-200-400-gigabit-ethernet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-5-40-100-200-400-gigabit-ethernet-sticky.svg" alt="Sticky Note: 5.2.5 40, 100, 200, 400 Gigabit Ethernet" width="30%">
-</a>
 
 
 IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes of 10 Gbps or 25 Gbps physical channels. 400 Gbps (802.3bs, 2017) uses 16 lanes of 25 Gbps or 8 lanes of 50 Gbps with PAM4 modulation. 800 Gbps and 1.6 Tbps are under development (IEEE 802.3df). Modern switches support aggregation of multiple links via LACP.
@@ -779,16 +579,6 @@ IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes o
 > **Pro Tip:** The Ethernet frame format has remained fundamentally unchanged since 1980, which is remarkable for any networking technology. This backward compatibility means a 2024 switch can still process frames from a 1990s Ethernet card → the physical speed changes, but the frame language is the same.
 
 ### 5.2.6 Ethernet Generations Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-6-ethernet-generations-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-6-ethernet-generations-comparison-handwritten.svg" alt="Handwritten: 5.2.6 Ethernet Generations Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-6-ethernet-generations-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-6-ethernet-generations-comparison-diagram.svg" alt="Diagram: 5.2.6 Ethernet Generations Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-6-ethernet-generations-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-6-ethernet-generations-comparison-sticky.svg" alt="Sticky Note: 5.2.6 Ethernet Generations Comparison" width="30%">
-</a>
 
 
 | Generation | Standard | Year | Speed | Medium | Max Segment | Key Innovation |
@@ -803,16 +593,6 @@ IEEE 802.3ba (2010) defined 40 Gbps and 100 Gbps Ethernet using parallel lanes o
 | 400 Gigabit | 802.3bs | 2017 | 400 Gbps | SMF/MMF | 2 km (MMF), 10 km (SMF) | 16Ã—25G or 8Ã—50G PAM4, QSFP-DD/OSFP |
 
 ### 5.2.7 Key Physical Layer Innovations by Generation
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-7-key-physical-layer-innovations-by-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-7-key-physical-layer-innovations-by-generation-handwritten.svg" alt="Handwritten: 5.2.7 Key Physical Layer Innovations by Generation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-7-key-physical-layer-innovations-by-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-7-key-physical-layer-innovations-by-generation-diagram.svg" alt="Diagram: 5.2.7 Key Physical Layer Innovations by Generation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-7-key-physical-layer-innovations-by-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-2-7-key-physical-layer-innovations-by-generation-sticky.svg" alt="Sticky Note: 5.2.7 Key Physical Layer Innovations by Generation" width="30%">
-</a>
 
 
 | Innovation | Introduced In | Why It Matters |
@@ -835,16 +615,6 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 
 ### 5.3.1 Switching Methods
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-1-switching-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-1-switching-methods-handwritten.svg" alt="Handwritten: 5.3.1 Switching Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-1-switching-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-1-switching-methods-diagram.svg" alt="Diagram: 5.3.1 Switching Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-1-switching-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-1-switching-methods-sticky.svg" alt="Sticky Note: 5.3.1 Switching Methods" width="30%">
-</a>
-
 
 **Store-and-forward switching.** The switch receives the entire frame, checks the FCS for errors, and then forwards. This ensures no corrupted frames propagate but adds latency proportional to frame size. Latency = frame_size / link_speed. For a 1500-byte frame on 1 Gbps: 1500Ã—8/1e9 = 12 Âµs.
 
@@ -854,30 +624,10 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 
 ### 5.3.2 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-2-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-2-real-world-analogy-handwritten.svg" alt="Handwritten: 5.3.2 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-2-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-2-real-world-analogy-diagram.svg" alt="Diagram: 5.3.2 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-2-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-2-real-world-analogy-sticky.svg" alt="Sticky Note: 5.3.2 Real-World Analogy" width="30%">
-</a>
-
 
 > **A mail sorting facility.** A switch is like a postal sorting center with hundreds of outgoing chutes (ports). When a letter (frame) arrives, the sorter reads the ZIP code (destination MAC). If the sorter has seen that ZIP before, the letter goes directly to the correct chute (forwarding). If the ZIP is unknown, the sorter copies the letter and sends one copy to every outgoing chute (flooding). The sorter also notes the return address (source MAC) and remembers which incoming door it came through (MAC learning). Store-and-forward mode means the sorter reads the entire letter before routing; cut-through means the sorter starts pushing it toward the chute as soon as the ZIP is read.
 
 ### 5.3.3 Switch vs Hub vs Router Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-3-switch-vs-hub-vs-router-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-3-switch-vs-hub-vs-router-comparison-handwritten.svg" alt="Handwritten: 5.3.3 Switch vs Hub vs Router Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-3-switch-vs-hub-vs-router-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-3-switch-vs-hub-vs-router-comparison-diagram.svg" alt="Diagram: 5.3.3 Switch vs Hub vs Router Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-3-switch-vs-hub-vs-router-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-3-switch-vs-hub-vs-router-comparison-sticky.svg" alt="Sticky Note: 5.3.3 Switch vs Hub vs Router Comparison" width="30%">
-</a>
 
 
 | Property | Hub | Switch | Router |
@@ -898,16 +648,6 @@ A **bridge** operates at the data link layer, connecting two or more LAN segment
 
 ### 5.3.4 Switch Operation: Numbered Steps
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-4-switch-operation-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-4-switch-operation-numbered-steps-handwritten.svg" alt="Handwritten: 5.3.4 Switch Operation: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-4-switch-operation-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-4-switch-operation-numbered-steps-diagram.svg" alt="Diagram: 5.3.4 Switch Operation: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-4-switch-operation-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-4-switch-operation-numbered-steps-sticky.svg" alt="Sticky Note: 5.3.4 Switch Operation: Numbered Steps" width="30%">
-</a>
-
 
 When a switch receives a frame on a port:
 
@@ -921,16 +661,6 @@ When a switch receives a frame on a port:
 5. **Frame transmission** → The switch queues the frame on the egress port's buffer. The PHY transmits bits on the wire. For cut-through, step 4 begins before the full frame is received.
 
 ### 5.3.5 Pseudocode: Switch Forwarding Engine
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-5-pseudocode-switch-forwarding-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-5-pseudocode-switch-forwarding-engine-handwritten.svg" alt="Handwritten: 5.3.5 Pseudocode: Switch Forwarding Engine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-5-pseudocode-switch-forwarding-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-5-pseudocode-switch-forwarding-engine-diagram.svg" alt="Diagram: 5.3.5 Pseudocode: Switch Forwarding Engine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-5-pseudocode-switch-forwarding-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-5-pseudocode-switch-forwarding-engine-sticky.svg" alt="Sticky Note: 5.3.5 Pseudocode: Switch Forwarding Engine" width="30%">
-</a>
 
 
 ```
@@ -983,16 +713,6 @@ FUNCTION ProcessFrame(frame, ingress_port, current_time):
 
 ### 5.3.6 Dry Run Trace Table: MAC Table Learning
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-6-dry-run-trace-table-mac-table-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-6-dry-run-trace-table-mac-table-learning-handwritten.svg" alt="Handwritten: 5.3.6 Dry Run Trace Table: MAC Table Learning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-6-dry-run-trace-table-mac-table-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-6-dry-run-trace-table-mac-table-learning-diagram.svg" alt="Diagram: 5.3.6 Dry Run Trace Table: MAC Table Learning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-6-dry-run-trace-table-mac-table-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-6-dry-run-trace-table-mac-table-learning-sticky.svg" alt="Sticky Note: 5.3.6 Dry Run Trace Table: MAC Table Learning" width="30%">
-</a>
-
 
 Consider a 4-port switch (ports 1â€“4). Initially the MAC table is empty. Hosts A, B, C connected on ports 1, 2, 3 respectively. Host D connected on port 4. The switch processes frames in sequence:
 
@@ -1012,16 +732,6 @@ Consider a 4-port switch (ports 1â€“4). Initially the MAC table is empty. H
 After T=6, all four hosts are learned. After T=7â€“8, frames between known hosts are forwarded precisely to the correct port → no flooding. After T=9, a self-addressed frame is filtered because the source and destination port match (the destination is on the same segment as the source).
 
 ### 5.3.7 C++ Implementation: Switch MAC Table
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-7-c-implementation-switch-mac-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-7-c-implementation-switch-mac-table-handwritten.svg" alt="Handwritten: 5.3.7 C++ Implementation: Switch MAC Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-7-c-implementation-switch-mac-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-7-c-implementation-switch-mac-table-diagram.svg" alt="Diagram: 5.3.7 C++ Implementation: Switch MAC Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-7-c-implementation-switch-mac-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-7-c-implementation-switch-mac-table-sticky.svg" alt="Sticky Note: 5.3.7 C++ Implementation: Switch MAC Table" width="30%">
-</a>
 
 
 ```cpp
@@ -1220,16 +930,6 @@ int main() {
 
 ### 5.3.8 Python Implementation: Switch MAC Table
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-8-python-implementation-switch-mac-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-8-python-implementation-switch-mac-table-handwritten.svg" alt="Handwritten: 5.3.8 Python Implementation: Switch MAC Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-8-python-implementation-switch-mac-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-8-python-implementation-switch-mac-table-diagram.svg" alt="Diagram: 5.3.8 Python Implementation: Switch MAC Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-8-python-implementation-switch-mac-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-8-python-implementation-switch-mac-table-sticky.svg" alt="Sticky Note: 5.3.8 Python Implementation: Switch MAC Table" width="30%">
-</a>
-
 
 ```python
 import time
@@ -1359,16 +1059,6 @@ if __name__ == "__main__":
 
 ### 5.3.9 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-9-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-9-complexity-analysis-handwritten.svg" alt="Handwritten: 5.3.9 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-9-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-9-complexity-analysis-diagram.svg" alt="Diagram: 5.3.9 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-9-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-9-complexity-analysis-sticky.svg" alt="Sticky Note: 5.3.9 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
@@ -1383,16 +1073,6 @@ if __name__ == "__main__":
 
 ### 5.3.10 Advantages and Disadvantages
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-10-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-10-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 5.3.10 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-10-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-10-advantages-and-disadvantages-diagram.svg" alt="Diagram: 5.3.10 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-10-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-10-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 5.3.10 Advantages and Disadvantages" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -1405,16 +1085,6 @@ if __name__ == "__main__":
 | VLAN support | Logical segmentation without extra hardware | Trunk misconfiguration causes connectivity issues |
 
 ### 5.3.11 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-11-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-11-edge-cases-handwritten.svg" alt="Handwritten: 5.3.11 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-11-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-11-edge-cases-diagram.svg" alt="Diagram: 5.3.11 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-11-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-3-11-edge-cases-sticky.svg" alt="Sticky Note: 5.3.11 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -1513,30 +1183,10 @@ A learning bridge → the intelligence behind every modern switch → automatica
 
 ### 5.4.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-1-real-world-analogy-handwritten.svg" alt="Handwritten: 5.4.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-1-real-world-analogy-diagram.svg" alt="Diagram: 5.4.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-1-real-world-analogy-sticky.svg" alt="Sticky Note: 5.4.1 Real-World Analogy" width="30%">
-</a>
-
 
 > **A party guestbook.** At a party, a security guard at the door writes down each guest's name and which room they entered (source MAC + port). When a guest needs to find another guest, the guard checks the book: if the target is known, the guard directs the messenger to the right room. If the target is unknown, the guard announces the message to every room (flooding). Every 5 minutes, the guard crosses out names of guests who left over 5 minutes ago (aging). This is exactly how a learning bridge works.
 
 ### 5.4.2 The Learning Algorithm: Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-2-the-learning-algorithm-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-2-the-learning-algorithm-numbered-steps-handwritten.svg" alt="Handwritten: 5.4.2 The Learning Algorithm: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-2-the-learning-algorithm-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-2-the-learning-algorithm-numbered-steps-diagram.svg" alt="Diagram: 5.4.2 The Learning Algorithm: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-2-the-learning-algorithm-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-2-the-learning-algorithm-numbered-steps-sticky.svg" alt="Sticky Note: 5.4.2 The Learning Algorithm: Numbered Steps" width="30%">
-</a>
 
 
 1. **Port initialization** → Each bridge port starts with empty MAC table and a default aging timer (300 seconds).
@@ -1550,16 +1200,6 @@ A learning bridge → the intelligence behind every modern switch → automatica
 6. **Topology change** → When STP detects a topology change, aging is temporarily shortened (default 15 seconds instead of 300) to accelerate re-learning after a link failure.
 
 ### 5.4.3 Pseudocode: Learning Bridge
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-3-pseudocode-learning-bridge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-3-pseudocode-learning-bridge-handwritten.svg" alt="Handwritten: 5.4.3 Pseudocode: Learning Bridge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-3-pseudocode-learning-bridge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-3-pseudocode-learning-bridge-diagram.svg" alt="Diagram: 5.4.3 Pseudocode: Learning Bridge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-3-pseudocode-learning-bridge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-3-pseudocode-learning-bridge-sticky.svg" alt="Sticky Note: 5.4.3 Pseudocode: Learning Bridge" width="30%">
-</a>
 
 
 ```
@@ -1622,16 +1262,6 @@ FUNCTION OnTopologyChange():
 
 ### 5.4.4 Dry Run Trace Table: Learning Bridge with Six Hosts
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-4-dry-run-trace-table-learning-bridge-with-six-hosts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-4-dry-run-trace-table-learning-bridge-with-six-hosts-handwritten.svg" alt="Handwritten: 5.4.4 Dry Run Trace Table: Learning Bridge with Six Hosts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-4-dry-run-trace-table-learning-bridge-with-six-hosts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-4-dry-run-trace-table-learning-bridge-with-six-hosts-diagram.svg" alt="Diagram: 5.4.4 Dry Run Trace Table: Learning Bridge with Six Hosts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-4-dry-run-trace-table-learning-bridge-with-six-hosts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-4-dry-run-trace-table-learning-bridge-with-six-hosts-sticky.svg" alt="Sticky Note: 5.4.4 Dry Run Trace Table: Learning Bridge with Six Hosts" width="30%">
-</a>
-
 
 Four-port bridge, hosts Aâ€“F on ports 1â€“4 (A and B on port 1 via hub, C and D on port 2, E on port 3, F on port 4).
 
@@ -1653,16 +1283,6 @@ Four-port bridge, hosts Aâ€“F on ports 1â€“4 (A and B on port 1 via hu
 After T=7, all six hosts are learned. From T=8 onward, all frames are forwarded precisely → no flooding occurs.
 
 ### 5.4.5 C++ Implementation: Learning Bridge
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-5-c-implementation-learning-bridge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-5-c-implementation-learning-bridge-handwritten.svg" alt="Handwritten: 5.4.5 C++ Implementation: Learning Bridge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-5-c-implementation-learning-bridge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-5-c-implementation-learning-bridge-diagram.svg" alt="Diagram: 5.4.5 C++ Implementation: Learning Bridge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-5-c-implementation-learning-bridge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-5-c-implementation-learning-bridge-sticky.svg" alt="Sticky Note: 5.4.5 C++ Implementation: Learning Bridge" width="30%">
-</a>
 
 
 ```cpp
@@ -1822,16 +1442,6 @@ int main() {
 
 ### 5.4.6 Python Implementation: Learning Bridge
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-6-python-implementation-learning-bridge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-6-python-implementation-learning-bridge-handwritten.svg" alt="Handwritten: 5.4.6 Python Implementation: Learning Bridge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-6-python-implementation-learning-bridge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-6-python-implementation-learning-bridge-diagram.svg" alt="Diagram: 5.4.6 Python Implementation: Learning Bridge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-6-python-implementation-learning-bridge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-6-python-implementation-learning-bridge-sticky.svg" alt="Sticky Note: 5.4.6 Python Implementation: Learning Bridge" width="30%">
-</a>
-
 
 ```python
 import time
@@ -1948,16 +1558,6 @@ if __name__ == "__main__":
 
 ### 5.4.7 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-7-complexity-analysis-handwritten.svg" alt="Handwritten: 5.4.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-7-complexity-analysis-diagram.svg" alt="Diagram: 5.4.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-7-complexity-analysis-sticky.svg" alt="Sticky Note: 5.4.7 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
@@ -1970,16 +1570,6 @@ if __name__ == "__main__":
 
 ### 5.4.8 Advantages and Disadvantages
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-8-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-8-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 5.4.8 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-8-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-8-advantages-and-disadvantages-diagram.svg" alt="Diagram: 5.4.8 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-8-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-8-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 5.4.8 Advantages and Disadvantages" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -1991,16 +1581,6 @@ if __name__ == "__main__":
 | Static MAC entries | Guarantees no flooding for critical servers | Manual maintenance; misses dynamic moves |
 
 ### 5.4.9 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-9-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-9-edge-cases-handwritten.svg" alt="Handwritten: 5.4.9 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-9-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-9-edge-cases-diagram.svg" alt="Diagram: 5.4.9 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-9-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-4-9-edge-cases-sticky.svg" alt="Sticky Note: 5.4.9 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -2021,16 +1601,6 @@ The Spanning Tree Protocol (IEEE 802.1D) prevents loops in networks with redunda
 
 ### 5.5.1 The Problem: Broadcast Storms
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-1-the-problem-broadcast-storms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-1-the-problem-broadcast-storms-handwritten.svg" alt="Handwritten: 5.5.1 The Problem: Broadcast Storms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-1-the-problem-broadcast-storms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-1-the-problem-broadcast-storms-diagram.svg" alt="Diagram: 5.5.1 The Problem: Broadcast Storms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-1-the-problem-broadcast-storms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-1-the-problem-broadcast-storms-sticky.svg" alt="Sticky Note: 5.5.1 The Problem: Broadcast Storms" width="30%">
-</a>
-
 
 In a triangle topology of three switches (Aâ€“B, Bâ€“C, Câ€“A connected), a broadcast frame from any host would circulate forever:
 
@@ -2045,30 +1615,10 @@ Additionally, MAC tables become unstable: the same source MAC keeps appearing on
 
 ### 5.5.2 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-2-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-2-real-world-analogy-handwritten.svg" alt="Handwritten: 5.5.2 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-2-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-2-real-world-analogy-diagram.svg" alt="Diagram: 5.5.2 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-2-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-2-real-world-analogy-sticky.svg" alt="Sticky Note: 5.5.2 Real-World Analogy" width="30%">
-</a>
-
 
 > **City traffic management.** Redundant bridges are like multiple roads connecting the same two neighborhoods. If every road is open, drivers could circle endlessly in a rotary (broadcast storm). STP is the city traffic authority that temporarily blocks some roads, keeping only enough open to reach every neighborhood without creating loops. If a road closes (link failure), the authority unblocks a previously blocked road (failover). RSTP is the express version → traffic cameras detect the blockage and reroute in seconds instead of minutes.
 
 ### 5.5.3 BPDU Format
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-3-bpdu-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-3-bpdu-format-handwritten.svg" alt="Handwritten: 5.5.3 BPDU Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-3-bpdu-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-3-bpdu-format-diagram.svg" alt="Diagram: 5.5.3 BPDU Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-3-bpdu-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-3-bpdu-format-sticky.svg" alt="Sticky Note: 5.5.3 BPDU Format" width="30%">
-</a>
 
 
 Bridge Protocol Data Units (BPDUs) are exchanged every 2 seconds between bridges:
@@ -2090,16 +1640,6 @@ Bridge Protocol Data Units (BPDUs) are exchanged every 2 seconds between bridges
 
 ### 5.5.4 STP Algorithm: Numbered Steps
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-4-stp-algorithm-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-4-stp-algorithm-numbered-steps-handwritten.svg" alt="Handwritten: 5.5.4 STP Algorithm: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-4-stp-algorithm-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-4-stp-algorithm-numbered-steps-diagram.svg" alt="Diagram: 5.5.4 STP Algorithm: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-4-stp-algorithm-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-4-stp-algorithm-numbered-steps-sticky.svg" alt="Sticky Note: 5.5.4 STP Algorithm: Numbered Steps" width="30%">
-</a>
-
 
 1. **Root bridge election.** Each bridge starts by claiming itself as root, sending BPDUs with its own bridge ID. The bridge with the lowest bridge ID (priority + MAC) wins. Priority is a 16-bit value (default 32768), configurable in increments of 4096. If priorities equal, the lowest MAC address breaks the tie.
 
@@ -2110,16 +1650,6 @@ Bridge Protocol Data Units (BPDUs) are exchanged every 2 seconds between bridges
 4. **Port blocking.** Any port that is not a root port or designated port becomes an alternate (blocked) port. These ports do not forward data or learn MAC addresses. They listen for BPDUs and become active only if the current best path fails.
 
 ### 5.5.5 STP Port States Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-5-stp-port-states-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-5-stp-port-states-comparison-handwritten.svg" alt="Handwritten: 5.5.5 STP Port States Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-5-stp-port-states-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-5-stp-port-states-comparison-diagram.svg" alt="Diagram: 5.5.5 STP Port States Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-5-stp-port-states-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-5-stp-port-states-comparison-sticky.svg" alt="Sticky Note: 5.5.5 STP Port States Comparison" width="30%">
-</a>
 
 
 | State | Data Forwarding | MAC Learning | BPDU Reception | BPDU Transmission | Time in State |
@@ -2133,16 +1663,6 @@ Bridge Protocol Data Units (BPDUs) are exchanged every 2 seconds between bridges
 **RSTP equivalent.** RSTP collapses blocking + listening into a single **discarding** state. It also defines three port roles not present in classic STP: **alternate port** (backup to root port), **backup port** (backup to designated port), and **edge port** (directly connected to end station → transitions immediately to forwarding).
 
 ### 5.5.6 Pseudocode: STP Port State Machine
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-stp-port-state-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-stp-port-state-machine-handwritten.svg" alt="Handwritten: 5.5.6 Pseudocode: STP Port State Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-stp-port-state-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-stp-port-state-machine-diagram.svg" alt="Diagram: 5.5.6 Pseudocode: STP Port State Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-stp-port-state-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-stp-port-state-machine-sticky.svg" alt="Sticky Note: 5.5.6 Pseudocode: STP Port State Machine" width="30%">
-</a>
 
 
 ```
@@ -2271,16 +1791,6 @@ FUNCTION TransitionToForwarding(port):
 
 ### 5.5.7 Dry Run Trace Table: STP Convergence
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-7-dry-run-trace-table-stp-convergence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-7-dry-run-trace-table-stp-convergence-handwritten.svg" alt="Handwritten: 5.5.7 Dry Run Trace Table: STP Convergence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-7-dry-run-trace-table-stp-convergence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-7-dry-run-trace-table-stp-convergence-diagram.svg" alt="Diagram: 5.5.7 Dry Run Trace Table: STP Convergence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-7-dry-run-trace-table-stp-convergence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-7-dry-run-trace-table-stp-convergence-sticky.svg" alt="Sticky Note: 5.5.7 Dry Run Trace Table: STP Convergence" width="30%">
-</a>
-
 
 Three bridges in a triangle. B1 (priority 4096, MAC 00:00:00:00:00:01), B2 (priority 32768, MAC 00:00:00:00:00:02), B3 (priority 32768, MAC 00:00:00:00:00:03). All links are 1 Gbps (cost = 4).
 
@@ -2341,16 +1851,6 @@ Total STP convergence: ~50 seconds. RSTP would converge in ~2 seconds.
 Total reconvergence after failure: ~38 seconds.
 
 ### 5.5.8 C++ Implementation: STP Port State Machine
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-8-c-implementation-stp-port-state-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-8-c-implementation-stp-port-state-machine-handwritten.svg" alt="Handwritten: 5.5.8 C++ Implementation: STP Port State Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-8-c-implementation-stp-port-state-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-8-c-implementation-stp-port-state-machine-diagram.svg" alt="Diagram: 5.5.8 C++ Implementation: STP Port State Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-8-c-implementation-stp-port-state-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-8-c-implementation-stp-port-state-machine-sticky.svg" alt="Sticky Note: 5.5.8 C++ Implementation: STP Port State Machine" width="30%">
-</a>
 
 
 ```cpp
@@ -2722,16 +2222,6 @@ int main() {
 
 ### 5.5.9 Python Implementation: STP Port State Machine
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-9-python-implementation-stp-port-state-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-9-python-implementation-stp-port-state-machine-handwritten.svg" alt="Handwritten: 5.5.9 Python Implementation: STP Port State Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-9-python-implementation-stp-port-state-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-9-python-implementation-stp-port-state-machine-diagram.svg" alt="Diagram: 5.5.9 Python Implementation: STP Port State Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-9-python-implementation-stp-port-state-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-9-python-implementation-stp-port-state-machine-sticky.svg" alt="Sticky Note: 5.5.9 Python Implementation: STP Port State Machine" width="30%">
-</a>
-
 
 ```python
 from enum import Enum
@@ -2950,16 +2440,6 @@ if __name__ == "__main__":
 
 ### 5.5.10 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-10-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-10-complexity-analysis-handwritten.svg" alt="Handwritten: 5.5.10 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-10-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-10-complexity-analysis-diagram.svg" alt="Diagram: 5.5.10 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-10-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-10-complexity-analysis-sticky.svg" alt="Sticky Note: 5.5.10 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
@@ -2972,16 +2452,6 @@ if __name__ == "__main__":
 | Topology change notification | O(b) | O(1) | TCN propagates from leaf to root through b bridges |
 
 ### 5.5.11 Advantages and Disadvantages
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-11-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-11-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 5.5.11 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-11-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-11-advantages-and-disadvantages-diagram.svg" alt="Diagram: 5.5.11 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-11-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-11-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 5.5.11 Advantages and Disadvantages" width="30%">
-</a>
 
 
 | Aspect | Advantage | Disadvantage |
@@ -2996,16 +2466,6 @@ if __name__ == "__main__":
 
 ### 5.5.12 Edge Cases
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-12-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-12-edge-cases-handwritten.svg" alt="Handwritten: 5.5.12 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-12-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-12-edge-cases-diagram.svg" alt="Diagram: 5.5.12 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-12-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-12-edge-cases-sticky.svg" alt="Sticky Note: 5.5.12 Edge Cases" width="30%">
-</a>
-
 
 | Edge Case | Description | Mitigation |
 |-----------|-------------|------------|
@@ -3019,16 +2479,6 @@ if __name__ == "__main__":
 | Forward delay during convergence | 30s delay (listening + learning) causes TCP timeouts | RSTP reduces to 1-3s; PortFast on edge ports |
 
 ### 5.5.13 RSTP vs STP Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-13-rstp-vs-stp-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-13-rstp-vs-stp-comparison-handwritten.svg" alt="Handwritten: 5.5.13 RSTP vs STP Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-13-rstp-vs-stp-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-13-rstp-vs-stp-comparison-diagram.svg" alt="Diagram: 5.5.13 RSTP vs STP Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-13-rstp-vs-stp-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-13-rstp-vs-stp-comparison-sticky.svg" alt="Sticky Note: 5.5.13 RSTP vs STP Comparison" width="30%">
-</a>
 
 
 | Feature | STP (802.1D) | RSTP (802.1w) |
@@ -3143,30 +2593,10 @@ A Virtual LAN (VLAN, IEEE 802.1Q) partitions a physical switch into multiple log
 
 ### 5.6.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-1-real-world-analogy-handwritten.svg" alt="Handwritten: 5.6.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-1-real-world-analogy-diagram.svg" alt="Diagram: 5.6.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-1-real-world-analogy-sticky.svg" alt="Sticky Note: 5.6.1 Real-World Analogy" width="30%">
-</a>
-
 
 > **Office floor partitioning.** Imagine one large office floor (one switch). Without VLANs, everyone hears every conversation (broadcasts). VLANs are like installing glass walls that create separate rooms. People in Room A (VLAN 10) can only hear announcements within Room A. If someone in Room A needs to talk to someone in Room B (VLAN 20), they must go through a receptionist (router). The trunk port is the hallway that carries conversations from multiple rooms, with a label on each person's back indicating which room they belong to (802.1Q tag).
 
 ### 5.6.2 802.1Q Frame Format
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-2-802-1q-frame-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-2-802-1q-frame-format-handwritten.svg" alt="Handwritten: 5.6.2 802.1Q Frame Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-2-802-1q-frame-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-2-802-1q-frame-format-diagram.svg" alt="Diagram: 5.6.2 802.1Q Frame Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-2-802-1q-frame-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-2-802-1q-frame-format-sticky.svg" alt="Sticky Note: 5.6.2 802.1Q Frame Format" width="30%">
-</a>
 
 
 IEEE 802.1Q inserts a 4-byte VLAN tag into the Ethernet frame between the source MAC and the Length/Type field:
@@ -3199,16 +2629,6 @@ Standard Ethernet Frame:
 
 ### 5.6.3 Port-Based vs Tag-Based VLAN Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-3-port-based-vs-tag-based-vlan-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-3-port-based-vs-tag-based-vlan-comparison-handwritten.svg" alt="Handwritten: 5.6.3 Port-Based vs Tag-Based VLAN Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-3-port-based-vs-tag-based-vlan-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-3-port-based-vs-tag-based-vlan-comparison-diagram.svg" alt="Diagram: 5.6.3 Port-Based vs Tag-Based VLAN Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-3-port-based-vs-tag-based-vlan-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-3-port-based-vs-tag-based-vlan-comparison-sticky.svg" alt="Sticky Note: 5.6.3 Port-Based vs Tag-Based VLAN Comparison" width="30%">
-</a>
-
 
 | Feature | Port-Based VLAN | Tag-Based VLAN (802.1Q) |
 |---------|----------------|------------------------|
@@ -3225,16 +2645,6 @@ Standard Ethernet Frame:
 
 ### 5.6.4 VLAN Trunking (802.1Q)
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-4-vlan-trunking-802-1q-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-4-vlan-trunking-802-1q-handwritten.svg" alt="Handwritten: 5.6.4 VLAN Trunking (802.1Q)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-4-vlan-trunking-802-1q-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-4-vlan-trunking-802-1q-diagram.svg" alt="Diagram: 5.6.4 VLAN Trunking (802.1Q)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-4-vlan-trunking-802-1q-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-4-vlan-trunking-802-1q-sticky.svg" alt="Sticky Note: 5.6.4 VLAN Trunking (802.1Q)" width="30%">
-</a>
-
 
 **Access port.** Belongs to a single VLAN. The switch strips any 802.1Q tag before delivering frames to the end device. The end device sends untagged frames; the switch adds the access VLAN tag internally.
 
@@ -3243,16 +2653,6 @@ Standard Ethernet Frame:
 **Native VLAN.** The one VLAN that is transmitted untagged on a trunk (default VLAN 1). Both ends must agree on the native VLAN. Mismatch causes connectivity issues between native VLAN hosts.
 
 ### 5.6.5 Numbered Steps: VLAN Frame Processing
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-5-numbered-steps-vlan-frame-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-5-numbered-steps-vlan-frame-processing-handwritten.svg" alt="Handwritten: 5.6.5 Numbered Steps: VLAN Frame Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-5-numbered-steps-vlan-frame-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-5-numbered-steps-vlan-frame-processing-diagram.svg" alt="Diagram: 5.6.5 Numbered Steps: VLAN Frame Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-5-numbered-steps-vlan-frame-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-5-numbered-steps-vlan-frame-processing-sticky.svg" alt="Sticky Note: 5.6.5 Numbered Steps: VLAN Frame Processing" width="30%">
-</a>
 
 
 1. **Ingress on access port** → Frame arrives untagged. Switch classifies it into the access port's configured VLAN. The internal tag is applied: (VLAN ID, PCP, DEI).
@@ -3267,16 +2667,6 @@ Standard Ethernet Frame:
    - If destination is unknown: flood within the same VLAN only (not across VLANs).
 
 ### 5.5.6 Pseudocode: VLAN Switching
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-vlan-switching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-vlan-switching-handwritten.svg" alt="Handwritten: 5.5.6 Pseudocode: VLAN Switching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-vlan-switching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-vlan-switching-diagram.svg" alt="Diagram: 5.5.6 Pseudocode: VLAN Switching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-vlan-switching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-5-6-pseudocode-vlan-switching-sticky.svg" alt="Sticky Note: 5.5.6 Pseudocode: VLAN Switching" width="30%">
-</a>
 
 
 ```
@@ -3333,16 +2723,6 @@ FUNCTION port_membership(port) -> SET of VLAN_IDs:
 
 ### 5.6.7 Dry Run Trace Table: VLAN Switching
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-7-dry-run-trace-table-vlan-switching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-7-dry-run-trace-table-vlan-switching-handwritten.svg" alt="Handwritten: 5.6.7 Dry Run Trace Table: VLAN Switching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-7-dry-run-trace-table-vlan-switching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-7-dry-run-trace-table-vlan-switching-diagram.svg" alt="Diagram: 5.6.7 Dry Run Trace Table: VLAN Switching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-7-dry-run-trace-table-vlan-switching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-7-dry-run-trace-table-vlan-switching-sticky.svg" alt="Sticky Note: 5.6.7 Dry Run Trace Table: VLAN Switching" width="30%">
-</a>
-
 
 Switch with 4 ports: P1=access(VLAN10), P2=access(VLAN10), P3=access(VLAN20), P4=trunk(allowed 10,20, native 1).
 
@@ -3358,16 +2738,6 @@ Switch with 4 ports: P1=access(VLAN10), P2=access(VLAN10), P3=access(VLAN20), P4
 Step 5 demonstrates VLAN isolation: A in VLAN10 cannot reach D in VLAN20 directly. A router with an interface in both VLANs (or an SVI) is required for inter-VLAN routing.
 
 ### 5.6.8 C++ Implementation: VLAN-Aware Switch
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-8-c-implementation-vlan-aware-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-8-c-implementation-vlan-aware-switch-handwritten.svg" alt="Handwritten: 5.6.8 C++ Implementation: VLAN-Aware Switch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-8-c-implementation-vlan-aware-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-8-c-implementation-vlan-aware-switch-diagram.svg" alt="Diagram: 5.6.8 C++ Implementation: VLAN-Aware Switch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-8-c-implementation-vlan-aware-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-8-c-implementation-vlan-aware-switch-sticky.svg" alt="Sticky Note: 5.6.8 C++ Implementation: VLAN-Aware Switch" width="30%">
-</a>
 
 
 ```cpp
@@ -3522,16 +2892,6 @@ int main() {
 
 ### 5.6.9 Python Implementation: VLAN Switch
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-9-python-implementation-vlan-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-9-python-implementation-vlan-switch-handwritten.svg" alt="Handwritten: 5.6.9 Python Implementation: VLAN Switch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-9-python-implementation-vlan-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-9-python-implementation-vlan-switch-diagram.svg" alt="Diagram: 5.6.9 Python Implementation: VLAN Switch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-9-python-implementation-vlan-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-9-python-implementation-vlan-switch-sticky.svg" alt="Sticky Note: 5.6.9 Python Implementation: VLAN Switch" width="30%">
-</a>
-
 
 ```python
 from dataclasses import dataclass
@@ -3644,16 +3004,6 @@ if __name__ == "__main__":
 
 ### 5.6.10 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-10-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-10-complexity-analysis-handwritten.svg" alt="Handwritten: 5.6.10 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-10-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-10-complexity-analysis-diagram.svg" alt="Diagram: 5.6.10 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-10-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-10-complexity-analysis-sticky.svg" alt="Sticky Note: 5.6.10 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
@@ -3669,16 +3019,6 @@ if __name__ == "__main__":
 
 ### 5.6.11 Advantages and Disadvantages
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-11-advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-11-advantages-and-disadvantages-handwritten.svg" alt="Handwritten: 5.6.11 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-11-advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-11-advantages-and-disadvantages-diagram.svg" alt="Diagram: 5.6.11 Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-11-advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-11-advantages-and-disadvantages-sticky.svg" alt="Sticky Note: 5.6.11 Advantages and Disadvantages" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -3690,16 +3030,6 @@ if __name__ == "__main__":
 | Per-VLAN STP (PVST) | Load balancing possible per VLAN | Protocol overhead with hundreds of VLANs |
 
 ### 5.6.12 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-12-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-12-edge-cases-handwritten.svg" alt="Handwritten: 5.6.12 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-12-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-12-edge-cases-diagram.svg" alt="Diagram: 5.6.12 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-12-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-6-12-edge-cases-sticky.svg" alt="Sticky Note: 5.6.12 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -3805,30 +3135,10 @@ Link Aggregation Control Protocol (LACP, IEEE 802.1AX) combines multiple physica
 
 ### 5.7.1 Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-1-real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-1-real-world-analogy-handwritten.svg" alt="Handwritten: 5.7.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-1-real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-1-real-world-analogy-diagram.svg" alt="Diagram: 5.7.1 Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-1-real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-1-real-world-analogy-sticky.svg" alt="Sticky Note: 5.7.1 Real-World Analogy" width="30%">
-</a>
-
 
 > **Multiple highway lanes.** A single-lane road (one link) carries a maximum number of cars per hour. Adding three more lanes (LAG) creates a 4-lane highway. Cars (frames) are distributed across lanes based on their license plate (hash of MAC/IP). If one lane closes (link failure), traffic is redistributed to the remaining three → no road closure.
 
 ### 5.7.2 Benefits
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-2-benefits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-2-benefits-handwritten.svg" alt="Handwritten: 5.7.2 Benefits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-2-benefits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-2-benefits-diagram.svg" alt="Diagram: 5.7.2 Benefits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-2-benefits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-2-benefits-sticky.svg" alt="Sticky Note: 5.7.2 Benefits" width="30%">
-</a>
 
 
 - **Increased bandwidth:** Up to 8 physical links combine into one logical link (some vendors support 16).
@@ -3838,16 +3148,6 @@ Link Aggregation Control Protocol (LACP, IEEE 802.1AX) combines multiple physica
 
 ### 5.7.3 LACP Operation Steps
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-3-lacp-operation-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-3-lacp-operation-steps-handwritten.svg" alt="Handwritten: 5.7.3 LACP Operation Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-3-lacp-operation-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-3-lacp-operation-steps-diagram.svg" alt="Diagram: 5.7.3 LACP Operation Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-3-lacp-operation-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-3-lacp-operation-steps-sticky.svg" alt="Sticky Note: 5.7.3 LACP Operation Steps" width="30%">
-</a>
-
 
 1. **Configuration** → Both ends of the link bundle must be configured for LACP (active or passive mode).
 2. **LACPDU exchange** → LACP Data Units are exchanged every 30 seconds (fast rate: 1 second). Each PDU contains the system priority, port key, and port number.
@@ -3856,16 +3156,6 @@ Link Aggregation Control Protocol (LACP, IEEE 802.1AX) combines multiple physica
 5. **Link monitoring** → If a member link stops receiving LACPDUs, it is removed from the bundle. Traffic is redistributed to the remaining links.
 
 ### 5.7.4 Pseudocode: LACP Hash Distribution
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-4-pseudocode-lacp-hash-distribution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-4-pseudocode-lacp-hash-distribution-handwritten.svg" alt="Handwritten: 5.7.4 Pseudocode: LACP Hash Distribution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-4-pseudocode-lacp-hash-distribution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-4-pseudocode-lacp-hash-distribution-diagram.svg" alt="Diagram: 5.7.4 Pseudocode: LACP Hash Distribution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-4-pseudocode-lacp-hash-distribution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-4-pseudocode-lacp-hash-distribution-sticky.svg" alt="Sticky Note: 5.7.4 Pseudocode: LACP Hash Distribution" width="30%">
-</a>
 
 
 ```
@@ -3925,16 +3215,6 @@ FUNCTION LACPReceiveLACPDU(lacpdu, ingress_port):
 
 ### 5.7.5 Dry Run Trace Table: LACP
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-5-dry-run-trace-table-lacp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-5-dry-run-trace-table-lacp-handwritten.svg" alt="Handwritten: 5.7.5 Dry Run Trace Table: LACP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-5-dry-run-trace-table-lacp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-5-dry-run-trace-table-lacp-diagram.svg" alt="Diagram: 5.7.5 Dry Run Trace Table: LACP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-5-dry-run-trace-table-lacp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-7-5-dry-run-trace-table-lacp-sticky.svg" alt="Sticky Note: 5.7.5 Dry Run Trace Table: LACP" width="30%">
-</a>
-
 
 Two switches with 4 links between them configured as a LAG (mode active).
 
@@ -3964,16 +3244,6 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 
 ### 5.8.1 MPLS Label Operations
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-1-mpls-label-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-1-mpls-label-operations-handwritten.svg" alt="Handwritten: 5.8.1 MPLS Label Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-1-mpls-label-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-1-mpls-label-operations-diagram.svg" alt="Diagram: 5.8.1 MPLS Label Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-1-mpls-label-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-1-mpls-label-operations-sticky.svg" alt="Sticky Note: 5.8.1 MPLS Label Operations" width="30%">
-</a>
-
 
 - **Push:** Ingress router adds a label to the packet.
 - **Swap:** Transit router replaces the top label with a new one.
@@ -3981,16 +3251,6 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 - **PHP:** Penultimate Hop Popping → the router before the egress pops the label, so the egress does a plain IP lookup.
 
 ### 5.8.2 MPLS vs VLAN
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-2-mpls-vs-vlan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-2-mpls-vs-vlan-handwritten.svg" alt="Handwritten: 5.8.2 MPLS vs VLAN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-2-mpls-vs-vlan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-2-mpls-vs-vlan-diagram.svg" alt="Diagram: 5.8.2 MPLS vs VLAN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-2-mpls-vs-vlan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-8-2-mpls-vs-vlan-sticky.svg" alt="Sticky Note: 5.8.2 MPLS vs VLAN" width="30%">
-</a>
 
 
 | Feature | MPLS | VLAN |
@@ -4009,16 +3269,6 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 
 ### Q1: STP vs RSTP → What Are the Key Differences?
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-vs-rstp-what-are-the-key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-vs-rstp-what-are-the-key-differences-handwritten.svg" alt="Handwritten: STP vs RSTP → What Are the Key Differences?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-vs-rstp-what-are-the-key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-vs-rstp-what-are-the-key-differences-diagram.svg" alt="Diagram: STP vs RSTP → What Are the Key Differences?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-vs-rstp-what-are-the-key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-vs-rstp-what-are-the-key-differences-sticky.svg" alt="Sticky Note: STP vs RSTP → What Are the Key Differences?" width="30%">
-</a>
-
 
 **Answer:** RSTP (802.1w) improves STP (802.1D) in three critical areas:
 1. **Port roles:** RSTP adds alternate port (immediate failover for root port) and backup port (backup for designated port). STP only has root/designated/blocked.
@@ -4028,30 +3278,10 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 
 ### Q2: What Is a MAC Flooding Attack?
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-a-mac-flooding-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-a-mac-flooding-attack-handwritten.svg" alt="Handwritten: What Is a MAC Flooding Attack?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-a-mac-flooding-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-a-mac-flooding-attack-diagram.svg" alt="Diagram: What Is a MAC Flooding Attack?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-a-mac-flooding-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-a-mac-flooding-attack-sticky.svg" alt="Sticky Note: What Is a MAC Flooding Attack?" width="30%">
-</a>
-
 
 **Answer:** MAC flooding attacks exploit the behavior of learning bridges. The attacker sends frames with thousands of random source MAC addresses, filling the switch's MAC address table. Once the table is full, the switch cannot learn new legitimate MACs and falls back to flooding all unknown-unicast frames to all ports. This allows the attacker to receive traffic intended for other hosts (a form of eavesdropping). Mitigations: port security (limit MACs per port), MAC address table size limits, and 802.1X authentication.
 
 ### Q3: How Does VLAN Trunking Work and Can It Be Attacked?
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-vlan-trunking-work-and-can-it-be-attacked-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-vlan-trunking-work-and-can-it-be-attacked-handwritten.svg" alt="Handwritten: How Does VLAN Trunking Work and Can It Be Attacked?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-vlan-trunking-work-and-can-it-be-attacked-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-vlan-trunking-work-and-can-it-be-attacked-diagram.svg" alt="Diagram: How Does VLAN Trunking Work and Can It Be Attacked?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-vlan-trunking-work-and-can-it-be-attacked-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-vlan-trunking-work-and-can-it-be-attacked-sticky.svg" alt="Sticky Note: How Does VLAN Trunking Work and Can It Be Attacked?" width="30%">
-</a>
 
 
 **Answer:** VLAN trunking (802.1Q) carries frames from multiple VLANs across a single link by adding a 4-byte tag. Attack vectors:
@@ -4061,45 +3291,15 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 
 ### Q4: What Are Jumbo Frames and When Should You Use Them?
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-are-jumbo-frames-and-when-should-you-use-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-are-jumbo-frames-and-when-should-you-use-them-handwritten.svg" alt="Handwritten: What Are Jumbo Frames and When Should You Use Them?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-are-jumbo-frames-and-when-should-you-use-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-are-jumbo-frames-and-when-should-you-use-them-diagram.svg" alt="Diagram: What Are Jumbo Frames and When Should You Use Them?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-are-jumbo-frames-and-when-should-you-use-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-are-jumbo-frames-and-when-should-you-use-them-sticky.svg" alt="Sticky Note: What Are Jumbo Frames and When Should You Use Them?" width="30%">
-</a>
-
 
 **Answer:** Jumbo frames are Ethernet frames with a payload larger than the standard 1500 bytes, typically up to 9000 bytes. Benefits: higher throughput because fewer frames need to be processed per byte of data (reduced CPU overhead), especially important for storage traffic (NFS, iSCSI) and large file transfers. Drawbacks: requires all devices on the path (switches, NICs, routers) to support jumbo frames with matching MTU settings. If a jumbo frame hits a device with standard MTU, it is either fragmented (if L3) or dropped (if L2). Use jumbo frames in data center storage networks and HPC clusters → not recommended for WAN or internet-facing links.
 
 ### Q5: How Does a Switch's MAC Address Table Size Impact Performance?
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-a-switch-s-mac-address-table-size-impact-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-a-switch-s-mac-address-table-size-impact-performance-handwritten.svg" alt="Handwritten: How Does a Switch's MAC Address Table Size Impact Performance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-a-switch-s-mac-address-table-size-impact-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-a-switch-s-mac-address-table-size-impact-performance-diagram.svg" alt="Diagram: How Does a Switch's MAC Address Table Size Impact Performance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-a-switch-s-mac-address-table-size-impact-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/how-does-a-switch-s-mac-address-table-size-impact-performance-sticky.svg" alt="Sticky Note: How Does a Switch's MAC Address Table Size Impact Performance?" width="30%">
-</a>
-
 
 **Answer:** The MAC address table (typically stored in TCAM) directly impacts switching performance. A table that is too small causes premature eviction of legitimate entries, leading to excessive unknown-unicast flooding. Enterprise switches support 8Kâ€“128K MAC entries. Data center switches support 288K+. When the table overflows in hardware, entries are moved to software (CPU-processed switching), reducing throughput from wire speed to CPU-bound rates (typically 1-10% of line rate).
 
 ### Q6: What Is the Difference Between a Managed and Unmanaged Switch?
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-the-difference-between-a-managed-and-unmanaged-switch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-the-difference-between-a-managed-and-unmanaged-switch-handwritten.svg" alt="Handwritten: What Is the Difference Between a Managed and Unmanaged Switch?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-the-difference-between-a-managed-and-unmanaged-switch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-the-difference-between-a-managed-and-unmanaged-switch-diagram.svg" alt="Diagram: What Is the Difference Between a Managed and Unmanaged Switch?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-the-difference-between-a-managed-and-unmanaged-switch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/what-is-the-difference-between-a-managed-and-unmanaged-switch-sticky.svg" alt="Sticky Note: What Is the Difference Between a Managed and Unmanaged Switch?" width="30%">
-</a>
 
 
 **Answer:** Unmanaged switches: plug-and-play, no configuration interface, no VLAN/STP/LACP support, fixed behavior. Managed switches: provide CLI or web interface for VLAN configuration, STP tuning, LACP link aggregation, QoS, SNMP monitoring, port security, and 802.1X authentication. Most enterprise networks use managed switches; unmanaged switches are limited to small home/office deployments.
@@ -4109,16 +3309,6 @@ MPLS routers use label-switched paths (LSPs) determined by the Label Distributio
 ## 5.10 Applications in Real Systems
 
 ### 5.10.1 Cisco Switches (IOS/IOS-XE)
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-1-cisco-switches-ios-ios-xe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-1-cisco-switches-ios-ios-xe-handwritten.svg" alt="Handwritten: 5.10.1 Cisco Switches (IOS/IOS-XE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-1-cisco-switches-ios-ios-xe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-1-cisco-switches-ios-ios-xe-diagram.svg" alt="Diagram: 5.10.1 Cisco Switches (IOS/IOS-XE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-1-cisco-switches-ios-ios-xe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-1-cisco-switches-ios-ios-xe-sticky.svg" alt="Sticky Note: 5.10.1 Cisco Switches (IOS/IOS-XE)" width="30%">
-</a>
 
 
 Cisco is the dominant enterprise switch vendor. Key switching concepts in Cisco IOS:
@@ -4166,16 +3356,6 @@ Switch(config-if-range)# channel-protocol lacp
 
 ### 5.10.2 Linux Bridge (`bridge`)
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-2-linux-bridge-bridge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-2-linux-bridge-bridge-handwritten.svg" alt="Handwritten: 5.10.2 Linux Bridge (`bridge`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-2-linux-bridge-bridge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-2-linux-bridge-bridge-diagram.svg" alt="Diagram: 5.10.2 Linux Bridge (`bridge`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-2-linux-bridge-bridge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-2-linux-bridge-bridge-sticky.svg" alt="Sticky Note: 5.10.2 Linux Bridge (`bridge`)" width="30%">
-</a>
-
 
 Linux has a native bridge implementation in the kernel:
 
@@ -4209,16 +3389,6 @@ ip link set br0 type bridge stp_state 1
 - `/sys/class/net/br0/bridge/hash_max` → Hash table size
 
 ### 5.10.3 Open vSwitch (OVS)
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-3-open-vswitch-ovs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-3-open-vswitch-ovs-handwritten.svg" alt="Handwritten: 5.10.3 Open vSwitch (OVS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-3-open-vswitch-ovs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-3-open-vswitch-ovs-diagram.svg" alt="Diagram: 5.10.3 Open vSwitch (OVS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-3-open-vswitch-ovs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/5-10-3-open-vswitch-ovs-sticky.svg" alt="Sticky Note: 5.10.3 Open vSwitch (OVS)" width="30%">
-</a>
 
 
 Open vSwitch is a production-quality open-source software switch used extensively in virtualized environments (OpenStack, KVM, Docker networking):
@@ -4259,16 +3429,6 @@ ovs-appctl fdb/show ovs-br0
 
 ### Switching Methods Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/switching-methods-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/switching-methods-comparison-handwritten.svg" alt="Handwritten: Switching Methods Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/switching-methods-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/switching-methods-comparison-diagram.svg" alt="Diagram: Switching Methods Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/switching-methods-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/switching-methods-comparison-sticky.svg" alt="Sticky Note: Switching Methods Comparison" width="30%">
-</a>
-
 
 | Method | Forward Starts | Error Check | Corrupted Frames | Runt Frames | Latency | Use Case |
 |--------|---------------|-------------|-----------------|-------------|---------|----------|
@@ -4277,16 +3437,6 @@ ovs-appctl fdb/show ovs-br0
 | Fragment-Free | After 64 bytes | Partial (no FCS) | Forwarded | Discarded | Medium | General purpose (safe compromise) |
 
 ### Hub vs Switch vs Router (Detailed)
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/hub-vs-switch-vs-router-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/hub-vs-switch-vs-router-detailed-handwritten.svg" alt="Handwritten: Hub vs Switch vs Router (Detailed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/hub-vs-switch-vs-router-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/hub-vs-switch-vs-router-detailed-diagram.svg" alt="Diagram: Hub vs Switch vs Router (Detailed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/hub-vs-switch-vs-router-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/hub-vs-switch-vs-router-detailed-sticky.svg" alt="Sticky Note: Hub vs Switch vs Router (Detailed)" width="30%">
-</a>
 
 
 | Property | Hub | Switch | Router |
@@ -4309,16 +3459,6 @@ ovs-appctl fdb/show ovs-br0
 
 ### STP Port States Summary
 
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-states-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-states-summary-handwritten.svg" alt="Handwritten: STP Port States Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-states-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-states-summary-diagram.svg" alt="Diagram: STP Port States Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-states-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/stp-port-states-summary-sticky.svg" alt="Sticky Note: STP Port States Summary" width="30%">
-</a>
-
 
 | State | Frames Forwarded? | MAC Learned? | BPDU Rx? | BPDU Tx? | Duration | Purpose |
 |-------|------------------|-------------|---------|---------|----------|---------|
@@ -4329,16 +3469,6 @@ ovs-appctl fdb/show ovs-br0
 | **Disabled** | No | No | No | No | Admin | Administratively down |
 
 ### Ethernet Frame Size Limits
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/ethernet-frame-size-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/ethernet-frame-size-limits-handwritten.svg" alt="Handwritten: Ethernet Frame Size Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/ethernet-frame-size-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/ethernet-frame-size-limits-diagram.svg" alt="Diagram: Ethernet Frame Size Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/ethernet-frame-size-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/ethernet-frame-size-limits-sticky.svg" alt="Sticky Note: Ethernet Frame Size Limits" width="30%">
-</a>
 
 
 | Frame Type | Payload (bytes) | Total Frame (bytes) | Use Case |
@@ -4447,16 +3577,6 @@ ovs-appctl fdb/show ovs-br0
 Ethernet has evolved from 10 Mbps shared-media coaxial segments to 400 Gbps full-duplex switched networks. The frame format → with Preamble, SFD, MAC addresses, Length/Type, Payload, and FCS → has remained fundamentally unchanged since 1980. Switches learn MAC addresses automatically using the learning bridge algorithm and make forwarding decisions at line rate. STP prevents loops in redundant topologies through a distributed algorithm that elects a root bridge, selects root ports, and blocks alternate paths. RSTP accelerates convergence from 30-50s to 1-3s. VLANs partition broadcast domains using 802.1Q frame tagging. LACP bundles physical links for bandwidth and redundancy. MPLS extends Ethernet with label-based forwarding for traffic engineering and VPN services.
 
 ### Key Takeaways
-
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/key-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/key-takeaways-handwritten.svg" alt="Handwritten: Key Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/key-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/key-takeaways-diagram.svg" alt="Diagram: Key Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/key-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/05-ethernet-switching/key-takeaways-sticky.svg" alt="Sticky Note: Key Takeaways" width="30%">
-</a>
 
 
 1. **Frame format stability** → The Ethernet frame format has been backward-compatible for four decades, enabling seamless interconnection of 10 Mbps and 400 Gbps devices at the data link layer.

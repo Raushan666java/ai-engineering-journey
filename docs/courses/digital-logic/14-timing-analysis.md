@@ -72,16 +72,6 @@ graph LR
 
 ### 14.1.1 Path Types
 
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-1-path-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-1-path-types-handwritten.svg" alt="Handwritten: 14.1.1 Path Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-1-path-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-1-path-types-diagram.svg" alt="Diagram: 14.1.1 Path Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-1-path-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-1-path-types-sticky.svg" alt="Sticky Note: 14.1.1 Path Types" width="30%">
-</a>
-
 
 | Path Type | Startpoint | Endpoint |
 |-----------|-----------|----------|
@@ -91,16 +81,6 @@ graph LR
 | input-to-output | Primary input | Primary output |
 
 ### 14.1.2 Path Components
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-2-path-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-2-path-components-handwritten.svg" alt="Handwritten: 14.1.2 Path Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-2-path-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-2-path-components-diagram.svg" alt="Diagram: 14.1.2 Path Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-2-path-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-1-2-path-components-sticky.svg" alt="Sticky Note: 14.1.2 Path Components" width="30%">
-</a>
 
 
 ```
@@ -128,16 +108,6 @@ function pathDelay(path: TimingPath): number {
 STA exhaustively verifies every timing path without simulation, using delay models for each cell and wire segment.
 
 ### 14.2.1 Setup Time Check
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-1-setup-time-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-1-setup-time-check-handwritten.svg" alt="Handwritten: 14.2.1 Setup Time Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-1-setup-time-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-1-setup-time-check-diagram.svg" alt="Diagram: 14.2.1 Setup Time Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-1-setup-time-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-1-setup-time-check-sticky.svg" alt="Sticky Note: 14.2.1 Setup Time Check" width="30%">
-</a>
 
 
 Setup constraint: data must arrive before the capturing clock edge.
@@ -178,16 +148,6 @@ console.log(`Setup slack at 200 MHz: ${slackFail.toFixed(2)} ns`); // negative
 
 ### 14.2.2 Hold Time Check
 
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-2-hold-time-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-2-hold-time-check-handwritten.svg" alt="Handwritten: 14.2.2 Hold Time Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-2-hold-time-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-2-hold-time-check-diagram.svg" alt="Diagram: 14.2.2 Hold Time Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-2-hold-time-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-2-hold-time-check-sticky.svg" alt="Sticky Note: 14.2.2 Hold Time Check" width="30%">
-</a>
-
 
 Hold constraint: data must remain stable after the capturing clock edge.
 
@@ -220,16 +180,6 @@ console.log(`Hold slack with skew: ${holdFail.toFixed(2)} ns`); // -0.6 ns (FAIL
 ```
 
 ### 14.2.3 STA Algorithm
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-3-sta-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-3-sta-algorithm-handwritten.svg" alt="Handwritten: 14.2.3 STA Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-3-sta-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-3-sta-algorithm-diagram.svg" alt="Diagram: 14.2.3 STA Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-3-sta-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-2-3-sta-algorithm-sticky.svg" alt="Sticky Note: 14.2.3 STA Algorithm" width="30%">
-</a>
 
 
 ```typescript
@@ -283,16 +233,6 @@ interface PathTiming {
 ## 14.3 Clock Distribution
 
 ### 14.3.1 Clock Tree Topologies
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-1-clock-tree-topologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-1-clock-tree-topologies-handwritten.svg" alt="Handwritten: 14.3.1 Clock Tree Topologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-1-clock-tree-topologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-1-clock-tree-topologies-diagram.svg" alt="Diagram: 14.3.1 Clock Tree Topologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-1-clock-tree-topologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-1-clock-tree-topologies-sticky.svg" alt="Sticky Note: 14.3.1 Clock Tree Topologies" width="30%">
-</a>
 
 
 ```mermaid
@@ -352,16 +292,6 @@ console.log(`Worst-case skew: ${hTree.worstCaseSkew.toFixed(3)} ns`);
 
 ### 14.3.2 Clock Gating
 
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-2-clock-gating-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-2-clock-gating-handwritten.svg" alt="Handwritten: 14.3.2 Clock Gating" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-2-clock-gating-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-2-clock-gating-diagram.svg" alt="Diagram: 14.3.2 Clock Gating" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-2-clock-gating-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-3-2-clock-gating-sticky.svg" alt="Sticky Note: 14.3.2 Clock Gating" width="30%">
-</a>
-
 
 Clock gating reduces dynamic power by disabling the clock to inactive logic blocks.
 
@@ -402,16 +332,6 @@ console.log(`Power savings: ${100 - (activeFlops / totalFlops) * 100}%`);
 
 ### 14.4.1 Clock Skew
 
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-1-clock-skew-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-1-clock-skew-handwritten.svg" alt="Handwritten: 14.4.1 Clock Skew" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-1-clock-skew-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-1-clock-skew-diagram.svg" alt="Diagram: 14.4.1 Clock Skew" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-1-clock-skew-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-1-clock-skew-sticky.svg" alt="Sticky Note: 14.4.1 Clock Skew" width="30%">
-</a>
-
 
 Clock skew is the spatial variation in clock arrival time ? different flip-flops see the clock edge at different times.
 
@@ -444,16 +364,6 @@ console.log(`Max freq with 200ps skew: ${SkewAnalysis.maxFrequencyWithSkew(0.3, 
 ```
 
 ### 14.4.2 Clock Jitter
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-2-clock-jitter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-2-clock-jitter-handwritten.svg" alt="Handwritten: 14.4.2 Clock Jitter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-2-clock-jitter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-2-clock-jitter-diagram.svg" alt="Diagram: 14.4.2 Clock Jitter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-2-clock-jitter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-4-2-clock-jitter-sticky.svg" alt="Sticky Note: 14.4.2 Clock Jitter" width="30%">
-</a>
 
 
 Jitter is the temporal variation of clock edges from their ideal positions.
@@ -526,16 +436,6 @@ console.log(`Setup data delay: ${ocv.applyToDelay(5, 'setup').toFixed(3)} ns`);
 
 ### 14.6.1 Setup Violation Fixes
 
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-1-setup-violation-fixes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-1-setup-violation-fixes-handwritten.svg" alt="Handwritten: 14.6.1 Setup Violation Fixes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-1-setup-violation-fixes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-1-setup-violation-fixes-diagram.svg" alt="Diagram: 14.6.1 Setup Violation Fixes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-1-setup-violation-fixes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-1-setup-violation-fixes-sticky.svg" alt="Sticky Note: 14.6.1 Setup Violation Fixes" width="30%">
-</a>
-
 
 ```mermaid
 graph LR
@@ -590,16 +490,6 @@ class TimingFixer {
 
 ### 14.6.2 Hold Violation Fixes
 
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-2-hold-violation-fixes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-2-hold-violation-fixes-handwritten.svg" alt="Handwritten: 14.6.2 Hold Violation Fixes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-2-hold-violation-fixes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-2-hold-violation-fixes-diagram.svg" alt="Diagram: 14.6.2 Hold Violation Fixes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-2-hold-violation-fixes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-6-2-hold-violation-fixes-sticky.svg" alt="Sticky Note: 14.6.2 Hold Violation Fixes" width="30%">
-</a>
-
 
 Hold violations are fixed by adding delay to fast paths:
 
@@ -626,16 +516,6 @@ console.log(`Need ${(extraDelay * 1000).toFixed(0)} ps extra hold delay`);
 ## 14.7 Crosstalk and Signal Integrity
 
 ### 14.7.1 Capacitive Crosstalk
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-1-capacitive-crosstalk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-1-capacitive-crosstalk-handwritten.svg" alt="Handwritten: 14.7.1 Capacitive Crosstalk" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-1-capacitive-crosstalk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-1-capacitive-crosstalk-diagram.svg" alt="Diagram: 14.7.1 Capacitive Crosstalk" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-1-capacitive-crosstalk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-1-capacitive-crosstalk-sticky.svg" alt="Sticky Note: 14.7.1 Capacitive Crosstalk" width="30%">
-</a>
 
 
 When a switching net (aggressor) couples energy into a neighbouring net (victim), it can cause delay variation or functional failure.
@@ -682,16 +562,6 @@ console.log(`Delay pushout: ${(pushout * 1000).toFixed(1)} ps`);
 ```
 
 ### 14.7.2 IR Drop
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-2-ir-drop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-2-ir-drop-handwritten.svg" alt="Handwritten: 14.7.2 IR Drop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-2-ir-drop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-2-ir-drop-diagram.svg" alt="Diagram: 14.7.2 IR Drop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-2-ir-drop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/14-7-2-ir-drop-sticky.svg" alt="Sticky Note: 14.7.2 IR Drop" width="30%">
-</a>
 
 
 Voltage drop along power distribution networks reduces cell drive strength and increases delay.
@@ -1090,16 +960,6 @@ c) Lower noise margins
 d) Faster propagation delay
 
 ### Answers
-
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/answers-diagram.svg" alt="Diagram: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/14-timing-analysis/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/14-timing-analysis/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
-</a>
 
 
 Q1: b | Q2: a | Q3: b | Q4: b | Q5: b

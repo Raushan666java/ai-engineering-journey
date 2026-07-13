@@ -66,16 +66,6 @@ flowchart LR
 
 ### Q1: What is Maven and what problem does it solve?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-maven-and-what-problem-does-it-solve-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-maven-and-what-problem-does-it-solve-handwritten.svg" alt="Handwritten: What is Maven and what problem does it solve?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-maven-and-what-problem-does-it-solve-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-maven-and-what-problem-does-it-solve-diagram.svg" alt="Diagram: What is Maven and what problem does it solve?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-maven-and-what-problem-does-it-solve-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-maven-and-what-problem-does-it-solve-sticky.svg" alt="Sticky Note: What is Maven and what problem does it solve?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -110,16 +100,6 @@ Maven also provides a lifecycle (validate, compile, test, package, verify, insta
 
 ### Q2: What are the key differences between Maven and Gradle?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-the-key-differences-between-maven-and-gradle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-the-key-differences-between-maven-and-gradle-handwritten.svg" alt="Handwritten: What are the key differences between Maven and Gradle?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-the-key-differences-between-maven-and-gradle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-the-key-differences-between-maven-and-gradle-diagram.svg" alt="Diagram: What are the key differences between Maven and Gradle?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-the-key-differences-between-maven-and-gradle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-the-key-differences-between-maven-and-gradle-sticky.svg" alt="Sticky Note: What are the key differences between Maven and Gradle?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -137,16 +117,6 @@ Choose **Maven** for teams that value predictability and strict conventions. Cho
 ---
 
 ### Q3: What is the Maven lifecycle and what are its phases?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-maven-lifecycle-and-what-are-its-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-maven-lifecycle-and-what-are-its-phases-handwritten.svg" alt="Handwritten: What is the Maven lifecycle and what are its phases?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-maven-lifecycle-and-what-are-its-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-maven-lifecycle-and-what-are-its-phases-diagram.svg" alt="Diagram: What is the Maven lifecycle and what are its phases?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-maven-lifecycle-and-what-are-its-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-maven-lifecycle-and-what-are-its-phases-sticky.svg" alt="Sticky Note: What is the Maven lifecycle and what are its phases?" width="30%">
-</a>
 
 
 **Answer:** Maven has three built-in lifecycles: **default** (main build), **clean** (cleanup), and **site** (documentation). The default lifecycle phases in order:
@@ -167,16 +137,6 @@ Each phase executes sequentially — `mvn package` runs validate, compile, test,
 
 ### Q4: How does Gradle incremental build work?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-does-gradle-incremental-build-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-does-gradle-incremental-build-work-handwritten.svg" alt="Handwritten: How does Gradle incremental build work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-does-gradle-incremental-build-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-does-gradle-incremental-build-work-diagram.svg" alt="Diagram: How does Gradle incremental build work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-does-gradle-incremental-build-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-does-gradle-incremental-build-work-sticky.svg" alt="Sticky Note: How does Gradle incremental build work?" width="30%">
-</a>
-
 
 **Answer:** Gradle tracks **inputs** and **outputs** for every task. If neither inputs nor outputs have changed since the last execution, the task is marked `UP-TO-DATE` and skipped entirely. Inputs include source files, task configuration, and system properties. Outputs include files and directories produced by the task.
 
@@ -185,16 +145,6 @@ The **build cache** extends this across machines — CI can publish cache entrie
 ---
 
 ### Q5: What are Maven BOMs and how do they help manage dependencies?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-maven-boms-and-how-do-they-help-manage-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-maven-boms-and-how-do-they-help-manage-dependencies-handwritten.svg" alt="Handwritten: What are Maven BOMs and how do they help manage dependencies?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-maven-boms-and-how-do-they-help-manage-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-maven-boms-and-how-do-they-help-manage-dependencies-diagram.svg" alt="Diagram: What are Maven BOMs and how do they help manage dependencies?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-maven-boms-and-how-do-they-help-manage-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-maven-boms-and-how-do-they-help-manage-dependencies-sticky.svg" alt="Sticky Note: What are Maven BOMs and how do they help manage dependencies?" width="30%">
-</a>
 
 
 **Answer:** A BOM (Bill of Materials) centralizes dependency versions. Instead of specifying versions in every module's `pom.xml`, you import a BOM and omit versions in individual dependency declarations.
@@ -218,16 +168,6 @@ Spring Boot provides `spring-boot-dependencies` as a BOM — that's why you don'
 ---
 
 ### Q6: What is Docker and why is it important for Java applications?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-and-why-is-it-important-for-java-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-and-why-is-it-important-for-java-applications-handwritten.svg" alt="Handwritten: What is Docker and why is it important for Java applications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-and-why-is-it-important-for-java-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-and-why-is-it-important-for-java-applications-diagram.svg" alt="Diagram: What is Docker and why is it important for Java applications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-and-why-is-it-important-for-java-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-and-why-is-it-important-for-java-applications-sticky.svg" alt="Sticky Note: What is Docker and why is it important for Java applications?" width="30%">
-</a>
 
 
 **Answer:** Docker packages an application and its dependencies into a lightweight, portable container image. For Java, it solves the "works on my machine" problem by ensuring the exact same environment (OS, JDK version, system libraries) runs everywhere.
@@ -260,16 +200,6 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 
 ### Q7: What are best practices for writing Dockerfiles for Java applications?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-best-practices-for-writing-dockerfiles-for-java-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-best-practices-for-writing-dockerfiles-for-java-applications-handwritten.svg" alt="Handwritten: What are best practices for writing Dockerfiles for Java applications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-best-practices-for-writing-dockerfiles-for-java-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-best-practices-for-writing-dockerfiles-for-java-applications-diagram.svg" alt="Diagram: What are best practices for writing Dockerfiles for Java applications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-best-practices-for-writing-dockerfiles-for-java-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-best-practices-for-writing-dockerfiles-for-java-applications-sticky.svg" alt="Sticky Note: What are best practices for writing Dockerfiles for Java applications?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -284,16 +214,6 @@ ENTRYPOINT ["java", "-jar", "app.jar"]
 ---
 
 ### Q8: What is Docker Compose and when should you use it?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-compose-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-compose-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is Docker Compose and when should you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-compose-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-compose-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is Docker Compose and when should you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-compose-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-docker-compose-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is Docker Compose and when should you use it?" width="30%">
-</a>
 
 
 **Answer:** Docker Compose defines multi-container applications using a YAML file. It's ideal for local development and test environments where you need to run several services together.
@@ -330,16 +250,6 @@ Use for: local development, CI test environments, staging. Not for production �
 ---
 
 ### Q9: What is Kubernetes and what problems does it solve for Java microservices?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-kubernetes-and-what-problems-does-it-solve-for-java-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-kubernetes-and-what-problems-does-it-solve-for-java-microservices-handwritten.svg" alt="Handwritten: What is Kubernetes and what problems does it solve for Java microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-kubernetes-and-what-problems-does-it-solve-for-java-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-kubernetes-and-what-problems-does-it-solve-for-java-microservices-diagram.svg" alt="Diagram: What is Kubernetes and what problems does it solve for Java microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-kubernetes-and-what-problems-does-it-solve-for-java-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-kubernetes-and-what-problems-does-it-solve-for-java-microservices-sticky.svg" alt="Sticky Note: What is Kubernetes and what problems does it solve for Java microservices?" width="30%">
-</a>
 
 
 **Answer:** Kubernetes (K8s) is a container orchestration platform that automates deployment, scaling, and management of containerized applications. For Java microservices, it solves:
@@ -406,16 +316,6 @@ spec:
 
 ### Q10: How do you configure Spring Boot health probes for Kubernetes?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-configure-spring-boot-health-probes-for-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-configure-spring-boot-health-probes-for-kubernetes-handwritten.svg" alt="Handwritten: How do you configure Spring Boot health probes for Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-configure-spring-boot-health-probes-for-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-configure-spring-boot-health-probes-for-kubernetes-diagram.svg" alt="Diagram: How do you configure Spring Boot health probes for Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-configure-spring-boot-health-probes-for-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-configure-spring-boot-health-probes-for-kubernetes-sticky.svg" alt="Sticky Note: How do you configure Spring Boot health probes for Kubernetes?" width="30%">
-</a>
-
 
 **Answer:** Spring Boot Actuator provides dedicated endpoints for liveness and readiness checks:
 
@@ -439,16 +339,6 @@ The readiness probe should include database connectivity but the liveness probe 
 ---
 
 ### Q11: What is a CI/CD pipeline and how do you build one for a Java project?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-ci-cd-pipeline-and-how-do-you-build-one-for-a-java-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-ci-cd-pipeline-and-how-do-you-build-one-for-a-java-project-handwritten.svg" alt="Handwritten: What is a CI/CD pipeline and how do you build one for a Java project?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-ci-cd-pipeline-and-how-do-you-build-one-for-a-java-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-ci-cd-pipeline-and-how-do-you-build-one-for-a-java-project-diagram.svg" alt="Diagram: What is a CI/CD pipeline and how do you build one for a Java project?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-ci-cd-pipeline-and-how-do-you-build-one-for-a-java-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-ci-cd-pipeline-and-how-do-you-build-one-for-a-java-project-sticky.svg" alt="Sticky Note: What is a CI/CD pipeline and how do you build one for a Java project?" width="30%">
-</a>
 
 
 **Answer:** CI/CD automates the process from code commit to production deployment.
@@ -492,16 +382,6 @@ Stages: Checkout → Compile → Unit tests → Integration tests → Static ana
 
 ### Q12: What is the difference between blue-green and canary deployment?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-difference-between-blue-green-and-canary-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-difference-between-blue-green-and-canary-deployment-handwritten.svg" alt="Handwritten: What is the difference between blue-green and canary deployment?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-difference-between-blue-green-and-canary-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-difference-between-blue-green-and-canary-deployment-diagram.svg" alt="Diagram: What is the difference between blue-green and canary deployment?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-difference-between-blue-green-and-canary-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-difference-between-blue-green-and-canary-deployment-sticky.svg" alt="Sticky Note: What is the difference between blue-green and canary deployment?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -520,16 +400,6 @@ Stages: Checkout → Compile → Unit tests → Integration tests → Static ana
 ---
 
 ### Q13: What monitoring metrics are essential for a Java microservice?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-monitoring-metrics-are-essential-for-a-java-microservice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-monitoring-metrics-are-essential-for-a-java-microservice-handwritten.svg" alt="Handwritten: What monitoring metrics are essential for a Java microservice?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-monitoring-metrics-are-essential-for-a-java-microservice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-monitoring-metrics-are-essential-for-a-java-microservice-diagram.svg" alt="Diagram: What monitoring metrics are essential for a Java microservice?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-monitoring-metrics-are-essential-for-a-java-microservice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-monitoring-metrics-are-essential-for-a-java-microservice-sticky.svg" alt="Sticky Note: What monitoring metrics are essential for a Java microservice?" width="30%">
-</a>
 
 
 **Answer:**
@@ -586,16 +456,6 @@ public class OrderService {
 
 ### Q14: How do you implement centralized logging for microservices?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-centralized-logging-for-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-centralized-logging-for-microservices-handwritten.svg" alt="Handwritten: How do you implement centralized logging for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-centralized-logging-for-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-centralized-logging-for-microservices-diagram.svg" alt="Diagram: How do you implement centralized logging for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-centralized-logging-for-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-centralized-logging-for-microservices-sticky.svg" alt="Sticky Note: How do you implement centralized logging for microservices?" width="30%">
-</a>
-
 
 **Answer:** Use the pattern: structured logging (JSON) + correlation IDs + centralized aggregation.
 
@@ -639,16 +499,6 @@ Propagate via RestClient interceptor to downstream services.
 
 ### Q15: What are health checks and why are they important?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-health-checks-and-why-are-they-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-health-checks-and-why-are-they-important-handwritten.svg" alt="Handwritten: What are health checks and why are they important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-health-checks-and-why-are-they-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-health-checks-and-why-are-they-important-diagram.svg" alt="Diagram: What are health checks and why are they important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-health-checks-and-why-are-they-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-health-checks-and-why-are-they-important-sticky.svg" alt="Sticky Note: What are health checks and why are they important?" width="30%">
-</a>
-
 
 **Answer:** Health checks expose the operational status of an application so orchestrators, load balancers, and monitoring systems know whether the application can serve traffic.
 
@@ -686,16 +536,6 @@ public class ExternalApiHealthIndicator implements HealthIndicator {
 
 ### Q16: What Git branching strategy works best for microservices?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-git-branching-strategy-works-best-for-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-git-branching-strategy-works-best-for-microservices-handwritten.svg" alt="Handwritten: What Git branching strategy works best for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-git-branching-strategy-works-best-for-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-git-branching-strategy-works-best-for-microservices-diagram.svg" alt="Diagram: What Git branching strategy works best for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-git-branching-strategy-works-best-for-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-git-branching-strategy-works-best-for-microservices-sticky.svg" alt="Sticky Note: What Git branching strategy works best for microservices?" width="30%">
-</a>
-
 
 **Answer:** **Trunk-based development** or **GitHub Flow** work best for microservices. Avoid Git Flow — it's too heavyweight for independently deployable services.
 
@@ -719,16 +559,6 @@ public PaymentResult processPayment(PaymentRequest request) {
 
 ### Q17: What do you look for in a code review?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-do-you-look-for-in-a-code-review-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-do-you-look-for-in-a-code-review-handwritten.svg" alt="Handwritten: What do you look for in a code review?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-do-you-look-for-in-a-code-review-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-do-you-look-for-in-a-code-review-diagram.svg" alt="Diagram: What do you look for in a code review?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-do-you-look-for-in-a-code-review-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-do-you-look-for-in-a-code-review-sticky.svg" alt="Sticky Note: What do you look for in a code review?" width="30%">
-</a>
-
 
 **Answer:**
 - **Functionality:** Correct implementation, edge cases handled, proper error handling
@@ -741,16 +571,6 @@ public PaymentResult processPayment(PaymentRequest request) {
 ---
 
 ### Q18: What is Flyway and how do you use it for database migrations?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-flyway-and-how-do-you-use-it-for-database-migrations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-flyway-and-how-do-you-use-it-for-database-migrations-handwritten.svg" alt="Handwritten: What is Flyway and how do you use it for database migrations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-flyway-and-how-do-you-use-it-for-database-migrations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-flyway-and-how-do-you-use-it-for-database-migrations-diagram.svg" alt="Diagram: What is Flyway and how do you use it for database migrations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-flyway-and-how-do-you-use-it-for-database-migrations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-flyway-and-how-do-you-use-it-for-database-migrations-sticky.svg" alt="Sticky Note: What is Flyway and how do you use it for database migrations?" width="30%">
-</a>
 
 
 **Answer:** Flyway applies versioned SQL scripts to a database. It tracks applied scripts in a `flyway_schema_history` table and only runs new ones.
@@ -784,16 +604,6 @@ spring:
 
 ### Q19: Flyway vs Liquibase?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/flyway-vs-liquibase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/flyway-vs-liquibase-handwritten.svg" alt="Handwritten: Flyway vs Liquibase?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/flyway-vs-liquibase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/flyway-vs-liquibase-diagram.svg" alt="Diagram: Flyway vs Liquibase?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/flyway-vs-liquibase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/flyway-vs-liquibase-sticky.svg" alt="Sticky Note: Flyway vs Liquibase?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -812,16 +622,6 @@ Choose Flyway for SQL-first teams that value simplicity. Choose Liquibase if you
 
 ### Q20: How do you ensure database migrations are safe in production?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-ensure-database-migrations-are-safe-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-ensure-database-migrations-are-safe-in-production-handwritten.svg" alt="Handwritten: How do you ensure database migrations are safe in production?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-ensure-database-migrations-are-safe-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-ensure-database-migrations-are-safe-in-production-diagram.svg" alt="Diagram: How do you ensure database migrations are safe in production?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-ensure-database-migrations-are-safe-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-ensure-database-migrations-are-safe-in-production-sticky.svg" alt="Sticky Note: How do you ensure database migrations are safe in production?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -835,16 +635,6 @@ Choose Flyway for SQL-first teams that value simplicity. Choose Liquibase if you
 ---
 
 ### Q21: What is the Twelve-Factor App methodology?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-twelve-factor-app-methodology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-twelve-factor-app-methodology-handwritten.svg" alt="Handwritten: What is the Twelve-Factor App methodology?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-twelve-factor-app-methodology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-twelve-factor-app-methodology-diagram.svg" alt="Diagram: What is the Twelve-Factor App methodology?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-twelve-factor-app-methodology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-twelve-factor-app-methodology-sticky.svg" alt="Sticky Note: What is the Twelve-Factor App methodology?" width="30%">
-</a>
 
 
 **Answer:** Twelve-Factor App is a methodology for building SaaS applications. The 12 factors:
@@ -865,16 +655,6 @@ Choose Flyway for SQL-first teams that value simplicity. Choose Liquibase if you
 ---
 
 ### Q22: How do you implement graceful shutdown in Spring Boot?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-graceful-shutdown-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-graceful-shutdown-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement graceful shutdown in Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-graceful-shutdown-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-graceful-shutdown-in-spring-boot-diagram.svg" alt="Diagram: How do you implement graceful shutdown in Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-graceful-shutdown-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-graceful-shutdown-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement graceful shutdown in Spring Boot?" width="30%">
-</a>
 
 
 **Answer:**
@@ -902,16 +682,6 @@ lifecycle:
 
 ### Q23: What is SLF4J and why is it the standard logging facade for Java?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-slf4j-and-why-is-it-the-standard-logging-facade-for-java-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-slf4j-and-why-is-it-the-standard-logging-facade-for-java-handwritten.svg" alt="Handwritten: What is SLF4J and why is it the standard logging facade for Java?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-slf4j-and-why-is-it-the-standard-logging-facade-for-java-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-slf4j-and-why-is-it-the-standard-logging-facade-for-java-diagram.svg" alt="Diagram: What is SLF4J and why is it the standard logging facade for Java?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-slf4j-and-why-is-it-the-standard-logging-facade-for-java-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-slf4j-and-why-is-it-the-standard-logging-facade-for-java-sticky.svg" alt="Sticky Note: What is SLF4J and why is it the standard logging facade for Java?" width="30%">
-</a>
-
 
 **Answer:** SLF4J (Simple Logging Facade for Java) decouples application code from the logging implementation. Your code logs via SLF4J API, and at deployment time you choose the backend (Logback, Log4j2, java.util.logging).
 
@@ -924,16 +694,6 @@ Benefits:
 ---
 
 ### Q24: How do you troubleshoot performance issues in production?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-troubleshoot-performance-issues-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-troubleshoot-performance-issues-in-production-handwritten.svg" alt="Handwritten: How do you troubleshoot performance issues in production?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-troubleshoot-performance-issues-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-troubleshoot-performance-issues-in-production-diagram.svg" alt="Diagram: How do you troubleshoot performance issues in production?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-troubleshoot-performance-issues-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-troubleshoot-performance-issues-in-production-sticky.svg" alt="Sticky Note: How do you troubleshoot performance issues in production?" width="30%">
-</a>
 
 
 **Answer:** Use a systematic top-down approach:
@@ -961,16 +721,6 @@ Benefits:
 
 ### Q25: Performance vs load vs stress testing?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/performance-vs-load-vs-stress-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/performance-vs-load-vs-stress-testing-handwritten.svg" alt="Handwritten: Performance vs load vs stress testing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/performance-vs-load-vs-stress-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/performance-vs-load-vs-stress-testing-diagram.svg" alt="Diagram: Performance vs load vs stress testing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/performance-vs-load-vs-stress-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/performance-vs-load-vs-stress-testing-sticky.svg" alt="Sticky Note: Performance vs load vs stress testing?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -989,16 +739,6 @@ Tools: JMH (microbenchmarking), Gatling/k6 (load testing)
 
 ### Q26: How do you handle secrets management?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-secrets-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-secrets-management-handwritten.svg" alt="Handwritten: How do you handle secrets management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-secrets-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-secrets-management-diagram.svg" alt="Diagram: How do you handle secrets management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-secrets-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-secrets-management-sticky.svg" alt="Sticky Note: How do you handle secrets management?" width="30%">
-</a>
-
 
 **Answer:** Never hardcode secrets in source code or configuration files.
 
@@ -1013,16 +753,6 @@ Best practices: rotate regularly, audit access, least privilege, never log secre
 ---
 
 ### Q27: What is GitOps?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-gitops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-gitops-handwritten.svg" alt="Handwritten: What is GitOps?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-gitops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-gitops-diagram.svg" alt="Diagram: What is GitOps?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-gitops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-gitops-sticky.svg" alt="Sticky Note: What is GitOps?" width="30%">
-</a>
 
 
 **Answer:** GitOps uses a Git repository as the single source of truth for cluster state. An operator (ArgoCD, Flux) continuously synchronizes the cluster with what's defined in Git.
@@ -1052,16 +782,6 @@ spec:
 
 ### Q28: Helm vs Kustomize?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/helm-vs-kustomize-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/helm-vs-kustomize-handwritten.svg" alt="Handwritten: Helm vs Kustomize?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/helm-vs-kustomize-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/helm-vs-kustomize-diagram.svg" alt="Diagram: Helm vs Kustomize?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/helm-vs-kustomize-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/helm-vs-kustomize-sticky.svg" alt="Sticky Note: Helm vs Kustomize?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1078,16 +798,6 @@ Use Helm for third-party software installations. Use Kustomize for your own appl
 ---
 
 ### Q29: What is a service mesh (Istio vs Linkerd)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-service-mesh-istio-vs-linkerd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-service-mesh-istio-vs-linkerd-handwritten.svg" alt="Handwritten: What is a service mesh (Istio vs Linkerd)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-service-mesh-istio-vs-linkerd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-service-mesh-istio-vs-linkerd-diagram.svg" alt="Diagram: What is a service mesh (Istio vs Linkerd)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-service-mesh-istio-vs-linkerd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-service-mesh-istio-vs-linkerd-sticky.svg" alt="Sticky Note: What is a service mesh (Istio vs Linkerd)?" width="30%">
-</a>
 
 
 **Answer:** A service mesh handles service-to-service communication via sidecar proxies. Provides traffic management, mTLS security, and observability without modifying application code.
@@ -1106,16 +816,6 @@ Use when: 10+ services, need mTLS, canary deployments, or consistent observabili
 
 ### Q30: What are Docker volume types?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-docker-volume-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-docker-volume-types-handwritten.svg" alt="Handwritten: What are Docker volume types?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-docker-volume-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-docker-volume-types-diagram.svg" alt="Diagram: What are Docker volume types?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-are-docker-volume-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-are-docker-volume-types-sticky.svg" alt="Sticky Note: What are Docker volume types?" width="30%">
-</a>
-
 
 **Answer:**
 1. **Named volumes** — Docker-managed, persisted in `/var/lib/docker/volumes/`. Most portable.
@@ -1127,16 +827,6 @@ Use named volumes for databases, bind mounts for development, tmpfs for secrets.
 ---
 
 ### Q31: How do Docker containers communicate?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-docker-containers-communicate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-docker-containers-communicate-handwritten.svg" alt="Handwritten: How do Docker containers communicate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-docker-containers-communicate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-docker-containers-communicate-diagram.svg" alt="Diagram: How do Docker containers communicate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-docker-containers-communicate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-docker-containers-communicate-sticky.svg" alt="Sticky Note: How do Docker containers communicate?" width="30%">
-</a>
 
 
 **Answer:** Through Docker networks:
@@ -1150,16 +840,6 @@ In Docker Compose, services reach each other by service name (`db:5432`, `redis:
 
 ### Q32: What is a container registry?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-container-registry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-container-registry-handwritten.svg" alt="Handwritten: What is a container registry?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-container-registry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-container-registry-diagram.svg" alt="Diagram: What is a container registry?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-container-registry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-container-registry-sticky.svg" alt="Sticky Note: What is a container registry?" width="30%">
-</a>
-
 
 **Answer:** Stores and distributes Docker images. Common options:
 - **Docker Hub** — public, rate-limited for anonymous pulls
@@ -1171,16 +851,6 @@ In Docker Compose, services reach each other by service name (`db:5432`, `redis:
 ---
 
 ### Q33: Readiness probe vs liveness probe vs startup probe?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/readiness-probe-vs-liveness-probe-vs-startup-probe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/readiness-probe-vs-liveness-probe-vs-startup-probe-handwritten.svg" alt="Handwritten: Readiness probe vs liveness probe vs startup probe?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/readiness-probe-vs-liveness-probe-vs-startup-probe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/readiness-probe-vs-liveness-probe-vs-startup-probe-diagram.svg" alt="Diagram: Readiness probe vs liveness probe vs startup probe?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/readiness-probe-vs-liveness-probe-vs-startup-probe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/readiness-probe-vs-liveness-probe-vs-startup-probe-sticky.svg" alt="Sticky Note: Readiness probe vs liveness probe vs startup probe?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1194,16 +864,6 @@ In Docker Compose, services reach each other by service name (`db:5432`, `redis:
 ---
 
 ### Q34: How do you use ConfigMaps with Spring Boot?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-use-configmaps-with-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-use-configmaps-with-spring-boot-handwritten.svg" alt="Handwritten: How do you use ConfigMaps with Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-use-configmaps-with-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-use-configmaps-with-spring-boot-diagram.svg" alt="Diagram: How do you use ConfigMaps with Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-use-configmaps-with-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-use-configmaps-with-spring-boot-sticky.svg" alt="Sticky Note: How do you use ConfigMaps with Spring Boot?" width="30%">
-</a>
 
 
 **Answer:** ConfigMaps inject non-sensitive configuration into pods. Mount as environment variables:
@@ -1248,16 +908,6 @@ spring:
 
 ### Q35: What is a Kubernetes Ingress?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-ingress-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-ingress-handwritten.svg" alt="Handwritten: What is a Kubernetes Ingress?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-ingress-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-ingress-diagram.svg" alt="Diagram: What is a Kubernetes Ingress?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-ingress-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-ingress-sticky.svg" alt="Sticky Note: What is a Kubernetes Ingress?" width="30%">
-</a>
-
 
 **Answer:** Ingress exposes HTTP/S routes from outside the cluster to internal Services. Requires an Ingress Controller (NGINX, Traefik, HAProxy).
 
@@ -1287,16 +937,6 @@ Provides path-based routing, host-based routing, TLS termination, and controller
 
 ### Q36: Kubernetes Service vs Ingress?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-service-vs-ingress-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-service-vs-ingress-handwritten.svg" alt="Handwritten: Kubernetes Service vs Ingress?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-service-vs-ingress-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-service-vs-ingress-diagram.svg" alt="Diagram: Kubernetes Service vs Ingress?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-service-vs-ingress-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-service-vs-ingress-sticky.svg" alt="Sticky Note: Kubernetes Service vs Ingress?" width="30%">
-</a>
-
 
 **Answer:** Service = Layer 4 (TCP/UDP), stable internal endpoint for pods, simple load balancing. Ingress = Layer 7 (HTTP/S), external traffic routing, path-based, TLS termination, rate limiting.
 
@@ -1305,16 +945,6 @@ Flow: `Ingress → Service → Pod(s)`
 ---
 
 ### Q37: Kubernetes resource model (Requests vs Limits)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-resource-model-requests-vs-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-resource-model-requests-vs-limits-handwritten.svg" alt="Handwritten: Kubernetes resource model (Requests vs Limits)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-resource-model-requests-vs-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-resource-model-requests-vs-limits-diagram.svg" alt="Diagram: Kubernetes resource model (Requests vs Limits)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-resource-model-requests-vs-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-resource-model-requests-vs-limits-sticky.svg" alt="Sticky Note: Kubernetes resource model (Requests vs Limits)?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1339,16 +969,6 @@ QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestE
 
 ### Q38: How do you achieve zero-downtime deployments in Kubernetes?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-achieve-zero-downtime-deployments-in-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-achieve-zero-downtime-deployments-in-kubernetes-handwritten.svg" alt="Handwritten: How do you achieve zero-downtime deployments in Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-achieve-zero-downtime-deployments-in-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-achieve-zero-downtime-deployments-in-kubernetes-diagram.svg" alt="Diagram: How do you achieve zero-downtime deployments in Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-achieve-zero-downtime-deployments-in-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-achieve-zero-downtime-deployments-in-kubernetes-sticky.svg" alt="Sticky Note: How do you achieve zero-downtime deployments in Kubernetes?" width="30%">
-</a>
-
 
 **Answer:** Combine multiple features:
 
@@ -1363,16 +983,6 @@ QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestE
 
 ### Q39: Reverse proxy vs forward proxy?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/reverse-proxy-vs-forward-proxy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/reverse-proxy-vs-forward-proxy-handwritten.svg" alt="Handwritten: Reverse proxy vs forward proxy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/reverse-proxy-vs-forward-proxy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/reverse-proxy-vs-forward-proxy-diagram.svg" alt="Diagram: Reverse proxy vs forward proxy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/reverse-proxy-vs-forward-proxy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/reverse-proxy-vs-forward-proxy-sticky.svg" alt="Sticky Note: Reverse proxy vs forward proxy?" width="30%">
-</a>
-
 
 **Answer:**
 - **Forward proxy** — sits between clients and the internet. Hides client IP, used for content filtering and access control. (Corporate proxy, Squid)
@@ -1381,16 +991,6 @@ QoS classes: Guaranteed (request = limit), Burstable (request &lt; limit), BestE
 ---
 
 ### Q40: What is the role of a message broker in microservices?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-role-of-a-message-broker-in-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-role-of-a-message-broker-in-microservices-handwritten.svg" alt="Handwritten: What is the role of a message broker in microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-role-of-a-message-broker-in-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-role-of-a-message-broker-in-microservices-diagram.svg" alt="Diagram: What is the role of a message broker in microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-role-of-a-message-broker-in-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-role-of-a-message-broker-in-microservices-sticky.svg" alt="Sticky Note: What is the role of a message broker in microservices?" width="30%">
-</a>
 
 
 **Answer:** Enables asynchronous communication between services. Benefits:
@@ -1405,16 +1005,6 @@ Common brokers: RabbitMQ (AMQP), Apache Kafka (event streaming, replayable), Ama
 
 ### Q41: Queue vs topic in messaging?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/queue-vs-topic-in-messaging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/queue-vs-topic-in-messaging-handwritten.svg" alt="Handwritten: Queue vs topic in messaging?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/queue-vs-topic-in-messaging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/queue-vs-topic-in-messaging-diagram.svg" alt="Diagram: Queue vs topic in messaging?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/queue-vs-topic-in-messaging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/queue-vs-topic-in-messaging-sticky.svg" alt="Sticky Note: Queue vs topic in messaging?" width="30%">
-</a>
-
 
 **Answer:**
 - **Queue (point-to-point):** Each message consumed by exactly one consumer. Best for work distribution.
@@ -1425,16 +1015,6 @@ Kafka combines both: consumer groups get every message (topic), partitions distr
 ---
 
 ### Q42: What is the Circuit Breaker pattern?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-circuit-breaker-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-circuit-breaker-pattern-handwritten.svg" alt="Handwritten: What is the Circuit Breaker pattern?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-circuit-breaker-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-circuit-breaker-pattern-diagram.svg" alt="Diagram: What is the Circuit Breaker pattern?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-circuit-breaker-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-circuit-breaker-pattern-sticky.svg" alt="Sticky Note: What is the Circuit Breaker pattern?" width="30%">
-</a>
 
 
 **Answer:** Prevents cascading failures by stopping calls to a failing service and failing fast. States: CLOSED (normal), OPEN (fail fast), HALF_OPEN (probe for recovery).
@@ -1464,32 +1044,12 @@ public PaymentResult paymentFallback(Order order, Throwable t) {
 
 ### Q43: Retry vs Circuit Breaker?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/retry-vs-circuit-breaker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/retry-vs-circuit-breaker-handwritten.svg" alt="Handwritten: Retry vs Circuit Breaker?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/retry-vs-circuit-breaker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/retry-vs-circuit-breaker-diagram.svg" alt="Diagram: Retry vs Circuit Breaker?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/retry-vs-circuit-breaker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/retry-vs-circuit-breaker-sticky.svg" alt="Sticky Note: Retry vs Circuit Breaker?" width="30%">
-</a>
-
 
 **Answer:** Retry for transient failures (network hiccup, connection timeout). Circuit Breaker for persistent failures (service down, DB disconnected). They complement each other — retry first, then circuit breaker.
 
 ---
 
 ### Q44: What is the Bulkhead pattern?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-bulkhead-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-bulkhead-pattern-handwritten.svg" alt="Handwritten: What is the Bulkhead pattern?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-bulkhead-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-bulkhead-pattern-diagram.svg" alt="Diagram: What is the Bulkhead pattern?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-bulkhead-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-bulkhead-pattern-sticky.svg" alt="Sticky Note: What is the Bulkhead pattern?" width="30%">
-</a>
 
 
 **Answer:** Isolates resources so a failure in one part doesn't take down others. Two types:
@@ -1506,16 +1066,6 @@ public PaymentResult processPayment(Order order) {
 ---
 
 ### Q45: How do you implement observability (logging, metrics, tracing)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-observability-logging-metrics-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-observability-logging-metrics-tracing-handwritten.svg" alt="Handwritten: How do you implement observability (logging, metrics, tracing)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-observability-logging-metrics-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-observability-logging-metrics-tracing-diagram.svg" alt="Diagram: How do you implement observability (logging, metrics, tracing)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-observability-logging-metrics-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-observability-logging-metrics-tracing-sticky.svg" alt="Sticky Note: How do you implement observability (logging, metrics, tracing)?" width="30%">
-</a>
 
 
 **Answer:** Three pillars:
@@ -1544,16 +1094,6 @@ management:
 
 ### Q46: What is Prometheus?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-prometheus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-prometheus-handwritten.svg" alt="Handwritten: What is Prometheus?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-prometheus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-prometheus-diagram.svg" alt="Diagram: What is Prometheus?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-prometheus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-prometheus-sticky.svg" alt="Sticky Note: What is Prometheus?" width="30%">
-</a>
-
 
 **Answer:** Prometheus is a time-series monitoring system that scrapes metrics from instrumented applications. Spring Boot exposes `/actuator/prometheus` via Micrometer. PromQL queries metrics for dashboards and alerts.
 
@@ -1563,32 +1103,12 @@ Workflow: `Spring Boot → /actuator/prometheus → Prometheus (scrape) → Graf
 
 ### Q47: What is Grafana?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-grafana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-grafana-handwritten.svg" alt="Handwritten: What is Grafana?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-grafana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-grafana-diagram.svg" alt="Diagram: What is Grafana?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-grafana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-grafana-sticky.svg" alt="Sticky Note: What is Grafana?" width="30%">
-</a>
-
 
 **Answer:** Visualization platform connecting to data sources (Prometheus, Elasticsearch) for dashboards. Pre-built Spring Boot dashboards available (ID 10280 for JVM/Micrometer). Configure alerting via Slack, PagerDuty, or webhook.
 
 ---
 
 ### Q48: APM vs traditional monitoring?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/apm-vs-traditional-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/apm-vs-traditional-monitoring-handwritten.svg" alt="Handwritten: APM vs traditional monitoring?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/apm-vs-traditional-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/apm-vs-traditional-monitoring-diagram.svg" alt="Diagram: APM vs traditional monitoring?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/apm-vs-traditional-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/apm-vs-traditional-monitoring-sticky.svg" alt="Sticky Note: APM vs traditional monitoring?" width="30%">
-</a>
 
 
 **Answer:** APM provides code-level visibility — method-level profiling, distributed traces, transaction breakdowns. Traditional monitoring shows infrastructure metrics (CPU, memory, disk). APM answers "why was this request slow?" with a detailed breakdown.
@@ -1597,32 +1117,12 @@ Workflow: `Spring Boot → /actuator/prometheus → Prometheus (scrape) → Graf
 
 ### Q49: Structured vs unstructured logging?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/structured-vs-unstructured-logging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/structured-vs-unstructured-logging-handwritten.svg" alt="Handwritten: Structured vs unstructured logging?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/structured-vs-unstructured-logging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/structured-vs-unstructured-logging-diagram.svg" alt="Diagram: Structured vs unstructured logging?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/structured-vs-unstructured-logging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/structured-vs-unstructured-logging-sticky.svg" alt="Sticky Note: Structured vs unstructured logging?" width="30%">
-</a>
-
 
 **Answer:** Structured = JSON format, machine-parseable, filterable by field. Unstructured = free text, hard to search programmatically. Always use structured logging in production for reliable analysis in Kibana/Grafana.
 
 ---
 
 ### Q50: Best practices for log levels?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/best-practices-for-log-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/best-practices-for-log-levels-handwritten.svg" alt="Handwritten: Best practices for log levels?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/best-practices-for-log-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/best-practices-for-log-levels-diagram.svg" alt="Diagram: Best practices for log levels?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/best-practices-for-log-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/best-practices-for-log-levels-sticky.svg" alt="Sticky Note: Best practices for log levels?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1637,16 +1137,6 @@ Never log sensitive data. Include context (orderId, userId). Use dynamic level c
 
 ### Q51: How do you implement health checks for external dependencies?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-health-checks-for-external-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-health-checks-for-external-dependencies-handwritten.svg" alt="Handwritten: How do you implement health checks for external dependencies?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-health-checks-for-external-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-health-checks-for-external-dependencies-diagram.svg" alt="Diagram: How do you implement health checks for external dependencies?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-health-checks-for-external-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-implement-health-checks-for-external-dependencies-sticky.svg" alt="Sticky Note: How do you implement health checks for external dependencies?" width="30%">
-</a>
-
 
 **Answer:** Implement `HealthIndicator` for each dependency. Spring Boot auto-configures DataSource, Redis, Mongo, RabbitMQ, Kafka health checks. Add custom ones for external APIs.
 
@@ -1655,16 +1145,6 @@ Group health by purpose — readiness checks include external dependencies, live
 ---
 
 ### Q52: How do you manage database connection pools?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-manage-database-connection-pools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-manage-database-connection-pools-handwritten.svg" alt="Handwritten: How do you manage database connection pools?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-manage-database-connection-pools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-manage-database-connection-pools-diagram.svg" alt="Diagram: How do you manage database connection pools?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-manage-database-connection-pools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-manage-database-connection-pools-sticky.svg" alt="Sticky Note: How do you manage database connection pools?" width="30%">
-</a>
 
 
 **Answer:** HikariCP (default in Spring Boot):
@@ -1685,16 +1165,6 @@ Monitor: `hikaricp_connections_active`, `hikaricp_connections_pending`, `hikaric
 
 ### Q53: Monorepo vs multi-repo for microservices?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/monorepo-vs-multi-repo-for-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/monorepo-vs-multi-repo-for-microservices-handwritten.svg" alt="Handwritten: Monorepo vs multi-repo for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/monorepo-vs-multi-repo-for-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/monorepo-vs-multi-repo-for-microservices-diagram.svg" alt="Diagram: Monorepo vs multi-repo for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/monorepo-vs-multi-repo-for-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/monorepo-vs-multi-repo-for-microservices-sticky.svg" alt="Sticky Note: Monorepo vs multi-repo for microservices?" width="30%">
-</a>
-
 
 **Answer:**
 - **Monorepo:** All services in one repo. Atomic cross-service changes, easier code sharing, but git scales poorly and CI needs test impact analysis.
@@ -1704,32 +1174,12 @@ Monitor: `hikaricp_connections_active`, `hikaricp_connections_pending`, `hikaric
 
 ### Q54: Semantic versioning for microservices?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/semantic-versioning-for-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/semantic-versioning-for-microservices-handwritten.svg" alt="Handwritten: Semantic versioning for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/semantic-versioning-for-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/semantic-versioning-for-microservices-diagram.svg" alt="Diagram: Semantic versioning for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/semantic-versioning-for-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/semantic-versioning-for-microservices-sticky.svg" alt="Sticky Note: Semantic versioning for microservices?" width="30%">
-</a>
-
 
 **Answer:** `MAJOR.MINOR.PATCH`. MAJOR for breaking API changes, MINOR for backward-compatible features, PATCH for bug fixes. Expose version via Actuator's `/actuator/info`. Use git commit SHA as Docker image tag for traceability.
 
 ---
 
 ### Q55: REST vs gRPC?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/rest-vs-grpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/rest-vs-grpc-handwritten.svg" alt="Handwritten: REST vs gRPC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/rest-vs-grpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/rest-vs-grpc-diagram.svg" alt="Diagram: REST vs gRPC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/rest-vs-grpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/rest-vs-grpc-sticky.svg" alt="Sticky Note: REST vs gRPC?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1749,16 +1199,6 @@ Use REST for public APIs and browser clients. Use gRPC for internal service-to-s
 
 ### Q56: Database migrations across microservices?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/database-migrations-across-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/database-migrations-across-microservices-handwritten.svg" alt="Handwritten: Database migrations across microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/database-migrations-across-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/database-migrations-across-microservices-diagram.svg" alt="Diagram: Database migrations across microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/database-migrations-across-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/database-migrations-across-microservices-sticky.svg" alt="Sticky Note: Database migrations across microservices?" width="30%">
-</a>
-
 
 **Answer:** Each service owns its database schema independently (database-per-service pattern). Never share databases between services. Backward-compatible changes only. Use expand-migrate-contract pattern across multiple deploys.
 
@@ -1766,32 +1206,12 @@ Use REST for public APIs and browser clients. Use gRPC for internal service-to-s
 
 ### Q57: Deployment safety in Kubernetes?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/deployment-safety-in-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/deployment-safety-in-kubernetes-handwritten.svg" alt="Handwritten: Deployment safety in Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/deployment-safety-in-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/deployment-safety-in-kubernetes-diagram.svg" alt="Diagram: Deployment safety in Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/deployment-safety-in-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/deployment-safety-in-kubernetes-sticky.svg" alt="Sticky Note: Deployment safety in Kubernetes?" width="30%">
-</a>
-
 
 **Answer:** Combine: probes (liveness/readiness/startup) + rolling update strategy + PodDisruptionBudget + progressive delivery (Argo Rollouts with canary + metric analysis) + automated rollback triggers.
 
 ---
 
 ### Q58: Horizontal vs vertical scaling?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/horizontal-vs-vertical-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/horizontal-vs-vertical-scaling-handwritten.svg" alt="Handwritten: Horizontal vs vertical scaling?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/horizontal-vs-vertical-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/horizontal-vs-vertical-scaling-diagram.svg" alt="Diagram: Horizontal vs vertical scaling?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/horizontal-vs-vertical-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/horizontal-vs-vertical-scaling-sticky.svg" alt="Sticky Note: Horizontal vs vertical scaling?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1803,16 +1223,6 @@ For Java microservices: scale horizontally for stateless services, vertically fo
 ---
 
 ### Q59: Stress testing and capacity planning?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/stress-testing-and-capacity-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/stress-testing-and-capacity-planning-handwritten.svg" alt="Handwritten: Stress testing and capacity planning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/stress-testing-and-capacity-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/stress-testing-and-capacity-planning-diagram.svg" alt="Diagram: Stress testing and capacity planning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/stress-testing-and-capacity-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/stress-testing-and-capacity-planning-sticky.svg" alt="Sticky Note: Stress testing and capacity planning?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1826,16 +1236,6 @@ For Java microservices: scale horizontally for stateless services, vertically fo
 
 ### Q60: What is a Kubernetes Operator?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-operator-handwritten.svg" alt="Handwritten: What is a Kubernetes Operator?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-operator-diagram.svg" alt="Diagram: What is a Kubernetes Operator?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-kubernetes-operator-sticky.svg" alt="Sticky Note: What is a Kubernetes Operator?" width="30%">
-</a>
-
 
 **Answer:** An application-specific controller that encodes human operational knowledge into software. Manages complex stateful applications (databases, Kafka, Redis) with automated backup, restore, scaling, and upgrades.
 
@@ -1844,16 +1244,6 @@ Examples: Strimzi (Kafka), CloudNativePG (PostgreSQL), Prometheus Operator, Argo
 ---
 
 ### Q61: Setting up a development environment for microservices?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/setting-up-a-development-environment-for-microservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/setting-up-a-development-environment-for-microservices-handwritten.svg" alt="Handwritten: Setting up a development environment for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/setting-up-a-development-environment-for-microservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/setting-up-a-development-environment-for-microservices-diagram.svg" alt="Diagram: Setting up a development environment for microservices?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/setting-up-a-development-environment-for-microservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/setting-up-a-development-environment-for-microservices-sticky.svg" alt="Sticky Note: Setting up a development environment for microservices?" width="30%">
-</a>
 
 
 **Answer:** Three tiers:
@@ -1866,16 +1256,6 @@ Best practices: hot reload (DevTools), realistic DB (PostgreSQL, not H2), mock e
 ---
 
 ### Q62: What is Testcontainers and how does it improve tests?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-testcontainers-and-how-does-it-improve-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-testcontainers-and-how-does-it-improve-tests-handwritten.svg" alt="Handwritten: What is Testcontainers and how does it improve tests?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-testcontainers-and-how-does-it-improve-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-testcontainers-and-how-does-it-improve-tests-diagram.svg" alt="Diagram: What is Testcontainers and how does it improve tests?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-testcontainers-and-how-does-it-improve-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-testcontainers-and-how-does-it-improve-tests-sticky.svg" alt="Sticky Note: What is Testcontainers and how does it improve tests?" width="30%">
-</a>
 
 
 **Answer:** Testcontainers provides disposable Docker containers for integration testing. Uses the same database as production (PostgreSQL, not H2), catching compatibility issues early.
@@ -1900,16 +1280,6 @@ class OrderRepositoryTest {
 
 ### Q63: Testing async code (Kafka, CompletableFuture)?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/testing-async-code-kafka-completablefuture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/testing-async-code-kafka-completablefuture-handwritten.svg" alt="Handwritten: Testing async code (Kafka, CompletableFuture)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/testing-async-code-kafka-completablefuture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/testing-async-code-kafka-completablefuture-diagram.svg" alt="Diagram: Testing async code (Kafka, CompletableFuture)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/testing-async-code-kafka-completablefuture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/testing-async-code-kafka-completablefuture-sticky.svg" alt="Sticky Note: Testing async code (Kafka, CompletableFuture)?" width="30%">
-</a>
-
 
 **Answer:** Use Awaitility for polling assertions:
 
@@ -1927,32 +1297,12 @@ For CompletableFuture, use `.get(5, SECONDS)` with timeout. For reactive code (P
 
 ### Q64: What is contract testing?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-contract-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-contract-testing-handwritten.svg" alt="Handwritten: What is contract testing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-contract-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-contract-testing-diagram.svg" alt="Diagram: What is contract testing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-contract-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-contract-testing-sticky.svg" alt="Sticky Note: What is contract testing?" width="30%">
-</a>
-
 
 **Answer:** Contract testing verifies that API provider and consumer agree on the contract. Spring Cloud Contract: provider writes contracts (Groovy DSL), tests verify fulfillment, consumers use generated stubs. Catches integration issues before deployment.
 
 ---
 
 ### Q65: What is a Docker layer cache and how do you optimize it?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-docker-layer-cache-and-how-do-you-optimize-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-docker-layer-cache-and-how-do-you-optimize-it-handwritten.svg" alt="Handwritten: What is a Docker layer cache and how do you optimize it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-docker-layer-cache-and-how-do-you-optimize-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-docker-layer-cache-and-how-do-you-optimize-it-diagram.svg" alt="Diagram: What is a Docker layer cache and how do you optimize it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-docker-layer-cache-and-how-do-you-optimize-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-docker-layer-cache-and-how-do-you-optimize-it-sticky.svg" alt="Sticky Note: What is a Docker layer cache and how do you optimize it?" width="30%">
-</a>
 
 
 **Answer:** Docker caches each layer. Order commands from least to most frequently changing:
@@ -1976,16 +1326,6 @@ Use `.dockerignore` to exclude unnecessary files (`.git`, `target/`, `node_modul
 ---
 
 ### Q66: How do you handle configuration for multiple environments?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-configuration-for-multiple-environments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-configuration-for-multiple-environments-handwritten.svg" alt="Handwritten: How do you handle configuration for multiple environments?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-configuration-for-multiple-environments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-configuration-for-multiple-environments-diagram.svg" alt="Diagram: How do you handle configuration for multiple environments?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-configuration-for-multiple-environments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-configuration-for-multiple-environments-sticky.svg" alt="Sticky Note: How do you handle configuration for multiple environments?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2011,16 +1351,6 @@ spring.datasource.url: ${DB_URL}
 
 ### Q67: What is the ELK/EFK stack?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-elk-efk-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-elk-efk-stack-handwritten.svg" alt="Handwritten: What is the ELK/EFK stack?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-elk-efk-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-elk-efk-stack-diagram.svg" alt="Diagram: What is the ELK/EFK stack?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-elk-efk-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-the-elk-efk-stack-sticky.svg" alt="Sticky Note: What is the ELK/EFK stack?" width="30%">
-</a>
-
 
 **Answer:** ELK = Elasticsearch (storage/search) + Logstash (ingestion/transformation) + Kibana (visualization). EFK replaces Logstash with Fluentd (lighter, Kubernetes-native).
 
@@ -2029,16 +1359,6 @@ Services emit JSON logs to stdout → Fluentd collects → ships to Elasticsearc
 ---
 
 ### Q68: Centralized logging vs distributed tracing?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/centralized-logging-vs-distributed-tracing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/centralized-logging-vs-distributed-tracing-handwritten.svg" alt="Handwritten: Centralized logging vs distributed tracing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/centralized-logging-vs-distributed-tracing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/centralized-logging-vs-distributed-tracing-diagram.svg" alt="Diagram: Centralized logging vs distributed tracing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/centralized-logging-vs-distributed-tracing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/centralized-logging-vs-distributed-tracing-sticky.svg" alt="Sticky Note: Centralized logging vs distributed tracing?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2051,16 +1371,6 @@ Both are essential for observability in microservices.
 
 ### Q69: How do you handle file uploads in Kubernetes?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-file-uploads-in-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-file-uploads-in-kubernetes-handwritten.svg" alt="Handwritten: How do you handle file uploads in Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-file-uploads-in-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-file-uploads-in-kubernetes-diagram.svg" alt="Diagram: How do you handle file uploads in Kubernetes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-file-uploads-in-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/how-do-you-handle-file-uploads-in-kubernetes-sticky.svg" alt="Sticky Note: How do you handle file uploads in Kubernetes?" width="30%">
-</a>
-
 
 **Answer:** Don't store on pod filesystem (ephemeral). Options:
 1. **Cloud storage** — AWS S3, GCS, Azure Blob (preferred)
@@ -2070,16 +1380,6 @@ Both are essential for observability in microservices.
 ---
 
 ### Q70: What is a PodDisruptionBudget?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-poddisruptionbudget-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-poddisruptionbudget-handwritten.svg" alt="Handwritten: What is a PodDisruptionBudget?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-poddisruptionbudget-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-poddisruptionbudget-diagram.svg" alt="Diagram: What is a PodDisruptionBudget?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-poddisruptionbudget-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/what-is-a-poddisruptionbudget-sticky.svg" alt="Sticky Note: What is a PodDisruptionBudget?" width="30%">
-</a>
 
 
 **Answer:** A PodDisruptionBudget (PDB) limits the number of pods that can be voluntarily disrupted at a time (e.g., during node maintenance). Ensures minimum availability during cluster operations.
@@ -2099,16 +1399,6 @@ spec:
 ---
 
 ### Q71: Docker Compose advanced features (depends_on conditions, healthchecks, profiles, extends)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/docker-compose-advanced-features-depends-on-conditions-healthchecks-profiles-extends-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/docker-compose-advanced-features-depends-on-conditions-healthchecks-profiles-extends-handwritten.svg" alt="Handwritten: Docker Compose advanced features (depends_on conditions, healthchecks, profiles, extends)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/docker-compose-advanced-features-depends-on-conditions-healthchecks-profiles-extends-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/docker-compose-advanced-features-depends-on-conditions-healthchecks-profiles-extends-diagram.svg" alt="Diagram: Docker Compose advanced features (depends_on conditions, healthchecks, profiles, extends)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/docker-compose-advanced-features-depends-on-conditions-healthchecks-profiles-extends-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/docker-compose-advanced-features-depends-on-conditions-healthchecks-profiles-extends-sticky.svg" alt="Sticky Note: Docker Compose advanced features (depends_on conditions, healthchecks, profiles, extends)?" width="30%">
-</a>
 
 
 **Answer:** Beyond basic container orchestration, Docker Compose provides several advanced features for robust multi-container setups.
@@ -2209,16 +1499,6 @@ networks:
 ---
 
 ### Q72: Dockerfile best practices (COPY vs ADD, .dockerignore, cache optimization)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/dockerfile-best-practices-copy-vs-add-dockerignore-cache-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/dockerfile-best-practices-copy-vs-add-dockerignore-cache-optimization-handwritten.svg" alt="Handwritten: Dockerfile best practices (COPY vs ADD, .dockerignore, cache optimization)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/dockerfile-best-practices-copy-vs-add-dockerignore-cache-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/dockerfile-best-practices-copy-vs-add-dockerignore-cache-optimization-diagram.svg" alt="Diagram: Dockerfile best practices (COPY vs ADD, .dockerignore, cache optimization)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/dockerfile-best-practices-copy-vs-add-dockerignore-cache-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/dockerfile-best-practices-copy-vs-add-dockerignore-cache-optimization-sticky.svg" alt="Sticky Note: Dockerfile best practices (COPY vs ADD, .dockerignore, cache optimization)?" width="30%">
-</a>
 
 
 **Answer:** A well-optimized Dockerfile builds faster, produces smaller images, and is more secure.
@@ -2327,16 +1607,6 @@ This reduces image size from ~200MB to ~50MB by using only the JVM modules neede
 ---
 
 ### Q73: Kubernetes Persistent Volumes, PVCs, and StorageClasses?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-persistent-volumes-pvcs-and-storageclasses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-persistent-volumes-pvcs-and-storageclasses-handwritten.svg" alt="Handwritten: Kubernetes Persistent Volumes, PVCs, and StorageClasses?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-persistent-volumes-pvcs-and-storageclasses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-persistent-volumes-pvcs-and-storageclasses-diagram.svg" alt="Diagram: Kubernetes Persistent Volumes, PVCs, and StorageClasses?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-persistent-volumes-pvcs-and-storageclasses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-persistent-volumes-pvcs-and-storageclasses-sticky.svg" alt="Sticky Note: Kubernetes Persistent Volumes, PVCs, and StorageClasses?" width="30%">
-</a>
 
 
 **Answer:** Kubernetes stateful workloads need persistent storage that survives pod restarts.
@@ -2448,16 +1718,6 @@ spec:
 ---
 
 ### Q74: Helm (templating, values, hooks, dependencies)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/helm-templating-values-hooks-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/helm-templating-values-hooks-dependencies-handwritten.svg" alt="Handwritten: Helm (templating, values, hooks, dependencies)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/helm-templating-values-hooks-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/helm-templating-values-hooks-dependencies-diagram.svg" alt="Diagram: Helm (templating, values, hooks, dependencies)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/helm-templating-values-hooks-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/helm-templating-values-hooks-dependencies-sticky.svg" alt="Sticky Note: Helm (templating, values, hooks, dependencies)?" width="30%">
-</a>
 
 
 **Answer:** Helm is the Kubernetes package manager. Charts package YAML templates with parameterized values.
@@ -2613,16 +1873,6 @@ helm template order-service ./order-service -f prod-values.yaml
 
 ### Q75: Kubernetes RBAC (Roles, RoleBindings, ClusterRoles, ServiceAccounts)?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-rbac-roles-rolebindings-clusterroles-serviceaccounts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-rbac-roles-rolebindings-clusterroles-serviceaccounts-handwritten.svg" alt="Handwritten: Kubernetes RBAC (Roles, RoleBindings, ClusterRoles, ServiceAccounts)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-rbac-roles-rolebindings-clusterroles-serviceaccounts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-rbac-roles-rolebindings-clusterroles-serviceaccounts-diagram.svg" alt="Diagram: Kubernetes RBAC (Roles, RoleBindings, ClusterRoles, ServiceAccounts)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-rbac-roles-rolebindings-clusterroles-serviceaccounts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-rbac-roles-rolebindings-clusterroles-serviceaccounts-sticky.svg" alt="Sticky Note: Kubernetes RBAC (Roles, RoleBindings, ClusterRoles, ServiceAccounts)?" width="30%">
-</a>
-
 
 **Answer:** RBAC controls who can access what Kubernetes resources. It's the primary authorization mechanism.
 
@@ -2750,16 +2000,6 @@ rules: []
 
 ### Q76: Kubernetes Network Policies and Pod Security Admission?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-network-policies-and-pod-security-admission-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-network-policies-and-pod-security-admission-handwritten.svg" alt="Handwritten: Kubernetes Network Policies and Pod Security Admission?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-network-policies-and-pod-security-admission-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-network-policies-and-pod-security-admission-diagram.svg" alt="Diagram: Kubernetes Network Policies and Pod Security Admission?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-network-policies-and-pod-security-admission-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-network-policies-and-pod-security-admission-sticky.svg" alt="Sticky Note: Kubernetes Network Policies and Pod Security Admission?" width="30%">
-</a>
-
 
 **Answer:** Network policies control pod-to-pod communication. Pod Security Admission (PSA) restricts pod security contexts.
 
@@ -2877,16 +2117,6 @@ spec:
 ---
 
 ### Q77: Kubernetes monitoring with metrics-server, Prometheus operator, kube-state-metrics?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-monitoring-with-metrics-server-prometheus-operator-kube-state-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-monitoring-with-metrics-server-prometheus-operator-kube-state-metrics-handwritten.svg" alt="Handwritten: Kubernetes monitoring with metrics-server, Prometheus operator, kube-state-metrics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-monitoring-with-metrics-server-prometheus-operator-kube-state-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-monitoring-with-metrics-server-prometheus-operator-kube-state-metrics-diagram.svg" alt="Diagram: Kubernetes monitoring with metrics-server, Prometheus operator, kube-state-metrics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-monitoring-with-metrics-server-prometheus-operator-kube-state-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/kubernetes-monitoring-with-metrics-server-prometheus-operator-kube-state-metrics-sticky.svg" alt="Sticky Note: Kubernetes monitoring with metrics-server, Prometheus operator, kube-state-metrics?" width="30%">
-</a>
 
 
 **Answer:** A production Kubernetes monitoring stack has three layers: resource metrics, cluster state metrics, and application metrics.
@@ -3064,16 +2294,6 @@ spec:
 
 ### Q78: GitHub Actions reusable workflows and composite actions?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/github-actions-reusable-workflows-and-composite-actions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/github-actions-reusable-workflows-and-composite-actions-handwritten.svg" alt="Handwritten: GitHub Actions reusable workflows and composite actions?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/github-actions-reusable-workflows-and-composite-actions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/github-actions-reusable-workflows-and-composite-actions-diagram.svg" alt="Diagram: GitHub Actions reusable workflows and composite actions?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/github-actions-reusable-workflows-and-composite-actions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/github-actions-reusable-workflows-and-composite-actions-sticky.svg" alt="Sticky Note: GitHub Actions reusable workflows and composite actions?" width="30%">
-</a>
-
 
 **Answer:** GitHub Actions provides two mechanisms for sharing workflow logic across repositories or jobs.
 
@@ -3226,16 +2446,6 @@ Configure environment protection in repository Settings → Environments:
 ---
 
 ### Q79: ArgoCD GitOps (Application, ApplicationSet, sync policy, sync waves)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/argocd-gitops-application-applicationset-sync-policy-sync-waves-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/argocd-gitops-application-applicationset-sync-policy-sync-waves-handwritten.svg" alt="Handwritten: ArgoCD GitOps (Application, ApplicationSet, sync policy, sync waves)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/argocd-gitops-application-applicationset-sync-policy-sync-waves-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/argocd-gitops-application-applicationset-sync-policy-sync-waves-diagram.svg" alt="Diagram: ArgoCD GitOps (Application, ApplicationSet, sync policy, sync waves)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/argocd-gitops-application-applicationset-sync-policy-sync-waves-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/argocd-gitops-application-applicationset-sync-policy-sync-waves-sticky.svg" alt="Sticky Note: ArgoCD GitOps (Application, ApplicationSet, sync policy, sync waves)?" width="30%">
-</a>
 
 
 **Answer:** ArgoCD is a declarative GitOps tool that continuously synchronizes Kubernetes cluster state with manifests stored in Git.
@@ -3397,16 +2607,6 @@ Hook types: PreSync, Sync, PostSync, Skip, SyncFail.
 ---
 
 ### Q80: Terraform IaC (state, providers, modules, workspaces, remote state)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/terraform-iac-state-providers-modules-workspaces-remote-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/terraform-iac-state-providers-modules-workspaces-remote-state-handwritten.svg" alt="Handwritten: Terraform IaC (state, providers, modules, workspaces, remote state)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/terraform-iac-state-providers-modules-workspaces-remote-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/terraform-iac-state-providers-modules-workspaces-remote-state-diagram.svg" alt="Diagram: Terraform IaC (state, providers, modules, workspaces, remote state)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/terraform-iac-state-providers-modules-workspaces-remote-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/terraform-iac-state-providers-modules-workspaces-remote-state-sticky.svg" alt="Sticky Note: Terraform IaC (state, providers, modules, workspaces, remote state)?" width="30%">
-</a>
 
 
 **Answer:** Terraform manages infrastructure as code — define resources, plan changes, apply to cloud providers.
@@ -3630,16 +2830,6 @@ terraform destroy -var-file=production.tfvars
 
 ### Q81: Sentry, DataDog, and NewRelic for Java APM?
 
-<a href="../../../assets/images/diagrams/java/63-interview-tools/sentry-datadog-and-newrelic-for-java-apm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/sentry-datadog-and-newrelic-for-java-apm-handwritten.svg" alt="Handwritten: Sentry, DataDog, and NewRelic for Java APM?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/sentry-datadog-and-newrelic-for-java-apm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/sentry-datadog-and-newrelic-for-java-apm-diagram.svg" alt="Diagram: Sentry, DataDog, and NewRelic for Java APM?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/sentry-datadog-and-newrelic-for-java-apm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/sentry-datadog-and-newrelic-for-java-apm-sticky.svg" alt="Sticky Note: Sentry, DataDog, and NewRelic for Java APM?" width="30%">
-</a>
-
 
 **Answer:** Application Performance Monitoring (APM) tools provide code-level observability: distributed tracing, error tracking, transaction breakdowns, and profiling.
 
@@ -3786,16 +2976,6 @@ NewRelic highlights:
 ---
 
 ### Q82: Database tools (pgAdmin, DBeaver, DataGrip, MySQL Workbench)?
-
-<a href="../../../assets/images/diagrams/java/63-interview-tools/database-tools-pgadmin-dbeaver-datagrip-mysql-workbench-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/database-tools-pgadmin-dbeaver-datagrip-mysql-workbench-handwritten.svg" alt="Handwritten: Database tools (pgAdmin, DBeaver, DataGrip, MySQL Workbench)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/database-tools-pgadmin-dbeaver-datagrip-mysql-workbench-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/database-tools-pgadmin-dbeaver-datagrip-mysql-workbench-diagram.svg" alt="Diagram: Database tools (pgAdmin, DBeaver, DataGrip, MySQL Workbench)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/63-interview-tools/database-tools-pgadmin-dbeaver-datagrip-mysql-workbench-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/63-interview-tools/database-tools-pgadmin-dbeaver-datagrip-mysql-workbench-sticky.svg" alt="Sticky Note: Database tools (pgAdmin, DBeaver, DataGrip, MySQL Workbench)?" width="30%">
-</a>
 
 
 **Answer:** Database administration and query tools are essential for Java developers working with databases.

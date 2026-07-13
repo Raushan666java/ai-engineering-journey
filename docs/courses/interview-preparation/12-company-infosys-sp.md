@@ -46,7 +46,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Infosys Selection Process
 
 ```mermaid
@@ -101,17 +100,6 @@ pie showData
 ## Section 1: Coding Problems (Infosys Pattern)
 
 ### Problem 1: InfyTQ — Find the Missing Number
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-handwritten.svg" alt="Handwritten: Problem 1: InfyTQ — Find the Missing Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-diagram.svg" alt="Diagram: Problem 1: InfyTQ — Find the Missing Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-1-infytq-find-the-missing-number-sticky.svg" alt="Sticky Note: Problem 1: InfyTQ — Find the Missing Number" width="30%">
-</a>
-
 
 **Problem:** Given an array containing `n-1` numbers from 1 to `n` with one number missing, find the missing number.
 
@@ -183,17 +171,6 @@ function findMissingNumberXOR(nums: number[]): number {
 
 ### Problem 2: Isomorphic Strings
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-handwritten.svg" alt="Handwritten: Problem 2: Isomorphic Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-diagram.svg" alt="Diagram: Problem 2: Isomorphic Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-2-isomorphic-strings-sticky.svg" alt="Sticky Note: Problem 2: Isomorphic Strings" width="30%">
-</a>
-
-
 **Problem:** Given two strings `s` and `t`, determine if they are isomorphic. Two strings are isomorphic if the characters in `s` can be replaced to get `t`. No two different characters may map to the same character.
 
 **Infosys Pattern Context:** Infosys SP coding round frequently includes string mapping problems to test hash map proficiency.
@@ -257,17 +234,6 @@ function isIsomorphic(s: string, t: string): boolean {
 
 ### Problem 3: Find the Duplicate Number
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-handwritten.svg" alt="Handwritten: Problem 3: Find the Duplicate Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-diagram.svg" alt="Diagram: Problem 3: Find the Duplicate Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-3-find-the-duplicate-number-sticky.svg" alt="Sticky Note: Problem 3: Find the Duplicate Number" width="30%">
-</a>
-
-
 **Problem:** Given an array of n+1 integers where each integer is between 1 and n (inclusive), find the duplicate number. Assume there is exactly one duplicate.
 
 **Infosys Pattern Context:** Infosys SP tests Floyd's cycle detection (linked list approach) in arrays.
@@ -329,17 +295,6 @@ function findDuplicate(nums: number[]): number {
 ---
 
 ### Problem 4: Maximum Subarray Sum (Kadane's Algorithm)
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-4-maximum-subarray-sum-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 4: Maximum Subarray Sum (Kadane's Algorithm)" width="30%">
-</a>
-
 
 **Problem:** Find the contiguous subarray with the largest sum within a given integer array.
 
@@ -412,17 +367,6 @@ function maxSubarrayWithIndices(nums: number[]): { sum: number; start: number; e
 ---
 
 ### Problem 5: Valid Parentheses with Multiple Types
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-handwritten.svg" alt="Handwritten: Problem 5: Valid Parentheses with Multiple Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-diagram.svg" alt="Diagram: Problem 5: Valid Parentheses with Multiple Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/problem-5-valid-parentheses-with-multiple-types-sticky.svg" alt="Sticky Note: Problem 5: Valid Parentheses with Multiple Types" width="30%">
-</a>
-
 
 **Problem:** Given a string containing `()`, `{}`, and `[]`, determine if the brackets are valid (properly closed and nested).
 
@@ -618,17 +562,6 @@ If you overtake the person in second place, you take their position.
 
 ### Number Systems
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-handwritten.svg" alt="Handwritten: Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-diagram.svg" alt="Diagram: Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/number-systems-sticky.svg" alt="Sticky Note: Number Systems" width="30%">
-</a>
-
-
 **Q1.** Find the remainder when 7²⁵ is divided by 5.
 
 <details>
@@ -670,17 +603,6 @@ HCF = 2² × 3² = 4 × 9 = 36
 
 ### Simple and Compound Interest
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-handwritten.svg" alt="Handwritten: Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-diagram.svg" alt="Diagram: Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/simple-and-compound-interest-sticky.svg" alt="Sticky Note: Simple and Compound Interest" width="30%">
-</a>
-
-
 **Q4.** A sum of ₹10,000 invested at 10% p.a. for 2 years. Find the difference between CI and SI.
 
 <details>
@@ -708,17 +630,6 @@ R = 200/16 = 12.5%
 </details>
 
 ### Work and Time
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-handwritten.svg" alt="Handwritten: Work and Time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-diagram.svg" alt="Diagram: Work and Time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/work-and-time-sticky.svg" alt="Sticky Note: Work and Time" width="30%">
-</a>
-
 
 **Q6.** A can do a job in 12 days, B in 15 days. They work together for 5 days, then A leaves. How many more days does B need to finish?
 
@@ -749,17 +660,6 @@ Additional men = 20 - 15 = 5
 
 ### Probability
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-handwritten.svg" alt="Handwritten: Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-diagram.svg" alt="Diagram: Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/probability-sticky.svg" alt="Sticky Note: Probability" width="30%">
-</a>
-
-
 **Q8.** Two dice are thrown. Find the probability of getting a sum of 7.
 
 <details>
@@ -786,17 +686,6 @@ Probability = 10/220 = 1/22
 </details>
 
 ### Permutations and Combinations
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-handwritten.svg" alt="Handwritten: Permutations and Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-diagram.svg" alt="Diagram: Permutations and Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/permutations-and-combinations-sticky.svg" alt="Sticky Note: Permutations and Combinations" width="30%">
-</a>
-
 
 **Q10.** How many 4-digit numbers can be formed using digits 0-9 without repetition?
 
@@ -827,17 +716,6 @@ Total = 120 × 20 × 6 = 14,400
 
 ### Mixtures and Allegations
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-handwritten.svg" alt="Handwritten: Mixtures and Allegations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-diagram.svg" alt="Diagram: Mixtures and Allegations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/mixtures-and-allegations-sticky.svg" alt="Sticky Note: Mixtures and Allegations" width="30%">
-</a>
-
-
 **Q12.** In what ratio must water be mixed with milk costing ₹40/L to get a mixture worth ₹35/L?
 
 <details>
@@ -853,17 +731,6 @@ Ratio = 35 : 5 = 7 : 1 (Milk : Water)
 </details>
 
 ### Geometry
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-handwritten.svg" alt="Handwritten: Geometry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-diagram.svg" alt="Diagram: Geometry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/geometry-sticky.svg" alt="Sticky Note: Geometry" width="30%">
-</a>
-
 
 **Q13.** Find the area of an equilateral triangle with side 12 cm.
 
@@ -898,17 +765,6 @@ Full chord length = 2 × 4.8 = 9.6 cm
 
 ### Data Interpretation
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-handwritten.svg" alt="Handwritten: Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-diagram.svg" alt="Diagram: Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/data-interpretation-sticky.svg" alt="Sticky Note: Data Interpretation" width="30%">
-</a>
-
-
 **Q15.** A company's revenue in 2022 was ₹500 Cr, growing by 10% in 2023. If costs were ₹350 Cr in 2022 and increased by 8% in 2023, find the profit percentage in 2023.
 
 <details>
@@ -927,17 +783,6 @@ Profit % = (172 / 550) × 100 = 31.27%
 ## Section 4: Verbal Ability (10 Questions)
 
 ### Reading Comprehension
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-handwritten.svg" alt="Handwritten: Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-diagram.svg" alt="Diagram: Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/reading-comprehension-sticky.svg" alt="Sticky Note: Reading Comprehension" width="30%">
-</a>
-
 
 **Q1-3.** Read the following passage and answer:
 
@@ -971,17 +816,6 @@ The passage: "AI will also create new job categories, much like the internet cre
 </details>
 
 ### Grammar
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-handwritten.svg" alt="Handwritten: Grammar" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-diagram.svg" alt="Diagram: Grammar" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/grammar-sticky.svg" alt="Sticky Note: Grammar" width="30%">
-</a>
-
 
 **Q4.** Choose the correct sentence:
 a) He don't like coffee.
@@ -1028,17 +862,6 @@ a) to  b) on  c) with  d) for
 
 ### Sentence Ordering
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-handwritten.svg" alt="Handwritten: Sentence Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-diagram.svg" alt="Diagram: Sentence Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/sentence-ordering-sticky.svg" alt="Sticky Note: Sentence Ordering" width="30%">
-</a>
-
-
 **Q8.** Arrange in logical order:
 P: This led to widespread adoption of smartphones
 Q: The introduction of touchscreens revolutionized mobile interfaces
@@ -1056,17 +879,6 @@ R: By 2020, nearly 80% of adults owned a smartphone (final outcome)
 </details>
 
 ### Vocabulary in Context
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-handwritten.svg" alt="Handwritten: Vocabulary in Context" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-diagram.svg" alt="Diagram: Vocabulary in Context" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/vocabulary-in-context-sticky.svg" alt="Sticky Note: Vocabulary in Context" width="30%">
-</a>
-
 
 **Q9.** The word "UBIQUITOUS" in the sentence "Smartphones have become ubiquitous in modern society" means:
 a) Rare  b) Expensive  c) Everywhere  d) Fragile
@@ -1091,17 +903,6 @@ Benevolent means well-meaning and kindly. Malevolent means having or showing a w
 ---
 
 ### Logical Reasoning Questions (Additional Practice)
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-handwritten.svg" alt="Handwritten: Logical Reasoning Questions (Additional Practice)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-diagram.svg" alt="Diagram: Logical Reasoning Questions (Additional Practice)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/logical-reasoning-questions-additional-practice-sticky.svg" alt="Sticky Note: Logical Reasoning Questions (Additional Practice)" width="30%">
-</a>
-
 
 **Q16.** If APPLE is coded as 50, MANGO is coded as 52, what is ORANGE coded as?
 
@@ -1219,16 +1020,6 @@ Cats needed = 1 / (1/3) = 3 cats
 
 ### For Specialist Programmer (SP) Role:
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-handwritten.svg" alt="Handwritten: For Specialist Programmer (SP) Role:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-diagram.svg" alt="Diagram: For Specialist Programmer (SP) Role:" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-specialist-programmer-sp-role-sticky.svg" alt="Sticky Note: For Specialist Programmer (SP) Role:" width="30%">
-</a>
-
 | Area | Strategy |
 |------|----------|
 | **Coding** | Focus on DSA — LeetCode Medium. Infosys SP coding is harder than regular InfyTQ |
@@ -1237,16 +1028,6 @@ Cats needed = 1 / (1/3) = 3 cats
 
 ### For Digital Specialist Engineer (DSE):
 
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-handwritten.svg" alt="Handwritten: For Digital Specialist Engineer (DSE):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-diagram.svg" alt="Diagram: For Digital Specialist Engineer (DSE):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-digital-specialist-engineer-dse-sticky.svg" alt="Sticky Note: For Digital Specialist Engineer (DSE):" width="30%">
-</a>
-
 | Area | Strategy |
 |------|----------|
 | **Generic Test** | Speed matters — answer all questions, no negative marking |
@@ -1254,16 +1035,6 @@ Cats needed = 1 / (1/3) = 3 cats
 | **Technical Interview** | Java/Python proficiency, basic DBMS, project discussion |
 
 ### For Systems Engineer (SE):
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-handwritten.svg" alt="Handwritten: For Systems Engineer (SE):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-diagram.svg" alt="Diagram: For Systems Engineer (SE):" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/for-systems-engineer-se-sticky.svg" alt="Sticky Note: For Systems Engineer (SE):" width="30%">
-</a>
 
 | Area | Strategy |
 |------|----------|
@@ -1333,17 +1104,6 @@ d) Neither is correct
 </details>
 
 ### Additional Coding Practice Problems (Infosys Pattern)
-
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-handwritten.svg" alt="Handwritten: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-diagram.svg" alt="Diagram: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/12-company-infosys-sp/additional-coding-practice-problems-infosys-pattern-sticky.svg" alt="Sticky Note: Additional Coding Practice Problems (Infosys Pattern)" width="30%">
-</a>
-
 
 **Practice Problem 1:** Given an array of strings, group them by their length. Return the group with the maximum number of strings.
 

@@ -48,7 +48,6 @@ After completing this chapter you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - Classify malware types (virus, worm, trojan, ransomware, rootkit) based on propagation and payload.
 - Distinguish between DoS and DDoS and describe attack vectors (SYN flood, amplification attacks).
 - Explain SQL injection, XSS, and CSRF — root cause, exploitation mechanism, and mitigation.
@@ -63,17 +62,6 @@ After completing this chapter you will be able to:
 ## Theory
 
 ### 3.1 Malware Types
-
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-handwritten.svg" alt="Handwritten: 3.1 Malware Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-diagram.svg" alt="Diagram: 3.1 Malware Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-1-malware-types-sticky.svg" alt="Sticky Note: 3.1 Malware Types" width="30%">
-</a>
-
 
 Malware (malicious software) is any software intentionally designed to cause damage, steal data, or gain unauthorized access.
 
@@ -159,17 +147,6 @@ flowchart TD
 
 ### 3.2 DoS and DDoS Attacks
 
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-handwritten.svg" alt="Handwritten: 3.2 DoS and DDoS Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-diagram.svg" alt="Diagram: 3.2 DoS and DDoS Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-2-dos-and-ddos-attacks-sticky.svg" alt="Sticky Note: 3.2 DoS and DDoS Attacks" width="30%">
-</a>
-
-
 **Denial of Service (DoS):** Single source overwhelms target with traffic/requests.
 
 **Distributed DoS (DDoS):** Multiple compromised systems (botnet) coordinate to attack target.
@@ -222,17 +199,6 @@ flowchart LR
 
 ### 3.3 SQL Injection
 
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-handwritten.svg" alt="Handwritten: 3.3 SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-diagram.svg" alt="Diagram: 3.3 SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-3-sql-injection-sticky.svg" alt="Sticky Note: 3.3 SQL Injection" width="30%">
-</a>
-
-
 - **Root cause:** Unsanitized user input inserted directly into SQL queries
 - **Impact:** Data breach, authentication bypass, data modification/deletion, remote code execution (in extreme cases)
 - **Occurrence:** Anywhere user input is used to build SQL queries (login forms, search boxes, URL parameters)
@@ -264,17 +230,6 @@ SELECT * FROM users WHERE username = 'admin' AND password = 'guess'
 6. **Escaping** — escape special characters (single quotes, etc.) — least reliable, can be bypassed
 
 ### 3.4 XSS and CSRF
-
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-handwritten.svg" alt="Handwritten: 3.4 XSS and CSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-diagram.svg" alt="Diagram: 3.4 XSS and CSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-4-xss-and-csrf-sticky.svg" alt="Sticky Note: 3.4 XSS and CSRF" width="30%">
-</a>
-
 
 #### 3.4.1 XSS (Cross-Site Scripting)
 
@@ -353,17 +308,6 @@ sequenceDiagram
 
 ### 3.5 Phishing and Social Engineering
 
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-handwritten.svg" alt="Handwritten: 3.5 Phishing and Social Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-diagram.svg" alt="Diagram: 3.5 Phishing and Social Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-5-phishing-and-social-engineering-sticky.svg" alt="Sticky Note: 3.5 Phishing and Social Engineering" width="30%">
-</a>
-
-
 #### 3.5.1 Phishing
 
 - **Definition:** Fraudulent attempt to obtain sensitive information (usernames, passwords, credit card details) by disguising as a trustworthy entity.
@@ -404,17 +348,6 @@ sequenceDiagram
 
 ### 3.6 Man-in-the-Middle (MITM) Attacks
 
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-handwritten.svg" alt="Handwritten: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-diagram.svg" alt="Diagram: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-6-man-in-the-middle-mitm-attacks-sticky.svg" alt="Sticky Note: 3.6 Man-in-the-Middle (MITM) Attacks" width="30%">
-</a>
-
-
 - **Definition:** Attacker secretly intercepts and possibly alters communication between two parties who believe they are communicating directly.
 - **Prerequisite:** Attacker must be positioned on the communication path (same network segment, compromised router, ARP spoofing)
 
@@ -438,17 +371,6 @@ sequenceDiagram
 
 ### 3.7 Session Hijacking
 
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-handwritten.svg" alt="Handwritten: 3.7 Session Hijacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-diagram.svg" alt="Diagram: 3.7 Session Hijacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-7-session-hijacking-sticky.svg" alt="Sticky Note: 3.7 Session Hijacking" width="30%">
-</a>
-
-
 - **Definition:** Attacker takes over an authenticated user session by stealing/guessing the session identifier.
 - **Methods:**
 
@@ -469,17 +391,6 @@ sequenceDiagram
 
 ### 3.8 Zero-Day Exploits
 
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-handwritten.svg" alt="Handwritten: 3.8 Zero-Day Exploits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-diagram.svg" alt="Diagram: 3.8 Zero-Day Exploits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-8-zero-day-exploits-sticky.svg" alt="Sticky Note: 3.8 Zero-Day Exploits" width="30%">
-</a>
-
-
 - **Definition:** Attack exploiting a vulnerability unknown to the software vendor (no patch exists at time of attack).
 - **Timeline:** Vulnerability discovered → exploit developed → attack occurs → vendor notified → patch developed → patch deployed
 - **Zero-day window:** The period between exploit release and patch deployment
@@ -493,17 +404,6 @@ sequenceDiagram
   - Vulnerability disclosure policies
 
 ### 3.9 Buffer Overflow
-
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-handwritten.svg" alt="Handwritten: 3.9 Buffer Overflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-diagram.svg" alt="Diagram: 3.9 Buffer Overflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-9-buffer-overflow-sticky.svg" alt="Sticky Note: 3.9 Buffer Overflow" width="30%">
-</a>
-
 
 - **Definition:** Program writes more data to a buffer than it can hold, overwriting adjacent memory locations.
 - **Root cause:** No bounds checking on memory operations (common in C/C++ with `gets()`, `strcpy()`, `sprintf()`)
@@ -529,17 +429,6 @@ flowchart TD
 ```
 
 ### 3.10 Solved MCQs (Exam Style)
-
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-handwritten.svg" alt="Handwritten: 3.10 Solved MCQs (Exam Style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-diagram.svg" alt="Diagram: 3.10 Solved MCQs (Exam Style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/information-security/03-cyber-threats-attacks/3-10-solved-mcqs-exam-style-sticky.svg" alt="Sticky Note: 3.10 Solved MCQs (Exam Style)" width="30%">
-</a>
-
 
 **Q1.** Which attack involves sending overlapping IP fragments to crash the target system?
 

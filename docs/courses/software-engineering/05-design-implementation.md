@@ -51,38 +51,15 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### Design Principles
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-handwritten.svg" alt="Handwritten: Design Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-diagram.svg" alt="Diagram: Design Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-principles-sticky.svg" alt="Sticky Note: Design Principles" width="30%">
-</a>
-
 
 Design principles are established guidelines that, when followed, produce designs that are maintainable, understandable, and adaptable. They represent distilled experience about what characterises good software design. These principles have been validated through decades of industrial practice and form the foundation of professional software engineering.
 
 The primary goal of design principles is to manage **complexity**. As software systems grow, the cognitive load required to understand them increases non-linearly. Principles like separation of concerns, modularity, and abstraction help keep this complexity bounded.
 
 ### The SOLID Principles
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-handwritten.svg" alt="Handwritten: The SOLID Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-diagram.svg" alt="Diagram: The SOLID Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/the-solid-principles-sticky.svg" alt="Sticky Note: The SOLID Principles" width="30%">
-</a>
-
 
 The SOLID principles, articulated by Robert C. Martin, are five principles of object-oriented class design. Together they provide a systematic approach to creating designs that are resilient to change, testable, and maintainable.
 
@@ -287,17 +264,6 @@ DIP is the foundation of dependency injection. By depending on abstractions, we 
 
 ### DRY, KISS, and YAGNI
 
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-handwritten.svg" alt="Handwritten: DRY, KISS, and YAGNI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-diagram.svg" alt="Diagram: DRY, KISS, and YAGNI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/dry-kiss-and-yagni-sticky.svg" alt="Sticky Note: DRY, KISS, and YAGNI" width="30%">
-</a>
-
-
 | Principle | Meaning | Application |
 |-----------|---------|-------------|
 | **DRY** (Don't Repeat Yourself) | Every piece of knowledge has a single representation | Extract duplication into shared methods/modules |
@@ -307,17 +273,6 @@ DIP is the foundation of dependency injection. By depending on abstractions, we 
 These three principles complement SOLID by providing guardrails against over-engineering. While SOLID guides us toward well-structured code, DRY/KISS/YAGNI remind us to keep things pragmatic.
 
 ### Coupling and Cohesion
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-handwritten.svg" alt="Handwritten: Coupling and Cohesion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-diagram.svg" alt="Diagram: Coupling and Cohesion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/coupling-and-cohesion-sticky.svg" alt="Sticky Note: Coupling and Cohesion" width="30%">
-</a>
-
 
 **Coupling** measures the degree of interdependence between modules. Low coupling is desirable because it means changes in one module are less likely to ripple to others.
 
@@ -346,17 +301,6 @@ These three principles complement SOLID by providing guardrails against over-eng
 The relationship between coupling and cohesion is inverse: as cohesion increases, coupling tends to decrease. Well-designed systems have high cohesion within modules and low coupling between them.
 
 ### Clean Code Principles
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-handwritten.svg" alt="Handwritten: Clean Code Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-diagram.svg" alt="Diagram: Clean Code Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/clean-code-principles-sticky.svg" alt="Sticky Note: Clean Code Principles" width="30%">
-</a>
-
 
 Clean code is code that is easy to read, understand, and change. Key principles include:
 
@@ -392,17 +336,6 @@ class UserRegistrationService {
 ```
 
 ### Design by Contract
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-handwritten.svg" alt="Handwritten: Design by Contract" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-diagram.svg" alt="Diagram: Design by Contract" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-by-contract-sticky.svg" alt="Sticky Note: Design by Contract" width="30%">
-</a>
-
 
 Design by contract, articulated by Meyer, specifies that classes have:
 - **Preconditions:** Conditions that must be true before a method executes
@@ -442,17 +375,6 @@ class BankAccount {
 
 ### Refactoring Catalog and Code Smells
 
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-handwritten.svg" alt="Handwritten: Refactoring Catalog and Code Smells" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-diagram.svg" alt="Diagram: Refactoring Catalog and Code Smells" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/refactoring-catalog-and-code-smells-sticky.svg" alt="Sticky Note: Refactoring Catalog and Code Smells" width="30%">
-</a>
-
-
 Code smells are surface indicators that usually correspond to deeper problems in the system.
 
 | Code Smell | Description | Refactoring |
@@ -478,17 +400,6 @@ Code smells are surface indicators that usually correspond to deeper problems in
 | **Pull Up / Push Down** | Move methods between super/subclass | Inheritance hierarchy needs adjustment |
 
 ### Design Patterns (GoF)
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-handwritten.svg" alt="Handwritten: Design Patterns (GoF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-diagram.svg" alt="Diagram: Design Patterns (GoF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-patterns-gof-sticky.svg" alt="Sticky Note: Design Patterns (GoF)" width="30%">
-</a>
-
 
 Design patterns are reusable solutions to common problems in software design. The Gang of Four (GoF) catalogued 23 patterns across three categories: creational, structural, and behavioral.
 
@@ -722,17 +633,6 @@ console.log(`${coffee.getDescription()} costs $${coffee.getCost()}`);
 ```
 
 ### Design Pattern Comparison
-
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-handwritten.svg" alt="Handwritten: Design Pattern Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-diagram.svg" alt="Diagram: Design Pattern Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/05-design-implementation/design-pattern-comparison-sticky.svg" alt="Sticky Note: Design Pattern Comparison" width="30%">
-</a>
-
 
 ```mermaid
 graph TD

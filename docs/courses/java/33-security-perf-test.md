@@ -126,16 +126,6 @@ Spring Security provides a set of testing annotations that simulate authenticate
 
 ### 1.1 @WithMockUser
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-1-withmockuser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-1-withmockuser-handwritten.svg" alt="Handwritten: 1.1 @WithMockUser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-1-withmockuser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-1-withmockuser-diagram.svg" alt="Diagram: 1.1 @WithMockUser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-1-withmockuser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-1-withmockuser-sticky.svg" alt="Sticky Note: 1.1 @WithMockUser" width="30%">
-</a>
-
 
 `@WithMockUser` creates a `SecurityContext` with a mocked `UsernamePasswordAuthenticationToken`. No actual authentication takes place.
 
@@ -187,16 +177,6 @@ class SecurityAnnotationTest {
 
 ### 1.2 @WithAnonymousUser
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-2-withanonymoususer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-2-withanonymoususer-handwritten.svg" alt="Handwritten: 1.2 @WithAnonymousUser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-2-withanonymoususer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-2-withanonymoususer-diagram.svg" alt="Diagram: 1.2 @WithAnonymousUser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-2-withanonymoususer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-2-withanonymoususer-sticky.svg" alt="Sticky Note: 1.2 @WithAnonymousUser" width="30%">
-</a>
-
 
 Explicitly creates an anonymous `SecurityContext`. Useful when your code checks for `isAnonymous()`.
 
@@ -228,16 +208,6 @@ class AnonymousTest {
 
 ### 1.3 @WithUserDetails
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-3-withuserdetails-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-3-withuserdetails-handwritten.svg" alt="Handwritten: 1.3 @WithUserDetails" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-3-withuserdetails-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-3-withuserdetails-diagram.svg" alt="Diagram: 1.3 @WithUserDetails" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-3-withuserdetails-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-3-withuserdetails-sticky.svg" alt="Sticky Note: 1.3 @WithUserDetails" width="30%">
-</a>
-
 
 Loads a real user from your `UserDetailsService`. This tests both authentication and your `UserDetailsService` implementation.
 
@@ -268,16 +238,6 @@ class UserDetailsTest {
 ```
 
 ### 1.4 Custom @WithMockJwt
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-4-custom-withmockjwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-4-custom-withmockjwt-handwritten.svg" alt="Handwritten: 1.4 Custom @WithMockJwt" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-4-custom-withmockjwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-4-custom-withmockjwt-diagram.svg" alt="Diagram: 1.4 Custom @WithMockJwt" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-4-custom-withmockjwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-4-custom-withmockjwt-sticky.svg" alt="Sticky Note: 1.4 Custom @WithMockJwt" width="30%">
-</a>
 
 
 For JWT-authenticated tests, create a custom annotation that populates the `JwtAuthenticationToken`.
@@ -394,16 +354,6 @@ class OrderControllerTest {
 
 ### 1.5 Testing Method Security
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-5-testing-method-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-5-testing-method-security-handwritten.svg" alt="Handwritten: 1.5 Testing Method Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-5-testing-method-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-5-testing-method-security-diagram.svg" alt="Diagram: 1.5 Testing Method Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-5-testing-method-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-5-testing-method-security-sticky.svg" alt="Sticky Note: 1.5 Testing Method Security" width="30%">
-</a>
-
 
 ```java
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -487,16 +437,6 @@ class MethodSecurityTest {
 
 ### 1.6 Testing CORS
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-6-testing-cors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-6-testing-cors-handwritten.svg" alt="Handwritten: 1.6 Testing CORS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-6-testing-cors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-6-testing-cors-diagram.svg" alt="Diagram: 1.6 Testing CORS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-6-testing-cors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-6-testing-cors-sticky.svg" alt="Sticky Note: 1.6 Testing CORS" width="30%">
-</a>
-
 
 ```java
 import org.springframework.context.annotation.Bean;
@@ -561,16 +501,6 @@ class CorsTest {
 ```
 
 ### 1.7 CSRF Test Configuration
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-7-csrf-test-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-7-csrf-test-configuration-handwritten.svg" alt="Handwritten: 1.7 CSRF Test Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-7-csrf-test-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-7-csrf-test-configuration-diagram.svg" alt="Diagram: 1.7 CSRF Test Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/1-7-csrf-test-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/1-7-csrf-test-configuration-sticky.svg" alt="Sticky Note: 1.7 CSRF Test Configuration" width="30%">
-</a>
 
 
 Spring Security enables CSRF protection by default for state-changing requests. In tests, you must either include the CSRF token or disable CSRF.
@@ -645,16 +575,6 @@ class DisabledCsrfTest {
 
 ### 2.1 @WithMockOAuth2Client
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-1-withmockoauth2client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-1-withmockoauth2client-handwritten.svg" alt="Handwritten: 2.1 @WithMockOAuth2Client" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-1-withmockoauth2client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-1-withmockoauth2client-diagram.svg" alt="Diagram: 2.1 @WithMockOAuth2Client" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-1-withmockoauth2client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-1-withmockoauth2client-sticky.svg" alt="Sticky Note: 2.1 @WithMockOAuth2Client" width="30%">
-</a>
-
 
 Simulates an OAuth2 client registration in the security context.
 
@@ -694,16 +614,6 @@ class OAuth2ClientTest {
 ```
 
 ### 2.2 OAuth2AuthorizedClientRepository Testing
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-2-oauth2authorizedclientrepository-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-2-oauth2authorizedclientrepository-testing-handwritten.svg" alt="Handwritten: 2.2 OAuth2AuthorizedClientRepository Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-2-oauth2authorizedclientrepository-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-2-oauth2authorizedclientrepository-testing-diagram.svg" alt="Diagram: 2.2 OAuth2AuthorizedClientRepository Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-2-oauth2authorizedclientrepository-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-2-oauth2authorizedclientrepository-testing-sticky.svg" alt="Sticky Note: 2.2 OAuth2AuthorizedClientRepository Testing" width="30%">
-</a>
 
 
 When your code relies on `OAuth2AuthorizedClientRepository` or `OAuth2AuthorizedClientService`, use `mockOAuth2Test` to set up the mock.
@@ -749,16 +659,6 @@ class OAuth2ClientServiceTest {
 ```
 
 ### 2.3 JWT Token Mocking
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-3-jwt-token-mocking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-3-jwt-token-mocking-handwritten.svg" alt="Handwritten: 2.3 JWT Token Mocking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-3-jwt-token-mocking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-3-jwt-token-mocking-diagram.svg" alt="Diagram: 2.3 JWT Token Mocking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-3-jwt-token-mocking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-3-jwt-token-mocking-sticky.svg" alt="Sticky Note: 2.3 JWT Token Mocking" width="30%">
-</a>
 
 
 For resource servers that validate JWT tokens, mock the `JwtDecoder` to avoid calling the authorization server.
@@ -818,16 +718,6 @@ class JwtResourceServerTest {
 ```
 
 ### 2.4 Testing Resource Server with JWT Authentication Token
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-4-testing-resource-server-with-jwt-authentication-token-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-4-testing-resource-server-with-jwt-authentication-token-handwritten.svg" alt="Handwritten: 2.4 Testing Resource Server with JWT Authentication Token" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-4-testing-resource-server-with-jwt-authentication-token-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-4-testing-resource-server-with-jwt-authentication-token-diagram.svg" alt="Diagram: 2.4 Testing Resource Server with JWT Authentication Token" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/2-4-testing-resource-server-with-jwt-authentication-token-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/2-4-testing-resource-server-with-jwt-authentication-token-sticky.svg" alt="Sticky Note: 2.4 Testing Resource Server with JWT Authentication Token" width="30%">
-</a>
 
 
 Combining `@WithMockJwt` and a mocked `JwtDecoder` for full control.
@@ -899,16 +789,6 @@ Apache JMeter is a graphical, Java-based performance testing tool. It tests appl
 
 ### 3.1 Test Plan Structure
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-1-test-plan-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-1-test-plan-structure-handwritten.svg" alt="Handwritten: 3.1 Test Plan Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-1-test-plan-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-1-test-plan-structure-diagram.svg" alt="Diagram: 3.1 Test Plan Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-1-test-plan-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-1-test-plan-structure-sticky.svg" alt="Sticky Note: 3.1 Test Plan Structure" width="30%">
-</a>
-
 
 A JMeter test plan follows this hierarchy:
 
@@ -927,16 +807,6 @@ Test Plan
 ```
 
 ### 3.2 Creating a JMeter Test Programmatically
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-2-creating-a-jmeter-test-programmatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-2-creating-a-jmeter-test-programmatically-handwritten.svg" alt="Handwritten: 3.2 Creating a JMeter Test Programmatically" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-2-creating-a-jmeter-test-programmatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-2-creating-a-jmeter-test-programmatically-diagram.svg" alt="Diagram: 3.2 Creating a JMeter Test Programmatically" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-2-creating-a-jmeter-test-programmatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-2-creating-a-jmeter-test-programmatically-sticky.svg" alt="Sticky Note: 3.2 Creating a JMeter Test Programmatically" width="30%">
-</a>
 
 
 ```java
@@ -1071,16 +941,6 @@ public class JmeterTestPlanGenerator {
 
 ### 3.3 JMeter Listeners
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-3-jmeter-listeners-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-3-jmeter-listeners-handwritten.svg" alt="Handwritten: 3.3 JMeter Listeners" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-3-jmeter-listeners-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-3-jmeter-listeners-diagram.svg" alt="Diagram: 3.3 JMeter Listeners" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-3-jmeter-listeners-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-3-jmeter-listeners-sticky.svg" alt="Sticky Note: 3.3 JMeter Listeners" width="30%">
-</a>
-
 
 ```java
 // Programmatic listener setup
@@ -1123,16 +983,6 @@ public class JmeterListeners {
 
 ### 3.4 Running JMeter from Command Line
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-4-running-jmeter-from-command-line-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-4-running-jmeter-from-command-line-handwritten.svg" alt="Handwritten: 3.4 Running JMeter from Command Line" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-4-running-jmeter-from-command-line-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-4-running-jmeter-from-command-line-diagram.svg" alt="Diagram: 3.4 Running JMeter from Command Line" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-4-running-jmeter-from-command-line-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-4-running-jmeter-from-command-line-sticky.svg" alt="Sticky Note: 3.4 Running JMeter from Command Line" width="30%">
-</a>
-
 
 ```bash
 # Non-GUI mode (headless Ã¢â‚¬â€ for CI/CD)
@@ -1153,16 +1003,6 @@ jmeter -n -t order-api-load-test.jmx \
 ```
 
 ### 3.5 JMeter Assertions
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-5-jmeter-assertions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-5-jmeter-assertions-handwritten.svg" alt="Handwritten: 3.5 JMeter Assertions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-5-jmeter-assertions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-5-jmeter-assertions-diagram.svg" alt="Diagram: 3.5 JMeter Assertions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/3-5-jmeter-assertions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/3-5-jmeter-assertions-sticky.svg" alt="Sticky Note: 3.5 JMeter Assertions" width="30%">
-</a>
 
 
 ```java
@@ -1208,16 +1048,6 @@ public class JmeterAssertions {
 Gatling is a high-performance, code-first load testing tool written in Scala. It generates realistic load and produces rich HTML reports.
 
 ### 4.1 Basic Simulation
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-1-basic-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-1-basic-simulation-handwritten.svg" alt="Handwritten: 4.1 Basic Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-1-basic-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-1-basic-simulation-diagram.svg" alt="Diagram: 4.1 Basic Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-1-basic-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-1-basic-simulation-sticky.svg" alt="Sticky Note: 4.1 Basic Simulation" width="30%">
-</a>
 
 
 ```scala
@@ -1318,16 +1148,6 @@ class OrderApiSimulation extends Simulation {
 
 ### 4.2 Advanced Simulation with Feeders
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-2-advanced-simulation-with-feeders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-2-advanced-simulation-with-feeders-handwritten.svg" alt="Handwritten: 4.2 Advanced Simulation with Feeders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-2-advanced-simulation-with-feeders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-2-advanced-simulation-with-feeders-diagram.svg" alt="Diagram: 4.2 Advanced Simulation with Feeders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-2-advanced-simulation-with-feeders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-2-advanced-simulation-with-feeders-sticky.svg" alt="Sticky Note: 4.2 Advanced Simulation with Feeders" width="30%">
-</a>
-
 
 ```scala
 // src/test/scala/com/example/AdvancedOrderSimulation.scala
@@ -1422,16 +1242,6 @@ object generateToken {
 
 ### 4.3 Gatling Maven Plugin Configuration
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-3-gatling-maven-plugin-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-3-gatling-maven-plugin-configuration-handwritten.svg" alt="Handwritten: 4.3 Gatling Maven Plugin Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-3-gatling-maven-plugin-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-3-gatling-maven-plugin-configuration-diagram.svg" alt="Diagram: 4.3 Gatling Maven Plugin Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-3-gatling-maven-plugin-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-3-gatling-maven-plugin-configuration-sticky.svg" alt="Sticky Note: 4.3 Gatling Maven Plugin Configuration" width="30%">
-</a>
-
 
 ```xml
 <!-- pom.xml Ã¢â‚¬â€ Gatling Maven plugin -->
@@ -1461,16 +1271,6 @@ mvn gatling:test \
 
 ### 4.4 JMeter vs Gatling Ã¢â‚¬â€ Comparison
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-4-jmeter-vs-gatling-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-4-jmeter-vs-gatling-comparison-handwritten.svg" alt="Handwritten: 4.4 JMeter vs Gatling Ã¢â‚¬â€ Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-4-jmeter-vs-gatling-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-4-jmeter-vs-gatling-comparison-diagram.svg" alt="Diagram: 4.4 JMeter vs Gatling Ã¢â‚¬â€ Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/4-4-jmeter-vs-gatling-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/4-4-jmeter-vs-gatling-comparison-sticky.svg" alt="Sticky Note: 4.4 JMeter vs Gatling Ã¢â‚¬â€ Comparison" width="30%">
-</a>
-
 
 | Feature | JMeter | Gatling |
 |---------|--------|---------|
@@ -1491,16 +1291,6 @@ mvn gatling:test \
 ## 5. Load Testing Spring Boot
 
 ### 5.1 Profiling Endpoints Under Load
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-1-profiling-endpoints-under-load-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-1-profiling-endpoints-under-load-handwritten.svg" alt="Handwritten: 5.1 Profiling Endpoints Under Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-1-profiling-endpoints-under-load-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-1-profiling-endpoints-under-load-diagram.svg" alt="Diagram: 5.1 Profiling Endpoints Under Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-1-profiling-endpoints-under-load-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-1-profiling-endpoints-under-load-sticky.svg" alt="Sticky Note: 5.1 Profiling Endpoints Under Load" width="30%">
-</a>
 
 
 ```java
@@ -1556,16 +1346,6 @@ public class ProductController {
 
 ### 5.2 Connection Pool Performance
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-2-connection-pool-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-2-connection-pool-performance-handwritten.svg" alt="Handwritten: 5.2 Connection Pool Performance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-2-connection-pool-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-2-connection-pool-performance-diagram.svg" alt="Diagram: 5.2 Connection Pool Performance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-2-connection-pool-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-2-connection-pool-performance-sticky.svg" alt="Sticky Note: 5.2 Connection Pool Performance" width="30%">
-</a>
-
 
 Monitor HikariCP connection pool metrics during load tests.
 
@@ -1609,16 +1389,6 @@ class ConnectionPoolConfig {
 
 ### 5.3 Database Query Performance Under Load
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-3-database-query-performance-under-load-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-3-database-query-performance-under-load-handwritten.svg" alt="Handwritten: 5.3 Database Query Performance Under Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-3-database-query-performance-under-load-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-3-database-query-performance-under-load-diagram.svg" alt="Diagram: 5.3 Database Query Performance Under Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-3-database-query-performance-under-load-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-3-database-query-performance-under-load-sticky.svg" alt="Sticky Note: 5.3 Database Query Performance Under Load" width="30%">
-</a>
-
 
 ```java
 import io.micrometer.core.annotation.Timed;
@@ -1651,16 +1421,6 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
 ```
 
 ### 5.4 Measuring Latency Percentiles
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-4-measuring-latency-percentiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-4-measuring-latency-percentiles-handwritten.svg" alt="Handwritten: 5.4 Measuring Latency Percentiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-4-measuring-latency-percentiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-4-measuring-latency-percentiles-diagram.svg" alt="Diagram: 5.4 Measuring Latency Percentiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-4-measuring-latency-percentiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-4-measuring-latency-percentiles-sticky.svg" alt="Sticky Note: 5.4 Measuring Latency Percentiles" width="30%">
-</a>
 
 
 ```java
@@ -1722,16 +1482,6 @@ management:
 
 ### 5.5 Spring Boot Actuator Endpoints for Load Monitoring
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-5-spring-boot-actuator-endpoints-for-load-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-5-spring-boot-actuator-endpoints-for-load-monitoring-handwritten.svg" alt="Handwritten: 5.5 Spring Boot Actuator Endpoints for Load Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-5-spring-boot-actuator-endpoints-for-load-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-5-spring-boot-actuator-endpoints-for-load-monitoring-diagram.svg" alt="Diagram: 5.5 Spring Boot Actuator Endpoints for Load Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/5-5-spring-boot-actuator-endpoints-for-load-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/5-5-spring-boot-actuator-endpoints-for-load-monitoring-sticky.svg" alt="Sticky Note: 5.5 Spring Boot Actuator Endpoints for Load Monitoring" width="30%">
-</a>
-
 
 ```properties
 # application.properties Ã¢â‚¬â€ expose all metrics during load test
@@ -1773,16 +1523,6 @@ Stress testing pushes the system beyond normal capacity to find breaking points.
 
 ### 6.1 Ramp-Up Test
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-1-ramp-up-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-1-ramp-up-test-handwritten.svg" alt="Handwritten: 6.1 Ramp-Up Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-1-ramp-up-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-1-ramp-up-test-diagram.svg" alt="Diagram: 6.1 Ramp-Up Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-1-ramp-up-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-1-ramp-up-test-sticky.svg" alt="Sticky Note: 6.1 Ramp-Up Test" width="30%">
-</a>
-
 
 Gradually increases load to find the saturation point.
 
@@ -1823,16 +1563,6 @@ public class RampUpSimulation extends Simulation {
 
 ### 6.2 Spike Test
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-2-spike-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-2-spike-test-handwritten.svg" alt="Handwritten: 6.2 Spike Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-2-spike-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-2-spike-test-diagram.svg" alt="Diagram: 6.2 Spike Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-2-spike-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-2-spike-test-sticky.svg" alt="Sticky Note: 6.2 Spike Test" width="30%">
-</a>
-
 
 Sudden burst of traffic Ã¢â‚¬â€ tests auto-scaling and circuit breakers.
 
@@ -1867,16 +1597,6 @@ public class SpikeSimulation extends Simulation {
 
 ### 6.3 Soak Test (Endurance)
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-3-soak-test-endurance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-3-soak-test-endurance-handwritten.svg" alt="Handwritten: 6.3 Soak Test (Endurance)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-3-soak-test-endurance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-3-soak-test-endurance-diagram.svg" alt="Diagram: 6.3 Soak Test (Endurance)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-3-soak-test-endurance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-3-soak-test-endurance-sticky.svg" alt="Sticky Note: 6.3 Soak Test (Endurance)" width="30%">
-</a>
-
 
 Sustained load over hours to detect memory leaks and resource exhaustion.
 
@@ -1909,16 +1629,6 @@ public class SoakSimulation extends Simulation {
 ```
 
 ### 6.4 Stress Test Thresholds
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-4-stress-test-thresholds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-4-stress-test-thresholds-handwritten.svg" alt="Handwritten: 6.4 Stress Test Thresholds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-4-stress-test-thresholds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-4-stress-test-thresholds-diagram.svg" alt="Diagram: 6.4 Stress Test Thresholds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-4-stress-test-thresholds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-4-stress-test-thresholds-sticky.svg" alt="Sticky Note: 6.4 Stress Test Thresholds" width="30%">
-</a>
 
 
 ```java
@@ -1958,16 +1668,6 @@ setUp(scenario.inject(...))
 ```
 
 ### 6.5 Resource Monitoring During Load
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-5-resource-monitoring-during-load-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-5-resource-monitoring-during-load-handwritten.svg" alt="Handwritten: 6.5 Resource Monitoring During Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-5-resource-monitoring-during-load-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-5-resource-monitoring-during-load-diagram.svg" alt="Diagram: 6.5 Resource Monitoring During Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/6-5-resource-monitoring-during-load-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/6-5-resource-monitoring-during-load-sticky.svg" alt="Sticky Note: 6.5 Resource Monitoring During Load" width="30%">
-</a>
 
 
 ```java
@@ -2047,16 +1747,6 @@ Chaos engineering tests system resilience by introducing failures in a controlle
 
 ### 7.1 Chaos Monkey for Spring Boot
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-1-chaos-monkey-for-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-1-chaos-monkey-for-spring-boot-handwritten.svg" alt="Handwritten: 7.1 Chaos Monkey for Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-1-chaos-monkey-for-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-1-chaos-monkey-for-spring-boot-diagram.svg" alt="Diagram: 7.1 Chaos Monkey for Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-1-chaos-monkey-for-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-1-chaos-monkey-for-spring-boot-sticky.svg" alt="Sticky Note: 7.1 Chaos Monkey for Spring Boot" width="30%">
-</a>
-
 
 Chaos Monkey is a Spring Boot actuator module that injects faults (latency, exceptions, service shutdown) into running applications.
 
@@ -2093,16 +1783,6 @@ chaos.monkey.watcher.component=true
 ```
 
 ### 7.2 Chaos Engineering Principles
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-2-chaos-engineering-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-2-chaos-engineering-principles-handwritten.svg" alt="Handwritten: 7.2 Chaos Engineering Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-2-chaos-engineering-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-2-chaos-engineering-principles-diagram.svg" alt="Diagram: 7.2 Chaos Engineering Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-2-chaos-engineering-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-2-chaos-engineering-principles-sticky.svg" alt="Sticky Note: 7.2 Chaos Engineering Principles" width="30%">
-</a>
 
 
 ```java
@@ -2280,16 +1960,6 @@ public class ChaosExperiment {
 
 ### 7.3 Chaos Monkey Configuration for Different Assault Types
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-3-chaos-monkey-configuration-for-different-assault-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-3-chaos-monkey-configuration-for-different-assault-types-handwritten.svg" alt="Handwritten: 7.3 Chaos Monkey Configuration for Different Assault Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-3-chaos-monkey-configuration-for-different-assault-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-3-chaos-monkey-configuration-for-different-assault-types-diagram.svg" alt="Diagram: 7.3 Chaos Monkey Configuration for Different Assault Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-3-chaos-monkey-configuration-for-different-assault-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-3-chaos-monkey-configuration-for-different-assault-types-sticky.svg" alt="Sticky Note: 7.3 Chaos Monkey Configuration for Different Assault Types" width="30%">
-</a>
-
 
 ```java
 // ChaosMonkeyConfig.java Ã¢â‚¬â€ programmatic configuration
@@ -2336,16 +2006,6 @@ public class ChaosMonkeyConfig {
 ```
 
 ### 7.4 Chaos Experiment Framework Ã¢â‚¬â€ Automated Resilience Tests
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-4-chaos-experiment-framework-automated-resilience-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-4-chaos-experiment-framework-automated-resilience-tests-handwritten.svg" alt="Handwritten: 7.4 Chaos Experiment Framework Ã¢â‚¬â€ Automated Resilience Tests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-4-chaos-experiment-framework-automated-resilience-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-4-chaos-experiment-framework-automated-resilience-tests-diagram.svg" alt="Diagram: 7.4 Chaos Experiment Framework Ã¢â‚¬â€ Automated Resilience Tests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-4-chaos-experiment-framework-automated-resilience-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-4-chaos-experiment-framework-automated-resilience-tests-sticky.svg" alt="Sticky Note: 7.4 Chaos Experiment Framework Ã¢â‚¬â€ Automated Resilience Tests" width="30%">
-</a>
 
 
 ```java
@@ -2473,16 +2133,6 @@ public abstract class AbstractChaosTest {
 
 ### 7.5 Circuit Breaker Resilience Under Chaos
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-5-circuit-breaker-resilience-under-chaos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-5-circuit-breaker-resilience-under-chaos-handwritten.svg" alt="Handwritten: 7.5 Circuit Breaker Resilience Under Chaos" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-5-circuit-breaker-resilience-under-chaos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-5-circuit-breaker-resilience-under-chaos-diagram.svg" alt="Diagram: 7.5 Circuit Breaker Resilience Under Chaos" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-5-circuit-breaker-resilience-under-chaos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-5-circuit-breaker-resilience-under-chaos-sticky.svg" alt="Sticky Note: 7.5 Circuit Breaker Resilience Under Chaos" width="30%">
-</a>
-
 
 ```java
 // ResilienceProperties.java
@@ -2567,16 +2217,6 @@ class OrderServiceResilienceTest extends AbstractChaosTest {
 
 ### 7.6 Graceful Degradation Patterns
 
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-6-graceful-degradation-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-6-graceful-degradation-patterns-handwritten.svg" alt="Handwritten: 7.6 Graceful Degradation Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-6-graceful-degradation-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-6-graceful-degradation-patterns-diagram.svg" alt="Diagram: 7.6 Graceful Degradation Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-6-graceful-degradation-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-6-graceful-degradation-patterns-sticky.svg" alt="Sticky Note: 7.6 Graceful Degradation Patterns" width="30%">
-</a>
-
 
 ```java
 // Fallback methods to handle chaos monkey-induced failures
@@ -2623,16 +2263,6 @@ public class ResilientOrderService {
 ```
 
 ### 7.7 Load Testing with Simulated Chaos
-
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-7-load-testing-with-simulated-chaos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-7-load-testing-with-simulated-chaos-handwritten.svg" alt="Handwritten: 7.7 Load Testing with Simulated Chaos" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-7-load-testing-with-simulated-chaos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-7-load-testing-with-simulated-chaos-diagram.svg" alt="Diagram: 7.7 Load Testing with Simulated Chaos" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/33-security-perf-test/7-7-load-testing-with-simulated-chaos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/33-security-perf-test/7-7-load-testing-with-simulated-chaos-sticky.svg" alt="Sticky Note: 7.7 Load Testing with Simulated Chaos" width="30%">
-</a>
 
 
 ```java

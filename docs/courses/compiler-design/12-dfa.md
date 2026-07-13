@@ -94,16 +94,6 @@ flowchart TB
 
 ### The Data-Flow Analysis Problem
 
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-handwritten.svg" alt="Handwritten: The Data-Flow Analysis Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-diagram.svg" alt="Diagram: The Data-Flow Analysis Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-data-flow-analysis-problem-sticky.svg" alt="Sticky Note: The Data-Flow Analysis Problem" width="30%">
-</a>
-
 
 Data-flow analysis derives static properties about the values computed and used at each point in a program. The analysis operates on a **control-flow graph** (CFG) where nodes are basic blocks and edges represent possible control transfers. For each program point, the analysis computes a set of facts about the program state that hold regardless of the execution path taken.
 
@@ -124,16 +114,6 @@ OUT[B] = ?_{S ? succ(B)} IN[S]   (backward problems)
 The compiler iterates these equations until they stabilize ? a **fixed point** ? which is guaranteed by monotonicity and finite lattices.
 
 ### Reaching Definitions
-
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-handwritten.svg" alt="Handwritten: Reaching Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-diagram.svg" alt="Diagram: Reaching Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/reaching-definitions-sticky.svg" alt="Sticky Note: Reaching Definitions" width="30%">
-</a>
 
 
 A **definition** of a variable `x` is a statement that assigns a value to `x`. A definition `d` **reaches** a point `p` if there exists a path in the CFG from `d` to `p` such that `x` is not redefined along that path. Reaching-definitions analysis computes, for each program point, the set of definitions that **may** reach that point along some execution path.
@@ -163,16 +143,6 @@ Reaching definitions enable:
 
 ### Live-Variable Analysis
 
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-handwritten.svg" alt="Handwritten: Live-Variable Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-diagram.svg" alt="Diagram: Live-Variable Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/live-variable-analysis-sticky.svg" alt="Sticky Note: Live-Variable Analysis" width="30%">
-</a>
-
 
 A variable `v` is **live** at a point `p` if there exists a path from `p` to a use of `v` along which `v` is not redefined. Live-variable analysis identifies, for each program point, the set of variables whose values may still be needed later in the execution.
 
@@ -198,16 +168,6 @@ Live-variable analysis is essential for:
 
 ### Available Expressions
 
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-handwritten.svg" alt="Handwritten: Available Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-diagram.svg" alt="Diagram: Available Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/available-expressions-sticky.svg" alt="Sticky Note: Available Expressions" width="30%">
-</a>
-
 
 An expression `x op y` is **available** at a point `p` if every path from the entry to `p` evaluates the expression, and no operand `x` or `y` is redefined between that evaluation and `p`. Available-expressions analysis identifies which expressions have already been computed, enabling their results to be reused.
 
@@ -231,16 +191,6 @@ The meet operator is **intersection** (not union) because an expression must be 
 If expression `e` is available at point `p` (computed on all paths, and no operands redefined), the computation at `p` can be replaced by a reference to the previously computed value. This is **global CSE**, extending the peephole/subtree-based CSE from local optimization (Chapter 10) across basic-block boundaries.
 
 ### Constant Propagation
-
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-handwritten.svg" alt="Handwritten: Constant Propagation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-diagram.svg" alt="Diagram: Constant Propagation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/constant-propagation-sticky.svg" alt="Sticky Note: Constant Propagation" width="30%">
-</a>
 
 
 Constant propagation replaces uses of a variable known to have a constant value with that literal. Unlike the set-based analyses above, constant propagation operates on a **lattice** of values.
@@ -278,16 +228,6 @@ Constant propagation is a **forward must** analysis where the domain is a map fr
 SCCP (Wegman-Zadeck 1991) performs simultaneous constant propagation and dead-code detection using SSA form. It maintains two worklists: one for CFG edges and one for SSA edges. It propagates constants through f-functions and branches, marking CFG edges as executable only when the branch condition is resolved. SCCP is strictly more powerful than the simple lattice-based approach because it avoids analyzing unreachable code.
 
 ### The Iterative Algorithm
-
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-handwritten.svg" alt="Handwritten: The Iterative Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-diagram.svg" alt="Diagram: The Iterative Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/the-iterative-algorithm-sticky.svg" alt="Sticky Note: The Iterative Algorithm" width="30%">
-</a>
 
 
 The iterative algorithm solves data-flow equations by repeatedly computing IN and OUT values for all blocks until no set changes ? a fixed point is reached.
@@ -346,16 +286,6 @@ In practice, the algorithm converges in 2?5 passes for most programs when blocks
 
 ### Monotone Data-Flow Frameworks
 
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-handwritten.svg" alt="Handwritten: Monotone Data-Flow Frameworks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-diagram.svg" alt="Diagram: Monotone Data-Flow Frameworks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/monotone-data-flow-frameworks-sticky.svg" alt="Sticky Note: Monotone Data-Flow Frameworks" width="30%">
-</a>
-
 
 The three classic analyses share a common structure characterized by:
 
@@ -391,16 +321,6 @@ Constant propagation is **not** distributive because the meet of constant values
 
 ### Partial Redundancy Elimination (PRE)
 
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-handwritten.svg" alt="Handwritten: Partial Redundancy Elimination (PRE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-diagram.svg" alt="Diagram: Partial Redundancy Elimination (PRE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/partial-redundancy-elimination-pre-sticky.svg" alt="Sticky Note: Partial Redundancy Elimination (PRE)" width="30%">
-</a>
-
 
 Partial redundancy elimination is one of the most powerful global optimizations. An expression is **partially redundant** at a point `p` if it is evaluated on some (but not all) paths to `p`. PRE eliminates partial redundancies by:
 1. Inserting the expression on paths where it is not evaluated.
@@ -420,16 +340,6 @@ PRE is typically formulated as a bidirectional (forward + backward) data-flow an
 The insertion decision is made where an expression is partially anticipated but not available: inserting the expression on the missing paths makes it fully available and thus redundant.
 
 ### Putting It All Together ? TypeScript Implementation
-
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
 
 
 Below is a complete generic data-flow analysis framework that can instantiate reaching definitions, live-variable analysis, available expressions, and constant propagation.
@@ -729,16 +639,6 @@ Block 4: IN=[2:a, 1:d, 3:c] OUT=[2:a, 1:d, 3:c]
 ```
 
 ### Mermaid: Data-Flow Equation Structure
-
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-handwritten.svg" alt="Handwritten: Mermaid: Data-Flow Equation Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-diagram.svg" alt="Diagram: Mermaid: Data-Flow Equation Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/12-dfa/mermaid-data-flow-equation-structure-sticky.svg" alt="Sticky Note: Mermaid: Data-Flow Equation Structure" width="30%">
-</a>
 
 
 ```mermaid

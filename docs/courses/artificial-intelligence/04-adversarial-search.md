@@ -96,16 +96,6 @@ flowchart LR
 
 ### 1. Game Theory Fundamentals
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-handwritten.svg" alt="Handwritten: 1. Game Theory Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-diagram.svg" alt="Diagram: 1. Game Theory Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/1-game-theory-fundamentals-sticky.svg" alt="Sticky Note: 1. Game Theory Fundamentals" width="30%">
-</a>
-
 
 > **Real-World Analogy — Poker vs Chess:** In chess, both players see the entire board (perfect information). In poker, you cannot see your opponent's hand (imperfect information). Most AI game-playing research starts with the simpler chess-like scenario: **deterministic, turn-based, two-player, zero-sum, perfect-information** games. This is the cleanest setting to understand adversarial reasoning.
 
@@ -132,16 +122,6 @@ flowchart LR
 ---
 
 ### 2. Minimax Algorithm
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-handwritten.svg" alt="Handwritten: 2. Minimax Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-diagram.svg" alt="Diagram: 2. Minimax Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/2-minimax-algorithm-sticky.svg" alt="Sticky Note: 2. Minimax Algorithm" width="30%">
-</a>
 
 
 > **Real-World Analogy — Buyer vs Seller Negotiation:** Imagine you are selling a used car and a buyer is negotiating. You want the highest price (MAX), the buyer wants the lowest (MIN). You propose $10,000. The buyer can either accept or counter-offer. If they counter, you can accept, reject, or counter again. The minimax algorithm models exactly this adversarial back-and-forth, assuming the buyer always picks the option that leaves you worst off — and you plan accordingly.
@@ -292,16 +272,6 @@ def find_best_move(board, depth):
 ---
 
 ### 3. Alpha-Beta Pruning
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-handwritten.svg" alt="Handwritten: 3. Alpha-Beta Pruning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-diagram.svg" alt="Diagram: 3. Alpha-Beta Pruning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/3-alpha-beta-pruning-sticky.svg" alt="Sticky Note: 3. Alpha-Beta Pruning" width="30%">
-</a>
 
 
 > **Real-World Analogy — Real Estate Shopping:** You are house-hunting. You see a house listed at $500,000 and love it — it is your current best find (α = 500k). Now you tour another house. The realtor shows you the kitchen, then mentions the foundation has cracks. You immediately know fixing the foundation will cost $100k, bringing this house to at least $600k. You stop the tour — there is no need to see the bedrooms because the house is already worse than your current best. This is exactly how alpha-beta pruning works: once a branch proves it cannot beat the current best option, you **prune** it without further exploration.
@@ -494,16 +464,6 @@ def find_best_move_alpha_beta(board, depth):
 
 ### 4. Minimax vs Alpha-Beta — Comparison Table
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-handwritten.svg" alt="Handwritten: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-diagram.svg" alt="Diagram: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/4-minimax-vs-alpha-beta-comparison-table-sticky.svg" alt="Sticky Note: 4. Minimax vs Alpha-Beta — Comparison Table" width="30%">
-</a>
-
 
 | Feature | Minimax | Alpha-Beta |
 |---------|:-------:|:----------:|
@@ -520,16 +480,6 @@ def find_best_move_alpha_beta(board, depth):
 ---
 
 ### 5. Evaluation Functions and Cutoff Search
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-handwritten.svg" alt="Handwritten: 5. Evaluation Functions and Cutoff Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-diagram.svg" alt="Diagram: 5. Evaluation Functions and Cutoff Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/5-evaluation-functions-and-cutoff-search-sticky.svg" alt="Sticky Note: 5. Evaluation Functions and Cutoff Search" width="30%">
-</a>
 
 
 > **Real-World Analogy — Military General's Intel:** A general cannot see every possible battlefield outcome 20 moves ahead. Instead, they evaluate the current situation: troop strength, supply lines, terrain advantage. This is exactly an evaluation function — a fast, approximate measure of how "good" a position looks, without simulating the entire future.
@@ -574,16 +524,6 @@ A critical failure mode of cutoff search: a catastrophic consequence (e.g., losi
 ---
 
 ### 6. Games with Imperfect Information and Stochastic Elements
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-handwritten.svg" alt="Handwritten: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-diagram.svg" alt="Diagram: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/04-adversarial-search/6-games-with-imperfect-information-and-stochastic-elements-sticky.svg" alt="Sticky Note: 6. Games with Imperfect Information and Stochastic Elements" width="30%">
-</a>
 
 
 > **Real-World Analogy — Poker:** Unlike chess, poker players cannot see their opponent's cards. Decisions must account for probabilities ("there is a 30% chance my opponent has a flush") and bluffing (intentional misinformation). This makes the game fundamentally harder — the optimal strategy is no longer a single move but a **probability distribution over moves**.

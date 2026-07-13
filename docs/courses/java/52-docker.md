@@ -102,16 +102,6 @@ Developer → Build JAR → Build Image → Push to Registry → Deploy to Orche
 
 ### 2.1 Naive Dockerfile (Don't Do This)
 
-<a href="../../../assets/images/diagrams/java/52-docker/2-1-naive-dockerfile-don-t-do-this-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/2-1-naive-dockerfile-don-t-do-this-handwritten.svg" alt="Handwritten: 2.1 Naive Dockerfile (Don't Do This)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/2-1-naive-dockerfile-don-t-do-this-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/2-1-naive-dockerfile-don-t-do-this-diagram.svg" alt="Diagram: 2.1 Naive Dockerfile (Don't Do This)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/2-1-naive-dockerfile-don-t-do-this-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/2-1-naive-dockerfile-don-t-do-this-sticky.svg" alt="Sticky Note: 2.1 Naive Dockerfile (Don't Do This)" width="30%">
-</a>
-
 
 ```dockerfile
 FROM openjdk:17-jdk-slim
@@ -127,16 +117,6 @@ ENTRYPOINT ["java", "-jar", "/app.jar"]
 - No JVM tuning for containers
 
 ### 2.2 Improved Dockerfile
-
-<a href="../../../assets/images/diagrams/java/52-docker/2-2-improved-dockerfile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/2-2-improved-dockerfile-handwritten.svg" alt="Handwritten: 2.2 Improved Dockerfile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/2-2-improved-dockerfile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/2-2-improved-dockerfile-diagram.svg" alt="Diagram: 2.2 Improved Dockerfile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/2-2-improved-dockerfile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/2-2-improved-dockerfile-sticky.svg" alt="Sticky Note: 2.2 Improved Dockerfile" width="30%">
-</a>
 
 
 ```dockerfile
@@ -174,16 +154,6 @@ ENTRYPOINT ["java", \
 
 ### 3.1 Alpine Linux
 
-<a href="../../../assets/images/diagrams/java/52-docker/3-1-alpine-linux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-1-alpine-linux-handwritten.svg" alt="Handwritten: 3.1 Alpine Linux" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-1-alpine-linux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-1-alpine-linux-diagram.svg" alt="Diagram: 3.1 Alpine Linux" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-1-alpine-linux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-1-alpine-linux-sticky.svg" alt="Sticky Note: 3.1 Alpine Linux" width="30%">
-</a>
-
 
 ```dockerfile
 FROM eclipse-temurin:17-jre-alpine
@@ -200,16 +170,6 @@ FROM eclipse-temurin:17-jre-alpine
 **Cons:** musl libc can cause rare compatibility issues with native libraries.
 
 ### 3.2 Distroless
-
-<a href="../../../assets/images/diagrams/java/52-docker/3-2-distroless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-2-distroless-handwritten.svg" alt="Handwritten: 3.2 Distroless" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-2-distroless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-2-distroless-diagram.svg" alt="Diagram: 3.2 Distroless" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-2-distroless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-2-distroless-sticky.svg" alt="Sticky Note: 3.2 Distroless" width="30%">
-</a>
 
 
 ```dockerfile
@@ -228,16 +188,6 @@ FROM gcr.io/distroless/java17-debian12
 
 ### 3.3 Full JDK (For Development)
 
-<a href="../../../assets/images/diagrams/java/52-docker/3-3-full-jdk-for-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-3-full-jdk-for-development-handwritten.svg" alt="Handwritten: 3.3 Full JDK (For Development)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-3-full-jdk-for-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-3-full-jdk-for-development-diagram.svg" alt="Diagram: 3.3 Full JDK (For Development)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-3-full-jdk-for-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-3-full-jdk-for-development-sticky.svg" alt="Sticky Note: 3.3 Full JDK (For Development)" width="30%">
-</a>
-
 
 ```dockerfile
 FROM eclipse-temurin:17-jdk-alpine
@@ -246,16 +196,6 @@ FROM eclipse-temurin:17-jdk-alpine
 Only use for development images where you need `jmap`, `jstack`, `jcmd`, etc.
 
 ### 3.4 Choosing the Right Base
-
-<a href="../../../assets/images/diagrams/java/52-docker/3-4-choosing-the-right-base-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-4-choosing-the-right-base-handwritten.svg" alt="Handwritten: 3.4 Choosing the Right Base" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-4-choosing-the-right-base-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-4-choosing-the-right-base-diagram.svg" alt="Diagram: 3.4 Choosing the Right Base" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/3-4-choosing-the-right-base-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/3-4-choosing-the-right-base-sticky.svg" alt="Sticky Note: 3.4 Choosing the Right Base" width="30%">
-</a>
 
 
 ```yaml
@@ -307,16 +247,6 @@ Each excluded file means a smaller build context, faster sends to the Docker dae
 ## 5. Multi-Stage Builds
 
 ### 5.1 Maven Multi-Stage
-
-<a href="../../../assets/images/diagrams/java/52-docker/5-1-maven-multi-stage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/5-1-maven-multi-stage-handwritten.svg" alt="Handwritten: 5.1 Maven Multi-Stage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/5-1-maven-multi-stage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/5-1-maven-multi-stage-diagram.svg" alt="Diagram: 5.1 Maven Multi-Stage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/5-1-maven-multi-stage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/5-1-maven-multi-stage-sticky.svg" alt="Sticky Note: 5.1 Maven Multi-Stage" width="30%">
-</a>
 
 
 ```dockerfile
@@ -372,16 +302,6 @@ ENTRYPOINT ["java", \
 
 ### 5.2 Gradle Multi-Stage
 
-<a href="../../../assets/images/diagrams/java/52-docker/5-2-gradle-multi-stage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/5-2-gradle-multi-stage-handwritten.svg" alt="Handwritten: 5.2 Gradle Multi-Stage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/5-2-gradle-multi-stage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/5-2-gradle-multi-stage-diagram.svg" alt="Diagram: 5.2 Gradle Multi-Stage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/5-2-gradle-multi-stage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/5-2-gradle-multi-stage-sticky.svg" alt="Sticky Note: 5.2 Gradle Multi-Stage" width="30%">
-</a>
-
 
 ```dockerfile
 # ---- Stage 1: Build ----
@@ -413,16 +333,6 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 
 ### 6.1 Docker Layer Caching Principles
 
-<a href="../../../assets/images/diagrams/java/52-docker/6-1-docker-layer-caching-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-1-docker-layer-caching-principles-handwritten.svg" alt="Handwritten: 6.1 Docker Layer Caching Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-1-docker-layer-caching-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-1-docker-layer-caching-principles-diagram.svg" alt="Diagram: 6.1 Docker Layer Caching Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-1-docker-layer-caching-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-1-docker-layer-caching-principles-sticky.svg" alt="Sticky Note: 6.1 Docker Layer Caching Principles" width="30%">
-</a>
-
 
 Each Dockerfile instruction creates a layer. Docker caches each layer and reuses it if nothing changed:
 
@@ -453,16 +363,6 @@ RUN ./mvnw package
 **Key insight:** Order instructions from least-frequently-changing to most-frequently-changing.
 
 ### 6.2 Spring Boot Layered JARs
-
-<a href="../../../assets/images/diagrams/java/52-docker/6-2-spring-boot-layered-jars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-2-spring-boot-layered-jars-handwritten.svg" alt="Handwritten: 6.2 Spring Boot Layered JARs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-2-spring-boot-layered-jars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-2-spring-boot-layered-jars-diagram.svg" alt="Diagram: 6.2 Spring Boot Layered JARs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-2-spring-boot-layered-jars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-2-spring-boot-layered-jars-sticky.svg" alt="Sticky Note: 6.2 Spring Boot Layered JARs" width="30%">
-</a>
 
 
 Spring Boot's `spring-boot-maven-plugin` can produce a "layered" JAR that separates dependencies, framework classes, and application classes into distinct archive layers.
@@ -510,16 +410,6 @@ extracted/
 
 ### 6.3 Custom Layer Configuration
 
-<a href="../../../assets/images/diagrams/java/52-docker/6-3-custom-layer-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-3-custom-layer-configuration-handwritten.svg" alt="Handwritten: 6.3 Custom Layer Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-3-custom-layer-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-3-custom-layer-configuration-diagram.svg" alt="Diagram: 6.3 Custom Layer Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-3-custom-layer-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-3-custom-layer-configuration-sticky.svg" alt="Sticky Note: 6.3 Custom Layer Configuration" width="30%">
-</a>
-
 
 Create `layers.xml` in `src/main/resources/`:
 
@@ -553,16 +443,6 @@ Create `layers.xml` in `src/main/resources/`:
 ```
 
 ### 6.4 Optimized Dockerfile with Layered JAR
-
-<a href="../../../assets/images/diagrams/java/52-docker/6-4-optimized-dockerfile-with-layered-jar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-4-optimized-dockerfile-with-layered-jar-handwritten.svg" alt="Handwritten: 6.4 Optimized Dockerfile with Layered JAR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-4-optimized-dockerfile-with-layered-jar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-4-optimized-dockerfile-with-layered-jar-diagram.svg" alt="Diagram: 6.4 Optimized Dockerfile with Layered JAR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/6-4-optimized-dockerfile-with-layered-jar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/6-4-optimized-dockerfile-with-layered-jar-sticky.svg" alt="Sticky Note: 6.4 Optimized Dockerfile with Layered JAR" width="30%">
-</a>
 
 
 ```dockerfile
@@ -599,16 +479,6 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 ## 7. Docker Compose
 
 ### 7.1 Basic docker-compose.yml
-
-<a href="../../../assets/images/diagrams/java/52-docker/7-1-basic-docker-compose-yml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-1-basic-docker-compose-yml-handwritten.svg" alt="Handwritten: 7.1 Basic docker-compose.yml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/7-1-basic-docker-compose-yml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-1-basic-docker-compose-yml-diagram.svg" alt="Diagram: 7.1 Basic docker-compose.yml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/7-1-basic-docker-compose-yml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-1-basic-docker-compose-yml-sticky.svg" alt="Sticky Note: 7.1 Basic docker-compose.yml" width="30%">
-</a>
 
 
 ```yaml
@@ -711,16 +581,6 @@ volumes:
 
 ### 7.2 Docker Compose with Multiple Profiles
 
-<a href="../../../assets/images/diagrams/java/52-docker/7-2-docker-compose-with-multiple-profiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-2-docker-compose-with-multiple-profiles-handwritten.svg" alt="Handwritten: 7.2 Docker Compose with Multiple Profiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/7-2-docker-compose-with-multiple-profiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-2-docker-compose-with-multiple-profiles-diagram.svg" alt="Diagram: 7.2 Docker Compose with Multiple Profiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/7-2-docker-compose-with-multiple-profiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-2-docker-compose-with-multiple-profiles-sticky.svg" alt="Sticky Note: 7.2 Docker Compose with Multiple Profiles" width="30%">
-</a>
-
 
 ```yaml
 # docker-compose.override.yml → loaded automatically for dev overrides
@@ -771,16 +631,6 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d
 
 ### 7.3 Spring Boot Configuration for Docker
 
-<a href="../../../assets/images/diagrams/java/52-docker/7-3-spring-boot-configuration-for-docker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-3-spring-boot-configuration-for-docker-handwritten.svg" alt="Handwritten: 7.3 Spring Boot Configuration for Docker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/7-3-spring-boot-configuration-for-docker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-3-spring-boot-configuration-for-docker-diagram.svg" alt="Diagram: 7.3 Spring Boot Configuration for Docker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/7-3-spring-boot-configuration-for-docker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/7-3-spring-boot-configuration-for-docker-sticky.svg" alt="Sticky Note: 7.3 Spring Boot Configuration for Docker" width="30%">
-</a>
-
 
 ```yaml
 # application-docker.yml
@@ -820,16 +670,6 @@ management:
 
 ### 8.1 Dockerfile HEALTHCHECK
 
-<a href="../../../assets/images/diagrams/java/52-docker/8-1-dockerfile-healthcheck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-1-dockerfile-healthcheck-handwritten.svg" alt="Handwritten: 8.1 Dockerfile HEALTHCHECK" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-1-dockerfile-healthcheck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-1-dockerfile-healthcheck-diagram.svg" alt="Diagram: 8.1 Dockerfile HEALTHCHECK" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-1-dockerfile-healthcheck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-1-dockerfile-healthcheck-sticky.svg" alt="Sticky Note: 8.1 Dockerfile HEALTHCHECK" width="30%">
-</a>
-
 
 ```dockerfile
 FROM eclipse-temurin:17-jre-alpine
@@ -841,16 +681,6 @@ ENTRYPOINT ["java", "-jar", "/app/app.jar"]
 ```
 
 ### 8.2 Spring Boot Actuator Health
-
-<a href="../../../assets/images/diagrams/java/52-docker/8-2-spring-boot-actuator-health-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-2-spring-boot-actuator-health-handwritten.svg" alt="Handwritten: 8.2 Spring Boot Actuator Health" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-2-spring-boot-actuator-health-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-2-spring-boot-actuator-health-diagram.svg" alt="Diagram: 8.2 Spring Boot Actuator Health" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-2-spring-boot-actuator-health-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-2-spring-boot-actuator-health-sticky.svg" alt="Sticky Note: 8.2 Spring Boot Actuator Health" width="30%">
-</a>
 
 
 ```xml
@@ -913,16 +743,6 @@ public class DatabaseHealthIndicator implements HealthIndicator {
 
 ### 8.3 Liveness and Readiness Probes
 
-<a href="../../../assets/images/diagrams/java/52-docker/8-3-liveness-and-readiness-probes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-3-liveness-and-readiness-probes-handwritten.svg" alt="Handwritten: 8.3 Liveness and Readiness Probes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-3-liveness-and-readiness-probes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-3-liveness-and-readiness-probes-diagram.svg" alt="Diagram: 8.3 Liveness and Readiness Probes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-3-liveness-and-readiness-probes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-3-liveness-and-readiness-probes-sticky.svg" alt="Sticky Note: 8.3 Liveness and Readiness Probes" width="30%">
-</a>
-
 
 Spring Boot maps the Kubernetes probe endpoints automatically when `probes.enabled=true`:
 
@@ -984,16 +804,6 @@ public class CustomAvailabilityManager {
 
 ### 8.4 Custom Liveness and Readiness Indicators
 
-<a href="../../../assets/images/diagrams/java/52-docker/8-4-custom-liveness-and-readiness-indicators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-4-custom-liveness-and-readiness-indicators-handwritten.svg" alt="Handwritten: 8.4 Custom Liveness and Readiness Indicators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-4-custom-liveness-and-readiness-indicators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-4-custom-liveness-and-readiness-indicators-diagram.svg" alt="Diagram: 8.4 Custom Liveness and Readiness Indicators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/8-4-custom-liveness-and-readiness-indicators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/8-4-custom-liveness-and-readiness-indicators-sticky.svg" alt="Sticky Note: 8.4 Custom Liveness and Readiness Indicators" width="30%">
-</a>
-
 
 ```java
 package com.example.demo.health;
@@ -1043,16 +853,6 @@ public class ExternalServiceHealthIndicator implements HealthIndicator {
 
 ### 9.1 Container-Aware JVM Flags
 
-<a href="../../../assets/images/diagrams/java/52-docker/9-1-container-aware-jvm-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-1-container-aware-jvm-flags-handwritten.svg" alt="Handwritten: 9.1 Container-Aware JVM Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-1-container-aware-jvm-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-1-container-aware-jvm-flags-diagram.svg" alt="Diagram: 9.1 Container-Aware JVM Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-1-container-aware-jvm-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-1-container-aware-jvm-flags-sticky.svg" alt="Sticky Note: 9.1 Container-Aware JVM Flags" width="30%">
-</a>
-
 
 ```dockerfile
 ENTRYPOINT ["java", \
@@ -1081,16 +881,6 @@ ENTRYPOINT ["java", \
 
 ### 9.2 CPU Limits
 
-<a href="../../../assets/images/diagrams/java/52-docker/9-2-cpu-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-2-cpu-limits-handwritten.svg" alt="Handwritten: 9.2 CPU Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-2-cpu-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-2-cpu-limits-diagram.svg" alt="Diagram: 9.2 CPU Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-2-cpu-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-2-cpu-limits-sticky.svg" alt="Sticky Note: 9.2 CPU Limits" width="30%">
-</a>
-
 
 ```yaml
 # Docker Compose
@@ -1115,16 +905,6 @@ The JVM detects CPU limits via `/sys/fs/cgroup/cpu` and adjusts the parallel GC 
 
 ### 9.3 Memory Limits
 
-<a href="../../../assets/images/diagrams/java/52-docker/9-3-memory-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-3-memory-limits-handwritten.svg" alt="Handwritten: 9.3 Memory Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-3-memory-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-3-memory-limits-diagram.svg" alt="Diagram: 9.3 Memory Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-3-memory-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-3-memory-limits-sticky.svg" alt="Sticky Note: 9.3 Memory Limits" width="30%">
-</a>
-
 
 ```yaml
 deploy:
@@ -1145,16 +925,6 @@ deploy:
 | 2 GB | ~1.4 GB | ~128 MB | ~160 MB | ~300 MB |
 
 ### 9.4 GC Tuning for Containers
-
-<a href="../../../assets/images/diagrams/java/52-docker/9-4-gc-tuning-for-containers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-4-gc-tuning-for-containers-handwritten.svg" alt="Handwritten: 9.4 GC Tuning for Containers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-4-gc-tuning-for-containers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-4-gc-tuning-for-containers-diagram.svg" alt="Diagram: 9.4 GC Tuning for Containers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-4-gc-tuning-for-containers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-4-gc-tuning-for-containers-sticky.svg" alt="Sticky Note: 9.4 GC Tuning for Containers" width="30%">
-</a>
 
 
 ```dockerfile
@@ -1187,16 +957,6 @@ ENTRYPOINT ["java", \
 
 ### 9.5 CDS (Class Data Sharing) for Faster Startup
 
-<a href="../../../assets/images/diagrams/java/52-docker/9-5-cds-class-data-sharing-for-faster-startup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-5-cds-class-data-sharing-for-faster-startup-handwritten.svg" alt="Handwritten: 9.5 CDS (Class Data Sharing) for Faster Startup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-5-cds-class-data-sharing-for-faster-startup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-5-cds-class-data-sharing-for-faster-startup-diagram.svg" alt="Diagram: 9.5 CDS (Class Data Sharing) for Faster Startup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-5-cds-class-data-sharing-for-faster-startup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-5-cds-class-data-sharing-for-faster-startup-sticky.svg" alt="Sticky Note: 9.5 CDS (Class Data Sharing) for Faster Startup" width="30%">
-</a>
-
 
 ```dockerfile
 FROM eclipse-temurin:17-jdk-alpine AS builder
@@ -1224,16 +984,6 @@ ENTRYPOINT ["java", \
 ```
 
 ### 9.6 Spring AOT and GraalVM Native Image
-
-<a href="../../../assets/images/diagrams/java/52-docker/9-6-spring-aot-and-graalvm-native-image-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-6-spring-aot-and-graalvm-native-image-handwritten.svg" alt="Handwritten: 9.6 Spring AOT and GraalVM Native Image" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-6-spring-aot-and-graalvm-native-image-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-6-spring-aot-and-graalvm-native-image-diagram.svg" alt="Diagram: 9.6 Spring AOT and GraalVM Native Image" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/9-6-spring-aot-and-graalvm-native-image-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/9-6-spring-aot-and-graalvm-native-image-sticky.svg" alt="Sticky Note: 9.6 Spring AOT and GraalVM Native Image" width="30%">
-</a>
 
 
 ```dockerfile
@@ -1271,16 +1021,6 @@ ENTRYPOINT ["/app/myapp"]
 ## 10. Docker Compose Production Patterns
 
 ### 10.1 Full Production Compose File
-
-<a href="../../../assets/images/diagrams/java/52-docker/10-1-full-production-compose-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/10-1-full-production-compose-file-handwritten.svg" alt="Handwritten: 10.1 Full Production Compose File" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/10-1-full-production-compose-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/10-1-full-production-compose-file-diagram.svg" alt="Diagram: 10.1 Full Production Compose File" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/10-1-full-production-compose-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/10-1-full-production-compose-file-sticky.svg" alt="Sticky Note: 10.1 Full Production Compose File" width="30%">
-</a>
 
 
 ```yaml
@@ -1440,16 +1180,6 @@ volumes:
 
 ### 10.2 Environment File
 
-<a href="../../../assets/images/diagrams/java/52-docker/10-2-environment-file-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/10-2-environment-file-handwritten.svg" alt="Handwritten: 10.2 Environment File" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/10-2-environment-file-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/10-2-environment-file-diagram.svg" alt="Diagram: 10.2 Environment File" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/10-2-environment-file-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/10-2-environment-file-sticky.svg" alt="Sticky Note: 10.2 Environment File" width="30%">
-</a>
-
 
 ```bash
 # .env.dev
@@ -1480,16 +1210,6 @@ GRAFANA_PASSWORD=grafana-admin-password
 
 ### 11.1 Why Orchestration?
 
-<a href="../../../assets/images/diagrams/java/52-docker/11-1-why-orchestration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-1-why-orchestration-handwritten.svg" alt="Handwritten: 11.1 Why Orchestration?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-1-why-orchestration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-1-why-orchestration-diagram.svg" alt="Diagram: 11.1 Why Orchestration?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-1-why-orchestration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-1-why-orchestration-sticky.svg" alt="Sticky Note: 11.1 Why Orchestration?" width="30%">
-</a>
-
 
 Running `docker compose up` works for a single host, but production needs:
 
@@ -1507,16 +1227,6 @@ Running `docker compose up` works for a single host, but production needs:
 
 ### 11.2 Orchestration Options
 
-<a href="../../../assets/images/diagrams/java/52-docker/11-2-orchestration-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-2-orchestration-options-handwritten.svg" alt="Handwritten: 11.2 Orchestration Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-2-orchestration-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-2-orchestration-options-diagram.svg" alt="Diagram: 11.2 Orchestration Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-2-orchestration-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-2-orchestration-options-sticky.svg" alt="Sticky Note: 11.2 Orchestration Options" width="30%">
-</a>
-
 
 | Tool | Type | Complexity | When to Use |
 |------|------|-----------|-------------|
@@ -1526,16 +1236,6 @@ Running `docker compose up` works for a single host, but production needs:
 | AWS ECS | Managed | Medium | AWS-native, easy setup |
 
 ### 11.3 Kubernetes in One Slide
-
-<a href="../../../assets/images/diagrams/java/52-docker/11-3-kubernetes-in-one-slide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-3-kubernetes-in-one-slide-handwritten.svg" alt="Handwritten: 11.3 Kubernetes in One Slide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-3-kubernetes-in-one-slide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-3-kubernetes-in-one-slide-diagram.svg" alt="Diagram: 11.3 Kubernetes in One Slide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-3-kubernetes-in-one-slide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-3-kubernetes-in-one-slide-sticky.svg" alt="Sticky Note: 11.3 Kubernetes in One Slide" width="30%">
-</a>
 
 
 ```
@@ -1553,16 +1253,6 @@ Running `docker compose up` works for a single host, but production needs:
 
 ### 11.4 Docker Compose vs Kubernetes Mapping
 
-<a href="../../../assets/images/diagrams/java/52-docker/11-4-docker-compose-vs-kubernetes-mapping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-4-docker-compose-vs-kubernetes-mapping-handwritten.svg" alt="Handwritten: 11.4 Docker Compose vs Kubernetes Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-4-docker-compose-vs-kubernetes-mapping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-4-docker-compose-vs-kubernetes-mapping-diagram.svg" alt="Diagram: 11.4 Docker Compose vs Kubernetes Mapping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-4-docker-compose-vs-kubernetes-mapping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-4-docker-compose-vs-kubernetes-mapping-sticky.svg" alt="Sticky Note: 11.4 Docker Compose vs Kubernetes Mapping" width="30%">
-</a>
-
 
 | Docker Compose | Kubernetes |
 |---------------|-----------|
@@ -1578,16 +1268,6 @@ Running `docker compose up` works for a single host, but production needs:
 | docker-compose.yml | Helm chart / Kustomize |
 
 ### 11.5 Migrating from Docker Compose to Kubernetes
-
-<a href="../../../assets/images/diagrams/java/52-docker/11-5-migrating-from-docker-compose-to-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-5-migrating-from-docker-compose-to-kubernetes-handwritten.svg" alt="Handwritten: 11.5 Migrating from Docker Compose to Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-5-migrating-from-docker-compose-to-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-5-migrating-from-docker-compose-to-kubernetes-diagram.svg" alt="Diagram: 11.5 Migrating from Docker Compose to Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/11-5-migrating-from-docker-compose-to-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/11-5-migrating-from-docker-compose-to-kubernetes-sticky.svg" alt="Sticky Note: 11.5 Migrating from Docker Compose to Kubernetes" width="30%">
-</a>
 
 
 ```yaml
@@ -1629,16 +1309,6 @@ kubectl apply -f k8s-manifests/
 
 ### 12.1 Build Script
 
-<a href="../../../assets/images/diagrams/java/52-docker/12-1-build-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/12-1-build-script-handwritten.svg" alt="Handwritten: 12.1 Build Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/12-1-build-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/12-1-build-script-diagram.svg" alt="Diagram: 12.1 Build Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/12-1-build-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/12-1-build-script-sticky.svg" alt="Sticky Note: 12.1 Build Script" width="30%">
-</a>
-
 
 ```bash
 #!/bin/bash
@@ -1678,16 +1348,6 @@ echo "Done."
 ```
 
 ### 12.2 Dockerfile with Build Args
-
-<a href="../../../assets/images/diagrams/java/52-docker/12-2-dockerfile-with-build-args-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/12-2-dockerfile-with-build-args-handwritten.svg" alt="Handwritten: 12.2 Dockerfile with Build Args" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/12-2-dockerfile-with-build-args-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/12-2-dockerfile-with-build-args-diagram.svg" alt="Diagram: 12.2 Dockerfile with Build Args" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/52-docker/12-2-dockerfile-with-build-args-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/52-docker/12-2-dockerfile-with-build-args-sticky.svg" alt="Sticky Note: 12.2 Dockerfile with Build Args" width="30%">
-</a>
 
 
 ```dockerfile

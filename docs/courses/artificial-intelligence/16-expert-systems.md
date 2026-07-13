@@ -106,16 +106,6 @@ flowchart LR
 
 ### 1.1 Core Components
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-1-core-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-1-core-components-handwritten.svg" alt="Handwritten: 1.1 Core Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-1-core-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-1-core-components-diagram.svg" alt="Diagram: 1.1 Core Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-1-core-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-1-core-components-sticky.svg" alt="Sticky Note: 1.1 Core Components" width="30%">
-</a>
-
 
 A classical expert system has four principal components:
 
@@ -127,16 +117,6 @@ A classical expert system has four principal components:
 | **Explanation Facility** | Justifies conclusions | Doctor explaining diagnosis to patient |
 
 ### 1.2 System Architecture Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-2-system-architecture-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-2-system-architecture-pseudocode-handwritten.svg" alt="Handwritten: 1.2 System Architecture Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-2-system-architecture-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-2-system-architecture-pseudocode-diagram.svg" alt="Diagram: 1.2 System Architecture Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-2-system-architecture-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-2-system-architecture-pseudocode-sticky.svg" alt="Sticky Note: 1.2 System Architecture Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -154,16 +134,6 @@ FUNCTION ExpertSystemShell(rules, initial_facts):
 ```
 
 ### 1.3 Python Implementation — ES Shell
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-3-python-implementation-es-shell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-3-python-implementation-es-shell-handwritten.svg" alt="Handwritten: 1.3 Python Implementation — ES Shell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-3-python-implementation-es-shell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-3-python-implementation-es-shell-diagram.svg" alt="Diagram: 1.3 Python Implementation — ES Shell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-3-python-implementation-es-shell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-3-python-implementation-es-shell-sticky.svg" alt="Sticky Note: 1.3 Python Implementation — ES Shell" width="30%">
-</a>
 
 
 ```python
@@ -229,16 +199,6 @@ class ExpertSystemShell:
 
 ### 1.4 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-4-complexity-analysis-handwritten.svg" alt="Handwritten: 1.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-4-complexity-analysis-diagram.svg" alt="Diagram: 1.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-4-complexity-analysis-sticky.svg" alt="Sticky Note: 1.4 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |-----------|---------------|-----------------|-----|
@@ -251,16 +211,6 @@ class ExpertSystemShell:
 
 ### 1.5 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 1.5 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-5-advantages-disadvantages-diagram.svg" alt="Diagram: 1.5 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 1.5 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -272,16 +222,6 @@ class ExpertSystemShell:
 | Works with incomplete knowledge | Limited to narrow domains |
 
 ### 1.6 Edge Cases in ES Architecture
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-6-edge-cases-in-es-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-6-edge-cases-in-es-architecture-handwritten.svg" alt="Handwritten: 1.6 Edge Cases in ES Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-6-edge-cases-in-es-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-6-edge-cases-in-es-architecture-diagram.svg" alt="Diagram: 1.6 Edge Cases in ES Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-6-edge-cases-in-es-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/1-6-edge-cases-in-es-architecture-sticky.svg" alt="Sticky Note: 1.6 Edge Cases in ES Architecture" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -300,16 +240,6 @@ class ExpertSystemShell:
 
 ### 2.1 Knowledge Representation Formats
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-1-knowledge-representation-formats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-1-knowledge-representation-formats-handwritten.svg" alt="Handwritten: 2.1 Knowledge Representation Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-1-knowledge-representation-formats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-1-knowledge-representation-formats-diagram.svg" alt="Diagram: 2.1 Knowledge Representation Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-1-knowledge-representation-formats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-1-knowledge-representation-formats-sticky.svg" alt="Sticky Note: 2.1 Knowledge Representation Formats" width="30%">
-</a>
-
 
 | Format | Structure | Example | Best For |
 |--------|-----------|---------|----------|
@@ -321,16 +251,6 @@ class ExpertSystemShell:
 
 ### 2.2 Production Rule Anatomy
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-2-production-rule-anatomy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-2-production-rule-anatomy-handwritten.svg" alt="Handwritten: 2.2 Production Rule Anatomy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-2-production-rule-anatomy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-2-production-rule-anatomy-diagram.svg" alt="Diagram: 2.2 Production Rule Anatomy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-2-production-rule-anatomy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-2-production-rule-anatomy-sticky.svg" alt="Sticky Note: 2.2 Production Rule Anatomy" width="30%">
-</a>
-
 
 ```
 Rule <name>
@@ -341,16 +261,6 @@ Rule <name>
 Each pattern tests a fact in working memory. Each action modifies working memory (add, remove, update).
 
 ### 2.3 Knowledge Base Operations Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-3-knowledge-base-operations-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-3-knowledge-base-operations-pseudocode-handwritten.svg" alt="Handwritten: 2.3 Knowledge Base Operations Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-3-knowledge-base-operations-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-3-knowledge-base-operations-pseudocode-diagram.svg" alt="Diagram: 2.3 Knowledge Base Operations Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-3-knowledge-base-operations-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-3-knowledge-base-operations-pseudocode-sticky.svg" alt="Sticky Note: 2.3 Knowledge Base Operations Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -383,16 +293,6 @@ FUNCTION KnowledgeBase():
 
 ### 2.4 Dry Run — Knowledge Base State Changes
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-4-dry-run-knowledge-base-state-changes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-4-dry-run-knowledge-base-state-changes-handwritten.svg" alt="Handwritten: 2.4 Dry Run — Knowledge Base State Changes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-4-dry-run-knowledge-base-state-changes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-4-dry-run-knowledge-base-state-changes-diagram.svg" alt="Diagram: 2.4 Dry Run — Knowledge Base State Changes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-4-dry-run-knowledge-base-state-changes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-4-dry-run-knowledge-base-state-changes-sticky.svg" alt="Sticky Note: 2.4 Dry Run — Knowledge Base State Changes" width="30%">
-</a>
-
 
 **Scenario:** Animal classification with 4 rules and initial facts {has_hair=true, eats_meat=true}
 
@@ -406,16 +306,6 @@ FUNCTION KnowledgeBase():
 | 3 | Fire R3 (mammal + carnivore → tiger) | {is_mammal: T, is_carnivore: T, animal: tiger} |
 
 ### 2.5 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-5-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-5-python-implementation-handwritten.svg" alt="Handwritten: 2.5 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-5-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-5-python-implementation-diagram.svg" alt="Diagram: 2.5 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-5-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-5-python-implementation-sticky.svg" alt="Sticky Note: 2.5 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -517,16 +407,6 @@ kb.run()
 
 ### 2.6 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-6-complexity-analysis-handwritten.svg" alt="Handwritten: 2.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-6-complexity-analysis-diagram.svg" alt="Diagram: 2.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-6-complexity-analysis-sticky.svg" alt="Sticky Note: 2.6 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -539,16 +419,6 @@ kb.run()
 
 ### 2.7 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.7 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-7-advantages-disadvantages-diagram.svg" alt="Diagram: 2.7 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.7 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -559,16 +429,6 @@ kb.run()
 | Domain experts can read rules | Scalability issues beyond ~10,000 rules |
 
 ### 2.8 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-8-edge-cases-handwritten.svg" alt="Handwritten: 2.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-8-edge-cases-diagram.svg" alt="Diagram: 2.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/2-8-edge-cases-sticky.svg" alt="Sticky Note: 2.8 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Example | Handling |
@@ -587,16 +447,6 @@ kb.run()
 
 ### 3.1 Match-Resolve-Fire Cycle
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-1-match-resolve-fire-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-1-match-resolve-fire-cycle-handwritten.svg" alt="Handwritten: 3.1 Match-Resolve-Fire Cycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-1-match-resolve-fire-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-1-match-resolve-fire-cycle-diagram.svg" alt="Diagram: 3.1 Match-Resolve-Fire Cycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-1-match-resolve-fire-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-1-match-resolve-fire-cycle-sticky.svg" alt="Sticky Note: 3.1 Match-Resolve-Fire Cycle" width="30%">
-</a>
-
 
 The inference engine operates in three repeating phases:
 
@@ -614,16 +464,6 @@ The inference engine operates in three repeating phases:
 
 ### 3.2 Conflict Resolution Strategies
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-2-conflict-resolution-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-2-conflict-resolution-strategies-handwritten.svg" alt="Handwritten: 3.2 Conflict Resolution Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-2-conflict-resolution-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-2-conflict-resolution-strategies-diagram.svg" alt="Diagram: 3.2 Conflict Resolution Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-2-conflict-resolution-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-2-conflict-resolution-strategies-sticky.svg" alt="Sticky Note: 3.2 Conflict Resolution Strategies" width="30%">
-</a>
-
 
 | Strategy | Rule | Description |
 |----------|------|-------------|
@@ -634,16 +474,6 @@ The inference engine operates in three repeating phases:
 | **Context Limiting** | Partition rules into contexts | Focus on relevant rule subset |
 
 ### 3.3 Inference Engine Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-3-inference-engine-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-3-inference-engine-pseudocode-handwritten.svg" alt="Handwritten: 3.3 Inference Engine Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-3-inference-engine-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-3-inference-engine-pseudocode-diagram.svg" alt="Diagram: 3.3 Inference Engine Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-3-inference-engine-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-3-inference-engine-pseudocode-sticky.svg" alt="Sticky Note: 3.3 Inference Engine Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -678,16 +508,6 @@ FUNCTION InferenceEngine(rules, facts):
 ```
 
 ### 3.4 Python Inference Engine
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-4-python-inference-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-4-python-inference-engine-handwritten.svg" alt="Handwritten: 3.4 Python Inference Engine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-4-python-inference-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-4-python-inference-engine-diagram.svg" alt="Diagram: 3.4 Python Inference Engine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-4-python-inference-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-4-python-inference-engine-sticky.svg" alt="Sticky Note: 3.4 Python Inference Engine" width="30%">
-</a>
 
 
 ```python
@@ -745,16 +565,6 @@ class InferenceEngine:
 
 ### 3.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-5-complexity-analysis-handwritten.svg" alt="Handwritten: 3.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-5-complexity-analysis-diagram.svg" alt="Diagram: 3.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-5-complexity-analysis-sticky.svg" alt="Sticky Note: 3.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Phase | Time Complexity | Why |
 |-------|---------------|-----|
@@ -768,16 +578,6 @@ class InferenceEngine:
 
 ### 3.6 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 3.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-6-advantages-disadvantages-diagram.svg" alt="Diagram: 3.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 3.6 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -788,16 +588,6 @@ class InferenceEngine:
 | Multiple resolution strategies available | Difficult to debug rule interactions |
 
 ### 3.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-7-edge-cases-handwritten.svg" alt="Handwritten: 3.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-7-edge-cases-diagram.svg" alt="Diagram: 3.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/3-7-edge-cases-sticky.svg" alt="Sticky Note: 3.7 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Problem | Solution |
@@ -814,16 +604,6 @@ class InferenceEngine:
 **Real-World Analogy:** A detective arrives at a crime scene and collects evidence (fingerprints, DNA, witness statements). Each piece of evidence triggers a line of investigation: "IF fingerprint matches database THEN identify suspect." The detective works from evidence toward a conclusion, with no specific suspect in mind initially.
 
 ### 4.1 Algorithm (Steps)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-1-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-1-algorithm-steps-handwritten.svg" alt="Handwritten: 4.1 Algorithm (Steps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-1-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-1-algorithm-steps-diagram.svg" alt="Diagram: 4.1 Algorithm (Steps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-1-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-1-algorithm-steps-sticky.svg" alt="Sticky Note: 4.1 Algorithm (Steps)" width="30%">
-</a>
 
 
 ```
@@ -848,16 +628,6 @@ OUTPUT: Set of derived conclusions C
 ```
 
 ### 4.2 Detailed Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-2-detailed-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-2-detailed-pseudocode-handwritten.svg" alt="Handwritten: 4.2 Detailed Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-2-detailed-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-2-detailed-pseudocode-diagram.svg" alt="Diagram: 4.2 Detailed Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-2-detailed-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-2-detailed-pseudocode-sticky.svg" alt="Sticky Note: 4.2 Detailed Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -901,16 +671,6 @@ FUNCTION forward_chain(rules, initial_facts, max_iterations=100):
 
 ### 4.3 Dry Run — Forward Chaining Trace Table
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-3-dry-run-forward-chaining-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-3-dry-run-forward-chaining-trace-table-handwritten.svg" alt="Handwritten: 4.3 Dry Run — Forward Chaining Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-3-dry-run-forward-chaining-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-3-dry-run-forward-chaining-trace-table-diagram.svg" alt="Diagram: 4.3 Dry Run — Forward Chaining Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-3-dry-run-forward-chaining-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-3-dry-run-forward-chaining-trace-table-sticky.svg" alt="Sticky Note: 4.3 Dry Run — Forward Chaining Trace Table" width="30%">
-</a>
-
 
 **Rule Set:** Animal classification
 
@@ -939,16 +699,6 @@ FUNCTION forward_chain(rules, initial_facts, max_iterations=100):
 **Final WM:** {has_hair, eats_meat, has_stripes, is_mammal, is_carnivore, animal=tiger}
 
 ### 4.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-4-python-implementation-handwritten.svg" alt="Handwritten: 4.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-4-python-implementation-diagram.svg" alt="Diagram: 4.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-4-python-implementation-sticky.svg" alt="Sticky Note: 4.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1043,16 +793,6 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 
 ### 4.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-5-complexity-analysis-handwritten.svg" alt="Handwritten: 4.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-5-complexity-analysis-diagram.svg" alt="Diagram: 4.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-5-complexity-analysis-sticky.svg" alt="Sticky Note: 4.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
@@ -1066,16 +806,6 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 
 ### 4.6 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 4.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-6-advantages-disadvantages-diagram.svg" alt="Diagram: 4.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 4.6 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1085,16 +815,6 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 | Responsive to new information | Termination not guaranteed |
 
 ### 4.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-7-edge-cases-handwritten.svg" alt="Handwritten: 4.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-7-edge-cases-diagram.svg" alt="Diagram: 4.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/4-7-edge-cases-sticky.svg" alt="Sticky Note: 4.7 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Example | Handling |
@@ -1112,16 +832,6 @@ Diagnosis: ['battery_dead', 'car_wont_start', 'headlights_dim', 'replace_battery
 **Real-World Analogy:** A doctor starts with "Does the patient have strep throat?" then checks evidence: fever? sore throat? Each question supports or refutes the hypothesis. If insufficient, sub-hypotheses form. This is backward chaining — start with a goal, work backward to evidence.
 
 ### 5.1 Algorithm (Steps)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-1-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-1-algorithm-steps-handwritten.svg" alt="Handwritten: 5.1 Algorithm (Steps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-1-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-1-algorithm-steps-diagram.svg" alt="Diagram: 5.1 Algorithm (Steps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-1-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-1-algorithm-steps-sticky.svg" alt="Sticky Note: 5.1 Algorithm (Steps)" width="30%">
-</a>
 
 
 ```
@@ -1151,16 +861,6 @@ RETURN (G IN PROVED)
 ```
 
 ### 5.2 Pseudocode with AND/OR Tree
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-2-pseudocode-with-and-or-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-2-pseudocode-with-and-or-tree-handwritten.svg" alt="Handwritten: 5.2 Pseudocode with AND/OR Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-2-pseudocode-with-and-or-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-2-pseudocode-with-and-or-tree-diagram.svg" alt="Diagram: 5.2 Pseudocode with AND/OR Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-2-pseudocode-with-and-or-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-2-pseudocode-with-and-or-tree-sticky.svg" alt="Sticky Note: 5.2 Pseudocode with AND/OR Tree" width="30%">
-</a>
 
 
 ```
@@ -1196,16 +896,6 @@ FUNCTION backward_chain(goal, rules, facts, depth=0):
 
 ### 5.3 Dry Run — Backward Chaining Trace Table
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-3-dry-run-backward-chaining-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-3-dry-run-backward-chaining-trace-table-handwritten.svg" alt="Handwritten: 5.3 Dry Run — Backward Chaining Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-3-dry-run-backward-chaining-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-3-dry-run-backward-chaining-trace-table-diagram.svg" alt="Diagram: 5.3 Dry Run — Backward Chaining Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-3-dry-run-backward-chaining-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-3-dry-run-backward-chaining-trace-table-sticky.svg" alt="Sticky Note: 5.3 Dry Run — Backward Chaining Trace Table" width="30%">
-</a>
-
 
 **Goal:** animal = tiger
 
@@ -1226,16 +916,6 @@ FUNCTION backward_chain(goal, rules, facts, depth=0):
 **Result:** animal=tiger = True (chain: R7 ← R4 ← R1)
 
 ### 5.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-4-python-implementation-handwritten.svg" alt="Handwritten: 5.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-4-python-implementation-diagram.svg" alt="Diagram: 5.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-4-python-implementation-sticky.svg" alt="Sticky Note: 5.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1314,16 +994,6 @@ Chain: R2
 
 ### 5.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-5-complexity-analysis-handwritten.svg" alt="Handwritten: 5.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-5-complexity-analysis-diagram.svg" alt="Diagram: 5.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-5-complexity-analysis-sticky.svg" alt="Sticky Note: 5.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
@@ -1335,16 +1005,6 @@ Chain: R2
 **Why exponential:** Each goal with B candidate rules exploring D subgoals = B^D. Domain heuristics prune most branches.
 
 ### 5.6 Forward vs Backward Chaining Comparison
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-6-forward-vs-backward-chaining-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-6-forward-vs-backward-chaining-comparison-handwritten.svg" alt="Handwritten: 5.6 Forward vs Backward Chaining Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-6-forward-vs-backward-chaining-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-6-forward-vs-backward-chaining-comparison-diagram.svg" alt="Diagram: 5.6 Forward vs Backward Chaining Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-6-forward-vs-backward-chaining-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-6-forward-vs-backward-chaining-comparison-sticky.svg" alt="Sticky Note: 5.6 Forward vs Backward Chaining Comparison" width="30%">
-</a>
 
 
 | Criterion | Forward Chaining | Backward Chaining |
@@ -1359,16 +1019,6 @@ Chain: R2
 
 ### 5.7 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 5.7 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-7-advantages-disadvantages-diagram.svg" alt="Diagram: 5.7 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 5.7 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1378,16 +1028,6 @@ Chain: R2
 | Works for diagnostic tasks | AND/OR tree can explode |
 
 ### 5.8 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-8-edge-cases-handwritten.svg" alt="Handwritten: 5.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-8-edge-cases-diagram.svg" alt="Diagram: 5.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/5-8-edge-cases-sticky.svg" alt="Sticky Note: 5.8 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Handling |
@@ -1405,16 +1045,6 @@ Chain: R2
 
 ### 6.1 Why and How Explanations
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-1-why-and-how-explanations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-1-why-and-how-explanations-handwritten.svg" alt="Handwritten: 6.1 Why and How Explanations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-1-why-and-how-explanations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-1-why-and-how-explanations-diagram.svg" alt="Diagram: 6.1 Why and How Explanations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-1-why-and-how-explanations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-1-why-and-how-explanations-sticky.svg" alt="Sticky Note: 6.1 Why and How Explanations" width="30%">
-</a>
-
 
 | Question | Meaning | Example |
 |----------|---------|---------|
@@ -1422,16 +1052,6 @@ Chain: R2
 | **Why** ask for fact Y? | Show current goal | "To determine carnivore via R4" |
 
 ### 6.2 Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-2-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-2-pseudocode-handwritten.svg" alt="Handwritten: 6.2 Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-2-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-2-pseudocode-diagram.svg" alt="Diagram: 6.2 Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-2-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-2-pseudocode-sticky.svg" alt="Sticky Note: 6.2 Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1451,16 +1071,6 @@ FUNCTION ExplainWhy(fact, current_goal, rule):
 ```
 
 ### 6.3 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-3-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-3-python-implementation-handwritten.svg" alt="Handwritten: 6.3 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-3-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-3-python-implementation-diagram.svg" alt="Diagram: 6.3 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-3-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-3-python-implementation-sticky.svg" alt="Sticky Note: 6.3 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1535,16 +1145,6 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 
 ### 6.4 Complexity
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-4-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-4-complexity-handwritten.svg" alt="Handwritten: 6.4 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-4-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-4-complexity-diagram.svg" alt="Diagram: 6.4 Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-4-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-4-complexity-sticky.svg" alt="Sticky Note: 6.4 Complexity" width="30%">
-</a>
-
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -1553,16 +1153,6 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 | Storage | O(R × (A + C)) | All rules with conditions/actions |
 
 ### 6.5 Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 6.5 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-5-advantages-disadvantages-diagram.svg" alt="Diagram: 6.5 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 6.5 Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -1573,16 +1163,6 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 | Regulatory audit trail | Rule-level only, no causal model |
 
 ### 6.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-6-edge-cases-handwritten.svg" alt="Handwritten: 6.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-6-edge-cases-diagram.svg" alt="Diagram: 6.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/6-6-edge-cases-sticky.svg" alt="Sticky Note: 6.6 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Solution |
@@ -1600,16 +1180,6 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 
 ### 7.1 Sources of Uncertainty
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-1-sources-of-uncertainty-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-1-sources-of-uncertainty-handwritten.svg" alt="Handwritten: 7.1 Sources of Uncertainty" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-1-sources-of-uncertainty-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-1-sources-of-uncertainty-diagram.svg" alt="Diagram: 7.1 Sources of Uncertainty" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-1-sources-of-uncertainty-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-1-sources-of-uncertainty-sticky.svg" alt="Sticky Note: 7.1 Sources of Uncertainty" width="30%">
-</a>
-
 
 | Source | Example |
 |--------|---------|
@@ -1620,16 +1190,6 @@ Rule: [R4] IF is_mammal ∧ eats_meat THEN is_carnivore
 | Temporal changes | Symptoms evolved since yesterday |
 
 ### 7.2 Certainty Factors (MYCIN Model)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-2-certainty-factors-mycin-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-2-certainty-factors-mycin-model-handwritten.svg" alt="Handwritten: 7.2 Certainty Factors (MYCIN Model)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-2-certainty-factors-mycin-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-2-certainty-factors-mycin-model-diagram.svg" alt="Diagram: 7.2 Certainty Factors (MYCIN Model)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-2-certainty-factors-mycin-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-2-certainty-factors-mycin-model-sticky.svg" alt="Sticky Note: 7.2 Certainty Factors (MYCIN Model)" width="30%">
-</a>
 
 
 CF ranges from -1.0 (definitely false) to +1.0 (definitely true), 0 = unknown.
@@ -1663,16 +1223,6 @@ FUNCTION CombineCF(cf1, cf2):
 ```
 
 ### 7.3 Dempster-Shafer Theory
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-3-dempster-shafer-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-3-dempster-shafer-theory-handwritten.svg" alt="Handwritten: 7.3 Dempster-Shafer Theory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-3-dempster-shafer-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-3-dempster-shafer-theory-diagram.svg" alt="Diagram: 7.3 Dempster-Shafer Theory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-3-dempster-shafer-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-3-dempster-shafer-theory-sticky.svg" alt="Sticky Note: 7.3 Dempster-Shafer Theory" width="30%">
-</a>
 
 
 **Analogy:** A jury weighs evidence: fingerprints → 60% guilt, alibi → 70% innocence. Standard probability forces guilt + innocence = 1. DS allows "don't know" — remaining probability goes to ignorance.
@@ -1710,16 +1260,6 @@ FUNCTION DempsterCombine(m1, m2, frame):
 ```
 
 ### 7.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-4-python-implementation-handwritten.svg" alt="Handwritten: 7.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-4-python-implementation-diagram.svg" alt="Diagram: 7.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-4-python-implementation-sticky.svg" alt="Sticky Note: 7.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1823,16 +1363,6 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 
 ### 7.5 CF Propagation Dry Run
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-5-cf-propagation-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-5-cf-propagation-dry-run-handwritten.svg" alt="Handwritten: 7.5 CF Propagation Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-5-cf-propagation-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-5-cf-propagation-dry-run-diagram.svg" alt="Diagram: 7.5 CF Propagation Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-5-cf-propagation-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-5-cf-propagation-dry-run-sticky.svg" alt="Sticky Note: 7.5 CF Propagation Dry Run" width="30%">
-</a>
-
 
 | Step | Fact | CF | Rule | Rule CF | Derived | Computed CF |
 |------|------|----|------|---------|---------|-------------|
@@ -1841,16 +1371,6 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 | 3 | combine | 0.48+0.35 | — | — | flu final | 0.48+0.35-(0.48×0.35)=0.662 |
 
 ### 7.6 Complexity Analysis
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-6-complexity-analysis-handwritten.svg" alt="Handwritten: 7.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-6-complexity-analysis-diagram.svg" alt="Diagram: 7.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-6-complexity-analysis-sticky.svg" alt="Sticky Note: 7.6 Complexity Analysis" width="30%">
-</a>
 
 
 | Approach | Time | Space | Why |
@@ -1864,16 +1384,6 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 
 ### 7.7 CF vs DS vs Bayesian
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-7-cf-vs-ds-vs-bayesian-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-7-cf-vs-ds-vs-bayesian-handwritten.svg" alt="Handwritten: 7.7 CF vs DS vs Bayesian" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-7-cf-vs-ds-vs-bayesian-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-7-cf-vs-ds-vs-bayesian-diagram.svg" alt="Diagram: 7.7 CF vs DS vs Bayesian" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-7-cf-vs-ds-vs-bayesian-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-7-cf-vs-ds-vs-bayesian-sticky.svg" alt="Sticky Note: 7.7 CF vs DS vs Bayesian" width="30%">
-</a>
-
 
 | Criterion | Certainty Factors | Dempster-Shafer | Bayesian |
 |-----------|------------------|-----------------|----------|
@@ -1886,16 +1396,6 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 
 ### 7.8 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-8-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-8-advantages-disadvantages-handwritten.svg" alt="Handwritten: 7.8 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-8-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-8-advantages-disadvantages-diagram.svg" alt="Diagram: 7.8 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-8-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-8-advantages-disadvantages-sticky.svg" alt="Sticky Note: 7.8 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Method | Advantages | Disadvantages |
 |--------|-----------|--------------|
@@ -1903,16 +1403,6 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 | Dempster-Shafer | Models ignorance; separates belief from evidence | Exponential; normalization counterintuitive |
 
 ### 7.9 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-9-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-9-edge-cases-handwritten.svg" alt="Handwritten: 7.9 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-9-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-9-edge-cases-diagram.svg" alt="Diagram: 7.9 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-9-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/7-9-edge-cases-sticky.svg" alt="Sticky Note: 7.9 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Problem | Handling |
@@ -1929,16 +1419,6 @@ DS: Bel(Flu)=0.00, Pl(Flu)=0.80, Ignorance=0.80
 
 ### 8.1 Overview
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-1-overview-handwritten.svg" alt="Handwritten: 8.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-1-overview-diagram.svg" alt="Diagram: 8.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-1-overview-sticky.svg" alt="Sticky Note: 8.1 Overview" width="30%">
-</a>
-
 
 MYCIN (Shortliffe, 1976) was developed at Stanford to diagnose bacterial infections and recommend antibiotics. It was the first system to demonstrate that rule-based AI could match human expert performance.
 
@@ -1952,16 +1432,6 @@ MYCIN (Shortliffe, 1976) was developed at Stanford to diagnose bacterial infecti
 | **Status** | Never deployed clinically (ethical/legal concerns), but highly influential |
 
 ### 8.2 Architecture in MYCIN
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-2-architecture-in-mycin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-2-architecture-in-mycin-handwritten.svg" alt="Handwritten: 8.2 Architecture in MYCIN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-2-architecture-in-mycin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-2-architecture-in-mycin-diagram.svg" alt="Diagram: 8.2 Architecture in MYCIN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-2-architecture-in-mycin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-2-architecture-in-mycin-sticky.svg" alt="Sticky Note: 8.2 Architecture in MYCIN" width="30%">
-</a>
 
 
 ```
@@ -1981,16 +1451,6 @@ Patient Data (entered by physician)
 ```
 
 ### 8.3 Sample MYCIN-Style Rules
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-3-sample-mycin-style-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-3-sample-mycin-style-rules-handwritten.svg" alt="Handwritten: 8.3 Sample MYCIN-Style Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-3-sample-mycin-style-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-3-sample-mycin-style-rules-diagram.svg" alt="Diagram: 8.3 Sample MYCIN-Style Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-3-sample-mycin-style-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-3-sample-mycin-style-rules-sticky.svg" alt="Sticky Note: 8.3 Sample MYCIN-Style Rules" width="30%">
-</a>
 
 
 ```
@@ -2019,16 +1479,6 @@ RULE 099
 ```
 
 ### 8.4 MYCIN Reasoning Algorithm (Backward Chaining)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-4-mycin-reasoning-algorithm-backward-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-4-mycin-reasoning-algorithm-backward-chaining-handwritten.svg" alt="Handwritten: 8.4 MYCIN Reasoning Algorithm (Backward Chaining)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-4-mycin-reasoning-algorithm-backward-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-4-mycin-reasoning-algorithm-backward-chaining-diagram.svg" alt="Diagram: 8.4 MYCIN Reasoning Algorithm (Backward Chaining)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-4-mycin-reasoning-algorithm-backward-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-4-mycin-reasoning-algorithm-backward-chaining-sticky.svg" alt="Sticky Note: 8.4 MYCIN Reasoning Algorithm (Backward Chaining)" width="30%">
-</a>
 
 
 ```
@@ -2060,16 +1510,6 @@ FUNCTION MYCIN_CF(rule, evidence_cfs):
 
 ### 8.5 Dry Run — MYCIN Diagnosis Trace
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-5-dry-run-mycin-diagnosis-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-5-dry-run-mycin-diagnosis-trace-handwritten.svg" alt="Handwritten: 8.5 Dry Run — MYCIN Diagnosis Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-5-dry-run-mycin-diagnosis-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-5-dry-run-mycin-diagnosis-trace-diagram.svg" alt="Diagram: 8.5 Dry Run — MYCIN Diagnosis Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-5-dry-run-mycin-diagnosis-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-5-dry-run-mycin-diagnosis-trace-sticky.svg" alt="Sticky Note: 8.5 Dry Run — MYCIN Diagnosis Trace" width="30%">
-</a>
-
 
 **Goal:** Identify infecting organism
 
@@ -2087,16 +1527,6 @@ FUNCTION MYCIN_CF(rule, evidence_cfs):
 **Therapy:** Gentamicin (CF=0.63)
 
 ### 8.6 Python MYCIN Simulation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-6-python-mycin-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-6-python-mycin-simulation-handwritten.svg" alt="Handwritten: 8.6 Python MYCIN Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-6-python-mycin-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-6-python-mycin-simulation-diagram.svg" alt="Diagram: 8.6 Python MYCIN Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-6-python-mycin-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-6-python-mycin-simulation-sticky.svg" alt="Sticky Note: 8.6 Python MYCIN Simulation" width="30%">
-</a>
 
 
 ```python
@@ -2215,16 +1645,6 @@ Therapy: Gentamicin (CF=CF(+0.63))
 
 ### 8.7 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-7-complexity-analysis-handwritten.svg" alt="Handwritten: 8.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-7-complexity-analysis-diagram.svg" alt="Diagram: 8.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-7-complexity-analysis-sticky.svg" alt="Sticky Note: 8.7 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Complexity | Why |
 |-----------|-----------|-----|
@@ -2238,16 +1658,6 @@ Therapy: Gentamicin (CF=CF(+0.63))
 
 ### 8.8 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-8-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-8-advantages-disadvantages-handwritten.svg" alt="Handwritten: 8.8 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-8-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-8-advantages-disadvantages-diagram.svg" alt="Diagram: 8.8 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-8-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-8-advantages-disadvantages-sticky.svg" alt="Sticky Note: 8.8 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -2258,16 +1668,6 @@ Therapy: Gentamicin (CF=CF(+0.63))
 | Modular rules for easy updates | Never integrated into clinical workflow |
 
 ### 8.9 MYCIN Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-9-mycin-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-9-mycin-edge-cases-handwritten.svg" alt="Handwritten: 8.9 MYCIN Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-9-mycin-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-9-mycin-edge-cases-diagram.svg" alt="Diagram: 8.9 MYCIN Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-9-mycin-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/8-9-mycin-edge-cases-sticky.svg" alt="Sticky Note: 8.9 MYCIN Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Example | MYCIN Behavior |
@@ -2286,16 +1686,6 @@ Therapy: Gentamicin (CF=CF(+0.63))
 
 ### 9.1 Overview
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-1-overview-handwritten.svg" alt="Handwritten: 9.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-1-overview-diagram.svg" alt="Diagram: 9.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-1-overview-sticky.svg" alt="Sticky Note: 9.1 Overview" width="30%">
-</a>
-
 
 DENDRAL (Feigenbaum, Buchanan, Lederberg, 1969) at Stanford was the first expert system. It inferred molecular structure from mass spectrometry data.
 
@@ -2308,16 +1698,6 @@ DENDRAL (Feigenbaum, Buchanan, Lederberg, 1969) at Stanford was the first expert
 | **Status** | Used by chemists for structure elucidation |
 
 ### 9.2 Plan-Generate-Test Algorithm
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-2-plan-generate-test-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-2-plan-generate-test-algorithm-handwritten.svg" alt="Handwritten: 9.2 Plan-Generate-Test Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-2-plan-generate-test-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-2-plan-generate-test-algorithm-diagram.svg" alt="Diagram: 9.2 Plan-Generate-Test Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-2-plan-generate-test-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-2-plan-generate-test-algorithm-sticky.svg" alt="Sticky Note: 9.2 Plan-Generate-Test Algorithm" width="30%">
-</a>
 
 
 ```
@@ -2348,16 +1728,6 @@ FUNCTION DENDRAL(molecular_formula, mass_spectrum):
 
 ### 9.3 Algorithm Steps
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-3-algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-3-algorithm-steps-handwritten.svg" alt="Handwritten: 9.3 Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-3-algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-3-algorithm-steps-diagram.svg" alt="Diagram: 9.3 Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-3-algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-3-algorithm-steps-sticky.svg" alt="Sticky Note: 9.3 Algorithm Steps" width="30%">
-</a>
-
 
 ```
 1. INPUT: Molecular formula CₙHₘOₚ and mass spectrum (m/z peaks)
@@ -2379,16 +1749,6 @@ FUNCTION DENDRAL(molecular_formula, mass_spectrum):
 
 ### 9.4 Dry Run — DENDRAL Trace
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-4-dry-run-dendral-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-4-dry-run-dendral-trace-handwritten.svg" alt="Handwritten: 9.4 Dry Run — DENDRAL Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-4-dry-run-dendral-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-4-dry-run-dendral-trace-diagram.svg" alt="Diagram: 9.4 Dry Run — DENDRAL Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-4-dry-run-dendral-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-4-dry-run-dendral-trace-sticky.svg" alt="Sticky Note: 9.4 Dry Run — DENDRAL Trace" width="30%">
-</a>
-
 
 **Input:** Formula C₂H₆O, Mass spectrum: peaks at m/z 46, 31, 15
 
@@ -2407,16 +1767,6 @@ FUNCTION DENDRAL(molecular_formula, mass_spectrum):
 | OUTPUT | — | Best candidate | Ethanol (C₂H₅OH) |
 
 ### 9.5 Python DENDRAL Simulation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-5-python-dendral-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-5-python-dendral-simulation-handwritten.svg" alt="Handwritten: 9.5 Python DENDRAL Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-5-python-dendral-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-5-python-dendral-simulation-diagram.svg" alt="Diagram: 9.5 Python DENDRAL Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-5-python-dendral-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-5-python-dendral-simulation-sticky.svg" alt="Sticky Note: 9.5 Python DENDRAL Simulation" width="30%">
-</a>
 
 
 ```python
@@ -2554,16 +1904,6 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 
 ### 9.6 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-6-complexity-analysis-handwritten.svg" alt="Handwritten: 9.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-6-complexity-analysis-diagram.svg" alt="Diagram: 9.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-6-complexity-analysis-sticky.svg" alt="Sticky Note: 9.6 Complexity Analysis" width="30%">
-</a>
-
 
 | Phase | Complexity | Why |
 |-------|-----------|-----|
@@ -2577,16 +1917,6 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 
 ### 9.7 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-7-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-7-advantages-disadvantages-handwritten.svg" alt="Handwritten: 9.7 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-7-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-7-advantages-disadvantages-diagram.svg" alt="Diagram: 9.7 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-7-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-7-advantages-disadvantages-sticky.svg" alt="Sticky Note: 9.7 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -2597,16 +1927,6 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 | Proven approach for structure elucidation | Slow for molecules with >30 atoms |
 
 ### 9.8 DENDRAL Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-8-dendral-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-8-dendral-edge-cases-handwritten.svg" alt="Handwritten: 9.8 DENDRAL Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-8-dendral-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-8-dendral-edge-cases-diagram.svg" alt="Diagram: 9.8 DENDRAL Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-8-dendral-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/9-8-dendral-edge-cases-sticky.svg" alt="Sticky Note: 9.8 DENDRAL Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Handling |
@@ -2638,16 +1958,6 @@ dendral.analyze({'C': 2, 'H': 6, 'O': 1}, spectrum)
 | **Examples** | MYCIN, XCON, tax software | GPT, recommendation systems, fraud detection |
 
 ### 10.1 When to Use Which
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/10-1-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/10-1-when-to-use-which-handwritten.svg" alt="Handwritten: 10.1 When to Use Which" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/10-1-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/10-1-when-to-use-which-diagram.svg" alt="Diagram: 10.1 When to Use Which" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/10-1-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/10-1-when-to-use-which-sticky.svg" alt="Sticky Note: 10.1 When to Use Which" width="30%">
-</a>
 
 
 ```
@@ -2683,16 +1993,6 @@ USE Machine Learning WHEN:
 
 ### 11.1 Production Rules — Detailed
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-1-production-rules-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-1-production-rules-detailed-handwritten.svg" alt="Handwritten: 11.1 Production Rules — Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-1-production-rules-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-1-production-rules-detailed-diagram.svg" alt="Diagram: 11.1 Production Rules — Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-1-production-rules-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-1-production-rules-detailed-sticky.svg" alt="Sticky Note: 11.1 Production Rules — Detailed" width="30%">
-</a>
-
 
 **Structure:** `IF <condition> THEN <action>`
 - Advantage: Modular, natural, explainable
@@ -2700,16 +2000,6 @@ USE Machine Learning WHEN:
 - Best for: Small to medium diagnostic systems (50-5000 rules)
 
 ### 11.2 Frames — Detailed
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-2-frames-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-2-frames-detailed-handwritten.svg" alt="Handwritten: 11.2 Frames — Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-2-frames-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-2-frames-detailed-diagram.svg" alt="Diagram: 11.2 Frames — Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-2-frames-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-2-frames-detailed-sticky.svg" alt="Sticky Note: 11.2 Frames — Detailed" width="30%">
-</a>
 
 
 **Structure:**
@@ -2726,16 +2016,6 @@ Frame: MAMMAL
 
 ### 11.3 Semantic Nets — Detailed
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-3-semantic-nets-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-3-semantic-nets-detailed-handwritten.svg" alt="Handwritten: 11.3 Semantic Nets — Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-3-semantic-nets-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-3-semantic-nets-detailed-diagram.svg" alt="Diagram: 11.3 Semantic Nets — Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-3-semantic-nets-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-3-semantic-nets-detailed-sticky.svg" alt="Sticky Note: 11.3 Semantic Nets — Detailed" width="30%">
-</a>
-
 
 **Structure:** `MAMMAL --is-a--> ANIMAL`, `WHALE --is-a--> MAMMAL`
 - Advantage: Intuitive, supports inheritance, easy to visualize
@@ -2743,16 +2023,6 @@ Frame: MAMMAL
 - Best for: Taxonomies, simple ontologies
 
 ### 11.4 Knowledge Representation Selection Guide
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-4-knowledge-representation-selection-guide-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-4-knowledge-representation-selection-guide-handwritten.svg" alt="Handwritten: 11.4 Knowledge Representation Selection Guide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-4-knowledge-representation-selection-guide-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-4-knowledge-representation-selection-guide-diagram.svg" alt="Diagram: 11.4 Knowledge Representation Selection Guide" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-4-knowledge-representation-selection-guide-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/11-4-knowledge-representation-selection-guide-sticky.svg" alt="Sticky Note: 11.4 Knowledge Representation Selection Guide" width="30%">
-</a>
 
 
 ```
@@ -2777,16 +2047,6 @@ ELIF domain needs simplicity + interpretability:
 ## 12. Interview Corner
 
 ### 12.1 Common Interview Questions
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-1-common-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-1-common-interview-questions-handwritten.svg" alt="Handwritten: 12.1 Common Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-1-common-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-1-common-interview-questions-diagram.svg" alt="Diagram: 12.1 Common Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-1-common-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-1-common-interview-questions-sticky.svg" alt="Sticky Note: 12.1 Common Interview Questions" width="30%">
-</a>
 
 
 **Q1: What is the knowledge acquisition bottleneck and how do you mitigate it?**
@@ -2827,16 +2087,6 @@ Choose ML when:
 
 ### 12.2 Rule-Based vs ML — Deep Dive
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-2-rule-based-vs-ml-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-2-rule-based-vs-ml-deep-dive-handwritten.svg" alt="Handwritten: 12.2 Rule-Based vs ML — Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-2-rule-based-vs-ml-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-2-rule-based-vs-ml-deep-dive-diagram.svg" alt="Diagram: 12.2 Rule-Based vs ML — Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-2-rule-based-vs-ml-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-2-rule-based-vs-ml-deep-dive-sticky.svg" alt="Sticky Note: 12.2 Rule-Based vs ML — Deep Dive" width="30%">
-</a>
-
 
 | Aspect | Rule-Based | ML |
 |--------|-----------|-----|
@@ -2851,16 +2101,6 @@ Choose ML when:
 | **Regulatory compliance** | Strong (explainable) | Challenging (black box) |
 
 ### 12.3 Knowledge Acquisition Bottleneck — Detailed Strategies
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-3-knowledge-acquisition-bottleneck-detailed-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-3-knowledge-acquisition-bottleneck-detailed-strategies-handwritten.svg" alt="Handwritten: 12.3 Knowledge Acquisition Bottleneck — Detailed Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-3-knowledge-acquisition-bottleneck-detailed-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-3-knowledge-acquisition-bottleneck-detailed-strategies-diagram.svg" alt="Diagram: 12.3 Knowledge Acquisition Bottleneck — Detailed Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-3-knowledge-acquisition-bottleneck-detailed-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/12-3-knowledge-acquisition-bottleneck-detailed-strategies-sticky.svg" alt="Sticky Note: 12.3 Knowledge Acquisition Bottleneck — Detailed Strategies" width="30%">
-</a>
 
 
 | Strategy | Description | Time | Effort | Effectiveness |
@@ -2879,16 +2119,6 @@ Choose ML when:
 
 ### 13.1 Medical Diagnosis — MYCIN
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-1-medical-diagnosis-mycin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-1-medical-diagnosis-mycin-handwritten.svg" alt="Handwritten: 13.1 Medical Diagnosis — MYCIN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-1-medical-diagnosis-mycin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-1-medical-diagnosis-mycin-diagram.svg" alt="Diagram: 13.1 Medical Diagnosis — MYCIN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-1-medical-diagnosis-mycin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-1-medical-diagnosis-mycin-sticky.svg" alt="Sticky Note: 13.1 Medical Diagnosis — MYCIN" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -2903,16 +2133,6 @@ Choose ML when:
 
 ### 13.2 Chemical Analysis — DENDRAL
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-2-chemical-analysis-dendral-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-2-chemical-analysis-dendral-handwritten.svg" alt="Handwritten: 13.2 Chemical Analysis — DENDRAL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-2-chemical-analysis-dendral-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-2-chemical-analysis-dendral-diagram.svg" alt="Diagram: 13.2 Chemical Analysis — DENDRAL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-2-chemical-analysis-dendral-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-2-chemical-analysis-dendral-sticky.svg" alt="Sticky Note: 13.2 Chemical Analysis — DENDRAL" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -2926,16 +2146,6 @@ Choose ML when:
 **Code Example:** See Section 9.5 (DENDRAL Python simulation)
 
 ### 13.3 Configuration — XCON/R1
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-3-configuration-xcon-r1-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-3-configuration-xcon-r1-handwritten.svg" alt="Handwritten: 13.3 Configuration — XCON/R1" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-3-configuration-xcon-r1-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-3-configuration-xcon-r1-diagram.svg" alt="Diagram: 13.3 Configuration — XCON/R1" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-3-configuration-xcon-r1-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-3-configuration-xcon-r1-sticky.svg" alt="Sticky Note: 13.3 Configuration — XCON/R1" width="30%">
-</a>
 
 
 | Aspect | Detail |
@@ -2957,16 +2167,6 @@ Choose ML when:
 
 ### 13.4 Other Notable Applications
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-4-other-notable-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-4-other-notable-applications-handwritten.svg" alt="Handwritten: 13.4 Other Notable Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-4-other-notable-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-4-other-notable-applications-diagram.svg" alt="Diagram: 13.4 Other Notable Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-4-other-notable-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/13-4-other-notable-applications-sticky.svg" alt="Sticky Note: 13.4 Other Notable Applications" width="30%">
-</a>
-
 
 | System | Domain | Rules | Impact |
 |--------|--------|-------|--------|
@@ -2984,16 +2184,6 @@ Choose ML when:
 **Real-World Analogy:** CLIPS is like a programming language designed specifically for IF-THEN rules, similar to how SQL is designed specifically for database queries. You tell CLIPS "what are the rules" and "what are the facts" — it handles the engine.
 
 ### 14.1 CLIPS Architecture
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-1-clips-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-1-clips-architecture-handwritten.svg" alt="Handwritten: 14.1 CLIPS Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-1-clips-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-1-clips-architecture-diagram.svg" alt="Diagram: 14.1 CLIPS Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-1-clips-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-1-clips-architecture-sticky.svg" alt="Sticky Note: 14.1 CLIPS Architecture" width="30%">
-</a>
 
 
 ```
@@ -3014,16 +2204,6 @@ CLIPS Program
 ```
 
 ### 14.2 CLIPS Syntax
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-2-clips-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-2-clips-syntax-handwritten.svg" alt="Handwritten: 14.2 CLIPS Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-2-clips-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-2-clips-syntax-diagram.svg" alt="Diagram: 14.2 CLIPS Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-2-clips-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-2-clips-syntax-sticky.svg" alt="Sticky Note: 14.2 CLIPS Syntax" width="30%">
-</a>
 
 
 ```
@@ -3057,16 +2237,6 @@ CLIPS Program
 
 ### 14.3 CLIPS Features
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-3-clips-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-3-clips-features-handwritten.svg" alt="Handwritten: 14.3 CLIPS Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-3-clips-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-3-clips-features-diagram.svg" alt="Diagram: 14.3 CLIPS Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-3-clips-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-3-clips-features-sticky.svg" alt="Sticky Note: 14.3 CLIPS Features" width="30%">
-</a>
-
 
 | Feature | Description |
 |---------|-------------|
@@ -3078,16 +2248,6 @@ CLIPS Program
 | Salience | Rule priority (higher = fires first) |
 
 ### 14.4 CLIPS Salience and Conflict Resolution Example
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-4-clips-salience-and-conflict-resolution-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-4-clips-salience-and-conflict-resolution-example-handwritten.svg" alt="Handwritten: 14.4 CLIPS Salience and Conflict Resolution Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-4-clips-salience-and-conflict-resolution-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-4-clips-salience-and-conflict-resolution-example-diagram.svg" alt="Diagram: 14.4 CLIPS Salience and Conflict Resolution Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-4-clips-salience-and-conflict-resolution-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-4-clips-salience-and-conflict-resolution-example-sticky.svg" alt="Sticky Note: 14.4 CLIPS Salience and Conflict Resolution Example" width="30%">
-</a>
 
 
 ```
@@ -3108,16 +2268,6 @@ CLIPS Program
 
 ### 14.5 CLIPS Rete Network
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-5-clips-rete-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-5-clips-rete-network-handwritten.svg" alt="Handwritten: 14.5 CLIPS Rete Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-5-clips-rete-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-5-clips-rete-network-diagram.svg" alt="Diagram: 14.5 CLIPS Rete Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-5-clips-rete-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/14-5-clips-rete-network-sticky.svg" alt="Sticky Note: 14.5 CLIPS Rete Network" width="30%">
-</a>
-
 
 CLIPS uses the Rete algorithm internally. The Rete network has:
 - **Alpha nodes:** Test single conditions (e.g., "stain = gramneg")
@@ -3134,30 +2284,10 @@ CLIPS uses the Rete algorithm internally. The Rete network has:
 
 ### 15.1 The Bottleneck
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-1-the-bottleneck-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-1-the-bottleneck-handwritten.svg" alt="Handwritten: 15.1 The Bottleneck" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-1-the-bottleneck-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-1-the-bottleneck-diagram.svg" alt="Diagram: 15.1 The Bottleneck" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-1-the-bottleneck-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-1-the-bottleneck-sticky.svg" alt="Sticky Note: 15.1 The Bottleneck" width="30%">
-</a>
-
 
 The knowledge acquisition bottleneck is widely recognized as the primary obstacle to expert system development. It takes approximately **400 hours** of expert time per **100 rules**.
 
 ### 15.2 Knowledge Acquisition Methods
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-2-knowledge-acquisition-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-2-knowledge-acquisition-methods-handwritten.svg" alt="Handwritten: 15.2 Knowledge Acquisition Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-2-knowledge-acquisition-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-2-knowledge-acquisition-methods-diagram.svg" alt="Diagram: 15.2 Knowledge Acquisition Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-2-knowledge-acquisition-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-2-knowledge-acquisition-methods-sticky.svg" alt="Sticky Note: 15.2 Knowledge Acquisition Methods" width="30%">
-</a>
 
 
 | Method | Description | Pros | Cons |
@@ -3170,16 +2300,6 @@ The knowledge acquisition bottleneck is widely recognized as the primary obstacl
 | **Document Analysis** | Extract from manuals | Systematic coverage | May be outdated |
 
 ### 15.3 Knowledge Engineer Skills
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-3-knowledge-engineer-skills-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-3-knowledge-engineer-skills-handwritten.svg" alt="Handwritten: 15.3 Knowledge Engineer Skills" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-3-knowledge-engineer-skills-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-3-knowledge-engineer-skills-diagram.svg" alt="Diagram: 15.3 Knowledge Engineer Skills" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-3-knowledge-engineer-skills-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/15-3-knowledge-engineer-skills-sticky.svg" alt="Sticky Note: 15.3 Knowledge Engineer Skills" width="30%">
-</a>
 
 
 A knowledge engineer needs:
@@ -3195,16 +2315,6 @@ A knowledge engineer needs:
 
 ### 16.1 Key Limitations
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-1-key-limitations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-1-key-limitations-handwritten.svg" alt="Handwritten: 16.1 Key Limitations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-1-key-limitations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-1-key-limitations-diagram.svg" alt="Diagram: 16.1 Key Limitations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-1-key-limitations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-1-key-limitations-sticky.svg" alt="Sticky Note: 16.1 Key Limitations" width="30%">
-</a>
-
 
 | Limitation | Description | Impact |
 |-----------|-------------|--------|
@@ -3219,16 +2329,6 @@ A knowledge engineer needs:
 
 ### 16.2 Brittleness Example
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-2-brittleness-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-2-brittleness-example-handwritten.svg" alt="Handwritten: 16.2 Brittleness Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-2-brittleness-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-2-brittleness-example-diagram.svg" alt="Diagram: 16.2 Brittleness Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-2-brittleness-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-2-brittleness-example-sticky.svg" alt="Sticky Note: 16.2 Brittleness Example" width="30%">
-</a>
-
 
 ```
 IF temperature > 100 AND rash = spotted
@@ -3241,16 +2341,6 @@ THEN diagnosis = meningitis
 ```
 
 ### 16.3 Mitigation Strategies
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-3-mitigation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-3-mitigation-strategies-handwritten.svg" alt="Handwritten: 16.3 Mitigation Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-3-mitigation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-3-mitigation-strategies-diagram.svg" alt="Diagram: 16.3 Mitigation Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-3-mitigation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/16-expert-systems/16-3-mitigation-strategies-sticky.svg" alt="Sticky Note: 16.3 Mitigation Strategies" width="30%">
-</a>
 
 
 | Limitation | Mitigation |

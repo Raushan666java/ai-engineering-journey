@@ -99,30 +99,10 @@ flowchart LR
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Think of a binary tree as a **company org chart** where every manager has at most two direct reports. The CEO is the **root**. Employees with no reports are **leaves**. Each person's **subtree** is the team under them. The **depth** is how many levels down from the CEO; the **height** is how deep the deepest team goes.
 
 ### Definitions
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/definitions-handwritten.svg" alt="Handwritten: Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/definitions-diagram.svg" alt="Diagram: Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/definitions-sticky.svg" alt="Sticky Note: Definitions" width="30%">
-</a>
 
 
 A **binary tree** is a hierarchical data structure where each node has at most two children, conventionally called **left** and **right**.
@@ -154,16 +134,6 @@ A **binary tree** is a hierarchical data structure where each node has at most t
 
 ### Properties
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/properties-handwritten.svg" alt="Handwritten: Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/properties-diagram.svg" alt="Diagram: Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/properties-sticky.svg" alt="Sticky Note: Properties" width="30%">
-</a>
-
 
 | Property | Formula | Explanation |
 |----------|---------|-------------|
@@ -175,16 +145,6 @@ A **binary tree** is a hierarchical data structure where each node has at most t
 | Leaves vs internal nodes | leaves = internal + 1 | Only in full binary trees |
 
 ### Types of Binary Trees
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/types-of-binary-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/types-of-binary-trees-handwritten.svg" alt="Handwritten: Types of Binary Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/types-of-binary-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/types-of-binary-trees-diagram.svg" alt="Diagram: Types of Binary Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/types-of-binary-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/types-of-binary-trees-sticky.svg" alt="Sticky Note: Types of Binary Trees" width="30%">
-</a>
 
 
 | Type | Definition |
@@ -198,16 +158,6 @@ A **binary tree** is a hierarchical data structure where each node has at most t
 ## Inorder Traversal
 
 ### Real-World Analogy
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
 
 
 Inorder traversal is like **reading a document left to right**. If you arrange the tree so that smaller values are on the left and larger on the right (BST), inorder gives you values in **sorted order** — just like reading a dictionary from A to Z. For expression tree `a + b`, inorder gives `a + b` — the natural infix notation.
@@ -389,16 +339,6 @@ void inorderIterative(TreeNode root) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Preorder is like **writing a table of contents**: you first write the chapter title (root), then each section (left subtree), then each subsection before moving to the next chapter (right subtree). It mirrors how compilers **copy a directory structure**: create the folder first, then recursively copy contents.
 
@@ -561,16 +501,6 @@ void preorderIterative(TreeNode root) {
 ## Postorder Traversal
 
 ### Real-World Analogy
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
 
 
 Postorder is like **deleting files from a folder**: you must delete all files inside a subfolder before you can delete the subfolder itself, and all subfolders before the parent. Operating systems use postorder when recursively removing directories. Compilers evaluate `a + b * c` using postorder — operands before operator.
@@ -744,16 +674,6 @@ void postorderIterative(TreeNode root) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Level-order is like **calling out names from a class attendance sheet row by row**. You call everyone in the front row first, then the second row, and so on. In networking, BFS finds the shortest path in an unweighted graph by exploring neighbors before going deeper.
 
@@ -900,16 +820,6 @@ void levelOrder(TreeNode root) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Counting nodes is like **counting all employees in a company**: each manager counts everyone in their department (left + right subtrees), adds themselves, and reports the total upward.
 
@@ -986,16 +896,6 @@ int size(TreeNode root) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Height is like **finding the tallest person in a family tree**: you ask each branch how tall it is, then the tallest branch determines your height. The tree's height is the longest path from root to a leaf.
 
@@ -1071,16 +971,6 @@ int height(TreeNode root) {
 ## Diameter of Binary Tree
 
 ### Real-World Analogy
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
 
 
 The diameter of a tree is like the **farthest distance between two cities on a road network**. The path does not have to pass through the root — it could be entirely within a subtree. It measures the tree's "spread."
@@ -1210,16 +1100,6 @@ int getDiameter(TreeNode root) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A symmetric tree is like a **human face**: the left half mirrors the right half. If you draw a vertical line through the root, the left subtree should be a mirror image of the right subtree.
 
@@ -1340,16 +1220,6 @@ boolean isSymmetric(TreeNode root) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 LCA in a tree is like finding the **common boss** of two employees in an org chart — the nearest person who manages both. For two cousins, their LCA is their shared grandparent. In genealogy, LCA is the most recent common ancestor.
 
@@ -1461,16 +1331,6 @@ TreeNode lca(TreeNode root, TreeNode p, TreeNode q) {
 ## Serialize and Deserialize
 
 ### Real-World Analogy
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
 
 
 Serialization is like **packing furniture into a box for moving**: you disassemble it into a flat sequence of labeled pieces. Deserialization is **unpacking and reassembling**: reading the instructions and putting everything back in its original shape.
@@ -1704,16 +1564,6 @@ public TreeNode deserialize(String data) {
 ## Threaded Binary Trees
 
 ### Real-World Analogy
-
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/08-binary-trees/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
 
 
 Threaded trees are like a **library with page cross-references**: instead of searching the entire shelf, each page directly tells you where the next topic is. Threaded trees point null child pointers to the next node in traversal order, eliminating the need for stacks entirely.

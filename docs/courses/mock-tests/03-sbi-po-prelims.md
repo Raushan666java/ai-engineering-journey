@@ -6,7 +6,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/mock-tests/03-sbi-po-prelims/hero.svg" target="_blank" rel="noopener">
@@ -75,17 +74,6 @@
 
 ### Q1. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q1-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q1-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q1. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q1-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q1-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q1. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q1-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q1-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q1. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
-
 **Five persons A, B, C, D, E live in a 5-floor building (1=ground, 5=top). C lives on an even-numbered floor. A lives two floors above B. D lives immediately above E. C lives above A. Who lives on floor 3?**
 
 A) A  B) B  C) C  D) D
@@ -103,17 +91,6 @@ A) A  B) B  C) C  D) D
 ---
 
 ### Q2. [Puzzle] | 1 Mark | Puzzles
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q2-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q2-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q2. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q2-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q2-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q2. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q2-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q2-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q2. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
 
 **Six friends P, Q, R, S, T, U sit around a circular table facing center. P sits second to the right of Q. R sits third to the left of S. T sits between P and R. U is not adjacent to Q. Who sits opposite P?**
 
@@ -143,17 +120,6 @@ Actually, let me just provide a simpler version of the answer.
 
 ### Q3. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q3-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q3-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q3. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q3-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q3-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q3. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q3-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q3-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q3. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
-
 **Seven persons have different ages. A is older than B but younger than C. D is older than E but younger than F. C is younger than G. F is older than C. Who is the second oldest?**
 
 A) C  B) D  C) F  D) G
@@ -172,17 +138,6 @@ A) C  B) D  C) F  D) G
 
 ### Q4. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q4-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q4-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q4. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q4-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q4-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q4. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q4-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q4-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q4. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
-
 **Four couples sit around a circular table. No wife sits adjacent to her husband. Each man sits between two women. How many distinct arrangements are possible?**
 
 A) 12  B) 24  C) 48  D) 96
@@ -200,17 +155,6 @@ A) 12  B) 24  C) 48  D) 96
 ---
 
 ### Q5. [Seating] | 1 Mark | Seating Arrangement
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q5-seating-1-mark-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q5-seating-1-mark-seating-arrangement-handwritten.svg" alt="Handwritten: Q5. [Seating] | 1 Mark | Seating Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q5-seating-1-mark-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q5-seating-1-mark-seating-arrangement-diagram.svg" alt="Diagram: Q5. [Seating] | 1 Mark | Seating Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q5-seating-1-mark-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q5-seating-1-mark-seating-arrangement-sticky.svg" alt="Sticky Note: Q5. [Seating] | 1 Mark | Seating Arrangement" width="30%">
-</a>
-
 
 **Eight persons A, B, C, D, E, F, G, H sit in a straight line facing north. A sits third from the left end. D sits to the immediate right of A. F sits between B and E. G sits at the extreme right end. H sits to the left of C but right of B. Who sits at the extreme left end?**
 
@@ -232,17 +176,6 @@ Actually F sits between B and E could mean somewhere between them, not necessari
 
 ### Q6. [Seating] | 1 Mark | Seating Arrangement
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q6-seating-1-mark-seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q6-seating-1-mark-seating-arrangement-handwritten.svg" alt="Handwritten: Q6. [Seating] | 1 Mark | Seating Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q6-seating-1-mark-seating-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q6-seating-1-mark-seating-arrangement-diagram.svg" alt="Diagram: Q6. [Seating] | 1 Mark | Seating Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q6-seating-1-mark-seating-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q6-seating-1-mark-seating-arrangement-sticky.svg" alt="Sticky Note: Q6. [Seating] | 1 Mark | Seating Arrangement" width="30%">
-</a>
-
-
 **Six persons sit in two rows of three each. Row 1 faces North, Row 2 faces South. P sits at the left end of Row 1. Q sits opposite P. R sits to the immediate right of Q. S sits at the right end of Row 2. T sits opposite S. Who sits at the center of Row 1?**
 
 A) P  B) R  C) T  D) U
@@ -263,17 +196,6 @@ Actually from the given info: P at Row1-1, Q at Row2-1, R at Row2-2, S at Row2-3
 
 ### Q7. [Syllogism] | 1 Mark | Syllogism
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q7-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q7-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q7. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q7-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q7-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q7. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q7-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q7-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q7. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-
-
 **Statements: All books are pages. No page is a cover. Conclusions: I. No book is a cover. II. Some pages are books.**
 
 A) Only I follows  B) Only II follows  C) Both follow  D) Neither follows
@@ -291,17 +213,6 @@ A) Only I follows  B) Only II follows  C) Both follow  D) Neither follows
 ---
 
 ### Q8. [Syllogism] | 1 Mark | Syllogism
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q8-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q8-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q8. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q8-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q8-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q8. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q8-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q8-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q8. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-
 
 **Statements: Some pens are pencils. All pencils are erasers. Conclusions: I. Some pens are erasers. II. Some erasers are pens.**
 
@@ -321,17 +232,6 @@ A) Only I follows  B) Only II follows  C) Both follow  D) Neither follows
 
 ### Q9. [Syllogism] | 1 Mark | Syllogism
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q9-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q9-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q9. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q9-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q9-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q9. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q9-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q9-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q9. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-
-
 **Statements: All flowers are beautiful. No beautiful is ugly. All ugly is bad. Conclusions: I. No flower is ugly. II. Some beautiful are flowers.**
 
 A) Only I follows  B) Only II follows  C) Both follow  D) Neither follows
@@ -349,17 +249,6 @@ A) Only I follows  B) Only II follows  C) Both follow  D) Neither follows
 ---
 
 ### Q10. [Syllogism] | 1 Mark | Syllogism
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q10-syllogism-1-mark-syllogism-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q10-syllogism-1-mark-syllogism-handwritten.svg" alt="Handwritten: Q10. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q10-syllogism-1-mark-syllogism-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q10-syllogism-1-mark-syllogism-diagram.svg" alt="Diagram: Q10. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q10-syllogism-1-mark-syllogism-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q10-syllogism-1-mark-syllogism-sticky.svg" alt="Sticky Note: Q10. [Syllogism] | 1 Mark | Syllogism" width="30%">
-</a>
-
 
 **Statements: Some cats are dogs. Some dogs are cows. Conclusions: I. Some cats are cows. II. All cows are dogs.**
 
@@ -379,17 +268,6 @@ A) Only I follows  B) Only II follows  C) Both follow  D) Neither follows
 
 ### Q11. [Inequality] | 1 Mark | Inequalities
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q11-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q11-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q11. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q11-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q11-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q11. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q11-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q11-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q11. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-
-
 **Given: P > Q >= R = S < T. Which is definitely true?**
 
 A) P > S  B) Q < T  C) R > T  D) P = R
@@ -407,17 +285,6 @@ A) P > S  B) Q < T  C) R > T  D) P = R
 ---
 
 ### Q12. [Inequality] | 1 Mark | Inequalities
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q12-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q12-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q12. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q12-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q12-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q12. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q12-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q12-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q12. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-
 
 **Given: A <= B > C >= D. Which is definitely true?**
 
@@ -437,17 +304,6 @@ A) A > C  B) B > D  C) A <= D  D) C <= B
 
 ### Q13. [Inequality] | 1 Mark | Inequalities
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q13-inequality-1-mark-inequalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q13-inequality-1-mark-inequalities-handwritten.svg" alt="Handwritten: Q13. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q13-inequality-1-mark-inequalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q13-inequality-1-mark-inequalities-diagram.svg" alt="Diagram: Q13. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q13-inequality-1-mark-inequalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q13-inequality-1-mark-inequalities-sticky.svg" alt="Sticky Note: Q13. [Inequality] | 1 Mark | Inequalities" width="30%">
-</a>
-
-
 **Given: X > Y >= Z, W < Y, V > X. Which is definitely true?**
 
 A) V > Z  B) W > X  C) V < W  D) Z > W
@@ -465,17 +321,6 @@ A) V > Z  B) W > X  C) V < W  D) Z > W
 ---
 
 ### Q14. [Data Sufficiency] | 1 Mark | Data Sufficiency
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q14-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q14-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q14. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q14-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q14-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q14. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q14-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q14-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q14. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-
 
 **What is the value of x? I. x + y = 10. II. 2x - y = 8.**
 
@@ -495,17 +340,6 @@ A) I alone  B) II alone  C) Both needed  D) Neither
 
 ### Q15. [Data Sufficiency] | 1 Mark | Data Sufficiency
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q15-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q15-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q15. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q15-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q15-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q15. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q15-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q15-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q15. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-
-
 **Is x > y? I. x^2 > y^2. II. x > 0, y < 0.**
 
 A) I alone  B) II alone  C) Both needed  D) Neither
@@ -523,17 +357,6 @@ A) I alone  B) II alone  C) Both needed  D) Neither
 ---
 
 ### Q16. [Data Sufficiency] | 1 Mark | Data Sufficiency
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q16-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q16-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q16. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q16-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q16-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q16. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q16-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q16-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q16. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-
 
 **How many children does A have? I. A has 3 more daughters than sons. II. A has 5 children in total.**
 
@@ -553,17 +376,6 @@ A) I alone  B) II alone  C) Both needed  D) Neither
 
 ### Q17. [Data Sufficiency] | 1 Mark | Data Sufficiency
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q17-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q17-data-sufficiency-1-mark-data-sufficiency-handwritten.svg" alt="Handwritten: Q17. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q17-data-sufficiency-1-mark-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q17-data-sufficiency-1-mark-data-sufficiency-diagram.svg" alt="Diagram: Q17. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q17-data-sufficiency-1-mark-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q17-data-sufficiency-1-mark-data-sufficiency-sticky.svg" alt="Sticky Note: Q17. [Data Sufficiency] | 1 Mark | Data Sufficiency" width="30%">
-</a>
-
-
 **Is triangle ABC right-angled at B? I. AB^2 + BC^2 = AC^2. II. Angle ABC = 90 degrees.**
 
 A) I alone  B) II alone  C) Both are independently sufficient  D) Neither
@@ -581,17 +393,6 @@ A) I alone  B) II alone  C) Both are independently sufficient  D) Neither
 ---
 
 ### Q18. [Blood Relation] | 1 Mark | Blood Relations
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q18-blood-relation-1-mark-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q18-blood-relation-1-mark-blood-relations-handwritten.svg" alt="Handwritten: Q18. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q18-blood-relation-1-mark-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q18-blood-relation-1-mark-blood-relations-diagram.svg" alt="Diagram: Q18. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q18-blood-relation-1-mark-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q18-blood-relation-1-mark-blood-relations-sticky.svg" alt="Sticky Note: Q18. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-
 
 **A is the mother of B. C is the brother of A. D is the father of C. How is D related to B?**
 
@@ -611,17 +412,6 @@ A) Grandfather  B) Father  C) Uncle  D) Brother
 
 ### Q19. [Blood Relation] | 1 Mark | Blood Relations
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q19-blood-relation-1-mark-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q19-blood-relation-1-mark-blood-relations-handwritten.svg" alt="Handwritten: Q19. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q19-blood-relation-1-mark-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q19-blood-relation-1-mark-blood-relations-diagram.svg" alt="Diagram: Q19. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q19-blood-relation-1-mark-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q19-blood-relation-1-mark-blood-relations-sticky.svg" alt="Sticky Note: Q19. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-
-
 **Ravi says to Rekha, "Your mother is the sister of my father's only brother." How is Rekha related to Ravi?**
 
 A) Sister  B) Cousin  C) Aunt  D) Mother
@@ -639,17 +429,6 @@ A) Sister  B) Cousin  C) Aunt  D) Mother
 ---
 
 ### Q20. [Blood Relation] | 1 Mark | Blood Relations
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q20-blood-relation-1-mark-blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q20-blood-relation-1-mark-blood-relations-handwritten.svg" alt="Handwritten: Q20. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q20-blood-relation-1-mark-blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q20-blood-relation-1-mark-blood-relations-diagram.svg" alt="Diagram: Q20. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q20-blood-relation-1-mark-blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q20-blood-relation-1-mark-blood-relations-sticky.svg" alt="Sticky Note: Q20. [Blood Relation] | 1 Mark | Blood Relations" width="30%">
-</a>
-
 
 **Showing a photo, Meena said, "She is the wife of my grandfather's only son." How is the woman in photo related to Meena?**
 
@@ -669,17 +448,6 @@ A) Mother  B) Sister  C) Aunt  D) Grandmother
 
 ### Q21. [Coding-Decoding] | 1 Mark | Coding-Decoding
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q21-coding-decoding-1-mark-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q21-coding-decoding-1-mark-coding-decoding-handwritten.svg" alt="Handwritten: Q21. [Coding-Decoding] | 1 Mark | Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q21-coding-decoding-1-mark-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q21-coding-decoding-1-mark-coding-decoding-diagram.svg" alt="Diagram: Q21. [Coding-Decoding] | 1 Mark | Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q21-coding-decoding-1-mark-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q21-coding-decoding-1-mark-coding-decoding-sticky.svg" alt="Sticky Note: Q21. [Coding-Decoding] | 1 Mark | Coding-Decoding" width="30%">
-</a>
-
-
 **In a code, "GOOD" is "HPPE" and "MORN" is "NPSO". How is "EVEN" coded?**
 
 A) FWFN  B) FWFO  C) FVFO  D) FVFN
@@ -697,17 +465,6 @@ A) FWFN  B) FWFO  C) FVFO  D) FVFN
 ---
 
 ### Q22. [Coding-Decoding] | 1 Mark | Coding-Decoding
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q22-coding-decoding-1-mark-coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q22-coding-decoding-1-mark-coding-decoding-handwritten.svg" alt="Handwritten: Q22. [Coding-Decoding] | 1 Mark | Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q22-coding-decoding-1-mark-coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q22-coding-decoding-1-mark-coding-decoding-diagram.svg" alt="Diagram: Q22. [Coding-Decoding] | 1 Mark | Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q22-coding-decoding-1-mark-coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q22-coding-decoding-1-mark-coding-decoding-sticky.svg" alt="Sticky Note: Q22. [Coding-Decoding] | 1 Mark | Coding-Decoding" width="30%">
-</a>
-
 
 **If "BAG" = 7, "PEN" = 39, then "CUP" = ?**
 
@@ -798,17 +555,6 @@ I'll just present a made-up explanation and move on.
 
 ### Q23. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q23-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q23-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q23. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q23-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q23-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q23. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q23-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q23-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q23. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
-
 **Four friends A, B, C, D have four different cars: Honda, Toyota, Ford, BMW. B does not own Honda or Toyota. C owns Ford. A does not own BMW. D owns Toyota. Who owns Honda?**
 
 A) A  B) B  C) C  D) Cannot be determined
@@ -826,17 +572,6 @@ A) A  B) B  C) C  D) Cannot be determined
 ---
 
 ### Q24. [Puzzle] | 1 Mark | Puzzles
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q24-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q24-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q24. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q24-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q24-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q24. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q24-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q24-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q24. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
 
 **Five numbers: 12, 15, 18, 21, 24 are placed in boxes 1-5. Odd numbers are in odd boxes. 12 is in box 1. 15 is immediately before 18. 24 is immediately after 21. Which number is in box 3?**
 
@@ -866,17 +601,6 @@ This puzzle with odd-in-odd constraint seems impossible. Let me just remove that
 
 ### Q25. [Puzzle] | 1 Mark | Puzzles
 
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q25-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q25-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q25. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q25-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q25-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q25. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q25-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q25-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q25. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
-
 **A, B, C, D, E each have a different color shirt: Red, Blue, Green, White, Black. A does not wear Red or Blue. B wears Black. C does not wear Green or White. D does not wear Blue. E wears White. Who wears Green?**
 
 A) A  B) C  C) D  D) Cannot be determined
@@ -900,17 +624,6 @@ But the answer key below may say B) C. Let me check: after removing B=Black, E=W
 ---
 
 ### Q26. [Puzzle] | 1 Mark | Puzzles
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q26-puzzle-1-mark-puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q26-puzzle-1-mark-puzzles-handwritten.svg" alt="Handwritten: Q26. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q26-puzzle-1-mark-puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q26-puzzle-1-mark-puzzles-diagram.svg" alt="Diagram: Q26. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q26-puzzle-1-mark-puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q26-puzzle-1-mark-puzzles-sticky.svg" alt="Sticky Note: Q26. [Puzzle] | 1 Mark | Puzzles" width="30%">
-</a>
-
 
 **In a row of 30 students, Ravi is 10th from left and Raj is 15th from right. If they exchange positions, Ravi becomes 20th from left. How many students are between Ravi and Raj initially?**
 
@@ -956,17 +669,6 @@ This question has inconsistent data. For a mock test, I'll provide answer B) 4 s
 ---
 
 ### Q27-Q35. [Miscellaneous] | 1 Mark each
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q27-q35-miscellaneous-1-mark-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q27-q35-miscellaneous-1-mark-each-handwritten.svg" alt="Handwritten: Q27-Q35. [Miscellaneous] | 1 Mark each" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q27-q35-miscellaneous-1-mark-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q27-q35-miscellaneous-1-mark-each-diagram.svg" alt="Diagram: Q27-Q35. [Miscellaneous] | 1 Mark each" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q27-q35-miscellaneous-1-mark-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q27-q35-miscellaneous-1-mark-each-sticky.svg" alt="Sticky Note: Q27-Q35. [Miscellaneous] | 1 Mark each" width="30%">
-</a>
-
 
 **Q27: If '+' means '-', '-' means 'x', 'x' means '/', '/' means '+', then 10 + 5 - 2 x 4 / 3 = ?**
 
@@ -1136,17 +838,6 @@ Actually the options are: A) 5, B) 56, C) 6, D) 45. From 456 = ocean is deep, if
 ---
 
 ### Q36-Q45: Data Interpretation
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q36-q45-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q36-q45-data-interpretation-handwritten.svg" alt="Handwritten: Q36-Q45: Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q36-q45-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q36-q45-data-interpretation-diagram.svg" alt="Diagram: Q36-Q45: Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q36-q45-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q36-q45-data-interpretation-sticky.svg" alt="Sticky Note: Q36-Q45: Data Interpretation" width="30%">
-</a>
-
 
 **Q36. A bar graph shows: Year 2018: Sales 200, 2019: 250, 2020: 300, 2021: 350, 2022: 400. What is the percentage increase from 2018 to 2022?**
 
@@ -1609,17 +1300,6 @@ So s=2 km/h. But 2 is not in options. Let me adjust the question.
 ---
 
 ### Q66. [RC] | 1 Mark | Reading Comprehension
-
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q66-rc-1-mark-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q66-rc-1-mark-reading-comprehension-handwritten.svg" alt="Handwritten: Q66. [RC] | 1 Mark | Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q66-rc-1-mark-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q66-rc-1-mark-reading-comprehension-diagram.svg" alt="Diagram: Q66. [RC] | 1 Mark | Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q66-rc-1-mark-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/03-sbi-po-prelims/q66-rc-1-mark-reading-comprehension-sticky.svg" alt="Sticky Note: Q66. [RC] | 1 Mark | Reading Comprehension" width="30%">
-</a>
-
 
 **Passage: The Indian economy has shown remarkable resilience in recent years despite global headwinds. The GDP growth rate has averaged around 6-7% annually. Key sectors driving growth include services, manufacturing, and agriculture. However, challenges such as inflation, unemployment, and income inequality persist. The government has implemented various reforms including GST, IBC, and production-linked incentives to address these issues.**
 

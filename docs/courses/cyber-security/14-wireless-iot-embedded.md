@@ -44,7 +44,6 @@ By the end of this chapter, you should be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - **Analyze** the evolution of Wi-Fi security from WEP through WPA3, including the cryptographic weaknesses of each generation.
 - **Execute** a full Wi-Fi penetration testing workflow using aircrack-ng suite including handshake capture, PMKID attack, and hashcat acceleration.
 - **Explain** Bluetooth and BLE pairing modes, vulnerabilities (BlueBorne, BLUFFS), and practical spoofing techniques.
@@ -99,17 +98,6 @@ Understanding these threats requires interdisciplinary knowledge spanning radio-
 ## 2. Wi-Fi Security Deep Dive
 
 ### 2.1 The Evolution of Wi-Fi Security Protocols
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-1-the-evolution-of-wi-fi-security-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-1-the-evolution-of-wi-fi-security-protocols-handwritten.svg" alt="Handwritten: 2.1 The Evolution of Wi-Fi Security Protocols" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-1-the-evolution-of-wi-fi-security-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-1-the-evolution-of-wi-fi-security-protocols-diagram.svg" alt="Diagram: 2.1 The Evolution of Wi-Fi Security Protocols" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-1-the-evolution-of-wi-fi-security-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-1-the-evolution-of-wi-fi-security-protocols-sticky.svg" alt="Sticky Note: 2.1 The Evolution of Wi-Fi Security Protocols" width="30%">
-</a>
-
 
 Wi-Fi security has evolved through four major generations, each addressing cryptographic weaknesses of its predecessor.
 
@@ -211,17 +199,6 @@ console.log(verifyHandshake(ssid, password, apMac, staMac, capturedPmkid)
 
 ### 2.2 The 802.11 4-Way Handshake
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-2-the-802-11-4-way-handshake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-2-the-802-11-4-way-handshake-handwritten.svg" alt="Handwritten: 2.2 The 802.11 4-Way Handshake" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-2-the-802-11-4-way-handshake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-2-the-802-11-4-way-handshake-diagram.svg" alt="Diagram: 2.2 The 802.11 4-Way Handshake" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-2-the-802-11-4-way-handshake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-2-the-802-11-4-way-handshake-sticky.svg" alt="Sticky Note: 2.2 The 802.11 4-Way Handshake" width="30%">
-</a>
-
-
 ```mermaid
 sequenceDiagram
     participant STA as Client (STA)
@@ -246,17 +223,6 @@ The 4-way handshake ensures both parties prove knowledge of the PMK without ever
 
 ### 2.3 802.1X / EAP — Enterprise Wi-Fi
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-3-802-1x-eap-enterprise-wi-fi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-3-802-1x-eap-enterprise-wi-fi-handwritten.svg" alt="Handwritten: 2.3 802.1X / EAP — Enterprise Wi-Fi" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-3-802-1x-eap-enterprise-wi-fi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-3-802-1x-eap-enterprise-wi-fi-diagram.svg" alt="Diagram: 2.3 802.1X / EAP — Enterprise Wi-Fi" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-3-802-1x-eap-enterprise-wi-fi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-3-802-1x-eap-enterprise-wi-fi-sticky.svg" alt="Sticky Note: 2.3 802.1X / EAP — Enterprise Wi-Fi" width="30%">
-</a>
-
-
 Enterprise Wi-Fi (WPA2-Enterprise or WPA3-Enterprise) uses 802.1X authentication with an external RADIUS server instead of a pre-shared key. The EAP (Extensible Authentication Protocol) tunnel carries the actual authentication method:
 
 | EAP Method | Security Level | Weakness |
@@ -271,31 +237,9 @@ The primary attack against enterprise Wi-Fi is the **Rogue AP / Evil Twin** with
 
 ### 2.4 WPS (Wi-Fi Protected Setup)
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-4-wps-wi-fi-protected-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-4-wps-wi-fi-protected-setup-handwritten.svg" alt="Handwritten: 2.4 WPS (Wi-Fi Protected Setup)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-4-wps-wi-fi-protected-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-4-wps-wi-fi-protected-setup-diagram.svg" alt="Diagram: 2.4 WPS (Wi-Fi Protected Setup)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-4-wps-wi-fi-protected-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-4-wps-wi-fi-protected-setup-sticky.svg" alt="Sticky Note: 2.4 WPS (Wi-Fi Protected Setup)" width="30%">
-</a>
-
-
 WPS was designed to simplify Wi-Fi configuration but introduced a critical flaw: the 8-digit PIN is validated in two halves. An attacker can brute-force the first 4 digits (10^4 = 10,000 possibilities) and then the last 3 digits (10^3 = 1,000 possibilities) — the 8th digit is a checksum. Tools like `reaver` and `bully` automate this attack, typically recovering the PIN in 2–8 hours. Once the PIN is recovered, the WPA2 passphrase is divulged by the AP.
 
 ### 2.5 Wi-Fi Penetesting Tool Workflow
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-5-wi-fi-penetesting-tool-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-5-wi-fi-penetesting-tool-workflow-handwritten.svg" alt="Handwritten: 2.5 Wi-Fi Penetesting Tool Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-5-wi-fi-penetesting-tool-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-5-wi-fi-penetesting-tool-workflow-diagram.svg" alt="Diagram: 2.5 Wi-Fi Penetesting Tool Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-5-wi-fi-penetesting-tool-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/2-5-wi-fi-penetesting-tool-workflow-sticky.svg" alt="Sticky Note: 2.5 Wi-Fi Penetesting Tool Workflow" width="30%">
-</a>
-
 
 ```mermaid
 flowchart LR
@@ -318,17 +262,6 @@ flowchart LR
 
 ### 3.1 Bluetooth Classic Pairing Modes
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-1-bluetooth-classic-pairing-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-1-bluetooth-classic-pairing-modes-handwritten.svg" alt="Handwritten: 3.1 Bluetooth Classic Pairing Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-1-bluetooth-classic-pairing-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-1-bluetooth-classic-pairing-modes-diagram.svg" alt="Diagram: 3.1 Bluetooth Classic Pairing Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-1-bluetooth-classic-pairing-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-1-bluetooth-classic-pairing-modes-sticky.svg" alt="Sticky Note: 3.1 Bluetooth Classic Pairing Modes" width="30%">
-</a>
-
-
 Bluetooth Classic (BR/EDR) defines three security modes:
 
 | Mode | Description | Security |
@@ -345,17 +278,6 @@ Pairing in Bluetooth Classic uses either **Legacy Pairing** (pre-2.1) or **Secur
 - **Out of Band (OOB)** — uses NFC or other side channel for key exchange
 
 ### 3.2 BLE (Bluetooth Low Energy) Pairing
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-2-ble-bluetooth-low-energy-pairing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-2-ble-bluetooth-low-energy-pairing-handwritten.svg" alt="Handwritten: 3.2 BLE (Bluetooth Low Energy) Pairing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-2-ble-bluetooth-low-energy-pairing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-2-ble-bluetooth-low-energy-pairing-diagram.svg" alt="Diagram: 3.2 BLE (Bluetooth Low Energy) Pairing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-2-ble-bluetooth-low-energy-pairing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-2-ble-bluetooth-low-energy-pairing-sticky.svg" alt="Sticky Note: 3.2 BLE (Bluetooth Low Energy) Pairing" width="30%">
-</a>
-
 
 BLE pairing uses the **Security Manager Protocol (SMP)** and defines five security levels:
 
@@ -389,17 +311,6 @@ sequenceDiagram
 ```
 
 ### 3.3 Major Bluetooth Vulnerabilities
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-3-major-bluetooth-vulnerabilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-3-major-bluetooth-vulnerabilities-handwritten.svg" alt="Handwritten: 3.3 Major Bluetooth Vulnerabilities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-3-major-bluetooth-vulnerabilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-3-major-bluetooth-vulnerabilities-diagram.svg" alt="Diagram: 3.3 Major Bluetooth Vulnerabilities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-3-major-bluetooth-vulnerabilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-3-major-bluetooth-vulnerabilities-sticky.svg" alt="Sticky Note: 3.3 Major Bluetooth Vulnerabilities" width="30%">
-</a>
-
 
 #### BlueBorne (CVE-2017-0781, CVE-2017-0782, CVE-2017-8628)
 
@@ -559,17 +470,6 @@ console.log("Spoof detection:", detection);
 
 ### 3.4 BLE Advertisement Attacks
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-4-ble-advertisement-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-4-ble-advertisement-attacks-handwritten.svg" alt="Handwritten: 3.4 BLE Advertisement Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-4-ble-advertisement-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-4-ble-advertisement-attacks-diagram.svg" alt="Diagram: 3.4 BLE Advertisement Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-4-ble-advertisement-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-4-ble-advertisement-attacks-sticky.svg" alt="Sticky Note: 3.4 BLE Advertisement Attacks" width="30%">
-</a>
-
-
 BLE advertisements are broadcast in plaintext on three primary advertising channels (37, 38, 39). An attacker can:
 
 1. **Passive tracking** — capture MAC addresses and RSSI values to track device movement
@@ -578,17 +478,6 @@ BLE advertisements are broadcast in plaintext on three primary advertising chann
 4. **LL (Link Layer) replay** — capture and replay pairing PDUs
 
 ### 3.5 BlueZ HCI Commands
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-5-bluez-hci-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-5-bluez-hci-commands-handwritten.svg" alt="Handwritten: 3.5 BlueZ HCI Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-5-bluez-hci-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-5-bluez-hci-commands-diagram.svg" alt="Diagram: 3.5 BlueZ HCI Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-5-bluez-hci-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/3-5-bluez-hci-commands-sticky.svg" alt="Sticky Note: 3.5 BlueZ HCI Commands" width="30%">
-</a>
-
 
 BlueZ is the Linux Bluetooth stack. Key HCI (Host Controller Interface) commands for security testing:
 
@@ -626,17 +515,6 @@ hcitool -i hci0 cmd 0x08 0x000A 01
 
 ### 4.1 Zigbee Network Topology
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-1-zigbee-network-topology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-1-zigbee-network-topology-handwritten.svg" alt="Handwritten: 4.1 Zigbee Network Topology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-1-zigbee-network-topology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-1-zigbee-network-topology-diagram.svg" alt="Diagram: 4.1 Zigbee Network Topology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-1-zigbee-network-topology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-1-zigbee-network-topology-sticky.svg" alt="Sticky Note: 4.1 Zigbee Network Topology" width="30%">
-</a>
-
-
 ```mermaid
 flowchart TB
     ZC[Zigbee Coordinator<br/>One per network<br/>Forms the network] --> ZR1[Router 1<br/>Extends range]
@@ -666,17 +544,6 @@ Zigbee operates on the IEEE 802.15.4 physical/radio layer and defines three devi
 
 ### 4.2 Zigbee Security Architecture
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-2-zigbee-security-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-2-zigbee-security-architecture-handwritten.svg" alt="Handwritten: 4.2 Zigbee Security Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-2-zigbee-security-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-2-zigbee-security-architecture-diagram.svg" alt="Diagram: 4.2 Zigbee Security Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-2-zigbee-security-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-2-zigbee-security-architecture-sticky.svg" alt="Sticky Note: 4.2 Zigbee Security Architecture" width="30%">
-</a>
-
-
 Zigbee uses **AES-CCM\*** (a variant of AES-CCM) for both encryption and integrity. Three key types exist:
 
 | Key Type | Length | Purpose |
@@ -694,17 +561,6 @@ Critical vulnerabilities:
 
 ### 4.3 Z-Wave Security
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-3-z-wave-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-3-z-wave-security-handwritten.svg" alt="Handwritten: 4.3 Z-Wave Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-3-z-wave-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-3-z-wave-security-diagram.svg" alt="Diagram: 4.3 Z-Wave Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-3-z-wave-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-3-z-wave-security-sticky.svg" alt="Sticky Note: 4.3 Z-Wave Security" width="30%">
-</a>
-
-
 Z-Wave uses a proprietary protocol operating at 800–900 MHz (region-dependent). Security is provided by **S0** (legacy — 3DES-based) and **S2** (modern — ECDH + AES-128-OFB). The S2 handshake uses:
 - **ECDH** for key agreement
 - **AES-128-OFB** for encryption
@@ -717,17 +573,6 @@ Key Z-Wave vulnerabilities:
 - **Z/IP gateway protocol** — tunneling Z-Wave over IP without proper segmentation can expose internal network keys.
 
 ### 4.4 Zigbee Sniffing with TI CC2531
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-4-zigbee-sniffing-with-ti-cc2531-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-4-zigbee-sniffing-with-ti-cc2531-handwritten.svg" alt="Handwritten: 4.4 Zigbee Sniffing with TI CC2531" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-4-zigbee-sniffing-with-ti-cc2531-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-4-zigbee-sniffing-with-ti-cc2531-diagram.svg" alt="Diagram: 4.4 Zigbee Sniffing with TI CC2531" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-4-zigbee-sniffing-with-ti-cc2531-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/4-4-zigbee-sniffing-with-ti-cc2531-sticky.svg" alt="Sticky Note: 4.4 Zigbee Sniffing with TI CC2531" width="30%">
-</a>
-
 
 The CC2531 is a USB dongle based on TI's CC2531 SoC. To use it for Zigbee security analysis:
 
@@ -757,17 +602,6 @@ The CC2531 is a USB dongle based on TI's CC2531 SoC. To use it for Zigbee securi
 
 ### 5.1 RFID Frequency Bands
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-1-rfid-frequency-bands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-1-rfid-frequency-bands-handwritten.svg" alt="Handwritten: 5.1 RFID Frequency Bands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-1-rfid-frequency-bands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-1-rfid-frequency-bands-diagram.svg" alt="Diagram: 5.1 RFID Frequency Bands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-1-rfid-frequency-bands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-1-rfid-frequency-bands-sticky.svg" alt="Sticky Note: 5.1 RFID Frequency Bands" width="30%">
-</a>
-
-
 | Band | Frequency Range | Read Range | Typical Use |
 |---|---|---|---|
 | **LF** | 125–134 kHz | 0–10 cm | Animal tagging, vehicle immobilizers |
@@ -776,17 +610,6 @@ The CC2531 is a USB dongle based on TI's CC2531 SoC. To use it for Zigbee securi
 | **Microwave** | 2.45 / 5.8 GHz | 0–1 m | Active tags, real-time location systems |
 
 ### 5.2 Mifare Classic — Crypto-1 Cracking
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-2-mifare-classic-crypto-1-cracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-2-mifare-classic-crypto-1-cracking-handwritten.svg" alt="Handwritten: 5.2 Mifare Classic — Crypto-1 Cracking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-2-mifare-classic-crypto-1-cracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-2-mifare-classic-crypto-1-cracking-diagram.svg" alt="Diagram: 5.2 Mifare Classic — Crypto-1 Cracking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-2-mifare-classic-crypto-1-cracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-2-mifare-classic-crypto-1-cracking-sticky.svg" alt="Sticky Note: 5.2 Mifare Classic — Crypto-1 Cracking" width="30%">
-</a>
-
 
 Mifare Classic is the most widely deployed contactless smart card (offices, transit systems, student IDs). It uses the proprietary Crypto-1 cipher, a 48-bit stream cipher reverse-engineered in 2007.
 
@@ -907,17 +730,6 @@ console.log("[!] Full mfoc attack recovers all keys from nested auth in ~60s");
 
 ### 5.3 Chameleon Mini & NFC Tag Cloning
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-3-chameleon-mini-nfc-tag-cloning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-3-chameleon-mini-nfc-tag-cloning-handwritten.svg" alt="Handwritten: 5.3 Chameleon Mini & NFC Tag Cloning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-3-chameleon-mini-nfc-tag-cloning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-3-chameleon-mini-nfc-tag-cloning-diagram.svg" alt="Diagram: 5.3 Chameleon Mini & NFC Tag Cloning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-3-chameleon-mini-nfc-tag-cloning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-3-chameleon-mini-nfc-tag-cloning-sticky.svg" alt="Sticky Note: 5.3 Chameleon Mini & NFC Tag Cloning" width="30%">
-</a>
-
-
 The **Chameleon Mini** is a portable RFID emulator that can clone and emulate:
 - Mifare Classic (1K, 4K)
 - Mifare Ultralight / Ultralight C
@@ -933,17 +745,6 @@ Attack workflow:
 
 ### 5.4 HID iClass
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-4-hid-iclass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-4-hid-iclass-handwritten.svg" alt="Handwritten: 5.4 HID iClass" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-4-hid-iclass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-4-hid-iclass-diagram.svg" alt="Diagram: 5.4 HID iClass" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-4-hid-iclass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/5-4-hid-iclass-sticky.svg" alt="Sticky Note: 5.4 HID iClass" width="30%">
-</a>
-
-
 HID iClass is widely used for physical access control. Its security relies on a proprietary cipher (not public) with 64-bit keys. Known weaknesses:
 - **SAM (Secure Access Module) cloning** — the SAM's key set can be dumped via power analysis or JTAG
 - **Reader downgrade attack** — some readers accept both iClass (secure) and iClass SE (more secure) — the attacker forces the reader to use the weaker protocol
@@ -954,17 +755,6 @@ HID iClass is widely used for physical access control. Its security relies on a 
 ## 6. IoT Protocol Security
 
 ### 6.1 MQTT (Message Queuing Telemetry Transport)
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-1-mqtt-message-queuing-telemetry-transport-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-1-mqtt-message-queuing-telemetry-transport-handwritten.svg" alt="Handwritten: 6.1 MQTT (Message Queuing Telemetry Transport)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-1-mqtt-message-queuing-telemetry-transport-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-1-mqtt-message-queuing-telemetry-transport-diagram.svg" alt="Diagram: 6.1 MQTT (Message Queuing Telemetry Transport)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-1-mqtt-message-queuing-telemetry-transport-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-1-mqtt-message-queuing-telemetry-transport-sticky.svg" alt="Sticky Note: 6.1 MQTT (Message Queuing Telemetry Transport)" width="30%">
-</a>
-
 
 MQTT is a publish/subscribe protocol widely used in IoT. It uses a central broker and topics (hierarchical strings). Security issues are rampant:
 
@@ -1244,17 +1034,6 @@ async function auditBroker() {
 
 ### 6.2 CoAP (Constrained Application Protocol)
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-2-coap-constrained-application-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-2-coap-constrained-application-protocol-handwritten.svg" alt="Handwritten: 6.2 CoAP (Constrained Application Protocol)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-2-coap-constrained-application-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-2-coap-constrained-application-protocol-diagram.svg" alt="Diagram: 6.2 CoAP (Constrained Application Protocol)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-2-coap-constrained-application-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-2-coap-constrained-application-protocol-sticky.svg" alt="Sticky Note: 6.2 CoAP (Constrained Application Protocol)" width="30%">
-</a>
-
-
 CoAP (RFC 7252) is a RESTful protocol for constrained devices, running over UDP. It maps to HTTP concepts:
 - GET, POST, PUT, DELETE methods
 - URI paths like `/temperature`, `/actuator/lock`
@@ -1266,17 +1045,6 @@ CoAP (RFC 7252) is a RESTful protocol for constrained devices, running over UDP.
 - **Resource discovery** — CoAP's `/.well-known/core` returns all available resources, exposing the full attack surface
 
 ### 6.3 Matter Protocol
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-3-matter-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-3-matter-protocol-handwritten.svg" alt="Handwritten: 6.3 Matter Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-3-matter-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-3-matter-protocol-diagram.svg" alt="Diagram: 6.3 Matter Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-3-matter-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-3-matter-protocol-sticky.svg" alt="Sticky Note: 6.3 Matter Protocol" width="30%">
-</a>
-
 
 Matter (formerly Project Connected Home over IP) is a unified smart home standard backed by Apple, Google, Amazon, and the Connectivity Standards Alliance. Key security features:
 
@@ -1291,17 +1059,6 @@ Despite strong design, Matter has implementation-level concerns:
 - **Thread network key leakage** — Thread (IPv6 mesh underlying Matter) uses a network key that, if extracted, compromises all Thread devices
 
 ### 6.4 Thread Networking
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-4-thread-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-4-thread-networking-handwritten.svg" alt="Handwritten: 6.4 Thread Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-4-thread-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-4-thread-networking-diagram.svg" alt="Diagram: 6.4 Thread Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-4-thread-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/6-4-thread-networking-sticky.svg" alt="Sticky Note: 6.4 Thread Networking" width="30%">
-</a>
-
 
 Thread is an IPv6-based mesh protocol for IoT, built on 6LoWPAN and IEEE 802.15.4:
 
@@ -1371,17 +1128,6 @@ analyzeThreadSecurity(threadConfig).forEach(i => console.log(`  - ${i}`));
 
 ### 7.1 Firmware Extraction Workflow
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-1-firmware-extraction-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-1-firmware-extraction-workflow-handwritten.svg" alt="Handwritten: 7.1 Firmware Extraction Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-1-firmware-extraction-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-1-firmware-extraction-workflow-diagram.svg" alt="Diagram: 7.1 Firmware Extraction Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-1-firmware-extraction-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-1-firmware-extraction-workflow-sticky.svg" alt="Sticky Note: 7.1 Firmware Extraction Workflow" width="30%">
-</a>
-
-
 ```mermaid
 flowchart TB
     A[Obtain Firmware] --> B{Source}
@@ -1407,17 +1153,6 @@ flowchart TB
 ```
 
 ### 7.2 Binwalk
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-2-binwalk-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-2-binwalk-handwritten.svg" alt="Handwritten: 7.2 Binwalk" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-2-binwalk-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-2-binwalk-diagram.svg" alt="Diagram: 7.2 Binwalk" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-2-binwalk-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-2-binwalk-sticky.svg" alt="Sticky Note: 7.2 Binwalk" width="30%">
-</a>
-
 
 Binwalk is the primary tool for firmware analysis. It scans firmware images for embedded files and filesystems.
 
@@ -1451,17 +1186,6 @@ DECIMAL       HEXADECIMAL     DESCRIPTION
 ```
 
 ### 7.3 Entropy Analysis
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-3-entropy-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-3-entropy-analysis-handwritten.svg" alt="Handwritten: 7.3 Entropy Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-3-entropy-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-3-entropy-analysis-diagram.svg" alt="Diagram: 7.3 Entropy Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-3-entropy-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-3-entropy-analysis-sticky.svg" alt="Sticky Note: 7.3 Entropy Analysis" width="30%">
-</a>
-
 
 Firmware entropy analysis determines whether sections are encrypted or compressed by measuring the randomness of byte sequences:
 
@@ -1617,17 +1341,6 @@ console.log(`\nDecompressed ${decompressed.length} blocks successfully.`);
 
 ### 7.4 Hardcoded Credential Detection
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-4-hardcoded-credential-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-4-hardcoded-credential-detection-handwritten.svg" alt="Handwritten: 7.4 Hardcoded Credential Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-4-hardcoded-credential-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-4-hardcoded-credential-detection-diagram.svg" alt="Diagram: 7.4 Hardcoded Credential Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-4-hardcoded-credential-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-4-hardcoded-credential-detection-sticky.svg" alt="Sticky Note: 7.4 Hardcoded Credential Detection" width="30%">
-</a>
-
-
 One of the most common IoT firmware findings is hardcoded credentials, often embedded as strings in the binary.
 
 ```typescript
@@ -1751,17 +1464,6 @@ findings.forEach(f => {
 
 ### 7.5 Backdoor Detection
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-5-backdoor-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-5-backdoor-detection-handwritten.svg" alt="Handwritten: 7.5 Backdoor Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-5-backdoor-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-5-backdoor-detection-diagram.svg" alt="Diagram: 7.5 Backdoor Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-5-backdoor-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/7-5-backdoor-detection-sticky.svg" alt="Sticky Note: 7.5 Backdoor Detection" width="30%">
-</a>
-
-
 Common IoT backdoor patterns include:
 - **Bind shells** — listening on a TCP/UDP port for shell access
 - **Reverse shells** — connecting outbound to a C2 server
@@ -1774,17 +1476,6 @@ Common IoT backdoor patterns include:
 ## 8. Embedded Hardware Security
 
 ### 8.1 Debug Interfaces
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-1-debug-interfaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-1-debug-interfaces-handwritten.svg" alt="Handwritten: 8.1 Debug Interfaces" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-1-debug-interfaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-1-debug-interfaces-diagram.svg" alt="Diagram: 8.1 Debug Interfaces" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-1-debug-interfaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-1-debug-interfaces-sticky.svg" alt="Sticky Note: 8.1 Debug Interfaces" width="30%">
-</a>
-
 
 | Interface | Pins | Voltage | Speed | Use Case |
 |---|---|---|---|---|
@@ -1825,17 +1516,6 @@ for rate in [115200, 57600, 38400, 19200, 9600]:
 
 ### 8.2 Flash Dumping
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-2-flash-dumping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-2-flash-dumping-handwritten.svg" alt="Handwritten: 8.2 Flash Dumping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-2-flash-dumping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-2-flash-dumping-diagram.svg" alt="Diagram: 8.2 Flash Dumping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-2-flash-dumping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-2-flash-dumping-sticky.svg" alt="Sticky Note: 8.2 Flash Dumping" width="30%">
-</a>
-
-
 Embedded devices typically use SPI NOR flash or NAND flash for firmware storage.
 
 ```bash
@@ -1856,17 +1536,6 @@ sha256sum firmware_dump.bin
 - **Secure enclaves** (TrustZone, SE)
 
 ### 8.3 Side-Channel Attacks
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-3-side-channel-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-3-side-channel-attacks-handwritten.svg" alt="Handwritten: 8.3 Side-Channel Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-3-side-channel-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-3-side-channel-attacks-diagram.svg" alt="Diagram: 8.3 Side-Channel Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-3-side-channel-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/8-3-side-channel-attacks-sticky.svg" alt="Sticky Note: 8.3 Side-Channel Attacks" width="30%">
-</a>
-
 
 #### Power Analysis (SPA/DPA)
 
@@ -2014,17 +1683,6 @@ Typical voltage glitching setup:
 
 ### 9.1 PMKID Calculation and Verification Tool
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-1-pmkid-calculation-and-verification-tool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-1-pmkid-calculation-and-verification-tool-handwritten.svg" alt="Handwritten: 9.1 PMKID Calculation and Verification Tool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-1-pmkid-calculation-and-verification-tool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-1-pmkid-calculation-and-verification-tool-diagram.svg" alt="Diagram: 9.1 PMKID Calculation and Verification Tool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-1-pmkid-calculation-and-verification-tool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-1-pmkid-calculation-and-verification-tool-sticky.svg" alt="Sticky Note: 9.1 PMKID Calculation and Verification Tool" width="30%">
-</a>
-
-
 ```typescript
 import * as crypto from 'crypto';
 import * as readline from 'readline';
@@ -2166,17 +1824,6 @@ async function mainPmkidCli() {
 ```
 
 ### 9.2 CRC / Modbus Checksum Calculator for Protocol Fuzzing
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-2-crc-modbus-checksum-calculator-for-protocol-fuzzing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-2-crc-modbus-checksum-calculator-for-protocol-fuzzing-handwritten.svg" alt="Handwritten: 9.2 CRC / Modbus Checksum Calculator for Protocol Fuzzing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-2-crc-modbus-checksum-calculator-for-protocol-fuzzing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-2-crc-modbus-checksum-calculator-for-protocol-fuzzing-diagram.svg" alt="Diagram: 9.2 CRC / Modbus Checksum Calculator for Protocol Fuzzing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-2-crc-modbus-checksum-calculator-for-protocol-fuzzing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-2-crc-modbus-checksum-calculator-for-protocol-fuzzing-sticky.svg" alt="Sticky Note: 9.2 CRC / Modbus Checksum Calculator for Protocol Fuzzing" width="30%">
-</a>
-
 
 ```typescript
 // CRC-16 Modbus: polynomial 0x8005, initial 0xFFFF, final XOR 0x0000
@@ -2347,17 +1994,6 @@ for (const frame of fuzzer.fuzzAll()) {
 ```
 
 ### 9.3 Wi-Fi Deauthentication Detector
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-3-wi-fi-deauthentication-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-3-wi-fi-deauthentication-detector-handwritten.svg" alt="Handwritten: 9.3 Wi-Fi Deauthentication Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-3-wi-fi-deauthentication-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-3-wi-fi-deauthentication-detector-diagram.svg" alt="Diagram: 9.3 Wi-Fi Deauthentication Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-3-wi-fi-deauthentication-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/9-3-wi-fi-deauthentication-detector-sticky.svg" alt="Sticky Note: 9.3 Wi-Fi Deauthentication Detector" width="30%">
-</a>
-
 
 ```typescript
 import * as os from 'os';
@@ -2561,17 +2197,6 @@ console.log(detector.getStats());
 
 ### 10.1 Environment Setup
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-1-environment-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-1-environment-setup-handwritten.svg" alt="Handwritten: 10.1 Environment Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-1-environment-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-1-environment-setup-diagram.svg" alt="Diagram: 10.1 Environment Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-1-environment-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-1-environment-setup-sticky.svg" alt="Sticky Note: 10.1 Environment Setup" width="30%">
-</a>
-
-
 ```bash
 # Install aircrack-ng suite
 sudo apt-get install aircrack-ng  # Debian/Ubuntu
@@ -2587,17 +2212,6 @@ sudo airmon-ng start wlan0
 ```
 
 ### 10.2 Reconnaissance
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-2-reconnaissance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-2-reconnaissance-handwritten.svg" alt="Handwritten: 10.2 Reconnaissance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-2-reconnaissance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-2-reconnaissance-diagram.svg" alt="Diagram: 10.2 Reconnaissance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-2-reconnaissance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-2-reconnaissance-sticky.svg" alt="Sticky Note: 10.2 Reconnaissance" width="30%">
-</a>
-
 
 ```bash
 # Scan for surrounding APs and clients
@@ -2622,17 +2236,6 @@ AA:BB:CC:DD:EE:FF  -45  120      32     6   130  WPA2 CCMP   PSK   HomeNetwork
 
 ### 10.3 Handshake Capture
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-3-handshake-capture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-3-handshake-capture-handwritten.svg" alt="Handwritten: 10.3 Handshake Capture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-3-handshake-capture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-3-handshake-capture-diagram.svg" alt="Diagram: 10.3 Handshake Capture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-3-handshake-capture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-3-handshake-capture-sticky.svg" alt="Sticky Note: 10.3 Handshake Capture" width="30%">
-</a>
-
-
 ```bash
 # Wait for a client to authenticate, or force it:
 
@@ -2648,17 +2251,6 @@ sudo aireplay-ng -1 0 -a AA:BB:CC:DD:EE:FF -h 11:22:33:44:55:66 wlan0mon
 ```
 
 ### 10.4 Cracking the Handshake
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-4-cracking-the-handshake-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-4-cracking-the-handshake-handwritten.svg" alt="Handwritten: 10.4 Cracking the Handshake" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-4-cracking-the-handshake-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-4-cracking-the-handshake-diagram.svg" alt="Diagram: 10.4 Cracking the Handshake" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-4-cracking-the-handshake-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-4-cracking-the-handshake-sticky.svg" alt="Sticky Note: 10.4 Cracking the Handshake" width="30%">
-</a>
-
 
 ```bash
 # Option A: Using aircrack-ng with a wordlist
@@ -2681,17 +2273,6 @@ hashcat -m 22000 hash.hc22000 wordlist.txt -w 3
 
 ### 10.5 Interpreting Results
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-5-interpreting-results-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-5-interpreting-results-handwritten.svg" alt="Handwritten: 10.5 Interpreting Results" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-5-interpreting-results-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-5-interpreting-results-diagram.svg" alt="Diagram: 10.5 Interpreting Results" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-5-interpreting-results-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-5-interpreting-results-sticky.svg" alt="Sticky Note: 10.5 Interpreting Results" width="30%">
-</a>
-
-
 ```
                                            Aircrack-ng 1.7
 
@@ -2705,17 +2286,6 @@ hashcat -m 22000 hash.hc22000 wordlist.txt -w 3
 ```
 
 ### 10.6 PMKID Attack (Alternative)
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-6-pmkid-attack-alternative-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-6-pmkid-attack-alternative-handwritten.svg" alt="Handwritten: 10.6 PMKID Attack (Alternative)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-6-pmkid-attack-alternative-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-6-pmkid-attack-alternative-diagram.svg" alt="Diagram: 10.6 PMKID Attack (Alternative)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-6-pmkid-attack-alternative-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/10-6-pmkid-attack-alternative-sticky.svg" alt="Sticky Note: 10.6 PMKID Attack (Alternative)" width="30%">
-</a>
-
 
 ```bash
 # Check if AP exposes PMKID
@@ -2738,34 +2308,12 @@ hashcat -m 22000 hash.hc22000 wordlist.txt
 
 ### 11.1 Theory
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-1-theory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-1-theory-handwritten.svg" alt="Handwritten: 11.1 Theory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-1-theory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-1-theory-diagram.svg" alt="Diagram: 11.1 Theory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-1-theory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-1-theory-sticky.svg" alt="Sticky Note: 11.1 Theory" width="30%">
-</a>
-
-
 An evil twin is a rogue access point that impersonates a legitimate Wi-Fi network. The victim's device connects to the rogue AP because it has higher signal strength or the same SSID. The attacker can then:
 - Capture the victim's handshake (passive)
 - Present a captive portal to harvest credentials (active MITM)
 - Perform SSL stripping or DNS poisoning after the victim connects
 
 ### 11.2 Execution Steps
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-2-execution-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-2-execution-steps-handwritten.svg" alt="Handwritten: 11.2 Execution Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-2-execution-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-2-execution-steps-diagram.svg" alt="Diagram: 11.2 Execution Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-2-execution-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-2-execution-steps-sticky.svg" alt="Sticky Note: 11.2 Execution Steps" width="30%">
-</a>
-
 
 ```bash
 # Phase 1: Identify target network
@@ -2815,17 +2363,6 @@ sudo airodump-ng -c <TARGET_CH> --bssid <ROGUE_MAC> -w evil_capture wlan0mon
 ```
 
 ### 11.3 Detecting Evil Twins
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-3-detecting-evil-twins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-3-detecting-evil-twins-handwritten.svg" alt="Handwritten: 11.3 Detecting Evil Twins" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-3-detecting-evil-twins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-3-detecting-evil-twins-diagram.svg" alt="Diagram: 11.3 Detecting Evil Twins" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-3-detecting-evil-twins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/11-3-detecting-evil-twins-sticky.svg" alt="Sticky Note: 11.3 Detecting Evil Twins" width="30%">
-</a>
-
 
 ```typescript
 interface AccessPoint {
@@ -2906,17 +2443,6 @@ class EvilTwinDetector {
 
 ### 12.1 Lab Setup
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-1-lab-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-1-lab-setup-handwritten.svg" alt="Handwritten: 12.1 Lab Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-1-lab-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-1-lab-setup-diagram.svg" alt="Diagram: 12.1 Lab Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-1-lab-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-1-lab-setup-sticky.svg" alt="Sticky Note: 12.1 Lab Setup" width="30%">
-</a>
-
-
 ```bash
 # Install binwalk and dependencies
 sudo apt-get install binwalk  # Or build from source
@@ -2928,17 +2454,6 @@ sudo apt-get install zlib1g-dev liblzma-dev liblzo2-dev
 ```
 
 ### 12.2 Lab Exercise: TP-Link Router Firmware
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-2-lab-exercise-tp-link-router-firmware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-2-lab-exercise-tp-link-router-firmware-handwritten.svg" alt="Handwritten: 12.2 Lab Exercise: TP-Link Router Firmware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-2-lab-exercise-tp-link-router-firmware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-2-lab-exercise-tp-link-router-firmware-diagram.svg" alt="Diagram: 12.2 Lab Exercise: TP-Link Router Firmware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-2-lab-exercise-tp-link-router-firmware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-2-lab-exercise-tp-link-router-firmware-sticky.svg" alt="Sticky Note: 12.2 Lab Exercise: TP-Link Router Firmware" width="30%">
-</a>
-
 
 ```bash
 # Step 1: Download firmware
@@ -2986,17 +2501,6 @@ grep -r "debug\|shell\|cmd\|exec\|backdoor\|test" www/ --include="*.htm" --inclu
 
 ### 12.3 Interpreting Results
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-3-interpreting-results-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-3-interpreting-results-handwritten.svg" alt="Handwritten: 12.3 Interpreting Results" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-3-interpreting-results-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-3-interpreting-results-diagram.svg" alt="Diagram: 12.3 Interpreting Results" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-3-interpreting-results-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-3-interpreting-results-sticky.svg" alt="Sticky Note: 12.3 Interpreting Results" width="30%">
-</a>
-
-
 ```bash
 # Typical findings report:
 
@@ -3013,17 +2517,6 @@ grep -r "debug\|shell\|cmd\|exec\|backdoor\|test" www/ --include="*.htm" --inclu
 ```
 
 ### 12.4 Manual Firmware Modification & Repacking
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-4-manual-firmware-modification-repacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-4-manual-firmware-modification-repacking-handwritten.svg" alt="Handwritten: 12.4 Manual Firmware Modification & Repacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-4-manual-firmware-modification-repacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-4-manual-firmware-modification-repacking-diagram.svg" alt="Diagram: 12.4 Manual Firmware Modification & Repacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-4-manual-firmware-modification-repacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/12-4-manual-firmware-modification-repacking-sticky.svg" alt="Sticky Note: 12.4 Manual Firmware Modification & Repacking" width="30%">
-</a>
-
 
 ```bash
 # Step 1: Modify a configuration file
@@ -3049,17 +2542,6 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 
 ### 13.1 Basic Capture Filters
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-1-basic-capture-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-1-basic-capture-filters-handwritten.svg" alt="Handwritten: 13.1 Basic Capture Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-1-basic-capture-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-1-basic-capture-filters-diagram.svg" alt="Diagram: 13.1 Basic Capture Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-1-basic-capture-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-1-basic-capture-filters-sticky.svg" alt="Sticky Note: 13.1 Basic Capture Filters" width="30%">
-</a>
-
-
 | Filter | Description |
 |---|---|
 | `wlan.fc.type_subtype == 0x08` | Beacon frames |
@@ -3073,17 +2555,6 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 
 ### 13.2 EAPOL / 4-Way Handshake Filters
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-2-eapol-4-way-handshake-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-2-eapol-4-way-handshake-filters-handwritten.svg" alt="Handwritten: 13.2 EAPOL / 4-Way Handshake Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-2-eapol-4-way-handshake-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-2-eapol-4-way-handshake-filters-diagram.svg" alt="Diagram: 13.2 EAPOL / 4-Way Handshake Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-2-eapol-4-way-handshake-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-2-eapol-4-way-handshake-filters-sticky.svg" alt="Sticky Note: 13.2 EAPOL / 4-Way Handshake Filters" width="30%">
-</a>
-
-
 | Filter | Description |
 |---|---|
 | `eapol` | All EAPOL frames |
@@ -3094,17 +2565,6 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 | `eapol.type == 3 && eapol.key.key_info & 0x0200` | EAPOL-Key (PMKID present) |
 
 ### 13.3 Authentication Type Filters
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-3-authentication-type-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-3-authentication-type-filters-handwritten.svg" alt="Handwritten: 13.3 Authentication Type Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-3-authentication-type-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-3-authentication-type-filters-diagram.svg" alt="Diagram: 13.3 Authentication Type Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-3-authentication-type-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-3-authentication-type-filters-sticky.svg" alt="Sticky Note: 13.3 Authentication Type Filters" width="30%">
-</a>
-
 
 | Filter | Description |
 |---|---|
@@ -3117,17 +2577,6 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 
 ### 13.4 Attack Detection Filters
 
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-4-attack-detection-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-4-attack-detection-filters-handwritten.svg" alt="Handwritten: 13.4 Attack Detection Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-4-attack-detection-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-4-attack-detection-filters-diagram.svg" alt="Diagram: 13.4 Attack Detection Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-4-attack-detection-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-4-attack-detection-filters-sticky.svg" alt="Sticky Note: 13.4 Attack Detection Filters" width="30%">
-</a>
-
-
 | Filter | Description |
 |---|---|
 | `(wlan.fc.type_subtype == 0x0c) && (wlan.addr1 == ff:ff:ff:ff:ff:ff)` | Broadcast deauth (DoS attack) |
@@ -3137,17 +2586,6 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 | `(wlan.fc.type_subtype == 0x08) && (wlan.beacon.ds.parameter_set.current_channel != 0)` | Beacons with DS params (check channel consistency) |
 
 ### 13.5 BLE / Zigbee / Wireless IoT Filters
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-5-ble-zigbee-wireless-iot-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-5-ble-zigbee-wireless-iot-filters-handwritten.svg" alt="Handwritten: 13.5 BLE / Zigbee / Wireless IoT Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-5-ble-zigbee-wireless-iot-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-5-ble-zigbee-wireless-iot-filters-diagram.svg" alt="Diagram: 13.5 BLE / Zigbee / Wireless IoT Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-5-ble-zigbee-wireless-iot-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-5-ble-zigbee-wireless-iot-filters-sticky.svg" alt="Sticky Note: 13.5 BLE / Zigbee / Wireless IoT Filters" width="30%">
-</a>
-
 
 | Filter | Description |
 |---|---|
@@ -3161,17 +2599,6 @@ dd if=newroot.squashfs of=padded.bin bs=1024 seek=256 conv=notrunc
 | `zwave` | Z-Wave frames |
 
 ### 13.6 Advanced Display Filter Macros
-
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-6-advanced-display-filter-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-6-advanced-display-filter-macros-handwritten.svg" alt="Handwritten: 13.6 Advanced Display Filter Macros" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-6-advanced-display-filter-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-6-advanced-display-filter-macros-diagram.svg" alt="Diagram: 13.6 Advanced Display Filter Macros" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-6-advanced-display-filter-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/14-wireless-iot-embedded/13-6-advanced-display-filter-macros-sticky.svg" alt="Sticky Note: 13.6 Advanced Display Filter Macros" width="30%">
-</a>
-
 
 ```bash
 # Display Filter Macros (Edit → Preferences → Display Filters → +)

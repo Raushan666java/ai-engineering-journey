@@ -81,16 +81,6 @@ flowchart LR
 
 ### 1.1 Matrices and Matrix Operations
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-1-matrices-and-matrix-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-1-matrices-and-matrix-operations-handwritten.svg" alt="Handwritten: 1.1 Matrices and Matrix Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-1-matrices-and-matrix-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-1-matrices-and-matrix-operations-diagram.svg" alt="Diagram: 1.1 Matrices and Matrix Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-1-matrices-and-matrix-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-1-matrices-and-matrix-operations-sticky.svg" alt="Sticky Note: 1.1 Matrices and Matrix Operations" width="30%">
-</a>
-
 
 A **matrix** is a rectangular array of numbers arranged in rows and columns. An $m \times n$ matrix has $m$ rows and $n$ columns:
 
@@ -134,16 +124,6 @@ This is the **row-by-column** rule. Each entry $c_{ij}$ is the dot product of ro
 
 ### 1.2 Determinants
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-2-determinants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-2-determinants-handwritten.svg" alt="Handwritten: 1.2 Determinants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-2-determinants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-2-determinants-diagram.svg" alt="Diagram: 1.2 Determinants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-2-determinants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-2-determinants-sticky.svg" alt="Sticky Note: 1.2 Determinants" width="30%">
-</a>
-
 
 The determinant is a scalar value that encodes key properties of a square matrix.
 
@@ -175,16 +155,6 @@ where $C_{ij} = (-1)^{i+j} \cdot M_{ij}$ is the **cofactor**, and $M_{ij}$ is th
 
 ### 1.3 Systems of Linear Equations
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-3-systems-of-linear-equations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-3-systems-of-linear-equations-handwritten.svg" alt="Handwritten: 1.3 Systems of Linear Equations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-3-systems-of-linear-equations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-3-systems-of-linear-equations-diagram.svg" alt="Diagram: 1.3 Systems of Linear Equations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-3-systems-of-linear-equations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-3-systems-of-linear-equations-sticky.svg" alt="Sticky Note: 1.3 Systems of Linear Equations" width="30%">
-</a>
-
 
 A system of $m$ linear equations in $n$ unknowns:
 
@@ -213,16 +183,6 @@ In matrix form: $Ax = b$, where $A$ is the $m \times n$ coefficient matrix, $x$ 
 $A$ is invertible iff $\det(A) \neq 0$, equivalently $\text{rank}(A) = n$.
 
 ### 1.4 Vector Spaces
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-4-vector-spaces-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-4-vector-spaces-handwritten.svg" alt="Handwritten: 1.4 Vector Spaces" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-4-vector-spaces-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-4-vector-spaces-diagram.svg" alt="Diagram: 1.4 Vector Spaces" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-4-vector-spaces-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-4-vector-spaces-sticky.svg" alt="Sticky Note: 1.4 Vector Spaces" width="30%">
-</a>
 
 
 A **vector space** $V$ over a field $\mathbb{F}$ (typically $\mathbb{R}$ or $\mathbb{C}$) is a set closed under vector addition and scalar multiplication, satisfying eight axioms (associativity, commutativity, distributivity, existence of zero vector, existence of additive inverses, and closure under both operations).
@@ -253,16 +213,6 @@ $$c_1 v_1 + c_2 v_2 + \cdots + c_k v_k = 0 \implies c_1 = c_2 = \cdots = c_k = 0
 
 ### 1.5 Linear Transformations
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-5-linear-transformations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-5-linear-transformations-handwritten.svg" alt="Handwritten: 1.5 Linear Transformations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-5-linear-transformations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-5-linear-transformations-diagram.svg" alt="Diagram: 1.5 Linear Transformations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-5-linear-transformations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-5-linear-transformations-sticky.svg" alt="Sticky Note: 1.5 Linear Transformations" width="30%">
-</a>
-
 
 A **linear transformation** $T: V \to W$ satisfies:
 
@@ -282,16 +232,6 @@ Every linear transformation from $\mathbb{R}^n$ to $\mathbb{R}^m$ can be represe
 $$\text{proj}_W(v) = \sum_{i=1}^{k} (v \cdot u_i) u_i$$
 
 ### 1.6 Eigenvalues and Eigenvectors
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-6-eigenvalues-and-eigenvectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-6-eigenvalues-and-eigenvectors-handwritten.svg" alt="Handwritten: 1.6 Eigenvalues and Eigenvectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-6-eigenvalues-and-eigenvectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-6-eigenvalues-and-eigenvectors-diagram.svg" alt="Diagram: 1.6 Eigenvalues and Eigenvectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-6-eigenvalues-and-eigenvectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-6-eigenvalues-and-eigenvectors-sticky.svg" alt="Sticky Note: 1.6 Eigenvalues and Eigenvectors" width="30%">
-</a>
 
 
 For a square matrix $A$, a nonzero vector $v$ is an **eigenvector** with **eigenvalue** $\lambda$ if:
@@ -327,16 +267,6 @@ where $D$ is diagonal with eigenvalues on the diagonal and $P$ has eigenvectors 
 
 ### 1.7 Singular Value Decomposition (SVD)
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-7-singular-value-decomposition-svd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-7-singular-value-decomposition-svd-handwritten.svg" alt="Handwritten: 1.7 Singular Value Decomposition (SVD)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-7-singular-value-decomposition-svd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-7-singular-value-decomposition-svd-diagram.svg" alt="Diagram: 1.7 Singular Value Decomposition (SVD)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-7-singular-value-decomposition-svd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-7-singular-value-decomposition-svd-sticky.svg" alt="Sticky Note: 1.7 Singular Value Decomposition (SVD)" width="30%">
-</a>
-
 
 The SVD is the factorization of ANY matrix $A$ (not just square):
 
@@ -361,16 +291,6 @@ $$A_k = \sum_{i=1}^{k} \sigma_i u_i v_i^T$$
 - **Pseudoinverse:** $A^+ = V\Sigma^+ U^T$ for solving least squares
 
 ### 1.8 Matrix Calculus
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-8-matrix-calculus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-8-matrix-calculus-handwritten.svg" alt="Handwritten: 1.8 Matrix Calculus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-8-matrix-calculus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-8-matrix-calculus-diagram.svg" alt="Diagram: 1.8 Matrix Calculus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-8-matrix-calculus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/01-linear-algebra/1-8-matrix-calculus-sticky.svg" alt="Sticky Note: 1.8 Matrix Calculus" width="30%">
-</a>
 
 
 For ML and optimization, we need derivatives with respect to matrices and vectors.

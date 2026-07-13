@@ -85,16 +85,6 @@ flowchart LR
 
 ### Deadlock Definition
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-definition-handwritten.svg" alt="Handwritten: Deadlock Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-definition-diagram.svg" alt="Diagram: Deadlock Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-definition-sticky.svg" alt="Sticky Note: Deadlock Definition" width="30%">
-</a>
-
 
 A **deadlock** is a state in which every process in a set is waiting for an event that can only be caused by another process in the set. Since all are waiting, none can proceed → the system is permanently blocked.
 
@@ -202,16 +192,6 @@ System with 4 processes, single-instance resources:
 
 ### The Four Necessary Conditions
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/the-four-necessary-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/the-four-necessary-conditions-handwritten.svg" alt="Handwritten: The Four Necessary Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/the-four-necessary-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/the-four-necessary-conditions-diagram.svg" alt="Diagram: The Four Necessary Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/the-four-necessary-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/the-four-necessary-conditions-sticky.svg" alt="Sticky Note: The Four Necessary Conditions" width="30%">
-</a>
-
 
 For a deadlock to occur, all four conditions must hold **simultaneously**. Breaking any one prevents deadlock.
 
@@ -291,16 +271,6 @@ Converse is false: all four conditions can hold without deadlock (e.g., processe
 ---
 
 ### Resource-Allocation Graphs
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/resource-allocation-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/resource-allocation-graphs-handwritten.svg" alt="Handwritten: Resource-Allocation Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/resource-allocation-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/resource-allocation-graphs-diagram.svg" alt="Diagram: Resource-Allocation Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/resource-allocation-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/resource-allocation-graphs-sticky.svg" alt="Sticky Note: Resource-Allocation Graphs" width="30%">
-</a>
 
 
 A **Resource-Allocation Graph (RAG)** is a directed graph that models the system state:
@@ -448,16 +418,6 @@ All blocked → DEADLOCK (even though each resource has multiple instances)
 ---
 
 ### Deadlock Prevention
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-prevention-handwritten.svg" alt="Handwritten: Deadlock Prevention" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-prevention-diagram.svg" alt="Diagram: Deadlock Prevention" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-prevention-sticky.svg" alt="Sticky Note: Deadlock Prevention" width="30%">
-</a>
 
 
 Prevention ensures at least one of the four necessary conditions **cannot** hold. This is a negative approach: design the system to make deadlock structurally impossible.
@@ -684,16 +644,6 @@ If P1 also wants R0: must request R0 first, then R1, then R2
 ---
 
 ### Deadlock Avoidance → Banker's Algorithm
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-avoidance-banker-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-avoidance-banker-s-algorithm-handwritten.svg" alt="Handwritten: Deadlock Avoidance → Banker's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-avoidance-banker-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-avoidance-banker-s-algorithm-diagram.svg" alt="Diagram: Deadlock Avoidance → Banker's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-avoidance-banker-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-avoidance-banker-s-algorithm-sticky.svg" alt="Sticky Note: Deadlock Avoidance → Banker's Algorithm" width="30%">
-</a>
 
 
 Avoidance requires that the system knows in advance the **maximum** number of resources each process will ever need. The system decides whether granting a request would leave the system in a **safe state**.
@@ -1486,16 +1436,6 @@ In an avoidance system, unsafe â‰  deadlock. The system is being conservativ
 
 ### Deadlock Detection
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-detection-handwritten.svg" alt="Handwritten: Deadlock Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-detection-diagram.svg" alt="Diagram: Deadlock Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-detection-sticky.svg" alt="Sticky Note: Deadlock Detection" width="30%">
-</a>
-
 
 If the system does not prevent or avoid deadlocks, it must be able to **detect** them.
 
@@ -1803,16 +1743,6 @@ creates circular wait.
 
 ### Deadlock Recovery
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-recovery-handwritten.svg" alt="Handwritten: Deadlock Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-recovery-diagram.svg" alt="Diagram: Deadlock Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/deadlock-recovery-sticky.svg" alt="Sticky Note: Deadlock Recovery" width="30%">
-</a>
-
 
 Once a deadlock is detected, the system must **recover**. Two main approaches exist.
 
@@ -1953,16 +1883,6 @@ PreemptionTarget select_victim_resource(bool deadlocked[], int n, int m) {
 
 ### Prevention vs Avoidance vs Detection: Complete Comparison
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/prevention-vs-avoidance-vs-detection-complete-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/prevention-vs-avoidance-vs-detection-complete-comparison-handwritten.svg" alt="Handwritten: Prevention vs Avoidance vs Detection: Complete Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/prevention-vs-avoidance-vs-detection-complete-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/prevention-vs-avoidance-vs-detection-complete-comparison-diagram.svg" alt="Diagram: Prevention vs Avoidance vs Detection: Complete Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/prevention-vs-avoidance-vs-detection-complete-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/prevention-vs-avoidance-vs-detection-complete-comparison-sticky.svg" alt="Sticky Note: Prevention vs Avoidance vs Detection: Complete Comparison" width="30%">
-</a>
-
 
 | Dimension | Prevention | Avoidance (Banker) | Detection + Recovery |
 |-----------|-----------|-------------------|---------------------|
@@ -1980,16 +1900,6 @@ PreemptionTarget select_victim_resource(bool deadlocked[], int n, int m) {
 ---
 
 ### Interview Corner
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/interview-corner-handwritten.svg" alt="Handwritten: Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/interview-corner-diagram.svg" alt="Diagram: Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/interview-corner-sticky.svg" alt="Sticky Note: Interview Corner" width="30%">
-</a>
 
 
 #### Q1: Deadlock vs Starvation → What's the Difference?
@@ -2236,16 +2146,6 @@ Example:
 ---
 
 ### Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/applications-in-real-systems-handwritten.svg" alt="Handwritten: Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/applications-in-real-systems-diagram.svg" alt="Diagram: Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/applications-in-real-systems-sticky.svg" alt="Sticky Note: Applications in Real Systems" width="30%">
-</a>
 
 
 #### 1. Linux Kernel lockdep (Lock Dependency Validator)
@@ -2602,16 +2502,6 @@ UPON receiving probe (i, j, k):
 
 ### Advanced Edge Cases and Practical Considerations
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/advanced-edge-cases-and-practical-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/advanced-edge-cases-and-practical-considerations-handwritten.svg" alt="Handwritten: Advanced Edge Cases and Practical Considerations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/advanced-edge-cases-and-practical-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/advanced-edge-cases-and-practical-considerations-diagram.svg" alt="Diagram: Advanced Edge Cases and Practical Considerations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/advanced-edge-cases-and-practical-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/advanced-edge-cases-and-practical-considerations-sticky.svg" alt="Sticky Note: Advanced Edge Cases and Practical Considerations" width="30%">
-</a>
-
 
 #### Edge Case: Nested Locking with Shared Resources
 
@@ -2900,16 +2790,6 @@ console.log('Cycle detected:', wfg.hasCycle());
 
 ### Numerical Example: Banker's Algorithm Safety Check
 
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/numerical-example-banker-s-algorithm-safety-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/numerical-example-banker-s-algorithm-safety-check-handwritten.svg" alt="Handwritten: Numerical Example: Banker's Algorithm Safety Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/numerical-example-banker-s-algorithm-safety-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/numerical-example-banker-s-algorithm-safety-check-diagram.svg" alt="Diagram: Numerical Example: Banker's Algorithm Safety Check" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/numerical-example-banker-s-algorithm-safety-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/numerical-example-banker-s-algorithm-safety-check-sticky.svg" alt="Sticky Note: Numerical Example: Banker's Algorithm Safety Check" width="30%">
-</a>
-
 
 **System state:** Available = [3, 3, 2], 5 processes with Max and Allocation shown.
 
@@ -2932,16 +2812,6 @@ console.log('Cycle detected:', wfg.hasCycle());
 **Safe sequence:** P1 → P3 → P4 → P2 → P0
 
 ### Additional Chapter Quiz Questions
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
-</a>
 
 
 9. What is the time complexity of Banker's algorithm safety check?
@@ -2977,16 +2847,6 @@ console.log('Cycle detected:', wfg.hasCycle());
 **Answers:** 9-c, 10-b, 11-b, 12-c, 13-b
 
 ### Additional Exercises
-
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/07-deadlocks/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
-</a>
 
 
 #### Basic

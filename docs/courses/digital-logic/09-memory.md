@@ -87,16 +87,6 @@ SRAM stores each bit in a **cross-coupled inverter pair** ? a bistable latch tha
 
 ### 9.2.1 6T SRAM Cell
 
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-handwritten.svg" alt="Handwritten: 9.2.1 6T SRAM Cell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-diagram.svg" alt="Diagram: 9.2.1 6T SRAM Cell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-1-6t-sram-cell-sticky.svg" alt="Sticky Note: 9.2.1 6T SRAM Cell" width="30%">
-</a>
-
 
 ```mermaid
 graph TD
@@ -149,16 +139,6 @@ class SRAM6T {
 ```
 
 ### 9.2.2 SRAM Array Architecture
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-handwritten.svg" alt="Handwritten: 9.2.2 SRAM Array Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-diagram.svg" alt="Diagram: 9.2.2 SRAM Array Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-2-sram-array-architecture-sticky.svg" alt="Sticky Note: 9.2.2 SRAM Array Architecture" width="30%">
-</a>
 
 
 ```mermaid
@@ -217,16 +197,6 @@ console.log(ram.read(0b001001)); // 1
 
 ### 9.2.3 Sense Amplifier
 
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-handwritten.svg" alt="Handwritten: 9.2.3 Sense Amplifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-diagram.svg" alt="Diagram: 9.2.3 Sense Amplifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-2-3-sense-amplifier-sticky.svg" alt="Sticky Note: 9.2.3 Sense Amplifier" width="30%">
-</a>
-
 
 The sense amplifier detects the tiny voltage difference (50?200 mV) between bit lines during a read and amplifies it to full CMOS levels.
 
@@ -245,16 +215,6 @@ class SenseAmp {
 DRAM stores each bit on a **capacitor** that leaks charge over time, requiring periodic refresh.
 
 ### 9.3.1 1T1C DRAM Cell
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-handwritten.svg" alt="Handwritten: 9.3.1 1T1C DRAM Cell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-diagram.svg" alt="Diagram: 9.3.1 1T1C DRAM Cell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-1-1t1c-dram-cell-sticky.svg" alt="Sticky Note: 9.3.1 1T1C DRAM Cell" width="30%">
-</a>
 
 
 A single transistor + capacitor cell is the densest memory cell in use.
@@ -288,16 +248,6 @@ class DRAMCell {
 ```
 
 ### 9.3.2 DRAM Timing
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-handwritten.svg" alt="Handwritten: 9.3.2 DRAM Timing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-diagram.svg" alt="Diagram: 9.3.2 DRAM Timing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-2-dram-timing-sticky.svg" alt="Sticky Note: 9.3.2 DRAM Timing" width="30%">
-</a>
 
 
 ```text
@@ -335,16 +285,6 @@ function accessTime(timing: DRAMTiming): number {
 ```
 
 ### 9.3.3 DRAM Refresh
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-handwritten.svg" alt="Handwritten: 9.3.3 DRAM Refresh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-diagram.svg" alt="Diagram: 9.3.3 DRAM Refresh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-3-dram-refresh-sticky.svg" alt="Sticky Note: 9.3.3 DRAM Refresh" width="30%">
-</a>
 
 
 Every row must be refreshed every 64 ms. With 8192 rows, the refresh interval per row is 64 ms / 8192 ? 7.8 ?s.
@@ -396,16 +336,6 @@ class DRAMController {
 
 ### 9.3.4 SDRAM and DDR
 
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-handwritten.svg" alt="Handwritten: 9.3.4 SDRAM and DDR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-diagram.svg" alt="Diagram: 9.3.4 SDRAM and DDR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-3-4-sdram-and-ddr-sticky.svg" alt="Sticky Note: 9.3.4 SDRAM and DDR" width="30%">
-</a>
-
 
 | Generation | I/O Clock | Data Rate | Prefetch | VDD |
 |------------|-----------|-----------|----------|-----|
@@ -428,16 +358,6 @@ console.log(`DDR5-6400 ? 64-bit ? 2 ch: ${dramBandwidth(6400, 64, 2)} MB/s`); //
 ## 9.4 Non-Volatile Memory
 
 ### 9.4.1 Mask ROM
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-handwritten.svg" alt="Handwritten: 9.4.1 Mask ROM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-diagram.svg" alt="Diagram: 9.4.1 Mask ROM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-1-mask-rom-sticky.svg" alt="Sticky Note: 9.4.1 Mask ROM" width="30%">
-</a>
 
 
 Data is programmed during chip fabrication using the via mask. Used for fixed lookup tables and boot code.
@@ -463,32 +383,12 @@ const sineLUT = new MaskROM([
 
 ### 9.4.2 PROM, EPROM, EEPROM
 
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-handwritten.svg" alt="Handwritten: 9.4.2 PROM, EPROM, EEPROM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-diagram.svg" alt="Diagram: 9.4.2 PROM, EPROM, EEPROM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-2-prom-eprom-eeprom-sticky.svg" alt="Sticky Note: 9.4.2 PROM, EPROM, EEPROM" width="30%">
-</a>
-
 
 - **PROM:** One-time programmable fuses or anti-fuses
 - **EPROM:** UV-erasable floating-gate transistors; erased in bulk
 - **EEPROM:** Electrically erasable byte-by-byte; uses tunnel injection
 
 ### 9.4.3 Flash Memory
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-handwritten.svg" alt="Handwritten: 9.4.3 Flash Memory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-diagram.svg" alt="Diagram: 9.4.3 Flash Memory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-4-3-flash-memory-sticky.svg" alt="Sticky Note: 9.4.3 Flash Memory" width="30%">
-</a>
 
 
 Flash memory is the dominant non-volatile technology. Two main variants:
@@ -551,16 +451,6 @@ The address decoder selects one word line from 2? address lines. Two architectur
 
 ### 9.5.1 Single-Level (NAND) Decoder
 
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-handwritten.svg" alt="Handwritten: 9.5.1 Single-Level (NAND) Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-diagram.svg" alt="Diagram: 9.5.1 Single-Level (NAND) Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-1-single-level-nand-decoder-sticky.svg" alt="Sticky Note: 9.5.1 Single-Level (NAND) Decoder" width="30%">
-</a>
-
 
 A single NAND gate per word line with N inputs and a buffer.
 
@@ -571,16 +461,6 @@ WL? = ?(A0 = a0 ? A1 = a1 ? ... ? A??1 = a??1)
 **Area:** O(N ? 2?) ? scales poorly beyond 8?10 bits.
 
 ### 9.5.2 Two-Level (Pre-) Decoder
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-handwritten.svg" alt="Handwritten: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-diagram.svg" alt="Diagram: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-5-2-two-level-pre-decoder-sticky.svg" alt="Sticky Note: 9.5.2 Two-Level (Pre-) Decoder" width="30%">
-</a>
 
 
 Split address bits into pre-decode groups, then combine.
@@ -630,30 +510,10 @@ class PreDecoder {
 
 ### 9.6.1 Parity
 
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-handwritten.svg" alt="Handwritten: 9.6.1 Parity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-diagram.svg" alt="Diagram: 9.6.1 Parity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-1-parity-sticky.svg" alt="Sticky Note: 9.6.1 Parity" width="30%">
-</a>
-
 
 Single-bit parity detects an odd number of errors. Used in DRAM row-based protection.
 
 ### 9.6.2 Hamming Code (SECDED)
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-handwritten.svg" alt="Handwritten: 9.6.2 Hamming Code (SECDED)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-diagram.svg" alt="Diagram: 9.6.2 Hamming Code (SECDED)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/9-6-2-hamming-code-secded-sticky.svg" alt="Sticky Note: 9.6.2 Hamming Code (SECDED)" width="30%">
-</a>
 
 
 A **Single Error Correct, Double Error Detect (SECDED)** code adds log2(N) + 1 check bits to an N-bit word.
@@ -1102,16 +962,6 @@ c) Reduced area
 d) Higher density
 
 ### Answers
-
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/answers-diagram.svg" alt="Diagram: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/09-memory/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/09-memory/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
-</a>
 
 
 Q1: b | Q2: a | Q3: b | Q4: d | Q5: c

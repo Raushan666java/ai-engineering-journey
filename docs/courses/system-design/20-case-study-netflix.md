@@ -109,16 +109,6 @@ flowchart LR
 
 ### Requirements Phase
 
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/requirements-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/requirements-phase-handwritten.svg" alt="Handwritten: Requirements Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/requirements-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/requirements-phase-diagram.svg" alt="Diagram: Requirements Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/requirements-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/requirements-phase-sticky.svg" alt="Sticky Note: Requirements Phase" width="30%">
-</a>
-
 
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
@@ -159,16 +149,6 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 
 ### Estimation Phase
 
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/estimation-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/estimation-phase-handwritten.svg" alt="Handwritten: Estimation Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/estimation-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/estimation-phase-diagram.svg" alt="Diagram: Estimation Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/estimation-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/estimation-phase-sticky.svg" alt="Sticky Note: Estimation Phase" width="30%">
-</a>
-
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -205,16 +185,6 @@ Netflix streams over 100 million hours of content daily across 190+ countries. T
 - Real-time inference: &lt;500ms per personalized page load
 
 ### High-Level Design Phase
-
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/high-level-design-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/high-level-design-phase-handwritten.svg" alt="Handwritten: High-Level Design Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/high-level-design-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/high-level-design-phase-diagram.svg" alt="Diagram: High-Level Design Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/high-level-design-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/high-level-design-phase-sticky.svg" alt="Sticky Note: High-Level Design Phase" width="30%">
-</a>
 
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
@@ -297,16 +267,6 @@ graph TB
 4. **Atlas Monitoring**: Time-series telemetry system collecting 1.2 trillion data points daily. Every service publishes metrics (request rate, latency, error rate, circuit breaker state). Dashboards and alerts enable operators to detect anomalies within seconds.
 
 ### Deep Dive Phase
-
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/deep-dive-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/deep-dive-phase-handwritten.svg" alt="Handwritten: Deep Dive Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/deep-dive-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/deep-dive-phase-diagram.svg" alt="Diagram: Deep Dive Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/20-case-study-netflix/deep-dive-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/20-case-study-netflix/deep-dive-phase-sticky.svg" alt="Sticky Note: Deep Dive Phase" width="30%">
-</a>
 
 
 **CDN Strategy: Open Connect Appliances**

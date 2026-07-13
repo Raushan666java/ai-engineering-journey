@@ -96,16 +96,6 @@ flowchart LR
 
 ### Real-World Analogy: Office Building Tenants
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-office-building-tenants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-office-building-tenants-handwritten.svg" alt="Handwritten: Real-World Analogy: Office Building Tenants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-office-building-tenants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-office-building-tenants-diagram.svg" alt="Diagram: Real-World Analogy: Office Building Tenants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-office-building-tenants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-office-building-tenants-sticky.svg" alt="Sticky Note: Real-World Analogy: Office Building Tenants" width="30%">
-</a>
-
 
 Think of a physical server as an **office building**. The hypervisor is the **building manager** who divides the building into separate **office suites** (VMs). Each tenant (guest OS) gets:
 
@@ -120,16 +110,6 @@ An **apartment building** = Type 1 hypervisor (manager owns the building). A **h
 
 ### Formal Definition
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/formal-definition-handwritten.svg" alt="Handwritten: Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/formal-definition-diagram.svg" alt="Diagram: Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/formal-definition-sticky.svg" alt="Sticky Note: Formal Definition" width="30%">
-</a>
-
 
 ```
 Virtualization satisfies three properties (Popek & Goldberg, 1974):
@@ -141,16 +121,6 @@ Virtualization satisfies three properties (Popek & Goldberg, 1974):
 ```
 
 ### Key Terminology
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/key-terminology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/key-terminology-handwritten.svg" alt="Handwritten: Key Terminology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/key-terminology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/key-terminology-diagram.svg" alt="Diagram: Key Terminology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/key-terminology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/key-terminology-sticky.svg" alt="Sticky Note: Key Terminology" width="30%">
-</a>
 
 
 | Term | Definition |
@@ -175,16 +145,6 @@ These three approaches form a spectrum from pure software simulation to near-nat
 | **Hardware-assisted** | CPU extensions handle sensitive instructions natively | ~95-99% native | None | KVM, Hyper-V, VMware 6+ |
 
 ### Why These Differences Matter
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/why-these-differences-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/why-these-differences-matter-handwritten.svg" alt="Handwritten: Why These Differences Matter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/why-these-differences-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/why-these-differences-matter-diagram.svg" alt="Diagram: Why These Differences Matter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/why-these-differences-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/why-these-differences-matter-sticky.svg" alt="Sticky Note: Why These Differences Matter" width="30%">
-</a>
 
 
 ```
@@ -211,16 +171,6 @@ Popek and Goldberg (1974) formalized the necessary CPU properties for efficient 
 
 ### The x86 Problem
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/the-x86-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/the-x86-problem-handwritten.svg" alt="Handwritten: The x86 Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/the-x86-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/the-x86-problem-diagram.svg" alt="Diagram: The x86 Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/the-x86-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/the-x86-problem-sticky.svg" alt="Sticky Note: The x86 Problem" width="30%">
-</a>
-
 
 Older x86 CPUs FAILED the Popek & Goldberg criterion because several sensitive instructions (e.g., `popf`, `sgdt`, `sldt`, `smsw`) did NOT trap when executed in a lower privilege ring. They **silently succeeded** → the guest could read or modify real hardware state without the hypervisor knowing.
 
@@ -234,16 +184,6 @@ popf instruction (pop flags):
 
 ### Solutions to the x86 Problem
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/solutions-to-the-x86-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/solutions-to-the-x86-problem-handwritten.svg" alt="Handwritten: Solutions to the x86 Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/solutions-to-the-x86-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/solutions-to-the-x86-problem-diagram.svg" alt="Diagram: Solutions to the x86 Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/solutions-to-the-x86-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/solutions-to-the-x86-problem-sticky.svg" alt="Sticky Note: Solutions to the x86 Problem" width="30%">
-</a>
-
 
 | Era | Solution | How It Works |
 |-----|----------|-------------|
@@ -254,16 +194,6 @@ popf instruction (pop flags):
 ## 1.4 Steps to Create and Run a Virtual Machine
 
 ### Step-by-Step Process
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/step-by-step-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/step-by-step-process-handwritten.svg" alt="Handwritten: Step-by-Step Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/step-by-step-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/step-by-step-process-diagram.svg" alt="Diagram: Step-by-Step Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/step-by-step-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/step-by-step-process-sticky.svg" alt="Sticky Note: Step-by-Step Process" width="30%">
-</a>
 
 
 ```
@@ -286,16 +216,6 @@ Step 12: Repeat Steps 8-11 for the lifetime of the VM
 ```
 
 ### Pseudocode: Simple VMM Run Loop
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/pseudocode-simple-vmm-run-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/pseudocode-simple-vmm-run-loop-handwritten.svg" alt="Handwritten: Pseudocode: Simple VMM Run Loop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/pseudocode-simple-vmm-run-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/pseudocode-simple-vmm-run-loop-diagram.svg" alt="Diagram: Pseudocode: Simple VMM Run Loop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/pseudocode-simple-vmm-run-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/pseudocode-simple-vmm-run-loop-sticky.svg" alt="Sticky Note: Pseudocode: Simple VMM Run Loop" width="30%">
-</a>
 
 
 ```
@@ -347,16 +267,6 @@ END FUNCTION
 
 ### Dry Run Trace: VM Exit Handling
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trace-vm-exit-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trace-vm-exit-handling-handwritten.svg" alt="Handwritten: Dry Run Trace: VM Exit Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trace-vm-exit-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trace-vm-exit-handling-diagram.svg" alt="Diagram: Dry Run Trace: VM Exit Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trace-vm-exit-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trace-vm-exit-handling-sticky.svg" alt="Sticky Note: Dry Run Trace: VM Exit Handling" width="30%">
-</a>
-
 
 Scenario: Guest OS executes `IN` instruction (port I/O read) to read from keyboard controller.
 
@@ -373,16 +283,6 @@ Scenario: Guest OS executes `IN` instruction (port I/O read) to read from keyboa
 | 9 | Guest OS | Continues execution; RAX = 0x1C | Guest sees keyboard scancode as if from real hardware |
 
 ### C++ Implementation: Minimal VMM (Conceptual)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/c-implementation-minimal-vmm-conceptual-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/c-implementation-minimal-vmm-conceptual-handwritten.svg" alt="Handwritten: C++ Implementation: Minimal VMM (Conceptual)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/c-implementation-minimal-vmm-conceptual-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/c-implementation-minimal-vmm-conceptual-diagram.svg" alt="Diagram: C++ Implementation: Minimal VMM (Conceptual)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/c-implementation-minimal-vmm-conceptual-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/c-implementation-minimal-vmm-conceptual-sticky.svg" alt="Sticky Note: C++ Implementation: Minimal VMM (Conceptual)" width="30%">
-</a>
 
 
 ```cpp
@@ -774,16 +674,6 @@ int main() {
 ```
 
 ### Python Implementation: Simple VMM Simulator
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/python-implementation-simple-vmm-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/python-implementation-simple-vmm-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Simple VMM Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/python-implementation-simple-vmm-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/python-implementation-simple-vmm-simulator-diagram.svg" alt="Diagram: Python Implementation: Simple VMM Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/python-implementation-simple-vmm-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/python-implementation-simple-vmm-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Simple VMM Simulator" width="30%">
-</a>
 
 
 ```python
@@ -1198,16 +1088,6 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | WHY |
 |-----------|----------------|-----------------|-----|
@@ -1222,16 +1102,6 @@ if __name__ == "__main__":
 
 ### A&D: Virtualization Approaches
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-virtualization-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-virtualization-approaches-handwritten.svg" alt="Handwritten: A&D: Virtualization Approaches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-virtualization-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-virtualization-approaches-diagram.svg" alt="Diagram: A&D: Virtualization Approaches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-virtualization-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-virtualization-approaches-sticky.svg" alt="Sticky Note: A&D: Virtualization Approaches" width="30%">
-</a>
-
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -1241,16 +1111,6 @@ if __name__ == "__main__":
 | **Emulation** | Runs any architecture (ARM on x86); useful for development and cross-platform | Extremely slow (1-10% native); impractical for production; high CPU usage |
 
 ### Edge Cases in Virtualization
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/edge-cases-in-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/edge-cases-in-virtualization-handwritten.svg" alt="Handwritten: Edge Cases in Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/edge-cases-in-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/edge-cases-in-virtualization-diagram.svg" alt="Diagram: Edge Cases in Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/edge-cases-in-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/edge-cases-in-virtualization-sticky.svg" alt="Sticky Note: Edge Cases in Virtualization" width="30%">
-</a>
 
 
 **1. VM Escape (CVE-2019-2446, CVE-2021-22555)**
@@ -1389,16 +1249,6 @@ A **hypervisor** (or **Virtual Machine Monitor, VMM**) is the software layer tha
 
 ### Real-World Analogy: Apartment Building vs Hotel
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-apartment-building-vs-hotel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-apartment-building-vs-hotel-handwritten.svg" alt="Handwritten: Real-World Analogy: Apartment Building vs Hotel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-apartment-building-vs-hotel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-apartment-building-vs-hotel-diagram.svg" alt="Diagram: Real-World Analogy: Apartment Building vs Hotel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-apartment-building-vs-hotel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-apartment-building-vs-hotel-sticky.svg" alt="Sticky Note: Real-World Analogy: Apartment Building vs Hotel" width="30%">
-</a>
-
 
 **Type 1 Hypervisor → Apartment Building**
 
@@ -1438,16 +1288,6 @@ The hotel management company = **host OS**. You (the hypervisor) are just one **
 The hypervisor INSTALLS DIRECTLY onto the hardware. It acts as a lightweight OS specifically designed to run VMs.
 
 ### Architecture Diagram
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-handwritten.svg" alt="Handwritten: Architecture Diagram" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-diagram.svg" alt="Diagram: Architecture Diagram" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-sticky.svg" alt="Sticky Note: Architecture Diagram" width="30%">
-</a>
 
 
 ```
@@ -1491,16 +1331,6 @@ The hypervisor INSTALLS DIRECTLY onto the hardware. It acts as a lightweight OS 
 
 ### How Type 1 Hypervisors Handle Hardware
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-1-hypervisors-handle-hardware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-1-hypervisors-handle-hardware-handwritten.svg" alt="Handwritten: How Type 1 Hypervisors Handle Hardware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-1-hypervisors-handle-hardware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-1-hypervisors-handle-hardware-diagram.svg" alt="Diagram: How Type 1 Hypervisors Handle Hardware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-1-hypervisors-handle-hardware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-1-hypervisors-handle-hardware-sticky.svg" alt="Sticky Note: How Type 1 Hypervisors Handle Hardware" width="30%">
-</a>
-
 
 Since there is NO host OS, the hypervisor must include:
 
@@ -1511,16 +1341,6 @@ Since there is NO host OS, the hypervisor must include:
 5. **Management interface** → CLI, REST API, or GUI for VM lifecycle
 
 ### Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi-handwritten.svg" alt="Handwritten: Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi-diagram.svg" alt="Diagram: Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-1-hypervisor-vmware-esxi-sticky.svg" alt="Sticky Note: Steps to Create a VM on Type 1 Hypervisor (VMware ESXi)" width="30%">
-</a>
 
 
 ```
@@ -1548,16 +1368,6 @@ Step 10: VMkernel issues VMLAUNCH → Guest OS boots inside VM
 
 ### A&D: Type 1 Hypervisors
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-1-hypervisors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-1-hypervisors-handwritten.svg" alt="Handwritten: A&D: Type 1 Hypervisors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-1-hypervisors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-1-hypervisors-diagram.svg" alt="Diagram: A&D: Type 1 Hypervisors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-1-hypervisors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-1-hypervisors-sticky.svg" alt="Sticky Note: A&D: Type 1 Hypervisors" width="30%">
-</a>
-
 
 | Aspect | Advantages | Disadvantages |
 |--------|-----------|---------------|
@@ -1573,16 +1383,6 @@ Step 10: VMkernel issues VMLAUNCH → Guest OS boots inside VM
 The hypervisor runs as an APPLICATION inside a full operating system. The host OS manages all hardware; the hypervisor is just another process.
 
 ### Architecture Diagram
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-handwritten.svg" alt="Handwritten: Architecture Diagram" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-diagram.svg" alt="Diagram: Architecture Diagram" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/architecture-diagram-sticky.svg" alt="Sticky Note: Architecture Diagram" width="30%">
-</a>
 
 
 ```
@@ -1613,16 +1413,6 @@ The hypervisor runs as an APPLICATION inside a full operating system. The host O
 
 ### How Type 2 Hypervisors Handle I/O
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-2-hypervisors-handle-i-o-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-2-hypervisors-handle-i-o-handwritten.svg" alt="Handwritten: How Type 2 Hypervisors Handle I/O" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-2-hypervisors-handle-i-o-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-2-hypervisors-handle-i-o-diagram.svg" alt="Diagram: How Type 2 Hypervisors Handle I/O" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-2-hypervisors-handle-i-o-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-type-2-hypervisors-handle-i-o-sticky.svg" alt="Sticky Note: How Type 2 Hypervisors Handle I/O" width="30%">
-</a>
-
 
 Since the host OS owns all hardware, Type 2 hypervisors face a critical challenge:
 
@@ -1638,16 +1428,6 @@ Two layers of scheduling:
 ```
 
 ### Steps to Create a VM on Type 2 Hypervisor (VirtualBox)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-2-hypervisor-virtualbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-2-hypervisor-virtualbox-handwritten.svg" alt="Handwritten: Steps to Create a VM on Type 2 Hypervisor (VirtualBox)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-2-hypervisor-virtualbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-2-hypervisor-virtualbox-diagram.svg" alt="Diagram: Steps to Create a VM on Type 2 Hypervisor (VirtualBox)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-2-hypervisor-virtualbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-to-create-a-vm-on-type-2-hypervisor-virtualbox-sticky.svg" alt="Sticky Note: Steps to Create a VM on Type 2 Hypervisor (VirtualBox)" width="30%">
-</a>
 
 
 ```
@@ -1675,16 +1455,6 @@ Step 10: User sees VM window; interacts through GUI integration
 | **UTM** | macOS (Apple Silicon) | QEMU-based, ARM/x86 emulation on M1/M2/M3 |
 
 ### A&D: Type 2 Hypervisors
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-2-hypervisors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-2-hypervisors-handwritten.svg" alt="Handwritten: A&D: Type 2 Hypervisors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-2-hypervisors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-2-hypervisors-diagram.svg" alt="Diagram: A&D: Type 2 Hypervisors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-2-hypervisors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/a-d-type-2-hypervisors-sticky.svg" alt="Sticky Note: A&D: Type 2 Hypervisors" width="30%">
-</a>
 
 
 | Aspect | Advantages | Disadvantages |
@@ -1719,16 +1489,6 @@ Step 10: User sees VM window; interacts through GUI integration
 | **Cost** | Enterprise licensing ($) | Free or low-cost desktop licensing |
 
 ### Performance Impact: Type 1 vs Type 2
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-impact-type-1-vs-type-2-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-impact-type-1-vs-type-2-handwritten.svg" alt="Handwritten: Performance Impact: Type 1 vs Type 2" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-impact-type-1-vs-type-2-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-impact-type-1-vs-type-2-diagram.svg" alt="Diagram: Performance Impact: Type 1 vs Type 2" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-impact-type-1-vs-type-2-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-impact-type-1-vs-type-2-sticky.svg" alt="Sticky Note: Performance Impact: Type 1 vs Type 2" width="30%">
-</a>
 
 
 ```
@@ -1982,16 +1742,6 @@ These three approaches represent the evolution of virtualization from pure softw
 
 ### Real-World Analogy: Interpreting Languages
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-interpreting-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-interpreting-languages-handwritten.svg" alt="Handwritten: Real-World Analogy: Interpreting Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-interpreting-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-interpreting-languages-diagram.svg" alt="Diagram: Real-World Analogy: Interpreting Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-interpreting-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/real-world-analogy-interpreting-languages-sticky.svg" alt="Sticky Note: Real-World Analogy: Interpreting Languages" width="30%">
-</a>
-
 
 **Full Virtualization** = A **human interpreter** who sits between two people speaking different languages. The interpreter doesn't modify what either person says — they just translate every utterance. The speakers don't know the interpreter exists (unmodified guest).
 
@@ -2017,16 +1767,6 @@ These three approaches represent the evolution of virtualization from pure softw
 The hypervisor presents an EXACT copy of the underlying hardware to an UNMODIFIED guest OS. The guest believes it's running on bare metal.
 
 ### Binary Translation (VMware's Original Approach)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/binary-translation-vmware-s-original-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/binary-translation-vmware-s-original-approach-handwritten.svg" alt="Handwritten: Binary Translation (VMware's Original Approach)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/binary-translation-vmware-s-original-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/binary-translation-vmware-s-original-approach-diagram.svg" alt="Diagram: Binary Translation (VMware's Original Approach)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/binary-translation-vmware-s-original-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/binary-translation-vmware-s-original-approach-sticky.svg" alt="Sticky Note: Binary Translation (VMware's Original Approach)" width="30%">
-</a>
 
 
 Before Intel VT-x (2005), VMware used **binary translation** to solve the x86 virtualization problem (non-trapping sensitive instructions).
@@ -2057,30 +1797,10 @@ Translated Code (executed by CPU):
 
 ### Trap-and-Emulate (The Classical Model)
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/trap-and-emulate-the-classical-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/trap-and-emulate-the-classical-model-handwritten.svg" alt="Handwritten: Trap-and-Emulate (The Classical Model)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/trap-and-emulate-the-classical-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/trap-and-emulate-the-classical-model-diagram.svg" alt="Diagram: Trap-and-Emulate (The Classical Model)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/trap-and-emulate-the-classical-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/trap-and-emulate-the-classical-model-sticky.svg" alt="Sticky Note: Trap-and-Emulate (The Classical Model)" width="30%">
-</a>
-
 
 The gold standard for virtualizable architectures. The guest runs at a lower privilege level (Ring 1), and privileged instructions automatically trap to the VMM.
 
 ### Steps for Trap-and-Emulate (Correctly Virtualizable Architecture)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-for-trap-and-emulate-correctly-virtualizable-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-for-trap-and-emulate-correctly-virtualizable-architecture-handwritten.svg" alt="Handwritten: Steps for Trap-and-Emulate (Correctly Virtualizable Architecture)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-for-trap-and-emulate-correctly-virtualizable-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-for-trap-and-emulate-correctly-virtualizable-architecture-diagram.svg" alt="Diagram: Steps for Trap-and-Emulate (Correctly Virtualizable Architecture)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-for-trap-and-emulate-correctly-virtualizable-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/steps-for-trap-and-emulate-correctly-virtualizable-architecture-sticky.svg" alt="Sticky Note: Steps for Trap-and-Emulate (Correctly Virtualizable Architecture)" width="30%">
-</a>
 
 
 ```
@@ -2106,16 +1826,6 @@ Step 12: Guest continues execution, unaware of the trap+emulate cycle
 
 ### Dry Run: Trap-and-Emulate (Guest OS enabling interrupts)
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trap-and-emulate-guest-os-enabling-interrupts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trap-and-emulate-guest-os-enabling-interrupts-handwritten.svg" alt="Handwritten: Dry Run: Trap-and-Emulate (Guest OS enabling interrupts)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trap-and-emulate-guest-os-enabling-interrupts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trap-and-emulate-guest-os-enabling-interrupts-diagram.svg" alt="Diagram: Dry Run: Trap-and-Emulate (Guest OS enabling interrupts)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trap-and-emulate-guest-os-enabling-interrupts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/dry-run-trap-and-emulate-guest-os-enabling-interrupts-sticky.svg" alt="Sticky Note: Dry Run: Trap-and-Emulate (Guest OS enabling interrupts)" width="30%">
-</a>
-
 
 | Step | CPU Mode | Instruction | Action | Key State |
 |------|----------|-------------|--------|-----------|
@@ -2134,16 +1844,6 @@ Step 12: Guest continues execution, unaware of the trap+emulate cycle
 The guest OS is MODIFIED to replace sensitive instructions with explicit **hypercalls** — direct calls into the hypervisor. This eliminates the need for traps.
 
 ### How Paravirtualization Works
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-paravirtualization-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-paravirtualization-works-handwritten.svg" alt="Handwritten: How Paravirtualization Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-paravirtualization-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-paravirtualization-works-diagram.svg" alt="Diagram: How Paravirtualization Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-paravirtualization-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-paravirtualization-works-sticky.svg" alt="Sticky Note: How Paravirtualization Works" width="30%">
-</a>
 
 
 ```
@@ -2168,16 +1868,6 @@ Normal OS (unmodified):            Paravirtualized OS (modified):
 
 ### Key Paravirtualization Techniques
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/key-paravirtualization-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/key-paravirtualization-techniques-handwritten.svg" alt="Handwritten: Key Paravirtualization Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/key-paravirtualization-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/key-paravirtualization-techniques-diagram.svg" alt="Diagram: Key Paravirtualization Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/key-paravirtualization-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/key-paravirtualization-techniques-sticky.svg" alt="Sticky Note: Key Paravirtualization Techniques" width="30%">
-</a>
-
 
 | Technique | Normal OS | Paravirtualized OS |
 |-----------|----------|--------------------|
@@ -2189,16 +1879,6 @@ Normal OS (unmodified):            Paravirtualized OS (modified):
 | **System calls** | sysenter/sysexit | **Hypercall page:** Direct hypercall for context switch |
 
 ### Paravirtualization Hypercall Interface
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/paravirtualization-hypercall-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/paravirtualization-hypercall-interface-handwritten.svg" alt="Handwritten: Paravirtualization Hypercall Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/paravirtualization-hypercall-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/paravirtualization-hypercall-interface-diagram.svg" alt="Diagram: Paravirtualization Hypercall Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/paravirtualization-hypercall-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/paravirtualization-hypercall-interface-sticky.svg" alt="Sticky Note: Paravirtualization Hypercall Interface" width="30%">
-</a>
 
 
 ```c
@@ -2235,16 +1915,6 @@ Intel introduced **VT-x** (formerly Vanderpool) in 2005 on Pentium 4. AMD introd
 
 ### New CPU Modes
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/new-cpu-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/new-cpu-modes-handwritten.svg" alt="Handwritten: New CPU Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/new-cpu-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/new-cpu-modes-diagram.svg" alt="Diagram: New CPU Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/new-cpu-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/new-cpu-modes-sticky.svg" alt="Sticky Note: New CPU Modes" width="30%">
-</a>
-
 
 ```
 Without VT-x:
@@ -2272,16 +1942,6 @@ With VT-x:
 ```
 
 ### VMX Root Mode vs VMX Non-Root Mode
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/vmx-root-mode-vs-vmx-non-root-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/vmx-root-mode-vs-vmx-non-root-mode-handwritten.svg" alt="Handwritten: VMX Root Mode vs VMX Non-Root Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/vmx-root-mode-vs-vmx-non-root-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/vmx-root-mode-vs-vmx-non-root-mode-diagram.svg" alt="Diagram: VMX Root Mode vs VMX Non-Root Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/vmx-root-mode-vs-vmx-non-root-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/vmx-root-mode-vs-vmx-non-root-mode-sticky.svg" alt="Sticky Note: VMX Root Mode vs VMX Non-Root Mode" width="30%">
-</a>
 
 
 | Feature | VMX Root Mode | VMX Non-Root Mode |
@@ -2313,16 +1973,6 @@ With VT-x:
 
 ### Performance Gap Analysis
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-gap-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-gap-analysis-handwritten.svg" alt="Handwritten: Performance Gap Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-gap-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-gap-analysis-diagram.svg" alt="Diagram: Performance Gap Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-gap-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/performance-gap-analysis-sticky.svg" alt="Sticky Note: Performance Gap Analysis" width="30%">
-</a>
-
 
 ```
 Binary Translation (VMware ESXi 3.x):
@@ -2352,16 +2002,6 @@ Savings: 2-3x fewer cycles per exit,
 The **VMCS** is the in-memory data structure that controls VMX operations. Each logical CPU has one active VMCS at a time.
 
 ### VMCS Layout
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/vmcs-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/vmcs-layout-handwritten.svg" alt="Handwritten: VMCS Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/vmcs-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/vmcs-layout-diagram.svg" alt="Diagram: VMCS Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/vmcs-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/vmcs-layout-sticky.svg" alt="Sticky Note: VMCS Layout" width="30%">
-</a>
 
 
 ```
@@ -2825,16 +2465,6 @@ Memory virtualization is the most performance-critical subsystem in a VMM. The V
 
 ### 6.1 The Address Space Problem
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-1-the-address-space-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-1-the-address-space-problem-handwritten.svg" alt="Handwritten: 6.1 The Address Space Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-1-the-address-space-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-1-the-address-space-problem-diagram.svg" alt="Diagram: 6.1 The Address Space Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-1-the-address-space-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-1-the-address-space-problem-sticky.svg" alt="Sticky Note: 6.1 The Address Space Problem" width="30%">
-</a>
-
 
 In a non-virtualized system, the OS manages three address spaces:
 
@@ -2853,16 +2483,6 @@ Guest VA  → Guest PA (guest page tables)  → Machine PA (VMM page tables)
 ```
 
 ### 6.2 Shadow Page Tables (Software Approach)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-2-shadow-page-tables-software-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-2-shadow-page-tables-software-approach-handwritten.svg" alt="Handwritten: 6.2 Shadow Page Tables (Software Approach)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-2-shadow-page-tables-software-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-2-shadow-page-tables-software-approach-diagram.svg" alt="Diagram: 6.2 Shadow Page Tables (Software Approach)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-2-shadow-page-tables-software-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-2-shadow-page-tables-software-approach-sticky.svg" alt="Sticky Note: 6.2 Shadow Page Tables (Software Approach)" width="30%">
-</a>
 
 
 **Concept:** The VMM maintains shadow copies of each guest's page tables that map Guest VA directly to Machine PA → bypassing the GPA layer entirely. The guest's own page tables are write-protected; any attempt by the guest OS to modify them traps to the VMM, which updates the shadow tables accordingly.
@@ -2981,16 +2601,6 @@ class ShadowPageTable:
 
 ### 6.3 Hardware-Assisted Paging (EPT / NPT)
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-3-hardware-assisted-paging-ept-npt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-3-hardware-assisted-paging-ept-npt-handwritten.svg" alt="Handwritten: 6.3 Hardware-Assisted Paging (EPT / NPT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-3-hardware-assisted-paging-ept-npt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-3-hardware-assisted-paging-ept-npt-diagram.svg" alt="Diagram: 6.3 Hardware-Assisted Paging (EPT / NPT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-3-hardware-assisted-paging-ept-npt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-3-hardware-assisted-paging-ept-npt-sticky.svg" alt="Sticky Note: 6.3 Hardware-Assisted Paging (EPT / NPT)" width="30%">
-</a>
-
 
 Intel's **Extended Page Tables (EPT)** and AMD's **Nested Page Tables (NPT)** eliminate shadow page tables by adding a second level of paging in hardware.
 
@@ -3096,16 +2706,6 @@ class EPT:
 
 ### 6.4 Shadow vs EPT Comparison
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-4-shadow-vs-ept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-4-shadow-vs-ept-comparison-handwritten.svg" alt="Handwritten: 6.4 Shadow vs EPT Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-4-shadow-vs-ept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-4-shadow-vs-ept-comparison-diagram.svg" alt="Diagram: 6.4 Shadow vs EPT Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-4-shadow-vs-ept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-4-shadow-vs-ept-comparison-sticky.svg" alt="Sticky Note: 6.4 Shadow vs EPT Comparison" width="30%">
-</a>
-
 
 | Aspect | Shadow Page Tables | EPT/NPT |
 |--------|-------------------|---------|
@@ -3121,16 +2721,6 @@ class EPT:
 
 ### 6.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 6.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-5-complexity-analysis-diagram.svg" alt="Diagram: 6.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 6.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Shadow PT | EPT |
 |-----------|-----------|-----|
@@ -3141,16 +2731,6 @@ class EPT:
 | Memory overcommit (balloon) | O(n) → rebuild affected shadows | O(1) → update single EPT entry |
 
 ### 6.6 Edge Cases in Memory Virtualization
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-6-edge-cases-in-memory-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-6-edge-cases-in-memory-virtualization-handwritten.svg" alt="Handwritten: 6.6 Edge Cases in Memory Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-6-edge-cases-in-memory-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-6-edge-cases-in-memory-virtualization-diagram.svg" alt="Diagram: 6.6 Edge Cases in Memory Virtualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/6-6-edge-cases-in-memory-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/6-6-edge-cases-in-memory-virtualization-sticky.svg" alt="Sticky Note: 6.6 Edge Cases in Memory Virtualization" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -3168,16 +2748,6 @@ class EPT:
 I/O virtualization gives each guest its own view of devices (disk, NIC, GPU) while enforcing isolation and sharing. There are three approaches: emulated, paravirtualized, and direct assignment.
 
 ### 7.1 Emulated I/O (Full Device Emulation)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-1-emulated-i-o-full-device-emulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-1-emulated-i-o-full-device-emulation-handwritten.svg" alt="Handwritten: 7.1 Emulated I/O (Full Device Emulation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-1-emulated-i-o-full-device-emulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-1-emulated-i-o-full-device-emulation-diagram.svg" alt="Diagram: 7.1 Emulated I/O (Full Device Emulation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-1-emulated-i-o-full-device-emulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-1-emulated-i-o-full-device-emulation-sticky.svg" alt="Sticky Note: 7.1 Emulated I/O (Full Device Emulation)" width="30%">
-</a>
 
 
 **Concept:** The VMM presents a software-emulated device that mimics real hardware. The guest OS loads its native driver for that device, and every MMIO/PIO access traps to the VMM, which simulates the device behavior.
@@ -3272,16 +2842,6 @@ class EmulatedDisk:
 ```
 
 ### 7.2 Paravirtualized I/O (Virtio)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-2-paravirtualized-i-o-virtio-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-2-paravirtualized-i-o-virtio-handwritten.svg" alt="Handwritten: 7.2 Paravirtualized I/O (Virtio)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-2-paravirtualized-i-o-virtio-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-2-paravirtualized-i-o-virtio-diagram.svg" alt="Diagram: 7.2 Paravirtualized I/O (Virtio)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-2-paravirtualized-i-o-virtio-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-2-paravirtualized-i-o-virtio-sticky.svg" alt="Sticky Note: 7.2 Paravirtualized I/O (Virtio)" width="30%">
-</a>
 
 
 **Concept:** The guest and VMM agree on a shared ring buffer (virtqueue) in guest memory. The guest places I/O requests directly into the ring; the VMM polls the ring and processes requests asynchronously. This eliminates MMIO traps for each I/O operation.
@@ -3431,16 +2991,6 @@ class VirtioBlock:
 
 ### 7.3 Direct I/O Assignment (SR-IOV)
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-3-direct-i-o-assignment-sr-iov-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-3-direct-i-o-assignment-sr-iov-handwritten.svg" alt="Handwritten: 7.3 Direct I/O Assignment (SR-IOV)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-3-direct-i-o-assignment-sr-iov-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-3-direct-i-o-assignment-sr-iov-diagram.svg" alt="Diagram: 7.3 Direct I/O Assignment (SR-IOV)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-3-direct-i-o-assignment-sr-iov-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-3-direct-i-o-assignment-sr-iov-sticky.svg" alt="Sticky Note: 7.3 Direct I/O Assignment (SR-IOV)" width="30%">
-</a>
-
 
 **Concept:** A physical device presents itself as multiple Virtual Functions (VFs) via Single Root I/O Virtualization (SR-IOV). Each VF can be assigned directly to a guest → the guest driver talks to real hardware with zero VMM involvement on the data path.
 
@@ -3480,16 +3030,6 @@ VMM involvement    Every op    Batch poll  Setup only
 
 ### 7.4 Virtio vs SR-IOV Comparison
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-4-virtio-vs-sr-iov-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-4-virtio-vs-sr-iov-comparison-handwritten.svg" alt="Handwritten: 7.4 Virtio vs SR-IOV Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-4-virtio-vs-sr-iov-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-4-virtio-vs-sr-iov-comparison-diagram.svg" alt="Diagram: 7.4 Virtio vs SR-IOV Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/7-4-virtio-vs-sr-iov-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/7-4-virtio-vs-sr-iov-comparison-sticky.svg" alt="Sticky Note: 7.4 Virtio vs SR-IOV Comparison" width="30%">
-</a>
-
 
 | Aspect | Virtio | SR-IOV |
 |--------|--------|--------|
@@ -3508,16 +3048,6 @@ VMM involvement    Every op    Batch poll  Setup only
 Containers virtualize the OS rather than the hardware. Multiple containers share the same host kernel but get isolated views of the filesystem, process tree, network stack, and resource limits.
 
 ### 8.1 Namespaces → What Containers *See*
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-1-namespaces-what-containers-see-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-1-namespaces-what-containers-see-handwritten.svg" alt="Handwritten: 8.1 Namespaces → What Containers *See*" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-1-namespaces-what-containers-see-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-1-namespaces-what-containers-see-diagram.svg" alt="Diagram: 8.1 Namespaces → What Containers *See*" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-1-namespaces-what-containers-see-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-1-namespaces-what-containers-see-sticky.svg" alt="Sticky Note: 8.1 Namespaces → What Containers *See*" width="30%">
-</a>
 
 
 Namespaces restrict what a process can see. Each namespace wraps a global OS resource in an abstraction that makes the process think it has its own private instance.
@@ -3599,16 +3129,6 @@ def run_in_new_namespaces():
 ```
 
 ### 8.2 Cgroups → What Containers *Use*
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-2-cgroups-what-containers-use-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-2-cgroups-what-containers-use-handwritten.svg" alt="Handwritten: 8.2 Cgroups → What Containers *Use*" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-2-cgroups-what-containers-use-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-2-cgroups-what-containers-use-diagram.svg" alt="Diagram: 8.2 Cgroups → What Containers *Use*" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-2-cgroups-what-containers-use-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-2-cgroups-what-containers-use-sticky.svg" alt="Sticky Note: 8.2 Cgroups → What Containers *Use*" width="30%">
-</a>
 
 
 Cgroups (control groups) limit, account for, and isolate resource usage (CPU, memory, disk I/O, network). While namespaces dictate visibility, cgroups enforce boundaries.
@@ -3704,16 +3224,6 @@ class CgroupLimiter:
 
 ### 8.3 Docker Architecture
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-3-docker-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-3-docker-architecture-handwritten.svg" alt="Handwritten: 8.3 Docker Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-3-docker-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-3-docker-architecture-diagram.svg" alt="Diagram: 8.3 Docker Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-3-docker-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-3-docker-architecture-sticky.svg" alt="Sticky Note: 8.3 Docker Architecture" width="30%">
-</a>
-
 
 Docker uses Linux namespaces + cgroups + union filesystems (overlay2) to package and run containers.
 
@@ -3753,16 +3263,6 @@ Virtual Machine:                      Container:
 ```
 
 ### 8.4 Container vs VM Comprehensive Comparison
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-4-container-vs-vm-comprehensive-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-4-container-vs-vm-comprehensive-comparison-handwritten.svg" alt="Handwritten: 8.4 Container vs VM Comprehensive Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-4-container-vs-vm-comprehensive-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-4-container-vs-vm-comprehensive-comparison-diagram.svg" alt="Diagram: 8.4 Container vs VM Comprehensive Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-4-container-vs-vm-comprehensive-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-4-container-vs-vm-comprehensive-comparison-sticky.svg" alt="Sticky Note: 8.4 Container vs VM Comprehensive Comparison" width="30%">
-</a>
 
 
 | Aspect | Virtual Machine | Container |
@@ -3883,16 +3383,6 @@ class Container:
 
 ### 8.5 Firecracker → MicroVM Approach
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-5-firecracker-microvm-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-5-firecracker-microvm-approach-handwritten.svg" alt="Handwritten: 8.5 Firecracker → MicroVM Approach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-5-firecracker-microvm-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-5-firecracker-microvm-approach-diagram.svg" alt="Diagram: 8.5 Firecracker → MicroVM Approach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/8-5-firecracker-microvm-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/8-5-firecracker-microvm-approach-sticky.svg" alt="Sticky Note: 8.5 Firecracker → MicroVM Approach" width="30%">
-</a>
-
 
 AWS Firecracker is a VMM designed specifically for serverless workloads (Lambda, Fargate). It uses KVM with a minimized device model → no PCI bus, BIOS, or ACPI → giving container-like density with VM-level isolation.
 
@@ -3930,16 +3420,6 @@ Guest OS    Linux only     Same kernel    Any OS
 
 ### Q1: What is the difference between VT-x and AMD-V?
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-difference-between-vt-x-and-amd-v-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-difference-between-vt-x-and-amd-v-handwritten.svg" alt="Handwritten: What is the difference between VT-x and AMD-V?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-difference-between-vt-x-and-amd-v-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-difference-between-vt-x-and-amd-v-diagram.svg" alt="Diagram: What is the difference between VT-x and AMD-V?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-difference-between-vt-x-and-amd-v-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-difference-between-vt-x-and-amd-v-sticky.svg" alt="Sticky Note: What is the difference between VT-x and AMD-V?" width="30%">
-</a>
-
 
 Intel VT-x and AMD-V are CPU extensions that enable hardware-assisted virtualization. They achieve the same goal → reducing the VMM's complexity and improving performance → but differ in implementation details.
 
@@ -3956,16 +3436,6 @@ Intel VT-x and AMD-V are CPU extensions that enable hardware-assisted virtualiza
 | **EPT violation** | Specific exit reason with GPA | NPT fault with nested page fault info |
 
 ### Q2: What is nested virtualization? How does it work?
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-nested-virtualization-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-nested-virtualization-how-does-it-work-handwritten.svg" alt="Handwritten: What is nested virtualization? How does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-nested-virtualization-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-nested-virtualization-how-does-it-work-diagram.svg" alt="Diagram: What is nested virtualization? How does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-nested-virtualization-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-nested-virtualization-how-does-it-work-sticky.svg" alt="Sticky Note: What is nested virtualization? How does it work?" width="30%">
-</a>
 
 
 Nested virtualization is running a VMM *inside* a VM → for example, running KVM inside a VMware VM on AWS. The inner VMM must handle VMX instructions that the outer VMM normally handles.
@@ -3988,32 +3458,12 @@ Nested virtualization is running a VMM *inside* a VM → for example, running KV
 
 ### Q3: Can paravirtualization be combined with hardware virtualization?
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/can-paravirtualization-be-combined-with-hardware-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/can-paravirtualization-be-combined-with-hardware-virtualization-handwritten.svg" alt="Handwritten: Can paravirtualization be combined with hardware virtualization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/can-paravirtualization-be-combined-with-hardware-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/can-paravirtualization-be-combined-with-hardware-virtualization-diagram.svg" alt="Diagram: Can paravirtualization be combined with hardware virtualization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/can-paravirtualization-be-combined-with-hardware-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/can-paravirtualization-be-combined-with-hardware-virtualization-sticky.svg" alt="Sticky Note: Can paravirtualization be combined with hardware virtualization?" width="30%">
-</a>
-
 
 Yes → this is the dominant architecture today. KVM uses VT-x/AMD-V for CPU virtualization (hardware-assisted) AND virtio for I/O (paravirtualized). This gives the best of both:
 - VT-x handles CPU and memory with minimal traps
 - Virtio handles I/O with efficient ring buffers
 
 ### Q4: What happens when a VM is overcommitted on memory?
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-happens-when-a-vm-is-overcommitted-on-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-happens-when-a-vm-is-overcommitted-on-memory-handwritten.svg" alt="Handwritten: What happens when a VM is overcommitted on memory?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-happens-when-a-vm-is-overcommitted-on-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-happens-when-a-vm-is-overcommitted-on-memory-diagram.svg" alt="Diagram: What happens when a VM is overcommitted on memory?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-happens-when-a-vm-is-overcommitted-on-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-happens-when-a-vm-is-overcommitted-on-memory-sticky.svg" alt="Sticky Note: What happens when a VM is overcommitted on memory?" width="30%">
-</a>
 
 
 When total guest memory exceeds host physical memory, the host must reclaim pages:
@@ -4025,16 +3475,6 @@ When total guest memory exceeds host physical memory, the host must reclaim page
 Overcommit risks: OOM killer may kill the VMM or a critical VM; performance thrashes under pressure; live migration becomes slower.
 
 ### Q5: How does live migration work in memory virtualization?
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-live-migration-work-in-memory-virtualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-live-migration-work-in-memory-virtualization-handwritten.svg" alt="Handwritten: How does live migration work in memory virtualization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-live-migration-work-in-memory-virtualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-live-migration-work-in-memory-virtualization-diagram.svg" alt="Diagram: How does live migration work in memory virtualization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-live-migration-work-in-memory-virtualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-live-migration-work-in-memory-virtualization-sticky.svg" alt="Sticky Note: How does live migration work in memory virtualization?" width="30%">
-</a>
 
 
 Live migration transfers a running VM from one host to another with minimal downtime:
@@ -4050,30 +3490,10 @@ Downtime target: &lt; 100ms for most workloads.
 
 ### Q6: Why did KVM remove shadow page table support in 2015?
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/why-did-kvm-remove-shadow-page-table-support-in-2015-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/why-did-kvm-remove-shadow-page-table-support-in-2015-handwritten.svg" alt="Handwritten: Why did KVM remove shadow page table support in 2015?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/why-did-kvm-remove-shadow-page-table-support-in-2015-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/why-did-kvm-remove-shadow-page-table-support-in-2015-diagram.svg" alt="Diagram: Why did KVM remove shadow page table support in 2015?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/why-did-kvm-remove-shadow-page-table-support-in-2015-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/why-did-kvm-remove-shadow-page-table-support-in-2015-sticky.svg" alt="Sticky Note: Why did KVM remove shadow page table support in 2015?" width="30%">
-</a>
-
 
 By 2015, EPT hardware was universally available on server-class CPUs. Shadow page tables required a VM-exit on every guest CR3 write and every page table modification → significantly hurting performance for workloads with frequent context switches or page table activity (e.g., database workloads with large working sets). EPT removed this overhead completely.
 
 ### Q7: What is the cause of "VM-Exit storm"?
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-cause-of-vm-exit-storm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-cause-of-vm-exit-storm-handwritten.svg" alt="Handwritten: What is the cause of "VM-Exit storm"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-cause-of-vm-exit-storm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-cause-of-vm-exit-storm-diagram.svg" alt="Diagram: What is the cause of "VM-Exit storm"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-cause-of-vm-exit-storm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/what-is-the-cause-of-vm-exit-storm-sticky.svg" alt="Sticky Note: What is the cause of "VM-Exit storm"?" width="30%">
-</a>
 
 
 A VM-Exit storm occurs when the VMM resumes the guest and it immediately exits again on the next instruction. Causes:
@@ -4084,16 +3504,6 @@ A VM-Exit storm occurs when the VMM resumes the guest and it immediately exits a
 **Detection:** If VM-exit rate exceeds ~100K/sec per vCPU, investigate exit reason distribution.
 
 ### Q8: How does timekeeping work in a VM?
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-timekeeping-work-in-a-vm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-timekeeping-work-in-a-vm-handwritten.svg" alt="Handwritten: How does timekeeping work in a VM?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-timekeeping-work-in-a-vm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-timekeeping-work-in-a-vm-diagram.svg" alt="Diagram: How does timekeeping work in a VM?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-timekeeping-work-in-a-vm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/how-does-timekeeping-work-in-a-vm-sticky.svg" alt="Sticky Note: How does timekeeping work in a VM?" width="30%">
-</a>
 
 
 Guest OS uses time sources that are virtualized:
@@ -4106,16 +3516,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 ## 10. Applications in Real Systems
 
 ### 10.1 KVM (Kernel-based Virtual Machine)
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-1-kvm-kernel-based-virtual-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-1-kvm-kernel-based-virtual-machine-handwritten.svg" alt="Handwritten: 10.1 KVM (Kernel-based Virtual Machine)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-1-kvm-kernel-based-virtual-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-1-kvm-kernel-based-virtual-machine-diagram.svg" alt="Diagram: 10.1 KVM (Kernel-based Virtual Machine)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-1-kvm-kernel-based-virtual-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-1-kvm-kernel-based-virtual-machine-sticky.svg" alt="Sticky Note: 10.1 KVM (Kernel-based Virtual Machine)" width="30%">
-</a>
 
 
 | Aspect | Detail |
@@ -4131,16 +3531,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 
 ### 10.2 Xen
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-2-xen-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-2-xen-handwritten.svg" alt="Handwritten: 10.2 Xen" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-2-xen-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-2-xen-diagram.svg" alt="Diagram: 10.2 Xen" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-2-xen-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-2-xen-sticky.svg" alt="Sticky Note: 10.2 Xen" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -4154,16 +3544,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 | **Architecture** | Microkernel (< 1M LOC); dom0 is privileged management VM |
 
 ### 10.3 VMware ESXi
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-3-vmware-esxi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-3-vmware-esxi-handwritten.svg" alt="Handwritten: 10.3 VMware ESXi" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-3-vmware-esxi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-3-vmware-esxi-diagram.svg" alt="Diagram: 10.3 VMware ESXi" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-3-vmware-esxi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-3-vmware-esxi-sticky.svg" alt="Sticky Note: 10.3 VMware ESXi" width="30%">
-</a>
 
 
 | Aspect | Detail |
@@ -4179,16 +3559,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 
 ### 10.4 Microsoft Hyper-V
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-4-microsoft-hyper-v-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-4-microsoft-hyper-v-handwritten.svg" alt="Handwritten: 10.4 Microsoft Hyper-V" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-4-microsoft-hyper-v-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-4-microsoft-hyper-v-diagram.svg" alt="Diagram: 10.4 Microsoft Hyper-V" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-4-microsoft-hyper-v-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-4-microsoft-hyper-v-sticky.svg" alt="Sticky Note: 10.4 Microsoft Hyper-V" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -4203,16 +3573,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 
 ### 10.5 Docker (Container Runtime)
 
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-5-docker-container-runtime-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-5-docker-container-runtime-handwritten.svg" alt="Handwritten: 10.5 Docker (Container Runtime)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-5-docker-container-runtime-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-5-docker-container-runtime-diagram.svg" alt="Diagram: 10.5 Docker (Container Runtime)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-5-docker-container-runtime-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-5-docker-container-runtime-sticky.svg" alt="Sticky Note: 10.5 Docker (Container Runtime)" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -4226,16 +3586,6 @@ Without invariant TSC, a guest migrated between different-speed CPUs could see t
 | **Security** | Seccomp, AppArmor, SELinux, user namespaces |
 
 ### 10.6 AWS Firecracker
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-6-aws-firecracker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-6-aws-firecracker-handwritten.svg" alt="Handwritten: 10.6 AWS Firecracker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-6-aws-firecracker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-6-aws-firecracker-diagram.svg" alt="Diagram: 10.6 AWS Firecracker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/10-6-aws-firecracker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/10-6-aws-firecracker-sticky.svg" alt="Sticky Note: 10.6 AWS Firecracker" width="30%">
-</a>
 
 
 | Aspect | Detail |
@@ -4532,16 +3882,6 @@ sim.compareShadowVsEPT();
 10. **Design a hypervisor comparison matrix**: Create a table comparing KVM, Xen, ESXi, and Hyper-V across: CPU virt method, memory virt method, I/O method, management interface, guest OS support, maximum vCPUs per VM, maximum RAM per VM, live migration support, and fault tolerance.
 
 ### Additional Exercises
-
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/17-virtualization/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/17-virtualization/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
-</a>
 
 
 11. **VM-Exit frequency analyzer**: Write a KVM-based tool (using `perf kvm stat` or `/sys/kernel/debug/kvm/*`) that profiles VM-exit reasons for a running VM. Measure exit counts for: EPT violation, I/O instruction, CPUID, HLT, MSR access, and control register access. Identify the top 3 exit reasons and suggest optimizations.

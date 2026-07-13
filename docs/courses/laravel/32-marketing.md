@@ -167,16 +167,6 @@ flowchart LR
 
 ### 32.1 Marketing Data Models
 
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-handwritten.svg" alt="Handwritten: 32.1 Marketing Data Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-diagram.svg" alt="Diagram: 32.1 Marketing Data Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-1-marketing-data-models-sticky.svg" alt="Sticky Note: 32.1 Marketing Data Models" width="30%">
-</a>
-
 
 Every marketing platform rests on five core entities: Campaign, Audience, Lead, Content, and Analytics. These models capture the full lifecycle from audience targeting through content delivery, lead conversion, and performance measurement.
 
@@ -500,16 +490,6 @@ class ContentAsset extends Model
 ---
 
 ### 32.2 Campaign Optimization Agents
-
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-handwritten.svg" alt="Handwritten: 32.2 Campaign Optimization Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-diagram.svg" alt="Diagram: 32.2 Campaign Optimization Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-2-campaign-optimization-agents-sticky.svg" alt="Sticky Note: 32.2 Campaign Optimization Agents" width="30%">
-</a>
 
 
 Campaign optimization agents analyze real-time performance data → impressions, clicks, conversions, cost-per-acquisition → and recommend budget reallocation across channels and ad sets. The agent combines rule-based bid adjustments with AI-driven opportunity detection.
@@ -848,16 +828,6 @@ class OptimizeCampaignsCommand extends Command
 
 ### 32.3 Audience Segmentation & Targeting
 
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-handwritten.svg" alt="Handwritten: 32.3 Audience Segmentation & Targeting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-diagram.svg" alt="Diagram: 32.3 Audience Segmentation & Targeting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-3-audience-segmentation-targeting-sticky.svg" alt="Sticky Note: 32.3 Audience Segmentation & Targeting" width="30%">
-</a>
-
 
 Audience segmentation agents cluster users based on behavioral data → page views, purchase history, email engagement, content consumption → then assign each user to a segment with a confidence score. The agent uses AI to identify natural groupings that rule-based filters would miss.
 
@@ -1189,16 +1159,6 @@ PROMPT;
 ---
 
 ### 32.4 Content Generation Pipelines
-
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-handwritten.svg" alt="Handwritten: 32.4 Content Generation Pipelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-diagram.svg" alt="Diagram: 32.4 Content Generation Pipelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-4-content-generation-pipelines-sticky.svg" alt="Sticky Note: 32.4 Content Generation Pipelines" width="30%">
-</a>
 
 
 Content generation agents produce marketing copy across formats → blog posts, social media updates, email campaigns → with variant generation for A/B testing. Each generation is parameterized by brand voice, target audience, and channel-specific constraints.
@@ -1537,16 +1497,6 @@ class GenerateMarketingContentCommand extends Command
 
 ### 32.5 A/B Testing Automation
 
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-handwritten.svg" alt="Handwritten: 32.5 A/B Testing Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-diagram.svg" alt="Diagram: 32.5 A/B Testing Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-5-a-b-testing-automation-sticky.svg" alt="Sticky Note: 32.5 A/B Testing Automation" width="30%">
-</a>
-
 
 A/B testing agents handle the full experiment lifecycle: designing test variants based on the optimization goal, deploying them to traffic segments, monitoring results with statistical rigor, and declaring a winner when significance is reached.
 
@@ -1840,16 +1790,6 @@ PROMPT;
 ---
 
 ### 32.6 SEO Analysis Agents
-
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-handwritten.svg" alt="Handwritten: 32.6 SEO Analysis Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-diagram.svg" alt="Diagram: 32.6 SEO Analysis Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-6-seo-analysis-agents-sticky.svg" alt="Sticky Note: 32.6 SEO Analysis Agents" width="30%">
-</a>
 
 
 SEO analysis agents crawl or analyze page content, perform keyword gap analysis, evaluate on-page optimization, and generate prioritized improvement recommendations. The agent combines technical SEO checks with content-quality analysis.
@@ -2225,16 +2165,6 @@ PROMPT;
 
 ### 32.7 Social Media Scheduling & Management
 
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-handwritten.svg" alt="Handwritten: 32.7 Social Media Scheduling & Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-diagram.svg" alt="Diagram: 32.7 Social Media Scheduling & Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-7-social-media-scheduling-management-sticky.svg" alt="Sticky Note: 32.7 Social Media Scheduling & Management" width="30%">
-</a>
-
 
 Social media agents manage the content calendar, schedule posts at optimal times, monitor engagement metrics across platforms, and suggest content themes based on what resonates with the audience.
 
@@ -2522,16 +2452,6 @@ PROMPT;
 ---
 
 ### 32.8 Lead Scoring & Nurturing
-
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-handwritten.svg" alt="Handwritten: 32.8 Lead Scoring & Nurturing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-diagram.svg" alt="Diagram: 32.8 Lead Scoring & Nurturing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-8-lead-scoring-nurturing-sticky.svg" alt="Sticky Note: 32.8 Lead Scoring & Nurturing" width="30%">
-</a>
 
 
 Lead scoring agents assign engagement-based scores to prospects, classify them into readiness tiers, and trigger appropriate nurture sequences. The agent learns from historical conversion patterns to weight scoring signals.
@@ -2906,16 +2826,6 @@ PROMPT;
 ---
 
 ### 32.9 Marketing Analytics & Reporting
-
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-handwritten.svg" alt="Handwritten: 32.9 Marketing Analytics & Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-diagram.svg" alt="Diagram: 32.9 Marketing Analytics & Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/32-marketing/32-9-marketing-analytics-reporting-sticky.svg" alt="Sticky Note: 32.9 Marketing Analytics & Reporting" width="30%">
-</a>
 
 
 The marketing analytics agent aggregates data from multiple sources → ad platforms, email providers, web analytics → and generates automated performance reports. It detects trends, benchmarks against historical data, and highlights anomalies.

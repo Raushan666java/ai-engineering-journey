@@ -47,7 +47,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Selection Process Comparison
 
 ```mermaid
@@ -93,17 +92,6 @@ pie showData
 ## Section 1: Coding Problems (4 Problems)
 
 ### Problem 1: FizzBuzz Variant
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-1-fizzbuzz-variant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-1-fizzbuzz-variant-handwritten.svg" alt="Handwritten: Problem 1: FizzBuzz Variant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-1-fizzbuzz-variant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-1-fizzbuzz-variant-diagram.svg" alt="Diagram: Problem 1: FizzBuzz Variant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-1-fizzbuzz-variant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-1-fizzbuzz-variant-sticky.svg" alt="Sticky Note: Problem 1: FizzBuzz Variant" width="30%">
-</a>
-
 
 **Problem:** Write a function that prints numbers from 1 to n. For multiples of 3, print "Fizz"; for multiples of 5, print "Buzz"; for multiples of both, print "FizzBuzz". Wipro adds a twist: if a number contains the digit 3, also print "Fizz" (in addition to the standard rules).
 
@@ -152,17 +140,6 @@ console.log(fizzBuzzVariant(16).join(', '));
 
 ### Problem 2: Find the Second Largest Element
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-2-find-the-second-largest-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-2-find-the-second-largest-element-handwritten.svg" alt="Handwritten: Problem 2: Find the Second Largest Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-2-find-the-second-largest-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-2-find-the-second-largest-element-diagram.svg" alt="Diagram: Problem 2: Find the Second Largest Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-2-find-the-second-largest-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-2-find-the-second-largest-element-sticky.svg" alt="Sticky Note: Problem 2: Find the Second Largest Element" width="30%">
-</a>
-
-
 **Problem:** Given an array of integers, find the second largest distinct element. If there is no second largest, return -1.
 
 **Company Context:** HCL frequently asks array manipulation problems to test basic problem-solving skills.
@@ -209,17 +186,6 @@ function findSecondLargest(nums: number[]): number {
 ---
 
 ### Problem 3: Palindrome Check (Ignore Non-Alphanumeric)
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-3-palindrome-check-ignore-non-alphanumeric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-3-palindrome-check-ignore-non-alphanumeric-handwritten.svg" alt="Handwritten: Problem 3: Palindrome Check (Ignore Non-Alphanumeric)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-3-palindrome-check-ignore-non-alphanumeric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-3-palindrome-check-ignore-non-alphanumeric-diagram.svg" alt="Diagram: Problem 3: Palindrome Check (Ignore Non-Alphanumeric)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-3-palindrome-check-ignore-non-alphanumeric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-3-palindrome-check-ignore-non-alphanumeric-sticky.svg" alt="Sticky Note: Problem 3: Palindrome Check (Ignore Non-Alphanumeric)" width="30%">
-</a>
-
 
 **Problem:** Given a string, determine if it's a palindrome considering only alphanumeric characters and ignoring case.
 
@@ -277,17 +243,6 @@ function isAlphanumeric(char: string): boolean {
 ---
 
 ### Problem 4: Move Zeroes to End
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-4-move-zeroes-to-end-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-4-move-zeroes-to-end-handwritten.svg" alt="Handwritten: Problem 4: Move Zeroes to End" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-4-move-zeroes-to-end-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-4-move-zeroes-to-end-diagram.svg" alt="Diagram: Problem 4: Move Zeroes to End" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-4-move-zeroes-to-end-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/problem-4-move-zeroes-to-end-sticky.svg" alt="Sticky Note: Problem 4: Move Zeroes to End" width="30%">
-</a>
-
 
 **Problem:** Given an array, move all zeros to the end while maintaining the relative order of non-zero elements. Do this in-place.
 
@@ -351,17 +306,6 @@ function moveZeroesSwap(nums: number[]): void {
 
 ### Basic Arithmetic
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/basic-arithmetic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/basic-arithmetic-handwritten.svg" alt="Handwritten: Basic Arithmetic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/basic-arithmetic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/basic-arithmetic-diagram.svg" alt="Diagram: Basic Arithmetic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/basic-arithmetic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/basic-arithmetic-sticky.svg" alt="Sticky Note: Basic Arithmetic" width="30%">
-</a>
-
-
 **Q1.** Find the value of 125 × 96 × 4.
 
 <details>
@@ -421,17 +365,6 @@ LCM = 2⁴ × 3² = 16 × 9 = 144
 
 ### Percentages
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/percentages-handwritten.svg" alt="Handwritten: Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/percentages-diagram.svg" alt="Diagram: Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/percentages-sticky.svg" alt="Sticky Note: Percentages" width="30%">
-</a>
-
-
 **Q6.** If 40% of a number is 180, find 65% of the number.
 
 <details>
@@ -472,17 +405,6 @@ Reduction = (1 - 0.833) × 100 = 16.67%
 
 ### Profit and Loss
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/profit-and-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/profit-and-loss-handwritten.svg" alt="Handwritten: Profit and Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/profit-and-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/profit-and-loss-diagram.svg" alt="Diagram: Profit and Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/profit-and-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/profit-and-loss-sticky.svg" alt="Sticky Note: Profit and Loss" width="30%">
-</a>
-
-
 **Q9.** A shirt is bought for ₹400 and sold at ₹500. Find the profit percentage.
 
 <details>
@@ -507,17 +429,6 @@ CP = 1200 × 100/80 = ₹1,500
 </details>
 
 ### Time and Work
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-and-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-and-work-handwritten.svg" alt="Handwritten: Time and Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-and-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-and-work-diagram.svg" alt="Diagram: Time and Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-and-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-and-work-sticky.svg" alt="Sticky Note: Time and Work" width="30%">
-</a>
-
 
 **Q11.** A can do a piece of work in 10 days. B is 25% more efficient than A. How many days will B take?
 
@@ -545,17 +456,6 @@ Additional men = 18 - 12 = 6
 </details>
 
 ### Time, Speed, and Distance
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-speed-and-distance-handwritten.svg" alt="Handwritten: Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-speed-and-distance-diagram.svg" alt="Diagram: Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/time-speed-and-distance-sticky.svg" alt="Sticky Note: Time, Speed, and Distance" width="30%">
-</a>
-
 
 **Q13.** A car travels 180 km in 3 hours. Find its speed in m/s.
 
@@ -595,17 +495,6 @@ t = 45 minutes
 </details>
 
 ### Data Interpretation
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/data-interpretation-handwritten.svg" alt="Handwritten: Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/data-interpretation-diagram.svg" alt="Diagram: Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/data-interpretation-sticky.svg" alt="Sticky Note: Data Interpretation" width="30%">
-</a>
-
 
 **Q16-18.** Study the table and answer:
 
@@ -657,17 +546,6 @@ Ratio = 12.6 : 8.75 = 1260 : 875 = 252 : 175 = 36 : 25
 
 ### Simple and Compound Interest
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/simple-and-compound-interest-handwritten.svg" alt="Handwritten: Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/simple-and-compound-interest-diagram.svg" alt="Diagram: Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/simple-and-compound-interest-sticky.svg" alt="Sticky Note: Simple and Compound Interest" width="30%">
-</a>
-
-
 **Q19.** Find the simple interest on ₹8,000 at 6% per annum for 3 years.
 
 <details>
@@ -696,17 +574,6 @@ R = 12.5%
 ## Section 3: Reasoning Ability (15 Questions)
 
 ### Puzzles
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/puzzles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/puzzles-handwritten.svg" alt="Handwritten: Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/puzzles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/puzzles-diagram.svg" alt="Diagram: Puzzles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/puzzles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/puzzles-sticky.svg" alt="Sticky Note: Puzzles" width="30%">
-</a>
-
 
 **Q1.** A man has 5 children. Half of them are boys. How is this possible?
 
@@ -766,17 +633,6 @@ Angle = (3.25 × 30°) - (15 × 6°) = 97.5° - 90° = 7.5°
 
 ### Seating Arrangement
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/seating-arrangement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/seating-arrangement-handwritten.svg" alt="Handwritten: Seating Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/seating-arrangement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/seating-arrangement-diagram.svg" alt="Diagram: Seating Arrangement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/seating-arrangement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/seating-arrangement-sticky.svg" alt="Sticky Note: Seating Arrangement" width="30%">
-</a>
-
-
 **Q6-8.** Six people — P, Q, R, S, T, U — sit in a row facing north. P sits second to the left of R. Q sits third to the right of S. T is not adjacent to U. U sits at one of the ends.
 
 **Q6.** Who sits at the extreme left end?
@@ -829,17 +685,6 @@ T(5) has R(4) and Q(6) as neighbors.
 
 ### Syllogisms
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/syllogisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/syllogisms-handwritten.svg" alt="Handwritten: Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/syllogisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/syllogisms-diagram.svg" alt="Diagram: Syllogisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/syllogisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/syllogisms-sticky.svg" alt="Sticky Note: Syllogisms" width="30%">
-</a>
-
-
 **Q9.** Statements: All pens are pencils. Some pencils are erasers.
 Conclusions: I. Some pens are erasers. II. Some erasers are pencils.
 
@@ -880,17 +725,6 @@ Both follow.
 
 ### Coding-Decoding
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/coding-decoding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/coding-decoding-handwritten.svg" alt="Handwritten: Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/coding-decoding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/coding-decoding-diagram.svg" alt="Diagram: Coding-Decoding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/coding-decoding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/coding-decoding-sticky.svg" alt="Sticky Note: Coding-Decoding" width="30%">
-</a>
-
-
 **Q12.** In a code, MOBILE is written as 13152912135. How is LAPTOP written?
 
 <details>
@@ -917,17 +751,6 @@ BLUE → CMVF
 </details>
 
 ### Blood Relations
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/blood-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/blood-relations-handwritten.svg" alt="Handwritten: Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/blood-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/blood-relations-diagram.svg" alt="Diagram: Blood Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/blood-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/blood-relations-sticky.svg" alt="Sticky Note: Blood Relations" width="30%">
-</a>
-
 
 **Q14.** A is the mother of B. C is the sister of A. D is the son of C. What is D to B?
 
@@ -960,17 +783,6 @@ So the man is the woman's nephew (by marriage).
 ## Section 4: Verbal Ability (10 Questions)
 
 ### Grammar
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/grammar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/grammar-handwritten.svg" alt="Handwritten: Grammar" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/grammar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/grammar-diagram.svg" alt="Diagram: Grammar" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/grammar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/grammar-sticky.svg" alt="Sticky Note: Grammar" width="30%">
-</a>
-
 
 **Q1.** Choose the correct form: Each of the students _____ submitted the assignment.
 a) have  b) has  c) are  d) were
@@ -1014,17 +826,6 @@ Second conditional (hypothetical situations) uses "if + were" for all subjects (
 
 ### Vocabulary
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/vocabulary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/vocabulary-handwritten.svg" alt="Handwritten: Vocabulary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/vocabulary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/vocabulary-diagram.svg" alt="Diagram: Vocabulary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/vocabulary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/vocabulary-sticky.svg" alt="Sticky Note: Vocabulary" width="30%">
-</a>
-
-
 **Q6.** The word "BENEVOLENT" means:
 a) Hostile  b) Generous  c) Quick  d) Strong
 
@@ -1042,17 +843,6 @@ Abundant means plentiful. Antonym is scarce.
 </details>
 
 ### Sentence Correction
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/sentence-correction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/sentence-correction-handwritten.svg" alt="Handwritten: Sentence Correction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/sentence-correction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/sentence-correction-diagram.svg" alt="Diagram: Sentence Correction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/sentence-correction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/sentence-correction-sticky.svg" alt="Sticky Note: Sentence Correction" width="30%">
-</a>
-
 
 **Q8.** Identify the error: "The team are playing well today."
 a) The team  b) are playing  c) well  d) today
@@ -1072,17 +862,6 @@ a) On  b) In  c) At  d) Upon
 </details>
 
 ### Reading Comprehension
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/reading-comprehension-handwritten.svg" alt="Handwritten: Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/reading-comprehension-diagram.svg" alt="Diagram: Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/reading-comprehension-sticky.svg" alt="Sticky Note: Reading Comprehension" width="30%">
-</a>
-
 
 **Q10.** Read the passage and answer:
 
@@ -1273,17 +1052,6 @@ Agile is an iterative approach to software development that emphasizes flexibili
 
 ### Additional Coding Practice
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/additional-coding-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/additional-coding-practice-handwritten.svg" alt="Handwritten: Additional Coding Practice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/additional-coding-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/additional-coding-practice-diagram.svg" alt="Diagram: Additional Coding Practice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/additional-coding-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/additional-coding-practice-sticky.svg" alt="Sticky Note: Additional Coding Practice" width="30%">
-</a>
-
-
 **Practice Problem: Remove Duplicates from Sorted Array**
 
 **Problem:** Given a sorted array, remove duplicates in-place such that each element appears only once. Return the new length.
@@ -1350,16 +1118,6 @@ function firstUniqChar(s: string): number {
 
 ### Wipro NLTH
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/wipro-nlth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/wipro-nlth-handwritten.svg" alt="Handwritten: Wipro NLTH" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/wipro-nlth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/wipro-nlth-diagram.svg" alt="Diagram: Wipro NLTH" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/wipro-nlth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/wipro-nlth-sticky.svg" alt="Sticky Note: Wipro NLTH" width="30%">
-</a>
-
 | Section | Topics | Tips |
 |---------|--------|------|
 | **Aptitude** | Arithmetic, percentages, time-speed-distance | Practice 10-15 questions daily with timing |
@@ -1370,16 +1128,6 @@ function firstUniqChar(s: string): number {
 
 ### HCL
 
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/hcl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/hcl-handwritten.svg" alt="Handwritten: HCL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/hcl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/hcl-diagram.svg" alt="Diagram: HCL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/hcl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/hcl-sticky.svg" alt="Sticky Note: HCL" width="30%">
-</a>
-
 | Section | Topics | Tips |
 |---------|--------|------|
 | **Aptitude** | Average difficulty — DI, profit-loss, ratios | Data interpretation is important |
@@ -1389,16 +1137,6 @@ function firstUniqChar(s: string): number {
 | **Managerial** | Teamwork, leadership, problem-solving | Have 2 situational stories ready |
 
 ### Tech Mahindra
-
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/tech-mahindra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/tech-mahindra-handwritten.svg" alt="Handwritten: Tech Mahindra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/tech-mahindra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/tech-mahindra-diagram.svg" alt="Diagram: Tech Mahindra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/tech-mahindra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/16-company-wipro-hcl-techm/tech-mahindra-sticky.svg" alt="Sticky Note: Tech Mahindra" width="30%">
-</a>
 
 | Section | Topics | Tips |
 |---------|--------|------|

@@ -90,16 +90,6 @@ flowchart LR
 
 ### 16.1 Container Networking Models
 
-<a href="../../../assets/images/diagrams/devops/16-networking/16-1-container-networking-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-1-container-networking-models-handwritten.svg" alt="Handwritten: 16.1 Container Networking Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-1-container-networking-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-1-container-networking-models-diagram.svg" alt="Diagram: 16.1 Container Networking Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-1-container-networking-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-1-container-networking-models-sticky.svg" alt="Sticky Note: 16.1 Container Networking Models" width="30%">
-</a>
-
 
 Container networking enables communication between containers on the same host and across hosts. Multiple networking models exist:
 
@@ -139,16 +129,6 @@ Container networking enables communication between containers on the same host a
 | MACVLAN | Moderate | Native | No | Complex (network team) |
 
 ### 16.2 CNI (Container Network Interface)
-
-<a href="../../../assets/images/diagrams/devops/16-networking/16-2-cni-container-network-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-2-cni-container-network-interface-handwritten.svg" alt="Handwritten: 16.2 CNI (Container Network Interface)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-2-cni-container-network-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-2-cni-container-network-interface-diagram.svg" alt="Diagram: 16.2 CNI (Container Network Interface)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-2-cni-container-network-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-2-cni-container-network-interface-sticky.svg" alt="Sticky Note: 16.2 CNI (Container Network Interface)" width="30%">
-</a>
 
 
 CNI is a specification and library for configuring network interfaces in Linux containers. Kubernetes uses CNI plugins for pod networking.
@@ -191,16 +171,6 @@ CNI is a specification and library for configuring network interfaces in Linux c
 
 ### 16.3 CNI Plugins Compared
 
-<a href="../../../assets/images/diagrams/devops/16-networking/16-3-cni-plugins-compared-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-3-cni-plugins-compared-handwritten.svg" alt="Handwritten: 16.3 CNI Plugins Compared" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-3-cni-plugins-compared-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-3-cni-plugins-compared-diagram.svg" alt="Diagram: 16.3 CNI Plugins Compared" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-3-cni-plugins-compared-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-3-cni-plugins-compared-sticky.svg" alt="Sticky Note: 16.3 CNI Plugins Compared" width="30%">
-</a>
-
 
 **Flannel** — Simplest overlay network:
 - Uses VXLAN encapsulation (default), host-gw, or UDP
@@ -239,16 +209,6 @@ CNI is a specification and library for configuring network interfaces in Linux c
 | Cilium | Full (L3-L7) | Yes (WireGuard) | Very High (eBPF) | Yes (Cluster Mesh) |
 
 ### 16.4 Service Mesh
-
-<a href="../../../assets/images/diagrams/devops/16-networking/16-4-service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-4-service-mesh-handwritten.svg" alt="Handwritten: 16.4 Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-4-service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-4-service-mesh-diagram.svg" alt="Diagram: 16.4 Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-4-service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-4-service-mesh-sticky.svg" alt="Sticky Note: 16.4 Service Mesh" width="30%">
-</a>
 
 
 A service mesh manages inter-service communication in a microservice architecture. It adds observability, traffic management, and security without modifying application code.
@@ -300,16 +260,6 @@ spec:
 - Best for: teams wanting service mesh benefits without complexity
 
 ### 16.5 Ingress Controllers
-
-<a href="../../../assets/images/diagrams/devops/16-networking/16-5-ingress-controllers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-5-ingress-controllers-handwritten.svg" alt="Handwritten: 16.5 Ingress Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-5-ingress-controllers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-5-ingress-controllers-diagram.svg" alt="Diagram: 16.5 Ingress Controllers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-5-ingress-controllers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-5-ingress-controllers-sticky.svg" alt="Sticky Note: 16.5 Ingress Controllers" width="30%">
-</a>
 
 
 Ingress controllers implement the Kubernetes Ingress specification and provide HTTP routing, TLS termination, and traffic management at the cluster edge.
@@ -374,16 +324,6 @@ spec:
 
 ### 16.6 DNS in Kubernetes
 
-<a href="../../../assets/images/diagrams/devops/16-networking/16-6-dns-in-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-6-dns-in-kubernetes-handwritten.svg" alt="Handwritten: 16.6 DNS in Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-6-dns-in-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-6-dns-in-kubernetes-diagram.svg" alt="Diagram: 16.6 DNS in Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-6-dns-in-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-6-dns-in-kubernetes-sticky.svg" alt="Sticky Note: 16.6 DNS in Kubernetes" width="30%">
-</a>
-
 
 CoreDNS is the default DNS service for Kubernetes. It provides service discovery within the cluster.
 
@@ -396,16 +336,6 @@ CoreDNS is the default DNS service for Kubernetes. It provides service discovery
 CoreDNS configuration is stored in a ConfigMap (`coredns` in `kube-system`). Custom entries, stub domains, and upstream DNS resolvers can be configured.
 
 ### 16.7 Network Policies
-
-<a href="../../../assets/images/diagrams/devops/16-networking/16-7-network-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-7-network-policies-handwritten.svg" alt="Handwritten: 16.7 Network Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-7-network-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-7-network-policies-diagram.svg" alt="Diagram: 16.7 Network Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-7-network-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-7-network-policies-sticky.svg" alt="Sticky Note: 16.7 Network Policies" width="30%">
-</a>
 
 
 Network policies enforce firewall rules for Kubernetes pods. They control ingress and egress traffic based on pod selectors, namespace selectors, and IP blocks.
@@ -449,16 +379,6 @@ spec:
 
 ### 16.8 mTLS
 
-<a href="../../../assets/images/diagrams/devops/16-networking/16-8-mtls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-8-mtls-handwritten.svg" alt="Handwritten: 16.8 mTLS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-8-mtls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-8-mtls-diagram.svg" alt="Diagram: 16.8 mTLS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-8-mtls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-8-mtls-sticky.svg" alt="Sticky Note: 16.8 mTLS" width="30%">
-</a>
-
 
 Mutual TLS encrypts and authenticates service-to-service communication:
 
@@ -470,16 +390,6 @@ Mutual TLS encrypts and authenticates service-to-service communication:
 
 ### 16.9 Egress Controls
 
-<a href="../../../assets/images/diagrams/devops/16-networking/16-9-egress-controls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-9-egress-controls-handwritten.svg" alt="Handwritten: 16.9 Egress Controls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-9-egress-controls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-9-egress-controls-diagram.svg" alt="Diagram: 16.9 Egress Controls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-9-egress-controls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-9-egress-controls-sticky.svg" alt="Sticky Note: 16.9 Egress Controls" width="30%">
-</a>
-
 
 Egress controls restrict outbound traffic from the cluster:
 
@@ -489,16 +399,6 @@ Egress controls restrict outbound traffic from the cluster:
 - **Proxy/Firewall** — Explicit proxy for external access logging and control
 
 ### 16.10 API Gateways
-
-<a href="../../../assets/images/diagrams/devops/16-networking/16-10-api-gateways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-10-api-gateways-handwritten.svg" alt="Handwritten: 16.10 API Gateways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-10-api-gateways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-10-api-gateways-diagram.svg" alt="Diagram: 16.10 API Gateways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/16-networking/16-10-api-gateways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/16-networking/16-10-api-gateways-sticky.svg" alt="Sticky Note: 16.10 API Gateways" width="30%">
-</a>
 
 
 API gateways provide a single entry point for external API traffic:

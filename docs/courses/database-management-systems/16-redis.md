@@ -88,16 +88,6 @@ flowchart LR
 
 ### 16.1 Redis Overview
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-handwritten.svg" alt="Handwritten: 16.1 Redis Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-diagram.svg" alt="Diagram: 16.1 Redis Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-1-redis-overview-sticky.svg" alt="Sticky Note: 16.1 Redis Overview" width="30%">
-</a>
-
 
 **Analogy:** Redis is like a **mechanical keyboard** for data access. A mechanical keyboard registers every keystroke instantly with zero lag because the switch is directly under your finger â†’ no membrane layer to press through. Redis keeps every byte in RAM, so reads and writes complete in microseconds without waiting for spinning disks or SSD controllers. Just as a typist relies on that instant key registration for speed, every Redis operation fires directly from RAM with microsecond latency.
 
@@ -192,16 +182,6 @@ Simple string reply: "OK"
 > **One-Sentence Takeaway:** Redis keeps all data in memory for sub-millisecond latency, with optional disk persistence for recovery, and uses a single-threaded event loop that makes every command atomic by default.
 
 ### 16.2 Data Types and Commands
-
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-handwritten.svg" alt="Handwritten: 16.2 Data Types and Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-diagram.svg" alt="Diagram: 16.2 Data Types and Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-data-types-and-commands-sticky.svg" alt="Sticky Note: 16.2 Data Types and Commands" width="30%">
-</a>
 
 
 **Analogy:** Think of Redis data types as a **Swiss Army knife** â†’ each tool is designed for a specific cut. A blade (string) does the common jobs, scissors (list) handle linear sequences, pliers (hash) grip multi-faceted objects, and the awl (sorted set) pierces with precision scoring. Using the wrong tool is like cutting rope with scissors â†’ it works, but slowly.
@@ -1737,16 +1717,6 @@ time.sleep(10)  # Let consumers process
 
 ### 16.2.10 Data Types Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-handwritten.svg" alt="Handwritten: 16.2.10 Data Types Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-diagram.svg" alt="Diagram: 16.2.10 Data Types Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-2-10-data-types-comparison-sticky.svg" alt="Sticky Note: 16.2.10 Data Types Comparison" width="30%">
-</a>
-
 
 | Property | String | List | Set | Sorted Set | Hash | Bitmap | HyperLogLog | Geo | Stream |
 |----------|--------|------|-----|-----------|------|--------|-------------|-----|--------|
@@ -1762,16 +1732,6 @@ time.sleep(10)  # Let consumers process
 | **Best for** | Caching, counters | Queues, timelines | Tags, uniqueness | Leaderboards, rate limits | Objects, profiles | Analytics, flags | Cardinality estimation | Location queries | Event sourcing, messaging |
 | **Worst for** | Field-level access | Random access | Ordered queries | Memory-critical | Nested objects | String data | Exact counts | Exact distance | Low-throughput |
 ### 16.3 Persistence
-
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-handwritten.svg" alt="Handwritten: 16.3 Persistence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-diagram.svg" alt="Diagram: 16.3 Persistence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-3-persistence-sticky.svg" alt="Sticky Note: 16.3 Persistence" width="30%">
-</a>
 
 
 **Analogy:** Redis persistence is like a **journal and a photograph** of your desk. The AOF (journal) records every single action you take â†’ "picked up pen," "wrote note," "moved paper" â†’ so you can replay everything exactly. The RDB (photograph) takes a picture of the current state â†’ fast to load, but any changes after the photo are lost. The hybrid mode is like taking a photo and then keeping a small journal of changes since the photo: best of both.
@@ -2022,16 +1982,6 @@ aof-use-rdb-preamble yes     # Hybrid mode (default in Redis 6.2+)
 
 ### 16.4 Replication
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-handwritten.svg" alt="Handwritten: 16.4 Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-diagram.svg" alt="Diagram: 16.4 Replication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-4-replication-sticky.svg" alt="Sticky Note: 16.4 Replication" width="30%">
-</a>
-
 
 **Analogy:** Redis replication is like **a professor writing on a whiteboard while students copy into their notebooks**. The professor (master) writes everything. Each student (replica) maintains their own notebook (copy of data). If the professor leaves (master goes down), the class can have one student step up and continue (failover). Students can raise their hands and ask questions (read requests), but only the professor can make changes (write requests).
 
@@ -2183,16 +2133,6 @@ if replica_info['role'] == 'slave':
 
 ### 16.5 Redis Sentinel â†’ High Availability
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-handwritten.svg" alt="Handwritten: 16.5 Redis Sentinel â†’ High Availability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-diagram.svg" alt="Diagram: 16.5 Redis Sentinel â†’ High Availability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-5-redis-sentinel-high-availability-sticky.svg" alt="Sticky Note: 16.5 Redis Sentinel â†’ High Availability" width="30%">
-</a>
-
 
 **Analogy:** Sentinel is like a **building's emergency generator system with automatic switchover**. Multiple backup generators (3 Sentinels) monitor the main power (master Redis). If the main power fails, the generators automatically detect the outage, decide among themselves which takes over (quorum), and switch on a backup generator (promote a replica to master). The building's tenants (clients) barely notice the flicker.
 
@@ -2343,16 +2283,6 @@ int main() {
 | Failover during heavy write load | Data loss â†’ unsynced writes on old master | Use WAIT command for synchronous replication |
 ### 16.6 Redis Cluster â†’ Automatic Sharding
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-handwritten.svg" alt="Handwritten: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-diagram.svg" alt="Diagram: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-6-redis-cluster-automatic-sharding-sticky.svg" alt="Sticky Note: 16.6 Redis Cluster â†’ Automatic Sharding" width="30%">
-</a>
-
 
 **Analogy:** A Redis Cluster is like a **warehouse with multiple shelves labeled A-Z** â†’ you don't search every shelf for an item; the manifest tells you which shelf holds which items. Each shelf (node) holds a range of letters (hash slots). Adding a shelf means redistributing labels â†’ you can expand without rebuilding the warehouse. If one shelf collapses, its backup shelf takes over while you fix it.
 
@@ -2500,16 +2430,6 @@ for node in rc.get_nodes():
 
 ### 16.7 Pub/Sub
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-handwritten.svg" alt="Handwritten: 16.7 Pub/Sub" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-diagram.svg" alt="Diagram: 16.7 Pub/Sub" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-7-pub-sub-sticky.svg" alt="Sticky Note: 16.7 Pub/Sub" width="30%">
-</a>
-
 
 **Analogy:** Redis Pub/Sub is like a **radio station** â†’ the DJ (publisher) broadcasts music on a frequency (channel), and anyone with a radio tuned to that frequency (subscriber) hears the broadcast in real-time. If you tune in late, you miss what was played. There's no recording, no replay, no guarantee you heard everything. It's perfect for live events, not for important announcements.
 
@@ -2649,16 +2569,6 @@ for message in pubsub.listen():
 
 ### 16.8 Transactions (MULTI/EXEC)
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-handwritten.svg" alt="Handwritten: 16.8 Transactions (MULTI/EXEC)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-diagram.svg" alt="Diagram: 16.8 Transactions (MULTI/EXEC)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-8-transactions-multi-exec-sticky.svg" alt="Sticky Note: 16.8 Transactions (MULTI/EXEC)" width="30%">
-</a>
-
 
 **Analogy:** Redis transactions are like a **batch of commands on a shopping list** â†’ you write down everything you want to do (MULTI), check the list once, then execute every item in sequence (EXEC). If the store closes mid-list, you keep going and finish the rest (no rollback). Unlike SQL databases where a failed transaction undoes everything, Redis guarantees everything in the batch runs **without interruption** but keeps going past failures.
 
@@ -2774,16 +2684,6 @@ transfer_funds('account:a', 'account:b', 200)
 > **One-Sentence Takeaway:** Redis transactions provide atomic, isolated batch execution without rollback; WATCH provides optimistic locking for conditional transactions.
 
 ### 16.9 Lua Scripting
-
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-handwritten.svg" alt="Handwritten: 16.9 Lua Scripting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-diagram.svg" alt="Diagram: 16.9 Lua Scripting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-9-lua-scripting-sticky.svg" alt="Sticky Note: 16.9 Lua Scripting" width="30%">
-</a>
 
 
 **Analogy:** Lua scripts are like a **macro recording on your keyboard** â†’ you record a sequence of complex keystrokes (commands), save it as one key (EVALSHA), and replay it with a single press. The macro runs entirely inside the application (Redis server), processing data locally without network round-trips between each step.
@@ -2912,16 +2812,6 @@ end
 | Replicated to replicas (deterministic) | Must be deterministic â†’ no random/date calls unless using `redis.replicate_commands()` |
 | Server-side data processing | Scripts use `redis.sha1hex` for hashing; no external calls |
 ### 16.10 Caching Patterns
-
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-handwritten.svg" alt="Handwritten: 16.10 Caching Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-diagram.svg" alt="Diagram: 16.10 Caching Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-caching-patterns-sticky.svg" alt="Sticky Note: 16.10 Caching Patterns" width="30%">
-</a>
 
 
 **Analogy:** Caching strategies are like different **meal-prep approaches** for a busy week. Cache-aside: you check the fridge first; if the meal isn't there, you cook it and put leftovers in the fridge. Read-through: a personal chef (cache library) checks the fridge and cooks if needed without you thinking about it. Write-through: you cook and immediately package the leftovers â†’ nothing is raw. Refresh-ahead: you guess tomorrow's lunch and pre-cook it while everyone's asleep.
@@ -3197,16 +3087,6 @@ class RefreshAheadCache:
 
 ### 16.10.6 Caching Strategies Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-handwritten.svg" alt="Handwritten: 16.10.6 Caching Strategies Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-diagram.svg" alt="Diagram: 16.10.6 Caching Strategies Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-10-6-caching-strategies-comparison-sticky.svg" alt="Sticky Note: 16.10.6 Caching Strategies Comparison" width="30%">
-</a>
-
 
 | Strategy | Read Performance | Write Performance | Consistency | Complexity | Cache Stampede |
 |----------|-----------------|------------------|-------------|------------|---------------|
@@ -3217,16 +3097,6 @@ class RefreshAheadCache:
 | **Refresh-Ahead** | Fast (always hit for popular) | Medium | Eventual | High | No (pre-refresh) |
 
 ### 16.11 Eviction Policies
-
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-handwritten.svg" alt="Handwritten: 16.11 Eviction Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-diagram.svg" alt="Diagram: 16.11 Eviction Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-11-eviction-policies-sticky.svg" alt="Sticky Note: 16.11 Eviction Policies" width="30%">
-</a>
 
 
 **Analogy:** Eviction policies are like **cleaning out a closet when it's full**. Noeviction: you refuse to put anything new in (writes fail). Allkeys-LRU: you throw out the least recently worn item. Allkeys-LFU: you throw out the item you've worn least often. Volatile-TTL: you throw out the item closest to its expiration date. Allkeys-Random: you grab whatever and toss it.
@@ -3300,16 +3170,6 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 ### 16.12 Redis vs Memcached
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-handwritten.svg" alt="Handwritten: 16.12 Redis vs Memcached" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-diagram.svg" alt="Diagram: 16.12 Redis vs Memcached" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-12-redis-vs-memcached-sticky.svg" alt="Sticky Note: 16.12 Redis vs Memcached" width="30%">
-</a>
-
 
 | Aspect | Redis | Memcached |
 |--------|-------|-----------|
@@ -3345,16 +3205,6 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 
 ### 16.13 Interview Corner
 
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-handwritten.svg" alt="Handwritten: 16.13 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-diagram.svg" alt="Diagram: 16.13 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-13-interview-corner-sticky.svg" alt="Sticky Note: 16.13 Interview Corner" width="30%">
-</a>
-
 
 #### Q1: When should I use Redis vs a traditional database?
 
@@ -3385,16 +3235,6 @@ print(f"Eviction rate: {(curr_evicted - prev_evicted) / 10:.1f} keys/second")
 **Answer:** When a cached key expires and N concurrent requests all trigger a cache miss, they all hit the database simultaneously. Solutions: (a) **Mutex lock**: first request acquires a lock on the cache key, others wait. (b) **Stale-while-revalidate**: serve expired data while asynchronously refreshing (Redis doesn't support this natively â†’ implement in application). (c) **Early recalculation** (refresh-ahead): proactively refresh before expiry. (d) **Jittered TTL**: add random variance to TTL values so keys don't expire simultaneously.
 
 ### 16.14 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-handwritten.svg" alt="Handwritten: 16.14 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-diagram.svg" alt="Diagram: 16.14 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/16-redis/16-14-applications-in-real-systems-sticky.svg" alt="Sticky Note: 16.14 Applications in Real Systems" width="30%">
-</a>
 
 
 | Pattern | Use Case | Key Redis Features | Example Companies |

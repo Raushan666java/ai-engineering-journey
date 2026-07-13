@@ -5,7 +5,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/12-sadhna-mein-badha/hero.svg" target="_blank" rel="noopener">
@@ -113,17 +112,6 @@ flowchart TB
 
 ### "आलस्य को दबाओ मत — उसे समझो"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "आलस्य को दबाओ मत — उसे समझो"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"आलस्य — यह सबसे आम बाधा है। हर साधक इससे गुज़रता है। तुम जानते हो कि ध्यान करना चाहिए — लेकिन शरीर कहता है 'नहीं', मन कहता है 'बाद में'। और तुम कल पर टाल देते हो। और कल कभी नहीं आता।*
 >
@@ -138,17 +126,6 @@ flowchart TB
 
 ### ओशो की आलस्य-समाधान विधि
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की आलस्य-समाधान विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की आलस्य-समाधान विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की आलस्य-समाधान विधि" width="30%">
-</a>
-
-
 **विधि — "पाँच मिनट का नियम":**
 
 १. जब आलस्य आए, तो उससे लड़ो मत।
@@ -161,17 +138,6 @@ flowchart TB
 > *"सबसे बड़ा धोखा जो मन तुम्हें देता है — वह है 'बड़ा' का विचार। 'मुझे एक घंटा ध्यान करना है' — और मन कहता है 'यह बहुत है, कल करूँगा।' मैं कहता हूँ — पाँच मिनट। बस पाँच मिनट। छोटा लक्ष्य — और आलस्य गायब। आलस्य बड़े लक्ष्यों से डरता है — छोटे लक्ष्य उसे हरा देते हैं।"*
 
 ### एक कहानी — मुल्ला नसरुद्दीन और आलस्य
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक कहानी — मुल्ला नसरुद्दीन और आलस्य" width="30%">
-</a>
-
 
 मुल्ला नसरुद्दीन एक दिन अपने दोस्त से मिला। दोस्त ने कहा — "मुल्ला, तुम बहुत आलसी लगते हो।"
 
@@ -187,17 +153,6 @@ flowchart TB
 
 ### "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "संदेह स्वाभाविक है — लेकिन उसमें मत रुको"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"संदेह — यह बुद्धि का स्वभाव है। बुद्धि संदेह करती है — यह उसका काम है। 'क्या यह सही है? क्या मैं सही मार्ग पर हूँ? क्या यह हो रहा है या मैं कल्पना कर रहा हूँ?' — ये सब बुद्धि के सवाल हैं। और ये स्वाभाविक हैं।
 >
@@ -212,17 +167,6 @@ flowchart TB
 
 ### ओशो की संदेह-समाधान विधि
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की संदेह-समाधान विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की संदेह-समाधान विधि" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की संदेह-समाधान विधि" width="30%">
-</a>
-
-
 **विधि — "संदेह को देखो, उत्तर मत दो":**
 
 १. जब संदेह आए, तो उसका उत्तर देने की कोशिश मत करो।
@@ -235,17 +179,6 @@ flowchart TB
 > *"संदेह को जवाब मत दो — संदेह को देखो। जवाब देने से संदेह मजबूत होता है — क्योंकि तुम उसे स्वीकार कर रहे हो। देखने से संदेह कमजोर होता है — क्योंकि तुम उसे पार कर रहे हो। याद रखो — संदेह का कोई जवाब नहीं है। केवल अनुभव है। और अनुभव ही एकमात्र सत्य है।"*
 
 ### एक सूफी कहानी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक सूफी कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक सूफी कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक सूफी कहानी" width="30%">
-</a>
-
 
 एक सूफी फकीर से किसी ने पूछा — "गुरुजी, मुझे बहुत संदेह होता है। क्या करूँ?"
 
@@ -261,17 +194,6 @@ flowchart TB
 
 ### "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "निद्रा को दुश्मन मत बनाओ — उसे दोस्त बनाओ"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"यह बहुत अजीब है — साधना में निद्रा दुश्मन बन जाती है। तुम ध्यान करने बैठते हो — और आँखें बंद होते ही नींद आ जाती है। तुम लड़ते हो — नींद से लड़ते हो — और ध्यान भूल जाते हो।*
 >
@@ -285,17 +207,6 @@ flowchart TB
 | सुषुप्ति में चेतना खोना | सीखना है — निद्रा में भी जागना | चेतन निद्रा तकनीक |
 
 ### ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की निद्रा-समाधान विधि — "चेतन निद्रा"" width="30%">
-</a>
-
 
 **विधि:**
 
@@ -311,17 +222,6 @@ flowchart TB
 
 ### एक ज़ेन कहानी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक ज़ेन कहानी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी" width="30%">
-</a>
-
-
 एक ज़ेन भिक्षु को बहुत नींद आती थी। वह ध्यान में सो जाता। उसने अपनी पलकें काट लीं ताकि न सोए।
 
 उसके गुरु ने यह देखा और कहा — "मूर्ख! तुमने पलकें काटकर क्या हासिल किया? अब तुम बिना पलकों के भी सोते हो — और दर्द भी झेलते हो। नींद कोई बीमारी नहीं है — वह शरीर की जरूरत है। उससे लड़ो मत — उसे समझो। और एक दिन, तुम नींद में भी जाग सकते हो।"
@@ -331,17 +231,6 @@ flowchart TB
 ## बाधा ४: अति-प्रयास (Over-effort) — साधना का व्यवसायीकरण
 
 ### "साधना को व्यवसाय मत बनाओ"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "साधना को व्यवसाय मत बनाओ"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "साधना को व्यवसाय मत बनाओ"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "साधना को व्यवसाय मत बनाओ"" width="30%">
-</a>
-
 
 > **ओशो वाणी:**
 > *"यह सबसे विडंबनापूर्ण बाधा है — साधना को ही साधना में बाधा बना लेना। तुम इतनी मेहनत करते हो, इतना प्रयास करते हो, इतने अनुशासित हो जाते हो — कि सहजता खो देते हो। साधना एक बोझ बन जाती है — आनंद नहीं रहता।*
@@ -358,17 +247,6 @@ flowchart TB
 
 ### ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की अति-प्रयास समाधान विधि — "साधना से छुट्टी"" width="30%">
-</a>
-
-
 **विधि:**
 
 १. सप्ताह में एक दिन — 'साधना से छुट्टी' का दिन रखो।
@@ -381,17 +259,6 @@ flowchart TB
 > *"मैं तुमसे कहता हूँ — साधना को बहुत गंभीर मत लो। हाँ, यह गहरी है — लेकिन गंभीर नहीं। गहराई में आनंद होता है — गंभीरता में बोझ। साधना को एक खेल बनाओ, एक नृत्य बनाओ, एक गीत बनाओ। और याद रखो — जब तुम बहुत ज्यादा प्रयास करते हो, तो तुम चूक जाते हो। साधना में प्रयास से ज्यादा सहजता काम आती है।"*
 
 ### एक कहानी — महात्मा बुद्ध और तानपूरा
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक कहानी — महात्मा बुद्ध और तानपूरा" width="30%">
-</a>
-
 
 बुद्ध के एक शिष्य ने बहुत मेहनत की। रात-दिन ध्यान किया, खाना कम किया, नींद कम की। लेकिन कुछ नहीं हो रहा था।
 
@@ -435,17 +302,6 @@ flowchart TB
 
 ### "अनुभवों को मत पकड़ो — उन्हें जाने दो"
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: "अनुभवों को मत पकड़ो — उन्हें जाने दो"" width="30%">
-</a>
-
-
 > **ओशो वाणी:**
 > *"यह सबसे खतरनाक बाधा है — और सबसे सूक्ष्म भी। तुम ध्यान करते हो, और एक दिन तुम्हें एक सुंदर अनुभव होता है — रोशनी, आनंद, शांति। और तुम उसे पकड़ लेते हो। तुम सोचते हो — 'यही तो है! मैंने पा लिया!'*
 >
@@ -460,17 +316,6 @@ flowchart TB
 | शून्य (वॉइड) | अहंकार का विघटन | शून्य से डरना | शून्य में स्थिर रहो |
 
 ### ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की अनुभव-समाधान विधि — "अनुभव को देखो, अनुभव मत करो"" width="30%">
-</a>
-
 
 **विधि:**
 
@@ -487,17 +332,6 @@ flowchart TB
 
 ### एक ज़ेन कहानी — दसवाँ बैल
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: एक ज़ेन कहानी — दसवाँ बैल" width="30%">
-</a>
-
-
 ज़ेन परंपरा में एक प्रसिद्ध चित्र-श्रृंखला है — "दस बैल" (Ten Ox Herding Pictures)। यह साधना के दस चरणों को दिखाती है।
 
 ९वें चरण में — साधक बैल (चेतना) को पकड़ लेता है।
@@ -511,17 +345,6 @@ flowchart TB
 ## ओशो का समग्र समाधान — "खोज मत करो, बस देखो"
 
 ### पाँचों बाधाओं का एक ही समाधान
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: पाँचों बाधाओं का एक ही समाधान" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: पाँचों बाधाओं का एक ही समाधान" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: पाँचों बाधाओं का एक ही समाधान" width="30%">
-</a>
-
 
 > **ओशो वाणी:**
 > *"बाधाएँ अलग-अलग लगती हैं — आलस्य, संदेह, निद्रा, अति-प्रयास, अनुभवों की आसक्ति। लेकिन सभी बाधाओं का एक ही समाधान है — साक्षी। देखो। बस देखो।*
@@ -553,17 +376,6 @@ flowchart TB
 ```
 
 ### ओशो की "देखो" कहानी — एक आदमी और उसका गधा
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: ओशो की "देखो" कहानी — एक आदमी और उसका गधा" width="30%">
-</a>
-
 
 एक आदमी अपने गधे पर बैठा था। वह बहुत परेशान था — इधर-उधर देख रहा था, कुछ ढूँढ़ रहा था।
 
@@ -1176,91 +988,25 @@ demonstrateSadhanaObstacleTool();
 
 ### अभ्यास १: अपनी मुख्य बाधा पहचानें
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास १: अपनी मुख्य बाधा पहचानें" width="30%">
-</a>
-
-
 एक सप्ताह तक अपनी साधना में आने वाली बाधाओं को रिकॉर्ड करें। TypeScript डायग्नॉस्टिक टूल का उपयोग करें। पहचानें कि आपकी मुख्य बाधा क्या है — आलस्य, संदेह, निद्रा, अति-प्रयास, या अनुभवों में आसक्ति?
 
 ### अभ्यास २: पाँच मिनट का नियम — ७ दिन
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास २: पाँच मिनट का नियम — ७ दिन" width="30%">
-</a>
-
 
 यदि आलस्य आपकी बाधा है, तो एक सप्ताह तक प्रतिदिन सिर्फ पाँच मिनट ध्यान करें — पाँच मिनट, एक सेकंड अधिक नहीं। देखें कि क्या होता है। सातवें दिन, यदि मन चाहे तो दस मिनट करें।
 
 ### अभ्यास ३: चेतन निद्रा — ७ दिन
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ३: चेतन निद्रा — ७ दिन" width="30%">
-</a>
-
-
 यदि निद्रा आपकी बाधा है, तो एक सप्ताह तक चेतन निद्रा का अभ्यास करें। हर रात सोने से पहले १० मिनट — नींद को आते हुए देखें। नींद से न लड़ें — उसका स्वागत करें। लेकिन चेतना न खोएँ।
 
 ### अभ्यास ४: साधना से छुट्टी
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ४: साधना से छुट्टी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ४: साधना से छुट्टी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ४: साधना से छुट्टी" width="30%">
-</a>
-
 
 यदि अति-प्रयास आपकी बाधा है, तो इस सप्ताह एक दिन चुनें — और पूरे दिन कोई ध्यान न करें। कोई मंत्र नहीं, कोई प्रार्थना नहीं, कोई तकनीक नहीं। बस जिएँ। देखें कि इस दिन के बाद अगले दिन आपकी साधना में क्या बदलाव आता है।
 
 ### अभ्यास ५: अनुभव-साक्षी
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ५: अनुभव-साक्षी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ५: अनुभव-साक्षी" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ५: अनुभव-साक्षी" width="30%">
-</a>
-
-
 जब भी कोई सुंदर अनुभव हो — ध्यान में रोशनी, आनंद, या शांति — तो उसमें खोने के बजाय, उसे देखें। पूछें — "यह अनुभव किसमें हो रहा है?" अनुभव को आने-जाने दें। देखने वाले में स्थिर रहें।
 
 ### अभ्यास ६: समूह चर्चा
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-handwritten.svg" alt="Handwritten: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-diagram.svg" alt="Diagram: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/12-sadhna-mein-badha/-sticky.svg" alt="Sticky Note: अभ्यास ६: समूह चर्चा" width="30%">
-</a>
-
 
 निम्नलिखित प्रश्नों पर समूह में ओशो के दृष्टिकोण से चर्चा करें:
 

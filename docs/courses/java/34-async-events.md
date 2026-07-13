@@ -120,32 +120,12 @@ flowchart TD
 
 ### 1. The Synchronous Problem
 
-<a href="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-handwritten.svg" alt="Handwritten: 1. The Synchronous Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-diagram.svg" alt="Diagram: 1. The Synchronous Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/1-the-synchronous-problem-sticky.svg" alt="Sticky Note: 1. The Synchronous Problem" width="30%">
-</a>
-
 
 Most Spring beans execute synchronously by default. When a method does I/O, calls a remote API, or performs a CPU-intensive computation, the caller's thread blocks. In a web application, this means one of the container's request-handling threads is stuck waiting. Under load, the thread pool saturates, requests queue up, and latency spikes.
 
 Asynchronous processing decouples the caller from the callee's execution. The caller fires a task and continues immediately; a separate thread Ã¢â‚¬â€ managed by a thread pool Ã¢â‚¬â€ executes the task later.
 
 ### 2. Enabling Async Support
-
-<a href="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-handwritten.svg" alt="Handwritten: 2. Enabling Async Support" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-diagram.svg" alt="Diagram: 2. Enabling Async Support" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/2-enabling-async-support-sticky.svg" alt="Sticky Note: 2. Enabling Async Support" width="30%">
-</a>
 
 
 Spring's async support requires the `@EnableAsync` annotation. It is an `@Configuration`-level annotation that tells Spring to scan for `@Async` on beans and to create proxies (either JDK dynamic proxies or CGLIB proxies) that intercept calls and dispatch them to a task executor.
@@ -160,16 +140,6 @@ public class AsyncConfig {
 By default, Spring uses a `SimpleAsyncTaskExecutor` which creates a new thread per task. **This is not suitable for production** because it does not reuse threads. You must override the executor strategy.
 
 ### 3. Thread Pool Configuration with ThreadPoolTaskExecutor
-
-<a href="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-handwritten.svg" alt="Handwritten: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-diagram.svg" alt="Diagram: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/3-thread-pool-configuration-with-threadpooltaskexecutor-sticky.svg" alt="Sticky Note: 3. Thread Pool Configuration with ThreadPoolTaskExecutor" width="30%">
-</a>
 
 
 `ThreadPoolTaskExecutor` wraps `java.util.concurrent.ThreadPoolExecutor` and exposes Spring-friendly bean properties. It is the standard production choice.
@@ -224,16 +194,6 @@ Key properties explained:
 
 ### 4. @Async with void Methods
 
-<a href="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-handwritten.svg" alt="Handwritten: 4. @Async with void Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-diagram.svg" alt="Diagram: 4. @Async with void Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/4-async-with-void-methods-sticky.svg" alt="Sticky Note: 4. @Async with void Methods" width="30%">
-</a>
-
 
 The simplest use of `@Async` is on a `void` method. The caller returns immediately; the method runs on a pool thread.
 
@@ -265,16 +225,6 @@ Important caveats:
 - The `void` return means the caller cannot know if the method failed. Exceptions are silently lost unless a custom `AsyncUncaughtExceptionHandler` is installed.
 
 ### 5. @Async with CompletableFuture
-
-<a href="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-handwritten.svg" alt="Handwritten: 5. @Async with CompletableFuture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-diagram.svg" alt="Diagram: 5. @Async with CompletableFuture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/5-async-with-completablefuture-sticky.svg" alt="Sticky Note: 5. @Async with CompletableFuture" width="30%">
-</a>
 
 
 Returning `CompletableFuture<T>` from an `@Async` method gives the caller a handle to:
@@ -386,16 +336,6 @@ reportService.generateReport("R-003")
 
 ### 6. @Async with ListenableFuture (Legacy)
 
-<a href="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-handwritten.svg" alt="Handwritten: 6. @Async with ListenableFuture (Legacy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-diagram.svg" alt="Diagram: 6. @Async with ListenableFuture (Legacy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/6-async-with-listenablefuture-legacy-sticky.svg" alt="Sticky Note: 6. @Async with ListenableFuture (Legacy)" width="30%">
-</a>
-
 
 Before `CompletableFuture`, Spring provided `ListenableFuture`. It is still supported but `CompletableFuture` is preferred.
 
@@ -417,16 +357,6 @@ public ListenableFuture<String> processOrderWithCallback(Long orderId) {
 ```
 
 ### 7. Async Exception Handling
-
-<a href="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-handwritten.svg" alt="Handwritten: 7. Async Exception Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-diagram.svg" alt="Diagram: 7. Async Exception Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/7-async-exception-handling-sticky.svg" alt="Sticky Note: 7. Async Exception Handling" width="30%">
-</a>
 
 
 Uncaught exceptions in `void` async methods are invisible by default. Spring provides two ways to handle them:
@@ -529,16 +459,6 @@ public class AsyncLoggingAspect {
 
 ### 8. Custom Thread Pool with Named Qualifier
 
-<a href="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-handwritten.svg" alt="Handwritten: 8. Custom Thread Pool with Named Qualifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-diagram.svg" alt="Diagram: 8. Custom Thread Pool with Named Qualifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/8-custom-thread-pool-with-named-qualifier-sticky.svg" alt="Sticky Note: 8. Custom Thread Pool with Named Qualifier" width="30%">
-</a>
-
 
 When you need multiple pools for different workloads (I/O vs CPU), use `@Qualifier`:
 
@@ -609,16 +529,6 @@ public class HybridService {
 ```
 
 ### 9. Application Events Ã¢â‚¬â€ The Traditional Way
-
-<a href="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-handwritten.svg" alt="Handwritten: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-diagram.svg" alt="Diagram: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/9-application-events-the-traditional-way-sticky.svg" alt="Sticky Note: 9. Application Events Ã¢â‚¬â€ The Traditional Way" width="30%">
-</a>
 
 
 Spring's `ApplicationEvent` class and `ApplicationEventPublisher` provide a publish-subscribe mechanism within the same Spring `ApplicationContext`.
@@ -700,16 +610,6 @@ public class InventoryUpdateListener implements ApplicationListener<OrderCreated
 **Multiple listeners receive the same event synchronously by default.** The publisher thread blocks until all listeners finish.
 
 ### 10. Annotation-Based @EventListener
-
-<a href="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-handwritten.svg" alt="Handwritten: 10. Annotation-Based @EventListener" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-diagram.svg" alt="Diagram: 10. Annotation-Based @EventListener" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/10-annotation-based-eventlistener-sticky.svg" alt="Sticky Note: 10. Annotation-Based @EventListener" width="30%">
-</a>
 
 
 Modern code should use `@EventListener` on any bean method:
@@ -818,16 +718,6 @@ public class ConditionalEventListener {
 
 ### 11. @TransactionalEventListener
 
-<a href="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-handwritten.svg" alt="Handwritten: 11. @TransactionalEventListener" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-diagram.svg" alt="Diagram: 11. @TransactionalEventListener" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/11-transactionaleventlistener-sticky.svg" alt="Sticky Note: 11. @TransactionalEventListener" width="30%">
-</a>
-
 
 `@TransactionalEventListener` binds an event listener to a transaction phase. The event is only delivered when the publishing method's transaction reaches the specified phase.
 
@@ -877,16 +767,6 @@ public class TransactionBoundEventHandlers {
 The `fallbackExecution` parameter (default false) controls whether the listener fires even when no transaction is active.
 
 ### 12. Making Event Listeners Async
-
-<a href="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-handwritten.svg" alt="Handwritten: 12. Making Event Listeners Async" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-diagram.svg" alt="Diagram: 12. Making Event Listeners Async" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/12-making-event-listeners-async-sticky.svg" alt="Sticky Note: 12. Making Event Listeners Async" width="30%">
-</a>
 
 
 By default, all event listeners run on the publisher's thread. Adding `@Async` to an `@EventListener` method dispatches it to the task executor.
@@ -969,16 +849,6 @@ public class AsyncEventListenerChain {
 
 ### 13. Generic Events
 
-<a href="../../../assets/images/diagrams/java/34-async-events/13-generic-events-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/13-generic-events-handwritten.svg" alt="Handwritten: 13. Generic Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/13-generic-events-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/13-generic-events-diagram.svg" alt="Diagram: 13. Generic Events" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/13-generic-events-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/13-generic-events-sticky.svg" alt="Sticky Note: 13. Generic Events" width="30%">
-</a>
-
 
 Spring events support generic payloads:
 
@@ -1019,16 +889,6 @@ public class GenericEventHandler {
 ```
 
 ### 14. Event Payload Design
-
-<a href="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-handwritten.svg" alt="Handwritten: 14. Event Payload Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-diagram.svg" alt="Diagram: 14. Event Payload Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/14-event-payload-design-sticky.svg" alt="Sticky Note: 14. Event Payload Design" width="30%">
-</a>
 
 
 Events should be immutable, self-contained DTOs that carry enough context for any listener to act without querying the database.
@@ -1076,16 +936,6 @@ public class UserRegisteredEvent {
 - Do not include heavy objects like `HttpSession`, `EntityManager`, or serialized file content
 
 ### 15. Event Batching
-
-<a href="../../../assets/images/diagrams/java/34-async-events/15-event-batching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/15-event-batching-handwritten.svg" alt="Handwritten: 15. Event Batching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/15-event-batching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/15-event-batching-diagram.svg" alt="Diagram: 15. Event Batching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/15-event-batching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/15-event-batching-sticky.svg" alt="Sticky Note: 15. Event Batching" width="30%">
-</a>
 
 
 When many events are published in rapid succession, batching improves throughput:
@@ -1135,16 +985,6 @@ public class EventBatcher {
 ```
 
 ### 16. Event Priority
-
-<a href="../../../assets/images/diagrams/java/34-async-events/16-event-priority-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/16-event-priority-handwritten.svg" alt="Handwritten: 16. Event Priority" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/16-event-priority-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/16-event-priority-diagram.svg" alt="Diagram: 16. Event Priority" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/16-event-priority-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/16-event-priority-sticky.svg" alt="Sticky Note: 16. Event Priority" width="30%">
-</a>
 
 
 Implement priority-based processing:
@@ -1205,16 +1045,6 @@ public class PriorityEventProcessor {
 ```
 
 ### 17. Event Sourcing Basics
-
-<a href="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-handwritten.svg" alt="Handwritten: 17. Event Sourcing Basics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-diagram.svg" alt="Diagram: 17. Event Sourcing Basics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/17-event-sourcing-basics-sticky.svg" alt="Sticky Note: 17. Event Sourcing Basics" width="30%">
-</a>
 
 
 Event sourcing persists every state change as an immutable event in an append-only store, rather than storing current state. The current state is reconstructed by replaying events.
@@ -1377,16 +1207,6 @@ public class BankAccount {
 
 ### 18. Full Asynchronous Event Pipeline
 
-<a href="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-handwritten.svg" alt="Handwritten: 18. Full Asynchronous Event Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-diagram.svg" alt="Diagram: 18. Full Asynchronous Event Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/18-full-asynchronous-event-pipeline-sticky.svg" alt="Sticky Note: 18. Full Asynchronous Event Pipeline" width="30%">
-</a>
-
 
 Putting it all together:
 
@@ -1502,16 +1322,6 @@ public class TransactionAwareEventPublisher {
 
 ### 19. Unit Testing Async Methods
 
-<a href="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-handwritten.svg" alt="Handwritten: 19. Unit Testing Async Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-diagram.svg" alt="Diagram: 19. Unit Testing Async Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/19-unit-testing-async-methods-sticky.svg" alt="Sticky Note: 19. Unit Testing Async Methods" width="30%">
-</a>
-
 
 ```java
 @SpringBootTest
@@ -1557,16 +1367,6 @@ class AsyncEventHandlerTest {
 
 ### 20. Monitoring Async Execution
 
-<a href="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-handwritten.svg" alt="Handwritten: 20. Monitoring Async Execution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-diagram.svg" alt="Diagram: 20. Monitoring Async Execution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/20-monitoring-async-execution-sticky.svg" alt="Sticky Note: 20. Monitoring Async Execution" width="30%">
-</a>
-
 
 ```java
 @Component
@@ -1597,16 +1397,6 @@ public class AsyncMetricsPublisher {
 ```
 
 ### 21. Advanced ThreadPoolTaskExecutor Configuration
-
-<a href="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-handwritten.svg" alt="Handwritten: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-diagram.svg" alt="Diagram: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/34-async-events/21-advanced-threadpooltaskexecutor-configuration-sticky.svg" alt="Sticky Note: 21. Advanced ThreadPoolTaskExecutor Configuration" width="30%">
-</a>
 
 
 ```java

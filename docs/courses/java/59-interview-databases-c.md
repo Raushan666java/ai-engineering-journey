@@ -58,16 +58,6 @@ flowchart LR
 
 ### Q16: How do you implement auditing (created_at, updated_at) in JPA?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-auditing-created-at-updated-at-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-auditing-created-at-updated-at-in-jpa-handwritten.svg" alt="Handwritten: How do you implement auditing (created_at, updated_at) in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-auditing-created-at-updated-at-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-auditing-created-at-updated-at-in-jpa-diagram.svg" alt="Diagram: How do you implement auditing (created_at, updated_at) in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-auditing-created-at-updated-at-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-auditing-created-at-updated-at-in-jpa-sticky.svg" alt="Sticky Note: How do you implement auditing (created_at, updated_at) in JPA?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -142,16 +132,6 @@ public class Document {
 
 ### Q17: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-handwritten.svg" alt="Handwritten: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-diagram.svg" alt="Diagram: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-sticky.svg" alt="Sticky Note: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -198,16 +178,6 @@ public class OrderService {
 ---
 
 ### Q18: How do you implement pagination and sorting in Spring Data JPA?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-handwritten.svg" alt="Handwritten: How do you implement pagination and sorting in Spring Data JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-diagram.svg" alt="Diagram: How do you implement pagination and sorting in Spring Data JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-sticky.svg" alt="Sticky Note: How do you implement pagination and sorting in Spring Data JPA?" width="30%">
-</a>
 
 
 **Answer:**
@@ -264,16 +234,6 @@ Always set a maximum page size to prevent abuse: `@PageableDefault(size = 20, ma
 ---
 
 ### Q19: How do you use Spring Data JPA Specifications for dynamic queries?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-handwritten.svg" alt="Handwritten: How do you use Spring Data JPA Specifications for dynamic queries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-diagram.svg" alt="Diagram: How do you use Spring Data JPA Specifications for dynamic queries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-sticky.svg" alt="Sticky Note: How do you use Spring Data JPA Specifications for dynamic queries?" width="30%">
-</a>
 
 
 **Answer:**
@@ -347,16 +307,6 @@ Use Specifications over `@Query` when:
 ---
 
 ### Q20: How do you implement multi-tenancy in Spring Boot with Hibernate?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-handwritten.svg" alt="Handwritten: How do you implement multi-tenancy in Spring Boot with Hibernate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-diagram.svg" alt="Diagram: How do you implement multi-tenancy in Spring Boot with Hibernate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-sticky.svg" alt="Sticky Note: How do you implement multi-tenancy in Spring Boot with Hibernate?" width="30%">
-</a>
 
 
 **Answer:**
@@ -432,16 +382,6 @@ Separate database is strongest isolation (best for compliance). Schema per tenan
 
 ### Q21: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-handwritten.svg" alt="Handwritten: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-diagram.svg" alt="Diagram: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-sticky.svg" alt="Sticky Note: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -490,16 +430,6 @@ Use NativeQuery for database-specific features (window functions, `ILike`, full-
 ---
 
 ### Q22: How do you use MongoDB with Spring Data?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-mongodb-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-mongodb-with-spring-data-handwritten.svg" alt="Handwritten: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-mongodb-with-spring-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-mongodb-with-spring-data-diagram.svg" alt="Diagram: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-mongodb-with-spring-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-mongodb-with-spring-data-sticky.svg" alt="Sticky Note: How do you use MongoDB with Spring Data?" width="30%">
-</a>
 
 
 **Answer:**
@@ -571,16 +501,6 @@ Use MongoDB when your data is document-shaped (JSON-like, nested, varying schema
 
 ### Q23: What is connection pooling, and how do you configure HikariCP?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-connection-pooling-and-how-do-you-configure-hikaricp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-connection-pooling-and-how-do-you-configure-hikaricp-handwritten.svg" alt="Handwritten: What is connection pooling, and how do you configure HikariCP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-connection-pooling-and-how-do-you-configure-hikaricp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-connection-pooling-and-how-do-you-configure-hikaricp-diagram.svg" alt="Diagram: What is connection pooling, and how do you configure HikariCP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-connection-pooling-and-how-do-you-configure-hikaricp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-connection-pooling-and-how-do-you-configure-hikaricp-sticky.svg" alt="Sticky Note: What is connection pooling, and how do you configure HikariCP?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -634,16 +554,6 @@ Always set `leak-detection-threshold` in development to catch connection leaks (
 ---
 
 ### Q24: How do you use Redis with Spring Boot for caching?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-redis-with-spring-boot-for-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-redis-with-spring-boot-for-caching-handwritten.svg" alt="Handwritten: How do you use Redis with Spring Boot for caching?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-redis-with-spring-boot-for-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-redis-with-spring-boot-for-caching-diagram.svg" alt="Diagram: How do you use Redis with Spring Boot for caching?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-redis-with-spring-boot-for-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-use-redis-with-spring-boot-for-caching-sticky.svg" alt="Sticky Note: How do you use Redis with Spring Boot for caching?" width="30%">
-</a>
 
 
 **Answer:**
@@ -742,16 +652,6 @@ Never cache mutable data without TTL or eviction. Stale data is worse than slow 
 ---
 
 ### Q25: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-handwritten.svg" alt="Handwritten: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-diagram.svg" alt="Diagram: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-sticky.svg" alt="Sticky Note: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?" width="30%">
-</a>
 
 
 **Answer:**
@@ -852,16 +752,6 @@ The most impactful single change: **enable slow query logging in both Hibernate 
 
 ### Q23: What is the N+1 problem in the context of GraphQL vs JPA?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-n-1-problem-in-the-context-of-graphql-vs-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-n-1-problem-in-the-context-of-graphql-vs-jpa-handwritten.svg" alt="Handwritten: What is the N+1 problem in the context of GraphQL vs JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-n-1-problem-in-the-context-of-graphql-vs-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-n-1-problem-in-the-context-of-graphql-vs-jpa-diagram.svg" alt="Diagram: What is the N+1 problem in the context of GraphQL vs JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-n-1-problem-in-the-context-of-graphql-vs-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-the-n-1-problem-in-the-context-of-graphql-vs-jpa-sticky.svg" alt="Sticky Note: What is the N+1 problem in the context of GraphQL vs JPA?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -937,16 +827,6 @@ The root cause is the same in both: fetching parent entities and loading childre
 
 ### Q24: What is write skew and how does it differ from dirty write?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-write-skew-and-how-does-it-differ-from-dirty-write-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-write-skew-and-how-does-it-differ-from-dirty-write-handwritten.svg" alt="Handwritten: What is write skew and how does it differ from dirty write?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-write-skew-and-how-does-it-differ-from-dirty-write-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-write-skew-and-how-does-it-differ-from-dirty-write-diagram.svg" alt="Diagram: What is write skew and how does it differ from dirty write?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-write-skew-and-how-does-it-differ-from-dirty-write-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/what-is-write-skew-and-how-does-it-differ-from-dirty-write-sticky.svg" alt="Sticky Note: What is write skew and how does it differ from dirty write?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1016,16 +896,6 @@ Write skew is subtle because each transaction's individual actions are correct �
 
 ### Mistake 1: Ignoring the query plan
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-1-ignoring-the-query-plan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-1-ignoring-the-query-plan-handwritten.svg" alt="Handwritten: Mistake 1: Ignoring the query plan" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-1-ignoring-the-query-plan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-1-ignoring-the-query-plan-diagram.svg" alt="Diagram: Mistake 1: Ignoring the query plan" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-1-ignoring-the-query-plan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-1-ignoring-the-query-plan-sticky.svg" alt="Sticky Note: Mistake 1: Ignoring the query plan" width="30%">
-</a>
-
 ```sql
 -- ❌ WRONG: Guessing at slow queries instead of checking EXPLAIN ANALYZE
 -- "I think adding an index will help" → no data-driven decision
@@ -1037,16 +907,6 @@ WHERE customer_id = 42 AND created_at > '2024-01-01';
 ```
 
 ### Mistake 2: Not using database-specific types
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-2-not-using-database-specific-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-2-not-using-database-specific-types-handwritten.svg" alt="Handwritten: Mistake 2: Not using database-specific types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-2-not-using-database-specific-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-2-not-using-database-specific-types-diagram.svg" alt="Diagram: Mistake 2: Not using database-specific types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-2-not-using-database-specific-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-2-not-using-database-specific-types-sticky.svg" alt="Sticky Note: Mistake 2: Not using database-specific types" width="30%">
-</a>
 
 ```sql
 -- ❌ WRONG: Using VARCHAR for everything
@@ -1066,16 +926,6 @@ CREATE TABLE products (
 
 ### Mistake 3: Missing composite indexes for multi-column filters
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-3-missing-composite-indexes-for-multi-column-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-3-missing-composite-indexes-for-multi-column-filters-handwritten.svg" alt="Handwritten: Mistake 3: Missing composite indexes for multi-column filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-3-missing-composite-indexes-for-multi-column-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-3-missing-composite-indexes-for-multi-column-filters-diagram.svg" alt="Diagram: Mistake 3: Missing composite indexes for multi-column filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-3-missing-composite-indexes-for-multi-column-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-3-missing-composite-indexes-for-multi-column-filters-sticky.svg" alt="Sticky Note: Mistake 3: Missing composite indexes for multi-column filters" width="30%">
-</a>
-
 ```sql
 -- Query: SELECT * FROM orders WHERE status = 'PENDING' AND created_at > '2024-01-01'
 
@@ -1089,16 +939,6 @@ CREATE INDEX idx_orders_status_created ON orders(status, created_at);
 ```
 
 ### Mistake 4: No pagination on unbounded queries
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-4-no-pagination-on-unbounded-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-4-no-pagination-on-unbounded-queries-handwritten.svg" alt="Handwritten: Mistake 4: No pagination on unbounded queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-4-no-pagination-on-unbounded-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-4-no-pagination-on-unbounded-queries-diagram.svg" alt="Diagram: Mistake 4: No pagination on unbounded queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-4-no-pagination-on-unbounded-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-4-no-pagination-on-unbounded-queries-sticky.svg" alt="Sticky Note: Mistake 4: No pagination on unbounded queries" width="30%">
-</a>
 
 ```java
 // ❌ WRONG: Fetching all rows without limit
@@ -1121,16 +961,6 @@ public void processAllOrders() {
 ```
 
 ### Mistake 5: Using SELECT * in production queries
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-5-using-select-in-production-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-5-using-select-in-production-queries-handwritten.svg" alt="Handwritten: Mistake 5: Using SELECT * in production queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-5-using-select-in-production-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-5-using-select-in-production-queries-diagram.svg" alt="Diagram: Mistake 5: Using SELECT * in production queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-5-using-select-in-production-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-c/mistake-5-using-select-in-production-queries-sticky.svg" alt="Sticky Note: Mistake 5: Using SELECT * in production queries" width="30%">
-</a>
 
 ```sql
 -- ❌ WRONG: SELECT * pulls all columns including BLOBs, TEXT, unused fields

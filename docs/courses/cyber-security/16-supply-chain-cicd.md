@@ -44,7 +44,6 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 1. **Analyze** real-world software supply chain attacks (SolarWinds, Codecov, log4j) and identify the technical vectors used.
 2. **Generate and validate** SBOM (Software Bill of Materials) documents in SPDX and CycloneDX formats.
 3. **Implement** dependency vulnerability scanning using tools like npm audit, Snyk, and OWASP Dependency Check.
@@ -62,17 +61,6 @@ Modern software development relies on an intricate web of dependencies, build to
 
 ### 16.1.1 Why Supply Chain Attacks Are Rising
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-1-why-supply-chain-attacks-are-rising-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-1-why-supply-chain-attacks-are-rising-handwritten.svg" alt="Handwritten: 16.1.1 Why Supply Chain Attacks Are Rising" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-1-why-supply-chain-attacks-are-rising-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-1-why-supply-chain-attacks-are-rising-diagram.svg" alt="Diagram: 16.1.1 Why Supply Chain Attacks Are Rising" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-1-why-supply-chain-attacks-are-rising-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-1-why-supply-chain-attacks-are-rising-sticky.svg" alt="Sticky Note: 16.1.1 Why Supply Chain Attacks Are Rising" width="30%">
-</a>
-
-
 Supply chain attacks have surged because they offer attackers multiplicative returns. Compromising a single upstream dependency can infect thousands of downstream consumers. The 2024 Sonatype State of the Software Supply Chain report documented a 742% average annual increase in software supply chain attacks over the past five years. Key drivers include:
 
 - **Open-source ubiquity**: Over 90% of modern applications use open-source components, with the average project containing over 500 transitive dependencies.
@@ -81,17 +69,6 @@ Supply chain attacks have surged because they offer attackers multiplicative ret
 - **Complex dependency graphs**: A single top-level dependency can pull in dozens of transitive dependencies, creating an opaque attack surface.
 
 ### 16.1.2 Anatomy of a Supply Chain Attack
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-2-anatomy-of-a-supply-chain-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-2-anatomy-of-a-supply-chain-attack-handwritten.svg" alt="Handwritten: 16.1.2 Anatomy of a Supply Chain Attack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-2-anatomy-of-a-supply-chain-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-2-anatomy-of-a-supply-chain-attack-diagram.svg" alt="Diagram: 16.1.2 Anatomy of a Supply Chain Attack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-2-anatomy-of-a-supply-chain-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-1-2-anatomy-of-a-supply-chain-attack-sticky.svg" alt="Sticky Note: 16.1.2 Anatomy of a Supply Chain Attack" width="30%">
-</a>
-
 
 The following Mermaid diagram illustrates the typical attack chain in a software supply chain compromise:
 
@@ -118,17 +95,6 @@ flowchart LR
 ## 16.2 Major Supply Chain Attacks — Technical Deep Dive
 
 ### 16.2.1 SolarWinds (Sunburst) Attack — 2020
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-1-solarwinds-sunburst-attack-2020-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-1-solarwinds-sunburst-attack-2020-handwritten.svg" alt="Handwritten: 16.2.1 SolarWinds (Sunburst) Attack — 2020" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-1-solarwinds-sunburst-attack-2020-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-1-solarwinds-sunburst-attack-2020-diagram.svg" alt="Diagram: 16.2.1 SolarWinds (Sunburst) Attack — 2020" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-1-solarwinds-sunburst-attack-2020-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-1-solarwinds-sunburst-attack-2020-sticky.svg" alt="Sticky Note: 16.2.1 SolarWinds (Sunburst) Attack — 2020" width="30%">
-</a>
-
 
 The SolarWinds attack remains the most sophisticated software supply chain compromise in history. Attackers affiliated with APT29 (Cozy Bear) compromised SolarWinds' build infrastructure and inserted a backdoor into Orion software updates.
 
@@ -157,17 +123,6 @@ The SolarWinds attack remains the most sophisticated software supply chain compr
 
 ### 16.2.2 Codecov Breach — 2021
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-2-codecov-breach-2021-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-2-codecov-breach-2021-handwritten.svg" alt="Handwritten: 16.2.2 Codecov Breach — 2021" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-2-codecov-breach-2021-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-2-codecov-breach-2021-diagram.svg" alt="Diagram: 16.2.2 Codecov Breach — 2021" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-2-codecov-breach-2021-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-2-codecov-breach-2021-sticky.svg" alt="Sticky Note: 16.2.2 Codecov Breach — 2021" width="30%">
-</a>
-
-
 In April 2021, attackers modified the Codecov Bash Uploader script to exfiltrate environment variables from CI/CD pipelines.
 
 **Attack mechanics:**
@@ -192,17 +147,6 @@ flowchart LR
 - The breach demonstrated that even security tools can become attack vectors.
 
 ### 16.2.3 Log4j (Log4Shell) — CVE-2021-44228
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-3-log4j-log4shell-cve-2021-44228-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-3-log4j-log4shell-cve-2021-44228-handwritten.svg" alt="Handwritten: 16.2.3 Log4j (Log4Shell) — CVE-2021-44228" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-3-log4j-log4shell-cve-2021-44228-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-3-log4j-log4shell-cve-2021-44228-diagram.svg" alt="Diagram: 16.2.3 Log4j (Log4Shell) — CVE-2021-44228" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-3-log4j-log4shell-cve-2021-44228-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-3-log4j-log4shell-cve-2021-44228-sticky.svg" alt="Sticky Note: 16.2.3 Log4j (Log4Shell) — CVE-2021-44228" width="30%">
-</a>
-
 
 The Log4j vulnerability is a critical remote code execution (RCE) flaw in the Apache Log4j 2 Java logging library. While not a supply chain attack in the traditional sense, its impact was amplified by the software supply chain.
 
@@ -230,17 +174,6 @@ The Log4j vulnerability is a critical remote code execution (RCE) flaw in the Ap
 - This event was a watershed moment for SBOM adoption.
 
 ### 16.2.4 Dependency Confusion
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-4-dependency-confusion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-4-dependency-confusion-handwritten.svg" alt="Handwritten: 16.2.4 Dependency Confusion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-4-dependency-confusion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-4-dependency-confusion-diagram.svg" alt="Diagram: 16.2.4 Dependency Confusion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-4-dependency-confusion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-4-dependency-confusion-sticky.svg" alt="Sticky Note: 16.2.4 Dependency Confusion" width="30%">
-</a>
-
 
 Dependency confusion (also called namespace confusion) occurs when a package manager installs a package from a public registry instead of a private registry because the public package has a higher version number.
 
@@ -343,17 +276,6 @@ console.log('[Scoped Package Safe]', verdict2);
 ```
 
 ### 16.2.5 Typosquatting and Malicious Packages
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-5-typosquatting-and-malicious-packages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-5-typosquatting-and-malicious-packages-handwritten.svg" alt="Handwritten: 16.2.5 Typosquatting and Malicious Packages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-5-typosquatting-and-malicious-packages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-5-typosquatting-and-malicious-packages-diagram.svg" alt="Diagram: 16.2.5 Typosquatting and Malicious Packages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-5-typosquatting-and-malicious-packages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-2-5-typosquatting-and-malicious-packages-sticky.svg" alt="Sticky Note: 16.2.5 Typosquatting and Malicious Packages" width="30%">
-</a>
-
 
 Attackers publish packages with names that are slight misspellings of popular packages:
 
@@ -534,17 +456,6 @@ A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of a
 
 ### 16.3.1 SBOM Formats
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-1-sbom-formats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-1-sbom-formats-handwritten.svg" alt="Handwritten: 16.3.1 SBOM Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-1-sbom-formats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-1-sbom-formats-diagram.svg" alt="Diagram: 16.3.1 SBOM Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-1-sbom-formats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-1-sbom-formats-sticky.svg" alt="Sticky Note: 16.3.1 SBOM Formats" width="30%">
-</a>
-
-
 | Format | Standard Body | Format Type | Key Features |
 |---|---|---|---|
 | **SPDX** | Linux Foundation | RDF/XML, Tag:Value, JSON, YAML | Legal/license focus, ISO 5962:2021 |
@@ -552,17 +463,6 @@ A Software Bill of Materials (SBOM) is a formal, machine-readable inventory of a
 | **SWID** | ISO/IEC 19770-2:2015 | XML | Tag-based, ISO standard, software identity focus |
 
 ### 16.3.2 CycloneDX SBOM Generator (TypeScript)
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-2-cyclonedx-sbom-generator-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-2-cyclonedx-sbom-generator-typescript-handwritten.svg" alt="Handwritten: 16.3.2 CycloneDX SBOM Generator (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-2-cyclonedx-sbom-generator-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-2-cyclonedx-sbom-generator-typescript-diagram.svg" alt="Diagram: 16.3.2 CycloneDX SBOM Generator (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-2-cyclonedx-sbom-generator-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-2-cyclonedx-sbom-generator-typescript-sticky.svg" alt="Sticky Note: 16.3.2 CycloneDX SBOM Generator (TypeScript)" width="30%">
-</a>
-
 
 ```typescript
 /**
@@ -908,17 +808,6 @@ class CycloneDXSBOMGenerator {
 
 ### 16.3.3 SBOM Validation
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-3-sbom-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-3-sbom-validation-handwritten.svg" alt="Handwritten: 16.3.3 SBOM Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-3-sbom-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-3-sbom-validation-diagram.svg" alt="Diagram: 16.3.3 SBOM Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-3-sbom-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-3-3-sbom-validation-sticky.svg" alt="Sticky Note: 16.3.3 SBOM Validation" width="30%">
-</a>
-
-
 ```typescript
 /**
  * Validates a CycloneDX SBOM document for structural correctness
@@ -1014,17 +903,6 @@ class CycloneDXValidator {
 ## 16.4 Dependency Security Analysis
 
 ### 16.4.1 Dependency Vulnerability Checker (TypeScript)
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-1-dependency-vulnerability-checker-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-1-dependency-vulnerability-checker-typescript-handwritten.svg" alt="Handwritten: 16.4.1 Dependency Vulnerability Checker (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-1-dependency-vulnerability-checker-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-1-dependency-vulnerability-checker-typescript-diagram.svg" alt="Diagram: 16.4.1 Dependency Vulnerability Checker (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-1-dependency-vulnerability-checker-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-1-dependency-vulnerability-checker-typescript-sticky.svg" alt="Sticky Note: 16.4.1 Dependency Vulnerability Checker (TypeScript)" width="30%">
-</a>
-
 
 ```typescript
 /**
@@ -1251,17 +1129,6 @@ console.log(JSON.stringify(report, null, 2));
 
 ### 16.4.2 Transitive Dependency Risks
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-2-transitive-dependency-risks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-2-transitive-dependency-risks-handwritten.svg" alt="Handwritten: 16.4.2 Transitive Dependency Risks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-2-transitive-dependency-risks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-2-transitive-dependency-risks-diagram.svg" alt="Diagram: 16.4.2 Transitive Dependency Risks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-2-transitive-dependency-risks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-4-2-transitive-dependency-risks-sticky.svg" alt="Sticky Note: 16.4.2 Transitive Dependency Risks" width="30%">
-</a>
-
-
 Transitive dependencies (dependencies of dependencies) represent a significant blind spot:
 
 ```typescript
@@ -1354,17 +1221,6 @@ Modern CI/CD pipelines are a prime target for attackers because they have access
 
 ### 16.5.1 CI/CD Pipeline Security Architecture
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-1-ci-cd-pipeline-security-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-1-ci-cd-pipeline-security-architecture-handwritten.svg" alt="Handwritten: 16.5.1 CI/CD Pipeline Security Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-1-ci-cd-pipeline-security-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-1-ci-cd-pipeline-security-architecture-diagram.svg" alt="Diagram: 16.5.1 CI/CD Pipeline Security Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-1-ci-cd-pipeline-security-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-1-ci-cd-pipeline-security-architecture-sticky.svg" alt="Sticky Note: 16.5.1 CI/CD Pipeline Security Architecture" width="30%">
-</a>
-
-
 ```mermaid
 flowchart LR
     subgraph Source
@@ -1416,17 +1272,6 @@ flowchart LR
 **Figure 16.2**: CI/CD pipeline with integrated security gates at every stage.
 
 ### 16.5.2 CI/CD Pipeline Security Auditor (TypeScript)
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-2-ci-cd-pipeline-security-auditor-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-2-ci-cd-pipeline-security-auditor-typescript-handwritten.svg" alt="Handwritten: 16.5.2 CI/CD Pipeline Security Auditor (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-2-ci-cd-pipeline-security-auditor-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-2-ci-cd-pipeline-security-auditor-typescript-diagram.svg" alt="Diagram: 16.5.2 CI/CD Pipeline Security Auditor (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-2-ci-cd-pipeline-security-auditor-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-2-ci-cd-pipeline-security-auditor-typescript-sticky.svg" alt="Sticky Note: 16.5.2 CI/CD Pipeline Security Auditor (TypeScript)" width="30%">
-</a>
-
 
 ```typescript
 /**
@@ -1791,17 +1636,6 @@ for (const finding of report.findings) {
 
 ### 16.5.3 CI/CD Pipeline Hardening Checklist
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-3-ci-cd-pipeline-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-3-ci-cd-pipeline-hardening-checklist-handwritten.svg" alt="Handwritten: 16.5.3 CI/CD Pipeline Hardening Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-3-ci-cd-pipeline-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-3-ci-cd-pipeline-hardening-checklist-diagram.svg" alt="Diagram: 16.5.3 CI/CD Pipeline Hardening Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-3-ci-cd-pipeline-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-5-3-ci-cd-pipeline-hardening-checklist-sticky.svg" alt="Sticky Note: 16.5.3 CI/CD Pipeline Hardening Checklist" width="30%">
-</a>
-
-
 | # | Check | Priority | Pipeline Type |
 |---|---|---|---|
 | 1 | **Pin all actions to commit SHAs** — never use version tags | Critical | GitHub Actions |
@@ -1830,17 +1664,6 @@ for (const finding of report.findings) {
 ## 16.6 Artifact Integrity and Signing
 
 ### 16.6.1 Sigstore / Cosign
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-1-sigstore-cosign-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-1-sigstore-cosign-handwritten.svg" alt="Handwritten: 16.6.1 Sigstore / Cosign" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-1-sigstore-cosign-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-1-sigstore-cosign-diagram.svg" alt="Diagram: 16.6.1 Sigstore / Cosign" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-1-sigstore-cosign-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-1-sigstore-cosign-sticky.svg" alt="Sticky Note: 16.6.1 Sigstore / Cosign" width="30%">
-</a>
-
 
 Sigstore is a set of tools for signing, verifying, and protecting software artifacts. Cosign is Sigstore's container signing tool.
 
@@ -2154,17 +1977,6 @@ void demonstrateCosignVerification();
 
 ### 16.6.2 Software Artifact Hash Verifier (TypeScript)
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-2-software-artifact-hash-verifier-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-2-software-artifact-hash-verifier-typescript-handwritten.svg" alt="Handwritten: 16.6.2 Software Artifact Hash Verifier (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-2-software-artifact-hash-verifier-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-2-software-artifact-hash-verifier-typescript-diagram.svg" alt="Diagram: 16.6.2 Software Artifact Hash Verifier (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-2-software-artifact-hash-verifier-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-6-2-software-artifact-hash-verifier-typescript-sticky.svg" alt="Sticky Note: 16.6.2 Software Artifact Hash Verifier (TypeScript)" width="30%">
-</a>
-
-
 ```typescript
 /**
  * Software Artifact Hash Verifier
@@ -2405,17 +2217,6 @@ SLSA (pronounced "salsa") is a security framework from Google that specifies a g
 
 ### 16.7.1 SLSA Levels
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-1-slsa-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-1-slsa-levels-handwritten.svg" alt="Handwritten: 16.7.1 SLSA Levels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-1-slsa-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-1-slsa-levels-diagram.svg" alt="Diagram: 16.7.1 SLSA Levels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-1-slsa-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-1-slsa-levels-sticky.svg" alt="Sticky Note: 16.7.1 SLSA Levels" width="30%">
-</a>
-
-
 ```mermaid
 flowchart TB
     subgraph SLSA_L0["SLSA L0 — No guarantees"]
@@ -2457,17 +2258,6 @@ flowchart TB
 
 ### 16.7.2 SLSA Requirements Summary
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-2-slsa-requirements-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-2-slsa-requirements-summary-handwritten.svg" alt="Handwritten: 16.7.2 SLSA Requirements Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-2-slsa-requirements-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-2-slsa-requirements-summary-diagram.svg" alt="Diagram: 16.7.2 SLSA Requirements Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-2-slsa-requirements-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-2-slsa-requirements-summary-sticky.svg" alt="Sticky Note: 16.7.2 SLSA Requirements Summary" width="30%">
-</a>
-
-
 | Requirement | L1 | L2 | L3 | L4 |
 |---|---|---|---|---|
 | Provenance exists | ✓ | ✓ | ✓ | ✓ |
@@ -2482,17 +2272,6 @@ flowchart TB
 | Security audit | | | | ✓ |
 
 ### 16.7.3 SLSA Provenance Attestation Builder (TypeScript)
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-3-slsa-provenance-attestation-builder-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-3-slsa-provenance-attestation-builder-typescript-handwritten.svg" alt="Handwritten: 16.7.3 SLSA Provenance Attestation Builder (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-3-slsa-provenance-attestation-builder-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-3-slsa-provenance-attestation-builder-typescript-diagram.svg" alt="Diagram: 16.7.3 SLSA Provenance Attestation Builder (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-3-slsa-provenance-attestation-builder-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-7-3-slsa-provenance-attestation-builder-typescript-sticky.svg" alt="Sticky Note: 16.7.3 SLSA Provenance Attestation Builder (TypeScript)" width="30%">
-</a>
-
 
 ```typescript
 /**
@@ -2788,17 +2567,6 @@ DevSecOps integrates security practices into DevOps pipelines, making security a
 
 ### 16.8.1 Security Tools Integration
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-1-security-tools-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-1-security-tools-integration-handwritten.svg" alt="Handwritten: 16.8.1 Security Tools Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-1-security-tools-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-1-security-tools-integration-diagram.svg" alt="Diagram: 16.8.1 Security Tools Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-1-security-tools-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-1-security-tools-integration-sticky.svg" alt="Sticky Note: 16.8.1 Security Tools Integration" width="30%">
-</a>
-
-
 ```mermaid
 flowchart LR
     subgraph DevSecOps["DevSecOps Toolchain"]
@@ -2837,17 +2605,6 @@ flowchart LR
 
 ### 16.8.2 DevSecOps Integration Checklist
 
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-2-devsecops-integration-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-2-devsecops-integration-checklist-handwritten.svg" alt="Handwritten: 16.8.2 DevSecOps Integration Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-2-devsecops-integration-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-2-devsecops-integration-checklist-diagram.svg" alt="Diagram: 16.8.2 DevSecOps Integration Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-2-devsecops-integration-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-2-devsecops-integration-checklist-sticky.svg" alt="Sticky Note: 16.8.2 DevSecOps Integration Checklist" width="30%">
-</a>
-
-
 | Stage | Tool | Action | When |
 |---|---|---|---|
 | **Pre-commit** | `gitleaks`, `trufflehog` | Scan for secrets | git hook |
@@ -2862,17 +2619,6 @@ flowchart LR
 | **Production** | Falco, Sysdig | Runtime monitoring | Continuous |
 
 ### 16.8.3 Dependency Confusion Scanner (TypeScript)
-
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-3-dependency-confusion-scanner-typescript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-3-dependency-confusion-scanner-typescript-handwritten.svg" alt="Handwritten: 16.8.3 Dependency Confusion Scanner (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-3-dependency-confusion-scanner-typescript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-3-dependency-confusion-scanner-typescript-diagram.svg" alt="Diagram: 16.8.3 Dependency Confusion Scanner (TypeScript)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-3-dependency-confusion-scanner-typescript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/16-supply-chain-cicd/16-8-3-dependency-confusion-scanner-typescript-sticky.svg" alt="Sticky Note: 16.8.3 Dependency Confusion Scanner (TypeScript)" width="30%">
-</a>
-
 
 ```typescript
 /**

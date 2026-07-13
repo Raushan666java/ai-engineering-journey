@@ -58,16 +58,6 @@ This chapter covers the brain's two learning modes — focused and diffuse — a
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -92,16 +82,6 @@ flowchart LR
 ---
 
 ### Q1: What are focused and diffuse modes of thinking, and when should you use each?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-handwritten.svg" alt="Handwritten: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-diagram.svg" alt="Diagram: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-focused-and-diffuse-modes-of-thinking-and-when-should-you-use-each-sticky.svg" alt="Sticky Note: What are focused and diffuse modes of thinking, and when should you use each?" width="30%">
-</a>
 
 
 **Answer:** Focused mode is concentrated, attentive thinking on a specific problem using well-worn neural pathways. Diffuse mode is a relaxed, big-picture state where your brain makes remote associations. You need both.
@@ -155,16 +135,6 @@ public class SubnetCalculator {
 
 ### Q2: How do you know when to switch between focused and diffuse modes?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-handwritten.svg" alt="Handwritten: How do you know when to switch between focused and diffuse modes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-diagram.svg" alt="Diagram: How do you know when to switch between focused and diffuse modes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-know-when-to-switch-between-focused-and-diffuse-modes-sticky.svg" alt="Sticky Note: How do you know when to switch between focused and diffuse modes?" width="30%">
-</a>
-
 
 **Answer:** The signal is **frustration**. If you've been working on a problem for 15-20 minutes and feel stuck, confused, or annoyed — that's your cue to switch to diffuse mode.
 
@@ -181,16 +151,6 @@ Stop. Take a walk. Let your brain's diffuse networks re-organize what you've lea
 ---
 
 ### Q3: What is the 4-chunk limit, and how does it affect studying?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is the 4-chunk limit, and how does it affect studying?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is the 4-chunk limit, and how does it affect studying?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-4-chunk-limit-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is the 4-chunk limit, and how does it affect studying?" width="30%">
-</a>
 
 
 **Answer:** Working memory can hold roughly 4 discrete chunks of information simultaneously (the "magic number 4"). Each chunk is a package of related concepts. To learn complex material, you must compress information into larger chunks.
@@ -234,16 +194,6 @@ public class ChunkExample {
 ---
 
 ### Q4: How do you build a chunk from new material?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-handwritten.svg" alt="Handwritten: How do you build a chunk from new material?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-diagram.svg" alt="Diagram: How do you build a chunk from new material?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-you-build-a-chunk-from-new-material-sticky.svg" alt="Sticky Note: How do you build a chunk from new material?" width="30%">
-</a>
 
 
 **Answer:** A chunk is built through three steps: (1) **focus** your attention on the concept, (2) **understand** the main idea, (3) **practice** to build context so you know when to use it.
@@ -313,16 +263,6 @@ Choose BST when you need **order** — sorted traversal, range queries, nearest 
 
 ### Q5: How does chunk hierarchy help you understand layered systems?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-handwritten.svg" alt="Handwritten: How does chunk hierarchy help you understand layered systems?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-diagram.svg" alt="Diagram: How does chunk hierarchy help you understand layered systems?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-chunk-hierarchy-help-you-understand-layered-systems-sticky.svg" alt="Sticky Note: How does chunk hierarchy help you understand layered systems?" width="30%">
-</a>
-
 
 **Answer:** Complex systems have natural chunk hierarchies. Understanding the hierarchy lets you "zoom in" on details or "zoom out" to the big picture without getting lost.
 
@@ -355,16 +295,6 @@ public enum OsiLayer {
 
 ### Q6: What's the difference between procedural and declarative knowledge, and why does it matter?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-diagram.svg" alt="Diagram: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-s-the-difference-between-procedural-and-declarative-knowledge-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What's the difference between procedural and declarative knowledge, and why does it matter?" width="30%">
-</a>
-
 
 **Answer:** Declarative knowledge is "knowing *that*" — facts, concepts, theories. Procedural knowledge is "knowing *how*" — the ability to execute a process. Learning requires both, but they live in different memory systems.
 
@@ -390,16 +320,6 @@ Many students read the code and think "I understand" — that's declarative. But
 ---
 
 ### Q7: How does sleep affect memory consolidation?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-handwritten.svg" alt="Handwritten: How does sleep affect memory consolidation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-diagram.svg" alt="Diagram: How does sleep affect memory consolidation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-affect-memory-consolidation-sticky.svg" alt="Sticky Note: How does sleep affect memory consolidation?" width="30%">
-</a>
 
 
 **Answer:** Sleep is when your brain moves information from short-term (hippocampus) to long-term (neocortex) memory. Without adequate sleep, learning that happened during the day is not consolidated — it's like saving a file without clicking "Save."
@@ -454,16 +374,6 @@ public class MemoryConsolidation {
 
 ### Q8: What is neuroplasticity and how does it enable lifelong learning?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-handwritten.svg" alt="Handwritten: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-diagram.svg" alt="Diagram: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-neuroplasticity-and-how-does-it-enable-lifelong-learning-sticky.svg" alt="Sticky Note: What is neuroplasticity and how does it enable lifelong learning?" width="30%">
-</a>
-
 
 **Answer:** Neuroplasticity is the brain's ability to reorganize itself by forming new neural connections throughout life. It is the biological basis of learning.
 
@@ -500,16 +410,6 @@ public class NeuralJITAnalogy {
 
 
 ### Q9: What is the Default Mode Network and how does it support diffuse thinking?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-handwritten.svg" alt="Handwritten: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-diagram.svg" alt="Diagram: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-the-default-mode-network-and-how-does-it-support-diffuse-thinking-sticky.svg" alt="Sticky Note: What is the Default Mode Network and how does it support diffuse thinking?" width="30%">
-</a>
 
 
 **Answer:** The Default Mode Network (DMN) is a network of brain regions — including the medial prefrontal cortex, posterior cingulate cortex, and angular gyrus — that is most active when you are not focused on any external task. It is the neural basis of diffuse mode.
@@ -553,16 +453,6 @@ public class DefaultModeNetwork {
 ---
 
 ### Q10: What is Cognitive Load Theory and how does it affect studying?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-handwritten.svg" alt="Handwritten: What is Cognitive Load Theory and how does it affect studying?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-diagram.svg" alt="Diagram: What is Cognitive Load Theory and how does it affect studying?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-is-cognitive-load-theory-and-how-does-it-affect-studying-sticky.svg" alt="Sticky Note: What is Cognitive Load Theory and how does it affect studying?" width="30%">
-</a>
 
 
 **Answer:** Cognitive Load Theory (CLT), developed by John Sweller in the 1980s, describes how the limited capacity of working memory constrains learning.
@@ -635,16 +525,6 @@ From [`docs/courses/placement-preparation/02-dsa-problem-bank.md`](https://githu
 
 ### Q11: What are the different types of attention and how do they affect learning?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-handwritten.svg" alt="Handwritten: What are the different types of attention and how do they affect learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-diagram.svg" alt="Diagram: What are the different types of attention and how do they affect learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/what-are-the-different-types-of-attention-and-how-do-they-affect-learning-sticky.svg" alt="Sticky Note: What are the different types of attention and how do they affect learning?" width="30%">
-</a>
-
 
 **Answer:** Attention is not a single ability — it has multiple subtypes, each with different implications for learning.
 
@@ -693,16 +573,6 @@ public class AttentionSystem {
 ---
 
 ### Q12: Why is multitasking a myth for learning?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-handwritten.svg" alt="Handwritten: Why is multitasking a myth for learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-diagram.svg" alt="Diagram: Why is multitasking a myth for learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/why-is-multitasking-a-myth-for-learning-sticky.svg" alt="Sticky Note: Why is multitasking a myth for learning?" width="30%">
-</a>
 
 
 **Answer:** The human brain does not process multiple attention-demanding tasks simultaneously. What we call multitasking is actually **rapid task-switching**, and it carries a significant performance penalty.
@@ -760,16 +630,6 @@ public class TaskScheduler {
 
 ### Q13: How does stress (cortisol) affect learning and memory?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-handwritten.svg" alt="Handwritten: How does stress (cortisol) affect learning and memory?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-diagram.svg" alt="Diagram: How does stress (cortisol) affect learning and memory?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-stress-cortisol-affect-learning-and-memory-sticky.svg" alt="Sticky Note: How does stress (cortisol) affect learning and memory?" width="30%">
-</a>
-
 
 **Answer:** Stress affects learning through the hormone cortisol, which binds to receptors throughout the brain — especially the hippocampus, amygdala, and prefrontal cortex. The relationship follows the **Yerkes-Dodson inverted-U curve**.
 
@@ -824,16 +684,6 @@ public class StressResponse {
 ---
 
 ### Q14: How does exercise boost neurogenesis and learning?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-handwritten.svg" alt="Handwritten: How does exercise boost neurogenesis and learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-diagram.svg" alt="Diagram: How does exercise boost neurogenesis and learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-exercise-boost-neurogenesis-and-learning-sticky.svg" alt="Sticky Note: How does exercise boost neurogenesis and learning?" width="30%">
-</a>
 
 
 **Answer:** Exercise is one of the most powerful tools for enhancing learning — not indirectly through stress reduction, but through direct biological effects on the brain.
@@ -895,16 +745,6 @@ public class ExerciseAndLearning {
 ---
 
 ### Q15: How do circadian rhythms affect optimal study timing?
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-handwritten.svg" alt="Handwritten: How do circadian rhythms affect optimal study timing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-diagram.svg" alt="Diagram: How do circadian rhythms affect optimal study timing?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-do-circadian-rhythms-affect-optimal-study-timing-sticky.svg" alt="Sticky Note: How do circadian rhythms affect optimal study timing?" width="30%">
-</a>
 
 
 **Answer:** Circadian rhythms are 24-hour biological cycles that regulate sleep-wake patterns, hormone release (cortisol, melatonin), body temperature, and cognitive performance. Learning effectiveness varies dramatically across the day based on these rhythms.
@@ -985,16 +825,6 @@ public class CircadianStudyPlanner {
 
 ### Q16: How does sleep architecture work and how can you optimize it for learning?
 
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-handwritten.svg" alt="Handwritten: How does sleep architecture work and how can you optimize it for learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-diagram.svg" alt="Diagram: How does sleep architecture work and how can you optimize it for learning?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/how-does-sleep-architecture-work-and-how-can-you-optimize-it-for-learning-sticky.svg" alt="Sticky Note: How does sleep architecture work and how can you optimize it for learning?" width="30%">
-</a>
-
 
 **Answer:** Sleep is not a single state — it is a structured cycle of stages that repeat approximately every 90 minutes throughout the night. Understanding this architecture lets you optimize both the quantity and quality of your sleep for learning.
 
@@ -1074,16 +904,6 @@ public class SleepArchitecture {
 ---
 
 ### Self-Assessment Quiz
-
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-handwritten.svg" alt="Handwritten: Self-Assessment Quiz" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-diagram.svg" alt="Diagram: Self-Assessment Quiz" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/learning-how-to-learn/ch-01-how-your-brain-learns/self-assessment-quiz-sticky.svg" alt="Sticky Note: Self-Assessment Quiz" width="30%">
-</a>
 
 
 **1. Which brain network is primarily responsible for diffuse-mode thinking?**

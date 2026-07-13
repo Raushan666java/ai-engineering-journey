@@ -48,7 +48,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Problem Classification Flow
 
 ```mermaid
@@ -121,16 +120,6 @@ xychart-beta
 
 ### Problem 1: Climbing Stairs
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-1-climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-1-climbing-stairs-handwritten.svg" alt="Handwritten: Problem 1: Climbing Stairs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-1-climbing-stairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-1-climbing-stairs-diagram.svg" alt="Diagram: Problem 1: Climbing Stairs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-1-climbing-stairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-1-climbing-stairs-sticky.svg" alt="Sticky Note: Problem 1: Climbing Stairs" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Math, Memoization]
@@ -182,16 +171,6 @@ console.log(climbStairs(5)); // 8
 
 ### Problem 2: House Robber
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-2-house-robber-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-2-house-robber-handwritten.svg" alt="Handwritten: Problem 2: House Robber" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-2-house-robber-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-2-house-robber-diagram.svg" alt="Diagram: Problem 2: House Robber" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-2-house-robber-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-2-house-robber-sticky.svg" alt="Sticky Note: Problem 2: House Robber" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array]
@@ -239,16 +218,6 @@ console.log(rob([5])); // 5
 
 ### Problem 3: Maximum Subarray (Kadane's Algorithm)
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-3-maximum-subarray-kadane-s-algorithm-handwritten.svg" alt="Handwritten: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-3-maximum-subarray-kadane-s-algorithm-diagram.svg" alt="Diagram: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-3-maximum-subarray-kadane-s-algorithm-sticky.svg" alt="Sticky Note: Problem 3: Maximum Subarray (Kadane's Algorithm)" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [LinkedIn]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array, Divide and Conquer]
@@ -291,16 +260,6 @@ console.log(maxSubArray([-1])); // -1
 ---
 
 ### Problem 4: Fibonacci Number
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-4-fibonacci-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-4-fibonacci-number-handwritten.svg" alt="Handwritten: Problem 4: Fibonacci Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-4-fibonacci-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-4-fibonacci-number-diagram.svg" alt="Diagram: Problem 4: Fibonacci Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-4-fibonacci-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-4-fibonacci-number-sticky.svg" alt="Sticky Note: Problem 4: Fibonacci Number" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
@@ -345,16 +304,6 @@ console.log(fib(10)); // 55
 
 ### Problem 5: Min Cost Climbing Stairs
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-5-min-cost-climbing-stairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-5-min-cost-climbing-stairs-handwritten.svg" alt="Handwritten: Problem 5: Min Cost Climbing Stairs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-5-min-cost-climbing-stairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-5-min-cost-climbing-stairs-diagram.svg" alt="Diagram: Problem 5: Min Cost Climbing Stairs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-5-min-cost-climbing-stairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-5-min-cost-climbing-stairs-sticky.svg" alt="Sticky Note: Problem 5: Min Cost Climbing Stairs" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Array]
@@ -395,16 +344,6 @@ console.log(minCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1])); // 6
 ---
 
 ### Problem 6: Pascal's Triangle
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-6-pascal-s-triangle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-6-pascal-s-triangle-handwritten.svg" alt="Handwritten: Problem 6: Pascal's Triangle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-6-pascal-s-triangle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-6-pascal-s-triangle-diagram.svg" alt="Diagram: Problem 6: Pascal's Triangle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-6-pascal-s-triangle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-6-pascal-s-triangle-sticky.svg" alt="Sticky Note: Problem 6: Pascal's Triangle" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
@@ -447,16 +386,6 @@ console.log(generate(5));
 
 ### Problem 7: Divisor Game
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-7-divisor-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-7-divisor-game-handwritten.svg" alt="Handwritten: Problem 7: Divisor Game" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-7-divisor-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-7-divisor-game-diagram.svg" alt="Diagram: Problem 7: Divisor Game" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-7-divisor-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-7-divisor-game-sticky.svg" alt="Sticky Note: Problem 7: Divisor Game" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [DP, Math]
@@ -491,16 +420,6 @@ console.log(divisorGame(3)); // false
 ---
 
 ### Problem 8: Tribonacci Number
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-8-tribonacci-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-8-tribonacci-number-handwritten.svg" alt="Handwritten: Problem 8: Tribonacci Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-8-tribonacci-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-8-tribonacci-number-diagram.svg" alt="Diagram: Problem 8: Tribonacci Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-8-tribonacci-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-8-tribonacci-number-sticky.svg" alt="Sticky Note: Problem 8: Tribonacci Number" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
@@ -544,16 +463,6 @@ console.log(tribonacci(25)); // 1389537
 
 ### Problem 9: Maximum Product of Three Numbers
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-9-maximum-product-of-three-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-9-maximum-product-of-three-numbers-handwritten.svg" alt="Handwritten: Problem 9: Maximum Product of Three Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-9-maximum-product-of-three-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-9-maximum-product-of-three-numbers-diagram.svg" alt="Diagram: Problem 9: Maximum Product of Three Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-9-maximum-product-of-three-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-9-maximum-product-of-three-numbers-sticky.svg" alt="Sticky Note: Problem 9: Maximum Product of Three Numbers" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Array, Math]
@@ -592,16 +501,6 @@ console.log(maximumProduct([-100, -98, 1, 2, 3, 4])); // 39200
 ---
 
 ### Problem 10: Counting Bits
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-10-counting-bits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-10-counting-bits-handwritten.svg" alt="Handwritten: Problem 10: Counting Bits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-10-counting-bits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-10-counting-bits-diagram.svg" alt="Diagram: Problem 10: Counting Bits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-10-counting-bits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-10-counting-bits-sticky.svg" alt="Sticky Note: Problem 10: Counting Bits" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
@@ -646,16 +545,6 @@ console.log(countBits(5)); // [0, 1, 1, 2, 1, 2]
 ---
 
 ### Problem 11: Coin Change
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-11-coin-change-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-11-coin-change-handwritten.svg" alt="Handwritten: Problem 11: Coin Change" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-11-coin-change-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-11-coin-change-diagram.svg" alt="Diagram: Problem 11: Coin Change" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-11-coin-change-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-11-coin-change-sticky.svg" alt="Sticky Note: Problem 11: Coin Change" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -703,16 +592,6 @@ console.log(coinChange([1], 0)); // 0
 ---
 
 ### Problem 12: Longest Increasing Subsequence
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-12-longest-increasing-subsequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-12-longest-increasing-subsequence-handwritten.svg" alt="Handwritten: Problem 12: Longest Increasing Subsequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-12-longest-increasing-subsequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-12-longest-increasing-subsequence-diagram.svg" alt="Diagram: Problem 12: Longest Increasing Subsequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-12-longest-increasing-subsequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-12-longest-increasing-subsequence-sticky.svg" alt="Sticky Note: Problem 12: Longest Increasing Subsequence" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -775,16 +654,6 @@ console.log(lengthOfLIS([7, 7, 7, 7])); // 1
 
 ### Problem 13: Longest Common Subsequence
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-13-longest-common-subsequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-13-longest-common-subsequence-handwritten.svg" alt="Handwritten: Problem 13: Longest Common Subsequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-13-longest-common-subsequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-13-longest-common-subsequence-diagram.svg" alt="Diagram: Problem 13: Longest Common Subsequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-13-longest-common-subsequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-13-longest-common-subsequence-sticky.svg" alt="Sticky Note: Problem 13: Longest Common Subsequence" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, String]
@@ -834,16 +703,6 @@ console.log(longestCommonSubsequence("abc", "def")); // 0
 
 ### Problem 14: Unique Paths
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-14-unique-paths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-14-unique-paths-handwritten.svg" alt="Handwritten: Problem 14: Unique Paths" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-14-unique-paths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-14-unique-paths-diagram.svg" alt="Diagram: Problem 14: Unique Paths" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-14-unique-paths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-14-unique-paths-sticky.svg" alt="Sticky Note: Problem 14: Unique Paths" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Math, Combinatorics]
@@ -889,16 +748,6 @@ console.log(uniquePaths(3, 2)); // 3
 ---
 
 ### Problem 15: Unique Paths II
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-15-unique-paths-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-15-unique-paths-ii-handwritten.svg" alt="Handwritten: Problem 15: Unique Paths II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-15-unique-paths-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-15-unique-paths-ii-diagram.svg" alt="Diagram: Problem 15: Unique Paths II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-15-unique-paths-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-15-unique-paths-ii-sticky.svg" alt="Sticky Note: Problem 15: Unique Paths II" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
@@ -946,16 +795,6 @@ console.log(uniquePathsWithObstacles([[0,1],[0,0]])); // 1
 
 ### Problem 16: Jump Game
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-16-jump-game-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-16-jump-game-handwritten.svg" alt="Handwritten: Problem 16: Jump Game" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-16-jump-game-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-16-jump-game-diagram.svg" alt="Diagram: Problem 16: Jump Game" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-16-jump-game-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-16-jump-game-sticky.svg" alt="Sticky Note: Problem 16: Jump Game" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Greedy, Array]
@@ -998,16 +837,6 @@ console.log(canJump([3, 2, 1, 0, 4])); // false
 ---
 
 ### Problem 17: Word Break
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-17-word-break-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-17-word-break-handwritten.svg" alt="Handwritten: Problem 17: Word Break" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-17-word-break-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-17-word-break-diagram.svg" alt="Diagram: Problem 17: Word Break" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-17-word-break-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-17-word-break-sticky.svg" alt="Sticky Note: Problem 17: Word Break" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -1056,16 +885,6 @@ console.log(wordBreak("catsandog", ["cats","dog","sand","and","cat"])); // false
 ---
 
 ### Problem 18: Decode Ways
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-18-decode-ways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-18-decode-ways-handwritten.svg" alt="Handwritten: Problem 18: Decode Ways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-18-decode-ways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-18-decode-ways-diagram.svg" alt="Diagram: Problem 18: Decode Ways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-18-decode-ways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-18-decode-ways-sticky.svg" alt="Sticky Note: Problem 18: Decode Ways" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1117,16 +936,6 @@ console.log(numDecodings("06")); // 0
 
 ### Problem 19: Target Sum
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-19-target-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-19-target-sum-handwritten.svg" alt="Handwritten: Problem 19: Target Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-19-target-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-19-target-sum-diagram.svg" alt="Diagram: Problem 19: Target Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-19-target-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-19-target-sum-sticky.svg" alt="Sticky Note: Problem 19: Target Sum" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, DFS, Memoization]
@@ -1175,16 +984,6 @@ console.log(findTargetSumWays([1], 1)); // 1
 
 ### Problem 20: Partition Equal Subset Sum
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-20-partition-equal-subset-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-20-partition-equal-subset-sum-handwritten.svg" alt="Handwritten: Problem 20: Partition Equal Subset Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-20-partition-equal-subset-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-20-partition-equal-subset-sum-diagram.svg" alt="Diagram: Problem 20: Partition Equal Subset Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-20-partition-equal-subset-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-20-partition-equal-subset-sum-sticky.svg" alt="Sticky Note: Problem 20: Partition Equal Subset Sum" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
@@ -1232,16 +1031,6 @@ console.log(canPartition([1, 2, 3, 5])); // false
 
 ### Problem 21: Minimum Path Sum
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-21-minimum-path-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-21-minimum-path-sum-handwritten.svg" alt="Handwritten: Problem 21: Minimum Path Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-21-minimum-path-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-21-minimum-path-sum-diagram.svg" alt="Diagram: Problem 21: Minimum Path Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-21-minimum-path-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-21-minimum-path-sum-sticky.svg" alt="Sticky Note: Problem 21: Minimum Path Sum" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Grid]
@@ -1285,16 +1074,6 @@ console.log(minPathSum([[1,2,3],[4,5,6]])); // 12
 ---
 
 ### Problem 22: Maximum Length of Repeated Subarray
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-22-maximum-length-of-repeated-subarray-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-22-maximum-length-of-repeated-subarray-handwritten.svg" alt="Handwritten: Problem 22: Maximum Length of Repeated Subarray" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-22-maximum-length-of-repeated-subarray-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-22-maximum-length-of-repeated-subarray-diagram.svg" alt="Diagram: Problem 22: Maximum Length of Repeated Subarray" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-22-maximum-length-of-repeated-subarray-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-22-maximum-length-of-repeated-subarray-sticky.svg" alt="Sticky Note: Problem 22: Maximum Length of Repeated Subarray" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1340,16 +1119,6 @@ console.log(findLength([1, 2, 3, 2, 1], [3, 2, 1, 4, 7])); // 3
 
 ### Problem 23: Maximum Alternating Subsequence Sum
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-23-maximum-alternating-subsequence-sum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-23-maximum-alternating-subsequence-sum-handwritten.svg" alt="Handwritten: Problem 23: Maximum Alternating Subsequence Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-23-maximum-alternating-subsequence-sum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-23-maximum-alternating-subsequence-sum-diagram.svg" alt="Diagram: Problem 23: Maximum Alternating Subsequence Sum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-23-maximum-alternating-subsequence-sum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-23-maximum-alternating-subsequence-sum-sticky.svg" alt="Sticky Note: Problem 23: Maximum Alternating Subsequence Sum" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
@@ -1388,16 +1157,6 @@ console.log(maxAlternatingSum([5, 6, 7, 8])); // 8
 ---
 
 ### Problem 24: Coin Change II
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-24-coin-change-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-24-coin-change-ii-handwritten.svg" alt="Handwritten: Problem 24: Coin Change II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-24-coin-change-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-24-coin-change-ii-diagram.svg" alt="Diagram: Problem 24: Coin Change II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-24-coin-change-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-24-coin-change-ii-sticky.svg" alt="Sticky Note: Problem 24: Coin Change II" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1438,16 +1197,6 @@ console.log(change(3, [2])); // 0
 ---
 
 ### Problem 25: House Robber II
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-25-house-robber-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-25-house-robber-ii-handwritten.svg" alt="Handwritten: Problem 25: House Robber II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-25-house-robber-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-25-house-robber-ii-diagram.svg" alt="Diagram: Problem 25: House Robber II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-25-house-robber-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-25-house-robber-ii-sticky.svg" alt="Sticky Note: Problem 25: House Robber II" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1492,16 +1241,6 @@ console.log(robII([1, 2, 3, 1])); // 4
 ---
 
 ### Problem 26: Longest Palindromic Substring (DP)
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-26-longest-palindromic-substring-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-26-longest-palindromic-substring-dp-handwritten.svg" alt="Handwritten: Problem 26: Longest Palindromic Substring (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-26-longest-palindromic-substring-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-26-longest-palindromic-substring-dp-diagram.svg" alt="Diagram: Problem 26: Longest Palindromic Substring (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-26-longest-palindromic-substring-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-26-longest-palindromic-substring-dp-sticky.svg" alt="Sticky Note: Problem 26: Longest Palindromic Substring (DP)" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1557,16 +1296,6 @@ console.log(longestPalindrome("cbbd")); // "bb"
 
 ### Problem 27: Longest Increasing Path in a Matrix (DP)
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-27-longest-increasing-path-in-a-matrix-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-27-longest-increasing-path-in-a-matrix-dp-handwritten.svg" alt="Handwritten: Problem 27: Longest Increasing Path in a Matrix (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-27-longest-increasing-path-in-a-matrix-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-27-longest-increasing-path-in-a-matrix-dp-diagram.svg" alt="Diagram: Problem 27: Longest Increasing Path in a Matrix (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-27-longest-increasing-path-in-a-matrix-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-27-longest-increasing-path-in-a-matrix-dp-sticky.svg" alt="Sticky Note: Problem 27: Longest Increasing Path in a Matrix (DP)" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, DFS, Memoization, Graph]
@@ -1578,16 +1307,6 @@ console.log(longestPalindrome("cbbd")); // "bb"
 ---
 
 ### Problem 28: Best Time to Buy and Sell Stock with Cooldown
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-28-best-time-to-buy-and-sell-stock-with-cooldown-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-28-best-time-to-buy-and-sell-stock-with-cooldown-handwritten.svg" alt="Handwritten: Problem 28: Best Time to Buy and Sell Stock with Cooldown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-28-best-time-to-buy-and-sell-stock-with-cooldown-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-28-best-time-to-buy-and-sell-stock-with-cooldown-diagram.svg" alt="Diagram: Problem 28: Best Time to Buy and Sell Stock with Cooldown" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-28-best-time-to-buy-and-sell-stock-with-cooldown-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-28-best-time-to-buy-and-sell-stock-with-cooldown-sticky.svg" alt="Sticky Note: Problem 28: Best Time to Buy and Sell Stock with Cooldown" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1629,16 +1348,6 @@ console.log(maxProfitCooldown([1])); // 0
 
 ### Problem 29: 0/1 Knapsack
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-29-0-1-knapsack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-29-0-1-knapsack-handwritten.svg" alt="Handwritten: Problem 29: 0/1 Knapsack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-29-0-1-knapsack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-29-0-1-knapsack-diagram.svg" alt="Diagram: Problem 29: 0/1 Knapsack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-29-0-1-knapsack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-29-0-1-knapsack-sticky.svg" alt="Sticky Note: Problem 29: 0/1 Knapsack" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, Array]
@@ -1679,16 +1388,6 @@ console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 
 ### Problem 30: Edit Distance (DP)
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-30-edit-distance-dp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-30-edit-distance-dp-handwritten.svg" alt="Handwritten: Problem 30: Edit Distance (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-30-edit-distance-dp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-30-edit-distance-dp-diagram.svg" alt="Diagram: Problem 30: Edit Distance (DP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-30-edit-distance-dp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-30-edit-distance-dp-sticky.svg" alt="Sticky Note: Problem 30: Edit Distance (DP)" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [DP, String]
@@ -1704,16 +1403,6 @@ console.log(knapsack([2, 3, 5, 7], [1, 4, 5, 7], 10)); // 12
 ---
 
 ### Problem 31: Burst Balloons
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-31-burst-balloons-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-31-burst-balloons-handwritten.svg" alt="Handwritten: Problem 31: Burst Balloons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-31-burst-balloons-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-31-burst-balloons-diagram.svg" alt="Diagram: Problem 31: Burst Balloons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-31-burst-balloons-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-31-burst-balloons-sticky.svg" alt="Sticky Note: Problem 31: Burst Balloons" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
@@ -1767,16 +1456,6 @@ console.log(maxCoins([1, 5])); // 10
 
 ### Problem 32: Regular Expression Matching
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-32-regular-expression-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-32-regular-expression-matching-handwritten.svg" alt="Handwritten: Problem 32: Regular Expression Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-32-regular-expression-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-32-regular-expression-matching-diagram.svg" alt="Diagram: Problem 32: Regular Expression Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-32-regular-expression-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-32-regular-expression-matching-sticky.svg" alt="Sticky Note: Problem 32: Regular Expression Matching" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, String, Backtracking]
@@ -1789,16 +1468,6 @@ console.log(maxCoins([1, 5])); // 10
 
 ### Problem 33: Distinct Subsequences
 
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-33-distinct-subsequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-33-distinct-subsequences-handwritten.svg" alt="Handwritten: Problem 33: Distinct Subsequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-33-distinct-subsequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-33-distinct-subsequences-diagram.svg" alt="Diagram: Problem 33: Distinct Subsequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-33-distinct-subsequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-33-distinct-subsequences-sticky.svg" alt="Sticky Note: Problem 33: Distinct Subsequences" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [DP, String]
@@ -1810,16 +1479,6 @@ console.log(maxCoins([1, 5])); // 10
 ---
 
 ### Problem 34: Best Time to Buy and Sell Stock IV
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-34-best-time-to-buy-and-sell-stock-iv-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-34-best-time-to-buy-and-sell-stock-iv-handwritten.svg" alt="Handwritten: Problem 34: Best Time to Buy and Sell Stock IV" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-34-best-time-to-buy-and-sell-stock-iv-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-34-best-time-to-buy-and-sell-stock-iv-diagram.svg" alt="Diagram: Problem 34: Best Time to Buy and Sell Stock IV" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-34-best-time-to-buy-and-sell-stock-iv-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-34-best-time-to-buy-and-sell-stock-iv-sticky.svg" alt="Sticky Note: Problem 34: Best Time to Buy and Sell Stock IV" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
@@ -1870,16 +1529,6 @@ console.log(maxProfitIV(2, [2, 4, 1])); // 2
 ---
 
 ### Problem 35: Frog Jump
-
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-35-frog-jump-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-35-frog-jump-handwritten.svg" alt="Handwritten: Problem 35: Frog Jump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-35-frog-jump-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-35-frog-jump-diagram.svg" alt="Diagram: Problem 35: Frog Jump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-35-frog-jump-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/07-dynamic-programming/problem-35-frog-jump-sticky.svg" alt="Sticky Note: Problem 35: Frog Jump" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard

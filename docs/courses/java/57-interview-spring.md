@@ -64,16 +64,6 @@ flowchart LR
 
 ### Q1: What types of dependency injection does Spring support?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-handwritten.svg" alt="Handwritten: What types of dependency injection does Spring support?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-diagram.svg" alt="Diagram: What types of dependency injection does Spring support?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-types-of-dependency-injection-does-spring-support-sticky.svg" alt="Sticky Note: What types of dependency injection does Spring support?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -170,16 +160,6 @@ Constructor injection: required deps, immutable fields, no null checks. Setter: 
 
 ### Q2: How does @Autowired work? What if there are multiple matching beans?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-handwritten.svg" alt="Handwritten: How does @Autowired work? What if there are multiple matching beans?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-diagram.svg" alt="Diagram: How does @Autowired work? What if there are multiple matching beans?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-autowired-work-what-if-there-are-multiple-matching-beans-sticky.svg" alt="Sticky Note: How does @Autowired work? What if there are multiple matching beans?" width="30%">
-</a>
-
 
 **Answer:** @Autowired performs by-type injection. If multiple beans match, it narrows by @Qualifier, then by @Primary, then by parameter/field name (last resort). If still ambiguous, throws NoUniqueBeanDefinitionException.
 
@@ -267,16 +247,6 @@ interface AuditService {}
 
 ### Q3: Circular dependencies → how does Spring handle them?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-handwritten.svg" alt="Handwritten: Circular dependencies → how does Spring handle them?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-diagram.svg" alt="Diagram: Circular dependencies → how does Spring handle them?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/circular-dependencies-how-does-spring-handle-them-sticky.svg" alt="Sticky Note: Circular dependencies → how does Spring handle them?" width="30%">
-</a>
-
 
 **Answer:** Spring resolves circular dependencies through three-level singleton cache (early exposure). For prototype-scoped beans, circular deps cannot be resolved and throw BeanCurrentlyInCreationException.
 
@@ -363,16 +333,6 @@ class ServiceBRefactored {
 Spring singleton cache: singletonObjects (fully created) -> earlySingletonObjects (exposed but not fully initialized) -> singletonFactories (raw object before post-processing). Constructor injection + circular deps fails → use setter or @Lazy. Best fix: redesign to eliminate circular deps.
 
 ### Q4: Bean lifecycle → from creation to destruction.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-handwritten.svg" alt="Handwritten: Bean lifecycle → from creation to destruction." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-diagram.svg" alt="Diagram: Bean lifecycle → from creation to destruction." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-lifecycle-from-creation-to-destruction-sticky.svg" alt="Sticky Note: Bean lifecycle → from creation to destruction." width="30%">
-</a>
 
 
 **Answer:** Spring bean lifecycle: instantiation -> populate properties -> set bean name/classloader -> post-process before init (postProcessBeforeInitialization) -> @PostConstruct/InitializingBean/init-method -> post-process after init (postProcessAfterInitialization) -> ready -> @PreDestroy/DisposableBean/destroy-method.
@@ -479,16 +439,6 @@ Full order: constructor -> DI -> *Aware interfaces -> postProcessBeforeInit -> @
 
 ### Q5: Bean scopes in Spring.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-handwritten.svg" alt="Handwritten: Bean scopes in Spring." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-diagram.svg" alt="Diagram: Bean scopes in Spring." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/bean-scopes-in-spring-sticky.svg" alt="Sticky Note: Bean scopes in Spring." width="30%">
-</a>
-
 
 **Answer:** Six scopes: singleton (default, one per IoC container), prototype (new instance per injection/getBean), request (one per HTTP request), session (one per HTTP session), application (one per ServletContext), websocket (one per WebSocket session).
 
@@ -573,16 +523,6 @@ class RequestScopedService {
 Singleton: shared, thread-safe consideration. Prototype: full lifecycle not managed by Spring (destroy callbacks not invoked). Request/Session: require web-aware ApplicationContext, need proxyMode for injection into singletons. ScopedProxy creates AOP proxy that delegates to the real scoped instance.
 
 ### Q6: Spring Boot auto-configuration.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-handwritten.svg" alt="Handwritten: Spring Boot auto-configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-diagram.svg" alt="Diagram: Spring Boot auto-configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-auto-configuration-sticky.svg" alt="Sticky Note: Spring Boot auto-configuration." width="30%">
-</a>
 
 
 **Answer:** @EnableAutoConfiguration activates auto-configuration based on classpath dependencies, existing beans, and property settings. Conditionals (@ConditionalOnClass, @ConditionalOnMissingBean, etc.) gate auto-configuration classes loaded via spring.factories.
@@ -670,16 +610,6 @@ class DevConsole {}
 Auto-configuration triggers: @SpringBootApplication (which includes @EnableAutoConfiguration). Conditionals are evaluated at startup. Debug mode: spring.boot.autoconfigure.LoggingAutoConfigurationDebug=true or --debug flag. Auto-configuration ordering via @AutoConfigureBefore, @AutoConfigureAfter, @AutoConfigureOrder.
 
 ### Q7: How does DispatcherServlet work in Spring MVC?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-handwritten.svg" alt="Handwritten: How does DispatcherServlet work in Spring MVC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-diagram.svg" alt="Diagram: How does DispatcherServlet work in Spring MVC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-dispatcherservlet-work-in-spring-mvc-sticky.svg" alt="Sticky Note: How does DispatcherServlet work in Spring MVC?" width="30%">
-</a>
 
 
 **Answer:** DispatcherServlet is the front controller in Spring MVC. It receives all HTTP requests and delegates to specialized components via a chain: HandlerMapping -> HandlerAdapter -> Interceptors -> Controller -> HandlerExceptionResolver -> ViewResolver.
@@ -835,16 +765,6 @@ Key interfaces: HandlerMapping (URL->handler mapping), HandlerAdapter (invokes h
 
 ### Q8: N+1 query problem in Spring Data JPA.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-handwritten.svg" alt="Handwritten: N+1 query problem in Spring Data JPA." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-diagram.svg" alt="Diagram: N+1 query problem in Spring Data JPA." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/n-1-query-problem-in-spring-data-jpa-sticky.svg" alt="Sticky Note: N+1 query problem in Spring Data JPA." width="30%">
-</a>
-
 
 **Answer:** N+1 occurs when fetching an entity loads its associations lazily, then iterating over N entities triggers N additional queries. Solutions: JOIN FETCH, EntityGraph, @BatchSize, fetch join in @Query.
 
@@ -938,16 +858,6 @@ N+1 detection: enable SQL logging (spring.jpa.show-sql=true), use datasource-pro
 
 ### Q9: Fetch strategies → EAGER vs LAZY.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-handwritten.svg" alt="Handwritten: Fetch strategies → EAGER vs LAZY." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-diagram.svg" alt="Diagram: Fetch strategies → EAGER vs LAZY." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/fetch-strategies-eager-vs-lazy-sticky.svg" alt="Sticky Note: Fetch strategies → EAGER vs LAZY." width="30%">
-</a>
-
 
 **Answer:** EAGER loads the association immediately (join query or second select). LAZY loads on first access (proxy or bytecode enhancement). LAZY is default for @OneToMany/@ManyToMany. EAGER is default for @ManyToOne/@OneToOne.
 
@@ -1033,16 +943,6 @@ class FetchStrategyComparison {
 EAGER is dangerous in practice: it forces unnecessary joins, causes cartesian products with multiple collections, and can lead to loading entire databases. Always default to LAZY and explicitly fetch what you need.
 
 ### Q10: Cascade types in JPA.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-handwritten.svg" alt="Handwritten: Cascade types in JPA." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-diagram.svg" alt="Diagram: Cascade types in JPA." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/cascade-types-in-jpa-sticky.svg" alt="Sticky Note: Cascade types in JPA." width="30%">
-</a>
 
 
 **Answer:** Cascades propagate entity state changes from parent to child. Types: PERSIST, MERGE, REMOVE, REFRESH, DETACH, ALL. Operations cascade on EntityManager calls (persist(), merge(), remove(), etc.).
@@ -1149,16 +1049,6 @@ class BlogService {
 CascadeType.ALL: convenience for all operations. orphanRemoval: deletes children removed from the collection (requires a collection association). CascadeType.REMOVE without orphanRemoval: deletes children only when parent is explicitly removed. Best practice: use cascade sparingly. CascadeType.ALL on @OneToMany is common for parent-owned associations. Never cascade REMOVE across many-to-many.
 
 ### Q11: Transaction management → @Transactional propagation.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-handwritten.svg" alt="Handwritten: Transaction management → @Transactional propagation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-diagram.svg" alt="Diagram: Transaction management → @Transactional propagation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-management-transactional-propagation-sticky.svg" alt="Sticky Note: Transaction management → @Transactional propagation." width="30%">
-</a>
 
 
 **Answer:** @Transactional defines transaction boundaries with seven propagation behaviors: REQUIRED (default), REQUIRES_NEW, NESTED, SUPPORTS, NOT_SUPPORTED, MANDATORY, NEVER.
@@ -1297,16 +1187,6 @@ Propagation comparison: REQUIRES_NEW each gets independent connection (connectio
 
 ### Q12: Transaction isolation levels and read phenomena.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-handwritten.svg" alt="Handwritten: Transaction isolation levels and read phenomena." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-diagram.svg" alt="Diagram: Transaction isolation levels and read phenomena." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transaction-isolation-levels-and-read-phenomena-sticky.svg" alt="Sticky Note: Transaction isolation levels and read phenomena." width="30%">
-</a>
-
 
 **Answer:** Isolation levels define how transaction changes are visible to other transactions. Four ANSI levels with three read phenomena.
 
@@ -1397,16 +1277,6 @@ class IsolationDemo {
 MVCC details: each row has visibility information (transaction ID, commit timestamp in PostgreSQL). Update creates a new row version. Old versions are cleaned by vacuum (PostgreSQL) or undo cleanup (Oracle/MySQL).
 
 ### Q13: Optimistic vs Pessimistic locking.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-handwritten.svg" alt="Handwritten: Optimistic vs Pessimistic locking." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-diagram.svg" alt="Diagram: Optimistic vs Pessimistic locking." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/optimistic-vs-pessimistic-locking-sticky.svg" alt="Sticky Note: Optimistic vs Pessimistic locking." width="30%">
-</a>
 
 
 **Answer:** Optimistic locking assumes conflicts are rare → checks at commit time using version column. Pessimistic locking locks the row at read time and holds until transaction completes.
@@ -1535,16 +1405,6 @@ Optimistic: good for low contention, high performance, no connection held. Pessi
 
 ### Q14: @Transactional → readOnly flag.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-handwritten.svg" alt="Handwritten: @Transactional → readOnly flag." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-diagram.svg" alt="Diagram: @Transactional → readOnly flag." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/transactional-readonly-flag-sticky.svg" alt="Sticky Note: @Transactional → readOnly flag." width="30%">
-</a>
-
 
 **Answer:** readOnly=true optimizes read-only transactions. Hibernate skips dirty checking, flushes only if explicitly requested. Some databases optimize read-only transactions. Spring also configures FlushMode to MANUAL.
 
@@ -1627,16 +1487,6 @@ class TransactionBoundaryDemo {
 readOnly at service layer vs query level: service @Transactional(readOnly=true) covers all repository operations. Can still write programmatically (via flush()) → readOnly is a hint, not enforced. Forced by some databases (PostgreSQL throws error on write in read-only tx).
 
 ### Q15: Spring Data JPA → custom queries and projections.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-handwritten.svg" alt="Handwritten: Spring Data JPA → custom queries and projections." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-diagram.svg" alt="Diagram: Spring Data JPA → custom queries and projections." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-data-jpa-custom-queries-and-projections-sticky.svg" alt="Sticky Note: Spring Data JPA → custom queries and projections." width="30%">
-</a>
 
 
 **Answer:** Spring Data JPA supports derived queries (method name parsing), @Query (JPQL/native), projections (interface/record/DTO), and specifications for dynamic queries.
@@ -1745,16 +1595,6 @@ class EmployeeService {
 Derived query keywords: And, Or, Between, LessThan, GreaterThan, Like, In, IgnoreCase, OrderBy, NotNull, IsNull. @Modifying for UPDATE/DELETE queries (requires @Transactional). @QueryHints for query-level hints (e.g., cacheable).
 
 ### Q16: Spring Security → SecurityFilterChain.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-handwritten.svg" alt="Handwritten: Spring Security → SecurityFilterChain." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-diagram.svg" alt="Diagram: Spring Security → SecurityFilterChain." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-securityfilterchain-sticky.svg" alt="Sticky Note: Spring Security → SecurityFilterChain." width="30%">
-</a>
 
 
 **Answer:** SecurityFilterChain defines the filter chain for securing requests. It replaces the old WebSecurityConfigurerAdapter approach. Each chain matches a pattern and applies configured filters.
@@ -1915,16 +1755,6 @@ record UserRecord(String email, String password, String role, boolean locked) {}
 SecurityFilterChain replaced WebSecurityConfigurerAdapter in Spring Security 5.7+. Each chain has a securityMatcher pattern. Order matters → first matching chain wins. Stateless (JWT) APIs: disable CSRF, set STATELESS session policy.
 
 ### Q17: Spring Security → OAuth2 client and resource server.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-handwritten.svg" alt="Handwritten: Spring Security → OAuth2 client and resource server." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-diagram.svg" alt="Diagram: Spring Security → OAuth2 client and resource server." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-security-oauth2-client-and-resource-server-sticky.svg" alt="Sticky Note: Spring Security → OAuth2 client and resource server." width="30%">
-</a>
 
 
 **Answer:** Spring Security supports OAuth2 client (login via Google/GitHub) and resource server (JWT validation for APIs). JWT decoder validates token signature, expiration, and claims.
@@ -2099,16 +1929,6 @@ OAuth2 client handles authorization code flow. Resource server validates JWT sig
 
 ### Q18: @ControllerAdvice and exception handling.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-handwritten.svg" alt="Handwritten: @ControllerAdvice and exception handling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-diagram.svg" alt="Diagram: @ControllerAdvice and exception handling." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/controlleradvice-and-exception-handling-sticky.svg" alt="Sticky Note: @ControllerAdvice and exception handling." width="30%">
-</a>
-
 
 **Answer:** @ControllerAdvice handles exceptions globally across controllers. @ExceptionHandler maps exceptions to responses. ResponseEntityExceptionHandler provides base for REST error handling with Problem Details (RFC 7807).
 
@@ -2237,16 +2057,6 @@ record CreateProductRequest(String name, String category) {}
 Problem Details (RFC 7807): standardized error response format. Spring 6+ provides ProblemDetail class. Use @ControllerAdvice for global handling, per-controller @ExceptionHandler for specific cases. Override handleXxx from ResponseEntityExceptionHandler for default Spring exceptions.
 
 ### Q19: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-handwritten.svg" alt="Handwritten: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-diagram.svg" alt="Diagram: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/testing-webmvctest-datajpatest-springboottest-sticky.svg" alt="Sticky Note: Testing → @WebMvcTest, @DataJpaTest, @SpringBootTest." width="30%">
-</a>
 
 
 **Answer:** Spring Boot provides slice tests that load only relevant beans. @WebMvcTest loads only web layer (controllers, filters). @DataJpaTest loads JPA repositories. @SpringBootTest loads full context.
@@ -2420,16 +2230,6 @@ class UserService {
 @WebMvcTest auto-configures MockMvc. @DataJpaTest auto-configures TestEntityManager, repositories. @SpringBootTest loads full context → use for integration tests. @MockBean replaces beans with Mockito mocks. Testcontainers for real database testing.
 ### Q20: What is AOP in Spring and how does it work?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is AOP in Spring and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-diagram.svg" alt="Diagram: What is AOP in Spring and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-aop-in-spring-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is AOP in Spring and how does it work?" width="30%">
-</a>
-
 
 **Answer:** AOP (Aspect-Oriented Programming) separates cross-cutting concerns from business logic. Spring AOP uses proxy-based weaving at runtime. Core concepts: Aspect (module), JoinPoint (execution point), Pointcut (matching expression), Advice (action at join point), and Weaving (linking aspects with objects).
 
@@ -2588,16 +2388,6 @@ class AuditServiceImpl implements Auditable {
 AOP guide: `@EnableAspectJAutoProxy` enables annotation-driven AOP. JDK dynamic proxy requires interface; CGLIB proxies concrete classes. Only public methods can be proxied. Self-invocation bypasses proxy (no AOP for internal calls). Spring AOP is method-level only → AspectJ provides field/constructor interception with compile-time weaving.
 
 ### Q21: Spring Boot Actuator → endpoints and metrics.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-handwritten.svg" alt="Handwritten: Spring Boot Actuator → endpoints and metrics." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-diagram.svg" alt="Diagram: Spring Boot Actuator → endpoints and metrics." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-actuator-endpoints-and-metrics-sticky.svg" alt="Sticky Note: Spring Boot Actuator → endpoints and metrics." width="30%">
-</a>
 
 
 **Answer:** Actuator provides production-ready endpoints for monitoring and managing applications. Exposes health, metrics, info, env, loggers, and more via HTTP or JMX.
@@ -2806,16 +2596,6 @@ GET  /actuator/prometheus → Prometheus-format metrics (if micrometer-registry-
 Actuator endpoints can be exposed over JMX (default) and HTTP. Use `management.endpoints.web.exposure.include` and `exclude` for fine-grained control. Always secure actuator endpoints in production (separate port, internal network, RBAC).
 
 ### Q22: Caching with Spring → @Cacheable, @CacheEvict, @CachePut.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-handwritten.svg" alt="Handwritten: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-diagram.svg" alt="Diagram: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/caching-with-spring-cacheable-cacheevict-cacheput-sticky.svg" alt="Sticky Note: Caching with Spring → @Cacheable, @CacheEvict, @CachePut." width="30%">
-</a>
 
 
 **Answer:** Spring's Cache abstraction delegates to a cache provider (Redis, Caffeine, EhCache, Hazelcast) through CacheManager. Annotations control caching behavior declaratively.
@@ -3049,16 +2829,6 @@ class StringUtils {
 @Cacheable: checks cache first, executes method on miss. @CachePut: always executes, updates cache. @CacheEvict: removes entries. @Caching: groups multiple cache annotations. `sync=true` prevents concurrent cache misses (method-level locking). Redis, Caffeine, EhCache are production-ready providers.
 
 ### Q23: Spring Scheduling → @Scheduled and @Async.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-handwritten.svg" alt="Handwritten: Spring Scheduling → @Scheduled and @Async." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-diagram.svg" alt="Diagram: Spring Scheduling → @Scheduled and @Async." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-scheduling-scheduled-and-async-sticky.svg" alt="Sticky Note: Spring Scheduling → @Scheduled and @Async." width="30%">
-</a>
 
 
 **Answer:** @Scheduled triggers methods on a cron/fixed-delay/fixed-rate schedule. @Async executes methods asynchronously on a thread pool. Both require @EnableScheduling and @EnableAsync respectively.
@@ -3311,16 +3081,6 @@ class ExecutorConfig {
 Cron triggers use system timezone by default. fixedRate tasks pile up if they take longer than the interval. @Async with CompletableFuture provides non-blocking composition. ShedLock prevents duplicate execution in multi-instance deployments.
 
 ### Q24: @ConfigurationProperties and type-safe configuration.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-handwritten.svg" alt="Handwritten: @ConfigurationProperties and type-safe configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-diagram.svg" alt="Diagram: @ConfigurationProperties and type-safe configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/configurationproperties-and-type-safe-configuration-sticky.svg" alt="Sticky Note: @ConfigurationProperties and type-safe configuration." width="30%">
-</a>
 
 
 **Answer:** @ConfigurationProperties binds external properties to typed Java objects, providing validation, IDE support, and hierarchical structure. Activated with @EnableConfigurationProperties or @ConfigurationPropertiesScan.
@@ -3605,16 +3365,6 @@ app.datasource.url            → lowercase
 
 ### Q25: Spring Profiles → environment-specific configuration.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-handwritten.svg" alt="Handwritten: Spring Profiles → environment-specific configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-diagram.svg" alt="Diagram: Spring Profiles → environment-specific configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-profiles-environment-specific-configuration-sticky.svg" alt="Sticky Note: Spring Profiles → environment-specific configuration." width="30%">
-</a>
-
 
 **Answer:** Profiles activate different beans, properties, and configurations per environment. Use @Profile annotation, profile-specific files (application-dev.yml), or programmatic activation.
 
@@ -3879,16 +3629,6 @@ interface JavaMailSender {}
 Profile groups simplify multi-profile environments. Use `spring.profiles.include` for cross-cutting profiles (monitoring, audit). Never hardcode prod credentials in profile config → use environment variables or vault secrets. @Profile("!prod") for dev-only tools.
 
 ### Q26: Spring Events → ApplicationEventPublisher.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-handwritten.svg" alt="Handwritten: Spring Events → ApplicationEventPublisher." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-diagram.svg" alt="Diagram: Spring Events → ApplicationEventPublisher." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-events-applicationeventpublisher-sticky.svg" alt="Sticky Note: Spring Events → ApplicationEventPublisher." width="30%">
-</a>
 
 
 **Answer:** Spring's event mechanism enables loose coupling between components. ApplicationEventPublisher publishes events synchronously (default) or asynchronously (@Async on @EventListener). Events can be any Object (since Spring 4.2).
@@ -4186,16 +3926,6 @@ class DirectPayloadListener {
 Events decouple publishers from listeners. Transactional events prevent sending notifications when DB operations fail. @Async on listeners prevents blocking the publisher. @Order controls listener execution sequence. Generic events enable typed payloads.
 
 ### Q27: Spring Boot validation → @Valid, @Validated, and custom validators.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-handwritten.svg" alt="Handwritten: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-diagram.svg" alt="Diagram: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-validation-valid-validated-and-custom-validators-sticky.svg" alt="Sticky Note: Spring Boot validation → @Valid, @Validated, and custom validators." width="30%">
-</a>
 
 
 **Answer:** Bean Validation (Jakarta Validation) with Hibernate Validator enforces constraints on request bodies, method parameters, and fields. @Valid triggers validation. @Validated enables validation groups and method-level validation.
@@ -4529,16 +4259,6 @@ Validation groups enable different rules per operation (create vs update). @Vali
 
 ### Q28: CORS configuration in Spring Boot.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-handwritten.svg" alt="Handwritten: CORS configuration in Spring Boot." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-diagram.svg" alt="Diagram: CORS configuration in Spring Boot." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/cors-configuration-in-spring-boot-sticky.svg" alt="Sticky Note: CORS configuration in Spring Boot." width="30%">
-</a>
-
 
 **Answer:** CORS (Cross-Origin Resource Sharing) controls which origins can access your API. Configure globally via WebMvcConfigurer or per-controller with @CrossOrigin.
 
@@ -4724,16 +4444,6 @@ class CorsDebugController {
 CORS config in Spring Security must precede authorization rules. Use exact origins (not `*`) with `allowCredentials(true)`. Per-controller @CrossOrigin can override global config. Preflight OPTIONS requests are handled automatically but consume resources → cache with maxAge.
 
 ### Q29: WebSocket support in Spring Boot.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-handwritten.svg" alt="Handwritten: WebSocket support in Spring Boot." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-diagram.svg" alt="Diagram: WebSocket support in Spring Boot." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/websocket-support-in-spring-boot-sticky.svg" alt="Sticky Note: WebSocket support in Spring Boot." width="30%">
-</a>
 
 
 **Answer:** Spring Boot supports WebSocket with STOMP for real-time bidirectional communication. Uses a message broker (simple in-memory or external like RabbitMQ/ActiveMQ) with @MessageMapping for server-side handling.
@@ -5023,16 +4733,6 @@ WebSocket with STOMP provides pub/sub messaging on top of raw WebSocket. Simple 
 
 ### Q30: Spring Boot embedded container customization.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-handwritten.svg" alt="Handwritten: Spring Boot embedded container customization." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-diagram.svg" alt="Diagram: Spring Boot embedded container customization." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-embedded-container-customization-sticky.svg" alt="Sticky Note: Spring Boot embedded container customization." width="30%">
-</a>
-
 
 **Answer:** Spring Boot embeds Tomcat (default), Jetty, or Undertow. Customize via properties, WebServerFactoryCustomizer, or programmatic configuration.
 
@@ -5286,16 +4986,6 @@ Embedded container choice affects memory, startup time, and throughput. Tomcat: 
 
 ### Q31: Spring Boot DevTools → restarts, LiveReload, and remote debugging.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-handwritten.svg" alt="Handwritten: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-diagram.svg" alt="Diagram: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-devtools-restarts-livereload-and-remote-debugging-sticky.svg" alt="Sticky Note: Spring Boot DevTools → restarts, LiveReload, and remote debugging." width="30%">
-</a>
-
 
 **Answer:** DevTools improves development experience with automatic restarts, LiveReload, remote debugging, and H2 console. Disabled in production by default. Restart is faster than cold start thanks to classloader splitting.
 
@@ -5436,16 +5126,6 @@ spring.h2.console.enabled=true
 DevTools restart relies on classloader splitting → application code changes trigger context restart, while library JARs stay loaded, making restarts fast. Use trigger-file for explicit restart control. Never enable in production (auto-deactivates via packaging detection).
 
 ### Q32: Content negotiation in Spring MVC.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-handwritten.svg" alt="Handwritten: Content negotiation in Spring MVC." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-diagram.svg" alt="Diagram: Content negotiation in Spring MVC." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/content-negotiation-in-spring-mvc-sticky.svg" alt="Sticky Note: Content negotiation in Spring MVC." width="30%">
-</a>
 
 
 **Answer:** Content negotiation determines how to represent a resource based on client preferences. Strategies: Accept header (default), URL suffix (.json, .xml), URL parameter (?format=json), or fixed content type.
@@ -5711,16 +5391,6 @@ Content negotiation enables REST API versioning through Accept header (vnd.myapp
 
 ### Q33: Spring Boot externalized configuration → Environment, @PropertySource, and property binding.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-handwritten.svg" alt="Handwritten: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-diagram.svg" alt="Diagram: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-externalized-configuration-environment-propertysource-and-property-binding-sticky.svg" alt="Sticky Note: Spring Boot externalized configuration → Environment, @PropertySource, and property binding." width="30%">
-</a>
-
 
 **Answer:** Spring Boot's Environment abstraction provides unified access to property sources with ordered precedence. @PropertySource adds custom property files. Relaxed binding maps environment variables to @ConfigurationProperties.
 
@@ -5967,16 +5637,6 @@ class YamlPropertySourceConfig {}
 Use @Value for simple properties, @ConfigurationProperties for structured groups. Environment is available anywhere Spring-managed. PropertySource ordering is critical for override behavior. Relaxed binding handles naming convention differences between property files and environment variables.
 
 ### Q34: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC.
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-handwritten.svg" alt="Handwritten: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-diagram.svg" alt="Diagram: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-data-access-jdbctemplate-vs-jpa-vs-spring-data-jdbc-sticky.svg" alt="Sticky Note: Spring Boot data access → JdbcTemplate vs JPA vs Spring Data JDBC." width="30%">
-</a>
 
 
 **Answer:** Three approaches for data access: JdbcTemplate (full control, SQL), JPA/Hibernate (ORM, automatic schema management), Spring Data JDBC (aggregate-oriented, no lazy loading, simpler than JPA). Choose based on complexity and requirements.
@@ -6402,16 +6062,6 @@ JdbcTemplate: explicit SQL, manual mapping, best for complex queries. JPA: autom
 
 ### Q35: Spring Boot logging configuration.
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-handwritten.svg" alt="Handwritten: Spring Boot logging configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-diagram.svg" alt="Diagram: Spring Boot logging configuration." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-logging-configuration-sticky.svg" alt="Sticky Note: Spring Boot logging configuration." width="30%">
-</a>
-
 
 **Answer:** Spring Boot uses Logback by default with Log4j2 and Java Util Logging as alternatives. Configuration via application.yml/properties or logback-spring.xml. Logging levels can be changed at runtime via Actuator.
 
@@ -6691,16 +6341,6 @@ OFF  → No logging
 Logback is default and sufficient for most applications. MDC provides contextual logging without passing state through method calls. Use structured logging (JSON) for log aggregation systems (ELK, Datadog, Splunk). Async appender prevents logging I/O from blocking application threads.
 ### Q36: What is Spring Cloud and how does it enable microservice communication?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-handwritten.svg" alt="Handwritten: What is Spring Cloud and how does it enable microservice communication?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-diagram.svg" alt="Diagram: What is Spring Cloud and how does it enable microservice communication?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-cloud-and-how-does-it-enable-microservice-communication-sticky.svg" alt="Sticky Note: What is Spring Cloud and how does it enable microservice communication?" width="30%">
-</a>
-
 
 **Answer:** Spring Cloud provides tools for distributed system patterns: service discovery (Eureka), configuration management (Config Server), API gateways (Gateway), circuit breakers (Resilience4j), and distributed tracing (Sleuth/Micrometer). It builds on Spring Boot auto-configuration to make these patterns easy to set up with minimal boilerplate.
 
@@ -6815,16 +6455,6 @@ class OrderService {
 Spring Cloud abstracts distributed system complexity. The 2023.0.x release aligns with Spring Boot 3.x and Jakarta EE. Micrometer Tracing replaces the deprecated Sleuth project.
 ### Q37: How do you implement service discovery with Eureka?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-handwritten.svg" alt="Handwritten: How do you implement service discovery with Eureka?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-diagram.svg" alt="Diagram: How do you implement service discovery with Eureka?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-service-discovery-with-eureka-sticky.svg" alt="Sticky Note: How do you implement service discovery with Eureka?" width="30%">
-</a>
-
 
 **Answer:** Eureka is a Netflix service discovery tool. Services register themselves with the Eureka server on startup and periodically send heartbeats. Clients discover service instances by querying Eureka by logical service name, enabling dynamic load balancing and failover without hardcoded URLs.
 
@@ -6928,16 +6558,6 @@ Preferred when running outside Kubernetes.
 
 Eureka provides client-side service discovery. Self-preservation mode prevents cascade evictions during network partitions. For Kubernetes deployments, consider spring-cloud-kubernetes instead.
 ### Q38: How does Spring Cloud Config manage external configuration?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-handwritten.svg" alt="Handwritten: How does Spring Cloud Config manage external configuration?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-diagram.svg" alt="Diagram: How does Spring Cloud Config manage external configuration?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-spring-cloud-config-manage-external-configuration-sticky.svg" alt="Sticky Note: How does Spring Cloud Config manage external configuration?" width="30%">
-</a>
 
 
 **Answer:** Spring Cloud Config externalizes configuration to a Git-backed server. The Config Server serves property sources by application name and profile. Clients fetch config on startup and optionally refresh at runtime via Actuator or Spring Cloud Bus. This centralizes config management across all services without redeployment.
@@ -7090,16 +6710,6 @@ curl -X POST http://localhost:8888/encrypt -d 'db-password'
 Spring Cloud Config centralizes configuration with environment-specific property sources. Use @RefreshScope combined with /actuator/refresh for dynamic updates without restart. Secure the Config Server with Spring Security and HTTPS in production.
 ### Q39: How do you implement API Gateway with Spring Cloud Gateway?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-handwritten.svg" alt="Handwritten: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-diagram.svg" alt="Diagram: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-api-gateway-with-spring-cloud-gateway-sticky.svg" alt="Sticky Note: How do you implement API Gateway with Spring Cloud Gateway?" width="30%">
-</a>
-
 
 **Answer:** Spring Cloud Gateway provides a non-blocking API gateway built on Spring WebFlux and Reactor. It routes requests based on predicates (path, header, query param, host) and applies filters (authentication, rate limiting, header transformation, circuit breaking) before forwarding to downstream services. Unlike Zuul, it uses Netty (not Tomcat) for reactive non-blocking I/O.
 
@@ -7251,16 +6861,6 @@ class FallbackController {
 
 Spring Cloud Gateway is non-blocking end-to-end (Netty runtime). Key advantages over Zuul: no blocking I/O, WebFlux-native, better performance under high concurrency, built-in rate limiting with Redis, and seamless WebSocket proxying. Use the Java DSL for type safety over YAML.
 ### Q40: How do you use Resilience4j for fault tolerance?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-handwritten.svg" alt="Handwritten: How do you use Resilience4j for fault tolerance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-diagram.svg" alt="Diagram: How do you use Resilience4j for fault tolerance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-resilience4j-for-fault-tolerance-sticky.svg" alt="Sticky Note: How do you use Resilience4j for fault tolerance?" width="30%">
-</a>
 
 
 **Answer:** Resilience4j is a lightweight fault-tolerance library for Spring Boot that replaces the deprecated Hystrix. It provides CircuitBreaker, RateLimiter, Retry, Bulkhead, TimeLimiter, and Cache modules. Each module works independently, and they can be composed → for example, retry wrapping a circuit breaker wrapping a rate limiter.
@@ -7455,16 +7055,6 @@ class CircuitBreakerLogger {
 Resilience4j follows the decorator pattern. Modules are composable (RateLimiter → CircuitBreaker → Retry). Use Micrometer integration for Prometheus/Grafana dashboards. Always test circuit breaker transitions in integration tests by simulating failures.
 ### Q41: How does WebClient differ from RestTemplate?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-handwritten.svg" alt="Handwritten: How does WebClient differ from RestTemplate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-diagram.svg" alt="Diagram: How does WebClient differ from RestTemplate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-does-webclient-differ-from-resttemplate-sticky.svg" alt="Sticky Note: How does WebClient differ from RestTemplate?" width="30%">
-</a>
-
 
 **Answer:** WebClient is the reactive, non-blocking HTTP client introduced in Spring WebFlux. Unlike RestTemplate (which blocks the calling thread per request), WebClient uses Reactor's event loop model to handle many concurrent requests with few threads. RestTemplate is deprecated in Spring Boot 3.x and will be removed in a future version.
 
@@ -7616,16 +7206,6 @@ Timeouts             setConnectTimeout           HttpClient config
 
 Use WebClient for all new development. For existing RestTemplate code, migrate incrementally → the reactive API can be adapted to blocking with `.block()` when necessary. WebClient works equally well in both WebFlux and traditional Spring MVC applications.
 ### Q42: What is Spring Batch and how does it work?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Spring Batch and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-diagram.svg" alt="Diagram: What is Spring Batch and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-is-spring-batch-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Spring Batch and how does it work?" width="30%">
-</a>
 
 
 **Answer:** Spring Batch provides a robust framework for batch processing → reading large datasets, transforming them, and writing results. Core concepts: Job (containing steps), Step (chunk-oriented: ItemReader → ItemProcessor → ItemWriter), JobRepository (metadata persistence), and JobLauncher (execution trigger). It supports restart, skip, retry, partitioning, and multi-threaded steps.
@@ -7821,16 +7401,6 @@ BATCH_STEP_EXECUTION     → Step-level execution details
 Spring Batch excels at high-volume, scheduled data processing. Chunk-oriented processing prevents memory exhaustion, metadata tables enable restart from failure points, and partitioning allows horizontal scaling. Use with Spring Cloud Task for short-lived batch jobs in cloud environments.
 ### Q43: How do you implement data caching with Redis in Spring Boot?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement data caching with Redis in Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-diagram.svg" alt="Diagram: How do you implement data caching with Redis in Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-implement-data-caching-with-redis-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement data caching with Redis in Spring Boot?" width="30%">
-</a>
-
 
 **Answer:** Spring Boot provides declarative caching with @Cacheable, @CacheEvict, @CachePut, and @Caching annotations. Redis is a popular cache implementation backed by Spring Data Redis. The cache abstraction automatically manages TTL, serialization, and cache key generation. Redis supports advanced features like atomic operations, pub/sub, and distributed locks.
 
@@ -8025,16 +7595,6 @@ Distributed       Yes              No                Yes (clustered)
 Use @Cacheable(sync=true) for hot keys to prevent cache stampede. Monitor cache hit ratios via Actuator metrics → ratios below 80% indicate poor cache configuration. For production, configure Redis Sentinel or Cluster for high availability.
 ### Q44: How do you use MongoDB with Spring Data?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-handwritten.svg" alt="Handwritten: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-diagram.svg" alt="Diagram: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-mongodb-with-spring-data-sticky.svg" alt="Sticky Note: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-
 
 **Answer:** Spring Data MongoDB provides a repository abstraction for MongoDB optimized for document-oriented storage. It supports GeoJSON queries, aggregation pipelines, text search, and transactions (replica sets only). Key differences from JPA: no joins (embedded/referenced documents), schema flexibility via @Document, and native JSON query methods.
 
@@ -8202,16 +7762,6 @@ Aggregation     GROUP BY            $group pipeline
 
 Design documents around query patterns, not normalization rules. Use embedded documents for bounded, frequently-read subcollections. Reference unbounded collections like audit logs. Always create indexes for query patterns before production.
 ### Q45: How do you use Docker with Spring Boot applications?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-handwritten.svg" alt="Handwritten: How do you use Docker with Spring Boot applications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-diagram.svg" alt="Diagram: How do you use Docker with Spring Boot applications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/how-do-you-use-docker-with-spring-boot-applications-sticky.svg" alt="Sticky Note: How do you use Docker with Spring Boot applications?" width="30%">
-</a>
 
 
 **Answer:** Docker containers package Spring Boot apps with their runtime environment. Spring Boot supports multiple Docker image-building strategies: layered JARs (efficient caching), Cloud Native Buildpacks (no Dockerfile needed), and multi-stage Dockerfiles. Layered JARs separate application code from dependencies, enabling faster rebuilds by caching unchanged layers.
@@ -8397,16 +7947,6 @@ target/
 Docker containerizes apps for consistent environments. Layered JAR is most efficient for iterative development → dependency layers cached, only app code changes. Buildpacks offer zero-config images. For production: health checks, non-root user, proper JVM memory settings.
 ### Q46: What are custom Actuator endpoints and health indicators?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-handwritten.svg" alt="Handwritten: What are custom Actuator endpoints and health indicators?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-diagram.svg" alt="Diagram: What are custom Actuator endpoints and health indicators?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/what-are-custom-actuator-endpoints-and-health-indicators-sticky.svg" alt="Sticky Note: What are custom Actuator endpoints and health indicators?" width="30%">
-</a>
-
 
 **Answer:** Spring Boot Actuator allows custom endpoints for exposing application-specific operational data. Custom health indicators let you integrate external service health into the /actuator/health response. You can create read/write endpoints with custom HTTP methods. Actuator automatically aggregates all HealthIndicator beans into the health response.
 
@@ -8590,16 +8130,6 @@ Heapdump         heapdump        No       JVM heap dump
 Health indicators should implement lightweight, fast checks → never make heavy computation in a health check. Use custom endpoints for administrative operations (feature flags, cache warming) that don't belong in the main API surface.
 ### Q47: Filter vs Interceptor vs AOP → when to use which?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-handwritten.svg" alt="Handwritten: Filter vs Interceptor vs AOP → when to use which?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-diagram.svg" alt="Diagram: Filter vs Interceptor vs AOP → when to use which?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/filter-vs-interceptor-vs-aop-when-to-use-which-sticky.svg" alt="Sticky Note: Filter vs Interceptor vs AOP → when to use which?" width="30%">
-</a>
-
 
 **Answer:** Spring provides three layers for cross-cutting behavior: Filters (Servlet level), Interceptors (Handler/MVC level), and AOP (Method level). Filters operate on raw HTTP request/response before any Spring processing. Interceptors work after HandlerMapping but before/after controller execution. AOP applies to Spring beans at the method execution level. Filters lack Spring context awareness; AOP provides the finest granularity.
 
@@ -8759,16 +8289,6 @@ FormContentFilter       FormContentFilter        PUT/DELETE form data
 Choose the right layer: Filters for HTTP, Interceptors for MVC, AOP for method-level concerns. Overusing AOP makes code harder to debug. Filter if no handler needed, Interceptor if handler needed, AOP if method internals needed.
 ### Q48: Spring Boot 3.x migration → key changes and considerations?
 
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-handwritten.svg" alt="Handwritten: Spring Boot 3.x migration → key changes and considerations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-diagram.svg" alt="Diagram: Spring Boot 3.x migration → key changes and considerations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-boot-3-x-migration-key-changes-and-considerations-sticky.svg" alt="Sticky Note: Spring Boot 3.x migration → key changes and considerations?" width="30%">
-</a>
-
 
 **Answer:** Spring Boot 3.x migrates from Java EE to Jakarta EE (javax.* → jakarta.*), requires Java 17+, and introduces AOT (Ahead-of-Time) compilation for GraalVM native images. Key changes include Micrometer Observation API, ProblemDetails (RFC 7807) for errors, and removal of deprecated classes. Migration requires updating all imports, upgrading dependencies, and testing native image compatibility.
 
@@ -8908,16 +8428,6 @@ JUnit              5.8.x           5.10.x
 
 Use OpenRewrite to automate the javax→jakarta migration. AOT/native compilation is optional but provides dramatic startup improvements (100ms vs 3-5s). ProblemDetail standardizes error responses. Plan 2-4 weeks migration for enterprise apps.
 ### Q49: BeanFactory vs ApplicationContext → what's the difference?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-handwritten.svg" alt="Handwritten: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-diagram.svg" alt="Diagram: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/beanfactory-vs-applicationcontext-what-s-the-difference-sticky.svg" alt="Sticky Note: BeanFactory vs ApplicationContext → what's the difference?" width="30%">
-</a>
 
 
 **Answer:** ApplicationContext is a superset of BeanFactory. BeanFactory provides basic IoC (lazy initialization, dependency injection). ApplicationContext adds enterprise features: AOP integration, internationalization (MessageSource), event publishing (ApplicationEventPublisher), and annotation-based configuration. In Spring Boot, ApplicationContext is always used.
@@ -9092,16 +8602,6 @@ ApplicationContext adds:
 
 ApplicationContext is the container you should always use. BeanFactory is an implementation detail → Spring Boot never exposes it directly. The lazy vs eager distinction affects startup time, but ApplicationContext's features (AOP, events, @Autowired) are essential for any non-trivial application.
 ### Q50: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?
-
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-handwritten.svg" alt="Handwritten: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-diagram.svg" alt="Diagram: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/57-interview-spring/spring-ecosystem-comparison-spring-mvc-vs-webflux-vs-webmvc-fn-sticky.svg" alt="Sticky Note: Spring ecosystem comparison → Spring MVC vs WebFlux vs WebMvc.fn?" width="30%">
-</a>
 
 
 **Answer:** Spring MVC (annotation-based, blocking I/O) is the standard for traditional web apps. Spring WebFlux (functional, reactive, non-blocking) excels at high concurrency and streaming. WebMvc.fn (functional DSL for MVC) provides a concise alternative to annotations within the blocking stack. Choose based on your concurrency model, data layer, and team familiarity.

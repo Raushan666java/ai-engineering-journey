@@ -117,16 +117,6 @@ By the end of this chapter, you will be able to:
 
 ### 1.1 Core Components
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/1-1-core-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/1-1-core-components-handwritten.svg" alt="Handwritten: 1.1 Core Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/1-1-core-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/1-1-core-components-diagram.svg" alt="Diagram: 1.1 Core Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/1-1-core-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/1-1-core-components-sticky.svg" alt="Sticky Note: 1.1 Core Components" width="30%">
-</a>
-
 
 | Component | Purpose |
 |-----------|---------|
@@ -144,16 +134,6 @@ By the end of this chapter, you will be able to:
 ## 2. Pods
 
 ### 2.1 Single Container Pod
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-1-single-container-pod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-1-single-container-pod-handwritten.svg" alt="Handwritten: 2.1 Single Container Pod" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-1-single-container-pod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-1-single-container-pod-diagram.svg" alt="Diagram: 2.1 Single Container Pod" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-1-single-container-pod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-1-single-container-pod-sticky.svg" alt="Sticky Note: 2.1 Single Container Pod" width="30%">
-</a>
 
 
 ```yaml
@@ -213,16 +193,6 @@ spec:
 
 ### 2.2 Multi-Container Pod
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-2-multi-container-pod-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-2-multi-container-pod-handwritten.svg" alt="Handwritten: 2.2 Multi-Container Pod" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-2-multi-container-pod-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-2-multi-container-pod-diagram.svg" alt="Diagram: 2.2 Multi-Container Pod" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-2-multi-container-pod-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-2-multi-container-pod-sticky.svg" alt="Sticky Note: 2.2 Multi-Container Pod" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -260,16 +230,6 @@ spec:
 ```
 
 ### 2.3 Init Containers
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-3-init-containers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-3-init-containers-handwritten.svg" alt="Handwritten: 2.3 Init Containers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-3-init-containers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-3-init-containers-diagram.svg" alt="Diagram: 2.3 Init Containers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-3-init-containers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-3-init-containers-sticky.svg" alt="Sticky Note: 2.3 Init Containers" width="30%">
-</a>
 
 
 ```yaml
@@ -340,16 +300,6 @@ spec:
 
 ### 2.4 Pod Lifecycle
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-4-pod-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-4-pod-lifecycle-handwritten.svg" alt="Handwritten: 2.4 Pod Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-4-pod-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-4-pod-lifecycle-diagram.svg" alt="Diagram: 2.4 Pod Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-4-pod-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-4-pod-lifecycle-sticky.svg" alt="Sticky Note: 2.4 Pod Lifecycle" width="30%">
-</a>
-
 
 ```
 Pending → ContainerCreating → Running → Succeeded/Failed
@@ -369,16 +319,6 @@ Pending → ContainerCreating → Running → Succeeded/Failed
 | `Unknown` | Node lost communication with API server |
 
 ### 2.5 Pod Lifecycle Hooks
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-5-pod-lifecycle-hooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-5-pod-lifecycle-hooks-handwritten.svg" alt="Handwritten: 2.5 Pod Lifecycle Hooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-5-pod-lifecycle-hooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-5-pod-lifecycle-hooks-diagram.svg" alt="Diagram: 2.5 Pod Lifecycle Hooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-5-pod-lifecycle-hooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-5-pod-lifecycle-hooks-sticky.svg" alt="Sticky Note: 2.5 Pod Lifecycle Hooks" width="30%">
-</a>
 
 
 ```yaml
@@ -411,16 +351,6 @@ spec:
 ```
 
 ### 2.6 Pod Resource Requests and Limits
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-6-pod-resource-requests-and-limits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-6-pod-resource-requests-and-limits-handwritten.svg" alt="Handwritten: 2.6 Pod Resource Requests and Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-6-pod-resource-requests-and-limits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-6-pod-resource-requests-and-limits-diagram.svg" alt="Diagram: 2.6 Pod Resource Requests and Limits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/2-6-pod-resource-requests-and-limits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/2-6-pod-resource-requests-and-limits-sticky.svg" alt="Sticky Note: 2.6 Pod Resource Requests and Limits" width="30%">
-</a>
 
 
 ```yaml
@@ -475,16 +405,6 @@ resources:
 
 ### 3.1 ClusterIP (Default → Internal Only)
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-1-clusterip-default-internal-only-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-1-clusterip-default-internal-only-handwritten.svg" alt="Handwritten: 3.1 ClusterIP (Default → Internal Only)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-1-clusterip-default-internal-only-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-1-clusterip-default-internal-only-diagram.svg" alt="Diagram: 3.1 ClusterIP (Default → Internal Only)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-1-clusterip-default-internal-only-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-1-clusterip-default-internal-only-sticky.svg" alt="Sticky Note: 3.1 ClusterIP (Default → Internal Only)" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -510,16 +430,6 @@ spec:
 
 ### 3.2 NodePort (External Access on Node IP)
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-2-nodeport-external-access-on-node-ip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-2-nodeport-external-access-on-node-ip-handwritten.svg" alt="Handwritten: 3.2 NodePort (External Access on Node IP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-2-nodeport-external-access-on-node-ip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-2-nodeport-external-access-on-node-ip-diagram.svg" alt="Diagram: 3.2 NodePort (External Access on Node IP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-2-nodeport-external-access-on-node-ip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-2-nodeport-external-access-on-node-ip-sticky.svg" alt="Sticky Note: 3.2 NodePort (External Access on Node IP)" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -539,16 +449,6 @@ spec:
 Access: `http://<node-ip>:30080`
 
 ### 3.3 LoadBalancer (Cloud Provider LB)
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-3-loadbalancer-cloud-provider-lb-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-3-loadbalancer-cloud-provider-lb-handwritten.svg" alt="Handwritten: 3.3 LoadBalancer (Cloud Provider LB)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-3-loadbalancer-cloud-provider-lb-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-3-loadbalancer-cloud-provider-lb-diagram.svg" alt="Diagram: 3.3 LoadBalancer (Cloud Provider LB)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-3-loadbalancer-cloud-provider-lb-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-3-loadbalancer-cloud-provider-lb-sticky.svg" alt="Sticky Note: 3.3 LoadBalancer (Cloud Provider LB)" width="30%">
-</a>
 
 
 ```yaml
@@ -570,16 +470,6 @@ spec:
 
 ### 3.4 Headless Service (For StatefulSets)
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-4-headless-service-for-statefulsets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-4-headless-service-for-statefulsets-handwritten.svg" alt="Handwritten: 3.4 Headless Service (For StatefulSets)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-4-headless-service-for-statefulsets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-4-headless-service-for-statefulsets-diagram.svg" alt="Diagram: 3.4 Headless Service (For StatefulSets)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-4-headless-service-for-statefulsets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-4-headless-service-for-statefulsets-sticky.svg" alt="Sticky Note: 3.4 Headless Service (For StatefulSets)" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -595,16 +485,6 @@ spec:
 ```
 
 ### 3.5 Ingress
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-5-ingress-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-5-ingress-handwritten.svg" alt="Handwritten: 3.5 Ingress" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-5-ingress-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-5-ingress-diagram.svg" alt="Diagram: 3.5 Ingress" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-5-ingress-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-5-ingress-sticky.svg" alt="Sticky Note: 3.5 Ingress" width="30%">
-</a>
 
 
 ```yaml
@@ -655,16 +535,6 @@ spec:
 
 ### 3.6 Service Discovery with DNS
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-6-service-discovery-with-dns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-6-service-discovery-with-dns-handwritten.svg" alt="Handwritten: 3.6 Service Discovery with DNS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-6-service-discovery-with-dns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-6-service-discovery-with-dns-diagram.svg" alt="Diagram: 3.6 Service Discovery with DNS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/3-6-service-discovery-with-dns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/3-6-service-discovery-with-dns-sticky.svg" alt="Sticky Note: 3.6 Service Discovery with DNS" width="30%">
-</a>
-
 
 ```yaml
 # Every Service gets a DNS name in the cluster
@@ -694,16 +564,6 @@ spring:
 ## 4. ConfigMaps
 
 ### 4.1 Creating ConfigMaps
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-1-creating-configmaps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-1-creating-configmaps-handwritten.svg" alt="Handwritten: 4.1 Creating ConfigMaps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-1-creating-configmaps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-1-creating-configmaps-diagram.svg" alt="Diagram: 4.1 Creating ConfigMaps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-1-creating-configmaps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-1-creating-configmaps-sticky.svg" alt="Sticky Note: 4.1 Creating ConfigMaps" width="30%">
-</a>
 
 
 ```bash
@@ -761,16 +621,6 @@ data:
 
 ### 4.2 ConfigMap as Environment Variables
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-2-configmap-as-environment-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-2-configmap-as-environment-variables-handwritten.svg" alt="Handwritten: 4.2 ConfigMap as Environment Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-2-configmap-as-environment-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-2-configmap-as-environment-variables-diagram.svg" alt="Diagram: 4.2 ConfigMap as Environment Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-2-configmap-as-environment-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-2-configmap-as-environment-variables-sticky.svg" alt="Sticky Note: 4.2 ConfigMap as Environment Variables" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -798,16 +648,6 @@ spec:
 ```
 
 ### 4.3 ConfigMap as Volume Mount
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-3-configmap-as-volume-mount-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-3-configmap-as-volume-mount-handwritten.svg" alt="Handwritten: 4.3 ConfigMap as Volume Mount" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-3-configmap-as-volume-mount-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-3-configmap-as-volume-mount-diagram.svg" alt="Diagram: 4.3 ConfigMap as Volume Mount" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-3-configmap-as-volume-mount-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-3-configmap-as-volume-mount-sticky.svg" alt="Sticky Note: 4.3 ConfigMap as Volume Mount" width="30%">
-</a>
 
 
 ```yaml
@@ -845,16 +685,6 @@ spec:
 
 ### 4.4 Immutable ConfigMap
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-4-immutable-configmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-4-immutable-configmap-handwritten.svg" alt="Handwritten: 4.4 Immutable ConfigMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-4-immutable-configmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-4-immutable-configmap-diagram.svg" alt="Diagram: 4.4 Immutable ConfigMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-4-immutable-configmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-4-immutable-configmap-sticky.svg" alt="Sticky Note: 4.4 Immutable ConfigMap" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -870,16 +700,6 @@ immutable: true
 Immutable ConfigMaps improve performance because the API server doesn't need to watch for changes. To update, delete and recreate.
 
 ### 4.5 Spring Boot Externalized Config with ConfigMap
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-5-spring-boot-externalized-config-with-configmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-5-spring-boot-externalized-config-with-configmap-handwritten.svg" alt="Handwritten: 4.5 Spring Boot Externalized Config with ConfigMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-5-spring-boot-externalized-config-with-configmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-5-spring-boot-externalized-config-with-configmap-diagram.svg" alt="Diagram: 4.5 Spring Boot Externalized Config with ConfigMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/4-5-spring-boot-externalized-config-with-configmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/4-5-spring-boot-externalized-config-with-configmap-sticky.svg" alt="Sticky Note: 4.5 Spring Boot Externalized Config with ConfigMap" width="30%">
-</a>
 
 
 ```properties
@@ -936,16 +756,6 @@ public class AppProperties {
 
 ### 5.1 Opaque Secret
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-1-opaque-secret-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-1-opaque-secret-handwritten.svg" alt="Handwritten: 5.1 Opaque Secret" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-1-opaque-secret-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-1-opaque-secret-diagram.svg" alt="Diagram: 5.1 Opaque Secret" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-1-opaque-secret-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-1-opaque-secret-sticky.svg" alt="Sticky Note: 5.1 Opaque Secret" width="30%">
-</a>
-
 
 ```bash
 # Create from literal
@@ -996,16 +806,6 @@ stringData:
 
 ### 5.2 TLS Secret
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-2-tls-secret-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-2-tls-secret-handwritten.svg" alt="Handwritten: 5.2 TLS Secret" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-2-tls-secret-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-2-tls-secret-diagram.svg" alt="Diagram: 5.2 TLS Secret" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-2-tls-secret-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-2-tls-secret-sticky.svg" alt="Sticky Note: 5.2 TLS Secret" width="30%">
-</a>
-
 
 ```bash
 kubectl create secret tls myapp-tls \
@@ -1025,16 +825,6 @@ data:
 ```
 
 ### 5.3 Registry Secret (Image Pull)
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-3-registry-secret-image-pull-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-3-registry-secret-image-pull-handwritten.svg" alt="Handwritten: 5.3 Registry Secret (Image Pull)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-3-registry-secret-image-pull-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-3-registry-secret-image-pull-diagram.svg" alt="Diagram: 5.3 Registry Secret (Image Pull)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-3-registry-secret-image-pull-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-3-registry-secret-image-pull-sticky.svg" alt="Sticky Note: 5.3 Registry Secret (Image Pull)" width="30%">
-</a>
 
 
 ```bash
@@ -1059,16 +849,6 @@ spec:
 ```
 
 ### 5.4 Secret as Environment Variables
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-4-secret-as-environment-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-4-secret-as-environment-variables-handwritten.svg" alt="Handwritten: 5.4 Secret as Environment Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-4-secret-as-environment-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-4-secret-as-environment-variables-diagram.svg" alt="Diagram: 5.4 Secret as Environment Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-4-secret-as-environment-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-4-secret-as-environment-variables-sticky.svg" alt="Sticky Note: 5.4 Secret as Environment Variables" width="30%">
-</a>
 
 
 ```yaml
@@ -1099,16 +879,6 @@ spec:
 ```
 
 ### 5.5 Secret as Volume Mount
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-5-secret-as-volume-mount-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-5-secret-as-volume-mount-handwritten.svg" alt="Handwritten: 5.5 Secret as Volume Mount" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-5-secret-as-volume-mount-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-5-secret-as-volume-mount-diagram.svg" alt="Diagram: 5.5 Secret as Volume Mount" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-5-secret-as-volume-mount-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-5-secret-as-volume-mount-sticky.svg" alt="Sticky Note: 5.5 Secret as Volume Mount" width="30%">
-</a>
 
 
 ```yaml
@@ -1146,16 +916,6 @@ spec:
 | Volume mounts | Auto-refreshed when Secret changes | More verbose YAML |
 
 ### 5.6 External Secrets Operator
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-6-external-secrets-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-6-external-secrets-operator-handwritten.svg" alt="Handwritten: 5.6 External Secrets Operator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-6-external-secrets-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-6-external-secrets-operator-diagram.svg" alt="Diagram: 5.6 External Secrets Operator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/5-6-external-secrets-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/5-6-external-secrets-operator-sticky.svg" alt="Sticky Note: 5.6 External Secrets Operator" width="30%">
-</a>
 
 
 ```yaml
@@ -1203,16 +963,6 @@ spec:
 ## 6. Deployments
 
 ### 6.1 Basic Deployment
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-1-basic-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-1-basic-deployment-handwritten.svg" alt="Handwritten: 6.1 Basic Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-1-basic-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-1-basic-deployment-diagram.svg" alt="Diagram: 6.1 Basic Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-1-basic-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-1-basic-deployment-sticky.svg" alt="Sticky Note: 6.1 Basic Deployment" width="30%">
-</a>
 
 
 ```yaml
@@ -1313,16 +1063,6 @@ spec:
 
 ### 6.2 Rolling Update Strategy
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-2-rolling-update-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-2-rolling-update-strategy-handwritten.svg" alt="Handwritten: 6.2 Rolling Update Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-2-rolling-update-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-2-rolling-update-strategy-diagram.svg" alt="Diagram: 6.2 Rolling Update Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-2-rolling-update-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-2-rolling-update-strategy-sticky.svg" alt="Sticky Note: 6.2 Rolling Update Strategy" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: apps/v1
@@ -1358,16 +1098,6 @@ Done:    [app-v2] [app-v2] [app-v2] [app-v2] [app-v2]
 
 ### 6.3 Recreate Strategy (Downtime Tolerated)
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-3-recreate-strategy-downtime-tolerated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-3-recreate-strategy-downtime-tolerated-handwritten.svg" alt="Handwritten: 6.3 Recreate Strategy (Downtime Tolerated)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-3-recreate-strategy-downtime-tolerated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-3-recreate-strategy-downtime-tolerated-diagram.svg" alt="Diagram: 6.3 Recreate Strategy (Downtime Tolerated)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-3-recreate-strategy-downtime-tolerated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-3-recreate-strategy-downtime-tolerated-sticky.svg" alt="Sticky Note: 6.3 Recreate Strategy (Downtime Tolerated)" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: apps/v1
@@ -1386,16 +1116,6 @@ spec:
 ```
 
 ### 6.4 Rollback
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-4-rollback-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-4-rollback-handwritten.svg" alt="Handwritten: 6.4 Rollback" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-4-rollback-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-4-rollback-diagram.svg" alt="Diagram: 6.4 Rollback" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-4-rollback-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-4-rollback-sticky.svg" alt="Sticky Note: 6.4 Rollback" width="30%">
-</a>
 
 
 ```bash
@@ -1428,16 +1148,6 @@ kubectl rollout resume deployment/myapp
 
 ### 6.5 Deployment Strategies Comparison
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-5-deployment-strategies-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-5-deployment-strategies-comparison-handwritten.svg" alt="Handwritten: 6.5 Deployment Strategies Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-5-deployment-strategies-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-5-deployment-strategies-comparison-diagram.svg" alt="Diagram: 6.5 Deployment Strategies Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/6-5-deployment-strategies-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/6-5-deployment-strategies-comparison-sticky.svg" alt="Sticky Note: 6.5 Deployment Strategies Comparison" width="30%">
-</a>
-
 
 | Strategy | Description | Downtime | Use Case |
 |----------|-------------|----------|----------|
@@ -1452,16 +1162,6 @@ kubectl rollout resume deployment/myapp
 
 ### 7.1 Probe Types
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-1-probe-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-1-probe-types-handwritten.svg" alt="Handwritten: 7.1 Probe Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-1-probe-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-1-probe-types-diagram.svg" alt="Diagram: 7.1 Probe Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-1-probe-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-1-probe-types-sticky.svg" alt="Sticky Note: 7.1 Probe Types" width="30%">
-</a>
-
 
 | Probe | Purpose | Failure Action |
 |-------|---------|---------------|
@@ -1470,16 +1170,6 @@ kubectl rollout resume deployment/myapp
 | **startup** | Has container started? | Delays liveness/readiness checks |
 
 ### 7.2 Probe Handlers
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-2-probe-handlers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-2-probe-handlers-handwritten.svg" alt="Handwritten: 7.2 Probe Handlers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-2-probe-handlers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-2-probe-handlers-diagram.svg" alt="Diagram: 7.2 Probe Handlers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-2-probe-handlers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-2-probe-handlers-sticky.svg" alt="Sticky Note: 7.2 Probe Handlers" width="30%">
-</a>
 
 
 ```yaml
@@ -1527,16 +1217,6 @@ startupProbe:
 
 ### 7.3 Probe Configuration Parameters
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-3-probe-configuration-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-3-probe-configuration-parameters-handwritten.svg" alt="Handwritten: 7.3 Probe Configuration Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-3-probe-configuration-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-3-probe-configuration-parameters-diagram.svg" alt="Diagram: 7.3 Probe Configuration Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-3-probe-configuration-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-3-probe-configuration-parameters-sticky.svg" alt="Sticky Note: 7.3 Probe Configuration Parameters" width="30%">
-</a>
-
 
 | Parameter | Default | Description |
 |-----------|---------|-------------|
@@ -1547,16 +1227,6 @@ startupProbe:
 | `failureThreshold` | 3 | Consecutive failures to trigger action |
 
 ### 7.4 Spring Boot Actuator Probe Integration
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-4-spring-boot-actuator-probe-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-4-spring-boot-actuator-probe-integration-handwritten.svg" alt="Handwritten: 7.4 Spring Boot Actuator Probe Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-4-spring-boot-actuator-probe-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-4-spring-boot-actuator-probe-integration-diagram.svg" alt="Diagram: 7.4 Spring Boot Actuator Probe Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-4-spring-boot-actuator-probe-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-4-spring-boot-actuator-probe-integration-sticky.svg" alt="Sticky Note: 7.4 Spring Boot Actuator Probe Integration" width="30%">
-</a>
 
 
 ```xml
@@ -1585,16 +1255,6 @@ When configured, Spring Boot exposes:
 - `/actuator/health/readiness` → returns `{"status": "UP"}` when the application is ready to accept traffic
 
 ### 7.5 Customizing Liveness and Readiness State
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-5-customizing-liveness-and-readiness-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-5-customizing-liveness-and-readiness-state-handwritten.svg" alt="Handwritten: 7.5 Customizing Liveness and Readiness State" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-5-customizing-liveness-and-readiness-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-5-customizing-liveness-and-readiness-state-diagram.svg" alt="Diagram: 7.5 Customizing Liveness and Readiness State" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/7-5-customizing-liveness-and-readiness-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/7-5-customizing-liveness-and-readiness-state-sticky.svg" alt="Sticky Note: 7.5 Customizing Liveness and Readiness State" width="30%">
-</a>
 
 
 ```java
@@ -1648,16 +1308,6 @@ public class CustomProbeManager {
 
 ### 8.1 Chart Structure
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-1-chart-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-1-chart-structure-handwritten.svg" alt="Handwritten: 8.1 Chart Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-1-chart-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-1-chart-structure-diagram.svg" alt="Diagram: 8.1 Chart Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-1-chart-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-1-chart-structure-sticky.svg" alt="Sticky Note: 8.1 Chart Structure" width="30%">
-</a>
-
 
 ```
 myapp-chart/
@@ -1683,16 +1333,6 @@ myapp-chart/
 ```
 
 ### 8.2 Chart.yaml
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-2-chart-yaml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-2-chart-yaml-handwritten.svg" alt="Handwritten: 8.2 Chart.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-2-chart-yaml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-2-chart-yaml-diagram.svg" alt="Diagram: 8.2 Chart.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-2-chart-yaml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-2-chart-yaml-sticky.svg" alt="Sticky Note: 8.2 Chart.yaml" width="30%">
-</a>
 
 
 ```yaml
@@ -1729,16 +1369,6 @@ dependencies:
 ```
 
 ### 8.3 values.yaml
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-3-values-yaml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-3-values-yaml-handwritten.svg" alt="Handwritten: 8.3 values.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-3-values-yaml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-3-values-yaml-diagram.svg" alt="Diagram: 8.3 values.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-3-values-yaml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-3-values-yaml-sticky.svg" alt="Sticky Note: 8.3 values.yaml" width="30%">
-</a>
 
 
 ```yaml
@@ -1882,16 +1512,6 @@ redis:
 
 ### 8.4 _helpers.tpl
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-4-helpers-tpl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-4-helpers-tpl-handwritten.svg" alt="Handwritten: 8.4 _helpers.tpl" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-4-helpers-tpl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-4-helpers-tpl-diagram.svg" alt="Diagram: 8.4 _helpers.tpl" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-4-helpers-tpl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-4-helpers-tpl-sticky.svg" alt="Sticky Note: 8.4 _helpers.tpl" width="30%">
-</a>
-
 
 ```helm
 {{- define "myapp.name" -}}
@@ -1957,16 +1577,6 @@ failureThreshold: {{ $probe.failureThreshold }}
 ```
 
 ### 8.5 templates/deployment.yaml
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-5-templates-deployment-yaml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-5-templates-deployment-yaml-handwritten.svg" alt="Handwritten: 8.5 templates/deployment.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-5-templates-deployment-yaml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-5-templates-deployment-yaml-diagram.svg" alt="Diagram: 8.5 templates/deployment.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-5-templates-deployment-yaml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-5-templates-deployment-yaml-sticky.svg" alt="Sticky Note: 8.5 templates/deployment.yaml" width="30%">
-</a>
 
 
 ```yaml
@@ -2068,16 +1678,6 @@ spec:
 
 ### 8.6 templates/service.yaml
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-6-templates-service-yaml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-6-templates-service-yaml-handwritten.svg" alt="Handwritten: 8.6 templates/service.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-6-templates-service-yaml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-6-templates-service-yaml-diagram.svg" alt="Diagram: 8.6 templates/service.yaml" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-6-templates-service-yaml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-6-templates-service-yaml-sticky.svg" alt="Sticky Note: 8.6 templates/service.yaml" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: v1
@@ -2106,16 +1706,6 @@ spec:
 ```
 
 ### 8.7 Helm Hooks
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-7-helm-hooks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-7-helm-hooks-handwritten.svg" alt="Handwritten: 8.7 Helm Hooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-7-helm-hooks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-7-helm-hooks-diagram.svg" alt="Diagram: 8.7 Helm Hooks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-7-helm-hooks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-7-helm-hooks-sticky.svg" alt="Sticky Note: 8.7 Helm Hooks" width="30%">
-</a>
 
 
 ```yaml
@@ -2164,16 +1754,6 @@ spec:
 
 ### 8.8 Helm Conditions
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-8-helm-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-8-helm-conditions-handwritten.svg" alt="Handwritten: 8.8 Helm Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-8-helm-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-8-helm-conditions-diagram.svg" alt="Diagram: 8.8 Helm Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-8-helm-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-8-helm-conditions-sticky.svg" alt="Sticky Note: 8.8 Helm Conditions" width="30%">
-</a>
-
 
 ```yaml
 # Chart.yaml dependencies with conditions
@@ -2218,16 +1798,6 @@ kind: HorizontalPodAutoscaler
 
 ### 8.9 Template Flow Control
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-9-template-flow-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-9-template-flow-control-handwritten.svg" alt="Handwritten: 8.9 Template Flow Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-9-template-flow-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-9-template-flow-control-diagram.svg" alt="Diagram: 8.9 Template Flow Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-9-template-flow-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-9-template-flow-control-sticky.svg" alt="Sticky Note: 8.9 Template Flow Control" width="30%">
-</a>
-
 
 ```yaml
 # templates/configmap.yaml
@@ -2250,16 +1820,6 @@ data:
 ```
 
 ### 8.10 Installation and Upgrade
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-10-installation-and-upgrade-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-10-installation-and-upgrade-handwritten.svg" alt="Handwritten: 8.10 Installation and Upgrade" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-10-installation-and-upgrade-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-10-installation-and-upgrade-diagram.svg" alt="Diagram: 8.10 Installation and Upgrade" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/8-10-installation-and-upgrade-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/8-10-installation-and-upgrade-sticky.svg" alt="Sticky Note: 8.10 Installation and Upgrade" width="30%">
-</a>
 
 
 ```bash
@@ -2301,16 +1861,6 @@ helm package ./myapp-chart -d ./releases
 
 ### 9.1 Spring Boot Configuration for Kubernetes
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-1-spring-boot-configuration-for-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-1-spring-boot-configuration-for-kubernetes-handwritten.svg" alt="Handwritten: 9.1 Spring Boot Configuration for Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-1-spring-boot-configuration-for-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-1-spring-boot-configuration-for-kubernetes-diagram.svg" alt="Diagram: 9.1 Spring Boot Configuration for Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-1-spring-boot-configuration-for-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-1-spring-boot-configuration-for-kubernetes-sticky.svg" alt="Sticky Note: 9.1 Spring Boot Configuration for Kubernetes" width="30%">
-</a>
-
 
 ```yaml
 # application-k8s.properties
@@ -2350,16 +1900,6 @@ server:
 ```
 
 ### 9.2 Kubernetes Native Service Discovery
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-2-kubernetes-native-service-discovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-2-kubernetes-native-service-discovery-handwritten.svg" alt="Handwritten: 9.2 Kubernetes Native Service Discovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-2-kubernetes-native-service-discovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-2-kubernetes-native-service-discovery-diagram.svg" alt="Diagram: 9.2 Kubernetes Native Service Discovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-2-kubernetes-native-service-discovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-2-kubernetes-native-service-discovery-sticky.svg" alt="Sticky Note: 9.2 Kubernetes Native Service Discovery" width="30%">
-</a>
 
 
 ```java
@@ -2427,16 +1967,6 @@ public class KubernetesServiceDiscovery {
 
 ### 9.3 Kubernetes-Aware RestTemplate
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-3-kubernetes-aware-resttemplate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-3-kubernetes-aware-resttemplate-handwritten.svg" alt="Handwritten: 9.3 Kubernetes-Aware RestTemplate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-3-kubernetes-aware-resttemplate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-3-kubernetes-aware-resttemplate-diagram.svg" alt="Diagram: 9.3 Kubernetes-Aware RestTemplate" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-3-kubernetes-aware-resttemplate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-3-kubernetes-aware-resttemplate-sticky.svg" alt="Sticky Note: 9.3 Kubernetes-Aware RestTemplate" width="30%">
-</a>
-
 
 ```java
 package com.example.demo.discovery;
@@ -2483,16 +2013,6 @@ public class KubernetesAwareRestTemplate extends RestTemplate {
 
 ### 9.4 Service Binding with Spring Cloud Bindings
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-4-service-binding-with-spring-cloud-bindings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-4-service-binding-with-spring-cloud-bindings-handwritten.svg" alt="Handwritten: 9.4 Service Binding with Spring Cloud Bindings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-4-service-binding-with-spring-cloud-bindings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-4-service-binding-with-spring-cloud-bindings-diagram.svg" alt="Diagram: 9.4 Service Binding with Spring Cloud Bindings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-4-service-binding-with-spring-cloud-bindings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-4-service-binding-with-spring-cloud-bindings-sticky.svg" alt="Sticky Note: 9.4 Service Binding with Spring Cloud Bindings" width="30%">
-</a>
-
 
 ```xml
 <dependency>
@@ -2516,16 +2036,6 @@ spring:
 ```
 
 ### 9.5 Kubernetes Health Probes Integration
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-5-kubernetes-health-probes-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-5-kubernetes-health-probes-integration-handwritten.svg" alt="Handwritten: 9.5 Kubernetes Health Probes Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-5-kubernetes-health-probes-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-5-kubernetes-health-probes-integration-diagram.svg" alt="Diagram: 9.5 Kubernetes Health Probes Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/9-5-kubernetes-health-probes-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/9-5-kubernetes-health-probes-integration-sticky.svg" alt="Sticky Note: 9.5 Kubernetes Health Probes Integration" width="30%">
-</a>
 
 
 ```java
@@ -2578,16 +2088,6 @@ public class KubernetesHealthManager {
 ## 10. Auto-Scaling
 
 ### 10.1 HorizontalPodAutoscaler (HPA)
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-1-horizontalpodautoscaler-hpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-1-horizontalpodautoscaler-hpa-handwritten.svg" alt="Handwritten: 10.1 HorizontalPodAutoscaler (HPA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-1-horizontalpodautoscaler-hpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-1-horizontalpodautoscaler-hpa-diagram.svg" alt="Diagram: 10.1 HorizontalPodAutoscaler (HPA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-1-horizontalpodautoscaler-hpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-1-horizontalpodautoscaler-hpa-sticky.svg" alt="Sticky Note: 10.1 HorizontalPodAutoscaler (HPA)" width="30%">
-</a>
 
 
 ```yaml
@@ -2645,16 +2145,6 @@ spec:
 
 ### 10.2 VerticalPodAutoscaler (VPA)
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-2-verticalpodautoscaler-vpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-2-verticalpodautoscaler-vpa-handwritten.svg" alt="Handwritten: 10.2 VerticalPodAutoscaler (VPA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-2-verticalpodautoscaler-vpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-2-verticalpodautoscaler-vpa-diagram.svg" alt="Diagram: 10.2 VerticalPodAutoscaler (VPA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-2-verticalpodautoscaler-vpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-2-verticalpodautoscaler-vpa-sticky.svg" alt="Sticky Note: 10.2 VerticalPodAutoscaler (VPA)" width="30%">
-</a>
-
 
 ```yaml
 apiVersion: autoscaling.k8s.io/v1
@@ -2681,16 +2171,6 @@ spec:
 ```
 
 ### 10.3 Metrics-Based Scaling
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-3-metrics-based-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-3-metrics-based-scaling-handwritten.svg" alt="Handwritten: 10.3 Metrics-Based Scaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-3-metrics-based-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-3-metrics-based-scaling-diagram.svg" alt="Diagram: 10.3 Metrics-Based Scaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/10-3-metrics-based-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/10-3-metrics-based-scaling-sticky.svg" alt="Sticky Note: 10.3 Metrics-Based Scaling" width="30%">
-</a>
 
 
 ```yaml
@@ -2737,16 +2217,6 @@ spec:
 ## 11. Cluster Setup Options
 
 ### 11.1 Minikube (Local Development)
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-1-minikube-local-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-1-minikube-local-development-handwritten.svg" alt="Handwritten: 11.1 Minikube (Local Development)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-1-minikube-local-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-1-minikube-local-development-diagram.svg" alt="Diagram: 11.1 Minikube (Local Development)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-1-minikube-local-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-1-minikube-local-development-sticky.svg" alt="Sticky Note: 11.1 Minikube (Local Development)" width="30%">
-</a>
 
 
 ```bash
@@ -2799,16 +2269,6 @@ minikube delete
 
 ### 11.2 kind (Kubernetes IN Docker)
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-2-kind-kubernetes-in-docker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-2-kind-kubernetes-in-docker-handwritten.svg" alt="Handwritten: 11.2 kind (Kubernetes IN Docker)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-2-kind-kubernetes-in-docker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-2-kind-kubernetes-in-docker-diagram.svg" alt="Diagram: 11.2 kind (Kubernetes IN Docker)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-2-kind-kubernetes-in-docker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-2-kind-kubernetes-in-docker-sticky.svg" alt="Sticky Note: 11.2 kind (Kubernetes IN Docker)" width="30%">
-</a>
-
 
 ```yaml
 # kind-config.yaml - Multi-node cluster
@@ -2852,16 +2312,6 @@ kind delete cluster --name myapp
 ```
 
 ### 11.3 Amazon EKS
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-3-amazon-eks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-3-amazon-eks-handwritten.svg" alt="Handwritten: 11.3 Amazon EKS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-3-amazon-eks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-3-amazon-eks-diagram.svg" alt="Diagram: 11.3 Amazon EKS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-3-amazon-eks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-3-amazon-eks-sticky.svg" alt="Sticky Note: 11.3 Amazon EKS" width="30%">
-</a>
 
 
 ```bash
@@ -2958,16 +2408,6 @@ addons:
 
 ### 11.4 Azure AKS
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-4-azure-aks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-4-azure-aks-handwritten.svg" alt="Handwritten: 11.4 Azure AKS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-4-azure-aks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-4-azure-aks-diagram.svg" alt="Diagram: 11.4 Azure AKS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-4-azure-aks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-4-azure-aks-sticky.svg" alt="Sticky Note: 11.4 Azure AKS" width="30%">
-</a>
-
 
 ```bash
 # Create resource group
@@ -3014,16 +2454,6 @@ kubectl apply -f k8s/
 
 ### 11.5 GCP GKE
 
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-5-gcp-gke-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-5-gcp-gke-handwritten.svg" alt="Handwritten: 11.5 GCP GKE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-5-gcp-gke-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-5-gcp-gke-diagram.svg" alt="Diagram: 11.5 GCP GKE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/11-5-gcp-gke-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/11-5-gcp-gke-sticky.svg" alt="Sticky Note: 11.5 GCP GKE" width="30%">
-</a>
-
 
 ```bash
 # Create cluster
@@ -3067,16 +2497,6 @@ kubectl apply -f k8s/
 ## 12. Complete Deployment Example
 
 ### 12.1 Full Namespace with Secret and ConfigMap
-
-<a href="../../../assets/images/diagrams/java/53-kubernetes/12-1-full-namespace-with-secret-and-configmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/12-1-full-namespace-with-secret-and-configmap-handwritten.svg" alt="Handwritten: 12.1 Full Namespace with Secret and ConfigMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/12-1-full-namespace-with-secret-and-configmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/12-1-full-namespace-with-secret-and-configmap-diagram.svg" alt="Diagram: 12.1 Full Namespace with Secret and ConfigMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/53-kubernetes/12-1-full-namespace-with-secret-and-configmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/53-kubernetes/12-1-full-namespace-with-secret-and-configmap-sticky.svg" alt="Sticky Note: 12.1 Full Namespace with Secret and ConfigMap" width="30%">
-</a>
 
 
 ```yaml

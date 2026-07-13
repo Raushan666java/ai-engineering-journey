@@ -80,16 +80,6 @@ flowchart LR
 
 ### 3.1 Functions of Several Variables
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-handwritten.svg" alt="Handwritten: 3.1 Functions of Several Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-diagram.svg" alt="Diagram: 3.1 Functions of Several Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-1-functions-of-several-variables-sticky.svg" alt="Sticky Note: 3.1 Functions of Several Variables" width="30%">
-</a>
-
 
 A function $f: \mathbb{R}^n \to \mathbb{R}$ assigns a real number to each point $(x_1, x_2, \ldots, x_n)$. For $n = 2$, we write $z = f(x, y)$.
 
@@ -104,16 +94,6 @@ A function $f: \mathbb{R}^n \to \mathbb{R}$ assigns a real number to each point 
 **Continuity:** $f$ is continuous at $(a,b)$ if $\lim_{(x,y) \to (a,b)} f(x,y) = f(a,b)$.
 
 ### 3.2 Partial Derivatives
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-handwritten.svg" alt="Handwritten: 3.2 Partial Derivatives" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-diagram.svg" alt="Diagram: 3.2 Partial Derivatives" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-2-partial-derivatives-sticky.svg" alt="Sticky Note: 3.2 Partial Derivatives" width="30%">
-</a>
 
 
 **Definition:** The partial derivative of $f$ with respect to $x$ at $(a,b)$ is:
@@ -134,16 +114,6 @@ $$\frac{\partial^2 f}{\partial x \partial y} = \frac{\partial^2 f}{\partial y \p
 
 ### 3.3 Gradient and Directional Derivatives
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-handwritten.svg" alt="Handwritten: 3.3 Gradient and Directional Derivatives" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-diagram.svg" alt="Diagram: 3.3 Gradient and Directional Derivatives" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-3-gradient-and-directional-derivatives-sticky.svg" alt="Sticky Note: 3.3 Gradient and Directional Derivatives" width="30%">
-</a>
-
 
 **Gradient:** The vector of all partial derivatives:
 
@@ -163,16 +133,6 @@ This is maximized when $\mathbf{u}$ is parallel to $\nabla f$, giving $D_{\mathb
 
 ### 3.4 Chain Rule for Multivariable Functions
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-handwritten.svg" alt="Handwritten: 3.4 Chain Rule for Multivariable Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-diagram.svg" alt="Diagram: 3.4 Chain Rule for Multivariable Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-4-chain-rule-for-multivariable-functions-sticky.svg" alt="Sticky Note: 3.4 Chain Rule for Multivariable Functions" width="30%">
-</a>
-
 
 Case 1: If $z = f(x,y)$ with $x = g(t), y = h(t)$, then:
 
@@ -185,16 +145,6 @@ $$\frac{\partial z}{\partial t} = \frac{\partial f}{\partial x} \frac{\partial x
 
 ### 3.5 Tangent Planes and Linear Approximation
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-handwritten.svg" alt="Handwritten: 3.5 Tangent Planes and Linear Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-diagram.svg" alt="Diagram: 3.5 Tangent Planes and Linear Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-5-tangent-planes-and-linear-approximation-sticky.svg" alt="Sticky Note: 3.5 Tangent Planes and Linear Approximation" width="30%">
-</a>
-
 
 For $z = f(x,y)$, the tangent plane at $(a,b)$ is:
 
@@ -205,16 +155,6 @@ $$z - f(a,b) = f_x(a,b)(x - a) + f_y(a,b)(y - b)$$
 **Total Differential:** $dz = f_x\,dx + f_y\,dy$ approximates the change in $f$ for small changes $dx$ and $dy$.
 
 ### 3.6 Multivariable Optimization
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-handwritten.svg" alt="Handwritten: 3.6 Multivariable Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-diagram.svg" alt="Diagram: 3.6 Multivariable Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-6-multivariable-optimization-sticky.svg" alt="Sticky Note: 3.6 Multivariable Optimization" width="30%">
-</a>
 
 
 **Critical Points:** $(a,b)$ is a critical point if $\nabla f(a,b) = 0$ (or does not exist).
@@ -245,16 +185,6 @@ where $\lambda$ is the Lagrange multiplier. This gives a system of 3 equations i
 
 ### 3.7 Double Integrals
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-handwritten.svg" alt="Handwritten: 3.7 Double Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-diagram.svg" alt="Diagram: 3.7 Double Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-7-double-integrals-sticky.svg" alt="Sticky Note: 3.7 Double Integrals" width="30%">
-</a>
-
 
 **Definition:** $\iint_R f(x,y)\,dA = \lim_{\Delta x, \Delta y \to 0} \sum_{i} \sum_{j} f(x_i^*, y_j^*) \Delta x \Delta y$
 
@@ -268,16 +198,6 @@ $$\iint_R f(x,y)\,dA = \int_a^b \int_c^d f(x,y)\,dy\,dx = \int_c^d \int_a^b f(x,
 
 ### 3.8 Triple Integrals
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-handwritten.svg" alt="Handwritten: 3.8 Triple Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-diagram.svg" alt="Diagram: 3.8 Triple Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-8-triple-integrals-sticky.svg" alt="Sticky Note: 3.8 Triple Integrals" width="30%">
-</a>
-
 
 **Definition:** $\iiint_E f(x,y,z)\,dV$ extends double integrals to 3D.
 
@@ -289,16 +209,6 @@ $$\iint_R f(x,y)\,dA = \int_a^b \int_c^d f(x,y)\,dy\,dx = \int_c^d \int_a^b f(x,
 - Moment of inertia: $I = \iiint_E r^2 \rho\,dV$
 
 ### 3.9 Change of Variables (Coordinate Transformations)
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-handwritten.svg" alt="Handwritten: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-diagram.svg" alt="Diagram: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-9-change-of-variables-coordinate-transformations-sticky.svg" alt="Sticky Note: 3.9 Change of Variables (Coordinate Transformations)" width="30%">
-</a>
 
 
 **Polar Coordinates ($\mathbb{R}^2$):**
@@ -331,16 +241,6 @@ The Jacobian determinant gives the factor by which area/volume scales under the 
 
 ### 3.10 Vector Fields
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-handwritten.svg" alt="Handwritten: 3.10 Vector Fields" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-diagram.svg" alt="Diagram: 3.10 Vector Fields" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-10-vector-fields-sticky.svg" alt="Sticky Note: 3.10 Vector Fields" width="30%">
-</a>
-
 
 A **vector field** assigns a vector to each point in space. In $\mathbb{R}^3$:
 
@@ -370,16 +270,6 @@ $$\nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k
 
 ### 3.11 Line Integrals
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-handwritten.svg" alt="Handwritten: 3.11 Line Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-diagram.svg" alt="Diagram: 3.11 Line Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-11-line-integrals-sticky.svg" alt="Sticky Note: 3.11 Line Integrals" width="30%">
-</a>
-
 
 **Definition:** $\int_C \mathbf{F} \cdot d\mathbf{r} = \int_a^b \mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)\,dt$
 
@@ -401,16 +291,6 @@ The integral depends only on endpoints, not the path.
 
 ### 3.12 Surface Integrals
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-handwritten.svg" alt="Handwritten: 3.12 Surface Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-diagram.svg" alt="Diagram: 3.12 Surface Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-12-surface-integrals-sticky.svg" alt="Sticky Note: 3.12 Surface Integrals" width="30%">
-</a>
-
 
 **Parametrized Surface:** $\mathbf{r}(u,v) = x(u,v)\mathbf{i} + y(u,v)\mathbf{j} + z(u,v)\mathbf{k}$
 
@@ -425,16 +305,6 @@ $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \mathbf{F} \cdot \mathbf{n}\,dS
 where $\mathbf{n}$ is the unit normal vector.
 
 ### 3.13 Fundamental Theorems of Vector Calculus
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-handwritten.svg" alt="Handwritten: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-diagram.svg" alt="Diagram: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/03-calculus-ii/3-13-fundamental-theorems-of-vector-calculus-sticky.svg" alt="Sticky Note: 3.13 Fundamental Theorems of Vector Calculus" width="30%">
-</a>
 
 
 **Green's Theorem (2D):** Relates line integral around a closed curve to double integral over enclosed region:

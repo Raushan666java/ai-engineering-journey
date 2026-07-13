@@ -78,16 +78,6 @@ flowchart LR
 
 ### 10.1 Scalar and Vector Fields
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-handwritten.svg" alt="Handwritten: 10.1 Scalar and Vector Fields" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-diagram.svg" alt="Diagram: 10.1 Scalar and Vector Fields" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-1-scalar-and-vector-fields-sticky.svg" alt="Sticky Note: 10.1 Scalar and Vector Fields" width="30%">
-</a>
-
 
 **Scalar Field:** $f: \mathbb{R}^3 \to \mathbb{R}$, assigns a scalar to each point (temperature, pressure, potential).
 
@@ -103,16 +93,6 @@ $$\nabla \times \mathbf{F} = \begin{vmatrix} \mathbf{i} & \mathbf{j} & \mathbf{k
 **Laplacian:** $\nabla^2 f = \nabla \cdot (\nabla f) = \frac{\partial^2 f}{\partial x^2} + \frac{\partial^2 f}{\partial y^2} + \frac{\partial^2 f}{\partial z^2}$
 
 ### 10.2 Line Integrals
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-handwritten.svg" alt="Handwritten: 10.2 Line Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-diagram.svg" alt="Diagram: 10.2 Line Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-2-line-integrals-sticky.svg" alt="Sticky Note: 10.2 Line Integrals" width="30%">
-</a>
 
 
 **Scalar Line Integral:** 
@@ -131,16 +111,6 @@ Measures the work done by force $\mathbf{F}$ moving along path $C$.
 
 ### 10.3 Conservative Vector Fields
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-handwritten.svg" alt="Handwritten: 10.3 Conservative Vector Fields" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-diagram.svg" alt="Diagram: 10.3 Conservative Vector Fields" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-3-conservative-vector-fields-sticky.svg" alt="Sticky Note: 10.3 Conservative Vector Fields" width="30%">
-</a>
-
 
 A vector field $\mathbf{F}$ is **conservative** if $\mathbf{F} = \nabla \phi$ for some scalar potential $\phi$.
 
@@ -154,16 +124,6 @@ A vector field $\mathbf{F}$ is **conservative** if $\mathbf{F} = \nabla \phi$ fo
 
 ### 10.4 Surface Integrals
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-handwritten.svg" alt="Handwritten: 10.4 Surface Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-diagram.svg" alt="Diagram: 10.4 Surface Integrals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-4-surface-integrals-sticky.svg" alt="Sticky Note: 10.4 Surface Integrals" width="30%">
-</a>
-
 
 **Parametrized Surface:** $\mathbf{r}(u,v) = \langle x(u,v), y(u,v), z(u,v) \rangle$
 
@@ -176,16 +136,6 @@ $$\iint_S f\,dS = \iint_D f(\mathbf{r}(u,v)) \|\mathbf{r}_u \times \mathbf{r}_v\
 $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iint_S \mathbf{F} \cdot \mathbf{n}\,dS = \iint_D \mathbf{F}(\mathbf{r}(u,v)) \cdot (\mathbf{r}_u \times \mathbf{r}_v)\,du\,dv$$
 
 ### 10.5 Green's Theorem
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-handwritten.svg" alt="Handwritten: 10.5 Green's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-diagram.svg" alt="Diagram: 10.5 Green's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-5-green-s-theorem-sticky.svg" alt="Sticky Note: 10.5 Green's Theorem" width="30%">
-</a>
 
 
 For a positively oriented, piecewise smooth simple closed curve $C$ in $\mathbb{R}^2$:
@@ -201,16 +151,6 @@ $$\oint_C \mathbf{F} \cdot \mathbf{n}\,ds = \iint_D \nabla \cdot \mathbf{F}\,dA$
 
 ### 10.6 Stokes' Theorem
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-handwritten.svg" alt="Handwritten: 10.6 Stokes' Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-diagram.svg" alt="Diagram: 10.6 Stokes' Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-6-stokes-theorem-sticky.svg" alt="Sticky Note: 10.6 Stokes' Theorem" width="30%">
-</a>
-
 
 $$\oint_C \mathbf{F} \cdot d\mathbf{r} = \iint_S (\nabla \times \mathbf{F}) \cdot d\mathbf{S}$$
 
@@ -222,16 +162,6 @@ The line integral around a closed curve $C$ equals the flux of curl through any 
 
 ### 10.7 Divergence Theorem (Gauss's Theorem)
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-handwritten.svg" alt="Handwritten: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-diagram.svg" alt="Diagram: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-7-divergence-theorem-gauss-s-theorem-sticky.svg" alt="Sticky Note: 10.7 Divergence Theorem (Gauss's Theorem)" width="30%">
-</a>
-
 
 $$\iint_S \mathbf{F} \cdot d\mathbf{S} = \iiint_E (\nabla \cdot \mathbf{F})\,dV$$
 
@@ -242,16 +172,6 @@ The net outward flux of $\mathbf{F}$ through closed surface $S$ equals the tripl
 **Conservation Laws:** If $\nabla \cdot \mathbf{F} = 0$ (divergence-free), then net flux through any closed surface is zero ? incompressible flow.
 
 ### 10.8 Orthogonal Coordinate Systems
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-handwritten.svg" alt="Handwritten: 10.8 Orthogonal Coordinate Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-diagram.svg" alt="Diagram: 10.8 Orthogonal Coordinate Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-8-orthogonal-coordinate-systems-sticky.svg" alt="Sticky Note: 10.8 Orthogonal Coordinate Systems" width="30%">
-</a>
 
 
 **Cartesian ($x, y, z$):**
@@ -269,16 +189,6 @@ $$\nabla^2 f = \frac{1}{r}\frac{\partial}{\partial r}\left(r\frac{\partial f}{\p
 $$\nabla^2 f = \frac{1}{\rho^2}\frac{\partial}{\partial\rho}\left(\rho^2\frac{\partial f}{\partial\rho}\right) + \frac{1}{\rho^2\sin\phi}\frac{\partial}{\partial\phi}\left(\sin\phi\frac{\partial f}{\partial\phi}\right) + \frac{1}{\rho^2\sin^2\phi}\frac{\partial^2 f}{\partial\theta^2}$$
 
 ### 10.9 Applications in Physics
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-handwritten.svg" alt="Handwritten: 10.9 Applications in Physics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-diagram.svg" alt="Diagram: 10.9 Applications in Physics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-9-applications-in-physics-sticky.svg" alt="Sticky Note: 10.9 Applications in Physics" width="30%">
-</a>
 
 
 **Maxwell's Equations (Differential Form):**
@@ -299,16 +209,6 @@ Faraday's law: $\oint_C \mathbf{E} \cdot d\mathbf{r} = -\frac{d}{dt}\iint_S \mat
 - Navier-Stokes: $\rho\frac{D\mathbf{v}}{Dt} = -\nabla p + \mu\nabla^2\mathbf{v} + \rho\mathbf{g}$
 
 ### 10.10 Applications in Machine Learning
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-handwritten.svg" alt="Handwritten: 10.10 Applications in Machine Learning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-diagram.svg" alt="Diagram: 10.10 Applications in Machine Learning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/10-vector-calculus/10-10-applications-in-machine-learning-sticky.svg" alt="Sticky Note: 10.10 Applications in Machine Learning" width="30%">
-</a>
 
 
 **Gradient Flows:** The gradient flow $\frac{dw}{dt} = -\nabla L(w)$ models continuous-time optimization.

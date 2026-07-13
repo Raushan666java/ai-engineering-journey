@@ -115,16 +115,6 @@ flowchart TD
 
 ### 1. Graph Types: Directed, Undirected, Weighted
 
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-handwritten.svg" alt="Handwritten: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-diagram.svg" alt="Diagram: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/1-graph-types-directed-undirected-weighted-sticky.svg" alt="Sticky Note: 1. Graph Types: Directed, Undirected, Weighted" width="30%">
-</a>
-
 
 **Real-World Analogy:**
 - **Undirected graph:** Facebook friendship — if Alice is friends with Bob, Bob is automatically friends with Alice. The relationship is symmetric.
@@ -296,16 +286,6 @@ class Main {
 ---
 
 ### 2. Adjacency Matrix
-
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-handwritten.svg" alt="Handwritten: 2. Adjacency Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-diagram.svg" alt="Diagram: 2. Adjacency Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/2-adjacency-matrix-sticky.svg" alt="Sticky Note: 2. Adjacency Matrix" width="30%">
-</a>
 
 
 **Real-World Analogy:** Think of a flight booking system. You want to know "Is there a direct flight from New York to London?" An adjacency matrix is like a massive airport x airport table where cell [NYC][LON] = 1 if a direct flight exists, or shows the ticket price if weighted. Looking up any pair is instant (O(1)), but storing the table requires space for every possible pair — even airports with no connection.
@@ -622,16 +602,6 @@ class AdjacencyMatrix {
 
 ### 3. Adjacency List
 
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-handwritten.svg" alt="Handwritten: 3. Adjacency List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-diagram.svg" alt="Diagram: 3. Adjacency List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/3-adjacency-list-sticky.svg" alt="Sticky Note: 3. Adjacency List" width="30%">
-</a>
-
 
 **Real-World Analogy:** Imagine a phone book for a small town. Instead of a massive grid of every possible pair of residents, each person has a short list of people they know personally. Looking up "who does Alice know?" is fast — just read her list. But checking "does Alice know Bob?" requires scanning her list. This is how Facebook stores the social graph: each user's friend list is an adjacency list.
 
@@ -942,16 +912,6 @@ class AdjacencyList {
 
 ### 4. Edge List
 
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-handwritten.svg" alt="Handwritten: 4. Edge List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-diagram.svg" alt="Diagram: 4. Edge List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/4-edge-list-sticky.svg" alt="Sticky Note: 4. Edge List" width="30%">
-</a>
-
 
 **Real-World Analogy:** Think of an airline's flight schedule — a simple list of all flights: (JFK, LHR, $800), (JFK, CDG, $650), (LHR, DXB, $400). No fancy indexing, no lookup structure — just the raw data. When you need to sort all edges by weight (as in Kruskal's algorithm for Minimum Spanning Tree), an edge list is the natural representation.
 
@@ -1190,16 +1150,6 @@ class EdgeList {
 
 ### 5. Degree Calculation
 
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-handwritten.svg" alt="Handwritten: 5. Degree Calculation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-diagram.svg" alt="Diagram: 5. Degree Calculation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/5-degree-calculation-sticky.svg" alt="Sticky Note: 5. Degree Calculation" width="30%">
-</a>
-
 
 **Real-World Analogy:** In a Twitter network, your "out-degree" is the number of people you follow, and your "in-degree" is the number of people who follow you. On Facebook (undirected), your "degree" is just your number of friends. The "degree sum theorem" says every handshake increases the total degree count by 2 — if you sum everyone's friends, you get twice the number of handshakes.
 
@@ -1402,16 +1352,6 @@ class DegreeCalc {
 
 ### 6. Complete Graph
 
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-handwritten.svg" alt="Handwritten: 6. Complete Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-diagram.svg" alt="Diagram: 6. Complete Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/6-complete-graph-sticky.svg" alt="Sticky Note: 6. Complete Graph" width="30%">
-</a>
-
 
 **Real-World Analogy:** Imagine a conference where every attendee shakes hands with every other attendee exactly once. If there are \(n\) people, the total number of handshakes is \(n(n-1)/2\). This is a **complete graph** — every vertex is directly connected to every other vertex. This represents the maximum possible connections in a network.
 
@@ -1566,16 +1506,6 @@ class CompleteGraph {
 
 
 ### 7. Bipartite Graph
-
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-handwritten.svg" alt="Handwritten: 7. Bipartite Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-diagram.svg" alt="Diagram: 7. Bipartite Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/11-graphs/7-bipartite-graph-sticky.svg" alt="Sticky Note: 7. Bipartite Graph" width="30%">
-</a>
 
 
 **Real-World Analogy:** Think of a dating app. There are two sets: men and women. Connections (matches) only exist between the sets, never within a set. This is a **bipartite graph**. Another example: in a streaming service, users and movies form a bipartite graph — users rate movies, but users don't rate other users and movies don't rate movies. A bipartite graph can be **2-colored** — paint all vertices red or blue such that no edge connects same-colored vertices.

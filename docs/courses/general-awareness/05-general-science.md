@@ -42,7 +42,6 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 - Recall fundamental concepts in Physics: laws of motion, gravitation, thermodynamics, optics, nuclear physics
 - Explain basic Chemistry: atomic structure, chemical bonding, organic compounds, polymers
 - Describe the human body systems, nutrition, diseases, and vitamins
@@ -56,17 +55,6 @@ By the end of this chapter, you will be able to:
 ## Theory
 
 ### 5.1 Physics
-
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-1-physics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-1-physics-handwritten.svg" alt="Handwritten: 5.1 Physics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-1-physics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-1-physics-diagram.svg" alt="Diagram: 5.1 Physics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-1-physics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-1-physics-sticky.svg" alt="Sticky Note: 5.1 Physics" width="30%">
-</a>
-
 
 #### 5.1.1 Laws of Motion (Newton)
 
@@ -105,17 +93,6 @@ By the end of this chapter, you will be able to:
 | Nuclear Fusion | Joining of light nuclei (H → He) → massive energy (Sun, Hydrogen bomb) |
 
 ### 5.2 Chemistry
-
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-2-chemistry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-2-chemistry-handwritten.svg" alt="Handwritten: 5.2 Chemistry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-2-chemistry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-2-chemistry-diagram.svg" alt="Diagram: 5.2 Chemistry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-2-chemistry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-2-chemistry-sticky.svg" alt="Sticky Note: 5.2 Chemistry" width="30%">
-</a>
-
 
 #### 5.2.1 Atomic Structure
 
@@ -165,17 +142,6 @@ By the end of this chapter, you will be able to:
 | Kevlar | Aramid fibre | Bullet-proof vests |
 
 ### 5.3 Biology
-
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-3-biology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-3-biology-handwritten.svg" alt="Handwritten: 5.3 Biology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-3-biology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-3-biology-diagram.svg" alt="Diagram: 5.3 Biology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-3-biology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-3-biology-sticky.svg" alt="Sticky Note: 5.3 Biology" width="30%">
-</a>
-
 
 #### 5.3.1 Human Body Systems
 
@@ -272,17 +238,6 @@ mindmap
 
 ### 5.4 Indian Space Research Organisation (ISRO)
 
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-4-indian-space-research-organisation-isro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-4-indian-space-research-organisation-isro-handwritten.svg" alt="Handwritten: 5.4 Indian Space Research Organisation (ISRO)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-4-indian-space-research-organisation-isro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-4-indian-space-research-organisation-isro-diagram.svg" alt="Diagram: 5.4 Indian Space Research Organisation (ISRO)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-4-indian-space-research-organisation-isro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-4-indian-space-research-organisation-isro-sticky.svg" alt="Sticky Note: 5.4 Indian Space Research Organisation (ISRO)" width="30%">
-</a>
-
-
 ```mermaid
 flowchart TD
     A[ISRO Timeline] --> B[1962 - INCOSPAR founded]
@@ -331,17 +286,6 @@ flowchart TD
 
 ### 5.5 Defence Technology
 
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-5-defence-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-5-defence-technology-handwritten.svg" alt="Handwritten: 5.5 Defence Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-5-defence-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-5-defence-technology-diagram.svg" alt="Diagram: 5.5 Defence Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-5-defence-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-5-defence-technology-sticky.svg" alt="Sticky Note: 5.5 Defence Technology" width="30%">
-</a>
-
-
 **India's Missile Systems (DRDO):**
 
 | Missile | Type | Range | Features |
@@ -371,17 +315,6 @@ flowchart TD
 - **INS Arihant:** First indigenous nuclear-powered ballistic missile submarine
 
 ### 5.6 Information Technology
-
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-6-information-technology-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-6-information-technology-handwritten.svg" alt="Handwritten: 5.6 Information Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-6-information-technology-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-6-information-technology-diagram.svg" alt="Diagram: 5.6 Information Technology" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-awareness/05-general-science/5-6-information-technology-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-awareness/05-general-science/5-6-information-technology-sticky.svg" alt="Sticky Note: 5.6 Information Technology" width="30%">
-</a>
-
 
 #### 5.6.1 Artificial Intelligence
 

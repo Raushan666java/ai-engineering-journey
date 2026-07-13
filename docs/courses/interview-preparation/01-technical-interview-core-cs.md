@@ -46,21 +46,9 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Key Concepts
 
 ### Section A: Database Management Systems (DBMS)
-
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-a-database-management-systems-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-a-database-management-systems-dbms-handwritten.svg" alt="Handwritten: Section A: Database Management Systems (DBMS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-a-database-management-systems-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-a-database-management-systems-dbms-diagram.svg" alt="Diagram: Section A: Database Management Systems (DBMS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-a-database-management-systems-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-a-database-management-systems-dbms-sticky.svg" alt="Sticky Note: Section A: Database Management Systems (DBMS)" width="30%">
-</a>
-
 
 #### Q1: What is normalization? Explain 1NF, 2NF, 3NF, and BCNF with examples.
 
@@ -467,17 +455,6 @@ EXEC GetEmployeeByDept @DeptID = 10;
 ---
 
 ### Section B: Computer Networks
-
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-b-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-b-computer-networks-handwritten.svg" alt="Handwritten: Section B: Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-b-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-b-computer-networks-diagram.svg" alt="Diagram: Section B: Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-b-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-b-computer-networks-sticky.svg" alt="Sticky Note: Section B: Computer Networks" width="30%">
-</a>
-
 
 #### Q16: Explain the OSI model with each layer and its function.
 
@@ -904,17 +881,6 @@ Example: 192.168.1.0/24
 
 ### Section C: Operating Systems
 
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-c-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-c-operating-systems-handwritten.svg" alt="Handwritten: Section C: Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-c-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-c-operating-systems-diagram.svg" alt="Diagram: Section C: Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-c-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-c-operating-systems-sticky.svg" alt="Sticky Note: Section C: Operating Systems" width="30%">
-</a>
-
-
 #### Q33: What is a process? Differentiate between process and thread.
 
 <details>
@@ -1282,17 +1248,6 @@ void consumer() {
 ---
 
 ### Section D: Data Structures
-
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-d-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-d-data-structures-handwritten.svg" alt="Handwritten: Section D: Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-d-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-d-data-structures-diagram.svg" alt="Diagram: Section D: Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-d-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-d-data-structures-sticky.svg" alt="Sticky Note: Section D: Data Structures" width="30%">
-</a>
-
 
 #### Q49: What is the difference between an array and a linked list?
 
@@ -1762,17 +1717,6 @@ class HashMap<K, V> {
 
 ### Section E: Object-Oriented Programming (OOPs)
 
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-e-object-oriented-programming-oops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-e-object-oriented-programming-oops-handwritten.svg" alt="Handwritten: Section E: Object-Oriented Programming (OOPs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-e-object-oriented-programming-oops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-e-object-oriented-programming-oops-diagram.svg" alt="Diagram: Section E: Object-Oriented Programming (OOPs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-e-object-oriented-programming-oops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-e-object-oriented-programming-oops-sticky.svg" alt="Sticky Note: Section E: Object-Oriented Programming (OOPs)" width="30%">
-</a>
-
-
 #### Q57: What are the four pillars of OOPs?
 
 <details>
@@ -2161,17 +2105,6 @@ class Car {
 
 ### Section F: Software Engineering
 
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-f-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-f-software-engineering-handwritten.svg" alt="Handwritten: Section F: Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-f-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-f-software-engineering-diagram.svg" alt="Diagram: Section F: Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-f-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/section-f-software-engineering-sticky.svg" alt="Sticky Note: Section F: Software Engineering" width="30%">
-</a>
-
-
 #### Q65: Explain SDLC phases.
 
 <details>
@@ -2454,17 +2387,6 @@ Source → Build → Test → Deploy to Staging → Integration Test → Deploy 
 
 ### DBMS Quick Reference
 
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/dbms-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/dbms-quick-reference-handwritten.svg" alt="Handwritten: DBMS Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/dbms-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/dbms-quick-reference-diagram.svg" alt="Diagram: DBMS Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/dbms-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/dbms-quick-reference-sticky.svg" alt="Sticky Note: DBMS Quick Reference" width="30%">
-</a>
-
-
 | Concept | Key Point |
 |---------|-----------|
 | ACID | Atomicity, Consistency, Isolation, Durability |
@@ -2476,17 +2398,6 @@ Source → Build → Test → Deploy to Staging → Integration Test → Deploy 
 
 ### Networks Quick Reference
 
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/networks-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/networks-quick-reference-handwritten.svg" alt="Handwritten: Networks Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/networks-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/networks-quick-reference-diagram.svg" alt="Diagram: Networks Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/networks-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/networks-quick-reference-sticky.svg" alt="Sticky Note: Networks Quick Reference" width="30%">
-</a>
-
-
 | Concept | Key Point |
 |---------|-----------|
 | OSI layers | Physical, Data Link, Network, Transport, Session, Presentation, Application |
@@ -2497,17 +2408,6 @@ Source → Build → Test → Deploy to Staging → Integration Test → Deploy 
 
 ### OS Quick Reference
 
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/os-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/os-quick-reference-handwritten.svg" alt="Handwritten: OS Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/os-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/os-quick-reference-diagram.svg" alt="Diagram: OS Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/os-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/os-quick-reference-sticky.svg" alt="Sticky Note: OS Quick Reference" width="30%">
-</a>
-
-
 | Concept | Key Point |
 |---------|-----------|
 | Process vs Thread | Separate address space vs shared memory |
@@ -2517,17 +2417,6 @@ Source → Build → Test → Deploy to Staging → Integration Test → Deploy 
 | IPC | Pipes, Shared Memory, Message Queues, Sockets, Semaphores |
 
 ### DS Quick Reference
-
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/ds-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/ds-quick-reference-handwritten.svg" alt="Handwritten: DS Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/ds-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/ds-quick-reference-diagram.svg" alt="Diagram: DS Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/ds-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/ds-quick-reference-sticky.svg" alt="Sticky Note: DS Quick Reference" width="30%">
-</a>
-
 
 | Structure | Access | Search | Insert | Delete |
 |-----------|--------|--------|--------|--------|
@@ -2540,17 +2429,6 @@ Source → Build → Test → Deploy to Staging → Integration Test → Deploy 
 | Heap | O(1) peek | O(n) | O(log n) | O(log n) |
 
 ### OOPs Quick Reference
-
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/oops-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/oops-quick-reference-handwritten.svg" alt="Handwritten: OOPs Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/oops-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/oops-quick-reference-diagram.svg" alt="Diagram: OOPs Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/oops-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/01-technical-interview-core-cs/oops-quick-reference-sticky.svg" alt="Sticky Note: OOPs Quick Reference" width="30%">
-</a>
-
 
 | Concept | Definition |
 |---------|-----------|

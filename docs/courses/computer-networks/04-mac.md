@@ -54,16 +54,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -75,16 +65,6 @@
 | Ethernet | IEEE 802.3 with CSMA/CD, 48-bit MAC | Dominant LAN technology; switched Ethernet eliminated collisions |
 
 ### Chapter Roadmap
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
 
 
 ```mermaid
@@ -104,16 +84,6 @@ flowchart LR
 ```
 
 ### MAC Protocol Decision Flow
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/mac-protocol-decision-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/mac-protocol-decision-flow-handwritten.svg" alt="Handwritten: MAC Protocol Decision Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/mac-protocol-decision-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/mac-protocol-decision-flow-diagram.svg" alt="Diagram: MAC Protocol Decision Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/mac-protocol-decision-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/mac-protocol-decision-flow-sticky.svg" alt="Sticky Note: MAC Protocol Decision Flow" width="30%">
-</a>
 
 
 ```mermaid
@@ -144,16 +114,6 @@ flowchart TD
 ```
 
 ### ALOHA Throughput vs Offered Load
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/aloha-throughput-vs-offered-load-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/aloha-throughput-vs-offered-load-handwritten.svg" alt="Handwritten: ALOHA Throughput vs Offered Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/aloha-throughput-vs-offered-load-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/aloha-throughput-vs-offered-load-diagram.svg" alt="Diagram: ALOHA Throughput vs Offered Load" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/aloha-throughput-vs-offered-load-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/aloha-throughput-vs-offered-load-sticky.svg" alt="Sticky Note: ALOHA Throughput vs Offered Load" width="30%">
-</a>
 
 
 ```mermaid
@@ -190,45 +150,15 @@ flowchart LR
 
 ### What Is the MAC Sublayer?
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-is-the-mac-sublayer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-is-the-mac-sublayer-handwritten.svg" alt="Handwritten: What Is the MAC Sublayer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-is-the-mac-sublayer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-is-the-mac-sublayer-diagram.svg" alt="Diagram: What Is the MAC Sublayer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-is-the-mac-sublayer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-is-the-mac-sublayer-sticky.svg" alt="Sticky Note: What Is the MAC Sublayer?" width="30%">
-</a>
-
 
 The **Medium Access Control (MAC) sublayer** is the lower sublayer of the data link layer in the IEEE 802 reference model. It sits directly above the physical layer and below the Logical Link Control (LLC) sublayer. Its primary job: **regulate access to a shared broadcast channel** so that multiple stations can communicate without destructive interference.
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 > **A conference room with one microphone.** Imagine 10 people in a meeting room with a single microphone. If two people speak at once, nobody understands anything. The MAC protocol is the **meeting chair's rules**: you raise your hand (carrier sense), the chair calls on you (collision-free), or you just speak and deal with interruptions (random access). The "vulnerable period" is the time between when you start speaking and when someone else also starts speaking — the longer this window, the more likely a "collision" (crosstalk).
 
 ### Responsibilities of the MAC Sublayer
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/responsibilities-of-the-mac-sublayer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/responsibilities-of-the-mac-sublayer-handwritten.svg" alt="Handwritten: Responsibilities of the MAC Sublayer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/responsibilities-of-the-mac-sublayer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/responsibilities-of-the-mac-sublayer-diagram.svg" alt="Diagram: Responsibilities of the MAC Sublayer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/responsibilities-of-the-mac-sublayer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/responsibilities-of-the-mac-sublayer-sticky.svg" alt="Sticky Note: Responsibilities of the MAC Sublayer" width="30%">
-</a>
 
 
 1. **Frame delimiting and synchronization** — Identify frame boundaries on the raw bit stream.
@@ -239,16 +169,6 @@ The **Medium Access Control (MAC) sublayer** is the lower sublayer of the data l
 
 ### Classification of MAC Protocols
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/classification-of-mac-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/classification-of-mac-protocols-handwritten.svg" alt="Handwritten: Classification of MAC Protocols" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/classification-of-mac-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/classification-of-mac-protocols-diagram.svg" alt="Diagram: Classification of MAC Protocols" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/classification-of-mac-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/classification-of-mac-protocols-sticky.svg" alt="Sticky Note: Classification of MAC Protocols" width="30%">
-</a>
-
 
 | Category | How It Works | Examples |
 |----------|-------------|----------|
@@ -258,16 +178,6 @@ The **Medium Access Control (MAC) sublayer** is the lower sublayer of the data l
 
 ### Advantages and Disadvantages
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -276,16 +186,6 @@ The **Medium Access Control (MAC) sublayer** is the lower sublayer of the data l
 | Channelization | Predictable bandwidth, no collisions, real-time friendly | Inflexible; wasted capacity when station has nothing to send |
 
 ### Edge Cases in MAC Design
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-design-handwritten.svg" alt="Handwritten: Edge Cases in MAC Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-design-diagram.svg" alt="Diagram: Edge Cases in MAC Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-design-sticky.svg" alt="Sticky Note: Edge Cases in MAC Design" width="30%">
-</a>
 
 
 | Edge Case | Description | Mitigation |
@@ -305,16 +205,6 @@ The **Medium Access Control (MAC) sublayer** is the lower sublayer of the data l
 In random access (contention-based) protocols, any station can transmit whenever it has data. No central authority grants permission. Collisions are detected and recovered through retransmission. The fundamental trade-off: **simplicity vs. efficiency under load**.
 
 ### 4.2.1 ALOHA
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-1-aloha-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-1-aloha-handwritten.svg" alt="Handwritten: 4.2.1 ALOHA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-1-aloha-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-1-aloha-diagram.svg" alt="Diagram: 4.2.1 ALOHA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-1-aloha-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-1-aloha-sticky.svg" alt="Sticky Note: 4.2.1 ALOHA" width="30%">
-</a>
 
 
 ALOHA is the earliest random-access protocol, developed at the **University of Hawaii** in 1970 to connect island campuses via radio.
@@ -725,16 +615,6 @@ console.log(`Measured throughput: ${result.throughput.toFixed(4)} (expected 0.36
 
 ---
 ### 4.2.2 CSMA (Carrier Sense Multiple Access)
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-2-csma-carrier-sense-multiple-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-2-csma-carrier-sense-multiple-access-handwritten.svg" alt="Handwritten: 4.2.2 CSMA (Carrier Sense Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-2-csma-carrier-sense-multiple-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-2-csma-carrier-sense-multiple-access-diagram.svg" alt="Diagram: 4.2.2 CSMA (Carrier Sense Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-2-csma-carrier-sense-multiple-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-2-csma-carrier-sense-multiple-access-sticky.svg" alt="Sticky Note: 4.2.2 CSMA (Carrier Sense Multiple Access)" width="30%">
-</a>
 
 
 CSMA improves on ALOHA by having stations **listen before transmitting** (carrier sensing). If the channel is busy, the station defers, reducing the probability of collision.
@@ -1191,16 +1071,6 @@ Time | Station A   | Station B   | AP          | Notes
 
 ### 4.2.3 Random Access vs Controlled Access
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-3-random-access-vs-controlled-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-3-random-access-vs-controlled-access-handwritten.svg" alt="Handwritten: 4.2.3 Random Access vs Controlled Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-3-random-access-vs-controlled-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-3-random-access-vs-controlled-access-diagram.svg" alt="Diagram: 4.2.3 Random Access vs Controlled Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-2-3-random-access-vs-controlled-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-2-3-random-access-vs-controlled-access-sticky.svg" alt="Sticky Note: 4.2.3 Random Access vs Controlled Access" width="30%">
-</a>
-
 
 | Dimension | Random Access | Controlled Access |
 |-----------|--------------|-------------------|
@@ -1221,16 +1091,6 @@ Time | Station A   | Station B   | AP          | Notes
 In controlled access, stations must receive permission before transmitting. No collisions occur because only one station transmits at a time.
 
 ### 4.3.1 Reservation
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-1-reservation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-1-reservation-handwritten.svg" alt="Handwritten: 4.3.1 Reservation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-1-reservation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-1-reservation-diagram.svg" alt="Diagram: 4.3.1 Reservation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-1-reservation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-1-reservation-sticky.svg" alt="Sticky Note: 4.3.1 Reservation" width="30%">
-</a>
 
 
 ##### Real-World Analogy
@@ -1262,16 +1122,6 @@ END PROCEDURE
 | Disadvantages | Wasted slots if reserved but unused; reservation overhead; fixed allocation |
 
 ### 4.3.2 Polling
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-2-polling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-2-polling-handwritten.svg" alt="Handwritten: 4.3.2 Polling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-2-polling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-2-polling-diagram.svg" alt="Diagram: 4.3.2 Polling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-2-polling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-2-polling-sticky.svg" alt="Sticky Note: 4.3.2 Polling" width="30%">
-</a>
 
 
 ##### Real-World Analogy
@@ -1323,16 +1173,6 @@ END PROCEDURE
 | Disadvantages | Polling overhead; single point of failure; stations polled even with no data |
 
 ### 4.3.3 Token Passing
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-3-token-passing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-3-token-passing-handwritten.svg" alt="Handwritten: 4.3.3 Token Passing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-3-token-passing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-3-token-passing-diagram.svg" alt="Diagram: 4.3.3 Token Passing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-3-3-token-passing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-3-3-token-passing-sticky.svg" alt="Sticky Note: 4.3.3 Token Passing" width="30%">
-</a>
 
 
 ##### Real-World Analogy
@@ -1500,16 +1340,6 @@ Channelization is a **collision-free** approach where the shared channel is divi
 
 ### 4.4.1 FDMA (Frequency Division Multiple Access)
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-1-fdma-frequency-division-multiple-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-1-fdma-frequency-division-multiple-access-handwritten.svg" alt="Handwritten: 4.4.1 FDMA (Frequency Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-1-fdma-frequency-division-multiple-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-1-fdma-frequency-division-multiple-access-diagram.svg" alt="Diagram: 4.4.1 FDMA (Frequency Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-1-fdma-frequency-division-multiple-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-1-fdma-frequency-division-multiple-access-sticky.svg" alt="Sticky Note: 4.4.1 FDMA (Frequency Division Multiple Access)" width="30%">
-</a>
-
 
 ##### Real-World Analogy
 
@@ -1530,16 +1360,6 @@ Channelization is a **collision-free** approach where the shared channel is divi
 | Disadvantages | Frequency spectrum is scarce; wasted bandwidth if station idle; hard to add/remove stations; guard bands consume spectrum |
 
 ### 4.4.2 TDMA (Time Division Multiple Access)
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-2-tdma-time-division-multiple-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-2-tdma-time-division-multiple-access-handwritten.svg" alt="Handwritten: 4.4.2 TDMA (Time Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-2-tdma-time-division-multiple-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-2-tdma-time-division-multiple-access-diagram.svg" alt="Diagram: 4.4.2 TDMA (Time Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-2-tdma-time-division-multiple-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-2-tdma-time-division-multiple-access-sticky.svg" alt="Sticky Note: 4.4.2 TDMA (Time Division Multiple Access)" width="30%">
-</a>
 
 
 ##### Real-World Analogy
@@ -1579,16 +1399,6 @@ END PROCEDURE
 | Disadvantages | Requires precise time synchronization; wasted slots if station idle; higher latency than FDMA (must wait for slot); guard time overhead |
 
 ### 4.4.3 CDMA (Code Division Multiple Access)
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-3-cdma-code-division-multiple-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-3-cdma-code-division-multiple-access-handwritten.svg" alt="Handwritten: 4.4.3 CDMA (Code Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-3-cdma-code-division-multiple-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-3-cdma-code-division-multiple-access-diagram.svg" alt="Diagram: 4.4.3 CDMA (Code Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/4-4-3-cdma-code-division-multiple-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/4-4-3-cdma-code-division-multiple-access-sticky.svg" alt="Sticky Note: 4.4.3 CDMA (Code Division Multiple Access)" width="30%">
-</a>
 
 
 ##### Real-World Analogy
@@ -1671,30 +1481,10 @@ END PROCEDURE
 
 ### What Is a MAC Address?
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-is-a-mac-address-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-is-a-mac-address-handwritten.svg" alt="Handwritten: What Is a MAC Address?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-is-a-mac-address-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-is-a-mac-address-diagram.svg" alt="Diagram: What Is a MAC Address?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-is-a-mac-address-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-is-a-mac-address-sticky.svg" alt="Sticky Note: What Is a MAC Address?" width="30%">
-</a>
-
 
 A **MAC (Media Access Control) address** is a 48-bit (6-byte) hardware identifier assigned to network interfaces by manufacturers. It operates at Layer 2 (Data Link Layer) and is used for local delivery on a LAN segment.
 
 ### Structure of a 48-bit MAC Address
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/structure-of-a-48-bit-mac-address-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/structure-of-a-48-bit-mac-address-handwritten.svg" alt="Handwritten: Structure of a 48-bit MAC Address" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/structure-of-a-48-bit-mac-address-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/structure-of-a-48-bit-mac-address-diagram.svg" alt="Diagram: Structure of a 48-bit MAC Address" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/structure-of-a-48-bit-mac-address-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/structure-of-a-48-bit-mac-address-sticky.svg" alt="Sticky Note: Structure of a 48-bit MAC Address" width="30%">
-</a>
 
 
 ```
@@ -1711,16 +1501,6 @@ Bit 0                                                              Bit 47
 
 ### Common MAC Address Formats
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/common-mac-address-formats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/common-mac-address-formats-handwritten.svg" alt="Handwritten: Common MAC Address Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/common-mac-address-formats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/common-mac-address-formats-diagram.svg" alt="Diagram: Common MAC Address Formats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/common-mac-address-formats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/common-mac-address-formats-sticky.svg" alt="Sticky Note: Common MAC Address Formats" width="30%">
-</a>
-
 
 | Format | Example | Usage |
 |--------|---------|-------|
@@ -1731,16 +1511,6 @@ Bit 0                                                              Bit 47
 
 ### Address Types
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/address-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/address-types-handwritten.svg" alt="Handwritten: Address Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/address-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/address-types-diagram.svg" alt="Diagram: Address Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/address-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/address-types-sticky.svg" alt="Sticky Note: Address Types" width="30%">
-</a>
-
 
 | Type | I/G Bit | MAC Address | Scope | Usage |
 |------|---------|-------------|-------|-------|
@@ -1749,16 +1519,6 @@ Bit 0                                                              Bit 47
 | Broadcast | 1 | FF:FF:FF:FF:FF:FF | All stations | ARP request, DHCP discovery |
 
 ### How MAC Addressing Works in a Network
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/how-mac-addressing-works-in-a-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/how-mac-addressing-works-in-a-network-handwritten.svg" alt="Handwritten: How MAC Addressing Works in a Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/how-mac-addressing-works-in-a-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/how-mac-addressing-works-in-a-network-diagram.svg" alt="Diagram: How MAC Addressing Works in a Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/how-mac-addressing-works-in-a-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/how-mac-addressing-works-in-a-network-sticky.svg" alt="Sticky Note: How MAC Addressing Works in a Network" width="30%">
-</a>
 
 
 1. Source device encapsulates the frame with destination and source MAC addresses.
@@ -1777,16 +1537,6 @@ Bit 0                                                              Bit 47
 
 ### Edge Cases in MAC Addressing
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-addressing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-addressing-handwritten.svg" alt="Handwritten: Edge Cases in MAC Addressing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-addressing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-addressing-diagram.svg" alt="Diagram: Edge Cases in MAC Addressing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-addressing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/edge-cases-in-mac-addressing-sticky.svg" alt="Sticky Note: Edge Cases in MAC Addressing" width="30%">
-</a>
-
 
 | Edge Case | Description |
 |-----------|-------------|
@@ -1801,16 +1551,6 @@ Bit 0                                                              Bit 47
 
 ### Collision Domain
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/collision-domain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/collision-domain-handwritten.svg" alt="Handwritten: Collision Domain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/collision-domain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/collision-domain-diagram.svg" alt="Diagram: Collision Domain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/collision-domain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/collision-domain-sticky.svg" alt="Sticky Note: Collision Domain" width="30%">
-</a>
-
 
 A **collision domain** is a network segment where two or more stations can cause a collision when transmitting simultaneously.
 
@@ -1823,16 +1563,6 @@ A **collision domain** is a network segment where two or more stations can cause
 | Effect on throughput | Shared -- only one station can transmit at a time per domain |
 
 ### Broadcast Domain
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/broadcast-domain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/broadcast-domain-handwritten.svg" alt="Handwritten: Broadcast Domain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/broadcast-domain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/broadcast-domain-diagram.svg" alt="Diagram: Broadcast Domain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/broadcast-domain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/broadcast-domain-sticky.svg" alt="Sticky Note: Broadcast Domain" width="30%">
-</a>
 
 
 A **broadcast domain** is a network segment where a broadcast frame (FF:FF:FF:FF:FF:FF) reaches all stations.
@@ -1847,16 +1577,6 @@ A **broadcast domain** is a network segment where a broadcast frame (FF:FF:FF:FF
 
 ### Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
-</a>
-
 
 | Property | Collision Domain | Broadcast Domain |
 |----------|-----------------|------------------|
@@ -1870,16 +1590,6 @@ A **broadcast domain** is a network segment where a broadcast frame (FF:FF:FF:FF
 | Affected by CSMA/CD | Yes (collisions occur here) | No |
 
 ### Visual Example
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/visual-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/visual-example-handwritten.svg" alt="Handwritten: Visual Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/visual-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/visual-example-diagram.svg" alt="Diagram: Visual Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/visual-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/visual-example-sticky.svg" alt="Sticky Note: Visual Example" width="30%">
-</a>
 
 
 ```
@@ -1925,16 +1635,6 @@ In modern Ethernet, the **EtherType** field in the MAC header directly identifie
 
 ### LLC PDU Format
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/llc-pdu-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/llc-pdu-format-handwritten.svg" alt="Handwritten: LLC PDU Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/llc-pdu-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/llc-pdu-format-diagram.svg" alt="Diagram: LLC PDU Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/llc-pdu-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/llc-pdu-format-sticky.svg" alt="Sticky Note: LLC PDU Format" width="30%">
-</a>
-
 
 ```
 +--------+--------+----------+
@@ -1944,16 +1644,6 @@ In modern Ethernet, the **EtherType** field in the MAC header directly identifie
 ```
 
 ### Advantages and Disadvantages
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-handwritten.svg" alt="Handwritten: Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-diagram.svg" alt="Diagram: Advantages and Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/advantages-and-disadvantages-sticky.svg" alt="Sticky Note: Advantages and Disadvantages" width="30%">
-</a>
 
 
 | Aspect | Details |
@@ -1989,16 +1679,6 @@ The efficiency of a MAC protocol is defined as the fraction of channel capacity 
 
 ### Q1: CSMA/CD vs CSMA/CA -- Key Differences
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/csma-cd-vs-csma-ca-key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/csma-cd-vs-csma-ca-key-differences-handwritten.svg" alt="Handwritten: CSMA/CD vs CSMA/CA -- Key Differences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/csma-cd-vs-csma-ca-key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/csma-cd-vs-csma-ca-key-differences-diagram.svg" alt="Diagram: CSMA/CD vs CSMA/CA -- Key Differences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/csma-cd-vs-csma-ca-key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/csma-cd-vs-csma-ca-key-differences-sticky.svg" alt="Sticky Note: CSMA/CD vs CSMA/CA -- Key Differences" width="30%">
-</a>
-
 
 | Aspect | CSMA/CD | CSMA/CA |
 |--------|---------|---------|
@@ -2012,16 +1692,6 @@ The efficiency of a MAC protocol is defined as the fraction of channel capacity 
 
 ### Q2: Why Is Collision Detection Impractical in Wireless?
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/why-is-collision-detection-impractical-in-wireless-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/why-is-collision-detection-impractical-in-wireless-handwritten.svg" alt="Handwritten: Why Is Collision Detection Impractical in Wireless?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/why-is-collision-detection-impractical-in-wireless-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/why-is-collision-detection-impractical-in-wireless-diagram.svg" alt="Diagram: Why Is Collision Detection Impractical in Wireless?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/why-is-collision-detection-impractical-in-wireless-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/why-is-collision-detection-impractical-in-wireless-sticky.svg" alt="Sticky Note: Why Is Collision Detection Impractical in Wireless?" width="30%">
-</a>
-
 
 1. **Self-interference**: A radio's transmitted signal is orders of magnitude stronger than any received signal. The transmitter cannot distinguish between a collision and its own transmission.
 2. **Dynamic range**: Transmit power (~20 dBm) drowns out received signals (~ -70 dBm). Difference is 90 dB (factor of 1 billion).
@@ -2030,16 +1700,6 @@ The efficiency of a MAC protocol is defined as the fraction of channel capacity 
 
 ### Q3: Binary Exponential Backoff -- Why Exponential?
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/binary-exponential-backoff-why-exponential-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/binary-exponential-backoff-why-exponential-handwritten.svg" alt="Handwritten: Binary Exponential Backoff -- Why Exponential?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/binary-exponential-backoff-why-exponential-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/binary-exponential-backoff-why-exponential-diagram.svg" alt="Diagram: Binary Exponential Backoff -- Why Exponential?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/binary-exponential-backoff-why-exponential-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/binary-exponential-backoff-why-exponential-sticky.svg" alt="Sticky Note: Binary Exponential Backoff -- Why Exponential?" width="30%">
-</a>
-
 
 1. **Adaptive to load**: Under light load, small windows -> low latency. Under heavy load, large windows -> reduced retransmission rate -> prevents collapse.
 2. **Fairness**: Stations that have collided many times wait longer, giving newer frames a chance.
@@ -2047,16 +1707,6 @@ The efficiency of a MAC protocol is defined as the fraction of channel capacity 
 4. **Proven in practice**: Used in Ethernet since 1980, billions of devices.
 
 ### Q4: Token Ring vs Ethernet -- Why Did Ethernet Win?
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/token-ring-vs-ethernet-why-did-ethernet-win-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/token-ring-vs-ethernet-why-did-ethernet-win-handwritten.svg" alt="Handwritten: Token Ring vs Ethernet -- Why Did Ethernet Win?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/token-ring-vs-ethernet-why-did-ethernet-win-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/token-ring-vs-ethernet-why-did-ethernet-win-diagram.svg" alt="Diagram: Token Ring vs Ethernet -- Why Did Ethernet Win?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/token-ring-vs-ethernet-why-did-ethernet-win-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/token-ring-vs-ethernet-why-did-ethernet-win-sticky.svg" alt="Sticky Note: Token Ring vs Ethernet -- Why Did Ethernet Win?" width="30%">
-</a>
 
 
 | Factor | Token Ring (802.5) | Ethernet (802.3) |
@@ -2072,16 +1722,6 @@ The efficiency of a MAC protocol is defined as the fraction of channel capacity 
 
 ### Q5: What Happens When the Channel Is Always Busy (High Load)?
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-happens-when-the-channel-is-always-busy-high-load-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-happens-when-the-channel-is-always-busy-high-load-handwritten.svg" alt="Handwritten: What Happens When the Channel Is Always Busy (High Load)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-happens-when-the-channel-is-always-busy-high-load-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-happens-when-the-channel-is-always-busy-high-load-diagram.svg" alt="Diagram: What Happens When the Channel Is Always Busy (High Load)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/what-happens-when-the-channel-is-always-busy-high-load-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/what-happens-when-the-channel-is-always-busy-high-load-sticky.svg" alt="Sticky Note: What Happens When the Channel Is Always Busy (High Load)?" width="30%">
-</a>
-
 
 In **random access** protocols, continuous collisions cause throughput to approach 0. Stations waste bandwidth on collision debris and backoff idle time. This is called **throughput collapse**.
 
@@ -2093,16 +1733,6 @@ Solutions:
 
 ### Q6: Why Does Minimum Frame Size Matter in CSMA/CD?
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/why-does-minimum-frame-size-matter-in-csma-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/why-does-minimum-frame-size-matter-in-csma-cd-handwritten.svg" alt="Handwritten: Why Does Minimum Frame Size Matter in CSMA/CD?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/why-does-minimum-frame-size-matter-in-csma-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/why-does-minimum-frame-size-matter-in-csma-cd-diagram.svg" alt="Diagram: Why Does Minimum Frame Size Matter in CSMA/CD?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/why-does-minimum-frame-size-matter-in-csma-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/why-does-minimum-frame-size-matter-in-csma-cd-sticky.svg" alt="Sticky Note: Why Does Minimum Frame Size Matter in CSMA/CD?" width="30%">
-</a>
-
 
 The sender must still be transmitting when the collision signal returns from the farthest station. If the frame is too short, the sender finishes before detecting the collision, and the frame is lost without the sender knowing. The formula:
 
@@ -2111,16 +1741,6 @@ Minimum frame size = 2 * max_propagation_delay * data_rate
 For 10 Mbps Ethernet: 2 * 25.6 us * 10 Mbps = 512 bits = 64 bytes.
 
 ### Q7: Contention Window Size in 802.11 vs Ethernet
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/contention-window-size-in-802-11-vs-ethernet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/contention-window-size-in-802-11-vs-ethernet-handwritten.svg" alt="Handwritten: Contention Window Size in 802.11 vs Ethernet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/contention-window-size-in-802-11-vs-ethernet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/contention-window-size-in-802-11-vs-ethernet-diagram.svg" alt="Diagram: Contention Window Size in 802.11 vs Ethernet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/contention-window-size-in-802-11-vs-ethernet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/contention-window-size-in-802-11-vs-ethernet-sticky.svg" alt="Sticky Note: Contention Window Size in 802.11 vs Ethernet" width="30%">
-</a>
 
 
 | Parameter | Ethernet (CSMA/CD) | 802.11 (CSMA/CA) |
@@ -2136,16 +1756,6 @@ For 10 Mbps Ethernet: 2 * 25.6 us * 10 Mbps = 512 bits = 64 bytes.
 
 ### Ethernet (IEEE 802.3) -- CSMA/CD
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/ethernet-ieee-802-3-csma-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/ethernet-ieee-802-3-csma-cd-handwritten.svg" alt="Handwritten: Ethernet (IEEE 802.3) -- CSMA/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/ethernet-ieee-802-3-csma-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/ethernet-ieee-802-3-csma-cd-diagram.svg" alt="Diagram: Ethernet (IEEE 802.3) -- CSMA/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/ethernet-ieee-802-3-csma-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/ethernet-ieee-802-3-csma-cd-sticky.svg" alt="Sticky Note: Ethernet (IEEE 802.3) -- CSMA/CD" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -2159,16 +1769,6 @@ For 10 Mbps Ethernet: 2 * 25.6 us * 10 Mbps = 512 bits = 64 bytes.
 **Modern reality:** Switched Ethernet uses **full-duplex** links -- no collisions at all. CSMA/CD is disabled. Every station has a dedicated link to the switch. The MAC sublayer handles addressing and framing, not contention.
 
 ### WiFi (IEEE 802.11) -- CSMA/CA with RTS/CTS
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/wifi-ieee-802-11-csma-ca-with-rts-cts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/wifi-ieee-802-11-csma-ca-with-rts-cts-handwritten.svg" alt="Handwritten: WiFi (IEEE 802.11) -- CSMA/CA with RTS/CTS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/wifi-ieee-802-11-csma-ca-with-rts-cts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/wifi-ieee-802-11-csma-ca-with-rts-cts-diagram.svg" alt="Diagram: WiFi (IEEE 802.11) -- CSMA/CA with RTS/CTS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/wifi-ieee-802-11-csma-ca-with-rts-cts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/wifi-ieee-802-11-csma-ca-with-rts-cts-sticky.svg" alt="Sticky Note: WiFi (IEEE 802.11) -- CSMA/CA with RTS/CTS" width="30%">
-</a>
 
 
 | Aspect | Detail |
@@ -2186,16 +1786,6 @@ For 10 Mbps Ethernet: 2 * 25.6 us * 10 Mbps = 512 bits = 64 bytes.
 
 ### LTE -- OFDMA (Orthogonal Frequency Division Multiple Access)
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/lte-ofdma-orthogonal-frequency-division-multiple-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/lte-ofdma-orthogonal-frequency-division-multiple-access-handwritten.svg" alt="Handwritten: LTE -- OFDMA (Orthogonal Frequency Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/lte-ofdma-orthogonal-frequency-division-multiple-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/lte-ofdma-orthogonal-frequency-division-multiple-access-diagram.svg" alt="Diagram: LTE -- OFDMA (Orthogonal Frequency Division Multiple Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/lte-ofdma-orthogonal-frequency-division-multiple-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/lte-ofdma-orthogonal-frequency-division-multiple-access-sticky.svg" alt="Sticky Note: LTE -- OFDMA (Orthogonal Frequency Division Multiple Access)" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -2209,16 +1799,6 @@ LTE uses a **scheduled** MAC -- the base station (eNodeB) assigns time-frequency
 
 ### LoRaWAN -- Pure ALOHA
 
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/lorawan-pure-aloha-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/lorawan-pure-aloha-handwritten.svg" alt="Handwritten: LoRaWAN -- Pure ALOHA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/lorawan-pure-aloha-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/lorawan-pure-aloha-diagram.svg" alt="Diagram: LoRaWAN -- Pure ALOHA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/lorawan-pure-aloha-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/lorawan-pure-aloha-sticky.svg" alt="Sticky Note: LoRaWAN -- Pure ALOHA" width="30%">
-</a>
-
 
 | Aspect | Detail |
 |--------|--------|
@@ -2230,16 +1810,6 @@ LTE uses a **scheduled** MAC -- the base station (eNodeB) assigns time-frequency
 LoRaWAN uses pure ALOHA because it's **simple and power-efficient** -- critical for battery-operated IoT sensors. The low throughput is acceptable because each device transmits infrequently (minutes to hours between transmissions).
 
 ### Bluetooth -- TDMA + TDD
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/bluetooth-tdma-tdd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/bluetooth-tdma-tdd-handwritten.svg" alt="Handwritten: Bluetooth -- TDMA + TDD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/bluetooth-tdma-tdd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/bluetooth-tdma-tdd-diagram.svg" alt="Diagram: Bluetooth -- TDMA + TDD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/bluetooth-tdma-tdd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/bluetooth-tdma-tdd-sticky.svg" alt="Sticky Note: Bluetooth -- TDMA + TDD" width="30%">
-</a>
 
 
 | Aspect | Detail |
@@ -2253,16 +1823,6 @@ LoRaWAN uses pure ALOHA because it's **simple and power-efficient** -- critical 
 Bluetooth uses a **polling-based** approach: the master polls each slave, and the slave responds in the next slot. This is effectively **controlled access** -- deterministic and collision-free within a piconet.
 
 ### 5G NR -- OFDMA + Scheduled Access
-
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/5g-nr-ofdma-scheduled-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/5g-nr-ofdma-scheduled-access-handwritten.svg" alt="Handwritten: 5G NR -- OFDMA + Scheduled Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/5g-nr-ofdma-scheduled-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/5g-nr-ofdma-scheduled-access-diagram.svg" alt="Diagram: 5G NR -- OFDMA + Scheduled Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/04-mac/5g-nr-ofdma-scheduled-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/04-mac/5g-nr-ofdma-scheduled-access-sticky.svg" alt="Sticky Note: 5G NR -- OFDMA + Scheduled Access" width="30%">
-</a>
 
 
 | Aspect | Detail |

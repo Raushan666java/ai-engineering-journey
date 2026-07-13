@@ -111,16 +111,6 @@ Throughout this chapter, we will build **TaskFlow**, a full-stack task managemen
 
 ### Architecture
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/architecture-handwritten.svg" alt="Handwritten: Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/architecture-diagram.svg" alt="Diagram: Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/architecture-sticky.svg" alt="Sticky Note: Architecture" width="30%">
-</a>
-
 
 TaskFlow follows a modern three-tier architecture:
 
@@ -168,16 +158,6 @@ We use npm workspaces to manage the monorepo:
 ```
 
 ### Shared TypeScript Configuration
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/shared-typescript-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/shared-typescript-configuration-handwritten.svg" alt="Handwritten: Shared TypeScript Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/shared-typescript-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/shared-typescript-configuration-diagram.svg" alt="Diagram: Shared TypeScript Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/shared-typescript-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/shared-typescript-configuration-sticky.svg" alt="Sticky Note: Shared TypeScript Configuration" width="30%">
-</a>
 
 
 Root `tsconfig.json` establishes base settings:
@@ -292,16 +272,6 @@ export interface AuthTokens {
 
 ### Project Setup
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-handwritten.svg" alt="Handwritten: Project Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-diagram.svg" alt="Diagram: Project Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-sticky.svg" alt="Sticky Note: Project Setup" width="30%">
-</a>
-
 
 The API application uses Express with TypeScript, Prisma, and JWT authentication:
 
@@ -330,16 +300,6 @@ The API application uses Express with TypeScript, Prisma, and JWT authentication
 ```
 
 ### Prisma Schema
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/prisma-schema-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/prisma-schema-handwritten.svg" alt="Handwritten: Prisma Schema" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/prisma-schema-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/prisma-schema-diagram.svg" alt="Diagram: Prisma Schema" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/prisma-schema-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/prisma-schema-sticky.svg" alt="Sticky Note: Prisma Schema" width="30%">
-</a>
 
 
 ```prisma
@@ -396,16 +356,6 @@ model Task {
 
 ### Express Application Entry Point
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/express-application-entry-point-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/express-application-entry-point-handwritten.svg" alt="Handwritten: Express Application Entry Point" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/express-application-entry-point-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/express-application-entry-point-diagram.svg" alt="Diagram: Express Application Entry Point" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/express-application-entry-point-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/express-application-entry-point-sticky.svg" alt="Sticky Note: Express Application Entry Point" width="30%">
-</a>
-
 
 ```typescript
 // apps/api/src/index.ts
@@ -446,16 +396,6 @@ app.listen(PORT, () => {
 ```
 
 ### Authentication Route
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-route-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-route-handwritten.svg" alt="Handwritten: Authentication Route" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-route-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-route-diagram.svg" alt="Diagram: Authentication Route" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-route-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-route-sticky.svg" alt="Sticky Note: Authentication Route" width="30%">
-</a>
 
 
 ```typescript
@@ -569,16 +509,6 @@ export { router as authRouter };
 
 ### Auth Middleware
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/auth-middleware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/auth-middleware-handwritten.svg" alt="Handwritten: Auth Middleware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/auth-middleware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/auth-middleware-diagram.svg" alt="Diagram: Auth Middleware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/auth-middleware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/auth-middleware-sticky.svg" alt="Sticky Note: Auth Middleware" width="30%">
-</a>
-
 
 ```typescript
 // apps/api/src/middleware/auth.ts
@@ -612,16 +542,6 @@ export function authenticate(
 ```
 
 ### Tasks Route with Full CRUD
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/tasks-route-with-full-crud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/tasks-route-with-full-crud-handwritten.svg" alt="Handwritten: Tasks Route with Full CRUD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/tasks-route-with-full-crud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/tasks-route-with-full-crud-diagram.svg" alt="Diagram: Tasks Route with Full CRUD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/tasks-route-with-full-crud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/tasks-route-with-full-crud-sticky.svg" alt="Sticky Note: Tasks Route with Full CRUD" width="30%">
-</a>
 
 
 ```typescript
@@ -782,16 +702,6 @@ export { router as taskRouter };
 
 ### Global Error Handler
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/global-error-handler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/global-error-handler-handwritten.svg" alt="Handwritten: Global Error Handler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/global-error-handler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/global-error-handler-diagram.svg" alt="Diagram: Global Error Handler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/global-error-handler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/global-error-handler-sticky.svg" alt="Sticky Note: Global Error Handler" width="30%">
-</a>
-
 
 ```typescript
 // apps/api/src/middleware/errorHandler.ts
@@ -822,16 +732,6 @@ export function errorHandler(
 
 ### Project Setup
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-handwritten.svg" alt="Handwritten: Project Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-diagram.svg" alt="Diagram: Project Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/project-setup-sticky.svg" alt="Sticky Note: Project Setup" width="30%">
-</a>
-
 
 ```json
 {
@@ -848,16 +748,6 @@ export function errorHandler(
 ```
 
 ### Authentication Context
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-context-handwritten.svg" alt="Handwritten: Authentication Context" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-context-diagram.svg" alt="Diagram: Authentication Context" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/authentication-context-sticky.svg" alt="Sticky Note: Authentication Context" width="30%">
-</a>
 
 
 ```typescript
@@ -960,16 +850,6 @@ export function useAuth() {
 
 ### Custom Hook for API Calls
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/custom-hook-for-api-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/custom-hook-for-api-calls-handwritten.svg" alt="Handwritten: Custom Hook for API Calls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/custom-hook-for-api-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/custom-hook-for-api-calls-diagram.svg" alt="Diagram: Custom Hook for API Calls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/custom-hook-for-api-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/custom-hook-for-api-calls-sticky.svg" alt="Sticky Note: Custom Hook for API Calls" width="30%">
-</a>
-
 
 ```typescript
 // apps/web/src/lib/useApi.ts
@@ -1065,16 +945,6 @@ export function useApi() {
 
 ### Main Task Board Page
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/main-task-board-page-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/main-task-board-page-handwritten.svg" alt="Handwritten: Main Task Board Page" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/main-task-board-page-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/main-task-board-page-diagram.svg" alt="Diagram: Main Task Board Page" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/main-task-board-page-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/main-task-board-page-sticky.svg" alt="Sticky Note: Main Task Board Page" width="30%">
-</a>
-
 
 ```typescript
 // apps/web/src/app/dashboard/page.tsx
@@ -1168,16 +1038,6 @@ export default function DashboardPage() {
 
 ### Task Card Component
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/task-card-component-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/task-card-component-handwritten.svg" alt="Handwritten: Task Card Component" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/task-card-component-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/task-card-component-diagram.svg" alt="Diagram: Task Card Component" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/task-card-component-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/task-card-component-sticky.svg" alt="Sticky Note: Task Card Component" width="30%">
-</a>
-
 
 ```typescript
 // apps/web/src/components/TaskCard.tsx
@@ -1231,16 +1091,6 @@ export function TaskCard({ task }: TaskCardProps) {
 ```
 
 ### Create Task Modal
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/create-task-modal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/create-task-modal-handwritten.svg" alt="Handwritten: Create Task Modal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/create-task-modal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/create-task-modal-diagram.svg" alt="Diagram: Create Task Modal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/create-task-modal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/create-task-modal-sticky.svg" alt="Sticky Note: Create Task Modal" width="30%">
-</a>
 
 
 ```typescript
@@ -1377,16 +1227,6 @@ volumes:
 
 ### Dockerfile for API
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/dockerfile-for-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/dockerfile-for-api-handwritten.svg" alt="Handwritten: Dockerfile for API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/dockerfile-for-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/dockerfile-for-api-diagram.svg" alt="Diagram: Dockerfile for API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/dockerfile-for-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/dockerfile-for-api-sticky.svg" alt="Sticky Note: Dockerfile for API" width="30%">
-</a>
-
 
 ```dockerfile
 FROM node:22-alpine AS builder
@@ -1406,16 +1246,6 @@ CMD ["node", "dist/index.js"]
 ```
 
 ### CI/CD with GitHub Actions
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/ci-cd-with-github-actions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/ci-cd-with-github-actions-handwritten.svg" alt="Handwritten: CI/CD with GitHub Actions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/ci-cd-with-github-actions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/ci-cd-with-github-actions-diagram.svg" alt="Diagram: CI/CD with GitHub Actions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/ci-cd-with-github-actions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/ci-cd-with-github-actions-sticky.svg" alt="Sticky Note: CI/CD with GitHub Actions" width="30%">
-</a>
 
 
 ```yaml
@@ -1461,16 +1291,6 @@ jobs:
 ## 18.8 Testing the Full Stack
 
 ### API Integration Test
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/api-integration-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/api-integration-test-handwritten.svg" alt="Handwritten: API Integration Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/api-integration-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/api-integration-test-diagram.svg" alt="Diagram: API Integration Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/api-integration-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/api-integration-test-sticky.svg" alt="Sticky Note: API Integration Test" width="30%">
-</a>
 
 
 ```typescript
@@ -1563,16 +1383,6 @@ describe("Tasks API", () => {
 ```
 
 ### End-to-End Test with Playwright
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/end-to-end-test-with-playwright-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/end-to-end-test-with-playwright-handwritten.svg" alt="Handwritten: End-to-End Test with Playwright" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/end-to-end-test-with-playwright-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/end-to-end-test-with-playwright-diagram.svg" alt="Diagram: End-to-End Test with Playwright" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/end-to-end-test-with-playwright-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/end-to-end-test-with-playwright-sticky.svg" alt="Sticky Note: End-to-End Test with Playwright" width="30%">
-</a>
 
 
 ```typescript
@@ -1916,32 +1726,12 @@ Building a full-stack application requires integrating all the concepts from pre
 
 ### Application Projects
 
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/application-projects-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/application-projects-handwritten.svg" alt="Handwritten: Application Projects" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/application-projects-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/application-projects-diagram.svg" alt="Diagram: Application Projects" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/application-projects-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/application-projects-sticky.svg" alt="Sticky Note: Application Projects" width="30%">
-</a>
-
 
 1. **Add task drag-and-drop**: Implement drag-and-drop functionality to move tasks between status columns using the HTML Drag and Drop API, with optimistic UI updates.
 2. **Real-time collaboration**: Integrate Server-Sent Events (SSE) or WebSocket to broadcast task updates to all connected clients in real time.
 3. **File attachments**: Add the ability to upload file attachments to tasks using multipart form data and cloud storage (S3 or similar).
 
 ### Challenge Project
-
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/challenge-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/challenge-project-handwritten.svg" alt="Handwritten: Challenge Project" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/challenge-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/challenge-project-diagram.svg" alt="Diagram: Challenge Project" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/18-fullstack-project/challenge-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/18-fullstack-project/challenge-project-sticky.svg" alt="Sticky Note: Challenge Project" width="30%">
-</a>
 
 
 Build a **Project Management Dashboard** that extends TaskFlow with:

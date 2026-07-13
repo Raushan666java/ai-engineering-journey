@@ -92,16 +92,6 @@ flowchart LR
 
 ### Queue ADT
 
-<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-handwritten.svg" alt="Handwritten: Queue ADT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-diagram.svg" alt="Diagram: Queue ADT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-adt-sticky.svg" alt="Sticky Note: Queue ADT" width="30%">
-</a>
-
 
 A queue follows the **First-In-First-Out (FIFO)** discipline: elements are inserted at the **rear** and removed from the **front**.
 
@@ -116,16 +106,6 @@ A queue follows the **First-In-First-Out (FIFO)** discipline: elements are inser
 ---
 
 ### 1. Simple Array Queue (Naive)
-
-<a href="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-handwritten.svg" alt="Handwritten: 1. Simple Array Queue (Naive)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-diagram.svg" alt="Diagram: 1. Simple Array Queue (Naive)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/1-simple-array-queue-naive-sticky.svg" alt="Sticky Note: 1. Simple Array Queue (Naive)" width="30%">
-</a>
 
 
 > **Real-World Analogy:** A single-file line where the door (front) stays fixed. Everyone enters through the same door, and as people leave through the same door, the space they occupied remains empty — unusable.
@@ -383,16 +363,6 @@ public class SimpleArrayQueue<T> {
 ---
 
 ### 2. Circular Queue (Circular Array Queue)
-
-<a href="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-handwritten.svg" alt="Handwritten: 2. Circular Queue (Circular Array Queue)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-diagram.svg" alt="Diagram: 2. Circular Queue (Circular Array Queue)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/2-circular-queue-circular-array-queue-sticky.svg" alt="Sticky Note: 2. Circular Queue (Circular Array Queue)" width="30%">
-</a>
 
 
 > **Real-World Analogy:** A rotating sushi bar. The conveyor belt wraps around — when a plate reaches the end, it continues from the start. Similarly, a circular queue reuses empty slots at the beginning by wrapping the rear pointer back to index 0.
@@ -713,16 +683,6 @@ public class CircularQueue<T> {
 
 ### 3. Linked-List Queue
 
-<a href="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-handwritten.svg" alt="Handwritten: 3. Linked-List Queue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-diagram.svg" alt="Diagram: 3. Linked-List Queue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/3-linked-list-queue-sticky.svg" alt="Sticky Note: 3. Linked-List Queue" width="30%">
-</a>
-
 
 > **Real-World Analogy:** A conga line at a party. Each person holds the waist of the person in front. New people join at the back, and the front person leaves when it is their turn. The line can grow arbitrarily long — no fixed capacity.
 
@@ -1005,16 +965,6 @@ public class LinkedQueue<T> {
 
 ### 4. Deque (Double-Ended Queue)
 
-<a href="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-handwritten.svg" alt="Handwritten: 4. Deque (Double-Ended Queue)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-diagram.svg" alt="Diagram: 4. Deque (Double-Ended Queue)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/4-deque-double-ended-queue-sticky.svg" alt="Sticky Note: 4. Deque (Double-Ended Queue)" width="30%">
-</a>
-
 
 > **Real-World Analogy:** A sliding door at a supermarket entrance. People can enter and exit from both sides. During rush hour, the store opens both doors to handle flow in both directions.
 
@@ -1187,16 +1137,6 @@ public class DequeExample {
 ---
 
 ### 5. Priority Queue
-
-<a href="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-handwritten.svg" alt="Handwritten: 5. Priority Queue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-diagram.svg" alt="Diagram: 5. Priority Queue" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/5-priority-queue-sticky.svg" alt="Sticky Note: 5. Priority Queue" width="30%">
-</a>
 
 
 > **Real-World Analogy:** A hospital emergency room. Patients are treated based on the severity of their condition, not their arrival time. A heart attack patient (high priority) is seen before someone with a sprained ankle (low priority), even if the latter arrived first.
@@ -1392,16 +1332,6 @@ public class PriorityQueueExample {
 ---
 
 ### Queue Family Comparison
-
-<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-handwritten.svg" alt="Handwritten: Queue Family Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-diagram.svg" alt="Diagram: Queue Family Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/06-queues/queue-family-comparison-sticky.svg" alt="Sticky Note: Queue Family Comparison" width="30%">
-</a>
 
 
 | Feature | Simple Queue | Circular Queue | Linked Queue | Deque | Priority Queue |

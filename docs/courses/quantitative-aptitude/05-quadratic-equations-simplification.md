@@ -48,21 +48,9 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### 1. Quadratic Equations
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/1-quadratic-equations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/1-quadratic-equations-handwritten.svg" alt="Handwritten: 1. Quadratic Equations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/1-quadratic-equations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/1-quadratic-equations-diagram.svg" alt="Diagram: 1. Quadratic Equations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/1-quadratic-equations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/1-quadratic-equations-sticky.svg" alt="Sticky Note: 1. Quadratic Equations" width="30%">
-</a>
-
 
 A quadratic equation is a polynomial equation of degree 2 in the form:
 
@@ -75,17 +63,6 @@ ax² + bx + c = 0, where a ≠ 0
 **Methods to Solve Quadratic Equations:**
 
 ### Method 1: Factorization (Splitting the Middle Term)
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-1-factorization-splitting-the-middle-term-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-1-factorization-splitting-the-middle-term-handwritten.svg" alt="Handwritten: Method 1: Factorization (Splitting the Middle Term)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-1-factorization-splitting-the-middle-term-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-1-factorization-splitting-the-middle-term-diagram.svg" alt="Diagram: Method 1: Factorization (Splitting the Middle Term)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-1-factorization-splitting-the-middle-term-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-1-factorization-splitting-the-middle-term-sticky.svg" alt="Sticky Note: Method 1: Factorization (Splitting the Middle Term)" width="30%">
-</a>
-
 
 Steps:
 1. Multiply a and c to get ac
@@ -103,17 +80,6 @@ Steps:
 
 ### Method 2: Quadratic Formula
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-2-quadratic-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-2-quadratic-formula-handwritten.svg" alt="Handwritten: Method 2: Quadratic Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-2-quadratic-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-2-quadratic-formula-diagram.svg" alt="Diagram: Method 2: Quadratic Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-2-quadratic-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-2-quadratic-formula-sticky.svg" alt="Sticky Note: Method 2: Quadratic Formula" width="30%">
-</a>
-
-
 When factorization is not straightforward:
 
 ```
@@ -128,17 +94,6 @@ x = [-b ± √(b² - 4ac)] / 2a
 
 ### Method 3: Completing the Square
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-3-completing-the-square-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-3-completing-the-square-handwritten.svg" alt="Handwritten: Method 3: Completing the Square" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-3-completing-the-square-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-3-completing-the-square-diagram.svg" alt="Diagram: Method 3: Completing the Square" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-3-completing-the-square-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/method-3-completing-the-square-sticky.svg" alt="Sticky Note: Method 3: Completing the Square" width="30%">
-</a>
-
-
 ```
 x² + bx + c = 0
 => (x + b/2)² = (b/2)² - c
@@ -146,17 +101,6 @@ x² + bx + c = 0
 ```
 
 ### Comparing Two Quadratic Equations (IBPS SO Special)
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/comparing-two-quadratic-equations-ibps-so-special-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/comparing-two-quadratic-equations-ibps-so-special-handwritten.svg" alt="Handwritten: Comparing Two Quadratic Equations (IBPS SO Special)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/comparing-two-quadratic-equations-ibps-so-special-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/comparing-two-quadratic-equations-ibps-so-special-diagram.svg" alt="Diagram: Comparing Two Quadratic Equations (IBPS SO Special)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/comparing-two-quadratic-equations-ibps-so-special-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/comparing-two-quadratic-equations-ibps-so-special-sticky.svg" alt="Sticky Note: Comparing Two Quadratic Equations (IBPS SO Special)" width="30%">
-</a>
-
 
 In IBPS SO exams, two quadratic equations (I and II) are given, and you need to determine the relationship between their roots:
 
@@ -177,17 +121,6 @@ Options:
 - Relationship is established only if a consistent pattern exists
 
 ### 2. Approximation
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/2-approximation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/2-approximation-handwritten.svg" alt="Handwritten: 2. Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/2-approximation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/2-approximation-diagram.svg" alt="Diagram: 2. Approximation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/2-approximation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/2-approximation-sticky.svg" alt="Sticky Note: 2. Approximation" width="30%">
-</a>
-
 
 Approximation involves rounding numbers to a required degree of accuracy and then performing operations.
 
@@ -221,17 +154,6 @@ Approximation questions in IBPS SO involve expressions like:
 
 ### 3. BODMAS Rule
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/3-bodmas-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/3-bodmas-rule-handwritten.svg" alt="Handwritten: 3. BODMAS Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/3-bodmas-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/3-bodmas-rule-diagram.svg" alt="Diagram: 3. BODMAS Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/3-bodmas-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/3-bodmas-rule-sticky.svg" alt="Sticky Note: 3. BODMAS Rule" width="30%">
-</a>
-
-
 BODMAS defines the order of operations in mathematical expressions.
 
 | Letter | Stands For | Example |
@@ -256,17 +178,6 @@ BODMAS defines the order of operations in mathematical expressions.
 
 ### 4. Digit Sum Method (Simplification Check)
 
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/4-digit-sum-method-simplification-check-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/4-digit-sum-method-simplification-check-handwritten.svg" alt="Handwritten: 4. Digit Sum Method (Simplification Check)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/4-digit-sum-method-simplification-check-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/4-digit-sum-method-simplification-check-diagram.svg" alt="Diagram: 4. Digit Sum Method (Simplification Check)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/4-digit-sum-method-simplification-check-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/4-digit-sum-method-simplification-check-sticky.svg" alt="Sticky Note: 4. Digit Sum Method (Simplification Check)" width="30%">
-</a>
-
-
 The digit sum of a number is the sum of its digits, reduced to a single digit.
 
 **Example:**
@@ -276,17 +187,6 @@ The digit sum of a number is the sum of its digits, reduced to a single digit.
 To verify calculations, the digit sum of the result should match the digit sum of the computation.
 
 ### 5. Simplification Techniques
-
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/5-simplification-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/5-simplification-techniques-handwritten.svg" alt="Handwritten: 5. Simplification Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/5-simplification-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/5-simplification-techniques-diagram.svg" alt="Diagram: 5. Simplification Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/5-simplification-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/quantitative-aptitude/05-quadratic-equations-simplification/5-simplification-techniques-sticky.svg" alt="Sticky Note: 5. Simplification Techniques" width="30%">
-</a>
-
 
 **Approximation of Square Roots:**
 - For a number n, find the nearest perfect square below and above

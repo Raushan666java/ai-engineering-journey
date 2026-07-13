@@ -52,16 +52,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -105,16 +95,6 @@ An array is a contiguous sequence of elements of the same type, stored in consec
 
 ### 6.1.1 Declaration Syntax
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-1-declaration-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-1-declaration-syntax-handwritten.svg" alt="Handwritten: 6.1.1 Declaration Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-1-declaration-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-1-declaration-syntax-diagram.svg" alt="Diagram: 6.1.1 Declaration Syntax" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-1-declaration-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-1-declaration-syntax-sticky.svg" alt="Sticky Note: 6.1.1 Declaration Syntax" width="30%">
-</a>
-
 
 ```c
 type array_name[size];
@@ -137,16 +117,6 @@ INITIALIZE array_name = {value_0, value_1, ..., value_{size-1}}
 ```
 
 ### 6.1.2 Initialization Forms
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-2-initialization-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-2-initialization-forms-handwritten.svg" alt="Handwritten: 6.1.2 Initialization Forms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-2-initialization-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-2-initialization-forms-diagram.svg" alt="Diagram: 6.1.2 Initialization Forms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-2-initialization-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-2-initialization-forms-sticky.svg" alt="Sticky Note: 6.1.2 Initialization Forms" width="30%">
-</a>
 
 
 ```c
@@ -195,16 +165,6 @@ Single init:    1 0 0 0 0
 
 ### 6.1.3 Designated Initializers (C99)
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-3-designated-initializers-c99-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-3-designated-initializers-c99-handwritten.svg" alt="Handwritten: 6.1.3 Designated Initializers (C99)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-3-designated-initializers-c99-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-3-designated-initializers-c99-diagram.svg" alt="Diagram: 6.1.3 Designated Initializers (C99)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-3-designated-initializers-c99-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-3-designated-initializers-c99-sticky.svg" alt="Sticky Note: 6.1.3 Designated Initializers (C99)" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -239,16 +199,6 @@ arr[9] = 20
 
 ### 6.1.4 Dry Run — Memory Layout Trace
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-4-dry-run-memory-layout-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-4-dry-run-memory-layout-trace-handwritten.svg" alt="Handwritten: 6.1.4 Dry Run — Memory Layout Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-4-dry-run-memory-layout-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-4-dry-run-memory-layout-trace-diagram.svg" alt="Diagram: 6.1.4 Dry Run — Memory Layout Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-4-dry-run-memory-layout-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-4-dry-run-memory-layout-trace-sticky.svg" alt="Sticky Note: 6.1.4 Dry Run — Memory Layout Trace" width="30%">
-</a>
-
 
 ```
 Declaration:  int arr[5] = {10, 20, 30, 40, 50};
@@ -268,16 +218,6 @@ Address formula: &arr[i] = base_addr + i * sizeof(type)
 
 ### 6.1.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 6.1.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-5-complexity-analysis-diagram.svg" alt="Diagram: 6.1.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 6.1.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -287,16 +227,6 @@ Address formula: &arr[i] = base_addr + i * sizeof(type)
 | Designated init | O(n) | O(n) | Unspecified positions zero-filled |
 
 ### 6.1.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-6-edge-cases-handwritten.svg" alt="Handwritten: 6.1.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-6-edge-cases-diagram.svg" alt="Diagram: 6.1.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-1-6-edge-cases-sticky.svg" alt="Sticky Note: 6.1.6 Edge Cases" width="30%">
-</a>
 
 
 | Scenario | Behavior | Explanation |
@@ -314,16 +244,6 @@ Address formula: &arr[i] = base_addr + i * sizeof(type)
 **Real-world analogy:** A post office box wall. Box #0 is the first box. The key for box #i opens the (i)th box. If you try box #100 in a 50-box wall, you open someone else's locked drawer (undefined behavior — could be anything).
 
 ### 6.2.1 The Indexing Contract
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-1-the-indexing-contract-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-1-the-indexing-contract-handwritten.svg" alt="Handwritten: 6.2.1 The Indexing Contract" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-1-the-indexing-contract-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-1-the-indexing-contract-diagram.svg" alt="Diagram: 6.2.1 The Indexing Contract" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-1-the-indexing-contract-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-1-the-indexing-contract-sticky.svg" alt="Sticky Note: 6.2.1 The Indexing Contract" width="30%">
-</a>
 
 
 **Numbered steps to access an element:**
@@ -345,16 +265,6 @@ FUNCTION modify(arr, index, new_value):
 ```
 
 ### 6.2.2 Code Example — Read and Write
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-2-code-example-read-and-write-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-2-code-example-read-and-write-handwritten.svg" alt="Handwritten: 6.2.2 Code Example — Read and Write" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-2-code-example-read-and-write-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-2-code-example-read-and-write-diagram.svg" alt="Diagram: 6.2.2 Code Example — Read and Write" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-2-code-example-read-and-write-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-2-code-example-read-and-write-sticky.svg" alt="Sticky Note: 6.2.2 Code Example — Read and Write" width="30%">
-</a>
 
 
 ```c
@@ -406,16 +316,6 @@ Pointer arithmetic demonstration:
 
 ### 6.2.3 Dry Run — Index Access Trace
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-3-dry-run-index-access-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-3-dry-run-index-access-trace-handwritten.svg" alt="Handwritten: 6.2.3 Dry Run — Index Access Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-3-dry-run-index-access-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-3-dry-run-index-access-trace-diagram.svg" alt="Diagram: 6.2.3 Dry Run — Index Access Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-3-dry-run-index-access-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-3-dry-run-index-access-trace-sticky.svg" alt="Sticky Note: 6.2.3 Dry Run — Index Access Trace" width="30%">
-</a>
-
 
 ```
 int arr[4] = {7, 14, 21, 28};
@@ -432,16 +332,6 @@ Bad     | arr[4]       | 0x2000 + 4*4=0x2010 | UNDEFINED (out of bounds)
 
 ### 6.2.4 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-4-complexity-analysis-handwritten.svg" alt="Handwritten: 6.2.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-4-complexity-analysis-diagram.svg" alt="Diagram: 6.2.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-4-complexity-analysis-sticky.svg" alt="Sticky Note: 6.2.4 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -451,16 +341,6 @@ Bad     | arr[4]       | 0x2000 + 4*4=0x2010 | UNDEFINED (out of bounds)
 | Random access | O(1) per element | Index gives O(1) anywhere in the array |
 
 ### 6.2.5 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-5-edge-cases-handwritten.svg" alt="Handwritten: 6.2.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-5-edge-cases-diagram.svg" alt="Diagram: 6.2.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-2-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-2-5-edge-cases-sticky.svg" alt="Sticky Note: 6.2.5 Edge Cases" width="30%">
-</a>
 
 
 | Scenario | Behavior | Explanation |
@@ -488,16 +368,6 @@ int main(void) {
 **Real-world analogy:** A row of lockers in a school hallway. Each locker has a number (index) and contains items (values). You can only put one type of item in each locker row (same data type).
 
 ### 6.3.1 Declaration and Traversal
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-1-declaration-and-traversal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-1-declaration-and-traversal-handwritten.svg" alt="Handwritten: 6.3.1 Declaration and Traversal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-1-declaration-and-traversal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-1-declaration-and-traversal-diagram.svg" alt="Diagram: 6.3.1 Declaration and Traversal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-1-declaration-and-traversal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-1-declaration-and-traversal-sticky.svg" alt="Sticky Note: 6.3.1 Declaration and Traversal" width="30%">
-</a>
 
 
 ```c
@@ -545,16 +415,6 @@ int length = sizeof(arr) / sizeof(arr[0]);   /* 5 */
 
 ### 6.3.2 Dry Run — Max Search
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-2-dry-run-max-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-2-dry-run-max-search-handwritten.svg" alt="Handwritten: 6.3.2 Dry Run — Max Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-2-dry-run-max-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-2-dry-run-max-search-diagram.svg" alt="Diagram: 6.3.2 Dry Run — Max Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-2-dry-run-max-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-2-dry-run-max-search-sticky.svg" alt="Sticky Note: 6.3.2 Dry Run — Max Search" width="30%">
-</a>
-
 
 ```
 int scores[] = {88, 72, 93, 65, 80};
@@ -573,16 +433,6 @@ Final max = 93
 
 ### 6.3.3 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-3-complexity-analysis-handwritten.svg" alt="Handwritten: 6.3.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-3-complexity-analysis-diagram.svg" alt="Diagram: 6.3.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-3-complexity-analysis-sticky.svg" alt="Sticky Note: 6.3.3 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -594,16 +444,6 @@ Final max = 93
 | Search (sorted) | O(log n) | O(1) | Binary search halves each time |
 
 ### 6.3.4 One-Sentence Takeaway
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-4-one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-4-one-sentence-takeaway-handwritten.svg" alt="Handwritten: 6.3.4 One-Sentence Takeaway" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-4-one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-4-one-sentence-takeaway-diagram.svg" alt="Diagram: 6.3.4 One-Sentence Takeaway" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-3-4-one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-3-4-one-sentence-takeaway-sticky.svg" alt="Sticky Note: 6.3.4 One-Sentence Takeaway" width="30%">
-</a>
 
 
 Array declaration reserves contiguous memory for a fixed number of elements accessed via zero-based indices.
@@ -621,16 +461,6 @@ type *array_name[size];
 ```
 
 ### 6.4.1 Code Example — Array of String Pointers
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-1-code-example-array-of-string-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-1-code-example-array-of-string-pointers-handwritten.svg" alt="Handwritten: 6.4.1 Code Example — Array of String Pointers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-1-code-example-array-of-string-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-1-code-example-array-of-string-pointers-diagram.svg" alt="Diagram: 6.4.1 Code Example — Array of String Pointers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-1-code-example-array-of-string-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-1-code-example-array-of-string-pointers-sticky.svg" alt="Sticky Note: 6.4.1 Code Example — Array of String Pointers" width="30%">
-</a>
 
 
 ```c
@@ -669,16 +499,6 @@ fruits[4] = Elderberry  (stored at 0x100403020)
 
 ### 6.4.2 Array of Pointers to Integers
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-2-array-of-pointers-to-integers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-2-array-of-pointers-to-integers-handwritten.svg" alt="Handwritten: 6.4.2 Array of Pointers to Integers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-2-array-of-pointers-to-integers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-2-array-of-pointers-to-integers-diagram.svg" alt="Diagram: 6.4.2 Array of Pointers to Integers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-2-array-of-pointers-to-integers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-2-array-of-pointers-to-integers-sticky.svg" alt="Sticky Note: 6.4.2 Array of Pointers to Integers" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -710,16 +530,6 @@ After modification: b = 999
 
 ### 6.4.3 Memory Layout — Array of Pointers
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-3-memory-layout-array-of-pointers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-3-memory-layout-array-of-pointers-handwritten.svg" alt="Handwritten: 6.4.3 Memory Layout — Array of Pointers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-3-memory-layout-array-of-pointers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-3-memory-layout-array-of-pointers-diagram.svg" alt="Diagram: 6.4.3 Memory Layout — Array of Pointers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-3-memory-layout-array-of-pointers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-3-memory-layout-array-of-pointers-sticky.svg" alt="Sticky Note: 6.4.3 Memory Layout — Array of Pointers" width="30%">
-</a>
-
 
 ```
 int *arr[3] = {&a, &b, &c};
@@ -736,16 +546,6 @@ sizeof(arr[0]) = sizeof(int*) = 8 bytes
 
 ### 6.4.4 A&D Table
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-4-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-4-a-d-table-handwritten.svg" alt="Handwritten: 6.4.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-4-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-4-a-d-table-diagram.svg" alt="Diagram: 6.4.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-4-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-4-a-d-table-sticky.svg" alt="Sticky Note: 6.4.4 A&D Table" width="30%">
-</a>
-
 
 | Aspect | Description |
 |--------|-------------|
@@ -753,16 +553,6 @@ sizeof(arr[0]) = sizeof(int*) = 8 bytes
 | Disadvantages | Extra indirection; pointers must be managed; dangling pointer risk |
 
 ### 6.4.5 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-5-edge-cases-handwritten.svg" alt="Handwritten: 6.4.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-5-edge-cases-diagram.svg" alt="Diagram: 6.4.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-4-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-4-5-edge-cases-sticky.svg" alt="Sticky Note: 6.4.5 Edge Cases" width="30%">
-</a>
 
 
 | Scenario | Behavior |
@@ -786,16 +576,6 @@ This is NOT the same as an array of pointers. The parentheses matter:
 - `int (*p)[5]` — pointer to an array of 5 ints
 
 ### 6.5.1 Code Example
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-1-code-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-1-code-example-handwritten.svg" alt="Handwritten: 6.5.1 Code Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-1-code-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-1-code-example-diagram.svg" alt="Diagram: 6.5.1 Code Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-1-code-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-1-code-example-sticky.svg" alt="Sticky Note: 6.5.1 Code Example" width="30%">
-</a>
 
 
 ```c
@@ -830,16 +610,6 @@ Sizeof arr: 20 bytes
 ```
 
 ### 6.5.2 Pointer to Array for 2D Access
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-2-pointer-to-array-for-2d-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-2-pointer-to-array-for-2d-access-handwritten.svg" alt="Handwritten: 6.5.2 Pointer to Array for 2D Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-2-pointer-to-array-for-2d-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-2-pointer-to-array-for-2d-access-diagram.svg" alt="Diagram: 6.5.2 Pointer to Array for 2D Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-2-pointer-to-array-for-2d-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-2-pointer-to-array-for-2d-access-sticky.svg" alt="Sticky Note: 6.5.2 Pointer to Array for 2D Access" width="30%">
-</a>
 
 
 ```c
@@ -876,16 +646,6 @@ int main(void)
 
 ### 6.5.3 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-3-complexity-analysis-handwritten.svg" alt="Handwritten: 6.5.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-3-complexity-analysis-diagram.svg" alt="Diagram: 6.5.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-3-complexity-analysis-sticky.svg" alt="Sticky Note: 6.5.3 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -894,16 +654,6 @@ int main(void)
 | `sizeof(*p)` | Compile-time | Known at compile time — N × sizeof(type) |
 
 ### 6.5.4 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-4-edge-cases-handwritten.svg" alt="Handwritten: 6.5.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-4-edge-cases-diagram.svg" alt="Diagram: 6.5.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-5-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-5-4-edge-cases-sticky.svg" alt="Sticky Note: 6.5.4 Edge Cases" width="30%">
-</a>
 
 
 | Scenario | Behavior | Explanation |
@@ -918,16 +668,6 @@ int main(void)
 **Real-world analogy (row-major):** A movie theater. Row 0 starts at the screen-left aisle, seats 0–9. After the last seat in row 0, the very next seat is row 1, seat 0. C organizes memory exactly like this — all of row 0 first, then all of row 1.
 
 ### 6.6.1 Declaration and Initialization
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-1-declaration-and-initialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-1-declaration-and-initialization-handwritten.svg" alt="Handwritten: 6.6.1 Declaration and Initialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-1-declaration-and-initialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-1-declaration-and-initialization-diagram.svg" alt="Diagram: 6.6.1 Declaration and Initialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-1-declaration-and-initialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-1-declaration-and-initialization-sticky.svg" alt="Sticky Note: 6.6.1 Declaration and Initialization" width="30%">
-</a>
 
 
 ```c
@@ -975,16 +715,6 @@ Cols: 4
 ```
 
 ### 6.6.2 Memory Layout — Row-Major
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-2-memory-layout-row-major-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-2-memory-layout-row-major-handwritten.svg" alt="Handwritten: 6.6.2 Memory Layout — Row-Major" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-2-memory-layout-row-major-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-2-memory-layout-row-major-diagram.svg" alt="Diagram: 6.6.2 Memory Layout — Row-Major" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-2-memory-layout-row-major-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-2-memory-layout-row-major-sticky.svg" alt="Sticky Note: 6.6.2 Memory Layout — Row-Major" width="30%">
-</a>
 
 
 **Numbered steps for address calculation (row-major):**
@@ -1040,16 +770,6 @@ p[5] = 6  (at 0x7fff5fbff6f4)
 
 ### 6.6.3 Row-Major Address Calculation — Dry Run
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-3-row-major-address-calculation-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-3-row-major-address-calculation-dry-run-handwritten.svg" alt="Handwritten: 6.6.3 Row-Major Address Calculation — Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-3-row-major-address-calculation-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-3-row-major-address-calculation-dry-run-diagram.svg" alt="Diagram: 6.6.3 Row-Major Address Calculation — Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-3-row-major-address-calculation-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-3-row-major-address-calculation-dry-run-sticky.svg" alt="Sticky Note: 6.6.3 Row-Major Address Calculation — Dry Run" width="30%">
-</a>
-
 
 ```
 int m[3][4] = {{...}}  /* 3 rows, 4 cols, sizeof(int) = 4 */
@@ -1069,16 +789,6 @@ Row step: m[1][0] - m[0][0] = 0x1010 - 0x1000 = 16 bytes = 4 cols * 4 bytes
 
 ### 6.6.4 Column-Major Layout (for comparison)
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-4-column-major-layout-for-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-4-column-major-layout-for-comparison-handwritten.svg" alt="Handwritten: 6.6.4 Column-Major Layout (for comparison)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-4-column-major-layout-for-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-4-column-major-layout-for-comparison-diagram.svg" alt="Diagram: 6.6.4 Column-Major Layout (for comparison)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-4-column-major-layout-for-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-4-column-major-layout-for-comparison-sticky.svg" alt="Sticky Note: 6.6.4 Column-Major Layout (for comparison)" width="30%">
-</a>
-
 
 In column-major (used by Fortran, MATLAB), the inner index varies slowest:
 
@@ -1096,16 +806,6 @@ For m[3][4] (3 rows, 4 cols), col-major order:
 | Column-major | `m[row][col]` — row varies fastest | Fortran, MATLAB, R | Iterating columns first is cache-friendly |
 
 ### 6.6.5 2D Arrays as Function Parameters
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-5-2d-arrays-as-function-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-5-2d-arrays-as-function-parameters-handwritten.svg" alt="Handwritten: 6.6.5 2D Arrays as Function Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-5-2d-arrays-as-function-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-5-2d-arrays-as-function-parameters-diagram.svg" alt="Diagram: 6.6.5 2D Arrays as Function Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-5-2d-arrays-as-function-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-5-2d-arrays-as-function-parameters-sticky.svg" alt="Sticky Note: 6.6.5 2D Arrays as Function Parameters" width="30%">
-</a>
 
 
 The number of columns must be specified (because the compiler needs it to compute the memory offset):
@@ -1130,16 +830,6 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 
 ### 6.6.6 2D Array A&D Table
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-6-2d-array-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-6-2d-array-a-d-table-handwritten.svg" alt="Handwritten: 6.6.6 2D Array A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-6-2d-array-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-6-2d-array-a-d-table-diagram.svg" alt="Diagram: 6.6.6 2D Array A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-6-2d-array-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-6-2d-array-a-d-table-sticky.svg" alt="Sticky Note: 6.6.6 2D Array A&D Table" width="30%">
-</a>
-
 
 | Aspect | Description |
 |--------|-------------|
@@ -1148,16 +838,6 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 | When to use | Fixed-size grids, matrices, images, game boards |
 
 ### 6.6.7 Complexity Analysis
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-7-complexity-analysis-handwritten.svg" alt="Handwritten: 6.6.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-7-complexity-analysis-diagram.svg" alt="Diagram: 6.6.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-7-complexity-analysis-sticky.svg" alt="Sticky Note: 6.6.7 Complexity Analysis" width="30%">
-</a>
 
 
 | Operation | Time | Why |
@@ -1170,16 +850,6 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 
 ### 6.6.8 Edge Cases
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-8-edge-cases-handwritten.svg" alt="Handwritten: 6.6.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-8-edge-cases-diagram.svg" alt="Diagram: 6.6.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-8-edge-cases-sticky.svg" alt="Sticky Note: 6.6.8 Edge Cases" width="30%">
-</a>
-
 
 | Scenario | Behavior |
 |----------|----------|
@@ -1189,16 +859,6 @@ void print_matrix(int rows, int cols, int matrix[rows][cols])
 | `m[row][col]` with row/col out of range | Undefined behavior — no bounds check |
 
 ### 6.6.9 Cache Performance — Row vs Column Iteration
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-9-cache-performance-row-vs-column-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-9-cache-performance-row-vs-column-iteration-handwritten.svg" alt="Handwritten: 6.6.9 Cache Performance — Row vs Column Iteration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-9-cache-performance-row-vs-column-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-9-cache-performance-row-vs-column-iteration-diagram.svg" alt="Diagram: 6.6.9 Cache Performance — Row vs Column Iteration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-6-9-cache-performance-row-vs-column-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-6-9-cache-performance-row-vs-column-iteration-sticky.svg" alt="Sticky Note: 6.6.9 Cache Performance — Row vs Column Iteration" width="30%">
-</a>
 
 
 ```c
@@ -1254,16 +914,6 @@ The row-major version is 6× faster because it accesses consecutive memory addre
 **Real-world analogy:** A parking garage with multiple floors (depth), rows per floor (height), and spots per row (width). `garage[floor][row][spot]`.
 
 ### 6.7.1 Declaration and Access
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-1-declaration-and-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-1-declaration-and-access-handwritten.svg" alt="Handwritten: 6.7.1 Declaration and Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-1-declaration-and-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-1-declaration-and-access-diagram.svg" alt="Diagram: 6.7.1 Declaration and Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-1-declaration-and-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-1-declaration-and-access-sticky.svg" alt="Sticky Note: 6.7.1 Declaration and Access" width="30%">
-</a>
 
 
 ```c
@@ -1335,16 +985,6 @@ Layer 1:
 
 ### 6.7.2 3D Address Calculation — Dry Run
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-2-3d-address-calculation-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-2-3d-address-calculation-dry-run-handwritten.svg" alt="Handwritten: 6.7.2 3D Address Calculation — Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-2-3d-address-calculation-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-2-3d-address-calculation-dry-run-diagram.svg" alt="Diagram: 6.7.2 3D Address Calculation — Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-2-3d-address-calculation-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-2-3d-address-calculation-dry-run-sticky.svg" alt="Sticky Note: 6.7.2 3D Address Calculation — Dry Run" width="30%">
-</a>
-
 
 ```
 int cube[2][3][4];
@@ -1363,16 +1003,6 @@ Row stride: 4 * 4 = 16 bytes
 
 ### 6.7.3 Complexity of Iteration
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-3-complexity-of-iteration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-3-complexity-of-iteration-handwritten.svg" alt="Handwritten: 6.7.3 Complexity of Iteration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-3-complexity-of-iteration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-3-complexity-of-iteration-diagram.svg" alt="Diagram: 6.7.3 Complexity of Iteration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-3-complexity-of-iteration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-3-complexity-of-iteration-sticky.svg" alt="Sticky Note: 6.7.3 Complexity of Iteration" width="30%">
-</a>
-
 
 ```c
 /* Best — innermost index varies fastest (row-major friendly) */
@@ -1390,16 +1020,6 @@ for (int c = 0; c < C; c++)
 
 ### 6.7.4 A&D Table
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-4-a-d-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-4-a-d-table-handwritten.svg" alt="Handwritten: 6.7.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-4-a-d-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-4-a-d-table-diagram.svg" alt="Diagram: 6.7.4 A&D Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-7-4-a-d-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-7-4-a-d-table-sticky.svg" alt="Sticky Note: 6.7.4 A&D Table" width="30%">
-</a>
-
 
 | Aspect | Description |
 |--------|-------------|
@@ -1414,16 +1034,6 @@ for (int c = 0; c < C; c++)
 **Real-world analogy:** You hand someone a paper with your locker number written on it (the address), not your entire locker contents. They go to the locker, look inside, change things. When they give the paper back, the locker contents may have changed.
 
 ### 6.8.1 Array Decay — The Fundamental Rule
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-1-array-decay-the-fundamental-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-1-array-decay-the-fundamental-rule-handwritten.svg" alt="Handwritten: 6.8.1 Array Decay — The Fundamental Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-1-array-decay-the-fundamental-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-1-array-decay-the-fundamental-rule-diagram.svg" alt="Diagram: 6.8.1 Array Decay — The Fundamental Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-1-array-decay-the-fundamental-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-1-array-decay-the-fundamental-rule-sticky.svg" alt="Sticky Note: 6.8.1 Array Decay — The Fundamental Rule" width="30%">
-</a>
 
 
 When an array is passed to a function, it *decays* to a pointer to its first element. The function receives the address, not a copy of the array.
@@ -1464,16 +1074,6 @@ Inside function: sizeof(arr) = 8 (pointer size!)
 
 ### 6.8.2 Modifying Arrays Through Functions
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-2-modifying-arrays-through-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-2-modifying-arrays-through-functions-handwritten.svg" alt="Handwritten: 6.8.2 Modifying Arrays Through Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-2-modifying-arrays-through-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-2-modifying-arrays-through-functions-diagram.svg" alt="Diagram: 6.8.2 Modifying Arrays Through Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-2-modifying-arrays-through-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-2-modifying-arrays-through-functions-sticky.svg" alt="Sticky Note: 6.8.2 Modifying Arrays Through Functions" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1511,16 +1111,6 @@ Doubled:  2 4 6 8 10
 ```
 
 ### 6.8.3 Pass by Value vs Pass by Reference for Arrays
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-3-pass-by-value-vs-pass-by-reference-for-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-3-pass-by-value-vs-pass-by-reference-for-arrays-handwritten.svg" alt="Handwritten: 6.8.3 Pass by Value vs Pass by Reference for Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-3-pass-by-value-vs-pass-by-reference-for-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-3-pass-by-value-vs-pass-by-reference-for-arrays-diagram.svg" alt="Diagram: 6.8.3 Pass by Value vs Pass by Reference for Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-3-pass-by-value-vs-pass-by-reference-for-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-3-pass-by-value-vs-pass-by-reference-for-arrays-sticky.svg" alt="Sticky Note: 6.8.3 Pass by Value vs Pass by Reference for Arrays" width="30%">
-</a>
 
 
 | Aspect | Pass by Value (scalars) | Pass by Reference (arrays) |
@@ -1572,16 +1162,6 @@ After pass_by_reference: arr = 999 999 999 (changed!)
 
 ### 6.8.4 Passing 2D Arrays to Functions
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-4-passing-2d-arrays-to-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-4-passing-2d-arrays-to-functions-handwritten.svg" alt="Handwritten: 6.8.4 Passing 2D Arrays to Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-4-passing-2d-arrays-to-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-4-passing-2d-arrays-to-functions-diagram.svg" alt="Diagram: 6.8.4 Passing 2D Arrays to Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-4-passing-2d-arrays-to-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-4-passing-2d-arrays-to-functions-sticky.svg" alt="Sticky Note: 6.8.4 Passing 2D Arrays to Functions" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1625,16 +1205,6 @@ Identity matrix:
 
 ### 6.8.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-5-complexity-analysis-handwritten.svg" alt="Handwritten: 6.8.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-5-complexity-analysis-diagram.svg" alt="Diagram: 6.8.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-5-complexity-analysis-sticky.svg" alt="Sticky Note: 6.8.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -1643,16 +1213,6 @@ Identity matrix:
 | `sizeof` inside function | Compile-time | Returns pointer size, not array size — common pitfall |
 
 ### 6.8.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-6-edge-cases-handwritten.svg" alt="Handwritten: 6.8.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-6-edge-cases-diagram.svg" alt="Diagram: 6.8.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-8-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-8-6-edge-cases-sticky.svg" alt="Sticky Note: 6.8.6 Edge Cases" width="30%">
-</a>
 
 
 | Scenario | Behavior |
@@ -1670,16 +1230,6 @@ Identity matrix:
 C99 allows array sizes to be determined at runtime. VLAs are allocated on the stack.
 
 ### 6.9.1 Basic VLA Usage
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-1-basic-vla-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-1-basic-vla-usage-handwritten.svg" alt="Handwritten: 6.9.1 Basic VLA Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-1-basic-vla-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-1-basic-vla-usage-diagram.svg" alt="Diagram: 6.9.1 Basic VLA Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-1-basic-vla-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-1-basic-vla-usage-sticky.svg" alt="Sticky Note: 6.9.1 Basic VLA Usage" width="30%">
-</a>
 
 
 ```c
@@ -1730,16 +1280,6 @@ Squares up to 10:
 
 ### 6.9.2 VLA with `sizeof`
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-2-vla-with-sizeof-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-2-vla-with-sizeof-handwritten.svg" alt="Handwritten: 6.9.2 VLA with `sizeof`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-2-vla-with-sizeof-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-2-vla-with-sizeof-diagram.svg" alt="Diagram: 6.9.2 VLA with `sizeof`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-2-vla-with-sizeof-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-2-vla-with-sizeof-sticky.svg" alt="Sticky Note: 6.9.2 VLA with `sizeof`" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1767,16 +1307,6 @@ Unlike fixed-size arrays where `sizeof` is a compile-time constant, for VLAs `si
 
 ### 6.9.3 VLA — Pros and Cons
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-3-vla-pros-and-cons-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-3-vla-pros-and-cons-handwritten.svg" alt="Handwritten: 6.9.3 VLA — Pros and Cons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-3-vla-pros-and-cons-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-3-vla-pros-and-cons-diagram.svg" alt="Diagram: 6.9.3 VLA — Pros and Cons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-3-vla-pros-and-cons-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-3-vla-pros-and-cons-sticky.svg" alt="Sticky Note: 6.9.3 VLA — Pros and Cons" width="30%">
-</a>
-
 
 ```
 PROS:
@@ -1795,16 +1325,6 @@ CONS:
 ```
 
 ### 6.9.4 VLA Stack Overflow Example
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-4-vla-stack-overflow-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-4-vla-stack-overflow-example-handwritten.svg" alt="Handwritten: 6.9.4 VLA Stack Overflow Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-4-vla-stack-overflow-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-4-vla-stack-overflow-example-diagram.svg" alt="Diagram: 6.9.4 VLA Stack Overflow Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-4-vla-stack-overflow-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-4-vla-stack-overflow-example-sticky.svg" alt="Sticky Note: 6.9.4 VLA Stack Overflow Example" width="30%">
-</a>
 
 
 ```c
@@ -1850,16 +1370,6 @@ void safe_large_array(int n)
 
 ### 6.9.5 VLA for 2D Function Parameters (C99 clean style)
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-5-vla-for-2d-function-parameters-c99-clean-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-5-vla-for-2d-function-parameters-c99-clean-style-handwritten.svg" alt="Handwritten: 6.9.5 VLA for 2D Function Parameters (C99 clean style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-5-vla-for-2d-function-parameters-c99-clean-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-5-vla-for-2d-function-parameters-c99-clean-style-diagram.svg" alt="Diagram: 6.9.5 VLA for 2D Function Parameters (C99 clean style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-5-vla-for-2d-function-parameters-c99-clean-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-5-vla-for-2d-function-parameters-c99-clean-style-sticky.svg" alt="Sticky Note: 6.9.5 VLA for 2D Function Parameters (C99 clean style)" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1881,16 +1391,6 @@ void matrix_multiply(int r1, int c1, int a[r1][c1],
 
 ### 6.9.6 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-6-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-6-complexity-analysis-handwritten.svg" alt="Handwritten: 6.9.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-6-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-6-complexity-analysis-diagram.svg" alt="Diagram: 6.9.6 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-6-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-6-complexity-analysis-sticky.svg" alt="Sticky Note: 6.9.6 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -1900,16 +1400,6 @@ void matrix_multiply(int r1, int c1, int a[r1][c1],
 | Heap alternative (malloc) | O(1) allocation | O(n) | Malloc returns NULL on failure — detectable |
 
 ### 6.9.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-7-edge-cases-handwritten.svg" alt="Handwritten: 6.9.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-7-edge-cases-diagram.svg" alt="Diagram: 6.9.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-9-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-9-7-edge-cases-sticky.svg" alt="Sticky Note: 6.9.7 Edge Cases" width="30%">
-</a>
 
 
 | Scenario | Behavior | Mitigation |
@@ -1927,16 +1417,6 @@ void matrix_multiply(int r1, int c1, int a[r1][c1],
 **Real-world analogy:** A parking lot with 50 spaces numbered 0–49. If you park in spot 50, you're on the neighbor's property. If you park in spot -1, you're on the sidewalk. C lets you do both — and crashes when the tow truck comes.
 
 ### 6.10.1 The Core Problem
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-1-the-core-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-1-the-core-problem-handwritten.svg" alt="Handwritten: 6.10.1 The Core Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-1-the-core-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-1-the-core-problem-diagram.svg" alt="Diagram: 6.10.1 The Core Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-1-the-core-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-1-the-core-problem-sticky.svg" alt="Sticky Note: 6.10.1 The Core Problem" width="30%">
-</a>
 
 
 C does **no runtime bounds checking**. Accessing any element outside the declared range is **undefined behavior**.
@@ -1963,16 +1443,6 @@ int main(void)
 
 ### 6.10.2 Dry Run — Buffer Overflow Trace
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-2-dry-run-buffer-overflow-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-2-dry-run-buffer-overflow-trace-handwritten.svg" alt="Handwritten: 6.10.2 Dry Run — Buffer Overflow Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-2-dry-run-buffer-overflow-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-2-dry-run-buffer-overflow-trace-diagram.svg" alt="Diagram: 6.10.2 Dry Run — Buffer Overflow Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-2-dry-run-buffer-overflow-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-2-dry-run-buffer-overflow-trace-sticky.svg" alt="Sticky Note: 6.10.2 Dry Run — Buffer Overflow Trace" width="30%">
-</a>
-
 
 ```
 Stack layout (approximate, compiler-dependent):
@@ -1994,16 +1464,6 @@ If we write arr[7] = 999:
 ```
 
 ### 6.10.3 Safe Access Pattern
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-3-safe-access-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-3-safe-access-pattern-handwritten.svg" alt="Handwritten: 6.10.3 Safe Access Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-3-safe-access-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-3-safe-access-pattern-diagram.svg" alt="Diagram: 6.10.3 Safe Access Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-3-safe-access-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-3-safe-access-pattern-sticky.svg" alt="Sticky Note: 6.10.3 Safe Access Pattern" width="30%">
-</a>
 
 
 ```c
@@ -2049,16 +1509,6 @@ data[-1] is out of bounds!
 
 ### 6.10.4 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-4-complexity-analysis-handwritten.svg" alt="Handwritten: 6.10.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-4-complexity-analysis-diagram.svg" alt="Diagram: 6.10.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-4-complexity-analysis-sticky.svg" alt="Sticky Note: 6.10.4 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -2066,16 +1516,6 @@ data[-1] is out of bounds!
 | Unchecked access | O(1) | Raw pointer arithmetic — fastest but dangerous |
 
 ### 6.10.5 Historical Impact
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-5-historical-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-5-historical-impact-handwritten.svg" alt="Handwritten: 6.10.5 Historical Impact" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-5-historical-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-5-historical-impact-diagram.svg" alt="Diagram: 6.10.5 Historical Impact" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-10-5-historical-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-10-5-historical-impact-sticky.svg" alt="Sticky Note: 6.10.5 Historical Impact" width="30%">
-</a>
 
 
 Buffer overflows are the single most exploited vulnerability class in C/C++ history:
@@ -2091,16 +1531,6 @@ Buffer overflows are the single most exploited vulnerability class in C/C++ hist
 **Real-world analogy:** A char array is a parking lot with spaces. A string is a parking lot where you know where the last car is because there's a brightly colored cone (null terminator `\0`) after the last car.
 
 ### 6.11.1 The Fundamental Difference
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-1-the-fundamental-difference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-1-the-fundamental-difference-handwritten.svg" alt="Handwritten: 6.11.1 The Fundamental Difference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-1-the-fundamental-difference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-1-the-fundamental-difference-diagram.svg" alt="Diagram: 6.11.1 The Fundamental Difference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-1-the-fundamental-difference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-1-the-fundamental-difference-sticky.svg" alt="Sticky Note: 6.11.1 The Fundamental Difference" width="30%">
-</a>
 
 
 - A **char array** is just a sequence of characters in memory
@@ -2155,16 +1585,6 @@ DANGER: Hello╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠
 
 ### 6.11.2 String vs Char Array — Comparison Table
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-2-string-vs-char-array-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-2-string-vs-char-array-comparison-table-handwritten.svg" alt="Handwritten: 6.11.2 String vs Char Array — Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-2-string-vs-char-array-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-2-string-vs-char-array-comparison-table-diagram.svg" alt="Diagram: 6.11.2 String vs Char Array — Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-2-string-vs-char-array-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-2-string-vs-char-array-comparison-table-sticky.svg" alt="Sticky Note: 6.11.2 String vs Char Array — Comparison Table" width="30%">
-</a>
-
 
 | Feature | Char Array | String |
 |---------|-----------|--------|
@@ -2176,16 +1596,6 @@ DANGER: Hello╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠╠
 | `char arr[] = {'a','b','c'};` | 3-byte char array, NOT a string | Not safe to use as string |
 
 ### 6.11.3 Common Pitfall — Buffer Overflow with Strings
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-3-common-pitfall-buffer-overflow-with-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-3-common-pitfall-buffer-overflow-with-strings-handwritten.svg" alt="Handwritten: 6.11.3 Common Pitfall — Buffer Overflow with Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-3-common-pitfall-buffer-overflow-with-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-3-common-pitfall-buffer-overflow-with-strings-diagram.svg" alt="Diagram: 6.11.3 Common Pitfall — Buffer Overflow with Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-3-common-pitfall-buffer-overflow-with-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-3-common-pitfall-buffer-overflow-with-strings-sticky.svg" alt="Sticky Note: 6.11.3 Common Pitfall — Buffer Overflow with Strings" width="30%">
-</a>
 
 
 ```c
@@ -2225,16 +1635,6 @@ int main(void)
 
 ### 6.11.4 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-4-complexity-analysis-handwritten.svg" alt="Handwritten: 6.11.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-4-complexity-analysis-diagram.svg" alt="Diagram: 6.11.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-11-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-11-4-complexity-analysis-sticky.svg" alt="Sticky Note: 6.11.4 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -2250,16 +1650,6 @@ int main(void)
 **Real-world analogy:** A full restaurant menu (the array) is a book with many pages. When you hand the menu to the chef saying "I want this," you're pointing at the whole book. But the chef sees it as "the address of page 0" — they need to know the page count separately.
 
 ### 6.12.1 When Decay Happens
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-12-1-when-decay-happens-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-12-1-when-decay-happens-handwritten.svg" alt="Handwritten: 6.12.1 When Decay Happens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-12-1-when-decay-happens-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-12-1-when-decay-happens-diagram.svg" alt="Diagram: 6.12.1 When Decay Happens" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-12-1-when-decay-happens-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-12-1-when-decay-happens-sticky.svg" alt="Sticky Note: 6.12.1 When Decay Happens" width="30%">
-</a>
 
 
 ```c
@@ -2297,16 +1687,6 @@ sizeof(ptr2) = 8 (pointer)
 ```
 
 ### 6.12.2 When Decay Does NOT Happen
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-12-2-when-decay-does-not-happen-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-12-2-when-decay-does-not-happen-handwritten.svg" alt="Handwritten: 6.12.2 When Decay Does NOT Happen" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-12-2-when-decay-does-not-happen-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-12-2-when-decay-does-not-happen-diagram.svg" alt="Diagram: 6.12.2 When Decay Does NOT Happen" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-12-2-when-decay-does-not-happen-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-12-2-when-decay-does-not-happen-sticky.svg" alt="Sticky Note: 6.12.2 When Decay Does NOT Happen" width="30%">
-</a>
 
 
 | Context | No Decay | Reason |
@@ -2347,16 +1727,6 @@ p2 + 1 = 0x7fff...14 (advances by 20 byte(s))
 
 ### 6.13.1 Array vs Pointer Comparison
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-1-array-vs-pointer-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-1-array-vs-pointer-comparison-handwritten.svg" alt="Handwritten: 6.13.1 Array vs Pointer Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-1-array-vs-pointer-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-1-array-vs-pointer-comparison-diagram.svg" alt="Diagram: 6.13.1 Array vs Pointer Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-1-array-vs-pointer-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-1-array-vs-pointer-comparison-sticky.svg" alt="Sticky Note: 6.13.1 Array vs Pointer Comparison" width="30%">
-</a>
-
 
 | Property | Array | Pointer |
 |----------|-------|---------|
@@ -2371,16 +1741,6 @@ p2 + 1 = 0x7fff...14 (advances by 20 byte(s))
 | `arr[i]` vs `*(arr + i)` | Equivalent | Equivalent |
 
 ### 6.13.2 Array Not Assignable
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-2-array-not-assignable-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-2-array-not-assignable-handwritten.svg" alt="Handwritten: 6.13.2 Array Not Assignable" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-2-array-not-assignable-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-2-array-not-assignable-diagram.svg" alt="Diagram: 6.13.2 Array Not Assignable" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-2-array-not-assignable-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-2-array-not-assignable-sticky.svg" alt="Sticky Note: 6.13.2 Array Not Assignable" width="30%">
-</a>
 
 
 ```c
@@ -2399,16 +1759,6 @@ memcpy(arr2, arr1, sizeof(arr1));
 
 ### 6.13.3 1D vs 2D vs 3D Arrays
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-3-1d-vs-2d-vs-3d-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-3-1d-vs-2d-vs-3d-arrays-handwritten.svg" alt="Handwritten: 6.13.3 1D vs 2D vs 3D Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-3-1d-vs-2d-vs-3d-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-3-1d-vs-2d-vs-3d-arrays-diagram.svg" alt="Diagram: 6.13.3 1D vs 2D vs 3D Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-3-1d-vs-2d-vs-3d-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-3-1d-vs-2d-vs-3d-arrays-sticky.svg" alt="Sticky Note: 6.13.3 1D vs 2D vs 3D Arrays" width="30%">
-</a>
-
 
 | Property | 1D Array | 2D Array | 3D Array |
 |----------|----------|----------|----------|
@@ -2422,16 +1772,6 @@ memcpy(arr2, arr1, sizeof(arr1));
 
 ### 6.13.4 Row-major vs Column-major
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-4-row-major-vs-column-major-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-4-row-major-vs-column-major-handwritten.svg" alt="Handwritten: 6.13.4 Row-major vs Column-major" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-4-row-major-vs-column-major-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-4-row-major-vs-column-major-diagram.svg" alt="Diagram: 6.13.4 Row-major vs Column-major" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-4-row-major-vs-column-major-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-4-row-major-vs-column-major-sticky.svg" alt="Sticky Note: 6.13.4 Row-major vs Column-major" width="30%">
-</a>
-
 
 | Aspect | Row-major | Column-major |
 |--------|-----------|--------------|
@@ -2443,16 +1783,6 @@ memcpy(arr2, arr1, sizeof(arr1));
 | Practical difference | ~6× performance difference on large matrices (as shown in 6.6.9) |
 
 ### 6.13.5 `sizeof` Array vs Pointer
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-5-sizeof-array-vs-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-5-sizeof-array-vs-pointer-handwritten.svg" alt="Handwritten: 6.13.5 `sizeof` Array vs Pointer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-5-sizeof-array-vs-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-5-sizeof-array-vs-pointer-diagram.svg" alt="Diagram: 6.13.5 `sizeof` Array vs Pointer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-5-sizeof-array-vs-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-5-sizeof-array-vs-pointer-sticky.svg" alt="Sticky Note: 6.13.5 `sizeof` Array vs Pointer" width="30%">
-</a>
 
 
 ```c
@@ -2480,16 +1810,6 @@ Element count = 10
 
 ### 6.13.6 VLA Pros/Cons
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-6-vla-pros-cons-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-6-vla-pros-cons-handwritten.svg" alt="Handwritten: 6.13.6 VLA Pros/Cons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-6-vla-pros-cons-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-6-vla-pros-cons-diagram.svg" alt="Diagram: 6.13.6 VLA Pros/Cons" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-6-vla-pros-cons-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-6-vla-pros-cons-sticky.svg" alt="Sticky Note: 6.13.6 VLA Pros/Cons" width="30%">
-</a>
-
 
 | Pros | Cons |
 |------|------|
@@ -2500,16 +1820,6 @@ Element count = 10
 | sizeof works at runtime | Runtime overhead for sizeof |
 
 ### 6.13.7 Static 2D Array Parameter
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-7-static-2d-array-parameter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-7-static-2d-array-parameter-handwritten.svg" alt="Handwritten: 6.13.7 Static 2D Array Parameter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-7-static-2d-array-parameter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-7-static-2d-array-parameter-diagram.svg" alt="Diagram: 6.13.7 Static 2D Array Parameter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-13-7-static-2d-array-parameter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-13-7-static-2d-array-parameter-sticky.svg" alt="Sticky Note: 6.13.7 Static 2D Array Parameter" width="30%">
-</a>
 
 
 ```c
@@ -2529,16 +1839,6 @@ void process(int arr[static 10])
 
 ### Q1: What is the difference between an array and a pointer?
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-is-the-difference-between-an-array-and-a-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-is-the-difference-between-an-array-and-a-pointer-handwritten.svg" alt="Handwritten: What is the difference between an array and a pointer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-is-the-difference-between-an-array-and-a-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-is-the-difference-between-an-array-and-a-pointer-diagram.svg" alt="Diagram: What is the difference between an array and a pointer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-is-the-difference-between-an-array-and-a-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-is-the-difference-between-an-array-and-a-pointer-sticky.svg" alt="Sticky Note: What is the difference between an array and a pointer?" width="30%">
-</a>
-
 
 | Aspect | Array | Pointer |
 |--------|-------|---------|
@@ -2548,16 +1848,6 @@ void process(int arr[static 10])
 | `&arr` | Address of the whole array | Address of the pointer variable |
 
 ### Q2: Why can't arrays be assigned?
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/why-can-t-arrays-be-assigned-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/why-can-t-arrays-be-assigned-handwritten.svg" alt="Handwritten: Why can't arrays be assigned?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/why-can-t-arrays-be-assigned-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/why-can-t-arrays-be-assigned-diagram.svg" alt="Diagram: Why can't arrays be assigned?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/why-can-t-arrays-be-assigned-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/why-can-t-arrays-be-assigned-sticky.svg" alt="Sticky Note: Why can't arrays be assigned?" width="30%">
-</a>
 
 
 ```c
@@ -2571,30 +1861,10 @@ a = b;  /* ERROR */
 
 ### Q3: What does `sizeof(arr) / sizeof(arr[0])` compute?
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-does-sizeof-arr-sizeof-arr-0-compute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-does-sizeof-arr-sizeof-arr-0-compute-handwritten.svg" alt="Handwritten: What does `sizeof(arr) / sizeof(arr[0])` compute?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-does-sizeof-arr-sizeof-arr-0-compute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-does-sizeof-arr-sizeof-arr-0-compute-diagram.svg" alt="Diagram: What does `sizeof(arr) / sizeof(arr[0])` compute?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-does-sizeof-arr-sizeof-arr-0-compute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-does-sizeof-arr-sizeof-arr-0-compute-sticky.svg" alt="Sticky Note: What does `sizeof(arr) / sizeof(arr[0])` compute?" width="30%">
-</a>
-
 
 Number of elements in the array. Works **only** in the scope where the array was declared. Inside a function parameter, `arr` is a pointer, so `sizeof(arr)` returns 4 or 8.
 
 ### Q4: What are the pros and cons of VLAs?
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-are-the-pros-and-cons-of-vlas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-are-the-pros-and-cons-of-vlas-handwritten.svg" alt="Handwritten: What are the pros and cons of VLAs?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-are-the-pros-and-cons-of-vlas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-are-the-pros-and-cons-of-vlas-diagram.svg" alt="Diagram: What are the pros and cons of VLAs?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-are-the-pros-and-cons-of-vlas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-are-the-pros-and-cons-of-vlas-sticky.svg" alt="Sticky Note: What are the pros and cons of VLAs?" width="30%">
-</a>
 
 
 **Pros:** Dynamic sizing, no heap allocation, clean parameter syntax.
@@ -2602,16 +1872,6 @@ Number of elements in the array. Works **only** in the scope where the array was
 **Cons:** Stack overflow risk, optional in C11, no initializers, no static/global, no error reporting on failure.
 
 ### Q5: How does `int a[][4]` differ from `int *a[4]` in a function parameter?
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/how-does-int-a-4-differ-from-int-a-4-in-a-function-parameter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/how-does-int-a-4-differ-from-int-a-4-in-a-function-parameter-handwritten.svg" alt="Handwritten: How does `int a[][4]` differ from `int *a[4]` in a function parameter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/how-does-int-a-4-differ-from-int-a-4-in-a-function-parameter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/how-does-int-a-4-differ-from-int-a-4-in-a-function-parameter-diagram.svg" alt="Diagram: How does `int a[][4]` differ from `int *a[4]` in a function parameter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/how-does-int-a-4-differ-from-int-a-4-in-a-function-parameter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/how-does-int-a-4-differ-from-int-a-4-in-a-function-parameter-sticky.svg" alt="Sticky Note: How does `int a[][4]` differ from `int *a[4]` in a function parameter?" width="30%">
-</a>
 
 
 | Declaration | Type | Meaning |
@@ -2621,30 +1881,10 @@ Number of elements in the array. Works **only** in the scope where the array was
 
 ### Q6: What is array decay and when does it happen?
 
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-is-array-decay-and-when-does-it-happen-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-is-array-decay-and-when-does-it-happen-handwritten.svg" alt="Handwritten: What is array decay and when does it happen?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-is-array-decay-and-when-does-it-happen-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-is-array-decay-and-when-does-it-happen-diagram.svg" alt="Diagram: What is array decay and when does it happen?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/what-is-array-decay-and-when-does-it-happen-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/what-is-array-decay-and-when-does-it-happen-sticky.svg" alt="Sticky Note: What is array decay and when does it happen?" width="30%">
-</a>
-
 
 Array decay is the implicit conversion of an array name to a pointer to its first element. It happens in all expressions except when used with `sizeof`, `&`, or `typeof`.
 
 ### Q7: Can you have a negative index in C?
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/can-you-have-a-negative-index-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/can-you-have-a-negative-index-in-c-handwritten.svg" alt="Handwritten: Can you have a negative index in C?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/can-you-have-a-negative-index-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/can-you-have-a-negative-index-in-c-diagram.svg" alt="Diagram: Can you have a negative index in C?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/can-you-have-a-negative-index-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/can-you-have-a-negative-index-in-c-sticky.svg" alt="Sticky Note: Can you have a negative index in C?" width="30%">
-</a>
 
 
 ```c
@@ -2656,16 +1896,6 @@ printf("%d\n", p[-1]);  /* prints 3 — valid, same as arr[1] */
 **Yes, but only when the pointer points to the middle of the array.** The expression `p[-1]` is valid as long as `p - 1` is within the array bounds.
 
 ### Q8: How do you prevent buffer overflow in C?
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/how-do-you-prevent-buffer-overflow-in-c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/how-do-you-prevent-buffer-overflow-in-c-handwritten.svg" alt="Handwritten: How do you prevent buffer overflow in C?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/how-do-you-prevent-buffer-overflow-in-c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/how-do-you-prevent-buffer-overflow-in-c-diagram.svg" alt="Diagram: How do you prevent buffer overflow in C?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/how-do-you-prevent-buffer-overflow-in-c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/how-do-you-prevent-buffer-overflow-in-c-sticky.svg" alt="Sticky Note: How do you prevent buffer overflow in C?" width="30%">
-</a>
 
 
 1. Always validate indices before access
@@ -2679,16 +1909,6 @@ printf("%d\n", p[-1]);  /* prints 3 — valid, same as arr[1] */
 ## 6.15 Applications in Real Systems
 
 ### 6.15.1 Image Processing Using 2D Arrays
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-1-image-processing-using-2d-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-1-image-processing-using-2d-arrays-handwritten.svg" alt="Handwritten: 6.15.1 Image Processing Using 2D Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-1-image-processing-using-2d-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-1-image-processing-using-2d-arrays-diagram.svg" alt="Diagram: 6.15.1 Image Processing Using 2D Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-1-image-processing-using-2d-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-1-image-processing-using-2d-arrays-sticky.svg" alt="Sticky Note: 6.15.1 Image Processing Using 2D Arrays" width="30%">
-</a>
 
 
 Digital images are naturally represented as 2D arrays of pixels. Grayscale images use one value per pixel; color images use 3 or 4 values (RGB/RGBA).
@@ -2755,16 +1975,6 @@ Edge-detected image:
 ```
 
 ### 6.15.2 Matrix Math (3×3 Transformations)
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-2-matrix-math-3-3-transformations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-2-matrix-math-3-3-transformations-handwritten.svg" alt="Handwritten: 6.15.2 Matrix Math (3×3 Transformations)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-2-matrix-math-3-3-transformations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-2-matrix-math-3-3-transformations-diagram.svg" alt="Diagram: 6.15.2 Matrix Math (3×3 Transformations)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-2-matrix-math-3-3-transformations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-2-matrix-math-3-3-transformations-sticky.svg" alt="Sticky Note: 6.15.2 Matrix Math (3×3 Transformations)" width="30%">
-</a>
 
 
 ```c
@@ -2841,16 +2051,6 @@ Rotation² (should be identity except first two rows negated):
 ```
 
 ### 6.15.3 Real-World Array Usage Summary
-
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-3-real-world-array-usage-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-3-real-world-array-usage-summary-handwritten.svg" alt="Handwritten: 6.15.3 Real-World Array Usage Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-3-real-world-array-usage-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-3-real-world-array-usage-summary-diagram.svg" alt="Diagram: 6.15.3 Real-World Array Usage Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/06-arrays/6-15-3-real-world-array-usage-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/06-arrays/6-15-3-real-world-array-usage-summary-sticky.svg" alt="Sticky Note: 6.15.3 Real-World Array Usage Summary" width="30%">
-</a>
 
 
 | Application | Array Structure | Description |

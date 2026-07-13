@@ -66,16 +66,6 @@ flowchart LR
 
 ### Q1: What is the difference between JDBC and JPA, and when would you use each?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-handwritten.svg" alt="Handwritten: What is the difference between JDBC and JPA, and when would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-diagram.svg" alt="Diagram: What is the difference between JDBC and JPA, and when would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-sticky.svg" alt="Sticky Note: What is the difference between JDBC and JPA, and when would you use each?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -153,16 +143,6 @@ For production, always use `validate` (or `none`) and manage schema changes thro
 
 ### Q3: What is the N+1 query problem in Hibernate, and how do you solve it?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-handwritten.svg" alt="Handwritten: What is the N+1 query problem in Hibernate, and how do you solve it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-diagram.svg" alt="Diagram: What is the N+1 query problem in Hibernate, and how do you solve it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-sticky.svg" alt="Sticky Note: What is the N+1 query problem in Hibernate, and how do you solve it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -229,16 +209,6 @@ JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fe
 
 ### Q4: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-handwritten.svg" alt="Handwritten: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-diagram.svg" alt="Diagram: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-sticky.svg" alt="Sticky Note: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -268,16 +238,6 @@ The `@NamedEntityGraph` approach gives you the best of both worlds: LAZY by defa
 ---
 
 ### Q5: How do you handle optimistic and pessimistic locking in JPA?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-handwritten.svg" alt="Handwritten: How do you handle optimistic and pessimistic locking in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-diagram.svg" alt="Diagram: How do you handle optimistic and pessimistic locking in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-sticky.svg" alt="Sticky Note: How do you handle optimistic and pessimistic locking in JPA?" width="30%">
-</a>
 
 
 **Answer:**
@@ -338,16 +298,6 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 
 ### Q6: What is the difference between `@Transactional` and manual transaction management?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-transactional-and-manual-transaction-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-transactional-and-manual-transaction-management-handwritten.svg" alt="Handwritten: What is the difference between `@Transactional` and manual transaction management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-transactional-and-manual-transaction-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-transactional-and-manual-transaction-management-diagram.svg" alt="Diagram: What is the difference between `@Transactional` and manual transaction management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-transactional-and-manual-transaction-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-transactional-and-manual-transaction-management-sticky.svg" alt="Sticky Note: What is the difference between `@Transactional` and manual transaction management?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -404,16 +354,6 @@ Key `@Transactional` attributes:
 
 ### Q7: Explain Hibernate's first-level and second-level cache
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/explain-hibernate-s-first-level-and-second-level-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/explain-hibernate-s-first-level-and-second-level-cache-handwritten.svg" alt="Handwritten: Explain Hibernate's first-level and second-level cache" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/explain-hibernate-s-first-level-and-second-level-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/explain-hibernate-s-first-level-and-second-level-cache-diagram.svg" alt="Diagram: Explain Hibernate's first-level and second-level cache" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/explain-hibernate-s-first-level-and-second-level-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/explain-hibernate-s-first-level-and-second-level-cache-sticky.svg" alt="Sticky Note: Explain Hibernate's first-level and second-level cache" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -467,16 +407,6 @@ L2 cache is not a replacement for a well-tuned database. Use it sparingly → ca
 ---
 
 ### Q8: How does Spring Data JPA derive queries from method names?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-does-spring-data-jpa-derive-queries-from-method-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-does-spring-data-jpa-derive-queries-from-method-names-handwritten.svg" alt="Handwritten: How does Spring Data JPA derive queries from method names?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-does-spring-data-jpa-derive-queries-from-method-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-does-spring-data-jpa-derive-queries-from-method-names-diagram.svg" alt="Diagram: How does Spring Data JPA derive queries from method names?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-does-spring-data-jpa-derive-queries-from-method-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-does-spring-data-jpa-derive-queries-from-method-names-sticky.svg" alt="Sticky Note: How does Spring Data JPA derive queries from method names?" width="30%">
-</a>
 
 
 **Answer:**
@@ -583,16 +513,6 @@ Transient ──────────────► Managed ◄────�
 
 ### Q10: What is the difference between `hibernate.jdbc.batch_size` and `hibernate.order_inserts`?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-hibernate-jdbc-batch-size-and-hibernate-order-inserts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-hibernate-jdbc-batch-size-and-hibernate-order-inserts-handwritten.svg" alt="Handwritten: What is the difference between `hibernate.jdbc.batch_size` and `hibernate.order_inserts`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-hibernate-jdbc-batch-size-and-hibernate-order-inserts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-hibernate-jdbc-batch-size-and-hibernate-order-inserts-diagram.svg" alt="Diagram: What is the difference between `hibernate.jdbc.batch_size` and `hibernate.order_inserts`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-hibernate-jdbc-batch-size-and-hibernate-order-inserts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/what-is-the-difference-between-hibernate-jdbc-batch-size-and-hibernate-order-inserts-sticky.svg" alt="Sticky Note: What is the difference between `hibernate.jdbc.batch_size` and `hibernate.order_inserts`?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -637,16 +557,6 @@ Performance comparison (10,000 row insert):
 ---
 
 ### Q11: How do you implement pagination efficiently in JPA for large datasets?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-implement-pagination-efficiently-in-jpa-for-large-datasets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-implement-pagination-efficiently-in-jpa-for-large-datasets-handwritten.svg" alt="Handwritten: How do you implement pagination efficiently in JPA for large datasets?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-implement-pagination-efficiently-in-jpa-for-large-datasets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-implement-pagination-efficiently-in-jpa-for-large-datasets-diagram.svg" alt="Diagram: How do you implement pagination efficiently in JPA for large datasets?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-implement-pagination-efficiently-in-jpa-for-large-datasets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/how-do-you-implement-pagination-efficiently-in-jpa-for-large-datasets-sticky.svg" alt="Sticky Note: How do you implement pagination efficiently in JPA for large datasets?" width="30%">
-</a>
 
 
 **Answer:**
@@ -743,16 +653,6 @@ private Set<Item> items = new HashSet<>();  // Only if Item has proper equals/ha
 
 ### Mistake 2: Calling `save()` inside a loop
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-2-calling-save-inside-a-loop-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-2-calling-save-inside-a-loop-handwritten.svg" alt="Handwritten: Mistake 2: Calling `save()` inside a loop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-2-calling-save-inside-a-loop-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-2-calling-save-inside-a-loop-diagram.svg" alt="Diagram: Mistake 2: Calling `save()` inside a loop" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-2-calling-save-inside-a-loop-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-2-calling-save-inside-a-loop-sticky.svg" alt="Sticky Note: Mistake 2: Calling `save()` inside a loop" width="30%">
-</a>
-
 ```java
 // ❌ WRONG: Each save() flushes independently
 for (Product p : products) {
@@ -764,16 +664,6 @@ productRepository.saveAll(products);  // Single batch of INSERTs
 ```
 
 ### Mistake 3: Ignoring N+1 until production
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-3-ignoring-n-1-until-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-3-ignoring-n-1-until-production-handwritten.svg" alt="Handwritten: Mistake 3: Ignoring N+1 until production" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-3-ignoring-n-1-until-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-3-ignoring-n-1-until-production-diagram.svg" alt="Diagram: Mistake 3: Ignoring N+1 until production" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-3-ignoring-n-1-until-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-3-ignoring-n-1-until-production-sticky.svg" alt="Sticky Note: Mistake 3: Ignoring N+1 until production" width="30%">
-</a>
 
 ```java
 // ❌ WRONG: No verification of generated SQL
@@ -790,16 +680,6 @@ for (Order o : orders) {
 ```
 
 ### Mistake 4: Using `fetch = FetchType.EAGER` on multiple associations
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-4-using-fetch-fetchtype-eager-on-multiple-associations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-4-using-fetch-fetchtype-eager-on-multiple-associations-handwritten.svg" alt="Handwritten: Mistake 4: Using `fetch = FetchType.EAGER` on multiple associations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-4-using-fetch-fetchtype-eager-on-multiple-associations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-4-using-fetch-fetchtype-eager-on-multiple-associations-diagram.svg" alt="Diagram: Mistake 4: Using `fetch = FetchType.EAGER` on multiple associations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-4-using-fetch-fetchtype-eager-on-multiple-associations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-4-using-fetch-fetchtype-eager-on-multiple-associations-sticky.svg" alt="Sticky Note: Mistake 4: Using `fetch = FetchType.EAGER` on multiple associations" width="30%">
-</a>
 
 ```java
 // ❌ WRONG: Multiple EAGER associations cause Cartesian products
@@ -826,16 +706,6 @@ public class Order {
 
 ### Mistake 5: Modifying persisted entities outside a transaction
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-5-modifying-persisted-entities-outside-a-transaction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-5-modifying-persisted-entities-outside-a-transaction-handwritten.svg" alt="Handwritten: Mistake 5: Modifying persisted entities outside a transaction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-5-modifying-persisted-entities-outside-a-transaction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-5-modifying-persisted-entities-outside-a-transaction-diagram.svg" alt="Diagram: Mistake 5: Modifying persisted entities outside a transaction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-5-modifying-persisted-entities-outside-a-transaction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-5-modifying-persisted-entities-outside-a-transaction-sticky.svg" alt="Sticky Note: Mistake 5: Modifying persisted entities outside a transaction" width="30%">
-</a>
-
 ```java
 // ❌ WRONG: Change made after transaction commits — no UPDATE generated
 @Transactional
@@ -854,16 +724,6 @@ p.setPrice(newPrice);  // change is lost! No UPDATE sent to DB
 ```
 
 ### Mistake 6: Not handling LazyInitializationException
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-6-not-handling-lazyinitializationexception-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-6-not-handling-lazyinitializationexception-handwritten.svg" alt="Handwritten: Mistake 6: Not handling LazyInitializationException" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-6-not-handling-lazyinitializationexception-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-6-not-handling-lazyinitializationexception-diagram.svg" alt="Diagram: Mistake 6: Not handling LazyInitializationException" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-6-not-handling-lazyinitializationexception-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases-a/mistake-6-not-handling-lazyinitializationexception-sticky.svg" alt="Sticky Note: Mistake 6: Not handling LazyInitializationException" width="30%">
-</a>
 
 ```java
 // ❌ WRONG: Lazy loading after session close

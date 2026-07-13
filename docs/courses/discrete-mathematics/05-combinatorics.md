@@ -86,16 +86,6 @@ flowchart LR
 
 ### 5.1 Fundamental Counting Principles
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-1-fundamental-counting-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-1-fundamental-counting-principles-handwritten.svg" alt="Handwritten: 5.1 Fundamental Counting Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-1-fundamental-counting-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-1-fundamental-counting-principles-diagram.svg" alt="Diagram: 5.1 Fundamental Counting Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-1-fundamental-counting-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-1-fundamental-counting-principles-sticky.svg" alt="Sticky Note: 5.1 Fundamental Counting Principles" width="30%">
-</a>
-
 
 **Sum Rule (Rule of Disjunction).** If task A can be done in $m$ ways and task B in $n$ ways, and the two tasks cannot be done simultaneously, then there are $m + n$ ways to do either A or B.
 
@@ -107,16 +97,6 @@ flowchart LR
 
 ### 5.2 Permutations
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-2-permutations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-2-permutations-handwritten.svg" alt="Handwritten: 5.2 Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-2-permutations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-2-permutations-diagram.svg" alt="Diagram: 5.2 Permutations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-2-permutations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-2-permutations-sticky.svg" alt="Sticky Note: 5.2 Permutations" width="30%">
-</a>
-
 
 A **permutation** of $n$ distinct elements is an ordered arrangement of them. The number of permutations of $n$ elements taken $r$ at a time (ordered, without repetition) is:
 $$P(n, r) = \frac{n!}{(n-r)!} = n(n-1)(n-2)\cdots(n-r+1)$$
@@ -126,16 +106,6 @@ When repetition is allowed, the number is $n^r$.
 > **One-Sentence Takeaway:** Permutations count ordered arrangements; use $P(n,r) = n!/(n-r)!$ when order matters and repetition is disallowed.
 
 ### 5.3 Combinations
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-3-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-3-combinations-handwritten.svg" alt="Handwritten: 5.3 Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-3-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-3-combinations-diagram.svg" alt="Diagram: 5.3 Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-3-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-3-combinations-sticky.svg" alt="Sticky Note: 5.3 Combinations" width="30%">
-</a>
 
 
 A **combination** of $n$ elements taken $r$ at a time is an unordered selection (subset). The number is:
@@ -150,16 +120,6 @@ $$\binom{n}{r} = C(n, r) = \frac{n!}{r!(n-r)!}$$
 > **One-Sentence Takeaway:** Combinations count unordered subsets; use $\binom{n}{r} = n!/(r!(n-r)!)$ when selection order does not matter.
 
 ### 5.4 The Binomial Theorem
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-4-the-binomial-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-4-the-binomial-theorem-handwritten.svg" alt="Handwritten: 5.4 The Binomial Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-4-the-binomial-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-4-the-binomial-theorem-diagram.svg" alt="Diagram: 5.4 The Binomial Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-4-the-binomial-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-4-the-binomial-theorem-sticky.svg" alt="Sticky Note: 5.4 The Binomial Theorem" width="30%">
-</a>
 
 
 **Theorem 5.2 (Binomial Theorem).** For any integers $n \geq 0$ and real numbers $x, y$:
@@ -200,16 +160,6 @@ console.log(binomialExpansion(4)); // ["1x^4", "4x^3y", "6x^2y^2", "4xy^3", "1y^
 
 ### 5.5 Pigeonhole Principle
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-5-pigeonhole-principle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-5-pigeonhole-principle-handwritten.svg" alt="Handwritten: 5.5 Pigeonhole Principle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-5-pigeonhole-principle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-5-pigeonhole-principle-diagram.svg" alt="Diagram: 5.5 Pigeonhole Principle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-5-pigeonhole-principle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-5-pigeonhole-principle-sticky.svg" alt="Sticky Note: 5.5 Pigeonhole Principle" width="30%">
-</a>
-
 
 **Theorem 5.3 (Pigeonhole Principle).** If $n$ items are placed into $m$ boxes and $n > m$, then at least one box contains at least two items.
 
@@ -222,16 +172,6 @@ console.log(binomialExpansion(4)); // ["1x^4", "4x^3y", "6x^2y^2", "4xy^3", "1y^
 **Example (Birthday problem).** In a group of 23 people, the probability that at least two share a birthday is approximately 50%. By the pigeonhole principle, with 367 people a collision is guaranteed (only 366 possible birthdays including Feb 29).
 
 ### 5.6 Permutations with Repetition
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-6-permutations-with-repetition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-6-permutations-with-repetition-handwritten.svg" alt="Handwritten: 5.6 Permutations with Repetition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-6-permutations-with-repetition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-6-permutations-with-repetition-diagram.svg" alt="Diagram: 5.6 Permutations with Repetition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-6-permutations-with-repetition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-6-permutations-with-repetition-sticky.svg" alt="Sticky Note: 5.6 Permutations with Repetition" width="30%">
-</a>
 
 
 The number of distinct permutations of $n$ objects where there are $n_1$ of type 1, $n_2$ of type 2, ..., $n_k$ of type $k$ (with $n_1 + \cdots + n_k = n$) is:
@@ -258,16 +198,6 @@ console.log(multinomialPermutation(11, [1, 4, 4, 2])); // 34,650
 
 ### 5.7 Combinations with Repetition (Stars and Bars)
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-7-combinations-with-repetition-stars-and-bars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-7-combinations-with-repetition-stars-and-bars-handwritten.svg" alt="Handwritten: 5.7 Combinations with Repetition (Stars and Bars)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-7-combinations-with-repetition-stars-and-bars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-7-combinations-with-repetition-stars-and-bars-diagram.svg" alt="Diagram: 5.7 Combinations with Repetition (Stars and Bars)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-7-combinations-with-repetition-stars-and-bars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-7-combinations-with-repetition-stars-and-bars-sticky.svg" alt="Sticky Note: 5.7 Combinations with Repetition (Stars and Bars)" width="30%">
-</a>
-
 
 The number of ways to choose $r$ items from $n$ types with unlimited repetition (stars and bars) is:
 $$\binom{n + r - 1}{r}$$
@@ -280,16 +210,6 @@ $$\binom{n + r - 1}{r}$$
 
 ### 5.8 Inclusion-Exclusion Principle (General)
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-8-inclusion-exclusion-principle-general-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-8-inclusion-exclusion-principle-general-handwritten.svg" alt="Handwritten: 5.8 Inclusion-Exclusion Principle (General)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-8-inclusion-exclusion-principle-general-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-8-inclusion-exclusion-principle-general-diagram.svg" alt="Diagram: 5.8 Inclusion-Exclusion Principle (General)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-8-inclusion-exclusion-principle-general-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-8-inclusion-exclusion-principle-general-sticky.svg" alt="Sticky Note: 5.8 Inclusion-Exclusion Principle (General)" width="30%">
-</a>
-
 
 For $n$ finite sets $A_1, A_2, \ldots, A_n$:
 $$\left|\bigcup_{i=1}^{n} A_i\right| = \sum_{i} |A_i| - \sum_{i&lt;j} |A_i \cap A_j| + \sum_{i<j<k} |A_i \cap A_j \cap A_k| - \cdots + (-1)^{n+1} |A_1 \cap \cdots \cap A_n|$$
@@ -300,16 +220,6 @@ $$!n = n! \sum_{i=0}^{n} \frac{(-1)^i}{i!}$$
 This follows from inclusion-exclusion: total permutations minus those fixing at least one element.
 
 ### 5.9 Combinatorial Proofs
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-9-combinatorial-proofs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-9-combinatorial-proofs-handwritten.svg" alt="Handwritten: 5.9 Combinatorial Proofs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-9-combinatorial-proofs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-9-combinatorial-proofs-diagram.svg" alt="Diagram: 5.9 Combinatorial Proofs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-9-combinatorial-proofs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-9-combinatorial-proofs-sticky.svg" alt="Sticky Note: 5.9 Combinatorial Proofs" width="30%">
-</a>
 
 
 A **combinatorial proof** counts the same set in two different ways and equates the expressions. This is a powerful technique for proving binomial identities.
@@ -341,16 +251,6 @@ console.log(left === right); // true (both = 70)
 ```
 
 ### 5.10 Catalan Numbers
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-10-catalan-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-10-catalan-numbers-handwritten.svg" alt="Handwritten: 5.10 Catalan Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-10-catalan-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-10-catalan-numbers-diagram.svg" alt="Diagram: 5.10 Catalan Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-10-catalan-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/05-combinatorics/5-10-catalan-numbers-sticky.svg" alt="Sticky Note: 5.10 Catalan Numbers" width="30%">
-</a>
 
 
 **Catalan numbers** count many combinatorial structures (valid parentheses, binary trees, lattice paths):

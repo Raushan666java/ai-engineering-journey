@@ -1,72 +1,111 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
   <defs>
-    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowSm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowMd" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
       <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
     </marker>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#e2e8f0"/>
+    </pattern>
+    <pattern id="lineGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
+    </pattern>
   </defs>
-  <rect width="1000" height="700" fill="#ffffff" rx="6"/>
-  <!-- Light grid -->
-  <pattern id="vgrid" width="40" height="40" patternUnits="userSpaceOnUse">
-    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#f8fafc" stroke-width="0.5"/>
-  </pattern>
-  <rect width="1000" height="700" fill="url(#vgrid)"/>
-    <rect x="40" y="50" width="920" height="50" rx="8" fill="#2563eb"/>
-  <text x="500" y="82" font-size="20" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 5 — ES6+ JavaScript</text>
-  <rect x="60" y="120" width="880" height="55" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="1.5"/>
-    <rect x="60" y="120" width="8" height="55" rx="3" fill="#1e40af"/>
-    <text x="85" y="142" font-size="13" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Core Concept</text>
-  <text x="85" y="162" font-size="11" fill="#475569" font-family="Arial, sans-serif">What: the difference between `Map` and `WeakMap`?</text>
-  <line x1="500" y1="180" x2="500" y2="190" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <rect x="60" y="205" width="880" height="75" rx="6" fill="#d1fae5" stroke="#065f46" stroke-width="1.5"/>
-    <rect x="60" y="205" width="8" height="75" rx="3" fill="#065f46"/>
-    <text x="85" y="227" font-size="13" font-weight="bold" fill="#065f46" font-family="Arial, sans-serif">Architecture</text>
-  <text x="85" y="247" font-size="11" fill="#475569" font-family="Arial, sans-serif">Array destructuring: → Object destructuring: → Spread → Rest → Named</text>
-  <text x="85" y="265" font-size="11" fill="#475569" font-family="Arial, sans-serif">exports: → Default export:</text>
-  <line x1="500" y1="285" x2="500" y2="295" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <rect x="60" y="310" width="880" height="75" rx="6" fill="#fae8ff" stroke="#701a75" stroke-width="1.5"/>
-    <rect x="60" y="310" width="8" height="75" rx="3" fill="#701a75"/>
-    <text x="85" y="332" font-size="13" font-weight="bold" fill="#701a75" font-family="Arial, sans-serif">Formulas</text>
-  <text x="85" y="352" font-size="11" fill="#475569" font-family="Arial, sans-serif">1: {}
-const price = 29.99;
-const formatted = `Total: | 2: {(price *</text>
-  <text x="85" y="370" font-size="11" fill="#475569" font-family="Arial, sans-serif">1.08).toFixed(2)}`;
-
-// Multi-line
-const html = `
-  &lt;div</text>
-  <text x="85" y="388" font-size="11" fill="#475569" font-family="Arial, sans-serif">class=&quot;card&quot;&gt;
-    &lt;h2&gt; | 3: {age}&lt;/p&gt;</text>
-  <text x="85" y="406" font-size="11" fill="#475569" font-family="Arial, sans-serif">&lt;/div&gt;
-`;
-
-// Tagged templates — custom processing
-function</text>
-  <text x="85" y="424" font-size="11" fill="#475569" font-family="Arial, sans-serif">highlight(strings, ...v | 4: {value}`;
-  },</text>
-  <text x="85" y="442" font-size="11" fill="#475569" font-family="Arial, sans-serif">&apos;&apos;);
-}
-
-const name2 = &apos;Bob&apos;;
-const rendered =</text>
-  <text x="85" y="460" font-size="11" fill="#475569" font-family="Arial, sans-serif">highlight`Hello, | 5: {role}`;
-}
-```
-
-### 5.5 Spread and</text>
-  <text x="85" y="478" font-size="11" fill="#475569" font-family="Arial, sans-serif">Rest
-
-&lt;a href=&quot;../../../assets/images/diagrams/web-developme</text>
-  <text x="85" y="496" font-size="11" fill="#475569" font-family="Arial, sans-serif">| 6: {rest.join(&apos;, &apos;)}`);
-}
-
-// Destructuring with</text>
-  <text x="85" y="514" font-size="11" fill="#475569" font-family="Arial, sans-serif">rest
-const [winner, ...runnersUp] = [&apos;Alice&apos;, &apos;Bob</text>
-  <line x1="500" y1="390" x2="500" y2="400" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
-  <rect x="60" y="415" width="880" height="55" rx="6" fill="#fce7f3" stroke="#831843" stroke-width="1.5"/>
-    <rect x="60" y="415" width="8" height="55" rx="3" fill="#831843"/>
-    <text x="85" y="437" font-size="13" font-weight="bold" fill="#831843" font-family="Arial, sans-serif">Key Takeaway</text>
-  <text x="85" y="457" font-size="11" fill="#475569" font-family="Arial, sans-serif">One-Sentence Takeaway:</text>
-  <!-- Footer note -->
-  <text x="500" y="688" font-size="10" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif">Chapter 5 — ES6+ JavaScript</text>
+  <!-- Background -->
+  <rect width="1000" height="700" fill="url(#gBg)"/>
+  <rect width="1000" height="700" fill="url(#dotGrid)"/>
+  <!-- Side decoration -->
+  <rect x="0" y="0" width="6" height="700" fill="url(#gBlue)" opacity="0.15"/>
+  <!-- Header shade -->
+  <rect x="0" y="0" width="1000" height="6" fill="url(#gBlue)" opacity="0.08"/>
+  <!-- Cards and arrows -->
+    <rect x="40" y="40" width="920" height="56" rx="10" fill="url(#gBlue)" filter="url(#shadowMd)"/>
+  <text x="500" y="76" font-size="22" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">Chapter 5 — ES6+ JavaScript</text>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="116" width="880" height="60" rx="8" fill="#eff6ff"/>
+    <rect x="60" y="116" width="6" height="60" rx="3" fill="#2563eb"/>
+    <rect x="60" y="116" width="880" height="60" rx="8" fill="none" stroke="#2563eb" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g transform="translate(70,124)">
+    <ellipse cx="8.399999999999999" cy="12" rx="4.800000000000001" ry="7.199999999999999" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <ellipse cx="15.600000000000001" cy="12" rx="4.800000000000001" ry="7.199999999999999" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <path d="M8.399999999999999,6 Q12,3.5999999999999996 15.600000000000001,6" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <path d="M8.399999999999999,18 Q12,20.4 15.600000000000001,18" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+  </g>
+  <text x="104" y="136" font-size="14" font-weight="bold" fill="#2563eb" font-family="Arial, sans-serif">Core Concept</text>
+  <text x="104" y="154" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Map: key-value collections with any type as key:</text>
+  <line x1="500" y1="182" x2="500" y2="192" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="202" width="880" height="68" rx="8" fill="#d1fae5"/>
+    <rect x="60" y="202" width="6" height="68" rx="3" fill="#059669"/>
+    <rect x="60" y="202" width="880" height="68" rx="8" fill="none" stroke="#059669" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <g transform="translate(70,210)">
+    <ellipse cx="12" cy="6" rx="9.600000000000001" ry="2.88" fill="#059669" opacity="0.3"/>
+    <path d="M2.4000000000000004,6 L2.4000000000000004,18 C2.4000000000000004,20.4 21.6,20.4 21.6,18 L21.6,6" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M2.4000000000000004,12 C2.4000000000000004,14.399999999999999 21.6,14.399999999999999 21.6,12" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <text x="104" y="222" font-size="14" font-weight="bold" fill="#059669" font-family="Arial, sans-serif">Architecture</text>
+  <text x="104" y="240" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Array destructuring: → Object destructuring: → Spread → Rest → Named</text>
+  <text x="104" y="258" font-size="12" fill="#64748b" font-family="Arial, sans-serif">exports: → Default export:</text>
+  <line x1="500" y1="276" x2="500" y2="286" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="296" width="880" height="68" rx="8" fill="#f3e8ff"/>
+    <rect x="60" y="296" width="6" height="68" rx="3" fill="#7c3aed"/>
+    <rect x="60" y="296" width="880" height="68" rx="8" fill="none" stroke="#7c3aed" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <rect x="72" y="306" width="20" height="20" rx="3" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+    <rect x="76" y="310" width="12" height="12" rx="2" fill="#7c3aed" opacity="0.15"/>
+    <line x1="70" y1="312" x2="70" y2="320" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="94" y1="312" x2="94" y2="320" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="82" y1="300" x2="82" y2="308" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="82" y1="324" x2="82" y2="332" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="104" y="316" font-size="14" font-weight="bold" fill="#7c3aed" font-family="Arial, sans-serif">Formulas</text>
+  <text x="104" y="334" font-size="12" fill="#64748b" font-family="Arial, sans-serif">Formula 1: name and I am  |  Formula 2: const price = 29.99; const</text>
+  <text x="104" y="352" font-size="12" fill="#64748b" font-family="Arial, sans-serif">formatted = `Total:  |  Formula 3: price *...</text>
+  <line x1="500" y1="370" x2="500" y2="380" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" marker-end="url(#arrowGray)"/>
+  <g filter="url(#shadowSm)">
+    <rect x="60" y="390" width="880" height="60" rx="8" fill="#eff6ff"/>
+    <rect x="60" y="390" width="6" height="60" rx="3" fill="#1e40af"/>
+    <rect x="60" y="390" width="880" height="60" rx="8" fill="none" stroke="#1e40af" stroke-width="0.5" opacity="0.2"/>
+  </g>
+  <polygon points="82,398 76,410 80.08,410 79.12,422 85.6,408.8 81.52,408.8" fill="#1e40af" opacity="0.7"/>
+  <text x="104" y="410" font-size="14" font-weight="bold" fill="#1e40af" font-family="Arial, sans-serif">Key Takeaway</text>
+  <text x="104" y="428" font-size="12" fill="#64748b" font-family="Arial, sans-serif">One-Sentence Takeaway:</text>
+  <rect x="840" y="394" width="93" height="20" rx="10" fill="#1e40af" opacity="0.12"/>
+    <text x="886.5" y="408" font-size="10" font-weight="bold" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">⭐ Important</text>
+  <!-- Spacer -->
+  <!-- Footer -->
+  <text x="500" y="688" font-size="10" fill="#94a3b8" text-anchor="middle" font-family="Arial, sans-serif">Chapter 5 — ES6+ JavaScript · Visual Explanation</text>
 </svg>

@@ -49,7 +49,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Problem Classification Flow
 
 ```mermaid
@@ -121,16 +120,6 @@ xychart-beta
 
 ### Problem 1: Find if Path Exists in Graph
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-1-find-if-path-exists-in-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-1-find-if-path-exists-in-graph-handwritten.svg" alt="Handwritten: Problem 1: Find if Path Exists in Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-1-find-if-path-exists-in-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-1-find-if-path-exists-in-graph-diagram.svg" alt="Diagram: Problem 1: Find if Path Exists in Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-1-find-if-path-exists-in-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-1-find-if-path-exists-in-graph-sticky.svg" alt="Sticky Note: Problem 1: Find if Path Exists in Graph" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph, DFS, BFS, Union-Find]
@@ -191,16 +180,6 @@ console.log(validPath(6, [[0,1],[0,2],[3,5],[5,4],[4,3]], 0, 5)); // false
 
 ### Problem 2: Find Center of Star Graph
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-2-find-center-of-star-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-2-find-center-of-star-graph-handwritten.svg" alt="Handwritten: Problem 2: Find Center of Star Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-2-find-center-of-star-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-2-find-center-of-star-graph-diagram.svg" alt="Diagram: Problem 2: Find Center of Star Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-2-find-center-of-star-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-2-find-center-of-star-graph-sticky.svg" alt="Sticky Note: Problem 2: Find Center of Star Graph" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph]
@@ -233,16 +212,6 @@ console.log(findCenter([[1,2],[5,1],[1,3],[1,4]])); // 1
 ---
 
 ### Problem 3: Flood Fill
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-3-flood-fill-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-3-flood-fill-handwritten.svg" alt="Handwritten: Problem 3: Flood Fill" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-3-flood-fill-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-3-flood-fill-diagram.svg" alt="Diagram: Problem 3: Flood Fill" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-3-flood-fill-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-3-flood-fill-sticky.svg" alt="Sticky Note: Problem 3: Flood Fill" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
@@ -294,16 +263,6 @@ console.log(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2));
 
 ### Problem 4: Island Perimeter
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-4-island-perimeter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-4-island-perimeter-handwritten.svg" alt="Handwritten: Problem 4: Island Perimeter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-4-island-perimeter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-4-island-perimeter-diagram.svg" alt="Diagram: Problem 4: Island Perimeter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-4-island-perimeter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-4-island-perimeter-sticky.svg" alt="Sticky Note: Problem 4: Island Perimeter" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Graph, Matrix, DFS]
@@ -350,16 +309,6 @@ console.log(islandPerimeter([
 ---
 
 ### Problem 5: Find the Town Judge
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-5-find-the-town-judge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-5-find-the-town-judge-handwritten.svg" alt="Handwritten: Problem 5: Find the Town Judge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-5-find-the-town-judge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-5-find-the-town-judge-diagram.svg" alt="Diagram: Problem 5: Find the Town Judge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-5-find-the-town-judge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-5-find-the-town-judge-sticky.svg" alt="Sticky Note: Problem 5: Find the Town Judge" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Easy
@@ -411,16 +360,6 @@ console.log(findJudge(3, [[1,3],[2,3],[3,1]])); // -1
 ---
 
 ### Problem 6: Number of Islands
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-6-number-of-islands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-6-number-of-islands-handwritten.svg" alt="Handwritten: Problem 6: Number of Islands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-6-number-of-islands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-6-number-of-islands-diagram.svg" alt="Diagram: Problem 6: Number of Islands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-6-number-of-islands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-6-number-of-islands-sticky.svg" alt="Sticky Note: Problem 6: Number of Islands" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -495,16 +434,6 @@ console.log(numIslands([
 
 ### Problem 7: Clone Graph
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-7-clone-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-7-clone-graph-handwritten.svg" alt="Handwritten: Problem 7: Clone Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-7-clone-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-7-clone-graph-diagram.svg" alt="Diagram: Problem 7: Clone Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-7-clone-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-7-clone-graph-sticky.svg" alt="Sticky Note: Problem 7: Clone Graph" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Hash Table]
@@ -576,16 +505,6 @@ console.log(cloned !== n1); // true
 
 ### Problem 8: Course Schedule
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-8-course-schedule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-8-course-schedule-handwritten.svg" alt="Handwritten: Problem 8: Course Schedule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-8-course-schedule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-8-course-schedule-diagram.svg" alt="Diagram: Problem 8: Course Schedule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-8-course-schedule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-8-course-schedule-sticky.svg" alt="Sticky Note: Problem 8: Course Schedule" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Topological Sort]
@@ -647,16 +566,6 @@ console.log(canFinish(5, [[1,0],[2,1],[3,2],[4,3]])); // true
 
 ### Problem 9: Course Schedule II
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-9-course-schedule-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-9-course-schedule-ii-handwritten.svg" alt="Handwritten: Problem 9: Course Schedule II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-9-course-schedule-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-9-course-schedule-ii-diagram.svg" alt="Diagram: Problem 9: Course Schedule II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-9-course-schedule-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-9-course-schedule-ii-sticky.svg" alt="Sticky Note: Problem 9: Course Schedule II" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Topological Sort]
@@ -710,16 +619,6 @@ console.log(findOrder(2, [[1,0],[0,1]])); // []
 ---
 
 ### Problem 10: Word Ladder
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-10-word-ladder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-10-word-ladder-handwritten.svg" alt="Handwritten: Problem 10: Word Ladder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-10-word-ladder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-10-word-ladder-diagram.svg" alt="Diagram: Problem 10: Word Ladder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-10-word-ladder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-10-word-ladder-sticky.svg" alt="Sticky Note: Problem 10: Word Ladder" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -782,16 +681,6 @@ console.log(ladderLength("hit", "cog", ["hot","dot","dog","lot","log"])); // 0
 
 ### Problem 11: Pacific Atlantic Water Flow
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-11-pacific-atlantic-water-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-11-pacific-atlantic-water-flow-handwritten.svg" alt="Handwritten: Problem 11: Pacific Atlantic Water Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-11-pacific-atlantic-water-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-11-pacific-atlantic-water-flow-diagram.svg" alt="Diagram: Problem 11: Pacific Atlantic Water Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-11-pacific-atlantic-water-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-11-pacific-atlantic-water-flow-sticky.svg" alt="Sticky Note: Problem 11: Pacific Atlantic Water Flow" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Matrix, DFS, BFS]
@@ -849,16 +738,6 @@ function pacificAtlantic(heights: number[][]): number[][] {
 ---
 
 ### Problem 12: Rotting Oranges
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-12-rotting-oranges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-12-rotting-oranges-handwritten.svg" alt="Handwritten: Problem 12: Rotting Oranges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-12-rotting-oranges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-12-rotting-oranges-diagram.svg" alt="Diagram: Problem 12: Rotting Oranges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-12-rotting-oranges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-12-rotting-oranges-sticky.svg" alt="Sticky Note: Problem 12: Rotting Oranges" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -922,16 +801,6 @@ console.log(orangesRotting([[2,1,1],[0,1,1],[1,0,1]])); // -1
 
 ### Problem 13: Graph Valid Tree
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-13-graph-valid-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-13-graph-valid-tree-handwritten.svg" alt="Handwritten: Problem 13: Graph Valid Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-13-graph-valid-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-13-graph-valid-tree-diagram.svg" alt="Diagram: Problem 13: Graph Valid Tree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-13-graph-valid-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-13-graph-valid-tree-sticky.svg" alt="Sticky Note: Problem 13: Graph Valid Tree" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Union-Find]
@@ -987,16 +856,6 @@ console.log(validTree(5, [[0,1],[1,2],[2,3],[1,3],[1,4]])); // false
 ---
 
 ### Problem 14: Surrounded Regions
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-14-surrounded-regions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-14-surrounded-regions-handwritten.svg" alt="Handwritten: Problem 14: Surrounded Regions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-14-surrounded-regions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-14-surrounded-regions-diagram.svg" alt="Diagram: Problem 14: Surrounded Regions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-14-surrounded-regions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-14-surrounded-regions-sticky.svg" alt="Sticky Note: Problem 14: Surrounded Regions" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
@@ -1062,16 +921,6 @@ console.log(board);
 
 ### Problem 15: Number of Connected Components in a Graph
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-15-number-of-connected-components-in-a-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-15-number-of-connected-components-in-a-graph-handwritten.svg" alt="Handwritten: Problem 15: Number of Connected Components in a Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-15-number-of-connected-components-in-a-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-15-number-of-connected-components-in-a-graph-diagram.svg" alt="Diagram: Problem 15: Number of Connected Components in a Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-15-number-of-connected-components-in-a-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-15-number-of-connected-components-in-a-graph-sticky.svg" alt="Sticky Note: Problem 15: Number of Connected Components in a Graph" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, Union-Find, DFS]
@@ -1130,16 +979,6 @@ console.log(countComponents(5, [[0,1],[1,2],[2,3],[3,4]])); // 1
 
 ### Problem 16: Detect Cycle in Directed Graph
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-16-detect-cycle-in-directed-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-16-detect-cycle-in-directed-graph-handwritten.svg" alt="Handwritten: Problem 16: Detect Cycle in Directed Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-16-detect-cycle-in-directed-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-16-detect-cycle-in-directed-graph-diagram.svg" alt="Diagram: Problem 16: Detect Cycle in Directed Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-16-detect-cycle-in-directed-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-16-detect-cycle-in-directed-graph-sticky.svg" alt="Sticky Note: Problem 16: Detect Cycle in Directed Graph" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, Topological Sort]
@@ -1191,16 +1030,6 @@ console.log(hasCycle(4, [[0,1],[1,2],[1,3]])); // false
 ---
 
 ### Problem 17: Evaluate Division
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-17-evaluate-division-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-17-evaluate-division-handwritten.svg" alt="Handwritten: Problem 17: Evaluate Division" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-17-evaluate-division-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-17-evaluate-division-diagram.svg" alt="Diagram: Problem 17: Evaluate Division" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-17-evaluate-division-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-17-evaluate-division-sticky.svg" alt="Sticky Note: Problem 17: Evaluate Division" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
@@ -1269,16 +1098,6 @@ console.log(calcEquation(
 
 ### Problem 18: Minesweeper
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-18-minesweeper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-18-minesweeper-handwritten.svg" alt="Handwritten: Problem 18: Minesweeper" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-18-minesweeper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-18-minesweeper-diagram.svg" alt="Diagram: Problem 18: Minesweeper" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-18-minesweeper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-18-minesweeper-sticky.svg" alt="Sticky Note: Problem 18: Minesweeper" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, DFS, BFS, Matrix]
@@ -1342,16 +1161,6 @@ function updateBoard(board: string[][], click: number[]): string[][] {
 
 ### Problem 19: Shortest Path in Binary Matrix
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-19-shortest-path-in-binary-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-19-shortest-path-in-binary-matrix-handwritten.svg" alt="Handwritten: Problem 19: Shortest Path in Binary Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-19-shortest-path-in-binary-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-19-shortest-path-in-binary-matrix-diagram.svg" alt="Diagram: Problem 19: Shortest Path in Binary Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-19-shortest-path-in-binary-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-19-shortest-path-in-binary-matrix-sticky.svg" alt="Sticky Note: Problem 19: Shortest Path in Binary Matrix" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Graph, BFS, Matrix]
@@ -1410,16 +1219,6 @@ console.log(shortestPathBinaryMatrix([[0,0,0],[1,1,0],[1,1,0]])); // 4
 ---
 
 ### Problem 20: Alien Dictionary
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-20-alien-dictionary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-20-alien-dictionary-handwritten.svg" alt="Handwritten: Problem 20: Alien Dictionary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-20-alien-dictionary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-20-alien-dictionary-diagram.svg" alt="Diagram: Problem 20: Alien Dictionary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-20-alien-dictionary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-20-alien-dictionary-sticky.svg" alt="Sticky Note: Problem 20: Alien Dictionary" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
@@ -1496,16 +1295,6 @@ console.log(alienOrder(["z","x","z"])); // ""
 
 ### Problem 21: Minimum Height Trees
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-21-minimum-height-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-21-minimum-height-trees-handwritten.svg" alt="Handwritten: Problem 21: Minimum Height Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-21-minimum-height-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-21-minimum-height-trees-diagram.svg" alt="Diagram: Problem 21: Minimum Height Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-21-minimum-height-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-21-minimum-height-trees-sticky.svg" alt="Sticky Note: Problem 21: Minimum Height Trees" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, BFS, Topological Sort]
@@ -1566,16 +1355,6 @@ console.log(findMinHeightTrees(6, [[3,0],[3,1],[3,2],[3,4],[5,4]])); // [3, 4]
 ---
 
 ### Problem 22: Cheapest Flights Within K Stops
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-22-cheapest-flights-within-k-stops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-22-cheapest-flights-within-k-stops-handwritten.svg" alt="Handwritten: Problem 22: Cheapest Flights Within K Stops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-22-cheapest-flights-within-k-stops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-22-cheapest-flights-within-k-stops-diagram.svg" alt="Diagram: Problem 22: Cheapest Flights Within K Stops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-22-cheapest-flights-within-k-stops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-22-cheapest-flights-within-k-stops-sticky.svg" alt="Sticky Note: Problem 22: Cheapest Flights Within K Stops" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
@@ -1638,16 +1417,6 @@ console.log(findCheapestPrice(4,
 ---
 
 ### Problem 23: Word Ladder II
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-23-word-ladder-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-23-word-ladder-ii-handwritten.svg" alt="Handwritten: Problem 23: Word Ladder II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-23-word-ladder-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-23-word-ladder-ii-diagram.svg" alt="Diagram: Problem 23: Word Ladder II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-23-word-ladder-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-23-word-ladder-ii-sticky.svg" alt="Sticky Note: Problem 23: Word Ladder II" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
@@ -1721,16 +1490,6 @@ function findLadders(beginWord: string, endWord: string, wordList: string[]): st
 
 ### Problem 24: Longest Increasing Path in a Matrix
 
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-24-longest-increasing-path-in-a-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-24-longest-increasing-path-in-a-matrix-handwritten.svg" alt="Handwritten: Problem 24: Longest Increasing Path in a Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-24-longest-increasing-path-in-a-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-24-longest-increasing-path-in-a-matrix-diagram.svg" alt="Diagram: Problem 24: Longest Increasing Path in a Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-24-longest-increasing-path-in-a-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-24-longest-increasing-path-in-a-matrix-sticky.svg" alt="Sticky Note: Problem 24: Longest Increasing Path in a Matrix" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
 📂 **Topics:** [Graph, Matrix, DFS, DP, Topological Sort]
@@ -1790,16 +1549,6 @@ console.log(longestIncreasingPath([[3,4,5],[3,2,6],[2,2,1]])); // 4
 ---
 
 ### Problem 25: Bus Routes
-
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-25-bus-routes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-25-bus-routes-handwritten.svg" alt="Handwritten: Problem 25: Bus Routes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-25-bus-routes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-25-bus-routes-diagram.svg" alt="Diagram: Problem 25: Bus Routes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/06-graphs/problem-25-bus-routes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/06-graphs/problem-25-bus-routes-sticky.svg" alt="Sticky Note: Problem 25: Bus Routes" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard

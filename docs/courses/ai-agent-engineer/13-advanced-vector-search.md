@@ -66,16 +66,6 @@
 
 ### BM25 + Dense Vector + Sparse Vector
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/bm25-dense-vector-sparse-vector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/bm25-dense-vector-sparse-vector-handwritten.svg" alt="Handwritten: BM25 + Dense Vector + Sparse Vector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/bm25-dense-vector-sparse-vector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/bm25-dense-vector-sparse-vector-diagram.svg" alt="Diagram: BM25 + Dense Vector + Sparse Vector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/bm25-dense-vector-sparse-vector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/bm25-dense-vector-sparse-vector-sticky.svg" alt="Sticky Note: BM25 + Dense Vector + Sparse Vector" width="30%">
-</a>
-
 
 ```python
 import math
@@ -233,16 +223,6 @@ def hybrid_search_demo(query: str):
 
 ### ColBERT-Style Late Interaction
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/colbert-style-late-interaction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/colbert-style-late-interaction-handwritten.svg" alt="Handwritten: ColBERT-Style Late Interaction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/colbert-style-late-interaction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/colbert-style-late-interaction-diagram.svg" alt="Diagram: ColBERT-Style Late Interaction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/colbert-style-late-interaction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/colbert-style-late-interaction-sticky.svg" alt="Sticky Note: ColBERT-Style Late Interaction" width="30%">
-</a>
-
 
 ```python
 import numpy as np
@@ -318,16 +298,6 @@ for r in results:
 
 ### HyDE (Hypothetical Document Embedding)
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/hyde-hypothetical-document-embedding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/hyde-hypothetical-document-embedding-handwritten.svg" alt="Handwritten: HyDE (Hypothetical Document Embedding)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/hyde-hypothetical-document-embedding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/hyde-hypothetical-document-embedding-diagram.svg" alt="Diagram: HyDE (Hypothetical Document Embedding)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/hyde-hypothetical-document-embedding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/hyde-hypothetical-document-embedding-sticky.svg" alt="Sticky Note: HyDE (Hypothetical Document Embedding)" width="30%">
-</a>
-
 
 ```python
 class HyDERetriever:
@@ -400,16 +370,6 @@ def multi_query_search(query: str, top_k: int = 5) -> list[str]:
 ## 13.4 Re-Ranking Deep-Dive
 
 ### Cross-Encoder Re-Ranker
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/cross-encoder-re-ranker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/cross-encoder-re-ranker-handwritten.svg" alt="Handwritten: Cross-Encoder Re-Ranker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/cross-encoder-re-ranker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/cross-encoder-re-ranker-diagram.svg" alt="Diagram: Cross-Encoder Re-Ranker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/cross-encoder-re-ranker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/cross-encoder-re-ranker-sticky.svg" alt="Sticky Note: Cross-Encoder Re-Ranker" width="30%">
-</a>
 
 
 ```python
@@ -1105,16 +1065,6 @@ async def run_ingestion():
 | **Best for** | Dev/ prototyping, small-medium | Production, large scale | You already use Postgres | Managed, zero ops |
 
 ### Migration Strategy
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/migration-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/migration-strategy-handwritten.svg" alt="Handwritten: Migration Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/migration-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/migration-strategy-diagram.svg" alt="Diagram: Migration Strategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/migration-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/13-advanced-vector-search/migration-strategy-sticky.svg" alt="Sticky Note: Migration Strategy" width="30%">
-</a>
 
 
 ```python

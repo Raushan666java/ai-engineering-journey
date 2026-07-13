@@ -14,7 +14,6 @@ dataset "Simplification" [60, 68, 75, 82, 88]
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/speed-drills/02-quant-advanced-drills/hero.svg" target="_blank" rel="noopener">
@@ -56,17 +55,6 @@ dataset "Simplification" [60, 68, 75, 82, 88]
 ## Data Interpretation Drills
 
 ### Set 1: Table DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-table-di-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-table-di-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Table DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-table-di-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-table-di-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Table DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-table-di-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-table-di-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Table DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 **Study the table and answer the 5 questions below.**
 
@@ -123,17 +111,6 @@ dataset "Simplification" [60, 68, 75, 82, 88]
 
 ### Set 2: Table DI — Production | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-table-di-production-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-table-di-production-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Table DI — Production | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-table-di-production-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-table-di-production-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Table DI — Production | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-table-di-production-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-table-di-production-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Table DI — Production | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 **Production data (in units) for 3 factories across 6 months:**
 
 | Factory | Q1 | Q2 | Q3 | Q4 | Q5 | Q6 |
@@ -185,17 +162,6 @@ dataset "Simplification" [60, 68, 75, 82, 88]
 </details>
 
 ### Set 3: Bar Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-bar-graph-di-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-bar-graph-di-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Bar Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-bar-graph-di-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-bar-graph-di-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Bar Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-bar-graph-di-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-bar-graph-di-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Bar Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 **A bar graph shows the number of students (in hundreds) in 5 departments across 2 years.**
 
@@ -255,17 +221,6 @@ Year 2023:  CSE=65   ECE=50   ME=40   CE=30   EE=38
 
 ### Set 4: Bar Graph — Revenue | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-bar-graph-revenue-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-bar-graph-revenue-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Bar Graph — Revenue | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-bar-graph-revenue-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-bar-graph-revenue-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Bar Graph — Revenue | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-bar-graph-revenue-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-bar-graph-revenue-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Bar Graph — Revenue | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 **Revenue (in ₹ lakhs) for 4 branches:**
 
 ```
@@ -319,17 +274,6 @@ Branch S: Year 1=140, Year 2=135, Year 3=150
 
 ### Set 5: Line Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-line-graph-di-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-line-graph-di-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Line Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-line-graph-di-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-line-graph-di-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Line Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-line-graph-di-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-line-graph-di-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Line Graph DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 **A line graph tracks the price (in ₹) of a stock over 6 days:**
 
 ```
@@ -379,17 +323,6 @@ Mon=120, Tue=130, Wed=125, Thu=140, Fri=135, Sat=145
 </details>
 
 ### Set 6: Line Graph — Temperature | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-line-graph-temperature-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-line-graph-temperature-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Line Graph — Temperature | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-line-graph-temperature-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-line-graph-temperature-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Line Graph — Temperature | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-line-graph-temperature-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-line-graph-temperature-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Line Graph — Temperature | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 **Temperature (°C) in 4 cities across 5 months:**
 
@@ -445,17 +378,6 @@ Bangalore:   20   22   26   28   30
 
 ### Set 7: Pie Chart DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-pie-chart-di-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-pie-chart-di-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7: Pie Chart DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-pie-chart-di-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-pie-chart-di-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7: Pie Chart DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-pie-chart-di-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-pie-chart-di-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7: Pie Chart DI | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 **A pie chart shows the distribution of a ₹18,00,000 budget:**
 
 ```
@@ -509,17 +431,6 @@ Others: 10%
 </details>
 
 ### Set 8: Pie Chart — Sales Distribution | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-pie-chart-sales-distribution-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-pie-chart-sales-distribution-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 8: Pie Chart — Sales Distribution | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-pie-chart-sales-distribution-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-pie-chart-sales-distribution-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 8: Pie Chart — Sales Distribution | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-pie-chart-sales-distribution-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-pie-chart-sales-distribution-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 8: Pie Chart — Sales Distribution | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 **Total sales of ₹24,00,000 distributed across 5 products:**
 
@@ -575,17 +486,6 @@ Product E: 8%
 
 ### Set 9: Mixed DI — Table + Pie | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-mixed-di-table-pie-target-5-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-mixed-di-table-pie-target-5-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 9: Mixed DI — Table + Pie | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-mixed-di-table-pie-target-5-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-mixed-di-table-pie-target-5-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 9: Mixed DI — Table + Pie | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-mixed-di-table-pie-target-5-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-mixed-di-table-pie-target-5-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 9: Mixed DI — Table + Pie | ⏱ Target: 5 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 **Data: A company's quarterly revenue (₹ lakhs) for 2023:**
 
 | Quarter | Product X | Product Y | Product Z |
@@ -638,17 +538,6 @@ Product E: 8%
 </details>
 
 ### Set 10: Mixed DI — All Types | ⏱ Target: 5 min | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-mixed-di-all-types-target-5-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-mixed-di-all-types-target-5-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 10: Mixed DI — All Types | ⏱ Target: 5 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-mixed-di-all-types-target-5-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-mixed-di-all-types-target-5-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 10: Mixed DI — All Types | ⏱ Target: 5 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-mixed-di-all-types-target-5-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-mixed-di-all-types-target-5-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 10: Mixed DI — All Types | ⏱ Target: 5 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 **Data: Marks (out of 100) of 5 students in 3 subjects:**
 
@@ -710,17 +599,6 @@ Actually I'll adjust: the median of {225, 237, 254, 255, 273} is 254. Since 254 
 
 ### Set 1: Simple Arithmetic Progression | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-simple-arithmetic-progression-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-simple-arithmetic-progression-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Simple Arithmetic Progression | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-simple-arithmetic-progression-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-simple-arithmetic-progression-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Simple Arithmetic Progression | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-simple-arithmetic-progression-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-simple-arithmetic-progression-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Simple Arithmetic Progression | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 Find the next term in each series.
 
 1. 3, 7, 11, 15, ? 
@@ -767,17 +645,6 @@ Find the next term in each series.
 
 ### Set 2: Geometric & Mixed Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-geometric-mixed-patterns-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-geometric-mixed-patterns-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Geometric & Mixed Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-geometric-mixed-patterns-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-geometric-mixed-patterns-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Geometric & Mixed Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-geometric-mixed-patterns-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-geometric-mixed-patterns-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Geometric & Mixed Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. 1, 4, 9, 16, ?
    - (A) 20
    - (B) 24
@@ -821,17 +688,6 @@ Find the next term in each series.
 </details>
 
 ### Set 3: Difference Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-difference-patterns-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-difference-patterns-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Difference Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-difference-patterns-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-difference-patterns-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Difference Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-difference-patterns-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-difference-patterns-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Difference Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 1. 2, 5, 10, 17, ?
    - (A) 24
@@ -877,17 +733,6 @@ Find the next term in each series.
 
 ### Set 4: Double/Triple Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-double-triple-patterns-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-double-triple-patterns-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Double/Triple Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-double-triple-patterns-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-double-triple-patterns-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Double/Triple Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-double-triple-patterns-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-double-triple-patterns-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Double/Triple Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. 1, 2, 4, 7, 11, ?
    - (A) 14
    - (B) 15
@@ -931,17 +776,6 @@ Find the next term in each series.
 </details>
 
 ### Set 5: Complex Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-complex-patterns-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-complex-patterns-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 5: Complex Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-complex-patterns-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-complex-patterns-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 5: Complex Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-complex-patterns-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-complex-patterns-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 5: Complex Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
 
 1. 3, 9, 27, 81, ?
    - (A) 162
@@ -987,17 +821,6 @@ Find the next term in each series.
 
 ### Set 6: Alternating Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-alternating-patterns-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-alternating-patterns-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 6: Alternating Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-alternating-patterns-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-alternating-patterns-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 6: Alternating Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-alternating-patterns-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-alternating-patterns-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 6: Alternating Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
-
 1. 4, 7, 6, 9, 8, 11, ?
    - (A) 10
    - (B) 12
@@ -1041,17 +864,6 @@ Find the next term in each series.
 </details>
 
 ### Set 7: Decimal/Fraction Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-decimal-fraction-series-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-decimal-fraction-series-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 7: Decimal/Fraction Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-decimal-fraction-series-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-decimal-fraction-series-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 7: Decimal/Fraction Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-decimal-fraction-series-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-decimal-fraction-series-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 7: Decimal/Fraction Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
 
 1. 0.5, 1, 1.5, 2, ?
    - (A) 2.25
@@ -1097,17 +909,6 @@ Find the next term in each series.
 
 ### Set 8: Powerful Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-powerful-patterns-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-powerful-patterns-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 8: Powerful Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-powerful-patterns-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-powerful-patterns-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 8: Powerful Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-powerful-patterns-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-powerful-patterns-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 8: Powerful Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. 2, 10, 30, 68, ?
    - (A) 120
    - (B) 125
@@ -1152,17 +953,6 @@ Find the next term in each series.
 
 ### Set 9: Miscellaneous Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-miscellaneous-patterns-target-2-min-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-miscellaneous-patterns-target-2-min-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 9: Miscellaneous Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-miscellaneous-patterns-target-2-min-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-miscellaneous-patterns-target-2-min-accuracy-goal-75-diagram.svg" alt="Diagram: Set 9: Miscellaneous Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-miscellaneous-patterns-target-2-min-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-miscellaneous-patterns-target-2-min-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 9: Miscellaneous Patterns | ⏱ Target: 2 min | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
-
 1. 15, 30, 60, 120, ?
    - (A) 180
    - (B) 210
@@ -1206,17 +996,6 @@ Find the next term in each series.
 </details>
 
 ### Set 10: Speed Challenge — Number Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-speed-challenge-number-series-target-2-min-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-speed-challenge-number-series-target-2-min-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 10: Speed Challenge — Number Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-speed-challenge-number-series-target-2-min-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-speed-challenge-number-series-target-2-min-accuracy-goal-90-diagram.svg" alt="Diagram: Set 10: Speed Challenge — Number Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-speed-challenge-number-series-target-2-min-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-speed-challenge-number-series-target-2-min-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 10: Speed Challenge — Number Series | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 1. 5, 10, 20, 40, ?
    - (A) 60
@@ -1266,17 +1045,6 @@ Find the next term in each series.
 
 ### Set 1: Basic Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-roots-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-roots-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Basic Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-roots-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-roots-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Basic Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-roots-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-roots-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Basic Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 Compare the roots (>, <, =, or cannot determine) for each pair.
 
 1. I: x² - 7x + 12 = 0 &nbsp;&nbsp; II: y² - 8y + 15 = 0
@@ -1323,17 +1091,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 
 ### Set 2: Root Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-root-comparison-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-root-comparison-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Root Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-root-comparison-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-root-comparison-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Root Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-root-comparison-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-root-comparison-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Root Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. I: x² - 6x + 8 = 0 &nbsp;&nbsp; II: y² - 10y + 24 = 0
    - (A) x > y
    - (B) x < y
@@ -1377,17 +1134,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 </details>
 
 ### Set 3: Discriminant & Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-discriminant-roots-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-discriminant-roots-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Discriminant & Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-discriminant-roots-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-discriminant-roots-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Discriminant & Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-discriminant-roots-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-discriminant-roots-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Discriminant & Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 1. x² - 6x + k = 0 has equal roots. Find k.
    - (A) 6
@@ -1433,17 +1179,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 
 ### Set 4: Conditional Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-conditional-comparison-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-conditional-comparison-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Conditional Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-conditional-comparison-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-conditional-comparison-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Conditional Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-conditional-comparison-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-conditional-comparison-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Conditional Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. If x > 0 and x² - 5x + 6 = 0, then x = ?
    - (A) Only 2
    - (B) Only 3
@@ -1487,17 +1222,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 </details>
 
 ### Set 5: Speed Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-speed-comparison-target-2-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-speed-comparison-target-2-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 5: Speed Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-speed-comparison-target-2-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-speed-comparison-target-2-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 5: Speed Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-speed-comparison-target-2-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-speed-comparison-target-2-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 5: Speed Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 1. I: x² - 2x - 8 = 0 &nbsp;&nbsp; II: y² + y - 6 = 0
    - (A) x > y
@@ -1543,17 +1267,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 
 ### Set 6: Nature of Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-nature-of-roots-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-nature-of-roots-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Nature of Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-nature-of-roots-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-nature-of-roots-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Nature of Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-nature-of-roots-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-nature-of-roots-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Nature of Roots | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. x² + 4x + 4 = 0 has:
    - (A) Real and distinct roots
    - (B) Real and equal roots
@@ -1598,29 +1311,7 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 
 ### Set 7-10: Additional Quadratic Sets (abbreviated format for space efficiency)
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-10-additional-quadratic-sets-abbreviated-format-for-space-efficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-10-additional-quadratic-sets-abbreviated-format-for-space-efficiency-handwritten.svg" alt="Handwritten: Set 7-10: Additional Quadratic Sets (abbreviated format for space efficiency)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-10-additional-quadratic-sets-abbreviated-format-for-space-efficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-10-additional-quadratic-sets-abbreviated-format-for-space-efficiency-diagram.svg" alt="Diagram: Set 7-10: Additional Quadratic Sets (abbreviated format for space efficiency)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-10-additional-quadratic-sets-abbreviated-format-for-space-efficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-10-additional-quadratic-sets-abbreviated-format-for-space-efficiency-sticky.svg" alt="Sticky Note: Set 7-10: Additional Quadratic Sets (abbreviated format for space efficiency)" width="30%">
-</a>
-
-
 ### Set 7: Advanced Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-advanced-comparison-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-advanced-comparison-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7: Advanced Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-advanced-comparison-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-advanced-comparison-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7: Advanced Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-advanced-comparison-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-advanced-comparison-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7: Advanced Comparison | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 1. I: x² - 9x + 20 = 0 &nbsp;&nbsp; II: y² - 13y + 42 = 0 → **(D)**
 2. I: 2x² - 5x + 2 = 0 &nbsp;&nbsp; II: 3y² - 8y + 4 = 0 → **(D)**
@@ -1641,17 +1332,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 </details>
 
 ### Set 8: Application | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-application-target-2-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-application-target-2-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 8: Application | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-application-target-2-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-application-target-2-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 8: Application | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-application-target-2-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-application-target-2-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 8: Application | ⏱ Target: 2 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 1. Two numbers sum to 15 and product is 56. The numbers are:
    - (A) 6,9
@@ -1697,17 +1377,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 
 ### Set 9: Speed Round | ⏱ Target: 1.5 min | 🎯 Accuracy Goal: 85%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-round-target-1-5-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-round-target-1-5-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 9: Speed Round | ⏱ Target: 1.5 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-round-target-1-5-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-round-target-1-5-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 9: Speed Round | ⏱ Target: 1.5 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-round-target-1-5-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-round-target-1-5-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 9: Speed Round | ⏱ Target: 1.5 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
-
 1. Roots of x² - 3x + 2 = 0:
    - (A) 1,2
    - (B) -1,-2
@@ -1751,17 +1420,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 </details>
 
 ### Set 10: Challenge Mix | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-challenge-mix-target-2-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-challenge-mix-target-2-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 10: Challenge Mix | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-challenge-mix-target-2-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-challenge-mix-target-2-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 10: Challenge Mix | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-challenge-mix-target-2-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-challenge-mix-target-2-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 10: Challenge Mix | ⏱ Target: 2 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 1. I: x² - 5x + 6 = 0 &nbsp;&nbsp; II: y² + y - 6 = 0. Find relationship.
    - (A) x > y
@@ -1810,17 +1468,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 ## Simplification Drills (BODMAS & Approximation)
 
 ### Set 1: Basic BODMAS | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-bodmas-target-3-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-bodmas-target-3-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Basic BODMAS | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-bodmas-target-3-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-bodmas-target-3-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Basic BODMAS | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-bodmas-target-3-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-1-basic-bodmas-target-3-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Basic BODMAS | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 1. 12 + 6 × 3 - 4 = ?
    - (A) 26
@@ -1900,17 +1547,6 @@ Compare the roots (>, <, =, or cannot determine) for each pair.
 </details>
 
 ### Set 2: Approximation Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-approximation-simplification-target-3-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-approximation-simplification-target-3-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Approximation Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-approximation-simplification-target-3-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-approximation-simplification-target-3-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Approximation Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-approximation-simplification-target-3-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-2-approximation-simplification-target-3-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Approximation Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 Find the approximate value (nearest integer).
 
@@ -1993,17 +1629,6 @@ Find the approximate value (nearest integer).
 
 ### Set 3: Missing Number Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-missing-number-simplification-target-3-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-missing-number-simplification-target-3-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Missing Number Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-missing-number-simplification-target-3-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-missing-number-simplification-target-3-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Missing Number Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-missing-number-simplification-target-3-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-3-missing-number-simplification-target-3-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Missing Number Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 Find the value of `?` in each.
 
 1. 36 + ? × 4 = 60
@@ -2085,17 +1710,6 @@ Find the value of `?` in each.
 
 ### Set 4: Mixed Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-mixed-simplification-target-3-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-mixed-simplification-target-3-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 4: Mixed Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-mixed-simplification-target-3-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-mixed-simplification-target-3-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 4: Mixed Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-mixed-simplification-target-3-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-4-mixed-simplification-target-3-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 4: Mixed Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
-
 1. 24 ÷ 4 × 3 + 8 - 5 = ?
    - (A) 17
    - (B) 18
@@ -2174,17 +1788,6 @@ Find the value of `?` in each.
 </details>
 
 ### Set 5: Fraction Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-fraction-simplification-target-3-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-fraction-simplification-target-3-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Fraction Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-fraction-simplification-target-3-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-fraction-simplification-target-3-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Fraction Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-fraction-simplification-target-3-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-5-fraction-simplification-target-3-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Fraction Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 1. 2/3 + 3/4 - 5/12 = ?
    - (A) 1/2
@@ -2270,29 +1873,7 @@ Actually, since this is my drill, let me fix the answer key. 21/16 = 1.3125. Not
 
 ### Set 6-10: Additional Simplification Sets
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-10-additional-simplification-sets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-10-additional-simplification-sets-handwritten.svg" alt="Handwritten: Set 6-10: Additional Simplification Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-10-additional-simplification-sets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-10-additional-simplification-sets-diagram.svg" alt="Diagram: Set 6-10: Additional Simplification Sets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-10-additional-simplification-sets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-10-additional-simplification-sets-sticky.svg" alt="Sticky Note: Set 6-10: Additional Simplification Sets" width="30%">
-</a>
-
-
 ### Set 6: Square/Cube Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-square-cube-simplification-target-3-min-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-square-cube-simplification-target-3-min-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 6: Square/Cube Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-square-cube-simplification-target-3-min-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-square-cube-simplification-target-3-min-accuracy-goal-85-diagram.svg" alt="Diagram: Set 6: Square/Cube Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-square-cube-simplification-target-3-min-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-6-square-cube-simplification-target-3-min-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 6: Square/Cube Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 1. √121 + √144 = ?
    - (A) 20
@@ -2373,17 +1954,6 @@ Actually, since this is my drill, let me fix the answer key. 21/16 = 1.3125. Not
 
 ### Set 7: Algebraic Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-algebraic-simplification-target-3-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-algebraic-simplification-target-3-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7: Algebraic Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-algebraic-simplification-target-3-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-algebraic-simplification-target-3-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7: Algebraic Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-algebraic-simplification-target-3-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-7-algebraic-simplification-target-3-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7: Algebraic Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. 4a + 3b - a + 2b = ? (where a=3, b=2)
    - (A) 18
    - (B) 19
@@ -2463,17 +2033,6 @@ Actually, since this is my drill, let me fix the answer key. 21/16 = 1.3125. Not
 
 ### Set 8: Compound Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-compound-simplification-target-3-min-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-compound-simplification-target-3-min-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 8: Compound Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-compound-simplification-target-3-min-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-compound-simplification-target-3-min-accuracy-goal-80-diagram.svg" alt="Diagram: Set 8: Compound Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-compound-simplification-target-3-min-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-8-compound-simplification-target-3-min-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 8: Compound Simplification | ⏱ Target: 3 min | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 1. 25% of 240 + 12.5% of 320 = ?
    - (A) 90
    - (B) 95
@@ -2552,17 +2111,6 @@ Actually, since this is my drill, let me fix the answer key. 21/16 = 1.3125. Not
 </details>
 
 ### Set 9: Speed Simplification | ⏱ Target: 2.5 min | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-simplification-target-2-5-min-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-simplification-target-2-5-min-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 9: Speed Simplification | ⏱ Target: 2.5 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-simplification-target-2-5-min-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-simplification-target-2-5-min-accuracy-goal-90-diagram.svg" alt="Diagram: Set 9: Speed Simplification | ⏱ Target: 2.5 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-simplification-target-2-5-min-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-9-speed-simplification-target-2-5-min-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 9: Speed Simplification | ⏱ Target: 2.5 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 1. 36 + 64 - 100 = ?
    - (A) -1
@@ -2651,17 +2199,6 @@ Hmm, since -4 isn't in options, maybe I should have used different numbers. Let 
 </details>
 
 ### Set 10: Ultimate Speed Challenge | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-ultimate-speed-challenge-target-2-min-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-ultimate-speed-challenge-target-2-min-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 10: Ultimate Speed Challenge | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-ultimate-speed-challenge-target-2-min-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-ultimate-speed-challenge-target-2-min-accuracy-goal-90-diagram.svg" alt="Diagram: Set 10: Ultimate Speed Challenge | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-ultimate-speed-challenge-target-2-min-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/set-10-ultimate-speed-challenge-target-2-min-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 10: Ultimate Speed Challenge | ⏱ Target: 2 min | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 1. 12 × 15 - 9 × 10 = ?
    - (A) 70
@@ -2754,17 +2291,6 @@ Actually: 2³=8, 3³=27, 4³=64, 5³=125. So 8+27+64-125 = 99-125 = -26. None of
 
 ### Quant Advanced Summary Table
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/quant-advanced-summary-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/quant-advanced-summary-table-handwritten.svg" alt="Handwritten: Quant Advanced Summary Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/quant-advanced-summary-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/quant-advanced-summary-table-diagram.svg" alt="Diagram: Quant Advanced Summary Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/quant-advanced-summary-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/quant-advanced-summary-table-sticky.svg" alt="Sticky Note: Quant Advanced Summary Table" width="30%">
-</a>
-
-
 | Set | Topic | Questions | Time Target | Your Time | Score | Accuracy |
 |-----|-------|-----------|-------------|-----------|-------|----------|
 | DI-1 | Table DI | 5 | 5 min | | /5 | % |
@@ -2792,17 +2318,6 @@ Actually: 2³=8, 3³=27, 4³=64, 5³=125. So 8+27+64-125 = 99-125 = -26. None of
 
 ### Milestones
 
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/milestones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/milestones-handwritten.svg" alt="Handwritten: Milestones" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/milestones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/milestones-diagram.svg" alt="Diagram: Milestones" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/milestones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/milestones-sticky.svg" alt="Sticky Note: Milestones" width="30%">
-</a>
-
-
 ```
 ┌──────────────────────────────────────────────────────────────┐
 │  🏆 MILESTONE 1: Data Interpreter                            │
@@ -2828,16 +2343,5 @@ Actually: 2³=8, 3³=27, 4³=64, 5³=125. So 8+27+64-125 = 99-125 = -26. None of
 ```
 
 ### Next Steps
-
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/next-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/next-steps-handwritten.svg" alt="Handwritten: Next Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/next-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/next-steps-diagram.svg" alt="Diagram: Next Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/next-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/02-quant-advanced-drills/next-steps-sticky.svg" alt="Sticky Note: Next Steps" width="30%">
-</a>
-
 
 Proceed to **[Chapter 3: Reasoning Drills →](03-reasoning-drills.md)** for coding-decoding, blood relations, direction sense, syllogisms, and inequalities.

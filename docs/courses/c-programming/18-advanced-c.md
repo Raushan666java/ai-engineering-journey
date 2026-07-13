@@ -56,16 +56,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -105,16 +95,6 @@ flowchart LR
 **Real-World Analogy:** A large corporation divides work into departments (accounting, engineering, HR). Each department has a public interface (reception desk, published phone number) and private internals (internal memos, databases). The `.h` file is the public face; the `.c` file is the implementation behind closed doors.
 
 ### 18.1.1 Header Files and Header Guards
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-1-header-files-and-header-guards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-1-header-files-and-header-guards-handwritten.svg" alt="Handwritten: 18.1.1 Header Files and Header Guards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-1-header-files-and-header-guards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-1-header-files-and-header-guards-diagram.svg" alt="Diagram: 18.1.1 Header Files and Header Guards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-1-header-files-and-header-guards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-1-header-files-and-header-guards-sticky.svg" alt="Sticky Note: 18.1.1 Header Files and Header Guards" width="30%">
-</a>
 
 
 A header file `.h` declares functions, types, and macros that multiple `.c` files share. A **header guard** prevents the same header from being `#include`d more than once in the same translation unit.
@@ -161,16 +141,6 @@ int multiply(int a, int b);
 | Recommended | Libraries targeting obscure compilers | Everyday projects |
 
 ### 18.1.2 The `extern` Keyword
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-2-the-extern-keyword-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-2-the-extern-keyword-handwritten.svg" alt="Handwritten: 18.1.2 The `extern` Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-2-the-extern-keyword-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-2-the-extern-keyword-diagram.svg" alt="Diagram: 18.1.2 The `extern` Keyword" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-2-the-extern-keyword-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-2-the-extern-keyword-sticky.svg" alt="Sticky Note: 18.1.2 The `extern` Keyword" width="30%">
-</a>
 
 
 `extern` declares a variable or function that is defined in **another translation unit**. It does **not** allocate storage → it tells the linker to resolve the symbol elsewhere.
@@ -226,16 +196,6 @@ static int x;   /* ERROR at link: static x in c.c conflicts with external x from
 ```
 
 ### 18.1.3 Makefiles
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-3-makefiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-3-makefiles-handwritten.svg" alt="Handwritten: 18.1.3 Makefiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-3-makefiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-3-makefiles-diagram.svg" alt="Diagram: 18.1.3 Makefiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-3-makefiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-1-3-makefiles-sticky.svg" alt="Sticky Note: 18.1.3 Makefiles" width="30%">
-</a>
 
 
 A **Makefile** automates compilation so you don't recompile everything from scratch. It tracks file timestamps and rebuilds only what changed.
@@ -309,16 +269,6 @@ clean:
 
 ### 18.2.1 Function Pointer Basics
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-1-function-pointer-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-1-function-pointer-basics-handwritten.svg" alt="Handwritten: 18.2.1 Function Pointer Basics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-1-function-pointer-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-1-function-pointer-basics-diagram.svg" alt="Diagram: 18.2.1 Function Pointer Basics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-1-function-pointer-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-1-function-pointer-basics-sticky.svg" alt="Sticky Note: 18.2.1 Function Pointer Basics" width="30%">
-</a>
-
 
 **Syntax:**
 ```c
@@ -360,16 +310,6 @@ int (*fp)(int, int);
 ```
 
 ### 18.2.2 Callbacks
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-2-callbacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-2-callbacks-handwritten.svg" alt="Handwritten: 18.2.2 Callbacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-2-callbacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-2-callbacks-diagram.svg" alt="Diagram: 18.2.2 Callbacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-2-callbacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-2-callbacks-sticky.svg" alt="Sticky Note: 18.2.2 Callbacks" width="30%">
-</a>
 
 
 A **callback** is a function pointer passed as an argument to another function. The receiving function "calls back" through the pointer.
@@ -422,16 +362,6 @@ int main(void) {
 | Callback overhead | O(1) per call | Indirect call through pointer (one extra indirection vs direct call) |
 
 ### 18.2.3 Dispatch Tables
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-3-dispatch-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-3-dispatch-tables-handwritten.svg" alt="Handwritten: 18.2.3 Dispatch Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-3-dispatch-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-3-dispatch-tables-diagram.svg" alt="Diagram: 18.2.3 Dispatch Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-3-dispatch-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-2-3-dispatch-tables-sticky.svg" alt="Sticky Note: 18.2.3 Dispatch Tables" width="30%">
-</a>
 
 
 A **dispatch table** is an array of function pointers. It replaces long `switch` statements with O(1) indexed lookups.
@@ -489,16 +419,6 @@ div(10,3) = 3
 
 ### 18.3.1 Mechanics → `stdarg.h` Macros
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-1-mechanics-stdarg-h-macros-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-1-mechanics-stdarg-h-macros-handwritten.svg" alt="Handwritten: 18.3.1 Mechanics → `stdarg.h` Macros" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-1-mechanics-stdarg-h-macros-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-1-mechanics-stdarg-h-macros-diagram.svg" alt="Diagram: 18.3.1 Mechanics → `stdarg.h` Macros" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-1-mechanics-stdarg-h-macros-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-1-mechanics-stdarg-h-macros-sticky.svg" alt="Sticky Note: 18.3.1 Mechanics → `stdarg.h` Macros" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -549,16 +469,6 @@ Avg of 0: 0.00
 
 ### 18.3.2 Building a Custom printf
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-2-building-a-custom-printf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-2-building-a-custom-printf-handwritten.svg" alt="Handwritten: 18.3.2 Building a Custom printf" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-2-building-a-custom-printf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-2-building-a-custom-printf-diagram.svg" alt="Diagram: 18.3.2 Building a Custom printf" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-2-building-a-custom-printf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-2-building-a-custom-printf-sticky.svg" alt="Sticky Note: 18.3.2 Building a Custom printf" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -602,16 +512,6 @@ Name: Alice, Score: 85/100 (85.0%)
 
 ### 18.3.3 Rules and Pitfalls
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-3-rules-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-3-rules-and-pitfalls-handwritten.svg" alt="Handwritten: 18.3.3 Rules and Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-3-rules-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-3-rules-and-pitfalls-diagram.svg" alt="Diagram: 18.3.3 Rules and Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-3-rules-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-3-3-rules-and-pitfalls-sticky.svg" alt="Sticky Note: 18.3.3 Rules and Pitfalls" width="30%">
-</a>
-
 
 1. At least one named parameter before `...` (required by standard)
 2. Default argument promotions: `float` -> `double`, `char`/`short` -> `int`
@@ -640,16 +540,6 @@ Name: Alice, Score: 85/100 (85.0%)
 **Real-World Analogy:** Russian nesting dolls (matryoshka). Each layer wraps the previous one. To understand the outermost doll, you open it, see the next, open that, and so on.
 
 ### 18.4.1 The Spiral Rule
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-1-the-spiral-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-1-the-spiral-rule-handwritten.svg" alt="Handwritten: 18.4.1 The Spiral Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-1-the-spiral-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-1-the-spiral-rule-diagram.svg" alt="Diagram: 18.4.1 The Spiral Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-1-the-spiral-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-1-the-spiral-rule-sticky.svg" alt="Sticky Note: 18.4.1 The Spiral Rule" width="30%">
-</a>
 
 
 Also called the **right-left rule**: start at the identifier, move right as far as possible (respecting parentheses), then left, spiraling outward.
@@ -720,16 +610,6 @@ sighandler_t signal(int sig, sighandler_t handler);
 
 ### 18.4.2 Declaration Cheat Sheet
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-2-declaration-cheat-sheet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-2-declaration-cheat-sheet-handwritten.svg" alt="Handwritten: 18.4.2 Declaration Cheat Sheet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-2-declaration-cheat-sheet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-2-declaration-cheat-sheet-diagram.svg" alt="Diagram: 18.4.2 Declaration Cheat Sheet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-2-declaration-cheat-sheet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-4-2-declaration-cheat-sheet-sticky.svg" alt="Sticky Note: 18.4.2 Declaration Cheat Sheet" width="30%">
-</a>
-
 
 | Declaration | Meaning |
 |------------|---------|
@@ -744,16 +624,6 @@ sighandler_t signal(int sig, sighandler_t handler);
 ## 18.5 `volatile` and `restrict`
 
 ### 18.5.1 The `volatile` Qualifier
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-1-the-volatile-qualifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-1-the-volatile-qualifier-handwritten.svg" alt="Handwritten: 18.5.1 The `volatile` Qualifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-1-the-volatile-qualifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-1-the-volatile-qualifier-diagram.svg" alt="Diagram: 18.5.1 The `volatile` Qualifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-1-the-volatile-qualifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-1-the-volatile-qualifier-sticky.svg" alt="Sticky Note: 18.5.1 The `volatile` Qualifier" width="30%">
-</a>
 
 
 **Real-World Analogy:** A thermometer in a server room. The temperature changes independently of the monitoring program. The program must **always** read the actual thermometer, not a cached value from an hour ago.
@@ -805,16 +675,6 @@ while (!flag) {
 
 ### 18.5.2 The `restrict` Qualifier
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-2-the-restrict-qualifier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-2-the-restrict-qualifier-handwritten.svg" alt="Handwritten: 18.5.2 The `restrict` Qualifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-2-the-restrict-qualifier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-2-the-restrict-qualifier-diagram.svg" alt="Diagram: 18.5.2 The `restrict` Qualifier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-2-the-restrict-qualifier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-2-the-restrict-qualifier-sticky.svg" alt="Sticky Note: 18.5.2 The `restrict` Qualifier" width="30%">
-</a>
-
 
 **Real-World Analogy:** A single-occupancy restroom. Only one person can use it at a time. The building manager knows this and can schedule maintenance without worrying about conflicts.
 
@@ -862,16 +722,6 @@ vector_add(arr, arr, arr + 2, 3);   /* UB: c and a alias */
 
 ### 18.5.3 `volatile` vs `const` vs `restrict` → Comparison
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-3-volatile-vs-const-vs-restrict-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-3-volatile-vs-const-vs-restrict-comparison-handwritten.svg" alt="Handwritten: 18.5.3 `volatile` vs `const` vs `restrict` → Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-3-volatile-vs-const-vs-restrict-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-3-volatile-vs-const-vs-restrict-comparison-diagram.svg" alt="Diagram: 18.5.3 `volatile` vs `const` vs `restrict` → Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-3-volatile-vs-const-vs-restrict-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-5-3-volatile-vs-const-vs-restrict-comparison-sticky.svg" alt="Sticky Note: 18.5.3 `volatile` vs `const` vs `restrict` → Comparison" width="30%">
-</a>
-
 
 | Qualifier | What It Means | Compiler Effect | Typical Use |
 |-----------|---------------|-----------------|-------------|
@@ -905,16 +755,6 @@ int sum_array(const int *restrict arr, int n) {
 **Real-World Analogy:** A fire evacuation plan for a skyscraper. Instead of slowly walking down every floor (unwinding one stack frame at a time through return codes), `setjmp` places emergency exits on every floor, and `longjmp` teleports everyone to the ground floor instantly.
 
 ### 18.6.1 Basic Usage
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-1-basic-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-1-basic-usage-handwritten.svg" alt="Handwritten: 18.6.1 Basic Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-1-basic-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-1-basic-usage-diagram.svg" alt="Diagram: 18.6.1 Basic Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-1-basic-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-1-basic-usage-sticky.svg" alt="Sticky Note: 18.6.1 Basic Usage" width="30%">
-</a>
 
 
 ```c
@@ -962,16 +802,6 @@ Back in main after longjmp. Code: 42
 
 ### 18.6.2 Practical Error Recovery Pattern
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-2-practical-error-recovery-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-2-practical-error-recovery-pattern-handwritten.svg" alt="Handwritten: 18.6.2 Practical Error Recovery Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-2-practical-error-recovery-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-2-practical-error-recovery-pattern-diagram.svg" alt="Diagram: 18.6.2 Practical Error Recovery Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-2-practical-error-recovery-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-2-practical-error-recovery-pattern-sticky.svg" alt="Sticky Note: 18.6.2 Practical Error Recovery Pattern" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1009,16 +839,6 @@ int main(void) {
 ```
 
 ### 18.6.3 `setjmp`/`longjmp` vs `try-catch`
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-3-setjmp-longjmp-vs-try-catch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-3-setjmp-longjmp-vs-try-catch-handwritten.svg" alt="Handwritten: 18.6.3 `setjmp`/`longjmp` vs `try-catch`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-3-setjmp-longjmp-vs-try-catch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-3-setjmp-longjmp-vs-try-catch-diagram.svg" alt="Diagram: 18.6.3 `setjmp`/`longjmp` vs `try-catch`" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-3-setjmp-longjmp-vs-try-catch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-6-3-setjmp-longjmp-vs-try-catch-sticky.svg" alt="Sticky Note: 18.6.3 `setjmp`/`longjmp` vs `try-catch`" width="30%">
-</a>
 
 
 | Aspect | `setjmp`/`longjmp` | `try-catch` (C++ / Java) |
@@ -1073,16 +893,6 @@ void func(void) {
 
 ### 18.7.1 Standard Signals
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-1-standard-signals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-1-standard-signals-handwritten.svg" alt="Handwritten: 18.7.1 Standard Signals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-1-standard-signals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-1-standard-signals-diagram.svg" alt="Diagram: 18.7.1 Standard Signals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-1-standard-signals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-1-standard-signals-sticky.svg" alt="Sticky Note: 18.7.1 Standard Signals" width="30%">
-</a>
-
 
 | Signal | Default Action | Typical Cause |
 |--------|---------------|--------------|
@@ -1096,16 +906,6 @@ void func(void) {
 | `SIGALRM` | Terminate | Timer expired (`alarm()`) |
 
 ### 18.7.2 Safe Signal Handling → the `volatile sig_atomic_t` Pattern
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-2-safe-signal-handling-the-volatile-sig-atomic-t-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-2-safe-signal-handling-the-volatile-sig-atomic-t-pattern-handwritten.svg" alt="Handwritten: 18.7.2 Safe Signal Handling → the `volatile sig_atomic_t` Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-2-safe-signal-handling-the-volatile-sig-atomic-t-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-2-safe-signal-handling-the-volatile-sig-atomic-t-pattern-diagram.svg" alt="Diagram: 18.7.2 Safe Signal Handling → the `volatile sig_atomic_t` Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-2-safe-signal-handling-the-volatile-sig-atomic-t-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-2-safe-signal-handling-the-volatile-sig-atomic-t-pattern-sticky.svg" alt="Sticky Note: 18.7.2 Safe Signal Handling → the `volatile sig_atomic_t` Pattern" width="30%">
-</a>
 
 
 ```c
@@ -1145,16 +945,6 @@ int main(void) {
 
 ### 18.7.3 Signal Disposition
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-3-signal-disposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-3-signal-disposition-handwritten.svg" alt="Handwritten: 18.7.3 Signal Disposition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-3-signal-disposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-3-signal-disposition-diagram.svg" alt="Diagram: 18.7.3 Signal Disposition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-3-signal-disposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-7-3-signal-disposition-sticky.svg" alt="Sticky Note: 18.7.3 Signal Disposition" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1186,16 +976,6 @@ int main(void) {
 **Real-World Analogy:** A custom-tailored suit. Unlike off-the-rack (fixed-size array), a tailored suit is cut to your exact measurements at runtime.
 
 ### 18.8.1 Basic VLA
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-1-basic-vla-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-1-basic-vla-handwritten.svg" alt="Handwritten: 18.8.1 Basic VLA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-1-basic-vla-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-1-basic-vla-diagram.svg" alt="Diagram: 18.8.1 Basic VLA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-1-basic-vla-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-1-basic-vla-sticky.svg" alt="Sticky Note: 18.8.1 Basic VLA" width="30%">
-</a>
 
 
 ```c
@@ -1230,16 +1010,6 @@ int main(void) {
 
 ### 18.8.2 VLA in Function Parameters
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-2-vla-in-function-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-2-vla-in-function-parameters-handwritten.svg" alt="Handwritten: 18.8.2 VLA in Function Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-2-vla-in-function-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-2-vla-in-function-parameters-diagram.svg" alt="Diagram: 18.8.2 VLA in Function Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-2-vla-in-function-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-2-vla-in-function-parameters-sticky.svg" alt="Sticky Note: 18.8.2 VLA in Function Parameters" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1261,16 +1031,6 @@ int main(void) {
 ```
 
 ### 18.8.3 Caveats
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-3-caveats-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-3-caveats-handwritten.svg" alt="Handwritten: 18.8.3 Caveats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-3-caveats-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-3-caveats-diagram.svg" alt="Diagram: 18.8.3 Caveats" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-3-caveats-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-8-3-caveats-sticky.svg" alt="Sticky Note: 18.8.3 Caveats" width="30%">
-</a>
 
 
 | Risk | Explanation | Mitigation |
@@ -1296,16 +1056,6 @@ int main(void) {
 **Real-World Analogy:** A suitcase with an expandable compartment. The main structure (handle, wheels, zippers) has fixed size, but the internal volume expands to whatever you need.
 
 ### 18.9.1 Syntax and Usage
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-1-syntax-and-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-1-syntax-and-usage-handwritten.svg" alt="Handwritten: 18.9.1 Syntax and Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-1-syntax-and-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-1-syntax-and-usage-diagram.svg" alt="Diagram: 18.9.1 Syntax and Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-1-syntax-and-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-1-syntax-and-usage-sticky.svg" alt="Sticky Note: 18.9.1 Syntax and Usage" width="30%">
-</a>
 
 
 A **flexible array member** is the last member of a struct with no specified size:
@@ -1355,16 +1105,6 @@ Offset 8:  data[0], data[1], ... data[n-1]
 
 ### 18.9.2 Rules
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-2-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-2-rules-handwritten.svg" alt="Handwritten: 18.9.2 Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-2-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-2-rules-diagram.svg" alt="Diagram: 18.9.2 Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-2-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-9-2-rules-sticky.svg" alt="Sticky Note: 18.9.2 Rules" width="30%">
-</a>
-
 
 | Rule | Explanation |
 |------|-------------|
@@ -1393,16 +1133,6 @@ Offset 8:  data[0], data[1], ... data[n-1]
 **Real-World Analogy:** A restaurant kitchen with multiple chefs. Each chef (thread) works independently but shares the stove, sink, and ingredients (shared resources). The head chef (main thread) coordinates without collisions.
 
 ### 18.10.1 Creating and Joining Threads
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-1-creating-and-joining-threads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-1-creating-and-joining-threads-handwritten.svg" alt="Handwritten: 18.10.1 Creating and Joining Threads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-1-creating-and-joining-threads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-1-creating-and-joining-threads-diagram.svg" alt="Diagram: 18.10.1 Creating and Joining Threads" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-1-creating-and-joining-threads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-1-creating-and-joining-threads-sticky.svg" alt="Sticky Note: 18.10.1 Creating and Joining Threads" width="30%">
-</a>
 
 
 ```c
@@ -1471,16 +1201,6 @@ Total sum of squares 0..999 = 348654500
 
 ### 18.10.2 Mutex Synchronization
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-2-mutex-synchronization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-2-mutex-synchronization-handwritten.svg" alt="Handwritten: 18.10.2 Mutex Synchronization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-2-mutex-synchronization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-2-mutex-synchronization-diagram.svg" alt="Diagram: 18.10.2 Mutex Synchronization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-2-mutex-synchronization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-2-mutex-synchronization-sticky.svg" alt="Sticky Note: 18.10.2 Mutex Synchronization" width="30%">
-</a>
-
 
 ```c
 #include <stdio.h>
@@ -1529,16 +1249,6 @@ Got:      1823491   <- race condition: lost updates
 ```
 
 ### 18.10.3 Condition Variables → Producer/Consumer
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-3-condition-variables-producer-consumer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-3-condition-variables-producer-consumer-handwritten.svg" alt="Handwritten: 18.10.3 Condition Variables → Producer/Consumer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-3-condition-variables-producer-consumer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-3-condition-variables-producer-consumer-diagram.svg" alt="Diagram: 18.10.3 Condition Variables → Producer/Consumer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-3-condition-variables-producer-consumer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-3-condition-variables-producer-consumer-sticky.svg" alt="Sticky Note: 18.10.3 Condition Variables → Producer/Consumer" width="30%">
-</a>
 
 
 ```c
@@ -1590,16 +1300,6 @@ Consumer: got data!
 
 ### 18.10.4 pthreads Functions Reference
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-4-pthreads-functions-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-4-pthreads-functions-reference-handwritten.svg" alt="Handwritten: 18.10.4 pthreads Functions Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-4-pthreads-functions-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-4-pthreads-functions-reference-diagram.svg" alt="Diagram: 18.10.4 pthreads Functions Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-4-pthreads-functions-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-10-4-pthreads-functions-reference-sticky.svg" alt="Sticky Note: 18.10.4 pthreads Functions Reference" width="30%">
-</a>
-
 
 | Function | Purpose |
 |----------|---------|
@@ -1635,16 +1335,6 @@ Consumer: got data!
 
 ### 18.11.1 The Strict Aliasing Rule (C99 6.5)
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-1-the-strict-aliasing-rule-c99-6-5-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-1-the-strict-aliasing-rule-c99-6-5-handwritten.svg" alt="Handwritten: 18.11.1 The Strict Aliasing Rule (C99 6.5)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-1-the-strict-aliasing-rule-c99-6-5-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-1-the-strict-aliasing-rule-c99-6-5-diagram.svg" alt="Diagram: 18.11.1 The Strict Aliasing Rule (C99 6.5)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-1-the-strict-aliasing-rule-c99-6-5-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-1-the-strict-aliasing-rule-c99-6-5-sticky.svg" alt="Sticky Note: 18.11.1 The Strict Aliasing Rule (C99 6.5)" width="30%">
-</a>
-
 
 > An object shall have its stored value accessed only by an lvalue expression that has one of the following types:
 > - The object's effective type
@@ -1663,16 +1353,6 @@ printf("%d\n", *p);   /* UB → reading float bits as int */
 **Why it's UB:** The compiler may optimize based on the assumption that `int*` and `float*` never alias. When they do, the optimizer produces wrong code.
 
 ### 18.11.2 Legal Type Punning
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-2-legal-type-punning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-2-legal-type-punning-handwritten.svg" alt="Handwritten: 18.11.2 Legal Type Punning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-2-legal-type-punning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-2-legal-type-punning-diagram.svg" alt="Diagram: 18.11.2 Legal Type Punning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-2-legal-type-punning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-2-legal-type-punning-sticky.svg" alt="Sticky Note: 18.11.2 Legal Type Punning" width="30%">
-</a>
 
 
 **Method 1 → `memcpy` (the portable way):**
@@ -1721,16 +1401,6 @@ int main(void) {
 
 ### 18.11.3 Common Strict Aliasing Violations
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-3-common-strict-aliasing-violations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-3-common-strict-aliasing-violations-handwritten.svg" alt="Handwritten: 18.11.3 Common Strict Aliasing Violations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-3-common-strict-aliasing-violations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-3-common-strict-aliasing-violations-diagram.svg" alt="Diagram: 18.11.3 Common Strict Aliasing Violations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-3-common-strict-aliasing-violations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/18-11-3-common-strict-aliasing-violations-sticky.svg" alt="Sticky Note: 18.11.3 Common Strict Aliasing Violations" width="30%">
-</a>
-
 
 ```c
 /* Violation 1: Pointer cast then dereference */
@@ -1776,16 +1446,6 @@ void set_bytes(uint32_t *w, uint8_t b) {
 
 ### Q1: What happens if `volatile` is omitted on a memory-mapped register?
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-happens-if-volatile-is-omitted-on-a-memory-mapped-register-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-happens-if-volatile-is-omitted-on-a-memory-mapped-register-handwritten.svg" alt="Handwritten: What happens if `volatile` is omitted on a memory-mapped register?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-happens-if-volatile-is-omitted-on-a-memory-mapped-register-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-happens-if-volatile-is-omitted-on-a-memory-mapped-register-diagram.svg" alt="Diagram: What happens if `volatile` is omitted on a memory-mapped register?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-happens-if-volatile-is-omitted-on-a-memory-mapped-register-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-happens-if-volatile-is-omitted-on-a-memory-mapped-register-sticky.svg" alt="Sticky Note: What happens if `volatile` is omitted on a memory-mapped register?" width="30%">
-</a>
-
 
 ```c
 /* Embedded: reading a status register */
@@ -1799,16 +1459,6 @@ while (!(*status & 0x01)) {  /* Compiler may read status ONCE into register */
 
 ### Q2: What is the strict aliasing rule and when does it bite you?
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-is-the-strict-aliasing-rule-and-when-does-it-bite-you-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-is-the-strict-aliasing-rule-and-when-does-it-bite-you-handwritten.svg" alt="Handwritten: What is the strict aliasing rule and when does it bite you?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-is-the-strict-aliasing-rule-and-when-does-it-bite-you-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-is-the-strict-aliasing-rule-and-when-does-it-bite-you-diagram.svg" alt="Diagram: What is the strict aliasing rule and when does it bite you?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-is-the-strict-aliasing-rule-and-when-does-it-bite-you-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-is-the-strict-aliasing-rule-and-when-does-it-bite-you-sticky.svg" alt="Sticky Note: What is the strict aliasing rule and when does it bite you?" width="30%">
-</a>
-
 
 **Answer:** The strict aliasing rule (C99 6.5) forbids accessing the same memory via incompatible pointer types. It bites hardest in:
 - **Serialization/deserialization:** Reinterpreting a byte buffer as a `struct` is UB
@@ -1819,16 +1469,6 @@ while (!(*status & 0x01)) {  /* Compiler may read status ONCE into register */
 The common fix: `memcpy` or `union` (if staying in C).
 
 ### Q3: Function pointer vs `switch` → when to use which?
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/function-pointer-vs-switch-when-to-use-which-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/function-pointer-vs-switch-when-to-use-which-handwritten.svg" alt="Handwritten: Function pointer vs `switch` → when to use which?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/function-pointer-vs-switch-when-to-use-which-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/function-pointer-vs-switch-when-to-use-which-diagram.svg" alt="Diagram: Function pointer vs `switch` → when to use which?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/function-pointer-vs-switch-when-to-use-which-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/function-pointer-vs-switch-when-to-use-which-sticky.svg" alt="Sticky Note: Function pointer vs `switch` → when to use which?" width="30%">
-</a>
 
 
 | Criterion | Function Pointer Table | `switch` Statement |
@@ -1841,16 +1481,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 ### Q4: How do you safely share data between pthreads?
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/how-do-you-safely-share-data-between-pthreads-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/how-do-you-safely-share-data-between-pthreads-handwritten.svg" alt="Handwritten: How do you safely share data between pthreads?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/how-do-you-safely-share-data-between-pthreads-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/how-do-you-safely-share-data-between-pthreads-diagram.svg" alt="Diagram: How do you safely share data between pthreads?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/how-do-you-safely-share-data-between-pthreads-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/how-do-you-safely-share-data-between-pthreads-sticky.svg" alt="Sticky Note: How do you safely share data between pthreads?" width="30%">
-</a>
-
 
 1. **Mutexes** for exclusive access (most common)
 2. **Condition variables** for producer-consumer patterns
@@ -1859,16 +1489,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 5. **Thread-local storage** (`__thread` or `_Thread_local`) for per-thread data
 
 ### Q5: How does a signal handler differ from a regular function?
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/how-does-a-signal-handler-differ-from-a-regular-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/how-does-a-signal-handler-differ-from-a-regular-function-handwritten.svg" alt="Handwritten: How does a signal handler differ from a regular function?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/how-does-a-signal-handler-differ-from-a-regular-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/how-does-a-signal-handler-differ-from-a-regular-function-diagram.svg" alt="Diagram: How does a signal handler differ from a regular function?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/how-does-a-signal-handler-differ-from-a-regular-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/how-does-a-signal-handler-differ-from-a-regular-function-sticky.svg" alt="Sticky Note: How does a signal handler differ from a regular function?" width="30%">
-</a>
 
 
 | Aspect | Regular Function | Signal Handler |
@@ -1881,30 +1501,10 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 ### Q6: Explain the spiral rule for complex declarations.
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/explain-the-spiral-rule-for-complex-declarations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/explain-the-spiral-rule-for-complex-declarations-handwritten.svg" alt="Handwritten: Explain the spiral rule for complex declarations." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/explain-the-spiral-rule-for-complex-declarations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/explain-the-spiral-rule-for-complex-declarations-diagram.svg" alt="Diagram: Explain the spiral rule for complex declarations." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/explain-the-spiral-rule-for-complex-declarations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/explain-the-spiral-rule-for-complex-declarations-sticky.svg" alt="Sticky Note: Explain the spiral rule for complex declarations." width="30%">
-</a>
-
 
 **Answer:** Start at the identifier, move right as far as possible (respecting parentheses), then left, spiraling outward. Each `[n]` = array of, `(params)` = function taking, `*` = pointer to. Parentheses override the default right-left precedence. Example: `int (*(*fp)(int))[5]` → `fp` is a pointer to a function taking `int` and returning a pointer to an array[5] of `int`.
 
 ### Q7: What's the difference between `#ifndef` guard and `#pragma once`?
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-s-the-difference-between-ifndef-guard-and-pragma-once-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-s-the-difference-between-ifndef-guard-and-pragma-once-handwritten.svg" alt="Handwritten: What's the difference between `#ifndef` guard and `#pragma once`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-s-the-difference-between-ifndef-guard-and-pragma-once-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-s-the-difference-between-ifndef-guard-and-pragma-once-diagram.svg" alt="Diagram: What's the difference between `#ifndef` guard and `#pragma once`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/what-s-the-difference-between-ifndef-guard-and-pragma-once-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/what-s-the-difference-between-ifndef-guard-and-pragma-once-sticky.svg" alt="Sticky Note: What's the difference between `#ifndef` guard and `#pragma once`?" width="30%">
-</a>
 
 
 | Aspect | `#ifndef` | `#pragma once` |
@@ -1920,16 +1520,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 ### Linux Kernel
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/linux-kernel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/linux-kernel-handwritten.svg" alt="Handwritten: Linux Kernel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/linux-kernel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/linux-kernel-diagram.svg" alt="Diagram: Linux Kernel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/linux-kernel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/linux-kernel-sticky.svg" alt="Sticky Note: Linux Kernel" width="30%">
-</a>
-
 
 - **`volatile`:** Used sparingly → mostly for `jiffies` (system timer tick) and memory-mapped I/O. The kernel developers prefer `READ_ONCE()`/`WRITE_ONCE()` macros instead of raw `volatile`.
 - **`restrict`:** Used extensively in `copy_from_user`/`copy_to_user`, crypto routines, and `memcpy` implementations.
@@ -1939,16 +1529,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 ### Embedded Systems
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/embedded-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/embedded-systems-handwritten.svg" alt="Handwritten: Embedded Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/embedded-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/embedded-systems-diagram.svg" alt="Diagram: Embedded Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/embedded-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/embedded-systems-sticky.svg" alt="Sticky Note: Embedded Systems" width="30%">
-</a>
-
 
 - **`volatile`:** Every memory-mapped peripheral register is declared `volatile` → UART status registers, GPIO pin values, ADC conversion results, interrupt status flags.
 - **Interrupt handlers (ISRs):** Direct analog of signal handlers → do minimal work (clear flag, read/write hardware), set a volatile flag, return.
@@ -1957,16 +1537,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 - **`const volatile`:** Read-only hardware registers (e.g., device ID registers) → the value changes externally but firmware must not write.
 
 ### Database Engines (SQLite, MySQL internals)
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/database-engines-sqlite-mysql-internals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/database-engines-sqlite-mysql-internals-handwritten.svg" alt="Handwritten: Database Engines (SQLite, MySQL internals)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/database-engines-sqlite-mysql-internals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/database-engines-sqlite-mysql-internals-diagram.svg" alt="Diagram: Database Engines (SQLite, MySQL internals)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/database-engines-sqlite-mysql-internals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/database-engines-sqlite-mysql-internals-sticky.svg" alt="Sticky Note: Database Engines (SQLite, MySQL internals)" width="30%">
-</a>
 
 
 - **Dispatch tables:** SQL execution engines use function pointer tables for each operation (scan, join, sort, aggregate).
@@ -1980,16 +1550,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 ### Error Recovery: Return Codes vs setjmp/longjmp vs Signals
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/error-recovery-return-codes-vs-setjmp-longjmp-vs-signals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/error-recovery-return-codes-vs-setjmp-longjmp-vs-signals-handwritten.svg" alt="Handwritten: Error Recovery: Return Codes vs setjmp/longjmp vs Signals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/error-recovery-return-codes-vs-setjmp-longjmp-vs-signals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/error-recovery-return-codes-vs-setjmp-longjmp-vs-signals-diagram.svg" alt="Diagram: Error Recovery: Return Codes vs setjmp/longjmp vs Signals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/error-recovery-return-codes-vs-setjmp-longjmp-vs-signals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/error-recovery-return-codes-vs-setjmp-longjmp-vs-signals-sticky.svg" alt="Sticky Note: Error Recovery: Return Codes vs setjmp/longjmp vs Signals" width="30%">
-</a>
-
 
 | Aspect | Return Codes | setjmp/longjmp | Signals |
 |--------|-------------|----------------|---------|
@@ -2000,16 +1560,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 | Type safety | Full | Integer code only | Signal number only |
 
 ### Storage Class Comparison
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/storage-class-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/storage-class-comparison-handwritten.svg" alt="Handwritten: Storage Class Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/storage-class-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/storage-class-comparison-diagram.svg" alt="Diagram: Storage Class Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/storage-class-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/storage-class-comparison-sticky.svg" alt="Sticky Note: Storage Class Comparison" width="30%">
-</a>
 
 
 | Specifier | Scope | Lifetime | Linkage |
@@ -2023,16 +1573,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 
 ### Pointer Qualifiers Deep Dive
 
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/pointer-qualifiers-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/pointer-qualifiers-deep-dive-handwritten.svg" alt="Handwritten: Pointer Qualifiers Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/pointer-qualifiers-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/pointer-qualifiers-deep-dive-diagram.svg" alt="Diagram: Pointer Qualifiers Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/pointer-qualifiers-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/pointer-qualifiers-deep-dive-sticky.svg" alt="Sticky Note: Pointer Qualifiers Deep Dive" width="30%">
-</a>
-
 
 | Declaration | Meaning |
 |-------------|---------|
@@ -2043,16 +1583,6 @@ The common fix: `memcpy` or `union` (if staying in C).
 | `int *restrict p` | Pointer is sole access path to memory |
 
 ### Table: Sections vs Descriptions
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/table-sections-vs-descriptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/table-sections-vs-descriptions-handwritten.svg" alt="Handwritten: Table: Sections vs Descriptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/table-sections-vs-descriptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/table-sections-vs-descriptions-diagram.svg" alt="Diagram: Table: Sections vs Descriptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/table-sections-vs-descriptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/table-sections-vs-descriptions-sticky.svg" alt="Sticky Note: Table: Sections vs Descriptions" width="30%">
-</a>
 
 
 | Section | Topic | Lines of Code | Key Concept |
@@ -2247,16 +1777,6 @@ int register_plugin(plugin_t *p);
 4. (Bonus) Load plugins from `.so`/`.dll` files using `dlopen`/`LoadLibrary`
 
 ### Self-Checklist
-
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/self-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/self-checklist-handwritten.svg" alt="Handwritten: Self-Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/self-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/self-checklist-diagram.svg" alt="Diagram: Self-Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/c-programming/18-advanced-c/self-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/c-programming/18-advanced-c/self-checklist-sticky.svg" alt="Sticky Note: Self-Checklist" width="30%">
-</a>
 
 
 | Topic | Know It | Can Explain | Can Code |

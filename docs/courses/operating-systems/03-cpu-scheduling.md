@@ -106,16 +106,6 @@ flowchart LR
 
 ### Basic Concepts
 
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/basic-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/basic-concepts-handwritten.svg" alt="Handwritten: Basic Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/basic-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/basic-concepts-diagram.svg" alt="Diagram: Basic Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/basic-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/basic-concepts-sticky.svg" alt="Sticky Note: Basic Concepts" width="30%">
-</a>
-
 
 CPU scheduling is the foundation of multiprogramming. The **scheduler** selects among processes in the ready queue to allocate CPU time. Scheduling decisions happen when a process:
 
@@ -135,16 +125,6 @@ When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive
 
 ### Scheduling Criteria
 
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-criteria-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-criteria-handwritten.svg" alt="Handwritten: Scheduling Criteria" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-criteria-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-criteria-diagram.svg" alt="Diagram: Scheduling Criteria" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-criteria-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-criteria-sticky.svg" alt="Sticky Note: Scheduling Criteria" width="30%">
-</a>
-
 
 | Metric | Definition | Formula | Target |
 |--------|------------|---------|--------|
@@ -159,16 +139,6 @@ When scheduling only happens in cases 1 and 4, the algorithm is **non-preemptive
 ---
 
 ### Scheduling Algorithms
-
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-algorithms-handwritten.svg" alt="Handwritten: Scheduling Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-algorithms-diagram.svg" alt="Diagram: Scheduling Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/operating-systems/03-cpu-scheduling/scheduling-algorithms-sticky.svg" alt="Sticky Note: Scheduling Algorithms" width="30%">
-</a>
 
 
 ---

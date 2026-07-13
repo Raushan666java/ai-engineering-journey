@@ -47,23 +47,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 1.1 What Is Reading Comprehension in Govt Exams?
-
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-handwritten.svg" alt="Handwritten: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-diagram.svg" alt="Diagram: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-1-what-is-reading-comprehension-in-govt-exams-sticky.svg" alt="Sticky Note: 1.1 What Is Reading Comprehension in Govt Exams?" width="30%">
-</a>
-
 
 Reading Comprehension (RC) is the single highest-weightage topic in IBPS SO IT Officer Prelims, accounting for **8–10 questions** out of 25 English Language questions. Typically, **2 passages** are given — one of moderate length (350–500 words) and another shorter passage (200–300 words). Questions test your ability to understand, interpret, and analyse written text.
 
@@ -76,17 +64,6 @@ Exams that feature RC passages:
 
 ### 1.2 Types of Passages
 
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-handwritten.svg" alt="Handwritten: 1.2 Types of Passages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-diagram.svg" alt="Diagram: 1.2 Types of Passages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-2-types-of-passages-sticky.svg" alt="Sticky Note: 1.2 Types of Passages" width="30%">
-</a>
-
-
 | Type | Theme | Example Topics |
 |------|-------|----------------|
 | **Economic / Business** | Finance, banking, trade | Digital payments, inflation, RBI policy |
@@ -98,17 +75,6 @@ Exams that feature RC passages:
 > **IBPS SO-specific note:** Passages often have a **technology-in-banking** or **digital-finance** flavour. Reading The Hindu's Business Line is excellent preparation.
 
 ### 1.3 Types of Questions
-
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-handwritten.svg" alt="Handwritten: 1.3 Types of Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-diagram.svg" alt="Diagram: 1.3 Types of Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-3-types-of-questions-sticky.svg" alt="Sticky Note: 1.3 Types of Questions" width="30%">
-</a>
-
 
 #### A. Main Idea / Central Theme
 - *"What is the main idea of the passage?"*
@@ -140,17 +106,6 @@ Exams that feature RC passages:
 
 ### 1.4 The SQ3R Method for RC
 
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-handwritten.svg" alt="Handwritten: 1.4 The SQ3R Method for RC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-diagram.svg" alt="Diagram: 1.4 The SQ3R Method for RC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-4-the-sq3r-method-for-rc-sticky.svg" alt="Sticky Note: 1.4 The SQ3R Method for RC" width="30%">
-</a>
-
-
 **S — Survey:** Skim the passage in 30 seconds (read first line of each paragraph, look for dates, proper nouns, keywords).
 
 **Q — Question:** Read the questions FIRST. Underline keywords in each question.
@@ -169,17 +124,6 @@ Exams that feature RC passages:
 
 ### 1.5 Speed vs Accuracy Trade-off
 
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-handwritten.svg" alt="Handwritten: 1.5 Speed vs Accuracy Trade-off" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-diagram.svg" alt="Diagram: 1.5 Speed vs Accuracy Trade-off" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-5-speed-vs-accuracy-trade-off-sticky.svg" alt="Sticky Note: 1.5 Speed vs Accuracy Trade-off" width="30%">
-</a>
-
-
 In IBPS SO Prelims, you have approximately **55 minutes for all sections**. English should take **12–15 minutes max**. For RC:
 
 | Step | Time |
@@ -191,17 +135,6 @@ In IBPS SO Prelims, you have approximately **55 minutes for all sections**. Engl
 | **Total per passage** | **7–9 minutes** |
 
 ### 1.6 Cloze Test Integration
-
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-handwritten.svg" alt="Handwritten: 1.6 Cloze Test Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-diagram.svg" alt="Diagram: 1.6 Cloze Test Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/01-reading-comprehension/1-6-cloze-test-integration-sticky.svg" alt="Sticky Note: 1.6 Cloze Test Integration" width="30%">
-</a>
-
 
 Many exams combine RC with **Cloze Test** — a passage with blanked-out words. You must choose the most appropriate word from options.
 

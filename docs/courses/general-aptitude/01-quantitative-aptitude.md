@@ -82,16 +82,6 @@ flowchart LR
 
 ### 1.1 Number Systems
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-1-number-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-1-number-systems-handwritten.svg" alt="Handwritten: 1.1 Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-1-number-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-1-number-systems-diagram.svg" alt="Diagram: 1.1 Number Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-1-number-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-1-number-systems-sticky.svg" alt="Sticky Note: 1.1 Number Systems" width="30%">
-</a>
-
 
 **Natural Numbers:** $N = \{1, 2, 3, \ldots\}$
 
@@ -128,16 +118,6 @@ $$a \times b = \text{HCF}(a,b) \times \text{LCM}(a,b)$$
 
 ### 1.2 Percentages
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-2-percentages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-2-percentages-handwritten.svg" alt="Handwritten: 1.2 Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-2-percentages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-2-percentages-diagram.svg" alt="Diagram: 1.2 Percentages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-2-percentages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-2-percentages-sticky.svg" alt="Sticky Note: 1.2 Percentages" width="30%">
-</a>
-
 
 **Definition:** Percentage = (part / whole) ? 100
 
@@ -167,16 +147,6 @@ $$\text{Net \%} = a + b + \frac{ab}{100}$$
 
 ### 1.3 Profit & Loss
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-3-profit-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-3-profit-loss-handwritten.svg" alt="Handwritten: 1.3 Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-3-profit-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-3-profit-loss-diagram.svg" alt="Diagram: 1.3 Profit & Loss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-3-profit-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-3-profit-loss-sticky.svg" alt="Sticky Note: 1.3 Profit & Loss" width="30%">
-</a>
-
 
 **Cost Price (CP):** Price at which an item is purchased.
 **Selling Price (SP):** Price at which an item is sold.
@@ -196,16 +166,6 @@ $$\text{Net \%} = a + b + \frac{ab}{100}$$
 $$\text{Profit \%} = \frac{\text{Error}}{\text{True Value} - \text{Error}} \times 100$$
 
 ### 1.4 Ratio, Proportion, and Variation
-
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-4-ratio-proportion-and-variation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-4-ratio-proportion-and-variation-handwritten.svg" alt="Handwritten: 1.4 Ratio, Proportion, and Variation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-4-ratio-proportion-and-variation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-4-ratio-proportion-and-variation-diagram.svg" alt="Diagram: 1.4 Ratio, Proportion, and Variation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-4-ratio-proportion-and-variation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-4-ratio-proportion-and-variation-sticky.svg" alt="Sticky Note: 1.4 Ratio, Proportion, and Variation" width="30%">
-</a>
 
 
 **Ratio:** $a : b = a/b$ (read as "$a$ to $b$")
@@ -227,16 +187,6 @@ $$\text{Profit \%} = \frac{\text{Error}}{\text{True Value} - \text{Error}} \time
 
 ### 1.5 Averages
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-5-averages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-5-averages-handwritten.svg" alt="Handwritten: 1.5 Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-5-averages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-5-averages-diagram.svg" alt="Diagram: 1.5 Averages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-5-averages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-5-averages-sticky.svg" alt="Sticky Note: 1.5 Averages" width="30%">
-</a>
-
 
 **Average (Mean):**
 $$\text{Average} = \frac{\text{Sum of all terms}}{\text{Number of terms}}$$
@@ -250,16 +200,6 @@ $$\bar{x}_w = \frac{\sum w_i x_i}{\sum w_i}$$
 
 ### 1.6 Mixtures and Alligation
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-6-mixtures-and-alligation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-6-mixtures-and-alligation-handwritten.svg" alt="Handwritten: 1.6 Mixtures and Alligation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-6-mixtures-and-alligation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-6-mixtures-and-alligation-diagram.svg" alt="Diagram: 1.6 Mixtures and Alligation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-6-mixtures-and-alligation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-6-mixtures-and-alligation-sticky.svg" alt="Sticky Note: 1.6 Mixtures and Alligation" width="30%">
-</a>
-
 
 **Alligation Rule:**
 $$\frac{\text{Quantity of cheaper}}{\text{Quantity of dearer}} = \frac{\text{CP of dearer} - \text{Mean price}}{\text{Mean price} - \text{CP of cheaper}}$$
@@ -268,16 +208,6 @@ $$\frac{\text{Quantity of cheaper}}{\text{Quantity of dearer}} = \frac{\text{CP 
 $$\text{Final quantity of } A = \text{Initial} \times \left(1 - \frac{x}{L}\right)^n$$
 
 ### 1.7 Time, Speed, and Distance
-
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-7-time-speed-and-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-7-time-speed-and-distance-handwritten.svg" alt="Handwritten: 1.7 Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-7-time-speed-and-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-7-time-speed-and-distance-diagram.svg" alt="Diagram: 1.7 Time, Speed, and Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-7-time-speed-and-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-7-time-speed-and-distance-sticky.svg" alt="Sticky Note: 1.7 Time, Speed, and Distance" width="30%">
-</a>
 
 
 **Fundamental:** $\text{Distance} = \text{Speed} \times \text{Time}$
@@ -307,16 +237,6 @@ $$\text{Avg Speed} = \frac{2v_1v_2}{v_1 + v_2}$$
 
 ### 1.8 Time and Work
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-8-time-and-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-8-time-and-work-handwritten.svg" alt="Handwritten: 1.8 Time and Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-8-time-and-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-8-time-and-work-diagram.svg" alt="Diagram: 1.8 Time and Work" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-8-time-and-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-8-time-and-work-sticky.svg" alt="Sticky Note: 1.8 Time and Work" width="30%">
-</a>
-
 
 **Fundamental:** $\text{Work} = \text{Rate} \times \text{Time}$
 
@@ -335,16 +255,6 @@ If $A$ can do a job in $n$ days, $A$'s one-day work = $1/n$.
 - Net fill rate = sum of all inlet rates - sum of outlet rates
 
 ### 1.9 Simple and Compound Interest
-
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-9-simple-and-compound-interest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-9-simple-and-compound-interest-handwritten.svg" alt="Handwritten: 1.9 Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-9-simple-and-compound-interest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-9-simple-and-compound-interest-diagram.svg" alt="Diagram: 1.9 Simple and Compound Interest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-9-simple-and-compound-interest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-9-simple-and-compound-interest-sticky.svg" alt="Sticky Note: 1.9 Simple and Compound Interest" width="30%">
-</a>
 
 
 **Simple Interest:**
@@ -368,16 +278,6 @@ $$\text{CI} - \text{SI} = P\left(\frac{R}{100}\right)^2$$
 $$R_{\text{eff}} = \left(1 + \frac{R}{n}\right)^n - 1$$
 
 ### 1.10 Mensuration (Geometry)
-
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-10-mensuration-geometry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-10-mensuration-geometry-handwritten.svg" alt="Handwritten: 1.10 Mensuration (Geometry)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-10-mensuration-geometry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-10-mensuration-geometry-diagram.svg" alt="Diagram: 1.10 Mensuration (Geometry)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-10-mensuration-geometry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-10-mensuration-geometry-sticky.svg" alt="Sticky Note: 1.10 Mensuration (Geometry)" width="30%">
-</a>
 
 
 **2D Shapes:**
@@ -408,16 +308,6 @@ $$R_{\text{eff}} = \left(1 + \frac{R}{n}\right)^n - 1$$
 
 ### 1.11 Permutations and Combinations
 
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-11-permutations-and-combinations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-11-permutations-and-combinations-handwritten.svg" alt="Handwritten: 1.11 Permutations and Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-11-permutations-and-combinations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-11-permutations-and-combinations-diagram.svg" alt="Diagram: 1.11 Permutations and Combinations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-11-permutations-and-combinations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-11-permutations-and-combinations-sticky.svg" alt="Sticky Note: 1.11 Permutations and Combinations" width="30%">
-</a>
-
 
 **Fundamental Principle of Counting:** If one event can occur in $m$ ways and another in $n$ ways, both can occur in $m \times n$ ways.
 
@@ -437,16 +327,6 @@ $$C(n,r) = \binom{n}{r} = \frac{n!}{r!(n-r)!}$$
 - $C(n,r) + C(n, r-1) = C(n+1, r)$ (Pascal's identity)
 
 ### 1.12 Probability (Basic)
-
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-12-probability-basic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-12-probability-basic-handwritten.svg" alt="Handwritten: 1.12 Probability (Basic)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-12-probability-basic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-12-probability-basic-diagram.svg" alt="Diagram: 1.12 Probability (Basic)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-12-probability-basic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/01-quantitative-aptitude/1-12-probability-basic-sticky.svg" alt="Sticky Note: 1.12 Probability (Basic)" width="30%">
-</a>
 
 
 **Definition:** $P(E) = \frac{\text{Number of favorable outcomes}}{\text{Total number of equally likely outcomes}}$

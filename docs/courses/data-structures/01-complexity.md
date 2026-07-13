@@ -59,30 +59,10 @@ Every major system — Google Search, Redis, PostgreSQL, Netflix — lives or di
 
 ### Why Complexity Matters
 
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-handwritten.svg" alt="Handwritten: Why Complexity Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-diagram.svg" alt="Diagram: Why Complexity Matters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/why-complexity-matters-sticky.svg" alt="Sticky Note: Why Complexity Matters" width="30%">
-</a>
-
 
 Two programs that solve the same problem can differ in running time by orders of magnitude. Complexity analysis gives us a language to describe this difference without reference to a specific machine.
 
 ### Asymptotic Notation
-
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-handwritten.svg" alt="Handwritten: Asymptotic Notation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-diagram.svg" alt="Diagram: Asymptotic Notation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/asymptotic-notation-sticky.svg" alt="Sticky Note: Asymptotic Notation" width="30%">
-</a>
 
 
 Let \( T(n) \) be the exact running time of an algorithm on input size \( n \). We care about the *rate of growth* as \( n \to \infty \).
@@ -90,16 +70,6 @@ Let \( T(n) \) be the exact running time of an algorithm on input size \( n \). 
 ---
 
 ### Big-O Notation (O) — Upper Bound
-
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-handwritten.svg" alt="Handwritten: Big-O Notation (O) — Upper Bound" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-diagram.svg" alt="Diagram: Big-O Notation (O) — Upper Bound" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/big-o-notation-o-upper-bound-sticky.svg" alt="Sticky Note: Big-O Notation (O) — Upper Bound" width="30%">
-</a>
 
 
 **Real-World Analogy:** An elevator has a maximum capacity of 1,000 kg. Whether you load 500 kg, 800 kg, or 1,000 kg, the elevator *never exceeds* 1,000 kg. Big-O gives the worst-case ceiling — the algorithm will never perform worse than this bound.
@@ -221,16 +191,6 @@ The `for` loop executes exactly `n` iterations in the worst case (target not fou
 
 ### Omega Notation (Ω) — Lower Bound
 
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-handwritten.svg" alt="Handwritten: Omega Notation (Ω) — Lower Bound" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-diagram.svg" alt="Diagram: Omega Notation (Ω) — Lower Bound" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/omega-notation-lower-bound-sticky.svg" alt="Sticky Note: Omega Notation (Ω) — Lower Bound" width="30%">
-</a>
-
 
 **Real-World Analogy:** No matter how fast you drive, you cannot reach a destination in less time than the speed limit permits. If the speed limit is 60 km/h on a 100 km road, the *best possible* time is 100/60 ≈ 1.67 hours. Omega provides this "best case" floor.
 
@@ -328,16 +288,6 @@ The function `arr[0]` performs exactly one array access regardless of array size
 ---
 
 ### Theta Notation (Θ) — Tight Bound
-
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-handwritten.svg" alt="Handwritten: Theta Notation (Θ) — Tight Bound" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-diagram.svg" alt="Diagram: Theta Notation (Θ) — Tight Bound" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/theta-notation-tight-bound-sticky.svg" alt="Sticky Note: Theta Notation (Θ) — Tight Bound" width="30%">
-</a>
 
 
 **Real-World Analogy:** A train that takes exactly 2 hours between two cities every trip — not faster, not slower. Θ(g(n)) means the algorithm's running time is *both* O(g(n)) and Ω(g(n)) — it grows *exactly* like g(n) for large inputs.
@@ -443,16 +393,6 @@ The loop always runs exactly n times regardless of input values. Every input of 
 ---
 
 ### Amortized Analysis
-
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-handwritten.svg" alt="Handwritten: Amortized Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-diagram.svg" alt="Diagram: Amortized Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/amortized-analysis-sticky.svg" alt="Sticky Note: Amortized Analysis" width="30%">
-</a>
 
 
 **Real-World Analogy:** You go to the gym 30 times a month. You buy a monthly pass for \$100 instead of paying \$10 per visit. On day 1, you "pay" \$100 — expensive. But amortized over 30 visits, the cost is only \$3.33 per visit. One operation is costly, but the average over a sequence is cheap. Dynamic array resizing works exactly like this.
@@ -566,16 +506,6 @@ The key insight: expensive resize operations become rarer as the array grows. Af
 ---
 
 ### Space Complexity
-
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-handwritten.svg" alt="Handwritten: Space Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-diagram.svg" alt="Diagram: Space Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/01-complexity/space-complexity-sticky.svg" alt="Sticky Note: Space Complexity" width="30%">
-</a>
 
 
 **Real-World Analogy:** You have a backpack that can hold 10 kg. You're packing for a hike — every item you add takes up weight and space. Similarly, every variable, array, and recursive call consumes memory. Space complexity measures the *peak memory usage* of an algorithm.

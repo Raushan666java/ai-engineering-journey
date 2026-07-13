@@ -2,7 +2,6 @@
 
 > Build lightning-fast mental calculation skills through timed practice across addition, subtraction, multiplication, division, percentages, fractions, squares, cubes, roots, and approximation.
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/speed-drills/01-quant-arithmetic-drills/hero.svg" target="_blank" rel="noopener">
@@ -60,17 +59,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 1: Two-Digit Addition | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-two-digit-addition-target-30-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-two-digit-addition-target-30-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: Two-Digit Addition | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-two-digit-addition-target-30-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-two-digit-addition-target-30-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: Two-Digit Addition | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-two-digit-addition-target-30-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-two-digit-addition-target-30-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: Two-Digit Addition | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 **Instructions:** Solve each addition mentally. No paper, no calculator.
 
 | Q No | Question | Your Answer |
@@ -105,17 +93,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 2: Two-Digit Subtraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-two-digit-subtraction-target-30-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-two-digit-subtraction-target-30-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: Two-Digit Subtraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-two-digit-subtraction-target-30-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-two-digit-subtraction-target-30-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: Two-Digit Subtraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-two-digit-subtraction-target-30-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-two-digit-subtraction-target-30-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: Two-Digit Subtraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 73 - 28 = ? | _____ |
@@ -147,17 +124,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 3: Three-Digit Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-three-digit-addition-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-three-digit-addition-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Three-Digit Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-three-digit-addition-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-three-digit-addition-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Three-Digit Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-three-digit-addition-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-three-digit-addition-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Three-Digit Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -191,17 +157,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 4: Three-Digit Subtraction | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-three-digit-subtraction-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-three-digit-subtraction-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Three-Digit Subtraction | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-three-digit-subtraction-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-three-digit-subtraction-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Three-Digit Subtraction | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-three-digit-subtraction-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-three-digit-subtraction-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Three-Digit Subtraction | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 524 - 387 = ? | _____ |
@@ -233,17 +188,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 5: Mixed Add/Subtract (2-3 Digits) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-mixed-add-subtract-2-3-digits-target-45-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-mixed-add-subtract-2-3-digits-target-45-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 5: Mixed Add/Subtract (2-3 Digits) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-mixed-add-subtract-2-3-digits-target-45-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-mixed-add-subtract-2-3-digits-target-45-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 5: Mixed Add/Subtract (2-3 Digits) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-mixed-add-subtract-2-3-digits-target-45-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-mixed-add-subtract-2-3-digits-target-45-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 5: Mixed Add/Subtract (2-3 Digits) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -277,17 +221,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 6: Consecutive Operations | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-consecutive-operations-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-consecutive-operations-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Consecutive Operations | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-consecutive-operations-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-consecutive-operations-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Consecutive Operations | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-consecutive-operations-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-consecutive-operations-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Consecutive Operations | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 25 + 38 + 47 - 19 = ? | _____ |
@@ -319,17 +252,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 7: Decimal Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-decimal-addition-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-decimal-addition-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7: Decimal Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-decimal-addition-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-decimal-addition-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7: Decimal Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-decimal-addition-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-decimal-addition-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7: Decimal Addition | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -363,17 +285,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 8: Negative Numbers | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-negative-numbers-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-negative-numbers-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 8: Negative Numbers | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-negative-numbers-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-negative-numbers-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 8: Negative Numbers | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-negative-numbers-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-negative-numbers-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 8: Negative Numbers | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | (-15) + 8 = ? | _____ |
@@ -406,17 +317,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 9: Large Numbers Add/Sub | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-large-numbers-add-sub-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-large-numbers-add-sub-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 9: Large Numbers Add/Sub | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-large-numbers-add-sub-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-large-numbers-add-sub-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 9: Large Numbers Add/Sub | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-large-numbers-add-sub-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-large-numbers-add-sub-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 9: Large Numbers Add/Sub | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 1,245 + 3,678 = ? | _____ |
@@ -448,17 +348,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 10: Speed Challenge — Mixed Add/Sub | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-add-sub-target-30-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-add-sub-target-30-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 10: Speed Challenge — Mixed Add/Sub | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-add-sub-target-30-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-add-sub-target-30-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 10: Speed Challenge — Mixed Add/Sub | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-add-sub-target-30-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-add-sub-target-30-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 10: Speed Challenge — Mixed Add/Sub | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -496,17 +385,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 1: 2-Digit × 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-2-digit-1-digit-target-30-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-2-digit-1-digit-target-30-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 1: 2-Digit × 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-2-digit-1-digit-target-30-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-2-digit-1-digit-target-30-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 1: 2-Digit × 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-2-digit-1-digit-target-30-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-2-digit-1-digit-target-30-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 1: 2-Digit × 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 34 × 7 = ? | _____ |
@@ -538,17 +416,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 2: 3-Digit × 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-3-digit-1-digit-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-3-digit-1-digit-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 2: 3-Digit × 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-3-digit-1-digit-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-3-digit-1-digit-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 2: 3-Digit × 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-3-digit-1-digit-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-3-digit-1-digit-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 2: 3-Digit × 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -582,17 +449,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 3: 2-Digit × 2-Digit | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-2-digit-2-digit-target-60-sec-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-2-digit-2-digit-target-60-sec-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 3: 2-Digit × 2-Digit | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-2-digit-2-digit-target-60-sec-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-2-digit-2-digit-target-60-sec-accuracy-goal-75-diagram.svg" alt="Diagram: Set 3: 2-Digit × 2-Digit | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-2-digit-2-digit-target-60-sec-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-2-digit-2-digit-target-60-sec-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 3: 2-Digit × 2-Digit | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 12 × 15 = ? | _____ |
@@ -624,17 +480,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 4: 3-Digit × 2-Digit | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 70%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-3-digit-2-digit-target-90-sec-accuracy-goal-70-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-3-digit-2-digit-target-90-sec-accuracy-goal-70-handwritten.svg" alt="Handwritten: Set 4: 3-Digit × 2-Digit | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 70%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-3-digit-2-digit-target-90-sec-accuracy-goal-70-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-3-digit-2-digit-target-90-sec-accuracy-goal-70-diagram.svg" alt="Diagram: Set 4: 3-Digit × 2-Digit | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 70%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-3-digit-2-digit-target-90-sec-accuracy-goal-70-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-3-digit-2-digit-target-90-sec-accuracy-goal-70-sticky.svg" alt="Sticky Note: Set 4: 3-Digit × 2-Digit | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 70%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -668,17 +513,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 5: Division — 2-Digit ÷ 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-division-2-digit-1-digit-target-30-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-division-2-digit-1-digit-target-30-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Division — 2-Digit ÷ 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-division-2-digit-1-digit-target-30-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-division-2-digit-1-digit-target-30-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Division — 2-Digit ÷ 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-division-2-digit-1-digit-target-30-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-division-2-digit-1-digit-target-30-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Division — 2-Digit ÷ 1-Digit | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 84 ÷ 7 = ? | _____ |
@@ -710,17 +544,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 6: Division — 3-Digit ÷ 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-division-3-digit-1-digit-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-division-3-digit-1-digit-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Division — 3-Digit ÷ 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-division-3-digit-1-digit-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-division-3-digit-1-digit-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Division — 3-Digit ÷ 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-division-3-digit-1-digit-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-division-3-digit-1-digit-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Division — 3-Digit ÷ 1-Digit | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -754,17 +577,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 7: Mixed Multiplication | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-multiplication-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-multiplication-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7: Mixed Multiplication | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-multiplication-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-multiplication-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7: Mixed Multiplication | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-multiplication-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-multiplication-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7: Mixed Multiplication | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 17 × 13 = ? | _____ |
@@ -796,17 +608,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 8: Mixed Division | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-mixed-division-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-mixed-division-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 8: Mixed Division | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-mixed-division-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-mixed-division-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 8: Mixed Division | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-mixed-division-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-mixed-division-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 8: Mixed Division | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -840,17 +641,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 9: Word Problems — Multiplication/Division | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-word-problems-multiplication-division-target-90-sec-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-word-problems-multiplication-division-target-90-sec-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 9: Word Problems — Multiplication/Division | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-word-problems-multiplication-division-target-90-sec-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-word-problems-multiplication-division-target-90-sec-accuracy-goal-75-diagram.svg" alt="Diagram: Set 9: Word Problems — Multiplication/Division | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-word-problems-multiplication-division-target-90-sec-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-word-problems-multiplication-division-target-90-sec-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 9: Word Problems — Multiplication/Division | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | A box holds 24 apples. How many apples in 37 boxes? | _____ |
@@ -882,17 +672,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 </details>
 
 ### Set 10: Speed Challenge — Mixed Mult/Div | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-mult-div-target-30-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-mult-div-target-30-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 10: Speed Challenge — Mixed Mult/Div | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-mult-div-target-30-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-mult-div-target-30-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 10: Speed Challenge — Mixed Mult/Div | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-mult-div-target-30-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-mixed-mult-div-target-30-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 10: Speed Challenge — Mixed Mult/Div | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -930,17 +709,6 @@ dataset "Approximation" [58, 70, 80, 86, 92]
 
 ### Set 1: Percentage to Fraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-percentage-to-fraction-target-30-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-percentage-to-fraction-target-30-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 1: Percentage to Fraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-percentage-to-fraction-target-30-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-percentage-to-fraction-target-30-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 1: Percentage to Fraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-percentage-to-fraction-target-30-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-percentage-to-fraction-target-30-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 1: Percentage to Fraction | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
-
 Convert each percentage to its simplest fraction form.
 
 | Q No | Question | Your Answer |
@@ -975,17 +743,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 2: Fraction to Percentage | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-fraction-to-percentage-target-30-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-fraction-to-percentage-target-30-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Fraction to Percentage | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-fraction-to-percentage-target-30-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-fraction-to-percentage-target-30-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Fraction to Percentage | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-fraction-to-percentage-target-30-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-fraction-to-percentage-target-30-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Fraction to Percentage | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 3/5 = ?% | _____ |
@@ -1017,17 +774,6 @@ Convert each percentage to its simplest fraction form.
 </details>
 
 ### Set 3: Percentage of a Number | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-percentage-of-a-number-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-percentage-of-a-number-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Percentage of a Number | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-percentage-of-a-number-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-percentage-of-a-number-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Percentage of a Number | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-percentage-of-a-number-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-percentage-of-a-number-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Percentage of a Number | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -1061,17 +807,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 4: Percentage Increase/Decrease | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-percentage-increase-decrease-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-percentage-increase-decrease-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 4: Percentage Increase/Decrease | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-percentage-increase-decrease-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-percentage-increase-decrease-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 4: Percentage Increase/Decrease | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-percentage-increase-decrease-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-percentage-increase-decrease-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 4: Percentage Increase/Decrease | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 40 increased by 25% = ? | _____ |
@@ -1103,17 +838,6 @@ Convert each percentage to its simplest fraction form.
 </details>
 
 ### Set 5: Fraction Addition/Subtraction | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-fraction-addition-subtraction-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-fraction-addition-subtraction-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Fraction Addition/Subtraction | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-fraction-addition-subtraction-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-fraction-addition-subtraction-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Fraction Addition/Subtraction | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-fraction-addition-subtraction-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-fraction-addition-subtraction-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Fraction Addition/Subtraction | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -1147,17 +871,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 6: Fraction Multiplication/Division | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-fraction-multiplication-division-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-fraction-multiplication-division-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Fraction Multiplication/Division | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-fraction-multiplication-division-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-fraction-multiplication-division-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Fraction Multiplication/Division | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-fraction-multiplication-division-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-fraction-multiplication-division-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Fraction Multiplication/Division | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 2/3 × 3/4 = ? | _____ |
@@ -1189,17 +902,6 @@ Convert each percentage to its simplest fraction form.
 </details>
 
 ### Set 7: Mixed Percentage Problems | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-percentage-problems-target-90-sec-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-percentage-problems-target-90-sec-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 7: Mixed Percentage Problems | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-percentage-problems-target-90-sec-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-percentage-problems-target-90-sec-accuracy-goal-75-diagram.svg" alt="Diagram: Set 7: Mixed Percentage Problems | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-percentage-problems-target-90-sec-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-mixed-percentage-problems-target-90-sec-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 7: Mixed Percentage Problems | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -1233,17 +935,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 8: Successive Percentage Change | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-successive-percentage-change-target-90-sec-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-successive-percentage-change-target-90-sec-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 8: Successive Percentage Change | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-successive-percentage-change-target-90-sec-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-successive-percentage-change-target-90-sec-accuracy-goal-75-diagram.svg" alt="Diagram: Set 8: Successive Percentage Change | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-successive-percentage-change-target-90-sec-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-successive-percentage-change-target-90-sec-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 8: Successive Percentage Change | ⏱ Target: 90 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | Increase by 10%, then by 20%. Net change? | _____ |
@@ -1276,17 +967,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 9: Fraction Conversion Speed | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-fraction-conversion-speed-target-30-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-fraction-conversion-speed-target-30-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 9: Fraction Conversion Speed | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-fraction-conversion-speed-target-30-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-fraction-conversion-speed-target-30-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 9: Fraction Conversion Speed | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-fraction-conversion-speed-target-30-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-fraction-conversion-speed-target-30-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 9: Fraction Conversion Speed | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 1/8 = ?% | _____ |
@@ -1318,17 +998,6 @@ Convert each percentage to its simplest fraction form.
 </details>
 
 ### Set 10: Speed Challenge — Percentages/Fractions | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-percentages-fractions-target-30-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-percentages-fractions-target-30-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 10: Speed Challenge — Percentages/Fractions | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-percentages-fractions-target-30-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-percentages-fractions-target-30-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 10: Speed Challenge — Percentages/Fractions | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-percentages-fractions-target-30-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-percentages-fractions-target-30-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 10: Speed Challenge — Percentages/Fractions | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -1366,17 +1035,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 1: Squares (1-20) | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-squares-1-20-target-20-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-squares-1-20-target-20-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 1: Squares (1-20) | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-squares-1-20-target-20-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-squares-1-20-target-20-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 1: Squares (1-20) | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-squares-1-20-target-20-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-squares-1-20-target-20-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 1: Squares (1-20) | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 12² = ? | _____ |
@@ -1408,17 +1066,6 @@ Convert each percentage to its simplest fraction form.
 </details>
 
 ### Set 2: Squares (21-50) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-squares-21-50-target-45-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-squares-21-50-target-45-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Squares (21-50) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-squares-21-50-target-45-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-squares-21-50-target-45-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Squares (21-50) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-squares-21-50-target-45-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-squares-21-50-target-45-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Squares (21-50) | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -1452,17 +1099,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 3: Squares (51-100) | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-squares-51-100-target-60-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-squares-51-100-target-60-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 3: Squares (51-100) | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-squares-51-100-target-60-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-squares-51-100-target-60-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 3: Squares (51-100) | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-squares-51-100-target-60-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-squares-51-100-target-60-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 3: Squares (51-100) | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 56² = ? | _____ |
@@ -1495,17 +1131,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 4: Cubes (1-15) | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-cubes-1-15-target-30-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-cubes-1-15-target-30-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 4: Cubes (1-15) | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-cubes-1-15-target-30-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-cubes-1-15-target-30-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 4: Cubes (1-15) | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-cubes-1-15-target-30-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-cubes-1-15-target-30-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 4: Cubes (1-15) | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
-
 | Q No | Question | Your Answer |
 |------|----------|-------------|
 | 1 | 2³ = ? | _____ |
@@ -1537,17 +1162,6 @@ Convert each percentage to its simplest fraction form.
 </details>
 
 ### Set 5: Square/Cube Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-square-cube-roots-target-45-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-square-cube-roots-target-45-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 5: Square/Cube Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-square-cube-roots-target-45-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-square-cube-roots-target-45-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 5: Square/Cube Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-square-cube-roots-target-45-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-square-cube-roots-target-45-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 5: Square/Cube Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 | Q No | Question | Your Answer |
 |------|----------|-------------|
@@ -1585,17 +1199,6 @@ Convert each percentage to its simplest fraction form.
 
 ### Set 1: Round to Nearest | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-round-to-nearest-target-20-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-round-to-nearest-target-20-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 1: Round to Nearest | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-round-to-nearest-target-20-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-round-to-nearest-target-20-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 1: Round to Nearest | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-round-to-nearest-target-20-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-1-round-to-nearest-target-20-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 1: Round to Nearest | ⏱ Target: 20 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
-
 Round each to the nearest ten, hundred, or thousand as specified.
 
 | Q No | Question | Your Answer |
@@ -1629,17 +1232,6 @@ Round each to the nearest ten, hundred, or thousand as specified.
 </details>
 
 ### Set 2: Quick Estimation — Sums | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-quick-estimation-sums-target-30-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-quick-estimation-sums-target-30-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 2: Quick Estimation — Sums | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-quick-estimation-sums-target-30-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-quick-estimation-sums-target-30-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 2: Quick Estimation — Sums | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-quick-estimation-sums-target-30-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-2-quick-estimation-sums-target-30-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 2: Quick Estimation — Sums | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 Estimate the sum to the nearest 100 or 1000.
 
@@ -1675,17 +1267,6 @@ Estimate the sum to the nearest 100 or 1000.
 
 ### Set 3: Quick Estimation — Products | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-quick-estimation-products-target-30-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-quick-estimation-products-target-30-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 3: Quick Estimation — Products | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-quick-estimation-products-target-30-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-quick-estimation-products-target-30-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 3: Quick Estimation — Products | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-quick-estimation-products-target-30-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-3-quick-estimation-products-target-30-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 3: Quick Estimation — Products | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
-
 | Q No | Question | Estimate |
 |------|----------|----------|
 | 1 | 49 × 51 ≈ ? | _____ |
@@ -1717,17 +1298,6 @@ Estimate the sum to the nearest 100 or 1000.
 </details>
 
 ### Set 4: Approximate Division | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-approximate-division-target-30-sec-accuracy-goal-85-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-approximate-division-target-30-sec-accuracy-goal-85-handwritten.svg" alt="Handwritten: Set 4: Approximate Division | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-approximate-division-target-30-sec-accuracy-goal-85-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-approximate-division-target-30-sec-accuracy-goal-85-diagram.svg" alt="Diagram: Set 4: Approximate Division | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-approximate-division-target-30-sec-accuracy-goal-85-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-4-approximate-division-target-30-sec-accuracy-goal-85-sticky.svg" alt="Sticky Note: Set 4: Approximate Division | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 85%" width="30%">
-</a>
-
 
 | Q No | Question | Estimate |
 |------|----------|----------|
@@ -1761,17 +1331,6 @@ Estimate the sum to the nearest 100 or 1000.
 
 ### Set 5: Percentage Approximation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-percentage-approximation-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-percentage-approximation-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 5: Percentage Approximation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-percentage-approximation-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-percentage-approximation-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 5: Percentage Approximation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-percentage-approximation-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-5-percentage-approximation-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 5: Percentage Approximation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Estimate |
 |------|----------|----------|
 | 1 | 19% of 510 ≈ ? | _____ |
@@ -1803,17 +1362,6 @@ Estimate the sum to the nearest 100 or 1000.
 </details>
 
 ### Set 6: Mixed Estimation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-mixed-estimation-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-mixed-estimation-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 6: Mixed Estimation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-mixed-estimation-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-mixed-estimation-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 6: Mixed Estimation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-mixed-estimation-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-6-mixed-estimation-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 6: Mixed Estimation | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
 
 | Q No | Question | Estimate |
 |------|----------|----------|
@@ -1847,17 +1395,6 @@ Estimate the sum to the nearest 100 or 1000.
 
 ### Set 7: Approximate Square Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-approximate-square-roots-target-45-sec-accuracy-goal-80-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-approximate-square-roots-target-45-sec-accuracy-goal-80-handwritten.svg" alt="Handwritten: Set 7: Approximate Square Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-approximate-square-roots-target-45-sec-accuracy-goal-80-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-approximate-square-roots-target-45-sec-accuracy-goal-80-diagram.svg" alt="Diagram: Set 7: Approximate Square Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-approximate-square-roots-target-45-sec-accuracy-goal-80-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-7-approximate-square-roots-target-45-sec-accuracy-goal-80-sticky.svg" alt="Sticky Note: Set 7: Approximate Square Roots | ⏱ Target: 45 sec | 🎯 Accuracy Goal: 80%" width="30%">
-</a>
-
-
 | Q No | Question | Estimate |
 |------|----------|----------|
 | 1 | √50 ≈ ? | _____ |
@@ -1889,17 +1426,6 @@ Estimate the sum to the nearest 100 or 1000.
 </details>
 
 ### Set 8: Approximation Word Problems | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-approximation-word-problems-target-60-sec-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-approximation-word-problems-target-60-sec-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 8: Approximation Word Problems | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-approximation-word-problems-target-60-sec-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-approximation-word-problems-target-60-sec-accuracy-goal-75-diagram.svg" alt="Diagram: Set 8: Approximation Word Problems | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-approximation-word-problems-target-60-sec-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-8-approximation-word-problems-target-60-sec-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 8: Approximation Word Problems | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
 
 | Q No | Question | Estimate |
 |------|----------|----------|
@@ -1933,17 +1459,6 @@ Estimate the sum to the nearest 100 or 1000.
 
 ### Set 9: Complex Estimation | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-complex-estimation-target-60-sec-accuracy-goal-75-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-complex-estimation-target-60-sec-accuracy-goal-75-handwritten.svg" alt="Handwritten: Set 9: Complex Estimation | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-complex-estimation-target-60-sec-accuracy-goal-75-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-complex-estimation-target-60-sec-accuracy-goal-75-diagram.svg" alt="Diagram: Set 9: Complex Estimation | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-complex-estimation-target-60-sec-accuracy-goal-75-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-9-complex-estimation-target-60-sec-accuracy-goal-75-sticky.svg" alt="Sticky Note: Set 9: Complex Estimation | ⏱ Target: 60 sec | 🎯 Accuracy Goal: 75%" width="30%">
-</a>
-
-
 | Q No | Question | Estimate |
 |------|----------|----------|
 | 1 | 3,456 + 7,892 - 2,345 ≈ ? | _____ |
@@ -1975,17 +1490,6 @@ Estimate the sum to the nearest 100 or 1000.
 </details>
 
 ### Set 10: Speed Challenge — Approximation | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-approximation-target-30-sec-accuracy-goal-90-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-approximation-target-30-sec-accuracy-goal-90-handwritten.svg" alt="Handwritten: Set 10: Speed Challenge — Approximation | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-approximation-target-30-sec-accuracy-goal-90-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-approximation-target-30-sec-accuracy-goal-90-diagram.svg" alt="Diagram: Set 10: Speed Challenge — Approximation | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-approximation-target-30-sec-accuracy-goal-90-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/set-10-speed-challenge-approximation-target-30-sec-accuracy-goal-90-sticky.svg" alt="Sticky Note: Set 10: Speed Challenge — Approximation | ⏱ Target: 30 sec | 🎯 Accuracy Goal: 90%" width="30%">
-</a>
-
 
 | Q No | Question | Estimate |
 |------|----------|----------|
@@ -2022,17 +1526,6 @@ Estimate the sum to the nearest 100 or 1000.
 ## Progress Tracking
 
 ### Arithmetic Drills Summary
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/arithmetic-drills-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/arithmetic-drills-summary-handwritten.svg" alt="Handwritten: Arithmetic Drills Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/arithmetic-drills-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/arithmetic-drills-summary-diagram.svg" alt="Diagram: Arithmetic Drills Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/arithmetic-drills-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/arithmetic-drills-summary-sticky.svg" alt="Sticky Note: Arithmetic Drills Summary" width="30%">
-</a>
-
 
 | Set | Topic | Questions | Time Target | Your Time | Score | Accuracy | Status |
 |-----|-------|-----------|-------------|-----------|-------|----------|--------|
@@ -2084,17 +1577,6 @@ Estimate the sum to the nearest 100 or 1000.
 
 ### Progress Visualization
 
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/progress-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/progress-visualization-handwritten.svg" alt="Handwritten: Progress Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/progress-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/progress-visualization-diagram.svg" alt="Diagram: Progress Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/progress-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/progress-visualization-sticky.svg" alt="Sticky Note: Progress Visualization" width="30%">
-</a>
-
-
 ```mermaid
 lineChart
 title Your Accuracy by Category
@@ -2107,17 +1589,6 @@ dataset "Approximation" [58, 65, 70, 72, 75, 78, 80, 82, 85, 90]
 ```
 
 ### Milestones
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/milestones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/milestones-handwritten.svg" alt="Handwritten: Milestones" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/milestones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/milestones-diagram.svg" alt="Diagram: Milestones" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/milestones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/milestones-sticky.svg" alt="Sticky Note: Milestones" width="30%">
-</a>
-
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -2144,17 +1615,6 @@ dataset "Approximation" [58, 65, 70, 72, 75, 78, 80, 82, 85, 90]
 ```
 
 ### Next Steps
-
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/next-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/next-steps-handwritten.svg" alt="Handwritten: Next Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/next-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/next-steps-diagram.svg" alt="Diagram: Next Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/next-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/speed-drills/01-quant-arithmetic-drills/next-steps-sticky.svg" alt="Sticky Note: Next Steps" width="30%">
-</a>
-
 
 After completing these drills, proceed to:
 - **[Chapter 2: Quant Advanced Drills →](02-quant-advanced-drills.md)** — Data interpretation, number series, quadratic equations, simplification

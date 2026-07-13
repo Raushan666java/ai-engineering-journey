@@ -112,16 +112,6 @@ RDDs are the fundamental data structure in Spark: an immutable, partitioned coll
 
 ### 3.2.1 Creating RDDs
 
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-1-creating-rdds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-1-creating-rdds-handwritten.svg" alt="Handwritten: 3.2.1 Creating RDDs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-1-creating-rdds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-1-creating-rdds-diagram.svg" alt="Diagram: 3.2.1 Creating RDDs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-1-creating-rdds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-1-creating-rdds-sticky.svg" alt="Sticky Note: 3.2.1 Creating RDDs" width="30%">
-</a>
-
 
 ```python
 from pyspark.sql import SparkSession
@@ -144,16 +134,6 @@ print(f"Partitions: {rdd_8.getNumPartitions()}")
 ```
 
 ### 3.2.2 RDD Transformations (Lazy)
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-2-rdd-transformations-lazy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-2-rdd-transformations-lazy-handwritten.svg" alt="Handwritten: 3.2.2 RDD Transformations (Lazy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-2-rdd-transformations-lazy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-2-rdd-transformations-lazy-diagram.svg" alt="Diagram: 3.2.2 RDD Transformations (Lazy)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-2-rdd-transformations-lazy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-2-rdd-transformations-lazy-sticky.svg" alt="Sticky Note: 3.2.2 RDD Transformations (Lazy)" width="30%">
-</a>
 
 
 ```python
@@ -182,16 +162,6 @@ print(sorted_pairs.collect())
 ```
 
 ### 3.2.3 RDD Actions (Eager)
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-3-rdd-actions-eager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-3-rdd-actions-eager-handwritten.svg" alt="Handwritten: 3.2.3 RDD Actions (Eager)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-3-rdd-actions-eager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-3-rdd-actions-eager-diagram.svg" alt="Diagram: 3.2.3 RDD Actions (Eager)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-3-rdd-actions-eager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-2-3-rdd-actions-eager-sticky.svg" alt="Sticky Note: 3.2.3 RDD Actions (Eager)" width="30%">
-</a>
 
 
 ```python
@@ -227,16 +197,6 @@ DataFrames are RDDs with a schema. They provide a higher-level API with better o
 
 ### 3.3.1 Creating DataFrames
 
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-1-creating-dataframes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-1-creating-dataframes-handwritten.svg" alt="Handwritten: 3.3.1 Creating DataFrames" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-1-creating-dataframes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-1-creating-dataframes-diagram.svg" alt="Diagram: 3.3.1 Creating DataFrames" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-1-creating-dataframes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-1-creating-dataframes-sticky.svg" alt="Sticky Note: 3.3.1 Creating DataFrames" width="30%">
-</a>
-
 
 ```python
 from pyspark.sql import SparkSession
@@ -268,16 +228,6 @@ df_parquet = spark.read.parquet("data/*.parquet")
 ```
 
 ### 3.3.2 DataFrame Operations
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-2-dataframe-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-2-dataframe-operations-handwritten.svg" alt="Handwritten: 3.3.2 DataFrame Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-2-dataframe-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-2-dataframe-operations-diagram.svg" alt="Diagram: 3.3.2 DataFrame Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-2-dataframe-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-2-dataframe-operations-sticky.svg" alt="Sticky Note: 3.3.2 DataFrame Operations" width="30%">
-</a>
 
 
 ```python
@@ -315,16 +265,6 @@ df.groupBy("dept").agg(
 ```
 
 ### 3.3.3 User-Defined Functions (UDFs)
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-3-user-defined-functions-udfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-3-user-defined-functions-udfs-handwritten.svg" alt="Handwritten: 3.3.3 User-Defined Functions (UDFs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-3-user-defined-functions-udfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-3-user-defined-functions-udfs-diagram.svg" alt="Diagram: 3.3.3 User-Defined Functions (UDFs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-3-user-defined-functions-udfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-3-3-user-defined-functions-udfs-sticky.svg" alt="Sticky Note: 3.3.3 User-Defined Functions (UDFs)" width="30%">
-</a>
 
 
 ```python
@@ -469,16 +409,6 @@ spark.conf.set("spark.sql.adaptive.enabled", "true")
 
 ### 3.8.1 Key Configuration Parameters
 
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-1-key-configuration-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-1-key-configuration-parameters-handwritten.svg" alt="Handwritten: 3.8.1 Key Configuration Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-1-key-configuration-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-1-key-configuration-parameters-diagram.svg" alt="Diagram: 3.8.1 Key Configuration Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-1-key-configuration-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-1-key-configuration-parameters-sticky.svg" alt="Sticky Note: 3.8.1 Key Configuration Parameters" width="30%">
-</a>
-
 
 ```python
 spark = SparkSession.builder \
@@ -496,16 +426,6 @@ spark = SparkSession.builder \
 ```
 
 ### 3.8.2 Partition Size Rule
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-2-partition-size-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-2-partition-size-rule-handwritten.svg" alt="Handwritten: 3.8.2 Partition Size Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-2-partition-size-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-2-partition-size-rule-diagram.svg" alt="Diagram: 3.8.2 Partition Size Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-2-partition-size-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-2-partition-size-rule-sticky.svg" alt="Sticky Note: 3.8.2 Partition Size Rule" width="30%">
-</a>
 
 
 Aim for 100-200 MB per partition after shuffles:
@@ -529,16 +449,6 @@ df_repartitioned = df.repartition(100, "dept")
 ```
 
 ### 3.8.3 Caching & Persistence
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-3-caching-persistence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-3-caching-persistence-handwritten.svg" alt="Handwritten: 3.8.3 Caching & Persistence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-3-caching-persistence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-3-caching-persistence-diagram.svg" alt="Diagram: 3.8.3 Caching & Persistence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-3-caching-persistence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/3-8-3-caching-persistence-sticky.svg" alt="Sticky Note: 3.8.3 Caching & Persistence" width="30%">
-</a>
 
 
 ```python
@@ -708,16 +618,6 @@ The following TypeScript classes simulate core Spark concepts ? DAG building, la
 
 ### SparkSession Builder
 
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/sparksession-builder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/sparksession-builder-handwritten.svg" alt="Handwritten: SparkSession Builder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/sparksession-builder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/sparksession-builder-diagram.svg" alt="Diagram: SparkSession Builder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/sparksession-builder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/sparksession-builder-sticky.svg" alt="Sticky Note: SparkSession Builder" width="30%">
-</a>
-
 
 ```typescript
 interface SparkConfig {
@@ -781,16 +681,6 @@ console.log(spark.status());
 ```
 
 ### RDD Simulator with Lazy DAG
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/rdd-simulator-with-lazy-dag-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/rdd-simulator-with-lazy-dag-handwritten.svg" alt="Handwritten: RDD Simulator with Lazy DAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/rdd-simulator-with-lazy-dag-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/rdd-simulator-with-lazy-dag-diagram.svg" alt="Diagram: RDD Simulator with Lazy DAG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/rdd-simulator-with-lazy-dag-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/rdd-simulator-with-lazy-dag-sticky.svg" alt="Sticky Note: RDD Simulator with Lazy DAG" width="30%">
-</a>
 
 
 ```typescript
@@ -917,16 +807,6 @@ console.table(sorted);
 
 ### DataFrame Operation Simulator
 
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/dataframe-operation-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/dataframe-operation-simulator-handwritten.svg" alt="Handwritten: DataFrame Operation Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/dataframe-operation-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/dataframe-operation-simulator-diagram.svg" alt="Diagram: DataFrame Operation Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/dataframe-operation-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/dataframe-operation-simulator-sticky.svg" alt="Sticky Note: DataFrame Operation Simulator" width="30%">
-</a>
-
 
 ```typescript
 type Row = Record<string, unknown>;
@@ -1031,16 +911,6 @@ df.groupBy("dept").agg({ age: "avg", name: "count" }).show();
 ```
 
 ### Partition Tuning Worked Example
-
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/partition-tuning-worked-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/partition-tuning-worked-example-handwritten.svg" alt="Handwritten: Partition Tuning Worked Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/partition-tuning-worked-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/partition-tuning-worked-example-diagram.svg" alt="Diagram: Partition Tuning Worked Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/03-spark-basics/partition-tuning-worked-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/03-spark-basics/partition-tuning-worked-example-sticky.svg" alt="Sticky Note: Partition Tuning Worked Example" width="30%">
-</a>
 
 
 ```typescript

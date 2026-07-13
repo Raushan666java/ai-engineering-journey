@@ -88,16 +88,6 @@ flowchart LR
 
 ### 14.1 Shift-Left Security
 
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-1-shift-left-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-1-shift-left-security-handwritten.svg" alt="Handwritten: 14.1 Shift-Left Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-1-shift-left-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-1-shift-left-security-diagram.svg" alt="Diagram: 14.1 Shift-Left Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-1-shift-left-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-1-shift-left-security-sticky.svg" alt="Sticky Note: 14.1 Shift-Left Security" width="30%">
-</a>
-
 
 Shift-left security integrates security practices earlier in the software development lifecycle. Traditional security performed a penetration test shortly before release, discovering vulnerabilities that were expensive to fix. Shift-left makes security a continuous concern throughout development.
 
@@ -119,16 +109,6 @@ Shift-left security integrates security practices earlier in the software develo
 - Faster feedback loops for security issues
 
 ### 14.2 SAST (Static Application Security Testing)
-
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-2-sast-static-application-security-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-2-sast-static-application-security-testing-handwritten.svg" alt="Handwritten: 14.2 SAST (Static Application Security Testing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-2-sast-static-application-security-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-2-sast-static-application-security-testing-diagram.svg" alt="Diagram: 14.2 SAST (Static Application Security Testing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-2-sast-static-application-security-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-2-sast-static-application-security-testing-sticky.svg" alt="Sticky Note: 14.2 SAST (Static Application Security Testing)" width="30%">
-</a>
 
 
 SAST analyzes source code for security vulnerabilities without executing the application. It scans at the code level, identifying potential vulnerabilities before the code runs.
@@ -170,16 +150,6 @@ rules:
 
 ### 14.3 DAST (Dynamic Application Security Testing)
 
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-3-dast-dynamic-application-security-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-3-dast-dynamic-application-security-testing-handwritten.svg" alt="Handwritten: 14.3 DAST (Dynamic Application Security Testing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-3-dast-dynamic-application-security-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-3-dast-dynamic-application-security-testing-diagram.svg" alt="Diagram: 14.3 DAST (Dynamic Application Security Testing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-3-dast-dynamic-application-security-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-3-dast-dynamic-application-security-testing-sticky.svg" alt="Sticky Note: 14.3 DAST (Dynamic Application Security Testing)" width="30%">
-</a>
-
 
 DAST tests running applications for vulnerabilities by simulating attacks from the outside. Unlike SAST, DAST tests the application in its running state with all components active.
 
@@ -204,16 +174,6 @@ docker run -v $(pwd):/zap/wrk owasp/zap2docker-stable \
 - Repeater and Intruder for manual testing
 
 ### 14.4 SCA (Software Composition Analysis)
-
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-4-sca-software-composition-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-4-sca-software-composition-analysis-handwritten.svg" alt="Handwritten: 14.4 SCA (Software Composition Analysis)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-4-sca-software-composition-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-4-sca-software-composition-analysis-diagram.svg" alt="Diagram: 14.4 SCA (Software Composition Analysis)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-4-sca-software-composition-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-4-sca-software-composition-analysis-sticky.svg" alt="Sticky Note: 14.4 SCA (Software Composition Analysis)" width="30%">
-</a>
 
 
 SCA analyzes open-source dependencies for known vulnerabilities, license compliance, and outdated versions. Modern applications consist of 80-90% open-source code, making SCA critical.
@@ -259,16 +219,6 @@ updates:
 
 ### 14.5 Container Scanning
 
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-5-container-scanning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-5-container-scanning-handwritten.svg" alt="Handwritten: 14.5 Container Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-5-container-scanning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-5-container-scanning-diagram.svg" alt="Diagram: 14.5 Container Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-5-container-scanning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-5-container-scanning-sticky.svg" alt="Sticky Note: 14.5 Container Scanning" width="30%">
-</a>
-
 
 Container images must be scanned for OS packages and application dependencies with known vulnerabilities.
 
@@ -297,16 +247,6 @@ trivy fs --severity HIGH,CRITICAL .
 
 ### 14.6 Secret Scanning
 
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-6-secret-scanning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-6-secret-scanning-handwritten.svg" alt="Handwritten: 14.6 Secret Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-6-secret-scanning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-6-secret-scanning-diagram.svg" alt="Diagram: 14.6 Secret Scanning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-6-secret-scanning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-6-secret-scanning-sticky.svg" alt="Sticky Note: 14.6 Secret Scanning" width="30%">
-</a>
-
 
 Secrets (API keys, passwords, tokens, certificates) committed to source code represent immediate security risks.
 
@@ -333,16 +273,6 @@ gitleaks detect --source . --report-path gitleaks-report.json
 - Structured data scanning for JSON, YAML, .env files
 
 ### 14.7 SBOM Generation and Verification
-
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-7-sbom-generation-and-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-7-sbom-generation-and-verification-handwritten.svg" alt="Handwritten: 14.7 SBOM Generation and Verification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-7-sbom-generation-and-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-7-sbom-generation-and-verification-diagram.svg" alt="Diagram: 14.7 SBOM Generation and Verification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-7-sbom-generation-and-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-7-sbom-generation-and-verification-sticky.svg" alt="Sticky Note: 14.7 SBOM Generation and Verification" width="30%">
-</a>
 
 
 A Software Bill of Materials provides an inventory of all components in a software artifact. SBOMs enable known vulnerability correlation, supply chain risk assessment, and regulatory compliance (Executive Order 14028).
@@ -371,16 +301,6 @@ cosign attest --predicate sbom.json --key cosign.key myapp:latest
 - Regulatory compliance
 
 ### 14.8 Policy as Code
-
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-8-policy-as-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-8-policy-as-code-handwritten.svg" alt="Handwritten: 14.8 Policy as Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-8-policy-as-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-8-policy-as-code-diagram.svg" alt="Diagram: 14.8 Policy as Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-8-policy-as-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-8-policy-as-code-sticky.svg" alt="Sticky Note: 14.8 Policy as Code" width="30%">
-</a>
 
 
 **Open Policy Agent (OPA)** — General-purpose policy engine:
@@ -429,16 +349,6 @@ spec:
 ```
 
 ### 14.9 Supply Chain Security
-
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-9-supply-chain-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-9-supply-chain-security-handwritten.svg" alt="Handwritten: 14.9 Supply Chain Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-9-supply-chain-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-9-supply-chain-security-diagram.svg" alt="Diagram: 14.9 Supply Chain Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/14-devsecops/14-9-supply-chain-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/14-devsecops/14-9-supply-chain-security-sticky.svg" alt="Sticky Note: 14.9 Supply Chain Security" width="30%">
-</a>
 
 
 Supply chain security protects the software development and delivery pipeline from compromise:

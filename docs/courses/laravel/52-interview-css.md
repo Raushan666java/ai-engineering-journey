@@ -79,16 +79,6 @@ flowchart LR
 
 ### Q1: How does the CSS cascade determine which rule wins?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-the-css-cascade-determine-which-rule-wins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-the-css-cascade-determine-which-rule-wins-handwritten.svg" alt="Handwritten: How does the CSS cascade determine which rule wins?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-the-css-cascade-determine-which-rule-wins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-the-css-cascade-determine-which-rule-wins-diagram.svg" alt="Diagram: How does the CSS cascade determine which rule wins?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-the-css-cascade-determine-which-rule-wins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-the-css-cascade-determine-which-rule-wins-sticky.svg" alt="Sticky Note: How does the CSS cascade determine which rule wins?" width="30%">
-</a>
-
 **Answer:** The cascade assigns a weight to every declaration based on origin, specificity, and source order. The winning declaration is the one with the highest weight per property. Origin priority: user-agent `< user `< author `< author !important `< user !important `< user-agent !important. When origins match, specificity decides. When specificity ties, the last declaration in source order wins.
 
 ```css
@@ -103,16 +93,6 @@ p { color: red !important; }
 ```
 
 ### Q2: How is specificity calculated?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-is-specificity-calculated-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-is-specificity-calculated-handwritten.svg" alt="Handwritten: How is specificity calculated?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-is-specificity-calculated-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-is-specificity-calculated-diagram.svg" alt="Diagram: How is specificity calculated?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-is-specificity-calculated-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-is-specificity-calculated-sticky.svg" alt="Sticky Note: How is specificity calculated?" width="30%">
-</a>
 
 **Answer:** Specificity is a four-part value `(a, b, c, d)` computed as: inline styles = 1 for `a`, each ID selector = 1 for `b`, each class/attribute/pseudo-class = 1 for `c`, each element/pseudo-element = 1 for `d`. The larger the tuple lexicographically, the higher the specificity.
 
@@ -132,16 +112,6 @@ p.highlight { color: orange; }
 
 ### Q3: What is the difference between a pseudo-class and a pseudo-element?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-handwritten.svg" alt="Handwritten: What is the difference between a pseudo-class and a pseudo-element?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-diagram.svg" alt="Diagram: What is the difference between a pseudo-class and a pseudo-element?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-a-pseudo-class-and-a-pseudo-element-sticky.svg" alt="Sticky Note: What is the difference between a pseudo-class and a pseudo-element?" width="30%">
-</a>
-
 **Answer:** A pseudo-class (`:hover`, `:nth-child`) selects elements in a particular *state* → it uses a single colon. A pseudo-element (`::before`, `::first-line`) selects a *part* of an element → CSS3 uses double colons. Pseudo-classes add to the specificity `c` column; pseudo-elements add to the `d` column.
 
 ```css
@@ -156,16 +126,6 @@ blockquote::first-letter { font-size: 3em; float: left; }
 
 ### Q4: How does `:is()` and `:where()` affect specificity?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-is-and-where-affect-specificity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-is-and-where-affect-specificity-handwritten.svg" alt="Handwritten: How does `:is()` and `:where()` affect specificity?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-is-and-where-affect-specificity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-is-and-where-affect-specificity-diagram.svg" alt="Diagram: How does `:is()` and `:where()` affect specificity?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-is-and-where-affect-specificity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-is-and-where-affect-specificity-sticky.svg" alt="Sticky Note: How does `:is()` and `:where()` affect specificity?" width="30%">
-</a>
-
 **Answer:** `:is()` takes the specificity of its *most specific argument* → it never lowers specificity. `:where()` always contributes *zero* specificity, regardless of its arguments. Use `:is()` to group selectors without losing weight; use `:where()` for reset/theme defaults you want to be easily overridable.
 
 ```css
@@ -179,16 +139,6 @@ a { color: black; }
 ```
 
 ### Q5: What is the `:has()` pseudo-class and how is it used?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-has-pseudo-class-and-how-is-it-used-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-has-pseudo-class-and-how-is-it-used-handwritten.svg" alt="Handwritten: What is the `:has()` pseudo-class and how is it used?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-has-pseudo-class-and-how-is-it-used-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-has-pseudo-class-and-how-is-it-used-diagram.svg" alt="Diagram: What is the `:has()` pseudo-class and how is it used?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-has-pseudo-class-and-how-is-it-used-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-has-pseudo-class-and-how-is-it-used-sticky.svg" alt="Sticky Note: What is the `:has()` pseudo-class and how is it used?" width="30%">
-</a>
 
 **Answer:** `:has()` is a relational pseudo-class → it selects an element based on its *descendants* or *siblings*. Often called "the parent selector." It checks if the element *has* a matching child, descendant, or subsequent sibling. Supported in all modern browsers as of 2024.
 
@@ -205,16 +155,6 @@ h2:has(+ p) { margin-bottom: 0; }
 
 ### Q6: How do you select all elements except the last child?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-all-elements-except-the-last-child-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-all-elements-except-the-last-child-handwritten.svg" alt="Handwritten: How do you select all elements except the last child?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-all-elements-except-the-last-child-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-all-elements-except-the-last-child-diagram.svg" alt="Diagram: How do you select all elements except the last child?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-all-elements-except-the-last-child-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-all-elements-except-the-last-child-sticky.svg" alt="Sticky Note: How do you select all elements except the last child?" width="30%">
-</a>
-
 **Answer:** Use `:not(:last-child)` to exclude the final sibling. The `:not()` pseudo-class accepts any selector list in modern CSS. It has the same specificity as the selector inside it.
 
 ```css
@@ -226,16 +166,6 @@ input:not([type="submit"]) { border: 1px solid #ccc; }
 ```
 
 ### Q7: What does `[attr~=value]` vs `[attr|=value]` match?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-attr-value-vs-attr-value-match-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-attr-value-vs-attr-value-match-handwritten.svg" alt="Handwritten: What does `[attr~=value]` vs `[attr|=value]` match?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-attr-value-vs-attr-value-match-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-attr-value-vs-attr-value-match-diagram.svg" alt="Diagram: What does `[attr~=value]` vs `[attr|=value]` match?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-attr-value-vs-attr-value-match-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-attr-value-vs-attr-value-match-sticky.svg" alt="Sticky Note: What does `[attr~=value]` vs `[attr|=value]` match?" width="30%">
-</a>
 
 **Answer:** `~=` matches if `value` is one of the space-separated words in the attribute. `|=` matches if the attribute equals `value` or starts with `value-`. `~=` is for space-delimited lists (like class); `|=` is for hyphenated prefixes (like language codes).
 
@@ -250,16 +180,6 @@ input:not([type="submit"]) { border: 1px solid #ccc; }
 
 ### Q8: What is the difference between `nth-child` and `nth-of-type`?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-nth-child-and-nth-of-type-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-nth-child-and-nth-of-type-handwritten.svg" alt="Handwritten: What is the difference between `nth-child` and `nth-of-type`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-nth-child-and-nth-of-type-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-nth-child-and-nth-of-type-diagram.svg" alt="Diagram: What is the difference between `nth-child` and `nth-of-type`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-nth-child-and-nth-of-type-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-nth-child-and-nth-of-type-sticky.svg" alt="Sticky Note: What is the difference between `nth-child` and `nth-of-type`?" width="30%">
-</a>
-
 **Answer:** `:nth-child(n)` counts all siblings regardless of type. `:nth-of-type(n)` counts only siblings of the same element type. If you have mixed elements in a container, `:nth-child` might skip types while `:nth-of-type` always counts within the same tag.
 
 ```css
@@ -272,16 +192,6 @@ div p:nth-of-type(2) { color: blue; }
 
 ### Q9: How do you select an element that contains a specific class in a space-separated list?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-an-element-that-contains-a-specific-class-in-a-space-separated-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-an-element-that-contains-a-specific-class-in-a-space-separated-list-handwritten.svg" alt="Handwritten: How do you select an element that contains a specific class in a space-separated list?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-an-element-that-contains-a-specific-class-in-a-space-separated-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-an-element-that-contains-a-specific-class-in-a-space-separated-list-diagram.svg" alt="Diagram: How do you select an element that contains a specific class in a space-separated list?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-an-element-that-contains-a-specific-class-in-a-space-separated-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-select-an-element-that-contains-a-specific-class-in-a-space-separated-list-sticky.svg" alt="Sticky Note: How do you select an element that contains a specific class in a space-separated list?" width="30%">
-</a>
-
 **Answer:** Use the attribute selector `[class~="value"]` or simply `.value`. The class selector `.value` is equivalent to `[class~="value"]` → both match when `value` appears as a whole word in the class attribute.
 
 ```css
@@ -291,16 +201,6 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q10: What is the difference between the cascade, specificity, and inheritance?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-the-cascade-specificity-and-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-the-cascade-specificity-and-inheritance-handwritten.svg" alt="Handwritten: What is the difference between the cascade, specificity, and inheritance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-the-cascade-specificity-and-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-the-cascade-specificity-and-inheritance-diagram.svg" alt="Diagram: What is the difference between the cascade, specificity, and inheritance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-the-cascade-specificity-and-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-the-cascade-specificity-and-inheritance-sticky.svg" alt="Sticky Note: What is the difference between the cascade, specificity, and inheritance?" width="30%">
-</a>
 
 **Answer:** The cascade resolves conflicts between declarations targeting the same element using origin + specificity + order. Specificity is one component of the cascade → a four-part weight based on selector types. Inheritance is separate: certain properties (color, font-family) are automatically inherited from parent to child unless overridden. The `inherit`, `initial`, `unset`, and `revert` keywords explicitly control this.
 
@@ -315,16 +215,6 @@ div p:nth-of-type(2) { color: blue; }
 ## Box Model & Layout
 
 ### Q11: Explain the CSS box model.
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-css-box-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-css-box-model-handwritten.svg" alt="Handwritten: Explain the CSS box model." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-css-box-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-css-box-model-diagram.svg" alt="Diagram: Explain the CSS box model." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-css-box-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-css-box-model-sticky.svg" alt="Sticky Note: Explain the CSS box model." width="30%">
-</a>
 
 **Answer:** Every element is a rectangular box composed of four layers from inside-out: content, padding, border, and margin. The total width of an element in the standard box model is `content + padding + border + margin`. With `box-sizing: border-box`, the `width` property includes content + padding + border, making layout math predictable.
 
@@ -350,16 +240,6 @@ div p:nth-of-type(2) { color: blue; }
 
 ### Q12: What is the difference between `display: none` and `visibility: hidden`?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-display-none-and-visibility-hidden-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-display-none-and-visibility-hidden-handwritten.svg" alt="Handwritten: What is the difference between `display: none` and `visibility: hidden`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-display-none-and-visibility-hidden-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-display-none-and-visibility-hidden-diagram.svg" alt="Diagram: What is the difference between `display: none` and `visibility: hidden`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-display-none-and-visibility-hidden-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-display-none-and-visibility-hidden-sticky.svg" alt="Sticky Note: What is the difference between `display: none` and `visibility: hidden`?" width="30%">
-</a>
-
 **Answer:** `display: none` removes the element from the document flow entirely → it takes no space and is not rendered. `visibility: hidden` hides the element visually but preserves its space in the layout. `display: none` affects accessibility (screen readers skip it); `visibility: hidden` may still be read.
 
 ```css
@@ -368,16 +248,6 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q13: Explain the `position` property values.
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-position-property-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-position-property-values-handwritten.svg" alt="Handwritten: Explain the `position` property values." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-position-property-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-position-property-values-diagram.svg" alt="Diagram: Explain the `position` property values." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-position-property-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-the-position-property-values-sticky.svg" alt="Sticky Note: Explain the `position` property values." width="30%">
-</a>
 
 **Answer:** `static` → default, follows normal flow, `top`/`left` ignored. `relative` → offset from its normal position without affecting other elements. `absolute` → removed from flow, positioned relative to the nearest positioned ancestor. `fixed` → removed from flow, positioned relative to the viewport. `sticky` → toggles between relative and fixed based on scroll threshold.
 
@@ -410,16 +280,6 @@ div p:nth-of-type(2) { color: blue; }
 
 ### Q14: How does `z-index` work and what creates a stacking context?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-z-index-work-and-what-creates-a-stacking-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-z-index-work-and-what-creates-a-stacking-context-handwritten.svg" alt="Handwritten: How does `z-index` work and what creates a stacking context?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-z-index-work-and-what-creates-a-stacking-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-z-index-work-and-what-creates-a-stacking-context-diagram.svg" alt="Diagram: How does `z-index` work and what creates a stacking context?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-z-index-work-and-what-creates-a-stacking-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-z-index-work-and-what-creates-a-stacking-context-sticky.svg" alt="Sticky Note: How does `z-index` work and what creates a stacking context?" width="30%">
-</a>
-
 **Answer:** `z-index` controls the stack order of positioned elements (elements whose `position` is not `static`). A stacking context is a group of elements whose `z-index` values are compared relative to each other. New contexts are created by: `position` + `z-index` value, `opacity < 1`, `transform`, `filter`, `contain: paint`, or `isolation: isolate`.
 
 ```css
@@ -438,16 +298,6 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q15: What does `float` do and how do you clear it?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-float-do-and-how-do-you-clear-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-float-do-and-how-do-you-clear-it-handwritten.svg" alt="Handwritten: What does `float` do and how do you clear it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-float-do-and-how-do-you-clear-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-float-do-and-how-do-you-clear-it-diagram.svg" alt="Diagram: What does `float` do and how do you clear it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-float-do-and-how-do-you-clear-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-float-do-and-how-do-you-clear-it-sticky.svg" alt="Sticky Note: What does `float` do and how do you clear it?" width="30%">
-</a>
 
 **Answer:** `float` pushes an element to the left or right, allowing content to wrap around it. Floated elements are removed from normal flow. Parents of floated elements collapse because they don't account for the floated children. Clearing methods: `clear: both` on a following element, the "clearfix" hack on the parent, or `display: flow-root` on the parent.
 
@@ -471,16 +321,6 @@ div p:nth-of-type(2) { color: blue; }
 
 ### Q16: What is the difference between `overflow: hidden` and `overflow: clip`?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-overflow-hidden-and-overflow-clip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-overflow-hidden-and-overflow-clip-handwritten.svg" alt="Handwritten: What is the difference between `overflow: hidden` and `overflow: clip`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-overflow-hidden-and-overflow-clip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-overflow-hidden-and-overflow-clip-diagram.svg" alt="Diagram: What is the difference between `overflow: hidden` and `overflow: clip`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-overflow-hidden-and-overflow-clip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-overflow-hidden-and-overflow-clip-sticky.svg" alt="Sticky Note: What is the difference between `overflow: hidden` and `overflow: clip`?" width="30%">
-</a>
-
 **Answer:** Both clip overflowing content. `overflow: hidden` creates a new BFC and allows programmatic scrolling (JavaScript can still scroll the content). `overflow: clip` does not create a BFC and *forbids* any scrolling, including programmatic. Use `clip` when you want to guarantee content stays clipped regardless of user interaction.
 
 ```css
@@ -494,16 +334,6 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q17: How does `margin: auto` center an element horizontally?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-margin-auto-center-an-element-horizontally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-margin-auto-center-an-element-horizontally-handwritten.svg" alt="Handwritten: How does `margin: auto` center an element horizontally?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-margin-auto-center-an-element-horizontally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-margin-auto-center-an-element-horizontally-diagram.svg" alt="Diagram: How does `margin: auto` center an element horizontally?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-margin-auto-center-an-element-horizontally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-margin-auto-center-an-element-horizontally-sticky.svg" alt="Sticky Note: How does `margin: auto` center an element horizontally?" width="30%">
-</a>
 
 **Answer:** When a block-level element has a defined width, setting `margin-left: auto` and `margin-right: auto` makes the browser distribute remaining space equally on both sides, centering the element. This only works for horizontal centering. For vertical centering with `auto`, the element needs to be in a flex or grid context.
 
@@ -523,16 +353,6 @@ div p:nth-of-type(2) { color: blue; }
 
 ### Q18: What is margin collapsing and when does it happen?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-margin-collapsing-and-when-does-it-happen-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-margin-collapsing-and-when-does-it-happen-handwritten.svg" alt="Handwritten: What is margin collapsing and when does it happen?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-margin-collapsing-and-when-does-it-happen-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-margin-collapsing-and-when-does-it-happen-diagram.svg" alt="Diagram: What is margin collapsing and when does it happen?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-margin-collapsing-and-when-does-it-happen-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-margin-collapsing-and-when-does-it-happen-sticky.svg" alt="Sticky Note: What is margin collapsing and when does it happen?" width="30%">
-</a>
-
 **Answer:** Vertical margins of adjacent block-level elements collapse → the larger margin wins instead of adding together. Margins also collapse between parent and first/last child when there's no padding, border, or inline content separating them. Flex and grid items do NOT collapse margins.
 
 ```css
@@ -548,16 +368,6 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q19: What is `display: flow-root`?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-display-flow-root-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-display-flow-root-handwritten.svg" alt="Handwritten: What is `display: flow-root`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-display-flow-root-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-display-flow-root-diagram.svg" alt="Diagram: What is `display: flow-root`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-display-flow-root-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-display-flow-root-sticky.svg" alt="Sticky Note: What is `display: flow-root`?" width="30%">
-</a>
 
 **Answer:** `display: flow-root` creates a new Block Formatting Context (BFC) without hacks. It contains floats, prevents margin collapsing with children, and isolates the element from external floats. It's the cleanest way to contain children that use floats or to prevent margin collapse.
 
@@ -576,16 +386,6 @@ div p:nth-of-type(2) { color: blue; }
 ```
 
 ### Q20: What is the difference between `inline`, `block`, and `inline-block`?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-inline-block-and-inline-block-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-inline-block-and-inline-block-handwritten.svg" alt="Handwritten: What is the difference between `inline`, `block`, and `inline-block`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-inline-block-and-inline-block-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-inline-block-and-inline-block-diagram.svg" alt="Diagram: What is the difference between `inline`, `block`, and `inline-block`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-inline-block-and-inline-block-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-inline-block-and-inline-block-sticky.svg" alt="Sticky Note: What is the difference between `inline`, `block`, and `inline-block`?" width="30%">
-</a>
 
 **Answer:** `block` elements take full width, start on new lines, respect all box properties. `inline` elements flow within text, ignore width/height, and only respect horizontal margin/padding. `inline-block` flows inline but behaves like a block for the box model → it respects width, height, and all margins/padding.
 
@@ -607,16 +407,6 @@ span.button {
 ## Flexbox & Grid
 
 ### Q21: What is the difference between Flexbox and CSS Grid?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-flexbox-and-css-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-flexbox-and-css-grid-handwritten.svg" alt="Handwritten: What is the difference between Flexbox and CSS Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-flexbox-and-css-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-flexbox-and-css-grid-diagram.svg" alt="Diagram: What is the difference between Flexbox and CSS Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-flexbox-and-css-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-flexbox-and-css-grid-sticky.svg" alt="Sticky Note: What is the difference between Flexbox and CSS Grid?" width="30%">
-</a>
 
 **Answer:** Flexbox is one-dimensional → it distributes items along a single axis (row *or* column). Grid is two-dimensional → it controls rows *and* columns simultaneously. Use Flexbox for component-level layout (nav bars, centering, inline form elements). Use Grid for page-level layout (overall page structure, gallery grids, dashboard panels).
 
@@ -642,16 +432,6 @@ span.button {
 
 ### Q22: Explain `flex-grow`, `flex-shrink`, and `flex-basis`.
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-flex-grow-flex-shrink-and-flex-basis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-flex-grow-flex-shrink-and-flex-basis-handwritten.svg" alt="Handwritten: Explain `flex-grow`, `flex-shrink`, and `flex-basis`." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-flex-grow-flex-shrink-and-flex-basis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-flex-grow-flex-shrink-and-flex-basis-diagram.svg" alt="Diagram: Explain `flex-grow`, `flex-shrink`, and `flex-basis`." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/explain-flex-grow-flex-shrink-and-flex-basis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/explain-flex-grow-flex-shrink-and-flex-basis-sticky.svg" alt="Sticky Note: Explain `flex-grow`, `flex-shrink`, and `flex-basis`." width="30%">
-</a>
-
 **Answer:** These three properties control how flex items size within a container. `flex-grow` (default 0) → proportion of remaining space the item should absorb. `flex-shrink` (default 1) → how much the item shrinks when space is tight. `flex-basis` (default `auto`) → the initial main-size of the item before space is distributed. The shorthand `flex: 1` means `flex: 1 1 0`.
 
 ```css
@@ -674,16 +454,6 @@ span.button {
 
 ### Q23: How does `align-items` differ from `justify-content`?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-align-items-differ-from-justify-content-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-align-items-differ-from-justify-content-handwritten.svg" alt="Handwritten: How does `align-items` differ from `justify-content`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-align-items-differ-from-justify-content-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-align-items-differ-from-justify-content-diagram.svg" alt="Diagram: How does `align-items` differ from `justify-content`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-align-items-differ-from-justify-content-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-align-items-differ-from-justify-content-sticky.svg" alt="Sticky Note: How does `align-items` differ from `justify-content`?" width="30%">
-</a>
-
 **Answer:** `justify-content` distributes space along the *main axis* (direction of `flex-direction`). `align-items` controls alignment along the *cross axis* (perpendicular to the main axis). In a default row layout, `justify-content` controls horizontal spacing, `align-items` controls vertical alignment.
 
 ```css
@@ -703,16 +473,6 @@ span.button {
 
 ### Q24: What does `gap` replace in Flexbox and Grid?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-gap-replace-in-flexbox-and-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-gap-replace-in-flexbox-and-grid-handwritten.svg" alt="Handwritten: What does `gap` replace in Flexbox and Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-gap-replace-in-flexbox-and-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-gap-replace-in-flexbox-and-grid-diagram.svg" alt="Diagram: What does `gap` replace in Flexbox and Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-does-gap-replace-in-flexbox-and-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-does-gap-replace-in-flexbox-and-grid-sticky.svg" alt="Sticky Note: What does `gap` replace in Flexbox and Grid?" width="30%">
-</a>
-
 **Answer:** `gap` replaces `margin` based spacing between items in both flex and grid layouts. `gap` only applies *between* items, never at the edges. In flexbox, `gap` works on the main axis. In grid, `row-gap` and `column-gap` (shorthand `gap`) apply between rows and columns respectively. Using `gap` avoids the "margin on the last item" problem.
 
 ```css
@@ -731,16 +491,6 @@ span.button {
 
 ### Q25: How do you create a responsive grid that adapts the number of columns automatically?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-responsive-grid-that-adapts-the-number-of-columns-automatically-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-responsive-grid-that-adapts-the-number-of-columns-automatically-handwritten.svg" alt="Handwritten: How do you create a responsive grid that adapts the number of columns automatically?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-responsive-grid-that-adapts-the-number-of-columns-automatically-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-responsive-grid-that-adapts-the-number-of-columns-automatically-diagram.svg" alt="Diagram: How do you create a responsive grid that adapts the number of columns automatically?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-responsive-grid-that-adapts-the-number-of-columns-automatically-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-responsive-grid-that-adapts-the-number-of-columns-automatically-sticky.svg" alt="Sticky Note: How do you create a responsive grid that adapts the number of columns automatically?" width="30%">
-</a>
-
 **Answer:** Use `grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))` or `auto-fit`. `auto-fill` keeps empty column tracks; `auto-fit` collapses them. The `minmax(250px, 1fr)` ensures each column is at least 250px but can stretch equally.
 
 ```css
@@ -753,16 +503,6 @@ span.button {
 ```
 
 ### Q26: What is `fr` unit in CSS Grid?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-fr-unit-in-css-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-fr-unit-in-css-grid-handwritten.svg" alt="Handwritten: What is `fr` unit in CSS Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-fr-unit-in-css-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-fr-unit-in-css-grid-diagram.svg" alt="Diagram: What is `fr` unit in CSS Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-fr-unit-in-css-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-fr-unit-in-css-grid-sticky.svg" alt="Sticky Note: What is `fr` unit in CSS Grid?" width="30%">
-</a>
 
 **Answer:** `fr` stands for "fraction" → it distributes available space proportionally after fixed-size tracks are accounted for. `1fr` means one fraction of the remaining space. Unlike `%`, `fr` does not include `gap` in its calculation, making it more predictable.
 
@@ -781,16 +521,6 @@ span.button {
 
 ### Q27: How do you center an element both horizontally and vertically with Flexbox?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-center-an-element-both-horizontally-and-vertically-with-flexbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-center-an-element-both-horizontally-and-vertically-with-flexbox-handwritten.svg" alt="Handwritten: How do you center an element both horizontally and vertically with Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-center-an-element-both-horizontally-and-vertically-with-flexbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-center-an-element-both-horizontally-and-vertically-with-flexbox-diagram.svg" alt="Diagram: How do you center an element both horizontally and vertically with Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-center-an-element-both-horizontally-and-vertically-with-flexbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-center-an-element-both-horizontally-and-vertically-with-flexbox-sticky.svg" alt="Sticky Note: How do you center an element both horizontally and vertically with Flexbox?" width="30%">
-</a>
-
 **Answer:** Apply `display: flex; justify-content: center; align-items: center` to the parent container. This works regardless of the child's dimensions and is the most reliable centering technique.
 
 ```css
@@ -803,16 +533,6 @@ span.button {
 ```
 
 ### Q28: What is the difference between `auto-fill` and `auto-fit` in Grid?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-auto-fill-and-auto-fit-in-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-auto-fill-and-auto-fit-in-grid-handwritten.svg" alt="Handwritten: What is the difference between `auto-fill` and `auto-fit` in Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-auto-fill-and-auto-fit-in-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-auto-fill-and-auto-fit-in-grid-diagram.svg" alt="Diagram: What is the difference between `auto-fill` and `auto-fit` in Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-auto-fill-and-auto-fit-in-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-auto-fill-and-auto-fit-in-grid-sticky.svg" alt="Sticky Note: What is the difference between `auto-fill` and `auto-fit` in Grid?" width="30%">
-</a>
 
 **Answer:** Both automatically generate as many tracks as fit in the container. `auto-fill` keeps the column track placeholders even if they're empty → preserving the grid structure. `auto-fit` collapses empty tracks to `0`, allowing items to stretch to fill the entire row. Use `auto-fit` for responsive galleries where you want items to expand.
 
@@ -829,16 +549,6 @@ span.button {
 ```
 
 ### Q29: How do you create a sticky footer with Flexbox?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-sticky-footer-with-flexbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-sticky-footer-with-flexbox-handwritten.svg" alt="Handwritten: How do you create a sticky footer with Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-sticky-footer-with-flexbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-sticky-footer-with-flexbox-diagram.svg" alt="Diagram: How do you create a sticky footer with Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-sticky-footer-with-flexbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-sticky-footer-with-flexbox-sticky.svg" alt="Sticky Note: How do you create a sticky footer with Flexbox?" width="30%">
-</a>
 
 **Answer:** Set the body or wrapper to `display: flex; flex-direction: column; min-height: 100vh`. Give the main content area `flex: 1`. The footer stays at the bottom on short pages and pushes down on long pages.
 
@@ -863,16 +573,6 @@ body {
 
 ### Q30: What is the `order` property in Flexbox?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-order-property-in-flexbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-order-property-in-flexbox-handwritten.svg" alt="Handwritten: What is the `order` property in Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-order-property-in-flexbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-order-property-in-flexbox-diagram.svg" alt="Diagram: What is the `order` property in Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-order-property-in-flexbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-order-property-in-flexbox-sticky.svg" alt="Sticky Note: What is the `order` property in Flexbox?" width="30%">
-</a>
-
 **Answer:** `order` (default 0) changes the visual order of flex items without affecting the source order. Items are laid out in ascending `order` value. Items with the same `order` keep their source order. Use sparingly → it can confuse keyboard navigation and screen readers since tab order follows source order.
 
 ```css
@@ -886,16 +586,6 @@ body {
 ```
 
 ### Q31: How do you create a masonry-like layout with CSS Grid?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-masonry-like-layout-with-css-grid-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-masonry-like-layout-with-css-grid-handwritten.svg" alt="Handwritten: How do you create a masonry-like layout with CSS Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-masonry-like-layout-with-css-grid-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-masonry-like-layout-with-css-grid-diagram.svg" alt="Diagram: How do you create a masonry-like layout with CSS Grid?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-masonry-like-layout-with-css-grid-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-masonry-like-layout-with-css-grid-sticky.svg" alt="Sticky Note: How do you create a masonry-like layout with CSS Grid?" width="30%">
-</a>
 
 **Answer:** CSS Grid doesn't natively support masonry (items of varying heights filling gaps). You can approximate it with `grid-template-rows: masonry` (Firefox-only behind a flag) or by setting explicit row spans on items. For production, use a JavaScript library like Masonry or columns-based layout.
 
@@ -918,16 +608,6 @@ body {
 
 ### Q32: What is the difference between `align-content` and `align-items` in Flexbox?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-align-content-and-align-items-in-flexbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-align-content-and-align-items-in-flexbox-handwritten.svg" alt="Handwritten: What is the difference between `align-content` and `align-items` in Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-align-content-and-align-items-in-flexbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-align-content-and-align-items-in-flexbox-diagram.svg" alt="Diagram: What is the difference between `align-content` and `align-items` in Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-align-content-and-align-items-in-flexbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-align-content-and-align-items-in-flexbox-sticky.svg" alt="Sticky Note: What is the difference between `align-content` and `align-items` in Flexbox?" width="30%">
-</a>
-
 **Answer:** `align-items` aligns items within a single line on the cross axis. `align-content` distributes space between *multiple lines* (rows) when `flex-wrap: wrap` creates multiple lines. `align-content` has no effect when there's only one line. In CSS Grid, `align-content` positions the entire grid within the container.
 
 ```css
@@ -941,16 +621,6 @@ body {
 ```
 
 ### Q33: How does `flex: 0 0 auto` differ from `flex: 1 1 auto`?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-flex-0-0-auto-differ-from-flex-1-1-auto-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-flex-0-0-auto-differ-from-flex-1-1-auto-handwritten.svg" alt="Handwritten: How does `flex: 0 0 auto` differ from `flex: 1 1 auto`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-flex-0-0-auto-differ-from-flex-1-1-auto-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-flex-0-0-auto-differ-from-flex-1-1-auto-diagram.svg" alt="Diagram: How does `flex: 0 0 auto` differ from `flex: 1 1 auto`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-flex-0-0-auto-differ-from-flex-1-1-auto-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-flex-0-0-auto-differ-from-flex-1-1-auto-sticky.svg" alt="Sticky Note: How does `flex: 0 0 auto` differ from `flex: 1 1 auto`?" width="30%">
-</a>
 
 **Answer:** `flex: 0 0 auto` → item starts at content width, never grows, can shrink if needed. `flex: 1 1 auto` → item starts at content width, can grow to fill space, can shrink. The `flex-basis: auto` means the initial size is the content's intrinsic size. `flex: 0 0 auto` is the default shorthand (equivalent to `flex: initial`).
 
@@ -969,16 +639,6 @@ body {
 ```
 
 ### Q34: What is `grid-template-areas` and how do you use it?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-grid-template-areas-and-how-do-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-grid-template-areas-and-how-do-you-use-it-handwritten.svg" alt="Handwritten: What is `grid-template-areas` and how do you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-grid-template-areas-and-how-do-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-grid-template-areas-and-how-do-you-use-it-diagram.svg" alt="Diagram: What is `grid-template-areas` and how do you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-grid-template-areas-and-how-do-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-grid-template-areas-and-how-do-you-use-it-sticky.svg" alt="Sticky Note: What is `grid-template-areas` and how do you use it?" width="30%">
-</a>
 
 **Answer:** `grid-template-areas` lets you name regions of your grid and place items using those names instead of line numbers. The syntax uses ASCII art strings where each name represents a grid cell. Dots (`.`) create empty cells. Each string is a row; each whitespace-separated name is a column.
 
@@ -1003,16 +663,6 @@ footer { grid-area: footer; }
 
 ### Q35: How do you align a single item differently from others in Flexbox?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-align-a-single-item-differently-from-others-in-flexbox-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-align-a-single-item-differently-from-others-in-flexbox-handwritten.svg" alt="Handwritten: How do you align a single item differently from others in Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-align-a-single-item-differently-from-others-in-flexbox-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-align-a-single-item-differently-from-others-in-flexbox-diagram.svg" alt="Diagram: How do you align a single item differently from others in Flexbox?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-align-a-single-item-differently-from-others-in-flexbox-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-align-a-single-item-differently-from-others-in-flexbox-sticky.svg" alt="Sticky Note: How do you align a single item differently from others in Flexbox?" width="30%">
-</a>
-
 **Answer:** Use `align-self` on the individual flex item to override the container's `align-items` for that item. For horizontal alignment, use `margin-left: auto` or `margin-right: auto` on the item.
 
 ```css
@@ -1036,16 +686,6 @@ footer { grid-area: footer; }
 
 ### Q36: What is a media query and what are common breakpoints?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-a-media-query-and-what-are-common-breakpoints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-a-media-query-and-what-are-common-breakpoints-handwritten.svg" alt="Handwritten: What is a media query and what are common breakpoints?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-a-media-query-and-what-are-common-breakpoints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-a-media-query-and-what-are-common-breakpoints-diagram.svg" alt="Diagram: What is a media query and what are common breakpoints?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-a-media-query-and-what-are-common-breakpoints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-a-media-query-and-what-are-common-breakpoints-sticky.svg" alt="Sticky Note: What is a media query and what are common breakpoints?" width="30%">
-</a>
-
 **Answer:** A media query applies CSS conditionally based on device characteristics (usually viewport width). Common breakpoints: 480px (mobile), 768px (tablet), 1024px (desktop), 1280px+ (wide). However, prefer content-based breakpoints → add a breakpoint where the design breaks, not at arbitrary device widths.
 
 ```css
@@ -1065,16 +705,6 @@ footer { grid-area: footer; }
 
 ### Q37: What is the difference between `em` and `rem`?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-em-and-rem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-em-and-rem-handwritten.svg" alt="Handwritten: What is the difference between `em` and `rem`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-em-and-rem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-em-and-rem-diagram.svg" alt="Diagram: What is the difference between `em` and `rem`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-em-and-rem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-em-and-rem-sticky.svg" alt="Sticky Note: What is the difference between `em` and `rem`?" width="30%">
-</a>
-
 **Answer:** `em` is relative to the *parent element's* font-size. `rem` (root em) is relative to the *root element's* (`html`) font-size. `rem` avoids compounding → nested elements with `em` multiply each level. Use `rem` for most spacing and sizing; use `em` when you want a value to scale with a component's own font-size.
 
 ```css
@@ -1091,16 +721,6 @@ html { font-size: 16px; }
 ```
 
 ### Q38: What is the mobile-first approach to responsive design?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-mobile-first-approach-to-responsive-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-mobile-first-approach-to-responsive-design-handwritten.svg" alt="Handwritten: What is the mobile-first approach to responsive design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-mobile-first-approach-to-responsive-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-mobile-first-approach-to-responsive-design-diagram.svg" alt="Diagram: What is the mobile-first approach to responsive design?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-mobile-first-approach-to-responsive-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-mobile-first-approach-to-responsive-design-sticky.svg" alt="Sticky Note: What is the mobile-first approach to responsive design?" width="30%">
-</a>
 
 **Answer:** Mobile-first means writing base CSS for the smallest screen first, then using `min-width` media queries to enhance for larger screens. This ensures the mobile experience is lean and performant, and large-screen enhancements layer on top. The alternative (desktop-first with `max-width`) loads heavier styles on mobile.
 
@@ -1129,16 +749,6 @@ html { font-size: 16px; }
 ```
 
 ### Q39: How do you make images responsive?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-make-images-responsive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-make-images-responsive-handwritten.svg" alt="Handwritten: How do you make images responsive?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-make-images-responsive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-make-images-responsive-diagram.svg" alt="Diagram: How do you make images responsive?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-make-images-responsive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-make-images-responsive-sticky.svg" alt="Sticky Note: How do you make images responsive?" width="30%">
-</a>
 
 **Answer:** Set `max-width: 100%` and `height: auto` so images never exceed their container and maintain aspect ratio. For art direction (different crops on different screens), use the `<picture>` element. For resolution switching (different pixel densities), use `srcset` with `w` descriptors and `sizes`.
 
@@ -1169,16 +779,6 @@ img {
 
 ### Q40: What are container queries?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-container-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-container-queries-handwritten.svg" alt="Handwritten: What are container queries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-container-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-container-queries-diagram.svg" alt="Diagram: What are container queries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-container-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-container-queries-sticky.svg" alt="Sticky Note: What are container queries?" width="30%">
-</a>
-
 **Answer:** Container queries (using `@container`) allow styling elements based on their *parent container's* size rather than the viewport. This makes truly reusable components that adapt to wherever they're placed. Use `container-type: inline-size` on the container, then query with `@container (min-width: 400px)`.
 
 ```css
@@ -1207,16 +807,6 @@ img {
 
 ### Q41: What is the difference between `vw`, `vh`, `vmin`, and `vmax`?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-vw-vh-vmin-and-vmax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-vw-vh-vmin-and-vmax-handwritten.svg" alt="Handwritten: What is the difference between `vw`, `vh`, `vmin`, and `vmax`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-vw-vh-vmin-and-vmax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-vw-vh-vmin-and-vmax-diagram.svg" alt="Diagram: What is the difference between `vw`, `vh`, `vmin`, and `vmax`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-vw-vh-vmin-and-vmax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-vw-vh-vmin-and-vmax-sticky.svg" alt="Sticky Note: What is the difference between `vw`, `vh`, `vmin`, and `vmax`?" width="30%">
-</a>
-
 **Answer:** `1vw = 1%` of viewport width. `1vh = 1%` of viewport height. `vmin` = the smaller of `vw` and `vh`. `vmax` = the larger of `vw` and `vh`. These are useful for full-screen layouts, but `100vh` can cause issues on mobile browsers with dynamic toolbars → use `100dvh` (dynamic viewport height) for mobile.
 
 ```css
@@ -1236,16 +826,6 @@ img {
 ```
 
 ### Q42: What are `min()`, `max()`, and `clamp()` in CSS?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-min-max-and-clamp-in-css-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-min-max-and-clamp-in-css-handwritten.svg" alt="Handwritten: What are `min()`, `max()`, and `clamp()` in CSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-min-max-and-clamp-in-css-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-min-max-and-clamp-in-css-diagram.svg" alt="Diagram: What are `min()`, `max()`, and `clamp()` in CSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-min-max-and-clamp-in-css-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-min-max-and-clamp-in-css-sticky.svg" alt="Sticky Note: What are `min()`, `max()`, and `clamp()` in CSS?" width="30%">
-</a>
 
 **Answer:** These comparison functions enable responsive sizing without media queries. `min(a, b)` = the smaller value. `max(a, b)` = the larger value. `clamp(min, preferred, max)` = a value that's never below `min` or above `max`, ideally `preferred`. Use `clamp()` for fluid typography and spacing.
 
@@ -1267,16 +847,6 @@ img {
 ```
 
 ### Q43: What is the `prefers-color-scheme` media query?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-color-scheme-media-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-color-scheme-media-query-handwritten.svg" alt="Handwritten: What is the `prefers-color-scheme` media query?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-color-scheme-media-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-color-scheme-media-query-diagram.svg" alt="Diagram: What is the `prefers-color-scheme` media query?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-color-scheme-media-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-color-scheme-media-query-sticky.svg" alt="Sticky Note: What is the `prefers-color-scheme` media query?" width="30%">
-</a>
 
 **Answer:** It detects whether the user's system is set to light or dark mode. Use it to automatically provide appropriate color schemes without requiring a manual toggle. Combine with CSS custom properties for clean theme switching.
 
@@ -1303,16 +873,6 @@ body {
 
 ### Q44: What is the `prefers-reduced-motion` media query?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-reduced-motion-media-query-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-reduced-motion-media-query-handwritten.svg" alt="Handwritten: What is the `prefers-reduced-motion` media query?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-reduced-motion-media-query-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-reduced-motion-media-query-diagram.svg" alt="Diagram: What is the `prefers-reduced-motion` media query?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-reduced-motion-media-query-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-prefers-reduced-motion-media-query-sticky.svg" alt="Sticky Note: What is the `prefers-reduced-motion` media query?" width="30%">
-</a>
-
 **Answer:** It detects if the user has requested reduced motion in their system accessibility settings. Disable or simplify animations when this is active. This is an accessibility requirement, not optional.
 
 ```css
@@ -1333,16 +893,6 @@ body {
 ```
 
 ### Q45: How do you handle landscape vs portrait orientation?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-landscape-vs-portrait-orientation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-landscape-vs-portrait-orientation-handwritten.svg" alt="Handwritten: How do you handle landscape vs portrait orientation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-landscape-vs-portrait-orientation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-landscape-vs-portrait-orientation-diagram.svg" alt="Diagram: How do you handle landscape vs portrait orientation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-landscape-vs-portrait-orientation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-landscape-vs-portrait-orientation-sticky.svg" alt="Sticky Note: How do you handle landscape vs portrait orientation?" width="30%">
-</a>
 
 **Answer:** Use the `orientation` media feature: `portrait` (height > width) and `landscape` (width > height). On mobile, use `dvh` units or `window.innerHeight` to handle dynamic toolbar heights that change when the user scrolls.
 
@@ -1367,16 +917,6 @@ body {
 ## Animations & Transitions
 
 ### Q46: What is the difference between CSS transitions and animations?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-css-transitions-and-animations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-css-transitions-and-animations-handwritten.svg" alt="Handwritten: What is the difference between CSS transitions and animations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-css-transitions-and-animations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-css-transitions-and-animations-diagram.svg" alt="Diagram: What is the difference between CSS transitions and animations?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-css-transitions-and-animations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-css-transitions-and-animations-sticky.svg" alt="Sticky Note: What is the difference between CSS transitions and animations?" width="30%">
-</a>
 
 **Answer:** Transitions (`transition`) animate *between* two states → they need a trigger (like `:hover`) and only define start/end. Animations (`@keyframes`) can have multiple keyframe stops, run automatically, loop, reverse, and pause. Use transitions for simple state changes; use animations for complex multi-step or continuous motion.
 
@@ -1404,16 +944,6 @@ body {
 
 ### Q47: Which CSS properties are safe to animate for performance?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/which-css-properties-are-safe-to-animate-for-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/which-css-properties-are-safe-to-animate-for-performance-handwritten.svg" alt="Handwritten: Which CSS properties are safe to animate for performance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/which-css-properties-are-safe-to-animate-for-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/which-css-properties-are-safe-to-animate-for-performance-diagram.svg" alt="Diagram: Which CSS properties are safe to animate for performance?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/which-css-properties-are-safe-to-animate-for-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/which-css-properties-are-safe-to-animate-for-performance-sticky.svg" alt="Sticky Note: Which CSS properties are safe to animate for performance?" width="30%">
-</a>
-
 **Answer:** Only `transform` and `opacity` are GPU-accelerated and don't trigger layout or paint on each frame. Animating `width`, `height`, `top`, `left`, `margin`, or `padding` triggers layout recalculations and repaints, causing jank. Use `transform: translate()` instead of `top`/`left` for positioning animations.
 
 ```css
@@ -1438,16 +968,6 @@ body {
 
 ### Q48: What are the sub-properties of `transform` and how do they compose?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-sub-properties-of-transform-and-how-do-they-compose-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-sub-properties-of-transform-and-how-do-they-compose-handwritten.svg" alt="Handwritten: What are the sub-properties of `transform` and how do they compose?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-sub-properties-of-transform-and-how-do-they-compose-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-sub-properties-of-transform-and-how-do-they-compose-diagram.svg" alt="Diagram: What are the sub-properties of `transform` and how do they compose?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-sub-properties-of-transform-and-how-do-they-compose-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-sub-properties-of-transform-and-how-do-they-compose-sticky.svg" alt="Sticky Note: What are the sub-properties of `transform` and how do they compose?" width="30%">
-</a>
-
 **Answer:** Common transform functions: `translate()`, `rotate()`, `scale()`, `skew()`, and `matrix()`. Multiple functions are applied right-to-left (last function applied first). For individual control, use `translate`, `rotate`, and `scale` as separate properties in modern CSS.
 
 ```css
@@ -1466,16 +986,6 @@ body {
 ```
 
 ### Q49: How do you create a smooth height transition on an element with unknown content height?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-smooth-height-transition-on-an-element-with-unknown-content-height-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-smooth-height-transition-on-an-element-with-unknown-content-height-handwritten.svg" alt="Handwritten: How do you create a smooth height transition on an element with unknown content height?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-smooth-height-transition-on-an-element-with-unknown-content-height-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-smooth-height-transition-on-an-element-with-unknown-content-height-diagram.svg" alt="Diagram: How do you create a smooth height transition on an element with unknown content height?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-smooth-height-transition-on-an-element-with-unknown-content-height-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-create-a-smooth-height-transition-on-an-element-with-unknown-content-height-sticky.svg" alt="Sticky Note: How do you create a smooth height transition on an element with unknown content height?" width="30%">
-</a>
 
 **Answer:** CSS cannot transition `height: auto` directly. Use `max-height` transition by setting a max value larger than the actual content, or use `grid-template-rows: 0fr` to `1fr` for a clean CSS-only solution without JavaScript.
 
@@ -1503,16 +1013,6 @@ body {
 
 ### Q50: What is `will-change` and when should you use it?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-will-change-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-will-change-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: What is `will-change` and when should you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-will-change-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-will-change-and-when-should-you-use-it-diagram.svg" alt="Diagram: What is `will-change` and when should you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-will-change-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-will-change-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: What is `will-change` and when should you use it?" width="30%">
-</a>
-
 **Answer:** `will-change` hints to the browser that an element will change a property, allowing it to optimize ahead of time (e.g., promote to a compositor layer). Use it *sparingly* and only on properties that benefit from GPU acceleration (`transform`, `opacity`). Applying it to everything wastes memory and can actually hurt performance.
 
 ```css
@@ -1527,16 +1027,6 @@ body {
 ```
 
 ### Q51: What is the difference between `ease`, `linear`, `ease-in`, `ease-out`, and `cubic-bezier`?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-ease-linear-ease-in-ease-out-and-cubic-bezier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-ease-linear-ease-in-ease-out-and-cubic-bezier-handwritten.svg" alt="Handwritten: What is the difference between `ease`, `linear`, `ease-in`, `ease-out`, and `cubic-bezier`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-ease-linear-ease-in-ease-out-and-cubic-bezier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-ease-linear-ease-in-ease-out-and-cubic-bezier-diagram.svg" alt="Diagram: What is the difference between `ease`, `linear`, `ease-in`, `ease-out`, and `cubic-bezier`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-ease-linear-ease-in-ease-out-and-cubic-bezier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-ease-linear-ease-in-ease-out-and-cubic-bezier-sticky.svg" alt="Sticky Note: What is the difference between `ease`, `linear`, `ease-in`, `ease-out`, and `cubic-bezier`?" width="30%">
-</a>
 
 **Answer:** These are timing functions that control the rate of change during an animation. `linear` → constant speed. `ease` → slow start, fast middle, slow end (default). `ease-in` → slow start, fast end. `ease-out` → fast start, slow end. `cubic-bezier(x1, y1, x2, y2)` → custom curve. `ease-out` is generally best for UI transitions (feels responsive).
 
@@ -1559,16 +1049,6 @@ body {
 
 ### Q52: How do you pause and resume a CSS animation?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-pause-and-resume-a-css-animation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-pause-and-resume-a-css-animation-handwritten.svg" alt="Handwritten: How do you pause and resume a CSS animation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-pause-and-resume-a-css-animation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-pause-and-resume-a-css-animation-diagram.svg" alt="Diagram: How do you pause and resume a CSS animation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-pause-and-resume-a-css-animation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-pause-and-resume-a-css-animation-sticky.svg" alt="Sticky Note: How do you pause and resume a CSS animation?" width="30%">
-</a>
-
 **Answer:** Set `animation-play-state: paused` or `running`. This can be toggled via a class or JavaScript. The animation picks up from where it paused → no snapping.
 
 ```css
@@ -1586,16 +1066,6 @@ body {
 ```
 
 ### Q53: How do you animate on scroll without JavaScript?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-animate-on-scroll-without-javascript-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-animate-on-scroll-without-javascript-handwritten.svg" alt="Handwritten: How do you animate on scroll without JavaScript?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-animate-on-scroll-without-javascript-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-animate-on-scroll-without-javascript-diagram.svg" alt="Diagram: How do you animate on scroll without JavaScript?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-animate-on-scroll-without-javascript-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-animate-on-scroll-without-javascript-sticky.svg" alt="Sticky Note: How do you animate on scroll without JavaScript?" width="30%">
-</a>
 
 **Answer:** Use `animation-timeline: scroll()` (Chrome 115+) to drive an animation based on scroll position. Combine with `animation-range` to control when the animation starts and ends. This is a newer feature → check browser support for your target audience.
 
@@ -1618,16 +1088,6 @@ body {
 
 ### Q54: What is utility-first CSS and how is it different from semantic CSS?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-utility-first-css-and-how-is-it-different-from-semantic-css-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-utility-first-css-and-how-is-it-different-from-semantic-css-handwritten.svg" alt="Handwritten: What is utility-first CSS and how is it different from semantic CSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-utility-first-css-and-how-is-it-different-from-semantic-css-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-utility-first-css-and-how-is-it-different-from-semantic-css-diagram.svg" alt="Diagram: What is utility-first CSS and how is it different from semantic CSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-utility-first-css-and-how-is-it-different-from-semantic-css-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-utility-first-css-and-how-is-it-different-from-semantic-css-sticky.svg" alt="Sticky Note: What is utility-first CSS and how is it different from semantic CSS?" width="30%">
-</a>
-
 **Answer:** Utility-first CSS uses small, single-purpose classes (like `text-center`, `p-4`, `bg-blue-500`) applied directly in HTML. Semantic CSS uses meaningful class names (`.card`, `.hero-title`) with custom styles in stylesheets. Utility-first eliminates context-switching between HTML and CSS files, reduces naming fatigue, and produces smaller CSS bundles through purging.
 
 ```html
@@ -1646,16 +1106,6 @@ body {
 
 ### Q55: How does Tailwind's `@apply` directive work and when should you use it?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-s-apply-directive-work-and-when-should-you-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-s-apply-directive-work-and-when-should-you-use-it-handwritten.svg" alt="Handwritten: How does Tailwind's `@apply` directive work and when should you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-s-apply-directive-work-and-when-should-you-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-s-apply-directive-work-and-when-should-you-use-it-diagram.svg" alt="Diagram: How does Tailwind's `@apply` directive work and when should you use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-s-apply-directive-work-and-when-should-you-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-s-apply-directive-work-and-when-should-you-use-it-sticky.svg" alt="Sticky Note: How does Tailwind's `@apply` directive work and when should you use it?" width="30%">
-</a>
-
 **Answer:** `@apply` inlines utility classes into a custom CSS class using `@layer components`. Use it sparingly for abstracting repeated utility patterns into reusable component classes. Overusing `@apply` defeats the purpose of utility-first by recreating the same abstraction problems as semantic CSS.
 
 ```css
@@ -1671,16 +1121,6 @@ body {
 ```
 
 ### Q56: How does Tailwind purge unused styles?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-purge-unused-styles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-purge-unused-styles-handwritten.svg" alt="Handwritten: How does Tailwind purge unused styles?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-purge-unused-styles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-purge-unused-styles-diagram.svg" alt="Diagram: How does Tailwind purge unused styles?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-purge-unused-styles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-tailwind-purge-unused-styles-sticky.svg" alt="Sticky Note: How does Tailwind purge unused styles?" width="30%">
-</a>
 
 **Answer:** Tailwind scans your source files for class names, then removes any CSS not found in those files. It uses regular expressions to find complete class names → dynamic class names built via string concatenation can be purged accidentally. Use the `safelist` option in the config for classes you need to keep but can't statically detect.
 
@@ -1702,16 +1142,6 @@ module.exports = {
 
 ### Q57: What are the downsides of utility-first CSS?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-downsides-of-utility-first-css-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-downsides-of-utility-first-css-handwritten.svg" alt="Handwritten: What are the downsides of utility-first CSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-downsides-of-utility-first-css-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-downsides-of-utility-first-css-diagram.svg" alt="Diagram: What are the downsides of utility-first CSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-downsides-of-utility-first-css-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-are-the-downsides-of-utility-first-css-sticky.svg" alt="Sticky Note: What are the downsides of utility-first CSS?" width="30%">
-</a>
-
 **Answer:** Longer HTML with many classes can be hard to read. Design changes may require touching HTML instead of CSS. Team unfamiliarity can slow onboarding. Components built with utility classes are tightly coupled to the framework (migrating away from Tailwind means rewriting HTML). Use component abstractions (Vue, React, Blade components) to keep templates clean.
 
 ```blade
@@ -1725,16 +1155,6 @@ module.exports = {
 ```
 
 ### Q58: How do you customize Tailwind's theme?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-customize-tailwind-s-theme-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-customize-tailwind-s-theme-handwritten.svg" alt="Handwritten: How do you customize Tailwind's theme?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-customize-tailwind-s-theme-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-customize-tailwind-s-theme-diagram.svg" alt="Diagram: How do you customize Tailwind's theme?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-customize-tailwind-s-theme-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-customize-tailwind-s-theme-sticky.svg" alt="Sticky Note: How do you customize Tailwind's theme?" width="30%">
-</a>
 
 **Answer:** Extend or override the default theme in `tailwind.config.js` under the `theme` key. Use `extend` to add new values without replacing defaults. Replace `theme` properties directly to fully customize. Use `theme()` in your CSS to reference theme values.
 
@@ -1764,16 +1184,6 @@ module.exports = {
 
 ### Q59: What is the difference between Tailwind and Bootstrap?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-tailwind-and-bootstrap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-tailwind-and-bootstrap-handwritten.svg" alt="Handwritten: What is the difference between Tailwind and Bootstrap?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-tailwind-and-bootstrap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-tailwind-and-bootstrap-diagram.svg" alt="Diagram: What is the difference between Tailwind and Bootstrap?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-tailwind-and-bootstrap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-the-difference-between-tailwind-and-bootstrap-sticky.svg" alt="Sticky Note: What is the difference between Tailwind and Bootstrap?" width="30%">
-</a>
-
 **Answer:** Bootstrap provides pre-built components (buttons, modals, navbars) with opinionated styles. Tailwind provides low-level utilities to build custom designs without fighting pre-built styles. Bootstrap uses semantic classes with component-specific CSS; Tailwind uses utility classes composed in HTML. Bootstrap is faster for quick prototypes; Tailwind produces more unique, custom-looking results.
 
 ```html
@@ -1785,16 +1195,6 @@ module.exports = {
 ```
 
 ### Q60: How do you handle dark mode in Tailwind?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-dark-mode-in-tailwind-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-dark-mode-in-tailwind-handwritten.svg" alt="Handwritten: How do you handle dark mode in Tailwind?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-dark-mode-in-tailwind-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-dark-mode-in-tailwind-diagram.svg" alt="Diagram: How do you handle dark mode in Tailwind?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-dark-mode-in-tailwind-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-dark-mode-in-tailwind-sticky.svg" alt="Sticky Note: How do you handle dark mode in Tailwind?" width="30%">
-</a>
 
 **Answer:** Tailwind has a `dark:` variant that applies styles when the user's system is in dark mode. Configure `darkMode: 'class'` in `tailwind.config.js` to toggle based on a class instead of system preference → useful for manual theme toggles.
 
@@ -1819,16 +1219,6 @@ module.exports = {
 
 ### Q61: What is CSS Layers (`@layer`) and how does it help framework integration?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-css-layers-layer-and-how-does-it-help-framework-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-css-layers-layer-and-how-does-it-help-framework-integration-handwritten.svg" alt="Handwritten: What is CSS Layers (`@layer`) and how does it help framework integration?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-css-layers-layer-and-how-does-it-help-framework-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-css-layers-layer-and-how-does-it-help-framework-integration-diagram.svg" alt="Diagram: What is CSS Layers (`@layer`) and how does it help framework integration?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-css-layers-layer-and-how-does-it-help-framework-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-css-layers-layer-and-how-does-it-help-framework-integration-sticky.svg" alt="Sticky Note: What is CSS Layers (`@layer`) and how does it help framework integration?" width="30%">
-</a>
-
 **Answer:** `@layer` lets you explicitly control the cascade order of groups of styles, overriding specificity. Layer order wins over specificity → a rule in a later layer beats a rule in an earlier layer even if the earlier rule has higher specificity. Tailwind itself uses layers to ensure utilities always override base and component styles.
 
 ```css
@@ -1851,16 +1241,6 @@ module.exports = {
 ## Laravel Frontend
 
 ### Q62: How do you set up Tailwind CSS in a Laravel project?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-set-up-tailwind-css-in-a-laravel-project-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-set-up-tailwind-css-in-a-laravel-project-handwritten.svg" alt="Handwritten: How do you set up Tailwind CSS in a Laravel project?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-set-up-tailwind-css-in-a-laravel-project-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-set-up-tailwind-css-in-a-laravel-project-diagram.svg" alt="Diagram: How do you set up Tailwind CSS in a Laravel project?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-set-up-tailwind-css-in-a-laravel-project-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-set-up-tailwind-css-in-a-laravel-project-sticky.svg" alt="Sticky Note: How do you set up Tailwind CSS in a Laravel project?" width="30%">
-</a>
 
 **Answer:** Laravel ships with Tailwind and Vite pre-configured in new installations. Run `npm install` to install dependencies. For existing projects, install via `npm install tailwindcss @tailwindcss/vite` and add the Vite plugin to `vite.config.js`. Import Tailwind in your main CSS file.
 
@@ -1892,16 +1272,6 @@ export default defineConfig({
 
 ### Q63: How does Vite work with Laravel to compile frontend assets?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-vite-work-with-laravel-to-compile-frontend-assets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-vite-work-with-laravel-to-compile-frontend-assets-handwritten.svg" alt="Handwritten: How does Vite work with Laravel to compile frontend assets?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-vite-work-with-laravel-to-compile-frontend-assets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-vite-work-with-laravel-to-compile-frontend-assets-diagram.svg" alt="Diagram: How does Vite work with Laravel to compile frontend assets?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-vite-work-with-laravel-to-compile-frontend-assets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-vite-work-with-laravel-to-compile-frontend-assets-sticky.svg" alt="Sticky Note: How does Vite work with Laravel to compile frontend assets?" width="30%">
-</a>
-
 **Answer:** Vite is a fast build tool that serves assets during development (HMR via `npm run dev`) and bundles for production (`npm run build`). The `laravel-vite-plugin` handles entry point resolution, hot module replacement, and injecting the correct script/link tags. Use the `@vite()` Blade directive to load the compiled assets.
 
 ```blade
@@ -1922,16 +1292,6 @@ export default defineConfig({
 
 ### Q64: What is PostCSS and what role does it play in Laravel frontend?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-postcss-and-what-role-does-it-play-in-laravel-frontend-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-postcss-and-what-role-does-it-play-in-laravel-frontend-handwritten.svg" alt="Handwritten: What is PostCSS and what role does it play in Laravel frontend?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-postcss-and-what-role-does-it-play-in-laravel-frontend-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-postcss-and-what-role-does-it-play-in-laravel-frontend-diagram.svg" alt="Diagram: What is PostCSS and what role does it play in Laravel frontend?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/what-is-postcss-and-what-role-does-it-play-in-laravel-frontend-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/what-is-postcss-and-what-role-does-it-play-in-laravel-frontend-sticky.svg" alt="Sticky Note: What is PostCSS and what role does it play in Laravel frontend?" width="30%">
-</a>
-
 **Answer:** PostCSS is a CSS processor that transforms CSS with JavaScript plugins. Tailwind CSS itself is a PostCSS plugin (`@tailwindcss/postcss`). PostCSS handles: `@import` inlining, vendor prefixing (autoprefixer), nesting, and custom media queries. In modern Laravel, Tailwind is configured as a Vite plugin through `@tailwindcss/vite` rather than a PostCSS plugin.
 
 ```js
@@ -1945,16 +1305,6 @@ export default {
 ```
 
 ### Q65: How do you handle multiple CSS entry points in Laravel Vite?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-multiple-css-entry-points-in-laravel-vite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-multiple-css-entry-points-in-laravel-vite-handwritten.svg" alt="Handwritten: How do you handle multiple CSS entry points in Laravel Vite?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-multiple-css-entry-points-in-laravel-vite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-multiple-css-entry-points-in-laravel-vite-diagram.svg" alt="Diagram: How do you handle multiple CSS entry points in Laravel Vite?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-multiple-css-entry-points-in-laravel-vite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-handle-multiple-css-entry-points-in-laravel-vite-sticky.svg" alt="Sticky Note: How do you handle multiple CSS entry points in Laravel Vite?" width="30%">
-</a>
 
 **Answer:** Pass an array of entry points to the `input` option in `vite.config.js`. Each entry point generates its own compiled file. Add each to the `@vite()` directive if you need them on every page, or use `@vite()` on specific pages for page-specific CSS/JS bundles.
 
@@ -1984,16 +1334,6 @@ export default defineConfig({
 ```
 
 ### Q66: How do you use Blade components with Tailwind classes?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-use-blade-components-with-tailwind-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-use-blade-components-with-tailwind-classes-handwritten.svg" alt="Handwritten: How do you use Blade components with Tailwind classes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-use-blade-components-with-tailwind-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-use-blade-components-with-tailwind-classes-diagram.svg" alt="Diagram: How do you use Blade components with Tailwind classes?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-use-blade-components-with-tailwind-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-use-blade-components-with-tailwind-classes-sticky.svg" alt="Sticky Note: How do you use Blade components with Tailwind classes?" width="30%">
-</a>
 
 **Answer:** Create a Blade component that accepts variant props and applies the correct Tailwind classes. Use `@props` to define accepted attributes, and `$attributes->merge()` for merging additional classes onto the root element. This keeps your views clean while using utility-first CSS.
 
@@ -2035,16 +1375,6 @@ $sizes = [
 
 ### Q67: How do you extract common Tailwind patterns in Laravel?
 
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-extract-common-tailwind-patterns-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-extract-common-tailwind-patterns-in-laravel-handwritten.svg" alt="Handwritten: How do you extract common Tailwind patterns in Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-extract-common-tailwind-patterns-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-extract-common-tailwind-patterns-in-laravel-diagram.svg" alt="Diagram: How do you extract common Tailwind patterns in Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-extract-common-tailwind-patterns-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-extract-common-tailwind-patterns-in-laravel-sticky.svg" alt="Sticky Note: How do you extract common Tailwind patterns in Laravel?" width="30%">
-</a>
-
 **Answer:** Use Blade components (`x-` components) or `@apply` in CSS for truly repetitive patterns. For theme values, define them in `tailwind.config.js` under `extend`. For dynamic conditional classes, use the `Illuminate\Support\Facades\Blade` directive or the `@class` directive in Blade.
 
 ```blade
@@ -2060,16 +1390,6 @@ $sizes = [
 ```
 
 ### Q68: How does hot module replacement work in Laravel with Vite?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-hot-module-replacement-work-in-laravel-with-vite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-hot-module-replacement-work-in-laravel-with-vite-handwritten.svg" alt="Handwritten: How does hot module replacement work in Laravel with Vite?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-hot-module-replacement-work-in-laravel-with-vite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-hot-module-replacement-work-in-laravel-with-vite-diagram.svg" alt="Diagram: How does hot module replacement work in Laravel with Vite?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-does-hot-module-replacement-work-in-laravel-with-vite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-does-hot-module-replacement-work-in-laravel-with-vite-sticky.svg" alt="Sticky Note: How does hot module replacement work in Laravel with Vite?" width="30%">
-</a>
 
 **Answer:** Run `npm run dev` to start the Vite dev server. Vite watches your source files and pushes updates to the browser via WebSocket on change → CSS updates are instant without page reload; JS updates via HMR preserve state. The `@vite()` Blade directive automatically detects the dev server and loads from it. Set `APP_URL` correctly in `.env` for proper asset URLs.
 
@@ -2087,16 +1407,6 @@ APP_URL=http://localhost:8000
 ```
 
 ### Q69: How do you version assets for cache busting in Laravel?
-
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-version-assets-for-cache-busting-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-version-assets-for-cache-busting-in-laravel-handwritten.svg" alt="Handwritten: How do you version assets for cache busting in Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-version-assets-for-cache-busting-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-version-assets-for-cache-busting-in-laravel-diagram.svg" alt="Diagram: How do you version assets for cache busting in Laravel?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-version-assets-for-cache-busting-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/52-interview-css/how-do-you-version-assets-for-cache-busting-in-laravel-sticky.svg" alt="Sticky Note: How do you version assets for cache busting in Laravel?" width="30%">
-</a>
 
 **Answer:** Vite automatically handles cache busting through content hashing in filenames. When you run `npm run build`, Vite appends a content hash to the output filename (e.g., `app-abc123.css`). The `@vite()` directive reads the `build/manifest.json` generated by Vite and resolves the hashed filename automatically. No manual versioning needed.
 

@@ -101,16 +101,6 @@ flowchart LR
 
 ### 1.1 What is JDBC?
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-1-what-is-jdbc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-1-what-is-jdbc-handwritten.svg" alt="Handwritten: 1.1 What is JDBC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-1-what-is-jdbc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-1-what-is-jdbc-diagram.svg" alt="Diagram: 1.1 What is JDBC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-1-what-is-jdbc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-1-what-is-jdbc-sticky.svg" alt="Sticky Note: 1.1 What is JDBC?" width="30%">
-</a>
-
 
 JDBC (Java Database Connectivity) is the standard Java API for interacting with relational databases. It provides a vendor-independent interface that lets applications execute SQL statements, retrieve results, and manage transactions without coupling to a specific database product.
 
@@ -141,16 +131,6 @@ There are four types of JDBC drivers:
 Type 4 drivers (thin drivers) are the standard today. Examples: PostgreSQL `org.postgresql.Driver`, MySQL `com.mysql.cj.jdbc.Driver`, H2 `org.h2.Driver`.
 
 ### 1.2 Database Connectivity with DriverManager
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-2-database-connectivity-with-drivermanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-2-database-connectivity-with-drivermanager-handwritten.svg" alt="Handwritten: 1.2 Database Connectivity with DriverManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-2-database-connectivity-with-drivermanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-2-database-connectivity-with-drivermanager-diagram.svg" alt="Diagram: 1.2 Database Connectivity with DriverManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-2-database-connectivity-with-drivermanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-2-database-connectivity-with-drivermanager-sticky.svg" alt="Sticky Note: 1.2 Database Connectivity with DriverManager" width="30%">
-</a>
 
 
 The `DriverManager` class manages a registry of JDBC drivers and establishes connections.
@@ -217,16 +197,6 @@ Connection c3 = DriverManager.getConnection(
 ```
 
 ### 1.3 Statement & SQL Injection
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-3-statement-sql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-3-statement-sql-injection-handwritten.svg" alt="Handwritten: 1.3 Statement & SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-3-statement-sql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-3-statement-sql-injection-diagram.svg" alt="Diagram: 1.3 Statement & SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-3-statement-sql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-3-statement-sql-injection-sticky.svg" alt="Sticky Note: 1.3 Statement & SQL Injection" width="30%">
-</a>
 
 
 The `Statement` interface sends SQL strings directly to the database. It is suitable for DDL statements but dangerous for dynamic queries with user input.
@@ -320,16 +290,6 @@ if (isResultSet) {
 ```
 
 ### 1.4 PreparedStatement & SQL Injection Prevention
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-4-preparedstatement-sql-injection-prevention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-4-preparedstatement-sql-injection-prevention-handwritten.svg" alt="Handwritten: 1.4 PreparedStatement & SQL Injection Prevention" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-4-preparedstatement-sql-injection-prevention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-4-preparedstatement-sql-injection-prevention-diagram.svg" alt="Diagram: 1.4 PreparedStatement & SQL Injection Prevention" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-4-preparedstatement-sql-injection-prevention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-4-preparedstatement-sql-injection-prevention-sticky.svg" alt="Sticky Note: 1.4 PreparedStatement & SQL Injection Prevention" width="30%">
-</a>
 
 
 `PreparedStatement` precompiles SQL with parameter placeholders (`?`), separating SQL structure from data. This **prevents SQL injection** because parameter values are never interpreted as SQL code.
@@ -472,16 +432,6 @@ ps.setObject(12, someJavaObject);
 
 ### 1.5 CallableStatement for Stored Procedures
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-5-callablestatement-for-stored-procedures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-5-callablestatement-for-stored-procedures-handwritten.svg" alt="Handwritten: 1.5 CallableStatement for Stored Procedures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-5-callablestatement-for-stored-procedures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-5-callablestatement-for-stored-procedures-diagram.svg" alt="Diagram: 1.5 CallableStatement for Stored Procedures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-5-callablestatement-for-stored-procedures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-5-callablestatement-for-stored-procedures-sticky.svg" alt="Sticky Note: 1.5 CallableStatement for Stored Procedures" width="30%">
-</a>
-
 
 `CallableStatement` extends `PreparedStatement` for calling stored procedures and functions.
 
@@ -583,16 +533,6 @@ public class CallableStatementExample {
 
 ### 1.6 ResultSet & ResultSetMetaData
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-6-resultset-resultsetmetadata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-6-resultset-resultsetmetadata-handwritten.svg" alt="Handwritten: 1.6 ResultSet & ResultSetMetaData" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-6-resultset-resultsetmetadata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-6-resultset-resultsetmetadata-diagram.svg" alt="Diagram: 1.6 ResultSet & ResultSetMetaData" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-6-resultset-resultsetmetadata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-6-resultset-resultsetmetadata-sticky.svg" alt="Sticky Note: 1.6 ResultSet & ResultSetMetaData" width="30%">
-</a>
-
 
 ```java
 package com.example.jdbc.resultset;
@@ -688,16 +628,6 @@ rs.wasNull();          // check if last read value was SQL NULL
 
 ### 1.7 DatabaseMetaData
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-7-databasemetadata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-7-databasemetadata-handwritten.svg" alt="Handwritten: 1.7 DatabaseMetaData" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-7-databasemetadata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-7-databasemetadata-diagram.svg" alt="Diagram: 1.7 DatabaseMetaData" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-7-databasemetadata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-7-databasemetadata-sticky.svg" alt="Sticky Note: 1.7 DatabaseMetaData" width="30%">
-</a>
-
 
 ```java
 package com.example.jdbc.metadata;
@@ -770,16 +700,6 @@ public class DatabaseMetaDataExample {
 ```
 
 ### 1.8 Batch Updates
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-8-batch-updates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-8-batch-updates-handwritten.svg" alt="Handwritten: 1.8 Batch Updates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-8-batch-updates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-8-batch-updates-diagram.svg" alt="Diagram: 1.8 Batch Updates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-8-batch-updates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-8-batch-updates-sticky.svg" alt="Sticky Note: 1.8 Batch Updates" width="30%">
-</a>
 
 
 Batch updates send multiple SQL statements in a single round-trip, drastically improving performance for bulk operations.
@@ -959,16 +879,6 @@ public class BatchUpdateExample {
 
 ### 1.9 Scrollable & Updatable ResultSets
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-9-scrollable-updatable-resultsets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-9-scrollable-updatable-resultsets-handwritten.svg" alt="Handwritten: 1.9 Scrollable & Updatable ResultSets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-9-scrollable-updatable-resultsets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-9-scrollable-updatable-resultsets-diagram.svg" alt="Diagram: 1.9 Scrollable & Updatable ResultSets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/1-9-scrollable-updatable-resultsets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/1-9-scrollable-updatable-resultsets-sticky.svg" alt="Sticky Note: 1.9 Scrollable & Updatable ResultSets" width="30%">
-</a>
-
 
 By default, `ResultSet` is forward-only and read-only. You can create scrollable and updatable result sets.
 
@@ -1061,16 +971,6 @@ public class ScrollableUpdatableExample {
 
 ### 2.1 The DataSource Interface
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-1-the-datasource-interface-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-1-the-datasource-interface-handwritten.svg" alt="Handwritten: 2.1 The DataSource Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-1-the-datasource-interface-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-1-the-datasource-interface-diagram.svg" alt="Diagram: 2.1 The DataSource Interface" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-1-the-datasource-interface-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-1-the-datasource-interface-sticky.svg" alt="Sticky Note: 2.1 The DataSource Interface" width="30%">
-</a>
-
 
 `DataSource` is the preferred alternative to `DriverManager`. Defined in `javax.sql.DataSource`, it provides:
 
@@ -1113,16 +1013,6 @@ public class DataSourceUsage {
 
 ### 2.2 DriverManagerDataSource
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-2-drivermanagerdatasource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-2-drivermanagerdatasource-handwritten.svg" alt="Handwritten: 2.2 DriverManagerDataSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-2-drivermanagerdatasource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-2-drivermanagerdatasource-diagram.svg" alt="Diagram: 2.2 DriverManagerDataSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-2-drivermanagerdatasource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-2-drivermanagerdatasource-sticky.svg" alt="Sticky Note: 2.2 DriverManagerDataSource" width="30%">
-</a>
-
 
 `DriverManagerDataSource` is a simple `DataSource` that returns a new connection on every call. It is **not pooled** Ã¢â‚¬â€ for development/testing only.
 
@@ -1146,16 +1036,6 @@ public class DriverManagerDataSourceConfig {
 ```
 
 ### 2.3 HikariCP Configuration
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-3-hikaricp-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-3-hikaricp-configuration-handwritten.svg" alt="Handwritten: 2.3 HikariCP Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-3-hikaricp-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-3-hikaricp-configuration-diagram.svg" alt="Diagram: 2.3 HikariCP Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-3-hikaricp-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-3-hikaricp-configuration-sticky.svg" alt="Sticky Note: 2.3 HikariCP Configuration" width="30%">
-</a>
 
 
 **HikariCP** is the default connection pool in Spring Boot 2.x and 3.x.
@@ -1294,16 +1174,6 @@ public class DataSourceConfig {
 
 ### 2.4 Pool Metrics & Monitoring
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-4-pool-metrics-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-4-pool-metrics-monitoring-handwritten.svg" alt="Handwritten: 2.4 Pool Metrics & Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-4-pool-metrics-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-4-pool-metrics-monitoring-diagram.svg" alt="Diagram: 2.4 Pool Metrics & Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/2-4-pool-metrics-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/2-4-pool-metrics-monitoring-sticky.svg" alt="Sticky Note: 2.4 Pool Metrics & Monitoring" width="30%">
-</a>
-
 
 HikariCP exposes metrics via Micrometer (Spring Boot Actuator).
 
@@ -1425,16 +1295,6 @@ public class UserDao {
 
 ### 3.1 query, queryForObject, queryForList
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-1-query-queryforobject-queryforlist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-1-query-queryforobject-queryforlist-handwritten.svg" alt="Handwritten: 3.1 query, queryForObject, queryForList" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-1-query-queryforobject-queryforlist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-1-query-queryforobject-queryforlist-diagram.svg" alt="Diagram: 3.1 query, queryForObject, queryForList" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-1-query-queryforobject-queryforlist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-1-query-queryforobject-queryforlist-sticky.svg" alt="Sticky Note: 3.1 query, queryForObject, queryForList" width="30%">
-</a>
-
 
 ```java
 // --- queryForObject: returns a single value ---
@@ -1492,16 +1352,6 @@ public List<Map<String, Object>> findActiveAsMaps() {
 ```
 
 ### 3.2 update, batchUpdate, queryForMap
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-2-update-batchupdate-queryformap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-2-update-batchupdate-queryformap-handwritten.svg" alt="Handwritten: 3.2 update, batchUpdate, queryForMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-2-update-batchupdate-queryformap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-2-update-batchupdate-queryformap-diagram.svg" alt="Diagram: 3.2 update, batchUpdate, queryForMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-2-update-batchupdate-queryformap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-2-update-batchupdate-queryformap-sticky.svg" alt="Sticky Note: 3.2 update, batchUpdate, queryForMap" width="30%">
-</a>
 
 
 ```java
@@ -1595,16 +1445,6 @@ public int[] batchInsertWithSetter(List<User> users) {
 ```
 
 ### 3.3 ResultSetExtractor, RowMapper, RowCallbackHandler
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-3-resultsetextractor-rowmapper-rowcallbackhandler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-3-resultsetextractor-rowmapper-rowcallbackhandler-handwritten.svg" alt="Handwritten: 3.3 ResultSetExtractor, RowMapper, RowCallbackHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-3-resultsetextractor-rowmapper-rowcallbackhandler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-3-resultsetextractor-rowmapper-rowcallbackhandler-diagram.svg" alt="Diagram: 3.3 ResultSetExtractor, RowMapper, RowCallbackHandler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-3-resultsetextractor-rowmapper-rowcallbackhandler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-3-resultsetextractor-rowmapper-rowcallbackhandler-sticky.svg" alt="Sticky Note: 3.3 ResultSetExtractor, RowMapper, RowCallbackHandler" width="30%">
-</a>
 
 
 ```java
@@ -1779,16 +1619,6 @@ public class MappingStrategiesDao {
 
 ### 3.4 BeanPropertyRowMapper
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-4-beanpropertyrowmapper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-4-beanpropertyrowmapper-handwritten.svg" alt="Handwritten: 3.4 BeanPropertyRowMapper" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-4-beanpropertyrowmapper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-4-beanpropertyrowmapper-diagram.svg" alt="Diagram: 3.4 BeanPropertyRowMapper" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/3-4-beanpropertyrowmapper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/3-4-beanpropertyrowmapper-sticky.svg" alt="Sticky Note: 3.4 BeanPropertyRowMapper" width="30%">
-</a>
-
 
 `BeanPropertyRowMapper` auto-maps ResultSet columns to JavaBean properties by name.
 
@@ -1852,16 +1682,6 @@ public class BeanPropertyDao {
 
 ### 4.1 Named Parameters
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-1-named-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-1-named-parameters-handwritten.svg" alt="Handwritten: 4.1 Named Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-1-named-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-1-named-parameters-diagram.svg" alt="Diagram: 4.1 Named Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-1-named-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-1-named-parameters-sticky.svg" alt="Sticky Note: 4.1 Named Parameters" width="30%">
-</a>
-
 
 ```java
 @Repository
@@ -1915,16 +1735,6 @@ public class NamedParameterUserDao {
 ```
 
 ### 4.2 SqlParameterSource
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-2-sqlparametersource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-2-sqlparametersource-handwritten.svg" alt="Handwritten: 4.2 SqlParameterSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-2-sqlparametersource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-2-sqlparametersource-diagram.svg" alt="Diagram: 4.2 SqlParameterSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-2-sqlparametersource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-2-sqlparametersource-sticky.svg" alt="Sticky Note: 4.2 SqlParameterSource" width="30%">
-</a>
 
 
 ```java
@@ -2036,16 +1846,6 @@ public class SqlParameterSourceExamples {
 
 ### 4.3 IN Clause with Named Parameters
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-3-in-clause-with-named-parameters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-3-in-clause-with-named-parameters-handwritten.svg" alt="Handwritten: 4.3 IN Clause with Named Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-3-in-clause-with-named-parameters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-3-in-clause-with-named-parameters-diagram.svg" alt="Diagram: 4.3 IN Clause with Named Parameters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/4-3-in-clause-with-named-parameters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/4-3-in-clause-with-named-parameters-sticky.svg" alt="Sticky Note: 4.3 IN Clause with Named Parameters" width="30%">
-</a>
-
 
 NamedParameterJdbcTemplate handles IN clauses with lists natively.
 
@@ -2146,16 +1946,6 @@ public class InClauseExamples {
 
 ### 5.1 Introduction to jOOQ
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-1-introduction-to-jooq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-1-introduction-to-jooq-handwritten.svg" alt="Handwritten: 5.1 Introduction to jOOQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-1-introduction-to-jooq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-1-introduction-to-jooq-diagram.svg" alt="Diagram: 5.1 Introduction to jOOQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-1-introduction-to-jooq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-1-introduction-to-jooq-sticky.svg" alt="Sticky Note: 5.1 Introduction to jOOQ" width="30%">
-</a>
-
 
 jOOQ (Java Object Oriented Querying) is a type-safe SQL DSL. It generates Java code from your database schema that lets you write type-safe queries.
 
@@ -2189,16 +1979,6 @@ List<UserRecord> result = dslContext.selectFrom(USERS)
 ```
 
 ### 5.2 Code Generation with jOOQ
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-2-code-generation-with-jooq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-2-code-generation-with-jooq-handwritten.svg" alt="Handwritten: 5.2 Code Generation with jOOQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-2-code-generation-with-jooq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-2-code-generation-with-jooq-diagram.svg" alt="Diagram: 5.2 Code Generation with jOOQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-2-code-generation-with-jooq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-2-code-generation-with-jooq-sticky.svg" alt="Sticky Note: 5.2 Code Generation with jOOQ" width="30%">
-</a>
 
 
 **Maven plugin configuration:**
@@ -2350,16 +2130,6 @@ public class UsersDao extends DAOImpl<UsersRecord, UsersPojo, Long> {
 ```
 
 ### 5.3 DSL Queries (select, from, where, join, groupBy, having, orderBy, limit)
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-3-dsl-queries-select-from-where-join-groupby-having-orderby-limit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-3-dsl-queries-select-from-where-join-groupby-having-orderby-limit-handwritten.svg" alt="Handwritten: 5.3 DSL Queries (select, from, where, join, groupBy, having, orderBy, limit)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-3-dsl-queries-select-from-where-join-groupby-having-orderby-limit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-3-dsl-queries-select-from-where-join-groupby-having-orderby-limit-diagram.svg" alt="Diagram: 5.3 DSL Queries (select, from, where, join, groupBy, having, orderBy, limit)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-3-dsl-queries-select-from-where-join-groupby-having-orderby-limit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-3-dsl-queries-select-from-where-join-groupby-having-orderby-limit-sticky.svg" alt="Sticky Note: 5.3 DSL Queries (select, from, where, join, groupBy, having, orderBy, limit)" width="30%">
-</a>
 
 
 ```java
@@ -2513,16 +2283,6 @@ public class JooxDslQueries {
 
 ### 5.4 Type-Safe Queries
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-4-type-safe-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-4-type-safe-queries-handwritten.svg" alt="Handwritten: 5.4 Type-Safe Queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-4-type-safe-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-4-type-safe-queries-diagram.svg" alt="Diagram: 5.4 Type-Safe Queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-4-type-safe-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-4-type-safe-queries-sticky.svg" alt="Sticky Note: 5.4 Type-Safe Queries" width="30%">
-</a>
-
 
 jOOQ's code generation ensures every table, column, and relationship is a Java type.
 
@@ -2573,16 +2333,6 @@ public class TypeSafeQueryExamples {
 ```
 
 ### 5.5 Multi-Tenancy with jOOQ
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-5-multi-tenancy-with-jooq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-5-multi-tenancy-with-jooq-handwritten.svg" alt="Handwritten: 5.5 Multi-Tenancy with jOOQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-5-multi-tenancy-with-jooq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-5-multi-tenancy-with-jooq-diagram.svg" alt="Diagram: 5.5 Multi-Tenancy with jOOQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-5-multi-tenancy-with-jooq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-5-multi-tenancy-with-jooq-sticky.svg" alt="Sticky Note: 5.5 Multi-Tenancy with jOOQ" width="30%">
-</a>
 
 
 ```java
@@ -2648,16 +2398,6 @@ class TenantExecuteListener extends DefaultExecuteListener {
 ```
 
 ### 5.6 jOOQ with Spring Boot
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-6-jooq-with-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-6-jooq-with-spring-boot-handwritten.svg" alt="Handwritten: 5.6 jOOQ with Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-6-jooq-with-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-6-jooq-with-spring-boot-diagram.svg" alt="Diagram: 5.6 jOOQ with Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-6-jooq-with-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-6-jooq-with-spring-boot-sticky.svg" alt="Sticky Note: 5.6 jOOQ with Spring Boot" width="30%">
-</a>
 
 
 Spring Boot auto-configures `DSLContext` when `spring-boot-starter-jooq` is on the classpath.
@@ -2773,16 +2513,6 @@ public class OrderService {
 
 ### 5.7 CRUD with jOOQ (insertInto, update, delete)
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-7-crud-with-jooq-insertinto-update-delete-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-7-crud-with-jooq-insertinto-update-delete-handwritten.svg" alt="Handwritten: 5.7 CRUD with jOOQ (insertInto, update, delete)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-7-crud-with-jooq-insertinto-update-delete-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-7-crud-with-jooq-insertinto-update-delete-diagram.svg" alt="Diagram: 5.7 CRUD with jOOQ (insertInto, update, delete)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-7-crud-with-jooq-insertinto-update-delete-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-7-crud-with-jooq-insertinto-update-delete-sticky.svg" alt="Sticky Note: 5.7 CRUD with jOOQ (insertInto, update, delete)" width="30%">
-</a>
-
 
 ```java
 @Repository
@@ -2887,16 +2617,6 @@ public class CrudRepository {
 
 ### 5.8 DAO Generation
 
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-8-dao-generation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-8-dao-generation-handwritten.svg" alt="Handwritten: 5.8 DAO Generation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-8-dao-generation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-8-dao-generation-diagram.svg" alt="Diagram: 5.8 DAO Generation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-8-dao-generation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-8-dao-generation-sticky.svg" alt="Sticky Note: 5.8 DAO Generation" width="30%">
-</a>
-
 
 jOOQ generates DAO classes that provide standard CRUD out of the box.
 
@@ -2992,16 +2712,6 @@ public class CustomUserDao extends UsersDao {
 ```
 
 ### 5.9 jOOQ vs JPA
-
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-9-jooq-vs-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-9-jooq-vs-jpa-handwritten.svg" alt="Handwritten: 5.9 jOOQ vs JPA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-9-jooq-vs-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-9-jooq-vs-jpa-diagram.svg" alt="Diagram: 5.9 jOOQ vs JPA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/19-jdbc-jooq/5-9-jooq-vs-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/19-jdbc-jooq/5-9-jooq-vs-jpa-sticky.svg" alt="Sticky Note: 5.9 jOOQ vs JPA" width="30%">
-</a>
 
 
 | Aspect | jOOQ | JPA (Hibernate) |

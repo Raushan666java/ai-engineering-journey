@@ -49,23 +49,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 4.1 Government Schemes — Overview
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-1-government-schemes-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-1-government-schemes-overview-handwritten.svg" alt="Handwritten: 4.1 Government Schemes — Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-1-government-schemes-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-1-government-schemes-overview-diagram.svg" alt="Diagram: 4.1 Government Schemes — Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-1-government-schemes-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-1-government-schemes-overview-sticky.svg" alt="Sticky Note: 4.1 Government Schemes — Overview" width="30%">
-</a>
-
 
 ```mermaid
 mindmap
@@ -104,17 +92,6 @@ mindmap
 ```
 
 ### 4.2 Detailed Scheme Descriptions
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-2-detailed-scheme-descriptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-2-detailed-scheme-descriptions-handwritten.svg" alt="Handwritten: 4.2 Detailed Scheme Descriptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-2-detailed-scheme-descriptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-2-detailed-scheme-descriptions-diagram.svg" alt="Diagram: 4.2 Detailed Scheme Descriptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-2-detailed-scheme-descriptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-2-detailed-scheme-descriptions-sticky.svg" alt="Sticky Note: 4.2 Detailed Scheme Descriptions" width="30%">
-</a>
-
 
 #### A. Pradhan Mantri Jan Dhan Yojana (PMJDY)
 
@@ -332,17 +309,6 @@ mindmap
 
 ### 4.3 Union Budget
 
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-3-union-budget-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-3-union-budget-handwritten.svg" alt="Handwritten: 4.3 Union Budget" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-3-union-budget-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-3-union-budget-diagram.svg" alt="Diagram: 4.3 Union Budget" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-3-union-budget-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-3-union-budget-sticky.svg" alt="Sticky Note: 4.3 Union Budget" width="30%">
-</a>
-
-
 The **Union Budget** is the annual financial statement of the Government of India presented under **Article 112 of the Constitution**.
 
 ```mermaid
@@ -455,17 +421,6 @@ flowchart TD
 
 ### 4.4 Tax System in India
 
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-4-tax-system-in-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-4-tax-system-in-india-handwritten.svg" alt="Handwritten: 4.4 Tax System in India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-4-tax-system-in-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-4-tax-system-in-india-diagram.svg" alt="Diagram: 4.4 Tax System in India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-4-tax-system-in-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-4-tax-system-in-india-sticky.svg" alt="Sticky Note: 4.4 Tax System in India" width="30%">
-</a>
-
-
 #### A. Direct Taxes
 
 Taxes where the incidence falls **directly** on the taxpayer and cannot be shifted.
@@ -530,17 +485,6 @@ Taxes where the incidence can be **shifted** from the seller to the consumer.
 - **Purpose:** Recommend GST rates, exemptions, and policy changes
 
 ### 4.5 Other Budget Concepts
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-5-other-budget-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-5-other-budget-concepts-handwritten.svg" alt="Handwritten: 4.5 Other Budget Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-5-other-budget-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-5-other-budget-concepts-diagram.svg" alt="Diagram: 4.5 Other Budget Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-5-other-budget-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/04-government-schemes-budget/4-5-other-budget-concepts-sticky.svg" alt="Sticky Note: 4.5 Other Budget Concepts" width="30%">
-</a>
-
 
 | Term | Definition |
 |------|------------|

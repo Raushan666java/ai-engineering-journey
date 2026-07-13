@@ -93,32 +93,12 @@ flowchart LR
 
 ### 7.1 Definition
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-handwritten.svg" alt="Handwritten: 7.1 Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-diagram.svg" alt="Diagram: 7.1 Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-1-definition-sticky.svg" alt="Sticky Note: 7.1 Definition" width="30%">
-</a>
-
 
 A **binary relation** $R$ from set $A$ to set $B$ is a subset of $A \times B$. When $A = B$, we say $R$ is a relation on $A$. We write $a R b$ to mean $(a, b) \in R$.
 
 > **One-Sentence Takeaway:** A binary relation is simply a set of ordered pairs; it can model any pairwise connection between elements of two sets.
 
 ### 7.2 Representations
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-handwritten.svg" alt="Handwritten: 7.2 Representations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-diagram.svg" alt="Diagram: 7.2 Representations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-2-representations-sticky.svg" alt="Sticky Note: 7.2 Representations" width="30%">
-</a>
 
 
 **Matrix representation.** If $A = \{a_1, \ldots, a_m\}$ and $B = \{b_1, \ldots, b_n\}$, the relation $R$ can be represented by an $m \times n$ zero-one matrix $M_R$ with $M_R[i, j] = 1$ iff $(a_i, b_j) \in R$.
@@ -157,16 +137,6 @@ function power(R: RelationMatrix, n: number): RelationMatrix {
 > **One-Sentence Takeaway:** Relations can be represented as zero-one matrices (for computation) or digraphs (for visualization); each representation makes different properties easy to verify.
 
 ### 7.3 Properties of Relations
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-handwritten.svg" alt="Handwritten: 7.3 Properties of Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-diagram.svg" alt="Diagram: 7.3 Properties of Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-3-properties-of-relations-sticky.svg" alt="Sticky Note: 7.3 Properties of Relations" width="30%">
-</a>
 
 
 Let $R$ be a relation on a set $A$.
@@ -218,16 +188,6 @@ function isTransitive(M: RelationMatrix): boolean {
 
 ### 7.4 Combining Relations
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-handwritten.svg" alt="Handwritten: 7.4 Combining Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-diagram.svg" alt="Diagram: 7.4 Combining Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-4-combining-relations-sticky.svg" alt="Sticky Note: 7.4 Combining Relations" width="30%">
-</a>
-
 
 $R$ and $S$ can be combined via set operations ($R \cup S$, $R \cap S$, $R \setminus S$).
 
@@ -242,16 +202,6 @@ $R$ and $S$ can be combined via set operations ($R \cup S$, $R \cap S$, $R \setm
 > **One-Sentence Takeaway:** Composition chains relations together ($a R b$ and $b S c$ give $a (S \circ R) c$); powers iterate a single relation.
 
 ### 7.5 Closures
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-handwritten.svg" alt="Handwritten: 7.5 Closures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-diagram.svg" alt="Diagram: 7.5 Closures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-5-closures-sticky.svg" alt="Sticky Note: 7.5 Closures" width="30%">
-</a>
 
 
 The **reflexive closure** of $R$ is $R \cup \{(a, a) \mid a \in A\} = R \cup \Delta$.
@@ -301,16 +251,6 @@ console.log(warshall(R));
 
 ### 7.6 Equivalence Relations
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-handwritten.svg" alt="Handwritten: 7.6 Equivalence Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-diagram.svg" alt="Diagram: 7.6 Equivalence Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-6-equivalence-relations-sticky.svg" alt="Sticky Note: 7.6 Equivalence Relations" width="30%">
-</a>
-
 
 **Definition.** A relation $R$ on $A$ is an **equivalence relation** if it is reflexive, symmetric, and transitive.
 
@@ -344,16 +284,6 @@ function computeEquivalenceClasses(set: number[], relation: RelationMatrix): num
 > **One-Sentence Takeaway:** An equivalence relation groups elements into equivalence classes that partition the set ? two equivalence classes are either identical or disjoint.
 
 ### 7.7 Partial Orders
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-handwritten.svg" alt="Handwritten: 7.7 Partial Orders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-diagram.svg" alt="Diagram: 7.7 Partial Orders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-7-partial-orders-sticky.svg" alt="Sticky Note: 7.7 Partial Orders" width="30%">
-</a>
 
 
 **Definition.** A relation $R$ on $A$ is a **partial order** if it is reflexive, antisymmetric, and transitive. Denoted $\preceq$ or $\leq$. The pair $(A, \preceq)$ is a **partially ordered set** (poset).
@@ -415,16 +345,6 @@ console.log(topologicalSort(6, deps)); // e.g., [0, 1, 2, 3, 4, 5]
 > **One-Sentence Takeaway:** A partial order is reflexive, antisymmetric, and transitive; Hasse diagrams visualize posets by omitting transitive and reflexive edges; topological sorting produces a linear extension.
 
 ### 7.8 n-ary Relations
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-handwritten.svg" alt="Handwritten: 7.8 n-ary Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-diagram.svg" alt="Diagram: 7.8 n-ary Relations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/07-relations/7-8-n-ary-relations-sticky.svg" alt="Sticky Note: 7.8 n-ary Relations" width="30%">
-</a>
 
 
 An **n-ary relation** is a subset of $A_1 \times A_2 \times \cdots \times A_n$. Used in relational databases. Operations include projection ($\Pi$) and join ($\bowtie$).

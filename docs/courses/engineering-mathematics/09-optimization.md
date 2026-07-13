@@ -79,16 +79,6 @@ flowchart LR
 
 ### 9.1 Classification of Optimization Problems
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-1-classification-of-optimization-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-1-classification-of-optimization-problems-handwritten.svg" alt="Handwritten: 9.1 Classification of Optimization Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-1-classification-of-optimization-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-1-classification-of-optimization-problems-diagram.svg" alt="Diagram: 9.1 Classification of Optimization Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-1-classification-of-optimization-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-1-classification-of-optimization-problems-sticky.svg" alt="Sticky Note: 9.1 Classification of Optimization Problems" width="30%">
-</a>
-
 
 **General Form:**
 $$\min_{x \in \mathbb{R}^n} f(x) \quad \text{subject to} \quad g_i(x) \leq 0, \; h_j(x) = 0$$
@@ -114,16 +104,6 @@ $$f(y) \geq f(x) + \nabla f(x)^T (y - x)$$
 **Second-Order Condition (for twice differentiable $f$):** $f$ is convex iff $\nabla^2 f(x) \succeq 0$ (Hessian is positive semidefinite).
 
 ### 9.2 Unconstrained Optimization
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-2-unconstrained-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-2-unconstrained-optimization-handwritten.svg" alt="Handwritten: 9.2 Unconstrained Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-2-unconstrained-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-2-unconstrained-optimization-diagram.svg" alt="Diagram: 9.2 Unconstrained Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-2-unconstrained-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-2-unconstrained-optimization-sticky.svg" alt="Sticky Note: 9.2 Unconstrained Optimization" width="30%">
-</a>
 
 
 **Optimality Conditions:**
@@ -173,16 +153,6 @@ where $s_k = x_{k+1} - x_k$ and $y_k = \nabla f(x_{k+1}) - \nabla f(x_k)$.
 
 ### 9.3 Constrained Optimization
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-3-constrained-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-3-constrained-optimization-handwritten.svg" alt="Handwritten: 9.3 Constrained Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-3-constrained-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-3-constrained-optimization-diagram.svg" alt="Diagram: 9.3 Constrained Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-3-constrained-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-3-constrained-optimization-sticky.svg" alt="Sticky Note: 9.3 Constrained Optimization" width="30%">
-</a>
-
 
 #### 9.3.1 Equality Constraints
 
@@ -219,16 +189,6 @@ where $b_i$ is the right-hand side of constraint $i$.
 
 ### 9.4 Linear Programming
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-4-linear-programming-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-4-linear-programming-handwritten.svg" alt="Handwritten: 9.4 Linear Programming" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-4-linear-programming-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-4-linear-programming-diagram.svg" alt="Diagram: 9.4 Linear Programming" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-4-linear-programming-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-4-linear-programming-sticky.svg" alt="Sticky Note: 9.4 Linear Programming" width="30%">
-</a>
-
 
 **Standard Form:**
 $$\min_{x \in \mathbb{R}^n} c^T x \quad \text{s.t.} \quad Ax \leq b, \; x \geq 0$$
@@ -247,16 +207,6 @@ $$\max_{y \in \mathbb{R}^m} b^T y \quad \text{s.t.} \quad A^T y \geq c, \; y \ge
 **Interior Point Methods:** Follow the central path through the interior of the feasible region. Polynomial-time ($O(n^{3.5}L)$). Often faster than simplex for large problems.
 
 ### 9.5 Convex Optimization
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-5-convex-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-5-convex-optimization-handwritten.svg" alt="Handwritten: 9.5 Convex Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-5-convex-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-5-convex-optimization-diagram.svg" alt="Diagram: 9.5 Convex Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-5-convex-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-5-convex-optimization-sticky.svg" alt="Sticky Note: 9.5 Convex Optimization" width="30%">
-</a>
 
 
 **Properties:**
@@ -278,16 +228,6 @@ $$\max_{y \in \mathbb{R}^m} b^T y \quad \text{s.t.} \quad A^T y \geq c, \; y \ge
 
 ### 9.6 Stochastic Optimization
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-6-stochastic-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-6-stochastic-optimization-handwritten.svg" alt="Handwritten: 9.6 Stochastic Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-6-stochastic-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-6-stochastic-optimization-diagram.svg" alt="Diagram: 9.6 Stochastic Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-6-stochastic-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-6-stochastic-optimization-sticky.svg" alt="Sticky Note: 9.6 Stochastic Optimization" width="30%">
-</a>
-
 
 **Stochastic Gradient Descent (SGD):** Uses a random subset of data (mini-batch) to estimate the gradient:
 
@@ -302,16 +242,6 @@ $$x_{k+1} = x_k - \alpha_k \cdot \frac{1}{|B|} \sum_{i \in B} \nabla f_i(x_k)$$
 - **RMSProp:** RMS of recent gradients for normalization
 
 ### 9.7 Duality and Augmented Lagrangian
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-7-duality-and-augmented-lagrangian-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-7-duality-and-augmented-lagrangian-handwritten.svg" alt="Handwritten: 9.7 Duality and Augmented Lagrangian" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-7-duality-and-augmented-lagrangian-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-7-duality-and-augmented-lagrangian-diagram.svg" alt="Diagram: 9.7 Duality and Augmented Lagrangian" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-7-duality-and-augmented-lagrangian-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-7-duality-and-augmented-lagrangian-sticky.svg" alt="Sticky Note: 9.7 Duality and Augmented Lagrangian" width="30%">
-</a>
 
 
 **Lagrangian Dual:** $g(\lambda, \mu) = \min_x L(x, \lambda, \mu)$
@@ -329,16 +259,6 @@ $$z^{k+1} = \arg\min_z L_\rho(x^{k+1}, z, \lambda^k)$$
 $$\lambda^{k+1} = \lambda^k + \rho(h(x^{k+1}) + g(z^{k+1}) - b)$$
 
 ### 9.8 Applications
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-8-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-8-applications-handwritten.svg" alt="Handwritten: 9.8 Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-8-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-8-applications-diagram.svg" alt="Diagram: 9.8 Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-8-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/09-optimization/9-8-applications-sticky.svg" alt="Sticky Note: 9.8 Applications" width="30%">
-</a>
 
 
 **Machine Learning ? Empirical Risk Minimization:**

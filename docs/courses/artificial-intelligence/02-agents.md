@@ -93,16 +93,6 @@ flowchart LR
 
 ### Agents and Environments
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agents-and-environments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agents-and-environments-handwritten.svg" alt="Handwritten: Agents and Environments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agents-and-environments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agents-and-environments-diagram.svg" alt="Diagram: Agents and Environments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agents-and-environments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agents-and-environments-sticky.svg" alt="Sticky Note: Agents and Environments" width="30%">
-</a>
-
 
 > **Real-World Analogy:** A human driver perceives the road through eyes (sensors) and acts via hands and feet (actuators). The car, road, traffic, and weather together form the environment. The driver's brain runs the agent program that decides when to brake, steer, or accelerate. Without the driver, the car is just a machine; without the car, the driver is just a pedestrian. Agent and environment are inseparable.
 
@@ -241,16 +231,6 @@ Step 4: Percept=('B', 'Clean') → Action=Left
 
 ### Rationality
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/rationality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/rationality-handwritten.svg" alt="Handwritten: Rationality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/rationality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/rationality-diagram.svg" alt="Diagram: Rationality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/rationality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/rationality-sticky.svg" alt="Sticky Note: Rationality" width="30%">
-</a>
-
 
 > **Real-World Analogy:** A chess player who blunders still made rational moves earlier if those moves maximized their winning chance given what they knew. Rationality is not omniscience → it is doing your best with what you have. Similarly, a doctor who prescribes the best known treatment based on symptoms, even if the patient has a rare condition the tests missed, is still rational.
 
@@ -383,16 +363,6 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} → Action: NoOp
 
 ### Task Environments (PEAS)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/task-environments-peas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/task-environments-peas-handwritten.svg" alt="Handwritten: Task Environments (PEAS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/task-environments-peas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/task-environments-peas-diagram.svg" alt="Diagram: Task Environments (PEAS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/task-environments-peas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/task-environments-peas-sticky.svg" alt="Sticky Note: Task Environments (PEAS)" width="30%">
-</a>
-
 
 > **Real-World Analogy:** Before building a house, you need a blueprint. PEAS is the blueprint for designing an agent → it specifies WHAT the agent should achieve (Performance), WHERE it operates (Environment), HOW it acts (Actuators), and HOW it perceives (Sensors). Without PEAS, you risk designing an agent that is effective in the wrong environment or optimized for the wrong metric.
 
@@ -484,16 +454,6 @@ END FUNCTION
 ---
 
 ### Environment Properties
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/environment-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/environment-properties-handwritten.svg" alt="Handwritten: Environment Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/environment-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/environment-properties-diagram.svg" alt="Diagram: Environment Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/environment-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/environment-properties-sticky.svg" alt="Sticky Note: Environment Properties" width="30%">
-</a>
 
 
 > **Real-World Analogy:** A chess player sees the entire board (fully observable) and knows the rules are fixed (deterministic). A poker player cannot see opponents' cards (partially observable) and must account for bluffing (stochastic). A self-driving car must react while the world keeps moving (dynamic) and past decisions affect future options (sequential). These dimensions determine which agent architecture you can use.
@@ -665,16 +625,6 @@ Recommended: Model-Based Agent (need internal state)
 ---
 
 ### Agent Types
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-handwritten.svg" alt="Handwritten: Agent Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-diagram.svg" alt="Diagram: Agent Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-sticky.svg" alt="Sticky Note: Agent Types" width="30%">
-</a>
 
 
 There are four basic types of agent programs, each building on the previous in sophistication. Each type is suited to a different class of environment properties.
@@ -1140,16 +1090,6 @@ Percept: ('B', 'Clean'), State: {'A': 'Clean', 'B': 'Clean'} -> Action: NoOp
 ---
 
 ### Agent Types Comparison Table
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-comparison-table-handwritten.svg" alt="Handwritten: Agent Types Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-comparison-table-diagram.svg" alt="Diagram: Agent Types Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-agents/agent-types-comparison-table-sticky.svg" alt="Sticky Note: Agent Types Comparison Table" width="30%">
-</a>
 
 
 | Feature | Simple Reflex | Model-Based Reflex | Goal-Based | Utility-Based |

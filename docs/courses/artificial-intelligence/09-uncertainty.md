@@ -96,16 +96,6 @@ Probability theory provides the mathematical framework for reasoning under uncer
 
 ### 9.1.1 Conditional Probability and Bayes' Rule
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-1-conditional-probability-and-bayes-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-1-conditional-probability-and-bayes-rule-handwritten.svg" alt="Handwritten: 9.1.1 Conditional Probability and Bayes' Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-1-conditional-probability-and-bayes-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-1-conditional-probability-and-bayes-rule-diagram.svg" alt="Diagram: 9.1.1 Conditional Probability and Bayes' Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-1-conditional-probability-and-bayes-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-1-conditional-probability-and-bayes-rule-sticky.svg" alt="Sticky Note: 9.1.1 Conditional Probability and Bayes' Rule" width="30%">
-</a>
-
 
 The conditional probability of $A$ given $B$ is:
 
@@ -123,16 +113,6 @@ The denominator normalizes: $P(E) = \sum_h P(E \mid h) P(h)$.
 
 ### 9.1.2 Independence
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-2-independence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-2-independence-handwritten.svg" alt="Handwritten: 9.1.2 Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-2-independence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-2-independence-diagram.svg" alt="Diagram: 9.1.2 Independence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-2-independence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-1-2-independence-sticky.svg" alt="Sticky Note: 9.1.2 Independence" width="30%">
-</a>
-
 
 Two events $A$ and $B$ are independent if $P(A \land B) = P(A) P(B)$. Conditional independence, a weaker and more common condition, holds when:
 
@@ -141,16 +121,6 @@ $$P(A \land B \mid C) = P(A \mid C) P(B \mid C)$$
 Conditional independence assumptions dramatically reduce the complexity of probabilistic models.
 
 ### Real-World Analogy — Spam Detection with Bayes
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-spam-detection-with-bayes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-spam-detection-with-bayes-handwritten.svg" alt="Handwritten: Real-World Analogy — Spam Detection with Bayes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-spam-detection-with-bayes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-spam-detection-with-bayes-diagram.svg" alt="Diagram: Real-World Analogy — Spam Detection with Bayes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-spam-detection-with-bayes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-spam-detection-with-bayes-sticky.svg" alt="Sticky Note: Real-World Analogy — Spam Detection with Bayes" width="30%">
-</a>
 
 
 You receive an email containing the word "FREE". You want to know: is it spam?
@@ -162,16 +132,6 @@ You receive an email containing the word "FREE". You want to know: is it spam?
 The email is 96.4% likely to be spam.
 
 ### Algorithmic Steps — Applying Bayes' Rule
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-applying-bayes-rule-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-applying-bayes-rule-handwritten.svg" alt="Handwritten: Algorithmic Steps — Applying Bayes' Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-applying-bayes-rule-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-applying-bayes-rule-diagram.svg" alt="Diagram: Algorithmic Steps — Applying Bayes' Rule" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-applying-bayes-rule-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-applying-bayes-rule-sticky.svg" alt="Sticky Note: Algorithmic Steps — Applying Bayes' Rule" width="30%">
-</a>
 
 
 **Input:** Prior $P(H)$, likelihood $P(E \mid H)$, evidence probability $P(E)$
@@ -187,16 +147,6 @@ The email is 96.4% likely to be spam.
 | 6 | Return the posterior probability |
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```text
@@ -220,16 +170,6 @@ function BAYES-RULE-MARGINALIZE(Prior, LikelihoodFunc, hypotheses) returns poste
 
 ### Step-by-Step Dry Run — Medical Test
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-medical-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-medical-test-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Medical Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-medical-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-medical-test-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Medical Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-medical-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-medical-test-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Medical Test" width="30%">
-</a>
-
 
 **Scenario:** Disease prevalence = 0.1%, test sensitivity = 99%, false positive rate = 2%.
 **Query:** $P(\text{Disease} \mid \text{Positive})$
@@ -246,16 +186,6 @@ function BAYES-RULE-MARGINALIZE(Prior, LikelihoodFunc, hypotheses) returns poste
 **Key insight:** The disease is so rare that even a 98% accurate test produces mostly false positives.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -285,16 +215,6 @@ print(f"P(no_disease | positive) = {posteriors['no_disease']:.4f}")
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why O(n):** Bayes' rule marginalizes over $n$ hypotheses. Each hypothesis contributes one multiplication and one addition to the evidence sum. Work scales linearly — you cannot compute a weighted sum without examining every term. This is optimal.
 
@@ -305,16 +225,6 @@ print(f"P(no_disease | positive) = {posteriors['no_disease']:.4f}")
 | Continuous (integration) | Approx O(m) with m quadrature points | O(m) |
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -327,16 +237,6 @@ print(f"P(no_disease | positive) = {posteriors['no_disease']:.4f}")
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 1. **Zero evidence probability:** If $P(E) = 0$, Bayes' rule is undefined. Use pseudocounts (Laplace smoothing) to avoid zero probabilities.
 2. **Floating-point underflow:** When $P(E) \approx 10^{-100}$, use log-probabilities: $\log P(H \mid E) = \log P(E \mid H) + \log P(H) - \log P(E)$.
@@ -346,16 +246,6 @@ print(f"P(no_disease | positive) = {posteriors['no_disease']:.4f}")
 ## 9.2 Bayesian Networks
 
 ### Real-World Analogy — Car Won't Start
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-car-won-t-start-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-car-won-t-start-handwritten.svg" alt="Handwritten: Real-World Analogy — Car Won't Start" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-car-won-t-start-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-car-won-t-start-diagram.svg" alt="Diagram: Real-World Analogy — Car Won't Start" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-car-won-t-start-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-car-won-t-start-sticky.svg" alt="Sticky Note: Real-World Analogy — Car Won't Start" width="30%">
-</a>
 
 
 Your car doesn't start in the morning. Several causes interact:
@@ -367,16 +257,6 @@ Your car doesn't start in the morning. Several causes interact:
 B and F are independent (no direct causal link). C depends on B, F, S (all three must work). A Bayesian network captures this: variables are nodes, causes point to effects, each node has a conditional probability table.
 
 ### 9.2.1 Structure and Factorization
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-2-1-structure-and-factorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-2-1-structure-and-factorization-handwritten.svg" alt="Handwritten: 9.2.1 Structure and Factorization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-2-1-structure-and-factorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-2-1-structure-and-factorization-diagram.svg" alt="Diagram: 9.2.1 Structure and Factorization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-2-1-structure-and-factorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-2-1-structure-and-factorization-sticky.svg" alt="Sticky Note: 9.2.1 Structure and Factorization" width="30%">
-</a>
 
 
 A **Bayesian network** (BN) is a directed acyclic graph (DAG) representing a joint probability distribution. Nodes represent random variables; directed edges represent direct probabilistic dependencies.
@@ -396,16 +276,6 @@ A BN with $n$ nodes, each with at most $k$ parents and $d$ values, requires at m
 
 ### Algorithmic Steps — Constructing a Bayesian Network
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-constructing-a-bayesian-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-constructing-a-bayesian-network-handwritten.svg" alt="Handwritten: Algorithmic Steps — Constructing a Bayesian Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-constructing-a-bayesian-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-constructing-a-bayesian-network-diagram.svg" alt="Diagram: Algorithmic Steps — Constructing a Bayesian Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-constructing-a-bayesian-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-constructing-a-bayesian-network-sticky.svg" alt="Sticky Note: Algorithmic Steps — Constructing a Bayesian Network" width="30%">
-</a>
-
 
 **Input:** Set of random variables $X_1, \ldots, X_n$, domain knowledge or data
 **Output:** A Bayesian network (DAG + CPTs)
@@ -420,16 +290,6 @@ A BN with $n$ nodes, each with at most $k$ parents and $d$ values, requires at m
 | 6 | The joint distribution is the product of all CPTs |
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```text
@@ -455,16 +315,6 @@ function BN-JOINT-PROB(bn, assignment) returns probability
 
 ### Step-by-Step Dry Run — Alarm Network Joint Probability
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-alarm-network-joint-probability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-alarm-network-joint-probability-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — Alarm Network Joint Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-alarm-network-joint-probability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-alarm-network-joint-probability-diagram.svg" alt="Diagram: Step-by-Step Dry Run — Alarm Network Joint Probability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-alarm-network-joint-probability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-alarm-network-joint-probability-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — Alarm Network Joint Probability" width="30%">
-</a>
-
 
 **CPTs:** P(B)=0.001, P(E)=0.002, P(A|B,E): TT=0.95, TF=0.94, FT=0.29, FF=0.001
 P(J|A): T=0.90, F=0.05; P(M|A): T=0.70, F=0.01
@@ -482,16 +332,6 @@ P(J|A): T=0.90, F=0.05; P(M|A): T=0.70, F=0.01
 $P(B,E,A,J,M) = 1.197 \times 10^{-6}$
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -544,16 +384,6 @@ print(f"P(B,E,A,J,M) = {p:.10f}")
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why BN parameter count is $O(n d^{k+1})$:** Each of $n$ nodes stores a CPT. For a node with $k$ parents and $d$ values, the CPT has $d^{k+1}$ entries (one combination per parent assignment per self value). The full joint table would have $d^n$ entries — exponential in all variables. The BN reduces this to exponential only in the *maximum number of parents* ($k \ll n$). This is why BNs are called "compact representations."
 
@@ -564,16 +394,6 @@ print(f"P(B,E,A,J,M) = {p:.10f}")
 | Inference cost | $O(d^n)$ | $O(d^{tw})$ where tw = treewidth |
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -586,16 +406,6 @@ print(f"P(B,E,A,J,M) = {p:.10f}")
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 1. **Root nodes (no parents):** CPT is just a prior probability (size $d$). All root nodes are marginally independent unless we condition on a common child.
 2. **Deterministic nodes:** $P(X \mid Pa) \in \{0,1\}$. Inference can be optimized (bypass sampling, direct propagation).
@@ -605,16 +415,6 @@ print(f"P(B,E,A,J,M) = {p:.10f}")
 ## 9.3 d-Separation
 
 ### Real-World Analogy — Family Traits
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-family-traits-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-family-traits-handwritten.svg" alt="Handwritten: Real-World Analogy — Family Traits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-family-traits-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-family-traits-diagram.svg" alt="Diagram: Real-World Analogy — Family Traits" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-family-traits-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-family-traits-sticky.svg" alt="Sticky Note: Real-World Analogy — Family Traits" width="30%">
-</a>
 
 
 Three generations: Grandparent (G), Parent (P), Child (C).
@@ -627,16 +427,6 @@ Three generations: Grandparent (G), Parent (P), Child (C).
 
 ### 9.3.1 d-Separation Rules
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-3-1-d-separation-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-3-1-d-separation-rules-handwritten.svg" alt="Handwritten: 9.3.1 d-Separation Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-3-1-d-separation-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-3-1-d-separation-rules-diagram.svg" alt="Diagram: 9.3.1 d-Separation Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-3-1-d-separation-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-3-1-d-separation-rules-sticky.svg" alt="Sticky Note: 9.3.1 d-Separation Rules" width="30%">
-</a>
-
 
 **d-separation** determines conditional independence relations in a BN. A path between $X$ and $Y$ is **blocked** by evidence set $\mathcal{Z}$ if:
 
@@ -647,16 +437,6 @@ Three generations: Grandparent (G), Parent (P), Child (C).
 $X$ and $Y$ are d-separated by $\mathcal{Z}$ if every path between them is blocked.
 
 ### Algorithmic Steps — Checking d-Separation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-checking-d-separation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-checking-d-separation-handwritten.svg" alt="Handwritten: Algorithmic Steps — Checking d-Separation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-checking-d-separation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-checking-d-separation-diagram.svg" alt="Diagram: Algorithmic Steps — Checking d-Separation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-checking-d-separation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-checking-d-separation-sticky.svg" alt="Sticky Note: Algorithmic Steps — Checking d-Separation" width="30%">
-</a>
 
 
 **Input:** DAG, nodes X and Y, evidence set Z
@@ -671,16 +451,6 @@ $X$ and $Y$ are d-separated by $\mathcal{Z}$ if every path between them is block
 | 5 | If all paths blocked, X and Y are **d-separated** |
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```text
@@ -702,16 +472,6 @@ function IS-ACTIVE(path, Z) returns Boolean
 ```
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 **Network:** A $\to$ B $\to$ C $\leftarrow$ D $\to$ E
@@ -739,16 +499,6 @@ All paths blocked $\to$ **A and E ARE d-separated by {B}**.
 All triples unblocked $\to$ **A and E are NOT d-separated by {C}**.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -808,16 +558,6 @@ print(d_separated(dag, "A", "E", {"C"}))  # False
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why $O(|V|+|E|)$ with Bayes-Ball:** d-separation checking reduces to graph reachability. Naive path enumeration can be exponential in worst case, but the Bayes-Ball algorithm achieves $O(V+E)$ using annotated BFS with per-node state tracking.
 
@@ -829,16 +569,6 @@ print(d_separated(dag, "A", "E", {"C"}))  # False
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -848,16 +578,6 @@ print(d_separated(dag, "A", "E", {"C"}))  # False
 | Reduces inference burden (skip independent vars) | Requires correct causal direction specification |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. **Empty evidence set (Z = {}):** Chains and forks remain active; colliders block unless a descendant is observed.
@@ -869,32 +589,12 @@ print(d_separated(dag, "A", "E", {"C"}))  # False
 
 ### Real-World Analogy — Finding a Lost Key
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-finding-a-lost-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-finding-a-lost-key-handwritten.svg" alt="Handwritten: Real-World Analogy — Finding a Lost Key" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-finding-a-lost-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-finding-a-lost-key-diagram.svg" alt="Diagram: Real-World Analogy — Finding a Lost Key" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-finding-a-lost-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-finding-a-lost-key-sticky.svg" alt="Sticky Note: Real-World Analogy — Finding a Lost Key" width="30%">
-</a>
-
 
 You lost your key in a house with 3 rooms. P(Kitchen)=0.3, P(Living)=0.5, P(Bedroom)=0.2. You hear a jingle from the bedroom: P(Jingle|K)=0.1, P(Jingle|L)=0.2, P(Jingle|B)=0.9.
 
 **Inference by enumeration** means: list every possible location, compute the joint probability with evidence, sum the appropriate cases, and normalize.
 
 ### Algorithmic Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-handwritten.svg" alt="Handwritten: Algorithmic Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-diagram.svg" alt="Diagram: Algorithmic Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-sticky.svg" alt="Sticky Note: Algorithmic Steps" width="30%">
-</a>
 
 
 **Input:** Bayesian network BN, query variable Q, evidence E
@@ -908,16 +608,6 @@ You lost your key in a house with 3 rooms. P(Kitchen)=0.3, P(Living)=0.5, P(Bedr
 | 4 | Normalize by total probability of evidence |
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```text
@@ -944,16 +634,6 @@ function ENUMERATE-ALL(vars, assignment, evidence) returns probability
 
 ### Step-by-Step Dry Run — $P(\text{Burglary} \mid \text{JohnCalls}, \text{MaryCalls})$
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-p-text-burglary-mid-text-johncalls-text-marycalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-p-text-burglary-mid-text-johncalls-text-marycalls-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — $P(\text{Burglary} \mid \text{JohnCalls}, \text{MaryCalls})$" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-p-text-burglary-mid-text-johncalls-text-marycalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-p-text-burglary-mid-text-johncalls-text-marycalls-diagram.svg" alt="Diagram: Step-by-Step Dry Run — $P(\text{Burglary} \mid \text{JohnCalls}, \text{MaryCalls})$" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-p-text-burglary-mid-text-johncalls-text-marycalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-p-text-burglary-mid-text-johncalls-text-marycalls-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — $P(\text{Burglary} \mid \text{JohnCalls}, \text{MaryCalls})$" width="30%">
-</a>
-
 
 **Step 1: Sum over all assignments with B=1, J=1, M=1**
 
@@ -977,16 +657,6 @@ $P(B=0 \mid J,M) \approx 0.9098$
 **Result:** Given both calls, there is a 9.02% chance of burglary.
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1027,16 +697,6 @@ print(f"P(Burglary=False | J,M) = {result[False]:.4f}")
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why $O(d^n)$ — exponential in all variables:** Enumeration sums over every possible assignment of $n$ unobserved variables. If each has $d$ values, there are $d^n$ assignments. Each requires $n$ CPT multiplications. Total work: $O(n d^n)$. Feasible for $n \leq 15$ but intractable for $n > 30$.
 
@@ -1048,16 +708,6 @@ print(f"P(Burglary=False | J,M) = {result[False]:.4f}")
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1067,16 +717,6 @@ print(f"P(Burglary=False | J,M) = {result[False]:.4f}")
 | Provides ground truth for testing | Cannot exploit conditional independence |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. **All variables observed:** Single path through the network. Complexity drops to $O(n)$.
@@ -1088,16 +728,6 @@ print(f"P(Burglary=False | J,M) = {result[False]:.4f}")
 
 ### Real-World Analogy — Summing a Multi-Column Ledger
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-summing-a-multi-column-ledger-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-summing-a-multi-column-ledger-handwritten.svg" alt="Handwritten: Real-World Analogy — Summing a Multi-Column Ledger" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-summing-a-multi-column-ledger-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-summing-a-multi-column-ledger-diagram.svg" alt="Diagram: Real-World Analogy — Summing a Multi-Column Ledger" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-summing-a-multi-column-ledger-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/real-world-analogy-summing-a-multi-column-ledger-sticky.svg" alt="Sticky Note: Real-World Analogy — Summing a Multi-Column Ledger" width="30%">
-</a>
-
 
 You have a spreadsheet with columns A, B, C, D and need totals for A=1. Instead of listing every row (enumeration):
 1. **Eliminate D:** Sum over D for each (A,B,C) — reduces one dimension.
@@ -1108,16 +738,6 @@ You have a spreadsheet with columns A, B, C, D and need totals for A=1. Instead 
 Variable Elimination sums out (eliminates) variables one at a time, reusing intermediate results — like compressing a spreadsheet dimension by dimension.
 
 ### Algorithmic Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-handwritten.svg" alt="Handwritten: Algorithmic Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-diagram.svg" alt="Diagram: Algorithmic Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/algorithmic-steps-sticky.svg" alt="Sticky Note: Algorithmic Steps" width="30%">
-</a>
 
 
 **Input:** Bayesian network BN, query Q, evidence E, elimination order
@@ -1132,16 +752,6 @@ Variable Elimination sums out (eliminates) variables one at a time, reusing inte
 | 5 | Multiply remaining factors and normalize |
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```text
@@ -1164,16 +774,6 @@ function VARIABLE-ELIMINATION(bn, query, evidence, order) returns distribution
 ```
 
 ### Step-by-Step Dry Run — VE on Alarm Network
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-ve-on-alarm-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-ve-on-alarm-network-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run — VE on Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-ve-on-alarm-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-ve-on-alarm-network-diagram.svg" alt="Diagram: Step-by-Step Dry Run — VE on Alarm Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-ve-on-alarm-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/step-by-step-dry-run-ve-on-alarm-network-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run — VE on Alarm Network" width="30%">
-</a>
 
 
 **Query:** $P(B \mid J=1, M=1)$ with elimination order: [A, E]
@@ -1206,16 +806,6 @@ $P(B=1, J, M) = 0.59224259 \times 0.001 = 0.0005922$
 $P(B=1 \mid J,M) = 0.0005922 / (0.0005922 + 0.0014918) \approx 0.0902$
 
 ### Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-handwritten.svg" alt="Handwritten: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-diagram.svg" alt="Diagram: Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/python-implementation-sticky.svg" alt="Sticky Note: Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1281,16 +871,6 @@ print(f"VE: P(Burglary=True | J,M) = {result_ve[True]:.4f}")
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Why $O(d^{tw+1})$ where tw = treewidth:** Complexity is dominated by the largest intermediate factor created during elimination. Treewidth = (max variables in any factor) - 1. If the largest factor has $tw+1$ variables with $d$ values each, the factor has $d^{tw+1}$ entries. Elimination order dramatically affects treewidth — a good order can reduce tw from 15 to 3.
 
@@ -1304,16 +884,6 @@ print(f"VE: P(Burglary=True | J,M) = {result_ve[True]:.4f}")
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1324,16 +894,6 @@ print(f"VE: P(Burglary=True | J,M) = {result_ve[True]:.4f}")
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 1. **Empty network (no edges):** All factors involve single variables. $O(n)$.
 2. **Polytree:** Treewidth = max parents. Polynomial $O(n d^{k+1})$.
@@ -1343,16 +903,6 @@ print(f"VE: P(Burglary=True | J,M) = {result_ve[True]:.4f}")
 ## 9.6 Approximate Inference via Sampling
 
 ### 9.6.1 Rejection Sampling
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-1-rejection-sampling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-1-rejection-sampling-handwritten.svg" alt="Handwritten: 9.6.1 Rejection Sampling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-1-rejection-sampling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-1-rejection-sampling-diagram.svg" alt="Diagram: 9.6.1 Rejection Sampling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-1-rejection-sampling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-1-rejection-sampling-sticky.svg" alt="Sticky Note: 9.6.1 Rejection Sampling" width="30%">
-</a>
 
 
 **Idea:** Sample from the prior, reject samples inconsistent with evidence.
@@ -1370,16 +920,6 @@ function REJECTION-SAMPLING(bn, query, evidence, N) returns estimate
 ```
 
 ### 9.6.2 Likelihood Weighting
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-2-likelihood-weighting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-2-likelihood-weighting-handwritten.svg" alt="Handwritten: 9.6.2 Likelihood Weighting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-2-likelihood-weighting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-2-likelihood-weighting-diagram.svg" alt="Diagram: 9.6.2 Likelihood Weighting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-2-likelihood-weighting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-2-likelihood-weighting-sticky.svg" alt="Sticky Note: 9.6.2 Likelihood Weighting" width="30%">
-</a>
 
 
 **Idea:** Fix evidence variables to observed values; weight each sample by the probability of evidence given sampled ancestors. No samples are rejected — all contribute proportionally.
@@ -1400,30 +940,10 @@ function LIKELIHOOD-WEIGHTING(bn, query, evidence, N) returns estimate
 
 ### 9.6.3 Gibbs Sampling (MCMC)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-3-gibbs-sampling-mcmc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-3-gibbs-sampling-mcmc-handwritten.svg" alt="Handwritten: 9.6.3 Gibbs Sampling (MCMC)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-3-gibbs-sampling-mcmc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-3-gibbs-sampling-mcmc-diagram.svg" alt="Diagram: 9.6.3 Gibbs Sampling (MCMC)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-3-gibbs-sampling-mcmc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/9-6-3-gibbs-sampling-mcmc-sticky.svg" alt="Sticky Note: 9.6.3 Gibbs Sampling (MCMC)" width="30%">
-</a>
-
 
 **Idea:** Resample each non-evidence variable conditioned on its Markov blanket (parents, children, co-parents). Converges to true posterior as sample size increases.
 
 ### Complexity Analysis — Sampling Methods
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sampling-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sampling-methods-handwritten.svg" alt="Handwritten: Complexity Analysis — Sampling Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sampling-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sampling-methods-diagram.svg" alt="Diagram: Complexity Analysis — Sampling Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sampling-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/complexity-analysis-sampling-methods-sticky.svg" alt="Sticky Note: Complexity Analysis — Sampling Methods" width="30%">
-</a>
 
 
 | Method | Time per Sample | Convergence Rate | Handles Rare Evidence |
@@ -1473,16 +993,6 @@ function LIKELIHOOD-WEIGHTING(bn, query, evidence, N) returns estimate
 
 ### Q1: Explain the Naive Bayes classifier. Why is it called "naive"?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/explain-the-naive-bayes-classifier-why-is-it-called-naive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/explain-the-naive-bayes-classifier-why-is-it-called-naive-handwritten.svg" alt="Handwritten: Explain the Naive Bayes classifier. Why is it called "naive"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/explain-the-naive-bayes-classifier-why-is-it-called-naive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/explain-the-naive-bayes-classifier-why-is-it-called-naive-diagram.svg" alt="Diagram: Explain the Naive Bayes classifier. Why is it called "naive"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/explain-the-naive-bayes-classifier-why-is-it-called-naive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/explain-the-naive-bayes-classifier-why-is-it-called-naive-sticky.svg" alt="Sticky Note: Explain the Naive Bayes classifier. Why is it called "naive"?" width="30%">
-</a>
-
 
 Naive Bayes applies Bayes' theorem with a strong conditional independence assumption: all features are independent given the class label.
 
@@ -1493,16 +1003,6 @@ It is "naive" because features in real data are rarely independent (e.g., words 
 **Applications:** Spam filtering, sentiment analysis, document classification, medical diagnosis.
 
 ### Q2: What is the difference between Bayesian and frequentist statistics?
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/what-is-the-difference-between-bayesian-and-frequentist-statistics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/what-is-the-difference-between-bayesian-and-frequentist-statistics-handwritten.svg" alt="Handwritten: What is the difference between Bayesian and frequentist statistics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/what-is-the-difference-between-bayesian-and-frequentist-statistics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/what-is-the-difference-between-bayesian-and-frequentist-statistics-diagram.svg" alt="Diagram: What is the difference between Bayesian and frequentist statistics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/what-is-the-difference-between-bayesian-and-frequentist-statistics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/what-is-the-difference-between-bayesian-and-frequentist-statistics-sticky.svg" alt="Sticky Note: What is the difference between Bayesian and frequentist statistics?" width="30%">
-</a>
 
 
 | Aspect | Bayesian | Frequentist |
@@ -1516,16 +1016,6 @@ It is "naive" because features in real data are rarely independent (e.g., words 
 **Practical difference:** Bayesian methods naturally incorporate prior knowledge and produce interpretable probability statements. Frequentist methods avoid subjective priors but require more complex uncertainty characterization.
 
 ### Q3: Does correlation imply causation?
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/does-correlation-imply-causation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/does-correlation-imply-causation-handwritten.svg" alt="Handwritten: Does correlation imply causation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/does-correlation-imply-causation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/does-correlation-imply-causation-diagram.svg" alt="Diagram: Does correlation imply causation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/does-correlation-imply-causation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/does-correlation-imply-causation-sticky.svg" alt="Sticky Note: Does correlation imply causation?" width="30%">
-</a>
 
 
 No. Correlation does not imply causation. This is the central warning of probabilistic reasoning.
@@ -1545,16 +1035,6 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 
 ### Medical Diagnosis (PathFinder, QMR, Internist)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/medical-diagnosis-pathfinder-qmr-internist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/medical-diagnosis-pathfinder-qmr-internist-handwritten.svg" alt="Handwritten: Medical Diagnosis (PathFinder, QMR, Internist)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/medical-diagnosis-pathfinder-qmr-internist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/medical-diagnosis-pathfinder-qmr-internist-diagram.svg" alt="Diagram: Medical Diagnosis (PathFinder, QMR, Internist)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/medical-diagnosis-pathfinder-qmr-internist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/medical-diagnosis-pathfinder-qmr-internist-sticky.svg" alt="Sticky Note: Medical Diagnosis (PathFinder, QMR, Internist)" width="30%">
-</a>
-
 
 **Framework:** Bayesian network with diseases as root nodes and symptoms/test results as leaf nodes.
 
@@ -1570,16 +1050,6 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 
 ### Spam Filtering (Naive Bayes in Email Systems)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/spam-filtering-naive-bayes-in-email-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/spam-filtering-naive-bayes-in-email-systems-handwritten.svg" alt="Handwritten: Spam Filtering (Naive Bayes in Email Systems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/spam-filtering-naive-bayes-in-email-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/spam-filtering-naive-bayes-in-email-systems-diagram.svg" alt="Diagram: Spam Filtering (Naive Bayes in Email Systems)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/spam-filtering-naive-bayes-in-email-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/spam-filtering-naive-bayes-in-email-systems-sticky.svg" alt="Sticky Note: Spam Filtering (Naive Bayes in Email Systems)" width="30%">
-</a>
-
 
 **Framework:** Naive Bayes classifier with words as features.
 
@@ -1594,16 +1064,6 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 
 ### Speech Recognition (Hidden Markov Models)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/speech-recognition-hidden-markov-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/speech-recognition-hidden-markov-models-handwritten.svg" alt="Handwritten: Speech Recognition (Hidden Markov Models)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/speech-recognition-hidden-markov-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/speech-recognition-hidden-markov-models-diagram.svg" alt="Diagram: Speech Recognition (Hidden Markov Models)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/speech-recognition-hidden-markov-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/speech-recognition-hidden-markov-models-sticky.svg" alt="Sticky Note: Speech Recognition (Hidden Markov Models)" width="30%">
-</a>
-
 
 **Framework:** HMM where hidden states are phonemes/words and observations are audio features (MFCCs).
 
@@ -1616,16 +1076,6 @@ Bayesian networks (with causal interpretation) support Layer 2 and 3 reasoning v
 **Real-world:** Google's speech recognition uses HMM-GMM hybrids (increasingly replaced by DNN-HMM hybrids) achieving &lt;5% word error rate.
 
 ### Other Applications
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/other-applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/other-applications-handwritten.svg" alt="Handwritten: Other Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/other-applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/other-applications-diagram.svg" alt="Diagram: Other Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/other-applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/09-uncertainty/other-applications-sticky.svg" alt="Sticky Note: Other Applications" width="30%">
-</a>
 
 
 | Domain | Technique | Use Case |

@@ -83,16 +83,6 @@ flowchart LR
 
 ### 13.1 Space Complexity
 
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-1-space-complexity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-1-space-complexity-handwritten.svg" alt="Handwritten: 13.1 Space Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-1-space-complexity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-1-space-complexity-diagram.svg" alt="Diagram: 13.1 Space Complexity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-1-space-complexity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-1-space-complexity-sticky.svg" alt="Sticky Note: 13.1 Space Complexity" width="30%">
-</a>
-
 
 The **space complexity** of a Turing machine is the maximum number of tape cells used on any input of length n. For a multitape TM, the space used is the sum of cells used on all work tapes (the input tape is often excluded if it's read-only).
 
@@ -100,16 +90,6 @@ The **space complexity** of a Turing machine is the maximum number of tape cells
 Similarly, NSPACE(s(n)) = { L | L is decided by an NTM using O(s(n)) space }.
 
 ### 13.2 Fundamental Space Classes
-
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-2-fundamental-space-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-2-fundamental-space-classes-handwritten.svg" alt="Handwritten: 13.2 Fundamental Space Classes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-2-fundamental-space-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-2-fundamental-space-classes-diagram.svg" alt="Diagram: 13.2 Fundamental Space Classes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-2-fundamental-space-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-2-fundamental-space-classes-sticky.svg" alt="Sticky Note: 13.2 Fundamental Space Classes" width="30%">
-</a>
 
 
 | Class | Description |
@@ -127,16 +107,6 @@ Similarly, NSPACE(s(n)) = { L | L is decided by an NTM using O(s(n)) space }.
 
 ### 13.3 Time vs Space: Key Differences
 
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-3-time-vs-space-key-differences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-3-time-vs-space-key-differences-handwritten.svg" alt="Handwritten: 13.3 Time vs Space: Key Differences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-3-time-vs-space-key-differences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-3-time-vs-space-key-differences-diagram.svg" alt="Diagram: 13.3 Time vs Space: Key Differences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-3-time-vs-space-key-differences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-3-time-vs-space-key-differences-sticky.svg" alt="Sticky Note: 13.3 Time vs Space: Key Differences" width="30%">
-</a>
-
 
 Time and space complexity behave differently in fundamental ways:
 
@@ -151,16 +121,6 @@ Time and space complexity behave differently in fundamental ways:
 The reusability of space explains why nondeterminism is less powerful: a nondeterministic space-bounded machine can try all possibilities by reusing space, but a nondeterministic time-bounded machine must "pay" for each step.
 
 ### 13.4 Savitch's Theorem
-
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-4-savitch-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-4-savitch-s-theorem-handwritten.svg" alt="Handwritten: 13.4 Savitch's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-4-savitch-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-4-savitch-s-theorem-diagram.svg" alt="Diagram: 13.4 Savitch's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-4-savitch-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-4-savitch-s-theorem-sticky.svg" alt="Sticky Note: 13.4 Savitch's Theorem" width="30%">
-</a>
 
 
 **Savitch's Theorem:** For any function s(n) â‰¥ log n,
@@ -180,16 +140,6 @@ The depth of recursion is log(2^{O(s(n))}) = O(s(n)), and each level stores a co
 
 ### 13.5 PSPACE
 
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-5-pspace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-5-pspace-handwritten.svg" alt="Handwritten: 13.5 PSPACE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-5-pspace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-5-pspace-diagram.svg" alt="Diagram: 13.5 PSPACE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-5-pspace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-5-pspace-sticky.svg" alt="Sticky Note: 13.5 PSPACE" width="30%">
-</a>
-
 
 **PSPACE** = languages decidable in polynomial space on a DTM.
 
@@ -203,16 +153,6 @@ Since NPSPACE = PSPACE, nondeterminism doesn't add power here (unlike for time).
 - **LBA (Linear Bounded Automaton) acceptance.**
 
 ### 13.6 PSPACE-Completeness
-
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-6-pspace-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-6-pspace-completeness-handwritten.svg" alt="Handwritten: 13.6 PSPACE-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-6-pspace-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-6-pspace-completeness-diagram.svg" alt="Diagram: 13.6 PSPACE-Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-6-pspace-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-6-pspace-completeness-sticky.svg" alt="Sticky Note: 13.6 PSPACE-Completeness" width="30%">
-</a>
 
 
 A language B is **PSPACE-complete** if:
@@ -232,16 +172,6 @@ A language B is **PSPACE-complete** if:
 - **NUMBER-LABELED PARTITION.**
 
 ### 13.7 L and NL
-
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-7-l-and-nl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-7-l-and-nl-handwritten.svg" alt="Handwritten: 13.7 L and NL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-7-l-and-nl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-7-l-and-nl-diagram.svg" alt="Diagram: 13.7 L and NL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-7-l-and-nl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-7-l-and-nl-sticky.svg" alt="Sticky Note: 13.7 L and NL" width="30%">
-</a>
 
 
 **L** (deterministic log space): Problems solvable using only O(log n) work space (excluding the input).
@@ -265,16 +195,6 @@ A language B is **PSPACE-complete** if:
 
 ### 13.8 The Reachability Method
 
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-8-the-reachability-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-8-the-reachability-method-handwritten.svg" alt="Handwritten: 13.8 The Reachability Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-8-the-reachability-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-8-the-reachability-method-diagram.svg" alt="Diagram: 13.8 The Reachability Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-8-the-reachability-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-8-the-reachability-method-sticky.svg" alt="Sticky Note: 13.8 The Reachability Method" width="30%">
-</a>
-
 
 Many space-bounded algorithms use the configuration graph approach:
 
@@ -287,16 +207,6 @@ Many space-bounded algorithms use the configuration graph approach:
 **For NL âŠ† P:** The configuration graph of an NL machine is of polynomial size, and reachability in this graph is in P (via DFS/BFS).
 
 ### 13.9 The Space Hierarchy
-
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-9-the-space-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-9-the-space-hierarchy-handwritten.svg" alt="Handwritten: 13.9 The Space Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-9-the-space-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-9-the-space-hierarchy-diagram.svg" alt="Diagram: 13.9 The Space Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-9-the-space-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/14-space-complexity/13-9-the-space-hierarchy-sticky.svg" alt="Sticky Note: 13.9 The Space Hierarchy" width="30%">
-</a>
 
 
 **Space Hierarchy Theorem:** For any space-constructible function f(n) â‰¥ log n,

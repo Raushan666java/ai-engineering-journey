@@ -70,16 +70,6 @@ By the end of this chapter, students will be able to:
 
 ### Chapter Roadmap
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
-
 
 ```mermaid
 flowchart LR
@@ -104,30 +94,10 @@ flowchart LR
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 The simplest searching algorithm: traverse the array sequentially until the target is found or the array ends.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Start at index 0.
@@ -137,16 +107,6 @@ The simplest searching algorithm: traverse the array sequentially until the targ
 5. If the end of the array is reached, return -1.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -158,16 +118,6 @@ LinearSearch(A, n, key):
 ```
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Input: `A = [4, 2, 9, 7, 5]`, `key = 7`
@@ -181,16 +131,6 @@ Input: `A = [4, 2, 9, 7, 5]`, `key = 7`
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Comparisons | When |
 |------|------------|------|
@@ -201,16 +141,6 @@ Input: `A = [4, 2, 9, 7, 5]`, `key = 7`
 **Why O(n)?** In the worst case, every element must be examined once. For an array of size n, that's n comparisons.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -242,16 +172,6 @@ public static int linearSearch(int[] arr, int key) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -261,16 +181,6 @@ public static int linearSearch(int[] arr, int key) {
 | Optimal for small n | Ignores ordering information |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 - **Empty array:** Loop doesn't execute, returns -1 immediately.
@@ -289,30 +199,10 @@ public static int linearSearch(int[] arr, int key) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 Binary search operates on a **sorted** array by repeatedly dividing the search interval in half. At each step, compare the target with the middle element. If the target matches, return the index. If the target is smaller, search the left half; otherwise, search the right half.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Set low = 0, high = n - 1.
@@ -324,16 +214,6 @@ Binary search operates on a **sorted** array by repeatedly dividing the search i
 3. Return -1 (key not found).
 
 ### Pseudocode (Recursive)
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-handwritten.svg" alt="Handwritten: Pseudocode (Recursive)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-diagram.svg" alt="Diagram: Pseudocode (Recursive)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/pseudocode-recursive-sticky.svg" alt="Sticky Note: Pseudocode (Recursive)" width="30%">
-</a>
 
 
 ```
@@ -351,16 +231,6 @@ BinarySearch(A, low, high, key):
 
 ### Step-by-Step Dry Run
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
-
 
 Input: `A = [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]`, `key = 23`
 
@@ -373,16 +243,6 @@ Input: `A = [2, 5, 8, 12, 16, 23, 38, 45, 56, 72]`, `key = 23`
 3 comparisons to find 23 in an array of 10 elements. Linear search would have taken 6 comparisons.
 
 ### Complexity Analysis
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
 
 
 **Recurrence:** T(n) = T(n/2) + O(1)
@@ -398,16 +258,6 @@ By the master theorem (case 2): T(n) = O(log n)
 **Why log n?** Each step discards half the remaining elements. From n to n/2 to n/4 to ... to 1 takes log₂(n) steps. For n = 1,000,000, that's at most 20 comparisons vs 1,000,000 for linear search.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -473,16 +323,6 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -493,16 +333,6 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 - **Empty array:** low (0) > high (-1), immediately returns -1.
 - **Single element:** One comparison, O(1).
@@ -511,16 +341,6 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Variations
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/variations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/variations-handwritten.svg" alt="Handwritten: Variations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/variations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/variations-diagram.svg" alt="Diagram: Variations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/variations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/variations-sticky.svg" alt="Sticky Note: Variations" width="30%">
-</a>
-
 
 1. **Lower bound (first >= key):** Keep searching left when A[mid] == key.
 2. **Upper bound (first > key):** Keep searching right when A[mid] == key.
@@ -528,16 +348,6 @@ public static int binarySearch(int[] arr, int key) {
 4. **Search in rotated sorted array:** Modified binary search that checks which half is sorted.
 
 ### Applications
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" alt="Diagram: Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
-</a>
 
 
 - Database indexing (B-tree search)
@@ -555,30 +365,10 @@ public static int binarySearch(int[] arr, int key) {
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 Interpolation search improves on binary search when the data is uniformly distributed. Instead of always using the midpoint, it estimates the position using a linear interpolation formula.
 
 ### Probe Formula
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-handwritten.svg" alt="Handwritten: Probe Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-diagram.svg" alt="Diagram: Probe Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/probe-formula-sticky.svg" alt="Sticky Note: Probe Formula" width="30%">
-</a>
 
 
 \[
@@ -589,16 +379,6 @@ This is the equation of a line through (low, A[low]) and (high, A[high]), evalua
 
 ### Algorithm Steps
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
-
 
 1. While low &lt;= high and key is within range:
    - Compute probe position using interpolation.
@@ -608,16 +388,6 @@ This is the equation of a line through (low, A[low]) and (high, A[high]), evalua
 2. Return -1.
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Input: `A = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]`, `key = 85`
@@ -639,16 +409,6 @@ Key 85 not found — algorithm correctly determined it's between 80 and 90 (woul
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -659,16 +419,6 @@ Key 85 not found — algorithm correctly determined it's between 80 and 90 (woul
 **Why O(log log n)?** On uniform data, the probe position converges to the target exponentially fast — each iteration roughly squares the precision of the estimate.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -705,16 +455,6 @@ def interpolation_search(arr, key):
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -732,30 +472,10 @@ def interpolation_search(arr, key):
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 Exponential search finds the range containing the target by doubling the search window, then performs binary search within that range.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. If A[0] == key, return 0.
@@ -763,16 +483,6 @@ Exponential search finds the range containing the target by doubling the search 
 3. Perform binary search on the range [i/2, min(i, n-1)].
 
 ### Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-diagram.svg" alt="Diagram: Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/step-by-step-dry-run-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run" width="30%">
-</a>
 
 
 Input: `A = [3, 7, 11, 19, 25, 31, 42, 56, 68, 79]`, `key = 42`
@@ -795,16 +505,6 @@ Total comparisons for doubling + binary search: 4 + 2 = 6. Binary search alone w
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Complexity | When |
 |------|-----------|------|
@@ -815,16 +515,6 @@ Total comparisons for doubling + binary search: 4 + 2 = 6. Binary search alone w
 **Why O(log i)?** The doubling phase takes log₂(i) steps to reach position i, then binary search takes O(log i) on the range [i/2, i]. Combined: 2 log₂(i) = O(log i).
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -861,16 +551,6 @@ def exponential_search(arr, key):
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -880,32 +560,12 @@ def exponential_search(arr, key):
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 - **Target at index 0:** Caught immediately — O(1).
 - **Target absent:** Binary search will determine this in O(log bound).
 - **Infinite/unbounded array:** Exponential search is the natural solution — no need to know the size.
 
 ### Applications
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-diagram.svg" alt="Diagram: Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
-</a>
 
 
 - **Timsort merge** — Galloping mode uses exponential search to find merge positions efficiently.
@@ -922,30 +582,10 @@ def exponential_search(arr, key):
 
 ### Definition
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-handwritten.svg" alt="Handwritten: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-diagram.svg" alt="Diagram: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/definition-sticky.svg" alt="Sticky Note: Definition" width="30%">
-</a>
-
 
 Ternary search divides the array into three equal parts using two midpoints.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Compute mid1 = low + (high - low) / 3, mid2 = high - (high - low) / 3.
@@ -956,16 +596,6 @@ Ternary search divides the array into three equal parts using two midpoints.
 6. If key is between mid1 and mid2, search middle third.
 
 ### Complexity Analysis
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
 
 
 **Recurrence:** T(n) = T(n/3) + O(1) → O(log₃ n)
@@ -980,16 +610,6 @@ But each step does **2 comparisons** vs binary search's **1 comparison**.
 Ternary search does **more total comparisons** despite fewer steps.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -1011,16 +631,6 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |-----------|--------------|
@@ -1035,16 +645,6 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 
 ### Performance Comparison (n = 1,000,000)
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-handwritten.svg" alt="Handwritten: Performance Comparison (n = 1,000,000)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-diagram.svg" alt="Diagram: Performance Comparison (n = 1,000,000)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/performance-comparison-n-1-000-000-sticky.svg" alt="Sticky Note: Performance Comparison (n = 1,000,000)" width="30%">
-</a>
-
 
 | Algorithm | Worst-case comparisons | Formula |
 |-----------|----------------------|---------|
@@ -1055,16 +655,6 @@ int ternarySearch(const vector<int>& arr, int low, int high, int key) {
 | Ternary search | 38 | 2 log₃ n |
 
 ### When to Choose What
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-handwritten.svg" alt="Handwritten: When to Choose What" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-diagram.svg" alt="Diagram: When to Choose What" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/when-to-choose-what-sticky.svg" alt="Sticky Note: When to Choose What" width="30%">
-</a>
 
 
 ```
@@ -1081,16 +671,6 @@ Finding max of unimodal f(x): → Ternary Search
 
 ### Common Questions
 
-<a href="../../../assets/images/diagrams/algorithms/02-searching/common-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-questions-handwritten.svg" alt="Handwritten: Common Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/common-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-questions-diagram.svg" alt="Diagram: Common Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/common-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-questions-sticky.svg" alt="Sticky Note: Common Questions" width="30%">
-</a>
-
 
 1. **Search in a rotated sorted array** — Modified binary search. Find the pivot by comparing A[mid] with A[low], then determine which half is sorted and search accordingly.
 
@@ -1101,16 +681,6 @@ Finding max of unimodal f(x): → Ternary Search
 4. **Count occurrences in sorted array** — Find first and last occurrence with binary search, then last - first + 1.
 
 ### Common Pitfalls
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-handwritten.svg" alt="Handwritten: Common Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-diagram.svg" alt="Diagram: Common Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/common-pitfalls-sticky.svg" alt="Sticky Note: Common Pitfalls" width="30%">
-</a>
 
 
 | Pitfall | Solution |
@@ -1144,16 +714,6 @@ Finding max of unimodal f(x): → Ternary Search
 - **Ternary search** — Interesting theoretically, but binary search beats it in practice.
 
 ### Key Takeaway
-
-<a href="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-handwritten.svg" alt="Handwritten: Key Takeaway" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-diagram.svg" alt="Diagram: Key Takeaway" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/02-searching/key-takeaway-sticky.svg" alt="Sticky Note: Key Takeaway" width="30%">
-</a>
 
 
 Binary search is the most important algorithm in this chapter — master its standard form, its first/last-occurrence variants, and its "binary search on answer" pattern. These appear in nearly every technical interview and real-world system.

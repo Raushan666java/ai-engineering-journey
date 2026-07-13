@@ -52,23 +52,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 1. Importance in IBPS SO IT Officer Prelims
-
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-handwritten.svg" alt="Handwritten: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-diagram.svg" alt="Diagram: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/1-importance-in-ibps-so-it-officer-prelims-sticky.svg" alt="Sticky Note: 1. Importance in IBPS SO IT Officer Prelims" width="30%">
-</a>
-
 
 Logical reasoning and input-output questions typically contribute 4–6 questions out of 25 in the IBPS SO Reasoning Ability section. These topics include:
 
@@ -80,17 +68,6 @@ Logical reasoning and input-output questions typically contribute 4–6 question
 These questions are generally less time-consuming than puzzles and can be solved quickly with systematic techniques. They test the candidate's ability to analyze information logically without making unwarranted assumptions.
 
 ### 2. Statement-Conclusion (Analytical Reasoning)
-
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-handwritten.svg" alt="Handwritten: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-diagram.svg" alt="Diagram: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/2-statement-conclusion-analytical-reasoning-sticky.svg" alt="Sticky Note: 2. Statement-Conclusion (Analytical Reasoning)" width="30%">
-</a>
-
 
 #### 2.1 What is Statement-Conclusion?
 
@@ -156,17 +133,6 @@ Invalid conclusion: "Company A has higher profits than Company C."
 
 ### 3. Statement-Assumptions
 
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-handwritten.svg" alt="Handwritten: 3. Statement-Assumptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-diagram.svg" alt="Diagram: 3. Statement-Assumptions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/3-statement-assumptions-sticky.svg" alt="Sticky Note: 3. Statement-Assumptions" width="30%">
-</a>
-
-
 #### 3.1 What are Assumptions?
 
 An assumption is something that is taken for granted or accepted as true without proof. In statement-assumption questions, a statement is given followed by two assumptions. The candidate must determine which assumption(s) are implicit in the statement.
@@ -205,17 +171,6 @@ Negation test: "The government does NOT have the money to invest." — Even if t
 | Assuming causation | Statement: "Sales increased after the ad." Assumption: "The ad caused the increase." | Many factors could increase sales |
 
 ### 4. Cause-Effect Reasoning
-
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-handwritten.svg" alt="Handwritten: 4. Cause-Effect Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-diagram.svg" alt="Diagram: 4. Cause-Effect Reasoning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/4-cause-effect-reasoning-sticky.svg" alt="Sticky Note: 4. Cause-Effect Reasoning" width="30%">
-</a>
-
 
 #### 4.1 What is Cause-Effect Reasoning?
 
@@ -264,17 +219,6 @@ A cause-effect question presents a pair of events (I and II) and asks about the 
 - No logical connection
 
 ### 5. Statement-Arguments
-
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-handwritten.svg" alt="Handwritten: 5. Statement-Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-diagram.svg" alt="Diagram: 5. Statement-Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/5-statement-arguments-sticky.svg" alt="Sticky Note: 5. Statement-Arguments" width="30%">
-</a>
-
 
 #### 5.1 What are Statement-Arguments?
 
@@ -333,17 +277,6 @@ A statement is given followed by two arguments (for and against). The candidate 
 | Is vague/ambiguous | Weak |
 
 ### 6. Input-Output Machines
-
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-handwritten.svg" alt="Handwritten: 6. Input-Output Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-diagram.svg" alt="Diagram: 6. Input-Output Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/reasoning-ability/06-logical-reasoning-input-output/6-input-output-machines-sticky.svg" alt="Sticky Note: 6. Input-Output Machines" width="30%">
-</a>
-
 
 #### 6.1 What is an Input-Output Machine?
 

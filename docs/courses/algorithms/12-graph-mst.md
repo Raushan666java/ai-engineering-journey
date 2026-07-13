@@ -95,16 +95,6 @@ flowchart LR
 
 ### 12.1 Minimum Spanning Tree: Definition
 
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-handwritten.svg" alt="Handwritten: 12.1 Minimum Spanning Tree: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-diagram.svg" alt="Diagram: 12.1 Minimum Spanning Tree: Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-1-minimum-spanning-tree-definition-sticky.svg" alt="Sticky Note: 12.1 Minimum Spanning Tree: Definition" width="30%">
-</a>
-
 
 **Definition 12.1.** Given a connected, undirected, weighted graph \( G = (V, E) \), a **spanning tree** is a subgraph \( T = (V, E') \) that is a tree (connected and acyclic). A **minimum spanning tree** (MST) is a spanning tree that minimizes the total weight \( \sum_{e \in E'} w(e) \).
 
@@ -120,16 +110,6 @@ flowchart LR
 
 ### 12.2 Fundamental Properties
 
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-handwritten.svg" alt="Handwritten: 12.2 Fundamental Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-diagram.svg" alt="Diagram: 12.2 Fundamental Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-2-fundamental-properties-sticky.svg" alt="Sticky Note: 12.2 Fundamental Properties" width="30%">
-</a>
-
 
 **Theorem 12.1 (Cut Property).** Let \( S \subset V \) be a non-empty proper subset of vertices. Let \( e \) be the minimum-weight edge crossing the cut \( (S, V \setminus S) \). Then \( e \) belongs to **some** MST.
 
@@ -144,16 +124,6 @@ flowchart LR
 **One-Sentence Takeaway:** The cut property (lightest crossing edge is in some MST) and cycle property (heaviest cycle edge is in no MST) are the dual correctness foundations for all MST algorithms.
 
 ### 12.3 Kruskal's Algorithm
-
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-handwritten.svg" alt="Handwritten: 12.3 Kruskal's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-diagram.svg" alt="Diagram: 12.3 Kruskal's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-3-kruskal-s-algorithm-sticky.svg" alt="Sticky Note: 12.3 Kruskal's Algorithm" width="30%">
-</a>
 
 
 **Real-World Analogy:** You are building a railway network connecting several towns. A private company offers to build each segment at a quoted price. To minimize government spending, you always pick the **cheapest available segment that does not create a cycle** (a redundant loop). You continue until all towns are connected. This is Kruskal's algorithm.
@@ -360,16 +330,6 @@ Since \(E \le V^2\) in the worst case, \(O(E \log E) = O(E \log V)\) because \(\
 
 ### 12.4 Prim's Algorithm
 
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-handwritten.svg" alt="Handwritten: 12.4 Prim's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-diagram.svg" alt="Diagram: 12.4 Prim's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-4-prim-s-algorithm-sticky.svg" alt="Sticky Note: 12.4 Prim's Algorithm" width="30%">
-</a>
-
 
 **Real-World Analogy:** You are extending a city's power grid from a central substation. At each step, you find the nearest (cheapest-to-connect) unconnected neighborhood and run a new power line to it. The grid grows organically outward like a tree, always choosing the cheapest connection to new territory.
 
@@ -550,16 +510,6 @@ With a simple array (dense graphs): extract-min scans \(V\) elements in \(O(V)\)
 **One-Sentence Takeaway:** Prim's algorithm grows an MST from a seed vertex using a priority queue, always adding the cheapest edge connecting the tree to a new vertex -- O(E log V).
 
 ### 12.5 Boruvka's Algorithm
-
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-handwritten.svg" alt="Handwritten: 12.5 Boruvka's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-diagram.svg" alt="Diagram: 12.5 Boruvka's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-5-boruvka-s-algorithm-sticky.svg" alt="Sticky Note: 12.5 Boruvka's Algorithm" width="30%">
-</a>
 
 
 **Real-World Analogy:** Multiple construction teams are working simultaneously to build a fiber network across different regions. Each team is responsible for its own region (component). Independently, each team finds the cheapest way to connect its region to any neighboring region. All teams lay their chosen cables at the same time, and the regions merge. This repeats until one giant region covers the whole country. This decentralized, parallel approach is Boruvka's algorithm.
@@ -779,16 +729,6 @@ The key insight: each component must have at least one outgoing edge (or the gra
 
 ### 12.6 Reverse-Delete Algorithm
 
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-handwritten.svg" alt="Handwritten: 12.6 Reverse-Delete Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-diagram.svg" alt="Diagram: 12.6 Reverse-Delete Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-6-reverse-delete-algorithm-sticky.svg" alt="Sticky Note: 12.6 Reverse-Delete Algorithm" width="30%">
-</a>
-
 
 **Real-World Analogy:** You inherited a complete fiber network with many redundant cables. To reduce maintenance costs, you want to remove the most expensive cables without disconnecting any city. You always remove the most expensive cable that is not a bridge (removing it would disconnect the network).
 
@@ -814,16 +754,6 @@ ReverseDelete(G):
 
 ### 12.7 MST Algorithm Comparison
 
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-handwritten.svg" alt="Handwritten: 12.7 MST Algorithm Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-diagram.svg" alt="Diagram: 12.7 MST Algorithm Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-7-mst-algorithm-comparison-sticky.svg" alt="Sticky Note: 12.7 MST Algorithm Comparison" width="30%">
-</a>
-
 
 | Feature | Kruskal | Prim (Binary Heap) | Prim (Array) | Boruvka | Reverse-Delete |
 |---------|---------|-------------------|-------------|---------|----------------|
@@ -839,16 +769,6 @@ ReverseDelete(G):
 | **Interview Frequency** | Very high | High | Low | Low | Rare |
 
 ### 12.8 Interview Corner
-
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-handwritten.svg" alt="Handwritten: 12.8 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-diagram.svg" alt="Diagram: 12.8 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-8-interview-corner-sticky.svg" alt="Sticky Note: 12.8 Interview Corner" width="30%">
-</a>
 
 
 **1. How does Kruskal detect cycles using Union-Find?**
@@ -885,16 +805,6 @@ Yes. All three algorithms handle negative weights naturally. The cut property an
 Both maintain a key array and use a priority queue. Prim's key is the minimum edge weight to the current tree (local view). Dijkstra's key is the total distance from the source (global view).
 
 ### 12.9 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-handwritten.svg" alt="Handwritten: 12.9 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-diagram.svg" alt="Diagram: 12.9 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/12-graph-mst/12-9-applications-in-real-systems-sticky.svg" alt="Sticky Note: 12.9 Applications in Real Systems" width="30%">
-</a>
 
 
 **Network Design (Fiber Optic / Telecom):**

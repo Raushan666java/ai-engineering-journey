@@ -55,16 +55,6 @@
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -75,16 +65,6 @@
 | Multicast/Anycast | Group delivery and nearest-server routing | Anycast enables DNS/CDN load distribution |
 
 ### Chapter Roadmap
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
 
 
 ```mermaid
@@ -102,16 +82,6 @@ flowchart LR
 ```
 
 ### Routing Algorithm Complexity Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-algorithm-complexity-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-algorithm-complexity-comparison-handwritten.svg" alt="Handwritten: Routing Algorithm Complexity Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-algorithm-complexity-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-algorithm-complexity-comparison-diagram.svg" alt="Diagram: Routing Algorithm Complexity Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-algorithm-complexity-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-algorithm-complexity-comparison-sticky.svg" alt="Sticky Note: Routing Algorithm Complexity Comparison" width="30%">
-</a>
 
 
 ```mermaid
@@ -159,16 +129,6 @@ graph TB
 
 ### Real-World Analogy: The GPS Navigation System
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gps-navigation-system-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gps-navigation-system-handwritten.svg" alt="Handwritten: Real-World Analogy: The GPS Navigation System" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gps-navigation-system-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gps-navigation-system-diagram.svg" alt="Diagram: Real-World Analogy: The GPS Navigation System" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gps-navigation-system-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gps-navigation-system-sticky.svg" alt="Sticky Note: Real-World Analogy: The GPS Navigation System" width="30%">
-</a>
-
 
 A GPS navigation app computes the best route from source to destination. The app considers road segments (links), intersections (routers), traffic conditions (link cost), and road closures (link failures). Like a router, a GPS:
 - Maintains a **map** (routing table / topology database)
@@ -178,16 +138,6 @@ A GPS navigation app computes the best route from source to destination. The app
 The postal system is another analogy: each post office (router) decides which neighboring post office to forward a package toward based on the destination ZIP code (prefix).
 
 ### Routing vs Forwarding
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-vs-forwarding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-vs-forwarding-handwritten.svg" alt="Handwritten: Routing vs Forwarding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-vs-forwarding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-vs-forwarding-diagram.svg" alt="Diagram: Routing vs Forwarding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-vs-forwarding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-vs-forwarding-sticky.svg" alt="Sticky Note: Routing vs Forwarding" width="30%">
-</a>
 
 
 | Aspect | Routing | Forwarding |
@@ -200,16 +150,6 @@ The postal system is another analogy: each post office (router) decides which ne
 
 ### The Routing Problem Formally
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/the-routing-problem-formally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/the-routing-problem-formally-handwritten.svg" alt="Handwritten: The Routing Problem Formally" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/the-routing-problem-formally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/the-routing-problem-formally-diagram.svg" alt="Diagram: The Routing Problem Formally" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/the-routing-problem-formally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/the-routing-problem-formally-sticky.svg" alt="Sticky Note: The Routing Problem Formally" width="30%">
-</a>
-
 
 Given a graph `G = (V, E)` where `V` is the set of routers and `E` is the set of links, each link `(u, v)` has a cost `c(u, v)`. For any source `s` and destination `t`, find a path `P = (s = v0, v1, ..., vk = t)` that minimizes:
 
@@ -218,16 +158,6 @@ Total Cost(P) = sum(c(vi, vi+1) for i = 0 to k-1)
 ```
 
 ### Numbered Steps of the Routing Process
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-the-routing-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-the-routing-process-handwritten.svg" alt="Handwritten: Numbered Steps of the Routing Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-the-routing-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-the-routing-process-diagram.svg" alt="Diagram: Numbered Steps of the Routing Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-the-routing-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-the-routing-process-sticky.svg" alt="Sticky Note: Numbered Steps of the Routing Process" width="30%">
-</a>
 
 
 1. **Neighbor discovery** → Each router identifies directly connected routers (via Hello protocols, configuration, or manual setup).
@@ -238,16 +168,6 @@ Total Cost(P) = sum(c(vi, vi+1) for i = 0 to k-1)
 6. **Convergence** → When topology changes, routers re-converge to a consistent state where all tables are loop-free.
 
 ### Generic Routing Algorithm Pseudocode
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/generic-routing-algorithm-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/generic-routing-algorithm-pseudocode-handwritten.svg" alt="Handwritten: Generic Routing Algorithm Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/generic-routing-algorithm-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/generic-routing-algorithm-pseudocode-diagram.svg" alt="Diagram: Generic Routing Algorithm Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/generic-routing-algorithm-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/generic-routing-algorithm-pseudocode-sticky.svg" alt="Sticky Note: Generic Routing Algorithm Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -386,16 +306,6 @@ Router 2 Routing Table:
 
 ### C++ Implementation: Generic Distance Table
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-generic-distance-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-generic-distance-table-handwritten.svg" alt="Handwritten: C++ Implementation: Generic Distance Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-generic-distance-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-generic-distance-table-diagram.svg" alt="Diagram: C++ Implementation: Generic Distance Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-generic-distance-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-generic-distance-table-sticky.svg" alt="Sticky Note: C++ Implementation: Generic Distance Table" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -446,16 +356,6 @@ public:
 
 ### Python Implementation: Routing Table Manager
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-routing-table-manager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-routing-table-manager-handwritten.svg" alt="Handwritten: Python Implementation: Routing Table Manager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-routing-table-manager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-routing-table-manager-diagram.svg" alt="Diagram: Python Implementation: Routing Table Manager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-routing-table-manager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-routing-table-manager-sticky.svg" alt="Sticky Note: Python Implementation: Routing Table Manager" width="30%">
-</a>
-
 
 ```python
 INF = float('inf')
@@ -501,16 +401,6 @@ rt.print_table()
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Metric | Complexity | Why |
 |--------|-----------|-----|
@@ -524,16 +414,6 @@ rt.print_table()
 | Computation (Dijkstra) | O(E log V) | With binary heap, each edge relaxed once, each vertex extracted from heap |
 
 ### Edge Cases in Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-routing-handwritten.svg" alt="Handwritten: Edge Cases in Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-routing-diagram.svg" alt="Diagram: Edge Cases in Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-routing-sticky.svg" alt="Sticky Note: Edge Cases in Routing" width="30%">
-</a>
 
 
 | Edge Case | Description | Impact |
@@ -553,32 +433,12 @@ rt.print_table()
 
 ### Real-World Analogy: The Gossip Network
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gossip-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gossip-network-handwritten.svg" alt="Handwritten: Real-World Analogy: The Gossip Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gossip-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gossip-network-diagram.svg" alt="Diagram: Real-World Analogy: The Gossip Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gossip-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-gossip-network-sticky.svg" alt="Sticky Note: Real-World Analogy: The Gossip Network" width="30%">
-</a>
-
 
 Each person (router) keeps a notebook of "how far" every other person is. Periodically, everyone reads their notebook aloud to their immediate neighbors. When you hear "I can reach Alice in 3 steps through Bob," and you have a 1-step path to the speaker, you write down "I can reach Alice in 4 steps through Speaker." You keep updating until nobody's notebook changes.
 
 This is how rumors spread in a small town → information propagates hop by hop, and everyone eventually knows how to reach everyone else. But if the town gossip moves away, it takes a while before everyone agrees on the new shortest path.
 
 ### 7.2.1 The Bellman-Ford Algorithm
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-2-1-the-bellman-ford-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-2-1-the-bellman-ford-algorithm-handwritten.svg" alt="Handwritten: 7.2.1 The Bellman-Ford Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-2-1-the-bellman-ford-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-2-1-the-bellman-ford-algorithm-diagram.svg" alt="Diagram: 7.2.1 The Bellman-Ford Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-2-1-the-bellman-ford-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-2-1-the-bellman-ford-algorithm-sticky.svg" alt="Sticky Note: 7.2.1 The Bellman-Ford Algorithm" width="30%">
-</a>
 
 
 Bellman-Ford solves the single-source shortest path problem for graphs that may have negative edge weights. In networking, all link costs are positive, but the algorithm still provides the foundation for distance-vector routing.
@@ -606,16 +466,6 @@ Where:
 5. **Triggered Updates:** If link cost changes or a neighbor becomes unreachable, immediately send an updated vector.
 
 ### Bellman-Ford Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-step-by-step-dry-run-handwritten.svg" alt="Handwritten: Bellman-Ford Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-step-by-step-dry-run-diagram.svg" alt="Diagram: Bellman-Ford Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-step-by-step-dry-run-sticky.svg" alt="Sticky Note: Bellman-Ford Step-by-Step Dry Run" width="30%">
-</a>
 
 
 **Network Topology:**
@@ -703,16 +553,6 @@ Router C receives from E: (A:5, B:4, C:1, D:2, E:0) → no improvements
 
 ### Final Forwarding Tables
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/final-forwarding-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/final-forwarding-tables-handwritten.svg" alt="Handwritten: Final Forwarding Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/final-forwarding-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/final-forwarding-tables-diagram.svg" alt="Diagram: Final Forwarding Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/final-forwarding-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/final-forwarding-tables-sticky.svg" alt="Sticky Note: Final Forwarding Tables" width="30%">
-</a>
-
 
 | Router A | | Router B | | Router C | | Router D | | Router E | |
 |----------|-|----------|-|----------|-|----------|-|----------|-|
@@ -723,16 +563,6 @@ Router C receives from E: (A:5, B:4, C:1, D:2, E:0) → no improvements
 | E->E | 5 | E->C | 7 | E->E | 1 | E->C | 2 | D->C | 2 |
 
 ### Count-to-Infinity Detailed Trace
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/count-to-infinity-detailed-trace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/count-to-infinity-detailed-trace-handwritten.svg" alt="Handwritten: Count-to-Infinity Detailed Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/count-to-infinity-detailed-trace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/count-to-infinity-detailed-trace-diagram.svg" alt="Diagram: Count-to-Infinity Detailed Trace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/count-to-infinity-detailed-trace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/count-to-infinity-detailed-trace-sticky.svg" alt="Sticky Note: Count-to-Infinity Detailed Trace" width="30%">
-</a>
 
 
 Consider the classic linear topology: A → B → C
@@ -782,16 +612,6 @@ This continues until the distance reaches 16 (RIP infinity), at which point both
 
 ### Mitigation Techniques
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/mitigation-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/mitigation-techniques-handwritten.svg" alt="Handwritten: Mitigation Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/mitigation-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/mitigation-techniques-diagram.svg" alt="Diagram: Mitigation Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/mitigation-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/mitigation-techniques-sticky.svg" alt="Sticky Note: Mitigation Techniques" width="30%">
-</a>
-
 
 **Split Horizon:** A router never advertises a route back on the same interface from which it was learned. In our example, B would NOT advertise C's route to A back to C, breaking the loop.
 
@@ -800,16 +620,6 @@ This continues until the distance reaches 16 (RIP infinity), at which point both
 **Hold-down Timers:** When a router receives news that a destination is unreachable, it starts a hold-down timer (typically 180 seconds in RIP). During the hold-down period, the router ignores any new route information for that destination that is "better" (lower cost) than what it had. This prevents premature adoption of alternative paths that may be invalid due to propagation delays.
 
 ### Bellman-Ford Pseudocode (Centralized)
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-pseudocode-centralized-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-pseudocode-centralized-handwritten.svg" alt="Handwritten: Bellman-Ford Pseudocode (Centralized)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-pseudocode-centralized-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-pseudocode-centralized-diagram.svg" alt="Diagram: Bellman-Ford Pseudocode (Centralized)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-pseudocode-centralized-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bellman-ford-pseudocode-centralized-sticky.svg" alt="Sticky Note: Bellman-Ford Pseudocode (Centralized)" width="30%">
-</a>
 
 
 ```
@@ -994,16 +804,6 @@ Path from 0 to 2: 0 → 1 → 2
 
 ### C++ Implementation: Bellman-Ford Simulator
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bellman-ford-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bellman-ford-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Bellman-Ford Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bellman-ford-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bellman-ford-simulator-diagram.svg" alt="Diagram: C++ Implementation: Bellman-Ford Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bellman-ford-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bellman-ford-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Bellman-Ford Simulator" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -1085,16 +885,6 @@ int main() {
 ```
 
 ### Python Implementation: Bellman-Ford with Convergence Tracking
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bellman-ford-with-convergence-tracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bellman-ford-with-convergence-tracking-handwritten.svg" alt="Handwritten: Python Implementation: Bellman-Ford with Convergence Tracking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bellman-ford-with-convergence-tracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bellman-ford-with-convergence-tracking-diagram.svg" alt="Diagram: Python Implementation: Bellman-Ford with Convergence Tracking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bellman-ford-with-convergence-tracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bellman-ford-with-convergence-tracking-sticky.svg" alt="Sticky Note: Python Implementation: Bellman-Ford with Convergence Tracking" width="30%">
-</a>
 
 
 ```python
@@ -1217,16 +1007,6 @@ if result:
 
 ### Complexity Analysis of Bellman-Ford with WHY
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-bellman-ford-with-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-bellman-ford-with-why-handwritten.svg" alt="Handwritten: Complexity Analysis of Bellman-Ford with WHY" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-bellman-ford-with-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-bellman-ford-with-why-diagram.svg" alt="Diagram: Complexity Analysis of Bellman-Ford with WHY" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-bellman-ford-with-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-bellman-ford-with-why-sticky.svg" alt="Sticky Note: Complexity Analysis of Bellman-Ford with WHY" width="30%">
-</a>
-
 
 | Aspect | Complexity | Why |
 |--------|-----------|-----|
@@ -1239,16 +1019,6 @@ if result:
 
 ### Advantages and Disadvantages of Distance-Vector
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-distance-vector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-distance-vector-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of Distance-Vector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-distance-vector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-distance-vector-diagram.svg" alt="Diagram: Advantages and Disadvantages of Distance-Vector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-distance-vector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-distance-vector-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of Distance-Vector" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -1260,16 +1030,6 @@ if result:
 | Deployment | Works on any router hardware | No QoS or traffic engineering support |
 
 ### 7.2.2 RIP (Routing Information Protocol)
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-2-2-rip-routing-information-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-2-2-rip-routing-information-protocol-handwritten.svg" alt="Handwritten: 7.2.2 RIP (Routing Information Protocol)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-2-2-rip-routing-information-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-2-2-rip-routing-information-protocol-diagram.svg" alt="Diagram: 7.2.2 RIP (Routing Information Protocol)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-2-2-rip-routing-information-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-2-2-rip-routing-information-protocol-sticky.svg" alt="Sticky Note: 7.2.2 RIP (Routing Information Protocol)" width="30%">
-</a>
 
 
 RIP (RFC 1058, RFC 2453 for RIPv2) is a concrete implementation of distance-vector routing.
@@ -1297,16 +1057,6 @@ RIP (RFC 1058, RFC 2453 for RIPv2) is a concrete implementation of distance-vect
 
 ### Edge Cases in Distance-Vector / RIP
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-distance-vector-rip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-distance-vector-rip-handwritten.svg" alt="Handwritten: Edge Cases in Distance-Vector / RIP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-distance-vector-rip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-distance-vector-rip-diagram.svg" alt="Diagram: Edge Cases in Distance-Vector / RIP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-distance-vector-rip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-distance-vector-rip-sticky.svg" alt="Sticky Note: Edge Cases in Distance-Vector / RIP" width="30%">
-</a>
-
 
 | Edge Case | Scenario | Mitigation |
 |-----------|----------|------------|
@@ -1324,32 +1074,12 @@ RIP (RFC 1058, RFC 2453 for RIPv2) is a concrete implementation of distance-vect
 
 ### Real-World Analogy: The Map Maker
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-map-maker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-map-maker-handwritten.svg" alt="Handwritten: Real-World Analogy: The Map Maker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-map-maker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-map-maker-diagram.svg" alt="Diagram: Real-World Analogy: The Map Maker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-map-maker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-map-maker-sticky.svg" alt="Sticky Note: Real-World Analogy: The Map Maker" width="30%">
-</a>
-
 
 Instead of gossip (distance-vector), link-state routing is like every city having a complete road atlas. Every city (router) draws its own local map (LSP → Link State Packet), photocopies it, and sends a copy to every other city. Once everyone has everyone else's local maps, each city assembles the full atlas and independently computes the shortest routes using Dijkstra's algorithm.
 
 If a road closes, the city at that road announces a new map, floods it globally, and everyone recalculates. This converges much faster than gossip because every router independently determines the topology.
 
 ### 7.3.1 Dijkstra's Algorithm
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-3-1-dijkstra-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-3-1-dijkstra-s-algorithm-handwritten.svg" alt="Handwritten: 7.3.1 Dijkstra's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-3-1-dijkstra-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-3-1-dijkstra-s-algorithm-diagram.svg" alt="Diagram: 7.3.1 Dijkstra's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-3-1-dijkstra-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-3-1-dijkstra-s-algorithm-sticky.svg" alt="Sticky Note: 7.3.1 Dijkstra's Algorithm" width="30%">
-</a>
 
 
 Dijkstra's algorithm computes the shortest path from a source node to all other nodes in a graph with non-negative edge weights.
@@ -1363,16 +1093,6 @@ Dijkstra's algorithm computes the shortest path from a source node to all other 
 5. **Terminate:** When all nodes are visited, dist[] contains shortest distances and prev[] contains the shortest-path tree.
 
 ### Dijkstra Step-by-Step Dry Run
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-step-by-step-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-step-by-step-dry-run-handwritten.svg" alt="Handwritten: Dijkstra Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-step-by-step-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-step-by-step-dry-run-diagram.svg" alt="Diagram: Dijkstra Step-by-Step Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-step-by-step-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-step-by-step-dry-run-sticky.svg" alt="Sticky Note: Dijkstra Step-by-Step Dry Run" width="30%">
-</a>
 
 
 **Network:** A-B:2, B-C:3, A-E:5, E-C:1, C-D:1
@@ -1431,16 +1151,6 @@ Paths:
 - A->E: direct (cost 5)
 
 ### Dijkstra's Algorithm Pseudocode
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-s-algorithm-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-s-algorithm-pseudocode-handwritten.svg" alt="Handwritten: Dijkstra's Algorithm Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-s-algorithm-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-s-algorithm-pseudocode-diagram.svg" alt="Diagram: Dijkstra's Algorithm Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-s-algorithm-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/dijkstra-s-algorithm-pseudocode-sticky.svg" alt="Sticky Note: Dijkstra's Algorithm Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1598,16 +1308,6 @@ Forwarding Table for Router 0:
 
 ### C++ Implementation: Dijkstra on Network Graph
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-dijkstra-on-network-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-dijkstra-on-network-graph-handwritten.svg" alt="Handwritten: C++ Implementation: Dijkstra on Network Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-dijkstra-on-network-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-dijkstra-on-network-graph-diagram.svg" alt="Diagram: C++ Implementation: Dijkstra on Network Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-dijkstra-on-network-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-dijkstra-on-network-graph-sticky.svg" alt="Sticky Note: C++ Implementation: Dijkstra on Network Graph" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -1724,16 +1424,6 @@ int main() {
 ```
 
 ### Python Implementation: Dijkstra on Network Graph
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-dijkstra-on-network-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-dijkstra-on-network-graph-handwritten.svg" alt="Handwritten: Python Implementation: Dijkstra on Network Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-dijkstra-on-network-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-dijkstra-on-network-graph-diagram.svg" alt="Diagram: Python Implementation: Dijkstra on Network Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-dijkstra-on-network-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-dijkstra-on-network-graph-sticky.svg" alt="Sticky Note: Python Implementation: Dijkstra on Network Graph" width="30%">
-</a>
 
 
 ```python
@@ -1887,16 +1577,6 @@ dijkstra_detailed(net, 0)
 
 ### 7.3.2 OSPF → Open Shortest Path First
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-3-2-ospf-open-shortest-path-first-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-3-2-ospf-open-shortest-path-first-handwritten.svg" alt="Handwritten: 7.3.2 OSPF → Open Shortest Path First" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-3-2-ospf-open-shortest-path-first-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-3-2-ospf-open-shortest-path-first-diagram.svg" alt="Diagram: 7.3.2 OSPF → Open Shortest Path First" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-3-2-ospf-open-shortest-path-first-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-3-2-ospf-open-shortest-path-first-sticky.svg" alt="Sticky Note: 7.3.2 OSPF → Open Shortest Path First" width="30%">
-</a>
-
 
 OSPF (RFC 2328) is the most widely deployed link-state protocol in enterprise and service provider networks.
 
@@ -2000,16 +1680,6 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 
 ### Edge Cases in Link-State Routing / OSPF
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-link-state-routing-ospf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-link-state-routing-ospf-handwritten.svg" alt="Handwritten: Edge Cases in Link-State Routing / OSPF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-link-state-routing-ospf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-link-state-routing-ospf-diagram.svg" alt="Diagram: Edge Cases in Link-State Routing / OSPF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-link-state-routing-ospf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-link-state-routing-ospf-sticky.svg" alt="Sticky Note: Edge Cases in Link-State Routing / OSPF" width="30%">
-</a>
-
 
 | Edge Case | Scenario | Mitigation |
 |-----------|----------|------------|
@@ -2024,16 +1694,6 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 | Memory exhaustion | Large LSDB in huge network | Area hierarchy limits LSDB size per router |
 
 ### Complexity Analysis of Dijkstra / Link-State with WHY
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-dijkstra-link-state-with-why-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-dijkstra-link-state-with-why-handwritten.svg" alt="Handwritten: Complexity Analysis of Dijkstra / Link-State with WHY" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-dijkstra-link-state-with-why-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-dijkstra-link-state-with-why-diagram.svg" alt="Diagram: Complexity Analysis of Dijkstra / Link-State with WHY" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-dijkstra-link-state-with-why-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/complexity-analysis-of-dijkstra-link-state-with-why-sticky.svg" alt="Sticky Note: Complexity Analysis of Dijkstra / Link-State with WHY" width="30%">
-</a>
 
 
 | Aspect | Complexity | Why |
@@ -2051,16 +1711,6 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 
 ### Advantages and Disadvantages of Link-State
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-link-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-link-state-handwritten.svg" alt="Handwritten: Advantages and Disadvantages of Link-State" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-link-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-link-state-diagram.svg" alt="Diagram: Advantages and Disadvantages of Link-State" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-link-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-and-disadvantages-of-link-state-sticky.svg" alt="Sticky Note: Advantages and Disadvantages of Link-State" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -2077,32 +1727,12 @@ DOWN --> ATTEMPT/INIT --> 2-WAY --> EXSTART --> EXCHANGE --> LOADING --> FULL
 
 ### Real-World Analogy: International Shipping with Customs Forms
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-international-shipping-with-customs-forms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-international-shipping-with-customs-forms-handwritten.svg" alt="Handwritten: Real-World Analogy: International Shipping with Customs Forms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-international-shipping-with-customs-forms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-international-shipping-with-customs-forms-diagram.svg" alt="Diagram: Real-World Analogy: International Shipping with Customs Forms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-international-shipping-with-customs-forms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-international-shipping-with-customs-forms-sticky.svg" alt="Sticky Note: Real-World Analogy: International Shipping with Customs Forms" width="30%">
-</a>
-
 
 When a package travels from New York to Tokyo, each country's postal service appends its stamp to the customs form. The form accumulates the full path: "USA -> Canada -> Japan." This is the AS_PATH in BGP.
 
 Unlike a GPS (Dijkstra) or gossip (Bellman-Ford), shipping routes are determined by **business contracts**: "We have a transit agreement with Canada Post" or "We peer settlement-free with Japan Post." The shipper doesn't choose the technically shortest route → they choose the route that respects business policies, avoids competitors, and doesn't violate agreements.
 
 ### 7.4.1 BGP Fundamentals
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-1-bgp-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-1-bgp-fundamentals-handwritten.svg" alt="Handwritten: 7.4.1 BGP Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-1-bgp-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-1-bgp-fundamentals-diagram.svg" alt="Diagram: 7.4.1 BGP Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-1-bgp-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-1-bgp-fundamentals-sticky.svg" alt="Sticky Note: 7.4.1 BGP Fundamentals" width="30%">
-</a>
 
 
 BGP is the **path-vector** protocol that connects the ~100,000 autonomous systems (ASes) that make up the global Internet. Unlike intra-domain protocols, BGP is policy-driven, not metric-driven.
@@ -2126,16 +1756,6 @@ iBGP:  AS100 ---- AS300  (within same AS → only eBGP-learned routes shared)
 7. **Route advertisement** → Best paths advertised to other peers per export policy.
 
 ### 7.4.2 BGP Path Attributes → Detailed
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-2-bgp-path-attributes-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-2-bgp-path-attributes-detailed-handwritten.svg" alt="Handwritten: 7.4.2 BGP Path Attributes → Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-2-bgp-path-attributes-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-2-bgp-path-attributes-detailed-diagram.svg" alt="Diagram: 7.4.2 BGP Path Attributes → Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-2-bgp-path-attributes-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-2-bgp-path-attributes-detailed-sticky.svg" alt="Sticky Note: 7.4.2 BGP Path Attributes → Detailed" width="30%">
-</a>
 
 
 | Attribute | Category | Code | Direction | Description |
@@ -2162,16 +1782,6 @@ iBGP:  AS100 ---- AS300  (within same AS → only eBGP-learned routes shared)
 
 ### 7.4.3 BGP Decision Process → Detailed
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-3-bgp-decision-process-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-3-bgp-decision-process-detailed-handwritten.svg" alt="Handwritten: 7.4.3 BGP Decision Process → Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-3-bgp-decision-process-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-3-bgp-decision-process-detailed-diagram.svg" alt="Diagram: 7.4.3 BGP Decision Process → Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-3-bgp-decision-process-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-3-bgp-decision-process-detailed-sticky.svg" alt="Sticky Note: 7.4.3 BGP Decision Process → Detailed" width="30%">
-</a>
-
 
 **Step-by-step tiebreaker (most significant first):**
 
@@ -2185,16 +1795,6 @@ iBGP:  AS100 ---- AS300  (within same AS → only eBGP-learned routes shared)
 8. **Lowest neighbor Router ID** → Tiebreaker of last resort.
 
 ### BGP Path Selection Dry Run
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-path-selection-dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-path-selection-dry-run-handwritten.svg" alt="Handwritten: BGP Path Selection Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-path-selection-dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-path-selection-dry-run-diagram.svg" alt="Diagram: BGP Path Selection Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-path-selection-dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-path-selection-dry-run-sticky.svg" alt="Sticky Note: BGP Path Selection Dry Run" width="30%">
-</a>
 
 
 **Topology:**
@@ -2236,16 +1836,6 @@ Result: Path 1 wins with shorter AS_PATH.
 
 ### AS Path Prepending Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/as-path-prepending-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/as-path-prepending-analysis-handwritten.svg" alt="Handwritten: AS Path Prepending Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/as-path-prepending-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/as-path-prepending-analysis-diagram.svg" alt="Diagram: AS Path Prepending Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/as-path-prepending-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/as-path-prepending-analysis-sticky.svg" alt="Sticky Note: AS Path Prepending Analysis" width="30%">
-</a>
-
 
 AS Path prepending is a traffic engineering technique where an AS artificially lengthens its AS_PATH to make a path less preferred.
 
@@ -2281,16 +1871,6 @@ AS65000 prepends its AS number 3 times when advertising to ISP-A:
 | 3x prepend (65000,65000,65000) | Emergency only | Dominant |
 
 ### Python: AS Path Prepending Analysis
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-as-path-prepending-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-as-path-prepending-analysis-handwritten.svg" alt="Handwritten: Python: AS Path Prepending Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-as-path-prepending-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-as-path-prepending-analysis-diagram.svg" alt="Diagram: Python: AS Path Prepending Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-as-path-prepending-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-as-path-prepending-analysis-sticky.svg" alt="Sticky Note: Python: AS Path Prepending Analysis" width="30%">
-</a>
 
 
 ```python
@@ -2351,16 +1931,6 @@ winner = bgp_decision_process([
 ```
 
 ### BGP Pseudocode
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-pseudocode-handwritten.svg" alt="Handwritten: BGP Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-pseudocode-diagram.svg" alt="Diagram: BGP Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-pseudocode-sticky.svg" alt="Sticky Note: BGP Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -2550,16 +2120,6 @@ BGP Table at AS65000:
 
 ### C++ Implementation: BGP Path Selection
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bgp-path-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bgp-path-selection-handwritten.svg" alt="Handwritten: C++ Implementation: BGP Path Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bgp-path-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bgp-path-selection-diagram.svg" alt="Diagram: C++ Implementation: BGP Path Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bgp-path-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/c-implementation-bgp-path-selection-sticky.svg" alt="Sticky Note: C++ Implementation: BGP Path Selection" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -2668,16 +2228,6 @@ int main() {
 
 ### Python Implementation: BGP Route Selection
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bgp-route-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bgp-route-selection-handwritten.svg" alt="Handwritten: Python Implementation: BGP Route Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bgp-route-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bgp-route-selection-diagram.svg" alt="Diagram: Python Implementation: BGP Route Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bgp-route-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/python-implementation-bgp-route-selection-sticky.svg" alt="Sticky Note: Python Implementation: BGP Route Selection" width="30%">
-</a>
-
 
 ```python
 from dataclasses import dataclass
@@ -2776,16 +2326,6 @@ as65000.print_table()
 
 ### 7.4.4 iBGP vs eBGP
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-4-ibgp-vs-ebgp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-4-ibgp-vs-ebgp-handwritten.svg" alt="Handwritten: 7.4.4 iBGP vs eBGP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-4-ibgp-vs-ebgp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-4-ibgp-vs-ebgp-diagram.svg" alt="Diagram: 7.4.4 iBGP vs eBGP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/7-4-4-ibgp-vs-ebgp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/7-4-4-ibgp-vs-ebgp-sticky.svg" alt="Sticky Note: 7.4.4 iBGP vs eBGP" width="30%">
-</a>
-
 
 | Aspect | eBGP | iBGP |
 |--------|------|------|
@@ -2798,16 +2338,6 @@ as65000.print_table()
 | TTL | Usually 1 (ebgp-multihop for multi-hop) | Decremented normally |
 
 ### Edge Cases in BGP
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-bgp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-bgp-handwritten.svg" alt="Handwritten: Edge Cases in BGP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-bgp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-bgp-diagram.svg" alt="Diagram: Edge Cases in BGP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-bgp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/edge-cases-in-bgp-sticky.svg" alt="Sticky Note: Edge Cases in BGP" width="30%">
-</a>
 
 
 | Edge Case | Description | Impact |
@@ -2829,32 +2359,12 @@ as65000.print_table()
 
 ### Real-World Analogy: The Postal System Hierarchy
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-postal-system-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-postal-system-hierarchy-handwritten.svg" alt="Handwritten: Real-World Analogy: The Postal System Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-postal-system-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-postal-system-hierarchy-diagram.svg" alt="Diagram: Real-World Analogy: The Postal System Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-postal-system-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-postal-system-hierarchy-sticky.svg" alt="Sticky Note: Real-World Analogy: The Postal System Hierarchy" width="30%">
-</a>
-
 
 The postal system uses a hierarchy: local post office (neighborhood) -> city sorting center -> regional hub -> national hub -> international exchange -> (other country's) national hub -> regional hub -> city sorting center -> local post office.
 
 Each level only needs to know how to reach the next level up, not every address in the world. This is **hierarchical routing** → the Internet's AS hierarchy mirrors this structure exactly.
 
 ### The Two-Level Hierarchy
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/the-two-level-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/the-two-level-hierarchy-handwritten.svg" alt="Handwritten: The Two-Level Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/the-two-level-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/the-two-level-hierarchy-diagram.svg" alt="Diagram: The Two-Level Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/the-two-level-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/the-two-level-hierarchy-sticky.svg" alt="Sticky Note: The Two-Level Hierarchy" width="30%">
-</a>
 
 
 The Internet routing system has exactly two levels:
@@ -2872,16 +2382,6 @@ Without hierarchy, every router would need to know the topology of the entire In
 
 ### Internet Hierarchy Summary
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/internet-hierarchy-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/internet-hierarchy-summary-handwritten.svg" alt="Handwritten: Internet Hierarchy Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/internet-hierarchy-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/internet-hierarchy-summary-diagram.svg" alt="Diagram: Internet Hierarchy Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/internet-hierarchy-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/internet-hierarchy-summary-sticky.svg" alt="Sticky Note: Internet Hierarchy Summary" width="30%">
-</a>
-
 
 ```
 [Global Tier-1 ISPs] → fully meshed, no upstream
@@ -2894,16 +2394,6 @@ Without hierarchy, every router would need to know the topology of the entire In
 ```
 
 ### Advantages of Hierarchical Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-of-hierarchical-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-of-hierarchical-routing-handwritten.svg" alt="Handwritten: Advantages of Hierarchical Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-of-hierarchical-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-of-hierarchical-routing-diagram.svg" alt="Diagram: Advantages of Hierarchical Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/advantages-of-hierarchical-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/advantages-of-hierarchical-routing-sticky.svg" alt="Sticky Note: Advantages of Hierarchical Routing" width="30%">
-</a>
 
 
 | Advantage | Description |
@@ -2921,30 +2411,10 @@ Without hierarchy, every router would need to know the topology of the entire In
 
 ### Real-World Analogy: The Conference Call
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-conference-call-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-conference-call-handwritten.svg" alt="Handwritten: Real-World Analogy: The Conference Call" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-conference-call-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-conference-call-diagram.svg" alt="Diagram: Real-World Analogy: The Conference Call" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-conference-call-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-conference-call-sticky.svg" alt="Sticky Note: Real-World Analogy: The Conference Call" width="30%">
-</a>
-
 
 In a conference call, one person speaks and many listen. The phone company's equipment duplicates the speaker's signal only at points where the signal path branches to serve multiple listeners. This is vastly more efficient than the speaker calling each participant individually (unicast), or every participant calling every other (broadcast).
 
 ### Multicast Fundamentals
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-fundamentals-handwritten.svg" alt="Handwritten: Multicast Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-fundamentals-diagram.svg" alt="Diagram: Multicast Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-fundamentals-sticky.svg" alt="Sticky Note: Multicast Fundamentals" width="30%">
-</a>
 
 
 Multicast delivers packets from one source to a group of interested receivers, forming a distribution tree.
@@ -2960,16 +2430,6 @@ Multicast delivers packets from one source to a group of interested receivers, f
 
 ### Multicast Distribution Trees
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-distribution-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-distribution-trees-handwritten.svg" alt="Handwritten: Multicast Distribution Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-distribution-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-distribution-trees-diagram.svg" alt="Diagram: Multicast Distribution Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-distribution-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-distribution-trees-sticky.svg" alt="Sticky Note: Multicast Distribution Trees" width="30%">
-</a>
-
 
 Two types of trees:
 
@@ -2977,16 +2437,6 @@ Two types of trees:
 2. **Shared tree:** Rooted at a rendezvous point (RP). All sources send to RP, which distributes to receivers. Less optimal but less state. Notation: (*, G) where * is any source, G is group.
 
 ### PIM Operation Modes
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/pim-operation-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/pim-operation-modes-handwritten.svg" alt="Handwritten: PIM Operation Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/pim-operation-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/pim-operation-modes-diagram.svg" alt="Diagram: PIM Operation Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/pim-operation-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/pim-operation-modes-sticky.svg" alt="Sticky Note: PIM Operation Modes" width="30%">
-</a>
 
 
 **PIM Dense Mode (PIM-DM):**
@@ -3003,16 +2453,6 @@ Two types of trees:
 
 ### IGMP (Internet Group Management Protocol)
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/igmp-internet-group-management-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/igmp-internet-group-management-protocol-handwritten.svg" alt="Handwritten: IGMP (Internet Group Management Protocol)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/igmp-internet-group-management-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/igmp-internet-group-management-protocol-diagram.svg" alt="Diagram: IGMP (Internet Group Management Protocol)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/igmp-internet-group-management-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/igmp-internet-group-management-protocol-sticky.svg" alt="Sticky Note: IGMP (Internet Group Management Protocol)" width="30%">
-</a>
-
 
 IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 multicast group management.
 
@@ -3026,16 +2466,6 @@ IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 mult
 
 ### Numbered Steps of Multicast Forwarding
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-multicast-forwarding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-multicast-forwarding-handwritten.svg" alt="Handwritten: Numbered Steps of Multicast Forwarding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-multicast-forwarding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-multicast-forwarding-diagram.svg" alt="Diagram: Numbered Steps of Multicast Forwarding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-multicast-forwarding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/numbered-steps-of-multicast-forwarding-sticky.svg" alt="Sticky Note: Numbered Steps of Multicast Forwarding" width="30%">
-</a>
-
 
 1. **Host joins group** → Host sends IGMP Report for group G toward the router.
 2. **PIM Join** → Router sends PIM Join (*, G) toward the RP.
@@ -3046,16 +2476,6 @@ IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 mult
 7. **Prune** → When no receivers remain, router sends Prune upstream.
 
 ### Multicast Routing Protocols Compared
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-routing-protocols-compared-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-routing-protocols-compared-handwritten.svg" alt="Handwritten: Multicast Routing Protocols Compared" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-routing-protocols-compared-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-routing-protocols-compared-diagram.svg" alt="Diagram: Multicast Routing Protocols Compared" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/multicast-routing-protocols-compared-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/multicast-routing-protocols-compared-sticky.svg" alt="Sticky Note: Multicast Routing Protocols Compared" width="30%">
-</a>
 
 
 | Protocol | Type | Tree Type | Scalability | Use Case |
@@ -3072,30 +2492,10 @@ IGMPv3 (RFC 3376) is the current standard. Host-to-router protocol for IPv4 mult
 
 ### Real-World Analogy: The Town Crier
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-town-crier-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-town-crier-handwritten.svg" alt="Handwritten: Real-World Analogy: The Town Crier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-town-crier-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-town-crier-diagram.svg" alt="Diagram: Real-World Analogy: The Town Crier" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-town-crier-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-town-crier-sticky.svg" alt="Sticky Note: Real-World Analogy: The Town Crier" width="30%">
-</a>
-
 
 The town crier stands in the square and shouts so everyone can hear. Every house receives the message simultaneously, regardless of whether they need it. This is broadcast → send to everyone, whether interested or not.
 
 ### Broadcast Routing Approaches
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-approaches-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-approaches-handwritten.svg" alt="Handwritten: Broadcast Routing Approaches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-approaches-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-approaches-diagram.svg" alt="Diagram: Broadcast Routing Approaches" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-approaches-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-approaches-sticky.svg" alt="Sticky Note: Broadcast Routing Approaches" width="30%">
-</a>
 
 
 **Controlled Flooding:**
@@ -3108,16 +2508,6 @@ The town crier stands in the square and shouts so everyone can hear. Every house
 - Redundant links remain available for unicast traffic but disabled for broadcast.
 
 ### RPF Check → Detailed
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/rpf-check-detailed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/rpf-check-detailed-handwritten.svg" alt="Handwritten: RPF Check → Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/rpf-check-detailed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/rpf-check-detailed-diagram.svg" alt="Diagram: RPF Check → Detailed" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/rpf-check-detailed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/rpf-check-detailed-sticky.svg" alt="Sticky Note: RPF Check → Detailed" width="30%">
-</a>
 
 
 RPF is fundamental: a router receives a broadcast packet from source S on interface I. It checks its unicast routing table: "Would I forward to S via interface I?" If yes, the packet arrived on the correct interface -> forward to all other interfaces. If no -> drop (likely a duplicate).
@@ -3139,16 +2529,6 @@ When S sends a broadcast via R1:
 
 ### Broadcast vs Multicast vs Unicast
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-vs-multicast-vs-unicast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-vs-multicast-vs-unicast-handwritten.svg" alt="Handwritten: Broadcast vs Multicast vs Unicast" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-vs-multicast-vs-unicast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-vs-multicast-vs-unicast-diagram.svg" alt="Diagram: Broadcast vs Multicast vs Unicast" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-vs-multicast-vs-unicast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-vs-multicast-vs-unicast-sticky.svg" alt="Sticky Note: Broadcast vs Multicast vs Unicast" width="30%">
-</a>
-
 
 | Aspect | Unicast | Broadcast | Multicast |
 |--------|---------|-----------|-----------|
@@ -3162,16 +2542,6 @@ When S sends a broadcast via R1:
 | Bandwidth efficiency | Wastes bandwidth for | n copies | Very wasteful for n>1 | Efficient — duplicates only at branch points |
 
 ### Broadcast Routing Algorithms Summary
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-algorithms-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-algorithms-summary-handwritten.svg" alt="Handwritten: Broadcast Routing Algorithms Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-algorithms-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-algorithms-summary-diagram.svg" alt="Diagram: Broadcast Routing Algorithms Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-algorithms-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/broadcast-routing-algorithms-summary-sticky.svg" alt="Sticky Note: Broadcast Routing Algorithms Summary" width="30%">
-</a>
 
 
 | Algorithm | Mechanism | Loop Prevention | Overhead |
@@ -3187,30 +2557,10 @@ When S sends a broadcast via R1:
 
 ### Real-World Analogy: The Nearest Pizza Delivery
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-nearest-pizza-delivery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-nearest-pizza-delivery-handwritten.svg" alt="Handwritten: Real-World Analogy: The Nearest Pizza Delivery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-nearest-pizza-delivery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-nearest-pizza-delivery-diagram.svg" alt="Diagram: Real-World Analogy: The Nearest Pizza Delivery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-nearest-pizza-delivery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-the-nearest-pizza-delivery-sticky.svg" alt="Sticky Note: Real-World Analogy: The Nearest Pizza Delivery" width="30%">
-</a>
-
 
 You call a pizza chain's phone number. The call is routed to the nearest store (by geography), not to a specific location. If that store is busy, the call may go to the next nearest. You don't care which store delivers → you care about getting pizza fast. This is anycast: send to the nearest member of a group.
 
 ### BGP Anycast in Practice
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-anycast-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-anycast-in-practice-handwritten.svg" alt="Handwritten: BGP Anycast in Practice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-anycast-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-anycast-in-practice-diagram.svg" alt="Diagram: BGP Anycast in Practice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-anycast-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-anycast-in-practice-sticky.svg" alt="Sticky Note: BGP Anycast in Practice" width="30%">
-</a>
 
 
 Anycast in the Internet is implemented via BGP. Multiple routers in different locations advertise the **same IP prefix**:
@@ -3229,16 +2579,6 @@ Anycast in the Internet is implemented via BGP. Multiple routers in different lo
 6. If London instance fails, BGP withdraws the route, and traffic shifts to the next-closest location.
 
 ### Anycast Benefits and Challenges
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/anycast-benefits-and-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/anycast-benefits-and-challenges-handwritten.svg" alt="Handwritten: Anycast Benefits and Challenges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/anycast-benefits-and-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/anycast-benefits-and-challenges-diagram.svg" alt="Diagram: Anycast Benefits and Challenges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/anycast-benefits-and-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/anycast-benefits-and-challenges-sticky.svg" alt="Sticky Note: Anycast Benefits and Challenges" width="30%">
-</a>
 
 
 **Benefits:**
@@ -3310,30 +2650,10 @@ Anycast in the Internet is implemented via BGP. Multiple routers in different lo
 
 ### Q1: Why does RIP have a maximum hop count of 15?
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/why-does-rip-have-a-maximum-hop-count-of-15-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/why-does-rip-have-a-maximum-hop-count-of-15-handwritten.svg" alt="Handwritten: Why does RIP have a maximum hop count of 15?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/why-does-rip-have-a-maximum-hop-count-of-15-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/why-does-rip-have-a-maximum-hop-count-of-15-diagram.svg" alt="Diagram: Why does RIP have a maximum hop count of 15?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/why-does-rip-have-a-maximum-hop-count-of-15-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/why-does-rip-have-a-maximum-hop-count-of-15-sticky.svg" alt="Sticky Note: Why does RIP have a maximum hop count of 15?" width="30%">
-</a>
-
 
 RIP uses 16 as "infinity" → a value that is unreachable. The 15-hop limit prevents count-to-infinity from taking too long. With each iteration incrementing by 1, reaching 16 from a valid path takes at most 16 iterations. A larger infinity (e.g., OSPF's theoretical infinity is 65,535) would cause proportionally longer count-to-infinity convergence. The 15-hop limit means RIP networks cannot exceed 15 routers in diameter → this is acceptable for small networks.
 
 ### Q2: How does OSPF achieve faster convergence than RIP?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ospf-achieve-faster-convergence-than-rip-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ospf-achieve-faster-convergence-than-rip-handwritten.svg" alt="Handwritten: How does OSPF achieve faster convergence than RIP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ospf-achieve-faster-convergence-than-rip-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ospf-achieve-faster-convergence-than-rip-diagram.svg" alt="Diagram: How does OSPF achieve faster convergence than RIP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ospf-achieve-faster-convergence-than-rip-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ospf-achieve-faster-convergence-than-rip-sticky.svg" alt="Sticky Note: How does OSPF achieve faster convergence than RIP?" width="30%">
-</a>
 
 
 Three architectural differences:
@@ -3343,32 +2663,12 @@ Three architectural differences:
 
 ### Q3: What is the purpose of OSPF areas?
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-ospf-areas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-ospf-areas-handwritten.svg" alt="Handwritten: What is the purpose of OSPF areas?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-ospf-areas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-ospf-areas-diagram.svg" alt="Diagram: What is the purpose of OSPF areas?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-ospf-areas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-ospf-areas-sticky.svg" alt="Sticky Note: What is the purpose of OSPF areas?" width="30%">
-</a>
-
 
 Areas serve two main purposes:
 1. **Reduce LSA flooding scope** → A link change in Area 1 does not trigger SPF recalculation in Area 2. Only ABRs learn routes between areas via summary LSAs.
 2. **Reduce LSDB size** → An internal router in Area 1 stores only Area 1's topology. Without areas, every router stores the entire OSPF domain topology.
 
 ### Q4: How does BGP policy differ from IGP metrics?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-bgp-policy-differ-from-igp-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-bgp-policy-differ-from-igp-metrics-handwritten.svg" alt="Handwritten: How does BGP policy differ from IGP metrics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-bgp-policy-differ-from-igp-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-bgp-policy-differ-from-igp-metrics-diagram.svg" alt="Diagram: How does BGP policy differ from IGP metrics?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-bgp-policy-differ-from-igp-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-bgp-policy-differ-from-igp-metrics-sticky.svg" alt="Sticky Note: How does BGP policy differ from IGP metrics?" width="30%">
-</a>
 
 
 IGPs optimize a single numerical metric (hop count, cost). BGP selects routes based on business policy first, path characteristics second. An ISP may prefer a path with longer AS_PATH because a customer pays for transit on that path. Policy in BGP is expressed through:
@@ -3379,32 +2679,12 @@ IGPs optimize a single numerical metric (hop count, cost). BGP selects routes ba
 
 ### Q5: Explain the difference between iBGP and eBGP.
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/explain-the-difference-between-ibgp-and-ebgp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/explain-the-difference-between-ibgp-and-ebgp-handwritten.svg" alt="Handwritten: Explain the difference between iBGP and eBGP." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/explain-the-difference-between-ibgp-and-ebgp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/explain-the-difference-between-ibgp-and-ebgp-diagram.svg" alt="Diagram: Explain the difference between iBGP and eBGP." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/explain-the-difference-between-ibgp-and-ebgp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/explain-the-difference-between-ibgp-and-ebgp-sticky.svg" alt="Sticky Note: Explain the difference between iBGP and eBGP." width="30%">
-</a>
-
 
 eBGP runs between routers in different ASes. It prepends the local AS number to AS_PATH for loop detection. The administrative distance is 20. The TTL is typically set to 1 (directly connected peers).
 
 iBGP runs between routers in the same AS. It does NOT prepend the AS number (so it must be fully meshed to prevent loops). The administrative distance is 200 (less preferred than eBGP). iBGP preserves the NEXT_HOP attribute from eBGP (next-hop-self is a common workaround for IGP reachability).
 
 ### Q6: What causes BGP convergence to be slow?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-causes-bgp-convergence-to-be-slow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-causes-bgp-convergence-to-be-slow-handwritten.svg" alt="Handwritten: What causes BGP convergence to be slow?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-causes-bgp-convergence-to-be-slow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-causes-bgp-convergence-to-be-slow-diagram.svg" alt="Diagram: What causes BGP convergence to be slow?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-causes-bgp-convergence-to-be-slow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-causes-bgp-convergence-to-be-slow-sticky.svg" alt="Sticky Note: What causes BGP convergence to be slow?" width="30%">
-</a>
 
 
 1. **MRAI (Minimum Route Advertisement Interval)** → eBGP: 30s, iBGP: 15s per prefix. This rate-limits updates to reduce churn.
@@ -3415,16 +2695,6 @@ iBGP runs between routers in the same AS. It does NOT prepend the AS number (so 
 
 ### Q7: What is the BGP convergence time in the real Internet?
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-bgp-convergence-time-in-the-real-internet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-bgp-convergence-time-in-the-real-internet-handwritten.svg" alt="Handwritten: What is the BGP convergence time in the real Internet?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-bgp-convergence-time-in-the-real-internet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-bgp-convergence-time-in-the-real-internet-diagram.svg" alt="Diagram: What is the BGP convergence time in the real Internet?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-bgp-convergence-time-in-the-real-internet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-bgp-convergence-time-in-the-real-internet-sticky.svg" alt="Sticky Note: What is the BGP convergence time in the real Internet?" width="30%">
-</a>
-
 
 Under normal conditions:
 - Local convergence within an AS: &lt; 1 second (OSPF detects, BGP processes).
@@ -3433,16 +2703,6 @@ Under normal conditions:
 The 2008 YouTube/Pakistan hijack took approximately 2 hours to fully recover globally.
 
 ### Q8: How does anycast routing handle session persistence?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-anycast-routing-handle-session-persistence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-anycast-routing-handle-session-persistence-handwritten.svg" alt="Handwritten: How does anycast routing handle session persistence?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-anycast-routing-handle-session-persistence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-anycast-routing-handle-session-persistence-diagram.svg" alt="Diagram: How does anycast routing handle session persistence?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-anycast-routing-handle-session-persistence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-anycast-routing-handle-session-persistence-sticky.svg" alt="Sticky Note: How does anycast routing handle session persistence?" width="30%">
-</a>
 
 
 Anycast does NOT guarantee session persistence. Different packets in the same TCP flow may reach different servers. Solutions:
@@ -3453,16 +2713,6 @@ Anycast does NOT guarantee session persistence. Different packets in the same TC
 
 ### Q9: What happens when a BGP route is withdrawn?
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-happens-when-a-bgp-route-is-withdrawn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-happens-when-a-bgp-route-is-withdrawn-handwritten.svg" alt="Handwritten: What happens when a BGP route is withdrawn?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-happens-when-a-bgp-route-is-withdrawn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-happens-when-a-bgp-route-is-withdrawn-diagram.svg" alt="Diagram: What happens when a BGP route is withdrawn?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-happens-when-a-bgp-route-is-withdrawn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-happens-when-a-bgp-route-is-withdrawn-sticky.svg" alt="Sticky Note: What happens when a BGP route is withdrawn?" width="30%">
-</a>
-
 
 When a BGP speaker receives a WITHDRAWN route:
 1. The route is removed from the Loc-RIB.
@@ -3472,16 +2722,6 @@ When a BGP speaker receives a WITHDRAWN route:
 5. If the prefix had alternate paths (backup), convergence is nearly instant. If not, the prefix becomes unreachable until a new path is learned.
 
 ### Q10: Compare Dijkstra and Bellman-Ford for routing.
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/compare-dijkstra-and-bellman-ford-for-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/compare-dijkstra-and-bellman-ford-for-routing-handwritten.svg" alt="Handwritten: Compare Dijkstra and Bellman-Ford for routing." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/compare-dijkstra-and-bellman-ford-for-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/compare-dijkstra-and-bellman-ford-for-routing-diagram.svg" alt="Diagram: Compare Dijkstra and Bellman-Ford for routing." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/compare-dijkstra-and-bellman-ford-for-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/compare-dijkstra-and-bellman-ford-for-routing-sticky.svg" alt="Sticky Note: Compare Dijkstra and Bellman-Ford for routing." width="30%">
-</a>
 
 
 | Aspect | Bellman-Ford | Dijkstra |
@@ -3495,16 +2735,6 @@ When a BGP speaker receives a WITHDRAWN route:
 
 ### Q11: What is route summarization and why is it important in OSPF?
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-route-summarization-and-why-is-it-important-in-ospf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-route-summarization-and-why-is-it-important-in-ospf-handwritten.svg" alt="Handwritten: What is route summarization and why is it important in OSPF?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-route-summarization-and-why-is-it-important-in-ospf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-route-summarization-and-why-is-it-important-in-ospf-diagram.svg" alt="Diagram: What is route summarization and why is it important in OSPF?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-route-summarization-and-why-is-it-important-in-ospf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-route-summarization-and-why-is-it-important-in-ospf-sticky.svg" alt="Sticky Note: What is route summarization and why is it important in OSPF?" width="30%">
-</a>
-
 
 Route summarization (aggregation) combines multiple contiguous prefixes into a single advertisement. In OSPF, ABRs summarize inter-area routes. For example, routes 10.1.0.0/24, 10.1.1.0/24, 10.1.2.0/24, 10.1.3.0/24 can be summarized as 10.1.0.0/22.
 
@@ -3513,16 +2743,6 @@ Route summarization (aggregation) combines multiple contiguous prefixes into a s
 **Drawbacks:** Suboptimal routing (packets to 10.1.1.0/24 may be forwarded to an ABR that does not have that specific prefix), and careful planning required to ensure contiguous addressing.
 
 ### Q12: How does ECMP (Equal-Cost Multi-Path) work in OSPF?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ecmp-equal-cost-multi-path-work-in-ospf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ecmp-equal-cost-multi-path-work-in-ospf-handwritten.svg" alt="Handwritten: How does ECMP (Equal-Cost Multi-Path) work in OSPF?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ecmp-equal-cost-multi-path-work-in-ospf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ecmp-equal-cost-multi-path-work-in-ospf-diagram.svg" alt="Diagram: How does ECMP (Equal-Cost Multi-Path) work in OSPF?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ecmp-equal-cost-multi-path-work-in-ospf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-ecmp-equal-cost-multi-path-work-in-ospf-sticky.svg" alt="Sticky Note: How does ECMP (Equal-Cost Multi-Path) work in OSPF?" width="30%">
-</a>
 
 
 When OSPF (or any IGP) finds multiple paths to the same destination with equal cost, it can install all of them in the FIB. Traffic is then distributed across these paths using:
@@ -3533,32 +2753,12 @@ Cisco's CEF uses a hash-based approach by default. The number of ECMP paths supp
 
 ### Q13: What is the purpose of the TTL field in IP packets, and how does traceroute use it?
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-the-ttl-field-in-ip-packets-and-how-does-traceroute-use-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-the-ttl-field-in-ip-packets-and-how-does-traceroute-use-it-handwritten.svg" alt="Handwritten: What is the purpose of the TTL field in IP packets, and how does traceroute use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-the-ttl-field-in-ip-packets-and-how-does-traceroute-use-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-the-ttl-field-in-ip-packets-and-how-does-traceroute-use-it-diagram.svg" alt="Diagram: What is the purpose of the TTL field in IP packets, and how does traceroute use it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-the-ttl-field-in-ip-packets-and-how-does-traceroute-use-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-purpose-of-the-ttl-field-in-ip-packets-and-how-does-traceroute-use-it-sticky.svg" alt="Sticky Note: What is the purpose of the TTL field in IP packets, and how does traceroute use it?" width="30%">
-</a>
-
 
 TTL (Time-to-Live) prevents packets from looping indefinitely. Each router decrements TTL by 1. When TTL reaches 0, the router drops the packet and sends an ICMP Time Exceeded message back to the source.
 
 Traceroute exploits this: it sends packets with TTL=1, TTL=2, TTL=3, etc. The first router decrements TTL=1 to 0 and sends ICMP Time Exceeded, revealing its IP. The second router responds to TTL=2, etc. This traces the entire path.
 
 ### Q14: What is the difference between redistribution and route leaking?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-difference-between-redistribution-and-route-leaking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-difference-between-redistribution-and-route-leaking-handwritten.svg" alt="Handwritten: What is the difference between redistribution and route leaking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-difference-between-redistribution-and-route-leaking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-difference-between-redistribution-and-route-leaking-diagram.svg" alt="Diagram: What is the difference between redistribution and route leaking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-difference-between-redistribution-and-route-leaking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/what-is-the-difference-between-redistribution-and-route-leaking-sticky.svg" alt="Sticky Note: What is the difference between redistribution and route leaking?" width="30%">
-</a>
 
 
 **Route redistribution** is the process of injecting routes from one routing protocol into another (e.g., OSPF to BGP). Redistribution requires careful planning of administrative distances and metrics to avoid suboptimal routing or loops.
@@ -3568,16 +2768,6 @@ Traceroute exploits this: it sends packets with TTL=1, TTL=2, TTL=3, etc. The fi
 Both require consideration of routing feedback loops — a route redistributed into OSPF could be re-learned via BGP and redistributed back, creating a loop. Administrative distances and route tagging prevent this.
 
 ### Q15: How does a router handle a packet when no route exists in the FIB?
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-a-router-handle-a-packet-when-no-route-exists-in-the-fib-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-a-router-handle-a-packet-when-no-route-exists-in-the-fib-handwritten.svg" alt="Handwritten: How does a router handle a packet when no route exists in the FIB?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-a-router-handle-a-packet-when-no-route-exists-in-the-fib-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-a-router-handle-a-packet-when-no-route-exists-in-the-fib-diagram.svg" alt="Diagram: How does a router handle a packet when no route exists in the FIB?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/how-does-a-router-handle-a-packet-when-no-route-exists-in-the-fib-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/how-does-a-router-handle-a-packet-when-no-route-exists-in-the-fib-sticky.svg" alt="Sticky Note: How does a router handle a packet when no route exists in the FIB?" width="30%">
-</a>
 
 
 When a router receives a packet for which no prefix matches in the FIB:
@@ -3592,16 +2782,6 @@ This behavior ensures that the source learns of the unreachability. In enterpris
 ## 7.12 Applications in Real Systems
 
 ### Cisco IOS Configuration Examples
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/cisco-ios-configuration-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/cisco-ios-configuration-examples-handwritten.svg" alt="Handwritten: Cisco IOS Configuration Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/cisco-ios-configuration-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/cisco-ios-configuration-examples-diagram.svg" alt="Diagram: Cisco IOS Configuration Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/cisco-ios-configuration-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/cisco-ios-configuration-examples-sticky.svg" alt="Sticky Note: Cisco IOS Configuration Examples" width="30%">
-</a>
 
 
 **RIP Configuration:**
@@ -3650,16 +2830,6 @@ ip prefix-list DEFAULT permit 0.0.0.0/0
 ```
 
 ### FRR (Free Range Routing) → Open-Source Routing Stack
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/frr-free-range-routing-open-source-routing-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/frr-free-range-routing-open-source-routing-stack-handwritten.svg" alt="Handwritten: FRR (Free Range Routing) → Open-Source Routing Stack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/frr-free-range-routing-open-source-routing-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/frr-free-range-routing-open-source-routing-stack-diagram.svg" alt="Diagram: FRR (Free Range Routing) → Open-Source Routing Stack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/frr-free-range-routing-open-source-routing-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/frr-free-range-routing-open-source-routing-stack-sticky.svg" alt="Sticky Note: FRR (Free Range Routing) → Open-Source Routing Stack" width="30%">
-</a>
 
 
 FRR (formerly Quagga) is the de-facto open-source routing suite on Linux, used in production by many organizations.
@@ -3722,16 +2892,6 @@ ip prefix-list CUSTOMER-PREFIXES seq 5 permit 203.0.113.0/24
 
 ### Cloudflare Anycast Architecture
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/cloudflare-anycast-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/cloudflare-anycast-architecture-handwritten.svg" alt="Handwritten: Cloudflare Anycast Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/cloudflare-anycast-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/cloudflare-anycast-architecture-diagram.svg" alt="Diagram: Cloudflare Anycast Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/cloudflare-anycast-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/cloudflare-anycast-architecture-sticky.svg" alt="Sticky Note: Cloudflare Anycast Architecture" width="30%">
-</a>
-
 
 Cloudflare operates one of the largest anycast networks globally, serving ~20% of all web traffic.
 
@@ -3749,16 +2909,6 @@ Cloudflare operates one of the largest anycast networks globally, serving ~20% o
 When one data center is attacked, BGP anycast automatically distributes attack traffic across all 330+ data centers. Each data center absorbs a fraction of the attack, making large DDoS attacks (over 2 Tbps) survivable.
 
 ### AWS Direct Connect and Hybrid Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/aws-direct-connect-and-hybrid-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/aws-direct-connect-and-hybrid-routing-handwritten.svg" alt="Handwritten: AWS Direct Connect and Hybrid Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/aws-direct-connect-and-hybrid-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/aws-direct-connect-and-hybrid-routing-diagram.svg" alt="Diagram: AWS Direct Connect and Hybrid Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/aws-direct-connect-and-hybrid-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/aws-direct-connect-and-hybrid-routing-sticky.svg" alt="Sticky Note: AWS Direct Connect and Hybrid Routing" width="30%">
-</a>
 
 
 AWS Direct Connect extends on-premises networks into AWS via dedicated private connections. Routing in hybrid environments requires careful BGP design:
@@ -3779,16 +2929,6 @@ On-prem (AS65000) == Direct Connect == AWS VPC (AS64512)
 
 ### Facebook's BGP Routing (Meta)
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/facebook-s-bgp-routing-meta-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/facebook-s-bgp-routing-meta-handwritten.svg" alt="Handwritten: Facebook's BGP Routing (Meta)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/facebook-s-bgp-routing-meta-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/facebook-s-bgp-routing-meta-diagram.svg" alt="Diagram: Facebook's BGP Routing (Meta)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/facebook-s-bgp-routing-meta-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/facebook-s-bgp-routing-meta-sticky.svg" alt="Sticky Note: Facebook's BGP Routing (Meta)" width="30%">
-</a>
-
 
 Meta (Facebook) has a unique routing architecture designed for its global private backbone (FBANET):
 
@@ -3800,16 +2940,6 @@ Meta (Facebook) has a unique routing architecture designed for its global privat
 - Segment Routing (SR-MPLS) for traffic engineering across the private backbone.
 
 ### BGP in ISP Backbones
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-in-isp-backbones-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-in-isp-backbones-handwritten.svg" alt="Handwritten: BGP in ISP Backbones" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-in-isp-backbones-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-in-isp-backbones-diagram.svg" alt="Diagram: BGP in ISP Backbones" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-in-isp-backbones-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-in-isp-backbones-sticky.svg" alt="Sticky Note: BGP in ISP Backbones" width="30%">
-</a>
 
 
 Real-world ISP BGP architecture typically includes:
@@ -3837,16 +2967,6 @@ Upstream (AS1) / Peers (AS200, AS300) → propagate globally
 
 ### Routing Protocol Administrative Distances
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-administrative-distances-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-administrative-distances-handwritten.svg" alt="Handwritten: Routing Protocol Administrative Distances" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-administrative-distances-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-administrative-distances-diagram.svg" alt="Diagram: Routing Protocol Administrative Distances" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-administrative-distances-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-administrative-distances-sticky.svg" alt="Sticky Note: Routing Protocol Administrative Distances" width="30%">
-</a>
-
 
 | Route Source | Distance |
 |-------------|----------|
@@ -3869,30 +2989,10 @@ Upstream (AS1) / Peers (AS200, AS300) → propagate globally
 
 ### Real-World Analogy: Fake Road Signs
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-fake-road-signs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-fake-road-signs-handwritten.svg" alt="Handwritten: Real-World Analogy: Fake Road Signs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-fake-road-signs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-fake-road-signs-diagram.svg" alt="Diagram: Real-World Analogy: Fake Road Signs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-fake-road-signs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/real-world-analogy-fake-road-signs-sticky.svg" alt="Sticky Note: Real-World Analogy: Fake Road Signs" width="30%">
-</a>
-
 
 Routing security is about preventing someone from putting up a fake road sign that redirects traffic to the wrong destination. On the Internet, this is exactly what happens during BGP hijacks.
 
 ### BGP Hijacking
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-hijacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-hijacking-handwritten.svg" alt="Handwritten: BGP Hijacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-hijacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-hijacking-diagram.svg" alt="Diagram: BGP Hijacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-hijacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-hijacking-sticky.svg" alt="Sticky Note: BGP Hijacking" width="30%">
-</a>
 
 
 A BGP hijack occurs when an AS advertises a prefix it does not own, diverting traffic intended for the legitimate owner.
@@ -3917,16 +3017,6 @@ A BGP hijack occurs when an AS advertises a prefix it does not own, diverting tr
 
 ### RPKI (Resource Public Key Infrastructure)
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/rpki-resource-public-key-infrastructure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/rpki-resource-public-key-infrastructure-handwritten.svg" alt="Handwritten: RPKI (Resource Public Key Infrastructure)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/rpki-resource-public-key-infrastructure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/rpki-resource-public-key-infrastructure-diagram.svg" alt="Diagram: RPKI (Resource Public Key Infrastructure)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/rpki-resource-public-key-infrastructure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/rpki-resource-public-key-infrastructure-sticky.svg" alt="Sticky Note: RPKI (Resource Public Key Infrastructure)" width="30%">
-</a>
-
 
 RPKI is a security framework that uses cryptographic certificates to verify the association between IP prefixes and the ASes that hold them.
 
@@ -3945,16 +3035,6 @@ RPKI is a security framework that uses cryptographic certificates to verify the 
 
 ### BGP Flowspec
 
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-flowspec-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-flowspec-handwritten.svg" alt="Handwritten: BGP Flowspec" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-flowspec-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-flowspec-diagram.svg" alt="Diagram: BGP Flowspec" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/bgp-flowspec-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/bgp-flowspec-sticky.svg" alt="Sticky Note: BGP Flowspec" width="30%">
-</a>
-
 
 BGP Flowspec (RFC 8955) extends BGP to carry traffic filtering and rate-limiting rules. It enables:
 - Distributed DDoS mitigation across multiple routers.
@@ -3962,16 +3042,6 @@ BGP Flowspec (RFC 8955) extends BGP to carry traffic filtering and rate-limiting
 - Automated response to detected attacks.
 
 ### Routing Protocol Authentication
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-authentication-handwritten.svg" alt="Handwritten: Routing Protocol Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-authentication-diagram.svg" alt="Diagram: Routing Protocol Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/routing-protocol-authentication-sticky.svg" alt="Sticky Note: Routing Protocol Authentication" width="30%">
-</a>
 
 
 | Protocol | Authentication Method | Vulnerability |
@@ -3982,16 +3052,6 @@ BGP Flowspec (RFC 8955) extends BGP to carry traffic filtering and rate-limiting
 | IS-IS | Null, plaintext, HMAC-MD5, HMAC-SHA | Same as OSPF |
 
 ### Route Filtering Best Practices
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/route-filtering-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/route-filtering-best-practices-handwritten.svg" alt="Handwritten: Route Filtering Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/route-filtering-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/route-filtering-best-practices-diagram.svg" alt="Diagram: Route Filtering Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/route-filtering-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/route-filtering-best-practices-sticky.svg" alt="Sticky Note: Route Filtering Best Practices" width="30%">
-</a>
 
 
 1. **Prefix filtering at AS boundaries** — Accept only prefixes that a customer/peer is authorized to announce.
@@ -4066,16 +3126,6 @@ B) OSPF has administrative distance 110, RIP has 120. Lower AD wins.
 </details>
 
 ### Quiz Answer Key
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/quiz-answer-key-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/quiz-answer-key-handwritten.svg" alt="Handwritten: Quiz Answer Key" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/quiz-answer-key-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/quiz-answer-key-diagram.svg" alt="Diagram: Quiz Answer Key" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/quiz-answer-key-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/quiz-answer-key-sticky.svg" alt="Sticky Note: Quiz Answer Key" width="30%">
-</a>
 
 
 | Question | Answer | Explanation |
@@ -4282,16 +3332,6 @@ If both had equal LOCAL_PREF, AS_PATH would be checked next, and Path A would wi
 </details>
 
 ### Coding Problems
-
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/coding-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/coding-problems-handwritten.svg" alt="Handwritten: Coding Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/coding-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/coding-problems-diagram.svg" alt="Diagram: Coding Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/07-routing/coding-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/07-routing/coding-problems-sticky.svg" alt="Sticky Note: Coding Problems" width="30%">
-</a>
 
 
 13. Implement a Bellman-Ford simulator that runs distance-vector routing on any input graph and outputs the convergence steps.

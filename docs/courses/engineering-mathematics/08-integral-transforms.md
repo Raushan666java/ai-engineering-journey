@@ -78,16 +78,6 @@ flowchart LR
 
 ### 8.1 Fourier Series
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-1-fourier-series-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-1-fourier-series-handwritten.svg" alt="Handwritten: 8.1 Fourier Series" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-1-fourier-series-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-1-fourier-series-diagram.svg" alt="Diagram: 8.1 Fourier Series" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-1-fourier-series-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-1-fourier-series-sticky.svg" alt="Sticky Note: 8.1 Fourier Series" width="30%">
-</a>
-
 
 Any periodic function $f(t)$ with period $T$ can be expressed as:
 
@@ -109,16 +99,6 @@ $$\frac{1}{T} \int_0^T |f(t)|^2 dt = a_0^2 + \frac{1}{2}\sum_{n=1}^\infty (a_n^2
 **Gibbs Phenomenon:** At discontinuities, the Fourier series overshoots by about 9% regardless of the number of terms.
 
 ### 8.2 Fourier Transform
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-2-fourier-transform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-2-fourier-transform-handwritten.svg" alt="Handwritten: 8.2 Fourier Transform" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-2-fourier-transform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-2-fourier-transform-diagram.svg" alt="Diagram: 8.2 Fourier Transform" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-2-fourier-transform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-2-fourier-transform-sticky.svg" alt="Sticky Note: 8.2 Fourier Transform" width="30%">
-</a>
 
 
 **Definition:**
@@ -155,16 +135,6 @@ $$f(t) = \mathcal{F}^{-1}\{F(\omega)\} = \frac{1}{2\pi} \int_{-\infty}^\infty F(
 
 ### 8.3 Laplace Transform
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-3-laplace-transform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-3-laplace-transform-handwritten.svg" alt="Handwritten: 8.3 Laplace Transform" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-3-laplace-transform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-3-laplace-transform-diagram.svg" alt="Diagram: 8.3 Laplace Transform" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-3-laplace-transform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-3-laplace-transform-sticky.svg" alt="Sticky Note: 8.3 Laplace Transform" width="30%">
-</a>
-
 
 **Definition:**
 $$F(s) = \mathcal{L}\{f(t)\} = \int_0^\infty f(t) e^{-st}\,dt, \quad s = \sigma + i\omega$$
@@ -199,16 +169,6 @@ For repeated roots: $\frac{r_{1}}{s-p} + \frac{r_{2}}{(s-p)^2} + \cdots$
 
 ### 8.4 Z-Transform
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-4-z-transform-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-4-z-transform-handwritten.svg" alt="Handwritten: 8.4 Z-Transform" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-4-z-transform-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-4-z-transform-diagram.svg" alt="Diagram: 8.4 Z-Transform" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-4-z-transform-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-4-z-transform-sticky.svg" alt="Sticky Note: 8.4 Z-Transform" width="30%">
-</a>
-
 
 **Definition:**
 $$X(z) = \mathcal{Z}\{x[n]\} = \sum_{n=-\infty}^\infty x[n] z^{-n}, \quad z \in \mathbb{C}$$
@@ -236,16 +196,6 @@ Commonly computed via partial fraction expansion.
 
 ### 8.5 Convolution and Correlation
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-5-convolution-and-correlation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-5-convolution-and-correlation-handwritten.svg" alt="Handwritten: 8.5 Convolution and Correlation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-5-convolution-and-correlation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-5-convolution-and-correlation-diagram.svg" alt="Diagram: 8.5 Convolution and Correlation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-5-convolution-and-correlation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-5-convolution-and-correlation-sticky.svg" alt="Sticky Note: 8.5 Convolution and Correlation" width="30%">
-</a>
-
 
 **Continuous Convolution:**
 $$(f * g)(t) = \int_{-\infty}^\infty f(\tau) g(t - \tau)\,d\tau$$
@@ -261,16 +211,6 @@ $$R_{ff}(\tau) = \int_{-\infty}^\infty f(t) f(t + \tau)\,dt$$
 
 ### 8.6 Sampling Theorem
 
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-6-sampling-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-6-sampling-theorem-handwritten.svg" alt="Handwritten: 8.6 Sampling Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-6-sampling-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-6-sampling-theorem-diagram.svg" alt="Diagram: 8.6 Sampling Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-6-sampling-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-6-sampling-theorem-sticky.svg" alt="Sticky Note: 8.6 Sampling Theorem" width="30%">
-</a>
-
 
 **Nyquist-Shannon Sampling Theorem:** A signal $f(t)$ with bandwidth $B$ can be perfectly reconstructed from samples taken at rate $f_s > 2B$.
 
@@ -282,16 +222,6 @@ The critical rate $f_s = 2B$ is the **Nyquist rate**.
 $$f(t) = \sum_{n=-\infty}^\infty f(nT_s) \text{sinc}\left(\frac{t - nT_s}{T_s}\right)$$
 
 ### 8.7 Discrete Fourier Transform (DFT)
-
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-7-discrete-fourier-transform-dft-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-7-discrete-fourier-transform-dft-handwritten.svg" alt="Handwritten: 8.7 Discrete Fourier Transform (DFT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-7-discrete-fourier-transform-dft-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-7-discrete-fourier-transform-dft-diagram.svg" alt="Diagram: 8.7 Discrete Fourier Transform (DFT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-7-discrete-fourier-transform-dft-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/engineering-mathematics/08-integral-transforms/8-7-discrete-fourier-transform-dft-sticky.svg" alt="Sticky Note: 8.7 Discrete Fourier Transform (DFT)" width="30%">
-</a>
 
 
 **Definition:**

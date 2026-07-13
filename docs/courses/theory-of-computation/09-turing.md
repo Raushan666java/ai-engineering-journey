@@ -83,16 +83,6 @@ flowchart LR
 
 ### 8.1 The Turing Machine Model
 
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-handwritten.svg" alt="Handwritten: 8.1 The Turing Machine Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-diagram.svg" alt="Diagram: 8.1 The Turing Machine Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-1-the-turing-machine-model-sticky.svg" alt="Sticky Note: 8.1 The Turing Machine Model" width="30%">
-</a>
-
 
 Alan Turing introduced the Turing machine in 1936 as a model of "computation by a human clerk." It is the most powerful model of computation we have → anything computable by any mechanical process can be computed by a Turing machine (the Church-Turing thesis).
 
@@ -104,16 +94,6 @@ A Turing machine consists of:
 Unlike finite automata, the TM has **unbounded memory** (the infinite tape) and can both **read and write**. Unlike PDAs, the TM can access **any position** on the tape (not just the top of a stack).
 
 ### 8.2 Formal Definition of a Turing Machine
-
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-handwritten.svg" alt="Handwritten: 8.2 Formal Definition of a Turing Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-diagram.svg" alt="Diagram: 8.2 Formal Definition of a Turing Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-2-formal-definition-of-a-turing-machine-sticky.svg" alt="Sticky Note: 8.2 Formal Definition of a Turing Machine" width="30%">
-</a>
 
 
 A **Turing machine** is a 7-tuple (Q, Î£, Î“, Î´, qâ‚€, q_accept, q_reject) where:
@@ -134,16 +114,6 @@ A transition Î´(q, a) = (r, b, L) means:
 
 ### 8.3 Configuration and Computation
 
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-handwritten.svg" alt="Handwritten: 8.3 Configuration and Computation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-diagram.svg" alt="Diagram: 8.3 Configuration and Computation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-3-configuration-and-computation-sticky.svg" alt="Sticky Note: 8.3 Configuration and Computation" width="30%">
-</a>
-
 
 A **configuration** of a TM is a triple (q, u, v) where:
 - q âˆˆ Q is the current state.
@@ -162,16 +132,6 @@ A TM **halts** when it enters q_accept or q_reject. Otherwise it loops.
 
 ### 8.4 Turing Machine Language
 
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-handwritten.svg" alt="Handwritten: 8.4 Turing Machine Language" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-diagram.svg" alt="Diagram: 8.4 Turing Machine Language" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-4-turing-machine-language-sticky.svg" alt="Sticky Note: 8.4 Turing Machine Language" width="30%">
-</a>
-
 
 A Turing machine M **accepts** string w if there is a sequence of configurations Câ‚€, Câ‚, â€¦, Câ‚– where:
 - Câ‚€ is the start configuration for w.
@@ -184,16 +144,6 @@ L(M) = { w | M accepts w }
 Turing machines recognize exactly the **recursively enumerable** (RE) languages. If a TM halts on all inputs, it's a **decider** and recognizes a **recursive** language.
 
 ### 8.5 Acceptors, Deciders, and Recognizers
-
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-handwritten.svg" alt="Handwritten: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-diagram.svg" alt="Diagram: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-5-acceptors-deciders-and-recognizers-sticky.svg" alt="Sticky Note: 8.5 Acceptors, Deciders, and Recognizers" width="30%">
-</a>
 
 
 A TM can play three distinct roles:
@@ -215,16 +165,6 @@ This "dovetailing" technique ensures every accepted string is eventually printed
 
 ### 8.6 Designing Turing Machines
 
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-handwritten.svg" alt="Handwritten: 8.6 Designing Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-diagram.svg" alt="Diagram: 8.6 Designing Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-6-designing-turing-machines-sticky.svg" alt="Sticky Note: 8.6 Designing Turing Machines" width="30%">
-</a>
-
 
 Designing TMs is akin to writing low-level programs. Common design patterns:
 
@@ -235,16 +175,6 @@ Designing TMs is akin to writing low-level programs. Common design patterns:
 5. **Multi-track tape:** Treat each tape cell as containing a tuple (like an array).
 
 ### 8.7 The TM Computation: A Complete Example
-
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-handwritten.svg" alt="Handwritten: 8.7 The TM Computation: A Complete Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-diagram.svg" alt="Diagram: 8.7 The TM Computation: A Complete Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-the-tm-computation-a-complete-example-sticky.svg" alt="Sticky Note: 8.7 The TM Computation: A Complete Example" width="30%">
-</a>
 
 
 Let's trace the TM for { anbncn | n = 0 } on input "aabbcc":
@@ -275,16 +205,6 @@ This trace shows the algorithm's pattern: each pass removes one a, one b, and on
 
 ### 8.8 Multitape Turing Machines
 
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-handwritten.svg" alt="Handwritten: 8.8 Multitape Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-diagram.svg" alt="Diagram: 8.8 Multitape Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-multitape-turing-machines-sticky.svg" alt="Sticky Note: 8.8 Multitape Turing Machines" width="30%">
-</a>
-
 
 A **k-tape Turing machine** has k independent tapes, each with its own read/write head. The transition function becomes:
 
@@ -311,16 +231,6 @@ flowchart LR
 
 ### 8.7 Nondeterministic Turing Machines
 
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-handwritten.svg" alt="Handwritten: 8.7 Nondeterministic Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-diagram.svg" alt="Diagram: 8.7 Nondeterministic Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-7-nondeterministic-turing-machines-sticky.svg" alt="Sticky Note: 8.7 Nondeterministic Turing Machines" width="30%">
-</a>
-
 
 A **nondeterministic Turing machine (NTM)** has a transition function:
 
@@ -335,16 +245,6 @@ At each step, the NTM may have multiple choices. It accepts if **any** branch le
 **Consequence for complexity:** The simulation may require exponential time (exploring all branches), but for computability, NTMs add no power.
 
 ### 8.8 Turing Machine Variants
-
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-handwritten.svg" alt="Handwritten: 8.8 Turing Machine Variants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-diagram.svg" alt="Diagram: 8.8 Turing Machine Variants" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/09-turing/8-8-turing-machine-variants-sticky.svg" alt="Sticky Note: 8.8 Turing Machine Variants" width="30%">
-</a>
 
 
 Other equivalent variants:

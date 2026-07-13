@@ -49,7 +49,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## 2.1 The Critical Role of Data in AI
 
 The most widely cited lesson from production AI systems is that data quality matters more than model choice. A 2023 survey of AI practitioners found that 60% of project failures traced back to data issues, not model issues. This section explains why data is the dominant factor in AI application performance.

@@ -132,16 +132,6 @@ Spring Security is filter-based. A chain of `Filter` instances wraps every HTTP 
 
 ### SecurityFilterChain
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securityfilterchain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securityfilterchain-handwritten.svg" alt="Handwritten: SecurityFilterChain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securityfilterchain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securityfilterchain-diagram.svg" alt="Diagram: SecurityFilterChain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securityfilterchain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securityfilterchain-sticky.svg" alt="Sticky Note: SecurityFilterChain" width="30%">
-</a>
-
 
 A `SecurityFilterChain` is a mapping from a request pattern to an ordered list of security filters. You register one or more chains; the first chain whose matcher matches handles the request.
 
@@ -228,16 +218,6 @@ public class SecurityConfig {
 
 ### @EnableWebSecurity
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/enablewebsecurity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/enablewebsecurity-handwritten.svg" alt="Handwritten: @EnableWebSecurity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/enablewebsecurity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/enablewebsecurity-diagram.svg" alt="Diagram: @EnableWebSecurity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/enablewebsecurity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/enablewebsecurity-sticky.svg" alt="Sticky Note: @EnableWebSecurity" width="30%">
-</a>
-
 
 `@EnableWebSecurity` imports `WebSecurityConfiguration`, which registers the `FilterChainProxy` bean Ã¢â‚¬â€ the entry point that delegates to your `SecurityFilterChain` beans. Without it, Spring Security's default auto-configuration applies but custom chains are ignored.
 
@@ -258,16 +238,6 @@ public class MinimalSecurityConfig {
 
 ### SecurityFilterAutoConfiguration
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securityfilterautoconfiguration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securityfilterautoconfiguration-handwritten.svg" alt="Handwritten: SecurityFilterAutoConfiguration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securityfilterautoconfiguration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securityfilterautoconfiguration-diagram.svg" alt="Diagram: SecurityFilterAutoConfiguration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securityfilterautoconfiguration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securityfilterautoconfiguration-sticky.svg" alt="Sticky Note: SecurityFilterAutoConfiguration" width="30%">
-</a>
-
 
 Spring Boot's `SecurityFilterAutoConfiguration` automatically registers a `DelegatingFilterProxy` with the Servlet container. This single filter delegates to Spring's `FilterChainProxy`, which in turn dispatches to your `SecurityFilterChain` beans. The registration happens through the `SecurityFilterAutoConfigurationImportSelector`, which is triggered by `@EnableWebSecurity`.
 
@@ -282,16 +252,6 @@ security.filter.order=-50
 ```
 
 ### Filter Chain Order
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/filter-chain-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/filter-chain-order-handwritten.svg" alt="Handwritten: Filter Chain Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/filter-chain-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/filter-chain-order-diagram.svg" alt="Diagram: Filter Chain Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/filter-chain-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/filter-chain-order-sticky.svg" alt="Sticky Note: Filter Chain Order" width="30%">
-</a>
 
 
 When you define multiple `SecurityFilterChain` beans, the order of matching is determined by `@Order` or the `Ordered` interface. Spring Security matches the **first** chain whose `securityMatcher` matches. Subsequent chains are never checked.
@@ -364,16 +324,6 @@ The filter chain itself has a well-defined internal order. Key filters in order:
 | 13 | `FilterSecurityInterceptor` | Authorization decision |
 
 ### Adding Custom Filters
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/adding-custom-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/adding-custom-filters-handwritten.svg" alt="Handwritten: Adding Custom Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/adding-custom-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/adding-custom-filters-diagram.svg" alt="Diagram: Adding Custom Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/adding-custom-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/adding-custom-filters-sticky.svg" alt="Sticky Note: Adding Custom Filters" width="30%">
-</a>
 
 
 You insert custom filters at specific positions using the `HttpSecurity#addFilterBefore`, `addFilterAfter`, `addFilterAt` methods.
@@ -536,16 +486,6 @@ Authentication in Spring Security follows the Provider Manager pattern. An `Auth
 
 ### ProviderManager
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/providermanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/providermanager-handwritten.svg" alt="Handwritten: ProviderManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/providermanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/providermanager-diagram.svg" alt="Diagram: ProviderManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/providermanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/providermanager-sticky.svg" alt="Sticky Note: ProviderManager" width="30%">
-</a>
-
 
 `ProviderManager` is the default implementation of `AuthenticationManager`. It iterates over its list of providers and returns the first successful result.
 
@@ -572,16 +512,6 @@ public class ProviderManagerExample {
 ```
 
 ### DaoAuthenticationProvider
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/daoauthenticationprovider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/daoauthenticationprovider-handwritten.svg" alt="Handwritten: DaoAuthenticationProvider" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/daoauthenticationprovider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/daoauthenticationprovider-diagram.svg" alt="Diagram: DaoAuthenticationProvider" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/daoauthenticationprovider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/daoauthenticationprovider-sticky.svg" alt="Sticky Note: DaoAuthenticationProvider" width="30%">
-</a>
 
 
 `DaoAuthenticationProvider` is the most common provider. It uses a `UserDetailsService` to load a user record and a `PasswordEncoder` to verify the password.
@@ -630,16 +560,6 @@ public class DaoProviderConfig {
 
 ### AuthenticationManagerBuilder
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authenticationmanagerbuilder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authenticationmanagerbuilder-handwritten.svg" alt="Handwritten: AuthenticationManagerBuilder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authenticationmanagerbuilder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authenticationmanagerbuilder-diagram.svg" alt="Diagram: AuthenticationManagerBuilder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authenticationmanagerbuilder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authenticationmanagerbuilder-sticky.svg" alt="Sticky Note: AuthenticationManagerBuilder" width="30%">
-</a>
-
 
 `AuthenticationManagerBuilder` is a convenient builder that Spring Boot auto-configures. It wires `UserDetailsService`, `PasswordEncoder`, and `AuthenticationProvider` instances together.
 
@@ -681,16 +601,6 @@ public class AuthManagerConfig {
 ```
 
 ### Custom AuthenticationProvider
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-authenticationprovider-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-authenticationprovider-handwritten.svg" alt="Handwritten: Custom AuthenticationProvider" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-authenticationprovider-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-authenticationprovider-diagram.svg" alt="Diagram: Custom AuthenticationProvider" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-authenticationprovider-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-authenticationprovider-sticky.svg" alt="Sticky Note: Custom AuthenticationProvider" width="30%">
-</a>
 
 
 When authentication does not come from a username/password pair Ã¢â‚¬â€ such as OTP codes, hardware tokens, biometrics, or multi-factor challenges Ã¢â‚¬â€ you write a custom `AuthenticationProvider`.
@@ -858,16 +768,6 @@ public class CustomProviderConfig {
 
 ### UserDetails Ã¢â‚¬â€ The Contract
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/userdetails-the-contract-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/userdetails-the-contract-handwritten.svg" alt="Handwritten: UserDetails Ã¢â‚¬â€ The Contract" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/userdetails-the-contract-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/userdetails-the-contract-diagram.svg" alt="Diagram: UserDetails Ã¢â‚¬â€ The Contract" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/userdetails-the-contract-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/userdetails-the-contract-sticky.svg" alt="Sticky Note: UserDetails Ã¢â‚¬â€ The Contract" width="30%">
-</a>
-
 
 Every authenticated user is represented by a `UserDetails` instance. You can implement this interface directly or use the built-in `User` class.
 
@@ -960,16 +860,6 @@ public class CustomUserDetails implements UserDetails {
 
 ### Built-in User Class
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/built-in-user-class-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/built-in-user-class-handwritten.svg" alt="Handwritten: Built-in User Class" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/built-in-user-class-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/built-in-user-class-diagram.svg" alt="Diagram: Built-in User Class" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/built-in-user-class-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/built-in-user-class-sticky.svg" alt="Sticky Note: Built-in User Class" width="30%">
-</a>
-
 
 Spring Security provides a `User` class with a builder for convenience:
 
@@ -1022,16 +912,6 @@ public class BuiltInUserExample {
 
 ### InMemoryUserDetailsManager
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/inmemoryuserdetailsmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/inmemoryuserdetailsmanager-handwritten.svg" alt="Handwritten: InMemoryUserDetailsManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/inmemoryuserdetailsmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/inmemoryuserdetailsmanager-diagram.svg" alt="Diagram: InMemoryUserDetailsManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/inmemoryuserdetailsmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/inmemoryuserdetailsmanager-sticky.svg" alt="Sticky Note: InMemoryUserDetailsManager" width="30%">
-</a>
-
 
 For development, testing, and small-scale apps:
 
@@ -1074,16 +954,6 @@ public class InMemoryUserConfig {
 ```
 
 ### JdbcDaoImpl
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/jdbcdaoimpl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/jdbcdaoimpl-handwritten.svg" alt="Handwritten: JdbcDaoImpl" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/jdbcdaoimpl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/jdbcdaoimpl-diagram.svg" alt="Diagram: JdbcDaoImpl" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/jdbcdaoimpl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/jdbcdaoimpl-sticky.svg" alt="Sticky Note: JdbcDaoImpl" width="30%">
-</a>
 
 
 Uses a relational database to load users. Spring Boot auto-configures the `DataSource`, and `JdbcDaoImpl` executes queries against it.
@@ -1138,16 +1008,6 @@ CREATE UNIQUE INDEX ix_auth_username ON authorities(username, authority);
 ```
 
 ### Custom JDBC UserDetailsService
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-jdbc-userdetailsservice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-jdbc-userdetailsservice-handwritten.svg" alt="Handwritten: Custom JDBC UserDetailsService" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-jdbc-userdetailsservice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-jdbc-userdetailsservice-diagram.svg" alt="Diagram: Custom JDBC UserDetailsService" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-jdbc-userdetailsservice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-jdbc-userdetailsservice-sticky.svg" alt="Sticky Note: Custom JDBC UserDetailsService" width="30%">
-</a>
 
 
 When the database schema differs significantly, implement `UserDetailsService` directly:
@@ -1247,16 +1107,6 @@ public class JdbcCustomUserDetailsService implements UserDetailsService {
 
 ### Custom API UserDetailsService
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-api-userdetailsservice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-api-userdetailsservice-handwritten.svg" alt="Handwritten: Custom API UserDetailsService" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-api-userdetailsservice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-api-userdetailsservice-diagram.svg" alt="Diagram: Custom API UserDetailsService" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-api-userdetailsservice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-api-userdetailsservice-sticky.svg" alt="Sticky Note: Custom API UserDetailsService" width="30%">
-</a>
-
 
 When users are managed by an external identity service:
 
@@ -1331,16 +1181,6 @@ Storing passwords in plain text is unacceptable. Spring Security's `PasswordEnco
 
 ### PasswordEncoder Implementations
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/passwordencoder-implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/passwordencoder-implementations-handwritten.svg" alt="Handwritten: PasswordEncoder Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/passwordencoder-implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/passwordencoder-implementations-diagram.svg" alt="Diagram: PasswordEncoder Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/passwordencoder-implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/passwordencoder-implementations-sticky.svg" alt="Sticky Note: PasswordEncoder Implementations" width="30%">
-</a>
-
 
 ```java
 package com.course.security.password;
@@ -1378,16 +1218,6 @@ public class PasswordEncoderConfig {
 
 ### BCryptPasswordEncoder
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/bcryptpasswordencoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/bcryptpasswordencoder-handwritten.svg" alt="Handwritten: BCryptPasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/bcryptpasswordencoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/bcryptpasswordencoder-diagram.svg" alt="Diagram: BCryptPasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/bcryptpasswordencoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/bcryptpasswordencoder-sticky.svg" alt="Sticky Note: BCryptPasswordEncoder" width="30%">
-</a>
-
 
 BCrypt is the most widely used choice. It includes a built-in salt and is deliberately slow.
 
@@ -1423,16 +1253,6 @@ public class BCryptDemo {
 
 ### SCryptPasswordEncoder
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/scryptpasswordencoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/scryptpasswordencoder-handwritten.svg" alt="Handwritten: SCryptPasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/scryptpasswordencoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/scryptpasswordencoder-diagram.svg" alt="Diagram: SCryptPasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/scryptpasswordencoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/scryptpasswordencoder-sticky.svg" alt="Sticky Note: SCryptPasswordEncoder" width="30%">
-</a>
-
 
 SCrypt is memory-hard Ã¢â‚¬â€ it requires a configurable amount of RAM, making GPU-based attacks much more expensive.
 
@@ -1460,16 +1280,6 @@ public class SCryptDemo {
 ```
 
 ### Argon2PasswordEncoder
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/argon2passwordencoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/argon2passwordencoder-handwritten.svg" alt="Handwritten: Argon2PasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/argon2passwordencoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/argon2passwordencoder-diagram.svg" alt="Diagram: Argon2PasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/argon2passwordencoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/argon2passwordencoder-sticky.svg" alt="Sticky Note: Argon2PasswordEncoder" width="30%">
-</a>
 
 
 Argon2 is the winner of the 2015 Password Hashing Competition and is the most resistant to GPU/ASIC attacks. It is the recommended choice for new systems.
@@ -1500,16 +1310,6 @@ public class Argon2Demo {
 ```
 
 ### Password Strength Validation
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/password-strength-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/password-strength-validation-handwritten.svg" alt="Handwritten: Password Strength Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/password-strength-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/password-strength-validation-diagram.svg" alt="Diagram: Password Strength Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/password-strength-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/password-strength-validation-sticky.svg" alt="Sticky Note: Password Strength Validation" width="30%">
-</a>
 
 
 Spring Security does not enforce password strength, but you can integrate with the Passay library or write a custom validator:
@@ -1571,16 +1371,6 @@ public class PasswordStrengthEvaluator {
 ```
 
 ### DelegatingPasswordEncoder
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/delegatingpasswordencoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/delegatingpasswordencoder-handwritten.svg" alt="Handwritten: DelegatingPasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/delegatingpasswordencoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/delegatingpasswordencoder-diagram.svg" alt="Diagram: DelegatingPasswordEncoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/delegatingpasswordencoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/delegatingpasswordencoder-sticky.svg" alt="Sticky Note: DelegatingPasswordEncoder" width="30%">
-</a>
 
 
 When you upgrade hashing algorithms Ã¢â‚¬â€ for example, migrating from plain text or MD5 to BCrypt Ã¢â‚¬â€ old hashes must continue to work while new passwords use the new algorithm. `DelegatingPasswordEncoder` makes this seamless.
@@ -1645,16 +1435,6 @@ The stored password includes the algorithm ID as a prefix:
 ```
 
 ### Upgrading Password Encodings
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/upgrading-password-encodings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/upgrading-password-encodings-handwritten.svg" alt="Handwritten: Upgrading Password Encodings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/upgrading-password-encodings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/upgrading-password-encodings-diagram.svg" alt="Diagram: Upgrading Password Encodings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/upgrading-password-encodings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/upgrading-password-encodings-sticky.svg" alt="Sticky Note: Upgrading Password Encodings" width="30%">
-</a>
 
 
 When a user logs in with an old hash prefix, re-hash their password with the current algorithm on the fly:
@@ -1769,16 +1549,6 @@ HTTP sessions are the traditional mechanism for tracking authenticated users acr
 
 ### Session Creation Policy
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-creation-policy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-creation-policy-handwritten.svg" alt="Handwritten: Session Creation Policy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-creation-policy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-creation-policy-diagram.svg" alt="Diagram: Session Creation Policy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-creation-policy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-creation-policy-sticky.svg" alt="Sticky Note: Session Creation Policy" width="30%">
-</a>
-
 
 Controls when a session is created:
 
@@ -1842,16 +1612,6 @@ The four policies:
 
 ### Concurrent Session Control
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/concurrent-session-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/concurrent-session-control-handwritten.svg" alt="Handwritten: Concurrent Session Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/concurrent-session-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/concurrent-session-control-diagram.svg" alt="Diagram: Concurrent Session Control" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/concurrent-session-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/concurrent-session-control-sticky.svg" alt="Sticky Note: Concurrent Session Control" width="30%">
-</a>
-
 
 Limits how many simultaneous sessions a single user can have:
 
@@ -1898,16 +1658,6 @@ When `maxSessionsPreventsLogin` is `false` (default), the oldest session is expi
 
 ### Session Fixation Protection
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-fixation-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-fixation-protection-handwritten.svg" alt="Handwritten: Session Fixation Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-fixation-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-fixation-protection-diagram.svg" alt="Diagram: Session Fixation Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-fixation-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-fixation-protection-sticky.svg" alt="Sticky Note: Session Fixation Protection" width="30%">
-</a>
-
 
 Session fixation attacks trick a user into using a session ID chosen by the attacker. Spring Security protects against this by changing the session ID after login:
 
@@ -1949,16 +1699,6 @@ The four protection modes:
 | `changeSessionId` | Change the session ID only (default, Servlet 3.1+) |
 
 ### Session Registry
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-registry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-registry-handwritten.svg" alt="Handwritten: Session Registry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-registry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-registry-diagram.svg" alt="Diagram: Session Registry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/session-registry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/session-registry-sticky.svg" alt="Sticky Note: Session Registry" width="30%">
-</a>
 
 
 You can inspect and manage active sessions programmatically:
@@ -2015,16 +1755,6 @@ Remember-me allows users to be recognized across browser sessions without re-ent
 
 ### TokenBasedRememberMeServices
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/tokenbasedremembermeservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/tokenbasedremembermeservices-handwritten.svg" alt="Handwritten: TokenBasedRememberMeServices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/tokenbasedremembermeservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/tokenbasedremembermeservices-diagram.svg" alt="Diagram: TokenBasedRememberMeServices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/tokenbasedremembermeservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/tokenbasedremembermeservices-sticky.svg" alt="Sticky Note: TokenBasedRememberMeServices" width="30%">
-</a>
-
 
 A hash-based token stored in a cookie:
 
@@ -2073,16 +1803,6 @@ public class RememberMeConfig {
 ```
 
 ### PersistentTokenBasedRememberMeServices
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/persistenttokenbasedremembermeservices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/persistenttokenbasedremembermeservices-handwritten.svg" alt="Handwritten: PersistentTokenBasedRememberMeServices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/persistenttokenbasedremembermeservices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/persistenttokenbasedremembermeservices-diagram.svg" alt="Diagram: PersistentTokenBasedRememberMeServices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/persistenttokenbasedremembermeservices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/persistenttokenbasedremembermeservices-sticky.svg" alt="Sticky Note: PersistentTokenBasedRememberMeServices" width="30%">
-</a>
 
 
 A more secure approach Ã¢â‚¬â€ the token is stored in a database. If a token is stolen, the legitimate user's token is invalidated:
@@ -2154,16 +1874,6 @@ CREATE TABLE persistent_logins (
 
 ### RememberMeAuthenticationFilter
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/remembermeauthenticationfilter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/remembermeauthenticationfilter-handwritten.svg" alt="Handwritten: RememberMeAuthenticationFilter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/remembermeauthenticationfilter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/remembermeauthenticationfilter-diagram.svg" alt="Diagram: RememberMeAuthenticationFilter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/remembermeauthenticationfilter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/remembermeauthenticationfilter-sticky.svg" alt="Sticky Note: RememberMeAuthenticationFilter" width="30%">
-</a>
-
 
 The `RememberMeAuthenticationFilter` checks for a remember-me cookie on every request. If no `SecurityContext` exists and the cookie is valid, it auto-authenticates the user:
 
@@ -2183,16 +1893,6 @@ The `RememberMeAuthenticationFilter` checks for a remember-me cookie on every re
 ```
 
 ### InMemoryTokenRepositoryImpl
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/inmemorytokenrepositoryimpl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/inmemorytokenrepositoryimpl-handwritten.svg" alt="Handwritten: InMemoryTokenRepositoryImpl" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/inmemorytokenrepositoryimpl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/inmemorytokenrepositoryimpl-diagram.svg" alt="Diagram: InMemoryTokenRepositoryImpl" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/inmemorytokenrepositoryimpl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/inmemorytokenrepositoryimpl-sticky.svg" alt="Sticky Note: InMemoryTokenRepositoryImpl" width="30%">
-</a>
 
 
 For testing and development:
@@ -2222,16 +1922,6 @@ public class TestRememberMeConfig {
 The `SecurityContext` holds the `Authentication` object for the current thread. How it is stored and accessed is controlled by `SecurityContextHolder`.
 
 ### SecurityContextHolder Modes
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholder-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholder-modes-handwritten.svg" alt="Handwritten: SecurityContextHolder Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholder-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholder-modes-diagram.svg" alt="Diagram: SecurityContextHolder Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholder-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholder-modes-sticky.svg" alt="Sticky Note: SecurityContextHolder Modes" width="30%">
-</a>
 
 
 Three strategies control how the `SecurityContext` is propagated:
@@ -2291,16 +1981,6 @@ public class SecurityContextHolderDemo {
 
 ### SecurityContextHolderStrategy
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholderstrategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholderstrategy-handwritten.svg" alt="Handwritten: SecurityContextHolderStrategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholderstrategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholderstrategy-diagram.svg" alt="Diagram: SecurityContextHolderStrategy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholderstrategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextholderstrategy-sticky.svg" alt="Sticky Note: SecurityContextHolderStrategy" width="30%">
-</a>
-
 
 Implement a custom strategy if the standard three modes do not fit:
 
@@ -2348,16 +2028,6 @@ public class CustomSecurityContextHolderStrategy
 
 ### SecurityContextPersistenceFilter (Legacy) / SecurityContextHolderFilter
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextpersistencefilter-legacy-securitycontextholderfilter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextpersistencefilter-legacy-securitycontextholderfilter-handwritten.svg" alt="Handwritten: SecurityContextPersistenceFilter (Legacy) / SecurityContextHolderFilter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextpersistencefilter-legacy-securitycontextholderfilter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextpersistencefilter-legacy-securitycontextholderfilter-diagram.svg" alt="Diagram: SecurityContextPersistenceFilter (Legacy) / SecurityContextHolderFilter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitycontextpersistencefilter-legacy-securitycontextholderfilter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitycontextpersistencefilter-legacy-securitycontextholderfilter-sticky.svg" alt="Sticky Note: SecurityContextPersistenceFilter (Legacy) / SecurityContextHolderFilter" width="30%">
-</a>
-
 
 Before Spring Security 6, `SecurityContextPersistenceFilter` loaded and saved the `SecurityContext` from an `HttpSession` on every request. In Spring Security 6+, `SecurityContextHolderFilter` uses a `SecurityContextRepository` to do the same job more cleanly:
 
@@ -2403,16 +2073,6 @@ public class SecurityContextRepositoryConfig {
 
 ### @AuthenticationPrincipal Annotation
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authenticationprincipal-annotation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authenticationprincipal-annotation-handwritten.svg" alt="Handwritten: @AuthenticationPrincipal Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authenticationprincipal-annotation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authenticationprincipal-annotation-diagram.svg" alt="Diagram: @AuthenticationPrincipal Annotation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authenticationprincipal-annotation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authenticationprincipal-annotation-sticky.svg" alt="Sticky Note: @AuthenticationPrincipal Annotation" width="30%">
-</a>
-
 
 The cleanest way to access the current user in a controller:
 
@@ -2455,16 +2115,6 @@ public class ProfileController {
 ```
 
 ### Authentication.getPrincipal
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authentication-getprincipal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authentication-getprincipal-handwritten.svg" alt="Handwritten: Authentication.getPrincipal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authentication-getprincipal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authentication-getprincipal-diagram.svg" alt="Diagram: Authentication.getPrincipal" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/authentication-getprincipal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/authentication-getprincipal-sticky.svg" alt="Sticky Note: Authentication.getPrincipal" width="30%">
-</a>
 
 
 The `getPrincipal()` method returns different types depending on the authentication state:
@@ -2518,16 +2168,6 @@ public class PrincipalController {
 Authentication answers *who you are*. Authorization answers *what you are allowed to do*. Spring Security's authorization framework is built on voters.
 
 ### AccessDecisionManager
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionmanager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionmanager-handwritten.svg" alt="Handwritten: AccessDecisionManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionmanager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionmanager-diagram.svg" alt="Diagram: AccessDecisionManager" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionmanager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionmanager-sticky.svg" alt="Sticky Note: AccessDecisionManager" width="30%">
-</a>
 
 
 The `AccessDecisionManager` is the central decision-making interface. It receives the `Authentication`, a secured object (e.g., a `FilterInvocation` for HTTP requests), and a collection of `ConfigAttribute` instances (e.g., `ROLE_ADMIN`, `hasAuthority('write')`). It decides whether access is granted.
@@ -2606,16 +2246,6 @@ public class AuthorizationConfig {
 
 ### AccessDecisionVoter
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionvoter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionvoter-handwritten.svg" alt="Handwritten: AccessDecisionVoter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionvoter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionvoter-diagram.svg" alt="Diagram: AccessDecisionVoter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionvoter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/accessdecisionvoter-sticky.svg" alt="Sticky Note: AccessDecisionVoter" width="30%">
-</a>
-
 
 A voter evaluates a single `ConfigAttribute` against the `Authentication` object. The three possible responses are:
 
@@ -2676,16 +2306,6 @@ public class IpWhitelistVoter implements AccessDecisionVoter<FilterInvocation> {
 
 ### Role Hierarchy
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/role-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/role-hierarchy-handwritten.svg" alt="Handwritten: Role Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/role-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/role-hierarchy-diagram.svg" alt="Diagram: Role Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/role-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/role-hierarchy-sticky.svg" alt="Sticky Note: Role Hierarchy" width="30%">
-</a>
-
 
 Instead of checking every role explicitly, you can define a hierarchy where higher roles inherit lower ones:
 
@@ -2730,16 +2350,6 @@ public class RoleHierarchyConfig {
 ```
 
 ### FilterSecurityInterceptor
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/filtersecurityinterceptor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/filtersecurityinterceptor-handwritten.svg" alt="Handwritten: FilterSecurityInterceptor" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/filtersecurityinterceptor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/filtersecurityinterceptor-diagram.svg" alt="Diagram: FilterSecurityInterceptor" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/filtersecurityinterceptor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/filtersecurityinterceptor-sticky.svg" alt="Sticky Note: FilterSecurityInterceptor" width="30%">
-</a>
 
 
 `FilterSecurityInterceptor` is the final filter in the chain (position 13). It makes the authorization decision by calling the `AccessDecisionManager` and either allows the request to proceed or throws an `AccessDeniedException` / `AuthenticationException`.
@@ -2801,16 +2411,6 @@ public class FilterSecurityInterceptorConfig {
 
 ### ConfigAttribute
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/configattribute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/configattribute-handwritten.svg" alt="Handwritten: ConfigAttribute" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/configattribute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/configattribute-diagram.svg" alt="Diagram: ConfigAttribute" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/configattribute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/configattribute-sticky.svg" alt="Sticky Note: ConfigAttribute" width="30%">
-</a>
-
 
 A `ConfigAttribute` is a string-based security configuration Ã¢â‚¬â€ typically a role name or a SpEL expression:
 
@@ -2844,16 +2444,6 @@ public class ConfigAttributeDemo {
 ```
 
 ### SecurityMetadataSource
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitymetadatasource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitymetadatasource-handwritten.svg" alt="Handwritten: SecurityMetadataSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitymetadatasource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitymetadatasource-diagram.svg" alt="Diagram: SecurityMetadataSource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/securitymetadatasource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/securitymetadatasource-sticky.svg" alt="Sticky Note: SecurityMetadataSource" width="30%">
-</a>
 
 
 Maps secured objects (URLs, methods) to their `ConfigAttribute` collections:
@@ -2906,16 +2496,6 @@ public class DynamicSecurityMetadataSource
 
 ### Method-Level Security
 
-<a href="../../../assets/images/diagrams/java/25-auth-authz/method-level-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/method-level-security-handwritten.svg" alt="Handwritten: Method-Level Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/method-level-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/method-level-security-diagram.svg" alt="Diagram: Method-Level Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/method-level-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/method-level-security-sticky.svg" alt="Sticky Note: Method-Level Security" width="30%">
-</a>
-
 
 With `@EnableMethodSecurity`, you can secure individual service methods:
 
@@ -2965,16 +2545,6 @@ public class SecureDocumentService {
 ```
 
 ### Custom Permission Evaluator
-
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-permission-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-permission-evaluator-handwritten.svg" alt="Handwritten: Custom Permission Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-permission-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-permission-evaluator-diagram.svg" alt="Diagram: Custom Permission Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/25-auth-authz/custom-permission-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/25-auth-authz/custom-permission-evaluator-sticky.svg" alt="Sticky Note: Custom Permission Evaluator" width="30%">
-</a>
 
 
 For complex authorization logic:

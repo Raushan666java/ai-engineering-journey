@@ -123,16 +123,6 @@ print(result)                # None
 
 ### 9.2.1 Positional Arguments
 
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-1-positional-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-1-positional-arguments-handwritten.svg" alt="Handwritten: 9.2.1 Positional Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-1-positional-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-1-positional-arguments-diagram.svg" alt="Diagram: 9.2.1 Positional Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-1-positional-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-1-positional-arguments-sticky.svg" alt="Sticky Note: 9.2.1 Positional Arguments" width="30%">
-</a>
-
 
 Arguments are matched to parameters by position:
 
@@ -144,16 +134,6 @@ print(add(1, 2, 3))  # 6
 ```
 
 ### 9.2.2 Keyword Arguments
-
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-2-keyword-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-2-keyword-arguments-handwritten.svg" alt="Handwritten: 9.2.2 Keyword Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-2-keyword-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-2-keyword-arguments-diagram.svg" alt="Diagram: 9.2.2 Keyword Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-2-keyword-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-2-keyword-arguments-sticky.svg" alt="Sticky Note: 9.2.2 Keyword Arguments" width="30%">
-</a>
 
 
 Arguments can be specified by parameter name:
@@ -170,16 +150,6 @@ add(a=1, 2, 3)   # SyntaxError: positional argument follows keyword argument
 ```
 
 ### 9.2.3 Default Parameter Values
-
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-3-default-parameter-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-3-default-parameter-values-handwritten.svg" alt="Handwritten: 9.2.3 Default Parameter Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-3-default-parameter-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-3-default-parameter-values-diagram.svg" alt="Diagram: 9.2.3 Default Parameter Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-3-default-parameter-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-3-default-parameter-values-sticky.svg" alt="Sticky Note: 9.2.3 Default Parameter Values" width="30%">
-</a>
 
 
 ```python
@@ -213,16 +183,6 @@ print(append_to(2))   # [2]
 
 ### 9.2.4 *args → Variable Positional Arguments
 
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-4-args-variable-positional-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-4-args-variable-positional-arguments-handwritten.svg" alt="Handwritten: 9.2.4 *args → Variable Positional Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-4-args-variable-positional-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-4-args-variable-positional-arguments-diagram.svg" alt="Diagram: 9.2.4 *args → Variable Positional Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-4-args-variable-positional-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-4-args-variable-positional-arguments-sticky.svg" alt="Sticky Note: 9.2.4 *args → Variable Positional Arguments" width="30%">
-</a>
-
 
 `*args` captures extra positional arguments as a tuple:
 
@@ -245,16 +205,6 @@ log("INFO", "Starting", "Processing", "Done")
 
 ### 9.2.5 **kwargs → Variable Keyword Arguments
 
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-5-kwargs-variable-keyword-arguments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-5-kwargs-variable-keyword-arguments-handwritten.svg" alt="Handwritten: 9.2.5 **kwargs → Variable Keyword Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-5-kwargs-variable-keyword-arguments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-5-kwargs-variable-keyword-arguments-diagram.svg" alt="Diagram: 9.2.5 **kwargs → Variable Keyword Arguments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-5-kwargs-variable-keyword-arguments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-5-kwargs-variable-keyword-arguments-sticky.svg" alt="Sticky Note: 9.2.5 **kwargs → Variable Keyword Arguments" width="30%">
-</a>
-
 
 `**kwargs` captures extra keyword arguments as a dictionary:
 
@@ -272,16 +222,6 @@ create_profile("Alice", age=30, city="NYC", occupation="Engineer")
 ```
 
 ### 9.2.6 Argument Unpacking
-
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-6-argument-unpacking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-6-argument-unpacking-handwritten.svg" alt="Handwritten: 9.2.6 Argument Unpacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-6-argument-unpacking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-6-argument-unpacking-diagram.svg" alt="Diagram: 9.2.6 Argument Unpacking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-6-argument-unpacking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-6-argument-unpacking-sticky.svg" alt="Sticky Note: 9.2.6 Argument Unpacking" width="30%">
-</a>
 
 
 `*` unpacks iterables; `**` unpacks dictionaries:
@@ -302,16 +242,6 @@ print(point(*values, z=3))  # (1, 2, 3)
 ```
 
 ### 9.2.7 Parameter Ordering
-
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-7-parameter-ordering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-7-parameter-ordering-handwritten.svg" alt="Handwritten: 9.2.7 Parameter Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-7-parameter-ordering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-7-parameter-ordering-diagram.svg" alt="Diagram: 9.2.7 Parameter Ordering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/9-2-7-parameter-ordering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/9-2-7-parameter-ordering-sticky.svg" alt="Sticky Note: 9.2.7 Parameter Ordering" width="30%">
-</a>
 
 
 The complete parameter order is:
@@ -700,16 +630,6 @@ console.log(counter());  // 11
 ```
 
 ### Python vs TypeScript Functions
-
-<a href="../../../assets/images/diagrams/python-programming/09-functions/python-vs-typescript-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/python-vs-typescript-functions-handwritten.svg" alt="Handwritten: Python vs TypeScript Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/python-vs-typescript-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/python-vs-typescript-functions-diagram.svg" alt="Diagram: Python vs TypeScript Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/09-functions/python-vs-typescript-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/09-functions/python-vs-typescript-functions-sticky.svg" alt="Sticky Note: Python vs TypeScript Functions" width="30%">
-</a>
 
 
 | Feature | Python | TypeScript |

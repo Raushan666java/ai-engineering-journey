@@ -126,16 +126,6 @@ flowchart LR
 
 ### Knowledge-Based Agents
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/knowledge-based-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/knowledge-based-agents-handwritten.svg" alt="Handwritten: Knowledge-Based Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/knowledge-based-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/knowledge-based-agents-diagram.svg" alt="Diagram: Knowledge-Based Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/knowledge-based-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/knowledge-based-agents-sticky.svg" alt="Sticky Note: Knowledge-Based Agents" width="30%">
-</a>
-
 
 **Real-World Analogy: The Librarian**
 
@@ -248,16 +238,6 @@ The TELL operation is always fast. ASK complexity depends entirely on the infere
 
 ### Logic Fundamentals
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/logic-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/logic-fundamentals-handwritten.svg" alt="Handwritten: Logic Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/logic-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/logic-fundamentals-diagram.svg" alt="Diagram: Logic Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/logic-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/logic-fundamentals-sticky.svg" alt="Sticky Note: Logic Fundamentals" width="30%">
-</a>
-
 
 **Real-World Analogy: Grammar of a Natural Language**
 
@@ -287,16 +267,6 @@ Every logic consists of three pillars:
 ---
 
 ### Propositional Logic (PL)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-pl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-pl-handwritten.svg" alt="Handwritten: Propositional Logic (PL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-pl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-pl-diagram.svg" alt="Diagram: Propositional Logic (PL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-pl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-pl-sticky.svg" alt="Sticky Note: Propositional Logic (PL)" width="30%">
-</a>
 
 
 **Real-World Analogy: Boolean Circuit Design**
@@ -474,16 +444,6 @@ The exponential growth makes truth tables impractical for more than 20-30 symbol
 
 ### Inference Rules
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-rules-handwritten.svg" alt="Handwritten: Inference Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-rules-diagram.svg" alt="Diagram: Inference Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-rules-sticky.svg" alt="Sticky Note: Inference Rules" width="30%">
-</a>
-
 
 **Real-World Analogy: Legal Inference Patterns**
 
@@ -562,16 +522,6 @@ The two premises share a complementary literal (P and Â¬P). Resolution cancels
 ---
 
 ### Resolution Algorithm
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/resolution-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/resolution-algorithm-handwritten.svg" alt="Handwritten: Resolution Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/resolution-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/resolution-algorithm-diagram.svg" alt="Diagram: Resolution Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/resolution-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/resolution-algorithm-sticky.svg" alt="Sticky Note: Resolution Algorithm" width="30%">
-</a>
 
 
 **Real-World Analogy: Process of Elimination in a Whodunit**
@@ -762,16 +712,6 @@ In practice, resolution works well for problems with small clause sets and is th
 
 ### Forward Chaining
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/forward-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/forward-chaining-handwritten.svg" alt="Handwritten: Forward Chaining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/forward-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/forward-chaining-diagram.svg" alt="Diagram: Forward Chaining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/forward-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/forward-chaining-sticky.svg" alt="Sticky Note: Forward Chaining" width="30%">
-</a>
-
 
 **Real-World Analogy: Spreading Activation in a Social Network**
 
@@ -918,16 +858,6 @@ Forward chaining is **linear** in the number of rules when the KB size is bounde
 ---
 
 ### Backward Chaining
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/backward-chaining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/backward-chaining-handwritten.svg" alt="Handwritten: Backward Chaining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/backward-chaining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/backward-chaining-diagram.svg" alt="Diagram: Backward Chaining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/backward-chaining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/backward-chaining-sticky.svg" alt="Sticky Note: Backward Chaining" width="30%">
-</a>
 
 
 **Real-World Analogy: Working Backwards from a Destination**
@@ -1078,16 +1008,6 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 
 ### Propositional Logic vs First-Order Logic
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-vs-first-order-logic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-vs-first-order-logic-handwritten.svg" alt="Handwritten: Propositional Logic vs First-Order Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-vs-first-order-logic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-vs-first-order-logic-diagram.svg" alt="Diagram: Propositional Logic vs First-Order Logic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-vs-first-order-logic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/propositional-logic-vs-first-order-logic-sticky.svg" alt="Sticky Note: Propositional Logic vs First-Order Logic" width="30%">
-</a>
-
 
 | Feature | Propositional Logic (PL) | First-Order Logic (FOL) |
 |---------|:------------------------:|:----------------------:|
@@ -1107,16 +1027,6 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 
 ### Inference Methods → Comparison Table
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-methods-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-methods-comparison-table-handwritten.svg" alt="Handwritten: Inference Methods → Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-methods-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-methods-comparison-table-diagram.svg" alt="Diagram: Inference Methods → Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-methods-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/inference-methods-comparison-table-sticky.svg" alt="Sticky Note: Inference Methods → Comparison Table" width="30%">
-</a>
-
 
 | Method | Sound? | Complete? | Complexity | KB Type | Best For |
 |--------|:------:|:---------:|:----------:|:-------:|:--------:|
@@ -1130,16 +1040,6 @@ Backward chaining only explores rules relevant to the goal, making it much more 
 ---
 
 ### Satisfiability and Validity
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/satisfiability-and-validity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/satisfiability-and-validity-handwritten.svg" alt="Handwritten: Satisfiability and Validity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/satisfiability-and-validity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/satisfiability-and-validity-diagram.svg" alt="Diagram: Satisfiability and Validity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/06-logic/satisfiability-and-validity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/06-logic/satisfiability-and-validity-sticky.svg" alt="Sticky Note: Satisfiability and Validity" width="30%">
-</a>
 
 
 **Real-World Analogy: Puzzle Pieces**

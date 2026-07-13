@@ -117,16 +117,6 @@ flowchart TD
 
 ### Domain-Driven Design and Bounded Context
 
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/domain-driven-design-and-bounded-context-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/domain-driven-design-and-bounded-context-handwritten.svg" alt="Handwritten: Domain-Driven Design and Bounded Context" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/domain-driven-design-and-bounded-context-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/domain-driven-design-and-bounded-context-diagram.svg" alt="Diagram: Domain-Driven Design and Bounded Context" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/domain-driven-design-and-bounded-context-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/domain-driven-design-and-bounded-context-sticky.svg" alt="Sticky Note: Domain-Driven Design and Bounded Context" width="30%">
-</a>
-
 
 Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for modeling complex business domains. The central concept is the **bounded context** Ã¢â‚¬â€ a explicit boundary within which a particular domain model applies. Each bounded context has its own **ubiquitous language**, a shared vocabulary used by domain experts and developers alike.
 
@@ -143,16 +133,6 @@ Domain-Driven Design (DDD), introduced by Eric Evans, provides a framework for m
 
 ### Service Decomposition Strategies
 
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/service-decomposition-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/service-decomposition-strategies-handwritten.svg" alt="Handwritten: Service Decomposition Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/service-decomposition-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/service-decomposition-strategies-diagram.svg" alt="Diagram: Service Decomposition Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/service-decomposition-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/service-decomposition-strategies-sticky.svg" alt="Sticky Note: Service Decomposition Strategies" width="30%">
-</a>
-
 
 Three primary strategies guide service decomposition:
 
@@ -161,16 +141,6 @@ Three primary strategies guide service decomposition:
 3. **By Conway's Law**: Structure services to match the team organization Ã¢â‚¬â€ "organizations design systems that mirror their communication structure"
 
 ### Inter-Service Communication
-
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/inter-service-communication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/inter-service-communication-handwritten.svg" alt="Handwritten: Inter-Service Communication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/inter-service-communication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/inter-service-communication-diagram.svg" alt="Diagram: Inter-Service Communication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/inter-service-communication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/inter-service-communication-sticky.svg" alt="Sticky Note: Inter-Service Communication" width="30%">
-</a>
 
 
 | Approach | When to Use | Technology |
@@ -181,30 +151,10 @@ Three primary strategies guide service decomposition:
 
 ### Data Ownership
 
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/data-ownership-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/data-ownership-handwritten.svg" alt="Handwritten: Data Ownership" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/data-ownership-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/data-ownership-diagram.svg" alt="Diagram: Data Ownership" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/data-ownership-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/data-ownership-sticky.svg" alt="Sticky Note: Data Ownership" width="30%">
-</a>
-
 
 **Database-per-service** is the preferred pattern Ã¢â‚¬â€ each service owns its data exclusively and exposes it only through its API. The **shared-database anti-pattern** couples services at the data layer, creating hidden dependencies that prevent independent evolution.
 
 ### Service Mesh
-
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/service-mesh-handwritten.svg" alt="Handwritten: Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/service-mesh-diagram.svg" alt="Diagram: Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/38-microservices-principles/service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/38-microservices-principles/service-mesh-sticky.svg" alt="Sticky Note: Service Mesh" width="30%">
-</a>
 
 
 A service mesh manages inter-service communication through a dedicated infrastructure layer. Key concepts:

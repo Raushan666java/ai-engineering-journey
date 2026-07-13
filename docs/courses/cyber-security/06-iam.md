@@ -99,16 +99,6 @@ IAM is the security discipline that ensures the right entity accesses the right 
 
 ### The IAM Triangle
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/the-iam-triangle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/the-iam-triangle-handwritten.svg" alt="Handwritten: The IAM Triangle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/the-iam-triangle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/the-iam-triangle-diagram.svg" alt="Diagram: The IAM Triangle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/the-iam-triangle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/the-iam-triangle-sticky.svg" alt="Sticky Note: The IAM Triangle" width="30%">
-</a>
-
 
 ```
                     +----------------------+
@@ -122,16 +112,6 @@ IAM is the security discipline that ensures the right entity accesses the right 
 ```
 
 ### Identity Lifecycle
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/identity-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/identity-lifecycle-handwritten.svg" alt="Handwritten: Identity Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/identity-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/identity-lifecycle-diagram.svg" alt="Diagram: Identity Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/identity-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/identity-lifecycle-sticky.svg" alt="Sticky Note: Identity Lifecycle" width="30%">
-</a>
 
 
 ```
@@ -165,16 +145,6 @@ Authentication factors are categories of evidence used to prove identity. Three 
 
 ### 2.1 Something You Know (Knowledge Factor)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-1-something-you-know-knowledge-factor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-1-something-you-know-knowledge-factor-handwritten.svg" alt="Handwritten: 2.1 Something You Know (Knowledge Factor)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-1-something-you-know-knowledge-factor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-1-something-you-know-knowledge-factor-diagram.svg" alt="Diagram: 2.1 Something You Know (Knowledge Factor)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-1-something-you-know-knowledge-factor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-1-something-you-know-knowledge-factor-sticky.svg" alt="Sticky Note: 2.1 Something You Know (Knowledge Factor)" width="30%">
-</a>
-
 
 Passwords, PINs, security questions, passphrases.
 
@@ -188,16 +158,6 @@ Passwords, PINs, security questions, passphrases.
 
 ### 2.2 Something You Have (Possession Factor)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-2-something-you-have-possession-factor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-2-something-you-have-possession-factor-handwritten.svg" alt="Handwritten: 2.2 Something You Have (Possession Factor)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-2-something-you-have-possession-factor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-2-something-you-have-possession-factor-diagram.svg" alt="Diagram: 2.2 Something You Have (Possession Factor)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-2-something-you-have-possession-factor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-2-something-you-have-possession-factor-sticky.svg" alt="Sticky Note: 2.2 Something You Have (Possession Factor)" width="30%">
-</a>
-
 
 Physical devices: smart cards, hardware tokens (YubiKey), TOTP authenticator apps, SMS phone, certificates on smart card.
 
@@ -205,16 +165,6 @@ Physical devices: smart cards, hardware tokens (YubiKey), TOTP authenticator app
 **Weaknesses:** Can be lost, stolen, or cloned (SMS has SIM-swap risk).
 
 ### 2.3 Something You Are (Inherence Factor)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-3-something-you-are-inherence-factor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-3-something-you-are-inherence-factor-handwritten.svg" alt="Handwritten: 2.3 Something You Are (Inherence Factor)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-3-something-you-are-inherence-factor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-3-something-you-are-inherence-factor-diagram.svg" alt="Diagram: 2.3 Something You Are (Inherence Factor)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-3-something-you-are-inherence-factor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-3-something-you-are-inherence-factor-sticky.svg" alt="Sticky Note: 2.3 Something You Are (Inherence Factor)" width="30%">
-</a>
 
 
 Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
@@ -224,16 +174,6 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 
 ### 2.4 Extended Factors
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-4-extended-factors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-4-extended-factors-handwritten.svg" alt="Handwritten: 2.4 Extended Factors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-4-extended-factors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-4-extended-factors-diagram.svg" alt="Diagram: 2.4 Extended Factors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/2-4-extended-factors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/2-4-extended-factors-sticky.svg" alt="Sticky Note: 2.4 Extended Factors" width="30%">
-</a>
-
 
 | Factor | Description | Example | Security Level |
 |--------|------------|---------|---------------|
@@ -242,16 +182,6 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 | **Time** | When you access | Time-based restrictions | Low (easily bypassed) |
 
 ### Auth Factor Comparison
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/auth-factor-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/auth-factor-comparison-handwritten.svg" alt="Handwritten: Auth Factor Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/auth-factor-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/auth-factor-comparison-diagram.svg" alt="Diagram: Auth Factor Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/auth-factor-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/auth-factor-comparison-sticky.svg" alt="Sticky Note: Auth Factor Comparison" width="30%">
-</a>
 
 
 | Criteria | Knowledge | Possession | Inherence | Location | Behavior |
@@ -274,16 +204,6 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 ## 3. Password Security
 
 ### 3.1 Password Hashing Fundamentals
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-1-password-hashing-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-1-password-hashing-fundamentals-handwritten.svg" alt="Handwritten: 3.1 Password Hashing Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-1-password-hashing-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-1-password-hashing-fundamentals-diagram.svg" alt="Diagram: 3.1 Password Hashing Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-1-password-hashing-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-1-password-hashing-fundamentals-sticky.svg" alt="Sticky Note: 3.1 Password Hashing Fundamentals" width="30%">
-</a>
 
 
 **Real-World Analogy:** A meat grinder. You put a steak in (password), you get ground beef out (hash). You cannot reconstruct the steak from ground beef (one-way function). Every time you put the exact same steak in, you get the exact same ground beef out (deterministic). A **salt** is like adding a unique spice blend to each steak so even identical steaks produce different ground beef.
@@ -310,16 +230,6 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 
 ### 3.2 Salting
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-2-salting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-2-salting-handwritten.svg" alt="Handwritten: 3.2 Salting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-2-salting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-2-salting-diagram.svg" alt="Diagram: 3.2 Salting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-2-salting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-2-salting-sticky.svg" alt="Sticky Note: 3.2 Salting" width="30%">
-</a>
-
 
 **Why Salt?**
 - Prevents rainbow table attacks (precomputed hash dictionaries)
@@ -330,16 +240,6 @@ Biometrics: fingerprint, face, iris, voice, gait, keystroke dynamics.
 **With Salt:** `hash("password123" + random_salt)` -> different hash per user.
 
 ### 3.3 Password Hashing Algorithms
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-3-password-hashing-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-3-password-hashing-algorithms-handwritten.svg" alt="Handwritten: 3.3 Password Hashing Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-3-password-hashing-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-3-password-hashing-algorithms-diagram.svg" alt="Diagram: 3.3 Password Hashing Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-3-password-hashing-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-3-password-hashing-algorithms-sticky.svg" alt="Sticky Note: 3.3 Password Hashing Algorithms" width="30%">
-</a>
 
 
 #### bcrypt
@@ -439,16 +339,6 @@ NIST-approved (FIPS 140). Used in WPA2, iOS, many legacy systems.
 
 ### Password Hash Comparison
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-hash-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-hash-comparison-handwritten.svg" alt="Handwritten: Password Hash Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-hash-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-hash-comparison-diagram.svg" alt="Diagram: Password Hash Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-hash-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-hash-comparison-sticky.svg" alt="Sticky Note: Password Hash Comparison" width="30%">
-</a>
-
 
 | Algorithm | Memory-Hard | GPU-Resistant | Configurable | PHC Winner | Best Use Case |
 |-----------|------------|--------------|-------------|-----------|--------------|
@@ -460,16 +350,6 @@ NIST-approved (FIPS 140). Used in WPA2, iOS, many legacy systems.
 **Recommendation:** Use argon2id with t=3, m=65536, p=4. Fallback to bcrypt cost=12.
 
 ### 3.4 Password Policies (NIST SP 800-63B Guidelines)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-4-password-policies-nist-sp-800-63b-guidelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-4-password-policies-nist-sp-800-63b-guidelines-handwritten.svg" alt="Handwritten: 3.4 Password Policies (NIST SP 800-63B Guidelines)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-4-password-policies-nist-sp-800-63b-guidelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-4-password-policies-nist-sp-800-63b-guidelines-diagram.svg" alt="Diagram: 3.4 Password Policies (NIST SP 800-63B Guidelines)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-4-password-policies-nist-sp-800-63b-guidelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-4-password-policies-nist-sp-800-63b-guidelines-sticky.svg" alt="Sticky Note: 3.4 Password Policies (NIST SP 800-63B Guidelines)" width="30%">
-</a>
 
 
 | Policy | Old Approach (Deprecated) | NIST 800-63B Approach |
@@ -485,16 +365,6 @@ NIST-approved (FIPS 140). Used in WPA2, iOS, many legacy systems.
 **Why no expiration?** Research shows users choose weaker passwords and predictable patterns (Password1! -> Password2!) when forced to rotate. Only expire on known compromise, forgotten password, or idle > 60 days.
 
 ### 3.5 Linux Password Policies (passwd / chage)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-5-linux-password-policies-passwd-chage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-5-linux-password-policies-passwd-chage-handwritten.svg" alt="Handwritten: 3.5 Linux Password Policies (passwd / chage)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-5-linux-password-policies-passwd-chage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-5-linux-password-policies-passwd-chage-diagram.svg" alt="Diagram: 3.5 Linux Password Policies (passwd / chage)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-5-linux-password-policies-passwd-chage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-5-linux-password-policies-passwd-chage-sticky.svg" alt="Sticky Note: 3.5 Linux Password Policies (passwd / chage)" width="30%">
-</a>
 
 
 **Examining password status:**
@@ -523,16 +393,6 @@ sudo cat /etc/shadow | grep username
 ```
 
 ### 3.6 Hashcat NTLM Hash Cracking Demo
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-6-hashcat-ntlm-hash-cracking-demo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-6-hashcat-ntlm-hash-cracking-demo-handwritten.svg" alt="Handwritten: 3.6 Hashcat NTLM Hash Cracking Demo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-6-hashcat-ntlm-hash-cracking-demo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-6-hashcat-ntlm-hash-cracking-demo-diagram.svg" alt="Diagram: 3.6 Hashcat NTLM Hash Cracking Demo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/3-6-hashcat-ntlm-hash-cracking-demo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/3-6-hashcat-ntlm-hash-cracking-demo-sticky.svg" alt="Sticky Note: 3.6 Hashcat NTLM Hash Cracking Demo" width="30%">
-</a>
 
 
 ```bash
@@ -570,16 +430,6 @@ MFA requires two or more **different** authentication factors. 2FA uses exactly 
 
 ### 4.1 TOTP (Time-based OTP) → RFC 6238
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-1-totp-time-based-otp-rfc-6238-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-1-totp-time-based-otp-rfc-6238-handwritten.svg" alt="Handwritten: 4.1 TOTP (Time-based OTP) → RFC 6238" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-1-totp-time-based-otp-rfc-6238-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-1-totp-time-based-otp-rfc-6238-diagram.svg" alt="Diagram: 4.1 TOTP (Time-based OTP) → RFC 6238" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-1-totp-time-based-otp-rfc-6238-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-1-totp-time-based-otp-rfc-6238-sticky.svg" alt="Sticky Note: 4.1 TOTP (Time-based OTP) → RFC 6238" width="30%">
-</a>
-
 
 **Algorithm:** `TOTP = HOTP(K, T)` where `T = floor((time - T0) / X)`
 
@@ -614,16 +464,6 @@ HMAC-SHA1 result -> dynamic truncation -> mod 10^6 = 123456
 
 ### 4.2 HOTP (HMAC-based OTP) → RFC 4226
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-2-hotp-hmac-based-otp-rfc-4226-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-2-hotp-hmac-based-otp-rfc-4226-handwritten.svg" alt="Handwritten: 4.2 HOTP (HMAC-based OTP) → RFC 4226" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-2-hotp-hmac-based-otp-rfc-4226-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-2-hotp-hmac-based-otp-rfc-4226-diagram.svg" alt="Diagram: 4.2 HOTP (HMAC-based OTP) → RFC 4226" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-2-hotp-hmac-based-otp-rfc-4226-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-2-hotp-hmac-based-otp-rfc-4226-sticky.svg" alt="Sticky Note: 4.2 HOTP (HMAC-based OTP) → RFC 4226" width="30%">
-</a>
-
 
 `HOTP(K, C) = Truncate(HMAC-SHA1(K, C))` where C is a counter.
 
@@ -633,16 +473,6 @@ HMAC-SHA1 result -> dynamic truncation -> mod 10^6 = 123456
 | Pre-generatable codes | Server must maintain look-ahead window |
 
 ### 4.3 TOTP Generator in PowerShell
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-3-totp-generator-in-powershell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-3-totp-generator-in-powershell-handwritten.svg" alt="Handwritten: 4.3 TOTP Generator in PowerShell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-3-totp-generator-in-powershell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-3-totp-generator-in-powershell-diagram.svg" alt="Diagram: 4.3 TOTP Generator in PowerShell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-3-totp-generator-in-powershell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-3-totp-generator-in-powershell-sticky.svg" alt="Sticky Note: 4.3 TOTP Generator in PowerShell" width="30%">
-</a>
 
 
 ```powershell
@@ -699,32 +529,12 @@ function New-TOTPCode {
 
 ### 4.4 SMS and Push MFA
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-4-sms-and-push-mfa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-4-sms-and-push-mfa-handwritten.svg" alt="Handwritten: 4.4 SMS and Push MFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-4-sms-and-push-mfa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-4-sms-and-push-mfa-diagram.svg" alt="Diagram: 4.4 SMS and Push MFA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-4-sms-and-push-mfa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-4-sms-and-push-mfa-sticky.svg" alt="Sticky Note: 4.4 SMS and Push MFA" width="30%">
-</a>
-
 
 **SMS:** NIST deprecated as "restricted" (SP 800-63B). Risks: SIM swap, SS7 interception.
 
 **Push:** Better than SMS (device binding + signature). Risk: Push fatigue → users approve without verifying.
 
 ### 4.5 Hardware Tokens (U2F / FIDO2 / WebAuthn Passkeys)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-5-hardware-tokens-u2f-fido2-webauthn-passkeys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-5-hardware-tokens-u2f-fido2-webauthn-passkeys-handwritten.svg" alt="Handwritten: 4.5 Hardware Tokens (U2F / FIDO2 / WebAuthn Passkeys)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-5-hardware-tokens-u2f-fido2-webauthn-passkeys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-5-hardware-tokens-u2f-fido2-webauthn-passkeys-diagram.svg" alt="Diagram: 4.5 Hardware Tokens (U2F / FIDO2 / WebAuthn Passkeys)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-5-hardware-tokens-u2f-fido2-webauthn-passkeys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-5-hardware-tokens-u2f-fido2-webauthn-passkeys-sticky.svg" alt="Sticky Note: 4.5 Hardware Tokens (U2F / FIDO2 / WebAuthn Passkeys)" width="30%">
-</a>
 
 
 **U2F Flow:**
@@ -765,16 +575,6 @@ User --[login+password]--> Website
 
 ### 4.6 YubiKey FIDO2 Setup
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-6-yubikey-fido2-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-6-yubikey-fido2-setup-handwritten.svg" alt="Handwritten: 4.6 YubiKey FIDO2 Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-6-yubikey-fido2-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-6-yubikey-fido2-setup-diagram.svg" alt="Diagram: 4.6 YubiKey FIDO2 Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/4-6-yubikey-fido2-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/4-6-yubikey-fido2-setup-sticky.svg" alt="Sticky Note: 4.6 YubiKey FIDO2 Setup" width="30%">
-</a>
-
 
 ```bash
 # List connected YubiKeys
@@ -791,16 +591,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 ```
 
 ### MFA Method Comparison
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/mfa-method-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/mfa-method-comparison-handwritten.svg" alt="Handwritten: MFA Method Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/mfa-method-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/mfa-method-comparison-diagram.svg" alt="Diagram: MFA Method Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/mfa-method-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/mfa-method-comparison-sticky.svg" alt="Sticky Note: MFA Method Comparison" width="30%">
-</a>
 
 
 | Method | Phishing Resistant | Cost | User Experience | Offline | FIPS |
@@ -821,16 +611,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 ### 5.1 Metrics
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/5-1-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/5-1-metrics-handwritten.svg" alt="Handwritten: 5.1 Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/5-1-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/5-1-metrics-diagram.svg" alt="Diagram: 5.1 Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/5-1-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/5-1-metrics-sticky.svg" alt="Sticky Note: 5.1 Metrics" width="30%">
-</a>
-
 
 | Metric | Definition |
 |--------|-----------|
@@ -844,16 +624,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 ### 5.2 Types
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/5-2-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/5-2-types-handwritten.svg" alt="Handwritten: 5.2 Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/5-2-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/5-2-types-diagram.svg" alt="Diagram: 5.2 Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/5-2-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/5-2-types-sticky.svg" alt="Sticky Note: 5.2 Types" width="30%">
-</a>
-
 
 **Fingerprint:** FAR ~0.001%, FRR ~2-5%, EER ~2%. Spoofable with gelatin copies.
 
@@ -862,16 +632,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 **Iris:** FAR ~0.00001%, FRR ~0.1-1%, EER ~0.01%. Most accurate. Requires cooperative user close to camera.
 
 ### Biometric Comparison
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/biometric-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/biometric-comparison-handwritten.svg" alt="Handwritten: Biometric Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/biometric-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/biometric-comparison-diagram.svg" alt="Diagram: Biometric Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/biometric-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/biometric-comparison-sticky.svg" alt="Sticky Note: Biometric Comparison" width="30%">
-</a>
 
 
 | Property | Fingerprint | Face | Iris | Voice |
@@ -899,16 +659,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 ### SSO Models
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/sso-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/sso-models-handwritten.svg" alt="Handwritten: SSO Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/sso-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/sso-models-diagram.svg" alt="Diagram: SSO Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/sso-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/sso-models-sticky.svg" alt="Sticky Note: SSO Models" width="30%">
-</a>
-
 
 | Model | Description | Example |
 |-------|------------|---------|
@@ -928,16 +678,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 ### Components
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/components-handwritten.svg" alt="Handwritten: Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/components-diagram.svg" alt="Diagram: Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/components-sticky.svg" alt="Sticky Note: Components" width="30%">
-</a>
-
 
 | Term | Description |
 |------|------------|
@@ -949,16 +689,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 ### SAML SP-Initiated Flow
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-sp-initiated-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-sp-initiated-flow-handwritten.svg" alt="Handwritten: SAML SP-Initiated Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-sp-initiated-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-sp-initiated-flow-diagram.svg" alt="Diagram: SAML SP-Initiated Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-sp-initiated-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-sp-initiated-flow-sticky.svg" alt="Sticky Note: SAML SP-Initiated Flow" width="30%">
-</a>
-
 
 **Numbered Steps:**
 1. User navigates to `https://app.example.com/dashboard`
@@ -969,16 +699,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 6. SP validates signature, extracts attributes, creates session
 
 ### Assertion XML Structure
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/assertion-xml-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/assertion-xml-structure-handwritten.svg" alt="Handwritten: Assertion XML Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/assertion-xml-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/assertion-xml-structure-diagram.svg" alt="Diagram: Assertion XML Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/assertion-xml-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/assertion-xml-structure-sticky.svg" alt="Sticky Note: Assertion XML Structure" width="30%">
-</a>
 
 
 ```xml
@@ -1000,16 +720,6 @@ pamu2fcfg -u $USER -n -o /etc/u2f_mappings
 
 ### OpenSSL Certificate for SAML Signing
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/openssl-certificate-for-saml-signing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/openssl-certificate-for-saml-signing-handwritten.svg" alt="Handwritten: OpenSSL Certificate for SAML Signing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/openssl-certificate-for-saml-signing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/openssl-certificate-for-saml-signing-diagram.svg" alt="Diagram: OpenSSL Certificate for SAML Signing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/openssl-certificate-for-saml-signing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/openssl-certificate-for-saml-signing-sticky.svg" alt="Sticky Note: OpenSSL Certificate for SAML Signing" width="30%">
-</a>
-
 
 ```bash
 # Generate key
@@ -1024,16 +734,6 @@ openssl dgst -sha256 -verify saml-signing.pub -signature request.sig request.xml
 ```
 
 ### SAML Security
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-security-handwritten.svg" alt="Handwritten: SAML Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-security-diagram.svg" alt="Diagram: SAML Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-security-sticky.svg" alt="Sticky Note: SAML Security" width="30%">
-</a>
 
 
 | Attack | Mitigation |
@@ -1051,16 +751,6 @@ openssl dgst -sha256 -verify saml-signing.pub -signature request.sig request.xml
 
 ### 8.1 Core Concepts
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-1-core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-1-core-concepts-handwritten.svg" alt="Handwritten: 8.1 Core Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-1-core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-1-core-concepts-diagram.svg" alt="Diagram: 8.1 Core Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-1-core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-1-core-concepts-sticky.svg" alt="Sticky Note: 8.1 Core Concepts" width="30%">
-</a>
-
 
 | Term | Definition | Analogy |
 |------|-----------|---------|
@@ -1072,16 +762,6 @@ openssl dgst -sha256 -verify saml-signing.pub -signature request.sig request.xml
 | **Scope** | Limits token actions | "Park only" |
 
 ### 8.2 Grant Types
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-2-grant-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-2-grant-types-handwritten.svg" alt="Handwritten: 8.2 Grant Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-2-grant-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-2-grant-types-diagram.svg" alt="Diagram: 8.2 Grant Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-2-grant-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-2-grant-types-sticky.svg" alt="Sticky Note: 8.2 Grant Types" width="30%">
-</a>
 
 
 #### Authorization Code + PKCE (Best for web/mobile/SPAs)
@@ -1120,16 +800,6 @@ Password sent to client, exchanged for token. **Risks:** Client sees password, n
 
 ### Grant Types Comparison
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/grant-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/grant-types-comparison-handwritten.svg" alt="Handwritten: Grant Types Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/grant-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/grant-types-comparison-diagram.svg" alt="Diagram: Grant Types Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/grant-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/grant-types-comparison-sticky.svg" alt="Sticky Note: Grant Types Comparison" width="30%">
-</a>
-
 
 | Grant | Use Case | User Present | MFA Support | Secure |
 |-------|---------|-------------|------------|--------|
@@ -1141,16 +811,6 @@ Password sent to client, exchanged for token. **Risks:** Client sees password, n
 | **Device** | TV, CLI, IoT | Yes (secondary) | Yes | Yes |
 
 ### 8.3 OAuth 2.0 with curl + PKCE
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-3-oauth-2-0-with-curl-pkce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-3-oauth-2-0-with-curl-pkce-handwritten.svg" alt="Handwritten: 8.3 OAuth 2.0 with curl + PKCE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-3-oauth-2-0-with-curl-pkce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-3-oauth-2-0-with-curl-pkce-diagram.svg" alt="Diagram: 8.3 OAuth 2.0 with curl + PKCE" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-3-oauth-2-0-with-curl-pkce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-3-oauth-2-0-with-curl-pkce-sticky.svg" alt="Sticky Note: 8.3 OAuth 2.0 with curl + PKCE" width="30%">
-</a>
 
 
 ```bash
@@ -1174,16 +834,6 @@ curl -X POST "$TOKEN" -d "grant_type=authorization_code&code=$AUTH_CODE&redirect
 
 ### 8.4 OAuth Security
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-4-oauth-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-4-oauth-security-handwritten.svg" alt="Handwritten: 8.4 OAuth Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-4-oauth-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-4-oauth-security-diagram.svg" alt="Diagram: 8.4 OAuth Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/8-4-oauth-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/8-4-oauth-security-sticky.svg" alt="Sticky Note: 8.4 OAuth Security" width="30%">
-</a>
-
 
 | Attack | Mitigation |
 |--------|------------|
@@ -1203,16 +853,6 @@ curl -X POST "$TOKEN" -d "grant_type=authorization_code&code=$AUTH_CODE&redirect
 
 ### ID Token (JWT)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/id-token-jwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/id-token-jwt-handwritten.svg" alt="Handwritten: ID Token (JWT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/id-token-jwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/id-token-jwt-diagram.svg" alt="Diagram: ID Token (JWT)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/id-token-jwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/id-token-jwt-sticky.svg" alt="Sticky Note: ID Token (JWT)" width="30%">
-</a>
-
 
 ```json
 {
@@ -1230,16 +870,6 @@ curl -X POST "$TOKEN" -d "grant_type=authorization_code&code=$AUTH_CODE&redirect
 
 ### Flow
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/flow-handwritten.svg" alt="Handwritten: Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/flow-diagram.svg" alt="Diagram: Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/flow-sticky.svg" alt="Sticky Note: Flow" width="30%">
-</a>
-
 
 ```
 User --[scope=openid]--> AS
@@ -1250,16 +880,6 @@ User --[scope=openid]--> AS
 ```
 
 ### SAML vs OAuth vs OIDC
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-vs-oidc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-vs-oidc-handwritten.svg" alt="Handwritten: SAML vs OAuth vs OIDC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-vs-oidc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-vs-oidc-diagram.svg" alt="Diagram: SAML vs OAuth vs OIDC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-vs-oidc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-vs-oidc-sticky.svg" alt="Sticky Note: SAML vs OAuth vs OIDC" width="30%">
-</a>
 
 
 | Property | SAML 2.0 | OAuth 2.0 | OIDC |
@@ -1278,16 +898,6 @@ User --[scope=openid]--> AS
 
 ### Structure
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/structure-handwritten.svg" alt="Handwritten: Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/structure-diagram.svg" alt="Diagram: Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/structure-sticky.svg" alt="Sticky Note: Structure" width="30%">
-</a>
-
 
 ```
 base64url(Header) . base64url(Payload) . Signature
@@ -1298,16 +908,6 @@ Signature = RSASHA256(base64url(Header) + "." + base64url(Payload), privateKey)
 ```
 
 ### JWT Generation and Validation
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-generation-and-validation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-generation-and-validation-handwritten.svg" alt="Handwritten: JWT Generation and Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-generation-and-validation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-generation-and-validation-diagram.svg" alt="Diagram: JWT Generation and Validation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-generation-and-validation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-generation-and-validation-sticky.svg" alt="Sticky Note: JWT Generation and Validation" width="30%">
-</a>
 
 
 ```bash
@@ -1337,16 +937,6 @@ printf '%s' "$(echo "$JWT" | cut -d. -f1-2)" | openssl dgst -sha256 -verify jwt-
 
 ### JWT Security Attacks
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-security-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-security-attacks-handwritten.svg" alt="Handwritten: JWT Security Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-security-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-security-attacks-diagram.svg" alt="Diagram: JWT Security Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-security-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-security-attacks-sticky.svg" alt="Sticky Note: JWT Security Attacks" width="30%">
-</a>
-
 
 | Attack | Mitigation |
 |--------|------------|
@@ -1366,16 +956,6 @@ printf '%s' "$(echo "$JWT" | cut -d. -f1-2)" | openssl dgst -sha256 -verify jwt-
 - **ReBAC:** Office building. "Alice can enter room 301 because Bob granted her access."
 
 ### 11.1 RBAC (NIST INCITS 359)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-1-rbac-nist-incits-359-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-1-rbac-nist-incits-359-handwritten.svg" alt="Handwritten: 11.1 RBAC (NIST INCITS 359)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-1-rbac-nist-incits-359-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-1-rbac-nist-incits-359-diagram.svg" alt="Diagram: 11.1 RBAC (NIST INCITS 359)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-1-rbac-nist-incits-359-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-1-rbac-nist-incits-359-sticky.svg" alt="Sticky Note: 11.1 RBAC (NIST INCITS 359)" width="30%">
-</a>
 
 
 **Design:**
@@ -1410,16 +990,6 @@ SELECT EXISTS (
 
 ### 11.2 ABAC (NIST SP 800-162)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-2-abac-nist-sp-800-162-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-2-abac-nist-sp-800-162-handwritten.svg" alt="Handwritten: 11.2 ABAC (NIST SP 800-162)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-2-abac-nist-sp-800-162-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-2-abac-nist-sp-800-162-diagram.svg" alt="Diagram: 11.2 ABAC (NIST SP 800-162)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-2-abac-nist-sp-800-162-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-2-abac-nist-sp-800-162-sticky.svg" alt="Sticky Note: 11.2 ABAC (NIST SP 800-162)" width="30%">
-</a>
-
 
 **Policy Example:**
 ```
@@ -1440,16 +1010,6 @@ Access allowed if ALL of:
 | Context-aware | Tooling maturity |
 
 ### 11.3 ReBAC (Relationship-Based)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-3-rebac-relationship-based-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-3-rebac-relationship-based-handwritten.svg" alt="Handwritten: 11.3 ReBAC (Relationship-Based)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-3-rebac-relationship-based-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-3-rebac-relationship-based-diagram.svg" alt="Diagram: 11.3 ReBAC (Relationship-Based)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/11-3-rebac-relationship-based-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/11-3-rebac-relationship-based-sticky.svg" alt="Sticky Note: 11.3 ReBAC (Relationship-Based)" width="30%">
-</a>
 
 
 Used in Google Drive, GitHub, Slack, Facebook. Access based on **relationships**.
@@ -1478,16 +1038,6 @@ Check(doc:budget-2026, viewer, user:dave) -> true
 
 ### Comparison Table
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/comparison-table-handwritten.svg" alt="Handwritten: Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/comparison-table-diagram.svg" alt="Diagram: Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/comparison-table-sticky.svg" alt="Sticky Note: Comparison Table" width="30%">
-</a>
-
 
 | Property | RBAC | ABAC | ReBAC |
 |----------|------|------|-------|
@@ -1508,16 +1058,6 @@ Check(doc:budget-2026, viewer, user:dave) -> true
 
 ### 12.1 Concepts
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-1-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-1-concepts-handwritten.svg" alt="Handwritten: 12.1 Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-1-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-1-concepts-diagram.svg" alt="Diagram: 12.1 Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-1-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-1-concepts-sticky.svg" alt="Sticky Note: 12.1 Concepts" width="30%">
-</a>
-
 
 | Term | Description | Example |
 |------|------------|---------|
@@ -1529,16 +1069,6 @@ Check(doc:budget-2026, viewer, user:dave) -> true
 | **Base DN** | Search starting point | `dc=company,dc=com` |
 
 ### 12.2 Directory Structure
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-2-directory-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-2-directory-structure-handwritten.svg" alt="Handwritten: 12.2 Directory Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-2-directory-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-2-directory-structure-diagram.svg" alt="Diagram: 12.2 Directory Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-2-directory-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-2-directory-structure-sticky.svg" alt="Sticky Note: 12.2 Directory Structure" width="30%">
-</a>
 
 
 ```
@@ -1552,16 +1082,6 @@ dc=company,dc=com
 ```
 
 ### 12.3 LDAP Search with ldapsearch
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-3-ldap-search-with-ldapsearch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-3-ldap-search-with-ldapsearch-handwritten.svg" alt="Handwritten: 12.3 LDAP Search with ldapsearch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-3-ldap-search-with-ldapsearch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-3-ldap-search-with-ldapsearch-diagram.svg" alt="Diagram: 12.3 LDAP Search with ldapsearch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-3-ldap-search-with-ldapsearch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-3-ldap-search-with-ldapsearch-sticky.svg" alt="Sticky Note: 12.3 LDAP Search with ldapsearch" width="30%">
-</a>
 
 
 ```bash
@@ -1597,16 +1117,6 @@ ldapsearch ... -E pr=500/noprompt "(objectClass=user)" dn
 
 ### 12.4 LDIF (Import/Export)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-4-ldif-import-export-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-4-ldif-import-export-handwritten.svg" alt="Handwritten: 12.4 LDIF (Import/Export)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-4-ldif-import-export-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-4-ldif-import-export-diagram.svg" alt="Diagram: 12.4 LDIF (Import/Export)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/12-4-ldif-import-export-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/12-4-ldif-import-export-sticky.svg" alt="Sticky Note: 12.4 LDIF (Import/Export)" width="30%">
-</a>
-
 
 ```ldif
 dn: cn=Alice Smith,ou=People,dc=company,dc=com
@@ -1634,16 +1144,6 @@ ldapsearch -H ldap://ldap.company.com -x -D "cn=admin,dc=company,dc=com" -W \
 
 ### 13.1 AD Components
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-1-ad-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-1-ad-components-handwritten.svg" alt="Handwritten: 13.1 AD Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-1-ad-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-1-ad-components-diagram.svg" alt="Diagram: 13.1 AD Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-1-ad-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-1-ad-components-sticky.svg" alt="Sticky Note: 13.1 AD Components" width="30%">
-</a>
-
 
 | Component | Description |
 |-----------|-------------|
@@ -1655,16 +1155,6 @@ ldapsearch -H ldap://ldap.company.com -x -D "cn=admin,dc=company,dc=com" -W \
 | **Security Group** | Domain Local (single domain), Global (usable across domains), Universal (forest-wide) |
 
 ### 13.2 Windows AD PowerShell
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-2-windows-ad-powershell-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-2-windows-ad-powershell-handwritten.svg" alt="Handwritten: 13.2 Windows AD PowerShell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-2-windows-ad-powershell-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-2-windows-ad-powershell-diagram.svg" alt="Diagram: 13.2 Windows AD PowerShell" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-2-windows-ad-powershell-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-2-windows-ad-powershell-sticky.svg" alt="Sticky Note: 13.2 Windows AD PowerShell" width="30%">
-</a>
 
 
 ```powershell
@@ -1710,16 +1200,6 @@ New-ADServiceAccount -Name "SVC-WebApp" -DNSHostName "webapp.company.com" `
 
 ### 13.3 AD Security Best Practices
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-3-ad-security-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-3-ad-security-best-practices-handwritten.svg" alt="Handwritten: 13.3 AD Security Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-3-ad-security-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-3-ad-security-best-practices-diagram.svg" alt="Diagram: 13.3 AD Security Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/13-3-ad-security-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/13-3-ad-security-best-practices-sticky.svg" alt="Sticky Note: 13.3 AD Security Best Practices" width="30%">
-</a>
-
 
 | Practice | Implementation |
 |----------|--------------|
@@ -1737,16 +1217,6 @@ New-ADServiceAccount -Name "SVC-WebApp" -DNSHostName "webapp.company.com" `
 
 ### 14.1 Components
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-1-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-1-components-handwritten.svg" alt="Handwritten: 14.1 Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-1-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-1-components-diagram.svg" alt="Diagram: 14.1 Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-1-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-1-components-sticky.svg" alt="Sticky Note: 14.1 Components" width="30%">
-</a>
-
 
 | Term | Description |
 |------|------------|
@@ -1759,16 +1229,6 @@ New-ADServiceAccount -Name "SVC-WebApp" -DNSHostName "webapp.company.com" `
 | **Realm** | Kerberos domain: `COMPANY.COM` |
 
 ### 14.2 Authentication Flow
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-2-authentication-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-2-authentication-flow-handwritten.svg" alt="Handwritten: 14.2 Authentication Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-2-authentication-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-2-authentication-flow-diagram.svg" alt="Diagram: 14.2 Authentication Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-2-authentication-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-2-authentication-flow-sticky.svg" alt="Sticky Note: 14.2 Authentication Flow" width="30%">
-</a>
 
 
 ```
@@ -1787,16 +1247,6 @@ New-ADServiceAccount -Name "SVC-WebApp" -DNSHostName "webapp.company.com" `
 - Mutual authentication: service proves it knows its own key
 
 ### 14.3 Kerberos kinit / klist
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-3-kerberos-kinit-klist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-3-kerberos-kinit-klist-handwritten.svg" alt="Handwritten: 14.3 Kerberos kinit / klist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-3-kerberos-kinit-klist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-3-kerberos-kinit-klist-diagram.svg" alt="Diagram: 14.3 Kerberos kinit / klist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-3-kerberos-kinit-klist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-3-kerberos-kinit-klist-sticky.svg" alt="Sticky Note: 14.3 Kerberos kinit / klist" width="30%">
-</a>
 
 
 ```bash
@@ -1840,16 +1290,6 @@ cat /etc/krb5.conf
 
 ### 14.4 Kerberos Windows
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-4-kerberos-windows-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-4-kerberos-windows-handwritten.svg" alt="Handwritten: 14.4 Kerberos Windows" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-4-kerberos-windows-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-4-kerberos-windows-diagram.svg" alt="Diagram: 14.4 Kerberos Windows" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/14-4-kerberos-windows-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/14-4-kerberos-windows-sticky.svg" alt="Sticky Note: 14.4 Kerberos Windows" width="30%">
-</a>
-
 
 ```powershell
 klist                    # View tickets
@@ -1858,16 +1298,6 @@ klist purge              # Purge all tickets
 ```
 
 ### Kerberos Attacks
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/kerberos-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/kerberos-attacks-handwritten.svg" alt="Handwritten: Kerberos Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/kerberos-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/kerberos-attacks-diagram.svg" alt="Diagram: Kerberos Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/kerberos-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/kerberos-attacks-sticky.svg" alt="Sticky Note: Kerberos Attacks" width="30%">
-</a>
 
 
 | Attack | Description | Mitigation |
@@ -1887,16 +1317,6 @@ klist purge              # Purge all tickets
 
 ### 15.1 Principles (NIST SP 800-207)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-1-principles-nist-sp-800-207-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-1-principles-nist-sp-800-207-handwritten.svg" alt="Handwritten: 15.1 Principles (NIST SP 800-207)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-1-principles-nist-sp-800-207-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-1-principles-nist-sp-800-207-diagram.svg" alt="Diagram: 15.1 Principles (NIST SP 800-207)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-1-principles-nist-sp-800-207-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-1-principles-nist-sp-800-207-sticky.svg" alt="Sticky Note: 15.1 Principles (NIST SP 800-207)" width="30%">
-</a>
-
 
 1. **Never trust, always verify** → every request authenticated and authorized
 2. **Assume breach** → design for compromise, limit blast radius
@@ -1905,16 +1325,6 @@ klist purge              # Purge all tickets
 5. **Continuous validation** → re-evaluate trust at every request
 
 ### 15.2 Google BeyondCorp
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-2-google-beyondcorp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-2-google-beyondcorp-handwritten.svg" alt="Handwritten: 15.2 Google BeyondCorp" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-2-google-beyondcorp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-2-google-beyondcorp-diagram.svg" alt="Diagram: 15.2 Google BeyondCorp" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-2-google-beyondcorp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-2-google-beyondcorp-sticky.svg" alt="Sticky Note: 15.2 Google BeyondCorp" width="30%">
-</a>
 
 
 **Key Concepts:**
@@ -1931,16 +1341,6 @@ User --[Managed Device + SSO]--> Internet --[IAP]--> App
 
 ### 15.3 ZTA Architecture
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-3-zta-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-3-zta-architecture-handwritten.svg" alt="Handwritten: 15.3 ZTA Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-3-zta-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-3-zta-architecture-diagram.svg" alt="Diagram: 15.3 ZTA Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/15-3-zta-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/15-3-zta-architecture-sticky.svg" alt="Sticky Note: 15.3 ZTA Architecture" width="30%">
-</a>
-
 
 **Numbered Steps:**
 1. User on managed device requests App access
@@ -1953,16 +1353,6 @@ User --[Managed Device + SSO]--> Internet --[IAP]--> App
 8. Token expires in 15 min; continuous re-evaluation
 
 ### ZTA vs Traditional VPN
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/zta-vs-traditional-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/zta-vs-traditional-vpn-handwritten.svg" alt="Handwritten: ZTA vs Traditional VPN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/zta-vs-traditional-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/zta-vs-traditional-vpn-diagram.svg" alt="Diagram: ZTA vs Traditional VPN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/zta-vs-traditional-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/zta-vs-traditional-vpn-sticky.svg" alt="Sticky Note: ZTA vs Traditional VPN" width="30%">
-</a>
 
 
 | Aspect | Traditional VPN | Zero Trust |
@@ -1981,16 +1371,6 @@ User --[Managed Device + SSO]--> Internet --[IAP]--> App
 
 ### 16.1 PAM Concepts
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-1-pam-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-1-pam-concepts-handwritten.svg" alt="Handwritten: 16.1 PAM Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-1-pam-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-1-pam-concepts-diagram.svg" alt="Diagram: 16.1 PAM Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-1-pam-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-1-pam-concepts-sticky.svg" alt="Sticky Note: 16.1 PAM Concepts" width="30%">
-</a>
-
 
 | Term | Description |
 |------|------------|
@@ -2002,16 +1382,6 @@ User --[Managed Device + SSO]--> Internet --[IAP]--> App
 
 ### 16.2 Flow
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-2-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-2-flow-handwritten.svg" alt="Handwritten: 16.2 Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-2-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-2-flow-diagram.svg" alt="Diagram: 16.2 Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-2-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-2-flow-sticky.svg" alt="Sticky Note: 16.2 Flow" width="30%">
-</a>
-
 
 ```
 User --[Request elevation]--> PAM
@@ -2022,16 +1392,6 @@ User --[Request elevation]--> PAM
 ```
 
 ### 16.3 PAM Best Practices
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-3-pam-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-3-pam-best-practices-handwritten.svg" alt="Handwritten: 16.3 PAM Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-3-pam-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-3-pam-best-practices-diagram.svg" alt="Diagram: 16.3 PAM Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/16-3-pam-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/16-3-pam-best-practices-sticky.svg" alt="Sticky Note: 16.3 PAM Best Practices" width="30%">
-</a>
 
 
 | Practice | Implementation |
@@ -2051,16 +1411,6 @@ User --[Request elevation]--> PAM
 **Analogy:** Conference room booking. 4-digit code works only during booked 2-hour slot. Cannot enter before/after. Code expires after use.
 
 ### JIT vs Standing Privileges
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jit-vs-standing-privileges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jit-vs-standing-privileges-handwritten.svg" alt="Handwritten: JIT vs Standing Privileges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jit-vs-standing-privileges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jit-vs-standing-privileges-diagram.svg" alt="Diagram: JIT vs Standing Privileges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jit-vs-standing-privileges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jit-vs-standing-privileges-sticky.svg" alt="Sticky Note: JIT vs Standing Privileges" width="30%">
-</a>
 
 
 | Aspect | Standing Privileges | JIT |
@@ -2086,16 +1436,6 @@ User --[Request elevation]--> PAM
 
 ### 18.1 Lifecycle
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-1-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-1-lifecycle-handwritten.svg" alt="Handwritten: 18.1 Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-1-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-1-lifecycle-diagram.svg" alt="Diagram: 18.1 Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-1-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-1-lifecycle-sticky.svg" alt="Sticky Note: 18.1 Lifecycle" width="30%">
-</a>
-
 
 ```
 CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
@@ -2105,16 +1445,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 ```
 
 ### 18.2 Session Token vs JWT
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-2-session-token-vs-jwt-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-2-session-token-vs-jwt-handwritten.svg" alt="Handwritten: 18.2 Session Token vs JWT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-2-session-token-vs-jwt-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-2-session-token-vs-jwt-diagram.svg" alt="Diagram: 18.2 Session Token vs JWT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-2-session-token-vs-jwt-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-2-session-token-vs-jwt-sticky.svg" alt="Sticky Note: 18.2 Session Token vs JWT" width="30%">
-</a>
 
 
 | Property | Session Token | JWT |
@@ -2126,16 +1456,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 | **Scaling** | Shared store needed | Any server validates |
 
 ### 18.3 Best Practices
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-3-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-3-best-practices-handwritten.svg" alt="Handwritten: 18.3 Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-3-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-3-best-practices-diagram.svg" alt="Diagram: 18.3 Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/18-3-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/18-3-best-practices-sticky.svg" alt="Sticky Note: 18.3 Best Practices" width="30%">
-</a>
 
 
 | Practice | Implementation |
@@ -2153,16 +1473,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 ## 19. Case Studies
 
 ### Case Study 1: Okta 2022 → LAPSUS$ Breach
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-1-okta-2022-lapsus-breach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-1-okta-2022-lapsus-breach-handwritten.svg" alt="Handwritten: Case Study 1: Okta 2022 → LAPSUS$ Breach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-1-okta-2022-lapsus-breach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-1-okta-2022-lapsus-breach-diagram.svg" alt="Diagram: Case Study 1: Okta 2022 → LAPSUS$ Breach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-1-okta-2022-lapsus-breach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-1-okta-2022-lapsus-breach-sticky.svg" alt="Sticky Note: Case Study 1: Okta 2022 → LAPSUS$ Breach" width="30%">
-</a>
 
 
 **Timeline:**
@@ -2203,16 +1513,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 ---
 
 ### Case Study 2: SolarWinds MFA Bypass → Orion Build Pipeline
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-2-solarwinds-mfa-bypass-orion-build-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-2-solarwinds-mfa-bypass-orion-build-pipeline-handwritten.svg" alt="Handwritten: Case Study 2: SolarWinds MFA Bypass → Orion Build Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-2-solarwinds-mfa-bypass-orion-build-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-2-solarwinds-mfa-bypass-orion-build-pipeline-diagram.svg" alt="Diagram: Case Study 2: SolarWinds MFA Bypass → Orion Build Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-2-solarwinds-mfa-bypass-orion-build-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-2-solarwinds-mfa-bypass-orion-build-pipeline-sticky.svg" alt="Sticky Note: Case Study 2: SolarWinds MFA Bypass → Orion Build Pipeline" width="30%">
-</a>
 
 
 **Timeline:**
@@ -2257,16 +1557,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 
 ### Case Study 3: Microsoft 2024 → Midnight Blizzard Nation-State Attack
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-3-microsoft-2024-midnight-blizzard-nation-state-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-3-microsoft-2024-midnight-blizzard-nation-state-attack-handwritten.svg" alt="Handwritten: Case Study 3: Microsoft 2024 → Midnight Blizzard Nation-State Attack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-3-microsoft-2024-midnight-blizzard-nation-state-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-3-microsoft-2024-midnight-blizzard-nation-state-attack-diagram.svg" alt="Diagram: Case Study 3: Microsoft 2024 → Midnight Blizzard Nation-State Attack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-study-3-microsoft-2024-midnight-blizzard-nation-state-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-study-3-microsoft-2024-midnight-blizzard-nation-state-attack-sticky.svg" alt="Sticky Note: Case Study 3: Microsoft 2024 → Midnight Blizzard Nation-State Attack" width="30%">
-</a>
-
 
 **Timeline:**
 - **Nov 2023:** Midnight Blizzard (APT29/Cozy Bear) begins password spray
@@ -2310,16 +1600,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 
 ### Case Studies Summary
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-studies-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-studies-summary-handwritten.svg" alt="Handwritten: Case Studies Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-studies-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-studies-summary-diagram.svg" alt="Diagram: Case Studies Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/case-studies-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/case-studies-summary-sticky.svg" alt="Sticky Note: Case Studies Summary" width="30%">
-</a>
-
 
 | Aspect | Okta 2022 | SolarWinds | Midnight Blizzard |
 |--------|----------|-----------|-------------------|
@@ -2336,16 +1616,6 @@ CREATION --> ACTIVE --> EXPIRATION --> TERMINATION
 ## 20. Interview Corner
 
 ### Q1: What is the difference between authentication and authorization?
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-difference-between-authentication-and-authorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-difference-between-authentication-and-authorization-handwritten.svg" alt="Handwritten: What is the difference between authentication and authorization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-difference-between-authentication-and-authorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-difference-between-authentication-and-authorization-diagram.svg" alt="Diagram: What is the difference between authentication and authorization?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-difference-between-authentication-and-authorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-difference-between-authentication-and-authorization-sticky.svg" alt="Sticky Note: What is the difference between authentication and authorization?" width="30%">
-</a>
 
 
 **Answer:** Authentication (AuthN) verifies identity → "who are you?" Authorization (AuthZ) determines access → "what are you allowed to do?" At airport security, passport check = authentication. Boarding pass check = authorization.
@@ -2365,16 +1635,6 @@ public boolean authorize(String username, String resource, String action) {
 
 ### Q2: Explain OAuth 2.0 Authorization Code flow with PKCE. Why PKCE?
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/explain-oauth-2-0-authorization-code-flow-with-pkce-why-pkce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/explain-oauth-2-0-authorization-code-flow-with-pkce-why-pkce-handwritten.svg" alt="Handwritten: Explain OAuth 2.0 Authorization Code flow with PKCE. Why PKCE?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/explain-oauth-2-0-authorization-code-flow-with-pkce-why-pkce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/explain-oauth-2-0-authorization-code-flow-with-pkce-why-pkce-diagram.svg" alt="Diagram: Explain OAuth 2.0 Authorization Code flow with PKCE. Why PKCE?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/explain-oauth-2-0-authorization-code-flow-with-pkce-why-pkce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/explain-oauth-2-0-authorization-code-flow-with-pkce-why-pkce-sticky.svg" alt="Sticky Note: Explain OAuth 2.0 Authorization Code flow with PKCE. Why PKCE?" width="30%">
-</a>
-
 
 **Answer:** Auth Code flow exchanges a temporary code for tokens. PKCE prevents authorization code interception → even if attacker intercepts the code, they cannot exchange it without the `code_verifier`.
 
@@ -2387,16 +1647,6 @@ code_challenge = SHA256(code_verifier)
 
 ### Q3: Compare passwords, TOTP, and FIDO2/WebAuthn passkeys.
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/compare-passwords-totp-and-fido2-webauthn-passkeys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/compare-passwords-totp-and-fido2-webauthn-passkeys-handwritten.svg" alt="Handwritten: Compare passwords, TOTP, and FIDO2/WebAuthn passkeys." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/compare-passwords-totp-and-fido2-webauthn-passkeys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/compare-passwords-totp-and-fido2-webauthn-passkeys-diagram.svg" alt="Diagram: Compare passwords, TOTP, and FIDO2/WebAuthn passkeys." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/compare-passwords-totp-and-fido2-webauthn-passkeys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/compare-passwords-totp-and-fido2-webauthn-passkeys-sticky.svg" alt="Sticky Note: Compare passwords, TOTP, and FIDO2/WebAuthn passkeys." width="30%">
-</a>
-
 
 | Aspect | Password | TOTP | FIDO2/Passkey |
 |--------|----------|------|--------------|
@@ -2408,30 +1658,10 @@ code_challenge = SHA256(code_verifier)
 
 ### Q4: What is the N+1 problem in RBAC?
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-n-1-problem-in-rbac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-n-1-problem-in-rbac-handwritten.svg" alt="Handwritten: What is the N+1 problem in RBAC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-n-1-problem-in-rbac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-n-1-problem-in-rbac-diagram.svg" alt="Diagram: What is the N+1 problem in RBAC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-n-1-problem-in-rbac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/what-is-the-n-1-problem-in-rbac-sticky.svg" alt="Sticky Note: What is the N+1 problem in RBAC?" width="30%">
-</a>
-
 
 **Answer:** Role explosion → creating too many granular roles (e.g., `Editor-DocTypeA-NorthAmerica`, `Editor-DocTypeB-Europe`). Mitigations: ABAC attributes, role hierarchies, automated role mining.
 
 ### Q5: Explain Kerberos delegation types.
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/explain-kerberos-delegation-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/explain-kerberos-delegation-types-handwritten.svg" alt="Handwritten: Explain Kerberos delegation types." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/explain-kerberos-delegation-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/explain-kerberos-delegation-types-diagram.svg" alt="Diagram: Explain Kerberos delegation types." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/explain-kerberos-delegation-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/explain-kerberos-delegation-types-sticky.svg" alt="Sticky Note: Explain Kerberos delegation types." width="30%">
-</a>
 
 
 **Answer:**
@@ -2441,30 +1671,10 @@ code_challenge = SHA256(code_verifier)
 
 ### Q6: How does SAML prevent assertion replay?
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/how-does-saml-prevent-assertion-replay-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/how-does-saml-prevent-assertion-replay-handwritten.svg" alt="Handwritten: How does SAML prevent assertion replay?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/how-does-saml-prevent-assertion-replay-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/how-does-saml-prevent-assertion-replay-diagram.svg" alt="Diagram: How does SAML prevent assertion replay?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/how-does-saml-prevent-assertion-replay-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/how-does-saml-prevent-assertion-replay-sticky.svg" alt="Sticky Note: How does SAML prevent assertion replay?" width="30%">
-</a>
-
 
 **Answer:** Three mechanisms: 1) Timestamp validity window (NotBefore/NotOnOrAfter, ~5 min), 2) Unique assertion ID (SP tracks used IDs), 3) SubjectConfirmation with InResponseTo (matches specific AuthnRequest).
 
 ### Q7: Design IAM for microservice architecture.
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/design-iam-for-microservice-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/design-iam-for-microservice-architecture-handwritten.svg" alt="Handwritten: Design IAM for microservice architecture." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/design-iam-for-microservice-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/design-iam-for-microservice-architecture-diagram.svg" alt="Diagram: Design IAM for microservice architecture." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/design-iam-for-microservice-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/design-iam-for-microservice-architecture-sticky.svg" alt="Sticky Note: Design IAM for microservice architecture." width="30%">
-</a>
 
 
 **Answer:**
@@ -2476,16 +1686,6 @@ code_challenge = SHA256(code_verifier)
 6. **Centralized policy:** OPA (Open Policy Agent) for ABAC
 
 ### Q8: JWT vs opaque session tokens → security implications?
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-vs-opaque-session-tokens-security-implications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-vs-opaque-session-tokens-security-implications-handwritten.svg" alt="Handwritten: JWT vs opaque session tokens → security implications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-vs-opaque-session-tokens-security-implications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-vs-opaque-session-tokens-security-implications-diagram.svg" alt="Diagram: JWT vs opaque session tokens → security implications?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-vs-opaque-session-tokens-security-implications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-vs-opaque-session-tokens-security-implications-sticky.svg" alt="Sticky Note: JWT vs opaque session tokens → security implications?" width="30%">
-</a>
 
 
 | Aspect | JWT | Opaque |
@@ -2499,30 +1699,10 @@ code_challenge = SHA256(code_verifier)
 
 ### Q9: SAML vs OAuth 2.0 → security boundaries?
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-2-0-security-boundaries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-2-0-security-boundaries-handwritten.svg" alt="Handwritten: SAML vs OAuth 2.0 → security boundaries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-2-0-security-boundaries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-2-0-security-boundaries-diagram.svg" alt="Diagram: SAML vs OAuth 2.0 → security boundaries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-2-0-security-boundaries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-vs-oauth-2-0-security-boundaries-sticky.svg" alt="Sticky Note: SAML vs OAuth 2.0 → security boundaries?" width="30%">
-</a>
-
 
 **Answer:** SAML = federated identity (IdP tells SP who you are). OAuth = delegated authorization (app gets limited access to your resources on another service). SAML: "I trust my IdP to tell me who you are." OAuth: "This app can view your Drive files if you approve."
 
 ### Q10: Implement passwordless authentication.
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/implement-passwordless-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/implement-passwordless-authentication-handwritten.svg" alt="Handwritten: Implement passwordless authentication." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/implement-passwordless-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/implement-passwordless-authentication-diagram.svg" alt="Diagram: Implement passwordless authentication." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/implement-passwordless-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/implement-passwordless-authentication-sticky.svg" alt="Sticky Note: Implement passwordless authentication." width="30%">
-</a>
 
 
 **Answer:** Using FIDO2/WebAuthn passkeys:
@@ -2548,16 +1728,6 @@ const assertion = await navigator.credentials.get({
 
 ### Q11: DAC vs MAC vs RBAC vs ABAC?
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/dac-vs-mac-vs-rbac-vs-abac-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/dac-vs-mac-vs-rbac-vs-abac-handwritten.svg" alt="Handwritten: DAC vs MAC vs RBAC vs ABAC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/dac-vs-mac-vs-rbac-vs-abac-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/dac-vs-mac-vs-rbac-vs-abac-diagram.svg" alt="Diagram: DAC vs MAC vs RBAC vs ABAC?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/dac-vs-mac-vs-rbac-vs-abac-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/dac-vs-mac-vs-rbac-vs-abac-sticky.svg" alt="Sticky Note: DAC vs MAC vs RBAC vs ABAC?" width="30%">
-</a>
-
 
 **Answer:**
 - **DAC:** Object owner controls access (Linux file perms)
@@ -2567,30 +1737,10 @@ const assertion = await navigator.credentials.get({
 
 ### Q12: How does Google BeyondCorp change security?
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/how-does-google-beyondcorp-change-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/how-does-google-beyondcorp-change-security-handwritten.svg" alt="Handwritten: How does Google BeyondCorp change security?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/how-does-google-beyondcorp-change-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/how-does-google-beyondcorp-change-security-diagram.svg" alt="Diagram: How does Google BeyondCorp change security?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/how-does-google-beyondcorp-change-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/how-does-google-beyondcorp-change-security-sticky.svg" alt="Sticky Note: How does Google BeyondCorp change security?" width="30%">
-</a>
-
 
 **Answer:** Removes corporate network as trust boundary. Uses device inventory + device identity (certificates) + SSO + IAP proxy. No VPN. Network location is no longer a trust indicator.
 
 ### Q13: Detect Kerberoasting attacks?
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/detect-kerberoasting-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/detect-kerberoasting-attacks-handwritten.svg" alt="Handwritten: Detect Kerberoasting attacks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/detect-kerberoasting-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/detect-kerberoasting-attacks-diagram.svg" alt="Diagram: Detect Kerberoasting attacks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/detect-kerberoasting-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/detect-kerberoasting-attacks-sticky.svg" alt="Sticky Note: Detect Kerberoasting attacks?" width="30%">
-</a>
 
 
 **Answer:** Monitor Event ID 4769 (TGS request) with:
@@ -2600,30 +1750,10 @@ const assertion = await navigator.credentials.get({
 
 ### Q14: Compare password hashing algorithms for production.
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/compare-password-hashing-algorithms-for-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/compare-password-hashing-algorithms-for-production-handwritten.svg" alt="Handwritten: Compare password hashing algorithms for production." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/compare-password-hashing-algorithms-for-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/compare-password-hashing-algorithms-for-production-diagram.svg" alt="Diagram: Compare password hashing algorithms for production." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/compare-password-hashing-algorithms-for-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/compare-password-hashing-algorithms-for-production-sticky.svg" alt="Sticky Note: Compare password hashing algorithms for production." width="30%">
-</a>
-
 
 **Answer:** Preference order: 1) argon2id (PHC winner, t=3/m=65536/p=4), 2) bcrypt (cost=12+, 72-byte limit), 3) scrypt, 4) PBKDF2 (FIPS but not memory-hard). Never: MD5, SHA-1, SHA-256 alone, NTLM.
 
 ### Q15: Secure a multi-tenant SaaS identity layer?
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/secure-a-multi-tenant-saas-identity-layer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/secure-a-multi-tenant-saas-identity-layer-handwritten.svg" alt="Handwritten: Secure a multi-tenant SaaS identity layer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/secure-a-multi-tenant-saas-identity-layer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/secure-a-multi-tenant-saas-identity-layer-diagram.svg" alt="Diagram: Secure a multi-tenant SaaS identity layer?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/secure-a-multi-tenant-saas-identity-layer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/secure-a-multi-tenant-saas-identity-layer-sticky.svg" alt="Sticky Note: Secure a multi-tenant SaaS identity layer?" width="30%">
-</a>
 
 
 **Answer:** 1) Tenant isolation (separate IdP config), 2) SCIM provisioning, 3) Custom domains, 4) SAML/OIDC federation (bring your own IdP), 5) Per-tenant RBAC, 6) Tenant-aware JWTs (`tenant_id` claim), 7) Per-tenant rate limiting, 8) Cross-tenant audit for support access.
@@ -2633,16 +1763,6 @@ const assertion = await navigator.credentials.get({
 ## 21. Applications in Real Systems
 
 ### Enterprise IAM
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-iam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-iam-handwritten.svg" alt="Handwritten: Enterprise IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-iam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-iam-diagram.svg" alt="Diagram: Enterprise IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-iam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-iam-sticky.svg" alt="Sticky Note: Enterprise IAM" width="30%">
-</a>
 
 
 | System | Protocols | Features |
@@ -2655,16 +1775,6 @@ const assertion = await navigator.credentials.get({
 
 ### Operating System IAM
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/operating-system-iam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/operating-system-iam-handwritten.svg" alt="Handwritten: Operating System IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/operating-system-iam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/operating-system-iam-diagram.svg" alt="Diagram: Operating System IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/operating-system-iam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/operating-system-iam-sticky.svg" alt="Sticky Note: Operating System IAM" width="30%">
-</a>
-
 
 | OS | Authentication | Authorization | Directory |
 |----|---------------|--------------|-----------|
@@ -2674,16 +1784,6 @@ const assertion = await navigator.credentials.get({
 
 ### Cloud IAM
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/cloud-iam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/cloud-iam-handwritten.svg" alt="Handwritten: Cloud IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/cloud-iam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/cloud-iam-diagram.svg" alt="Diagram: Cloud IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/cloud-iam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/cloud-iam-sticky.svg" alt="Sticky Note: Cloud IAM" width="30%">
-</a>
-
 
 | Provider | Service | Model | Identity Types |
 |----------|---------|-------|---------------|
@@ -2692,16 +1792,6 @@ const assertion = await navigator.credentials.get({
 | **GCP** | Cloud IAM | Primitive + Custom roles, ABAC via conditions | Google Accounts, Service Accounts, GSuite |
 
 ### Password Managers
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-managers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-managers-handwritten.svg" alt="Handwritten: Password Managers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-managers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-managers-diagram.svg" alt="Diagram: Password Managers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-managers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-managers-sticky.svg" alt="Sticky Note: Password Managers" width="30%">
-</a>
 
 
 | Tool | MFA | Sync | Architecture |
@@ -2959,16 +2049,6 @@ Establish a two-way cross-realm trust. Configure both KDCs with trust relationsh
 
 ### bcrypt Internal Algorithm (EksBlowfish)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/bcrypt-internal-algorithm-eksblowfish-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/bcrypt-internal-algorithm-eksblowfish-handwritten.svg" alt="Handwritten: bcrypt Internal Algorithm (EksBlowfish)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/bcrypt-internal-algorithm-eksblowfish-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/bcrypt-internal-algorithm-eksblowfish-diagram.svg" alt="Diagram: bcrypt Internal Algorithm (EksBlowfish)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/bcrypt-internal-algorithm-eksblowfish-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/bcrypt-internal-algorithm-eksblowfish-sticky.svg" alt="Sticky Note: bcrypt Internal Algorithm (EksBlowfish)" width="30%">
-</a>
-
 
 **Numbered Steps:**
 1. Initialize P-array (18 entries) and S-boxes (4 x 256 entries) with digits of PI
@@ -2984,16 +2064,6 @@ Establish a two-way cross-realm trust. Configure both KDCs with trust relationsh
 **Why this matters for security:** The fixed 4 KB memory footprint means an ASIC can pack many cores. A modern ASIC for bcrypt achieves ~100x speedup over CPU. Contrast with argon2id's 64 MB requirement which makes ASIC impractical.
 
 ### argon2id Parameter Selection
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/argon2id-parameter-selection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/argon2id-parameter-selection-handwritten.svg" alt="Handwritten: argon2id Parameter Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/argon2id-parameter-selection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/argon2id-parameter-selection-diagram.svg" alt="Diagram: argon2id Parameter Selection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/argon2id-parameter-selection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/argon2id-parameter-selection-sticky.svg" alt="Sticky Note: argon2id Parameter Selection" width="30%">
-</a>
 
 
 **Formulas for parameter selection:**
@@ -3019,16 +2089,6 @@ $argon2id$v=19$m=65536,t=3,p=4$<salt_b64>$<hash_b64>
 
 ### PBKDF2-HMAC-SHA256 Iteration Counts
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/pbkdf2-hmac-sha256-iteration-counts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/pbkdf2-hmac-sha256-iteration-counts-handwritten.svg" alt="Handwritten: PBKDF2-HMAC-SHA256 Iteration Counts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/pbkdf2-hmac-sha256-iteration-counts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/pbkdf2-hmac-sha256-iteration-counts-diagram.svg" alt="Diagram: PBKDF2-HMAC-SHA256 Iteration Counts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/pbkdf2-hmac-sha256-iteration-counts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/pbkdf2-hmac-sha256-iteration-counts-sticky.svg" alt="Sticky Note: PBKDF2-HMAC-SHA256 Iteration Counts" width="30%">
-</a>
-
 
 | Year | Recommended Iterations | GPU Hash Rate (RTX 4090) | Time to hash 1 password |
 |------|----------------------|------------------------|----------------------|
@@ -3040,16 +2100,6 @@ $argon2id$v=19$m=65536,t=3,p=4$<salt_b64>$<hash_b64>
 Note: Even at 1M iterations, PBKDF2 is weak because it's NOT memory-hard. An attacker with 100 RTX 4090 GPUs can test 50 billion passwords/second regardless of iteration count, by parallelizing across GPUs.
 
 ### Constant-Time Comparison (Critical Implementation Detail)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/constant-time-comparison-critical-implementation-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/constant-time-comparison-critical-implementation-detail-handwritten.svg" alt="Handwritten: Constant-Time Comparison (Critical Implementation Detail)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/constant-time-comparison-critical-implementation-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/constant-time-comparison-critical-implementation-detail-diagram.svg" alt="Diagram: Constant-Time Comparison (Critical Implementation Detail)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/constant-time-comparison-critical-implementation-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/constant-time-comparison-critical-implementation-detail-sticky.svg" alt="Sticky Note: Constant-Time Comparison (Critical Implementation Detail)" width="30%">
-</a>
 
 
 ```java
@@ -3080,16 +2130,6 @@ public boolean constantTimeCompare(byte[] a, byte[] b) {
 ## Appendix B: Deep Dive → OAuth 2.0 Token Handling
 
 ### Access Token vs Refresh Token Lifecycle
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/access-token-vs-refresh-token-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/access-token-vs-refresh-token-lifecycle-handwritten.svg" alt="Handwritten: Access Token vs Refresh Token Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/access-token-vs-refresh-token-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/access-token-vs-refresh-token-lifecycle-diagram.svg" alt="Diagram: Access Token vs Refresh Token Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/access-token-vs-refresh-token-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/access-token-vs-refresh-token-lifecycle-sticky.svg" alt="Sticky Note: Access Token vs Refresh Token Lifecycle" width="30%">
-</a>
 
 
 ```
@@ -3126,16 +2166,6 @@ REFRESH GRANT RESPONSE:
 
 ### Token Storage Security (SPA / Mobile)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/token-storage-security-spa-mobile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/token-storage-security-spa-mobile-handwritten.svg" alt="Handwritten: Token Storage Security (SPA / Mobile)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/token-storage-security-spa-mobile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/token-storage-security-spa-mobile-diagram.svg" alt="Diagram: Token Storage Security (SPA / Mobile)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/token-storage-security-spa-mobile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/token-storage-security-spa-mobile-sticky.svg" alt="Sticky Note: Token Storage Security (SPA / Mobile)" width="30%">
-</a>
-
 
 | Approach | Security Level | Risk |
 |----------|---------------|------|
@@ -3149,16 +2179,6 @@ REFRESH GRANT RESPONSE:
 **Best practice:** Use BFF (Backend For Frontend) pattern. Frontend stores nothing; backend manages tokens via HttpOnly cookies.
 
 ### BFF Pattern (Backend For Frontend)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/bff-pattern-backend-for-frontend-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/bff-pattern-backend-for-frontend-handwritten.svg" alt="Handwritten: BFF Pattern (Backend For Frontend)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/bff-pattern-backend-for-frontend-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/bff-pattern-backend-for-frontend-diagram.svg" alt="Diagram: BFF Pattern (Backend For Frontend)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/bff-pattern-backend-for-frontend-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/bff-pattern-backend-for-frontend-sticky.svg" alt="Sticky Note: BFF Pattern (Backend For Frontend)" width="30%">
-</a>
 
 
 ```
@@ -3182,16 +2202,6 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 
 ### Authenticator Attachment Modalities
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/authenticator-attachment-modalities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/authenticator-attachment-modalities-handwritten.svg" alt="Handwritten: Authenticator Attachment Modalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/authenticator-attachment-modalities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/authenticator-attachment-modalities-diagram.svg" alt="Diagram: Authenticator Attachment Modalities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/authenticator-attachment-modalities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/authenticator-attachment-modalities-sticky.svg" alt="Sticky Note: Authenticator Attachment Modalities" width="30%">
-</a>
-
 
 | Type | Description | Example |
 |------|------------|---------|
@@ -3200,16 +2210,6 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 | **Hybrid** | Phone acts as roaming authenticator | Passkey on phone, scanned via QR (CABLE) |
 
 ### Resident Key (Discoverable Credential) vs Non-Resident
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/resident-key-discoverable-credential-vs-non-resident-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/resident-key-discoverable-credential-vs-non-resident-handwritten.svg" alt="Handwritten: Resident Key (Discoverable Credential) vs Non-Resident" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/resident-key-discoverable-credential-vs-non-resident-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/resident-key-discoverable-credential-vs-non-resident-diagram.svg" alt="Diagram: Resident Key (Discoverable Credential) vs Non-Resident" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/resident-key-discoverable-credential-vs-non-resident-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/resident-key-discoverable-credential-vs-non-resident-sticky.svg" alt="Sticky Note: Resident Key (Discoverable Credential) vs Non-Resident" width="30%">
-</a>
 
 
 | Property | Resident Key | Non-Resident |
@@ -3221,16 +2221,6 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 
 ### User Verification Methods
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/user-verification-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/user-verification-methods-handwritten.svg" alt="Handwritten: User Verification Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/user-verification-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/user-verification-methods-diagram.svg" alt="Diagram: User Verification Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/user-verification-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/user-verification-methods-sticky.svg" alt="Sticky Note: User Verification Methods" width="30%">
-</a>
-
 
 | Method | UV Flag | Type | Example |
 |--------|---------|------|---------|
@@ -3241,16 +2231,6 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 | **Palm** | true | Biometric | Amazon One |
 
 ### Attestation Types
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/attestation-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/attestation-types-handwritten.svg" alt="Handwritten: Attestation Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/attestation-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/attestation-types-diagram.svg" alt="Diagram: Attestation Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/attestation-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/attestation-types-sticky.svg" alt="Sticky Note: Attestation Types" width="30%">
-</a>
 
 
 | Type | Privacy | Trust |
@@ -3268,16 +2248,6 @@ Browser -(HttpOnly Cookie)-> BFF (Backend) -(OAuth 2.0)-> Authorization Server
 ## Appendix D: Deep Dive → Kerberos Protocol Messages
 
 ### AS-REQ Message Structure
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/as-req-message-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/as-req-message-structure-handwritten.svg" alt="Handwritten: AS-REQ Message Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/as-req-message-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/as-req-message-structure-diagram.svg" alt="Diagram: AS-REQ Message Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/as-req-message-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/as-req-message-structure-sticky.svg" alt="Sticky Note: AS-REQ Message Structure" width="30%">
-</a>
 
 
 ```asn1
@@ -3300,16 +2270,6 @@ AS-REQ ::= {
 ```
 
 ### AS-REP Message Structure
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/as-rep-message-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/as-rep-message-structure-handwritten.svg" alt="Handwritten: AS-REP Message Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/as-rep-message-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/as-rep-message-structure-diagram.svg" alt="Diagram: AS-REP Message Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/as-rep-message-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/as-rep-message-structure-sticky.svg" alt="Sticky Note: AS-REP Message Structure" width="30%">
-</a>
 
 
 ```asn1
@@ -3337,16 +2297,6 @@ AS-REP ::= {
 
 ### TGS-REQ to AP-REP Exchange (Service Access)
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/tgs-req-to-ap-rep-exchange-service-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/tgs-req-to-ap-rep-exchange-service-access-handwritten.svg" alt="Handwritten: TGS-REQ to AP-REP Exchange (Service Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/tgs-req-to-ap-rep-exchange-service-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/tgs-req-to-ap-rep-exchange-service-access-diagram.svg" alt="Diagram: TGS-REQ to AP-REP Exchange (Service Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/tgs-req-to-ap-rep-exchange-service-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/tgs-req-to-ap-rep-exchange-service-access-sticky.svg" alt="Sticky Note: TGS-REQ to AP-REP Exchange (Service Access)" width="30%">
-</a>
-
 
 ```
 TGS-REQ:
@@ -3371,16 +2321,6 @@ AP-REP (optional, mutual authentication):
 ```
 
 ### Encryption Key Hierarchy
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/encryption-key-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/encryption-key-hierarchy-handwritten.svg" alt="Handwritten: Encryption Key Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/encryption-key-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/encryption-key-hierarchy-diagram.svg" alt="Diagram: Encryption Key Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/encryption-key-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/encryption-key-hierarchy-sticky.svg" alt="Sticky Note: Encryption Key Hierarchy" width="30%">
-</a>
 
 
 ```
@@ -3413,16 +2353,6 @@ SK2 (Service Session Key from TGS):
 
 ### LDAP Operations List
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-operations-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-operations-list-handwritten.svg" alt="Handwritten: LDAP Operations List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-operations-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-operations-list-diagram.svg" alt="Diagram: LDAP Operations List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-operations-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-operations-list-sticky.svg" alt="Sticky Note: LDAP Operations List" width="30%">
-</a>
-
 
 | Operation | Description | LDAP Request Type |
 |-----------|------------|------------------|
@@ -3438,16 +2368,6 @@ SK2 (Service Session Key from TGS):
 | **Unbind** | Close connection | 0x42 |
 
 ### LDAP Search Filter Grammar
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-search-filter-grammar-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-search-filter-grammar-handwritten.svg" alt="Handwritten: LDAP Search Filter Grammar" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-search-filter-grammar-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-search-filter-grammar-diagram.svg" alt="Diagram: LDAP Search Filter Grammar" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-search-filter-grammar-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-search-filter-grammar-sticky.svg" alt="Sticky Note: LDAP Search Filter Grammar" width="30%">
-</a>
 
 
 ```
@@ -3477,16 +2397,6 @@ SK2 (Service Session Key from TGS):
 
 ### LDAP Result Codes
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-result-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-result-codes-handwritten.svg" alt="Handwritten: LDAP Result Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-result-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-result-codes-diagram.svg" alt="Diagram: LDAP Result Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-result-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-result-codes-sticky.svg" alt="Sticky Note: LDAP Result Codes" width="30%">
-</a>
-
 
 | Code | Name | Meaning |
 |------|------|---------|
@@ -3502,16 +2412,6 @@ SK2 (Service Session Key from TGS):
 | 80 | Other | Unspecified error |
 
 ### LDAP vs Active Directory Comparison
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-vs-active-directory-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-vs-active-directory-comparison-handwritten.svg" alt="Handwritten: LDAP vs Active Directory Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-vs-active-directory-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-vs-active-directory-comparison-diagram.svg" alt="Diagram: LDAP vs Active Directory Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ldap-vs-active-directory-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ldap-vs-active-directory-comparison-sticky.svg" alt="Sticky Note: LDAP vs Active Directory Comparison" width="30%">
-</a>
 
 
 | Feature | OpenLDAP | Active Directory |
@@ -3530,16 +2430,6 @@ SK2 (Service Session Key from TGS):
 ## Appendix F: Deep Dive → FIDO2 / WebAuthn CBOR Encoding
 
 ### CTAP2 Message Structure (CBOR)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ctap2-message-structure-cbor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ctap2-message-structure-cbor-handwritten.svg" alt="Handwritten: CTAP2 Message Structure (CBOR)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ctap2-message-structure-cbor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ctap2-message-structure-cbor-diagram.svg" alt="Diagram: CTAP2 Message Structure (CBOR)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/ctap2-message-structure-cbor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/ctap2-message-structure-cbor-sticky.svg" alt="Sticky Note: CTAP2 Message Structure (CBOR)" width="30%">
-</a>
 
 
 CTAP2 uses CBOR (Concise Binary Object Representation) for compact binary encoding.
@@ -3577,16 +2467,6 @@ CTAP2 uses CBOR (Concise Binary Object Representation) for compact binary encodi
 
 ### WebAuthn Authenticator Data
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/webauthn-authenticator-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/webauthn-authenticator-data-handwritten.svg" alt="Handwritten: WebAuthn Authenticator Data" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/webauthn-authenticator-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/webauthn-authenticator-data-diagram.svg" alt="Diagram: WebAuthn Authenticator Data" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/webauthn-authenticator-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/webauthn-authenticator-data-sticky.svg" alt="Sticky Note: WebAuthn Authenticator Data" width="30%">
-</a>
-
 
 ```
 Byte 0:     Flags (UP, UV, AT, ED, etc.)
@@ -3601,16 +2481,6 @@ Credential Data format:
 ```
 
 ### COSE Key Format (ES256 Example)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/cose-key-format-es256-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/cose-key-format-es256-example-handwritten.svg" alt="Handwritten: COSE Key Format (ES256 Example)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/cose-key-format-es256-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/cose-key-format-es256-example-diagram.svg" alt="Diagram: COSE Key Format (ES256 Example)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/cose-key-format-es256-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/cose-key-format-es256-example-sticky.svg" alt="Sticky Note: COSE Key Format (ES256 Example)" width="30%">
-</a>
 
 
 ```cbor
@@ -3629,16 +2499,6 @@ Credential Data format:
 
 ### Password Change Policies → Historical vs NIST
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-change-policies-historical-vs-nist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-change-policies-historical-vs-nist-handwritten.svg" alt="Handwritten: Password Change Policies → Historical vs NIST" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-change-policies-historical-vs-nist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-change-policies-historical-vs-nist-diagram.svg" alt="Diagram: Password Change Policies → Historical vs NIST" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-change-policies-historical-vs-nist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-change-policies-historical-vs-nist-sticky.svg" alt="Sticky Note: Password Change Policies → Historical vs NIST" width="30%">
-</a>
-
 
 | Aspect | 90-Day Rotation | NIST 800-63B |
 |--------|----------------|--------------|
@@ -3649,16 +2509,6 @@ Credential Data format:
 | **MFA requirement** | Somewhat mitigated rotation need | MFA independent of password policy |
 
 ### Identity Protocols → Transport Security
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/identity-protocols-transport-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/identity-protocols-transport-security-handwritten.svg" alt="Handwritten: Identity Protocols → Transport Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/identity-protocols-transport-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/identity-protocols-transport-security-diagram.svg" alt="Diagram: Identity Protocols → Transport Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/identity-protocols-transport-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/identity-protocols-transport-security-sticky.svg" alt="Sticky Note: Identity Protocols → Transport Security" width="30%">
-</a>
 
 
 | Protocol | Default Port | Encryption | Mutual Auth | Channel Binding |
@@ -3672,16 +2522,6 @@ Credential Data format:
 
 ### Security Controls by Authentication Factor
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/security-controls-by-authentication-factor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/security-controls-by-authentication-factor-handwritten.svg" alt="Handwritten: Security Controls by Authentication Factor" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/security-controls-by-authentication-factor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/security-controls-by-authentication-factor-diagram.svg" alt="Diagram: Security Controls by Authentication Factor" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/security-controls-by-authentication-factor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/security-controls-by-authentication-factor-sticky.svg" alt="Sticky Note: Security Controls by Authentication Factor" width="30%">
-</a>
-
 
 | Control | Password | TOTP | FIDO2 | Smart Card | Biometric |
 |---------|----------|------|-------|------------|-----------|
@@ -3694,16 +2534,6 @@ Credential Data format:
 | **Backup/recovery** | Email reset | Recovery codes | iCloud/Google sync | Backup key | Password fallback |
 
 ### Enterprise SSO Protocols → Feature Matrix
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-sso-protocols-feature-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-sso-protocols-feature-matrix-handwritten.svg" alt="Handwritten: Enterprise SSO Protocols → Feature Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-sso-protocols-feature-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-sso-protocols-feature-matrix-diagram.svg" alt="Diagram: Enterprise SSO Protocols → Feature Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-sso-protocols-feature-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/enterprise-sso-protocols-feature-matrix-sticky.svg" alt="Sticky Note: Enterprise SSO Protocols → Feature Matrix" width="30%">
-</a>
 
 
 | Feature | SAML 2.0 | OIDC | CAS | WS-Federation |
@@ -3722,16 +2552,6 @@ Credential Data format:
 ## Appendix H: Real-World IAM Architecture Example
 
 ### Hybrid IAM Architecture (Enterprise)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/hybrid-iam-architecture-enterprise-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/hybrid-iam-architecture-enterprise-handwritten.svg" alt="Handwritten: Hybrid IAM Architecture (Enterprise)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/hybrid-iam-architecture-enterprise-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/hybrid-iam-architecture-enterprise-diagram.svg" alt="Diagram: Hybrid IAM Architecture (Enterprise)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/hybrid-iam-architecture-enterprise-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/hybrid-iam-architecture-enterprise-sticky.svg" alt="Sticky Note: Hybrid IAM Architecture (Enterprise)" width="30%">
-</a>
 
 
 ```
@@ -3843,16 +2663,6 @@ Machine identity:
 
 ### Session ID Generation Best Practices
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-id-generation-best-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-id-generation-best-practices-handwritten.svg" alt="Handwritten: Session ID Generation Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-id-generation-best-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-id-generation-best-practices-diagram.svg" alt="Diagram: Session ID Generation Best Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-id-generation-best-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-id-generation-best-practices-sticky.svg" alt="Sticky Note: Session ID Generation Best Practices" width="30%">
-</a>
-
 
 | Requirement | Standard | Example |
 |------------|----------|---------|
@@ -3863,16 +2673,6 @@ Machine identity:
 | **Non-predictable** | No timestamp/username basis | `SHA-256(SRNG(128))` |
 
 ### Session Token Format Examples
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-token-format-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-token-format-examples-handwritten.svg" alt="Handwritten: Session Token Format Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-token-format-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-token-format-examples-diagram.svg" alt="Diagram: Session Token Format Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-token-format-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-token-format-examples-sticky.svg" alt="Sticky Note: Session Token Format Examples" width="30%">
-</a>
 
 
 ```java
@@ -3895,16 +2695,6 @@ Machine identity:
 
 ### Session Revocation Strategies
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-revocation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-revocation-strategies-handwritten.svg" alt="Handwritten: Session Revocation Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-revocation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-revocation-strategies-diagram.svg" alt="Diagram: Session Revocation Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-revocation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-revocation-strategies-sticky.svg" alt="Sticky Note: Session Revocation Strategies" width="30%">
-</a>
-
 
 | Strategy | Mechanism | Scope | Latency | Complexity |
 |----------|-----------|-------|---------|-----------|
@@ -3918,16 +2708,6 @@ Machine identity:
 **Best practice for high-security:** Redis cache (fast revocation) + JWT blacklist (distributed check).
 
 ### Session Security Headers (OWASP)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-security-headers-owasp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-security-headers-owasp-handwritten.svg" alt="Handwritten: Session Security Headers (OWASP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-security-headers-owasp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-security-headers-owasp-diagram.svg" alt="Diagram: Session Security Headers (OWASP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-security-headers-owasp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-security-headers-owasp-sticky.svg" alt="Sticky Note: Session Security Headers (OWASP)" width="30%">
-</a>
 
 
 ```
@@ -3950,16 +2730,6 @@ Set-Cookie: session=abc123;
 | **Domain** | Cookie scope | Omit or narrow explicitly |
 
 ### Session Security Maturity Model
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-security-maturity-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-security-maturity-model-handwritten.svg" alt="Handwritten: Session Security Maturity Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-security-maturity-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-security-maturity-model-diagram.svg" alt="Diagram: Session Security Maturity Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-security-maturity-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-security-maturity-model-sticky.svg" alt="Sticky Note: Session Security Maturity Model" width="30%">
-</a>
 
 
 | Level | Name | Characteristics |
@@ -3994,16 +2764,6 @@ Set-Cookie: session=abc123;
 
 ### Password Security
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-security-handwritten.svg" alt="Handwritten: Password Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-security-diagram.svg" alt="Diagram: Password Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/password-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/password-security-sticky.svg" alt="Sticky Note: Password Security" width="30%">
-</a>
-
 - [ ] bcrypt/argon2id with cost â‰¥ 12 / t=2,m=19456
 - [ ] Password policy: minimum 12 characters (not complexity rules)
 - [ ] Check passwords against breached password list (HaveIBeenPwned API)
@@ -4013,16 +2773,6 @@ Set-Cookie: session=abc123;
 
 ### Multi-Factor Authentication
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/multi-factor-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/multi-factor-authentication-handwritten.svg" alt="Handwritten: Multi-Factor Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/multi-factor-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/multi-factor-authentication-diagram.svg" alt="Diagram: Multi-Factor Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/multi-factor-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/multi-factor-authentication-sticky.svg" alt="Sticky Note: Multi-Factor Authentication" width="30%">
-</a>
-
 - [ ] All user accounts require at least 2 factors
 - [ ] TOTP seed generated server-side, QR delivered via secure channel
 - [ ] Recovery codes: 10 codes, single-use, regenerate after use of 8+
@@ -4031,16 +2781,6 @@ Set-Cookie: session=abc123;
 - [ ] Rate limit TOTP verification (resists brute force of 6-digit codes)
 
 ### RBAC Design
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/rbac-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/rbac-design-handwritten.svg" alt="Handwritten: RBAC Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/rbac-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/rbac-design-diagram.svg" alt="Diagram: RBAC Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/rbac-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/rbac-design-sticky.svg" alt="Sticky Note: RBAC Design" width="30%">
-</a>
 
 - [ ] Role hierarchy defined: no more than 3 levels deep
 - [ ] Each role has documented, single-purpose permission assignments
@@ -4052,16 +2792,6 @@ Set-Cookie: session=abc123;
 
 ### API Security
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/api-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/api-security-handwritten.svg" alt="Handwritten: API Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/api-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/api-security-diagram.svg" alt="Diagram: API Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/api-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/api-security-sticky.svg" alt="Sticky Note: API Security" width="30%">
-</a>
-
 - [ ] All API calls require authentication (except public/health endpoints)
 - [ ] API keys (OAuth 2.0 Client Credentials) with per-client scopes
 - [ ] Rate limit: 1000 req/min per API key standard, 100 req/min for sensitive
@@ -4072,16 +2802,6 @@ Set-Cookie: session=abc123;
 
 ### Session Management
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-management-handwritten.svg" alt="Handwritten: Session Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-management-diagram.svg" alt="Diagram: Session Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/session-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/session-management-sticky.svg" alt="Sticky Note: Session Management" width="30%">
-</a>
-
 - [ ] Session timeout: idle 15 min, absolute 8 hours
 - [ ] Re-authentication for sensitive operations (password/factor change)
 - [ ] Concurrent session limit: 5 per user
@@ -4091,16 +2811,6 @@ Set-Cookie: session=abc123;
 - [ ] Session fixation protection: regenerate session after login
 
 ### Monitoring & Alerting
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/monitoring-alerting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/monitoring-alerting-handwritten.svg" alt="Handwritten: Monitoring & Alerting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/monitoring-alerting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/monitoring-alerting-diagram.svg" alt="Diagram: Monitoring & Alerting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/monitoring-alerting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/monitoring-alerting-sticky.svg" alt="Sticky Note: Monitoring & Alerting" width="30%">
-</a>
 
 - [ ] Alert on: >10 failed logins/min from single IP
 - [ ] Alert on: new device/location for privileged user
@@ -4113,16 +2823,6 @@ Set-Cookie: session=abc123;
 ## Appendix N: IAM in Cloud-Native Architectures
 
 ### Kubernetes Identity (SPIFFE / SPIRE)
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/kubernetes-identity-spiffe-spire-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/kubernetes-identity-spiffe-spire-handwritten.svg" alt="Handwritten: Kubernetes Identity (SPIFFE / SPIRE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/kubernetes-identity-spiffe-spire-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/kubernetes-identity-spiffe-spire-diagram.svg" alt="Diagram: Kubernetes Identity (SPIFFE / SPIRE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/kubernetes-identity-spiffe-spire-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/kubernetes-identity-spiffe-spire-sticky.svg" alt="Sticky Note: Kubernetes Identity (SPIFFE / SPIRE)" width="30%">
-</a>
 
 
 **Workload identity concept:**
@@ -4155,16 +2855,6 @@ Service A (caller)                        Service B (callee)
 `
 
 ### Service Mesh IAM
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/service-mesh-iam-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/service-mesh-iam-handwritten.svg" alt="Handwritten: Service Mesh IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/service-mesh-iam-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/service-mesh-iam-diagram.svg" alt="Diagram: Service Mesh IAM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/service-mesh-iam-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/service-mesh-iam-sticky.svg" alt="Sticky Note: Service Mesh IAM" width="30%">
-</a>
 
 
 | Component | Identity | Auth mechanism |
@@ -4202,16 +2892,6 @@ spec:
 ## TypeScript Implementations
 
 ### RBAC Authorization Engine
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/rbac-authorization-engine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/rbac-authorization-engine-handwritten.svg" alt="Handwritten: RBAC Authorization Engine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/rbac-authorization-engine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/rbac-authorization-engine-diagram.svg" alt="Diagram: RBAC Authorization Engine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/rbac-authorization-engine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/rbac-authorization-engine-sticky.svg" alt="Sticky Note: RBAC Authorization Engine" width="30%">
-</a>
 
 
 The following TypeScript class implements a full Role-Based Access Control (RBAC) engine with role hierarchy, permission inheritance, and effective-permissions computation. It supports CRUD + execute actions, resource-pattern matching, and user-role assignment validation.
@@ -4491,16 +3171,6 @@ console.log(`Charlie's effective permissions: ${engine.getEffectivePermissions(c
 ```
 
 ### JWT Auth Middleware
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-auth-middleware-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-auth-middleware-handwritten.svg" alt="Handwritten: JWT Auth Middleware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-auth-middleware-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-auth-middleware-diagram.svg" alt="Diagram: JWT Auth Middleware" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/jwt-auth-middleware-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/jwt-auth-middleware-sticky.svg" alt="Sticky Note: JWT Auth Middleware" width="30%">
-</a>
 
 
 This TypeScript implementation provides a production-grade JWT authentication service with HS256 signing, token expiry validation, refresh token rotation, and issuer/audience verification. It follows the RFC 7519 specification and incorporates security best practices to prevent common JWT attacks.
@@ -4863,16 +3533,6 @@ demoJWT();
 
 ### OAuth 2.0 Authorization Code Flow
 
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/oauth-2-0-authorization-code-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/oauth-2-0-authorization-code-flow-handwritten.svg" alt="Handwritten: OAuth 2.0 Authorization Code Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/oauth-2-0-authorization-code-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/oauth-2-0-authorization-code-flow-diagram.svg" alt="Diagram: OAuth 2.0 Authorization Code Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/oauth-2-0-authorization-code-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/oauth-2-0-authorization-code-flow-sticky.svg" alt="Sticky Note: OAuth 2.0 Authorization Code Flow" width="30%">
-</a>
-
 
 The following sequence diagram illustrates the OAuth 2.0 Authorization Code grant flow with PKCE (Proof Key for Code Exchange). This is the recommended grant type for web, mobile, and single-page applications. PKCE prevents authorization code interception attacks by binding the authorization code to the client's `code_verifier`.
 
@@ -4926,16 +3586,6 @@ sequenceDiagram
 ```
 
 ### SAML SSO Authentication Flow
-
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-sso-authentication-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-sso-authentication-flow-handwritten.svg" alt="Handwritten: SAML SSO Authentication Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-sso-authentication-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-sso-authentication-flow-diagram.svg" alt="Diagram: SAML SSO Authentication Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/06-iam/saml-sso-authentication-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/06-iam/saml-sso-authentication-flow-sticky.svg" alt="Sticky Note: SAML SSO Authentication Flow" width="30%">
-</a>
 
 
 This sequence diagram details the SAML 2.0 Single Sign-On flow (SP-initiated). The Service Provider generates an `<AuthnRequest>`, the Identity Provider authenticates the user and issues a signed `<Response>` containing the `<Assertion>`, and the SP validates the signature and creates a session.

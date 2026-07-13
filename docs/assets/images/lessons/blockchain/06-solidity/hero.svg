@@ -1,52 +1,118 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#eff6ff"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#2563eb"/>
       <stop offset="100%" stop-color="#60a5fa"/>
     </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#f8fafc"/>
+    </linearGradient>
+    <filter id="shadowSm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowMd" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#e2e8f0"/>
+    </pattern>
+    <pattern id="lineGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
+    </pattern>
   </defs>
-  <rect width="1200" height="400" fill="url(#bg)"/>
-  <!-- Accent bar -->
-  <rect x="0" y="0" width="8" height="400" fill="url(#accent)"/>
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#gBg)"/>
+  <rect width="1200" height="400" fill="url(#dotGrid)"/>
   <!-- Decorative shapes -->
   <rect x="900" y="-50" width="400" height="500" rx="30" fill="#2563eb" opacity="0.03" transform="rotate(10 1100 200)"/>
-  <rect x="1000" y="-30" width="300" height="460" rx="40" fill="#3b82f6" opacity="0.04" transform="rotate(-5 1150 200)"/>
-    <circle cx="1038.1248020823964" cy="235.60797703682704" r="34.399379006190536" fill="#2563eb" opacity="0.4"/>
-  <circle cx="1126.4211619823286" cy="224.92995454389603" r="35.017694697940776" fill="#3b82f6" opacity="0.5"/>
-  <circle cx="1158.3166168980429" cy="271.4049389295004" r="58.445785768936986" fill="#60a5fa" opacity="0.6"/>
-  <circle cx="1063.9032643604903" cy="108.83938691908548" r="20.76396669920672" fill="#93c5fd" opacity="0.4"/>
-  <circle cx="1035.513028431816" cy="104.31563929746558" r="23.29343095286386" fill="#bfdbfe" opacity="0.5"/>
-  <circle cx="1068.6163325216455" cy="294.489296295581" r="34.31688042699012" fill="#2563eb" opacity="0.3"/>
+  <rect x="1000" y="-30" width="300" height="460" rx="40" fill="#1e40af" opacity="0.03" transform="rotate(-5 1150 200)"/>
+    <circle cx="950" cy="60" r="45" fill="#2563eb" opacity="0.08"/>
+  <circle cx="1050" cy="100" r="60" fill="#1e40af" opacity="0.08"/>
+  <circle cx="1130" cy="50" r="35" fill="#3b82f6" opacity="0.08"/>
+  <circle cx="990" cy="180" r="50" fill="#60a5fa" opacity="0.08"/>
+  <circle cx="1100" cy="220" r="40" fill="#93c5fd" opacity="0.08"/>
+  <circle cx="920" cy="130" r="25" fill="#bfdbfe" opacity="0.08"/>
+  <circle cx="1150" cy="140" r="30" fill="#2563eb" opacity="0.08"/>
+  <circle cx="1020" cy="280" r="20" fill="#1e40af" opacity="0.08"/>
+  <circle cx="1080" cy="320" r="80" fill="#2563eb" opacity="0.04"/>
+  <g transform="translate(1080,50)">
+    <ellipse cx="14" cy="20" rx="8" ry="12" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <ellipse cx="26" cy="20" rx="8" ry="12" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <path d="M14,10 Q20,6 26,10" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    <path d="M14,30 Q20,34 26,30" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+  </g>
+    <polygon points="954,80 947,94 951.76,94 950.64,108 958.2,92.6 953.44,92.6" fill="#d97706" opacity="0.7"/>
+    <g transform="translate(1136,216)">
+    <circle cx="0" cy="0" r="5.6" fill="none" stroke="#059669" stroke-width="2"/>
+    <rect x="6" y="-3" width="4" height="6" rx="1" fill="#059669" transform="rotate(0 8 0)"/>
+    <rect x="3.6568542494923806" y="2.6568542494923797" width="4" height="6" rx="1" fill="#059669" transform="rotate(45 5.656854249492381 5.65685424949238)"/>
+    <rect x="-1.9999999999999996" y="5" width="4" height="6" rx="1" fill="#059669" transform="rotate(90 4.898587196589413e-16 8)"/>
+    <rect x="-7.65685424949238" y="2.6568542494923806" width="4" height="6" rx="1" fill="#059669" transform="rotate(135 -5.65685424949238 5.656854249492381)"/>
+    <rect x="-10" y="-2.999999999999999" width="4" height="6" rx="1" fill="#059669" transform="rotate(180 -8 9.797174393178826e-16)"/>
+    <rect x="-7.6568542494923815" y="-8.65685424949238" width="4" height="6" rx="1" fill="#059669" transform="rotate(225 -5.6568542494923815 -5.65685424949238)"/>
+    <rect x="-2.0000000000000013" y="-11" width="4" height="6" rx="1" fill="#059669" transform="rotate(270 -1.4695761589768238e-15 -8)"/>
+    <rect x="3.656854249492379" y="-8.656854249492381" width="4" height="6" rx="1" fill="#059669" transform="rotate(315 5.656854249492379 -5.6568542494923815)"/>
+  </g>
+    <g transform="translate(980,250)">
+    <ellipse cx="12.6" cy="18" rx="7.2" ry="10.799999999999999" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+    <ellipse cx="23.400000000000002" cy="18" rx="7.2" ry="10.799999999999999" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+    <path d="M12.6,9 Q18,5.3999999999999995 23.400000000000002,9" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+    <path d="M12.6,27 Q18,30.599999999999998 23.400000000000002,27" fill="none" stroke="#7c3aed" stroke-width="1.2"/>
+  </g>
+  <!-- Accent bar left -->
+  <rect x="0" y="0" width="8" height="400" fill="url(#gBlue)"/>
   <!-- Title -->
-  <text x="60" y="120" font-size="42" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chapter 6: Smart Contract Development</text>
+  <text x="60" y="120" font-size="32" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">Chapter 6: Smart Contract Development</text>
   <!-- Subtitle -->
-  <text x="60" y="170" font-size="18" fill="#64748b" font-family="Arial, sans-serif">Previous: [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md) | Next: [Chapter 7: Decentralized Applications...</text>
+  <text x="60" y="168" font-size="16" fill="#64748b" font-family="Arial, sans-serif">Previous: [Chapter 5: Ethereum and Smart Contracts](./05-ethereum.md) | Next: [Chapter 7: Decentralized Applications...</text>
   <!-- Divider -->
-  <line x1="60" y1="200" x2="260" y2="200" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->
-  <g transform="translate(60, 270)">
-    <rect x="0" y="0" width="140" height="36" rx="6" fill="#2563eb" opacity="0.1"/>
-    <text x="70" y="23" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">6 Concepts</text>
-    <rect x="155" y="0" width="140" height="36" rx="6" fill="#059669" opacity="0.1"/>
-    <text x="225" y="23" font-size="12" fill="#059669" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">4 Algorithms</text>
-    <rect x="310" y="0" width="140" height="36" rx="6" fill="#d97706" opacity="0.1"/>
-    <text x="380" y="23" font-size="12" fill="#d97706" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">6 Formulas</text>
+  <g transform="translate(0, 0)">
+    <rect x="60" y="255" width="86" height="20" rx="10" fill="#2563eb" opacity="0.12"/>
+    <text x="103" y="269" font-size="10" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">0 Concepts</text>
+    <rect x="215" y="255" width="100" height="20" rx="10" fill="#059669" opacity="0.12"/>
+    <text x="265" y="269" font-size="10" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">4 Algorithms</text>
+    <rect x="370" y="255" width="86" height="20" rx="10" fill="#d97706" opacity="0.12"/>
+    <text x="413" y="269" font-size="10" font-weight="bold" fill="#d97706" text-anchor="middle" font-family="Arial, sans-serif">6 Formulas</text>
+    <rect x="525" y="255" width="65" height="20" rx="10" fill="#7c3aed" opacity="0.12"/>
+    <text x="557.5" y="269" font-size="10" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">8 Steps</text>
   </g>
   <!-- Keyword tags -->
-      <rect x="60" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="120" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Previous:</text>
-    <rect x="190" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="250" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Next:</text>
-    <rect x="320" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="380" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Key language fea</text>
-    <rect x="450" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="510" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Pragma:</text>
-    <rect x="580" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="640" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Constructor:</text>
-    <rect x="710" y="320" width="120" height="28" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="770" y="338" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">Modifiers:</text>
+      <rect x="60" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="120" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Previous:</text>
+    <rect x="190" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="250" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Key language fea</text>
+    <rect x="320" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="380" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Pragma:</text>
+    <rect x="450" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="510" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Constructor:</text>
+    <rect x="580" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="640" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Modifiers:</text>
+    <rect x="710" y="322" width="120" height="28" rx="14" fill="#dbeafe" stroke="#2563eb" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="770" y="340" font-size="11" fill="#1e40af" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">Events:</text>
+  <!-- Brand watermark -->
+  <text x="1180" y="388" font-size="10" fill="#94a3b8" text-anchor="end" font-family="Arial, sans-serif" opacity="0.5">ai-engineering-journey</text>
 </svg>

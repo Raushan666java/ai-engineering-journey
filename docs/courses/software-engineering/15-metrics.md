@@ -52,21 +52,9 @@ After completing this chapter, the student will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### Why Measure Software?
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-handwritten.svg" alt="Handwritten: Why Measure Software?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-diagram.svg" alt="Diagram: Why Measure Software?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/why-measure-software-sticky.svg" alt="Sticky Note: Why Measure Software?" width="30%">
-</a>
-
 
 "If you cannot measure it, you cannot improve it." — Lord Kelvin
 
@@ -86,17 +74,6 @@ graph TD
 ```
 
 ### Metric Classification
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-handwritten.svg" alt="Handwritten: Metric Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-diagram.svg" alt="Diagram: Metric Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/metric-classification-sticky.svg" alt="Sticky Note: Metric Classification" width="30%">
-</a>
-
 
 | Category | What it measures | Examples |
 |----------|-----------------|----------|
@@ -125,17 +102,6 @@ graph TD
 ```
 
 ### GQM Paradigm (Goal-Question-Metric)
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-handwritten.svg" alt="Handwritten: GQM Paradigm (Goal-Question-Metric)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-diagram.svg" alt="Diagram: GQM Paradigm (Goal-Question-Metric)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/gqm-paradigm-goal-question-metric-sticky.svg" alt="Sticky Note: GQM Paradigm (Goal-Question-Metric)" width="30%">
-</a>
-
 
 GQM provides a structured way to derive metrics from goals:
 
@@ -184,17 +150,6 @@ graph TD
 
 ### Size Metrics
 
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-handwritten.svg" alt="Handwritten: Size Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-diagram.svg" alt="Diagram: Size Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/size-metrics-sticky.svg" alt="Sticky Note: Size Metrics" width="30%">
-</a>
-
-
 #### Lines of Code (LOC)
 
 | Type | Counts | Usage |
@@ -224,17 +179,6 @@ As detailed in Chapter 8 (Project Management), function points measure functiona
 | External Interface File | 5 | 7 | 10 |
 
 ### Code Metrics
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-handwritten.svg" alt="Handwritten: Code Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-diagram.svg" alt="Diagram: Code Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/code-metrics-sticky.svg" alt="Sticky Note: Code Metrics" width="30%">
-</a>
-
 
 #### Cyclomatic Complexity (McCabe)
 
@@ -302,17 +246,6 @@ Maurice Halstead's software science metrics measure program vocabulary and lengt
 
 ### Maintainability Index
 
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-handwritten.svg" alt="Handwritten: Maintainability Index" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-diagram.svg" alt="Diagram: Maintainability Index" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/maintainability-index-sticky.svg" alt="Sticky Note: Maintainability Index" width="30%">
-</a>
-
-
 The Maintainability Index (MI) combines four metrics:
 
 ```
@@ -333,17 +266,6 @@ Where:
 
 ### Quality Metrics
 
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-handwritten.svg" alt="Handwritten: Quality Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-diagram.svg" alt="Diagram: Quality Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/quality-metrics-sticky.svg" alt="Sticky Note: Quality Metrics" width="30%">
-</a>
-
-
 | Metric | Formula | Target | Description |
 |--------|---------|--------|-------------|
 | **Defect density** | Defects / KLOC | < 1 defect/KLOC | Normalised defect count |
@@ -358,17 +280,6 @@ Where:
 | **Customer Satisfaction (CSAT)** | Survey score (1-5) | > 4.0 | User perception |
 
 ### Agile Metrics
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-handwritten.svg" alt="Handwritten: Agile Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-diagram.svg" alt="Diagram: Agile Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/agile-metrics-sticky.svg" alt="Sticky Note: Agile Metrics" width="30%">
-</a>
-
 
 | Metric | Formula | Purpose |
 |--------|---------|---------|
@@ -398,17 +309,6 @@ graph LR
 
 ### Process Metrics
 
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-handwritten.svg" alt="Handwritten: Process Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-diagram.svg" alt="Diagram: Process Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/process-metrics-sticky.svg" alt="Sticky Note: Process Metrics" width="30%">
-</a>
-
-
 | Metric | Formula | Purpose |
 |--------|---------|---------|
 | **Cycle time** | Time from start to completion | Process efficiency |
@@ -421,17 +321,6 @@ graph LR
 | **Escaped Defects** | Production defects / Total defects | Quality of release process |
 
 ### Project Metrics — Earned Value Management
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-handwritten.svg" alt="Handwritten: Project Metrics — Earned Value Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-diagram.svg" alt="Diagram: Project Metrics — Earned Value Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/project-metrics-earned-value-management-sticky.svg" alt="Sticky Note: Project Metrics — Earned Value Management" width="30%">
-</a>
-
 
 Earned Value Management (EVM) integrates scope, schedule, and cost.
 
@@ -448,17 +337,6 @@ Earned Value Management (EVM) integrates scope, schedule, and cost.
 | **To-Complete Performance Index** | (BAC - EV) / (BAC - AC) | Required efficiency | > 1 = must improve |
 
 ### Prediction Metrics
-
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-handwritten.svg" alt="Handwritten: Prediction Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-diagram.svg" alt="Diagram: Prediction Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/15-metrics/prediction-metrics-sticky.svg" alt="Sticky Note: Prediction Metrics" width="30%">
-</a>
-
 
 #### Defect Prediction Models
 

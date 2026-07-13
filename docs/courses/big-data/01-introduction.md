@@ -129,16 +129,6 @@ The core insight: **horizontal scaling** (adding more commodity machines) is che
 
 ### 1.3.1 Data Locality
 
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-handwritten.svg" alt="Handwritten: 1.3.1 Data Locality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-diagram.svg" alt="Diagram: 1.3.1 Data Locality" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-1-data-locality-sticky.svg" alt="Sticky Note: 1.3.1 Data Locality" width="30%">
-</a>
-
 
 Moving data over the network is the bottleneck. The principle of **data locality** means sending computation to where the data resides, not the reverse.
 
@@ -153,16 +143,6 @@ print(f"Transfer {data_tb}TB over {bandwidth_gbps*8}GbE: {transfer_time_seconds:
 
 ### 1.3.2 Fault Tolerance
 
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-handwritten.svg" alt="Handwritten: 1.3.2 Fault Tolerance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-diagram.svg" alt="Diagram: 1.3.2 Fault Tolerance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-2-fault-tolerance-sticky.svg" alt="Sticky Note: 1.3.2 Fault Tolerance" width="30%">
-</a>
-
 
 In a cluster of 1000 commodity servers, hardware failures are routine, not exceptional. Every framework must handle node failure transparently.
 
@@ -174,16 +154,6 @@ print(f"Expected failures/day: {expected_failures_per_day:.1f}")
 ```
 
 ### 1.3.3 Consistency vs Availability
-
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-handwritten.svg" alt="Handwritten: 1.3.3 Consistency vs Availability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-diagram.svg" alt="Diagram: 1.3.3 Consistency vs Availability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-3-3-consistency-vs-availability-sticky.svg" alt="Sticky Note: 1.3.3 Consistency vs Availability" width="30%">
-</a>
 
 
 Distributed storage systems face the CAP theorem trade-off. HDFS chooses consistency (strong, via namenode). Cassandra chooses availability (eventual consistency).
@@ -265,32 +235,12 @@ counts.saveAsTextFile("s3://bucket/output/")
 
 ### 1.7.1 Installing PySpark
 
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-handwritten.svg" alt="Handwritten: 1.7.1 Installing PySpark" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-diagram.svg" alt="Diagram: 1.7.1 Installing PySpark" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-1-installing-pyspark-sticky.svg" alt="Sticky Note: 1.7.1 Installing PySpark" width="30%">
-</a>
-
 
 ```bash
 pip install pyspark jupyter
 ```
 
 ### 1.7.2 Running Spark Locally
-
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-handwritten.svg" alt="Handwritten: 1.7.2 Running Spark Locally" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-diagram.svg" alt="Diagram: 1.7.2 Running Spark Locally" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-2-running-spark-locally-sticky.svg" alt="Sticky Note: 1.7.2 Running Spark Locally" width="30%">
-</a>
 
 
 ```python
@@ -312,16 +262,6 @@ spark.stop()
 The `local[*]` mode runs on your machine using all available cores. This is sufficient for development and testing on datasets up to a few GB.
 
 ### 1.7.3 Docker Cluster for Development
-
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-handwritten.svg" alt="Handwritten: 1.7.3 Docker Cluster for Development" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-diagram.svg" alt="Diagram: 1.7.3 Docker Cluster for Development" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/1-7-3-docker-cluster-for-development-sticky.svg" alt="Sticky Note: 1.7.3 Docker Cluster for Development" width="30%">
-</a>
 
 
 ```yaml
@@ -493,16 +433,6 @@ class DistributedProcessor {
 | Columnar Storage | Store by column for analytics | Always use Parquet for analytical workloads |
 
 ### Decision Flowchart
-
-<a href="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-handwritten.svg" alt="Handwritten: Decision Flowchart" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-diagram.svg" alt="Diagram: Decision Flowchart" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/decision-flowchart-sticky.svg" alt="Sticky Note: Decision Flowchart" width="30%">
-</a>
 
 
 ```mermaid
@@ -694,16 +624,6 @@ DataFormatBenchmark.compareAll(20, 10_000_000);
 
 ### Case Study: Real-Time Fraud Detection Pipeline
 
-<a href="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-handwritten.svg" alt="Handwritten: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-diagram.svg" alt="Diagram: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/case-study-real-time-fraud-detection-pipeline-sticky.svg" alt="Sticky Note: Case Study: Real-Time Fraud Detection Pipeline" width="30%">
-</a>
-
 
 **Scenario:** A payment processing company handles 1M transactions/day. They need to detect fraud within 100ms. Current system uses a PostgreSQL database with batch ML scoring, taking ~5 minutes per batch.
 
@@ -739,16 +659,6 @@ console.log(`Fraud capture improvement: 60% ? 94%`);
 
 ### Additional Exercises
 
-<a href="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-handwritten.svg" alt="Handwritten: Additional Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-diagram.svg" alt="Diagram: Additional Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/additional-exercises-sticky.svg" alt="Sticky Note: Additional Exercises" width="30%">
-</a>
-
 
 6. Design a Lambda architecture for a social media analytics platform processing 10TB/day with both real-time trending topics and daily aggregated reports.
 7. Compare the cost of running a 20-node Spark cluster (10TB data, 500 compute hours/month) on-premise vs AWS EMR vs Databricks.
@@ -757,16 +667,6 @@ console.log(`Fraud capture improvement: 60% ? 94%`);
 10. Explain how the CAP theorem applies to a distributed data lake architecture using S3 (AP) + Spark (CP during shuffles).
 
 ### Answer Key (Additional)
-
-<a href="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-handwritten.svg" alt="Handwritten: Answer Key (Additional)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-diagram.svg" alt="Diagram: Answer Key (Additional)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/big-data/01-introduction/answer-key-additional-sticky.svg" alt="Sticky Note: Answer Key (Additional)" width="30%">
-</a>
 
 
 6. Batch layer: Spark hourly jobs ? Parquet; Speed layer: Kafka + Flink ? Redis for real-time; Serving layer: Presto on Parquet + API on Redis | 7. On-prem: ~$15K/mo, EMR: ~$5K/mo, Databricks: ~$8K/mo | 8. With locality: ~100s; without: ~800s (8x slower) | 9. ~75% storage savings, ~5x faster queries | 10. S3 is AP (available during partition), Spark shuffle is CP (blocks if partition)

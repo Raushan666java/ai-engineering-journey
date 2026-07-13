@@ -94,16 +94,6 @@ Classical planning assumes a deterministic, fully observable, static environment
 
 ### 8.1.1 STRIPS Representation
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-handwritten.svg" alt="Handwritten: 8.1.1 STRIPS Representation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-diagram.svg" alt="Diagram: 8.1.1 STRIPS Representation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-1-strips-representation-sticky.svg" alt="Sticky Note: 8.1.1 STRIPS Representation" width="30%">
-</a>
-
 
 **Real-World Analogy — Vending Machine:** A vending machine action "buy chips" has preconditions (inserted $2, tray empty), add effects (chips in tray), and delete effects (-$2, tray empty). STRIPS captures exactly this cause-effect logic.
 
@@ -228,16 +218,6 @@ print(strips_plan(initial, goal, actions))  # ['Pickup(A)', 'Stack(A,B)']
 
 ### 8.1.2 ADL (Action Description Language)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-handwritten.svg" alt="Handwritten: 8.1.2 ADL (Action Description Language)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-diagram.svg" alt="Diagram: 8.1.2 ADL (Action Description Language)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-1-2-adl-action-description-language-sticky.svg" alt="Sticky Note: 8.1.2 ADL (Action Description Language)" width="30%">
-</a>
-
 
 **Real-World Analogy — Conditional Recipe:** A recipe step "if using salted butter, skip adding salt" is a conditional effect. ADL captures these "if-then" conditions that STRIPS cannot.
 
@@ -258,16 +238,6 @@ Action(Move(robot, from, to)
 ## 8.2 Forward and Backward Search
 
 ### 8.2.1 Forward (Progression) Search
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-handwritten.svg" alt="Handwritten: 8.2.1 Forward (Progression) Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-diagram.svg" alt="Diagram: 8.2.1 Forward (Progression) Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-1-forward-progression-search-sticky.svg" alt="Sticky Note: 8.2.1 Forward (Progression) Search" width="30%">
-</a>
 
 
 **Real-World Analogy — Maze Solver:** Starting at the entrance, try every path by walking forward one step at a time. If you hit a dead end, backtrack and try another corridor. This is forward search: start from the initial state and explore outward.
@@ -352,16 +322,6 @@ def forward_search(initial, goal, actions):
 - **Symmetries:** Two blocks on table — Pickup(A) vs Pickup(B) explores symmetric branches.
 
 ### 8.2.2 Backward (Regression) Search
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-handwritten.svg" alt="Handwritten: 8.2.2 Backward (Regression) Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-diagram.svg" alt="Diagram: 8.2.2 Backward (Regression) Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/08-planning/8-2-2-backward-regression-search-sticky.svg" alt="Sticky Note: 8.2.2 Backward (Regression) Search" width="30%">
-</a>
 
 
 **Real-World Analogy — Reverse Maze:** Instead of starting at the entrance, you stand at the exit and ask "which corridor could have gotten me here?" You work backward, narrowing possibilities, until you reach the entrance.

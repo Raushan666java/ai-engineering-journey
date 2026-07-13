@@ -101,45 +101,15 @@ flowchart TD
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Think of a corporate org chart. Every employee reports to a manager, who reports to a director, who reports to the CEO. **Find** is the question: *Who is the ultimate boss of this person?* You follow the chain of command until you reach the top — the person who reports to nobody (self-loop). That top person is the **representative** of the entire set (the whole org tree).
 
 ### What Does Find Do?
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-find-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-find-do-handwritten.svg" alt="Handwritten: What Does Find Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-find-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-find-do-diagram.svg" alt="Diagram: What Does Find Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-find-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-find-do-sticky.svg" alt="Sticky Note: What Does Find Do?" width="30%">
-</a>
-
 
 Given an element `x`, Find returns the **root** (representative) of the set containing `x`. If `parent[x] == x`, then `x` is a root. Otherwise, we recursively follow parent pointers.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Check if `parent[x] == x`. If yes, `x` is the root — return `x`.
@@ -147,16 +117,6 @@ Given an element `x`, Find returns the **root** (representative) of the set cont
 3. Return the root found by the recursive call.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -169,16 +129,6 @@ END FUNCTION
 ```
 
 ### Step-by-Step Dry Run: Find Operation
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-find-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-find-operation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Find Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-find-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-find-operation-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Find Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-find-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-find-operation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Find Operation" width="30%">
-</a>
 
 
 **Initial State** (after some unions): parent = [0, 0, 1, 2, 4] for n = 5 elements.
@@ -217,16 +167,6 @@ Now the tree is flat — 1, 2, 3 all point directly to root 0. That's **path com
 
 ### Implementations
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
-
 
 ```cpp
 // C++
@@ -258,16 +198,6 @@ public int find(int x) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Version | Time Complexity | Why? |
 |---------|----------------|------|
@@ -279,16 +209,6 @@ public int find(int x) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|--------------|
@@ -298,16 +218,6 @@ public int find(int x) {
 | Works well for large n (millions of elements) | Without optimizations, worst-case is O(n) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Behavior |
@@ -321,45 +231,15 @@ public int find(int x) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Two companies are merging. Each has its own CEO (root). To merge, the board decides which CEO stays at the top and which becomes a subordinate. That's **union**: pick two sets, designate one root as the new overall root, and attach the other root under it.
 
 ### What Does Union Do?
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-union-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-union-do-handwritten.svg" alt="Handwritten: What Does Union Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-union-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-union-do-diagram.svg" alt="Diagram: What Does Union Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-union-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-union-do-sticky.svg" alt="Sticky Note: What Does Union Do?" width="30%">
-</a>
-
 
 Given two elements `x` and `y`, Union merges the sets containing `x` and `y`. It finds the roots of both, and if they are different, makes one root point to the other. This reduces the total number of sets by one.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Find the root of `x`: `rootX = find(x)`.
@@ -368,16 +248,6 @@ Given two elements `x` and `y`, Union merges the sets containing `x` and `y`. It
 4. Otherwise, attach `rootY` under `rootX` (or vice versa, depending on rank/size).
 
 ### Pseudocode (without rank optimization — basic version)
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-without-rank-optimization-basic-version-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-without-rank-optimization-basic-version-handwritten.svg" alt="Handwritten: Pseudocode (without rank optimization — basic version)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-without-rank-optimization-basic-version-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-without-rank-optimization-basic-version-diagram.svg" alt="Diagram: Pseudocode (without rank optimization — basic version)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-without-rank-optimization-basic-version-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-without-rank-optimization-basic-version-sticky.svg" alt="Sticky Note: Pseudocode (without rank optimization — basic version)" width="30%">
-</a>
 
 
 ```
@@ -391,16 +261,6 @@ END FUNCTION
 ```
 
 ### Step-by-Step Dry Run: Union Operation
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-operation-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Union Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-operation-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Union Operation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-operation-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Union Operation" width="30%">
-</a>
 
 
 **Initial State**: parent = [0, 1, 2, 3, 4], n = 5, numSets = 5.
@@ -443,16 +303,6 @@ Sets: {0}, {1, 2, 3, 4}, numSets = 2
 
 ### Implementations
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
-
 
 ```cpp
 // C++
@@ -492,16 +342,6 @@ public void union(int x, int y) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Version | Time Complexity | Why? |
 |---------|----------------|------|
@@ -511,16 +351,6 @@ public void union(int x, int y) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|--------------|
@@ -529,16 +359,6 @@ public void union(int x, int y) {
 | Minimal code overhead | No ability to split a set |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Behavior |
@@ -552,45 +372,15 @@ public void union(int x, int y) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 In a large bureaucracy, every time someone asks, *"Who's the CEO?"*, the person they ask writes down the answer so nobody has to ask again. If a junior employee asks who the CEO is, they climb the chain, find the CEO, and *everyone on the path* now directly knows the CEO. Next time, any of them answer in one step.
 
 ### What Does Path Compression Do?
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-path-compression-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-path-compression-do-handwritten.svg" alt="Handwritten: What Does Path Compression Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-path-compression-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-path-compression-do-diagram.svg" alt="Diagram: What Does Path Compression Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-path-compression-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-path-compression-do-sticky.svg" alt="Sticky Note: What Does Path Compression Do?" width="30%">
-</a>
-
 
 During `find(x)`, after locating the root, every node visited on the path from `x` to the root has its parent pointer updated to point directly to the root. This **flattens** the tree for future operations.
 
 ### Algorithm Steps (as part of Find)
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-as-part-of-find-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-as-part-of-find-handwritten.svg" alt="Handwritten: Algorithm Steps (as part of Find)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-as-part-of-find-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-as-part-of-find-diagram.svg" alt="Diagram: Algorithm Steps (as part of Find)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-as-part-of-find-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-as-part-of-find-sticky.svg" alt="Sticky Note: Algorithm Steps (as part of Find)" width="30%">
-</a>
 
 
 1. Recursively follow parent pointers until reaching the root.
@@ -598,16 +388,6 @@ During `find(x)`, after locating the root, every node visited on the path from `
 3. Future finds on any node in this subtree now take O(1) or near-O(1).
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -620,16 +400,6 @@ END FUNCTION
 ```
 
 ### Step-by-Step Dry Run: Path Compression Effect
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-path-compression-effect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-path-compression-effect-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Path Compression Effect" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-path-compression-effect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-path-compression-effect-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Path Compression Effect" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-path-compression-effect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-path-compression-effect-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Path Compression Effect" width="30%">
-</a>
 
 
 **Before**: parent = [0, 0, 1, 2, 3, 5] — a deep chain for elements 1-4.
@@ -668,30 +438,10 @@ Now find(1), find(2), find(3), find(4) all return 0 in O(1) each. The tree was f
 
 ### Implementations
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
-
 
 Path compression is implemented entirely inside `find`. See the Find Operation section above for C++, Python, Java.
 
 ### Complexity Analysis
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
 
 
 | Aspect | Value | Why? |
@@ -705,16 +455,6 @@ The key insight: path compression alone is already very good (O(log n) amortized
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|--------------|
@@ -723,16 +463,6 @@ The key insight: path compression alone is already very good (O(log n) amortized
 | Guarantees amortized efficiency | Recursive implementation can stack-overflow on extremely deep trees (use iterative as fallback) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Behavior |
@@ -746,30 +476,10 @@ The key insight: path compression alone is already very good (O(log n) amortized
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 When two companies merge, the smarter strategy is: the *smaller* company's CEO reports to the *larger* company's CEO. Why? Because fewer people need to update their business cards. If the 10,000-person company absorbs the 10-person startup, only 10 people change their reporting — not 10,000. **Union by rank** does exactly this: the shorter tree is always attached under the taller tree, keeping the overall tree height minimal.
 
 ### What Do Union by Rank / Size Do?
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-do-union-by-rank-size-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-do-union-by-rank-size-do-handwritten.svg" alt="Handwritten: What Do Union by Rank / Size Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-do-union-by-rank-size-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-do-union-by-rank-size-do-diagram.svg" alt="Diagram: What Do Union by Rank / Size Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-do-union-by-rank-size-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-do-union-by-rank-size-do-sticky.svg" alt="Sticky Note: What Do Union by Rank / Size Do?" width="30%">
-</a>
 
 
 **Union by rank**: Each node stores a *rank* (an upper bound on its height). When merging, the root with lower rank is attached under the root with higher rank. If ranks are equal, one becomes the new root and its rank increments by 1.
@@ -780,16 +490,6 @@ Both achieve O(log n) tree height without path compression, and O(α(n)) with pa
 
 ### Algorithm Steps (Union by Rank)
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-union-by-rank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-union-by-rank-handwritten.svg" alt="Handwritten: Algorithm Steps (Union by Rank)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-union-by-rank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-union-by-rank-diagram.svg" alt="Diagram: Algorithm Steps (Union by Rank)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-union-by-rank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-union-by-rank-sticky.svg" alt="Sticky Note: Algorithm Steps (Union by Rank)" width="30%">
-</a>
-
 
 1. Find roots: `rootX = find(x)`, `rootY = find(y)`.
 2. If `rootX == rootY`, return.
@@ -799,16 +499,6 @@ Both achieve O(log n) tree height without path compression, and O(α(n)) with pa
 6. Decrement set count.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -830,16 +520,6 @@ END FUNCTION
 ```
 
 ### Step-by-Step Dry Run: Union by Rank
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-by-rank-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-by-rank-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Union by Rank" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-by-rank-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-by-rank-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Union by Rank" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-by-rank-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-union-by-rank-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Union by Rank" width="30%">
-</a>
 
 
 **Initial State**: parent = [0, 1, 2, 3, 4, 5], rank = [0, 0, 0, 0, 0, 0], n = 6.
@@ -900,16 +580,6 @@ Height = 2, numSets = 1. Without union by rank, this could have been a chain of 
 
 ### Implementations
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
-
 
 ```cpp
 // C++
@@ -969,16 +639,6 @@ public void union(int x, int y) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Why O(α(n)) for Combined Optimizations |
 |----------------------------------------|
@@ -990,16 +650,6 @@ public void union(int x, int y) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|--------------|
@@ -1008,16 +658,6 @@ public void union(int x, int y) {
 | No complex logic — simple if-else | Does not help with set enumeration |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Behavior |
@@ -1030,16 +670,6 @@ public void union(int x, int y) {
 ## Complete DSU Implementation (All Optimizations)
 
 ### C++
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/c-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/c-handwritten.svg" alt="Handwritten: C++" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/c-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/c-diagram.svg" alt="Diagram: C++" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/c-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/c-sticky.svg" alt="Sticky Note: C++" width="30%">
-</a>
 
 
 ```cpp
@@ -1085,16 +715,6 @@ public:
 
 ### Python
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/python-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/python-handwritten.svg" alt="Handwritten: Python" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/python-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/python-diagram.svg" alt="Diagram: Python" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/python-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/python-sticky.svg" alt="Sticky Note: Python" width="30%">
-</a>
-
 
 ```python
 class DSU:
@@ -1127,16 +747,6 @@ class DSU:
 ```
 
 ### Java
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/java-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/java-handwritten.svg" alt="Handwritten: Java" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/java-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/java-diagram.svg" alt="Diagram: Java" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/java-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/java-sticky.svg" alt="Sticky Note: Java" width="30%">
-</a>
 
 
 ```java
@@ -1186,30 +796,10 @@ class DSU {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 In a growing friend group, you introduce two friends to each other. If they turn out to be *already* in the same circle through other connections, that introduction creates **redundancy** — a "cycle" in the social graph. In a computer network, adding a cable between two computers that already have a path between them creates a loop that disrupts routing.
 
 ### What Does Cycle Detection with DSU Do?
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-cycle-detection-with-dsu-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-cycle-detection-with-dsu-do-handwritten.svg" alt="Handwritten: What Does Cycle Detection with DSU Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-cycle-detection-with-dsu-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-cycle-detection-with-dsu-do-diagram.svg" alt="Diagram: What Does Cycle Detection with DSU Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-cycle-detection-with-dsu-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-cycle-detection-with-dsu-do-sticky.svg" alt="Sticky Note: What Does Cycle Detection with DSU Do?" width="30%">
-</a>
 
 
 Process each edge (u, v) in the graph. For each edge:
@@ -1221,16 +811,6 @@ This works because DSU tracks connected components dynamically. If two endpoints
 
 ### Algorithm Steps
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
-
 
 1. Initialize a DSU with n elements (one per vertex).
 2. For each edge (u, v) in the graph:
@@ -1240,16 +820,6 @@ This works because DSU tracks connected components dynamically. If two endpoints
 3. If all edges processed without finding a pre-connected pair: **no cycle**.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1266,16 +836,6 @@ END FUNCTION
 ```
 
 ### Step-by-Step Dry Run: Cycle Detection
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-cycle-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-cycle-detection-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Cycle Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-cycle-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-cycle-detection-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Cycle Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-cycle-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-cycle-detection-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Cycle Detection" width="30%">
-</a>
 
 
 **Graph**: vertices = 5, edges = [(0,1), (1,2), (2,3), (3,1)]
@@ -1309,16 +869,6 @@ Initial parent: [0, 1, 2, 3, 4], rank: [0, 0, 0, 0, 0], numSets = 5.
 The cycle is detected because when processing (3,1), both 3 and 1 already have root 0 — they were connected via 3→0 and 1→0 through the path 1-0-2-3 (or 1-2-3). Adding edge (3,1) closes the triangle.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -1358,16 +908,6 @@ public boolean hasCycle(int n, int[][] edges) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Complexity | Why? |
 |-----------|------------|------|
@@ -1380,16 +920,6 @@ public boolean hasCycle(int n, int[][] edges) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|--------------|
@@ -1398,16 +928,6 @@ public boolean hasCycle(int n, int[][] edges) {
 | O(E α(n)) time — effectively linear | Cannot detect *which* edges form the cycle (just *whether* one exists) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Behavior |
@@ -1421,45 +941,15 @@ public boolean hasCycle(int n, int[][] edges) {
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A city wants to lay fiber-optic cable connecting all neighborhoods. Running cable is expensive — you pay per meter. You want to connect every neighborhood (vertices) using the *least total cable length* (minimum total weight) without redundant loops (no cycles). You start with the cheapest cable segments and add them one by one, skipping any segment whose endpoints are already connected. This is Kruskal's algorithm.
 
 ### What Does Kruskal's Algorithm Do?
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-kruskal-s-algorithm-do-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-kruskal-s-algorithm-do-handwritten.svg" alt="Handwritten: What Does Kruskal's Algorithm Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-kruskal-s-algorithm-do-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-kruskal-s-algorithm-do-diagram.svg" alt="Diagram: What Does Kruskal's Algorithm Do?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/what-does-kruskal-s-algorithm-do-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/what-does-kruskal-s-algorithm-do-sticky.svg" alt="Sticky Note: What Does Kruskal's Algorithm Do?" width="30%">
-</a>
-
 
 Builds a Minimum Spanning Tree (MST) by sorting all edges by weight, then processing them from smallest to largest. For each edge (u, v, w), if u and v are in different components (DSU find), add the edge to the MST and union their sets. The result connects all vertices with minimum total weight.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Sort all edges by weight (ascending).
@@ -1471,16 +961,6 @@ Builds a Minimum Spanning Tree (MST) by sorting all edges by weight, then proces
 4. Return MST.
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1505,16 +985,6 @@ END FUNCTION
 ```
 
 ### Step-by-Step Dry Run: Kruskal's Algorithm
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-kruskal-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-kruskal-s-algorithm-handwritten.svg" alt="Handwritten: Step-by-Step Dry Run: Kruskal's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-kruskal-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-kruskal-s-algorithm-diagram.svg" alt="Diagram: Step-by-Step Dry Run: Kruskal's Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-kruskal-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/step-by-step-dry-run-kruskal-s-algorithm-sticky.svg" alt="Sticky Note: Step-by-Step Dry Run: Kruskal's Algorithm" width="30%">
-</a>
 
 
 **Graph** (V = 5):
@@ -1544,16 +1014,6 @@ MST = {(1,2,1), (0,2,2), (3,4,2), (1,3,5)}, totalWeight = 10.
 Note: With proper union by rank, the exact parent values may differ but the MST edges and weight remain the same. Edge (0,1,4) is skipped because 0 and 1 are already connected (0-2-1). Edge (2,4,8) is skipped because all vertices are already connected after adding (1,3,5).
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -1610,16 +1070,6 @@ public List<int[]> kruskal(int V, int[][] edges) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Complexity | Why? |
 |-----------|------------|------|
@@ -1633,16 +1083,6 @@ public List<int[]> kruskal(int V, int[][] edges) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|--------------|
@@ -1652,16 +1092,6 @@ public List<int[]> kruskal(int V, int[][] edges) {
 | DSU simplifies cycle detection | Not suitable for directed graphs (directed MST = Chu–Liu/Edmonds) |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | Behavior |
@@ -1691,16 +1121,6 @@ public List<int[]> kruskal(int V, int[][] edges) {
 > **One-Sentence Takeaway:** Union-Find is the secret weapon for connectivity problems in coding interviews — when you hear "connected components" or "union" in a problem, reach for DSU.
 
 ### 1. Number of Islands II (Dynamic Island Counting)
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/1-number-of-islands-ii-dynamic-island-counting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/1-number-of-islands-ii-dynamic-island-counting-handwritten.svg" alt="Handwritten: 1. Number of Islands II (Dynamic Island Counting)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/1-number-of-islands-ii-dynamic-island-counting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/1-number-of-islands-ii-dynamic-island-counting-diagram.svg" alt="Diagram: 1. Number of Islands II (Dynamic Island Counting)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/1-number-of-islands-ii-dynamic-island-counting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/1-number-of-islands-ii-dynamic-island-counting-sticky.svg" alt="Sticky Note: 1. Number of Islands II (Dynamic Island Counting)" width="30%">
-</a>
 
 
 **Problem**: You have a 2D grid of water (all 0s). You are given positions to add land (1s) one by one. After each addition, return the current number of islands (connected groups of 1s).
@@ -1736,16 +1156,6 @@ def numIslands2(m: int, n: int, positions: list[tuple[int, int]]) -> list[int]:
 
 ### 2. Longest Consecutive Sequence
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/2-longest-consecutive-sequence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/2-longest-consecutive-sequence-handwritten.svg" alt="Handwritten: 2. Longest Consecutive Sequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/2-longest-consecutive-sequence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/2-longest-consecutive-sequence-diagram.svg" alt="Diagram: 2. Longest Consecutive Sequence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/2-longest-consecutive-sequence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/2-longest-consecutive-sequence-sticky.svg" alt="Sticky Note: 2. Longest Consecutive Sequence" width="30%">
-</a>
-
 
 **Problem**: Given an unsorted array of integers, find the length of the longest consecutive elements sequence (e.g., [100, 4, 200, 1, 3, 2] → 4 for [1, 2, 3, 4]).
 
@@ -1776,16 +1186,6 @@ def longestConsecutive(nums: list[int]) -> int:
 **Time**: O(n α(n)), Space: O(n).
 
 ### 3. Accounts Merge
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/3-accounts-merge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/3-accounts-merge-handwritten.svg" alt="Handwritten: 3. Accounts Merge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/3-accounts-merge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/3-accounts-merge-diagram.svg" alt="Diagram: 3. Accounts Merge" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/3-accounts-merge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/3-accounts-merge-sticky.svg" alt="Sticky Note: 3. Accounts Merge" width="30%">
-</a>
 
 
 **Problem**: Given a list of accounts where each account is [name, email1, email2, ...], merge accounts belonging to the same person. Two accounts belong to the same person if they share at least one email.
@@ -1825,16 +1225,6 @@ def accountsMerge(accounts: list[list[str]]) -> list[list[str]]:
 
 ### 4. Redundant Connection
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/4-redundant-connection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/4-redundant-connection-handwritten.svg" alt="Handwritten: 4. Redundant Connection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/4-redundant-connection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/4-redundant-connection-diagram.svg" alt="Diagram: 4. Redundant Connection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/4-redundant-connection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/4-redundant-connection-sticky.svg" alt="Sticky Note: 4. Redundant Connection" width="30%">
-</a>
-
 
 **Problem**: Given an undirected graph of n nodes labeled 1..n, and a list of edges where one edge is extra (creating a cycle), find the edge that, if removed, makes the graph a tree. If multiple, return the last one in the input.
 
@@ -1855,32 +1245,12 @@ def findRedundantConnection(edges: list[list[int]]) -> list[int]:
 
 ### 5. Detect Cycle in an Undirected Graph
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/5-detect-cycle-in-an-undirected-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/5-detect-cycle-in-an-undirected-graph-handwritten.svg" alt="Handwritten: 5. Detect Cycle in an Undirected Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/5-detect-cycle-in-an-undirected-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/5-detect-cycle-in-an-undirected-graph-diagram.svg" alt="Diagram: 5. Detect Cycle in an Undirected Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/5-detect-cycle-in-an-undirected-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/5-detect-cycle-in-an-undirected-graph-sticky.svg" alt="Sticky Note: 5. Detect Cycle in an Undirected Graph" width="30%">
-</a>
-
 
 See the Cycle Detection section above for a complete treatment. The interview pattern is always the same: DSU processes edges in O(E α(V)), returning true the moment a cycle is found.
 
 ## Applications in Real Systems
 
 ### 1. Kruskal's Minimum Spanning Tree — Network Design
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/1-kruskal-s-minimum-spanning-tree-network-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/1-kruskal-s-minimum-spanning-tree-network-design-handwritten.svg" alt="Handwritten: 1. Kruskal's Minimum Spanning Tree — Network Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/1-kruskal-s-minimum-spanning-tree-network-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/1-kruskal-s-minimum-spanning-tree-network-design-diagram.svg" alt="Diagram: 1. Kruskal's Minimum Spanning Tree — Network Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/1-kruskal-s-minimum-spanning-tree-network-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/1-kruskal-s-minimum-spanning-tree-network-design-sticky.svg" alt="Sticky Note: 1. Kruskal's Minimum Spanning Tree — Network Design" width="30%">
-</a>
 
 
 Telecommunications companies, power grids, and water utilities use MST algorithms to design least-cost networks. Kruskal's algorithm with DSU is the standard approach:
@@ -1893,16 +1263,6 @@ Telecommunications companies, power grids, and water utilities use MST algorithm
 DSU makes the cycle-detection step nearly free — O(α(V)) per edge — allowing Kruskal to handle graphs with millions of vertices.
 
 ### 2. Image Segmentation — Connected Component Labeling
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/2-image-segmentation-connected-component-labeling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/2-image-segmentation-connected-component-labeling-handwritten.svg" alt="Handwritten: 2. Image Segmentation — Connected Component Labeling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/2-image-segmentation-connected-component-labeling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/2-image-segmentation-connected-component-labeling-diagram.svg" alt="Diagram: 2. Image Segmentation — Connected Component Labeling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/2-image-segmentation-connected-component-labeling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/2-image-segmentation-connected-component-labeling-sticky.svg" alt="Sticky Note: 2. Image Segmentation — Connected Component Labeling" width="30%">
-</a>
 
 
 In computer vision, **connected component labeling** assigns a unique label to each connected region of pixels sharing the same color/intensity. DSU is the foundation:
@@ -1918,16 +1278,6 @@ Used in:
 
 ### 3. Social Networks — Friend Circles and Recommendations
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/3-social-networks-friend-circles-and-recommendations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/3-social-networks-friend-circles-and-recommendations-handwritten.svg" alt="Handwritten: 3. Social Networks — Friend Circles and Recommendations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/3-social-networks-friend-circles-and-recommendations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/3-social-networks-friend-circles-and-recommendations-diagram.svg" alt="Diagram: 3. Social Networks — Friend Circles and Recommendations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/3-social-networks-friend-circles-and-recommendations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/3-social-networks-friend-circles-and-recommendations-sticky.svg" alt="Sticky Note: 3. Social Networks — Friend Circles and Recommendations" width="30%">
-</a>
-
 
 Every major social platform (Facebook, LinkedIn, Instagram) models users as nodes and relationships as edges. DSU powers:
 
@@ -1941,16 +1291,6 @@ Facebook's 2021 friend graph had ~3 billion nodes — DSU operations on this sca
 
 ### 4. Percolation Theory — Physics and Materials Science
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/4-percolation-theory-physics-and-materials-science-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/4-percolation-theory-physics-and-materials-science-handwritten.svg" alt="Handwritten: 4. Percolation Theory — Physics and Materials Science" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/4-percolation-theory-physics-and-materials-science-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/4-percolation-theory-physics-and-materials-science-diagram.svg" alt="Diagram: 4. Percolation Theory — Physics and Materials Science" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/4-percolation-theory-physics-and-materials-science-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/4-percolation-theory-physics-and-materials-science-sticky.svg" alt="Sticky Note: 4. Percolation Theory — Physics and Materials Science" width="30%">
-</a>
-
 
 **Percolation** asks: does a path exist from the top of a system to the bottom? DSU is the standard computational tool:
 
@@ -1962,16 +1302,6 @@ Facebook's 2021 friend graph had ~3 billion nodes — DSU operations on this sca
 The **percolation threshold** (critical probability where a system transitions from non-percolating to percolating) was famously studied using DSU-based Monte Carlo simulation.
 
 ### 5. Dynamic Connectivity — Database and Distributed Systems
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/5-dynamic-connectivity-database-and-distributed-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/5-dynamic-connectivity-database-and-distributed-systems-handwritten.svg" alt="Handwritten: 5. Dynamic Connectivity — Database and Distributed Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/5-dynamic-connectivity-database-and-distributed-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/5-dynamic-connectivity-database-and-distributed-systems-diagram.svg" alt="Diagram: 5. Dynamic Connectivity — Database and Distributed Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/5-dynamic-connectivity-database-and-distributed-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/5-dynamic-connectivity-database-and-distributed-systems-sticky.svg" alt="Sticky Note: 5. Dynamic Connectivity — Database and Distributed Systems" width="30%">
-</a>
 
 
 - **TCP connection tracking**: Maintaining sets of active connections in a load balancer.
@@ -2052,16 +1382,6 @@ def find(self, x: int) -> int:
 ## Common Mistakes & GFG Deepening
 
 ### Common Mistakes (GFG-Style)
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/common-mistakes-gfg-style-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/common-mistakes-gfg-style-handwritten.svg" alt="Handwritten: Common Mistakes (GFG-Style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/common-mistakes-gfg-style-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/common-mistakes-gfg-style-diagram.svg" alt="Diagram: Common Mistakes (GFG-Style)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/common-mistakes-gfg-style-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/common-mistakes-gfg-style-sticky.svg" alt="Sticky Note: Common Mistakes (GFG-Style)" width="30%">
-</a>
 
 
 | Mistake | Why It's Wrong | Correct Approach |
@@ -2221,16 +1541,6 @@ class DSUWithRollback {
 
 ### Additional MCQs (GFG Pattern)
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/additional-mcqs-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/additional-mcqs-gfg-pattern-handwritten.svg" alt="Handwritten: Additional MCQs (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/additional-mcqs-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/additional-mcqs-gfg-pattern-diagram.svg" alt="Diagram: Additional MCQs (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/additional-mcqs-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/additional-mcqs-gfg-pattern-sticky.svg" alt="Sticky Note: Additional MCQs (GFG Pattern)" width="30%">
-</a>
-
 
 8. **The inverse Ackermann function α(n) for practical values of n (≤ 10⁶) is:**
    - a) ≤ 5 ✓
@@ -2272,16 +1582,6 @@ class DSUWithRollback {
 
 ### Additional Exercises (GFG Pattern)
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/additional-exercises-gfg-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/additional-exercises-gfg-pattern-handwritten.svg" alt="Handwritten: Additional Exercises (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/additional-exercises-gfg-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/additional-exercises-gfg-pattern-diagram.svg" alt="Diagram: Additional Exercises (GFG Pattern)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/additional-exercises-gfg-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/additional-exercises-gfg-pattern-sticky.svg" alt="Sticky Note: Additional Exercises (GFG Pattern)" width="30%">
-</a>
-
 
 11. **Number of provinces (LC 547)**: Given an adjacency matrix of friend connections, find the total number of friend circles (provinces).
 
@@ -2305,16 +1605,6 @@ class DSUWithRollback {
 
 ### DSU Variants Comparison
 
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/dsu-variants-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/dsu-variants-comparison-handwritten.svg" alt="Handwritten: DSU Variants Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/dsu-variants-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/dsu-variants-comparison-diagram.svg" alt="Diagram: DSU Variants Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/dsu-variants-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/dsu-variants-comparison-sticky.svg" alt="Sticky Note: DSU Variants Comparison" width="30%">
-</a>
-
 
 | Variant | find | union | Space | Additional Features | Use Case |
 |---------|------|-------|-------|-------------------|----------|
@@ -2329,16 +1619,6 @@ class DSUWithRollback {
 | 2D DSU | O(α(n)) amortized | O(α(n)) | O(n²) | Grid neighbor mapping | Grid/pixel connectivity |
 
 ### Classic Graph Algorithms with DSU
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/classic-graph-algorithms-with-dsu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/classic-graph-algorithms-with-dsu-handwritten.svg" alt="Handwritten: Classic Graph Algorithms with DSU" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/classic-graph-algorithms-with-dsu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/classic-graph-algorithms-with-dsu-diagram.svg" alt="Diagram: Classic Graph Algorithms with DSU" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/classic-graph-algorithms-with-dsu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/classic-graph-algorithms-with-dsu-sticky.svg" alt="Sticky Note: Classic Graph Algorithms with DSU" width="30%">
-</a>
 
 
 ```typescript
@@ -2436,16 +1716,6 @@ function connectedComponentsTimeline(
 8. Implement **DSU with rollback** — support undoing the last union operation (useful for offline dynamic connectivity). Use a stack to record changes.
 
 ### Interview-Style Problems
-
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/interview-style-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/interview-style-problems-handwritten.svg" alt="Handwritten: Interview-Style Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/interview-style-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/interview-style-problems-diagram.svg" alt="Diagram: Interview-Style Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/18-union-find/interview-style-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/18-union-find/interview-style-problems-sticky.svg" alt="Sticky Note: Interview-Style Problems" width="30%">
-</a>
 
 
 9. **Number of Islands II**: Given an m × n grid of water, and a list of positions to add land one-by-one, return the number of islands after each addition. (See Interview Corner above.)

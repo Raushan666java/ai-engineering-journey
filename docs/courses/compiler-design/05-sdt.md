@@ -80,16 +80,6 @@ flowchart LR
 
 ### Syntax-Directed Definitions
 
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-handwritten.svg" alt="Handwritten: Syntax-Directed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-diagram.svg" alt="Diagram: Syntax-Directed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-definitions-sticky.svg" alt="Sticky Note: Syntax-Directed Definitions" width="30%">
-</a>
-
 
 A **syntax-directed definition** (SDD) is a context-free grammar augmented with semantic rules associated with each production. For a production `A ? X1X2...X?`, each grammar symbol may have an associated set of **attributes**. A semantic rule computes the value of an attribute in terms of other attributes in the same production. Attributes capture the meaning of the program fragment represented by the grammar symbol.
 
@@ -107,16 +97,6 @@ A **syntax-directed definition** (SDD) is a context-free grammar augmented with 
 
 ### Attribute Classification
 
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-handwritten.svg" alt="Handwritten: Attribute Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-diagram.svg" alt="Diagram: Attribute Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/attribute-classification-sticky.svg" alt="Sticky Note: Attribute Classification" width="30%">
-</a>
-
 
 Attributes are classified as **synthesized** or **inherited**:
 
@@ -130,16 +110,6 @@ A synthesized attribute for a nonterminal `A` is computed from attributes of its
 An inherited attribute is computed from the attributes of the parent, siblings, and the nonterminal itself. Inherited attributes pass information sideways or downward through the parse tree, enabling context-dependent computations.
 
 ### Dependency Graphs
-
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-handwritten.svg" alt="Handwritten: Dependency Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-diagram.svg" alt="Diagram: Dependency Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/dependency-graphs-sticky.svg" alt="Sticky Note: Dependency Graphs" width="30%">
-</a>
 
 
 A **dependency graph** represents attribute dependencies as a directed graph where nodes are attribute instances and edges indicate that the target attribute depends on the source attribute. For a well-formed SDD, the dependency graph for every possible parse tree must be acyclic.
@@ -174,32 +144,12 @@ A correct evaluation order is any topological sort of the dependency graph. For 
 
 ### S-Attributed Definitions
 
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-handwritten.svg" alt="Handwritten: S-Attributed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-diagram.svg" alt="Diagram: S-Attributed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/s-attributed-definitions-sticky.svg" alt="Sticky Note: S-Attributed Definitions" width="30%">
-</a>
-
 
 An **S-attributed definition** uses only synthesized attributes. Semantic rules compute a left-hand-side attribute from right-hand-side attributes only. S-attributed definitions are evaluated naturally during a bottom-up parse when a reduction occurs, because the child attributes are available on the parser stack.
 
 S-attributed grammars correspond to the class of context-free grammars that can be evaluated in a single bottom-up pass. Every S-attributed definition is trivially L-attributed.
 
 ### L-Attributed Definitions
-
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-handwritten.svg" alt="Handwritten: L-Attributed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-diagram.svg" alt="Diagram: L-Attributed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/l-attributed-definitions-sticky.svg" alt="Sticky Note: L-Attributed Definitions" width="30%">
-</a>
 
 
 An **L-attributed definition** permits both synthesized and inherited attributes, subject to the restriction that each inherited attribute of `X?` (the j-th symbol on the right-hand side) depends only on:
@@ -214,16 +164,6 @@ This **left-to-right restriction** ensures evaluation can proceed during a depth
 
 ### Syntax-Directed Translation Schemes
 
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-handwritten.svg" alt="Handwritten: Syntax-Directed Translation Schemes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-diagram.svg" alt="Diagram: Syntax-Directed Translation Schemes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/syntax-directed-translation-schemes-sticky.svg" alt="Sticky Note: Syntax-Directed Translation Schemes" width="30%">
-</a>
-
 
 A **syntax-directed translation scheme** (SDT) embeds semantic actions at arbitrary positions within the right-hand side of a production. Actions are delimited by curly braces:
 
@@ -236,16 +176,6 @@ For LR parsing, actions must appear at the right end (**postfix SDT**) because r
 An SDT can always be derived from an SDD by placing each semantic rule at the position where its evaluation becomes possible. The translation from SDD to SDT may require restructuring for practical parsing.
 
 ### Evaluation Order
-
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-handwritten.svg" alt="Handwritten: Evaluation Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-diagram.svg" alt="Diagram: Evaluation Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/evaluation-order-sticky.svg" alt="Sticky Note: Evaluation Order" width="30%">
-</a>
 
 
 For a well-formed SDD, the dependency graph for every possible parse tree is acyclic. A correct evaluation order is any topological sort. For S-attributed definitions:
@@ -268,16 +198,6 @@ Evaluate attributes in depth-first left-to-right:
 ```
 
 ### Complete TypeScript SDT Evaluator
-
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-handwritten.svg" alt="Handwritten: Complete TypeScript SDT Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-diagram.svg" alt="Diagram: Complete TypeScript SDT Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/complete-typescript-sdt-evaluator-sticky.svg" alt="Sticky Note: Complete TypeScript SDT Evaluator" width="30%">
-</a>
 
 
 ```typescript
@@ -632,16 +552,6 @@ whileCode.forEach(line => console.log(`  ${line}`));
 
 ### Implementing S-Attributed Definitions in Yacc/Bison
 
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-handwritten.svg" alt="Handwritten: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-diagram.svg" alt="Diagram: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-s-attributed-definitions-in-yacc-bison-sticky.svg" alt="Sticky Note: Implementing S-Attributed Definitions in Yacc/Bison" width="30%">
-</a>
-
 
 In Yacc or Bison, the synthesized attribute of a left-hand side nonterminal is denoted `$$`, while right-hand side attributes are `$1`, `$2`, etc. When the parser reduces, it pops the right-hand side attributes, computes the action, and pushes the result:
 
@@ -654,16 +564,6 @@ expr: expr '+' term   { $$ = $1 + $3; }
 The parser's value stack manages these attributes. During reduction of `expr ? expr + term`, `$1` is the value of the first `expr` (previously computed and pushed), `$3` is the value of `term`, and `$$` becomes the new `expr`'s value.
 
 ### Implementing L-Attributed Definitions
-
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-handwritten.svg" alt="Handwritten: Implementing L-Attributed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-diagram.svg" alt="Diagram: Implementing L-Attributed Definitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/implementing-l-attributed-definitions-sticky.svg" alt="Sticky Note: Implementing L-Attributed Definitions" width="30%">
-</a>
 
 
 In a recursive-descent parser, L-attributed definitions are implemented by passing inherited attributes as function parameters and returning synthesized attributes. For each nonterminal `A`, the parsing function receives inherited attributes and returns synthesized attributes:
@@ -760,16 +660,6 @@ class TypeCheckingParser {
 ```
 
 ### Applications of SDDs
-
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-handwritten.svg" alt="Handwritten: Applications of SDDs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-diagram.svg" alt="Diagram: Applications of SDDs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/05-sdt/applications-of-sdds-sticky.svg" alt="Sticky Note: Applications of SDDs" width="30%">
-</a>
 
 
 SDDs are used throughout compilation:

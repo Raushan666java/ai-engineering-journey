@@ -124,16 +124,6 @@ flowchart TD
 
 ### 1. AMQP Core Concepts
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/1-amqp-core-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/1-amqp-core-concepts-handwritten.svg" alt="Handwritten: 1. AMQP Core Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/1-amqp-core-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/1-amqp-core-concepts-diagram.svg" alt="Diagram: 1. AMQP Core Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/1-amqp-core-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/1-amqp-core-concepts-sticky.svg" alt="Sticky Note: 1. AMQP Core Concepts" width="30%">
-</a>
-
 
 AMQP (Advanced Message Queuing Protocol) is a wire-level protocol for message-oriented middleware. RabbitMQ is the most popular AMQP broker.
 
@@ -153,16 +143,6 @@ AMQP (Advanced Message Queuing Protocol) is a wire-level protocol for message-or
 A **message queue** (e.g., ActiveMQ, SQS) stores messages in named queues; producers send directly to a queue. An AMQP **message broker** adds an exchange layer Ã¢â‚¬â€ producers never touch queues directly. The exchange determines routing, enabling complex patterns like topic-based subscriptions and fanout.
 
 ### 2. Exchange Types
-
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/2-exchange-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/2-exchange-types-handwritten.svg" alt="Handwritten: 2. Exchange Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/2-exchange-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/2-exchange-types-diagram.svg" alt="Diagram: 2. Exchange Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/2-exchange-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/2-exchange-types-sticky.svg" alt="Sticky Note: 2. Exchange Types" width="30%">
-</a>
 
 
 #### 2.1 DirectExchange
@@ -363,16 +343,6 @@ public Binding allBinding() {
 
 ### 3. Queue Configuration
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/3-queue-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/3-queue-configuration-handwritten.svg" alt="Handwritten: 3. Queue Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/3-queue-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/3-queue-configuration-diagram.svg" alt="Diagram: 3. Queue Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/3-queue-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/3-queue-configuration-sticky.svg" alt="Sticky Note: 3. Queue Configuration" width="30%">
-</a>
-
 
 Queues can be configured with various arguments for behavior control:
 
@@ -475,16 +445,6 @@ public class DeadLetterConfig {
 
 ### 4. Spring AMQP Configuration
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/4-spring-amqp-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/4-spring-amqp-configuration-handwritten.svg" alt="Handwritten: 4. Spring AMQP Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/4-spring-amqp-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/4-spring-amqp-configuration-diagram.svg" alt="Diagram: 4. Spring AMQP Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/4-spring-amqp-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/4-spring-amqp-configuration-sticky.svg" alt="Sticky Note: 4. Spring AMQP Configuration" width="30%">
-</a>
-
 
 #### 4.1 Basic Connection Factory
 
@@ -571,16 +531,6 @@ public ConnectionFactory tlsConnectionFactory() throws Exception {
 ```
 
 ### 5. RabbitTemplate Ã¢â‚¬â€ Sending Messages
-
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/5-rabbittemplate-sending-messages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/5-rabbittemplate-sending-messages-handwritten.svg" alt="Handwritten: 5. RabbitTemplate Ã¢â‚¬â€ Sending Messages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/5-rabbittemplate-sending-messages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/5-rabbittemplate-sending-messages-diagram.svg" alt="Diagram: 5. RabbitTemplate Ã¢â‚¬â€ Sending Messages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/5-rabbittemplate-sending-messages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/5-rabbittemplate-sending-messages-sticky.svg" alt="Sticky Note: 5. RabbitTemplate Ã¢â‚¬â€ Sending Messages" width="30%">
-</a>
 
 
 ```java
@@ -746,16 +696,6 @@ public MessageConverter simpleConverter() {
 
 ### 6. @RabbitListener Ã¢â‚¬â€ Consuming Messages
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/6-rabbitlistener-consuming-messages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/6-rabbitlistener-consuming-messages-handwritten.svg" alt="Handwritten: 6. @RabbitListener Ã¢â‚¬â€ Consuming Messages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/6-rabbitlistener-consuming-messages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/6-rabbitlistener-consuming-messages-diagram.svg" alt="Diagram: 6. @RabbitListener Ã¢â‚¬â€ Consuming Messages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/6-rabbitlistener-consuming-messages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/6-rabbitlistener-consuming-messages-sticky.svg" alt="Sticky Note: 6. @RabbitListener Ã¢â‚¬â€ Consuming Messages" width="30%">
-</a>
-
 
 ```java
 @Component
@@ -855,16 +795,6 @@ public SimpleRabbitListenerContainerFactory retryContainerFactory(
 ```
 
 ### 7. Retry and Error Handling
-
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/7-retry-and-error-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/7-retry-and-error-handling-handwritten.svg" alt="Handwritten: 7. Retry and Error Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/7-retry-and-error-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/7-retry-and-error-handling-diagram.svg" alt="Diagram: 7. Retry and Error Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/7-retry-and-error-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/7-retry-and-error-handling-sticky.svg" alt="Sticky Note: 7. Retry and Error Handling" width="30%">
-</a>
 
 
 #### 7.1 RetryTemplate with Exponential Backoff
@@ -997,16 +927,6 @@ public class ListenerRetryConfig {
 
 ### 8. Batch Processing
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/8-batch-processing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/8-batch-processing-handwritten.svg" alt="Handwritten: 8. Batch Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/8-batch-processing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/8-batch-processing-diagram.svg" alt="Diagram: 8. Batch Processing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/8-batch-processing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/8-batch-processing-sticky.svg" alt="Sticky Note: 8. Batch Processing" width="30%">
-</a>
-
 
 #### 8.1 BatchingRabbitTemplate
 
@@ -1077,16 +997,6 @@ public SimpleRabbitListenerContainerFactory batchContainerFactory(
 ```
 
 ### 9. Multiple Virtual Hosts
-
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/9-multiple-virtual-hosts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/9-multiple-virtual-hosts-handwritten.svg" alt="Handwritten: 9. Multiple Virtual Hosts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/9-multiple-virtual-hosts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/9-multiple-virtual-hosts-diagram.svg" alt="Diagram: 9. Multiple Virtual Hosts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/9-multiple-virtual-hosts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/9-multiple-virtual-hosts-sticky.svg" alt="Sticky Note: 9. Multiple Virtual Hosts" width="30%">
-</a>
 
 
 ```java
@@ -1173,16 +1083,6 @@ public class VhostAwareConsumer {
 
 ### 10. RabbitAdmin Ã¢â‚¬â€ Programmatic Management
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/10-rabbitadmin-programmatic-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/10-rabbitadmin-programmatic-management-handwritten.svg" alt="Handwritten: 10. RabbitAdmin Ã¢â‚¬â€ Programmatic Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/10-rabbitadmin-programmatic-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/10-rabbitadmin-programmatic-management-diagram.svg" alt="Diagram: 10. RabbitAdmin Ã¢â‚¬â€ Programmatic Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/10-rabbitadmin-programmatic-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/10-rabbitadmin-programmatic-management-sticky.svg" alt="Sticky Note: 10. RabbitAdmin Ã¢â‚¬â€ Programmatic Management" width="30%">
-</a>
-
 
 ```java
 @Service
@@ -1245,16 +1145,6 @@ public class RabbitAdminService {
 ```
 
 ### 11. Complete Order Processing Example
-
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/11-complete-order-processing-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/11-complete-order-processing-example-handwritten.svg" alt="Handwritten: 11. Complete Order Processing Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/11-complete-order-processing-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/11-complete-order-processing-example-diagram.svg" alt="Diagram: 11. Complete Order Processing Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/11-complete-order-processing-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/11-complete-order-processing-example-sticky.svg" alt="Sticky Note: 11. Complete Order Processing Example" width="30%">
-</a>
 
 
 ```java
@@ -1431,16 +1321,6 @@ public class RejectingErrorHandler extends ConditionalRejectingErrorHandler {
 
 ### 12. Container Customization
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/12-container-customization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/12-container-customization-handwritten.svg" alt="Handwritten: 12. Container Customization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/12-container-customization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/12-container-customization-diagram.svg" alt="Diagram: 12. Container Customization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/12-container-customization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/12-container-customization-sticky.svg" alt="Sticky Note: 12. Container Customization" width="30%">
-</a>
-
 
 ```java
 @Configuration
@@ -1491,16 +1371,6 @@ public class ContainerCustomizerConfig {
 
 ### 13. Custom Connection Factory with Multiple Channels
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/13-custom-connection-factory-with-multiple-channels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/13-custom-connection-factory-with-multiple-channels-handwritten.svg" alt="Handwritten: 13. Custom Connection Factory with Multiple Channels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/13-custom-connection-factory-with-multiple-channels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/13-custom-connection-factory-with-multiple-channels-diagram.svg" alt="Diagram: 13. Custom Connection Factory with Multiple Channels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/13-custom-connection-factory-with-multiple-channels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/13-custom-connection-factory-with-multiple-channels-sticky.svg" alt="Sticky Note: 13. Custom Connection Factory with Multiple Channels" width="30%">
-</a>
-
 
 ```java
 @Bean
@@ -1543,16 +1413,6 @@ public CachingConnectionFactory multiChannelFactory() {
 
 ### 14. Full Application Properties
 
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/14-full-application-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/14-full-application-properties-handwritten.svg" alt="Handwritten: 14. Full Application Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/14-full-application-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/14-full-application-properties-diagram.svg" alt="Diagram: 14. Full Application Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/14-full-application-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/14-full-application-properties-sticky.svg" alt="Sticky Note: 14. Full Application Properties" width="30%">
-</a>
-
 
 ```yaml
 spring:
@@ -1594,16 +1454,6 @@ spring:
 ```
 
 ### 15. Testing RabbitMQ
-
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/15-testing-rabbitmq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/15-testing-rabbitmq-handwritten.svg" alt="Handwritten: 15. Testing RabbitMQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/15-testing-rabbitmq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/15-testing-rabbitmq-diagram.svg" alt="Diagram: 15. Testing RabbitMQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/35-rabbitmq/15-testing-rabbitmq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/35-rabbitmq/15-testing-rabbitmq-sticky.svg" alt="Sticky Note: 15. Testing RabbitMQ" width="30%">
-</a>
 
 
 ```java

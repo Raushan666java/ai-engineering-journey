@@ -5,7 +5,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/sadhna-yojana/hero.svg" target="_blank" rel="noopener">
@@ -50,17 +49,6 @@
 
 ### प्रत्येक अभ्यास सत्र का प्रारूप
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: प्रत्येक अभ्यास सत्र का प्रारूप" width="30%">
-</a>
-
-
 ```mermaid
 flowchart LR
     subgraph Session["एक अभ्यास सत्र — ओशो शैली"]
@@ -72,17 +60,6 @@ flowchart LR
 ```
 
 ### अभ्यास के नियम (ओशो के अनुसार)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: अभ्यास के नियम (ओशो के अनुसार)" width="30%">
-</a>
-
 
 **ओशो वाणी:**
 > "कुछ नियम हैं — लेकिन नियम बंधन नहीं हैं, वे मार्गदर्शन हैं। इन्हें पत्थर की लकीर मत समझो — ये तो सिर्फ संकेत हैं। तुम्हारा अपना अनुभव ही अंतिम नियम है।"
@@ -102,34 +79,12 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
-</a>
-
-
 इस सप्ताह का उद्देश्य विज्ञान भैरव तंत्र का स्वाद लेना है — पाँचों श्रेणियों से एक-एक तकनीक का अभ्यास। यह योजना उन सभी के लिए है जो पहली बार VBT का अभ्यास कर रहे हैं।
 
 **ओशो वाणी:**
 > "सात दिन — बस सात दिन। इतना तो दे सकते हो। सात दिन लगातार प्रयोग करो। अगर कुछ न हो — तो छोड़ दो। लेकिन सात दिन तो दो। एक दिन भी मत छोड़ो।"
 
 ### दैनिक योजना
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: दैनिक योजना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: दैनिक योजना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: दैनिक योजना" width="30%">
-</a>
-
 
 | दिन | तकनीक # | तकनीक (हिंदी) | श्रेणी | कठिनाई | समय | ओशो का मुख्य निर्देश | अपेक्षित अनुभव |
 |-----|---------|--------------|--------|--------|------|---------------------|----------------|
@@ -142,17 +97,6 @@ flowchart LR
 | दिन ७ | #९४ | आनंद ध्यान | भाव/चेतना | ★ | १० मिनट | "आनंद पहले से है — बस उसे पहचानो। उसे पूरे शरीर में फैलने दो।" | गहरी शांति और आनंद का अनुभव — यह तुम्हारा स्वभाव है। |
 
 ### सप्ताह १ के लिए विशेष निर्देश
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १ के लिए विशेष निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १ के लिए विशेष निर्देश" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १ के लिए विशेष निर्देश" width="30%">
-</a>
-
 
 **ओशो वाणी:**
 > "पहले सप्ताह में किसी निष्कर्ष पर मत पहुँचो। सिर्फ प्रयोग करो। बच्चे की तरह — जिज्ञासु, मासूम, बिना किसी अपेक्षा के।"
@@ -169,34 +113,12 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
-</a>
-
-
 २१ दिनों में पाँचों श्रेणियों की कम से कम २१ तकनीकों का गहराई से अभ्यास। प्रत्येक श्रेणी से ३-५ तकनीकें। इस योजना का उद्देश्य एक मजबूत नींव बनाना है।
 
 **ओशो वाणी:**
 > "इक्कीस दिन — यह एक आदत बनाने का समय है। तीन सप्ताह। ध्यान को अपने जीवन का हिस्सा बनाओ। फिर यह कोई 'करने' की चीज़ नहीं रहेगी — यह तुम्हारा होना बन जाएगी।"
 
 ### सप्ताह १: श्वास और शरीर (दिन १-७)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १: श्वास और शरीर (दिन १-७)" width="30%">
-</a>
-
 
 | दिन | तकनीक # | तकनीक | श्रेणी | समय | ओशो का निर्देश |
 |-----|---------|-------|--------|------|----------------|
@@ -210,17 +132,6 @@ flowchart LR
 
 ### सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह २: दृश्य और ध्वनि (दिन ८-१४)" width="30%">
-</a>
-
-
 | दिन | तकनीक # | तकनीक | श्रेणी | समय | ओशो का निर्देश |
 |-----|---------|-------|--------|------|----------------|
 | ८ | #४७ | प्रकाश ध्यान | दृश्य | १५ मि | "दीपक की लौ को देखो — फिर आँखें बंद करो — वह छाप ही ध्यान बन जाए।" |
@@ -233,17 +144,6 @@ flowchart LR
 
 ### सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ३: भाव/चेतना और समन्वय (दिन १५-२१)" width="30%">
-</a>
-
-
 | दिन | तकनीक # | तकनीक | श्रेणी | समय | ओशो का निर्देश |
 |-----|---------|-------|--------|------|----------------|
 | १५ | #८६ | भाव साक्षी | भाव/चेतना | २० मि | "जो भी भावना उठे — उसे बिना निर्णय के देखो। वह आएगी और जाएगी।" |
@@ -255,17 +155,6 @@ flowchart LR
 | २१ | #१ | श्वास-प्राण धारण | श्वास | ३० मि | "पूरे ३० मिनट — केवल श्वास का साक्षी। आज देखो कितनी गहराई तक जा सकते हो।" |
 
 ### २१ दिन के बाद — आत्म-मूल्यांकन
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: २१ दिन के बाद — आत्म-मूल्यांकन" width="30%">
-</a>
-
 
 | प्रश्न | हाँ | कभी-कभी | नहीं |
 |-------|-----|---------|------|
@@ -281,34 +170,12 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
-</a>
-
-
 ४० दिनों में ४० तकनीकों का गहन अभ्यास — प्रत्येक श्रेणी से ८ तकनीकें। इस योजना में सरल और मध्यम तकनीकों के साथ-साथ कुछ कठिन तकनीकें भी शामिल हैं।
 
 **ओशो वाणी:**
 > "चालीस दिन — एक पूर्ण चक्र। चालीस दिन लगातार अभ्यास करो — और देखो, ध्यान अब कोई क्रिया नहीं, कोई प्रयास नहीं — यह तुम्हारा स्वभाव बन गया है। चालीस दिनों में तुम बदल जाओगे।"
 
 ### सप्ताह १-२: श्वास गहन (दिन १-१४)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह १-२: श्वास गहन (दिन १-१४)" width="30%">
-</a>
-
 
 | दिन | तकनीक # | तकनीक | समय | ओशो का निर्देश |
 |-----|---------|-------|------|----------------|
@@ -329,17 +196,6 @@ flowchart LR
 
 ### सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ३-४: शरीर और दृश्य (दिन १५-२८)" width="30%">
-</a>
-
-
 | दिन | तकनीक # | तकनीक | समय | ओशो का निर्देश |
 |-----|---------|-------|------|----------------|
 | १५ | #२१ | अंग-अंग में चेतना | २० मि | "पैर के अंगूठे से सिर तक — हर अंग पर रुको, महसूस करो।" |
@@ -359,17 +215,6 @@ flowchart LR
 
 ### सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ५-६: ध्वनि और भाव/चेतना (दिन २९-४०)" width="30%">
-</a>
-
-
 | दिन | तकनीक # | तकनीक | समय | ओशो का निर्देश |
 |-----|---------|-------|------|----------------|
 | २९ | #६७ | नाद ब्रह्म उपासना | २० मि | "एक ध्वनि चुनो — उसमें पूरी तरह डूब जाओ। ध्वनि और श्रोता एक हो जाएं।" |
@@ -387,17 +232,6 @@ flowchart LR
 
 ### ४० दिन का उपलब्धि स्तर
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: ४० दिन का उपलब्धि स्तर" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: ४० दिन का उपलब्धि स्तर" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: ४० दिन का उपलब्धि स्तर" width="30%">
-</a>
-
-
 | मापदंड | शुरुआत (दिन १) | अब (दिन ४०) | बदलाव |
 |--------|----------------|-------------|-------|
 | ध्यान में स्थिरता | ___ मिनट | ___ मिनट | ___ |
@@ -411,34 +245,12 @@ flowchart LR
 
 ### उद्देश्य
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: उद्देश्य" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: उद्देश्य" width="30%">
-</a>
-
-
 सभी ११२ तकनीकों का क्रमबद्ध अभ्यास — ११२ दिन, ११२ तकनीकें। यह एक पूर्ण यात्रा है — श्वास से लेकर परम चेतना तक।
 
 **ओशो वाणी:**
 > "११२ दिन — ११२ तकनीकें। यह कोई रेस नहीं है। एक-एक दिन जिओ। एक-एक तकनीक को पूरा अनुभव करो। जल्दी मत करो — जल्दी से तुम केवल अपने आप को चूकोगे। हर तकनीक में इतना डूबो कि वह तुम्हारा पूरा अनुभव बन जाए।"
 
 ### ११२-दिवसीय गैंट चार्ट
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: ११२-दिवसीय गैंट चार्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: ११२-दिवसीय गैंट चार्ट" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: ११२-दिवसीय गैंट चार्ट" width="30%">
-</a>
-
 
 ```mermaid
 gantt
@@ -483,17 +295,6 @@ gantt
 
 ### क्रमबद्ध तकनीक सूची (११२ दिन)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: क्रमबद्ध तकनीक सूची (११२ दिन)" width="30%">
-</a>
-
-
 | सप्ताह | दिन | तकनीक # | तकनीक | श्रेणी | कठिनाई | समय |
 |-------|-----|---------|-------|--------|--------|------|
 | सप्ताह १ | १-७ | #१-#७ | श्वास-प्राण धारण से प्राण-नाड़ी प्रबोधन तक | श्वास | ★-★★★ | १५-२५ मि |
@@ -516,17 +317,6 @@ gantt
 
 ### प्रत्येक तकनीक के लिए सत्र संरचना
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: प्रत्येक तकनीक के लिए सत्र संरचना" width="30%">
-</a>
-
-
 | चरण | समय | कार्य |
 |------|------|-------|
 | प्रारंभ | २ मिनट | शांत बैठना, आँखें बंद करना, ३ गहरी श्वास |
@@ -536,17 +326,6 @@ gantt
 | लेखन | ३ मिनट | अनुभव को तीन वाक्यों में लिखें |
 
 ### सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: सप्ताह ४ में से एक का नमूना (सप्ताह १४ — भाव/चेतना)" width="30%">
-</a>
-
 
 | दिन | तकनीक # | तकनीक | ओशो का निर्देश | अनुभव लिखें |
 |-----|---------|-------|----------------|-------------|
@@ -564,17 +343,6 @@ gantt
 
 ### दैनिक अभ्यास लॉग
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: दैनिक अभ्यास लॉग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: दैनिक अभ्यास लॉग" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: दैनिक अभ्यास लॉग" width="30%">
-</a>
-
-
 | दिनांक | दिन # | तकनीक # | तकनीक | समय (मि) | कठिनाई (१-५) | गहराई (१-१०) | मुख्य अनुभव | अगले दिन का संकल्प |
 |--------|-------|---------|-------|----------|--------------|--------------|------------|-------------------|
 | / | १ | #१ | श्वास-प्राण धारण | १० | १ | ४ | मन बार-बार भटका | कल १२ मिनट करूँ |
@@ -589,17 +357,6 @@ gantt
 
 ### साप्ताहिक प्रगति मूल्यांकन
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: साप्ताहिक प्रगति मूल्यांकन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: साप्ताहिक प्रगति मूल्यांकन" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: साप्ताहिक प्रगति मूल्यांकन" width="30%">
-</a>
-
-
 | सप्ताह | कुल तकनीकें | कुल समय | श्रेणियाँ कवर | सबसे अच्छा अनुभव | सबसे कठिन | अगले सप्ताह का लक्ष्य |
 |--------|------------|---------|--------------|-----------------|-----------|---------------------|
 | १ | ___ | ___ मि | ___ | ___ | ___ | ___ |
@@ -610,17 +367,6 @@ gantt
 | १६ | ___ | ___ मि | ___ | ___ | ___ | ___ |
 
 ### पूरी यात्रा की प्रगति डैशबोर्ड
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: पूरी यात्रा की प्रगति डैशबोर्ड" width="30%">
-</a>
-
 
 ```
 ═══════════════════════════════════════════════════════════════
@@ -647,17 +393,6 @@ gantt
 ```
 
 ### खाली प्रगति ट्रैकर (प्रिंट करने योग्य)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-handwritten.svg" alt="Handwritten: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-diagram.svg" alt="Diagram: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/sadhna-yojana/-sticky.svg" alt="Sticky Note: खाली प्रगति ट्रैकर (प्रिंट करने योग्य)" width="30%">
-</a>
-
 
 ```
 दिन # | तिथि | विधि | तकनीक | समय | कठिनाई (१-५) | गहराई (१-१०) | अनुभव (३ शब्द)

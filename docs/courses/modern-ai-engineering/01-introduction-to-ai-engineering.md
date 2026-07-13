@@ -49,7 +49,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## 1.1 What is AI Engineering?
 
 AI engineering is the discipline of building production-ready applications powered by foundation models. It sits at the intersection of machine learning engineering, software engineering, and systems design, but introduces unique concerns that neither field addresses alone.

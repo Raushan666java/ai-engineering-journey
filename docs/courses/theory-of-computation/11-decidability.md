@@ -81,16 +81,6 @@ flowchart LR
 
 ### 10.1 Decidable vs Undecidable Problems
 
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-handwritten.svg" alt="Handwritten: 10.1 Decidable vs Undecidable Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-diagram.svg" alt="Diagram: 10.1 Decidable vs Undecidable Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-1-decidable-vs-undecidable-problems-sticky.svg" alt="Sticky Note: 10.1 Decidable vs Undecidable Problems" width="30%">
-</a>
-
 
 A problem (language) is **decidable** if there exists an algorithm (Turing machine that always halts) that correctly answers yes/no for every instance. Otherwise, it is **undecidable**.
 
@@ -107,16 +97,6 @@ A problem (language) is **decidable** if there exists an algorithm (Turing machi
 - Many problems about TMs: emptiness, equivalence, totality.
 
 ### 10.2 The Halting Problem
-
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-handwritten.svg" alt="Handwritten: 10.2 The Halting Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-diagram.svg" alt="Diagram: 10.2 The Halting Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-2-the-halting-problem-sticky.svg" alt="Sticky Note: 10.2 The Halting Problem" width="30%">
-</a>
 
 
 **HALT_TM = { âŸ¨M, wâŸ© | M is a TM and M halts on input w }**
@@ -145,16 +125,6 @@ Thus H cannot exist. HALT_TM is undecidable.
 
 ### 10.3 The Diagonalization Language
 
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-handwritten.svg" alt="Handwritten: 10.3 The Diagonalization Language" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-diagram.svg" alt="Diagram: 10.3 The Diagonalization Language" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-3-the-diagonalization-language-sticky.svg" alt="Sticky Note: 10.3 The Diagonalization Language" width="30%">
-</a>
-
 
 Define A_TM = { âŸ¨M, wâŸ© | M accepts w }.
 
@@ -168,16 +138,6 @@ Define A_TM = { âŸ¨M, wâŸ© | M accepts w }.
 - Therefore H cannot exist.
 
 ### 10.4 The Post Correspondence Problem (PCP)
-
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-handwritten.svg" alt="Handwritten: 10.4 The Post Correspondence Problem (PCP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-diagram.svg" alt="Diagram: 10.4 The Post Correspondence Problem (PCP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-4-the-post-correspondence-problem-pcp-sticky.svg" alt="Sticky Note: 10.4 The Post Correspondence Problem (PCP)" width="30%">
-</a>
 
 
 The **Post Correspondence Problem** asks: given a collection of dominoes (tiles), each with a top string and bottom string, can we arrange them (with repetitions allowed) so that the concatenation of top strings equals the concatenation of bottom strings?
@@ -203,16 +163,6 @@ A solution: 1, 3, 2, 3 gives:
 
 ### 10.5 Reductions
 
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-handwritten.svg" alt="Handwritten: 10.5 Reductions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-diagram.svg" alt="Diagram: 10.5 Reductions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-reductions-sticky.svg" alt="Sticky Note: 10.5 Reductions" width="30%">
-</a>
-
 
 A **reduction** is a way to convert one problem to another so that a solution to the second can be used to solve the first.
 
@@ -229,16 +179,6 @@ To prove B is undecidable using a reduction:
 
 ### 10.5 Decidable Problems About Regular Languages
 
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-handwritten.svg" alt="Handwritten: 10.5 Decidable Problems About Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-diagram.svg" alt="Diagram: 10.5 Decidable Problems About Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-5-decidable-problems-about-regular-languages-sticky.svg" alt="Sticky Note: 10.5 Decidable Problems About Regular Languages" width="30%">
-</a>
-
 
 All of the following are decidable (proved in Chapter 4):
 
@@ -250,16 +190,6 @@ All of the following are decidable (proved in Chapter 4):
 6. **DFA finiteness:** Is L(M) finite? (Check for cycles that can reach an accept state.)
 
 ### 10.6 Decidable Problems About CFLs
-
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-handwritten.svg" alt="Handwritten: 10.6 Decidable Problems About CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-diagram.svg" alt="Diagram: 10.6 Decidable Problems About CFLs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-6-decidable-problems-about-cfls-sticky.svg" alt="Sticky Note: 10.6 Decidable Problems About CFLs" width="30%">
-</a>
 
 
 1. **CFG membership:** Given CFG G and string w, does G generate w? (CYK algorithm, O(nÂ³).)
@@ -273,16 +203,6 @@ All of the following are decidable (proved in Chapter 4):
 4. **CFG universality:** Does G generate Î£*?
 
 ### 10.7 Undecidable Problems About TMs
-
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-handwritten.svg" alt="Handwritten: 10.7 Undecidable Problems About TMs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-diagram.svg" alt="Diagram: 10.7 Undecidable Problems About TMs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-7-undecidable-problems-about-tms-sticky.svg" alt="Sticky Note: 10.7 Undecidable Problems About TMs" width="30%">
-</a>
 
 
 Once we have one undecidable problem (A_TM), we can prove many others undecidable by reduction:
@@ -299,16 +219,6 @@ Once we have one undecidable problem (A_TM), we can prove many others undecidabl
 
 ### 10.8 Mapping Reductions vs Turing Reductions
 
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-handwritten.svg" alt="Handwritten: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-diagram.svg" alt="Diagram: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-8-mapping-reductions-vs-turing-reductions-sticky.svg" alt="Sticky Note: 10.8 Mapping Reductions vs Turing Reductions" width="30%">
-</a>
-
 
 **Mapping reduction (=?):** There is a computable function f such that w ? A ? f(w) ? B.
 
@@ -324,16 +234,6 @@ Once we have one undecidable problem (A_TM), we can prove many others undecidabl
 **Example:** The complement of A_TM is not many-one reducible to A_TM (since A_TM is RE but not recursive), but it IS Turing-reducible (just flip the answer). This subtlety matters in the arithmetic hierarchy.
 
 ### 10.9 Hilbert's Tenth Problem
-
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-handwritten.svg" alt="Handwritten: 10.9 Hilbert's Tenth Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-diagram.svg" alt="Diagram: 10.9 Hilbert's Tenth Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-9-hilbert-s-tenth-problem-sticky.svg" alt="Sticky Note: 10.9 Hilbert's Tenth Problem" width="30%">
-</a>
 
 
 Hilbert's tenth problem (1900) asked for an algorithm to determine whether a given Diophantine equation (polynomial equation with integer coefficients) has an integer solution.
@@ -355,16 +255,6 @@ flowchart TD
 ```
 
 ### 10.10 Rice's Theorem
-
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-handwritten.svg" alt="Handwritten: 10.10 Rice's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-diagram.svg" alt="Diagram: 10.10 Rice's Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/11-decidability/10-10-rice-s-theorem-sticky.svg" alt="Sticky Note: 10.10 Rice's Theorem" width="30%">
-</a>
 
 
 Rice's theorem is a powerful generalization: any non-trivial property of the language of a TM is undecidable.

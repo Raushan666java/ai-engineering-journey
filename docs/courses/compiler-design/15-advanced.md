@@ -91,16 +91,6 @@ flowchart TB
 
 ### Just-In-Time Compilation
 
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-handwritten.svg" alt="Handwritten: Just-In-Time Compilation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-diagram.svg" alt="Diagram: Just-In-Time Compilation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/just-in-time-compilation-sticky.svg" alt="Sticky Note: Just-In-Time Compilation" width="30%">
-</a>
-
 
 Just-in-time (JIT) compilation translates intermediate code into native machine code at *runtime*, combining the portability of an interpreted IR with execution speeds approaching those of ahead-of-time (AOT) compiled code. JIT compilers are central to modern language runtimes: Java (HotSpot), JavaScript (V8), C# (.NET RyuJIT), Lua (LuaJIT), and Python (PyPy, though tracing).
 
@@ -165,16 +155,6 @@ int result = obj.compute();   // virtual dispatch
 
 ### Oracle HotSpot JVM: A Case Study
 
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-handwritten.svg" alt="Handwritten: Oracle HotSpot JVM: A Case Study" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-diagram.svg" alt="Diagram: Oracle HotSpot JVM: A Case Study" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/oracle-hotspot-jvm-a-case-study-sticky.svg" alt="Sticky Note: Oracle HotSpot JVM: A Case Study" width="30%">
-</a>
-
 
 HotSpot's C2 compiler is one of the most sophisticated JIT compilers ever built. Key features:
 
@@ -186,16 +166,6 @@ HotSpot's C2 compiler is one of the most sophisticated JIT compilers ever built.
 - **Adaptive Optimization**: C2 monitors the performance of compiled code and recompiles it with different optimizations if the performance counters indicate problems (e.g., too many cache misses, branch mispredictions).
 
 ### Google V8 JavaScript Engine: A Case Study
-
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-handwritten.svg" alt="Handwritten: Google V8 JavaScript Engine: A Case Study" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-diagram.svg" alt="Diagram: Google V8 JavaScript Engine: A Case Study" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/google-v8-javascript-engine-a-case-study-sticky.svg" alt="Sticky Note: Google V8 JavaScript Engine: A Case Study" width="30%">
-</a>
 
 
 V8 compiles JavaScript through multiple tiers:
@@ -221,16 +191,6 @@ Highly optimized native code (very hot)
 **Deoptimization in V8**: When TurboFan speculates on types (e.g., "this property is always an integer"), a guard checks the type. If the guard fails, execution bails out to Ignition bytecode at the next loop back edge or method entry. V8 maintains a **deoptimization state** encoded as a sequence of bytecode offsets and register mappings.
 
 ### Interprocedural Analysis and Optimization
-
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-handwritten.svg" alt="Handwritten: Interprocedural Analysis and Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-diagram.svg" alt="Diagram: Interprocedural Analysis and Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/interprocedural-analysis-and-optimization-sticky.svg" alt="Sticky Note: Interprocedural Analysis and Optimization" width="30%">
-</a>
 
 
 Interprocedural analysis (IPA) extends compiler reasoning across function boundaries. While intraprocedural analysis treats each function as a black box, IPA considers the entire program's call graph.
@@ -268,16 +228,6 @@ Inlining decisions are based on heuristics:
 
 ### Profile-Guided Optimization
 
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-handwritten.svg" alt="Handwritten: Profile-Guided Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-diagram.svg" alt="Diagram: Profile-Guided Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/profile-guided-optimization-sticky.svg" alt="Sticky Note: Profile-Guided Optimization" width="30%">
-</a>
-
 
 Profile-guided optimization (PGO) uses runtime profiling data to guide compiler decisions. The workflow has three phases:
 
@@ -312,16 +262,6 @@ The compiler reads profile data and uses it to:
 PGO typically yields 10?30% performance improvement over static optimization alone and is widely used in game engines, database systems, and large-scale services.
 
 ### Static Single Assignment (SSA) Form
-
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-handwritten.svg" alt="Handwritten: Static Single Assignment (SSA) Form" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-diagram.svg" alt="Diagram: Static Single Assignment (SSA) Form" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/static-single-assignment-ssa-form-sticky.svg" alt="Sticky Note: Static Single Assignment (SSA) Form" width="30%">
-</a>
 
 
 Static single assignment form is an intermediate representation in which each variable is assigned exactly once in the text of the program. When multiple definitions reach a use point, a f-function (phi-function) merges them:
@@ -416,16 +356,6 @@ SSA simplifies many optimizations because each variable has a single definition 
 
 ### The Sea-of-Nodes IR
 
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-handwritten.svg" alt="Handwritten: The Sea-of-Nodes IR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-diagram.svg" alt="Diagram: The Sea-of-Nodes IR" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/the-sea-of-nodes-ir-sticky.svg" alt="Sticky Note: The Sea-of-Nodes IR" width="30%">
-</a>
-
 
 LLVM uses SSA form. C2 (HotSpot) and TurboFan (V8) use **sea-of-nodes**, an extension of SSA where:
 - Nodes represent operations (additions, loads, branches, f-functions).
@@ -435,16 +365,6 @@ LLVM uses SSA form. C2 (HotSpot) and TurboFan (V8) use **sea-of-nodes**, an exte
 The sea-of-nodes enables **global code motion**: an operation can be placed at any point after its inputs are available and before its outputs are used, regardless of basic-block structure. This subsumes LICM, global scheduling, and partial redundancy elimination into a single graph transformation.
 
 ### Auto-Parallelization
-
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-handwritten.svg" alt="Handwritten: Auto-Parallelization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-diagram.svg" alt="Diagram: Auto-Parallelization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/auto-parallelization-sticky.svg" alt="Sticky Note: Auto-Parallelization" width="30%">
-</a>
 
 
 Auto-parallelization transforms sequential code into parallel code automatically, targeting multi-core processors or SIMD units. The compiler must verify correctness via dependence analysis.
@@ -500,16 +420,6 @@ When dependence prevents full parallelization, the compiler may:
 Modern processors can speculatively execute loop iterations out of order (hardware speculation). The compiler can be more aggressive in parallelization, relying on hardware to detect and recover from dependence violations. This is the basis of Transactional Memory approaches.
 
 ### Putting It All Together ? TypeScript Implementation
-
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/15-advanced/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
 
 
 ```typescript

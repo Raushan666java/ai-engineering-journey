@@ -90,16 +90,6 @@ flowchart LR
 
 ### What is Version Control?
 
-<a href="../../../assets/images/diagrams/devops/03-version-control/what-is-version-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/what-is-version-control-handwritten.svg" alt="Handwritten: What is Version Control?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/what-is-version-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/what-is-version-control-diagram.svg" alt="Diagram: What is Version Control?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/what-is-version-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/what-is-version-control-sticky.svg" alt="Sticky Note: What is Version Control?" width="30%">
-</a>
-
 
 Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. It is the foundation of every DevOps practice:
 
@@ -110,16 +100,6 @@ Version control is a system that records changes to a file or set of files over 
 - **Audit trail:** Know exactly what code is running in production and how it got there.
 
 ### Centralized Version Control (CVCS)
-
-<a href="../../../assets/images/diagrams/devops/03-version-control/centralized-version-control-cvcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/centralized-version-control-cvcs-handwritten.svg" alt="Handwritten: Centralized Version Control (CVCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/centralized-version-control-cvcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/centralized-version-control-cvcs-diagram.svg" alt="Diagram: Centralized Version Control (CVCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/centralized-version-control-cvcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/centralized-version-control-cvcs-sticky.svg" alt="Sticky Note: Centralized Version Control (CVCS)" width="30%">
-</a>
 
 
 In CVCS (e.g., SVN, Perforce, CVS):
@@ -132,16 +112,6 @@ In CVCS (e.g., SVN, Perforce, CVS):
 
 ### Distributed Version Control (DVCS)
 
-<a href="../../../assets/images/diagrams/devops/03-version-control/distributed-version-control-dvcs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/distributed-version-control-dvcs-handwritten.svg" alt="Handwritten: Distributed Version Control (DVCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/distributed-version-control-dvcs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/distributed-version-control-dvcs-diagram.svg" alt="Diagram: Distributed Version Control (DVCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/distributed-version-control-dvcs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/distributed-version-control-dvcs-sticky.svg" alt="Sticky Note: Distributed Version Control (DVCS)" width="30%">
-</a>
-
 
 In DVCS (e.g., Git, Mercurial):
 - Every developer has a complete copy of the repository
@@ -152,16 +122,6 @@ In DVCS (e.g., Git, Mercurial):
 **Disadvantages:** Steeper learning curve, large initial clone, merging complexity.
 
 ### Git Workflow in DevOps
-
-<a href="../../../assets/images/diagrams/devops/03-version-control/git-workflow-in-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/git-workflow-in-devops-handwritten.svg" alt="Handwritten: Git Workflow in DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/git-workflow-in-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/git-workflow-in-devops-diagram.svg" alt="Diagram: Git Workflow in DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/git-workflow-in-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/git-workflow-in-devops-sticky.svg" alt="Sticky Note: Git Workflow in DevOps" width="30%">
-</a>
 
 
 The core Git workflow maps directly to the DevOps pipeline:
@@ -188,16 +148,6 @@ flowchart LR
 ```
 
 ### Branching Models
-
-<a href="../../../assets/images/diagrams/devops/03-version-control/branching-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/branching-models-handwritten.svg" alt="Handwritten: Branching Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/branching-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/branching-models-diagram.svg" alt="Diagram: Branching Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/branching-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/branching-models-sticky.svg" alt="Sticky Note: Branching Models" width="30%">
-</a>
 
 
 **Feature Branching:** Every feature has its own branch. When complete, merge via PR.
@@ -234,16 +184,6 @@ flowchart LR
 
 ### Monorepo vs Multi-Repo
 
-<a href="../../../assets/images/diagrams/devops/03-version-control/monorepo-vs-multi-repo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/monorepo-vs-multi-repo-handwritten.svg" alt="Handwritten: Monorepo vs Multi-Repo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/monorepo-vs-multi-repo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/monorepo-vs-multi-repo-diagram.svg" alt="Diagram: Monorepo vs Multi-Repo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/monorepo-vs-multi-repo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/monorepo-vs-multi-repo-sticky.svg" alt="Sticky Note: Monorepo vs Multi-Repo" width="30%">
-</a>
-
 
 **Monorepo (single repository):**
 - Google, Microsoft, Meta use single massive repos
@@ -264,16 +204,6 @@ flowchart LR
 
 ### Tagging and Release Management
 
-<a href="../../../assets/images/diagrams/devops/03-version-control/tagging-and-release-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/tagging-and-release-management-handwritten.svg" alt="Handwritten: Tagging and Release Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/tagging-and-release-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/tagging-and-release-management-diagram.svg" alt="Diagram: Tagging and Release Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/tagging-and-release-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/tagging-and-release-management-sticky.svg" alt="Sticky Note: Tagging and Release Management" width="30%">
-</a>
-
 
 Tags create named, immutable references to specific commits:
 
@@ -291,16 +221,6 @@ git push --tags                   # Push all tags
 - PATCH: Bug fixes, backward compatible
 
 ### Advanced Merge Strategies
-
-<a href="../../../assets/images/diagrams/devops/03-version-control/advanced-merge-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/advanced-merge-strategies-handwritten.svg" alt="Handwritten: Advanced Merge Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/advanced-merge-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/advanced-merge-strategies-diagram.svg" alt="Diagram: Advanced Merge Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/advanced-merge-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/advanced-merge-strategies-sticky.svg" alt="Sticky Note: Advanced Merge Strategies" width="30%">
-</a>
 
 
 Choosing the right merge strategy affects commit history readability:
@@ -334,16 +254,6 @@ flowchart LR
 ```
 
 ### Git Bisect for Root Cause Analysis
-
-<a href="../../../assets/images/diagrams/devops/03-version-control/git-bisect-for-root-cause-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/git-bisect-for-root-cause-analysis-handwritten.svg" alt="Handwritten: Git Bisect for Root Cause Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/git-bisect-for-root-cause-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/git-bisect-for-root-cause-analysis-diagram.svg" alt="Diagram: Git Bisect for Root Cause Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/git-bisect-for-root-cause-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/git-bisect-for-root-cause-analysis-sticky.svg" alt="Sticky Note: Git Bisect for Root Cause Analysis" width="30%">
-</a>
 
 
 `git bisect` uses binary search to find the exact commit that introduced a bug:
@@ -395,16 +305,6 @@ class GitBisector {
 
 ### Signed Commits and Verification
 
-<a href="../../../assets/images/diagrams/devops/03-version-control/signed-commits-and-verification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/signed-commits-and-verification-handwritten.svg" alt="Handwritten: Signed Commits and Verification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/signed-commits-and-verification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/signed-commits-and-verification-diagram.svg" alt="Diagram: Signed Commits and Verification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/signed-commits-and-verification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/signed-commits-and-verification-sticky.svg" alt="Sticky Note: Signed Commits and Verification" width="30%">
-</a>
-
 
 GPG-signing commits provides cryptographic proof of authorship:
 
@@ -443,16 +343,6 @@ flowchart LR
 
 ### VCS and CI/CD Integration
 
-<a href="../../../assets/images/diagrams/devops/03-version-control/vcs-and-ci-cd-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/vcs-and-ci-cd-integration-handwritten.svg" alt="Handwritten: VCS and CI/CD Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/vcs-and-ci-cd-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/vcs-and-ci-cd-integration-diagram.svg" alt="Diagram: VCS and CI/CD Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/vcs-and-ci-cd-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/vcs-and-ci-cd-integration-sticky.svg" alt="Sticky Note: VCS and CI/CD Integration" width="30%">
-</a>
-
 
 Every version control event can trigger CI/CD actions:
 
@@ -474,16 +364,6 @@ docker push myapp:$VERSION
 ```
 
 ### Code Review Practices
-
-<a href="../../../assets/images/diagrams/devops/03-version-control/code-review-practices-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/code-review-practices-handwritten.svg" alt="Handwritten: Code Review Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/code-review-practices-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/code-review-practices-diagram.svg" alt="Diagram: Code Review Practices" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/03-version-control/code-review-practices-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/03-version-control/code-review-practices-sticky.svg" alt="Sticky Note: Code Review Practices" width="30%">
-</a>
 
 
 Effective code review in version control:

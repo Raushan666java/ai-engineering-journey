@@ -169,16 +169,6 @@ The selector targets HTML elements; the declaration block sets visual properties
 
 ### Element Selectors
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/element-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/element-selectors-handwritten.svg" alt="Handwritten: Element Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/element-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/element-selectors-diagram.svg" alt="Diagram: Element Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/element-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/element-selectors-sticky.svg" alt="Sticky Note: Element Selectors" width="30%">
-</a>
-
 
 ```html
 <!DOCTYPE html>
@@ -214,16 +204,6 @@ The selector targets HTML elements; the declaration block sets visual properties
 ```
 
 ### Class Selectors
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/class-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/class-selectors-handwritten.svg" alt="Handwritten: Class Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/class-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/class-selectors-diagram.svg" alt="Diagram: Class Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/class-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/class-selectors-sticky.svg" alt="Sticky Note: Class Selectors" width="30%">
-</a>
 
 
 Class selectors target elements by their `class` attribute. A class can be reused on any number of elements.
@@ -278,16 +258,6 @@ Class selectors target elements by their `class` attribute. A class can be reuse
 
 ### ID Selectors
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/id-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/id-selectors-handwritten.svg" alt="Handwritten: ID Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/id-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/id-selectors-diagram.svg" alt="Diagram: ID Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/id-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/id-selectors-sticky.svg" alt="Sticky Note: ID Selectors" width="30%">
-</a>
-
 
 IDs are unique per page. Use them sparingly.
 
@@ -340,16 +310,6 @@ IDs are unique per page. Use them sparingly.
 ```
 
 ### Attribute Selectors
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/attribute-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/attribute-selectors-handwritten.svg" alt="Handwritten: Attribute Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/attribute-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/attribute-selectors-diagram.svg" alt="Diagram: Attribute Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/attribute-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/attribute-selectors-sticky.svg" alt="Sticky Note: Attribute Selectors" width="30%">
-</a>
 
 
 Attribute selectors match elements based on the presence or value of attributes.
@@ -416,16 +376,6 @@ Attribute selectors match elements based on the presence or value of attributes.
 
 ### Combinator Selectors
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/combinator-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/combinator-selectors-handwritten.svg" alt="Handwritten: Combinator Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/combinator-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/combinator-selectors-diagram.svg" alt="Diagram: Combinator Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/combinator-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/combinator-selectors-sticky.svg" alt="Sticky Note: Combinator Selectors" width="30%">
-</a>
-
 
 Combinators describe relationships between elements.
 
@@ -467,16 +417,6 @@ Combinators describe relationships between elements.
 ```
 
 ### Pseudo-class Selectors
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/pseudo-class-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/pseudo-class-selectors-handwritten.svg" alt="Handwritten: Pseudo-class Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/pseudo-class-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/pseudo-class-selectors-diagram.svg" alt="Diagram: Pseudo-class Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/pseudo-class-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/pseudo-class-selectors-sticky.svg" alt="Sticky Note: Pseudo-class Selectors" width="30%">
-</a>
 
 
 Pseudo-classes represent a **state** or **position** of an element.
@@ -528,16 +468,6 @@ Pseudo-classes represent a **state** or **position** of an element.
 
 ### Pseudo-element Selectors
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/pseudo-element-selectors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/pseudo-element-selectors-handwritten.svg" alt="Handwritten: Pseudo-element Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/pseudo-element-selectors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/pseudo-element-selectors-diagram.svg" alt="Diagram: Pseudo-element Selectors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/pseudo-element-selectors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/pseudo-element-selectors-sticky.svg" alt="Sticky Note: Pseudo-element Selectors" width="30%">
-</a>
-
 
 Pseudo-elements style a **part** of an element. They use double colons (`::`).
 
@@ -579,16 +509,6 @@ Pseudo-elements style a **part** of an element. They use double colons (`::`).
 ```
 
 ### Specificity Calculation
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/specificity-calculation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/specificity-calculation-handwritten.svg" alt="Handwritten: Specificity Calculation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/specificity-calculation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/specificity-calculation-diagram.svg" alt="Diagram: Specificity Calculation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/specificity-calculation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/specificity-calculation-sticky.svg" alt="Sticky Note: Specificity Calculation" width="30%">
-</a>
 
 
 When multiple CSS rules target the same element, specificity determines which applies. Specificity is a four-part value: **(inline, IDs, classes, elements)**.
@@ -633,16 +553,6 @@ When multiple CSS rules target the same element, specificity determines which ap
 | `!important` | Wins all (avoid) |
 
 ### Cascade and Inheritance
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/cascade-and-inheritance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/cascade-and-inheritance-handwritten.svg" alt="Handwritten: Cascade and Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/cascade-and-inheritance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/cascade-and-inheritance-diagram.svg" alt="Diagram: Cascade and Inheritance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/cascade-and-inheritance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/cascade-and-inheritance-sticky.svg" alt="Sticky Note: Cascade and Inheritance" width="30%">
-</a>
 
 
 The cascade resolves conflicts by: (1) origin and importance, (2) specificity, (3) order. **Inheritance** passes certain property values from parent to child. Font properties inherit; layout properties generally do not.
@@ -714,16 +624,6 @@ Every element in CSS is rendered as a rectangular box.
 
 ### Box Sizing
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/box-sizing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/box-sizing-handwritten.svg" alt="Handwritten: Box Sizing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/box-sizing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/box-sizing-diagram.svg" alt="Diagram: Box Sizing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/box-sizing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/box-sizing-sticky.svg" alt="Sticky Note: Box Sizing" width="30%">
-</a>
-
 
 The `box-sizing` property changes how `width` and `height` are calculated.
 
@@ -765,16 +665,6 @@ The universal reset:
 ```
 
 ### Margin, Padding, and Border Details
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/margin-padding-and-border-details-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/margin-padding-and-border-details-handwritten.svg" alt="Handwritten: Margin, Padding, and Border Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/margin-padding-and-border-details-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/margin-padding-and-border-details-diagram.svg" alt="Diagram: Margin, Padding, and Border Details" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/margin-padding-and-border-details-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/margin-padding-and-border-details-sticky.svg" alt="Sticky Note: Margin, Padding, and Border Details" width="30%">
-</a>
 
 
 ```html
@@ -826,16 +716,6 @@ The `display` property controls how an element participates in flow layout.
 
 ### Display Values
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/display-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/display-values-handwritten.svg" alt="Handwritten: Display Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/display-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/display-values-diagram.svg" alt="Diagram: Display Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/display-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/display-values-sticky.svg" alt="Sticky Note: Display Values" width="30%">
-</a>
-
 
 ```html
 <!DOCTYPE html>
@@ -878,16 +758,6 @@ The `display` property controls how an element participates in flow layout.
 ```
 
 ### Position Values
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/position-values-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/position-values-handwritten.svg" alt="Handwritten: Position Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/position-values-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/position-values-diagram.svg" alt="Diagram: Position Values" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/position-values-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/position-values-sticky.svg" alt="Sticky Note: Position Values" width="30%">
-</a>
 
 
 ```html
@@ -953,16 +823,6 @@ CSS provides extensive control over font selection, sizing, spacing, and alignme
 
 ### Font Properties
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/font-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/font-properties-handwritten.svg" alt="Handwritten: Font Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/font-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/font-properties-diagram.svg" alt="Diagram: Font Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/font-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/font-properties-sticky.svg" alt="Sticky Note: Font Properties" width="30%">
-</a>
-
 
 ```html
 <!DOCTYPE html>
@@ -1008,16 +868,6 @@ CSS provides extensive control over font selection, sizing, spacing, and alignme
 
 ### Web Fonts with @font-face
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/web-fonts-with-font-face-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/web-fonts-with-font-face-handwritten.svg" alt="Handwritten: Web Fonts with @font-face" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/web-fonts-with-font-face-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/web-fonts-with-font-face-diagram.svg" alt="Diagram: Web Fonts with @font-face" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/web-fonts-with-font-face-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/web-fonts-with-font-face-sticky.svg" alt="Sticky Note: Web Fonts with @font-face" width="30%">
-</a>
-
 
 ```html
 <!DOCTYPE html>
@@ -1044,16 +894,6 @@ CSS provides extensive control over font selection, sizing, spacing, and alignme
 ```
 
 ### Google Fonts
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/google-fonts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/google-fonts-handwritten.svg" alt="Handwritten: Google Fonts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/google-fonts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/google-fonts-diagram.svg" alt="Diagram: Google Fonts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/google-fonts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/google-fonts-sticky.svg" alt="Sticky Note: Google Fonts" width="30%">
-</a>
 
 
 ```html
@@ -1246,16 +1086,6 @@ Responsive design ensures interfaces work across all screen sizes.
 
 ### Media Queries
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/media-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/media-queries-handwritten.svg" alt="Handwritten: Media Queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/media-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/media-queries-diagram.svg" alt="Diagram: Media Queries" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/media-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/media-queries-sticky.svg" alt="Sticky Note: Media Queries" width="30%">
-</a>
-
 
 ```html
 <!DOCTYPE html>
@@ -1291,16 +1121,6 @@ Responsive design ensures interfaces work across all screen sizes.
 
 ### Relative Units
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/relative-units-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/relative-units-handwritten.svg" alt="Handwritten: Relative Units" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/relative-units-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/relative-units-diagram.svg" alt="Diagram: Relative Units" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/relative-units-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/relative-units-sticky.svg" alt="Sticky Note: Relative Units" width="30%">
-</a>
-
 
 | Unit | Relative To |
 |------|-------------|
@@ -1333,16 +1153,6 @@ Responsive design ensures interfaces work across all screen sizes.
 ```
 
 ### Responsive Images
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/responsive-images-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/responsive-images-handwritten.svg" alt="Handwritten: Responsive Images" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/responsive-images-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/responsive-images-diagram.svg" alt="Diagram: Responsive Images" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/responsive-images-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/responsive-images-sticky.svg" alt="Sticky Note: Responsive Images" width="30%">
-</a>
 
 
 ```html
@@ -1480,16 +1290,6 @@ element.style.setProperty('--spacing-4', '2rem');
 
 ### CSS Transitions
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/css-transitions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/css-transitions-handwritten.svg" alt="Handwritten: CSS Transitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/css-transitions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/css-transitions-diagram.svg" alt="Diagram: CSS Transitions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/css-transitions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/css-transitions-sticky.svg" alt="Sticky Note: CSS Transitions" width="30%">
-</a>
-
 
 ```html
 <!DOCTYPE html>
@@ -1543,16 +1343,6 @@ transition: background 0.3s ease, transform 0.3s ease;
 ```
 
 ### Keyframe Animations
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/keyframe-animations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/keyframe-animations-handwritten.svg" alt="Handwritten: Keyframe Animations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/keyframe-animations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/keyframe-animations-diagram.svg" alt="Diagram: Keyframe Animations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/keyframe-animations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/keyframe-animations-sticky.svg" alt="Sticky Note: Keyframe Animations" width="30%">
-</a>
 
 
 ```html
@@ -1637,16 +1427,6 @@ Tailwind CSS is a utility-first framework that provides low-level utility classe
 
 ### Utility-First Approach
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/utility-first-approach-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/utility-first-approach-handwritten.svg" alt="Handwritten: Utility-First Approach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/utility-first-approach-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/utility-first-approach-diagram.svg" alt="Diagram: Utility-First Approach" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/utility-first-approach-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/utility-first-approach-sticky.svg" alt="Sticky Note: Utility-First Approach" width="30%">
-</a>
-
 
 ```html
 <!-- Traditional: custom CSS -->
@@ -1661,16 +1441,6 @@ Tailwind CSS is a utility-first framework that provides low-level utility classe
 ```
 
 ### Configuration
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/configuration-handwritten.svg" alt="Handwritten: Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/configuration-diagram.svg" alt="Diagram: Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/configuration-sticky.svg" alt="Sticky Note: Configuration" width="30%">
-</a>
 
 
 Tailwind v4 uses CSS-first configuration:
@@ -1711,16 +1481,6 @@ export default {
 
 ### Responsive Prefixes
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/responsive-prefixes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/responsive-prefixes-handwritten.svg" alt="Handwritten: Responsive Prefixes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/responsive-prefixes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/responsive-prefixes-diagram.svg" alt="Diagram: Responsive Prefixes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/responsive-prefixes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/responsive-prefixes-sticky.svg" alt="Sticky Note: Responsive Prefixes" width="30%">
-</a>
-
 
 ```html
 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -1741,16 +1501,6 @@ export default {
 
 ### Dark Mode
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/dark-mode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/dark-mode-handwritten.svg" alt="Handwritten: Dark Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/dark-mode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/dark-mode-diagram.svg" alt="Diagram: Dark Mode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/dark-mode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/dark-mode-sticky.svg" alt="Sticky Note: Dark Mode" width="30%">
-</a>
-
 
 ```html
 <!-- Enable via tailwind.config.js: darkMode: "class" -->
@@ -1767,16 +1517,6 @@ document.documentElement.classList.toggle('dark');
 
 ### Custom Utilities
 
-<a href="../../../assets/images/diagrams/laravel/css-basics/custom-utilities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/custom-utilities-handwritten.svg" alt="Handwritten: Custom Utilities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/custom-utilities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/custom-utilities-diagram.svg" alt="Diagram: Custom Utilities" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/custom-utilities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/custom-utilities-sticky.svg" alt="Sticky Note: Custom Utilities" width="30%">
-</a>
-
 
 ```css
 /* Tailwind v4 */
@@ -1791,16 +1531,6 @@ document.documentElement.classList.toggle('dark');
 ```
 
 ### Integration with Laravel + Vite
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/integration-with-laravel-vite-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/integration-with-laravel-vite-handwritten.svg" alt="Handwritten: Integration with Laravel + Vite" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/integration-with-laravel-vite-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/integration-with-laravel-vite-diagram.svg" alt="Diagram: Integration with Laravel + Vite" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/integration-with-laravel-vite-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/integration-with-laravel-vite-sticky.svg" alt="Sticky Note: Integration with Laravel + Vite" width="30%">
-</a>
 
 
 ```js
@@ -1838,16 +1568,6 @@ export default defineConfig({
 ```
 
 ### Commands
-
-<a href="../../../assets/images/diagrams/laravel/css-basics/commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/commands-handwritten.svg" alt="Handwritten: Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/commands-diagram.svg" alt="Diagram: Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/css-basics/commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/css-basics/commands-sticky.svg" alt="Sticky Note: Commands" width="30%">
-</a>
 
 
 ```bash

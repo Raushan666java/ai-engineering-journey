@@ -86,16 +86,6 @@ flowchart LR
 
 ### 11.1 Failure Classification
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-handwritten.svg" alt="Handwritten: 11.1 Failure Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-diagram.svg" alt="Diagram: 11.1 Failure Classification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-1-failure-classification-sticky.svg" alt="Sticky Note: 11.1 Failure Classification" width="30%">
-</a>
-
 
 Database systems face various failure scenarios. Each requires a different recovery strategy. Understanding failure classification is the first step in designing a robust recovery subsystem.
 
@@ -361,16 +351,6 @@ for e in events:
 
 ### 11.2 Storage Hierarchy
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-handwritten.svg" alt="Handwritten: 11.2 Storage Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-diagram.svg" alt="Diagram: 11.2 Storage Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-2-storage-hierarchy-sticky.svg" alt="Sticky Note: 11.2 Storage Hierarchy" width="30%">
-</a>
-
 
 Database systems use a hierarchy of storage types, each with different speed, cost, and persistence characteristics.
 
@@ -570,16 +550,6 @@ for rec in stable.log:
 
 ### 11.3 Buffer Management Policies
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-handwritten.svg" alt="Handwritten: 11.3 Buffer Management Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-diagram.svg" alt="Diagram: 11.3 Buffer Management Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-3-buffer-management-policies-sticky.svg" alt="Sticky Note: 11.3 Buffer Management Policies" width="30%">
-</a>
-
 
 Buffer management policies determine when modified pages are written from the volatile buffer pool to non-volatile storage. These policies directly impact what recovery algorithms must do.
 
@@ -775,16 +745,6 @@ print(f"Policy {bm.policy} requires REDO={True}, UNDO={True}")
 ---
 
 ### 11.4 The Write-Ahead Log (WAL)
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-handwritten.svg" alt="Handwritten: 11.4 The Write-Ahead Log (WAL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-diagram.svg" alt="Diagram: 11.4 The Write-Ahead Log (WAL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-4-the-write-ahead-log-wal-sticky.svg" alt="Sticky Note: 11.4 The Write-Ahead Log (WAL)" width="30%">
-</a>
 
 
 The Write-Ahead Log is the foundation of all modern database recovery. The rule is simple but absolute:
@@ -1107,16 +1067,6 @@ for rec in wal.read_log():
 5. **Log buffer too small:** Under heavy write load, the log buffer fills faster than it can be flushed. This becomes a bottleneck. Increasing the log buffer size can significantly improve throughput.
 
 ### 11.5 Log-Based Recovery Algorithms
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-handwritten.svg" alt="Handwritten: 11.5 Log-Based Recovery Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-diagram.svg" alt="Diagram: 11.5 Log-Based Recovery Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-5-log-based-recovery-algorithms-sticky.svg" alt="Sticky Note: 11.5 Log-Based Recovery Algorithms" width="30%">
-</a>
 
 
 Log-based recovery uses the Write-Ahead Log to restore the database to a consistent state after a failure. There are three main strategies: UNDO, REDO, and combined UNDO/REDO.
@@ -1709,16 +1659,6 @@ print(f"Final: {disk}")
 
 ### 11.6 Checkpointing
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-handwritten.svg" alt="Handwritten: 11.6 Checkpointing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-diagram.svg" alt="Diagram: 11.6 Checkpointing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-6-checkpointing-sticky.svg" alt="Sticky Note: 11.6 Checkpointing" width="30%">
-</a>
-
 
 A checkpoint records a consistent state of the database in the log, establishing a known-safe restart point. After a checkpoint, recovery can start from the checkpoint rather than from the beginning of the log.
 
@@ -1997,16 +1937,6 @@ print(f"Recovery would start from LSN {cp.get_recovery_lsn()}")
 ---
 
 ### 11.7 The ARIES Algorithm
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-handwritten.svg" alt="Handwritten: 11.7 The ARIES Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-diagram.svg" alt="Diagram: 11.7 The ARIES Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-7-the-aries-algorithm-sticky.svg" alt="Sticky Note: 11.7 The ARIES Algorithm" width="30%">
-</a>
 
 
 ARIES (Algorithm for Recovery and Isolation Exploiting Semantics) is the industry-standard recovery algorithm developed by C. Mohan at IBM in the 1990s. It powers IBM DB2, Microsoft SQL Server, and heavily influences PostgreSQL and Oracle.
@@ -2414,16 +2344,6 @@ If the system crashes during recovery itself, ARIES starts over from the beginni
 
 ### 11.8 Shadow Paging
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-handwritten.svg" alt="Handwritten: 11.8 Shadow Paging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-diagram.svg" alt="Diagram: 11.8 Shadow Paging" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-8-shadow-paging-sticky.svg" alt="Sticky Note: 11.8 Shadow Paging" width="30%">
-</a>
-
 
 Shadow paging is an alternative to log-based recovery that uses **copy-on-write** page management. Instead of modifying pages in place, shadow paging creates a copy (shadow) of each page before modification.
 
@@ -2693,16 +2613,6 @@ db.show()
 
 ### 11.9 Recovery Techniques Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-handwritten.svg" alt="Handwritten: 11.9 Recovery Techniques Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-diagram.svg" alt="Diagram: 11.9 Recovery Techniques Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-9-recovery-techniques-comparison-sticky.svg" alt="Sticky Note: 11.9 Recovery Techniques Comparison" width="30%">
-</a>
-
 
 | Aspect | Log-Based (UNDO/REDO) | Shadow Paging | ARIES |
 |--------|----------------------|--------------|-------|
@@ -2718,16 +2628,6 @@ db.show()
 | **Complexity** | Medium | Low (concept) / Medium (impl) | High |
 
 ### 11.10 Interview Corner
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-handwritten.svg" alt="Handwritten: 11.10 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-diagram.svg" alt="Diagram: 11.10 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-10-interview-corner-sticky.svg" alt="Sticky Note: 11.10 Interview Corner" width="30%">
-</a>
 
 
 **Q1: What is the Write-Ahead Log (WAL) principle and why is it non-negotiable?**
@@ -2788,16 +2688,6 @@ A CLR records the fact that an undo action was performed. It contains: `<CLR, TI
 STEAL/NO-FORCE dominates because it's the only combination that allows both memory-efficient buffer management (STEAL) and write-batching (NO-FORCE).
 
 ### 11.11 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-handwritten.svg" alt="Handwritten: 11.11 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-diagram.svg" alt="Diagram: 11.11 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-applications-in-real-systems-sticky.svg" alt="Sticky Note: 11.11 Applications in Real Systems" width="30%">
-</a>
 
 
 #### 11.11.1 PostgreSQL WAL
@@ -2892,16 +2782,6 @@ Oracle Database has separate redo and undo subsystems:
 
 ### 11.12 Media Recovery
 
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-handwritten.svg" alt="Handwritten: 11.12 Media Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-diagram.svg" alt="Diagram: 11.12 Media Recovery" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-12-media-recovery-sticky.svg" alt="Sticky Note: 11.12 Media Recovery" width="30%">
-</a>
-
 
 For media failures (disk failure), recovery from backups is needed:
 
@@ -2925,16 +2805,6 @@ pg_basebackup -D /backup/location          -- Physical backup
 > **One-Sentence Takeaway:** Media recovery combines full backups with WAL archives (continuous archiving) to restore any point in time, making backup testing as critical as backup creation.
 
 ### 11.13 SQL Recovery Commands
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-handwritten.svg" alt="Handwritten: 11.13 SQL Recovery Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-diagram.svg" alt="Diagram: 11.13 SQL Recovery Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-13-sql-recovery-commands-sticky.svg" alt="Sticky Note: 11.13 SQL Recovery Commands" width="30%">
-</a>
 
 
 ```sql
@@ -2961,16 +2831,6 @@ COMMIT;
 > **One-Sentence Takeaway:** SQL recovery commands â†’ SAVEPOINT, ROLLBACK TO, and COMMIT â†’ give developers fine-grained control over transaction boundaries without waiting for crashes.
 
 ### 11.14 Recovery in Distributed Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-handwritten.svg" alt="Handwritten: 11.14 Recovery in Distributed Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-diagram.svg" alt="Diagram: 11.14 Recovery in Distributed Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-14-recovery-in-distributed-systems-sticky.svg" alt="Sticky Note: 11.14 Recovery in Distributed Systems" width="30%">
-</a>
 
 
 Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
@@ -3052,17 +2912,6 @@ Distributed transactions require the **Two-Phase Commit (2PC)** protocol:
 **Answers:** 1-b, 2-c, 3-b, 4-b, 5-b, 6-b, 7-b, 8-b, 9-b, 10-b
 
 ### 11.11 TypeScript Write-Ahead Log Simulator
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-handwritten.svg" alt="Handwritten: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-diagram.svg" alt="Diagram: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/11-11-typescript-write-ahead-log-simulator-sticky.svg" alt="Sticky Note: 11.11 TypeScript Write-Ahead Log Simulator" width="30%">
-</a>
-
 
 The code below simulates crash recovery using Write-Ahead Logging (WAL) with REDO and UNDO capabilities.
 
@@ -3206,17 +3055,6 @@ flowchart TD
 ```
 
 ### Additional Chapter Quiz Questions
-
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-handwritten.svg" alt="Handwritten: Additional Chapter Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-diagram.svg" alt="Diagram: Additional Chapter Quiz Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/11-recovery/additional-chapter-quiz-questions-sticky.svg" alt="Sticky Note: Additional Chapter Quiz Questions" width="30%">
-</a>
-
 
 11. The main purpose of the REDO phase in ARIES recovery is to:
     a) Revert uncommitted changes

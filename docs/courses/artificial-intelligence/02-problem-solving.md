@@ -98,16 +98,6 @@ Every AI search problem follows this same pattern: **where you are, what you can
 
 ### 2.1.1 What is Problem Formulation?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-handwritten.svg" alt="Handwritten: 2.1.1 What is Problem Formulation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-diagram.svg" alt="Diagram: 2.1.1 What is Problem Formulation?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-1-what-is-problem-formulation-sticky.svg" alt="Sticky Note: 2.1.1 What is Problem Formulation?" width="30%">
-</a>
-
 
 Problem formulation is the process of abstracting a real-world situation into a formal search problem that an AI agent can solve. A well-formulated problem has six components:
 
@@ -121,16 +111,6 @@ Problem formulation is the process of abstracting a real-world situation into a 
 > **Key Insight:** A **solution** is a sequence of actions that transforms the initial state into a goal state. An **optimal solution** minimizes the total path cost.
 
 ### 2.1.2 Algorithm — Problem Formulation Steps
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-handwritten.svg" alt="Handwritten: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-diagram.svg" alt="Diagram: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-2-algorithm-problem-formulation-steps-sticky.svg" alt="Sticky Note: 2.1.2 Algorithm — Problem Formulation Steps" width="30%">
-</a>
 
 
 ```
@@ -146,16 +126,6 @@ ALGORITHM: FormulateProblem(realWorldSituation)
 
 ### 2.1.3 Dry Run — Formulating the 8-Puzzle
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-handwritten.svg" alt="Handwritten: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-diagram.svg" alt="Diagram: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-3-dry-run-formulating-the-8-puzzle-sticky.svg" alt="Sticky Note: 2.1.3 Dry Run — Formulating the 8-Puzzle" width="30%">
-</a>
-
 
 ```
 Situation: A 3×3 sliding puzzle with tiles 1-8 and one blank.
@@ -170,16 +140,6 @@ Step 7: RETURN (S, s0, Actions, Result, GoalTest, 1)
 ```
 
 ### 2.1.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-handwritten.svg" alt="Handwritten: 2.1.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-diagram.svg" alt="Diagram: 2.1.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-4-python-implementation-sticky.svg" alt="Sticky Note: 2.1.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -246,16 +206,6 @@ class EightPuzzle(Problem):
 
 ### 2.1.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.1.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-diagram.svg" alt="Diagram: 2.1.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.1.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Analysis |
 |--------|----------|
@@ -264,16 +214,6 @@ class EightPuzzle(Problem):
 | **Why?** | Problem formulation is a one-time setup cost. The state space may be huge (e.g., chess has ~10^43 states), but we only define the rules — we don't generate all states at once. |
 
 ### 2.1.6 Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.1.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-diagram.svg" alt="Diagram: 2.1.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.1.6 Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -284,16 +224,6 @@ class EightPuzzle(Problem):
 | Works across domains (games, robotics, planning) | Assumes discrete states and actions |
 
 ### 2.1.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-handwritten.svg" alt="Handwritten: 2.1.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-diagram.svg" alt="Diagram: 2.1.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-1-7-edge-cases-sticky.svg" alt="Sticky Note: 2.1.7 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | How to Handle |
@@ -313,16 +243,6 @@ class EightPuzzle(Problem):
 A subway map shows every station and every connecting line. Given your current station and a destination, the map defines the **search space**: all possible sequences of train rides you could take. Some routes are direct, others require transfers. The subway map is your **state-space graph** — stations are states, train lines between them are actions. Your job (and the AI's) is to find a sequence of rides that gets you to your destination.
 
 ### 2.2.1 Formal Definition
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-handwritten.svg" alt="Handwritten: 2.2.1 Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-diagram.svg" alt="Diagram: 2.2.1 Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-1-formal-definition-sticky.svg" alt="Sticky Note: 2.2.1 Formal Definition" width="30%">
-</a>
 
 
 The **state space** of a problem is the set of all states reachable from the initial state by any sequence of actions. The **state-space graph** is a directed graph $\mathcal{G} = (\mathcal{S}, \mathcal{E})$ where:
@@ -351,16 +271,6 @@ flowchart TD
 
 ### 2.2.2 Algorithm — Building the State-Space Graph
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-handwritten.svg" alt="Handwritten: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-diagram.svg" alt="Diagram: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-2-algorithm-building-the-state-space-graph-sticky.svg" alt="Sticky Note: 2.2.2 Algorithm — Building the State-Space Graph" width="30%">
-</a>
-
 
 ```
 ALGORITHM: BuildStateSpaceGraph(problem)
@@ -379,16 +289,6 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 ```
 
 ### 2.2.3 Dry Run — Romanian Road Map (Partial)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-handwritten.svg" alt="Handwritten: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-diagram.svg" alt="Diagram: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-3-dry-run-romanian-road-map-partial-sticky.svg" alt="Sticky Note: 2.2.3 Dry Run — Romanian Road Map (Partial)" width="30%">
-</a>
 
 
 **Initial state:** Arad
@@ -410,16 +310,6 @@ ALGORITHM: BuildStateSpaceGraph(problem)
 **Result:** Complete graph with 10 cities and 12 road connections discovered.
 
 ### 2.2.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-handwritten.svg" alt="Handwritten: 2.2.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-diagram.svg" alt="Diagram: 2.2.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-4-python-implementation-sticky.svg" alt="Sticky Note: 2.2.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -479,16 +369,6 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ### 2.2.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.2.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-diagram.svg" alt="Diagram: 2.2.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.2.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Analysis |
 |--------|----------|
@@ -497,16 +377,6 @@ print(f"Transitions: {len(graph['edges'])}")
 | **Why?** | Every state must be visited once, and for each state we generate all b successors. For the 8-puzzle, that is 181,440 × ~2.67 ≈ 484,000 operations. For chess, building the full graph is impossible (~10^43 states). |
 
 ### 2.2.6 Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.2.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-diagram.svg" alt="Diagram: 2.2.6 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-6-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.2.6 Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -517,16 +387,6 @@ print(f"Transitions: {len(graph['edges'])}")
 | Foundation for advanced search techniques | Requires memory proportional to the state space |
 
 ### 2.2.7 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-handwritten.svg" alt="Handwritten: 2.2.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-diagram.svg" alt="Diagram: 2.2.7 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-2-7-edge-cases-sticky.svg" alt="Sticky Note: 2.2.7 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | How to Handle |
@@ -546,16 +406,6 @@ print(f"Transitions: {len(graph['edges'])}")
 
 ### 2.3.1 Tree Search
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-handwritten.svg" alt="Handwritten: 2.3.1 Tree Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-diagram.svg" alt="Diagram: 2.3.1 Tree Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-1-tree-search-sticky.svg" alt="Sticky Note: 2.3.1 Tree Search" width="30%">
-</a>
-
 
 Tree search treats the state space as a tree, ignoring the possibility that the same state can be reached through multiple paths. The **frontier** holds nodes generated but not yet expanded.
 
@@ -570,16 +420,6 @@ ALGORITHM: TreeSearch(problem)
 ```
 
 ### 2.3.2 Graph Search
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-handwritten.svg" alt="Handwritten: 2.3.2 Graph Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-diagram.svg" alt="Diagram: 2.3.2 Graph Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-2-graph-search-sticky.svg" alt="Sticky Note: 2.3.2 Graph Search" width="30%">
-</a>
 
 
 Graph search tracks visited states in an **explored set** (closed list), preventing revisitation.
@@ -599,16 +439,6 @@ ALGORITHM: GraphSearch(problem)
 ```
 
 ### 2.3.3 Dry Run — Tree Search vs. Graph Search
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-handwritten.svg" alt="Handwritten: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-diagram.svg" alt="Diagram: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-3-dry-run-tree-search-vs-graph-search-sticky.svg" alt="Sticky Note: 2.3.3 Dry Run — Tree Search vs. Graph Search" width="30%">
-</a>
 
 
 **Problem:** Simple graph with states A–B–C–D–E, start = A, goal = E, BFS order.
@@ -640,16 +470,6 @@ ALGORITHM: GraphSearch(problem)
 > **Key Difference:** Graph search expands 5 nodes; tree search expands 7+ nodes for the same problem. The savings grow exponentially with problem size.
 
 ### 2.3.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-handwritten.svg" alt="Handwritten: 2.3.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-diagram.svg" alt="Diagram: 2.3.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-4-python-implementation-sticky.svg" alt="Sticky Note: 2.3.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -712,16 +532,6 @@ def solution(node):
 
 ### 2.3.5 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-handwritten.svg" alt="Handwritten: 2.3.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-diagram.svg" alt="Diagram: 2.3.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-5-complexity-analysis-sticky.svg" alt="Sticky Note: 2.3.5 Complexity Analysis" width="30%">
-</a>
-
 
 | Aspect | Tree Search | Graph Search |
 |--------|-------------|--------------|
@@ -730,16 +540,6 @@ def solution(node):
 | **Why?** | Tree search generates b children per node for d levels. Graph search avoids revisiting, so effective branching factor is lower in graphs with many paths to the same state. |
 
 ### 2.3.6 Tree Search vs. Graph Search — Comparison Table
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-handwritten.svg" alt="Handwritten: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-diagram.svg" alt="Diagram: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-6-tree-search-vs-graph-search-comparison-table-sticky.svg" alt="Sticky Note: 2.3.6 Tree Search vs. Graph Search — Comparison Table" width="30%">
-</a>
 
 
 | Feature | Tree Search | Graph Search |
@@ -755,16 +555,6 @@ def solution(node):
 
 ### 2.3.7 Advantages & Disadvantages of Graph Search
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-handwritten.svg" alt="Handwritten: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-diagram.svg" alt="Diagram: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-7-advantages-disadvantages-of-graph-search-sticky.svg" alt="Sticky Note: 2.3.7 Advantages & Disadvantages of Graph Search" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -774,16 +564,6 @@ def solution(node):
 | Lower effective branching factor | Not suitable for huge state spaces |
 
 ### 2.3.8 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-handwritten.svg" alt="Handwritten: 2.3.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-diagram.svg" alt="Diagram: 2.3.8 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-3-8-edge-cases-sticky.svg" alt="Sticky Note: 2.3.8 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | How to Handle |
@@ -802,16 +582,6 @@ def solution(node):
 Imagine you are in a pitch-black warehouse looking for a specific box. You have no map, no labels, no hints. You must systematically search every aisle. This is **uninformed (blind) search** — you have no information beyond the problem definition to guide your choices.
 
 ### 2.4.1 Breadth-First Search (BFS)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-handwritten.svg" alt="Handwritten: 2.4.1 Breadth-First Search (BFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-diagram.svg" alt="Diagram: 2.4.1 Breadth-First Search (BFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-1-breadth-first-search-bfs-sticky.svg" alt="Sticky Note: 2.4.1 Breadth-First Search (BFS)" width="30%">
-</a>
 
 
 BFS expands nodes in order of their depth from the root. All nodes at depth $d$ are expanded before any node at depth $d+1$.
@@ -881,16 +651,6 @@ def bfs(problem):
 
 ### 2.4.2 Depth-First Search (DFS)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-handwritten.svg" alt="Handwritten: 2.4.2 Depth-First Search (DFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-diagram.svg" alt="Diagram: 2.4.2 Depth-First Search (DFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-2-depth-first-search-dfs-sticky.svg" alt="Sticky Note: 2.4.2 Depth-First Search (DFS)" width="30%">
-</a>
-
 
 DFS expands the deepest unexpanded node first using a LIFO stack.
 
@@ -948,16 +708,6 @@ def dfs(problem):
 ```
 
 ### 2.4.3 Iterative Deepening DFS (IDDFS)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-handwritten.svg" alt="Handwritten: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-diagram.svg" alt="Diagram: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-3-iterative-deepening-dfs-iddfs-sticky.svg" alt="Sticky Note: 2.4.3 Iterative Deepening DFS (IDDFS)" width="30%">
-</a>
 
 
 IDDFS combines DFS's linear space with BFS's completeness and optimality.
@@ -1030,16 +780,6 @@ def iddfs(problem):
 ```
 
 ### 2.4.4 Uniform-Cost Search (UCS)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-handwritten.svg" alt="Handwritten: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-diagram.svg" alt="Diagram: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-4-4-uniform-cost-search-ucs-sticky.svg" alt="Sticky Note: 2.4.4 Uniform-Cost Search (UCS)" width="30%">
-</a>
 
 
 UCS expands the node with the lowest path cost $g(n)$. It is Dijkstra's algorithm adapted for goal-directed search.
@@ -1128,16 +868,6 @@ Different search strategies are like different tools in a toolbox. BFS is like a
 
 ### 2.5.1 The Four Evaluation Dimensions
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-handwritten.svg" alt="Handwritten: 2.5.1 The Four Evaluation Dimensions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-diagram.svg" alt="Diagram: 2.5.1 The Four Evaluation Dimensions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-1-the-four-evaluation-dimensions-sticky.svg" alt="Sticky Note: 2.5.1 The Four Evaluation Dimensions" width="30%">
-</a>
-
 
 Every search algorithm is evaluated along four dimensions:
 
@@ -1150,16 +880,6 @@ Every search algorithm is evaluated along four dimensions:
 
 ### 2.5.2 Complexity Analysis — The "Why" Behind Each Formula
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-handwritten.svg" alt="Handwritten: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-diagram.svg" alt="Diagram: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-2-complexity-analysis-the-why-behind-each-formula-sticky.svg" alt="Sticky Note: 2.5.2 Complexity Analysis — The "Why" Behind Each Formula" width="30%">
-</a>
-
 
 | Algorithm | Time | Space | Why Time? | Why Space? |
 |-----------|------|-------|-----------|------------|
@@ -1171,16 +891,6 @@ Every search algorithm is evaluated along four dimensions:
 > **Critical Insight — Why Space Matters More Than Time:** A BFS with $b = 10$ and $d = 12$ generates ~10^13 nodes. At 1 byte per node, that is **10 TB** of RAM — impossible. DFS would use only ~120 nodes. This is why IDDFS is preferred for large problems.
 
 ### 2.5.3 Algorithm — Performance Evaluation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-handwritten.svg" alt="Handwritten: 2.5.3 Algorithm — Performance Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-diagram.svg" alt="Diagram: 2.5.3 Algorithm — Performance Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-3-algorithm-performance-evaluation-sticky.svg" alt="Sticky Note: 2.5.3 Algorithm — Performance Evaluation" width="30%">
-</a>
 
 
 ```
@@ -1204,16 +914,6 @@ ALGORITHM: EvaluatePerformance(algorithm, problem)
 ```
 
 ### 2.5.4 Python Implementation
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-handwritten.svg" alt="Handwritten: 2.5.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-diagram.svg" alt="Diagram: 2.5.4 Python Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-4-python-implementation-sticky.svg" alt="Sticky Note: 2.5.4 Python Implementation" width="30%">
-</a>
 
 
 ```python
@@ -1264,16 +964,6 @@ class SearchMetrics:
 
 ### 2.5.5 Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-handwritten.svg" alt="Handwritten: 2.5.5 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-diagram.svg" alt="Diagram: 2.5.5 Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-5-advantages-disadvantages-sticky.svg" alt="Sticky Note: 2.5.5 Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1283,16 +973,6 @@ class SearchMetrics:
 | Enables theoretical comparison before implementation | Asymptotic analysis hides constant factors |
 
 ### 2.5.6 Edge Cases
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-handwritten.svg" alt="Handwritten: 2.5.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-diagram.svg" alt="Diagram: 2.5.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/2-5-6-edge-cases-sticky.svg" alt="Sticky Note: 2.5.6 Edge Cases" width="30%">
-</a>
 
 
 | Edge Case | How to Handle |
@@ -1379,16 +1059,6 @@ Problems are classified along three principal dimensions:
 
 ### Q1: Explain search space explosion and how to handle it.
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-handwritten.svg" alt="Handwritten: Explain search space explosion and how to handle it." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-diagram.svg" alt="Diagram: Explain search space explosion and how to handle it." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/explain-search-space-explosion-and-how-to-handle-it-sticky.svg" alt="Sticky Note: Explain search space explosion and how to handle it." width="30%">
-</a>
-
 
 **The Problem:** In a problem with branching factor $b = 10$ and solution depth $d = 15$, BFS generates $10^{16}$ nodes. At 1 microsecond per node, that is **$10^{10}$ seconds ≈ 317 years**. This is **search space explosion** — the state space grows exponentially with depth, making brute-force search infeasible.
 
@@ -1401,30 +1071,10 @@ Problems are classified along three principal dimensions:
 
 ### Q2: Why are heuristics important in search?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-handwritten.svg" alt="Handwritten: Why are heuristics important in search?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-diagram.svg" alt="Diagram: Why are heuristics important in search?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/why-are-heuristics-important-in-search-sticky.svg" alt="Sticky Note: Why are heuristics important in search?" width="30%">
-</a>
-
 
 Heuristics (domain-specific knowledge) transform an uninformed exponential search into a tractable one. A good heuristic can reduce the effective branching factor from 40 (chess) to near 6, making the difference between a search that takes **$10^{100}$ years** and one that finishes in **minutes**. Heuristics are the key insight that makes AI systems like DeepBlue, AlphaGo, and self-driving cars possible.
 
 ### Q3: What is the difference between completeness and optimality?
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-handwritten.svg" alt="Handwritten: What is the difference between completeness and optimality?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-diagram.svg" alt="Diagram: What is the difference between completeness and optimality?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-difference-between-completeness-and-optimality-sticky.svg" alt="Sticky Note: What is the difference between completeness and optimality?" width="30%">
-</a>
 
 
 | Property | Meaning | Example |
@@ -1436,32 +1086,12 @@ An algorithm can be complete but not optimal (e.g., BFS with varying step costs 
 
 ### Q4: How would you choose between BFS, DFS, and IDDFS?
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-handwritten.svg" alt="Handwritten: How would you choose between BFS, DFS, and IDDFS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-diagram.svg" alt="Diagram: How would you choose between BFS, DFS, and IDDFS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/how-would-you-choose-between-bfs-dfs-and-iddfs-sticky.svg" alt="Sticky Note: How would you choose between BFS, DFS, and IDDFS?" width="30%">
-</a>
-
 
 - **Use BFS when:** solution depth is small, memory is abundant, and optimality matters.
 - **Use DFS when:** state space is deep but sparse, memory is tight, and any solution is acceptable.
 - **Use IDDFS when:** solution depth is unknown, memory is limited, and completeness/optimality is needed (the most common case in AI).
 
 ### Q5: What is the role of the explored set in graph search?
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-handwritten.svg" alt="Handwritten: What is the role of the explored set in graph search?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-diagram.svg" alt="Diagram: What is the role of the explored set in graph search?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/what-is-the-role-of-the-explored-set-in-graph-search-sticky.svg" alt="Sticky Note: What is the role of the explored set in graph search?" width="30%">
-</a>
 
 
 The explored set prevents revisiting states, reducing the effective branching factor from $b$ to something closer to $b-1$ (since parent states are never revisited). In highly connected graphs (like road networks), this can reduce the search space by orders of magnitude. Without it, the algorithm may cycle forever.
@@ -1472,32 +1102,12 @@ The explored set prevents revisiting states, reducing the effective branching fa
 
 ### GPS Navigation (Google Maps, Waze, Apple Maps)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-handwritten.svg" alt="Handwritten: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-diagram.svg" alt="Diagram: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/gps-navigation-google-maps-waze-apple-maps-sticky.svg" alt="Sticky Note: GPS Navigation (Google Maps, Waze, Apple Maps)" width="30%">
-</a>
-
 
 Route-finding algorithms (A\* with graph search) power every turn-by-turn navigation system. The road network is a graph — intersections are states, roads are edges weighted by distance or travel time. Real-time traffic data dynamically updates edge weights. When you search for "restaurants near me," a variant of BFS explores the graph outward from your location (breadth-first by distance).
 
 **Why search matters:** Without efficient search algorithms, Google Maps would need minutes (not milliseconds) to compute routes across 100+ million miles of roads.
 
 ### Game AI (Chess, Go, Video Games)
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-handwritten.svg" alt="Handwritten: Game AI (Chess, Go, Video Games)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-diagram.svg" alt="Diagram: Game AI (Chess, Go, Video Games)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/game-ai-chess-go-video-games-sticky.svg" alt="Sticky Note: Game AI (Chess, Go, Video Games)" width="30%">
-</a>
 
 
 Game-playing AI is fundamentally search-based:
@@ -1507,16 +1117,6 @@ Game-playing AI is fundamentally search-based:
 
 ### Robotics (Motion Planning)
 
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-handwritten.svg" alt="Handwritten: Robotics (Motion Planning)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-diagram.svg" alt="Diagram: Robotics (Motion Planning)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/robotics-motion-planning-sticky.svg" alt="Sticky Note: Robotics (Motion Planning)" width="30%">
-</a>
-
 
 Robots use search to plan physical movements:
 - **Manipulation (robot arms):** Search over joint configurations to find collision-free paths.
@@ -1524,16 +1124,6 @@ Robots use search to plan physical movements:
 - **Self-driving cars:** Search over possible trajectories using A\* on discretized state spaces.
 
 ### Other Real-World Systems
-
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-handwritten.svg" alt="Handwritten: Other Real-World Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-diagram.svg" alt="Diagram: Other Real-World Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/artificial-intelligence/02-problem-solving/other-real-world-systems-sticky.svg" alt="Sticky Note: Other Real-World Systems" width="30%">
-</a>
 
 
 | System | Search Usage |

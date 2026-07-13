@@ -84,32 +84,12 @@ flowchart LR
 
 ### 1.1 Definition of Cloud Computing
 
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-handwritten.svg" alt="Handwritten: 1.1 Definition of Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-diagram.svg" alt="Diagram: 1.1 Definition of Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-1-definition-of-cloud-computing-sticky.svg" alt="Sticky Note: 1.1 Definition of Cloud Computing" width="30%">
-</a>
-
 
 The National Institute of Standards and Technology (NIST) Special Publication 800-145 defines cloud computing as "a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources (e.g., networks, servers, storage, applications, and services) that can be rapidly provisioned and released with minimal management effort or service provider interaction." This definition has become the canonical reference point for the industry and academia alike.
 
 The NIST definition is significant because it establishes a clear boundary between true cloud computing and traditional hosted services. Prior to the formalization of this definition, many vendors marketed managed hosting as "cloud" computing. The five essential characteristics, three service models, and four deployment models together form the complete cloud computing framework.
 
 ### 1.2 Essential Characteristics
-
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-handwritten.svg" alt="Handwritten: 1.2 Essential Characteristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-diagram.svg" alt="Diagram: 1.2 Essential Characteristics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-2-essential-characteristics-sticky.svg" alt="Sticky Note: 1.2 Essential Characteristics" width="30%">
-</a>
 
 
 **On-Demand Self-Service.** A consumer can provision computing capabilities unilaterally without requiring human interaction with the service provider. This is typically accomplished through a web portal, API, or command-line interface. The implication is profound: infrastructure that once required a purchase order, a hardware lead time of weeks, and manual configuration by system administrators can now be created in seconds through an API call.
@@ -123,16 +103,6 @@ The NIST definition is significant because it establishes a clear boundary betwe
 **Measured Service.** Cloud systems automatically control and optimize resource use by leveraging a metering capability at some level of abstraction appropriate to the type of service (e.g., storage, processing, bandwidth, active user accounts). Resource usage can be monitored, controlled, and reported, providing transparency for both the provider and consumer of the utilized service. This pay-per-use billing model is fundamental to cloud economics.
 
 ### 1.3 Service Models
-
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-handwritten.svg" alt="Handwritten: 1.3 Service Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-diagram.svg" alt="Diagram: 1.3 Service Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-3-service-models-sticky.svg" alt="Sticky Note: 1.3 Service Models" width="30%">
-</a>
 
 
 **Infrastructure as a Service (IaaS).** The provider offers virtualized computing resources over the internet. The consumer can provision processing, storage, networks, and other fundamental computing resources and deploy and run arbitrary software, which can include operating systems and applications. The consumer does not manage or control the underlying cloud infrastructure but has control over operating systems, storage, and deployed applications, and possibly limited control over select networking components (e.g., host firewalls). IaaS is best suited for workloads that require fine-grained control over the infrastructure stack. Examples include AWS EC2, Azure Virtual Machines, and Google Compute Engine.
@@ -219,16 +189,6 @@ graph TB
 
 ### 1.4 Service Model Comparison
 
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-handwritten.svg" alt="Handwritten: 1.4 Service Model Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-diagram.svg" alt="Diagram: 1.4 Service Model Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-4-service-model-comparison-sticky.svg" alt="Sticky Note: 1.4 Service Model Comparison" width="30%">
-</a>
-
 
 | Aspect | IaaS | PaaS | SaaS |
 |--------|------|------|------|
@@ -241,16 +201,6 @@ graph TB
 | Typical use case | Legacy migration, specialized workloads | Web apps, APIs, microservices | Email, CRM, collaboration |
 
 ### 1.5 Deployment Models
-
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-handwritten.svg" alt="Handwritten: 1.5 Deployment Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-diagram.svg" alt="Diagram: 1.5 Deployment Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-5-deployment-models-sticky.svg" alt="Sticky Note: 1.5 Deployment Models" width="30%">
-</a>
 
 
 **Public Cloud.** The cloud infrastructure is provisioned for open use by the general public. It may be owned, managed, and operated by a business, academic, or government organization, or some combination of them. It exists on the premises of the cloud provider. Public cloud offers economies of scale, elastic capacity, and pay-as-you-go pricing. The trade-off is reduced control over physical infrastructure and potential data residency concerns.
@@ -281,16 +231,6 @@ graph TD
 
 ### 1.6 Cloud Economics
 
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-handwritten.svg" alt="Handwritten: 1.6 Cloud Economics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-diagram.svg" alt="Diagram: 1.6 Cloud Economics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-6-cloud-economics-sticky.svg" alt="Sticky Note: 1.6 Cloud Economics" width="30%">
-</a>
-
 
 **Capital Expenditure (CAPEX).** In the traditional on-premises IT model, organizations invest heavily in hardware, software, data center facilities, and staffing before realizing any value. CAPEX is characterized by large upfront costs, depreciation schedules spanning multiple years, and the risk of over-provisioning or under-provisioning. The organization bears the full financial risk of capacity planning errors.
 
@@ -311,16 +251,6 @@ graph TD
 
 ### 1.7 Cloud Adoption Drivers
 
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-handwritten.svg" alt="Handwritten: 1.7 Cloud Adoption Drivers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-diagram.svg" alt="Diagram: 1.7 Cloud Adoption Drivers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-7-cloud-adoption-drivers-sticky.svg" alt="Sticky Note: 1.7 Cloud Adoption Drivers" width="30%">
-</a>
-
 
 Organizations adopt cloud computing for several strategic reasons:
 
@@ -332,16 +262,6 @@ Organizations adopt cloud computing for several strategic reasons:
 - **Focus on Core Business:** Offload undifferentiated heavy lifting (server maintenance, patching, capacity planning) to the provider.
 
 ### 1.8 Common Cloud Myths
-
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-handwritten.svg" alt="Handwritten: 1.8 Common Cloud Myths" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-diagram.svg" alt="Diagram: 1.8 Common Cloud Myths" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-8-common-cloud-myths-sticky.svg" alt="Sticky Note: 1.8 Common Cloud Myths" width="30%">
-</a>
 
 
 Myth 1: "Cloud is always cheaper." Cloud can be more expensive for predictable, high-utilization workloads. A server running at 90% utilization 24/7 is often cheaper on-premises. Cloud's financial advantage comes from elasticity, not absolute cost.
@@ -355,16 +275,6 @@ Myth 4: "Migration is a one-time project." Cloud adoption is an ongoing journey.
 Myth 5: "All workloads should move to the cloud." Some workloads are better kept on-premises due to latency requirements, regulatory constraints, or economic factors. The right strategy is selective migration, not wholesale movement.
 
 ### 1.9 Cloud Migration Strategies (The 6 Rs)
-
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-handwritten.svg" alt="Handwritten: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-diagram.svg" alt="Diagram: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-9-cloud-migration-strategies-the-6-rs-sticky.svg" alt="Sticky Note: 1.9 Cloud Migration Strategies (The 6 Rs)" width="30%">
-</a>
 
 
 ```mermaid
@@ -398,16 +308,6 @@ graph TB
 
 ### 1.10 Vendor Lock-in
 
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-handwritten.svg" alt="Handwritten: 1.10 Vendor Lock-in" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-diagram.svg" alt="Diagram: 1.10 Vendor Lock-in" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-10-vendor-lock-in-sticky.svg" alt="Sticky Note: 1.10 Vendor Lock-in" width="30%">
-</a>
-
 
 Vendor lock-in occurs when a customer becomes dependent on a specific provider's proprietary services and faces significant cost or complexity when switching. In cloud computing, lock-in risks include:
 
@@ -424,32 +324,12 @@ Vendor lock-in occurs when a customer becomes dependent on a specific provider's
 
 ### 1.11 Benefits and Challenges
 
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-handwritten.svg" alt="Handwritten: 1.11 Benefits and Challenges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-diagram.svg" alt="Diagram: 1.11 Benefits and Challenges" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-11-benefits-and-challenges-sticky.svg" alt="Sticky Note: 1.11 Benefits and Challenges" width="30%">
-</a>
-
 
 **Benefits.** Cloud computing offers agility through rapid provisioning, global reach through geographically distributed data centers, elasticity to match capacity to demand, pay-as-you-go pricing that aligns costs with usage, reduced maintenance burden, improved disaster recovery capabilities, automatic software updates, increased collaboration, and access to advanced technologies such as machine learning, big data analytics, and serverless computing that would be prohibitively expensive to implement on-premises.
 
 **Challenges.** Cloud adoption presents several challenges: security and compliance concerns around data protection and regulatory requirements, vendor lock-in risks associated with proprietary services, cost management complexity due to the granularity of billing, technical expertise requirements for cloud architecture and operations, latency and bandwidth constraints for latency-sensitive applications, data transfer costs for large-scale data movement, and the complexity of integrating cloud services with existing on-premises systems.
 
 ### 1.12 Major Cloud Providers
-
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-handwritten.svg" alt="Handwritten: 1.12 Major Cloud Providers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-diagram.svg" alt="Diagram: 1.12 Major Cloud Providers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/01-introduction/1-12-major-cloud-providers-sticky.svg" alt="Sticky Note: 1.12 Major Cloud Providers" width="30%">
-</a>
 
 
 Amazon Web Services (AWS), launched in 2006, remains the market leader with the broadest portfolio of services and the largest global infrastructure footprint. Microsoft Azure, launched in 2010, leads in enterprise integration with Microsoft products and hybrid cloud capabilities. Google Cloud Platform (GCP), launched in 2010, differentiates through leadership in data analytics, machine learning, and container-native infrastructure. Other significant providers include IBM Cloud, Oracle Cloud, and Alibaba Cloud, each with specific regional or industry specializations.

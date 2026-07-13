@@ -51,21 +51,9 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Theory
 
 ### The Role of Architectural Design
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-handwritten.svg" alt="Handwritten: The Role of Architectural Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-diagram.svg" alt="Diagram: The Role of Architectural Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-role-of-architectural-design-sticky.svg" alt="Sticky Note: The Role of Architectural Design" width="30%">
-</a>
-
 
 Architectural design is the process of defining the overall structure of a software system. It identifies the major components, their responsibilities, and the relationships between them. Architectural design is the first stage of the design process and serves as the bridge between requirements and detailed design.
 
@@ -100,17 +88,6 @@ graph TD
 
 ### Architectural Decisions
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-handwritten.svg" alt="Handwritten: Architectural Decisions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-diagram.svg" alt="Diagram: Architectural Decisions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architectural-decisions-sticky.svg" alt="Sticky Note: Architectural Decisions" width="30%">
-</a>
-
-
 Architectural decisions include:
 - Selection of architectural patterns
 - Partitioning of functionality into components
@@ -138,17 +115,6 @@ interface ArchitectureDecisionRecord {
 
 ### Quality Attribute Scenarios
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-handwritten.svg" alt="Handwritten: Quality Attribute Scenarios" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-diagram.svg" alt="Diagram: Quality Attribute Scenarios" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-scenarios-sticky.svg" alt="Sticky Note: Quality Attribute Scenarios" width="30%">
-</a>
-
-
 Quality attribute scenarios provide a structured way to specify and evaluate quality requirements. Each scenario has six parts:
 
 | Element | Description | Example |
@@ -171,17 +137,6 @@ Quality attribute scenarios provide a structured way to specify and evaluate qua
 
 ### Architecture Pattern Categories
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-handwritten.svg" alt="Handwritten: Architecture Pattern Categories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-diagram.svg" alt="Diagram: Architecture Pattern Categories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-categories-sticky.svg" alt="Sticky Note: Architecture Pattern Categories" width="30%">
-</a>
-
-
 Architectural patterns can be categorised by their primary concern:
 
 | Category | Concern | Example Patterns |
@@ -192,17 +147,6 @@ Architectural patterns can be categorised by their primary concern:
 | **Data** | How data is managed | Repository, CQRS, Event Sourcing |
 
 ### The Layered Architecture Pattern
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-handwritten.svg" alt="Handwritten: The Layered Architecture Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-diagram.svg" alt="Diagram: The Layered Architecture Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-layered-architecture-pattern-sticky.svg" alt="Sticky Note: The Layered Architecture Pattern" width="30%">
-</a>
-
 
 The layered architecture organises the system into horizontal layers, where each layer provides services to the layer above and consumes services from the layer below.
 
@@ -257,17 +201,6 @@ graph TD
 
 ### The Model-View-Controller Pattern
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-handwritten.svg" alt="Handwritten: The Model-View-Controller Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-diagram.svg" alt="Diagram: The Model-View-Controller Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-model-view-controller-pattern-sticky.svg" alt="Sticky Note: The Model-View-Controller Pattern" width="30%">
-</a>
-
-
 MVC separates an interactive application into three components. It is one of the most widely used patterns in web and desktop applications.
 
 ```mermaid
@@ -299,17 +232,6 @@ graph LR
 - **MVC in web frameworks:** Rails, Spring MVC, ASP.NET MVC, Express.js, Laravel
 
 ### The Repository Pattern
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-handwritten.svg" alt="Handwritten: The Repository Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-diagram.svg" alt="Diagram: The Repository Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-repository-pattern-sticky.svg" alt="Sticky Note: The Repository Pattern" width="30%">
-</a>
-
 
 The repository pattern centralises data storage and management. All components access data through a central repository, providing a clean separation between domain logic and data access.
 
@@ -344,17 +266,6 @@ graph TD
 
 ### The Client-Server Pattern
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-handwritten.svg" alt="Handwritten: The Client-Server Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-diagram.svg" alt="Diagram: The Client-Server Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-client-server-pattern-sticky.svg" alt="Sticky Note: The Client-Server Pattern" width="30%">
-</a>
-
-
 The client-server pattern distributes the system into **servers** that provide services and **clients** that request them.
 
 **Variations:**
@@ -364,17 +275,6 @@ The client-server pattern distributes the system into **servers** that provide s
 
 ### The Pipe-and-Filter Pattern
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-handwritten.svg" alt="Handwritten: The Pipe-and-Filter Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-diagram.svg" alt="Diagram: The Pipe-and-Filter Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-pipe-and-filter-pattern-sticky.svg" alt="Sticky Note: The Pipe-and-Filter Pattern" width="30%">
-</a>
-
-
 The pipe-and-filter pattern processes data through a sequence of processing steps. **Filters** transform data; **pipes** convey data between filters.
 
 **Benefits:** Filters are independent, reusable, composable; supports incremental processing and parallel execution.
@@ -382,17 +282,6 @@ The pipe-and-filter pattern processes data through a sequence of processing step
 **When to use:** Batch processing, compilers, ETL pipelines, data transformation pipelines.
 
 ### Microservices Architecture
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-handwritten.svg" alt="Handwritten: Microservices Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-diagram.svg" alt="Diagram: Microservices Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/microservices-architecture-sticky.svg" alt="Sticky Note: Microservices Architecture" width="30%">
-</a>
-
 
 Microservices decomposes a system into small, independently deployable services, each running in its own process and communicating through lightweight mechanisms (typically HTTP/REST or messaging).
 
@@ -440,17 +329,6 @@ graph TD
 
 ### The Event-Driven Pattern
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-handwritten.svg" alt="Handwritten: The Event-Driven Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-diagram.svg" alt="Diagram: The Event-Driven Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-event-driven-pattern-sticky.svg" alt="Sticky Note: The Event-Driven Pattern" width="30%">
-</a>
-
-
 The event-driven pattern organises components around the production and consumption of events. Producers emit events without knowing which consumers will process them; consumers subscribe to events of interest.
 
 ```mermaid
@@ -486,17 +364,6 @@ graph LR
 
 ### CQRS (Command Query Responsibility Segregation)
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-handwritten.svg" alt="Handwritten: CQRS (Command Query Responsibility Segregation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-diagram.svg" alt="Diagram: CQRS (Command Query Responsibility Segregation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/cqrs-command-query-responsibility-segregation-sticky.svg" alt="Sticky Note: CQRS (Command Query Responsibility Segregation)" width="30%">
-</a>
-
-
 CQRS separates read and write operations into different models. Commands change state; queries return data. This allows optimising each model independently.
 
 ```mermaid
@@ -524,17 +391,6 @@ graph TD
 **When to use:** Systems where read and write workloads differ significantly (e.g., high-write transaction systems with complex querying). Not recommended for simple CRUD applications where the overhead is not justified.
 
 ### Hexagonal Architecture (Ports and Adapters)
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-handwritten.svg" alt="Handwritten: Hexagonal Architecture (Ports and Adapters)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-diagram.svg" alt="Diagram: Hexagonal Architecture (Ports and Adapters)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/hexagonal-architecture-ports-and-adapters-sticky.svg" alt="Sticky Note: Hexagonal Architecture (Ports and Adapters)" width="30%">
-</a>
-
 
 The hexagonal architecture, by Alistair Cockburn, places the domain model at the centre with ports and adapters connecting it to the outside world. This creates a clean separation between business logic and infrastructure concerns.
 
@@ -576,33 +432,11 @@ graph TD
 
 ### The Broker Pattern
 
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-handwritten.svg" alt="Handwritten: The Broker Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-diagram.svg" alt="Diagram: The Broker Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/the-broker-pattern-sticky.svg" alt="Sticky Note: The Broker Pattern" width="30%">
-</a>
-
-
 The broker pattern decouples clients from servers by introducing an intermediary — the **broker** — that routes requests, handles load balancing, and provides location transparency.
 
 **Modern incarnations:** API gateways (Kong, AWS API Gateway), service meshes (Istio, Linkerd), message brokers (Kafka, RabbitMQ), RPC frameworks (gRPC).
 
 ### Architecture Pattern Comparison
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-handwritten.svg" alt="Handwritten: Architecture Pattern Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-diagram.svg" alt="Diagram: Architecture Pattern Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/architecture-pattern-comparison-sticky.svg" alt="Sticky Note: Architecture Pattern Comparison" width="30%">
-</a>
-
 
 | Pattern | Coupling | Scalability | Complexity | Performance | Testability | Best For |
 |---------|----------|-------------|------------|-------------|-------------|----------|
@@ -618,17 +452,6 @@ The broker pattern decouples clients from servers by introducing an intermediary
 | Hexagonal | Low | Vertical | Medium | Medium | Very high | Domain-driven systems |
 
 ### Quality Attribute Evaluation Framework (ATAM-inspired)
-
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-handwritten.svg" alt="Handwritten: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-diagram.svg" alt="Diagram: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/software-engineering/04-architectural-design/quality-attribute-evaluation-framework-atam-inspired-sticky.svg" alt="Sticky Note: Quality Attribute Evaluation Framework (ATAM-inspired)" width="30%">
-</a>
-
 
 The Architecture Trade-off Analysis Method (ATAM) evaluates architectures against quality attribute scenarios:
 

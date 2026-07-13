@@ -48,7 +48,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Problem Classification Flow
 
 ```mermaid
@@ -119,16 +118,6 @@ xychart-beta
 
 ### Problem 1: Valid Palindrome
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-1-valid-palindrome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-1-valid-palindrome-handwritten.svg" alt="Handwritten: Problem 1: Valid Palindrome" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-1-valid-palindrome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-1-valid-palindrome-diagram.svg" alt="Diagram: Problem 1: Valid Palindrome" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-1-valid-palindrome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-1-valid-palindrome-sticky.svg" alt="Sticky Note: Problem 1: Valid Palindrome" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Two Pointers]
@@ -187,16 +176,6 @@ console.log(isPalindrome(".,")); // true
 
 ### Problem 2: Valid Anagram
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-2-valid-anagram-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-2-valid-anagram-handwritten.svg" alt="Handwritten: Problem 2: Valid Anagram" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-2-valid-anagram-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-2-valid-anagram-diagram.svg" alt="Diagram: Problem 2: Valid Anagram" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-2-valid-anagram-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-2-valid-anagram-sticky.svg" alt="Sticky Note: Problem 2: Valid Anagram" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Hash Table, Sorting]
@@ -250,16 +229,6 @@ console.log(isAnagram("a", "a")); // true
 ---
 
 ### Problem 3: First Unique Character in a String
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-3-first-unique-character-in-a-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-3-first-unique-character-in-a-string-handwritten.svg" alt="Handwritten: Problem 3: First Unique Character in a String" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-3-first-unique-character-in-a-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-3-first-unique-character-in-a-string-diagram.svg" alt="Diagram: Problem 3: First Unique Character in a String" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-3-first-unique-character-in-a-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-3-first-unique-character-in-a-string-sticky.svg" alt="Sticky Note: Problem 3: First Unique Character in a String" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
@@ -316,16 +285,6 @@ console.log(firstUniqChar("aabb")); // -1
 
 ### Problem 4: Reverse String
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-4-reverse-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-4-reverse-string-handwritten.svg" alt="Handwritten: Problem 4: Reverse String" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-4-reverse-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-4-reverse-string-diagram.svg" alt="Diagram: Problem 4: Reverse String" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-4-reverse-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-4-reverse-string-sticky.svg" alt="Sticky Note: Problem 4: Reverse String" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Two Pointers]
@@ -371,16 +330,6 @@ console.log(s2); // ["h","a","n","n","a","H"]
 ---
 
 ### Problem 5: Longest Common Prefix
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-5-longest-common-prefix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-5-longest-common-prefix-handwritten.svg" alt="Handwritten: Problem 5: Longest Common Prefix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-5-longest-common-prefix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-5-longest-common-prefix-diagram.svg" alt="Diagram: Problem 5: Longest Common Prefix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-5-longest-common-prefix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-5-longest-common-prefix-sticky.svg" alt="Sticky Note: Problem 5: Longest Common Prefix" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy
@@ -433,16 +382,6 @@ console.log(longestCommonPrefix([""])); // ""
 
 ### Problem 6: Valid Parentheses
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-6-valid-parentheses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-6-valid-parentheses-handwritten.svg" alt="Handwritten: Problem 6: Valid Parentheses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-6-valid-parentheses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-6-valid-parentheses-diagram.svg" alt="Diagram: Problem 6: Valid Parentheses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-6-valid-parentheses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-6-valid-parentheses-sticky.svg" alt="Sticky Note: Problem 6: Valid Parentheses" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String, Stack]
@@ -489,16 +428,6 @@ console.log(isValid("([)]")); // false
 ---
 
 ### Problem 7: Implement strStr()
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-7-implement-strstr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-7-implement-strstr-handwritten.svg" alt="Handwritten: Problem 7: Implement strStr()" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-7-implement-strstr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-7-implement-strstr-diagram.svg" alt="Diagram: Problem 7: Implement strStr()" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-7-implement-strstr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-7-implement-strstr-sticky.svg" alt="Sticky Note: Problem 7: Implement strStr()" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Easy
@@ -549,16 +478,6 @@ console.log(strStr("", "")); // 0
 
 ### Problem 8: Length of Last Word
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-8-length-of-last-word-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-8-length-of-last-word-handwritten.svg" alt="Handwritten: Problem 8: Length of Last Word" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-8-length-of-last-word-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-8-length-of-last-word-diagram.svg" alt="Diagram: Problem 8: Length of Last Word" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-8-length-of-last-word-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-8-length-of-last-word-sticky.svg" alt="Sticky Note: Problem 8: Length of Last Word" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [String]
@@ -607,16 +526,6 @@ console.log(lengthOfLastWord("a")); // 1
 ---
 
 ### Problem 9: Longest Substring Without Repeating Characters
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-9-longest-substring-without-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-9-longest-substring-without-repeating-characters-handwritten.svg" alt="Handwritten: Problem 9: Longest Substring Without Repeating Characters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-9-longest-substring-without-repeating-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-9-longest-substring-without-repeating-characters-diagram.svg" alt="Diagram: Problem 9: Longest Substring Without Repeating Characters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-9-longest-substring-without-repeating-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-9-longest-substring-without-repeating-characters-sticky.svg" alt="Sticky Note: Problem 9: Longest Substring Without Repeating Characters" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -671,16 +580,6 @@ console.log(lengthOfLongestSubstring("")); // 0
 ---
 
 ### Problem 10: Longest Palindromic Substring
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-10-longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-10-longest-palindromic-substring-handwritten.svg" alt="Handwritten: Problem 10: Longest Palindromic Substring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-10-longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-10-longest-palindromic-substring-diagram.svg" alt="Diagram: Problem 10: Longest Palindromic Substring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-10-longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-10-longest-palindromic-substring-sticky.svg" alt="Sticky Note: Problem 10: Longest Palindromic Substring" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -744,16 +643,6 @@ console.log(longestPalindrome("a")); // "a"
 
 ### Problem 11: Group Anagrams
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-11-group-anagrams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-11-group-anagrams-handwritten.svg" alt="Handwritten: Problem 11: Group Anagrams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-11-group-anagrams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-11-group-anagrams-diagram.svg" alt="Diagram: Problem 11: Group Anagrams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-11-group-anagrams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-11-group-anagrams-sticky.svg" alt="Sticky Note: Problem 11: Group Anagrams" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Hash Table, Sorting]
@@ -802,16 +691,6 @@ console.log(groupAnagrams(["a"])); // [["a"]]
 ---
 
 ### Problem 12: String to Integer (atoi)
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-12-string-to-integer-atoi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-12-string-to-integer-atoi-handwritten.svg" alt="Handwritten: Problem 12: String to Integer (atoi)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-12-string-to-integer-atoi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-12-string-to-integer-atoi-diagram.svg" alt="Diagram: Problem 12: String to Integer (atoi)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-12-string-to-integer-atoi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-12-string-to-integer-atoi-sticky.svg" alt="Sticky Note: Problem 12: String to Integer (atoi)" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
@@ -880,16 +759,6 @@ console.log(myAtoi("-91283472332")); // -2147483648
 
 ### Problem 13: Longest Repeating Character Replacement
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-13-longest-repeating-character-replacement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-13-longest-repeating-character-replacement-handwritten.svg" alt="Handwritten: Problem 13: Longest Repeating Character Replacement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-13-longest-repeating-character-replacement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-13-longest-repeating-character-replacement-diagram.svg" alt="Diagram: Problem 13: Longest Repeating Character Replacement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-13-longest-repeating-character-replacement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-13-longest-repeating-character-replacement-sticky.svg" alt="Sticky Note: Problem 13: Longest Repeating Character Replacement" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Sliding Window]
@@ -946,16 +815,6 @@ console.log(characterReplacement("AAAA", 0)); // 4
 ---
 
 ### Problem 14: Minimum Window Substring
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-14-minimum-window-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-14-minimum-window-substring-handwritten.svg" alt="Handwritten: Problem 14: Minimum Window Substring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-14-minimum-window-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-14-minimum-window-substring-diagram.svg" alt="Diagram: Problem 14: Minimum Window Substring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-14-minimum-window-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-14-minimum-window-substring-sticky.svg" alt="Sticky Note: Problem 14: Minimum Window Substring" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
@@ -1031,16 +890,6 @@ console.log(minWindow("a", "aa")); // ""
 
 ### Problem 15: Palindromic Substrings
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-15-palindromic-substrings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-15-palindromic-substrings-handwritten.svg" alt="Handwritten: Problem 15: Palindromic Substrings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-15-palindromic-substrings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-15-palindromic-substrings-diagram.svg" alt="Diagram: Problem 15: Palindromic Substrings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-15-palindromic-substrings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-15-palindromic-substrings-sticky.svg" alt="Sticky Note: Problem 15: Palindromic Substrings" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, DP, Two Pointers]
@@ -1095,16 +944,6 @@ console.log(countSubstrings("")); // 0
 
 ### Problem 16: Encode and Decode Strings
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-16-encode-and-decode-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-16-encode-and-decode-strings-handwritten.svg" alt="Handwritten: Problem 16: Encode and Decode Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-16-encode-and-decode-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-16-encode-and-decode-strings-diagram.svg" alt="Diagram: Problem 16: Encode and Decode Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-16-encode-and-decode-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-16-encode-and-decode-strings-sticky.svg" alt="Sticky Note: Problem 16: Encode and Decode Strings" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Design]
@@ -1155,16 +994,6 @@ console.log(decode(encoded)); // ["hello", "world", "test#1"]
 ---
 
 ### Problem 17: Longest Substring with At Least K Repeating Characters
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-17-longest-substring-with-at-least-k-repeating-characters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-17-longest-substring-with-at-least-k-repeating-characters-handwritten.svg" alt="Handwritten: Problem 17: Longest Substring with At Least K Repeating Characters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-17-longest-substring-with-at-least-k-repeating-characters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-17-longest-substring-with-at-least-k-repeating-characters-diagram.svg" alt="Diagram: Problem 17: Longest Substring with At Least K Repeating Characters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-17-longest-substring-with-at-least-k-repeating-characters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-17-longest-substring-with-at-least-k-repeating-characters-sticky.svg" alt="Sticky Note: Problem 17: Longest Substring with At Least K Repeating Characters" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1219,16 +1048,6 @@ console.log(longestSubstring("ababacb", 3)); // 0
 ---
 
 ### Problem 18: Letter Combinations of a Phone Number
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-18-letter-combinations-of-a-phone-number-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-18-letter-combinations-of-a-phone-number-handwritten.svg" alt="Handwritten: Problem 18: Letter Combinations of a Phone Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-18-letter-combinations-of-a-phone-number-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-18-letter-combinations-of-a-phone-number-diagram.svg" alt="Diagram: Problem 18: Letter Combinations of a Phone Number" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-18-letter-combinations-of-a-phone-number-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-18-letter-combinations-of-a-phone-number-sticky.svg" alt="Sticky Note: Problem 18: Letter Combinations of a Phone Number" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1287,16 +1106,6 @@ console.log(letterCombinations("2")); // ["a", "b", "c"]
 
 ### Problem 19: Reverse Words in a String
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-19-reverse-words-in-a-string-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-19-reverse-words-in-a-string-handwritten.svg" alt="Handwritten: Problem 19: Reverse Words in a String" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-19-reverse-words-in-a-string-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-19-reverse-words-in-a-string-diagram.svg" alt="Diagram: Problem 19: Reverse Words in a String" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-19-reverse-words-in-a-string-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-19-reverse-words-in-a-string-sticky.svg" alt="Sticky Note: Problem 19: Reverse Words in a String" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [String, Two Pointers]
@@ -1332,16 +1141,6 @@ console.log(reverseWords("a good   example")); // "example good a"
 ---
 
 ### Problem 20: Compare Version Numbers
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-20-compare-version-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-20-compare-version-numbers-handwritten.svg" alt="Handwritten: Problem 20: Compare Version Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-20-compare-version-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-20-compare-version-numbers-diagram.svg" alt="Diagram: Problem 20: Compare Version Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-20-compare-version-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-20-compare-version-numbers-sticky.svg" alt="Sticky Note: Problem 20: Compare Version Numbers" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1389,16 +1188,6 @@ console.log(compareVersion("0.1", "1.1")); // -1
 ---
 
 ### Problem 21: Regular Expression Matching
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-21-regular-expression-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-21-regular-expression-matching-handwritten.svg" alt="Handwritten: Problem 21: Regular Expression Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-21-regular-expression-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-21-regular-expression-matching-diagram.svg" alt="Diagram: Problem 21: Regular Expression Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-21-regular-expression-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-21-regular-expression-matching-sticky.svg" alt="Sticky Note: Problem 21: Regular Expression Matching" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
@@ -1458,16 +1247,6 @@ console.log(isMatch("ab", ".*")); // true
 ---
 
 ### Problem 22: Edit Distance
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-22-edit-distance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-22-edit-distance-handwritten.svg" alt="Handwritten: Problem 22: Edit Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-22-edit-distance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-22-edit-distance-diagram.svg" alt="Diagram: Problem 22: Edit Distance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-22-edit-distance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-22-edit-distance-sticky.svg" alt="Sticky Note: Problem 22: Edit Distance" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft] [Meta]
 📊 **Difficulty:** Hard
@@ -1530,16 +1309,6 @@ console.log(minDistance("", "a")); // 1
 
 ### Problem 23: Distinct Subsequences
 
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-23-distinct-subsequences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-23-distinct-subsequences-handwritten.svg" alt="Handwritten: Problem 23: Distinct Subsequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-23-distinct-subsequences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-23-distinct-subsequences-diagram.svg" alt="Diagram: Problem 23: Distinct Subsequences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-23-distinct-subsequences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-23-distinct-subsequences-sticky.svg" alt="Sticky Note: Problem 23: Distinct Subsequences" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Hard
 📂 **Topics:** [String, DP]
@@ -1590,16 +1359,6 @@ console.log(numDistinct("babgbag", "bag")); // 5
 ---
 
 ### Problem 24: Text Justification
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-24-text-justification-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-24-text-justification-handwritten.svg" alt="Handwritten: Problem 24: Text Justification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-24-text-justification-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-24-text-justification-diagram.svg" alt="Diagram: Problem 24: Text Justification" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-24-text-justification-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-24-text-justification-sticky.svg" alt="Sticky Note: Problem 24: Text Justification" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
@@ -1676,16 +1435,6 @@ console.log(fullJustify(words, 16));
 ---
 
 ### Problem 25: Wildcard Matching
-
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-25-wildcard-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-25-wildcard-matching-handwritten.svg" alt="Handwritten: Problem 25: Wildcard Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-25-wildcard-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-25-wildcard-matching-diagram.svg" alt="Diagram: Problem 25: Wildcard Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/02-strings/problem-25-wildcard-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/02-strings/problem-25-wildcard-matching-sticky.svg" alt="Sticky Note: Problem 25: Wildcard Matching" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard

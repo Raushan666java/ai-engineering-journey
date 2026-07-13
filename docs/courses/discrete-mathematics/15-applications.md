@@ -109,16 +109,6 @@ flowchart LR
 
 ### 15.1 Network Flow
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-handwritten.svg" alt="Handwritten: 15.1 Network Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-diagram.svg" alt="Diagram: 15.1 Network Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-1-network-flow-sticky.svg" alt="Sticky Note: 15.1 Network Flow" width="30%">
-</a>
-
 
 A **flow network** is a directed graph $G = (V,E)$ with a **source** $s$ and **sink** $t$, where each edge $(u,v)$ has a **capacity** $c(u,v) \geq 0$.
 
@@ -207,16 +197,6 @@ class Dinic {
 
 ### 15.2 Matching
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-handwritten.svg" alt="Handwritten: 15.2 Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-diagram.svg" alt="Diagram: 15.2 Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-2-matching-sticky.svg" alt="Sticky Note: 15.2 Matching" width="30%">
-</a>
-
 
 A **matching** in a graph is a set of edges with no shared vertices. A **maximum matching** contains the largest possible number of edges.
 
@@ -262,16 +242,6 @@ function bipartiteMatch(
 
 ### 15.3 Graph Coloring
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-handwritten.svg" alt="Handwritten: 15.3 Graph Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-diagram.svg" alt="Diagram: 15.3 Graph Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-3-graph-coloring-sticky.svg" alt="Sticky Note: 15.3 Graph Coloring" width="30%">
-</a>
-
 
 A **proper $k$-coloring** assigns each vertex one of $k$ colors such that adjacent vertices have different colors. The **chromatic number** $\chi(G)$ is the smallest $k$ for which $G$ is $k$-colorable.
 
@@ -288,16 +258,6 @@ A **proper $k$-coloring** assigns each vertex one of $k$ colors such that adjace
 > **One-Sentence Takeaway:** Graph coloring assigns colors to vertices such that adjacent vertices differ; it applies to scheduling, register allocation, and map coloring.
 
 ### 15.4 Error-Correcting Codes
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-handwritten.svg" alt="Handwritten: 15.4 Error-Correcting Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-diagram.svg" alt="Diagram: 15.4 Error-Correcting Codes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-4-error-correcting-codes-sticky.svg" alt="Sticky Note: 15.4 Error-Correcting Codes" width="30%">
-</a>
 
 
 **Error detection and correction** uses redundancy to recover from transmission errors.
@@ -340,16 +300,6 @@ console.log(hammingDistance("10101", "10011")); // 2
 > **One-Sentence Takeaway:** Error-correcting codes add redundancy to detect and fix transmission errors ? Hamming codes correct 1 error per block, Reed-Solomon corrects bursts.
 
 ### 15.5 Randomized Algorithms
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-handwritten.svg" alt="Handwritten: 15.5 Randomized Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-diagram.svg" alt="Diagram: 15.5 Randomized Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-5-randomized-algorithms-sticky.svg" alt="Sticky Note: 15.5 Randomized Algorithms" width="30%">
-</a>
 
 
 **Randomized algorithms** use randomness to simplify computation and often achieve better expected performance.
@@ -397,16 +347,6 @@ function modPow(base: number, exp: number, mod: number): number {
 > **One-Sentence Takeaway:** Randomized algorithms use randomness to achieve efficiency and simplicity ? the Miller-Rabin test determines primality with arbitrarily high confidence.
 
 ### 15.6 Finite Automata
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-handwritten.svg" alt="Handwritten: 15.6 Finite Automata" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-diagram.svg" alt="Diagram: 15.6 Finite Automata" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-6-finite-automata-sticky.svg" alt="Sticky Note: 15.6 Finite Automata" width="30%">
-</a>
 
 
 A **deterministic finite automaton (DFA)** is a 5-tuple $(Q, \Sigma, \delta, q_0, F)$ where:
@@ -460,16 +400,6 @@ console.log(dfa.accepts("100"));   // false
 
 ### 15.7 Formal Languages
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-handwritten.svg" alt="Handwritten: 15.7 Formal Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-diagram.svg" alt="Diagram: 15.7 Formal Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-7-formal-languages-sticky.svg" alt="Sticky Note: 15.7 Formal Languages" width="30%">
-</a>
-
 
 A **formal language** is a set of strings over an alphabet. **Grammars** generate languages; **automata** recognize them.
 
@@ -491,16 +421,6 @@ A **formal language** is a set of strings over an alphabet. **Grammars** generat
 
 ### 15.8 Number Theory in Cryptography
 
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-handwritten.svg" alt="Handwritten: 15.8 Number Theory in Cryptography" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-diagram.svg" alt="Diagram: 15.8 Number Theory in Cryptography" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-8-number-theory-in-cryptography-sticky.svg" alt="Sticky Note: 15.8 Number Theory in Cryptography" width="30%">
-</a>
-
 
 Beyond RSA, number theory enables:
 
@@ -517,16 +437,6 @@ Beyond RSA, number theory enables:
 > **One-Sentence Takeaway:** Modern cryptography relies on number-theoretic hardness assumptions (factorization, discrete logarithm) to secure communication.
 
 ### 15.9 Digital Logic Design
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-handwritten.svg" alt="Handwritten: 15.9 Digital Logic Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-diagram.svg" alt="Diagram: 15.9 Digital Logic Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-9-digital-logic-design-sticky.svg" alt="Sticky Note: 15.9 Digital Logic Design" width="30%">
-</a>
 
 
 Boolean algebra (Chapter 12) directly implements digital circuits:
@@ -574,16 +484,6 @@ console.log(result.sum.join("")); // "0000" (with carry 1 = 10000 = 16)
 > **One-Sentence Takeaway:** Combinational logic implements Boolean functions as gates; sequential logic adds state for memory and control in processors and state machines.
 
 ### 15.10 Constraint Satisfaction and Optimization
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-handwritten.svg" alt="Handwritten: 15.10 Constraint Satisfaction and Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-diagram.svg" alt="Diagram: 15.10 Constraint Satisfaction and Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-10-constraint-satisfaction-and-optimization-sticky.svg" alt="Sticky Note: 15.10 Constraint Satisfaction and Optimization" width="30%">
-</a>
 
 
 **Constraint satisfaction problems (CSPs):** Variables with domains and constraints between them. Solved by backtracking, arc consistency, and propagation.
@@ -642,16 +542,6 @@ console.log(knapsack(
 > **One-Sentence Takeaway:** CSPs and optimization problems model real-world constraints; DP solves knapsack in pseudopolynomial time, while TSP and IP remain NP-hard.
 
 ### 15.11 Application Domains Matrix
-
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-handwritten.svg" alt="Handwritten: 15.11 Application Domains Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-diagram.svg" alt="Diagram: 15.11 Application Domains Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/discrete-mathematics/15-applications/15-11-application-domains-matrix-sticky.svg" alt="Sticky Note: 15.11 Application Domains Matrix" width="30%">
-</a>
 
 
 | Domain | Discrete Math Concept | Specific Application |

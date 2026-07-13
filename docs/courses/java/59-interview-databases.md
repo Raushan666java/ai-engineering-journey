@@ -66,16 +66,6 @@ flowchart LR
 
 ### Q1: What is the difference between JDBC and JPA, and when would you use each?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-handwritten.svg" alt="Handwritten: What is the difference between JDBC and JPA, and when would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-diagram.svg" alt="Diagram: What is the difference between JDBC and JPA, and when would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-jdbc-and-jpa-and-when-would-you-use-each-sticky.svg" alt="Sticky Note: What is the difference between JDBC and JPA, and when would you use each?" width="30%">
-</a>
-
 
 > **Pro Tip:** In interviews, always start with the "why" before the "how." Explaining the reasoning behind a design choice is more valuable than reciting syntax.
 
@@ -153,16 +143,6 @@ For production, always use `validate` (or `none`) and manage schema changes thro
 
 ### Q3: What is the N+1 query problem in Hibernate, and how do you solve it?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-handwritten.svg" alt="Handwritten: What is the N+1 query problem in Hibernate, and how do you solve it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-diagram.svg" alt="Diagram: What is the N+1 query problem in Hibernate, and how do you solve it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-n-1-query-problem-in-hibernate-and-how-do-you-solve-it-sticky.svg" alt="Sticky Note: What is the N+1 query problem in Hibernate, and how do you solve it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -229,16 +209,6 @@ JOIN FETCH is the most common fix. Watch for `MultipleBagFetchException` when fe
 
 ### Q4: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-handwritten.svg" alt="Handwritten: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-diagram.svg" alt="Diagram: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-fetchtype-lazy-and-fetchtype-eager-sticky.svg" alt="Sticky Note: What is the difference between `FetchType.LAZY` and `FetchType.EAGER`?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -268,16 +238,6 @@ The `@NamedEntityGraph` approach gives you the best of both worlds: LAZY by defa
 ---
 
 ### Q5: How do you handle optimistic and pessimistic locking in JPA?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-handwritten.svg" alt="Handwritten: How do you handle optimistic and pessimistic locking in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-diagram.svg" alt="Diagram: How do you handle optimistic and pessimistic locking in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-optimistic-and-pessimistic-locking-in-jpa-sticky.svg" alt="Sticky Note: How do you handle optimistic and pessimistic locking in JPA?" width="30%">
-</a>
 
 
 **Answer:**
@@ -338,16 +298,6 @@ Use optimistic for read-heavy workloads with rare writes. Use pessimistic for fi
 
 ### Q6: What is the difference between `@Transactional` and manual transaction management?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-transactional-and-manual-transaction-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-transactional-and-manual-transaction-management-handwritten.svg" alt="Handwritten: What is the difference between `@Transactional` and manual transaction management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-transactional-and-manual-transaction-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-transactional-and-manual-transaction-management-diagram.svg" alt="Diagram: What is the difference between `@Transactional` and manual transaction management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-transactional-and-manual-transaction-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-transactional-and-manual-transaction-management-sticky.svg" alt="Sticky Note: What is the difference between `@Transactional` and manual transaction management?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -404,16 +354,6 @@ Key `@Transactional` attributes:
 
 ### Q7: Explain Hibernate's first-level and second-level cache
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-s-first-level-and-second-level-cache-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-s-first-level-and-second-level-cache-handwritten.svg" alt="Handwritten: Explain Hibernate's first-level and second-level cache" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-s-first-level-and-second-level-cache-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-s-first-level-and-second-level-cache-diagram.svg" alt="Diagram: Explain Hibernate's first-level and second-level cache" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-s-first-level-and-second-level-cache-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-s-first-level-and-second-level-cache-sticky.svg" alt="Sticky Note: Explain Hibernate's first-level and second-level cache" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -467,16 +407,6 @@ L2 cache is not a replacement for a well-tuned database. Use it sparingly → ca
 ---
 
 ### Q8: How does Spring Data JPA derive queries from method names?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-does-spring-data-jpa-derive-queries-from-method-names-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-does-spring-data-jpa-derive-queries-from-method-names-handwritten.svg" alt="Handwritten: How does Spring Data JPA derive queries from method names?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-does-spring-data-jpa-derive-queries-from-method-names-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-does-spring-data-jpa-derive-queries-from-method-names-diagram.svg" alt="Diagram: How does Spring Data JPA derive queries from method names?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-does-spring-data-jpa-derive-queries-from-method-names-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-does-spring-data-jpa-derive-queries-from-method-names-sticky.svg" alt="Sticky Note: How does Spring Data JPA derive queries from method names?" width="30%">
-</a>
 
 
 **Answer:**
@@ -535,16 +465,6 @@ List<User> findActiveUsersByEmailDomain(@Param("domain") String domain);
 
 ### Q9: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-handwritten.svg" alt="Handwritten: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-diagram.svg" alt="Diagram: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-manytomany-and-onetomany-with-a-join-entity-sticky.svg" alt="Sticky Note: What is the difference between `@ManyToMany` and `@OneToMany` with a join entity?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -601,16 +521,6 @@ Rules:
 ---
 
 ### Q10: How do you map inheritance hierarchies in JPA?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-map-inheritance-hierarchies-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-map-inheritance-hierarchies-in-jpa-handwritten.svg" alt="Handwritten: How do you map inheritance hierarchies in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-map-inheritance-hierarchies-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-map-inheritance-hierarchies-in-jpa-diagram.svg" alt="Diagram: How do you map inheritance hierarchies in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-map-inheritance-hierarchies-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-map-inheritance-hierarchies-in-jpa-sticky.svg" alt="Sticky Note: How do you map inheritance hierarchies in JPA?" width="30%">
-</a>
 
 
 **Answer:**
@@ -689,16 +599,6 @@ Use SINGLE_TABLE for simple hierarchies with few subclasses. Use JOINED when sub
 
 ### Q11: What is a projection in Spring Data JPA, and why use DTO projections over entities?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-handwritten.svg" alt="Handwritten: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-diagram.svg" alt="Diagram: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-a-projection-in-spring-data-jpa-and-why-use-dto-projections-over-entities-sticky.svg" alt="Sticky Note: What is a projection in Spring Data JPA, and why use DTO projections over entities?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -734,16 +634,6 @@ EntityGraph can help with partial entity loading, but DTO projections give you t
 ---
 
 ### Q12: How do you implement database migrations with Flyway in Spring Boot?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-handwritten.svg" alt="Handwritten: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-diagram.svg" alt="Diagram: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-database-migrations-with-flyway-in-spring-boot-sticky.svg" alt="Sticky Note: How do you implement database migrations with Flyway in Spring Boot?" width="30%">
-</a>
 
 
 **Answer:**
@@ -804,16 +694,6 @@ Flyway tracks applied migrations in a `flyway_schema_history` table. Never modif
 ---
 
 ### Q13: How do you handle concurrent updates to the same row without data loss?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-handwritten.svg" alt="Handwritten: How do you handle concurrent updates to the same row without data loss?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-diagram.svg" alt="Diagram: How do you handle concurrent updates to the same row without data loss?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-handle-concurrent-updates-to-the-same-row-without-data-loss-sticky.svg" alt="Sticky Note: How do you handle concurrent updates to the same row without data loss?" width="30%">
-</a>
 
 
 **Answer:**
@@ -876,16 +756,6 @@ The single-UPDATE approach is the most performant for high-contention counters b
 
 ### Q14: How do you test database code with TestContainers?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-test-database-code-with-testcontainers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-test-database-code-with-testcontainers-handwritten.svg" alt="Handwritten: How do you test database code with TestContainers?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-test-database-code-with-testcontainers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-test-database-code-with-testcontainers-diagram.svg" alt="Diagram: How do you test database code with TestContainers?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-test-database-code-with-testcontainers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-test-database-code-with-testcontainers-sticky.svg" alt="Sticky Note: How do you test database code with TestContainers?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -945,16 +815,6 @@ Add `@Testcontainers` + static `@Container` for a shared container across tests 
 
 ### Q15: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-handwritten.svg" alt="Handwritten: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-diagram.svg" alt="Diagram: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-join-left-join-and-join-fetch-in-jpa-sticky.svg" alt="Sticky Note: What is the difference between `JOIN`, `LEFT JOIN`, and `JOIN FETCH` in JPA?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -993,16 +853,6 @@ List<Post> findAllPostsWithComments(); // p.getComments() is already populated
 
 
 ### Q16: How do you implement auditing (created_at, updated_at) in JPA?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-auditing-created-at-updated-at-in-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-auditing-created-at-updated-at-in-jpa-handwritten.svg" alt="Handwritten: How do you implement auditing (created_at, updated_at) in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-auditing-created-at-updated-at-in-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-auditing-created-at-updated-at-in-jpa-diagram.svg" alt="Diagram: How do you implement auditing (created_at, updated_at) in JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-auditing-created-at-updated-at-in-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-auditing-created-at-updated-at-in-jpa-sticky.svg" alt="Sticky Note: How do you implement auditing (created_at, updated_at) in JPA?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1073,16 +923,6 @@ public class Document {
 
 ### Q17: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-handwritten.svg" alt="Handwritten: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-diagram.svg" alt="Diagram: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-open-session-in-view-osiv-anti-pattern-and-why-avoid-it-sticky.svg" alt="Sticky Note: What is the Open Session In View (OSIV) anti-pattern, and why avoid it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1129,16 +969,6 @@ public class OrderService {
 ---
 
 ### Q18: How do you implement pagination and sorting in Spring Data JPA?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-handwritten.svg" alt="Handwritten: How do you implement pagination and sorting in Spring Data JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-diagram.svg" alt="Diagram: How do you implement pagination and sorting in Spring Data JPA?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-pagination-and-sorting-in-spring-data-jpa-sticky.svg" alt="Sticky Note: How do you implement pagination and sorting in Spring Data JPA?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1195,16 +1025,6 @@ Always set a maximum page size to prevent abuse: `@PageableDefault(size = 20, ma
 ---
 
 ### Q19: How do you use Spring Data JPA Specifications for dynamic queries?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-handwritten.svg" alt="Handwritten: How do you use Spring Data JPA Specifications for dynamic queries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-diagram.svg" alt="Diagram: How do you use Spring Data JPA Specifications for dynamic queries?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-spring-data-jpa-specifications-for-dynamic-queries-sticky.svg" alt="Sticky Note: How do you use Spring Data JPA Specifications for dynamic queries?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1278,16 +1098,6 @@ Use Specifications over `@Query` when:
 ---
 
 ### Q20: How do you implement multi-tenancy in Spring Boot with Hibernate?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-handwritten.svg" alt="Handwritten: How do you implement multi-tenancy in Spring Boot with Hibernate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-diagram.svg" alt="Diagram: How do you implement multi-tenancy in Spring Boot with Hibernate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-multi-tenancy-in-spring-boot-with-hibernate-sticky.svg" alt="Sticky Note: How do you implement multi-tenancy in Spring Boot with Hibernate?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1363,16 +1173,6 @@ Separate database is strongest isolation (best for compliance). Schema per tenan
 
 ### Q21: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-handwritten.svg" alt="Handwritten: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-diagram.svg" alt="Diagram: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-nativequery-jpql-and-criteriaquery-sticky.svg" alt="Sticky Note: What is the difference between `NativeQuery`, `JPQL`, and `CriteriaQuery`?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1421,16 +1221,6 @@ Use NativeQuery for database-specific features (window functions, `ILike`, full-
 ---
 
 ### Q22: How do you use MongoDB with Spring Data?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-mongodb-with-spring-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-mongodb-with-spring-data-handwritten.svg" alt="Handwritten: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-mongodb-with-spring-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-mongodb-with-spring-data-diagram.svg" alt="Diagram: How do you use MongoDB with Spring Data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-mongodb-with-spring-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-mongodb-with-spring-data-sticky.svg" alt="Sticky Note: How do you use MongoDB with Spring Data?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1502,16 +1292,6 @@ Use MongoDB when your data is document-shaped (JSON-like, nested, varying schema
 
 ### Q23: What is connection pooling, and how do you configure HikariCP?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-connection-pooling-and-how-do-you-configure-hikaricp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-connection-pooling-and-how-do-you-configure-hikaricp-handwritten.svg" alt="Handwritten: What is connection pooling, and how do you configure HikariCP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-connection-pooling-and-how-do-you-configure-hikaricp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-connection-pooling-and-how-do-you-configure-hikaricp-diagram.svg" alt="Diagram: What is connection pooling, and how do you configure HikariCP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-connection-pooling-and-how-do-you-configure-hikaricp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-connection-pooling-and-how-do-you-configure-hikaricp-sticky.svg" alt="Sticky Note: What is connection pooling, and how do you configure HikariCP?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1565,16 +1345,6 @@ Always set `leak-detection-threshold` in development to catch connection leaks (
 ---
 
 ### Q24: How do you use Redis with Spring Boot for caching?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-redis-with-spring-boot-for-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-redis-with-spring-boot-for-caching-handwritten.svg" alt="Handwritten: How do you use Redis with Spring Boot for caching?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-redis-with-spring-boot-for-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-redis-with-spring-boot-for-caching-diagram.svg" alt="Diagram: How do you use Redis with Spring Boot for caching?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-redis-with-spring-boot-for-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-use-redis-with-spring-boot-for-caching-sticky.svg" alt="Sticky Note: How do you use Redis with Spring Boot for caching?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1673,16 +1443,6 @@ Never cache mutable data without TTL or eviction. Stale data is worse than slow 
 ---
 
 ### Q25: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-handwritten.svg" alt="Handwritten: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-diagram.svg" alt="Diagram: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-troubleshoot-slow-queries-in-a-spring-boot-hibernate-application-sticky.svg" alt="Sticky Note: How do you troubleshoot slow queries in a Spring Boot + Hibernate application?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1783,16 +1543,6 @@ The most impactful single change: **enable slow query logging in both Hibernate 
 
 ### Q26: What is database sharding, and how do you implement it?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-database-sharding-and-how-do-you-implement-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-database-sharding-and-how-do-you-implement-it-handwritten.svg" alt="Handwritten: What is database sharding, and how do you implement it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-database-sharding-and-how-do-you-implement-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-database-sharding-and-how-do-you-implement-it-diagram.svg" alt="Diagram: What is database sharding, and how do you implement it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-database-sharding-and-how-do-you-implement-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-database-sharding-and-how-do-you-implement-it-sticky.svg" alt="Sticky Note: What is database sharding, and how do you implement it?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1834,16 +1584,6 @@ Sharding is the most complex scaling strategy. Exhaust read replicas, vertical s
 ---
 
 ### Q27: How do you configure read replicas with Spring Boot?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-configure-read-replicas-with-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-configure-read-replicas-with-spring-boot-handwritten.svg" alt="Handwritten: How do you configure read replicas with Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-configure-read-replicas-with-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-configure-read-replicas-with-spring-boot-diagram.svg" alt="Diagram: How do you configure read replicas with Spring Boot?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-configure-read-replicas-with-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-configure-read-replicas-with-spring-boot-sticky.svg" alt="Sticky Note: How do you configure read replicas with Spring Boot?" width="30%">
-</a>
 
 
 **Answer:**
@@ -1909,16 +1649,6 @@ Caveats:
 
 ### Q28: Explain Hibernate cascade types with examples
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-cascade-types-with-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-cascade-types-with-examples-handwritten.svg" alt="Handwritten: Explain Hibernate cascade types with examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-cascade-types-with-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-cascade-types-with-examples-diagram.svg" alt="Diagram: Explain Hibernate cascade types with examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-cascade-types-with-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-hibernate-cascade-types-with-examples-sticky.svg" alt="Sticky Note: Explain Hibernate cascade types with examples" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -1982,16 +1712,6 @@ Use `CascadeType.ALL` only when the child entity has no independent lifecycle. N
 ---
 
 ### Q29: What is the difference between `@Embedded` and `@OneToOne`?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-embedded-and-onetoone-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-embedded-and-onetoone-handwritten.svg" alt="Handwritten: What is the difference between `@Embedded` and `@OneToOne`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-embedded-and-onetoone-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-embedded-and-onetoone-diagram.svg" alt="Diagram: What is the difference between `@Embedded` and `@OneToOne`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-embedded-and-onetoone-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-is-the-difference-between-embedded-and-onetoone-sticky.svg" alt="Sticky Note: What is the difference between `@Embedded` and `@OneToOne`?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2057,16 +1777,6 @@ private Address homeAddress;
 ---
 
 ### Q30: How do you implement batch processing with JPA and Hibernate?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-batch-processing-with-jpa-and-hibernate-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-batch-processing-with-jpa-and-hibernate-handwritten.svg" alt="Handwritten: How do you implement batch processing with JPA and Hibernate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-batch-processing-with-jpa-and-hibernate-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-batch-processing-with-jpa-and-hibernate-diagram.svg" alt="Diagram: How do you implement batch processing with JPA and Hibernate?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-batch-processing-with-jpa-and-hibernate-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-do-you-implement-batch-processing-with-jpa-and-hibernate-sticky.svg" alt="Sticky Note: How do you implement batch processing with JPA and Hibernate?" width="30%">
-</a>
 
 
 **Answer:**
@@ -2149,16 +1859,6 @@ int bulkUpdateStatus(@Param("ids") List<Long> ids, @Param("status") String statu
 
 ### Q31: Explain database indexing strategies for common query patterns
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-database-indexing-strategies-for-common-query-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-database-indexing-strategies-for-common-query-patterns-handwritten.svg" alt="Handwritten: Explain database indexing strategies for common query patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-database-indexing-strategies-for-common-query-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-database-indexing-strategies-for-common-query-patterns-diagram.svg" alt="Diagram: Explain database indexing strategies for common query patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/explain-database-indexing-strategies-for-common-query-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/explain-database-indexing-strategies-for-common-query-patterns-sticky.svg" alt="Sticky Note: Explain database indexing strategies for common query patterns" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2218,16 +1918,6 @@ Most applications need fewer than 20 indexes per table. Too many indexes slow do
 
 ### Q32: How does Hibernate's first-level cache interact with `@Transactional`?
 
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-does-hibernate-s-first-level-cache-interact-with-transactional-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-does-hibernate-s-first-level-cache-interact-with-transactional-handwritten.svg" alt="Handwritten: How does Hibernate's first-level cache interact with `@Transactional`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-does-hibernate-s-first-level-cache-interact-with-transactional-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-does-hibernate-s-first-level-cache-interact-with-transactional-diagram.svg" alt="Diagram: How does Hibernate's first-level cache interact with `@Transactional`?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/how-does-hibernate-s-first-level-cache-interact-with-transactional-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/how-does-hibernate-s-first-level-cache-interact-with-transactional-sticky.svg" alt="Sticky Note: How does Hibernate's first-level cache interact with `@Transactional`?" width="30%">
-</a>
-
 
 **Answer:**
 
@@ -2272,16 +1962,6 @@ public void updateName(Long id, String name) {
 ---
 
 ### Q33: What are database migration rollback strategies in production?
-
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-are-database-migration-rollback-strategies-in-production-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-are-database-migration-rollback-strategies-in-production-handwritten.svg" alt="Handwritten: What are database migration rollback strategies in production?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-are-database-migration-rollback-strategies-in-production-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-are-database-migration-rollback-strategies-in-production-diagram.svg" alt="Diagram: What are database migration rollback strategies in production?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/59-interview-databases/what-are-database-migration-rollback-strategies-in-production-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/59-interview-databases/what-are-database-migration-rollback-strategies-in-production-sticky.svg" alt="Sticky Note: What are database migration rollback strategies in production?" width="30%">
-</a>
 
 
 **Answer:**

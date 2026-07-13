@@ -6,7 +6,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/mock-tests/01-ibps-so-it-officer-scale1/hero.svg" target="_blank" rel="noopener">
@@ -90,17 +89,6 @@
 
 ### Q1. [MCQ] | 1 Mark | DBMS
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q1-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q1-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q1. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q1-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q1-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q1. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q1-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q1-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q1. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
-
 **Which of the following normal forms is violated if a non-prime attribute is transitively dependent on a candidate key?**
 
 A) 1NF  
@@ -121,17 +109,6 @@ D) BCNF
 ---
 
 ### Q2. [MCQ] | 1 Mark | DBMS
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q2-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q2-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q2. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q2-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q2-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q2. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q2-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q2-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q2. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
 
 **In a B+ tree index, which of the following statements is TRUE?**
 
@@ -154,17 +131,6 @@ D) Leaf nodes are not linked to each other
 
 ### Q3. [MCQ] | 1 Mark | DBMS
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q3-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q3-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q3. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q3-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q3-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q3. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q3-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q3-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q3. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
-
 **Consider a relation R(A, B, C, D, E) with functional dependencies: A -> B, A -> C, BC -> D, D -> E. What is the candidate key of R?**
 
 A) A  
@@ -185,17 +151,6 @@ D) AB
 ---
 
 ### Q4. [MCQ] | 1 Mark | DBMS
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q4-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q4-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q4. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q4-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q4-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q4. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q4-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q4-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q4. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
 
 **Which isolation level in SQL ensures that a transaction reads only committed data but may get non-repeatable reads?**
 
@@ -218,17 +173,6 @@ D) SERIALIZABLE
 
 ### Q5. [MCQ] | 1 Mark | DBMS
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q5-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q5-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q5. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q5-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q5-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q5. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q5-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q5-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q5. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
-
 **Which of the following schedules is NOT conflict serializable?**
 
 A) R1(A), W2(A), R1(B), W2(B)  
@@ -249,17 +193,6 @@ D) R1(A), R2(A), R2(B), R1(B)
 ---
 
 ### Q6. [MCQ] | 1 Mark | DBMS
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q6-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q6-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q6. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q6-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q6-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q6. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q6-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q6-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q6. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
 
 **Which of the following is NOT an ACID property of a transaction?**
 
@@ -282,17 +215,6 @@ D) Integration
 
 ### Q7. [MCQ] | 1 Mark | DBMS
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q7-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q7-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q7. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q7-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q7-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q7. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q7-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q7-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q7. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
-
 **Which SQL statement removes all rows from a table without removing the table structure?**
 
 A) DELETE  
@@ -313,17 +235,6 @@ D) REMOVE
 ---
 
 ### Q8. [MCQ] | 1 Mark | DBMS
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q8-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q8-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q8. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q8-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q8-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q8. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q8-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q8-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q8. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
 
 **In ER diagrams, which symbol represents a weak entity?**
 
@@ -346,17 +257,6 @@ D) Diamond
 
 ### Q9. [MCQ] | 1 Mark | DBMS
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q9-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q9-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q9. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q9-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q9-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q9. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q9-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q9-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q9. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
-
 **Which normal form eliminates partial dependencies?**
 
 A) 1NF  
@@ -377,17 +277,6 @@ D) BCNF
 ---
 
 ### Q10. [MCQ] | 1 Mark | DBMS
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q10-mcq-1-mark-dbms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q10-mcq-1-mark-dbms-handwritten.svg" alt="Handwritten: Q10. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q10-mcq-1-mark-dbms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q10-mcq-1-mark-dbms-diagram.svg" alt="Diagram: Q10. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q10-mcq-1-mark-dbms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q10-mcq-1-mark-dbms-sticky.svg" alt="Sticky Note: Q10. [MCQ] | 1 Mark | DBMS" width="30%">
-</a>
-
 
 **Which decomposition of R(A, B, C, D) with FDs: A -> B, A -> C, B -> D is lossless join?**
 
@@ -410,17 +299,6 @@ D) R1(A,B,C), R2(B,D)
 
 ### Q11. [MCQ] | 1 Mark | Computer Networks
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q11-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q11-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q11. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q11-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q11-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q11. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q11-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q11-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q11. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
-
 **Which OSI layer handles routing and logical addressing?**
 
 A) Data Link Layer  
@@ -441,17 +319,6 @@ D) Session Layer
 ---
 
 ### Q12. [MCQ] | 1 Mark | Computer Networks
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q12-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q12-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q12. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q12-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q12-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q12. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q12-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q12-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q12. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
 
 **Which protocol maps IP addresses to MAC addresses?**
 
@@ -474,17 +341,6 @@ D) ICMP
 
 ### Q13. [MCQ] | 1 Mark | Computer Networks
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q13-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q13-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q13. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q13-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q13-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q13. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q13-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q13-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q13. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
-
 **In TCP/IP, which layer corresponds to OSI Network layer?**
 
 A) Application Layer  
@@ -505,17 +361,6 @@ D) Network Access Layer
 ---
 
 ### Q14. [MCQ] | 1 Mark | Computer Networks
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q14-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q14-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q14. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q14-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q14-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q14. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q14-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q14-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q14. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
 
 **Which switching technique is used in traditional telephone networks?**
 
@@ -538,17 +383,6 @@ D) Virtual Circuit Switching
 
 ### Q15. [MCQ] | 1 Mark | Computer Networks
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q15-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q15-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q15. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q15-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q15-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q15. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q15-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q15-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q15. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
-
 **Which of the following is a Class B IP address?**
 
 A) 10.0.0.1  
@@ -569,17 +403,6 @@ D) 224.0.0.1
 ---
 
 ### Q16. [MCQ] | 1 Mark | Computer Networks
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q16-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q16-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q16. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q16-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q16-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q16. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q16-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q16-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q16. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
 
 **Which HTTP status code means "Not Found"?**
 
@@ -602,17 +425,6 @@ D) 404
 
 ### Q17. [MCQ] | 1 Mark | Computer Networks
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q17-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q17-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q17. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q17-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q17-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q17. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q17-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q17-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q17. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
-
 **Which protocol provides reliable, connection-oriented data transfer?**
 
 A) UDP  
@@ -633,17 +445,6 @@ D) HTTP
 ---
 
 ### Q18. [MCQ] | 1 Mark | Computer Networks
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q18-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q18-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q18. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q18-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q18-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q18. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q18-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q18-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q18. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
 
 **What is the maximum segment length of 10Base-T Ethernet?**
 
@@ -666,17 +467,6 @@ D) 200 meters
 
 ### Q19. [MCQ] | 1 Mark | Computer Networks
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q19-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q19-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q19. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q19-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q19-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q19. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q19-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q19-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q19. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
-
 **Which device connects different network types and operates at Layer 3?**
 
 A) Hub  
@@ -697,17 +487,6 @@ D) Bridge
 ---
 
 ### Q20. [MCQ] | 1 Mark | Computer Networks
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q20-mcq-1-mark-computer-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q20-mcq-1-mark-computer-networks-handwritten.svg" alt="Handwritten: Q20. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q20-mcq-1-mark-computer-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q20-mcq-1-mark-computer-networks-diagram.svg" alt="Diagram: Q20. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q20-mcq-1-mark-computer-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q20-mcq-1-mark-computer-networks-sticky.svg" alt="Sticky Note: Q20. [MCQ] | 1 Mark | Computer Networks" width="30%">
-</a>
-
 
 **What is the subnet mask for a /27 CIDR notation?**
 
@@ -730,17 +509,6 @@ D) 255.255.255.192
 
 ### Q21. [MCQ] | 1 Mark | Operating Systems
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q21-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q21-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q21. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q21-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q21-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q21. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q21-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q21-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q21. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
-
 **Which scheduling algorithm is preemptive?**
 
 A) FCFS  
@@ -761,17 +529,6 @@ D) Priority (non-preemptive)
 ---
 
 ### Q22. [MCQ] | 1 Mark | Operating Systems
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q22-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q22-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q22. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q22-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q22-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q22. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q22-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q22-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q22. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
 
 **Which memory management technique causes external fragmentation?**
 
@@ -794,17 +551,6 @@ D) Demand paging
 
 ### Q23. [MCQ] | 1 Mark | Operating Systems
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q23-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q23-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q23. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q23-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q23-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q23. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q23-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q23-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q23. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
-
 **Breaking which deadlock condition involves forcibly preempting a resource?**
 
 A) Mutual Exclusion  
@@ -825,17 +571,6 @@ D) Circular Wait
 ---
 
 ### Q24. [MCQ] | 1 Mark | Operating Systems
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q24-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q24-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q24. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q24-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q24-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q24. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q24-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q24-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q24. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
 
 **Which page replacement algorithm suffers from Belady's Anomaly?**
 
@@ -858,17 +593,6 @@ D) LFU
 
 ### Q25. [MCQ] | 1 Mark | Operating Systems
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q25-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q25-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q25. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q25-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q25-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q25. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q25-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q25-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q25. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
-
 **What is the purpose of a system call?**
 
 A) To compile a program  
@@ -889,17 +613,6 @@ D) To boot the computer
 ---
 
 ### Q26. [MCQ] | 1 Mark | Operating Systems
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q26-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q26-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q26. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q26-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q26-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q26. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q26-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q26-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q26. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
 
 **Which is NOT a process state?**
 
@@ -922,17 +635,6 @@ D) Compiled
 
 ### Q27. [MCQ] | 1 Mark | Operating Systems
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q27-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q27-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q27. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q27-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q27-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q27. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q27-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q27-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q27. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
-
 **Which disk scheduling algorithm treats the disk as a circular buffer?**
 
 A) FCFS  
@@ -953,17 +655,6 @@ D) C-SCAN
 ---
 
 ### Q28. [MCQ] | 1 Mark | Operating Systems
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q28-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q28-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q28. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q28-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q28-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q28. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q28-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q28-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q28. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
 
 **Virtual address size in a 32-bit system?**
 
@@ -986,17 +677,6 @@ D) 128 bits
 
 ### Q29. [MCQ] | 1 Mark | Operating Systems
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q29-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q29-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q29. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q29-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q29-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q29. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q29-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q29-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q29. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
-
 **Which is a method to handle deadlocks?**
 
 A) Deadlock Prevention  
@@ -1017,17 +697,6 @@ D) All of the above
 ---
 
 ### Q30. [MCQ] | 1 Mark | Operating Systems
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q30-mcq-1-mark-operating-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q30-mcq-1-mark-operating-systems-handwritten.svg" alt="Handwritten: Q30. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q30-mcq-1-mark-operating-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q30-mcq-1-mark-operating-systems-diagram.svg" alt="Diagram: Q30. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q30-mcq-1-mark-operating-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q30-mcq-1-mark-operating-systems-sticky.svg" alt="Sticky Note: Q30. [MCQ] | 1 Mark | Operating Systems" width="30%">
-</a>
-
 
 **What is a semaphore?**
 
@@ -1050,17 +719,6 @@ D) A file system structure
 
 ### Q31. [MCQ] | 1 Mark | Data Structures
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q31-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q31-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q31. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q31-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q31-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q31. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q31-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q31-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q31. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
-
 **Time complexity of searching in a balanced BST?**
 
 A) O(1)  
@@ -1081,17 +739,6 @@ D) O(n^2)
 ---
 
 ### Q32. [MCQ] | 1 Mark | Data Structures
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q32-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q32-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q32. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q32-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q32-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q32. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q32-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q32-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q32. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
 
 **Best data structure for a priority queue?**
 
@@ -1114,17 +761,6 @@ D) Stack
 
 ### Q33. [MCQ] | 1 Mark | Data Structures
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q33-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q33-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q33. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q33-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q33-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q33. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q33-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q33-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q33. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
-
 **Which traversal visits Left, Root, Right?**
 
 A) Preorder  
@@ -1145,17 +781,6 @@ D) Level order
 ---
 
 ### Q34. [MCQ] | 1 Mark | Data Structures
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q34-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q34-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q34. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q34-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q34-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q34. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q34-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q34-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q34. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
 
 **Maximum nodes in a binary tree of height h?**
 
@@ -1178,17 +803,6 @@ D) h^2
 
 ### Q35. [MCQ] | 1 Mark | Data Structures
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q35-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q35-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q35. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q35-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q35-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q35. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q35-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q35-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q35. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
-
 **Which collision resolution stores all keys in the hash table itself?**
 
 A) Separate Chaining  
@@ -1209,17 +823,6 @@ D) Both B and C
 ---
 
 ### Q36. [MCQ] | 1 Mark | Data Structures
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q36-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q36-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q36. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q36-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q36-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q36. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q36-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q36-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q36. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
 
 **Worst-case time complexity of quicksort?**
 
@@ -1242,17 +845,6 @@ D) O(log n)
 
 ### Q37. [MCQ] | 1 Mark | Data Structures
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q37-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q37-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q37. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q37-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q37-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q37. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q37-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q37-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q37. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
-
 **Which data structure uses LIFO?**
 
 A) Queue  
@@ -1273,17 +865,6 @@ D) Priority Queue
 ---
 
 ### Q38. [MCQ] | 1 Mark | Data Structures
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q38-mcq-1-mark-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q38-mcq-1-mark-data-structures-handwritten.svg" alt="Handwritten: Q38. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q38-mcq-1-mark-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q38-mcq-1-mark-data-structures-diagram.svg" alt="Diagram: Q38. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q38-mcq-1-mark-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q38-mcq-1-mark-data-structures-sticky.svg" alt="Sticky Note: Q38. [MCQ] | 1 Mark | Data Structures" width="30%">
-</a>
-
 
 **Edges in a complete graph with n vertices?**
 
@@ -1306,17 +887,6 @@ D) n-1
 
 ### Q39. [MCQ] | 1 Mark | Software Engineering
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q39-mcq-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q39-mcq-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q39. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q39-mcq-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q39-mcq-1-mark-software-engineering-diagram.svg" alt="Diagram: Q39. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q39-mcq-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q39-mcq-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q39. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-
-
 **Which SDLC model suits well-defined requirements?**
 
 A) Waterfall  
@@ -1337,17 +907,6 @@ D) RAD
 ---
 
 ### Q40. [MCQ] | 1 Mark | Software Engineering
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q40-mcq-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q40-mcq-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q40. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q40-mcq-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q40-mcq-1-mark-software-engineering-diagram.svg" alt="Diagram: Q40. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q40-mcq-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q40-mcq-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q40. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-
 
 **What does UML stand for?**
 
@@ -1370,17 +929,6 @@ D) Universal Modeling Language
 
 ### Q41. [MCQ] | 1 Mark | Software Engineering
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q41-mcq-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q41-mcq-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q41. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q41-mcq-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q41-mcq-1-mark-software-engineering-diagram.svg" alt="Diagram: Q41. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q41-mcq-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q41-mcq-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q41. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-
-
 **Which testing checks internal code logic?**
 
 A) Black Box Testing  
@@ -1401,17 +949,6 @@ D) Acceptance Testing
 ---
 
 ### Q42. [MCQ] | 1 Mark | Software Engineering
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q42-mcq-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q42-mcq-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q42. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q42-mcq-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q42-mcq-1-mark-software-engineering-diagram.svg" alt="Diagram: Q42. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q42-mcq-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q42-mcq-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q42. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-
 
 **Purpose of a UML use case diagram?**
 
@@ -1434,17 +971,6 @@ D) Represent class static structure
 
 ### Q43. [MCQ] | 1 Mark | Software Engineering
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q43-mcq-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q43-mcq-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q43. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q43-mcq-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q43-mcq-1-mark-software-engineering-diagram.svg" alt="Diagram: Q43. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q43-mcq-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q43-mcq-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q43. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-
-
 **Which agile methodology uses time-boxed sprints?**
 
 A) Kanban  
@@ -1465,17 +991,6 @@ D) Lean
 ---
 
 ### Q44. [MCQ] | 1 Mark | Software Engineering
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q44-mcq-1-mark-software-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q44-mcq-1-mark-software-engineering-handwritten.svg" alt="Handwritten: Q44. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q44-mcq-1-mark-software-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q44-mcq-1-mark-software-engineering-diagram.svg" alt="Diagram: Q44. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q44-mcq-1-mark-software-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q44-mcq-1-mark-software-engineering-sticky.svg" alt="Sticky Note: Q44. [MCQ] | 1 Mark | Software Engineering" width="30%">
-</a>
-
 
 **Purpose of a version control system?**
 
@@ -1498,17 +1013,6 @@ D) Deploy applications
 
 ### Q45. [MCQ] | 1 Mark | OOP Concepts
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q45-mcq-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q45-mcq-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q45. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q45-mcq-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q45-mcq-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q45. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q45-mcq-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q45-mcq-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q45. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-
-
 **Which OOP principle allows a class to inherit from another?**
 
 A) Encapsulation  
@@ -1529,17 +1033,6 @@ D) Abstraction
 ---
 
 ### Q46. [MCQ] | 1 Mark | OOP Concepts
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q46-mcq-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q46-mcq-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q46. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q46-mcq-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q46-mcq-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q46. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q46-mcq-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q46-mcq-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q46. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-
 
 **Which is NOT a polymorphism type in C++?**
 
@@ -1562,17 +1055,6 @@ D) Function overloading
 
 ### Q47. [MCQ] | 1 Mark | OOP Concepts
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q47-mcq-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q47-mcq-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q47. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q47-mcq-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q47-mcq-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q47. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q47-mcq-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q47-mcq-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q47. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-
-
 **What is a virtual function in C++?**
 
 A) Function that cannot be overridden  
@@ -1593,17 +1075,6 @@ D) A static class function
 ---
 
 ### Q48. [MCQ] | 1 Mark | OOP Concepts
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q48-mcq-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q48-mcq-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q48. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q48-mcq-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q48-mcq-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q48. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q48-mcq-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q48-mcq-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q48. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-
 
 **Which access specifier restricts access to within the same class only?**
 
@@ -1626,17 +1097,6 @@ D) internal
 
 ### Q49. [MCQ] | 1 Mark | OOP Concepts
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q49-mcq-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q49-mcq-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q49. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q49-mcq-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q49-mcq-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q49. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q49-mcq-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q49-mcq-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q49. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-
-
 **What is the diamond problem?**
 
 A) Multiple inheritance classes sharing a common base  
@@ -1657,17 +1117,6 @@ D) Design pattern problem
 ---
 
 ### Q50. [MCQ] | 1 Mark | OOP Concepts
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q50-mcq-1-mark-oop-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q50-mcq-1-mark-oop-concepts-handwritten.svg" alt="Handwritten: Q50. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q50-mcq-1-mark-oop-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q50-mcq-1-mark-oop-concepts-diagram.svg" alt="Diagram: Q50. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q50-mcq-1-mark-oop-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q50-mcq-1-mark-oop-concepts-sticky.svg" alt="Sticky Note: Q50. [MCQ] | 1 Mark | OOP Concepts" width="30%">
-</a>
-
 
 **Which pattern ensures a single instance with global access?**
 
@@ -1690,17 +1139,6 @@ D) Decorator
 
 ### Q51. [MCQ] | 1 Mark | Web Technologies
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q51-mcq-1-mark-web-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q51-mcq-1-mark-web-technologies-handwritten.svg" alt="Handwritten: Q51. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q51-mcq-1-mark-web-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q51-mcq-1-mark-web-technologies-diagram.svg" alt="Diagram: Q51. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q51-mcq-1-mark-web-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q51-mcq-1-mark-web-technologies-sticky.svg" alt="Sticky Note: Q51. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-
-
 **Which HTML tag defines an internal style sheet?**
 
 A) <css>  
@@ -1721,17 +1159,6 @@ D) <link>
 ---
 
 ### Q52. [MCQ] | 1 Mark | Web Technologies
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q52-mcq-1-mark-web-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q52-mcq-1-mark-web-technologies-handwritten.svg" alt="Handwritten: Q52. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q52-mcq-1-mark-web-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q52-mcq-1-mark-web-technologies-diagram.svg" alt="Diagram: Q52. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q52-mcq-1-mark-web-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q52-mcq-1-mark-web-technologies-sticky.svg" alt="Sticky Note: Q52. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-
 
 **Which HTTP method is idempotent?**
 
@@ -1754,17 +1181,6 @@ D) Both B and C
 
 ### Q53. [MCQ] | 1 Mark | Web Technologies
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q53-mcq-1-mark-web-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q53-mcq-1-mark-web-technologies-handwritten.svg" alt="Handwritten: Q53. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q53-mcq-1-mark-web-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q53-mcq-1-mark-web-technologies-diagram.svg" alt="Diagram: Q53. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q53-mcq-1-mark-web-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q53-mcq-1-mark-web-technologies-sticky.svg" alt="Sticky Note: Q53. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-
-
 **Purpose of DOCTYPE in HTML5?**
 
 A) Specify character encoding  
@@ -1785,17 +1201,6 @@ D) Define page title
 ---
 
 ### Q54. [MCQ] | 1 Mark | Web Technologies
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q54-mcq-1-mark-web-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q54-mcq-1-mark-web-technologies-handwritten.svg" alt="Handwritten: Q54. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q54-mcq-1-mark-web-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q54-mcq-1-mark-web-technologies-diagram.svg" alt="Diagram: Q54. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q54-mcq-1-mark-web-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q54-mcq-1-mark-web-technologies-sticky.svg" alt="Sticky Note: Q54. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-
 
 **Which is a JavaScript framework/library?**
 
@@ -1818,17 +1223,6 @@ D) Laravel
 
 ### Q55. [MCQ] | 1 Mark | Web Technologies
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q55-mcq-1-mark-web-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q55-mcq-1-mark-web-technologies-handwritten.svg" alt="Handwritten: Q55. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q55-mcq-1-mark-web-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q55-mcq-1-mark-web-technologies-diagram.svg" alt="Diagram: Q55. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q55-mcq-1-mark-web-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q55-mcq-1-mark-web-technologies-sticky.svg" alt="Sticky Note: Q55. [MCQ] | 1 Mark | Web Technologies" width="30%">
-</a>
-
-
 **What does JSON stand for?**
 
 A) JavaScript Object Notation  
@@ -1849,17 +1243,6 @@ D) Java Serialized Object Notation
 ---
 
 ### Q56. [MCQ] | 1 Mark | Cloud Computing
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q56-mcq-1-mark-cloud-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q56-mcq-1-mark-cloud-computing-handwritten.svg" alt="Handwritten: Q56. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q56-mcq-1-mark-cloud-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q56-mcq-1-mark-cloud-computing-diagram.svg" alt="Diagram: Q56. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q56-mcq-1-mark-cloud-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q56-mcq-1-mark-cloud-computing-sticky.svg" alt="Sticky Note: Q56. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-
 
 **Which cloud model provides virtualized computing resources?**
 
@@ -1882,17 +1265,6 @@ D) FaaS
 
 ### Q57. [MCQ] | 1 Mark | Cloud Computing
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q57-mcq-1-mark-cloud-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q57-mcq-1-mark-cloud-computing-handwritten.svg" alt="Handwritten: Q57. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q57-mcq-1-mark-cloud-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q57-mcq-1-mark-cloud-computing-diagram.svg" alt="Diagram: Q57. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q57-mcq-1-mark-cloud-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q57-mcq-1-mark-cloud-computing-sticky.svg" alt="Sticky Note: Q57. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-
-
 **What is cloud elasticity?**
 
 A) Lower latency  
@@ -1913,17 +1285,6 @@ D) Offline access
 ---
 
 ### Q58. [MCQ] | 1 Mark | Cyber Security
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q58-mcq-1-mark-cyber-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q58-mcq-1-mark-cyber-security-handwritten.svg" alt="Handwritten: Q58. [MCQ] | 1 Mark | Cyber Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q58-mcq-1-mark-cyber-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q58-mcq-1-mark-cyber-security-diagram.svg" alt="Diagram: Q58. [MCQ] | 1 Mark | Cyber Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q58-mcq-1-mark-cyber-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q58-mcq-1-mark-cyber-security-sticky.svg" alt="Sticky Note: Q58. [MCQ] | 1 Mark | Cyber Security" width="30%">
-</a>
-
 
 **Which attack uses fraudulent emails from legitimate-looking sources?**
 
@@ -1946,17 +1307,6 @@ D) Spoofing
 
 ### Q59. [MCQ] | 1 Mark | Cyber Security
 
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q59-mcq-1-mark-cyber-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q59-mcq-1-mark-cyber-security-handwritten.svg" alt="Handwritten: Q59. [MCQ] | 1 Mark | Cyber Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q59-mcq-1-mark-cyber-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q59-mcq-1-mark-cyber-security-diagram.svg" alt="Diagram: Q59. [MCQ] | 1 Mark | Cyber Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q59-mcq-1-mark-cyber-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q59-mcq-1-mark-cyber-security-sticky.svg" alt="Sticky Note: Q59. [MCQ] | 1 Mark | Cyber Security" width="30%">
-</a>
-
-
 **Which encryption uses a public-private key pair?**
 
 A) AES  
@@ -1977,17 +1327,6 @@ D) Blowfish
 ---
 
 ### Q60. [MCQ] | 1 Mark | Cloud Computing
-
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q60-mcq-1-mark-cloud-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q60-mcq-1-mark-cloud-computing-handwritten.svg" alt="Handwritten: Q60. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q60-mcq-1-mark-cloud-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q60-mcq-1-mark-cloud-computing-diagram.svg" alt="Diagram: Q60. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q60-mcq-1-mark-cloud-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/mock-tests/01-ibps-so-it-officer-scale1/q60-mcq-1-mark-cloud-computing-sticky.svg" alt="Sticky Note: Q60. [MCQ] | 1 Mark | Cloud Computing" width="30%">
-</a>
-
 
 **Which is NOT a cloud deployment model?**
 

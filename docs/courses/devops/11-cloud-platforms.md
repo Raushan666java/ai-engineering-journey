@@ -84,16 +84,6 @@ flowchart LR
 
 ### 11.1 Amazon Web Services (AWS)
 
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-1-amazon-web-services-aws-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-1-amazon-web-services-aws-handwritten.svg" alt="Handwritten: 11.1 Amazon Web Services (AWS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-1-amazon-web-services-aws-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-1-amazon-web-services-aws-diagram.svg" alt="Diagram: 11.1 Amazon Web Services (AWS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-1-amazon-web-services-aws-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-1-amazon-web-services-aws-sticky.svg" alt="Sticky Note: 11.1 Amazon Web Services (AWS)" width="30%">
-</a>
-
 
 AWS is the largest and most mature public cloud provider, offering over 200 services across 30+ global regions.
 
@@ -116,16 +106,6 @@ AWS is the largest and most mature public cloud provider, offering over 200 serv
 **IAM (Identity and Access Management)** — Fine-grained access control with users, groups, roles, policies, and identity federation. Supports SCIM, SAML 2.0, and OIDC. IAM Roles Anywhere for on-premises workloads.
 
 ### 11.2 Microsoft Azure
-
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-2-microsoft-azure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-2-microsoft-azure-handwritten.svg" alt="Handwritten: 11.2 Microsoft Azure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-2-microsoft-azure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-2-microsoft-azure-diagram.svg" alt="Diagram: 11.2 Microsoft Azure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-2-microsoft-azure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-2-microsoft-azure-sticky.svg" alt="Sticky Note: 11.2 Microsoft Azure" width="30%">
-</a>
 
 
 Azure is the second-largest cloud provider with deep enterprise and Microsoft ecosystem integration across 60+ regions.
@@ -151,16 +131,6 @@ Azure is the second-largest cloud provider with deep enterprise and Microsoft ec
 
 ### 11.3 Google Cloud Platform (GCP)
 
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-3-google-cloud-platform-gcp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-3-google-cloud-platform-gcp-handwritten.svg" alt="Handwritten: 11.3 Google Cloud Platform (GCP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-3-google-cloud-platform-gcp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-3-google-cloud-platform-gcp-diagram.svg" alt="Diagram: 11.3 Google Cloud Platform (GCP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-3-google-cloud-platform-gcp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-3-google-cloud-platform-gcp-sticky.svg" alt="Sticky Note: 11.3 Google Cloud Platform (GCP)" width="30%">
-</a>
-
 
 GCP excels in data analytics, machine learning, and container-native services across 35+ global regions.
 
@@ -182,16 +152,6 @@ GCP excels in data analytics, machine learning, and container-native services ac
 
 ### 11.4 Cloud Provider Comparison
 
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-4-cloud-provider-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-4-cloud-provider-comparison-handwritten.svg" alt="Handwritten: 11.4 Cloud Provider Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-4-cloud-provider-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-4-cloud-provider-comparison-diagram.svg" alt="Diagram: 11.4 Cloud Provider Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-4-cloud-provider-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-4-cloud-provider-comparison-sticky.svg" alt="Sticky Note: 11.4 Cloud Provider Comparison" width="30%">
-</a>
-
 
 | Aspect | AWS | Azure | GCP |
 |--------|-----|-------|-----|
@@ -208,16 +168,6 @@ GCP excels in data analytics, machine learning, and container-native services ac
 | Global network | 400+ CloudFront PoPs | 160+ edge nodes | 140+ edge nodes (fastest fiber) |
 
 ### 11.5 Multi-Cloud and Hybrid Cloud
-
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-5-multi-cloud-and-hybrid-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-5-multi-cloud-and-hybrid-cloud-handwritten.svg" alt="Handwritten: 11.5 Multi-Cloud and Hybrid Cloud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-5-multi-cloud-and-hybrid-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-5-multi-cloud-and-hybrid-cloud-diagram.svg" alt="Diagram: 11.5 Multi-Cloud and Hybrid Cloud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-5-multi-cloud-and-hybrid-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-5-multi-cloud-and-hybrid-cloud-sticky.svg" alt="Sticky Note: 11.5 Multi-Cloud and Hybrid Cloud" width="30%">
-</a>
 
 
 **Multi-Cloud** — Using multiple cloud providers to avoid vendor lock-in, optimize costs, leverage best-of-breed services, or meet regulatory requirements.
@@ -243,16 +193,6 @@ GCP excels in data analytics, machine learning, and container-native services ac
 
 ### 11.6 Cloud Governance
 
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-6-cloud-governance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-6-cloud-governance-handwritten.svg" alt="Handwritten: 11.6 Cloud Governance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-6-cloud-governance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-6-cloud-governance-diagram.svg" alt="Diagram: 11.6 Cloud Governance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-6-cloud-governance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-6-cloud-governance-sticky.svg" alt="Sticky Note: 11.6 Cloud Governance" width="30%">
-</a>
-
 
 Cloud governance ensures security, compliance, and cost control across cloud environments:
 
@@ -275,16 +215,6 @@ Cloud governance ensures security, compliance, and cost control across cloud env
 
 ### 11.7 Cloud Cost Optimization (FinOps)
 
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-7-cloud-cost-optimization-finops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-7-cloud-cost-optimization-finops-handwritten.svg" alt="Handwritten: 11.7 Cloud Cost Optimization (FinOps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-7-cloud-cost-optimization-finops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-7-cloud-cost-optimization-finops-diagram.svg" alt="Diagram: 11.7 Cloud Cost Optimization (FinOps)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-7-cloud-cost-optimization-finops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-7-cloud-cost-optimization-finops-sticky.svg" alt="Sticky Note: 11.7 Cloud Cost Optimization (FinOps)" width="30%">
-</a>
-
 
 FinOps is the practice of managing cloud costs through cultural change, financial accountability, and engineering excellence.
 
@@ -298,16 +228,6 @@ FinOps is the practice of managing cloud costs through cultural change, financia
 - **Budget Alerts** — Configure budgets with alert thresholds at 50%, 80%, 90%, 100%.
 
 ### 11.8 Auto-Scaling Strategies
-
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-8-auto-scaling-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-8-auto-scaling-strategies-handwritten.svg" alt="Handwritten: 11.8 Auto-Scaling Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-8-auto-scaling-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-8-auto-scaling-strategies-diagram.svg" alt="Diagram: 11.8 Auto-Scaling Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-8-auto-scaling-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-8-auto-scaling-strategies-sticky.svg" alt="Sticky Note: 11.8 Auto-Scaling Strategies" width="30%">
-</a>
 
 
 Auto-scaling adjusts compute resources dynamically based on demand:
@@ -324,16 +244,6 @@ Auto-scaling adjusts compute resources dynamically based on demand:
 - Metrics selection (CPU, memory, request count, custom metrics)
 
 ### 11.9 Infrastructure as Code Across Clouds
-
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-9-infrastructure-as-code-across-clouds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-9-infrastructure-as-code-across-clouds-handwritten.svg" alt="Handwritten: 11.9 Infrastructure as Code Across Clouds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-9-infrastructure-as-code-across-clouds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-9-infrastructure-as-code-across-clouds-diagram.svg" alt="Diagram: 11.9 Infrastructure as Code Across Clouds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-9-infrastructure-as-code-across-clouds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-9-infrastructure-as-code-across-clouds-sticky.svg" alt="Sticky Note: 11.9 Infrastructure as Code Across Clouds" width="30%">
-</a>
 
 
 Each cloud provider offers its own IaC tooling, but Pulumi and CDK enable a unified TypeScript experience:
@@ -368,16 +278,6 @@ flowchart LR
 
 ### 11.10 Serverless Comparison
 
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-10-serverless-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-10-serverless-comparison-handwritten.svg" alt="Handwritten: 11.10 Serverless Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-10-serverless-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-10-serverless-comparison-diagram.svg" alt="Diagram: 11.10 Serverless Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-10-serverless-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-10-serverless-comparison-sticky.svg" alt="Sticky Note: 11.10 Serverless Comparison" width="30%">
-</a>
-
 
 | Aspect | AWS Lambda | Azure Functions | GCP Cloud Functions |
 |--------|-----------|-----------------|-------------------|
@@ -390,16 +290,6 @@ flowchart LR
 | Pricing | $0.20/1M requests + $0.0000166667/GB-s | $0.20/1M executions + $0.000016/GB-s | $0.40/1M invocations + $0.0000025/GB-s (1st gen) |
 
 ### 11.11 Cloud Migration Strategies
-
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-11-cloud-migration-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-11-cloud-migration-strategies-handwritten.svg" alt="Handwritten: 11.11 Cloud Migration Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-11-cloud-migration-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-11-cloud-migration-strategies-diagram.svg" alt="Diagram: 11.11 Cloud Migration Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/11-cloud-platforms/11-11-cloud-migration-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/11-cloud-platforms/11-11-cloud-migration-strategies-sticky.svg" alt="Sticky Note: 11.11 Cloud Migration Strategies" width="30%">
-</a>
 
 
 The **7 Rs of cloud migration** guide workload migration decisions:

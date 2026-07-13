@@ -47,7 +47,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Company-Wise Interview Landscape
 
 ```mermaid
@@ -98,17 +97,6 @@ flowchart TD
 
 ### Difficulty Spectrum
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/difficulty-spectrum-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/difficulty-spectrum-handwritten.svg" alt="Handwritten: Difficulty Spectrum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/difficulty-spectrum-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/difficulty-spectrum-diagram.svg" alt="Diagram: Difficulty Spectrum" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/difficulty-spectrum-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/difficulty-spectrum-sticky.svg" alt="Sticky Note: Difficulty Spectrum" width="30%">
-</a>
-
-
 ```
 Easier ─────────────────────────────────────────────── Harder
     TCS, Wipro, HCL    Infosys, Accenture    Google, Microsoft, Amazon
@@ -120,17 +108,6 @@ Easier ────────────────────────�
 ## Section 1: TCS (Tata Consultancy Services)
 
 ### Company Profile
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" alt="Handwritten: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" alt="Diagram: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" alt="Sticky Note: Company Profile" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -144,17 +121,6 @@ Easier ────────────────────────�
 
 ### Interview Process
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-handwritten.svg" alt="Handwritten: Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-diagram.svg" alt="Diagram: Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-sticky.svg" alt="Sticky Note: Interview Process" width="30%">
-</a>
-
-
 | Role | Rounds |
 |------|--------|
 | TCS Ninja (Fresher) | Aptitude + Email Writing + Technical + HR |
@@ -163,17 +129,6 @@ Easier ────────────────────────�
 | Experienced | Technical (2-3 rounds) + Managerial + HR |
 
 ### TCS Ninja vs TCS Digital
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-ninja-vs-tcs-digital-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-ninja-vs-tcs-digital-handwritten.svg" alt="Handwritten: TCS Ninja vs TCS Digital" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-ninja-vs-tcs-digital-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-ninja-vs-tcs-digital-diagram.svg" alt="Diagram: TCS Ninja vs TCS Digital" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-ninja-vs-tcs-digital-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-ninja-vs-tcs-digital-sticky.svg" alt="Sticky Note: TCS Ninja vs TCS Digital" width="30%">
-</a>
-
 
 | Aspect | TCS Ninja | TCS Digital |
 |--------|-----------|-------------|
@@ -185,17 +140,6 @@ Easier ────────────────────────�
 
 ### TCS NQT (National Qualifier Test) Pattern
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-nqt-national-qualifier-test-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-nqt-national-qualifier-test-pattern-handwritten.svg" alt="Handwritten: TCS NQT (National Qualifier Test) Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-nqt-national-qualifier-test-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-nqt-national-qualifier-test-pattern-diagram.svg" alt="Diagram: TCS NQT (National Qualifier Test) Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-nqt-national-qualifier-test-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-nqt-national-qualifier-test-pattern-sticky.svg" alt="Sticky Note: TCS NQT (National Qualifier Test) Pattern" width="30%">
-</a>
-
-
 | Section | Questions | Duration |
 |---------|-----------|----------|
 | Numerical Ability | 26 | 40 min |
@@ -205,17 +149,6 @@ Easier ────────────────────────�
 | Coding (Digital only) | 1-2 | 30 min |
 
 ### Common TCS Technical Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-tcs-technical-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-tcs-technical-questions-handwritten.svg" alt="Handwritten: Common TCS Technical Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-tcs-technical-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-tcs-technical-questions-diagram.svg" alt="Diagram: Common TCS Technical Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-tcs-technical-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-tcs-technical-questions-sticky.svg" alt="Sticky Note: Common TCS Technical Questions" width="30%">
-</a>
-
 
 <details>
 <summary>Click to reveal</summary>
@@ -251,17 +184,6 @@ Easier ────────────────────────�
 
 ### TCS Interview Tips
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-interview-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-interview-tips-handwritten.svg" alt="Handwritten: TCS Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-interview-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-interview-tips-diagram.svg" alt="Diagram: TCS Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-interview-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-interview-tips-sticky.svg" alt="Sticky Note: TCS Interview Tips" width="30%">
-</a>
-
-
 | Tip | Why |
 |-----|-----|
 | Be thorough with resume projects | TCS panels ask detailed questions about project tech stack |
@@ -279,17 +201,6 @@ Easier ────────────────────────�
 
 ### Company Profile
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" alt="Handwritten: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" alt="Diagram: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" alt="Sticky Note: Company Profile" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1981 |
@@ -300,17 +211,6 @@ Easier ────────────────────────�
 
 ### Interview Process
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-handwritten.svg" alt="Handwritten: Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-diagram.svg" alt="Diagram: Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/interview-process-sticky.svg" alt="Sticky Note: Interview Process" width="30%">
-</a>
-
-
 | Role | Rounds |
 |------|--------|
 | Systems Engineer (SE) | InfyTQ/Coding + Technical + HR |
@@ -319,17 +219,6 @@ Easier ────────────────────────�
 
 ### Infosys InfyTQ
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-infytq-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-infytq-handwritten.svg" alt="Handwritten: Infosys InfyTQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-infytq-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-infytq-diagram.svg" alt="Diagram: Infosys InfyTQ" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-infytq-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-infytq-sticky.svg" alt="Sticky Note: Infosys InfyTQ" width="30%">
-</a>
-
-
 | Stage | Details |
 |-------|---------|
 | Qualifier Test | Online: Aptitude + Technical MCQs |
@@ -337,17 +226,6 @@ Easier ────────────────────────�
 | Interview | Technical + HR (15-20 min) |
 
 ### Infosys Coding Patterns
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-handwritten.svg" alt="Handwritten: Infosys Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-diagram.svg" alt="Diagram: Infosys Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-sticky.svg" alt="Sticky Note: Infosys Coding Patterns" width="30%">
-</a>
-
 
 ```typescript
 // Infosys typically asks problems like:
@@ -373,17 +251,6 @@ function maxSubarraySum(arr: number[]): number {
 ```
 
 ### Common Infosys Interview Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-infosys-interview-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-infosys-interview-questions-handwritten.svg" alt="Handwritten: Common Infosys Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-infosys-interview-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-infosys-interview-questions-diagram.svg" alt="Diagram: Common Infosys Interview Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-infosys-interview-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-infosys-interview-questions-sticky.svg" alt="Sticky Note: Common Infosys Interview Questions" width="30%">
-</a>
-
 
 <details>
 <summary>Click to reveal</summary>
@@ -420,17 +287,6 @@ function maxSubarraySum(arr: number[]): number {
 
 ### Wipro
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/wipro-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/wipro-handwritten.svg" alt="Handwritten: Wipro" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/wipro-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/wipro-diagram.svg" alt="Diagram: Wipro" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/wipro-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/wipro-sticky.svg" alt="Sticky Note: Wipro" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1945 (IT: 1980) |
@@ -464,17 +320,6 @@ function maxSubarraySum(arr: number[]): number {
 
 ### HCL Technologies
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/hcl-technologies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/hcl-technologies-handwritten.svg" alt="Handwritten: HCL Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/hcl-technologies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/hcl-technologies-diagram.svg" alt="Diagram: HCL Technologies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/hcl-technologies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/hcl-technologies-sticky.svg" alt="Sticky Note: HCL Technologies" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1976 |
@@ -496,17 +341,6 @@ function maxSubarraySum(arr: number[]): number {
 
 ### Tech Mahindra
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tech-mahindra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tech-mahindra-handwritten.svg" alt="Handwritten: Tech Mahindra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tech-mahindra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tech-mahindra-diagram.svg" alt="Diagram: Tech Mahindra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tech-mahindra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tech-mahindra-sticky.svg" alt="Sticky Note: Tech Mahindra" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1986 |
@@ -527,17 +361,6 @@ function maxSubarraySum(arr: number[]): number {
 ## Section 4: Accenture and Capgemini
 
 ### Accenture
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/accenture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/accenture-handwritten.svg" alt="Handwritten: Accenture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/accenture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/accenture-diagram.svg" alt="Diagram: Accenture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/accenture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/accenture-sticky.svg" alt="Sticky Note: Accenture" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -577,17 +400,6 @@ function maxSubarraySum(arr: number[]): number {
 
 ### Capgemini
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/capgemini-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/capgemini-handwritten.svg" alt="Handwritten: Capgemini" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/capgemini-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/capgemini-diagram.svg" alt="Diagram: Capgemini" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/capgemini-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/capgemini-sticky.svg" alt="Sticky Note: Capgemini" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1967 (France) |
@@ -617,17 +429,6 @@ function maxSubarraySum(arr: number[]): number {
 
 ### Company Profile
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" alt="Handwritten: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" alt="Diagram: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" alt="Sticky Note: Company Profile" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1998 |
@@ -637,17 +438,6 @@ function maxSubarraySum(arr: number[]): number {
 | Products | Search, Android, YouTube, Cloud, Maps |
 
 ### Google Interview Process
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-process-handwritten.svg" alt="Handwritten: Google Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-process-diagram.svg" alt="Diagram: Google Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-process-sticky.svg" alt="Sticky Note: Google Interview Process" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -667,17 +457,6 @@ flowchart TD
 
 ### Google Interview Focus Areas
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-focus-areas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-focus-areas-handwritten.svg" alt="Handwritten: Google Interview Focus Areas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-focus-areas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-focus-areas-diagram.svg" alt="Diagram: Google Interview Focus Areas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-focus-areas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-focus-areas-sticky.svg" alt="Sticky Note: Google Interview Focus Areas" width="30%">
-</a>
-
-
 | Round | Topics | Preparation |
 |-------|--------|-------------|
 | Coding | Arrays, Strings, Trees, Graphs, DP | LeetCode Hard+Medium |
@@ -686,17 +465,6 @@ flowchart TD
 | Specialization | Your domain expertise (ML, Mobile, etc.) | Deep expertise in your area |
 
 ### Sample Google Coding Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sample-google-coding-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sample-google-coding-questions-handwritten.svg" alt="Handwritten: Sample Google Coding Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sample-google-coding-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sample-google-coding-questions-diagram.svg" alt="Diagram: Sample Google Coding Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sample-google-coding-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sample-google-coding-questions-sticky.svg" alt="Sticky Note: Sample Google Coding Questions" width="30%">
-</a>
-
 
 <details>
 <summary>Click to reveal</summary>
@@ -725,17 +493,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 ### Google Interview Tips
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-tips-handwritten.svg" alt="Handwritten: Google Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-tips-diagram.svg" alt="Diagram: Google Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-interview-tips-sticky.svg" alt="Sticky Note: Google Interview Tips" width="30%">
-</a>
-
-
 | Tip | Description |
 |-----|-------------|
 | Think out loud | Google places high weight on problem-solving process |
@@ -754,17 +511,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 ### Company Profile
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" alt="Handwritten: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" alt="Diagram: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" alt="Sticky Note: Company Profile" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1975 |
@@ -774,17 +520,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 | Products | Azure, Office 365, Windows, LinkedIn, GitHub |
 
 ### Microsoft Interview Process
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-process-handwritten.svg" alt="Handwritten: Microsoft Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-process-diagram.svg" alt="Diagram: Microsoft Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-process-sticky.svg" alt="Sticky Note: Microsoft Interview Process" width="30%">
-</a>
-
 
 | Round | Type | Focus |
 |-------|------|-------|
@@ -796,17 +531,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 ### Microsoft Core Values (Interviewed)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-core-values-interviewed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-core-values-interviewed-handwritten.svg" alt="Handwritten: Microsoft Core Values (Interviewed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-core-values-interviewed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-core-values-interviewed-diagram.svg" alt="Diagram: Microsoft Core Values (Interviewed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-core-values-interviewed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-core-values-interviewed-sticky.svg" alt="Sticky Note: Microsoft Core Values (Interviewed)" width="30%">
-</a>
-
-
 | Value | What They Look For |
 |-------|--------------------|
 | Growth Mindset | Learning from failures, seeking feedback |
@@ -816,17 +540,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 | Making a Difference | Impact-driven work |
 
 ### Microsoft Common Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-common-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-common-questions-handwritten.svg" alt="Handwritten: Microsoft Common Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-common-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-common-questions-diagram.svg" alt="Diagram: Microsoft Common Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-common-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-common-questions-sticky.svg" alt="Sticky Note: Microsoft Common Questions" width="30%">
-</a>
-
 
 <details>
 <summary>Click to reveal</summary>
@@ -854,17 +567,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 ### Microsoft Interview Tips
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-tips-handwritten.svg" alt="Handwritten: Microsoft Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-tips-diagram.svg" alt="Diagram: Microsoft Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/microsoft-interview-tips-sticky.svg" alt="Sticky Note: Microsoft Interview Tips" width="30%">
-</a>
-
-
 | Tip | Why |
 |-----|-----|
 | Understand .NET/Azure ecosystem | Even if you don't use them, know the ecosystem |
@@ -882,17 +584,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 
 ### Company Profile
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-handwritten.svg" alt="Handwritten: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-diagram.svg" alt="Diagram: Company Profile" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/company-profile-sticky.svg" alt="Sticky Note: Company Profile" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Founded | 1994 |
@@ -902,17 +593,6 @@ function findMedianSortedArrays(nums1: number[], nums2: number[]): number {
 | Products | AWS, E-commerce, Prime Video, Alexa |
 
 ### Amazon Interview Process
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-process-handwritten.svg" alt="Handwritten: Amazon Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-process-diagram.svg" alt="Diagram: Amazon Interview Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-process-sticky.svg" alt="Sticky Note: Amazon Interview Process" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -927,17 +607,6 @@ flowchart TD
 ```
 
 ### Amazon Leadership Principles
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-leadership-principles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-leadership-principles-handwritten.svg" alt="Handwritten: Amazon Leadership Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-leadership-principles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-leadership-principles-diagram.svg" alt="Diagram: Amazon Leadership Principles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-leadership-principles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-leadership-principles-sticky.svg" alt="Sticky Note: Amazon Leadership Principles" width="30%">
-</a>
-
 
 | Principle | How to Apply in Interview |
 |-----------|-------------------------|
@@ -957,17 +626,6 @@ flowchart TD
 | **Deliver Results** | Focus on outcomes, not just activity |
 
 ### Amazon Coding Common Problems
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-common-problems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-common-problems-handwritten.svg" alt="Handwritten: Amazon Coding Common Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-common-problems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-common-problems-diagram.svg" alt="Diagram: Amazon Coding Common Problems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-common-problems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-common-problems-sticky.svg" alt="Sticky Note: Amazon Coding Common Problems" width="30%">
-</a>
-
 
 <details>
 <summary>Click to reveal</summary>
@@ -995,17 +653,6 @@ function numIslands(grid: string[][]): number
 
 ### Amazon STAR Interview Method
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-star-interview-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-star-interview-method-handwritten.svg" alt="Handwritten: Amazon STAR Interview Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-star-interview-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-star-interview-method-diagram.svg" alt="Diagram: Amazon STAR Interview Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-star-interview-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-star-interview-method-sticky.svg" alt="Sticky Note: Amazon STAR Interview Method" width="30%">
-</a>
-
-
 Amazon expects every behavioral answer to explicitly reference a Leadership Principle.
 
 ```
@@ -1020,17 +667,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 **For Amazon, prepare 8-10 STAR stories** covering all 16 LPs. Every behavioral question will map to one or more LPs.
 
 ### Amazon Interview Tips
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-tips-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-tips-handwritten.svg" alt="Handwritten: Amazon Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-tips-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-tips-diagram.svg" alt="Diagram: Amazon Interview Tips" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-tips-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-interview-tips-sticky.svg" alt="Sticky Note: Amazon Interview Tips" width="30%">
-</a>
-
 
 | Tip | Description |
 |-----|-------------|
@@ -1048,17 +684,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 ## Section 8: Government Organizations (NIC, NIELIT, DRDO, ISRO, BARC)
 
 ### NIC (National Informatics Centre)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nic-national-informatics-centre-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nic-national-informatics-centre-handwritten.svg" alt="Handwritten: NIC (National Informatics Centre)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nic-national-informatics-centre-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nic-national-informatics-centre-diagram.svg" alt="Diagram: NIC (National Informatics Centre)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nic-national-informatics-centre-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nic-national-informatics-centre-sticky.svg" alt="Sticky Note: NIC (National Informatics Centre)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1079,17 +704,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### NIELIT
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nielit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nielit-handwritten.svg" alt="Handwritten: NIELIT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nielit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nielit-diagram.svg" alt="Diagram: NIELIT" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nielit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/nielit-sticky.svg" alt="Sticky Note: NIELIT" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Parent | MeitY |
@@ -1100,17 +714,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 **NIELIT Focus:** Core CS fundamentals, digital literacy programs, education technology.
 
 ### DRDO (Defence Research & Development Organisation)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/drdo-defence-research-development-organisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/drdo-defence-research-development-organisation-handwritten.svg" alt="Handwritten: DRDO (Defence Research & Development Organisation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/drdo-defence-research-development-organisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/drdo-defence-research-development-organisation-diagram.svg" alt="Diagram: DRDO (Defence Research & Development Organisation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/drdo-defence-research-development-organisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/drdo-defence-research-development-organisation-sticky.svg" alt="Sticky Note: DRDO (Defence Research & Development Organisation)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1133,17 +736,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### ISRO (Indian Space Research Organisation)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/isro-indian-space-research-organisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/isro-indian-space-research-organisation-handwritten.svg" alt="Handwritten: ISRO (Indian Space Research Organisation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/isro-indian-space-research-organisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/isro-indian-space-research-organisation-diagram.svg" alt="Diagram: ISRO (Indian Space Research Organisation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/isro-indian-space-research-organisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/isro-indian-space-research-organisation-sticky.svg" alt="Sticky Note: ISRO (Indian Space Research Organisation)" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Parent | Department of Space |
@@ -1161,17 +753,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 - Core CS: OS, networks, data structures
 
 ### BARC (Bhabha Atomic Research Centre)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/barc-bhabha-atomic-research-centre-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/barc-bhabha-atomic-research-centre-handwritten.svg" alt="Handwritten: BARC (Bhabha Atomic Research Centre)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/barc-bhabha-atomic-research-centre-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/barc-bhabha-atomic-research-centre-diagram.svg" alt="Diagram: BARC (Bhabha Atomic Research Centre)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/barc-bhabha-atomic-research-centre-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/barc-bhabha-atomic-research-centre-sticky.svg" alt="Sticky Note: BARC (Bhabha Atomic Research Centre)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1194,17 +775,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### Common PSU Interview Pattern
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-psu-interview-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-psu-interview-pattern-handwritten.svg" alt="Handwritten: Common PSU Interview Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-psu-interview-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-psu-interview-pattern-diagram.svg" alt="Diagram: Common PSU Interview Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-psu-interview-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/common-psu-interview-pattern-sticky.svg" alt="Sticky Note: Common PSU Interview Pattern" width="30%">
-</a>
-
-
 | Stage | Details |
 |-------|---------|
 | Shortlisting | GATE score (usually 70-80% weight) |
@@ -1213,17 +783,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Focus | Core CS + PSU-specific domain + HR |
 
 ### SAIL (Steel Authority of India)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sail-steel-authority-of-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sail-steel-authority-of-india-handwritten.svg" alt="Handwritten: SAIL (Steel Authority of India)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sail-steel-authority-of-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sail-steel-authority-of-india-diagram.svg" alt="Diagram: SAIL (Steel Authority of India)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sail-steel-authority-of-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sail-steel-authority-of-india-sticky.svg" alt="Sticky Note: SAIL (Steel Authority of India)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1240,17 +799,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 - Core CS: DBMS, OS, Networks
 
 ### ONGC (Oil and Natural Gas Corporation)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ongc-oil-and-natural-gas-corporation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ongc-oil-and-natural-gas-corporation-handwritten.svg" alt="Handwritten: ONGC (Oil and Natural Gas Corporation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ongc-oil-and-natural-gas-corporation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ongc-oil-and-natural-gas-corporation-diagram.svg" alt="Diagram: ONGC (Oil and Natural Gas Corporation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ongc-oil-and-natural-gas-corporation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ongc-oil-and-natural-gas-corporation-sticky.svg" alt="Sticky Note: ONGC (Oil and Natural Gas Corporation)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1269,17 +817,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### IOCL (Indian Oil Corporation)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/iocl-indian-oil-corporation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/iocl-indian-oil-corporation-handwritten.svg" alt="Handwritten: IOCL (Indian Oil Corporation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/iocl-indian-oil-corporation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/iocl-indian-oil-corporation-diagram.svg" alt="Diagram: IOCL (Indian Oil Corporation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/iocl-indian-oil-corporation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/iocl-indian-oil-corporation-sticky.svg" alt="Sticky Note: IOCL (Indian Oil Corporation)" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Sector | Oil refining & marketing |
@@ -1295,17 +832,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 - Networking and security
 
 ### BSNL (Bharat Sanchar Nigam Limited)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bsnl-bharat-sanchar-nigam-limited-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bsnl-bharat-sanchar-nigam-limited-handwritten.svg" alt="Handwritten: BSNL (Bharat Sanchar Nigam Limited)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bsnl-bharat-sanchar-nigam-limited-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bsnl-bharat-sanchar-nigam-limited-diagram.svg" alt="Diagram: BSNL (Bharat Sanchar Nigam Limited)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bsnl-bharat-sanchar-nigam-limited-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bsnl-bharat-sanchar-nigam-limited-sticky.svg" alt="Sticky Note: BSNL (Bharat Sanchar Nigam Limited)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1323,17 +849,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### NTPC (National Thermal Power Corporation)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ntpc-national-thermal-power-corporation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ntpc-national-thermal-power-corporation-handwritten.svg" alt="Handwritten: NTPC (National Thermal Power Corporation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ntpc-national-thermal-power-corporation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ntpc-national-thermal-power-corporation-diagram.svg" alt="Diagram: NTPC (National Thermal Power Corporation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ntpc-national-thermal-power-corporation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ntpc-national-thermal-power-corporation-sticky.svg" alt="Sticky Note: NTPC (National Thermal Power Corporation)" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Sector | Power |
@@ -1349,17 +864,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 - Energy management systems
 
 ### BHEL (Bharat Heavy Electricals Limited)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bhel-bharat-heavy-electricals-limited-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bhel-bharat-heavy-electricals-limited-handwritten.svg" alt="Handwritten: BHEL (Bharat Heavy Electricals Limited)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bhel-bharat-heavy-electricals-limited-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bhel-bharat-heavy-electricals-limited-diagram.svg" alt="Diagram: BHEL (Bharat Heavy Electricals Limited)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bhel-bharat-heavy-electricals-limited-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/bhel-bharat-heavy-electricals-limited-sticky.svg" alt="Sticky Note: BHEL (Bharat Heavy Electricals Limited)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1381,17 +885,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### Cognizant (CTS)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/cognizant-cts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/cognizant-cts-handwritten.svg" alt="Handwritten: Cognizant (CTS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/cognizant-cts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/cognizant-cts-diagram.svg" alt="Diagram: Cognizant (CTS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/cognizant-cts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/cognizant-cts-sticky.svg" alt="Sticky Note: Cognizant (CTS)" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Rounds | Online Test + Technical + HR |
@@ -1400,17 +893,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Known for | Strong training program |
 
 ### LTI Mindtree
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/lti-mindtree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/lti-mindtree-handwritten.svg" alt="Handwritten: LTI Mindtree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/lti-mindtree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/lti-mindtree-diagram.svg" alt="Diagram: LTI Mindtree" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/lti-mindtree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/lti-mindtree-sticky.svg" alt="Sticky Note: LTI Mindtree" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1421,17 +903,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### IBM India
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ibm-india-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ibm-india-handwritten.svg" alt="Handwritten: IBM India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ibm-india-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ibm-india-diagram.svg" alt="Diagram: IBM India" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ibm-india-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/ibm-india-sticky.svg" alt="Sticky Note: IBM India" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Rounds | Coding + Technical + Managerial + HR |
@@ -1440,17 +911,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Known for | Research, consulting, technology |
 
 ### Byju's / Unacademy (EdTech)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/byju-s-unacademy-edtech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/byju-s-unacademy-edtech-handwritten.svg" alt="Handwritten: Byju's / Unacademy (EdTech)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/byju-s-unacademy-edtech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/byju-s-unacademy-edtech-diagram.svg" alt="Diagram: Byju's / Unacademy (EdTech)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/byju-s-unacademy-edtech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/byju-s-unacademy-edtech-sticky.svg" alt="Sticky Note: Byju's / Unacademy (EdTech)" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1461,17 +921,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### Paytm / Razorpay (Fintech)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/paytm-razorpay-fintech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/paytm-razorpay-fintech-handwritten.svg" alt="Handwritten: Paytm / Razorpay (Fintech)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/paytm-razorpay-fintech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/paytm-razorpay-fintech-diagram.svg" alt="Diagram: Paytm / Razorpay (Fintech)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/paytm-razorpay-fintech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/paytm-razorpay-fintech-sticky.svg" alt="Sticky Note: Paytm / Razorpay (Fintech)" width="30%">
-</a>
-
-
 | Aspect | Details |
 |--------|---------|
 | Rounds | Coding + System Design + Design + HR |
@@ -1480,17 +929,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 | Known for | High-scale systems, real transaction flow |
 
 ### Sprinklr
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sprinklr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sprinklr-handwritten.svg" alt="Handwritten: Sprinklr" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sprinklr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sprinklr-diagram.svg" alt="Diagram: Sprinklr" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sprinklr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/sprinklr-sticky.svg" alt="Sticky Note: Sprinklr" width="30%">
-</a>
-
 
 | Aspect | Details |
 |--------|---------|
@@ -1529,17 +967,6 @@ LP: "This demonstrates Customer Obsession (better recommendations)
 
 ### TCS Coding Patterns
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-coding-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-coding-patterns-handwritten.svg" alt="Handwritten: TCS Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-coding-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-coding-patterns-diagram.svg" alt="Diagram: TCS Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-coding-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-coding-patterns-sticky.svg" alt="Sticky Note: TCS Coding Patterns" width="30%">
-</a>
-
-
 <details>
 <summary>Click to reveal TCS-specific problems</summary>
 
@@ -1575,17 +1002,6 @@ function isArmstrongNumber(n: number): boolean {
 </details>
 
 ### Infosys Coding Patterns
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-handwritten.svg" alt="Handwritten: Infosys Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-diagram.svg" alt="Diagram: Infosys Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/infosys-coding-patterns-sticky.svg" alt="Sticky Note: Infosys Coding Patterns" width="30%">
-</a>
-
 
 <details>
 <summary>Click to reveal Infosys-specific problems</summary>
@@ -1627,17 +1043,6 @@ function groupAnagrams(strs: string[]): string[][] {
 
 ### Amazon Coding Patterns
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-patterns-handwritten.svg" alt="Handwritten: Amazon Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-patterns-diagram.svg" alt="Diagram: Amazon Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-coding-patterns-sticky.svg" alt="Sticky Note: Amazon Coding Patterns" width="30%">
-</a>
-
-
 <details>
 <summary>Click to reveal Amazon-specific problems</summary>
 
@@ -1676,17 +1081,6 @@ class LRUCache {
 
 ### Google Coding Patterns
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-coding-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-coding-patterns-handwritten.svg" alt="Handwritten: Google Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-coding-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-coding-patterns-diagram.svg" alt="Diagram: Google Coding Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-coding-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-coding-patterns-sticky.svg" alt="Sticky Note: Google Coding Patterns" width="30%">
-</a>
-
-
 <details>
 <summary>Click to reveal Google-specific problems</summary>
 
@@ -1721,17 +1115,6 @@ function nthUglyNumber(n: number): number {
 
 ### TCS HR Questions
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-hr-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-hr-questions-handwritten.svg" alt="Handwritten: TCS HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-hr-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-hr-questions-diagram.svg" alt="Diagram: TCS HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-hr-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/tcs-hr-questions-sticky.svg" alt="Sticky Note: TCS HR Questions" width="30%">
-</a>
-
-
 | Question | Strategy |
 |----------|----------|
 | Why TCS? | Mention TCS's global presence, learning opportunities, domain diversity |
@@ -1741,17 +1124,6 @@ function nthUglyNumber(n: number): number {
 | Can you work in shifts? | TCS needs 24/7 support for global clients — say yes |
 
 ### Google HR Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-hr-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-hr-questions-handwritten.svg" alt="Handwritten: Google HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-hr-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-hr-questions-diagram.svg" alt="Diagram: Google HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-hr-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/google-hr-questions-sticky.svg" alt="Sticky Note: Google HR Questions" width="30%">
-</a>
-
 
 | Question | Strategy |
 |----------|----------|
@@ -1763,17 +1135,6 @@ function nthUglyNumber(n: number): number {
 
 ### Amazon HR Questions
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-hr-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-hr-questions-handwritten.svg" alt="Handwritten: Amazon HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-hr-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-hr-questions-diagram.svg" alt="Diagram: Amazon HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-hr-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/amazon-hr-questions-sticky.svg" alt="Sticky Note: Amazon HR Questions" width="30%">
-</a>
-
-
 | Question | LP | Strategy |
 |----------|-----|----------|
 | Tell me about a time you failed | Learn and Be Curious | Show vulnerability + learning |
@@ -1783,17 +1144,6 @@ function nthUglyNumber(n: number): number {
 | Describe a customer-focused decision | Customer Obsession | User research, data-driven choices |
 
 ### Government PSU HR Questions
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-psu-hr-questions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-psu-hr-questions-handwritten.svg" alt="Handwritten: Government PSU HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-psu-hr-questions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-psu-hr-questions-diagram.svg" alt="Diagram: Government PSU HR Questions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-psu-hr-questions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-psu-hr-questions-sticky.svg" alt="Sticky Note: Government PSU HR Questions" width="30%">
-</a>
-
 
 | Question | Strategy |
 |----------|----------|
@@ -1809,17 +1159,6 @@ function nthUglyNumber(n: number): number {
 
 ### Service Companies (TCS, Infosys, Wipro, HCL)
 
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/service-companies-tcs-infosys-wipro-hcl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/service-companies-tcs-infosys-wipro-hcl-handwritten.svg" alt="Handwritten: Service Companies (TCS, Infosys, Wipro, HCL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/service-companies-tcs-infosys-wipro-hcl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/service-companies-tcs-infosys-wipro-hcl-diagram.svg" alt="Diagram: Service Companies (TCS, Infosys, Wipro, HCL)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/service-companies-tcs-infosys-wipro-hcl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/service-companies-tcs-infosys-wipro-hcl-sticky.svg" alt="Sticky Note: Service Companies (TCS, Infosys, Wipro, HCL)" width="30%">
-</a>
-
-
 | Week | Activity |
 |------|----------|
 | 1 | Core Java, OOPs, SQL basics |
@@ -1828,17 +1167,6 @@ function nthUglyNumber(n: number): number {
 | 4 | Project defense preparation, mock interviews |
 
 ### Product Companies (Google, Amazon, Microsoft)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/product-companies-google-amazon-microsoft-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/product-companies-google-amazon-microsoft-handwritten.svg" alt="Handwritten: Product Companies (Google, Amazon, Microsoft)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/product-companies-google-amazon-microsoft-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/product-companies-google-amazon-microsoft-diagram.svg" alt="Diagram: Product Companies (Google, Amazon, Microsoft)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/product-companies-google-amazon-microsoft-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/product-companies-google-amazon-microsoft-sticky.svg" alt="Sticky Note: Product Companies (Google, Amazon, Microsoft)" width="30%">
-</a>
-
 
 | Week | Activity |
 |------|----------|
@@ -1849,17 +1177,6 @@ function nthUglyNumber(n: number): number {
 | 8 | Behavioral + mock interviews |
 
 ### Government Exams (NIC, PSUs, DRDO)
-
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-exams-nic-psus-drdo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-exams-nic-psus-drdo-handwritten.svg" alt="Handwritten: Government Exams (NIC, PSUs, DRDO)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-exams-nic-psus-drdo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-exams-nic-psus-drdo-diagram.svg" alt="Diagram: Government Exams (NIC, PSUs, DRDO)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-exams-nic-psus-drdo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/interview-preparation/09-company-wise-preparation/government-exams-nic-psus-drdo-sticky.svg" alt="Sticky Note: Government Exams (NIC, PSUs, DRDO)" width="30%">
-</a>
-
 
 | Week | Activity |
 |------|----------|

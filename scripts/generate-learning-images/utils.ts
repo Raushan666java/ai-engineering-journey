@@ -34,12 +34,14 @@ export function writeFile(filePath: string, content: string): void {
   fs.writeFileSync(filePath, content, 'utf-8');
 }
 
-export function truncate(text: string, maxLen: number): string {
+export function truncate(text: string | undefined, maxLen: number): string {
+  if (!text) return '';
   if (text.length <= maxLen) return text;
   return text.slice(0, maxLen).replace(/\s+\S*$/, '') + '...';
 }
 
-export function escapeXml(text: string): string {
+export function escapeXml(text: string | undefined): string {
+  if (!text) return '';
   return text
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')

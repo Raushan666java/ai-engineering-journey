@@ -49,23 +49,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 3.1 Overview of Financial Markets
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-1-overview-of-financial-markets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-1-overview-of-financial-markets-handwritten.svg" alt="Handwritten: 3.1 Overview of Financial Markets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-1-overview-of-financial-markets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-1-overview-of-financial-markets-diagram.svg" alt="Diagram: 3.1 Overview of Financial Markets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-1-overview-of-financial-markets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-1-overview-of-financial-markets-sticky.svg" alt="Sticky Note: 3.1 Overview of Financial Markets" width="30%">
-</a>
-
 
 ```mermaid
 flowchart TD
@@ -96,17 +84,6 @@ flowchart TD
 ```
 
 ### 3.2 Capital Market
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-2-capital-market-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-2-capital-market-handwritten.svg" alt="Handwritten: 3.2 Capital Market" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-2-capital-market-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-2-capital-market-diagram.svg" alt="Diagram: 3.2 Capital Market" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-2-capital-market-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-2-capital-market-sticky.svg" alt="Sticky Note: 3.2 Capital Market" width="30%">
-</a>
-
 
 The capital market is the market for **long-term funds** (maturity > 1 year). It includes both equity and debt instruments.
 
@@ -200,17 +177,6 @@ The market where **already-issued securities** are traded among investors. The i
 
 ### 3.3 Money Market
 
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-3-money-market-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-3-money-market-handwritten.svg" alt="Handwritten: 3.3 Money Market" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-3-money-market-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-3-money-market-diagram.svg" alt="Diagram: 3.3 Money Market" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-3-money-market-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-3-money-market-sticky.svg" alt="Sticky Note: 3.3 Money Market" width="30%">
-</a>
-
-
 The money market deals in **short-term funds** (maturity ≤ 1 year). It provides liquidity management for banks, corporates, and the government.
 
 | Instrument | Maturity | Issuer | Risk | Minimum Amount |
@@ -241,17 +207,6 @@ The money market deals in **short-term funds** (maturity ≤ 1 year). It provide
 - Must have minimum credit rating
 
 ### 3.4 Securities and Exchange Board of India (SEBI)
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-4-securities-and-exchange-board-of-india-sebi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-4-securities-and-exchange-board-of-india-sebi-handwritten.svg" alt="Handwritten: 3.4 Securities and Exchange Board of India (SEBI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-4-securities-and-exchange-board-of-india-sebi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-4-securities-and-exchange-board-of-india-sebi-diagram.svg" alt="Diagram: 3.4 Securities and Exchange Board of India (SEBI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-4-securities-and-exchange-board-of-india-sebi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-4-securities-and-exchange-board-of-india-sebi-sticky.svg" alt="Sticky Note: 3.4 Securities and Exchange Board of India (SEBI)" width="30%">
-</a>
-
 
 Established in **1988** as a non-statutory body; given **statutory status in 1992** through the SEBI Act, 1992.
 
@@ -289,17 +244,6 @@ Established in **1988** as a non-statutory body; given **statutory status in 199
 - 5 other members (including at least 3 part-time members)
 
 ### 3.5 Financial Instruments
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-5-financial-instruments-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-5-financial-instruments-handwritten.svg" alt="Handwritten: 3.5 Financial Instruments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-5-financial-instruments-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-5-financial-instruments-diagram.svg" alt="Diagram: 3.5 Financial Instruments" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-5-financial-instruments-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-5-financial-instruments-sticky.svg" alt="Sticky Note: 3.5 Financial Instruments" width="30%">
-</a>
-
 
 #### A. Equity Shares
 
@@ -379,17 +323,6 @@ Financial contracts whose value is derived from an **underlying asset** (stock, 
 
 ### 3.6 Mutual Funds
 
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-6-mutual-funds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-6-mutual-funds-handwritten.svg" alt="Handwritten: 3.6 Mutual Funds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-6-mutual-funds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-6-mutual-funds-diagram.svg" alt="Diagram: 3.6 Mutual Funds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-6-mutual-funds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-6-mutual-funds-sticky.svg" alt="Sticky Note: 3.6 Mutual Funds" width="30%">
-</a>
-
-
 A **trust** that pools money from multiple investors and invests in a diversified portfolio of securities.
 
 ```mermaid
@@ -434,17 +367,6 @@ flowchart TD
 
 ### 3.7 Insurance Regulatory and Development Authority (IRDA)
 
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-7-insurance-regulatory-and-development-authority-irda-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-7-insurance-regulatory-and-development-authority-irda-handwritten.svg" alt="Handwritten: 3.7 Insurance Regulatory and Development Authority (IRDA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-7-insurance-regulatory-and-development-authority-irda-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-7-insurance-regulatory-and-development-authority-irda-diagram.svg" alt="Diagram: 3.7 Insurance Regulatory and Development Authority (IRDA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-7-insurance-regulatory-and-development-authority-irda-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-7-insurance-regulatory-and-development-authority-irda-sticky.svg" alt="Sticky Note: 3.7 Insurance Regulatory and Development Authority (IRDA)" width="30%">
-</a>
-
-
 Established in **1999** under the IRDA Act, 1999. Headquarters in **Hyderabad**.
 
 **Role:** Regulates and promotes the insurance industry in India.
@@ -468,17 +390,6 @@ Established in **1999** under the IRDA Act, 1999. Headquarters in **Hyderabad**.
 - **Insurance Ombudsman** for grievance redressal
 
 ### 3.8 Recent Developments in Indian Financial Markets
-
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-8-recent-developments-in-indian-financial-markets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-8-recent-developments-in-indian-financial-markets-handwritten.svg" alt="Handwritten: 3.8 Recent Developments in Indian Financial Markets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-8-recent-developments-in-indian-financial-markets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-8-recent-developments-in-indian-financial-markets-diagram.svg" alt="Diagram: 3.8 Recent Developments in Indian Financial Markets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-8-recent-developments-in-indian-financial-markets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/banking-financial-awareness/03-financial-markets-instruments/3-8-recent-developments-in-indian-financial-markets-sticky.svg" alt="Sticky Note: 3.8 Recent Developments in Indian Financial Markets" width="30%">
-</a>
-
 
 - **REITs** (Real Estate Investment Trusts) and **InvITs** (Infrastructure Investment Trusts) introduced from 2019
 - **T+1 settlement** introduced in January 2023 (shortened from T+2)

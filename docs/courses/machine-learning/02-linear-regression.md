@@ -87,16 +87,6 @@ flowchart LR
 
 ### Simple Linear Regression
 
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-handwritten.svg" alt="Handwritten: Simple Linear Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-diagram.svg" alt="Diagram: Simple Linear Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/simple-linear-regression-sticky.svg" alt="Sticky Note: Simple Linear Regression" width="30%">
-</a>
-
 
 Simple Linear Regression models the relationship between a single predictor variable $x$ and a continuous response variable $y$. The model assumes a linear relationship:
 
@@ -113,16 +103,6 @@ Where:
 
 ### The Cost Function: Mean Squared Error (MSE)
 
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-handwritten.svg" alt="Handwritten: The Cost Function: Mean Squared Error (MSE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-diagram.svg" alt="Diagram: The Cost Function: Mean Squared Error (MSE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/the-cost-function-mean-squared-error-mse-sticky.svg" alt="Sticky Note: The Cost Function: Mean Squared Error (MSE)" width="30%">
-</a>
-
 
 The Mean Squared Error quantifies the average squared difference between predicted and actual values:
 
@@ -132,16 +112,6 @@ The $\frac{1}{2}$ factor simplifies the derivative. Minimizing $J$ yields the "l
 
 ### Ordinary Least Squares (Closed-Form Solution)
 
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-handwritten.svg" alt="Handwritten: Ordinary Least Squares (Closed-Form Solution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-diagram.svg" alt="Diagram: Ordinary Least Squares (Closed-Form Solution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/ordinary-least-squares-closed-form-solution-sticky.svg" alt="Sticky Note: Ordinary Least Squares (Closed-Form Solution)" width="30%">
-</a>
-
 
 For simple regression, the optimal parameters have closed-form solutions:
 
@@ -150,16 +120,6 @@ $$w_1 = \frac{\sum_{i=1}^{n} (x^{(i)} - \bar{x})(y^{(i)} - \bar{y})}{\sum_{i=1}^
 $$w_0 = \bar{y} - w_1 \bar{x}$$
 
 ### Matrix Formulation and the Normal Equation
-
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-handwritten.svg" alt="Handwritten: Matrix Formulation and the Normal Equation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-diagram.svg" alt="Diagram: Matrix Formulation and the Normal Equation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/matrix-formulation-and-the-normal-equation-sticky.svg" alt="Sticky Note: Matrix Formulation and the Normal Equation" width="30%">
-</a>
 
 
 For multiple linear regression, we write the model in matrix notation:
@@ -185,16 +145,6 @@ $$\mathbf{w} = (\mathbf{X}^T \mathbf{X})^{-1} \mathbf{X}^T \mathbf{y}$$
 **Conditions for invertibility**: $\mathbf{X}^T \mathbf{X}$ must be full rank (no linearly dependent features). If features are multicollinear or $n &lt; d$, the matrix is singular and requires regularization or pseudo-inverse (SVD).
 
 ### Gradient Descent
-
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-handwritten.svg" alt="Handwritten: Gradient Descent" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-diagram.svg" alt="Diagram: Gradient Descent" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/gradient-descent-sticky.svg" alt="Sticky Note: Gradient Descent" width="30%">
-</a>
 
 
 When the dataset is large ($n > 10,000$ or $d > 10,000$), the normal equation becomes computationally expensive ($O(d^3)$ for the matrix inverse). Gradient descent iteratively updates parameters:
@@ -227,16 +177,6 @@ flowchart TD
 
 ### Feature Scaling
 
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-handwritten.svg" alt="Handwritten: Feature Scaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-diagram.svg" alt="Diagram: Feature Scaling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/feature-scaling-sticky.svg" alt="Sticky Note: Feature Scaling" width="30%">
-</a>
-
 
 Gradient descent converges faster when features are on similar scales. Common techniques:
 
@@ -253,16 +193,6 @@ Output bounded to $[0, 1]$. Sensitive to outliers.
 **Why scaling matters**: Without scaling, features with larger magnitudes dominate the gradient, causing the optimizer to take a winding path toward the minimum instead of a direct one.
 
 ### Polynomial Regression
-
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-handwritten.svg" alt="Handwritten: Polynomial Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-diagram.svg" alt="Diagram: Polynomial Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/polynomial-regression-sticky.svg" alt="Sticky Note: Polynomial Regression" width="30%">
-</a>
 
 
 Linear regression can model non-linear relationships by augmenting the feature matrix with polynomial terms:
@@ -287,16 +217,6 @@ flowchart LR
 
 ### Overfitting in Regression
 
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-handwritten.svg" alt="Handwritten: Overfitting in Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-diagram.svg" alt="Diagram: Overfitting in Regression" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/overfitting-in-regression-sticky.svg" alt="Sticky Note: Overfitting in Regression" width="30%">
-</a>
-
 
 Overfitting occurs when the model fits the training data too closely, capturing noise rather than the underlying signal. Indicators:
 
@@ -305,16 +225,6 @@ Overfitting occurs when the model fits the training data too closely, capturing 
 - Model predictions change drastically with small data perturbations
 
 ### Regularization
-
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-handwritten.svg" alt="Handwritten: Regularization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-diagram.svg" alt="Diagram: Regularization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/regularization-sticky.svg" alt="Sticky Note: Regularization" width="30%">
-</a>
 
 
 Regularization adds a penalty term to the cost function to discourage large weights, reducing overfitting.
@@ -350,16 +260,6 @@ flowchart TD
 ```
 
 ### Model Evaluation Metrics
-
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-handwritten.svg" alt="Handwritten: Model Evaluation Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-diagram.svg" alt="Diagram: Model Evaluation Metrics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/02-linear-regression/model-evaluation-metrics-sticky.svg" alt="Sticky Note: Model Evaluation Metrics" width="30%">
-</a>
 
 
 **R-squared (Coefficient of Determination)**:

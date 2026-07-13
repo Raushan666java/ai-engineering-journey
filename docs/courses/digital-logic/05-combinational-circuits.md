@@ -61,16 +61,6 @@ A **combinational circuit** is a digital circuit whose output depends **only on 
 
 ### 5.1.1 Formal Definition
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-1-formal-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-1-formal-definition-handwritten.svg" alt="Handwritten: 5.1.1 Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-1-formal-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-1-formal-definition-diagram.svg" alt="Diagram: 5.1.1 Formal Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-1-formal-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-1-formal-definition-sticky.svg" alt="Sticky Note: 5.1.1 Formal Definition" width="30%">
-</a>
-
 
 A combinational circuit with `n` binary inputs and `m` binary outputs realises `m` switching functions:
 
@@ -89,16 +79,6 @@ graph LR
 
 ### 5.1.2 Design Procedure
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-2-design-procedure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-2-design-procedure-handwritten.svg" alt="Handwritten: 5.1.2 Design Procedure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-2-design-procedure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-2-design-procedure-diagram.svg" alt="Diagram: 5.1.2 Design Procedure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-2-design-procedure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-1-2-design-procedure-sticky.svg" alt="Sticky Note: 5.1.2 Design Procedure" width="30%">
-</a>
-
 
 1. **Specification** ? state what the circuit does
 2. **Truth table** ? enumerate all 2n input combinations and the required outputs
@@ -111,16 +91,6 @@ graph LR
 Addition is the fundamental arithmetic operation. All other arithmetic (subtraction, multiplication, division) builds on addition.
 
 ### 5.2.1 Half Adder
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-1-half-adder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-1-half-adder-handwritten.svg" alt="Handwritten: 5.2.1 Half Adder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-1-half-adder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-1-half-adder-diagram.svg" alt="Diagram: 5.2.1 Half Adder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-1-half-adder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-1-half-adder-sticky.svg" alt="Sticky Note: 5.2.1 Half Adder" width="30%">
-</a>
 
 
 The half adder adds two 1-bit binary digits and produces a sum and a carry.
@@ -150,16 +120,6 @@ graph LR
 ```
 
 ### 5.2.2 Full Adder
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-2-full-adder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-2-full-adder-handwritten.svg" alt="Handwritten: 5.2.2 Full Adder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-2-full-adder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-2-full-adder-diagram.svg" alt="Diagram: 5.2.2 Full Adder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-2-full-adder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-2-full-adder-sticky.svg" alt="Sticky Note: 5.2.2 Full Adder" width="30%">
-</a>
 
 
 The full adder adds three 1-bit inputs: A, B, and Carry-In (C??).
@@ -211,16 +171,6 @@ graph TD
 ```
 
 ### 5.2.3 Ripple-Carry Adder (RCA)
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-3-ripple-carry-adder-rca-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-3-ripple-carry-adder-rca-handwritten.svg" alt="Handwritten: 5.2.3 Ripple-Carry Adder (RCA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-3-ripple-carry-adder-rca-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-3-ripple-carry-adder-rca-diagram.svg" alt="Diagram: 5.2.3 Ripple-Carry Adder (RCA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-3-ripple-carry-adder-rca-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-3-ripple-carry-adder-rca-sticky.svg" alt="Sticky Note: 5.2.3 Ripple-Carry Adder (RCA)" width="30%">
-</a>
 
 
 An N-bit ripple-carry adder cascades N full adders, with the carry-out of stage `i` feeding the carry-in of stage `i+1`.
@@ -289,16 +239,6 @@ Where `t???` is the carry propagation delay of one FA and `t???` is the final su
 
 ### 5.2.4 Carry-Lookahead Adder (CLA)
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-4-carry-lookahead-adder-cla-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-4-carry-lookahead-adder-cla-handwritten.svg" alt="Handwritten: 5.2.4 Carry-Lookahead Adder (CLA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-4-carry-lookahead-adder-cla-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-4-carry-lookahead-adder-cla-diagram.svg" alt="Diagram: 5.2.4 Carry-Lookahead Adder (CLA)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-4-carry-lookahead-adder-cla-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-4-carry-lookahead-adder-cla-sticky.svg" alt="Sticky Note: 5.2.4 Carry-Lookahead Adder (CLA)" width="30%">
-</a>
-
 
 The CLA eliminates the ripple delay by computing all carries in parallel using **generate** (G) and **propagate** (P) signals.
 
@@ -349,16 +289,6 @@ console.log(`CLA: 6 + 5 = ${r2.sum}, Cout=${r2.Cout}`);
 **CLA delay:** `tCLA = t?,9 + t?,? + t???` ? 4?5 gate levels regardless of word width (with block fan-in constraints).
 
 ### 5.2.5 Carry-Select Adder
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-5-carry-select-adder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-5-carry-select-adder-handwritten.svg" alt="Handwritten: 5.2.5 Carry-Select Adder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-5-carry-select-adder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-5-carry-select-adder-diagram.svg" alt="Diagram: 5.2.5 Carry-Select Adder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-5-carry-select-adder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-2-5-carry-select-adder-sticky.svg" alt="Sticky Note: 5.2.5 Carry-Select Adder" width="30%">
-</a>
 
 
 The carry-select adder (CSA) computes sums for both possible carry-in values (0 and 1) in parallel, then uses a multiplexer to select the correct result once the actual carry arrives.
@@ -424,16 +354,6 @@ A **multiplexer (MUX)** selects one of 2n data inputs and routes it to the outpu
 
 ### 5.4.1 2:1 Multiplexer
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-1-2-1-multiplexer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-1-2-1-multiplexer-handwritten.svg" alt="Handwritten: 5.4.1 2:1 Multiplexer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-1-2-1-multiplexer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-1-2-1-multiplexer-diagram.svg" alt="Diagram: 5.4.1 2:1 Multiplexer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-1-2-1-multiplexer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-1-2-1-multiplexer-sticky.svg" alt="Sticky Note: 5.4.1 2:1 Multiplexer" width="30%">
-</a>
-
 
 ```
 S = 0 ? Y = A
@@ -449,16 +369,6 @@ function mux2(A: number, B: number, S: number): number {
 ```
 
 ### 5.4.2 4:1 Multiplexer
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-2-4-1-multiplexer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-2-4-1-multiplexer-handwritten.svg" alt="Handwritten: 5.4.2 4:1 Multiplexer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-2-4-1-multiplexer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-2-4-1-multiplexer-diagram.svg" alt="Diagram: 5.4.2 4:1 Multiplexer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-2-4-1-multiplexer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-2-4-1-multiplexer-sticky.svg" alt="Sticky Note: 5.4.2 4:1 Multiplexer" width="30%">
-</a>
 
 
 ```
@@ -496,16 +406,6 @@ graph TD
 
 ### 5.4.3 Using Multiplexers for Logic Implementation
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-3-using-multiplexers-for-logic-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-3-using-multiplexers-for-logic-implementation-handwritten.svg" alt="Handwritten: 5.4.3 Using Multiplexers for Logic Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-3-using-multiplexers-for-logic-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-3-using-multiplexers-for-logic-implementation-diagram.svg" alt="Diagram: 5.4.3 Using Multiplexers for Logic Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-3-using-multiplexers-for-logic-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-4-3-using-multiplexers-for-logic-implementation-sticky.svg" alt="Sticky Note: 5.4.3 Using Multiplexers for Logic Implementation" width="30%">
-</a>
-
 
 Any Boolean function can be implemented using a multiplexer by tying data inputs to VCC or GND based on the truth table. An n-variable function requires a 2n:1 MUX.
 
@@ -539,16 +439,6 @@ An **encoder** converts 2n input lines into an n-bit binary code.
 
 ### 5.6.1 4:2 Priority Encoder
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-6-1-4-2-priority-encoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-6-1-4-2-priority-encoder-handwritten.svg" alt="Handwritten: 5.6.1 4:2 Priority Encoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-6-1-4-2-priority-encoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-6-1-4-2-priority-encoder-diagram.svg" alt="Diagram: 5.6.1 4:2 Priority Encoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-6-1-4-2-priority-encoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-6-1-4-2-priority-encoder-sticky.svg" alt="Sticky Note: 5.6.1 4:2 Priority Encoder" width="30%">
-</a>
-
 
 A priority encoder handles multiple active inputs by encoding the highest-priority one.
 
@@ -569,16 +459,6 @@ A **decoder** converts an n-bit binary code into 2n mutually exclusive output li
 
 ### 5.7.1 3:8 Decoder
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-1-3-8-decoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-1-3-8-decoder-handwritten.svg" alt="Handwritten: 5.7.1 3:8 Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-1-3-8-decoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-1-3-8-decoder-diagram.svg" alt="Diagram: 5.7.1 3:8 Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-1-3-8-decoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-1-3-8-decoder-sticky.svg" alt="Sticky Note: 5.7.1 3:8 Decoder" width="30%">
-</a>
-
 
 ```typescript
 function decoder3to8(A: number): number[] {
@@ -593,16 +473,6 @@ console.log(decoder3to8(5)); // [0,0,0,0,0,1,0,0]
 ```
 
 ### 5.7.2 Decoder-Based Logic Implementation
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-2-decoder-based-logic-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-2-decoder-based-logic-implementation-handwritten.svg" alt="Handwritten: 5.7.2 Decoder-Based Logic Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-2-decoder-based-logic-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-2-decoder-based-logic-implementation-diagram.svg" alt="Diagram: 5.7.2 Decoder-Based Logic Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-2-decoder-based-logic-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-7-2-decoder-based-logic-implementation-sticky.svg" alt="Sticky Note: 5.7.2 Decoder-Based Logic Implementation" width="30%">
-</a>
 
 
 Any n-variable function can be implemented with an n:2n decoder and an OR gate ? a direct realisation of the canonical sum-of-minterms form.
@@ -622,16 +492,6 @@ A comparator determines the relationship between two binary numbers: A > B, A = 
 
 ### 5.8.1 1-Bit Comparator
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-1-1-bit-comparator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-1-1-bit-comparator-handwritten.svg" alt="Handwritten: 5.8.1 1-Bit Comparator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-1-1-bit-comparator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-1-1-bit-comparator-diagram.svg" alt="Diagram: 5.8.1 1-Bit Comparator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-1-1-bit-comparator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-1-1-bit-comparator-sticky.svg" alt="Sticky Note: 5.8.1 1-Bit Comparator" width="30%">
-</a>
-
 
 ```
 E = (A ? B)'        // A equals B
@@ -640,16 +500,6 @@ G = A ? ?B          // A greater than B
 ```
 
 ### 5.8.2 Iterative N-Bit Comparator
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-2-iterative-n-bit-comparator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-2-iterative-n-bit-comparator-handwritten.svg" alt="Handwritten: 5.8.2 Iterative N-Bit Comparator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-2-iterative-n-bit-comparator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-2-iterative-n-bit-comparator-diagram.svg" alt="Diagram: 5.8.2 Iterative N-Bit Comparator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-2-iterative-n-bit-comparator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-8-2-iterative-n-bit-comparator-sticky.svg" alt="Sticky Note: 5.8.2 Iterative N-Bit Comparator" width="30%">
-</a>
 
 
 ```typescript
@@ -690,16 +540,6 @@ graph TD
 ```
 
 ### 5.9.1 4-Bit ALU Design
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-1-4-bit-alu-design-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-1-4-bit-alu-design-handwritten.svg" alt="Handwritten: 5.9.1 4-Bit ALU Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-1-4-bit-alu-design-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-1-4-bit-alu-design-diagram.svg" alt="Diagram: 5.9.1 4-Bit ALU Design" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-1-4-bit-alu-design-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-1-4-bit-alu-design-sticky.svg" alt="Sticky Note: 5.9.1 4-Bit ALU Design" width="30%">
-</a>
 
 
 ```typescript
@@ -759,16 +599,6 @@ console.log(r4); // value=15 (1111), zero=false, negative=true
 
 ### 5.9.2 Status Flags
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-2-status-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-2-status-flags-handwritten.svg" alt="Handwritten: 5.9.2 Status Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-2-status-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-2-status-flags-diagram.svg" alt="Diagram: 5.9.2 Status Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-2-status-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-9-2-status-flags-sticky.svg" alt="Sticky Note: 5.9.2 Status Flags" width="30%">
-</a>
-
 
 - **Zero (Z):** asserted when the result is all zeros
 - **Carry (C):** asserted when addition produces a carry out of the MSB
@@ -778,16 +608,6 @@ console.log(r4); // value=15 (1111), zero=false, negative=true
 ## 5.10 Code Converters
 
 ### 5.10.1 BCD to 7-Segment Decoder
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-1-bcd-to-7-segment-decoder-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-1-bcd-to-7-segment-decoder-handwritten.svg" alt="Handwritten: 5.10.1 BCD to 7-Segment Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-1-bcd-to-7-segment-decoder-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-1-bcd-to-7-segment-decoder-diagram.svg" alt="Diagram: 5.10.1 BCD to 7-Segment Decoder" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-1-bcd-to-7-segment-decoder-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-1-bcd-to-7-segment-decoder-sticky.svg" alt="Sticky Note: 5.10.1 BCD to 7-Segment Decoder" width="30%">
-</a>
 
 
 Converts a 4-bit BCD digit to the 7-segment display pattern (a?g).
@@ -819,16 +639,6 @@ graph TD
 ```
 
 ### 5.10.2 Binary to Gray Code
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-2-binary-to-gray-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-2-binary-to-gray-code-handwritten.svg" alt="Handwritten: 5.10.2 Binary to Gray Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-2-binary-to-gray-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-2-binary-to-gray-code-diagram.svg" alt="Diagram: 5.10.2 Binary to Gray Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-2-binary-to-gray-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-10-2-binary-to-gray-code-sticky.svg" alt="Sticky Note: 5.10.2 Binary to Gray Code" width="30%">
-</a>
 
 
 ```typescript
@@ -885,16 +695,6 @@ A **hazard** is a momentary glitch on the output caused by unequal propagation d
 
 ### 5.12.1 Static Hazards
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-1-static-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-1-static-hazards-handwritten.svg" alt="Handwritten: 5.12.1 Static Hazards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-1-static-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-1-static-hazards-diagram.svg" alt="Diagram: 5.12.1 Static Hazards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-1-static-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-1-static-hazards-sticky.svg" alt="Sticky Note: 5.12.1 Static Hazards" width="30%">
-</a>
-
 
 - **Static-1 hazard:** output should remain 1 but briefly dips to 0
 - **Static-0 hazard:** output should remain 0 but briefly rises to 1
@@ -916,30 +716,10 @@ The circuit `Y = A?B + ?A?B` has a static-1 hazard when B=1 and A transitions. T
 
 ### 5.12.2 Dynamic Hazards
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-2-dynamic-hazards-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-2-dynamic-hazards-handwritten.svg" alt="Handwritten: 5.12.2 Dynamic Hazards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-2-dynamic-hazards-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-2-dynamic-hazards-diagram.svg" alt="Diagram: 5.12.2 Dynamic Hazards" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-2-dynamic-hazards-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-2-dynamic-hazards-sticky.svg" alt="Sticky Note: 5.12.2 Dynamic Hazards" width="30%">
-</a>
-
 
 A **dynamic hazard** causes the output to oscillate multiple times before settling. These occur when there are three or more paths with different delays.
 
 ### 5.12.3 Hazard Detection and Elimination
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-3-hazard-detection-and-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-3-hazard-detection-and-elimination-handwritten.svg" alt="Handwritten: 5.12.3 Hazard Detection and Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-3-hazard-detection-and-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-3-hazard-detection-and-elimination-diagram.svg" alt="Diagram: 5.12.3 Hazard Detection and Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-3-hazard-detection-and-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-12-3-hazard-detection-and-elimination-sticky.svg" alt="Sticky Note: 5.12.3 Hazard Detection and Elimination" width="30%">
-</a>
 
 
 Hazards are detected by examining the K-map: if adjacent minterms are covered by different product terms, a hazard exists. The fix is to add the redundant prime implicant that bridges the gap.
@@ -971,16 +751,6 @@ for (let a = 0; a <= 1; a++) {
 
 ### 5.13.1 Fan-Out and Loading
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-1-fan-out-and-loading-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-1-fan-out-and-loading-handwritten.svg" alt="Handwritten: 5.13.1 Fan-Out and Loading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-1-fan-out-and-loading-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-1-fan-out-and-loading-diagram.svg" alt="Diagram: 5.13.1 Fan-Out and Loading" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-1-fan-out-and-loading-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-1-fan-out-and-loading-sticky.svg" alt="Sticky Note: 5.13.1 Fan-Out and Loading" width="30%">
-</a>
-
 
 Each gate output can drive a limited number of inputs (fan-out). Exceeding the fan-out degrades noise margins and increases delay.
 
@@ -992,16 +762,6 @@ Each gate output can drive a limited number of inputs (fan-out). Exceeding the f
 
 ### 5.13.2 Propagation Delay Comparison
 
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-2-propagation-delay-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-2-propagation-delay-comparison-handwritten.svg" alt="Handwritten: 5.13.2 Propagation Delay Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-2-propagation-delay-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-2-propagation-delay-comparison-diagram.svg" alt="Diagram: 5.13.2 Propagation Delay Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-2-propagation-delay-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-2-propagation-delay-comparison-sticky.svg" alt="Sticky Note: 5.13.2 Propagation Delay Comparison" width="30%">
-</a>
-
 
 | Adder Type | 4-bit Delay | 16-bit Delay | 64-bit Delay |
 |------------|-------------|--------------|--------------|
@@ -1011,16 +771,6 @@ Each gate output can drive a limited number of inputs (fan-out). Exceeding the f
 | Brent-Kung | ?           | 6 tp          | 8 tp         |
 
 ### 5.13.3 Power Optimisation
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-3-power-optimisation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-3-power-optimisation-handwritten.svg" alt="Handwritten: 5.13.3 Power Optimisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-3-power-optimisation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-3-power-optimisation-diagram.svg" alt="Diagram: 5.13.3 Power Optimisation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-3-power-optimisation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/5-13-3-power-optimisation-sticky.svg" alt="Sticky Note: 5.13.3 Power Optimisation" width="30%">
-</a>
 
 
 - **Operand isolation:** gate the inputs to unused ALU functions
@@ -1277,16 +1027,6 @@ c) The highest-priority input is encoded
 d) The output is undefined
 
 ### Answers
-
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/answers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/answers-handwritten.svg" alt="Handwritten: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/answers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/answers-diagram.svg" alt="Diagram: Answers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/answers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/digital-logic/05-combinational-circuits/answers-sticky.svg" alt="Sticky Note: Answers" width="30%">
-</a>
 
 
 Q1: a | Q2: a | Q3: b | Q4: c | Q5: c

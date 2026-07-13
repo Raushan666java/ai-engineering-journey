@@ -162,16 +162,6 @@ flowchart LR
 
 ### 1. Machine Learning Fundamentals
 
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/1-machine-learning-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/1-machine-learning-fundamentals-handwritten.svg" alt="Handwritten: 1. Machine Learning Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/1-machine-learning-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/1-machine-learning-fundamentals-diagram.svg" alt="Diagram: 1. Machine Learning Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/1-machine-learning-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/1-machine-learning-fundamentals-sticky.svg" alt="Sticky Note: 1. Machine Learning Fundamentals" width="30%">
-</a>
-
 
 Machine learning is a branch of artificial intelligence that enables systems to learn patterns from data without being explicitly programmed for every decision rule. Rather than writing if-else logic to detect spam, you feed the system thousands of labeled emails and let the algorithm infer the boundary between spam and legitimate mail.
 
@@ -314,16 +304,6 @@ The RÃ‚Â² score ranges from negative infinity to 1. A value of 1 means perf
 ---
 
 ### 2. Classical ML with PHP-ML
-
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/2-classical-ml-with-php-ml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/2-classical-ml-with-php-ml-handwritten.svg" alt="Handwritten: 2. Classical ML with PHP-ML" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/2-classical-ml-with-php-ml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/2-classical-ml-with-php-ml-diagram.svg" alt="Diagram: 2. Classical ML with PHP-ML" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/2-classical-ml-with-php-ml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/2-classical-ml-with-php-ml-sticky.svg" alt="Sticky Note: 2. Classical ML with PHP-ML" width="30%">
-</a>
 
 
 PHP-ML is the most widely used machine learning library for PHP. It provides implementations of the most common algorithms with a clean, unified API.
@@ -707,16 +687,6 @@ echo "TP: $tp, TN: $tn, FP: $fp, FN: $fn";
 
 ### 3. Advanced ML with Rubix ML
 
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/3-advanced-ml-with-rubix-ml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/3-advanced-ml-with-rubix-ml-handwritten.svg" alt="Handwritten: 3. Advanced ML with Rubix ML" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/3-advanced-ml-with-rubix-ml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/3-advanced-ml-with-rubix-ml-diagram.svg" alt="Diagram: 3. Advanced ML with Rubix ML" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/3-advanced-ml-with-rubix-ml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/3-advanced-ml-with-rubix-ml-sticky.svg" alt="Sticky Note: 3. Advanced ML with Rubix ML" width="30%">
-</a>
-
 
 Rubix ML is a more modern, feature-rich machine learning library for PHP. It introduces pipelines, transformers, neural networks, and an ecosystem of specialized learners.
 
@@ -1066,16 +1036,6 @@ $outlierFlags = $lof->predict(new Unlabeled($testSamples));
 
 ### 4. Natural Language Processing in PHP
 
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/4-natural-language-processing-in-php-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/4-natural-language-processing-in-php-handwritten.svg" alt="Handwritten: 4. Natural Language Processing in PHP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/4-natural-language-processing-in-php-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/4-natural-language-processing-in-php-diagram.svg" alt="Diagram: 4. Natural Language Processing in PHP" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/4-natural-language-processing-in-php-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/4-natural-language-processing-in-php-sticky.svg" alt="Sticky Note: 4. Natural Language Processing in PHP" width="30%">
-</a>
-
 
 Natural Language Processing (NLP) enables machines to understand, interpret, and generate human language. While PHP is not the dominant language for NLP research, PHP-ML provides practical tools for text classification, sentiment analysis, and feature extraction.
 
@@ -1365,16 +1325,6 @@ echo SimpleStemmer::stem('studies');   // studi
 ---
 
 ### 5. ML Model Workflow in Laravel
-
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/5-ml-model-workflow-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/5-ml-model-workflow-in-laravel-handwritten.svg" alt="Handwritten: 5. ML Model Workflow in Laravel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/5-ml-model-workflow-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/5-ml-model-workflow-in-laravel-diagram.svg" alt="Diagram: 5. ML Model Workflow in Laravel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/5-ml-model-workflow-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/5-ml-model-workflow-in-laravel-sticky.svg" alt="Sticky Note: 5. ML Model Workflow in Laravel" width="30%">
-</a>
 
 
 Integrating ML models into a Laravel application requires a structured workflow for training, storing, versioning, and deploying models.
@@ -1778,16 +1728,6 @@ class FeatureStore
 
 ### 6. Laravel AI SDK + Classical ML Integration
 
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/6-laravel-ai-sdk-classical-ml-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/6-laravel-ai-sdk-classical-ml-integration-handwritten.svg" alt="Handwritten: 6. Laravel AI SDK + Classical ML Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/6-laravel-ai-sdk-classical-ml-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/6-laravel-ai-sdk-classical-ml-integration-diagram.svg" alt="Diagram: 6. Laravel AI SDK + Classical ML Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/6-laravel-ai-sdk-classical-ml-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/6-laravel-ai-sdk-classical-ml-integration-sticky.svg" alt="Sticky Note: 6. Laravel AI SDK + Classical ML Integration" width="30%">
-</a>
-
 
 The most powerful pattern in modern Laravel applications is combining classical ML predictions with LLM reasoning. The ML model outputs structured predictions; the LLM explains them in natural language, considers business context, and takes actions.
 
@@ -2089,16 +2029,6 @@ class ProductRecommendationService
 ---
 
 ### 7. Feature Engineering Pipelines
-
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/7-feature-engineering-pipelines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/7-feature-engineering-pipelines-handwritten.svg" alt="Handwritten: 7. Feature Engineering Pipelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/7-feature-engineering-pipelines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/7-feature-engineering-pipelines-diagram.svg" alt="Diagram: 7. Feature Engineering Pipelines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/7-feature-engineering-pipelines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/7-feature-engineering-pipelines-sticky.svg" alt="Sticky Note: 7. Feature Engineering Pipelines" width="30%">
-</a>
 
 
 Features are the raw material of machine learning. Well-engineered features often matter more than the choice of algorithm.
@@ -2558,16 +2488,6 @@ class FeatureController extends Controller
 ---
 
 ### 8. Model Evaluation & MLOps Basics
-
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/8-model-evaluation-mlops-basics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/8-model-evaluation-mlops-basics-handwritten.svg" alt="Handwritten: 8. Model Evaluation & MLOps Basics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/8-model-evaluation-mlops-basics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/8-model-evaluation-mlops-basics-diagram.svg" alt="Diagram: 8. Model Evaluation & MLOps Basics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/8-model-evaluation-mlops-basics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/ai-ml-fundamentals/8-model-evaluation-mlops-basics-sticky.svg" alt="Sticky Note: 8. Model Evaluation & MLOps Basics" width="30%">
-</a>
 
 
 MLOps (Machine Learning Operations) brings DevOps principles to ML workflows Ã¢â‚¬â€ experiment tracking, model registry, drift monitoring, and safe deployment strategies.

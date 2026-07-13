@@ -49,7 +49,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## 3.1 How Transformers Work
 
 The transformer architecture, introduced in the 2017 paper "Attention Is All You Need," is the foundation upon which all modern foundation models are built. Understanding transformers is essential for making informed decisions about model selection, prompt design, and troubleshooting.

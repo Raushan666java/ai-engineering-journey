@@ -541,16 +541,6 @@ class Point:
 
 ### More TypeScript Magic Method Equivalents
 
-<a href="../../../assets/images/diagrams/python-programming/14-magic-methods/more-typescript-magic-method-equivalents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/14-magic-methods/more-typescript-magic-method-equivalents-handwritten.svg" alt="Handwritten: More TypeScript Magic Method Equivalents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/14-magic-methods/more-typescript-magic-method-equivalents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/14-magic-methods/more-typescript-magic-method-equivalents-diagram.svg" alt="Diagram: More TypeScript Magic Method Equivalents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/14-magic-methods/more-typescript-magic-method-equivalents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/14-magic-methods/more-typescript-magic-method-equivalents-sticky.svg" alt="Sticky Note: More TypeScript Magic Method Equivalents" width="30%">
-</a>
-
 
 ```typescript
 // Python: __add__ → TypeScript: custom add method
@@ -987,16 +977,6 @@ class Vector2D {
 ```
 
 ### Python Magic Methods vs TypeScript Equivalents
-
-<a href="../../../assets/images/diagrams/python-programming/14-magic-methods/python-magic-methods-vs-typescript-equivalents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/14-magic-methods/python-magic-methods-vs-typescript-equivalents-handwritten.svg" alt="Handwritten: Python Magic Methods vs TypeScript Equivalents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/14-magic-methods/python-magic-methods-vs-typescript-equivalents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/14-magic-methods/python-magic-methods-vs-typescript-equivalents-diagram.svg" alt="Diagram: Python Magic Methods vs TypeScript Equivalents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/python-programming/14-magic-methods/python-magic-methods-vs-typescript-equivalents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/python-programming/14-magic-methods/python-magic-methods-vs-typescript-equivalents-sticky.svg" alt="Sticky Note: Python Magic Methods vs TypeScript Equivalents" width="30%">
-</a>
 
 
 | Python | TypeScript | Purpose |

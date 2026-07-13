@@ -81,16 +81,6 @@ flowchart LR
 
 ### 3.1 Introduction to the Relational Model
 
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-1-introduction-to-the-relational-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-1-introduction-to-the-relational-model-handwritten.svg" alt="Handwritten: 3.1 Introduction to the Relational Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-1-introduction-to-the-relational-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-1-introduction-to-the-relational-model-diagram.svg" alt="Diagram: 3.1 Introduction to the Relational Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-1-introduction-to-the-relational-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-1-introduction-to-the-relational-model-sticky.svg" alt="Sticky Note: 3.1 Introduction to the Relational Model" width="30%">
-</a>
-
 
 The relational model was proposed by **E.F. Codd in 1970** in his seminal paper *"A Relational Model of Data for Large Shared Data Banks."* It revolutionized database management by providing a mathematically rigorous framework for data organization and manipulation.
 
@@ -105,16 +95,6 @@ The model is built on **set theory** and **first-order predicate logic**. Its el
 ---
 
 ### 3.2 Relational Model Concepts
-
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-2-relational-model-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-2-relational-model-concepts-handwritten.svg" alt="Handwritten: 3.2 Relational Model Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-2-relational-model-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-2-relational-model-concepts-diagram.svg" alt="Diagram: 3.2 Relational Model Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-2-relational-model-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-2-relational-model-concepts-sticky.svg" alt="Sticky Note: 3.2 Relational Model Concepts" width="30%">
-</a>
 
 
 #### 3.2.1 Real-World Analogy: The Spreadsheet
@@ -389,16 +369,6 @@ class Relation:
 ---
 
 ### 3.3 Keys
-
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-3-keys-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-3-keys-handwritten.svg" alt="Handwritten: 3.3 Keys" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-3-keys-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-3-keys-diagram.svg" alt="Diagram: 3.3 Keys" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-3-keys-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-3-keys-sticky.svg" alt="Sticky Note: 3.3 Keys" width="30%">
-</a>
 
 
 #### 3.3.1 Real-World Analogy: The Passport System
@@ -703,16 +673,6 @@ def find_candidate_keys(all_attrs: Set[str],
 
 ### 3.4 Integrity Constraints
 
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-4-integrity-constraints-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-4-integrity-constraints-handwritten.svg" alt="Handwritten: 3.4 Integrity Constraints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-4-integrity-constraints-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-4-integrity-constraints-diagram.svg" alt="Diagram: 3.4 Integrity Constraints" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-4-integrity-constraints-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-4-integrity-constraints-sticky.svg" alt="Sticky Note: 3.4 Integrity Constraints" width="30%">
-</a>
-
 
 Integrity constraints ensure the correctness and consistency of data. They are rules that every instance of the database must satisfy.
 
@@ -787,16 +747,6 @@ RULE: salary_check
 ---
 
 ### 3.5 Relational Algebra
-
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-5-relational-algebra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-5-relational-algebra-handwritten.svg" alt="Handwritten: 3.5 Relational Algebra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-5-relational-algebra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-5-relational-algebra-diagram.svg" alt="Diagram: 3.5 Relational Algebra" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-5-relational-algebra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-5-relational-algebra-sticky.svg" alt="Sticky Note: 3.5 Relational Algebra" width="30%">
-</a>
 
 
 Relational algebra is a **procedural query language** â€” it describes *how* to compute a result by applying operations to relations. Every operation takes one or two relations as input and produces a **new relation** as output (the **closure property**).
@@ -1055,16 +1005,6 @@ Relation Relation::rename(const std::string& newName,
 ---
 
 ### 3.6 Join Operations
-
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-6-join-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-6-join-operations-handwritten.svg" alt="Handwritten: 3.6 Join Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-6-join-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-6-join-operations-diagram.svg" alt="Diagram: 3.6 Join Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-6-join-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-6-join-operations-sticky.svg" alt="Sticky Note: 3.6 Join Operations" width="30%">
-</a>
 
 
 Joins combine tuples from two relations based on a condition. They are the most important derived operations â€” the heart of multi-table querying.
@@ -1369,16 +1309,6 @@ def left_outer_join(R: Relation, S: Relation) -> Relation:
 
 ### 3.7 Division Operation (Ã·)
 
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-7-division-operation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-7-division-operation-handwritten.svg" alt="Handwritten: 3.7 Division Operation (Ã·)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-7-division-operation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-7-division-operation-diagram.svg" alt="Diagram: 3.7 Division Operation (Ã·)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-7-division-operation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-7-division-operation-sticky.svg" alt="Sticky Note: 3.7 Division Operation (Ã·)" width="30%">
-</a>
-
 
 The division operation answers **"all" queries**: "Find X that are associated with ALL Y."
 
@@ -1599,16 +1529,6 @@ Let |R| = n, |S| = m, |Z| = k (distinct Z-values).
 
 ### 3.8 Relational Calculus
 
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-8-relational-calculus-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-8-relational-calculus-handwritten.svg" alt="Handwritten: 3.8 Relational Calculus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-8-relational-calculus-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-8-relational-calculus-diagram.svg" alt="Diagram: 3.8 Relational Calculus" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-8-relational-calculus-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-8-relational-calculus-sticky.svg" alt="Sticky Note: 3.8 Relational Calculus" width="30%">
-</a>
-
 
 Relational calculus is a **declarative** query language â€” you specify *what* to retrieve, not *how* to compute it. The database system figures out the execution plan.
 
@@ -1719,16 +1639,6 @@ A TRC expression is **safe** if:
 
 ### 3.9 Relational Algebra Equivalences
 
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-9-relational-algebra-equivalences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-9-relational-algebra-equivalences-handwritten.svg" alt="Handwritten: 3.9 Relational Algebra Equivalences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-9-relational-algebra-equivalences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-9-relational-algebra-equivalences-diagram.svg" alt="Diagram: 3.9 Relational Algebra Equivalences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-9-relational-algebra-equivalences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-9-relational-algebra-equivalences-sticky.svg" alt="Sticky Note: 3.9 Relational Algebra Equivalences" width="30%">
-</a>
-
 
 Understanding equivalences is crucial for **query optimization**. The database query optimizer uses these rules to transform your query into a faster equivalent form.
 
@@ -1767,16 +1677,6 @@ Understanding equivalences is crucial for **query optimization**. The database q
 ---
 
 ### 3.10 Interview Corner
-
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-10-interview-corner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-10-interview-corner-handwritten.svg" alt="Handwritten: 3.10 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-10-interview-corner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-10-interview-corner-diagram.svg" alt="Diagram: 3.10 Interview Corner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-10-interview-corner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-10-interview-corner-sticky.svg" alt="Sticky Note: 3.10 Interview Corner" width="30%">
-</a>
 
 
 #### 3.10.1 Relational Algebra vs SQL
@@ -1897,16 +1797,6 @@ STUDENT(sid, name, phone1, phone2)
 ---
 
 ### 3.11 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-11-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-11-applications-in-real-systems-handwritten.svg" alt="Handwritten: 3.11 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-11-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-11-applications-in-real-systems-diagram.svg" alt="Diagram: 3.11 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-11-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/03-relational-model/3-11-applications-in-real-systems-sticky.svg" alt="Sticky Note: 3.11 Applications in Real Systems" width="30%">
-</a>
 
 
 #### 3.11.1 PostgreSQL Query Optimizer

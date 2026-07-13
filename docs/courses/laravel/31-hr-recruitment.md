@@ -167,16 +167,6 @@ flowchart LR
 
 ### 31.1 HR Data Models
 
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-handwritten.svg" alt="Handwritten: 31.1 HR Data Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-diagram.svg" alt="Diagram: 31.1 HR Data Models" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-1-hr-data-models-sticky.svg" alt="Sticky Note: 31.1 HR Data Models" width="30%">
-</a>
-
 
 Every HR automation begins with well-structured data. The core HR domain includes candidates seeking employment, employees managing their careers, job postings defining roles, performance reviews tracking growth, and training records documenting development. These models form the foundation upon which all AI agents operate.
 
@@ -530,16 +520,6 @@ class HrDocument extends Model
 
 ### 31.2 Resume Screening & Ranking Agents
 
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-handwritten.svg" alt="Handwritten: 31.2 Resume Screening & Ranking Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-diagram.svg" alt="Diagram: 31.2 Resume Screening & Ranking Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-2-resume-screening-ranking-agents-sticky.svg" alt="Sticky Note: 31.2 Resume Screening & Ranking Agents" width="30%">
-</a>
-
 
 The ResumeScreeningAgent ingests candidate resumes (PDF or text), uses AI to extract structured data Ã¢â‚¬â€ skills, years of experience, education, previous roles Ã¢â‚¬â€ and scores each candidate against the requirements of a specific job posting. This automates the most time-consuming phase of recruiting: reviewing hundreds of resumes to find qualified candidates.
 
@@ -743,16 +723,6 @@ class ResumeScreeningAgent
 ---
 
 ### 31.3 Interview Scheduling Automation
-
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-handwritten.svg" alt="Handwritten: 31.3 Interview Scheduling Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-diagram.svg" alt="Diagram: 31.3 Interview Scheduling Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-3-interview-scheduling-automation-sticky.svg" alt="Sticky Note: 31.3 Interview Scheduling Automation" width="30%">
-</a>
 
 
 The InterviewSchedulingAgent coordinates the logistics of scheduling interviews between candidates and interviewers. It checks availability windows, proposes overlapping time slots, sends calendar invitations, and handles rescheduling when conflicts arise. The agent uses a constraint-satisfaction approach: candidate availability, interviewer availability, required attendees, room booking, and timezone normalization are all treated as constraints that must be satisfied simultaneously.
@@ -1021,16 +991,6 @@ class InterviewSchedulingAgent
 
 ### 31.4 Candidate Matching Agents
 
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-handwritten.svg" alt="Handwritten: 31.4 Candidate Matching Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-diagram.svg" alt="Diagram: 31.4 Candidate Matching Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-4-candidate-matching-agents-sticky.svg" alt="Sticky Note: 31.4 Candidate Matching Agents" width="30%">
-</a>
-
 
 The CandidateMatchingAgent uses vector embeddings to perform semantic matching between job postings and candidates. Instead of relying solely on keyword overlap Ã¢â‚¬â€ which misses synonyms and context Ã¢â‚¬â€ the agent embeds both the job description and the candidate's resume into high-dimensional vectors, then computes cosine similarity. Candidates whose profiles are semantically close to the job requirements surface to the top, even when they use different terminology.
 
@@ -1227,16 +1187,6 @@ class CandidateMatchingAgent
 
 ### 31.5 Onboarding Workflow Agents
 
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-handwritten.svg" alt="Handwritten: 31.5 Onboarding Workflow Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-diagram.svg" alt="Diagram: 31.5 Onboarding Workflow Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-5-onboarding-workflow-agents-sticky.svg" alt="Sticky Note: 31.5 Onboarding Workflow Agents" width="30%">
-</a>
-
 
 The OnboardingAgent automates the new-hire onboarding process from acceptance through day-one readiness. The agent creates a personalized task checklist, verifies required documents (ID verification, tax forms, employment eligibility), provisions accounts across internal systems, assigns a mentor, schedules orientation sessions, and tracks completion status. Each step can be configured per role, department, or location.
 
@@ -1431,16 +1381,6 @@ class OnboardingAgent
 ---
 
 ### 31.6 Performance Review Analysis
-
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-handwritten.svg" alt="Handwritten: 31.6 Performance Review Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-diagram.svg" alt="Diagram: 31.6 Performance Review Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-6-performance-review-analysis-sticky.svg" alt="Sticky Note: 31.6 Performance Review Analysis" width="30%">
-</a>
 
 
 The PerformanceReviewAgent analyzes review text to extract sentiment, identify performance trends across review periods, and generate manager-friendly summaries. It processes both quantitative ratings and qualitative comments, detecting patterns such as consistent strengths, recurring areas for improvement, changes in trajectory (improving, declining, steady), and flagging reviews that need managerial attention.
@@ -1653,16 +1593,6 @@ class PerformanceReviewAgent
 ---
 
 ### 31.7 Employee Sentiment Monitoring
-
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-handwritten.svg" alt="Handwritten: 31.7 Employee Sentiment Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-diagram.svg" alt="Diagram: 31.7 Employee Sentiment Monitoring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-7-employee-sentiment-monitoring-sticky.svg" alt="Sticky Note: 31.7 Employee Sentiment Monitoring" width="30%">
-</a>
 
 
 The SentimentAgent continuously monitors employee engagement by analyzing survey responses, pulse check results, and feedback submissions. It scores each response for sentiment, detects negative trends at the individual and team level, and escalates concerns when sentiment drops below configurable thresholds. This agent serves as an early-warning system for disengagement, burnout, and cultural issues before they escalate into turnover.
@@ -1942,16 +1872,6 @@ class SentimentAgent
 
 ### 31.8 Training & Development Recommendation
 
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-handwritten.svg" alt="Handwritten: 31.8 Training & Development Recommendation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-diagram.svg" alt="Diagram: 31.8 Training & Development Recommendation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-8-training-development-recommendation-sticky.svg" alt="Sticky Note: 31.8 Training & Development Recommendation" width="30%">
-</a>
-
 
 The TrainingRecommendationAgent identifies skill gaps by comparing an employee's current skills and performance data against their role requirements and career goals. It then recommends specific training programs, courses, or certifications to close those gaps. The agent considers the employee's learning history, preferred learning format, budget constraints, and certification timelines to produce a prioritized development plan.
 
@@ -2222,16 +2142,6 @@ class TrainingRecommendationAgent
 ---
 
 ### 31.9 Compliance & Reporting
-
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-handwritten.svg" alt="Handwritten: 31.9 Compliance & Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-diagram.svg" alt="Diagram: 31.9 Compliance & Reporting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/31-hr-recruitment/31-9-compliance-reporting-sticky.svg" alt="Sticky Note: 31.9 Compliance & Reporting" width="30%">
-</a>
 
 
 The HrComplianceAgent tracks regulatory and internal compliance requirements across the organization. It monitors certification expiry dates, equal-opportunity reporting metrics, mandatory training completion, and document retention schedules. The agent proactively notifies HR staff of approaching deadlines and generates compliance reports ready for audit or regulatory submission.

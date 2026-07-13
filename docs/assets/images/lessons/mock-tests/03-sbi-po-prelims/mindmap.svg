@@ -1,51 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="700" viewBox="0 0 800 700">
-  <defs>
-    <radialGradient id="mbg" cx="50%" cy="50%" r="50%">
+<defs>
+    <linearGradient id="gBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="gGreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#34d399"/>
+    </linearGradient>
+    <linearGradient id="gOrange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="gPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="gBg" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="100%" stop-color="#f8fafc"/>
-    </radialGradient>
+    </linearGradient>
+    <filter id="shadowSm" x="-5%" y="-5%" width="115%" height="115%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.08"/>
+    </filter>
+    <filter id="shadowMd" x="-8%" y="-8%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <filter id="shadowLg" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrowBlue" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2563eb"/>
+    </marker>
+    <marker id="arrowGray" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#94a3b8"/>
+    </marker>
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="10" cy="10" r="0.8" fill="#e2e8f0"/>
+    </pattern>
+    <pattern id="lineGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f1f5f9" stroke-width="0.5"/>
+    </pattern>
   </defs>
-  <rect width="800" height="700" fill="url(#mbg)" rx="4"/>
-  <!-- Grid dots -->
-  <pattern id="mdots" width="30" height="30" patternUnits="userSpaceOnUse">
-    <circle cx="15" cy="15" r="1" fill="#e2e8f0"/>
-  </pattern>
-  <rect width="800" height="700" fill="url(#mdots)"/>
-    <!-- Center node -->
-  <rect x="320" y="313" width="160" height="74" rx="16" fill="#2563eb"/>
-    <text x="400" y="335" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">SBI PO Prelims —</text>
-  <text x="400" y="353" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Full-Length</text>
-  <text x="400" y="371" font-size="13" font-weight="bold" fill="#fff" text-anchor="middle" font-family="Arial, sans-serif">Mock...</text>
-  <path d="M320,350 Q355,232.05771365940052 310.00000000000006,194.11542731880104" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.6"/>
-  <rect x="255.00000000000006" y="179.11542731880104" width="110" height="30" rx="15" fill="#2563eb" opacity="0.12" stroke="#2563eb" stroke-width="1.5"/>
-    <text x="310.00000000000006" y="199.11542731880104" font-size="12" font-weight="bold" fill="#2563eb" text-anchor="middle" font-family="Arial, sans-serif">Concepts</text>
-  <circle cx="250.00000000000006" cy="164.11542731880104" r="3" fill="#2563eb"/>
-      <text x="260.00000000000006" y="168.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">Who</text>
-  <circle cx="250.00000000000006" cy="184.11542731880104" r="3" fill="#2563eb"/>
-      <text x="260.00000000000006" y="188.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">This</text>
-  <circle cx="250.00000000000006" cy="204.11542731880104" r="3" fill="#2563eb"/>
-      <text x="260.00000000000006" y="208.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">Cover</text>
-  <circle cx="250.00000000000006" cy="224.11542731880104" r="3" fill="#2563eb"/>
-      <text x="260.00000000000006" y="228.11542731880104" font-size="10" fill="#475569" font-family="Arial, sans-serif">Which</text>
-  <path d="M320,350 Q468.943999880708,252.14911512821146 537.887999761416,234.29823025642293" fill="none" stroke="#059669" stroke-width="2" opacity="0.6"/>
-  <rect x="482.88799976141604" y="219.29823025642293" width="110" height="30" rx="15" fill="#059669" opacity="0.12" stroke="#059669" stroke-width="1.5"/>
-    <text x="537.887999761416" y="239.29823025642293" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Workflow</text>
-  <circle cx="477.88799976141604" cy="234.29823025642293" r="3" fill="#059669"/>
-      <text x="487.88799976141604" y="238.29823025642293" font-size="10" fill="#475569" font-family="Arial, sans-serif">10s = -5s^2</text>
-  <path d="M480,350 Q384.37166400997626,398.6326977710987 368.74332801995257,527.2653955421974" fill="none" stroke="#dc2626" stroke-width="2" opacity="0.6"/>
-  <rect x="313.74332801995257" y="512.2653955421974" width="110" height="30" rx="15" fill="#dc2626" opacity="0.12" stroke="#dc2626" stroke-width="1.5"/>
-    <text x="368.74332801995257" y="532.2653955421974" font-size="12" font-weight="bold" fill="#dc2626" text-anchor="middle" font-family="Arial, sans-serif">Interview Qs</text>
-  <circle cx="428.74332801995257" cy="507.26539554219744" r="3" fill="#dc2626"/>
-      <text x="438.74332801995257" y="511.26539554219744" font-size="10" fill="#475569" font-family="Arial, sans-serif">Q: . [Puzzle] | 1 Mar</text>
-  <circle cx="428.74332801995257" cy="527.2653955421974" r="3" fill="#dc2626"/>
-      <text x="438.74332801995257" y="531.2653955421974" font-size="10" fill="#475569" font-family="Arial, sans-serif">Q: . [Puzzle] | 1 Mar</text>
-  <circle cx="428.74332801995257" cy="547.2653955421974" r="3" fill="#dc2626"/>
-      <text x="438.74332801995257" y="551.2653955421974" font-size="10" fill="#475569" font-family="Arial, sans-serif">Q: . [Puzzle] | 1 Mar</text>
-  <path d="M480,350 Q311.3673022289013,325.62833599002374 222.73460445780256,381.25667198004743" fill="none" stroke="#7c3aed" stroke-width="2" opacity="0.6"/>
-  <rect x="167.73460445780256" y="366.25667198004743" width="110" height="30" rx="15" fill="#7c3aed" opacity="0.12" stroke="#7c3aed" stroke-width="1.5"/>
-    <text x="222.73460445780256" y="386.25667198004743" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Mistakes</text>
-  <circle cx="282.73460445780256" cy="371.25667198004743" r="3" fill="#7c3aed"/>
-      <text x="292.73460445780256" y="375.25667198004743" font-size="10" fill="#475569" font-family="Arial, sans-serif">&gt; Negative Marking</text>
-  <circle cx="282.73460445780256" cy="391.25667198004743" r="3" fill="#7c3aed"/>
-      <text x="292.73460445780256" y="395.25667198004743" font-size="10" fill="#475569" font-family="Arial, sans-serif">Q45. Find the wron</text>
+  <rect width="800" height="700" fill="url(#gBg)"/>
+  <rect width="800" height="700" fill="url(#dotGrid)" opacity="0.55"/>
+  <!-- Center node -->
+  <rect x="315" y="322" width="170" height="56" rx="28" fill="url(#gBlue)" filter="url(#shadowMd)"/>
+  <text x="400" y="355" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle" font-family="Arial, sans-serif">SBI PO Prelims — Full-Length Mock...</text>
+  <!-- Branch: Workflow -->
+    <path d="M457.208097262102,325.4865778201927 Q520.9269334431935,297.72473146528256 515.7017697435771,212.11200023858396" fill="none" stroke="#059669" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+  <rect x="455.7017697435771" y="197.11200023858396" width="120" height="30" rx="15" fill="#059669" opacity="0.1" stroke="#059669" stroke-width="2" filter="url(#shadowSm)"/>
+    <text x="515.7017697435771" y="217.11200023858396" font-size="12" font-weight="bold" fill="#059669" text-anchor="middle" font-family="Arial, sans-serif">Workflow</text>
+  <line x1="526.6291591082482" y1="199.08924470556133" x2="530.4858847663675" y2="194.49297804684747" stroke="#059669" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="530.4858847663675" cy="194.49297804684747" r="3" fill="#059669" filter="url(#shadowSm)"/>
+  <text x="538.1463291975573" y="198.49297804684747" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="start">10s = -5s^2</text>
+  <!-- Branch: Interview -->
+    <path d="M392.2431388954584,381.87823033893585 Q343.4487911863114,451.6746295740804 384.3119663054215,529.3150456565143" fill="none" stroke="#7c3aed" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+  <rect x="324.3119663054215" y="514.3150456565143" width="120" height="30" rx="15" fill="#7c3aed" opacity="0.1" stroke="#7c3aed" stroke-width="2" filter="url(#shadowSm)"/>
+    <text x="384.3119663054215" y="534.3150456565143" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="middle" font-family="Arial, sans-serif">Interview</text>
+  <line x1="382.8303186787113" y1="546.2503555240739" x2="382.3073842222254" y2="552.2275237126244" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="382.3073842222254" cy="552.2275237126244" r="3" fill="#7c3aed" filter="url(#shadowSm)"/>
+  <text x="392.2693312031428" y="556.2275237126244" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">. [Puzzle] | 1 Mark | </text>
+  <line x1="382.8303186787113" y1="546.2503555240739" x2="380.38995788177687" y2="574.1438070706428" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="380.38995788177687" cy="574.1438070706428" r="3" fill="#7c3aed" filter="url(#shadowSm)"/>
+  <text x="390.3519048626943" y="578.1438070706428" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">. [Puzzle] | 1 Mark | </text>
+  <line x1="382.8303186787113" y1="546.2503555240739" x2="378.4725315413284" y2="596.0600904286612" stroke="#7c3aed" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="378.4725315413284" cy="596.0600904286612" r="3" fill="#7c3aed" filter="url(#shadowSm)"/>
+  <text x="388.43447852224585" y="600.0600904286612" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">. [Puzzle] | 1 Mark | </text>
+  <!-- Branch: Mistakes -->
+    <path d="M314.03260146027293,358.2822094432807 Q258.4361193345069,333.96815659785915 226.13335126796773,396.5874281184538" fill="none" stroke="#db2777" stroke-width="2.5" opacity="0.5" stroke-linecap="round"/>
+  <rect x="166.13335126796773" y="381.5874281184538" width="120" height="30" rx="15" fill="#db2777" opacity="0.1" stroke="#db2777" stroke-width="2" filter="url(#shadowSm)"/>
+    <text x="226.13335126796773" y="401.5874281184538" font-size="12" font-weight="bold" fill="#db2777" text-anchor="middle" font-family="Arial, sans-serif">Mistakes</text>
+  <line x1="209.71261222105358" y1="400.98735188519663" x2="203.91705726331915" y2="402.54026615581176" stroke="#db2777" stroke-width="1" opacity="0.3" stroke-dasharray="3,3"/>
+  <circle cx="203.91705726331915" cy="402.54026615581176" r="3" fill="#db2777" filter="url(#shadowSm)"/>
+  <text x="206.50524771434436" y="406.54026615581176" font-size="10" fill="#64748b" font-family="Arial, sans-serif" text-anchor="end">Common Mistakes to Avo</text>
 </svg>

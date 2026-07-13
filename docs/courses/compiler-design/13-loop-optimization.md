@@ -87,32 +87,12 @@ flowchart TB
 
 ### The Critical Role of Loops
 
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-handwritten.svg" alt="Handwritten: The Critical Role of Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-diagram.svg" alt="Diagram: The Critical Role of Loops" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/the-critical-role-of-loops-sticky.svg" alt="Sticky Note: The Critical Role of Loops" width="30%">
-</a>
-
 
 Loops account for the vast majority of execution time in most programs. Amdahl's law makes this precise: if a program spends 90% of its time in loops, a 2? speedup of the loop code yields a 1.8? overall speedup, while a 2? speedup of non-loop code yields only 1.05?. Concentrating optimization effort on loops delivers the highest return on compiler development time.
 
 The loop optimizations described in this chapter depend on the **natural-loop** identification and loop-nest hierarchy established by control-flow analysis (Chapter 11). Each natural loop has a single header node that dominates all other nodes in the loop, and a **pre-header** ? an empty basic block placed just before the header ? that serves as the landing point for code moved out of the loop.
 
 ### Loop-Invariant Code Motion (LICM)
-
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-handwritten.svg" alt="Handwritten: Loop-Invariant Code Motion (LICM)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-diagram.svg" alt="Diagram: Loop-Invariant Code Motion (LICM)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-invariant-code-motion-licm-sticky.svg" alt="Sticky Note: Loop-Invariant Code Motion (LICM)" width="30%">
-</a>
 
 
 An expression inside a loop is **loop-invariant** if its value does not change from one iteration to the next. LICM moves such expressions to the loop's pre-header, ensuring they are evaluated exactly once.
@@ -155,16 +135,6 @@ for (i = 0; i < n; i++) {
 
 ### Induction Variable Detection
 
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-handwritten.svg" alt="Handwritten: Induction Variable Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-diagram.svg" alt="Diagram: Induction Variable Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-detection-sticky.svg" alt="Sticky Note: Induction Variable Detection" width="30%">
-</a>
-
 
 An **induction variable (IV)** is a variable whose value changes by a fixed amount on each iteration of a loop. More formally, a variable `v` is an induction variable in loop `L` if every definition of `v` within `L` is of the form `v = v ? c` or `v = c ? v` where `c` is loop-invariant.
 
@@ -198,16 +168,6 @@ function detectInductionVariables(loop):
 ```
 
 ### Strength Reduction
-
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-handwritten.svg" alt="Handwritten: Strength Reduction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-diagram.svg" alt="Diagram: Strength Reduction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/strength-reduction-sticky.svg" alt="Sticky Note: Strength Reduction" width="30%">
-</a>
 
 
 Strength reduction replaces an expensive operation inside a loop with a cheaper one. The canonical transformation replaces multiplication with addition for array-index expressions.
@@ -259,16 +219,6 @@ function strengthReduce(loop, basicIVs, derivedIVs):
 
 ### Induction Variable Elimination
 
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-handwritten.svg" alt="Handwritten: Induction Variable Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-diagram.svg" alt="Diagram: Induction Variable Elimination" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/induction-variable-elimination-sticky.svg" alt="Sticky Note: Induction Variable Elimination" width="30%">
-</a>
-
 
 After strength reduction, the BIV may become dead ? no longer used for any computation other than loop termination. If a DIV exists that steps in lockstep with the BIV, the BIV can be eliminated entirely.
 
@@ -304,16 +254,6 @@ while t < n * 4:
 ```
 
 ### Loop Unrolling
-
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-handwritten.svg" alt="Handwritten: Loop Unrolling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-diagram.svg" alt="Diagram: Loop Unrolling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-unrolling-sticky.svg" alt="Sticky Note: Loop Unrolling" width="30%">
-</a>
 
 
 Loop unrolling replicates the loop body multiple times, reducing the per-iteration overhead of loop control (testing the branch, incrementing the IV) and exposing more instruction-level parallelism.
@@ -364,16 +304,6 @@ Profile-guided optimization (Chapter 15) and machine models help compilers selec
 
 ### Loop Fusion and Fission
 
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-handwritten.svg" alt="Handwritten: Loop Fusion and Fission" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-diagram.svg" alt="Diagram: Loop Fusion and Fission" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-fusion-and-fission-sticky.svg" alt="Sticky Note: Loop Fusion and Fission" width="30%">
-</a>
-
 
 #### Loop Fusion (Jamming)
 
@@ -418,16 +348,6 @@ for i = 1 to N-1:
 
 ### Loop Interchange
 
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-handwritten.svg" alt="Handwritten: Loop Interchange" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-diagram.svg" alt="Diagram: Loop Interchange" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/loop-interchange-sticky.svg" alt="Sticky Note: Loop Interchange" width="30%">
-</a>
-
 
 Loop interchange swaps the nesting order of two loops in a perfectly nested loop. The primary motivation is improving memory access patterns to achieve **stride-1** (sequential) access in the innermost loop.
 
@@ -469,16 +389,6 @@ for i = 0 to N-1:
 
 ### Vectorization
 
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-handwritten.svg" alt="Handwritten: Vectorization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-diagram.svg" alt="Diagram: Vectorization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/vectorization-sticky.svg" alt="Sticky Note: Vectorization" width="30%">
-</a>
-
 
 Vectorization transforms a loop to use SIMD instructions that operate on multiple data elements in a single instruction. Modern CPUs have SIMD instruction sets (SSE, AVX, AVX-512 on x86; NEON, SVE on ARM) that can process 2?64 elements per operation.
 
@@ -513,16 +423,6 @@ sum = horizontal_add(sum_vec)
 ```
 
 ### Putting It All Together ? TypeScript Implementation
-
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-handwritten.svg" alt="Handwritten: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-diagram.svg" alt="Diagram: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/13-loop-optimization/putting-it-all-together-typescript-implementation-sticky.svg" alt="Sticky Note: Putting It All Together ? TypeScript Implementation" width="30%">
-</a>
 
 
 ```typescript

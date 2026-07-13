@@ -58,30 +58,10 @@ Cloud networking replaces physical routers, switches, and firewalls with softwar
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A cloud network is like a **customizable office building within a business park**. The business park (cloud provider) provides the physical land, power, and security. Your lease defines your private space (VPC). You can build interior walls (subnets), install doors with keycard access (security groups), set up reception desks (load balancers), and connect to other buildings via private walkways (VPC peering) or public roads (Internet Gateway).
 
 ### How Cloud Networking Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud Networking Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-diagram.svg" alt="Diagram: How Cloud Networking Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-networking-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud Networking Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **Tenant isolation** → The provider uses VXLAN (Virtual Extensible LAN) with 24-bit VNI (VXLAN Network Identifier) to encapsulate tenant traffic. Each tenant gets a unique VNI, allowing 16 million isolated networks over a shared physical fabric.
@@ -97,16 +77,6 @@ A cloud network is like a **customizable office building within a business park*
 6. **Elastic scaling** → Network capacity scales by adding more hypervisor hosts; no physical rack-and-stack required.
 
 ### Pseudocode: Cloud Network Packet Forwarding
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-handwritten.svg" alt="Handwritten: Pseudocode: Cloud Network Packet Forwarding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-diagram.svg" alt="Diagram: Pseudocode: Cloud Network Packet Forwarding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cloud-network-packet-forwarding-sticky.svg" alt="Sticky Note: Pseudocode: Cloud Network Packet Forwarding" width="30%">
-</a>
 
 
 ```
@@ -149,16 +119,6 @@ END PROCEDURE
 
 ### Dry Run Trace: VPC Route Table Lookup
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-handwritten.svg" alt="Handwritten: Dry Run Trace: VPC Route Table Lookup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-diagram.svg" alt="Diagram: Dry Run Trace: VPC Route Table Lookup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-route-table-lookup-sticky.svg" alt="Sticky Note: Dry Run Trace: VPC Route Table Lookup" width="30%">
-</a>
-
 
 **VPC Route Table:**
 
@@ -192,16 +152,6 @@ END PROCEDURE
 | 5 | Forward | Hypervisor-to-hypervisor | Delivered |
 
 ### C++ Implementation: VPC Route Table with Longest Prefix Match
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-handwritten.svg" alt="Handwritten: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-diagram.svg" alt="Diagram: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-route-table-with-longest-prefix-match-sticky.svg" alt="Sticky Note: C++ Implementation: VPC Route Table with Longest Prefix Match" width="30%">
-</a>
 
 
 ```cpp
@@ -346,16 +296,6 @@ int main() {
 
 ### Python Implementation: VPC Network Simulator
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-handwritten.svg" alt="Handwritten: Python Implementation: VPC Network Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-diagram.svg" alt="Diagram: Python Implementation: VPC Network Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-network-simulator-sticky.svg" alt="Sticky Note: Python Implementation: VPC Network Simulator" width="30%">
-</a>
-
 
 ```python
 import ipaddress
@@ -497,16 +437,6 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time Complexity | Space Complexity | Why |
 |---|---|---|---|
@@ -520,16 +450,6 @@ if __name__ == "__main__":
 
 ### Advantages & Disadvantages of Cloud Networking
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-networking-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud Networking" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -542,16 +462,6 @@ if __name__ == "__main__":
 
 ### Edge Cases in Cloud Networking
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-handwritten.svg" alt="Handwritten: Edge Cases in Cloud Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-diagram.svg" alt="Diagram: Edge Cases in Cloud Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-networking-sticky.svg" alt="Sticky Note: Edge Cases in Cloud Networking" width="30%">
-</a>
-
 
 - **Cross-region latency**: Packets traversing regions incur 50-200ms RTT. Use inter-region VPC peering or Transit Gateway; avoid chatty cross-region protocols.
 - **VPC peering limits**: Non-transitive → VPC A to VPC B to VPC C doesn't let A reach C. You must establish full mesh or use Transit Gateway (max 5000 attachments).
@@ -561,16 +471,6 @@ if __name__ == "__main__":
 - **Ephemeral IPs**: Stopping an instance releases its public IP; elastic IPs are needed for stable addressing.
 
 ### Cloud Network Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-handwritten.svg" alt="Handwritten: Cloud Network Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-diagram.svg" alt="Diagram: Cloud Network Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/cloud-network-architecture-sticky.svg" alt="Sticky Note: Cloud Network Architecture" width="30%">
-</a>
 
 
 ```mermaid
@@ -701,30 +601,10 @@ A Virtual Private Cloud (VPC) provides logically isolated network segments withi
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A VPC is like a **gated community with customizable house lots**. The community (VPC) has a boundary fence (CIDR block). Each lot (subnet) has a designated purpose: front yards visible to the street (public subnets with Internet Gateway), and backyards only accessible from inside (private subnets). The gatehouse (NAT Gateway) lets residents go out but prevents strangers from walking in. Security guards (security groups) check IDs at every door.
 
 ### VPC Setup: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-handwritten.svg" alt="Handwritten: VPC Setup: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-diagram.svg" alt="Diagram: VPC Setup: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/vpc-setup-step-by-step-sticky.svg" alt="Sticky Note: VPC Setup: Step-by-Step" width="30%">
-</a>
 
 
 1. **Define IP address space** → Choose a CIDR block (e.g., 10.0.0.0/16) that doesn't overlap with on-premises or peered VPCs.
@@ -742,16 +622,6 @@ A VPC is like a **gated community with customizable house lots**. The community 
 7. **Launch instances** → Place resources into appropriate subnets and associate security groups.
 
 ### 16.3.1 VPC Components
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-handwritten.svg" alt="Handwritten: 16.3.1 VPC Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-diagram.svg" alt="Diagram: 16.3.1 VPC Components" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-1-vpc-components-sticky.svg" alt="Sticky Note: 16.3.1 VPC Components" width="30%">
-</a>
 
 
 **Subnets.** A VPC's IP address range (CIDR block, e.g., 10.0.0.0/16) is divided into subnets. Public subnets have routes to the Internet via an Internet Gateway; private subnets do not. Subnets map to availability zones for fault isolation.
@@ -774,30 +644,10 @@ A VPC is like a **gated community with customizable house lots**. The community 
 
 ### 16.3.2 VPC Peering
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-handwritten.svg" alt="Handwritten: 16.3.2 VPC Peering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-diagram.svg" alt="Diagram: 16.3.2 VPC Peering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-3-2-vpc-peering-sticky.svg" alt="Sticky Note: 16.3.2 VPC Peering" width="30%">
-</a>
-
 
 VPC Peering connects two VPCs using private IP addresses. Peering is not transitive: if VPC A is peered with VPC B and VPC B with VPC C, VPC A cannot reach VPC C through VPC B. Transit Gateway solves this by acting as a hub for many VPCs and on-premises networks.
 
 ### Pseudocode: VPC and Subnet Allocation
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-handwritten.svg" alt="Handwritten: Pseudocode: VPC and Subnet Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-diagram.svg" alt="Diagram: Pseudocode: VPC and Subnet Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-vpc-and-subnet-allocation-sticky.svg" alt="Sticky Note: Pseudocode: VPC and Subnet Allocation" width="30%">
-</a>
 
 
 ```
@@ -858,16 +708,6 @@ END PROCEDURE
 
 ### Dry Run Trace: VPC with Multi-AZ Subnets
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-handwritten.svg" alt="Handwritten: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-diagram.svg" alt="Diagram: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-vpc-with-multi-az-subnets-sticky.svg" alt="Sticky Note: Dry Run Trace: VPC with Multi-AZ Subnets" width="30%">
-</a>
-
 
 **VPC:** 10.0.0.0/16 | **AZs:** us-east-1a, us-east-1b
 
@@ -898,16 +738,6 @@ END PROCEDURE
 | 10 | Security Group (db) | Inbound rule allows TCP/3306 from sg-app |
 
 ### C++ Implementation: VPC Subnet Allocator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-handwritten.svg" alt="Handwritten: C++ Implementation: VPC Subnet Allocator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-diagram.svg" alt="Diagram: C++ Implementation: VPC Subnet Allocator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpc-subnet-allocator-sticky.svg" alt="Sticky Note: C++ Implementation: VPC Subnet Allocator" width="30%">
-</a>
 
 
 ```cpp
@@ -1008,16 +838,6 @@ int main() {
 
 ### Python Implementation: VPC Subnet Planner
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-handwritten.svg" alt="Handwritten: Python Implementation: VPC Subnet Planner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-diagram.svg" alt="Diagram: Python Implementation: VPC Subnet Planner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-vpc-subnet-planner-sticky.svg" alt="Sticky Note: Python Implementation: VPC Subnet Planner" width="30%">
-</a>
-
 
 ```python
 import ipaddress
@@ -1089,16 +909,6 @@ if subnet:
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -1109,16 +919,6 @@ if subnet:
 
 ### Advantages & Disadvantages of VPC
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of VPC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-diagram.svg" alt="Diagram: Advantages & Disadvantages of VPC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-vpc-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of VPC" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -1128,16 +928,6 @@ if subnet:
 | Connectivity | Peering, VPN, Direct Connect | Peering is non-transitive |
 
 ### Edge Cases in VPC
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-handwritten.svg" alt="Handwritten: Edge Cases in VPC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-diagram.svg" alt="Diagram: Edge Cases in VPC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-vpc-sticky.svg" alt="Sticky Note: Edge Cases in VPC" width="30%">
-</a>
 
 
 - **CIDR overlap**: Two VPCs with overlapping CIDRs cannot be peered. Choose non-overlapping ranges (e.g., 10.0.0.0/16 for prod, 10.1.0.0/16 for dev).
@@ -1332,30 +1122,10 @@ demoVPCDesign();
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Security groups are like **VIP club door policies**. Each club section (EC2 instance) has a bouncer (hypervisor firewall) that checks a guest list (security group rules). If your name is on the list, you enter freely. Once inside, you can move around without being checked again (stateful). If you leave and come back, you show ID again. NACLs, by contrast, are like metal detectors at the building entrance → every person is checked in both directions, and the rules are processed in order.
 
 ### How Security Groups Work: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-handwritten.svg" alt="Handwritten: How Security Groups Work: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-diagram.svg" alt="Diagram: How Security Groups Work: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-security-groups-work-step-by-step-sticky.svg" alt="Sticky Note: How Security Groups Work: Step-by-Step" width="30%">
-</a>
 
 
 1. **Rule creation** → You define inbound rules (source, protocol, port) and outbound rules (destination, protocol, port).
@@ -1369,16 +1139,6 @@ Security groups are like **VIP club door policies**. Each club section (EC2 inst
 5. **Default deny** → Traffic that doesn't match any rule is implicitly denied. There is no explicit deny rule.
 
 ### Pseudocode: Security Group Evaluation
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-handwritten.svg" alt="Handwritten: Pseudocode: Security Group Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-diagram.svg" alt="Diagram: Pseudocode: Security Group Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-security-group-evaluation-sticky.svg" alt="Sticky Note: Pseudocode: Security Group Evaluation" width="30%">
-</a>
 
 
 ```
@@ -1416,16 +1176,6 @@ END PROCEDURE
 
 ### Dry Run Trace: Security Group Evaluation
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-handwritten.svg" alt="Handwritten: Dry Run Trace: Security Group Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-diagram.svg" alt="Diagram: Dry Run Trace: Security Group Evaluation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-security-group-evaluation-sticky.svg" alt="Sticky Note: Dry Run Trace: Security Group Evaluation" width="30%">
-</a>
-
 
 **Security Group sg-web:**
 
@@ -1459,16 +1209,6 @@ END PROCEDURE
 | 6 | Connection tracking creates flow | Future return traffic auto-allowed |
 
 ### C++ Implementation: Security Group Evaluator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-handwritten.svg" alt="Handwritten: C++ Implementation: Security Group Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-diagram.svg" alt="Diagram: C++ Implementation: Security Group Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-security-group-evaluator-sticky.svg" alt="Sticky Note: C++ Implementation: Security Group Evaluator" width="30%">
-</a>
 
 
 ```cpp
@@ -1604,16 +1344,6 @@ int main() {
 
 ### Python Implementation: Security Group Simulator
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Security Group Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-diagram.svg" alt="Diagram: Python Implementation: Security Group Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-security-group-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Security Group Simulator" width="30%">
-</a>
-
 
 ```python
 import ipaddress
@@ -1696,16 +1426,6 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -1716,16 +1436,6 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)
 
 ### Advantages & Disadvantages of Security Groups
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Security Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-diagram.svg" alt="Diagram: Advantages & Disadvantages of Security Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-security-groups-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Security Groups" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -1735,16 +1445,6 @@ sg_db.simulate("10.0.1.5", 3306, "TCP", "inbound", "web→db:MySQL (should DENY)
 | Attachment | Multiple SGs per ENI (up to 16) | Complex troubleshooting with many SGs |
 
 ### Edge Cases for Security Groups
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-handwritten.svg" alt="Handwritten: Edge Cases for Security Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-diagram.svg" alt="Diagram: Edge Cases for Security Groups" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-security-groups-sticky.svg" alt="Sticky Note: Edge Cases for Security Groups" width="30%">
-</a>
 
 
 - **Self-referencing rules**: A SG can reference itself as source (`sg-xxxxx` as source). This allows instances within the same SG to communicate freely → useful for auto-scaling groups.
@@ -1760,30 +1460,10 @@ Load balancers distribute incoming traffic across multiple targets (EC2 instance
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A load balancer is like a **hotel front desk with multiple check-in agents**. Guests (requests) arrive at the front desk (load balancer DNS). The concierge (load balancing algorithm) directs each guest to the shortest line (least connections) or rotates between agents (round-robin). If an agent is on break (unhealthy target), the concierge skips them. VIP guests (sticky sessions) are always directed to the same agent.
 
 ### 16.5.1 Application Load Balancer
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-handwritten.svg" alt="Handwritten: 16.5.1 Application Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-diagram.svg" alt="Diagram: 16.5.1 Application Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-1-application-load-balancer-sticky.svg" alt="Sticky Note: 16.5.1 Application Load Balancer" width="30%">
-</a>
 
 
 ALB operates at Layer 7 (HTTP/HTTPS). Features:
@@ -1796,16 +1476,6 @@ ALB operates at Layer 7 (HTTP/HTTPS). Features:
 - Request tracing with `X-Amzn-Trace-Id` headers.
 
 ### 16.5.2 Network Load Balancer
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-handwritten.svg" alt="Handwritten: 16.5.2 Network Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-diagram.svg" alt="Diagram: 16.5.2 Network Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-2-network-load-balancer-sticky.svg" alt="Sticky Note: 16.5.2 Network Load Balancer" width="30%">
-</a>
 
 
 NLB operates at Layer 4 (TCP/UDP). Features:
@@ -1820,16 +1490,6 @@ NLB is suitable for performance-critical applications and protocols that require
 
 ### 16.5.3 Gateway Load Balancer
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-handwritten.svg" alt="Handwritten: 16.5.3 Gateway Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-diagram.svg" alt="Diagram: 16.5.3 Gateway Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-3-gateway-load-balancer-sticky.svg" alt="Sticky Note: 16.5.3 Gateway Load Balancer" width="30%">
-</a>
-
 
 GLB operates at Layer 3 (IP) and is designed for deploying virtual appliances (firewalls, IDS/IPS, traffic analyzers). Features:
 
@@ -1840,45 +1500,15 @@ GLB operates at Layer 3 (IP) and is designed for deploying virtual appliances (f
 
 ### 16.5.4 Classic Load Balancer
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-handwritten.svg" alt="Handwritten: 16.5.4 Classic Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-diagram.svg" alt="Diagram: 16.5.4 Classic Load Balancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-4-classic-load-balancer-sticky.svg" alt="Sticky Note: 16.5.4 Classic Load Balancer" width="30%">
-</a>
-
 
 CLB is the legacy load balancer supporting both Layer 4 and basic Layer 7 features. It is less flexible than ALB/NLB and is not recommended for new deployments.
 
 ### 16.5.5 Health Checks
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-handwritten.svg" alt="Handwritten: 16.5.5 Health Checks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-diagram.svg" alt="Diagram: 16.5.5 Health Checks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-5-5-health-checks-sticky.svg" alt="Sticky Note: 16.5.5 Health Checks" width="30%">
-</a>
-
 
 Load balancers periodically send health check requests to targets. A target is considered healthy if it responds with a success status code within the timeout. Targets failing health checks are removed from rotation; they rejoin when health checks succeed again.
 
 ### Pseudocode: Load Balancer Request Dispatch
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-handwritten.svg" alt="Handwritten: Pseudocode: Load Balancer Request Dispatch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-diagram.svg" alt="Diagram: Pseudocode: Load Balancer Request Dispatch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-load-balancer-request-dispatch-sticky.svg" alt="Sticky Note: Pseudocode: Load Balancer Request Dispatch" width="30%">
-</a>
 
 
 ```
@@ -1910,16 +1540,6 @@ END PROCEDURE
 ```
 
 ### Dry Run Trace: ALB Path-Based Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-handwritten.svg" alt="Handwritten: Dry Run Trace: ALB Path-Based Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-diagram.svg" alt="Diagram: Dry Run Trace: ALB Path-Based Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-alb-path-based-routing-sticky.svg" alt="Sticky Note: Dry Run Trace: ALB Path-Based Routing" width="30%">
-</a>
 
 
 **Listener:** HTTP:80
@@ -1989,16 +1609,6 @@ END PROCEDURE
 | 6 | Rejoin | app-1 back in rotation |
 
 ### C++ Implementation: Load Balancer with Round-Robin and Least Connections
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-handwritten.svg" alt="Handwritten: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-diagram.svg" alt="Diagram: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-load-balancer-with-round-robin-and-least-connections-sticky.svg" alt="Sticky Note: C++ Implementation: Load Balancer with Round-Robin and Least Connections" width="30%">
-</a>
 
 
 ```cpp
@@ -2176,16 +1786,6 @@ int main() {
 
 ### Python Implementation: Load Balancer with Multiple Algorithms
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-handwritten.svg" alt="Handwritten: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-diagram.svg" alt="Diagram: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-load-balancer-with-multiple-algorithms-sticky.svg" alt="Sticky Note: Python Implementation: Load Balancer with Multiple Algorithms" width="30%">
-</a>
-
 
 ```python
 import time
@@ -2328,16 +1928,6 @@ lc.print_status()
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -2351,16 +1941,6 @@ lc.print_status()
 
 ### Advantages & Disadvantages of Load Balancers
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Load Balancers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-diagram.svg" alt="Diagram: Advantages & Disadvantages of Load Balancers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-load-balancers-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Load Balancers" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -2370,16 +1950,6 @@ lc.print_status()
 | Performance | TLS termination offload | Adds proxy latency (1-5ms for ALB, ~100us for NLB) |
 
 ### Edge Cases for Load Balancers
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-handwritten.svg" alt="Handwritten: Edge Cases for Load Balancers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-diagram.svg" alt="Diagram: Edge Cases for Load Balancers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-load-balancers-sticky.svg" alt="Sticky Note: Edge Cases for Load Balancers" width="30%">
-</a>
 
 
 - **Connection draining**: When a target is deregistered, the LB waits for in-flight requests to complete (up to 300s). New requests are not forwarded. Set drain timeout appropriately for long-lived connections.
@@ -2658,30 +2228,10 @@ console.log(drainer.getStatus());
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Cloud DNS is like a **national telephone directory service operating across multiple cities with call forwarding**. Instead of a single phone book, you have directory assistants in every city (DNS resolvers at edge locations). When you dial a business (request a domain), the nearest assistant looks up the number. If the business operates in multiple cities, the assistant routes your call to the closest office (latency-based routing). If one office is closed, they forward to the next (failover routing). They also handle load balancing → "press 1 for sales, press 2 for support" (weighted routing).
 
 ### How Cloud DNS Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud DNS Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-diagram.svg" alt="Diagram: How Cloud DNS Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-dns-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud DNS Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **Domain registration** → You register a domain (e.g., example.com) and delegate its DNS authority to the cloud DNS service by configuring NS records at the registrar.
@@ -2697,16 +2247,6 @@ Cloud DNS is like a **national telephone directory service operating across mult
 6. **Query resolution** → When a client queries, the resolver follows delegation chain from root → TLD → cloud DNS → answer, applying routing policy.
 
 ### Pseudocode: DNS Resolution with Latency-Based Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-handwritten.svg" alt="Handwritten: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-diagram.svg" alt="Diagram: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-dns-resolution-with-latency-based-routing-sticky.svg" alt="Sticky Note: Pseudocode: DNS Resolution with Latency-Based Routing" width="30%">
-</a>
 
 
 ```
@@ -2762,16 +2302,6 @@ END PROCEDURE
 
 ### Dry Run Trace: Route53 Latency-Based Routing
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-handwritten.svg" alt="Handwritten: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-diagram.svg" alt="Diagram: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-route53-latency-based-routing-sticky.svg" alt="Sticky Note: Dry Run Trace: Route53 Latency-Based Routing" width="30%">
-</a>
-
 
 **Records for api.example.com:**
 
@@ -2821,16 +2351,6 @@ END PROCEDURE
 | 7 | Recovery | us-east-1 health check passes → record reinstated |
 
 ### C++ Implementation: DNS Routing Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: DNS Routing Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-diagram.svg" alt="Diagram: C++ Implementation: DNS Routing Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-dns-routing-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: DNS Routing Simulator" width="30%">
-</a>
 
 
 ```cpp
@@ -2988,16 +2508,6 @@ int main() {
 
 ### Python Implementation: Cloud DNS with All Routing Policies
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-handwritten.svg" alt="Handwritten: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-diagram.svg" alt="Diagram: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-dns-with-all-routing-policies-sticky.svg" alt="Sticky Note: Python Implementation: Cloud DNS with All Routing Policies" width="30%">
-</a>
-
 
 ```python
 import random
@@ -3137,16 +2647,6 @@ for i in range(5):
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -3160,16 +2660,6 @@ for i in range(5):
 
 ### Advantages & Disadvantages of Cloud DNS
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud DNS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud DNS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-dns-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud DNS" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -3180,16 +2670,6 @@ for i in range(5):
 | Performance | Edge resolvers reduce latency | TTL tuning needed for balance |
 
 ### Edge Cases in Cloud DNS
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-handwritten.svg" alt="Handwritten: Edge Cases in Cloud DNS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-diagram.svg" alt="Diagram: Edge Cases in Cloud DNS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-cloud-dns-sticky.svg" alt="Sticky Note: Edge Cases in Cloud DNS" width="30%">
-</a>
 
 
 - **DNS propagation delay**: Non-alias records have a 60s minimum TTL. Record changes take 60-300s to propagate globally. For disaster recovery, use alias records (0s TTL) with Route53.
@@ -3207,30 +2687,10 @@ A Content Delivery Network (CDN) caches content at edge locations close to users
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A CDN is like a **chain of local grocery warehouses serving a national restaurant chain**. The central kitchen (origin server) in Chicago prepares all the food. Instead of every restaurant (user) receiving ingredients directly from Chicago, regional warehouses (edge nodes) in LA, NYC, Miami, and Denver stock popular items. A restaurant in LA gets most ingredients from the LA warehouse (cache hit) → 2ms delivery instead of 50ms from Chicago. If the LA warehouse is out of an ingredient (cache miss), it sends a refrigerated truck to Chicago, stocks it, then serves the restaurant. The restaurant doesn't know the difference.
 
 ### How CDN Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-handwritten.svg" alt="Handwritten: How CDN Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-diagram.svg" alt="Diagram: How CDN Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cdn-works-step-by-step-sticky.svg" alt="Sticky Note: How CDN Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **User requests content** → Browser requests `https://cdn.example.com/images/logo.png`.
@@ -3251,30 +2711,10 @@ A CDN is like a **chain of local grocery warehouses serving a national restauran
 
 ### 16.8.1 CDN Architecture
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-handwritten.svg" alt="Handwritten: 16.8.1 CDN Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-diagram.svg" alt="Diagram: 16.8.1 CDN Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-1-cdn-architecture-sticky.svg" alt="Sticky Note: 16.8.1 CDN Architecture" width="30%">
-</a>
-
 
 Origin servers store the definitive content. Edge nodes (points of presence, PoPs) cache content geographically near users. A user's request routes to the nearest edge node; if the content is cached (cache hit), the edge node serves it directly. On a cache miss, the edge node fetches from the origin, caches the response, and serves it.
 
 ### 16.8.2 Key CDN Features
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-handwritten.svg" alt="Handwritten: 16.8.2 Key CDN Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-diagram.svg" alt="Diagram: 16.8.2 Key CDN Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-2-key-cdn-features-sticky.svg" alt="Sticky Note: 16.8.2 Key CDN Features" width="30%">
-</a>
 
 
 **Tiered caching.** Content flows from origin → regional cache → edge cache, reducing origin load on cache misses.
@@ -3289,16 +2729,6 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 
 ### 16.8.3 Major CDNs
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-handwritten.svg" alt="Handwritten: 16.8.3 Major CDNs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-diagram.svg" alt="Diagram: 16.8.3 Major CDNs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/16-8-3-major-cdns-sticky.svg" alt="Sticky Note: 16.8.3 Major CDNs" width="30%">
-</a>
-
 
 | CDN | Nodes | Notes |
 |-----|-------|-------|
@@ -3309,16 +2739,6 @@ Origin servers store the definitive content. Edge nodes (points of presence, PoP
 | Azure CDN | 50+ | Microsoft integration, multiple providers |
 
 ### Pseudocode: CDN Request Handling with Tiered Caching
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-handwritten.svg" alt="Handwritten: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-diagram.svg" alt="Diagram: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-cdn-request-handling-with-tiered-caching-sticky.svg" alt="Sticky Note: Pseudocode: CDN Request Handling with Tiered Caching" width="30%">
-</a>
 
 
 ```
@@ -3359,16 +2779,6 @@ END PROCEDURE
 ```
 
 ### Dry Run Trace: CDN Request Lifecycle
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-handwritten.svg" alt="Handwritten: Dry Run Trace: CDN Request Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-diagram.svg" alt="Diagram: Dry Run Trace: CDN Request Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cdn-request-lifecycle-sticky.svg" alt="Sticky Note: Dry Run Trace: CDN Request Lifecycle" width="30%">
-</a>
 
 
 **Setup:** Origin in us-east-1, Edge in Tokyo, Regional cache in ap-northeast-1
@@ -3424,16 +2834,6 @@ END PROCEDURE
 **CDN Benefit:** 15ms vs 235ms for cached content → **93% latency reduction**.
 
 ### C++ Implementation: CDN Cache Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: CDN Cache Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-diagram.svg" alt="Diagram: C++ Implementation: CDN Cache Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-cdn-cache-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: CDN Cache Simulator" width="30%">
-</a>
 
 
 ```cpp
@@ -3630,16 +3030,6 @@ int main() {
 
 ### Python Implementation: CDN with Cache Hit Ratio Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-handwritten.svg" alt="Handwritten: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-diagram.svg" alt="Diagram: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cdn-with-cache-hit-ratio-analysis-sticky.svg" alt="Sticky Note: Python Implementation: CDN with Cache Hit Ratio Analysis" width="30%">
-</a>
-
 
 ```python
 import time
@@ -3800,16 +3190,6 @@ for round_num in range(1, simulation_rounds + 1):
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -3821,16 +3201,6 @@ for round_num in range(1, simulation_rounds + 1):
 
 ### Advantages & Disadvantages of CDN
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of CDN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-diagram.svg" alt="Diagram: Advantages & Disadvantages of CDN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cdn-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of CDN" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -3841,16 +3211,6 @@ for round_num in range(1, simulation_rounds + 1):
 | Cost | Reduced bandwidth costs | CDN data transfer + purge request costs |
 
 ### Edge Cases for CDN
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-handwritten.svg" alt="Handwritten: Edge Cases for CDN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-diagram.svg" alt="Diagram: Edge Cases for CDN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cdn-sticky.svg" alt="Sticky Note: Edge Cases for CDN" width="30%">
-</a>
 
 
 - **Cache stampede (thundering herd)**: When popular content's TTL expires, all edge nodes fetch from origin simultaneously. Mitigate with: stale-while-revalidate, request collapsing, or probabilistic cache purging.
@@ -4135,30 +3495,10 @@ demoCDNManager();
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A VPN to the cloud is like a **secure armored tunnel through a public highway**. Your office (on-premises network) needs to send sensitive documents to a bank's vault (cloud VPC). Rather than sending couriers on public roads (internet), you build a secure underground tunnel (IPSec tunnel) between your office basement and the bank's basement. Only authorized vehicles (encrypted packets) can enter. The tunnel itself is invisible to anyone on the surface, and any attempt to intercept the vehicles just reveals scrambled nonsense.
 
 ### How Cloud VPN Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-handwritten.svg" alt="Handwritten: How Cloud VPN Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-diagram.svg" alt="Diagram: How Cloud VPN Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-cloud-vpn-works-step-by-step-sticky.svg" alt="Sticky Note: How Cloud VPN Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **Gateway creation** → Create a VPN gateway in the cloud VPC and configure a customer gateway (CGW) representing the on-premises VPN device.
@@ -4176,16 +3516,6 @@ A VPN to the cloud is like a **secure armored tunnel through a public highway**.
 7. **NAT traversal** → If both ends use NAT devices, UDP encapsulation (4500) wraps ESP packets to traverse NAT.
 
 ### Pseudocode: IPSec VPN Tunnel Establishment
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-handwritten.svg" alt="Handwritten: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-diagram.svg" alt="Diagram: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-ipsec-vpn-tunnel-establishment-sticky.svg" alt="Sticky Note: Pseudocode: IPSec VPN Tunnel Establishment" width="30%">
-</a>
 
 
 ```
@@ -4250,16 +3580,6 @@ END PROCEDURE
 
 ### Dry Run Trace: Cloud VPN Connectivity
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-handwritten.svg" alt="Handwritten: Dry Run Trace: Cloud VPN Connectivity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-diagram.svg" alt="Diagram: Dry Run Trace: Cloud VPN Connectivity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-cloud-vpn-connectivity-sticky.svg" alt="Sticky Note: Dry Run Trace: Cloud VPN Connectivity" width="30%">
-</a>
-
 
 **VPC:** 10.0.0.0/16 (us-east-1)
 **On-premises:** 192.168.0.0/16
@@ -4304,16 +3624,6 @@ END PROCEDURE
 | 7 | Failover time | ~15-60 seconds total (DPD + BGP convergence) |
 
 ### C++ Implementation: VPN Tunnel Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: VPN Tunnel Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-diagram.svg" alt="Diagram: C++ Implementation: VPN Tunnel Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-vpn-tunnel-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: VPN Tunnel Simulator" width="30%">
-</a>
 
 
 ```cpp
@@ -4496,16 +3806,6 @@ int main() {
 
 ### Python Implementation: Cloud VPN Simulator
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Cloud VPN Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-diagram.svg" alt="Diagram: Python Implementation: Cloud VPN Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-cloud-vpn-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Cloud VPN Simulator" width="30%">
-</a>
-
 
 ```python
 import time
@@ -4604,16 +3904,6 @@ vpn.status()
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -4627,16 +3917,6 @@ vpn.status()
 
 ### Advantages & Disadvantages of Cloud VPN
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Cloud VPN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-diagram.svg" alt="Diagram: Advantages & Disadvantages of Cloud VPN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-cloud-vpn-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Cloud VPN" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -4647,16 +3927,6 @@ vpn.status()
 | Bandwidth | Up to 10 Gbps per tunnel | Shared internet, no guaranteed throughput |
 
 ### Edge Cases for Cloud VPN
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-handwritten.svg" alt="Handwritten: Edge Cases for Cloud VPN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-diagram.svg" alt="Diagram: Edge Cases for Cloud VPN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-cloud-vpn-sticky.svg" alt="Sticky Note: Edge Cases for Cloud VPN" width="30%">
-</a>
 
 
 - **NAT traversal**: If both VPN endpoints are behind NAT, ESP packets are dropped. Use UDP encapsulation (port 4500) to wrap ESP in UDP. Enable "Force UDP encapsulation" on cloud VPN.
@@ -4671,30 +3941,10 @@ vpn.status()
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Direct Connect is like a **private subway line between your office building and the bank's main vault**. Unlike the VPN's armored truck on public roads (which can get stuck in traffic), the subway line is a dedicated tunnel that only your employees use. There's no traffic, no weather delays, and no chance of highway robbery. However, building the subway takes months of digging permits and construction contracts (physical circuit provisioning), while the armored truck can start running today.
 
 ### How Direct Connect Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-handwritten.svg" alt="Handwritten: How Direct Connect Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-diagram.svg" alt="Diagram: How Direct Connect Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-direct-connect-works-step-by-step-sticky.svg" alt="Sticky Note: How Direct Connect Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **Request connection** → Order a Direct Connect port from AWS/Azure/GCP at a supported DX location (colocation facility).
@@ -4710,16 +3960,6 @@ Direct Connect is like a **private subway line between your office building and 
 6. **Traffic flow** → On-premises → DX location → provider network → VPC. No internet transit at any point.
 
 ### Pseudocode: Direct Connect BGP Session Setup
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-handwritten.svg" alt="Handwritten: Pseudocode: Direct Connect BGP Session Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-diagram.svg" alt="Diagram: Pseudocode: Direct Connect BGP Session Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-direct-connect-bgp-session-setup-sticky.svg" alt="Sticky Note: Pseudocode: Direct Connect BGP Session Setup" width="30%">
-</a>
 
 
 ```
@@ -4772,16 +4012,6 @@ END PROCEDURE
 
 ### Dry Run Trace: Direct Connect Packet Flow
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-handwritten.svg" alt="Handwritten: Dry Run Trace: Direct Connect Packet Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-diagram.svg" alt="Diagram: Dry Run Trace: Direct Connect Packet Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-direct-connect-packet-flow-sticky.svg" alt="Sticky Note: Dry Run Trace: Direct Connect Packet Flow" width="30%">
-</a>
-
 
 **Setup:** On-prem (192.168.0.0/16) → DX Location (Equinix NY7) → AWS us-east-1 (10.0.0.0/16)
 
@@ -4820,16 +4050,6 @@ END PROCEDURE
 **Direct Connect vs VPN latency savings: ~85% reduction (3.3ms vs 22ms).**
 
 ### C++ Implementation: Direct Connect Bandwidth Calculator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-handwritten.svg" alt="Handwritten: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-diagram.svg" alt="Diagram: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-direct-connect-bandwidth-calculator-sticky.svg" alt="Sticky Note: C++ Implementation: Direct Connect Bandwidth Calculator" width="30%">
-</a>
 
 
 ```cpp
@@ -4899,16 +4119,6 @@ int main() {
 
 ### Python Implementation: Direct Connect Cost vs VPN Analyzer
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-handwritten.svg" alt="Handwritten: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-diagram.svg" alt="Diagram: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-direct-connect-cost-vs-vpn-analyzer-sticky.svg" alt="Sticky Note: Python Implementation: Direct Connect Cost vs VPN Analyzer" width="30%">
-</a>
-
 
 ```python
 def analyze_connectivity(daily_data_gb: float):
@@ -4964,16 +4174,6 @@ analyze_connectivity(daily_data_gb=10000)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -4983,16 +4183,6 @@ analyze_connectivity(daily_data_gb=10000)
 | VLAN tagging | O(1) | O(1) | 4-byte 802.1Q tag inserted in Ethernet header |
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Aspect | Advantage | Disadvantage |
@@ -5004,16 +4194,6 @@ analyze_connectivity(daily_data_gb=10000)
 | Cost | Predictable for high volume | High minimum cost compared to VPN |
 
 ### Edge Cases for Direct Connect
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-handwritten.svg" alt="Handwritten: Edge Cases for Direct Connect" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-diagram.svg" alt="Diagram: Edge Cases for Direct Connect" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-direct-connect-sticky.svg" alt="Sticky Note: Edge Cases for Direct Connect" width="30%">
-</a>
 
 
 - **Port speed upgrade**: Requires new circuit. Cannot upgrade a 1G port to 10G; must order a new 10G port and migrate.
@@ -5054,30 +4234,10 @@ analyze_connectivity(daily_data_gb=10000)
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Multi-cloud networking is like a **company with offices in three different city business districts**, each with its own internal mail system. To connect them, you build dedicated courier routes between offices (direct connects/VPNs to each cloud), set up a central mail sorting facility (centralized network hub), and ensure the mail format is compatible across all cities (standard protocols like BGP and IPSec). A mail piece from New York (AWS) to London (Azure) goes: NY office → NY courier → sorting facility → London courier → London office.
 
 ### How Multi-Cloud Networking Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-handwritten.svg" alt="Handwritten: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-diagram.svg" alt="Diagram: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-multi-cloud-networking-works-step-by-step-sticky.svg" alt="Sticky Note: How Multi-Cloud Networking Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **Establish connectivity** → Set up VPN or Direct Connect from each cloud provider to a common hub (could be a colocation facility, Transit Gateway, or third-party SD-WAN).
@@ -5093,16 +4253,6 @@ Multi-cloud networking is like a **company with offices in three different city 
 6. **Monitoring** → Unified observability across clouds using Datadog, Grafana, or cloud-agnostic tools.
 
 ### Pseudocode: Multi-Cloud Route Advertisement
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-handwritten.svg" alt="Handwritten: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-diagram.svg" alt="Diagram: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-multi-cloud-route-advertisement-sticky.svg" alt="Sticky Note: Pseudocode: Multi-Cloud Route Advertisement" width="30%">
-</a>
 
 
 ```
@@ -5146,16 +4296,6 @@ END PROCEDURE
 
 ### Dry Run Trace: Multi-Cloud Request Flow
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-handwritten.svg" alt="Handwritten: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-diagram.svg" alt="Diagram: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-multi-cloud-request-flow-sticky.svg" alt="Sticky Note: Dry Run Trace: Multi-Cloud Request Flow" width="30%">
-</a>
-
 
 **Setup:**
 - AWS us-east-1: 10.0.0.0/16 (web tier)
@@ -5179,16 +4319,6 @@ END PROCEDURE
 | | **Total** | | **~58ms (including inference)** |
 
 ### C++ Implementation: Multi-Cloud Route Table
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-handwritten.svg" alt="Handwritten: C++ Implementation: Multi-Cloud Route Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-diagram.svg" alt="Diagram: C++ Implementation: Multi-Cloud Route Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-multi-cloud-route-table-sticky.svg" alt="Sticky Note: C++ Implementation: Multi-Cloud Route Table" width="30%">
-</a>
 
 
 ```cpp
@@ -5324,16 +4454,6 @@ int main() {
 
 ### Python Implementation: Multi-Cloud Latency Analyzer
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-handwritten.svg" alt="Handwritten: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-diagram.svg" alt="Diagram: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-multi-cloud-latency-analyzer-sticky.svg" alt="Sticky Note: Python Implementation: Multi-Cloud Latency Analyzer" width="30%">
-</a>
-
 
 ```python
 from dataclasses import dataclass
@@ -5413,16 +4533,6 @@ mcn.trace("GCP", "10.0.0.50", 4)
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -5431,16 +4541,6 @@ mcn.trace("GCP", "10.0.0.50", 4)
 | BGP across clouds | O(R^2) worst | O(R) | Different ASNs, iBGP mesh complexity |
 
 ### Edge Cases in Multi-Cloud
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-handwritten.svg" alt="Handwritten: Edge Cases in Multi-Cloud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-diagram.svg" alt="Diagram: Edge Cases in Multi-Cloud" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-in-multi-cloud-sticky.svg" alt="Sticky Note: Edge Cases in Multi-Cloud" width="30%">
-</a>
 
 
 - **CIDR overlap**: Different clouds must not use overlapping CIDRs, or NAT must be applied at the hub. Plan IP space globally.
@@ -5454,30 +4554,10 @@ mcn.trace("GCP", "10.0.0.50", 4)
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 A service mesh is like an **air traffic control system for every courier in a city**. Without air traffic control (traditional networking), each courier drives using paper maps (service discovery), calls ahead to check if the recipient is home (health checks), and negotiates delivery routes themselves (load balancing). With air traffic control (service mesh), every courier has a radio (sidecar proxy) that tells them exactly where to go, reroutes around traffic (circuit breaking), encrypts their cargo (mTLS), and logs every delivery (observability). The couriers don't need to think → the control tower handles it.
 
 ### How Service Mesh Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-handwritten.svg" alt="Handwritten: How Service Mesh Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-diagram.svg" alt="Diagram: How Service Mesh Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-service-mesh-works-step-by-step-sticky.svg" alt="Sticky Note: How Service Mesh Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **Sidecar injection** → An admission webhook automatically injects an Envoy (Istio) or Linkerd-proxy sidecar container into each pod at deployment time.
@@ -5495,16 +4575,6 @@ A service mesh is like an **air traffic control system for every courier in a ci
 7. **Control plane sync** → The control plane distributes configuration updates to all sidecars via xDS (Istio) or gRPC streaming (Linkerd).
 
 ### Pseudocode: Service Mesh Request with mTLS and Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-handwritten.svg" alt="Handwritten: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-diagram.svg" alt="Diagram: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-service-mesh-request-with-mtls-and-routing-sticky.svg" alt="Sticky Note: Pseudocode: Service Mesh Request with mTLS and Routing" width="30%">
-</a>
 
 
 ```
@@ -5560,16 +4630,6 @@ END PROCEDURE
 
 ### Dry Run Trace: Istio Service Mesh Request
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-handwritten.svg" alt="Handwritten: Dry Run Trace: Istio Service Mesh Request" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-diagram.svg" alt="Diagram: Dry Run Trace: Istio Service Mesh Request" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-istio-service-mesh-request-sticky.svg" alt="Sticky Note: Dry Run Trace: Istio Service Mesh Request" width="30%">
-</a>
-
 
 **Setup:**
 - Service: `frontend` (v1) → `backend` (v1=80%, v2=20% canary)
@@ -5608,16 +4668,6 @@ END PROCEDURE
 | 8 | Probe succeeds | Circuit CLOSED → normal routing resumes |
 
 ### C++ Implementation: Service Mesh Sidecar Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-diagram.svg" alt="Diagram: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-service-mesh-sidecar-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Service Mesh Sidecar Simulator" width="30%">
-</a>
 
 
 ```cpp
@@ -5826,16 +4876,6 @@ int main() {
 
 ### Python Implementation: Service Mesh Simulator
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Service Mesh Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-diagram.svg" alt="Diagram: Python Implementation: Service Mesh Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-service-mesh-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Service Mesh Simulator" width="30%">
-</a>
-
 
 ```python
 import random
@@ -5974,16 +5014,6 @@ mesh.stats()
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -5997,16 +5027,6 @@ mesh.stats()
 
 ### Advantages & Disadvantages of Service Mesh
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-handwritten.svg" alt="Handwritten: Advantages & Disadvantages of Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-diagram.svg" alt="Diagram: Advantages & Disadvantages of Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/advantages-disadvantages-of-service-mesh-sticky.svg" alt="Sticky Note: Advantages & Disadvantages of Service Mesh" width="30%">
-</a>
-
 
 | Aspect | Advantage | Disadvantage |
 |--------|-----------|-------------|
@@ -6016,16 +5036,6 @@ mesh.stats()
 | Resilience | Circuit breakers, bulkheading | Added latency per hop (1-3ms sidecar) |
 
 ### Edge Cases for Service Mesh
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-handwritten.svg" alt="Handwritten: Edge Cases for Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-diagram.svg" alt="Diagram: Edge Cases for Service Mesh" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-service-mesh-sticky.svg" alt="Sticky Note: Edge Cases for Service Mesh" width="30%">
-</a>
 
 
 - **Sidecar resource overhead**: Each sidecar consumes ~50-100MB RAM and 0.5-1 vCPU. With 1000 pods, overhead is significant.
@@ -6060,30 +5070,10 @@ mesh.stats()
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Anycast is like a **nationwide pizza chain with one phone number**. When you dial the number, your call is routed to the nearest store (not a central call center). The same phone number works in New York (routes to NY store) and Los Angeles (routes to LA store). If the NY store is busy, the call may route to the next closest store. Each store is advertising the same phone number → it's the network that decides which store answers based on location. This is exactly how anycast works: multiple servers advertise the same IP, and BGP routing sends each client to the nearest one.
 
 ### How Anycast Works: Step-by-Step
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-handwritten.svg" alt="Handwritten: How Anycast Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-diagram.svg" alt="Diagram: How Anycast Works: Step-by-Step" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-anycast-works-step-by-step-sticky.svg" alt="Sticky Note: How Anycast Works: Step-by-Step" width="30%">
-</a>
 
 
 1. **IP prefix advertisement** → Multiple locations (e.g., DNS servers in NY, London, Tokyo) advertise the same IP prefix (e.g., 1.1.1.1/32) via BGP to their upstream ISPs.
@@ -6097,16 +5087,6 @@ Anycast is like a **nationwide pizza chain with one phone number**. When you dia
 5. **Failover** → If the Tokyo node fails, its BGP advertisement is withdrawn. The Tokyo client's traffic automatically routes to the next nearest node (e.g., Singapore).
 
 ### Pseudocode: Anycast Routing
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-handwritten.svg" alt="Handwritten: Pseudocode: Anycast Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-diagram.svg" alt="Diagram: Pseudocode: Anycast Routing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/pseudocode-anycast-routing-sticky.svg" alt="Sticky Note: Pseudocode: Anycast Routing" width="30%">
-</a>
 
 
 ```
@@ -6132,16 +5112,6 @@ END PROCEDURE
 ```
 
 ### Dry Run Trace: Anycast DNS Resolution
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-handwritten.svg" alt="Handwritten: Dry Run Trace: Anycast DNS Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-diagram.svg" alt="Diagram: Dry Run Trace: Anycast DNS Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/dry-run-trace-anycast-dns-resolution-sticky.svg" alt="Sticky Note: Dry Run Trace: Anycast DNS Resolution" width="30%">
-</a>
 
 
 **Setup:** DNS server 1.1.1.1 advertised from 5 locations
@@ -6177,16 +5147,6 @@ END PROCEDURE
 | 6 | Latency impact | 2ms → 10ms (still acceptable for DNS) |
 
 ### C++ Implementation: Anycast Route Simulator
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-handwritten.svg" alt="Handwritten: C++ Implementation: Anycast Route Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-diagram.svg" alt="Diagram: C++ Implementation: Anycast Route Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/c-implementation-anycast-route-simulator-sticky.svg" alt="Sticky Note: C++ Implementation: Anycast Route Simulator" width="30%">
-</a>
 
 
 ```cpp
@@ -6288,16 +5248,6 @@ int main() {
 
 ### Python Implementation: Anycast Network Simulator
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-handwritten.svg" alt="Handwritten: Python Implementation: Anycast Network Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-diagram.svg" alt="Diagram: Python Implementation: Anycast Network Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/python-implementation-anycast-network-simulator-sticky.svg" alt="Sticky Note: Python Implementation: Anycast Network Simulator" width="30%">
-</a>
-
 
 ```python
 from dataclasses import dataclass
@@ -6379,16 +5329,6 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |---|---|---|---|
@@ -6397,16 +5337,6 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 | Anycast routing decision | O(1) | O(1) | Single BGP best path selected |
 
 ### Edge Cases for Anycast
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-handwritten.svg" alt="Handwritten: Edge Cases for Anycast" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-diagram.svg" alt="Diagram: Edge Cases for Anycast" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/edge-cases-for-anycast-sticky.svg" alt="Sticky Note: Edge Cases for Anycast" width="30%">
-</a>
 
 
 - **BGP convergence delay**: When a node fails, BGP withdrawal takes 15-60 seconds to propagate globally. Clients may hit dead nodes during this window.
@@ -6441,90 +5371,30 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 
 ### Q1: How does cloud networking differ from on-premises networking?
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-handwritten.svg" alt="Handwritten: How does cloud networking differ from on-premises networking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-diagram.svg" alt="Diagram: How does cloud networking differ from on-premises networking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-cloud-networking-differ-from-on-premises-networking-sticky.svg" alt="Sticky Note: How does cloud networking differ from on-premises networking?" width="30%">
-</a>
-
 
 **Answer:** Cloud networking is software-defined and API-driven. In on-premises, you physically rack switches and configure them via CLI. In the cloud, a VPC is an API resource created in seconds. Routing tables, security groups, and load balancers are all programmable. The cloud provider handles physical redundancy (multi-AZ), and you pay per-use instead of CapEx. The trade-off is reduced control over the physical network and reliance on provider limits (e.g., VPC peering is non-transitive, security groups max at 60 rules).
 
 ### Q2: Compare round-robin vs least-connections vs IP hash load balancing.
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-handwritten.svg" alt="Handwritten: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-diagram.svg" alt="Diagram: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/compare-round-robin-vs-least-connections-vs-ip-hash-load-balancing-sticky.svg" alt="Sticky Note: Compare round-robin vs least-connections vs IP hash load balancing." width="30%">
-</a>
 
 
 **Answer:** Round-robin cycles through targets in order → O(1), works well when requests have similar cost, but causes imbalance for variable-length requests. Least-connections sends to the target with fewest active connections → O(N), ideal for variable workloads but requires connection tracking overhead. IP hash consistently maps a client IP to the same target → O(1), useful for session persistence without cookies, but can cause hot spots if a few IPs dominate traffic. ALB uses round-robin by default; NLB uses flow hashing.
 
 ### Q3: What is DNS propagation and why does it matter?
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-handwritten.svg" alt="Handwritten: What is DNS propagation and why does it matter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-diagram.svg" alt="Diagram: What is DNS propagation and why does it matter?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-is-dns-propagation-and-why-does-it-matter-sticky.svg" alt="Sticky Note: What is DNS propagation and why does it matter?" width="30%">
-</a>
-
 
 **Answer:** DNS propagation is the time for a DNS record change to reach all recursive resolvers worldwide. It depends on the TTL set on the record and the resolver's cache behavior. A record with TTL=300s propagates in ~5 minutes; TTL=86400s takes 24 hours. Propagation matters for disaster recovery → if you failover to a secondary region, clients with cached DNS may still hit the failed primary for up to the TTL. Use Route53 alias records (0s TTL) for instant failover.
 
 ### Q4: What factors determine a multi-cloud strategy?
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-handwritten.svg" alt="Handwritten: What factors determine a multi-cloud strategy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-diagram.svg" alt="Diagram: What factors determine a multi-cloud strategy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-factors-determine-a-multi-cloud-strategy-sticky.svg" alt="Sticky Note: What factors determine a multi-cloud strategy?" width="30%">
-</a>
 
 
 **Answer:** Multi-cloud strategy depends on: (a) vendor lock-in risk → distributing workloads prevents dependency on one provider; (b) geographic coverage → some providers have better PoP coverage in specific regions; (c) service specialization → use GCP for BigQuery, AWS for Lambda, Azure for Active Directory integration; (d) compliance → some data must stay in specific jurisdictions; (e) cost optimization → spot pricing varies by provider and region. Downsides: increased complexity, data transfer costs between clouds, and needing expertise in multiple platforms.
 
 ### Q5: What happens when a load balancer health check fails?
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-handwritten.svg" alt="Handwritten: What happens when a load balancer health check fails?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-diagram.svg" alt="Diagram: What happens when a load balancer health check fails?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/what-happens-when-a-load-balancer-health-check-fails-sticky.svg" alt="Sticky Note: What happens when a load balancer health check fails?" width="30%">
-</a>
-
 
 **Answer:** The load balancer stops routing traffic to the unhealthy target. ALB health checks are HTTP-based → if a target returns non-2xx/3xx or times out after N consecutive checks, it's marked unhealthy. The target is removed from rotation. The LB continues health checking at the configured interval. When the target returns success again for N consecutive checks, it's marked healthy and rejoins rotation. Connection draining allows in-flight requests to complete before full removal (up to 300s).
 
 ### Q6: How does VXLAN isolate tenants in cloud networking?
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-handwritten.svg" alt="Handwritten: How does VXLAN isolate tenants in cloud networking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-diagram.svg" alt="Diagram: How does VXLAN isolate tenants in cloud networking?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/how-does-vxlan-isolate-tenants-in-cloud-networking-sticky.svg" alt="Sticky Note: How does VXLAN isolate tenants in cloud networking?" width="30%">
-</a>
 
 
 **Answer:** VXLAN (Virtual Extensible LAN) encapsulates Layer 2 frames in UDP packets with a 24-bit VXLAN Network Identifier (VNI). Each tenant gets a unique VNI, allowing 16 million isolated networks over a shared physical fabric. Standard VLANs only support 4096 IDs. The hypervisor's virtual switch tags every packet with the tenant's VNI. When a packet arrives at a different hypervisor, the VNI is checked → packets from different VNIs are never forwarded to each other, providing complete L2 isolation.
@@ -6534,16 +5404,6 @@ for client in ["tokyo", "singapore", "london", "new-york", "sydney"]:
 ## 16.19 Applications in Real Systems
 
 ### AWS: VPC + ALB Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-handwritten.svg" alt="Handwritten: AWS: VPC + ALB Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-diagram.svg" alt="Diagram: AWS: VPC + ALB Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/aws-vpc-alb-architecture-sticky.svg" alt="Sticky Note: AWS: VPC + ALB Architecture" width="30%">
-</a>
 
 
 ```
@@ -6558,16 +5418,6 @@ Internet → Route53 → CloudFront → ALB → Web Targets (public subnets)
 
 ### Google Cloud: VPC + Cloud CDN
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-handwritten.svg" alt="Handwritten: Google Cloud: VPC + Cloud CDN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-diagram.svg" alt="Diagram: Google Cloud: VPC + Cloud CDN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/google-cloud-vpc-cloud-cdn-sticky.svg" alt="Sticky Note: Google Cloud: VPC + Cloud CDN" width="30%">
-</a>
-
 
 ```
 Global HTTP(S) LB → Cloud CDN → Backend Buckets (static) → Cloud Storage
@@ -6578,16 +5428,6 @@ Global HTTP(S) LB → Cloud CDN → Backend Buckets (static) → Cloud Storage
 **Real GCP setup:** VPC in auto-mode (10.128.0.0/20 default). Global HTTPS Load Balancer with Cloud CDN enabled. Backend bucket for static assets (pointing to Cloud Storage bucket). Backend service for dynamic APIs (NEG pointing to Cloud Run services). Cloud Armor WAF policy attached to the LB for OWASP rule set. IAP (Identity-Aware Proxy) for user authentication before traffic reaches services.
 
 ### Azure: Virtual Network Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-handwritten.svg" alt="Handwritten: Azure: Virtual Network Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-diagram.svg" alt="Diagram: Azure: Virtual Network Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/azure-virtual-network-architecture-sticky.svg" alt="Sticky Note: Azure: Virtual Network Architecture" width="30%">
-</a>
 
 
 ```
@@ -6602,16 +5442,6 @@ Azure Front Door → Application Gateway (WAF) → VMSS (web tier, public subnet
 **Real Azure setup:** VNet 10.0.0.0/16 with subnets: AzureBastionSubnet (10.0.0.0/27), web subnet (10.0.1.0/24) with NSG allowing 443 from Front Door, app subnet (10.0.2.0/24) with NSG allowing 8080 from web, data subnet (10.0.3.0/24) with private endpoint for Azure SQL. Application Gateway (WAF_v2) in front with TLS termination and path-based routing. Azure Front Door for global load balancing and CDN.
 
 ### Istio on Kubernetes
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-handwritten.svg" alt="Handwritten: Istio on Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-diagram.svg" alt="Diagram: Istio on Kubernetes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/istio-on-kubernetes-sticky.svg" alt="Sticky Note: Istio on Kubernetes" width="30%">
-</a>
 
 
 ```
@@ -6641,45 +5471,15 @@ Ingress Gateway → VirtualService → DestinationRule → Pod (sidecar Envoy)
 
 ### Problem
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-handwritten.svg" alt="Handwritten: Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-diagram.svg" alt="Diagram: Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/problem-sticky.svg" alt="Sticky Note: Problem" width="30%">
-</a>
-
 
 A rapidly growing e-commerce platform serving 5 million monthly visitors across North America, Europe, and Asia-Pacific was running on a single-region data center in Virginia. Users in Tokyo experienced 350ms+ page load times. Peak traffic (Black Friday) caused the origin servers to saturate at 12 Gbps, triggering 503 errors for 15% of requests. The platform used a single hardware load balancer (F5), manual failover procedures, and static DNS A records.
 
 ### Solution
 
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-handwritten.svg" alt="Handwritten: Solution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-diagram.svg" alt="Diagram: Solution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/solution-sticky.svg" alt="Sticky Note: Solution" width="30%">
-</a>
-
 
 The engineering team migrated to a multi-region AWS architecture. Each region (us-east-1, eu-west-1, ap-southeast-1) received a full VPC stack: public subnets with ALBs for TLS termination and path-based routing, private subnets for application servers (ECS Fargate), and isolated database subnets with RDS Multi-AZ. CloudFront was deployed globally with tiered caching (edge → regional → origin), achieving a 92% cache hit rate. Route53 latency-based routing directed users to the nearest healthy region. A Transit Gateway connected all three VPCs to on-premises systems via Direct Connect (1 Gbps to us-east-1). AWS Global Accelerator provided static anycast IPs with endpoint failover under 30 seconds.
 
 ### Outcome
-
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-handwritten.svg" alt="Handwritten: Outcome" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-diagram.svg" alt="Diagram: Outcome" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/16-cloud-networking/outcome-sticky.svg" alt="Sticky Note: Outcome" width="30%">
-</a>
 
 
 Page load times dropped from 350ms to 45ms for Tokyo users (87% improvement). The origin load reduced from 12 Gbps to under 1 Gbps (92% offload), eliminating the need for origin scaling during peak events. The 2023 Black Friday event handled 3× normal traffic with zero 503 errors and 99.99% availability. Infrastructure provisioning dropped from 3 weeks (data center) to 45 minutes (Terraform + CloudFormation). Annual infrastructure cost was reduced by 40% through reserved instances and CDN bandwidth savings.

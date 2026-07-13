@@ -90,16 +90,6 @@ flowchart LR
 
 ### 15.1 MCP Overview
 
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-1-mcp-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-1-mcp-overview-handwritten.svg" alt="Handwritten: 15.1 MCP Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-1-mcp-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-1-mcp-overview-diagram.svg" alt="Diagram: 15.1 MCP Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-1-mcp-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-1-mcp-overview-sticky.svg" alt="Sticky Note: 15.1 MCP Overview" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** MCP is an open standard defining how AI clients communicate with servers that provide tools, resources, and prompts via JSON-RPC.
 
@@ -133,16 +123,6 @@ A single server class declares its capabilities declaratively via PHP attributes
 
 ### 15.2 Installation
 
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-2-installation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-2-installation-handwritten.svg" alt="Handwritten: 15.2 Installation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-2-installation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-2-installation-diagram.svg" alt="Diagram: 15.2 Installation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-2-installation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-2-installation-sticky.svg" alt="Sticky Note: 15.2 Installation" width="30%">
-</a>
-
 
 Start by requiring the package and publishing the configuration:
 
@@ -159,16 +139,6 @@ The publish command creates a `routes/ai.php` file where you register your MCP s
 The package also publishes a `config/mcp.php` configuration file where you can set defaults for authentication, rate limiting, and client registration.
 
 ### 15.3 Creating Servers
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-3-creating-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-3-creating-servers-handwritten.svg" alt="Handwritten: 15.3 Creating Servers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-3-creating-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-3-creating-servers-diagram.svg" alt="Diagram: 15.3 Creating Servers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-3-creating-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-3-creating-servers-sticky.svg" alt="Sticky Note: 15.3 Creating Servers" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** MCP servers are Laravel classes extending Server with PHP attributes for name, version, and instructions, and arrays for tools, resources, and prompts.
@@ -226,16 +196,6 @@ The `$tools`, `$resources`, and `$prompts` arrays register the server's capabili
 
 ### 15.4 Server Registration
 
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-4-server-registration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-4-server-registration-handwritten.svg" alt="Handwritten: 15.4 Server Registration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-4-server-registration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-4-server-registration-diagram.svg" alt="Diagram: 15.4 Server Registration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-4-server-registration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-4-server-registration-sticky.svg" alt="Sticky Note: 15.4 Server Registration" width="30%">
-</a>
-
 
 Servers are registered in `routes/ai.php`. There are two deployment modes:
 
@@ -272,16 +232,6 @@ Mcp::local('analytics', AnalyticsServer::class);
 Local servers are invoked via `php artisan mcp:call {server} {tool}` and are ideal for AI coding agents that run in the same environment as your application.
 
 ### 15.5 Creating Tools
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-5-creating-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-5-creating-tools-handwritten.svg" alt="Handwritten: 15.5 Creating Tools" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-5-creating-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-5-creating-tools-diagram.svg" alt="Diagram: 15.5 Creating Tools" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-5-creating-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-5-creating-tools-sticky.svg" alt="Sticky Note: 15.5 Creating Tools" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** MCP tools define inputSchema for parameters, handle() for execution logic, and outputSchema for response documentation.
@@ -408,16 +358,6 @@ The `outputSchema()` method documents what the response contains. This helps the
 
 ### 15.6 Tool Annotations
 
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-6-tool-annotations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-6-tool-annotations-handwritten.svg" alt="Handwritten: 15.6 Tool Annotations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-6-tool-annotations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-6-tool-annotations-diagram.svg" alt="Diagram: 15.6 Tool Annotations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-6-tool-annotations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-6-tool-annotations-sticky.svg" alt="Sticky Note: 15.6 Tool Annotations" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Annotations like IsReadOnly, IsDestructive, IsIdempotent, and IsOpenWorld communicate behavioral metadata to guide AI agent decision-making.
 
@@ -472,16 +412,6 @@ The four annotations are:
 - `#[IsOpenWorld]` → The tool interacts with external systems (APIs, third-party services). Results may change between calls
 
 ### 15.7 Tool Responses
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-7-tool-responses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-7-tool-responses-handwritten.svg" alt="Handwritten: 15.7 Tool Responses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-7-tool-responses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-7-tool-responses-diagram.svg" alt="Diagram: 15.7 Tool Responses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-7-tool-responses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-7-tool-responses-sticky.svg" alt="Sticky Note: 15.7 Tool Responses" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Tools return structured responses via Response::text(), Response::fromStorage(), Response::error(), Response::image(), and streaming generators.
@@ -609,16 +539,6 @@ class StreamLogsTool extends Tool
 
 ### 15.8 Prompts
 
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-8-prompts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-8-prompts-handwritten.svg" alt="Handwritten: 15.8 Prompts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-8-prompts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-8-prompts-diagram.svg" alt="Diagram: 15.8 Prompts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-8-prompts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-8-prompts-sticky.svg" alt="Sticky Note: 15.8 Prompts" width="30%">
-</a>
-
 
 Prompts are pre-written templates that guide the AI agent's behavior. They help the model produce consistent, high-quality output for specific tasks:
 
@@ -696,16 +616,6 @@ Argument::make('name', 'Description')
 ```
 
 ### 15.9 Resources
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-9-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-9-resources-handwritten.svg" alt="Handwritten: 15.9 Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-9-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-9-resources-diagram.svg" alt="Diagram: 15.9 Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-9-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-9-resources-sticky.svg" alt="Sticky Note: 15.9 Resources" width="30%">
-</a>
 
 
 Resources expose readable data to the AI agent. They are identified by URIs and have a MIME type:
@@ -794,16 +704,6 @@ public function getResources(): array
 ```
 
 ### 15.10 MCP Apps
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-10-mcp-apps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-10-mcp-apps-handwritten.svg" alt="Handwritten: 15.10 MCP Apps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-10-mcp-apps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-10-mcp-apps-diagram.svg" alt="Diagram: 15.10 MCP Apps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-10-mcp-apps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-10-mcp-apps-sticky.svg" alt="Sticky Note: 15.10 MCP Apps" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** MCP Apps render rich UIs using Blade and Livewire directly within AI agent interfaces, enabling interactive dashboards and forms.
@@ -909,16 +809,6 @@ The Blade view at `resources/views/mcp/dashboards/sales.blade.php` can use Tailw
 
 ### 15.11 Authentication
 
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-11-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-11-authentication-handwritten.svg" alt="Handwritten: 15.11 Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-11-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-11-authentication-diagram.svg" alt="Diagram: 15.11 Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-11-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-11-authentication-sticky.svg" alt="Sticky Note: 15.11 Authentication" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Laravel MCP supports OAuth 2.1 for remote AI agents and Sanctum token-based auth for first-party integrations.
 
@@ -968,16 +858,6 @@ Authorization: Bearer {plainTextToken}
 ```
 
 ### 15.12 MCP Client
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-12-mcp-client-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-12-mcp-client-handwritten.svg" alt="Handwritten: 15.12 MCP Client" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-12-mcp-client-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-12-mcp-client-diagram.svg" alt="Diagram: 15.12 MCP Client" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-12-mcp-client-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-12-mcp-client-sticky.svg" alt="Sticky Note: 15.12 MCP Client" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** The MCP client allows Laravel applications to consume remote MCP servers, listing capabilities and invoking tools programmatically.
@@ -1032,16 +912,6 @@ return [
 ```
 
 ### 15.13 Testing MCP Servers
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-13-testing-mcp-servers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-13-testing-mcp-servers-handwritten.svg" alt="Handwritten: 15.13 Testing MCP Servers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-13-testing-mcp-servers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-13-testing-mcp-servers-diagram.svg" alt="Diagram: 15.13 Testing MCP Servers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-13-testing-mcp-servers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-13-testing-mcp-servers-sticky.svg" alt="Sticky Note: 15.13 Testing MCP Servers" width="30%">
-</a>
 
 
 Laravel MCP provides a suite of testing helpers. You can test tools directly with HTTP assertions:
@@ -1150,16 +1020,6 @@ class CurrentWeatherToolTest extends TestCase
 ```
 
 ### 15.14 Complete Example: Weather MCP Server
-
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-14-complete-example-weather-mcp-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-14-complete-example-weather-mcp-server-handwritten.svg" alt="Handwritten: 15.14 Complete Example: Weather MCP Server" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-14-complete-example-weather-mcp-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-14-complete-example-weather-mcp-server-diagram.svg" alt="Diagram: 15.14 Complete Example: Weather MCP Server" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/15-mcp/15-14-complete-example-weather-mcp-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/15-mcp/15-14-complete-example-weather-mcp-server-sticky.svg" alt="Sticky Note: 15.14 Complete Example: Weather MCP Server" width="30%">
-</a>
 
 
 This example ties together everything into a complete, deployable MCP server with authentication, multiple tools, a resource, and a prompt:

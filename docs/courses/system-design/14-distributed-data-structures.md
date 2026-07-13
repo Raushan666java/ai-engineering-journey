@@ -103,16 +103,6 @@ flowchart LR
 
 ### 1. Consistent Hashing
 
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-handwritten.svg" alt="Handwritten: 1. Consistent Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-diagram.svg" alt="Diagram: 1. Consistent Hashing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/1-consistent-hashing-sticky.svg" alt="Sticky Note: 1. Consistent Hashing" width="30%">
-</a>
-
 
 > **Pro Tip:** Master this concept thoroughly ? it is frequently tested in system design interviews.
 
@@ -165,16 +155,6 @@ class ConsistentHashRing:
 
 ### 2. Rendezvous Hashing (HRW)
 
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-handwritten.svg" alt="Handwritten: 2. Rendezvous Hashing (HRW)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-diagram.svg" alt="Diagram: 2. Rendezvous Hashing (HRW)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/2-rendezvous-hashing-hrw-sticky.svg" alt="Sticky Note: 2. Rendezvous Hashing (HRW)" width="30%">
-</a>
-
 
 > **Warning:** Avoid over-engineering. Start simple, measure, then optimize.
 
@@ -201,16 +181,6 @@ For large node sets, HRW can be accelerated with a tree-based grouping (hierarch
 
 ### 3. Merkle Trees
 
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-handwritten.svg" alt="Handwritten: 3. Merkle Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-diagram.svg" alt="Diagram: 3. Merkle Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/3-merkle-trees-sticky.svg" alt="Sticky Note: 3. Merkle Trees" width="30%">
-</a>
-
 
 > **Remember:** Always articulate trade-offs clearly ? interviewers value reasoning over the "right" answer.
 
@@ -229,16 +199,6 @@ Root: h(h(h(block_1) || h(block_2)) || h(h(block_3) || h(block_4)))
 Cassandra uses Merkle trees for read repair and hinted handoff reconciliation. Trees are built incrementally during compaction.
 
 ### 4. Bloom Filters
-
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-handwritten.svg" alt="Handwritten: 4. Bloom Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-diagram.svg" alt="Diagram: 4. Bloom Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/4-bloom-filters-sticky.svg" alt="Sticky Note: 4. Bloom Filters" width="30%">
-</a>
 
 
 A Bloom filter is a space-efficient probabilistic data structure that tests set membership. It consists of an m-bit array and k independent hash functions. To insert x, set bits at positions h_1(x), h_2(x), ..., h_k(x) to 1. To query y, check all k positions: if any is 0, y is definitely not in the set; if all are 1, y is probably in the set.
@@ -285,16 +245,6 @@ A dynamic Bloom filter that grows as elements are added. Consists of a series of
 
 ### 5. Count-Min Sketch
 
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-handwritten.svg" alt="Handwritten: 5. Count-Min Sketch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-diagram.svg" alt="Diagram: 5. Count-Min Sketch" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/5-count-min-sketch-sticky.svg" alt="Sticky Note: 5. Count-Min Sketch" width="30%">
-</a>
-
 
 A probabilistic frequency table using a 2D array of width w and depth d (typically d = 4-5, w = 2/e for error bound e). Each row uses an independent hash function. Increment entries at h_i(x) across all d rows. Point query returns the minimum of all d values: min(CMS[1][h_1(x)], ..., CMS[d][h_d(x)]).
 
@@ -327,16 +277,6 @@ class CountMinSketch:
 ```
 
 ### 6. HyperLogLog
-
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-handwritten.svg" alt="Handwritten: 6. HyperLogLog" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-diagram.svg" alt="Diagram: 6. HyperLogLog" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/6-hyperloglog-sticky.svg" alt="Sticky Note: 6. HyperLogLog" width="30%">
-</a>
 
 
 Estimates the cardinality (number of distinct elements) of a multiset using O(log log N) space — 12 KB for 2% error on billions of elements. The algorithm observes the longest run of leading zeros in hashed values: if we see a hash starting with ? zeros, we expect approximately 2^? distinct elements.
@@ -380,16 +320,6 @@ class HyperLogLog:
 
 ### 7. Cuckoo Filters
 
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-handwritten.svg" alt="Handwritten: 7. Cuckoo Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-diagram.svg" alt="Diagram: 7. Cuckoo Filters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/7-cuckoo-filters-sticky.svg" alt="Sticky Note: 7. Cuckoo Filters" width="30%">
-</a>
-
 
 A Cuckoo filter stores fingerprints (f-bit hash of each item) in a Cuckoo hash table. Each item maps to two candidate buckets (via primary hash and XOR of fingerprint). On insertion, if both buckets are full, existing entries are relocated (cuckoo kick). Supports deletion natively by removing the fingerprint.
 
@@ -402,32 +332,12 @@ Space ˜ (log2(1/p) + 3) / load_factor  bits per item
 
 ### 8. Quotient Filter and XOR Filter
 
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-handwritten.svg" alt="Handwritten: 8. Quotient Filter and XOR Filter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-diagram.svg" alt="Diagram: 8. Quotient Filter and XOR Filter" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/8-quotient-filter-and-xor-filter-sticky.svg" alt="Sticky Note: 8. Quotient Filter and XOR Filter" width="30%">
-</a>
-
 
 **Quotient filter**: Stores the quotient (upper bits of hash) and remainder (lower bits) in a compact hash table using linear probing. Supports deletion, merging, and better cache locality than Bloom filters. Uses 3 metadata bits per slot: is_occupied, is_continuation, is_shifted.
 
 **XOR filter**: A recent alternative to Bloom filters for static sets (no inserts after build). Uses a single hash function and 3 hash tables. Requires ~1.23 log2(1/p) + 3 bits per entry — approximately 20-30% smaller than Bloom filters for 1% false positive rate. Cannot support dynamic insertions.
 
 ### 9. Comparison Table
-
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-handwritten.svg" alt="Handwritten: 9. Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-diagram.svg" alt="Diagram: 9. Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/9-comparison-table-sticky.svg" alt="Sticky Note: 9. Comparison Table" width="30%">
-</a>
 
 
 | Structure        | Supports Delete | Space/Item | False Positive | Operations          | Use Case                  |
@@ -441,16 +351,6 @@ Space ˜ (log2(1/p) + 3) / load_factor  bits per item
 | XOR Filter       | No (static)     | ~7 bits    | 1%             | Build + Lookup     | Static set, minimal space |
 
 ### 10. Time-Series Data Structures
-
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-handwritten.svg" alt="Handwritten: 10. Time-Series Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-diagram.svg" alt="Diagram: 10. Time-Series Data Structures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/system-design/14-distributed-data-structures/10-time-series-data-structures-sticky.svg" alt="Sticky Note: 10. Time-Series Data Structures" width="30%">
-</a>
 
 
 **Segment tree**: A binary tree storing aggregates (sum, min, max, average) over intervals. Each leaf represents a time bucket; internal nodes store combined values for their interval. Query range in O(log n) time. Used in Prometheus TSDB for range query acceleration.

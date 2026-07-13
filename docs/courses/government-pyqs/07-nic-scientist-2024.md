@@ -4,7 +4,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/government-pyqs/07-nic-scientist-2024/hero.svg" target="_blank" rel="noopener">
@@ -74,17 +73,6 @@
 ## Section A: Computer Science Fundamentals (50 Questions)
 
 ### Data Structures & Algorithms (12–15 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/data-structures-algorithms-12-15-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/data-structures-algorithms-12-15-qs-handwritten.svg" alt="Handwritten: Data Structures & Algorithms (12–15 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/data-structures-algorithms-12-15-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/data-structures-algorithms-12-15-qs-diagram.svg" alt="Diagram: Data Structures & Algorithms (12–15 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/data-structures-algorithms-12-15-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/data-structures-algorithms-12-15-qs-sticky.svg" alt="Sticky Note: Data Structures & Algorithms (12–15 Qs)" width="30%">
-</a>
-
 
 **Q1.** Which of the following data structures is most suitable for implementing a priority queue?
 
@@ -546,17 +534,6 @@ D) Has time complexity O(V + E log V)
 
 ### Operating Systems (8–10 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/operating-systems-8-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/operating-systems-8-10-qs-handwritten.svg" alt="Handwritten: Operating Systems (8–10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/operating-systems-8-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/operating-systems-8-10-qs-diagram.svg" alt="Diagram: Operating Systems (8–10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/operating-systems-8-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/operating-systems-8-10-qs-sticky.svg" alt="Sticky Note: Operating Systems (8–10 Qs)" width="30%">
-</a>
-
-
 **Q14.** Which of the following scheduling algorithms is most likely to cause starvation?
 
 A) Round Robin  
@@ -927,17 +904,6 @@ class TLBSimulator {
 
 ### Database Management Systems (8–10 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/database-management-systems-8-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/database-management-systems-8-10-qs-handwritten.svg" alt="Handwritten: Database Management Systems (8–10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/database-management-systems-8-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/database-management-systems-8-10-qs-diagram.svg" alt="Diagram: Database Management Systems (8–10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/database-management-systems-8-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/database-management-systems-8-10-qs-sticky.svg" alt="Sticky Note: Database Management Systems (8–10 Qs)" width="30%">
-</a>
-
-
 **Q24.** In SQL, which statement is used to remove all rows from a table without deleting the table structure?
 
 A) DELETE  
@@ -1202,17 +1168,6 @@ D) Constraint
 
 ### Computer Networks (8–10 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-networks-8-10-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-networks-8-10-qs-handwritten.svg" alt="Handwritten: Computer Networks (8–10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-networks-8-10-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-networks-8-10-qs-diagram.svg" alt="Diagram: Computer Networks (8–10 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-networks-8-10-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-networks-8-10-qs-sticky.svg" alt="Sticky Note: Computer Networks (8–10 Qs)" width="30%">
-</a>
-
-
 **Q33.** Which layer of the OSI model is responsible for routing and forwarding?
 
 A) Data Link Layer  
@@ -1429,17 +1384,6 @@ flowchart LR
 
 ### Software Engineering (5–7 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/software-engineering-5-7-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/software-engineering-5-7-qs-handwritten.svg" alt="Handwritten: Software Engineering (5–7 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/software-engineering-5-7-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/software-engineering-5-7-qs-diagram.svg" alt="Diagram: Software Engineering (5–7 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/software-engineering-5-7-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/software-engineering-5-7-qs-sticky.svg" alt="Sticky Note: Software Engineering (5–7 Qs)" width="30%">
-</a>
-
-
 **Q41.** Which software development model emphasizes incremental delivery with customer feedback loops?
 
 A) Waterfall Model  
@@ -1531,17 +1475,6 @@ D) Software Complexity
 ---
 
 ### Computer Organization & Architecture (4–5 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-organization-architecture-4-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-organization-architecture-4-5-qs-handwritten.svg" alt="Handwritten: Computer Organization & Architecture (4–5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-organization-architecture-4-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-organization-architecture-4-5-qs-diagram.svg" alt="Diagram: Computer Organization & Architecture (4–5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-organization-architecture-4-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/computer-organization-architecture-4-5-qs-sticky.svg" alt="Sticky Note: Computer Organization & Architecture (4–5 Qs)" width="30%">
-</a>
-
 
 **Q46.** Which of the following is a combinational circuit?
 
@@ -1647,17 +1580,6 @@ D) AC (Accumulator)
 ## Section B: Programming & OOP (30 Questions)
 
 ### C Programming (12–15 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/c-programming-12-15-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/c-programming-12-15-qs-handwritten.svg" alt="Handwritten: C Programming (12–15 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/c-programming-12-15-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/c-programming-12-15-qs-diagram.svg" alt="Diagram: C Programming (12–15 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/c-programming-12-15-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/c-programming-12-15-qs-sticky.svg" alt="Sticky Note: C Programming (12–15 Qs)" width="30%">
-</a>
-
 
 **Q51.** What is the output of the following C code?
 
@@ -1943,17 +1865,6 @@ D) ==
 ---
 
 ### Java & OOP (18 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/java-oop-18-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/java-oop-18-qs-handwritten.svg" alt="Handwritten: Java & OOP (18 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/java-oop-18-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/java-oop-18-qs-diagram.svg" alt="Diagram: Java & OOP (18 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/java-oop-18-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/java-oop-18-qs-sticky.svg" alt="Sticky Note: Java & OOP (18 Qs)" width="30%">
-</a>
-
 
 **Q61.** Which of the following is NOT a feature of Object-Oriented Programming?
 
@@ -2544,17 +2455,6 @@ D) str.suffix(".txt")
 
 ### Quantitative Aptitude (8 Qs)
 
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/quantitative-aptitude-8-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/quantitative-aptitude-8-qs-handwritten.svg" alt="Handwritten: Quantitative Aptitude (8 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/quantitative-aptitude-8-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/quantitative-aptitude-8-qs-diagram.svg" alt="Diagram: Quantitative Aptitude (8 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/quantitative-aptitude-8-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/quantitative-aptitude-8-qs-sticky.svg" alt="Sticky Note: Quantitative Aptitude (8 Qs)" width="30%">
-</a>
-
-
 **Q81.** A train 150 m long passes a pole in 15 seconds. What is the speed of the train in km/h?
 
 A) 10 km/h  
@@ -2700,17 +2600,6 @@ D) ₹2,310
 ---
 
 ### Reasoning Ability (7 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/reasoning-ability-7-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/reasoning-ability-7-qs-handwritten.svg" alt="Handwritten: Reasoning Ability (7 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/reasoning-ability-7-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/reasoning-ability-7-qs-diagram.svg" alt="Diagram: Reasoning Ability (7 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/reasoning-ability-7-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/reasoning-ability-7-qs-sticky.svg" alt="Sticky Note: Reasoning Ability (7 Qs)" width="30%">
-</a>
-
 
 **Q89.** Find the odd one out: 2, 6, 12, 20, 30, 42, 56, 71
 
@@ -3023,17 +2912,6 @@ D) 56
 ---
 
 ### English Language (5 Qs)
-
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/english-language-5-qs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/english-language-5-qs-handwritten.svg" alt="Handwritten: English Language (5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/english-language-5-qs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/english-language-5-qs-diagram.svg" alt="Diagram: English Language (5 Qs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/english-language-5-qs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/government-pyqs/07-nic-scientist-2024/english-language-5-qs-sticky.svg" alt="Sticky Note: English Language (5 Qs)" width="30%">
-</a>
-
 
 **Q96.** Choose the synonym of "ABSTEMIOUS":
 

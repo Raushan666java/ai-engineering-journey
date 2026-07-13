@@ -54,16 +54,6 @@
 
 ### The Doctor Diagnosis Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/the-doctor-diagnosis-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/the-doctor-diagnosis-analogy-handwritten.svg" alt="Handwritten: The Doctor Diagnosis Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/the-doctor-diagnosis-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/the-doctor-diagnosis-analogy-diagram.svg" alt="Diagram: The Doctor Diagnosis Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/the-doctor-diagnosis-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/the-doctor-diagnosis-analogy-sticky.svg" alt="Sticky Note: The Doctor Diagnosis Analogy" width="30%">
-</a>
-
 
 Network troubleshooting mirrors medical diagnosis. A doctor does not prescribe treatment without examination; a network engineer does not change configuration without evidence.
 
@@ -83,16 +73,6 @@ Network troubleshooting mirrors medical diagnosis. A doctor does not prescribe t
 **The 80/20 rule:** 80% of network problems are at the physical or data link layer. Start from the bottom of the OSI model and work up. A cable fault causes the same symptom (no connectivity) as a firewall rule, but checking the cable takes 10 seconds and checking the firewall takes 10 minutes.
 
 ### OSI-Layer Troubleshooting Philosophy
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-philosophy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-philosophy-handwritten.svg" alt="Handwritten: OSI-Layer Troubleshooting Philosophy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-philosophy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-philosophy-diagram.svg" alt="Diagram: OSI-Layer Troubleshooting Philosophy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-philosophy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-philosophy-sticky.svg" alt="Sticky Note: OSI-Layer Troubleshooting Philosophy" width="30%">
-</a>
 
 
 The OSI model provides a natural diagnostic hierarchy. Each layer depends on the layers below it. If Layer 1 is broken, Layer 2 cannot work, Layer 3 cannot work, and so on.
@@ -116,16 +96,6 @@ Test at the middle layer (Network). If ping works, the problem is above Layer 3.
 
 ### OSI Layer Troubleshooting Quick Reference Table
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-quick-reference-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-quick-reference-table-handwritten.svg" alt="Handwritten: OSI Layer Troubleshooting Quick Reference Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-quick-reference-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-quick-reference-table-diagram.svg" alt="Diagram: OSI Layer Troubleshooting Quick Reference Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-quick-reference-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/osi-layer-troubleshooting-quick-reference-table-sticky.svg" alt="Sticky Note: OSI Layer Troubleshooting Quick Reference Table" width="30%">
-</a>
-
 
 | Problem Symptom | Likely OSI Layer | Primary Tool | Secondary Tool |
 |----------------|-----------------|-------------|---------------|
@@ -148,16 +118,6 @@ Test at the middle layer (Network). If ping works, the problem is above Layer 3.
 
 ### 17.1.1 Systematic 8-Step Process
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-1-systematic-8-step-process-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-1-systematic-8-step-process-handwritten.svg" alt="Handwritten: 17.1.1 Systematic 8-Step Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-1-systematic-8-step-process-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-1-systematic-8-step-process-diagram.svg" alt="Diagram: 17.1.1 Systematic 8-Step Process" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-1-systematic-8-step-process-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-1-systematic-8-step-process-sticky.svg" alt="Sticky Note: 17.1.1 Systematic 8-Step Process" width="30%">
-</a>
-
 
 Every troubleshooting session follows a structured diagnostic cycle. Skipping steps leads to wasted effort and configuration changes that do not fix the root cause.
 
@@ -178,16 +138,6 @@ Every troubleshooting session follows a structured diagnostic cycle. Skipping st
 **Step 8 — Verify and document.** Run the diagnostic test again to confirm the fix works. Document the root cause, the diagnostic steps taken, the fix applied, and any preventive measures.
 
 ### 17.1.2 Pseudocode: General Troubleshooting Algorithm
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-2-pseudocode-general-troubleshooting-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-2-pseudocode-general-troubleshooting-algorithm-handwritten.svg" alt="Handwritten: 17.1.2 Pseudocode: General Troubleshooting Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-2-pseudocode-general-troubleshooting-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-2-pseudocode-general-troubleshooting-algorithm-diagram.svg" alt="Diagram: 17.1.2 Pseudocode: General Troubleshooting Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-2-pseudocode-general-troubleshooting-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-2-pseudocode-general-troubleshooting-algorithm-sticky.svg" alt="Sticky Note: 17.1.2 Pseudocode: General Troubleshooting Algorithm" width="30%">
-</a>
 
 
 FUNCTION troubleshootNetwork(symptoms, scope):
@@ -214,16 +164,6 @@ FUNCTION troubleshootNetwork(symptoms, scope):
     RETURN unresolved
 
 ### 17.1.3 Dry Run: Multi-Layer Troubleshooting Walkthrough
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-3-dry-run-multi-layer-troubleshooting-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-3-dry-run-multi-layer-troubleshooting-walkthrough-handwritten.svg" alt="Handwritten: 17.1.3 Dry Run: Multi-Layer Troubleshooting Walkthrough" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-3-dry-run-multi-layer-troubleshooting-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-3-dry-run-multi-layer-troubleshooting-walkthrough-diagram.svg" alt="Diagram: 17.1.3 Dry Run: Multi-Layer Troubleshooting Walkthrough" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-3-dry-run-multi-layer-troubleshooting-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-1-3-dry-run-multi-layer-troubleshooting-walkthrough-sticky.svg" alt="Sticky Note: 17.1.3 Dry Run: Multi-Layer Troubleshooting Walkthrough" width="30%">
-</a>
 
 
 Scenario: User cannot access intranet at https://intranet.internal.com. Other websites work fine.
@@ -254,45 +194,15 @@ Dry run trace table showing state at each iteration:
 
 ### 17.2.1 Overview
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-2-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-2-1-overview-handwritten.svg" alt="Handwritten: 17.2.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-2-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-2-1-overview-diagram.svg" alt="Diagram: 17.2.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-2-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-2-1-overview-sticky.svg" alt="Sticky Note: 17.2.1 Overview" width="30%">
-</a>
-
 
 The physical layer comprises cables (copper, fiber), connectors, signal repeaters, hubs, and the electrical/optical signals that carry bits. Physical layer problems account for approximately 40% of all network outages. Symptoms include: no link light, intermittent connectivity, high error rates, CRC errors, and link flapping.
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Physical layer issues are like problems with a city road surface. A pothole (damaged cable) slows traffic; a collapsed bridge (severed fiber) stops all traffic. You cannot drive anywhere if the roads are broken, no matter how good your navigation system (higher-layer protocols) is.
 
 ### Numbered Troubleshooting Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-handwritten.svg" alt="Handwritten: Numbered Troubleshooting Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-diagram.svg" alt="Diagram: Numbered Troubleshooting Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-sticky.svg" alt="Sticky Note: Numbered Troubleshooting Steps" width="30%">
-</a>
 
 
 1. Verify link lights. Both the switch port LED and NIC LED should be solid green. Amber or blinking indicates problems.
@@ -305,16 +215,6 @@ Physical layer issues are like problems with a city road surface. A pothole (dam
 8. Test with a known-good device. If the cable tests fine but the device still fails, the NIC may be faulty.
 
 ### Pseudocode: Physical Layer Diagnostics
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-physical-layer-diagnostics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-physical-layer-diagnostics-handwritten.svg" alt="Handwritten: Pseudocode: Physical Layer Diagnostics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-physical-layer-diagnostics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-physical-layer-diagnostics-diagram.svg" alt="Diagram: Pseudocode: Physical Layer Diagnostics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-physical-layer-diagnostics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-physical-layer-diagnostics-sticky.svg" alt="Sticky Note: Pseudocode: Physical Layer Diagnostics" width="30%">
-</a>
 
 
 FUNCTION diagnosePhysical(interfaceName):
@@ -336,16 +236,6 @@ FUNCTION diagnosePhysical(interfaceName):
 
 ### Dry Run Trace Table
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
-</a>
-
 
 Scenario: A security camera connected to switch port Gi0/12 goes offline.
 
@@ -359,16 +249,6 @@ Scenario: A security camera connected to switch port Gi0/12 goes offline.
 
 ### Edge Cases
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
-
 
 1. Auto-MDIX incompatibility: Older switches without Auto-MDIX need crossover cables.
 2. PoE budget exceeded: Adding too many high-power devices causes switch to power-cycle ports.
@@ -381,45 +261,15 @@ Scenario: A security camera connected to switch port Gi0/12 goes offline.
 
 ### 17.3.1 Overview
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-3-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-3-1-overview-handwritten.svg" alt="Handwritten: 17.3.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-3-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-3-1-overview-diagram.svg" alt="Diagram: 17.3.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-3-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-3-1-overview-sticky.svg" alt="Sticky Note: 17.3.1 Overview" width="30%">
-</a>
-
 
 The data link layer handles framing, MAC addressing, error detection, and media access control. Common issues include duplex mismatches, MAC address flooding, spanning tree problems, and VLAN misconfigurations.
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Data link problems are like a postal sorting office. Duplex mismatch = two sorting machines operating at different speeds, causing letters to pile up or get lost. MAC flooding = a bad actor sending millions of fake letters to overwhelm the sorting system. STP issues = delivery trucks going in circles because the road network has temporary loops.
 
 ### Numbered Troubleshooting Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-handwritten.svg" alt="Handwritten: Numbered Troubleshooting Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-diagram.svg" alt="Diagram: Numbered Troubleshooting Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-sticky.svg" alt="Sticky Note: Numbered Troubleshooting Steps" width="30%">
-</a>
 
 
 1. Check duplex and speed settings. A mismatch occurs when one side is set to "auto" and the other to "full" (or "half"). Symptoms: CRC errors on the full-duplex side, late collisions on the half-duplex side.
@@ -431,16 +281,6 @@ Data link problems are like a postal sorting office. Duplex mismatch = two sorti
 7. Check port security: err-disabled ports from security violations.
 
 ### Pseudocode: Duplex Mismatch Detector
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-duplex-mismatch-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-duplex-mismatch-detector-handwritten.svg" alt="Handwritten: Pseudocode: Duplex Mismatch Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-duplex-mismatch-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-duplex-mismatch-detector-diagram.svg" alt="Diagram: Pseudocode: Duplex Mismatch Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-duplex-mismatch-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-duplex-mismatch-detector-sticky.svg" alt="Sticky Note: Pseudocode: Duplex Mismatch Detector" width="30%">
-</a>
 
 
 FUNCTION detectDuplexMismatch(interfaceName, duration_seconds):
@@ -459,16 +299,6 @@ FUNCTION detectDuplexMismatch(interfaceName, duration_seconds):
         RETURN NO_DUPLEX_ISSUE_DETECTED
 
 ### Dry Run Trace Table
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
-</a>
 
 
 Two switches connected via trunk port Trk1. Users report intermittent connectivity.
@@ -492,16 +322,6 @@ Duplex Mismatch Symptom Matrix:
 
 ### Pseudocode: MAC Flood Detection
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-mac-flood-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-mac-flood-detection-handwritten.svg" alt="Handwritten: Pseudocode: MAC Flood Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-mac-flood-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-mac-flood-detection-diagram.svg" alt="Diagram: Pseudocode: MAC Flood Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-mac-flood-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-mac-flood-detection-sticky.svg" alt="Sticky Note: Pseudocode: MAC Flood Detection" width="30%">
-</a>
-
 
 FUNCTION detectMACFlooding(switchName):
     entries = getMacTableEntryCount(switchName)
@@ -519,16 +339,6 @@ FUNCTION detectMACFlooding(switchName):
     RETURN "MAC table normal"
 
 ### C++ Implementation: Duplex/Speed Analyzer
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-duplex-speed-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-duplex-speed-analyzer-handwritten.svg" alt="Handwritten: C++ Implementation: Duplex/Speed Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-duplex-speed-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-duplex-speed-analyzer-diagram.svg" alt="Diagram: C++ Implementation: Duplex/Speed Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-duplex-speed-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-duplex-speed-analyzer-sticky.svg" alt="Sticky Note: C++ Implementation: Duplex/Speed Analyzer" width="30%">
-</a>
 
 
 #include &lt;iostream&gt;
@@ -572,16 +382,6 @@ int main() {
 }
 
 ### Python Implementation: MAC Flood Detector
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-implementation-mac-flood-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-implementation-mac-flood-detector-handwritten.svg" alt="Handwritten: Python Implementation: MAC Flood Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-implementation-mac-flood-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-implementation-mac-flood-detector-diagram.svg" alt="Diagram: Python Implementation: MAC Flood Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-implementation-mac-flood-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-implementation-mac-flood-detector-sticky.svg" alt="Sticky Note: Python Implementation: MAC Flood Detector" width="30%">
-</a>
 
 
 import random, time
@@ -628,30 +428,10 @@ if __name__ == "__main__":
 
 ### Complexity Analysis for Data Link Diagnostics
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-for-data-link-diagnostics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-for-data-link-diagnostics-handwritten.svg" alt="Handwritten: Complexity Analysis for Data Link Diagnostics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-for-data-link-diagnostics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-for-data-link-diagnostics-diagram.svg" alt="Diagram: Complexity Analysis for Data Link Diagnostics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-for-data-link-diagnostics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-for-data-link-diagnostics-sticky.svg" alt="Sticky Note: Complexity Analysis for Data Link Diagnostics" width="30%">
-</a>
-
 
 Duplex mismatch detection: O(1) → counters are hardware registers. MAC flood detection: O(m) where m = MAC entries. Space: O(m).
 
 ### Edge Cases for Data Link
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-for-data-link-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-for-data-link-handwritten.svg" alt="Handwritten: Edge Cases for Data Link" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-for-data-link-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-for-data-link-diagram.svg" alt="Diagram: Edge Cases for Data Link" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-for-data-link-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-for-data-link-sticky.svg" alt="Sticky Note: Edge Cases for Data Link" width="30%">
-</a>
 
 
 1. VMs on hypervisor ports legitimately learn 50+ MACs across multiple OUIs.
@@ -662,45 +442,15 @@ Duplex mismatch detection: O(1) → counters are hardware registers. MAC flood d
 
 ### 17.4.1 Overview
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-4-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-4-1-overview-handwritten.svg" alt="Handwritten: 17.4.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-4-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-4-1-overview-diagram.svg" alt="Diagram: 17.4.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-4-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-4-1-overview-sticky.svg" alt="Sticky Note: 17.4.1 Overview" width="30%">
-</a>
-
 
 Network layer issues involve IP addressing, routing, packet forwarding, and ICMP. Common problems: routing loops, misconfigured static routes, missing default gateways, MTU mismatches, ICMP filtering, and asymmetric routing.
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Network layer problems are like GPS navigation errors. A routing loop is the GPS telling you to go in circles. A misconfigured default gateway is like the GPS routing you to the wrong highway exit. MTU mismatch is like a tunnel that only allows compact cars but your delivery truck is too tall.
 
 ### Numbered Troubleshooting Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-handwritten.svg" alt="Handwritten: Numbered Troubleshooting Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-diagram.svg" alt="Diagram: Numbered Troubleshooting Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-troubleshooting-steps-sticky.svg" alt="Sticky Note: Numbered Troubleshooting Steps" width="30%">
-</a>
 
 
 1. Verify IP configuration on the host: ipconfig /all or ip addr. Check IP, mask, gateway, DNS.
@@ -713,16 +463,6 @@ Network layer problems are like GPS navigation errors. A routing loop is the GPS
 8. Check firewall/ACL rules blocking ICMP.
 
 ### Pseudocode: Routing Loop Detector
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-routing-loop-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-routing-loop-detector-handwritten.svg" alt="Handwritten: Pseudocode: Routing Loop Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-routing-loop-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-routing-loop-detector-diagram.svg" alt="Diagram: Pseudocode: Routing Loop Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-routing-loop-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-routing-loop-detector-sticky.svg" alt="Sticky Note: Pseudocode: Routing Loop Detector" width="30%">
-</a>
 
 
 FUNCTION detectRoutingLoop(destination, maxHops):
@@ -739,16 +479,6 @@ FUNCTION detectRoutingLoop(destination, maxHops):
 
 ### Dry Run Trace Table
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
-</a>
-
 
 Subnet 10.1.1.0/24 cannot reach 10.2.2.0/24.
 
@@ -764,16 +494,6 @@ Subnet 10.1.1.0/24 cannot reach 10.2.2.0/24.
 Root cause: Router R2 points to R1 for 10.2.2.0/24, R1 points back to R2.
 
 ### C++ Implementation: Ping Simulator with TTL
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-ping-simulator-with-ttl-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-ping-simulator-with-ttl-handwritten.svg" alt="Handwritten: C++ Implementation: Ping Simulator with TTL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-ping-simulator-with-ttl-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-ping-simulator-with-ttl-diagram.svg" alt="Diagram: C++ Implementation: Ping Simulator with TTL" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-ping-simulator-with-ttl-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-implementation-ping-simulator-with-ttl-sticky.svg" alt="Sticky Note: C++ Implementation: Ping Simulator with TTL" width="30%">
-</a>
 
 
 #include &lt;iostream&gt;
@@ -810,16 +530,6 @@ int main() {
 }
 
 ### Python: Traceroute Analyzer + Path MTU
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-traceroute-analyzer-path-mtu-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-traceroute-analyzer-path-mtu-handwritten.svg" alt="Handwritten: Python: Traceroute Analyzer + Path MTU" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-traceroute-analyzer-path-mtu-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-traceroute-analyzer-path-mtu-diagram.svg" alt="Diagram: Python: Traceroute Analyzer + Path MTU" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-traceroute-analyzer-path-mtu-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-traceroute-analyzer-path-mtu-sticky.svg" alt="Sticky Note: Python: Traceroute Analyzer + Path MTU" width="30%">
-</a>
 
 
 import random
@@ -872,30 +582,10 @@ if __name__ == "__main__":
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 Ping: O(h*c). Traceroute: O(h*p). MTU discovery: O(log n) binary search. Loop detection: O(h) linear scan. Binary search for MTU is critical → each probe requires network RTT wait.
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. ICMP blocked: ping fails but TCP works. Use curl/tcping.
@@ -908,45 +598,15 @@ Ping: O(h*c). Traceroute: O(h*p). MTU discovery: O(log n) binary search. Loop de
 
 ### 17.5.1 Overview
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-5-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-5-1-overview-handwritten.svg" alt="Handwritten: 17.5.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-5-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-5-1-overview-diagram.svg" alt="Diagram: 17.5.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-5-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-5-1-overview-sticky.svg" alt="Sticky Note: 17.5.1 Overview" width="30%">
-</a>
-
 
 Transport layer issues involve TCP/UDP port accessibility, socket states, TIME_WAIT exhaustion, connection limits, and firewall filtering.
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Like a busy restaurant phone system. Port blocked = disconnected line. TIME_WAIT exhaustion = never reusing old numbers, running out. Connection limits = 50 tables but 200 calling at once.
 
 ### Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
-</a>
 
 
 1. Check listening port: ss -tln or netstat -an | find "LISTEN".
@@ -959,16 +619,6 @@ Like a busy restaurant phone system. Port blocked = disconnected line. TIME_WAIT
 
 ### Pseudocode: Port Scanner
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-port-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-port-scanner-handwritten.svg" alt="Handwritten: Pseudocode: Port Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-port-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-port-scanner-diagram.svg" alt="Diagram: Pseudocode: Port Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-port-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-port-scanner-sticky.svg" alt="Sticky Note: Pseudocode: Port Scanner" width="30%">
-</a>
-
 
 FUNCTION scanPort(host, port, timeout_ms):
     socket = createSocket(TCP)
@@ -978,16 +628,6 @@ FUNCTION scanPort(host, port, timeout_ms):
     CATCH Timeout: RETURN {port: FILTERED}
 
 ### Dry Run Trace Table
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
-</a>
 
 
 Web server 10.0.0.50 not responding from client 10.0.0.100.
@@ -1002,16 +642,6 @@ Web server 10.0.0.50 not responding from client 10.0.0.100.
 | 6 | Fix | iptables -I OUTPUT ... | curl succeeds | Fixed |
 
 ### C++: TCP Port Scanner (Threaded)
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-tcp-port-scanner-threaded-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-tcp-port-scanner-threaded-handwritten.svg" alt="Handwritten: C++: TCP Port Scanner (Threaded)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-tcp-port-scanner-threaded-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-tcp-port-scanner-threaded-diagram.svg" alt="Diagram: C++: TCP Port Scanner (Threaded)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-tcp-port-scanner-threaded-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-tcp-port-scanner-threaded-sticky.svg" alt="Sticky Note: C++: TCP Port Scanner (Threaded)" width="30%">
-</a>
 
 
 #include &lt;iostream&gt;
@@ -1074,16 +704,6 @@ int main() {
 
 ### Python: Connection State Analyzer
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-connection-state-analyzer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-connection-state-analyzer-handwritten.svg" alt="Handwritten: Python: Connection State Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-connection-state-analyzer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-connection-state-analyzer-diagram.svg" alt="Diagram: Python: Connection State Analyzer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-connection-state-analyzer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-connection-state-analyzer-sticky.svg" alt="Sticky Note: Python: Connection State Analyzer" width="30%">
-</a>
-
 
 from collections import Counter
 from typing import List, Dict
@@ -1122,16 +742,6 @@ for sc in ["healthy","tw_exhaust","cw_leak","synflood"]:
 
 ### Complexity & Edge Cases
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-edge-cases-handwritten.svg" alt="Handwritten: Complexity & Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-edge-cases-diagram.svg" alt="Diagram: Complexity & Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-edge-cases-sticky.svg" alt="Sticky Note: Complexity & Edge Cases" width="30%">
-</a>
-
 
 Port scan: O(p/t) threaded. State analysis: O(n). TIME_WAIT: each lasts 2*MSL (~60s). ~28K ephemeral ports = ~470 conns/sec max. SYN cookies bypass backlog but lose TCP options. Firewall RST injection kills idle connections. MSS clamping in FW affects performance.
 
@@ -1139,45 +749,15 @@ Port scan: O(p/t) threaded. State analysis: O(n). TIME_WAIT: each lasts 2*MSL (~
 
 ### 17.6.1 Overview
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-6-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-6-1-overview-handwritten.svg" alt="Handwritten: 17.6.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-6-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-6-1-overview-diagram.svg" alt="Diagram: 17.6.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-6-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-6-1-overview-sticky.svg" alt="Sticky Note: 17.6.1 Overview" width="30%">
-</a>
-
 
 DNS failures, HTTP/HTTPS errors, SSL/TLS handshake problems, application protocol violations.
 
 ### Real-World Analogy
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-handwritten.svg" alt="Handwritten: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-diagram.svg" alt="Diagram: Real-World Analogy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/real-world-analogy-sticky.svg" alt="Sticky Note: Real-World Analogy" width="30%">
-</a>
-
 
 Correct address and phone (L1-4 working) but wrong department or wrong language. DNS = missing directory. HTTP error = "cannot help you." SSL = refuses identity verification.
 
 ### Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-handwritten.svg" alt="Handwritten: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-diagram.svg" alt="Diagram: Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/numbered-steps-sticky.svg" alt="Sticky Note: Numbered Steps" width="30%">
-</a>
 
 
 1. Check DNS: nslookup/dig. Verify returned IP.
@@ -1190,16 +770,6 @@ Correct address and phone (L1-4 working) but wrong department or wrong language.
 
 ### Pseudocode: DNS Checker
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-dns-checker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-dns-checker-handwritten.svg" alt="Handwritten: Pseudocode: DNS Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-dns-checker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-dns-checker-diagram.svg" alt="Diagram: Pseudocode: DNS Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-dns-checker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/pseudocode-dns-checker-sticky.svg" alt="Sticky Note: Pseudocode: DNS Checker" width="30%">
-</a>
-
 
 FUNCTION checkDNS(hostname):
     ips = dnsResolve(hostname)
@@ -1210,16 +780,6 @@ FUNCTION checkDNS(hostname):
     RETURN {status:"OK", ips: ips}
 
 ### Dry Run Trace Table
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-handwritten.svg" alt="Handwritten: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-diagram.svg" alt="Diagram: Dry Run Trace Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/dry-run-trace-table-sticky.svg" alt="Sticky Note: Dry Run Trace Table" width="30%">
-</a>
 
 
 502 Bad Gateway at https://api.example.com.
@@ -1236,16 +796,6 @@ FUNCTION checkDNS(hostname):
 | 8 | curl /health | 200 OK | Resolved |
 
 ### C++: HTTP Status Checker
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-http-status-checker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-http-status-checker-handwritten.svg" alt="Handwritten: C++: HTTP Status Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-http-status-checker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-http-status-checker-diagram.svg" alt="Diagram: C++: HTTP Status Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-http-status-checker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/c-http-status-checker-sticky.svg" alt="Sticky Note: C++: HTTP Status Checker" width="30%">
-</a>
 
 
 #include &lt;iostream&gt;
@@ -1307,16 +857,6 @@ int main() {
 
 ### Python: TLS Certificate Diagnoser
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-tls-certificate-diagnoser-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-tls-certificate-diagnoser-handwritten.svg" alt="Handwritten: Python: TLS Certificate Diagnoser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-tls-certificate-diagnoser-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-tls-certificate-diagnoser-diagram.svg" alt="Diagram: Python: TLS Certificate Diagnoser" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-tls-certificate-diagnoser-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/python-tls-certificate-diagnoser-sticky.svg" alt="Sticky Note: Python: TLS Certificate Diagnoser" width="30%">
-</a>
-
 
 from dataclasses import dataclass
 from datetime import datetime, timedelta
@@ -1360,30 +900,10 @@ for sc in ["valid","expired","mismatch","selfsigned"]:
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 TLS: O(c) chain length. HTTP: O(1). DNS: O(d) delegation depth.
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 1. DNS split-brain: different IPs inside vs outside.
@@ -1395,16 +915,6 @@ TLS: O(c) chain length. HTTP: O(1). DNS: O(d) delegation depth.
 ## 17.7 Troubleshooting Tools → Deep Dive
 
 ### 17.7.1 ping → ICMP Echo
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-1-ping-icmp-echo-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-1-ping-icmp-echo-handwritten.svg" alt="Handwritten: 17.7.1 ping → ICMP Echo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-1-ping-icmp-echo-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-1-ping-icmp-echo-diagram.svg" alt="Diagram: 17.7.1 ping → ICMP Echo" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-1-ping-icmp-echo-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-1-ping-icmp-echo-sticky.svg" alt="Sticky Note: 17.7.1 ping → ICMP Echo" width="30%">
-</a>
 
 
 **Purpose:** Test basic IP connectivity, measure RTT, detect packet loss.
@@ -1505,16 +1015,6 @@ const result = ping.execute();
 
 ### 17.7.2 traceroute / mtr
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-2-traceroute-mtr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-2-traceroute-mtr-handwritten.svg" alt="Handwritten: 17.7.2 traceroute / mtr" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-2-traceroute-mtr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-2-traceroute-mtr-diagram.svg" alt="Diagram: 17.7.2 traceroute / mtr" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-2-traceroute-mtr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-2-traceroute-mtr-sticky.svg" alt="Sticky Note: 17.7.2 traceroute / mtr" width="30%">
-</a>
-
 
 **Purpose:** Discover path, per-hop latency, routing loops, packet loss location.
 
@@ -1595,16 +1095,6 @@ const hops = traceroute.simulate("93.184.216.34"); // example.com
 
 ### 17.7.3 netstat / ss
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-3-netstat-ss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-3-netstat-ss-handwritten.svg" alt="Handwritten: 17.7.3 netstat / ss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-3-netstat-ss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-3-netstat-ss-diagram.svg" alt="Diagram: 17.7.3 netstat / ss" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-3-netstat-ss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-3-netstat-ss-sticky.svg" alt="Sticky Note: 17.7.3 netstat / ss" width="30%">
-</a>
-
 
 **Purpose:** Display connections, routing tables, interface stats.
 
@@ -1627,16 +1117,6 @@ netstat [options]
 
 ### 17.7.4 nslookup / dig
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-4-nslookup-dig-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-4-nslookup-dig-handwritten.svg" alt="Handwritten: 17.7.4 nslookup / dig" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-4-nslookup-dig-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-4-nslookup-dig-diagram.svg" alt="Diagram: 17.7.4 nslookup / dig" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-4-nslookup-dig-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-4-nslookup-dig-sticky.svg" alt="Sticky Note: 17.7.4 nslookup / dig" width="30%">
-</a>
-
 
 **Purpose:** DNS query and resolution diagnostics.
 
@@ -1654,16 +1134,6 @@ dig [@server] [hostname] [type] [options]
 
 ### 17.7.5 tcpdump
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-5-tcpdump-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-5-tcpdump-handwritten.svg" alt="Handwritten: 17.7.5 tcpdump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-5-tcpdump-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-5-tcpdump-diagram.svg" alt="Diagram: 17.7.5 tcpdump" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-5-tcpdump-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-5-tcpdump-sticky.svg" alt="Sticky Note: 17.7.5 tcpdump" width="30%">
-</a>
-
 
 **Purpose:** Capture and analyze packets at interface level.
 
@@ -1677,16 +1147,6 @@ tcpdump [options] [filter]
 ```
 
 ### tcpdump Filter Syntax → Quick Reference
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/tcpdump-filter-syntax-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/tcpdump-filter-syntax-quick-reference-handwritten.svg" alt="Handwritten: tcpdump Filter Syntax → Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/tcpdump-filter-syntax-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/tcpdump-filter-syntax-quick-reference-diagram.svg" alt="Diagram: tcpdump Filter Syntax → Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/tcpdump-filter-syntax-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/tcpdump-filter-syntax-quick-reference-sticky.svg" alt="Sticky Note: tcpdump Filter Syntax → Quick Reference" width="30%">
-</a>
 
 
 | Expression | Meaning |
@@ -1734,16 +1194,6 @@ tcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100
 
 ### 17.7.6 Wireshark → Capture Workflow
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-6-wireshark-capture-workflow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-6-wireshark-capture-workflow-handwritten.svg" alt="Handwritten: 17.7.6 Wireshark → Capture Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-6-wireshark-capture-workflow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-6-wireshark-capture-workflow-diagram.svg" alt="Diagram: 17.7.6 Wireshark → Capture Workflow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-6-wireshark-capture-workflow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-6-wireshark-capture-workflow-sticky.svg" alt="Sticky Note: 17.7.6 Wireshark → Capture Workflow" width="30%">
-</a>
-
 
 **Phase 1 → Capture Planning**
 1. Define scope: what traffic, between which hosts, on which interface?
@@ -1774,16 +1224,6 @@ tcpdump -i eth0 -nn -X host 10.0.0.50 and host 10.0.0.100
 
 ### 17.7.7 nmap
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-7-nmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-7-nmap-handwritten.svg" alt="Handwritten: 17.7.7 nmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-7-nmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-7-nmap-diagram.svg" alt="Diagram: 17.7.7 nmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-7-nmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-7-nmap-sticky.svg" alt="Sticky Note: 17.7.7 nmap" width="30%">
-</a>
-
 
 **Purpose:** Network discovery, port scanning, OS detection, service fingerprinting.
 
@@ -1806,16 +1246,6 @@ nmap [scan type] [options] <target>
 **Complexity:** O(p * r) where p = ports, r = retries. With -T5 and -n, typical scan of 1000 ports completes in &lt; 10 seconds.
 
 ### 17.7.8 iperf / iperf3
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-8-iperf-iperf3-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-8-iperf-iperf3-handwritten.svg" alt="Handwritten: 17.7.8 iperf / iperf3" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-8-iperf-iperf3-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-8-iperf-iperf3-diagram.svg" alt="Diagram: 17.7.8 iperf / iperf3" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-8-iperf-iperf3-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/17-7-8-iperf-iperf3-sticky.svg" alt="Sticky Note: 17.7.8 iperf / iperf3" width="30%">
-</a>
 
 
 **Purpose:** TCP and UDP throughput measurement between two endpoints.
@@ -1962,45 +1392,15 @@ for (let i = 0; i < 100; i++) analyzer.parseHexDump('');
 
 ### Q1: When ping fails but the application works, what is happening?
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/when-ping-fails-but-the-application-works-what-is-happening-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/when-ping-fails-but-the-application-works-what-is-happening-handwritten.svg" alt="Handwritten: When ping fails but the application works, what is happening?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/when-ping-fails-but-the-application-works-what-is-happening-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/when-ping-fails-but-the-application-works-what-is-happening-diagram.svg" alt="Diagram: When ping fails but the application works, what is happening?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/when-ping-fails-but-the-application-works-what-is-happening-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/when-ping-fails-but-the-application-works-what-is-happening-sticky.svg" alt="Sticky Note: When ping fails but the application works, what is happening?" width="30%">
-</a>
-
 
 Ping uses ICMP Echo Request/Reply. Many firewalls and security groups block ICMP while allowing TCP traffic for applications. This is a security best practice → ICMP offers no encryption and can be used for reconnaissance. ICMP blocking does not indicate a network problem. Always use a TCP-based connectivity test (telnet, nc, curl) to verify actual application reachability.
 
 ### Q2: How does traceroute work, and what does it mean when a hop shows asterisks?
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks-handwritten.svg" alt="Handwritten: How does traceroute work, and what does it mean when a hop shows asterisks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks-diagram.svg" alt="Diagram: How does traceroute work, and what does it mean when a hop shows asterisks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-traceroute-work-and-what-does-it-mean-when-a-hop-shows-asterisks-sticky.svg" alt="Sticky Note: How does traceroute work, and what does it mean when a hop shows asterisks?" width="30%">
-</a>
-
 
 Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 gets TTL=2, etc. Each router decrements TTL; when TTL reaches 0, the router sends an ICMP Time Exceeded message back. Asterisks (* * *) for a hop mean no response was received → the router may be configured not to send ICMP Time Exceeded, or the response is filtered. Three asterisks in a row mean the hop is not responding, but packets may still pass through it. If all subsequent hops also show asterisks, the path is likely broken at that point.
 
 ### Q3: What is the difference between "port unreachable," "connection refused," and "timeout"?
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-the-difference-between-port-unreachable-connection-refused-and-timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-the-difference-between-port-unreachable-connection-refused-and-timeout-handwritten.svg" alt="Handwritten: What is the difference between "port unreachable," "connection refused," and "timeout"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-the-difference-between-port-unreachable-connection-refused-and-timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-the-difference-between-port-unreachable-connection-refused-and-timeout-diagram.svg" alt="Diagram: What is the difference between "port unreachable," "connection refused," and "timeout"?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-the-difference-between-port-unreachable-connection-refused-and-timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-the-difference-between-port-unreachable-connection-refused-and-timeout-sticky.svg" alt="Sticky Note: What is the difference between "port unreachable," "connection refused," and "timeout"?" width="30%">
-</a>
 
 
 | Response | Means | Likely Cause |
@@ -2011,30 +1411,10 @@ Traceroute sends packets with increasing TTL values. Hop 1 gets TTL=1, Hop 2 get
 
 ### Q4: How do you determine if high latency is caused by propagation delay vs queuing delay?
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay-handwritten.svg" alt="Handwritten: How do you determine if high latency is caused by propagation delay vs queuing delay?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay-diagram.svg" alt="Diagram: How do you determine if high latency is caused by propagation delay vs queuing delay?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-determine-if-high-latency-is-caused-by-propagation-delay-vs-queuing-delay-sticky.svg" alt="Sticky Note: How do you determine if high latency is caused by propagation delay vs queuing delay?" width="30%">
-</a>
-
 
 Propagation delay is a function of distance (speed of light in fiber ~200,000 km/s). A transatlantic hop (6000 km) adds ~30ms one-way = 60ms RTT minimum. If measured RTT significantly exceeds the minimum expected for the distance, queuing delay is likely. Check by running traceroute to see which hop adds disproportionate latency. If hop 3 adds 50ms while adjacent hops add 5ms, that router has queuing delay (congestion or bufferbloat).
 
 ### Q5: What causes TIME_WAIT exhaustion and how do you fix it?
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-causes-time-wait-exhaustion-and-how-do-you-fix-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-causes-time-wait-exhaustion-and-how-do-you-fix-it-handwritten.svg" alt="Handwritten: What causes TIME_WAIT exhaustion and how do you fix it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-causes-time-wait-exhaustion-and-how-do-you-fix-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-causes-time-wait-exhaustion-and-how-do-you-fix-it-diagram.svg" alt="Diagram: What causes TIME_WAIT exhaustion and how do you fix it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-causes-time-wait-exhaustion-and-how-do-you-fix-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-causes-time-wait-exhaustion-and-how-do-you-fix-it-sticky.svg" alt="Sticky Note: What causes TIME_WAIT exhaustion and how do you fix it?" width="30%">
-</a>
 
 
 Every TCP connection termination leaves the connection in TIME_WAIT for 2 * Maximum Segment Lifetime (typically 60 seconds). If a client creates many short-lived connections (e.g., a web server proxying requests), it can exhaust the ephemeral port range (~28,000 ports on Linux). At 470+ connections/second, the client runs out of ports.
@@ -2043,75 +1423,25 @@ Fixes: (1) Enable tcp_tw_reuse (allows reuse of TIME_WAIT sockets for new connec
 
 ### Q6: How do you identify a routing loop from a traceroute?
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-identify-a-routing-loop-from-a-traceroute-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-identify-a-routing-loop-from-a-traceroute-handwritten.svg" alt="Handwritten: How do you identify a routing loop from a traceroute?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-identify-a-routing-loop-from-a-traceroute-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-identify-a-routing-loop-from-a-traceroute-diagram.svg" alt="Diagram: How do you identify a routing loop from a traceroute?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-identify-a-routing-loop-from-a-traceroute-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-identify-a-routing-loop-from-a-traceroute-sticky.svg" alt="Sticky Note: How do you identify a routing loop from a traceroute?" width="30%">
-</a>
-
 
 A routing loop appears as a repeating pattern of the same IP addresses across multiple hops. Classic 2-hop loop: Hop A -> B -> A -> B -> A -> B (continues until TTL expires). Single-hop loop: same IP appears on consecutive hops. The TTL decreases by 1 each hop but never reaches the destination → the trace terminates at hop 30 (or the max TTL) with "destination not reached."
 
 ### Q7: What does "Connection refused" versus "No route to host" mean?
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-does-connection-refused-versus-no-route-to-host-mean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-does-connection-refused-versus-no-route-to-host-mean-handwritten.svg" alt="Handwritten: What does "Connection refused" versus "No route to host" mean?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-does-connection-refused-versus-no-route-to-host-mean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-does-connection-refused-versus-no-route-to-host-mean-diagram.svg" alt="Diagram: What does "Connection refused" versus "No route to host" mean?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-does-connection-refused-versus-no-route-to-host-mean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-does-connection-refused-versus-no-route-to-host-mean-sticky.svg" alt="Sticky Note: What does "Connection refused" versus "No route to host" mean?" width="30%">
-</a>
 
 
 "Connection refused" (ECONNREFUSED) means the TCP SYN reached the destination host but that host sent back a RST because nothing is listening on the port. "No route to host" (EHOSTUNREACH) means the IP stack could not find a route to the destination → there is no matching entry in the routing table and no default gateway, or the gateway is unreachable at Layer 2.
 
 ### Q8: How do you test if a firewall is blocking a specific port?
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-test-if-a-firewall-is-blocking-a-specific-port-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-test-if-a-firewall-is-blocking-a-specific-port-handwritten.svg" alt="Handwritten: How do you test if a firewall is blocking a specific port?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-test-if-a-firewall-is-blocking-a-specific-port-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-test-if-a-firewall-is-blocking-a-specific-port-diagram.svg" alt="Diagram: How do you test if a firewall is blocking a specific port?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-test-if-a-firewall-is-blocking-a-specific-port-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-do-you-test-if-a-firewall-is-blocking-a-specific-port-sticky.svg" alt="Sticky Note: How do you test if a firewall is blocking a specific port?" width="30%">
-</a>
-
 
 Test from outside the firewall: (1) nc -zv &lt;host&gt; <port> → if timeout, the port is filtered (firewall is actively blocking). (2) Use tcpdump on the server to see if SYN packets arrive. If tcpdump shows the SYN arriving but no SYN-ACK being sent, the firewall on the server is blocking. If tcpdump shows no SYNs at all, the firewall on the network path or client is blocking.
 
 ### Q9: What is asymmetric routing and how does it affect troubleshooting?
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting-handwritten.svg" alt="Handwritten: What is asymmetric routing and how does it affect troubleshooting?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting-diagram.svg" alt="Diagram: What is asymmetric routing and how does it affect troubleshooting?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/what-is-asymmetric-routing-and-how-does-it-affect-troubleshooting-sticky.svg" alt="Sticky Note: What is asymmetric routing and how does it affect troubleshooting?" width="30%">
-</a>
-
 
 Asymmetric routing occurs when packets take a different path from A to B than from B to A. This is common in networks with ECMP or multiple connections. Traceroute only shows the forward path → packet loss on the return path is invisible. This means a high-loss traceroute may not show where loss is actually occurring. MTR shows both directions only if run from both endpoints.
 
 ### Q10: How does path MTU discovery work and why does it fail?
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-path-mtu-discovery-work-and-why-does-it-fail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-path-mtu-discovery-work-and-why-does-it-fail-handwritten.svg" alt="Handwritten: How does path MTU discovery work and why does it fail?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-path-mtu-discovery-work-and-why-does-it-fail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-path-mtu-discovery-work-and-why-does-it-fail-diagram.svg" alt="Diagram: How does path MTU discovery work and why does it fail?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-path-mtu-discovery-work-and-why-does-it-fail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/how-does-path-mtu-discovery-work-and-why-does-it-fail-sticky.svg" alt="Sticky Note: How does path MTU discovery work and why does it fail?" width="30%">
-</a>
 
 
 PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along the path needs to fragment but DF is set, it sends an ICMP "Fragmentation Needed" message back to the sender. The sender then reduces its packet size and retries. PMTUD fails when firewalls block the ICMP Fragmentation Needed messages. The sender never learns about the MTU restriction and keeps retransmitting the oversized packets. Fix: configure MSS clamping on the router to cap TCP segment size.
@@ -2119,16 +1449,6 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 ## 17.11 Applications in Real Systems
 
 ### Case Study 1: E-commerce Platform Slowdown at Peak Hours
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-1-e-commerce-platform-slowdown-at-peak-hours-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-1-e-commerce-platform-slowdown-at-peak-hours-handwritten.svg" alt="Handwritten: Case Study 1: E-commerce Platform Slowdown at Peak Hours" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-1-e-commerce-platform-slowdown-at-peak-hours-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-1-e-commerce-platform-slowdown-at-peak-hours-diagram.svg" alt="Diagram: Case Study 1: E-commerce Platform Slowdown at Peak Hours" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-1-e-commerce-platform-slowdown-at-peak-hours-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-1-e-commerce-platform-slowdown-at-peak-hours-sticky.svg" alt="Sticky Note: Case Study 1: E-commerce Platform Slowdown at Peak Hours" width="30%">
-</a>
 
 
 **Symptom:** An e-commerce site became slow every day at 2 PM. Page load times increased from 1.2s to 8s. Checkout failures increased.
@@ -2147,16 +1467,6 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 
 ### Case Study 2: Database Connection Pool Exhaustion
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-2-database-connection-pool-exhaustion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-2-database-connection-pool-exhaustion-handwritten.svg" alt="Handwritten: Case Study 2: Database Connection Pool Exhaustion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-2-database-connection-pool-exhaustion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-2-database-connection-pool-exhaustion-diagram.svg" alt="Diagram: Case Study 2: Database Connection Pool Exhaustion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-2-database-connection-pool-exhaustion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-2-database-connection-pool-exhaustion-sticky.svg" alt="Sticky Note: Case Study 2: Database Connection Pool Exhaustion" width="30%">
-</a>
-
 
 **Symptom:** A microservice periodically became unresponsive. Other services depending on it timed out.
 
@@ -2172,16 +1482,6 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 
 ### Case Study 3: Mysterious MTU-Related Timeout
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-3-mysterious-mtu-related-timeout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-3-mysterious-mtu-related-timeout-handwritten.svg" alt="Handwritten: Case Study 3: Mysterious MTU-Related Timeout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-3-mysterious-mtu-related-timeout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-3-mysterious-mtu-related-timeout-diagram.svg" alt="Diagram: Case Study 3: Mysterious MTU-Related Timeout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-3-mysterious-mtu-related-timeout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-3-mysterious-mtu-related-timeout-sticky.svg" alt="Sticky Note: Case Study 3: Mysterious MTU-Related Timeout" width="30%">
-</a>
-
 
 **Symptom:** File uploads over VPN would stall at exactly 1400 bytes. Small files worked, large files stalled.
 
@@ -2195,16 +1495,6 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 
 ### Case Study 4: ARP Poisoning in a Hotel Network
 
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-4-arp-poisoning-in-a-hotel-network-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-4-arp-poisoning-in-a-hotel-network-handwritten.svg" alt="Handwritten: Case Study 4: ARP Poisoning in a Hotel Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-4-arp-poisoning-in-a-hotel-network-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-4-arp-poisoning-in-a-hotel-network-diagram.svg" alt="Diagram: Case Study 4: ARP Poisoning in a Hotel Network" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-4-arp-poisoning-in-a-hotel-network-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-4-arp-poisoning-in-a-hotel-network-sticky.svg" alt="Sticky Note: Case Study 4: ARP Poisoning in a Hotel Network" width="30%">
-</a>
-
 
 **Symptom:** Guest laptops reported "duplicate IP address" warnings. Some guests could not access the internet. Others were redirected to phishing pages.
 
@@ -2217,16 +1507,6 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 **Fix:** Implemented port security with a maximum of 3 MAC addresses per port, enabled dynamic ARP inspection (DAI) and DHCP snooping on the switch. The attack was contained.
 
 ### Case Study 5: WAF Rule Blocking Legitimate API Traffic
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-5-waf-rule-blocking-legitimate-api-traffic-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-5-waf-rule-blocking-legitimate-api-traffic-handwritten.svg" alt="Handwritten: Case Study 5: WAF Rule Blocking Legitimate API Traffic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-5-waf-rule-blocking-legitimate-api-traffic-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-5-waf-rule-blocking-legitimate-api-traffic-diagram.svg" alt="Diagram: Case Study 5: WAF Rule Blocking Legitimate API Traffic" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-5-waf-rule-blocking-legitimate-api-traffic-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/case-study-5-waf-rule-blocking-legitimate-api-traffic-sticky.svg" alt="Sticky Note: Case Study 5: WAF Rule Blocking Legitimate API Traffic" width="30%">
-</a>
 
 
 **Symptom:** A mobile app could not log in. Web users were unaffected. API requests from the mobile app returned 403 Forbidden.
@@ -2310,16 +1590,6 @@ PMTUD works by setting the DF (Don't Fragment) bit on packets. If a router along
 | Port unreachable | Firewall blocking | telnet, nc | netcat |
 
 ### Troubleshooting Methodology Flow
-
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/troubleshooting-methodology-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/troubleshooting-methodology-flow-handwritten.svg" alt="Handwritten: Troubleshooting Methodology Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/troubleshooting-methodology-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/troubleshooting-methodology-flow-diagram.svg" alt="Diagram: Troubleshooting Methodology Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/17-troubleshooting/troubleshooting-methodology-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/17-troubleshooting/troubleshooting-methodology-flow-sticky.svg" alt="Sticky Note: Troubleshooting Methodology Flow" width="30%">
-</a>
 
 
 ```mermaid

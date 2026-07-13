@@ -114,16 +114,6 @@ Each higher form eliminates a specific type of dependency redundancy:
 
 ### 8.1 Beyond BCNF
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-1-beyond-bcnf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-1-beyond-bcnf-handwritten.svg" alt="Handwritten: 8.1 Beyond BCNF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-1-beyond-bcnf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-1-beyond-bcnf-diagram.svg" alt="Diagram: 8.1 Beyond BCNF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-1-beyond-bcnf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-1-beyond-bcnf-sticky.svg" alt="Sticky Note: 8.1 Beyond BCNF" width="30%">
-</a>
-
 
 BCNF eliminates redundancy from functional dependencies, but other types of dependencies can still cause redundancy:
 
@@ -139,16 +129,6 @@ Imagine a school directory that lists each student, all their extracurricular cl
 ---
 
 ### 8.2 Multi-Valued Dependencies
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-2-multi-valued-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-2-multi-valued-dependencies-handwritten.svg" alt="Handwritten: 8.2 Multi-Valued Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-2-multi-valued-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-2-multi-valued-dependencies-diagram.svg" alt="Diagram: 8.2 Multi-Valued Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-2-multi-valued-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-2-multi-valued-dependencies-sticky.svg" alt="Sticky Note: 8.2 Multi-Valued Dependencies" width="30%">
-</a>
 
 
 A **multi-valued dependency (MVD)** X -->> Y holds if, given a value for X, the set of Y values is independent of all other attributes.
@@ -206,16 +186,6 @@ The MVD says: For a given club, the set of members and the set of activities are
 ---
 
 ### 8.3 Fourth Normal Form (4NF)
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-3-fourth-normal-form-4nf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-3-fourth-normal-form-4nf-handwritten.svg" alt="Handwritten: 8.3 Fourth Normal Form (4NF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-3-fourth-normal-form-4nf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-3-fourth-normal-form-4nf-diagram.svg" alt="Diagram: 8.3 Fourth Normal Form (4NF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-3-fourth-normal-form-4nf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-3-fourth-normal-form-4nf-sticky.svg" alt="Sticky Note: 8.3 Fourth Normal Form (4NF)" width="30%">
-</a>
 
 
 A relation is in 4NF if:
@@ -346,16 +316,6 @@ CREATE TABLE emp_language (emp_id INTEGER, language VARCHAR(50), PRIMARY KEY (em
 
 ### 8.4 Complexity Analysis of 4NF Decomposition
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-4-complexity-analysis-of-4nf-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-4-complexity-analysis-of-4nf-decomposition-handwritten.svg" alt="Handwritten: 8.4 Complexity Analysis of 4NF Decomposition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-4-complexity-analysis-of-4nf-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-4-complexity-analysis-of-4nf-decomposition-diagram.svg" alt="Diagram: 8.4 Complexity Analysis of 4NF Decomposition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-4-complexity-analysis-of-4nf-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-4-complexity-analysis-of-4nf-decomposition-sticky.svg" alt="Sticky Note: 8.4 Complexity Analysis of 4NF Decomposition" width="30%">
-</a>
-
 
 **Time Complexity:**
 
@@ -383,16 +343,6 @@ CREATE TABLE emp_language (emp_id INTEGER, language VARCHAR(50), PRIMARY KEY (em
 ---
 
 ### 8.5 C++ Implementation: 4NF Decomposer
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-5-c-implementation-4nf-decomposer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-5-c-implementation-4nf-decomposer-handwritten.svg" alt="Handwritten: 8.5 C++ Implementation: 4NF Decomposer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-5-c-implementation-4nf-decomposer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-5-c-implementation-4nf-decomposer-diagram.svg" alt="Diagram: 8.5 C++ Implementation: 4NF Decomposer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-5-c-implementation-4nf-decomposer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-5-c-implementation-4nf-decomposer-sticky.svg" alt="Sticky Note: 8.5 C++ Implementation: 4NF Decomposer" width="30%">
-</a>
 
 
 ```cpp
@@ -557,16 +507,6 @@ CLUB_MEMBER_2(club, activity)
 ---
 
 ### 8.6 Python Implementation: 4NF Decomposer with MVD Checker
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-6-python-implementation-4nf-decomposer-with-mvd-checker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-6-python-implementation-4nf-decomposer-with-mvd-checker-handwritten.svg" alt="Handwritten: 8.6 Python Implementation: 4NF Decomposer with MVD Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-6-python-implementation-4nf-decomposer-with-mvd-checker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-6-python-implementation-4nf-decomposer-with-mvd-checker-diagram.svg" alt="Diagram: 8.6 Python Implementation: 4NF Decomposer with MVD Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-6-python-implementation-4nf-decomposer-with-mvd-checker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-6-python-implementation-4nf-decomposer-with-mvd-checker-sticky.svg" alt="Sticky Note: 8.6 Python Implementation: 4NF Decomposer with MVD Checker" width="30%">
-</a>
 
 
 ```python
@@ -778,16 +718,6 @@ Final 4NF decomposition (2 relations): [EMP_SKILL_LANG_1(emp_id, language),
 
 ### 8.7 Join Dependencies and Fifth Normal Form (5NF)
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-7-join-dependencies-and-fifth-normal-form-5nf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-7-join-dependencies-and-fifth-normal-form-5nf-handwritten.svg" alt="Handwritten: 8.7 Join Dependencies and Fifth Normal Form (5NF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-7-join-dependencies-and-fifth-normal-form-5nf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-7-join-dependencies-and-fifth-normal-form-5nf-diagram.svg" alt="Diagram: 8.7 Join Dependencies and Fifth Normal Form (5NF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-7-join-dependencies-and-fifth-normal-form-5nf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-7-join-dependencies-and-fifth-normal-form-5nf-sticky.svg" alt="Sticky Note: 8.7 Join Dependencies and Fifth Normal Form (5NF)" width="30%">
-</a>
-
 
 A **join dependency (JD)** specifies that a relation can be losslessly decomposed into a set of projections and then reconstructed via joins.
 
@@ -960,16 +890,6 @@ CREATE TABLE agent_product (
 
 ### 8.8 C++ Implementation: 5NF Checker
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-8-c-implementation-5nf-checker-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-8-c-implementation-5nf-checker-handwritten.svg" alt="Handwritten: 8.8 C++ Implementation: 5NF Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-8-c-implementation-5nf-checker-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-8-c-implementation-5nf-checker-diagram.svg" alt="Diagram: 8.8 C++ Implementation: 5NF Checker" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-8-c-implementation-5nf-checker-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-8-c-implementation-5nf-checker-sticky.svg" alt="Sticky Note: 8.8 C++ Implementation: 5NF Checker" width="30%">
-</a>
-
 
 ```cpp
 #include <iostream>
@@ -1123,16 +1043,6 @@ Decomposition of AGENT_PRODUCT by JD JD1:
 ---
 
 ### 8.9 Python Implementation: 5NF Checker with Join Simulation
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-9-python-implementation-5nf-checker-with-join-simulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-9-python-implementation-5nf-checker-with-join-simulation-handwritten.svg" alt="Handwritten: 8.9 Python Implementation: 5NF Checker with Join Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-9-python-implementation-5nf-checker-with-join-simulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-9-python-implementation-5nf-checker-with-join-simulation-diagram.svg" alt="Diagram: 8.9 Python Implementation: 5NF Checker with Join Simulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-9-python-implementation-5nf-checker-with-join-simulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-9-python-implementation-5nf-checker-with-join-simulation-sticky.svg" alt="Sticky Note: 8.9 Python Implementation: 5NF Checker with Join Simulation" width="30%">
-</a>
 
 
 ```python
@@ -1315,16 +1225,6 @@ Original AGENT_PRODUCT data: 4 rows
 
 ### 8.10 Complexity Analysis of 5NF Decomposition
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-10-complexity-analysis-of-5nf-decomposition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-10-complexity-analysis-of-5nf-decomposition-handwritten.svg" alt="Handwritten: 8.10 Complexity Analysis of 5NF Decomposition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-10-complexity-analysis-of-5nf-decomposition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-10-complexity-analysis-of-5nf-decomposition-diagram.svg" alt="Diagram: 8.10 Complexity Analysis of 5NF Decomposition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-10-complexity-analysis-of-5nf-decomposition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-10-complexity-analysis-of-5nf-decomposition-sticky.svg" alt="Sticky Note: 8.10 Complexity Analysis of 5NF Decomposition" width="30%">
-</a>
-
 
 **Time Complexity:**
 
@@ -1351,16 +1251,6 @@ The number of potential join dependencies for an n-attribute relation equals the
 ---
 
 ### 8.11 Domain-Key Normal Form (DKNF)
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-11-domain-key-normal-form-dknf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-11-domain-key-normal-form-dknf-handwritten.svg" alt="Handwritten: 8.11 Domain-Key Normal Form (DKNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-11-domain-key-normal-form-dknf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-11-domain-key-normal-form-dknf-diagram.svg" alt="Diagram: 8.11 Domain-Key Normal Form (DKNF)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-11-domain-key-normal-form-dknf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-11-domain-key-normal-form-dknf-sticky.svg" alt="Sticky Note: 8.11 Domain-Key Normal Form (DKNF)" width="30%">
-</a>
 
 
 **Domain-Key Normal Form** (Ronald Fagin, 1981) is the theoretical ultimate normal form.
@@ -1398,16 +1288,6 @@ This constraint requires a CHECK constraint or assertion -- DKNF cannot express 
 ---
 
 ### 8.12 Temporal Databases
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-12-temporal-databases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-12-temporal-databases-handwritten.svg" alt="Handwritten: 8.12 Temporal Databases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-12-temporal-databases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-12-temporal-databases-diagram.svg" alt="Diagram: 8.12 Temporal Databases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-12-temporal-databases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-12-temporal-databases-sticky.svg" alt="Sticky Note: 8.12 Temporal Databases" width="30%">
-</a>
 
 
 **Temporal databases** track data across time, managing when facts were true (valid time) and when they were recorded (transaction time).
@@ -1496,16 +1376,6 @@ MVD considerations: None if properly keyed by (emp_id, effective_from)
 ---
 
 ### 8.13 Denormalization
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-13-denormalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-13-denormalization-handwritten.svg" alt="Handwritten: 8.13 Denormalization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-13-denormalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-13-denormalization-diagram.svg" alt="Diagram: 8.13 Denormalization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-13-denormalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-13-denormalization-sticky.svg" alt="Sticky Note: 8.13 Denormalization" width="30%">
-</a>
 
 
 **Denormalization** is the intentional introduction of redundancy into a normalized database to improve query performance. It is the opposite of normalization.
@@ -1612,16 +1482,6 @@ CREATE TABLE orders (
 
 ### 8.14 Normalization vs Denormalization Comparison
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-14-normalization-vs-denormalization-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-14-normalization-vs-denormalization-comparison-handwritten.svg" alt="Handwritten: 8.14 Normalization vs Denormalization Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-14-normalization-vs-denormalization-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-14-normalization-vs-denormalization-comparison-diagram.svg" alt="Diagram: 8.14 Normalization vs Denormalization Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-14-normalization-vs-denormalization-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-14-normalization-vs-denormalization-comparison-sticky.svg" alt="Sticky Note: 8.14 Normalization vs Denormalization Comparison" width="30%">
-</a>
-
 
 | Aspect | Normalization | Denormalization |
 |--------|--------------|-----------------|
@@ -1642,16 +1502,6 @@ CREATE TABLE orders (
 
 ### 8.15 Risks of Denormalization
 
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-15-risks-of-denormalization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-15-risks-of-denormalization-handwritten.svg" alt="Handwritten: 8.15 Risks of Denormalization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-15-risks-of-denormalization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-15-risks-of-denormalization-diagram.svg" alt="Diagram: 8.15 Risks of Denormalization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-15-risks-of-denormalization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-15-risks-of-denormalization-sticky.svg" alt="Sticky Note: 8.15 Risks of Denormalization" width="30%">
-</a>
-
 
 - **Update anomalies return:** Data must be updated in multiple places
 - **Increased storage:** Redundant data consumes disk space
@@ -1667,16 +1517,6 @@ CREATE TABLE orders (
 ---
 
 ### 8.16 Applications in Real Systems
-
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-16-applications-in-real-systems-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-16-applications-in-real-systems-handwritten.svg" alt="Handwritten: 8.16 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-16-applications-in-real-systems-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-16-applications-in-real-systems-diagram.svg" alt="Diagram: 8.16 Applications in Real Systems" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-16-applications-in-real-systems-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/database-management-systems/08-higher-nf/8-16-applications-in-real-systems-sticky.svg" alt="Sticky Note: 8.16 Applications in Real Systems" width="30%">
-</a>
 
 
 **Real-World Denormalization in Analytics and Warehousing:**

@@ -165,16 +165,6 @@ flowchart LR
 
 ### 1. JavaScript Syntax and Variables
 
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/1-javascript-syntax-and-variables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/1-javascript-syntax-and-variables-handwritten.svg" alt="Handwritten: 1. JavaScript Syntax and Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/1-javascript-syntax-and-variables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/1-javascript-syntax-and-variables-diagram.svg" alt="Diagram: 1. JavaScript Syntax and Variables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/1-javascript-syntax-and-variables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/1-javascript-syntax-and-variables-sticky.svg" alt="Sticky Note: 1. JavaScript Syntax and Variables" width="30%">
-</a>
-
 
 JavaScript is a dynamic, loosely typed language. Variables hold values; the type is determined at runtime.
 
@@ -318,16 +308,6 @@ console.log(userProfile?.billing?.card);  // undefined (no error)
 ---
 
 ### 2. Functions
-
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/2-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/2-functions-handwritten.svg" alt="Handwritten: 2. Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/2-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/2-functions-diagram.svg" alt="Diagram: 2. Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/2-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/2-functions-sticky.svg" alt="Sticky Note: 2. Functions" width="30%">
-</a>
 
 
 Functions are first-class objects Ã¢â‚¬â€ they can be assigned, passed, and returned.
@@ -521,16 +501,6 @@ console.log(grouped);
 
 ### 3. Objects and Arrays
 
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/3-objects-and-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/3-objects-and-arrays-handwritten.svg" alt="Handwritten: 3. Objects and Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/3-objects-and-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/3-objects-and-arrays-diagram.svg" alt="Diagram: 3. Objects and Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/3-objects-and-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/3-objects-and-arrays-sticky.svg" alt="Sticky Note: 3. Objects and Arrays" width="30%">
-</a>
-
 
 #### Object Creation and Access
 
@@ -700,16 +670,6 @@ console.log(copy === a); // false
 
 ### 4. DOM Manipulation
 
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/4-dom-manipulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/4-dom-manipulation-handwritten.svg" alt="Handwritten: 4. DOM Manipulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/4-dom-manipulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/4-dom-manipulation-diagram.svg" alt="Diagram: 4. DOM Manipulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/4-dom-manipulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/4-dom-manipulation-sticky.svg" alt="Sticky Note: 4. DOM Manipulation" width="30%">
-</a>
-
 
 The Document Object Model (DOM) is a tree representation of HTML. JavaScript can traverse and mutate this tree.
 
@@ -853,16 +813,6 @@ console.log(child.closest('ul'));       // nearest matching ancestor
 ---
 
 ### 5. ES6+ Features
-
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/5-es6-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/5-es6-features-handwritten.svg" alt="Handwritten: 5. ES6+ Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/5-es6-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/5-es6-features-diagram.svg" alt="Diagram: 5. ES6+ Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/5-es6-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/5-es6-features-sticky.svg" alt="Sticky Note: 5. ES6+ Features" width="30%">
-</a>
 
 
 #### Template Literals
@@ -1125,16 +1075,6 @@ const difference = new Set([...a].filter(x => !b.has(x)));  // {1}
 
 ### 6. AJAX and the Fetch API
 
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/6-ajax-and-the-fetch-api-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/6-ajax-and-the-fetch-api-handwritten.svg" alt="Handwritten: 6. AJAX and the Fetch API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/6-ajax-and-the-fetch-api-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/6-ajax-and-the-fetch-api-diagram.svg" alt="Diagram: 6. AJAX and the Fetch API" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/6-ajax-and-the-fetch-api-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/6-ajax-and-the-fetch-api-sticky.svg" alt="Sticky Note: 6. AJAX and the Fetch API" width="30%">
-</a>
-
 
 #### GET Request
 
@@ -1296,16 +1236,6 @@ api.get('/users')
 ---
 
 ### 7. Event Handling
-
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/7-event-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/7-event-handling-handwritten.svg" alt="Handwritten: 7. Event Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/7-event-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/7-event-handling-diagram.svg" alt="Diagram: 7. Event Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/7-event-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/7-event-handling-sticky.svg" alt="Sticky Note: 7. Event Handling" width="30%">
-</a>
 
 
 #### addEventListener
@@ -1533,16 +1463,6 @@ document.addEventListener('keydown', event => {
 ---
 
 ### 8. Alpine.js for Laravel
-
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/8-alpine-js-for-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/8-alpine-js-for-laravel-handwritten.svg" alt="Handwritten: 8. Alpine.js for Laravel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/8-alpine-js-for-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/8-alpine-js-for-laravel-diagram.svg" alt="Diagram: 8. Alpine.js for Laravel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/8-alpine-js-for-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/8-alpine-js-for-laravel-sticky.svg" alt="Sticky Note: 8. Alpine.js for Laravel" width="30%">
-</a>
 
 
 Alpine.js is a lightweight JavaScript framework for composing behavior directly in HTML markup. It pairs naturally with Laravel Blade.
@@ -1903,16 +1823,6 @@ Inside counter Livewire component:
 
 ### 9. Modern JavaScript Tooling
 
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/9-modern-javascript-tooling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/9-modern-javascript-tooling-handwritten.svg" alt="Handwritten: 9. Modern JavaScript Tooling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/9-modern-javascript-tooling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/9-modern-javascript-tooling-diagram.svg" alt="Diagram: 9. Modern JavaScript Tooling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/9-modern-javascript-tooling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/9-modern-javascript-tooling-sticky.svg" alt="Sticky Note: 9. Modern JavaScript Tooling" width="30%">
-</a>
-
 
 #### npm and yarn
 
@@ -2022,16 +1932,6 @@ button.addEventListener('click', async () => {
 ---
 
 ### 10. JavaScript in Laravel
-
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/10-javascript-in-laravel-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/10-javascript-in-laravel-handwritten.svg" alt="Handwritten: 10. JavaScript in Laravel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/10-javascript-in-laravel-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/10-javascript-in-laravel-diagram.svg" alt="Diagram: 10. JavaScript in Laravel" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/javascript-basics/10-javascript-in-laravel-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/javascript-basics/10-javascript-in-laravel-sticky.svg" alt="Sticky Note: 10. JavaScript in Laravel" width="30%">
-</a>
 
 
 #### Vite Configuration

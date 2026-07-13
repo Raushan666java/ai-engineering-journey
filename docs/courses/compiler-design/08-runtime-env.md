@@ -81,16 +81,6 @@ flowchart LR
 
 ### Activation Records
 
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/activation-records-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/activation-records-handwritten.svg" alt="Handwritten: Activation Records" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/activation-records-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/activation-records-diagram.svg" alt="Diagram: Activation Records" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/activation-records-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/activation-records-sticky.svg" alt="Sticky Note: Activation Records" width="30%">
-</a>
-
 
 An **activation record** (stack frame) is the storage area allocated for each procedure invocation. It typically contains:
 
@@ -124,16 +114,6 @@ The compiler generates code that references fields within the activation record 
 
 ### Calling Conventions
 
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/calling-conventions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/calling-conventions-handwritten.svg" alt="Handwritten: Calling Conventions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/calling-conventions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/calling-conventions-diagram.svg" alt="Diagram: Calling Conventions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/calling-conventions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/calling-conventions-sticky.svg" alt="Sticky Note: Calling Conventions" width="30%">
-</a>
-
 
 A **calling convention** specifies how arguments are passed, how the stack is managed, and which registers must be preserved.
 
@@ -159,16 +139,6 @@ A **calling convention** specifies how arguments are passed, how the stack is ma
 11. Callee executes `RET` ? pops return address and jumps.
 
 ### Complete TypeScript Activation Record Simulator
-
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-activation-record-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-activation-record-simulator-handwritten.svg" alt="Handwritten: Complete TypeScript Activation Record Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-activation-record-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-activation-record-simulator-diagram.svg" alt="Diagram: Complete TypeScript Activation Record Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-activation-record-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-activation-record-simulator-sticky.svg" alt="Sticky Note: Complete TypeScript Activation Record Simulator" width="30%">
-</a>
 
 
 ```typescript
@@ -369,16 +339,6 @@ rt.getOutput().forEach(line => console.log(`  ${line}`));
 
 ### Stack Allocation
 
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/stack-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/stack-allocation-handwritten.svg" alt="Handwritten: Stack Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/stack-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/stack-allocation-diagram.svg" alt="Diagram: Stack Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/stack-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/stack-allocation-sticky.svg" alt="Sticky Note: Stack Allocation" width="30%">
-</a>
-
 
 The standard function call sequence on x86-64:
 
@@ -411,16 +371,6 @@ This last-in-first-out discipline maps naturally to procedure call semantics. Ea
 
 ### Heap Allocation
 
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/heap-allocation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/heap-allocation-handwritten.svg" alt="Handwritten: Heap Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/heap-allocation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/heap-allocation-diagram.svg" alt="Diagram: Heap Allocation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/heap-allocation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/heap-allocation-sticky.svg" alt="Sticky Note: Heap Allocation" width="30%">
-</a>
-
 
 Objects with lifetimes extending beyond the creating procedure require **heap allocation**. The heap is a region of memory for arbitrary-size blocks allocated in any order.
 
@@ -434,16 +384,6 @@ Objects with lifetimes extending beyond the creating procedure require **heap al
 | Arena/Region | Allocate in bump-pointer regions | Very fast allocation, no per-object free | Fixed lifetime scope |
 
 ### Complete TypeScript Heap Simulator
-
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-heap-simulator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-heap-simulator-handwritten.svg" alt="Handwritten: Complete TypeScript Heap Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-heap-simulator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-heap-simulator-diagram.svg" alt="Diagram: Complete TypeScript Heap Simulator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-heap-simulator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/complete-typescript-heap-simulator-sticky.svg" alt="Sticky Note: Complete TypeScript Heap Simulator" width="30%">
-</a>
 
 
 ```typescript
@@ -619,16 +559,6 @@ console.log(`\nHeap stats: allocated=${stats.allocated} free=${stats.free} frag=
 
 ### Static versus Dynamic Scoping
 
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/static-versus-dynamic-scoping-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/static-versus-dynamic-scoping-handwritten.svg" alt="Handwritten: Static versus Dynamic Scoping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/static-versus-dynamic-scoping-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/static-versus-dynamic-scoping-diagram.svg" alt="Diagram: Static versus Dynamic Scoping" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/static-versus-dynamic-scoping-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/static-versus-dynamic-scoping-sticky.svg" alt="Sticky Note: Static versus Dynamic Scoping" width="30%">
-</a>
-
 
 **Static scoping** (lexical scoping) resolves nonlocal variable references based on the program's textual structure. The binding is determined at compile time. In nested-procedure languages (Pascal, Ada), static scoping uses **access links**: each activation record points to the enclosing lexical activation. A variable at nesting depth `d` accessed from depth `n` requires following `n-d` access links.
 
@@ -644,16 +574,6 @@ console.log(`\nHeap stats: allocated=${stats.allocated} free=${stats.free} frag=
 | Examples | Pascal, C, Java, ML | Early Lisp, Emacs Lisp |
 
 ### Parameter Passing
-
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/parameter-passing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/parameter-passing-handwritten.svg" alt="Handwritten: Parameter Passing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/parameter-passing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/parameter-passing-diagram.svg" alt="Diagram: Parameter Passing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/parameter-passing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/parameter-passing-sticky.svg" alt="Sticky Note: Parameter Passing" width="30%">
-</a>
 
 
 | Strategy | Description | Examples | Effect on Caller |
@@ -696,16 +616,6 @@ demoParameterPassing();
 ```
 
 ### Variable-Length Data
-
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/variable-length-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/variable-length-data-handwritten.svg" alt="Handwritten: Variable-Length Data" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/variable-length-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/variable-length-data-diagram.svg" alt="Diagram: Variable-Length Data" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/variable-length-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/variable-length-data-sticky.svg" alt="Sticky Note: Variable-Length Data" width="30%">
-</a>
 
 
 Three approaches handle data whose size is not known at compile time:
@@ -753,16 +663,6 @@ console.log(`Final: length=${arr.getLength()} capacity=${arr.getCapacity()}`);
 ```
 
 ### Garbage Collection
-
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/garbage-collection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/garbage-collection-handwritten.svg" alt="Handwritten: Garbage Collection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/garbage-collection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/garbage-collection-diagram.svg" alt="Diagram: Garbage Collection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/garbage-collection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/garbage-collection-sticky.svg" alt="Sticky Note: Garbage Collection" width="30%">
-</a>
 
 
 Garbage collection reclaims heap memory that is no longer reachable from the **root set** (globals, stack variables, registers).
@@ -1165,16 +1065,6 @@ genCollector.printState();
 ```
 
 ### Concept Comparison
-
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/concept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/08-runtime-env/concept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/08-runtime-env/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
-</a>
 
 
 | GC Strategy | Handles Cycles | Compacts | Pause Time | Throughput | Memory Overhead |

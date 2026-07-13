@@ -80,16 +80,6 @@ flowchart LR
 
 ### 4.1 Tables
 
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-1-tables-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-1-tables-handwritten.svg" alt="Handwritten: 4.1 Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-1-tables-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-1-tables-diagram.svg" alt="Diagram: 4.1 Tables" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-1-tables-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-1-tables-sticky.svg" alt="Sticky Note: 4.1 Tables" width="30%">
-</a>
-
 
 Tables present data in rows and columns. Questions involve:
 
@@ -112,16 +102,6 @@ Tables present data in rows and columns. Questions involve:
 
 ### 4.2 Bar Graphs
 
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-2-bar-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-2-bar-graphs-handwritten.svg" alt="Handwritten: 4.2 Bar Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-2-bar-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-2-bar-graphs-diagram.svg" alt="Diagram: 4.2 Bar Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-2-bar-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-2-bar-graphs-sticky.svg" alt="Sticky Note: 4.2 Bar Graphs" width="30%">
-</a>
-
 
 **Simple Bar Graph:** Each bar represents one data point. Height/width proportional to value.
 
@@ -137,16 +117,6 @@ Tables present data in rows and columns. Questions involve:
 - Proportion: individual bar / total of group
 
 ### 4.3 Line Charts
-
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-3-line-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-3-line-charts-handwritten.svg" alt="Handwritten: 4.3 Line Charts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-3-line-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-3-line-charts-diagram.svg" alt="Diagram: 4.3 Line Charts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-3-line-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-3-line-charts-sticky.svg" alt="Sticky Note: 4.3 Line Charts" width="30%">
-</a>
 
 
 Lines connect data points to show trends over time or ordered categories.
@@ -165,16 +135,6 @@ Lines connect data points to show trends over time or ordered categories.
 - Average = sum of values / number of periods
 
 ### 4.4 Pie Charts
-
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-4-pie-charts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-4-pie-charts-handwritten.svg" alt="Handwritten: 4.4 Pie Charts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-4-pie-charts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-4-pie-charts-diagram.svg" alt="Diagram: 4.4 Pie Charts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-4-pie-charts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-4-pie-charts-sticky.svg" alt="Sticky Note: 4.4 Pie Charts" width="30%">
-</a>
 
 
 Circular charts divided into sectors proportional to the data values.
@@ -195,16 +155,6 @@ Circular charts divided into sectors proportional to the data values.
 - Comparing absolute values requires knowing totals
 
 ### 4.5 Caselets
-
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-5-caselets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-5-caselets-handwritten.svg" alt="Handwritten: 4.5 Caselets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-5-caselets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-5-caselets-diagram.svg" alt="Diagram: 4.5 Caselets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-5-caselets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-5-caselets-sticky.svg" alt="Sticky Note: 4.5 Caselets" width="30%">
-</a>
 
 
 Caselets present data in narrative form rather than visual/tabular format.
@@ -228,16 +178,6 @@ Caselets present data in narrative form rather than visual/tabular format.
 
 ### 4.6 Mixed Graphs
 
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-6-mixed-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-6-mixed-graphs-handwritten.svg" alt="Handwritten: 4.6 Mixed Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-6-mixed-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-6-mixed-graphs-diagram.svg" alt="Diagram: 4.6 Mixed Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-6-mixed-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-6-mixed-graphs-sticky.svg" alt="Sticky Note: 4.6 Mixed Graphs" width="30%">
-</a>
-
 
 Combine two or more types of graphs on the same or related charts.
 
@@ -253,16 +193,6 @@ Combine two or more types of graphs on the same or related charts.
 4. Use data from one graph as input for calculations on another
 
 ### 4.7 Data Sufficiency
-
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-7-data-sufficiency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-7-data-sufficiency-handwritten.svg" alt="Handwritten: 4.7 Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-7-data-sufficiency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-7-data-sufficiency-diagram.svg" alt="Diagram: 4.7 Data Sufficiency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-7-data-sufficiency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/04-data-interpretation/4-7-data-sufficiency-sticky.svg" alt="Sticky Note: 4.7 Data Sufficiency" width="30%">
-</a>
 
 
 Each question has two statements. Determine if the statements together or individually provide enough data to answer.

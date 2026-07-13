@@ -89,16 +89,6 @@ flowchart LR
 
 ### 25.1 The Supervisor/Worker Pattern
 
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-1-the-supervisor-worker-pattern-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-1-the-supervisor-worker-pattern-handwritten.svg" alt="Handwritten: 25.1 The Supervisor/Worker Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-1-the-supervisor-worker-pattern-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-1-the-supervisor-worker-pattern-diagram.svg" alt="Diagram: 25.1 The Supervisor/Worker Pattern" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-1-the-supervisor-worker-pattern-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-1-the-supervisor-worker-pattern-sticky.svg" alt="Sticky Note: 25.1 The Supervisor/Worker Pattern" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** A central supervisor delegates tasks to worker agents via queues, handling distribution and result aggregation.
@@ -439,16 +429,6 @@ class AiServiceProvider extends ServiceProvider
 
 ### 25.2 Agent Teams & Handoff Protocols
 
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-2-agent-teams-handoff-protocols-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-2-agent-teams-handoff-protocols-handwritten.svg" alt="Handwritten: 25.2 Agent Teams & Handoff Protocols" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-2-agent-teams-handoff-protocols-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-2-agent-teams-handoff-protocols-diagram.svg" alt="Diagram: 25.2 Agent Teams & Handoff Protocols" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-2-agent-teams-handoff-protocols-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-2-agent-teams-handoff-protocols-sticky.svg" alt="Sticky Note: 25.2 Agent Teams & Handoff Protocols" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Agent teams use handoff protocols with contracts defining what data is passed and what the receiving agent should do.
@@ -720,16 +700,6 @@ class HandoffServiceProvider extends ServiceProvider
 ---
 
 ### 25.3 Parallel Agent Execution
-
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-3-parallel-agent-execution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-3-parallel-agent-execution-handwritten.svg" alt="Handwritten: 25.3 Parallel Agent Execution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-3-parallel-agent-execution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-3-parallel-agent-execution-diagram.svg" alt="Diagram: 25.3 Parallel Agent Execution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-3-parallel-agent-execution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-3-parallel-agent-execution-sticky.svg" alt="Sticky Note: 25.3 Parallel Agent Execution" width="30%">
-</a>
 
 
 
@@ -1114,16 +1084,6 @@ class ParallelAnalysisController extends Controller
 
 ### 25.4 State Management Across Agents
 
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-4-state-management-across-agents-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-4-state-management-across-agents-handwritten.svg" alt="Handwritten: 25.4 State Management Across Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-4-state-management-across-agents-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-4-state-management-across-agents-diagram.svg" alt="Diagram: 25.4 State Management Across Agents" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-4-state-management-across-agents-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-4-state-management-across-agents-sticky.svg" alt="Sticky Note: 25.4 State Management Across Agents" width="30%">
-</a>
-
 
 
 > **One-Sentence Takeaway:** Redis stores shared agent state with TTL, job IDs, and status tracking for distributed coordination.
@@ -1475,16 +1435,6 @@ class TeamConversationController extends Controller
 > **Warning:** Always set TTL on agent state in Redis. Expired state from dead agents should be automatically cleaned up.
 
 ### 25.5 Queue-Backed Agent Orchestration
-
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-5-queue-backed-agent-orchestration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-5-queue-backed-agent-orchestration-handwritten.svg" alt="Handwritten: 25.5 Queue-Backed Agent Orchestration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-5-queue-backed-agent-orchestration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-5-queue-backed-agent-orchestration-diagram.svg" alt="Diagram: 25.5 Queue-Backed Agent Orchestration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-5-queue-backed-agent-orchestration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/25-multi-agent-systems/25-5-queue-backed-agent-orchestration-sticky.svg" alt="Sticky Note: 25.5 Queue-Backed Agent Orchestration" width="30%">
-</a>
 
 
 

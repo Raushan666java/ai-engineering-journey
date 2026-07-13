@@ -100,16 +100,6 @@ flowchart LR
 
 ### 18.1 Event-Driven Automation
 
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-1-event-driven-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-1-event-driven-automation-handwritten.svg" alt="Handwritten: 18.1 Event-Driven Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-1-event-driven-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-1-event-driven-automation-diagram.svg" alt="Diagram: 18.1 Event-Driven Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-1-event-driven-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-1-event-driven-automation-sticky.svg" alt="Sticky Note: 18.1 Event-Driven Automation" width="30%">
-</a>
-
 
 Laravel's event system is the backbone of decoupled automation. An event is a simple data class that describes something that happened. A listener reacts to that event. This separation lets you add new automation behaviors without touching existing code.
 
@@ -261,16 +251,6 @@ OrderShipped::dispatch($order)->delay(now()->addHours(24));
 ```
 
 ### 18.2 Queue-Based Pipeline Patterns
-
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-2-queue-based-pipeline-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-2-queue-based-pipeline-patterns-handwritten.svg" alt="Handwritten: 18.2 Queue-Based Pipeline Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-2-queue-based-pipeline-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-2-queue-based-pipeline-patterns-diagram.svg" alt="Diagram: 18.2 Queue-Based Pipeline Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-2-queue-based-pipeline-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-2-queue-based-pipeline-patterns-sticky.svg" alt="Sticky Note: 18.2 Queue-Based Pipeline Patterns" width="30%">
-</a>
 
 
 Queues are essential for non-blocking automation. Laravel provides several patterns for composing work:
@@ -545,16 +525,6 @@ class AppServiceProvider extends ServiceProvider
 
 ### 18.3 AI Agent Automation
 
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-3-ai-agent-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-3-ai-agent-automation-handwritten.svg" alt="Handwritten: 18.3 AI Agent Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-3-ai-agent-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-3-ai-agent-automation-diagram.svg" alt="Diagram: 18.3 AI Agent Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-3-ai-agent-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-3-ai-agent-automation-sticky.svg" alt="Sticky Note: 18.3 AI Agent Automation" width="30%">
-</a>
-
 
 AI agents can serve as automated processors within your pipeline. They receive tasks, use tools to interact with your application, and produce structured output:
 
@@ -689,16 +659,6 @@ class GenerateAiReport implements ShouldQueue
 
 ### 18.4 Scheduled Task Automation
 
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-4-scheduled-task-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-4-scheduled-task-automation-handwritten.svg" alt="Handwritten: 18.4 Scheduled Task Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-4-scheduled-task-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-4-scheduled-task-automation-diagram.svg" alt="Diagram: 18.4 Scheduled Task Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-4-scheduled-task-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-4-scheduled-task-automation-sticky.svg" alt="Sticky Note: 18.4 Scheduled Task Automation" width="30%">
-</a>
-
 
 The schedule in `App\Console\Kernel` is the central timer for all periodic tasks:
 
@@ -791,16 +751,6 @@ $schedule->command('emails:send-digest')
 By default, scheduled tasks skip when maintenance mode is active. Use `evenInMaintenanceMode()` only for tasks that must run regardless.
 
 ### 18.5 Webhook-Driven Automation
-
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-5-webhook-driven-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-5-webhook-driven-automation-handwritten.svg" alt="Handwritten: 18.5 Webhook-Driven Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-5-webhook-driven-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-5-webhook-driven-automation-diagram.svg" alt="Diagram: 18.5 Webhook-Driven Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-5-webhook-driven-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-5-webhook-driven-automation-sticky.svg" alt="Sticky Note: 18.5 Webhook-Driven Automation" width="30%">
-</a>
 
 
 Webhooks let external systems trigger automation in your application. Receive them with a dedicated controller:
@@ -990,16 +940,6 @@ class DeliverWebhook implements ShouldQueue
 
 ### 18.6 CI/CD Integration
 
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-6-ci-cd-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-6-ci-cd-integration-handwritten.svg" alt="Handwritten: 18.6 CI/CD Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-6-ci-cd-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-6-ci-cd-integration-diagram.svg" alt="Diagram: 18.6 CI/CD Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-6-ci-cd-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-6-ci-cd-integration-sticky.svg" alt="Sticky Note: 18.6 CI/CD Integration" width="30%">
-</a>
-
 
 Tests run automatically as part of CI. For Laravel, this typically uses PHPUnit or PEST within a GitHub Actions workflow:
 
@@ -1110,16 +1050,6 @@ php artisan up
 
 ### 18.7 Monitoring Alerts
 
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-7-monitoring-alerts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-7-monitoring-alerts-handwritten.svg" alt="Handwritten: 18.7 Monitoring Alerts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-7-monitoring-alerts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-7-monitoring-alerts-diagram.svg" alt="Diagram: 18.7 Monitoring Alerts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-7-monitoring-alerts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-7-monitoring-alerts-sticky.svg" alt="Sticky Note: 18.7 Monitoring Alerts" width="30%">
-</a>
-
 
 Proactive monitoring prevents failures before they affect users. Configure Pulse or Telescope alerts:
 
@@ -1183,16 +1113,6 @@ class MonitorQueueHealth extends Command
 ```
 
 ### 18.8 Business Process Automation
-
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-8-business-process-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-8-business-process-automation-handwritten.svg" alt="Handwritten: 18.8 Business Process Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-8-business-process-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-8-business-process-automation-diagram.svg" alt="Diagram: 18.8 Business Process Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-8-business-process-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-8-business-process-automation-sticky.svg" alt="Sticky Note: 18.8 Business Process Automation" width="30%">
-</a>
 
 
 Approval workflows automate multi-step business processes:
@@ -1351,16 +1271,6 @@ class GenerateDailyReports extends Command
 ```
 
 ### 18.9 Complete Example: Automated Document Processing Pipeline
-
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-9-complete-example-automated-document-processing-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-9-complete-example-automated-document-processing-pipeline-handwritten.svg" alt="Handwritten: 18.9 Complete Example: Automated Document Processing Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-9-complete-example-automated-document-processing-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-9-complete-example-automated-document-processing-pipeline-diagram.svg" alt="Diagram: 18.9 Complete Example: Automated Document Processing Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/18-automation-patterns/18-9-complete-example-automated-document-processing-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/18-automation-patterns/18-9-complete-example-automated-document-processing-pipeline-sticky.svg" alt="Sticky Note: 18.9 Complete Example: Automated Document Processing Pipeline" width="30%">
-</a>
 
 
 This example ties all the automation patterns together into a complete document processing system:

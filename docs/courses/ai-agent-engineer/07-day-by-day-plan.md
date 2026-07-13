@@ -84,32 +84,12 @@ Each day has a **topic**, an **action** (what to do), and a **done condition** (
 
 ### Daily rhythm
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/daily-rhythm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/daily-rhythm-handwritten.svg" alt="Handwritten: Daily rhythm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/daily-rhythm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/daily-rhythm-diagram.svg" alt="Diagram: Daily rhythm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/daily-rhythm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/daily-rhythm-sticky.svg" alt="Sticky Note: Daily rhythm" width="30%">
-</a>
-
 
 1. **Morning (15 min):** Review today's topic and action. Preview the material.
 2. **Work session (2-4 hrs):** Read the phase section, run the examples, complete the action.
 3. **Wrap-up (5 min):** Verify the done condition. Write a 1-sentence reflection in your log.
 
 ### Weekly rhythm
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-rhythm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-rhythm-handwritten.svg" alt="Handwritten: Weekly rhythm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-rhythm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-rhythm-diagram.svg" alt="Diagram: Weekly rhythm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-rhythm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-rhythm-sticky.svg" alt="Sticky Note: Weekly rhythm" width="30%">
-</a>
 
 
 | Day | Focus |
@@ -120,16 +100,6 @@ Each day has a **topic**, an **action** (what to do), and a **done condition** (
 | Sun | Rest or optional — read ahead in next week's content |
 
 ### Progress tracking
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/progress-tracking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/progress-tracking-handwritten.svg" alt="Handwritten: Progress tracking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/progress-tracking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/progress-tracking-diagram.svg" alt="Diagram: Progress tracking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/progress-tracking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/progress-tracking-sticky.svg" alt="Sticky Note: Progress tracking" width="30%">
-</a>
 
 
 At the start of each week, copy the week's table into your tracker. Cross off days as you complete them. If 3+ days in a week require buffer time, reduce scope for the remaining days rather than skipping them entirely.
@@ -312,16 +282,6 @@ Weeks 8 and 10 have built-in buffer days. These are the most important weeks in 
 
 ### How to use buffer days
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/how-to-use-buffer-days-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/how-to-use-buffer-days-handwritten.svg" alt="Handwritten: How to use buffer days" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/how-to-use-buffer-days-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/how-to-use-buffer-days-diagram.svg" alt="Diagram: How to use buffer days" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/how-to-use-buffer-days-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/how-to-use-buffer-days-sticky.svg" alt="Sticky Note: How to use buffer days" width="30%">
-</a>
-
 
 | Scenario | What to do |
 |----------|-----------|
@@ -332,16 +292,6 @@ Weeks 8 and 10 have built-in buffer days. These are the most important weeks in 
 
 ### Hard rules for staying on track
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/hard-rules-for-staying-on-track-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/hard-rules-for-staying-on-track-handwritten.svg" alt="Handwritten: Hard rules for staying on track" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/hard-rules-for-staying-on-track-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/hard-rules-for-staying-on-track-diagram.svg" alt="Diagram: Hard rules for staying on track" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/hard-rules-for-staying-on-track-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/hard-rules-for-staying-on-track-sticky.svg" alt="Sticky Note: Hard rules for staying on track" width="30%">
-</a>
-
 
 1. **Never skip a day** — even 30 min of focused work counts. Consistency beats intensity.
 2. **Done > perfect** — a working prototype deployed today is worth more than a polished one next week.
@@ -350,16 +300,6 @@ Weeks 8 and 10 have built-in buffer days. These are the most important weeks in 
 5. **If you're consistently overrunning, reduce scope** — the goal is 3 working portfolio projects and a job search, not completing every exercise perfectly.
 
 ### Weekly reflection template
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-reflection-template-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-reflection-template-handwritten.svg" alt="Handwritten: Weekly reflection template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-reflection-template-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-reflection-template-diagram.svg" alt="Diagram: Weekly reflection template" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-reflection-template-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/weekly-reflection-template-sticky.svg" alt="Sticky Note: Weekly reflection template" width="30%">
-</a>
 
 
 Ask yourself these 3 questions at the end of each week:
@@ -410,16 +350,6 @@ flowchart LR
 
 ### Phase 0 Checkpoint
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-0-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-0-checkpoint-handwritten.svg" alt="Handwritten: Phase 0 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-0-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-0-checkpoint-diagram.svg" alt="Diagram: Phase 0 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-0-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-0-checkpoint-sticky.svg" alt="Sticky Note: Phase 0 Checkpoint" width="30%">
-</a>
-
 - [ ] Can explain Redis SETEX vs RQ
 - [ ] Working pub/sub publisher + subscriber
 - [ ] Can draw JWT access/refresh flow from memory
@@ -428,16 +358,6 @@ flowchart LR
 - [ ] Working idempotency check + WebSocket echo server
 
 ### Phase 1 Checkpoint
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-1-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-1-checkpoint-handwritten.svg" alt="Handwritten: Phase 1 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-1-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-1-checkpoint-diagram.svg" alt="Diagram: Phase 1 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-1-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-1-checkpoint-sticky.svg" alt="Sticky Note: Phase 1 Checkpoint" width="30%">
-</a>
 
 - [ ] Can write `list[dict[str,int]]` annotations without checking
 - [ ] Working custom DB context manager
@@ -451,16 +371,6 @@ flowchart LR
 
 ### Phase 2 Checkpoint
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-2-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-2-checkpoint-handwritten.svg" alt="Handwritten: Phase 2 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-2-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-2-checkpoint-diagram.svg" alt="Diagram: Phase 2 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-2-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-2-checkpoint-sticky.svg" alt="Sticky Note: Phase 2 Checkpoint" width="30%">
-</a>
-
 - [ ] Can estimate token counts within 20% without tools
 - [ ] Can explain cosine similarity concretely
 - [ ] Few-shot prompting beats zero-shot measurably
@@ -472,16 +382,6 @@ flowchart LR
 
 ### Phase 3 Checkpoint
 
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-3-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-3-checkpoint-handwritten.svg" alt="Handwritten: Phase 3 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-3-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-3-checkpoint-diagram.svg" alt="Diagram: Phase 3 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-3-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-3-checkpoint-sticky.svg" alt="Sticky Note: Phase 3 Checkpoint" width="30%">
-</a>
-
 - [ ] Minimal ReAct loop handles tool calls correctly
 - [ ] Nested parameter schema works with real API call
 - [ ] LangGraph StateGraph runs end to end
@@ -492,16 +392,6 @@ flowchart LR
 - [ ] Agent recalls past conversation with memory
 
 ### Phase 4 Checkpoint
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-4-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-4-checkpoint-handwritten.svg" alt="Handwritten: Phase 4 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-4-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-4-checkpoint-diagram.svg" alt="Diagram: Phase 4 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-4-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-4-checkpoint-sticky.svg" alt="Sticky Note: Phase 4 Checkpoint" width="30%">
-</a>
 
 - [ ] Docker image &lt; 300MB
 - [ ] `docker ps` shows healthy for all services
@@ -515,16 +405,6 @@ flowchart LR
 - [ ] Green CI badge on both repos
 
 ### Phase 5 Checkpoint
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-5-checkpoint-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-5-checkpoint-handwritten.svg" alt="Handwritten: Phase 5 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-5-checkpoint-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-5-checkpoint-diagram.svg" alt="Diagram: Phase 5 Checkpoint" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-5-checkpoint-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/phase-5-checkpoint-sticky.svg" alt="Sticky Note: Phase 5 Checkpoint" width="30%">
-</a>
 
 - [ ] Both READMEs pass the 60-second test
 - [ ] 90-second demo video recorded for each project
@@ -896,16 +776,6 @@ The 16 buffer days across 12 weeks (19% of total days) are the safety valve. If 
 ## Detailed Daily Action Descriptions
 
 ### Week 1 Deep Dive
-
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/week-1-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/week-1-deep-dive-handwritten.svg" alt="Handwritten: Week 1 Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/week-1-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/week-1-deep-dive-diagram.svg" alt="Diagram: Week 1 Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/week-1-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/ai-agent-engineer/07-day-by-day-plan/week-1-deep-dive-sticky.svg" alt="Sticky Note: Week 1 Deep Dive" width="30%">
-</a>
 
 **Day 1 — Redis as Cache vs Queue**
 Read the Redis documentation on SETEX (caching with TTL) and RQ (Redis Queue for background jobs). Build two small scripts: one using `redis-py` to cache API responses with `SETEX`, another using `rq` to enqueue a background email-sending job. Compare when each is appropriate — caching for read-heavy, latency-sensitive data; queues for write-heavy, durable operations.

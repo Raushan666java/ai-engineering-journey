@@ -47,23 +47,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 2.1 Importance of Grammar in Govt Exams
-
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-1-importance-of-grammar-in-govt-exams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-1-importance-of-grammar-in-govt-exams-handwritten.svg" alt="Handwritten: 2.1 Importance of Grammar in Govt Exams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-1-importance-of-grammar-in-govt-exams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-1-importance-of-grammar-in-govt-exams-diagram.svg" alt="Diagram: 2.1 Importance of Grammar in Govt Exams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-1-importance-of-grammar-in-govt-exams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-1-importance-of-grammar-in-govt-exams-sticky.svg" alt="Sticky Note: 2.1 Importance of Grammar in Govt Exams" width="30%">
-</a>
-
 
 Grammar questions account for **5–7 questions** in IBPS SO IT Officer Prelims. These appear in multiple formats:
 
@@ -77,17 +65,6 @@ Grammar questions account for **5–7 questions** in IBPS SO IT Officer Prelims.
 Grammar is the **most scoring section** in English. Rules are finite and predictable. Unlike RC or vocabulary, consistent practice guarantees accuracy.
 
 ### 2.2 Subject-Verb Agreement (Concord)
-
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-2-subject-verb-agreement-concord-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-2-subject-verb-agreement-concord-handwritten.svg" alt="Handwritten: 2.2 Subject-Verb Agreement (Concord)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-2-subject-verb-agreement-concord-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-2-subject-verb-agreement-concord-diagram.svg" alt="Diagram: 2.2 Subject-Verb Agreement (Concord)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-2-subject-verb-agreement-concord-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-2-subject-verb-agreement-concord-sticky.svg" alt="Sticky Note: 2.2 Subject-Verb Agreement (Concord)" width="30%">
-</a>
-
 
 The verb must agree with its subject in **number and person**.
 
@@ -129,17 +106,6 @@ The verb must agree with its subject in **number and person**.
 
 ### 2.3 Tenses
 
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-3-tenses-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-3-tenses-handwritten.svg" alt="Handwritten: 2.3 Tenses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-3-tenses-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-3-tenses-diagram.svg" alt="Diagram: 2.3 Tenses" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-3-tenses-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-3-tenses-sticky.svg" alt="Sticky Note: 2.3 Tenses" width="30%">
-</a>
-
-
 #### Tense Consistency Table
 
 | Tense | Use | Example |
@@ -169,17 +135,6 @@ The verb must agree with its subject in **number and person**.
 
 ### 2.4 Articles (A, An, The)
 
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-4-articles-a-an-the-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-4-articles-a-an-the-handwritten.svg" alt="Handwritten: 2.4 Articles (A, An, The)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-4-articles-a-an-the-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-4-articles-a-an-the-diagram.svg" alt="Diagram: 2.4 Articles (A, An, The)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-4-articles-a-an-the-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-4-articles-a-an-the-sticky.svg" alt="Sticky Note: 2.4 Articles (A, An, The)" width="30%">
-</a>
-
-
 | Article | Use | Example |
 |---------|-----|---------|
 | A | Before consonant sound | *A university, a one-time fee* |
@@ -198,17 +153,6 @@ The verb must agree with its subject in **number and person**.
 - *She is **a** European delegate.* ✓ (European begins with consonant sound /y/)
 
 ### 2.5 Prepositions
-
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-5-prepositions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-5-prepositions-handwritten.svg" alt="Handwritten: 2.5 Prepositions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-5-prepositions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-5-prepositions-diagram.svg" alt="Diagram: 2.5 Prepositions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-5-prepositions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-5-prepositions-sticky.svg" alt="Sticky Note: 2.5 Prepositions" width="30%">
-</a>
-
 
 Prepositions show relationships in time, place, direction, and manner.
 
@@ -254,17 +198,6 @@ Prepositions show relationships in time, place, direction, and manner.
 
 ### 2.6 Conjunctions
 
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-6-conjunctions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-6-conjunctions-handwritten.svg" alt="Handwritten: 2.6 Conjunctions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-6-conjunctions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-6-conjunctions-diagram.svg" alt="Diagram: 2.6 Conjunctions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-6-conjunctions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-6-conjunctions-sticky.svg" alt="Sticky Note: 2.6 Conjunctions" width="30%">
-</a>
-
-
 | Conjunction | Use | Example |
 |-------------|-----|---------|
 | Although / Though | Contrast (despite) | *Although it rained, the event continued.* |
@@ -283,17 +216,6 @@ Prepositions show relationships in time, place, direction, and manner.
 
 ### 2.7 Commonly Confused Words
 
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-7-commonly-confused-words-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-7-commonly-confused-words-handwritten.svg" alt="Handwritten: 2.7 Commonly Confused Words" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-7-commonly-confused-words-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-7-commonly-confused-words-diagram.svg" alt="Diagram: 2.7 Commonly Confused Words" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-7-commonly-confused-words-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-7-commonly-confused-words-sticky.svg" alt="Sticky Note: 2.7 Commonly Confused Words" width="30%">
-</a>
-
-
 | Pair | Meaning | Correct Usage |
 |------|---------|---------------|
 | Affect / Effect | Verb vs Noun | *The policy **affects** us. (v) / The **effect** is significant. (n)* |
@@ -309,17 +231,6 @@ Prepositions show relationships in time, place, direction, and manner.
 
 ### 2.8 Active and Passive Voice
 
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-8-active-and-passive-voice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-8-active-and-passive-voice-handwritten.svg" alt="Handwritten: 2.8 Active and Passive Voice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-8-active-and-passive-voice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-8-active-and-passive-voice-diagram.svg" alt="Diagram: 2.8 Active and Passive Voice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-8-active-and-passive-voice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-8-active-and-passive-voice-sticky.svg" alt="Sticky Note: 2.8 Active and Passive Voice" width="30%">
-</a>
-
-
 | Tense | Active | Passive |
 |-------|--------|---------|
 | Simple Present | *The clerk processes the form.* | *The form is processed by the clerk.* |
@@ -334,17 +245,6 @@ Prepositions show relationships in time, place, direction, and manner.
 **Exam Tip:** In Spotting Error questions, check if the voice is appropriate for the context. If the doer of the action is unclear or unimportant, passive voice is correct.
 
 ### 2.9 Direct and Indirect Speech
-
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-9-direct-and-indirect-speech-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-9-direct-and-indirect-speech-handwritten.svg" alt="Handwritten: 2.9 Direct and Indirect Speech" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-9-direct-and-indirect-speech-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-9-direct-and-indirect-speech-diagram.svg" alt="Diagram: 2.9 Direct and Indirect Speech" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-9-direct-and-indirect-speech-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-9-direct-and-indirect-speech-sticky.svg" alt="Sticky Note: 2.9 Direct and Indirect Speech" width="30%">
-</a>
-
 
 | Direct | Indirect |
 |--------|----------|
@@ -375,17 +275,6 @@ Prepositions show relationships in time, place, direction, and manner.
 
 ### 2.10 Conditional Sentences
 
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-10-conditional-sentences-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-10-conditional-sentences-handwritten.svg" alt="Handwritten: 2.10 Conditional Sentences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-10-conditional-sentences-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-10-conditional-sentences-diagram.svg" alt="Diagram: 2.10 Conditional Sentences" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-10-conditional-sentences-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-10-conditional-sentences-sticky.svg" alt="Sticky Note: 2.10 Conditional Sentences" width="30%">
-</a>
-
-
 | Type | If Clause | Main Clause | Example |
 |------|-----------|-------------|---------|
 | Zero | Simple Present | Simple Present | *If you heat ice, it melts.* |
@@ -399,17 +288,6 @@ Prepositions show relationships in time, place, direction, and manner.
 - *If I **were** the manager, I would approve it.* ✓
 
 ### 2.11 Key Error Detection Patterns
-
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-11-key-error-detection-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-11-key-error-detection-patterns-handwritten.svg" alt="Handwritten: 2.11 Key Error Detection Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-11-key-error-detection-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-11-key-error-detection-patterns-diagram.svg" alt="Diagram: 2.11 Key Error Detection Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-11-key-error-detection-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/english-language/02-grammar-essentials/2-11-key-error-detection-patterns-sticky.svg" alt="Sticky Note: 2.11 Key Error Detection Patterns" width="30%">
-</a>
-
 
 **Pattern 1 — Noun-Pronoun Agreement:**
 - *Each of the officers must submit **their** report.* ✗

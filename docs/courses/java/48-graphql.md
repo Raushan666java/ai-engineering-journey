@@ -90,16 +90,6 @@ GraphQL defines a schema language for describing data types, relationships, and 
 
 ### 1.1 Project Dependencies
 
-<a href="../../../assets/images/diagrams/java/48-graphql/1-1-project-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-1-project-dependencies-handwritten.svg" alt="Handwritten: 1.1 Project Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-1-project-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-1-project-dependencies-diagram.svg" alt="Diagram: 1.1 Project Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-1-project-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-1-project-dependencies-sticky.svg" alt="Sticky Note: 1.1 Project Dependencies" width="30%">
-</a>
-
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -187,16 +177,6 @@ GraphQL defines a schema language for describing data types, relationships, and 
 
 ### 1.2 Application Configuration
 
-<a href="../../../assets/images/diagrams/java/48-graphql/1-2-application-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-2-application-configuration-handwritten.svg" alt="Handwritten: 1.2 Application Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-2-application-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-2-application-configuration-diagram.svg" alt="Diagram: 1.2 Application Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-2-application-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-2-application-configuration-sticky.svg" alt="Sticky Note: 1.2 Application Configuration" width="30%">
-</a>
-
 
 ```yaml
 # src/main/resources/application.yml
@@ -252,16 +232,6 @@ logging:
 ```
 
 ### 1.3 Schema Definition
-
-<a href="../../../assets/images/diagrams/java/48-graphql/1-3-schema-definition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-3-schema-definition-handwritten.svg" alt="Handwritten: 1.3 Schema Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-3-schema-definition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-3-schema-definition-diagram.svg" alt="Diagram: 1.3 Schema Definition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-3-schema-definition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-3-schema-definition-sticky.svg" alt="Sticky Note: 1.3 Schema Definition" width="30%">
-</a>
 
 
 ```graphql
@@ -552,16 +522,6 @@ type _Service {
 
 ### 1.4 GraphQL Configuration
 
-<a href="../../../assets/images/diagrams/java/48-graphql/1-4-graphql-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-4-graphql-configuration-handwritten.svg" alt="Handwritten: 1.4 GraphQL Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-4-graphql-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-4-graphql-configuration-diagram.svg" alt="Diagram: 1.4 GraphQL Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/1-4-graphql-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/1-4-graphql-configuration-sticky.svg" alt="Sticky Note: 1.4 GraphQL Configuration" width="30%">
-</a>
-
 
 ```java
 package com.aiengineering.course.config;
@@ -811,16 +771,6 @@ public class Comment {
 ```
 
 ### 2.1 Enums and DTOs
-
-<a href="../../../assets/images/diagrams/java/48-graphql/2-1-enums-and-dtos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/2-1-enums-and-dtos-handwritten.svg" alt="Handwritten: 2.1 Enums and DTOs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/2-1-enums-and-dtos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/2-1-enums-and-dtos-diagram.svg" alt="Diagram: 2.1 Enums and DTOs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/48-graphql/2-1-enums-and-dtos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/48-graphql/2-1-enums-and-dtos-sticky.svg" alt="Sticky Note: 2.1 Enums and DTOs" width="30%">
-</a>
 
 
 ```java

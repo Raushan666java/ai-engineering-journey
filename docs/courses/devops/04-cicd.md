@@ -91,16 +91,6 @@ flowchart LR
 
 ### CI vs CD vs Continuous Deployment
 
-<a href="../../../assets/images/diagrams/devops/04-cicd/ci-vs-cd-vs-continuous-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/ci-vs-cd-vs-continuous-deployment-handwritten.svg" alt="Handwritten: CI vs CD vs Continuous Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/ci-vs-cd-vs-continuous-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/ci-vs-cd-vs-continuous-deployment-diagram.svg" alt="Diagram: CI vs CD vs Continuous Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/ci-vs-cd-vs-continuous-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/ci-vs-cd-vs-continuous-deployment-sticky.svg" alt="Sticky Note: CI vs CD vs Continuous Deployment" width="30%">
-</a>
-
 
 **Continuous Integration (CI):**
 - Developers merge code to main branch multiple times daily
@@ -121,16 +111,6 @@ flowchart LR
 - Core practice: automated rollback and canary releases
 
 ### Pipeline Architecture
-
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-architecture-handwritten.svg" alt="Handwritten: Pipeline Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-architecture-diagram.svg" alt="Diagram: Pipeline Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-architecture-sticky.svg" alt="Sticky Note: Pipeline Architecture" width="30%">
-</a>
 
 
 A typical CI/CD pipeline has sequential and parallel stages:
@@ -153,16 +133,6 @@ flowchart TD
 ```
 
 ### Pipeline as Code
-
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-as-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-as-code-handwritten.svg" alt="Handwritten: Pipeline as Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-as-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-as-code-diagram.svg" alt="Diagram: Pipeline as Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-as-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-as-code-sticky.svg" alt="Sticky Note: Pipeline as Code" width="30%">
-</a>
 
 
 Pipeline definitions should be version-controlled alongside the application code:
@@ -220,16 +190,6 @@ jobs:
 
 ### Pipeline Stages in Detail
 
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-stages-in-detail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-stages-in-detail-handwritten.svg" alt="Handwritten: Pipeline Stages in Detail" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-stages-in-detail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-stages-in-detail-diagram.svg" alt="Diagram: Pipeline Stages in Detail" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-stages-in-detail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-stages-in-detail-sticky.svg" alt="Sticky Note: Pipeline Stages in Detail" width="30%">
-</a>
-
 
 **Source Stage:**
 - Checkout code from version control
@@ -273,16 +233,6 @@ jobs:
 
 ### Artifact Management
 
-<a href="../../../assets/images/diagrams/devops/04-cicd/artifact-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/artifact-management-handwritten.svg" alt="Handwritten: Artifact Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/artifact-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/artifact-management-diagram.svg" alt="Diagram: Artifact Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/artifact-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/artifact-management-sticky.svg" alt="Sticky Note: Artifact Management" width="30%">
-</a>
-
 
 Artifacts are the immutable output of the build stage.
 
@@ -302,16 +252,6 @@ Artifacts are the immutable output of the build stage.
 - SBOM (Software Bill of Materials)
 
 ### Pipeline Security
-
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-security-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-security-handwritten.svg" alt="Handwritten: Pipeline Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-security-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-security-diagram.svg" alt="Diagram: Pipeline Security" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-security-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-security-sticky.svg" alt="Sticky Note: Pipeline Security" width="30%">
-</a>
 
 
 **Secret management:**
@@ -342,16 +282,6 @@ jobs:
 - Pin base images to specific digests
 
 ### Pipeline Optimization
-
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-optimization-handwritten.svg" alt="Handwritten: Pipeline Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-optimization-diagram.svg" alt="Diagram: Pipeline Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/pipeline-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/pipeline-optimization-sticky.svg" alt="Sticky Note: Pipeline Optimization" width="30%">
-</a>
 
 
 **Caching:**
@@ -392,16 +322,6 @@ jobs:
 
 ### Environment Promotion
 
-<a href="../../../assets/images/diagrams/devops/04-cicd/environment-promotion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/environment-promotion-handwritten.svg" alt="Handwritten: Environment Promotion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/environment-promotion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/environment-promotion-diagram.svg" alt="Diagram: Environment Promotion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/environment-promotion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/environment-promotion-sticky.svg" alt="Sticky Note: Environment Promotion" width="30%">
-</a>
-
 
 Artifacts should flow unchanged through environments:
 
@@ -426,16 +346,6 @@ flowchart LR
 - **Production:** Manual approval or automated after staging health check
 
 ### Rollback Strategies
-
-<a href="../../../assets/images/diagrams/devops/04-cicd/rollback-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/rollback-strategies-handwritten.svg" alt="Handwritten: Rollback Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/rollback-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/rollback-strategies-diagram.svg" alt="Diagram: Rollback Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/04-cicd/rollback-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/04-cicd/rollback-strategies-sticky.svg" alt="Sticky Note: Rollback Strategies" width="30%">
-</a>
 
 
 **Rollback by redeployment:** Deploy the previous known-good artifact.

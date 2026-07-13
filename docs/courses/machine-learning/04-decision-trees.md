@@ -93,16 +93,6 @@ flowchart TD
 
 ### What is a Decision Tree?
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/what-is-a-decision-tree-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/what-is-a-decision-tree-handwritten.svg" alt="Handwritten: What is a Decision Tree?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/what-is-a-decision-tree-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/what-is-a-decision-tree-diagram.svg" alt="Diagram: What is a Decision Tree?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/what-is-a-decision-tree-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/what-is-a-decision-tree-sticky.svg" alt="Sticky Note: What is a Decision Tree?" width="30%">
-</a>
-
 
 A Decision Tree is a flowchart-like structure used for both classification and regression. Each internal node represents a "test" on an attribute (e.g., "Is Age > 30?"), each branch represents the outcome of the test, and each leaf node represents a class label or a continuous value.
 
@@ -121,16 +111,6 @@ Decision trees partition the **feature space** into axis-aligned rectangular reg
 
 ### Splitting Criteria: Entropy
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-criteria-entropy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-criteria-entropy-handwritten.svg" alt="Handwritten: Splitting Criteria: Entropy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-criteria-entropy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-criteria-entropy-diagram.svg" alt="Diagram: Splitting Criteria: Entropy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-criteria-entropy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-criteria-entropy-sticky.svg" alt="Sticky Note: Splitting Criteria: Entropy" width="30%">
-</a>
-
 
 **Entropy** $H(S)$ measures the impurity or disorder in a dataset $S$:
 
@@ -144,16 +124,6 @@ Where $p_i$ is the proportion of examples belonging to class $i$.
 - For binary classification: $H(S) = -p\log_2(p) - (1-p)\log_2(1-p)$
 
 ### Information Gain
-
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/information-gain-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/information-gain-handwritten.svg" alt="Handwritten: Information Gain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/information-gain-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/information-gain-diagram.svg" alt="Diagram: Information Gain" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/information-gain-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/information-gain-sticky.svg" alt="Sticky Note: Information Gain" width="30%">
-</a>
 
 
 **Information Gain** $IG(S, A)$ measures the reduction in entropy after splitting on attribute $A$:
@@ -179,16 +149,6 @@ The "Overcast" child is already pure (all play), so its entropy is 0.
 
 ### Gini Impurity
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/gini-impurity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/gini-impurity-handwritten.svg" alt="Handwritten: Gini Impurity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/gini-impurity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/gini-impurity-diagram.svg" alt="Diagram: Gini Impurity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/gini-impurity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/gini-impurity-sticky.svg" alt="Sticky Note: Gini Impurity" width="30%">
-</a>
-
 
 **Gini Impurity** is an alternative splitting criterion used by the CART algorithm:
 
@@ -205,16 +165,6 @@ $$Gini(S) = 1 - \sum_{i=1}^{c} p_i^2$$
 - CART's default is Gini; sklearn uses it by default
 
 ### The ID3 Algorithm
-
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-id3-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-id3-algorithm-handwritten.svg" alt="Handwritten: The ID3 Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-id3-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-id3-algorithm-diagram.svg" alt="Diagram: The ID3 Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-id3-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-id3-algorithm-sticky.svg" alt="Sticky Note: The ID3 Algorithm" width="30%">
-</a>
 
 
 Iterative Dichotomiser 3 (Quinlan, 1986):
@@ -241,16 +191,6 @@ ID3(examples, target_attribute, attributes):
 
 ### The CART Algorithm
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-cart-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-cart-algorithm-handwritten.svg" alt="Handwritten: The CART Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-cart-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-cart-algorithm-diagram.svg" alt="Diagram: The CART Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-cart-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/the-cart-algorithm-sticky.svg" alt="Sticky Note: The CART Algorithm" width="30%">
-</a>
-
 
 Classification and Regression Trees (Breiman et al., 1984) improves on ID3:
 
@@ -264,16 +204,6 @@ Classification and Regression Trees (Breiman et al., 1984) improves on ID3:
 
 ### Splitting for Regression Trees
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-for-regression-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-for-regression-trees-handwritten.svg" alt="Handwritten: Splitting for Regression Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-for-regression-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-for-regression-trees-diagram.svg" alt="Diagram: Splitting for Regression Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-for-regression-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/splitting-for-regression-trees-sticky.svg" alt="Sticky Note: Splitting for Regression Trees" width="30%">
-</a>
-
 
 For regression, CART uses MSE instead of Gini:
 
@@ -284,16 +214,6 @@ Where $\bar{y}_S$ is the mean target value in the node. The split that maximizes
 The prediction at a leaf node is the mean target value of all training examples that reach that leaf.
 
 ### Pruning
-
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/pruning-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/pruning-handwritten.svg" alt="Handwritten: Pruning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/pruning-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/pruning-diagram.svg" alt="Diagram: Pruning" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/pruning-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/pruning-sticky.svg" alt="Sticky Note: Pruning" width="30%">
-</a>
 
 
 Decision trees are prone to severe overfitting ? a fully grown tree can memorize every training example.
@@ -333,16 +253,6 @@ flowchart TD
 
 ### Feature Importance
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/feature-importance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/feature-importance-handwritten.svg" alt="Handwritten: Feature Importance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/feature-importance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/feature-importance-diagram.svg" alt="Diagram: Feature Importance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/feature-importance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/feature-importance-sticky.svg" alt="Sticky Note: Feature Importance" width="30%">
-</a>
-
 
 Decision trees provide a natural measure of feature importance: how often a feature is used for splitting, weighted by the improvement in purity (or MSE reduction) at each split, averaged over all nodes where that feature appears.
 
@@ -351,16 +261,6 @@ $$\text{Importance}(x_j) = \sum_{\text{nodes using } x_j} \frac{N_{\text{node}}}
 Feature importance is normalized to sum to 1. This built-in feature selection is one reason decision trees are excellent for exploratory analysis.
 
 ### Handling Categorical vs. Numerical Features
-
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/handling-categorical-vs-numerical-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/handling-categorical-vs-numerical-features-handwritten.svg" alt="Handwritten: Handling Categorical vs. Numerical Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/handling-categorical-vs-numerical-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/handling-categorical-vs-numerical-features-diagram.svg" alt="Diagram: Handling Categorical vs. Numerical Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/handling-categorical-vs-numerical-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/handling-categorical-vs-numerical-features-sticky.svg" alt="Sticky Note: Handling Categorical vs. Numerical Features" width="30%">
-</a>
 
 
 **Categorical features**:
@@ -373,16 +273,6 @@ Feature importance is normalized to sum to 1. This built-in feature selection is
 
 ### Missing Value Handling
 
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/missing-value-handling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/missing-value-handling-handwritten.svg" alt="Handwritten: Missing Value Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/missing-value-handling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/missing-value-handling-diagram.svg" alt="Diagram: Missing Value Handling" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/missing-value-handling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/missing-value-handling-sticky.svg" alt="Sticky Note: Missing Value Handling" width="30%">
-</a>
-
 
 Decision trees can handle missing values natively through:
 
@@ -391,16 +281,6 @@ Decision trees can handle missing values natively through:
 **Weighted distribution** (C4.5): Missing values are distributed across child nodes with fractional weights proportional to the distribution of non-missing samples.
 
 ### Bias-Variance Tradeoff in Decision Trees
-
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/bias-variance-tradeoff-in-decision-trees-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/bias-variance-tradeoff-in-decision-trees-handwritten.svg" alt="Handwritten: Bias-Variance Tradeoff in Decision Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/bias-variance-tradeoff-in-decision-trees-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/bias-variance-tradeoff-in-decision-trees-diagram.svg" alt="Diagram: Bias-Variance Tradeoff in Decision Trees" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/machine-learning/04-decision-trees/bias-variance-tradeoff-in-decision-trees-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/machine-learning/04-decision-trees/bias-variance-tradeoff-in-decision-trees-sticky.svg" alt="Sticky Note: Bias-Variance Tradeoff in Decision Trees" width="30%">
-</a>
 
 
 Decision trees are **low bias, high variance** models:

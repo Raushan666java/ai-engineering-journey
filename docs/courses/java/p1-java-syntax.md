@@ -94,16 +94,6 @@ Java was created by **James Gosling**, Mike Sheridan, and Patrick Naughton at Su
 
 ### 1.1 Key LTS Releases
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-1-key-lts-releases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-1-key-lts-releases-handwritten.svg" alt="Handwritten: 1.1 Key LTS Releases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-1-key-lts-releases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-1-key-lts-releases-diagram.svg" alt="Diagram: 1.1 Key LTS Releases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-1-key-lts-releases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-1-key-lts-releases-sticky.svg" alt="Sticky Note: 1.1 Key LTS Releases" width="30%">
-</a>
-
 
 Java follows a strict time-based release cadence (every six months) with a **Long-Term Support (LTS)** release every two to three years. The major LTS versions are:
 
@@ -115,16 +105,6 @@ Java follows a strict time-based release cadence (every six months) with a **Lon
 | Java 21 (LTS) | 2023 | Pattern matching for switch, record patterns, virtual threads, sequenced collections, string templates (preview) |
 
 ### 1.2 JDK vs JRE vs JVM
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-2-jdk-vs-jre-vs-jvm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-2-jdk-vs-jre-vs-jvm-handwritten.svg" alt="Handwritten: 1.2 JDK vs JRE vs JVM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-2-jdk-vs-jre-vs-jvm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-2-jdk-vs-jre-vs-jvm-diagram.svg" alt="Diagram: 1.2 JDK vs JRE vs JVM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-2-jdk-vs-jre-vs-jvm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-2-jdk-vs-jre-vs-jvm-sticky.svg" alt="Sticky Note: 1.2 JDK vs JRE vs JVM" width="30%">
-</a>
 
 
 These three acronyms are often confused. Here is the exact hierarchy:
@@ -143,16 +123,6 @@ JDK (Java Development Kit)
 > **Note:** Since Java 9, Oracle no longer ships a separate JRE. The `jlink` tool creates custom runtime images that contain only the modules your application needs.
 
 ### 1.3 The Compilation, Deployment, and Execution Pipeline
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-3-the-compilation-deployment-and-execution-pipeline-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-3-the-compilation-deployment-and-execution-pipeline-handwritten.svg" alt="Handwritten: 1.3 The Compilation, Deployment, and Execution Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-3-the-compilation-deployment-and-execution-pipeline-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-3-the-compilation-deployment-and-execution-pipeline-diagram.svg" alt="Diagram: 1.3 The Compilation, Deployment, and Execution Pipeline" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-3-the-compilation-deployment-and-execution-pipeline-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-3-the-compilation-deployment-and-execution-pipeline-sticky.svg" alt="Sticky Note: 1.3 The Compilation, Deployment, and Execution Pipeline" width="30%">
-</a>
 
 
 Every Java program goes through the following lifecycle:
@@ -177,16 +147,6 @@ Run time:      java HelloWorld              JVM loads, verifies, executes byteco
 The JVM's **Just-In-Time (JIT) compiler** identifies hot methods (executed frequently) and compiles them to native machine code at runtime, giving Java near-native performance.
 
 ### 1.4 Compiling and Running → Command-Line Reference
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-4-compiling-and-running-command-line-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-4-compiling-and-running-command-line-reference-handwritten.svg" alt="Handwritten: 1.4 Compiling and Running → Command-Line Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-4-compiling-and-running-command-line-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-4-compiling-and-running-command-line-reference-diagram.svg" alt="Diagram: 1.4 Compiling and Running → Command-Line Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/1-4-compiling-and-running-command-line-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/1-4-compiling-and-running-command-line-reference-sticky.svg" alt="Sticky Note: 1.4 Compiling and Running → Command-Line Reference" width="30%">
-</a>
 
 
 ```bash
@@ -216,16 +176,6 @@ jlink --module-path $JAVA_HOME/jmods --add-modules java.base --output mini-jre
 Java has **eight primitive types**. Everything else in Java is an object (reference type). Primitives are stored directly on the stack (or inline in objects), making them memory-efficient and fast.
 
 ### 2.1 The Eight Primitive Types
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-1-the-eight-primitive-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-1-the-eight-primitive-types-handwritten.svg" alt="Handwritten: 2.1 The Eight Primitive Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-1-the-eight-primitive-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-1-the-eight-primitive-types-diagram.svg" alt="Diagram: 2.1 The Eight Primitive Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-1-the-eight-primitive-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-1-the-eight-primitive-types-sticky.svg" alt="Sticky Note: 2.1 The Eight Primitive Types" width="30%">
-</a>
 
 
 | Type | Size | Min | Max | Default | Example |
@@ -291,16 +241,6 @@ public class PrimitiveTypesDemo {
 
 ### 2.2 Type Conversion
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-2-type-conversion-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-2-type-conversion-handwritten.svg" alt="Handwritten: 2.2 Type Conversion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-2-type-conversion-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-2-type-conversion-diagram.svg" alt="Diagram: 2.2 Type Conversion" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-2-type-conversion-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-2-type-conversion-sticky.svg" alt="Sticky Note: 2.2 Type Conversion" width="30%">
-</a>
-
 
 Java supports both **widening** (implicit, automatic) and **narrowing** (explicit, requires cast) conversions.
 
@@ -365,16 +305,6 @@ public class TypeConversionDemo {
 ```
 
 ### 2.3 Autoboxing and Unboxing
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-3-autoboxing-and-unboxing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-3-autoboxing-and-unboxing-handwritten.svg" alt="Handwritten: 2.3 Autoboxing and Unboxing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-3-autoboxing-and-unboxing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-3-autoboxing-and-unboxing-diagram.svg" alt="Diagram: 2.3 Autoboxing and Unboxing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/2-3-autoboxing-and-unboxing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/2-3-autoboxing-and-unboxing-sticky.svg" alt="Sticky Note: 2.3 Autoboxing and Unboxing" width="30%">
-</a>
 
 
 **Autoboxing** is the automatic conversion of a primitive to its corresponding wrapper class. **Unboxing** is the reverse. This feature bridges the gap between primitives and the collections framework, which only works with objects.
@@ -460,16 +390,6 @@ Java provides a rich set of operators organized into several categories.
 
 ### 3.1 Arithmetic Operators
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-1-arithmetic-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-1-arithmetic-operators-handwritten.svg" alt="Handwritten: 3.1 Arithmetic Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-1-arithmetic-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-1-arithmetic-operators-diagram.svg" alt="Diagram: 3.1 Arithmetic Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-1-arithmetic-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-1-arithmetic-operators-sticky.svg" alt="Sticky Note: 3.1 Arithmetic Operators" width="30%">
-</a>
-
 
 ```java
 public class ArithmeticOperatorsDemo {
@@ -519,16 +439,6 @@ public class ArithmeticOperatorsDemo {
 
 ### 3.2 Relational Operators
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-2-relational-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-2-relational-operators-handwritten.svg" alt="Handwritten: 3.2 Relational Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-2-relational-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-2-relational-operators-diagram.svg" alt="Diagram: 3.2 Relational Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-2-relational-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-2-relational-operators-sticky.svg" alt="Sticky Note: 3.2 Relational Operators" width="30%">
-</a>
-
 
 ```java
 public class RelationalOperatorsDemo {
@@ -562,16 +472,6 @@ public class RelationalOperatorsDemo {
 
 ### 3.3 Logical Operators
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-3-logical-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-3-logical-operators-handwritten.svg" alt="Handwritten: 3.3 Logical Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-3-logical-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-3-logical-operators-diagram.svg" alt="Diagram: 3.3 Logical Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-3-logical-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-3-logical-operators-sticky.svg" alt="Sticky Note: 3.3 Logical Operators" width="30%">
-</a>
-
 
 ```java
 public class LogicalOperatorsDemo {
@@ -598,16 +498,6 @@ public class LogicalOperatorsDemo {
 ```
 
 ### 3.4 Bitwise Operators
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-4-bitwise-operators-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-4-bitwise-operators-handwritten.svg" alt="Handwritten: 3.4 Bitwise Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-4-bitwise-operators-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-4-bitwise-operators-diagram.svg" alt="Diagram: 3.4 Bitwise Operators" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-4-bitwise-operators-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-4-bitwise-operators-sticky.svg" alt="Sticky Note: 3.4 Bitwise Operators" width="30%">
-</a>
 
 
 Bitwise operators operate on the individual bits of integer types.
@@ -667,16 +557,6 @@ public class BitwiseOperatorsDemo {
 
 ### 3.5 instanceof and Ternary Operator
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-5-instanceof-and-ternary-operator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-5-instanceof-and-ternary-operator-handwritten.svg" alt="Handwritten: 3.5 instanceof and Ternary Operator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-5-instanceof-and-ternary-operator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-5-instanceof-and-ternary-operator-diagram.svg" alt="Diagram: 3.5 instanceof and Ternary Operator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/3-5-instanceof-and-ternary-operator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/3-5-instanceof-and-ternary-operator-sticky.svg" alt="Sticky Note: 3.5 instanceof and Ternary Operator" width="30%">
-</a>
-
 
 ```java
 public class InstanceofTernaryDemo {
@@ -723,16 +603,6 @@ public class InstanceofTernaryDemo {
 
 ### 4.1 if/else Statement
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-1-if-else-statement-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-1-if-else-statement-handwritten.svg" alt="Handwritten: 4.1 if/else Statement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-1-if-else-statement-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-1-if-else-statement-diagram.svg" alt="Diagram: 4.1 if/else Statement" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-1-if-else-statement-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-1-if-else-statement-sticky.svg" alt="Sticky Note: 4.1 if/else Statement" width="30%">
-</a>
-
 
 ```java
 public class IfElseDemo {
@@ -776,16 +646,6 @@ public class IfElseDemo {
 ```
 
 ### 4.2 Switch Expressions (Traditional vs Arrow Syntax)
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-2-switch-expressions-traditional-vs-arrow-syntax-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-2-switch-expressions-traditional-vs-arrow-syntax-handwritten.svg" alt="Handwritten: 4.2 Switch Expressions (Traditional vs Arrow Syntax)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-2-switch-expressions-traditional-vs-arrow-syntax-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-2-switch-expressions-traditional-vs-arrow-syntax-diagram.svg" alt="Diagram: 4.2 Switch Expressions (Traditional vs Arrow Syntax)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-2-switch-expressions-traditional-vs-arrow-syntax-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-2-switch-expressions-traditional-vs-arrow-syntax-sticky.svg" alt="Sticky Note: 4.2 Switch Expressions (Traditional vs Arrow Syntax)" width="30%">
-</a>
 
 
 ```java
@@ -875,16 +735,6 @@ public class SwitchExpressionDemo {
 
 ### 4.3 Loops: for, while, do-while
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-3-loops-for-while-do-while-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-3-loops-for-while-do-while-handwritten.svg" alt="Handwritten: 4.3 Loops: for, while, do-while" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-3-loops-for-while-do-while-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-3-loops-for-while-do-while-diagram.svg" alt="Diagram: 4.3 Loops: for, while, do-while" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-3-loops-for-while-do-while-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-3-loops-for-while-do-while-sticky.svg" alt="Sticky Note: 4.3 Loops: for, while, do-while" width="30%">
-</a>
-
 
 ```java
 import java.util.Arrays;
@@ -950,16 +800,6 @@ public class LoopDemo {
 ```
 
 ### 4.4 Break/Continue with Labels
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-4-break-continue-with-labels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-4-break-continue-with-labels-handwritten.svg" alt="Handwritten: 4.4 Break/Continue with Labels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-4-break-continue-with-labels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-4-break-continue-with-labels-diagram.svg" alt="Diagram: 4.4 Break/Continue with Labels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/4-4-break-continue-with-labels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/4-4-break-continue-with-labels-sticky.svg" alt="Sticky Note: 4.4 Break/Continue with Labels" width="30%">
-</a>
 
 
 Labels allow you to break out of or continue **outer** loops from within nested loops.
@@ -1046,16 +886,6 @@ Arrays are fixed-length, zero-indexed containers for elements of the same type. 
 
 ### 5.1 Declaration, Initialization, and Access
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-1-declaration-initialization-and-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-1-declaration-initialization-and-access-handwritten.svg" alt="Handwritten: 5.1 Declaration, Initialization, and Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-1-declaration-initialization-and-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-1-declaration-initialization-and-access-diagram.svg" alt="Diagram: 5.1 Declaration, Initialization, and Access" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-1-declaration-initialization-and-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-1-declaration-initialization-and-access-sticky.svg" alt="Sticky Note: 5.1 Declaration, Initialization, and Access" width="30%">
-</a>
-
 
 ```java
 import java.util.Arrays;
@@ -1114,16 +944,6 @@ public class ArraysDemo {
 ```
 
 ### 5.2 Multidimensional Arrays
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-2-multidimensional-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-2-multidimensional-arrays-handwritten.svg" alt="Handwritten: 5.2 Multidimensional Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-2-multidimensional-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-2-multidimensional-arrays-diagram.svg" alt="Diagram: 5.2 Multidimensional Arrays" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-2-multidimensional-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-2-multidimensional-arrays-sticky.svg" alt="Sticky Note: 5.2 Multidimensional Arrays" width="30%">
-</a>
 
 
 ```java
@@ -1188,16 +1008,6 @@ public class MultiDimArrayDemo {
 ```
 
 ### 5.3 Utility Methods (java.util.Arrays)
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-3-utility-methods-java-util-arrays-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-3-utility-methods-java-util-arrays-handwritten.svg" alt="Handwritten: 5.3 Utility Methods (java.util.Arrays)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-3-utility-methods-java-util-arrays-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-3-utility-methods-java-util-arrays-diagram.svg" alt="Diagram: 5.3 Utility Methods (java.util.Arrays)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/5-3-utility-methods-java-util-arrays-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/5-3-utility-methods-java-util-arrays-sticky.svg" alt="Sticky Note: 5.3 Utility Methods (java.util.Arrays)" width="30%">
-</a>
 
 
 ```java
@@ -1285,16 +1095,6 @@ Strings in Java are **immutable** → once created, their internal character arr
 
 ### 6.1 String Immutability and the String Pool
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-1-string-immutability-and-the-string-pool-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-1-string-immutability-and-the-string-pool-handwritten.svg" alt="Handwritten: 6.1 String Immutability and the String Pool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-1-string-immutability-and-the-string-pool-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-1-string-immutability-and-the-string-pool-diagram.svg" alt="Diagram: 6.1 String Immutability and the String Pool" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-1-string-immutability-and-the-string-pool-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-1-string-immutability-and-the-string-pool-sticky.svg" alt="Sticky Note: 6.1 String Immutability and the String Pool" width="30%">
-</a>
-
 
 ```java
 public class StringBasicsDemo {
@@ -1333,16 +1133,6 @@ public class StringBasicsDemo {
 ```
 
 ### 6.2 StringBuilder and StringBuffer
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-2-stringbuilder-and-stringbuffer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-2-stringbuilder-and-stringbuffer-handwritten.svg" alt="Handwritten: 6.2 StringBuilder and StringBuffer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-2-stringbuilder-and-stringbuffer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-2-stringbuilder-and-stringbuffer-diagram.svg" alt="Diagram: 6.2 StringBuilder and StringBuffer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-2-stringbuilder-and-stringbuffer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-2-stringbuilder-and-stringbuffer-sticky.svg" alt="Sticky Note: 6.2 StringBuilder and StringBuffer" width="30%">
-</a>
 
 
 `StringBuilder` (non-synchronized, faster) and `StringBuffer` (synchronized, thread-safe) are **mutable** sequences of characters. Use them when you need to build or modify strings in a loop.
@@ -1410,16 +1200,6 @@ public class StringBuilderDemo {
 ```
 
 ### 6.3 Essential String Methods
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-3-essential-string-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-3-essential-string-methods-handwritten.svg" alt="Handwritten: 6.3 Essential String Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-3-essential-string-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-3-essential-string-methods-diagram.svg" alt="Diagram: 6.3 Essential String Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-3-essential-string-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-3-essential-string-methods-sticky.svg" alt="Sticky Note: 6.3 Essential String Methods" width="30%">
-</a>
 
 
 ```java
@@ -1507,16 +1287,6 @@ public class StringMethodsDemo {
 ```
 
 ### 6.4 Text Blocks
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-4-text-blocks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-4-text-blocks-handwritten.svg" alt="Handwritten: 6.4 Text Blocks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-4-text-blocks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-4-text-blocks-diagram.svg" alt="Diagram: 6.4 Text Blocks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/6-4-text-blocks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/6-4-text-blocks-sticky.svg" alt="Sticky Note: 6.4 Text Blocks" width="30%">
-</a>
 
 
 Text blocks provide a clean way to write multi-line string literals. They are delimited by three double quotes `"""`.
@@ -1624,16 +1394,6 @@ Introduced in **Java 10** (JEP 286), `var` enables **local variable type inferen
 
 ### 7.1 Rules and Restrictions
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/7-1-rules-and-restrictions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/7-1-rules-and-restrictions-handwritten.svg" alt="Handwritten: 7.1 Rules and Restrictions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/7-1-rules-and-restrictions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/7-1-rules-and-restrictions-diagram.svg" alt="Diagram: 7.1 Rules and Restrictions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/7-1-rules-and-restrictions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/7-1-rules-and-restrictions-sticky.svg" alt="Sticky Note: 7.1 Rules and Restrictions" width="30%">
-</a>
-
 
 ```java
 import java.util.*;
@@ -1738,16 +1498,6 @@ public class VarKeywordDemo {
 
 ### 8.1 Basic Records
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-1-basic-records-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-1-basic-records-handwritten.svg" alt="Handwritten: 8.1 Basic Records" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-1-basic-records-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-1-basic-records-diagram.svg" alt="Diagram: 8.1 Basic Records" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-1-basic-records-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-1-basic-records-sticky.svg" alt="Sticky Note: 8.1 Basic Records" width="30%">
-</a>
-
 
 ```java
 // A simple record → the entire class in one line
@@ -1795,16 +1545,6 @@ public class BasicRecordDemo {
 ```
 
 ### 8.2 Records with Custom Constructors and Methods
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-2-records-with-custom-constructors-and-methods-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-2-records-with-custom-constructors-and-methods-handwritten.svg" alt="Handwritten: 8.2 Records with Custom Constructors and Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-2-records-with-custom-constructors-and-methods-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-2-records-with-custom-constructors-and-methods-diagram.svg" alt="Diagram: 8.2 Records with Custom Constructors and Methods" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-2-records-with-custom-constructors-and-methods-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-2-records-with-custom-constructors-and-methods-sticky.svg" alt="Sticky Note: 8.2 Records with Custom Constructors and Methods" width="30%">
-</a>
 
 
 ```java
@@ -1874,16 +1614,6 @@ public class CustomRecordDemo {
 
 ### 8.3 Records with Generics
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-3-records-with-generics-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-3-records-with-generics-handwritten.svg" alt="Handwritten: 8.3 Records with Generics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-3-records-with-generics-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-3-records-with-generics-diagram.svg" alt="Diagram: 8.3 Records with Generics" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-3-records-with-generics-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-3-records-with-generics-sticky.svg" alt="Sticky Note: 8.3 Records with Generics" width="30%">
-</a>
-
 
 ```java
 record Pair<A, B>(A first, B second) {
@@ -1922,16 +1652,6 @@ public class GenericRecordDemo {
 ```
 
 ### 8.4 Records with Annotations and Serialization
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-4-records-with-annotations-and-serialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-4-records-with-annotations-and-serialization-handwritten.svg" alt="Handwritten: 8.4 Records with Annotations and Serialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-4-records-with-annotations-and-serialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-4-records-with-annotations-and-serialization-diagram.svg" alt="Diagram: 8.4 Records with Annotations and Serialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/8-4-records-with-annotations-and-serialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/8-4-records-with-annotations-and-serialization-sticky.svg" alt="Sticky Note: 8.4 Records with Annotations and Serialization" width="30%">
-</a>
 
 
 ```java
@@ -1976,16 +1696,6 @@ public class RecordAdvancedDemo {
 Switch **expressions** (as opposed to switch **statements**) were standardized in **Java 14** (JEP 361). They introduce arrow syntax, yield, and exhaustiveness checking.
 
 ### 9.1 Arrow Syntax and Yield
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-1-arrow-syntax-and-yield-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-1-arrow-syntax-and-yield-handwritten.svg" alt="Handwritten: 9.1 Arrow Syntax and Yield" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-1-arrow-syntax-and-yield-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-1-arrow-syntax-and-yield-diagram.svg" alt="Diagram: 9.1 Arrow Syntax and Yield" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-1-arrow-syntax-and-yield-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-1-arrow-syntax-and-yield-sticky.svg" alt="Sticky Note: 9.1 Arrow Syntax and Yield" width="30%">
-</a>
 
 
 ```java
@@ -2059,16 +1769,6 @@ public class SwitchExpressionsFullDemo {
 
 ### 9.2 Exhaustive Switch Expressions
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-2-exhaustive-switch-expressions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-2-exhaustive-switch-expressions-handwritten.svg" alt="Handwritten: 9.2 Exhaustive Switch Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-2-exhaustive-switch-expressions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-2-exhaustive-switch-expressions-diagram.svg" alt="Diagram: 9.2 Exhaustive Switch Expressions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-2-exhaustive-switch-expressions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-2-exhaustive-switch-expressions-sticky.svg" alt="Sticky Note: 9.2 Exhaustive Switch Expressions" width="30%">
-</a>
-
 
 ```java
 public class ExhaustiveSwitchDemo {
@@ -2115,16 +1815,6 @@ public class ExhaustiveSwitchDemo {
 
 ### 9.3 Switch Expressions in Depth
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-3-switch-expressions-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-3-switch-expressions-in-depth-handwritten.svg" alt="Handwritten: 9.3 Switch Expressions in Depth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-3-switch-expressions-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-3-switch-expressions-in-depth-diagram.svg" alt="Diagram: 9.3 Switch Expressions in Depth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/9-3-switch-expressions-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/9-3-switch-expressions-in-depth-sticky.svg" alt="Sticky Note: 9.3 Switch Expressions in Depth" width="30%">
-</a>
-
 
 ```java
 import java.time.DayOfWeek;
@@ -2169,16 +1859,6 @@ public class SwitchEverywhereDemo {
 Pattern matching allows you to test whether a value has a certain structure and extract its components in a single operation.
 
 ### 10.1 instanceof Pattern Matching
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-1-instanceof-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-1-instanceof-pattern-matching-handwritten.svg" alt="Handwritten: 10.1 instanceof Pattern Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-1-instanceof-pattern-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-1-instanceof-pattern-matching-diagram.svg" alt="Diagram: 10.1 instanceof Pattern Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-1-instanceof-pattern-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-1-instanceof-pattern-matching-sticky.svg" alt="Sticky Note: 10.1 instanceof Pattern Matching" width="30%">
-</a>
 
 
 Standardized in **Java 16** (JEP 394).
@@ -2237,16 +1917,6 @@ public class InstanceofPatternDemo {
 
 ### 10.2 Switch Pattern Matching
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-2-switch-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-2-switch-pattern-matching-handwritten.svg" alt="Handwritten: 10.2 Switch Pattern Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-2-switch-pattern-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-2-switch-pattern-matching-diagram.svg" alt="Diagram: 10.2 Switch Pattern Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-2-switch-pattern-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-2-switch-pattern-matching-sticky.svg" alt="Sticky Note: 10.2 Switch Pattern Matching" width="30%">
-</a>
-
 
 Standardized in **Java 21** (JEP 441).
 
@@ -2278,16 +1948,6 @@ public class SwitchPatternMatchingDemo {
 ```
 
 ### 10.3 Guarded Patterns
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-3-guarded-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-3-guarded-patterns-handwritten.svg" alt="Handwritten: 10.3 Guarded Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-3-guarded-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-3-guarded-patterns-diagram.svg" alt="Diagram: 10.3 Guarded Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-3-guarded-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-3-guarded-patterns-sticky.svg" alt="Sticky Note: 10.3 Guarded Patterns" width="30%">
-</a>
 
 
 ```java
@@ -2325,16 +1985,6 @@ public class GuardedPatternsDemo {
 ```
 
 ### 10.4 Record Patterns
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-4-record-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-4-record-patterns-handwritten.svg" alt="Handwritten: 10.4 Record Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-4-record-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-4-record-patterns-diagram.svg" alt="Diagram: 10.4 Record Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-4-record-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-4-record-patterns-sticky.svg" alt="Sticky Note: 10.4 Record Patterns" width="30%">
-</a>
 
 
 Standardized in **Java 21** (JEP 440).
@@ -2412,16 +2062,6 @@ public class RecordPatternsDemo {
 ```
 
 ### 10.5 Practical Pattern Matching Examples
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-5-practical-pattern-matching-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-5-practical-pattern-matching-examples-handwritten.svg" alt="Handwritten: 10.5 Practical Pattern Matching Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-5-practical-pattern-matching-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-5-practical-pattern-matching-examples-diagram.svg" alt="Diagram: 10.5 Practical Pattern Matching Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/10-5-practical-pattern-matching-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/10-5-practical-pattern-matching-examples-sticky.svg" alt="Sticky Note: 10.5 Practical Pattern Matching Examples" width="30%">
-</a>
 
 
 ```java
@@ -2520,16 +2160,6 @@ Text blocks were introduced as a preview in **Java 13** and standardized in **Ja
 
 ### 11.1 Indentation Algorithm
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/11-1-indentation-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/11-1-indentation-algorithm-handwritten.svg" alt="Handwritten: 11.1 Indentation Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/11-1-indentation-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/11-1-indentation-algorithm-diagram.svg" alt="Diagram: 11.1 Indentation Algorithm" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/11-1-indentation-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/11-1-indentation-algorithm-sticky.svg" alt="Sticky Note: 11.1 Indentation Algorithm" width="30%">
-</a>
-
 
 ```java
 public class TextBlockIndentationDemo {
@@ -2574,16 +2204,6 @@ public class TextBlockIndentationDemo {
 ```
 
 ### 11.2 Text Block Usage Patterns
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/11-2-text-block-usage-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/11-2-text-block-usage-patterns-handwritten.svg" alt="Handwritten: 11.2 Text Block Usage Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/11-2-text-block-usage-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/11-2-text-block-usage-patterns-diagram.svg" alt="Diagram: 11.2 Text Block Usage Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/11-2-text-block-usage-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/11-2-text-block-usage-patterns-sticky.svg" alt="Sticky Note: 11.2 Text Block Usage Patterns" width="30%">
-</a>
 
 
 ```java
@@ -2659,16 +2279,6 @@ The traditional `public static void main(String[] args)` signature has been a ha
 
 ### 12.1 The Traditional Main Method
 
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-1-the-traditional-main-method-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-1-the-traditional-main-method-handwritten.svg" alt="Handwritten: 12.1 The Traditional Main Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-1-the-traditional-main-method-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-1-the-traditional-main-method-diagram.svg" alt="Diagram: 12.1 The Traditional Main Method" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-1-the-traditional-main-method-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-1-the-traditional-main-method-sticky.svg" alt="Sticky Note: 12.1 The Traditional Main Method" width="30%">
-</a>
-
 
 ```java
 public class TraditionalMain {
@@ -2694,16 +2304,6 @@ public class TraditionalMain {
 ```
 
 ### 12.2 The Modern Main Method (Java 21 Preview)
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-2-the-modern-main-method-java-21-preview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-2-the-modern-main-method-java-21-preview-handwritten.svg" alt="Handwritten: 12.2 The Modern Main Method (Java 21 Preview)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-2-the-modern-main-method-java-21-preview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-2-the-modern-main-method-java-21-preview-diagram.svg" alt="Diagram: 12.2 The Modern Main Method (Java 21 Preview)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-2-the-modern-main-method-java-21-preview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-2-the-modern-main-method-java-21-preview-sticky.svg" alt="Sticky Note: 12.2 The Modern Main Method (Java 21 Preview)" width="30%">
-</a>
 
 
 Java 21 introduces **unnamed classes** and **instance main methods**, allowing a much simpler entry point.
@@ -2733,16 +2333,6 @@ void main() {
 ```
 
 ### 12.3 Multiple Main Method Styles
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-3-multiple-main-method-styles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-3-multiple-main-method-styles-handwritten.svg" alt="Handwritten: 12.3 Multiple Main Method Styles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-3-multiple-main-method-styles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-3-multiple-main-method-styles-diagram.svg" alt="Diagram: 12.3 Multiple Main Method Styles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-3-multiple-main-method-styles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-3-multiple-main-method-styles-sticky.svg" alt="Sticky Note: 12.3 Multiple Main Method Styles" width="30%">
-</a>
 
 
 ```java
@@ -2787,16 +2377,6 @@ public class MainStyles {
 ```
 
 ### 12.4 Running Java Programs
-
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-4-running-java-programs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-4-running-java-programs-handwritten.svg" alt="Handwritten: 12.4 Running Java Programs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-4-running-java-programs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-4-running-java-programs-diagram.svg" alt="Diagram: 12.4 Running Java Programs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/p1-java-syntax/12-4-running-java-programs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/p1-java-syntax/12-4-running-java-programs-sticky.svg" alt="Sticky Note: 12.4 Running Java Programs" width="30%">
-</a>
 
 
 ```java

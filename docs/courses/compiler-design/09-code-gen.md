@@ -78,16 +78,6 @@ flowchart LR
 
 ### Target Machine Model
 
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/target-machine-model-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/target-machine-model-handwritten.svg" alt="Handwritten: Target Machine Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/target-machine-model-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/target-machine-model-diagram.svg" alt="Diagram: Target Machine Model" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/target-machine-model-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/target-machine-model-sticky.svg" alt="Sticky Note: Target Machine Model" width="30%">
-</a>
-
 
 Code generation translates the intermediate representation into instructions for a specific target machine. A typical RISC model includes:
 
@@ -124,16 +114,6 @@ Instructions:
 
 ### Addressing Modes
 
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/addressing-modes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/addressing-modes-handwritten.svg" alt="Handwritten: Addressing Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/addressing-modes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/addressing-modes-diagram.svg" alt="Diagram: Addressing Modes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/addressing-modes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/addressing-modes-sticky.svg" alt="Sticky Note: Addressing Modes" width="30%">
-</a>
-
 
 Addressing modes specify how to compute the effective address of an operand:
 
@@ -147,16 +127,6 @@ Addressing modes specify how to compute the effective address of an operand:
 | PC-relative | `beq R1, R2, L` | `PC + offset` | Branch targets |
 
 ### Basic Blocks and Flow Graphs
-
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/basic-blocks-and-flow-graphs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/basic-blocks-and-flow-graphs-handwritten.svg" alt="Handwritten: Basic Blocks and Flow Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/basic-blocks-and-flow-graphs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/basic-blocks-and-flow-graphs-diagram.svg" alt="Diagram: Basic Blocks and Flow Graphs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/basic-blocks-and-flow-graphs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/basic-blocks-and-flow-graphs-sticky.svg" alt="Sticky Note: Basic Blocks and Flow Graphs" width="30%">
-</a>
 
 
 A **basic block** is a maximal sequence of consecutive three-address instructions with a single entry and a single exit. No jumps enter the block except to its first instruction; no jumps leave except from its last instruction.
@@ -179,16 +149,6 @@ A **basic block** is a maximal sequence of consecutive three-address instruction
 A **flow graph** has basic blocks as nodes and edges representing control flow. An edge `B1 ? B2` exists if control can pass from `B1`'s last instruction to `B2`'s first instruction (fall-through or jump target).
 
 ### Next-Use Information
-
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/next-use-information-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/next-use-information-handwritten.svg" alt="Handwritten: Next-Use Information" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/next-use-information-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/next-use-information-diagram.svg" alt="Diagram: Next-Use Information" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/next-use-information-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/next-use-information-sticky.svg" alt="Sticky Note: Next-Use Information" width="30%">
-</a>
 
 
 For register allocation within a basic block, the compiler must know whether each variable's value will be used again. The **next-use** computation scans the block backward.
@@ -259,16 +219,6 @@ function computeNextUse(instructions: TACInstr[]): NextUseInfo[][] {
 ```
 
 ### Complete TypeScript Code Generator
-
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/complete-typescript-code-generator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/complete-typescript-code-generator-handwritten.svg" alt="Handwritten: Complete TypeScript Code Generator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/complete-typescript-code-generator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/complete-typescript-code-generator-diagram.svg" alt="Diagram: Complete TypeScript Code Generator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/complete-typescript-code-generator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/complete-typescript-code-generator-sticky.svg" alt="Sticky Note: Complete TypeScript Code Generator" width="30%">
-</a>
 
 
 ```typescript
@@ -737,16 +687,6 @@ fg3.printAssembly();
 
 ### Register Allocation by Graph Coloring
 
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/register-allocation-by-graph-coloring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/register-allocation-by-graph-coloring-handwritten.svg" alt="Handwritten: Register Allocation by Graph Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/register-allocation-by-graph-coloring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/register-allocation-by-graph-coloring-diagram.svg" alt="Diagram: Register Allocation by Graph Coloring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/register-allocation-by-graph-coloring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/register-allocation-by-graph-coloring-sticky.svg" alt="Sticky Note: Register Allocation by Graph Coloring" width="30%">
-</a>
-
 
 For whole procedures, graph coloring dominates. An **interference graph** has nodes representing live ranges and edges connecting overlapping live ranges. The graph is colored with K colors (registers) using Chaitin's algorithm (see Chapter 14 for full implementation).
 
@@ -758,16 +698,6 @@ For whole procedures, graph coloring dominates. An **interference graph** has no
 5. If spills occurred, rebuild and repeat.
 
 ### Instruction Selection by Tree Rewriting
-
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/instruction-selection-by-tree-rewriting-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/instruction-selection-by-tree-rewriting-handwritten.svg" alt="Handwritten: Instruction Selection by Tree Rewriting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/instruction-selection-by-tree-rewriting-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/instruction-selection-by-tree-rewriting-diagram.svg" alt="Diagram: Instruction Selection by Tree Rewriting" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/instruction-selection-by-tree-rewriting-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/instruction-selection-by-tree-rewriting-sticky.svg" alt="Sticky Note: Instruction Selection by Tree Rewriting" width="30%">
-</a>
 
 
 Tree-rewriting instruction selection maps expression trees to machine instructions via pattern matching.
@@ -881,16 +811,6 @@ class InstructionSelector {
 
 ### Generating Code for Procedure Calls
 
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/generating-code-for-procedure-calls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/generating-code-for-procedure-calls-handwritten.svg" alt="Handwritten: Generating Code for Procedure Calls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/generating-code-for-procedure-calls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/generating-code-for-procedure-calls-diagram.svg" alt="Diagram: Generating Code for Procedure Calls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/generating-code-for-procedure-calls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/generating-code-for-procedure-calls-sticky.svg" alt="Sticky Note: Generating Code for Procedure Calls" width="30%">
-</a>
-
 
 The procedure call sequence integrates the calling convention with the register allocator:
 
@@ -933,16 +853,6 @@ function genCall(funcName: string, args: string[], returnReg: string): AsmInstr[
 ```
 
 ### Concept Comparison
-
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/concept-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/concept-comparison-handwritten.svg" alt="Handwritten: Concept Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/concept-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/concept-comparison-diagram.svg" alt="Diagram: Concept Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/compiler-design/09-code-gen/concept-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/compiler-design/09-code-gen/concept-comparison-sticky.svg" alt="Sticky Note: Concept Comparison" width="30%">
-</a>
 
 
 | Allocation Strategy | Scope | Optimality | Spill Handling | Complexity |

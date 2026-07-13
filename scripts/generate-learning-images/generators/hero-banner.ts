@@ -1,59 +1,89 @@
 import { ConceptData } from '../types';
 import { escapeXml, truncate } from '../utils';
+import { C, defs, badge, iconBrain, iconLightning, iconGear } from '../svg-utils';
 
 export function generateHeroBanner(data: ConceptData): string {
   const w = 1200, h = 400;
   const title = escapeXml(truncate(data.title, 80));
   const subtitle = escapeXml(truncate(data.subtitle || data.mainTakeaway, 120));
 
-  const iconSegments: string[] = [];
-  const iconColors = ['#2563eb', '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe'];
-  for (let i = 0; i < 6; i++) {
-    const cx = 1000 + Math.random() * 160;
-    const cy = 50 + Math.random() * 300;
-    const r = 20 + Math.random() * 50;
-    iconSegments.push(`  <circle cx="${cx}" cy="${cy}" r="${r}" fill="${iconColors[i % iconColors.length]}" opacity="0.${3 + Math.floor(Math.random() * 4)}"/>`);
+  // Decorative circles in top-right quadrant
+  const decorativeCircles: string[] = [];
+  const circleColors = [C.primary, C.primaryDark, '#3b82f6', '#60a5fa', '#93c5fd', '#bfdbfe'];
+  const positions = [
+    { cx: 950, cy: 60, r: 45 },
+    { cx: 1050, cy: 100, r: 60 },
+    { cx: 1130, cy: 50, r: 35 },
+    { cx: 990, cy: 180, r: 50 },
+    { cx: 1100, cy: 220, r: 40 },
+    { cx: 920, cy: 130, r: 25 },
+    { cx: 1150, cy: 140, r: 30 },
+    { cx: 1020, cy: 280, r: 20 },
+  ];
+  for (const p of positions) {
+    const ci = positions.indexOf(p) % circleColors.length;
+    decorativeCircles.push(
+      `  <circle cx="${p.cx}" cy="${p.cy}" r="${p.r}" fill="${circleColors[ci]}" opacity="0.08"/>`
+    );
   }
 
+  // Slightly larger accent circle
+  decorativeCircles.push(
+    `  <circle cx="1080" cy="320" r="80" fill="${C.primary}" opacity="0.04"/>`
+  );
+
+  // Stats as pills using badge()
+  const statsPills = [
+    { label: `${data.concepts.length} Concepts`, color: C.primary },
+    { label: `${data.algorithms.length} Algorithms`, color: C.secondary },
+    { label: `${data.formulas.length} Formulas`, color: C.warning },
+    { label: `${data.workflow.length} Steps`, color: C.purple },
+  ];
+
+  const statsHtml = statsPills.map((s, i) => {
+    const sx = 60 + i * 155;
+    return badge(s.label, sx, h - 135, s.color);
+  }).join('\n    ');
+
+  // Keyword tags at bottom
   const keywordTags = data.keywords.slice(0, 6).map(k =>
-    `    <rect x="${60 + data.keywords.indexOf(k) * 130}" y="${h - 80}" width="${120}" height="${28}" rx="14" fill="#dbeafe" stroke="#93c5fd" stroke-width="1"/>
-     <text x="${120 + data.keywords.indexOf(k) * 130}" y="${h - 62}" font-size="11" fill="#1e40af" text-anchor="middle" font-family="Arial, sans-serif">${escapeXml(k.term.slice(0, 16))}</text>`
+    `    <rect x="${60 + data.keywords.indexOf(k) * 130}" y="${h - 78}" width="${120}" height="${28}" rx="14" fill="${C.primaryLight}" stroke="${C.primary}" stroke-width="0.5" filter="url(#shadowSm)"/>
+     <text x="${120 + data.keywords.indexOf(k) * 130}" y="${h - 60}" font-size="11" fill="${C.primaryDark}" text-anchor="middle" font-weight="600" font-family="Arial, sans-serif">${escapeXml(k.term.slice(0, 16))}</text>`
   ).join('\n');
 
+  // Icons as decoration
+  const iconDecor = [
+    iconBrain(1080, 50, 40, C.primary),
+    iconLightning(940, 80, 28, C.warning),
+    iconGear(1120, 200, 32, C.secondary),
+    iconBrain(980, 250, 36, C.purple),
+  ].join('\n    ');
+
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#f8fafc"/>
-      <stop offset="100%" stop-color="#eff6ff"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#2563eb"/>
-      <stop offset="100%" stop-color="#60a5fa"/>
-    </linearGradient>
-  </defs>
-  <rect width="${w}" height="${h}" fill="url(#bg)"/>
-  <!-- Accent bar -->
-  <rect x="0" y="0" width="8" height="${h}" fill="url(#accent)"/>
+  ${defs()}
+  <!-- Background -->
+  <rect width="${w}" height="${h}" fill="url(#gBg)"/>
+  <rect width="${w}" height="${h}" fill="url(#dotGrid)"/>
   <!-- Decorative shapes -->
-  <rect x="${w - 300}" y="-50" width="400" height="500" rx="30" fill="#2563eb" opacity="0.03" transform="rotate(10 ${w - 100} 200)"/>
-  <rect x="${w - 200}" y="-30" width="300" height="${h + 60}" rx="40" fill="#3b82f6" opacity="0.04" transform="rotate(-5 ${w - 50} 200)"/>
-  ${iconSegments.join('\n')}
+  <rect x="${w - 300}" y="-50" width="400" height="500" rx="30" fill="${C.primary}" opacity="0.03" transform="rotate(10 ${w - 100} 200)"/>
+  <rect x="${w - 200}" y="-30" width="300" height="${h + 60}" rx="40" fill="${C.primaryDark}" opacity="0.03" transform="rotate(-5 ${w - 50} 200)"/>
+  ${decorativeCircles.join('\n')}
+  ${iconDecor}
+  <!-- Accent bar left -->
+  <rect x="0" y="0" width="8" height="${h}" fill="url(#gBlue)"/>
   <!-- Title -->
-  <text x="60" y="120" font-size="42" font-weight="bold" fill="#1e293b" font-family="Arial, sans-serif">${title}</text>
+  <text x="60" y="120" font-size="32" font-weight="bold" fill="${C.text}" font-family="Arial, sans-serif">${title}</text>
   <!-- Subtitle -->
-  <text x="60" y="170" font-size="18" fill="#64748b" font-family="Arial, sans-serif">${subtitle}</text>
+  <text x="60" y="168" font-size="16" fill="${C.textMuted}" font-family="Arial, sans-serif">${subtitle}</text>
   <!-- Divider -->
-  <line x1="60" y1="200" x2="260" y2="200" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <line x1="60" y1="200" x2="260" y2="200" stroke="url(#gBlue)" stroke-width="3" stroke-linecap="round"/>
   <!-- Stats row -->
-  <g transform="translate(60, ${h - 130})">
-    <rect x="0" y="0" width="140" height="36" rx="6" fill="#2563eb" opacity="0.1"/>
-    <text x="70" y="23" font-size="12" fill="#2563eb" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">${data.concepts.length} Concepts</text>
-    <rect x="155" y="0" width="140" height="36" rx="6" fill="#059669" opacity="0.1"/>
-    <text x="225" y="23" font-size="12" fill="#059669" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">${data.algorithms.length} Algorithms</text>
-    <rect x="310" y="0" width="140" height="36" rx="6" fill="#d97706" opacity="0.1"/>
-    <text x="380" y="23" font-size="12" fill="#d97706" text-anchor="middle" font-weight="bold" font-family="Arial, sans-serif">${data.formulas.length} Formulas</text>
+  <g transform="translate(0, 0)">
+    ${statsHtml}
   </g>
   <!-- Keyword tags -->
   ${keywordTags}
+  <!-- Brand watermark -->
+  <text x="${w - 20}" y="${h - 12}" font-size="10" fill="${C.textLight}" text-anchor="end" font-family="Arial, sans-serif" opacity="0.5">ai-engineering-journey</text>
 </svg>`;
 }

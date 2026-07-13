@@ -82,30 +82,10 @@ By the end of this chapter, you will be able to:
 
 ### Distributed Configuration Problem
 
-<a href="../../../assets/images/diagrams/java/42-config/distributed-configuration-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/distributed-configuration-problem-handwritten.svg" alt="Handwritten: Distributed Configuration Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/42-config/distributed-configuration-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/distributed-configuration-problem-diagram.svg" alt="Diagram: Distributed Configuration Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/42-config/distributed-configuration-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/distributed-configuration-problem-sticky.svg" alt="Sticky Note: Distributed Configuration Problem" width="30%">
-</a>
-
 
 In a microservices architecture, configuration becomes distributed across many services. A centralized configuration server solves this by providing a single source of truth for all service configurations.
 
 ### Spring Cloud Config Server
-
-<a href="../../../assets/images/diagrams/java/42-config/spring-cloud-config-server-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/spring-cloud-config-server-handwritten.svg" alt="Handwritten: Spring Cloud Config Server" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/42-config/spring-cloud-config-server-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/spring-cloud-config-server-diagram.svg" alt="Diagram: Spring Cloud Config Server" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/42-config/spring-cloud-config-server-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/spring-cloud-config-server-sticky.svg" alt="Sticky Note: Spring Cloud Config Server" width="30%">
-</a>
 
 
 The Config Server provides configuration to client applications via HTTP. It supports multiple backends:
@@ -115,16 +95,6 @@ The Config Server provides configuration to client applications via HTTP. It sup
 - **Vault**: Secrets stored in HashiCorp Vault
 
 ### Configuration Refresh Strategies
-
-<a href="../../../assets/images/diagrams/java/42-config/configuration-refresh-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/configuration-refresh-strategies-handwritten.svg" alt="Handwritten: Configuration Refresh Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/42-config/configuration-refresh-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/configuration-refresh-strategies-diagram.svg" alt="Diagram: Configuration Refresh Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/42-config/configuration-refresh-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/42-config/configuration-refresh-strategies-sticky.svg" alt="Sticky Note: Configuration Refresh Strategies" width="30%">
-</a>
 
 
 - **@RefreshScope**: Spring beans annotated with `@RefreshScope` are recreated when the `Environment` changes

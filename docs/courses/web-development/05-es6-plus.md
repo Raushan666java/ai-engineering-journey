@@ -104,16 +104,6 @@ graph TD
 
 ### 5.1 Block-Scoped Declarations
 
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-1-block-scoped-declarations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-1-block-scoped-declarations-handwritten.svg" alt="Handwritten: 5.1 Block-Scoped Declarations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-1-block-scoped-declarations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-1-block-scoped-declarations-diagram.svg" alt="Diagram: 5.1 Block-Scoped Declarations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-1-block-scoped-declarations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-1-block-scoped-declarations-sticky.svg" alt="Sticky Note: 5.1 Block-Scoped Declarations" width="30%">
-</a>
-
 
 ES6 introduced `let` and `const` to address the function-scoping pitfalls of `var`.
 
@@ -141,16 +131,6 @@ config.theme = 'light'; // Allowed
 ```
 
 ### 5.2 Arrow Functions
-
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-2-arrow-functions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-2-arrow-functions-handwritten.svg" alt="Handwritten: 5.2 Arrow Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-2-arrow-functions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-2-arrow-functions-diagram.svg" alt="Diagram: 5.2 Arrow Functions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-2-arrow-functions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-2-arrow-functions-sticky.svg" alt="Sticky Note: 5.2 Arrow Functions" width="30%">
-</a>
 
 
 Arrow functions provide concise syntax and inherit `this` from the enclosing lexical scope.
@@ -190,16 +170,6 @@ const logAll = (...args) => console.log(args); // Use rest instead
 
 ### 5.3 Template Literals
 
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-3-template-literals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-3-template-literals-handwritten.svg" alt="Handwritten: 5.3 Template Literals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-3-template-literals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-3-template-literals-diagram.svg" alt="Diagram: 5.3 Template Literals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-3-template-literals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-3-template-literals-sticky.svg" alt="Sticky Note: 5.3 Template Literals" width="30%">
-</a>
-
 
 Template literals support string interpolation, multi-line strings, and tagged templates.
 
@@ -235,16 +205,6 @@ const rendered = highlight`Hello, ${name2}!`; // 'Hello, <strong>Bob</strong>!'
 ```
 
 ### 5.4 Destructuring
-
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-4-destructuring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-4-destructuring-handwritten.svg" alt="Handwritten: 5.4 Destructuring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-4-destructuring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-4-destructuring-diagram.svg" alt="Diagram: 5.4 Destructuring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-4-destructuring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-4-destructuring-sticky.svg" alt="Sticky Note: 5.4 Destructuring" width="30%">
-</a>
 
 
 **Array destructuring:**
@@ -295,16 +255,6 @@ function renderUser({ name, email, role = 'user' }) {
 
 ### 5.5 Spread and Rest
 
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-5-spread-and-rest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-5-spread-and-rest-handwritten.svg" alt="Handwritten: 5.5 Spread and Rest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-5-spread-and-rest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-5-spread-and-rest-diagram.svg" alt="Diagram: 5.5 Spread and Rest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-5-spread-and-rest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-5-spread-and-rest-sticky.svg" alt="Sticky Note: 5.5 Spread and Rest" width="30%">
-</a>
-
 
 **Spread** expands iterables:
 
@@ -336,16 +286,6 @@ const [winner, ...runnersUp] = ['Alice', 'Bob', 'Charlie'];
 ```
 
 ### 5.6 Classes
-
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-6-classes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-6-classes-handwritten.svg" alt="Handwritten: 5.6 Classes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-6-classes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-6-classes-diagram.svg" alt="Diagram: 5.6 Classes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-6-classes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-6-classes-sticky.svg" alt="Sticky Note: 5.6 Classes" width="30%">
-</a>
 
 
 ES6 classes are syntactic sugar over prototype-based inheritance:
@@ -406,16 +346,6 @@ console.log(dog.breed);   // 'German Shepherd'
 
 ### 5.7 Modules
 
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-7-modules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-7-modules-handwritten.svg" alt="Handwritten: 5.7 Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-7-modules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-7-modules-diagram.svg" alt="Diagram: 5.7 Modules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-7-modules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-7-modules-sticky.svg" alt="Sticky Note: 5.7 Modules" width="30%">
-</a>
-
 
 ES modules provide static, tree-shakeable module definitions.
 
@@ -475,16 +405,6 @@ button.addEventListener('click', async () => {
 
 ### 5.8 Promises
 
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-8-promises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-8-promises-handwritten.svg" alt="Handwritten: 5.8 Promises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-8-promises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-8-promises-diagram.svg" alt="Diagram: 5.8 Promises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-8-promises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-8-promises-sticky.svg" alt="Sticky Note: 5.8 Promises" width="30%">
-</a>
-
 
 Promises represent eventual completion or failure of an asynchronous operation.
 
@@ -532,16 +452,6 @@ const firstSuccess = await Promise.any([p1, p2]);
 
 ### 5.9 Async / Await
 
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-9-async-await-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-9-async-await-handwritten.svg" alt="Handwritten: 5.9 Async / Await" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-9-async-await-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-9-async-await-diagram.svg" alt="Diagram: 5.9 Async / Await" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-9-async-await-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-9-async-await-sticky.svg" alt="Sticky Note: 5.9 Async / Await" width="30%">
-</a>
-
 
 `async`/`await` provides synchronous-style syntax for promise-based code.
 
@@ -571,16 +481,6 @@ const data = await fetch('/api/initial').then((r) => r.json());
 ```
 
 ### 5.10 Symbol, Map, Set, WeakMap
-
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-10-symbol-map-set-weakmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-10-symbol-map-set-weakmap-handwritten.svg" alt="Handwritten: 5.10 Symbol, Map, Set, WeakMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-10-symbol-map-set-weakmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-10-symbol-map-set-weakmap-diagram.svg" alt="Diagram: 5.10 Symbol, Map, Set, WeakMap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/web-development/05-es6-plus/5-10-symbol-map-set-weakmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/web-development/05-es6-plus/5-10-symbol-map-set-weakmap-sticky.svg" alt="Sticky Note: 5.10 Symbol, Map, Set, WeakMap" width="30%">
-</a>
 
 
 **Symbol** creates unique identifiers:

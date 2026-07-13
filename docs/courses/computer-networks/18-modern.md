@@ -91,16 +91,6 @@
 
 ### 18.1.1 Why IPv6? The Address Exhaustion Problem
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-handwritten.svg" alt="Handwritten: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-diagram.svg" alt="Diagram: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-1-why-ipv6-the-address-exhaustion-problem-sticky.svg" alt="Sticky Note: 18.1.1 Why IPv6? The Address Exhaustion Problem" width="30%">
-</a>
-
 
 IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated the last IPv4 blocks in 2011; regional registries exhausted by 2019. With 30+ billion IoT devices projected, IPv6 is mandatory.
 
@@ -113,16 +103,6 @@ IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated 
 - **No fragmentation by routers:** Path MTU discovery only; hosts fragment.
 
 ### 18.1.2 IPv6 Packet Format
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-handwritten.svg" alt="Handwritten: 18.1.2 IPv6 Packet Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-diagram.svg" alt="Diagram: 18.1.2 IPv6 Packet Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-2-ipv6-packet-format-sticky.svg" alt="Sticky Note: 18.1.2 IPv6 Packet Format" width="30%">
-</a>
 
 
 ```
@@ -138,16 +118,6 @@ IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated 
 
 ### 18.1.3 IPv6 Address Types
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-handwritten.svg" alt="Handwritten: 18.1.3 IPv6 Address Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-diagram.svg" alt="Diagram: 18.1.3 IPv6 Address Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-3-ipv6-address-types-sticky.svg" alt="Sticky Note: 18.1.3 IPv6 Address Types" width="30%">
-</a>
-
 
 | Type | Prefix | Description |
 |------|--------|-------------|
@@ -160,16 +130,6 @@ IPv4 uses 32-bit addresses = 2^32 â‰ˆ 4.3 billion addresses. IANA allocated 
 | Unspecified | ::/128 | Default route / not yet assigned |
 
 ### 18.1.4 IPv6 Transition Mechanisms
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-handwritten.svg" alt="Handwritten: 18.1.4 IPv6 Transition Mechanisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-diagram.svg" alt="Diagram: 18.1.4 IPv6 Transition Mechanisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-4-ipv6-transition-mechanisms-sticky.svg" alt="Sticky Note: 18.1.4 IPv6 Transition Mechanisms" width="30%">
-</a>
 
 
 **Real-World Analogy:** Dual-stack is a bilingual person speaking both languages. Tunneling is an English speaker using an interpreter to reach a Spanish speaker. Translation is like Google Translate → imperfect but works when neither side speaks the other's language.
@@ -248,16 +208,6 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ### 18.1.5 IPv6 Transition Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-handwritten.svg" alt="Handwritten: 18.1.5 IPv6 Transition Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-diagram.svg" alt="Diagram: 18.1.5 IPv6 Transition Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-5-ipv6-transition-comparison-table-sticky.svg" alt="Sticky Note: 18.1.5 IPv6 Transition Comparison Table" width="30%">
-</a>
-
 
 | Feature | Dual-Stack | Tunneling (6to4) | Translation (NAT64) |
 |---------|-----------|-----------------|---------------------|
@@ -274,16 +224,6 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 
 ### 18.1.6 Edge Cases
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-handwritten.svg" alt="Handwritten: 18.1.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-diagram.svg" alt="Diagram: 18.1.6 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-6-edge-cases-sticky.svg" alt="Sticky Note: 18.1.6 Edge Cases" width="30%">
-</a>
-
 
 - **Backward compatibility:** Legacy applications hardcoded to IPv4 addresses (socket APIs) may fail. Mitigation: dual-stack, happy eyeballs (RFC 8305).
 - **DNS resolution failure:** No AAAA record, no A record → host unreachable. Mitigation: fallback logic in resolver.
@@ -292,16 +232,6 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 - **Security policy mismatch:** IPv6 firewall rules may differ from IPv4. Many breaches occur over unmonitored IPv6 tunnels. Mitigation: consistent ACLs, monitoring both stacks.
 
 ### 18.1.7 Complexity Analysis
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-handwritten.svg" alt="Handwritten: 18.1.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-diagram.svg" alt="Diagram: 18.1.7 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-7-complexity-analysis-sticky.svg" alt="Sticky Note: 18.1.7 Complexity Analysis" width="30%">
-</a>
 
 
 | Approach | Space Overhead per Packet | Time Overhead | Why |
@@ -314,16 +244,6 @@ Translates between IPv6-only and IPv4-only hosts at the network layer using IP/I
 **Why it matters:** Dual-stack has zero overhead but doubles operational complexity. 6to4 is simple but suffers MTU issues. NAT64 lets operators deploy IPv6-only networks but creates stateful choke points. The choice depends on existing infrastructure and whether the goal is "add IPv6" (dual-stack) or "migrate to IPv6-only" (tunneling → translation).
 
 ### 18.1.8 A&D Table: IPv6 Transition
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-handwritten.svg" alt="Handwritten: 18.1.8 A&D Table: IPv6 Transition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-diagram.svg" alt="Diagram: 18.1.8 A&D Table: IPv6 Transition" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-1-8-a-d-table-ipv6-transition-sticky.svg" alt="Sticky Note: 18.1.8 A&D Table: IPv6 Transition" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -398,16 +318,6 @@ The Internet of Things (IoT) connects billions of constrained devices → sensor
 
 ### 18.2.1 6LoWPAN
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-handwritten.svg" alt="Handwritten: 18.2.1 6LoWPAN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-diagram.svg" alt="Diagram: 18.2.1 6LoWPAN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-1-6lowpan-sticky.svg" alt="Sticky Note: 18.2.1 6LoWPAN" width="30%">
-</a>
-
 
 **Real-World Analogy:** 6LoWPAN is like writing a 500-page novel on a single postage stamp using microscopic text. It compresses IPv6 headers so that small sensor devices can speak internet protocols over low-power, low-bandwidth radio links.
 
@@ -474,16 +384,6 @@ FUNCTION decompress_ipv6(compressed, context):
 **Why it matters:** 6LoWPAN compression is the difference between fitting a packet in one radio frame (compressed) or requiring 3+ fragments (uncompressed). More fragments = more radio time = more battery drain. At scale (10K devices), 3Ã— fragmentation means 20K extra transmissions per hour.
 
 ### 18.2.2 MQTT → Message Queuing Telemetry Transport
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-handwritten.svg" alt="Handwritten: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-diagram.svg" alt="Diagram: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-2-mqtt-message-queuing-telemetry-transport-sticky.svg" alt="Sticky Note: 18.2.2 MQTT → Message Queuing Telemetry Transport" width="30%">
-</a>
 
 
 **Real-World Analogy:** MQTT is like a group chat on WhatsApp. You (publisher) post a message to a channel (topic). Everyone who subscribed to that channel receives it. The WhatsApp server (broker) handles delivery. If you go offline, the server saves messages for you (persistent session). You can also set a "last will" → a message the server posts if you suddenly disconnect.
@@ -629,16 +529,6 @@ client.disconnect()
 
 ### 18.2.3 CoAP → Constrained Application Protocol
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-handwritten.svg" alt="Handwritten: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-diagram.svg" alt="Diagram: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-3-coap-constrained-application-protocol-sticky.svg" alt="Sticky Note: 18.2.3 CoAP → Constrained Application Protocol" width="30%">
-</a>
-
 
 **Real-World Analogy:** CoAP is like HTTP for ham radios → same REST verbs (GET, POST, PUT, DELETE) but designed for the constraints of low-power radios. Instead of TCP's reliable connection, CoAP uses UDP with a lightweight reliability layer (confirmable messages and retransmissions). It's HTTP's minimalist cousin that can run on a light bulb.
 
@@ -752,16 +642,6 @@ asyncio.run(observe_temperature())
 
 ### 18.2.4 MQTT vs CoAP vs HTTP Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-handwritten.svg" alt="Handwritten: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-diagram.svg" alt="Diagram: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-4-mqtt-vs-coap-vs-http-comparison-table-sticky.svg" alt="Sticky Note: 18.2.4 MQTT vs CoAP vs HTTP Comparison Table" width="30%">
-</a>
-
 
 | Feature | MQTT | CoAP | HTTP |
 |---------|------|------|------|
@@ -778,16 +658,6 @@ asyncio.run(observe_temperature())
 | Standardized by | OASIS | IETF (RFC 7252) | IETF/W3C |
 
 ### 18.2.5 LoRaWAN
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-handwritten.svg" alt="Handwritten: 18.2.5 LoRaWAN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-diagram.svg" alt="Diagram: 18.2.5 LoRaWAN" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-2-5-lorawan-sticky.svg" alt="Sticky Note: 18.2.5 LoRaWAN" width="30%">
-</a>
 
 
 LoRaWAN provides long-range, low-power wireless connectivity for IoT devices. It operates in unlicensed sub-GHz bands (868 MHz EU, 915 MHz US, 923 MHz Asia).
@@ -870,16 +740,6 @@ sensor.simulate(10);
 
 ### 18.3.1 4G LTE (Long-Term Evolution)
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-handwritten.svg" alt="Handwritten: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-diagram.svg" alt="Diagram: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-1-4g-lte-long-term-evolution-sticky.svg" alt="Sticky Note: 18.3.1 4G LTE (Long-Term Evolution)" width="30%">
-</a>
-
 
 **Core architecture:** Evolved Packet Core (EPC):
 - **MME (Mobility Management Entity):** Control plane → authentication, mobility tracking, paging.
@@ -893,16 +753,6 @@ sensor.simulate(10);
 **Protocol stack:** CPRI (fronthaul) → OFDMA (air interface) → IP/MPLS (backhaul) → EPC (core).
 
 ### 18.3.2 5G Core (5GC) → Service-Based Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-handwritten.svg" alt="Handwritten: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-diagram.svg" alt="Diagram: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-2-5g-core-5gc-service-based-architecture-sticky.svg" alt="Sticky Note: 18.3.2 5G Core (5GC) → Service-Based Architecture" width="30%">
-</a>
 
 
 The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Network functions (NFs) communicate via HTTP/2 with RESTful APIs.
@@ -935,16 +785,6 @@ The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Networ
 
 ### 18.3.3 4G vs 5G vs 6G Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-handwritten.svg" alt="Handwritten: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-diagram.svg" alt="Diagram: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-3-4g-vs-5g-vs-6g-comparison-table-sticky.svg" alt="Sticky Note: 18.3.3 4G vs 5G vs 6G Comparison Table" width="30%">
-</a>
-
 
 | Feature | 4G LTE (Rel 8-14) | 5G NR (Rel 15-17) | 6G (Projected Rel 21-22) |
 |---------|-------------------|-------------------|--------------------------|
@@ -964,16 +804,6 @@ The 5G core (3GPP Release 15/16) uses a Service-Based Architecture (SBA). Networ
 | Deployment | 2010-2020 | 2020-2030 | 2030+ |
 
 ### 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-handwritten.svg" alt="Handwritten: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-diagram.svg" alt="Diagram: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-3-4-5g-vs-wi-fi-6-interview-deep-dive-sticky.svg" alt="Sticky Note: 18.3.4 5G vs Wi-Fi 6 (Interview Deep Dive)" width="30%">
-</a>
 
 
 | Feature | 5G | Wi-Fi 6 (802.11ax) |
@@ -995,16 +825,6 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 
 ### 18.4.1 Key Features
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-handwritten.svg" alt="Handwritten: 18.4.1 Key Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-diagram.svg" alt="Diagram: 18.4.1 Key Features" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-1-key-features-sticky.svg" alt="Sticky Note: 18.4.1 Key Features" width="30%">
-</a>
-
 
 **Reduced connection establishment.** QUIC combines the cryptographic and transport handshakes. A new connection completes in 1 RTT (compared to TCP's 2 RTT for TLS). Resumed connections achieve 0 RTT: the client sends data immediately using cached parameters from a previous session.
 
@@ -1018,16 +838,6 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 
 ### 18.4.2 QUIC Packet Format
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-handwritten.svg" alt="Handwritten: 18.4.2 QUIC Packet Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-diagram.svg" alt="Diagram: 18.4.2 QUIC Packet Format" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-2-quic-packet-format-sticky.svg" alt="Sticky Note: 18.4.2 QUIC Packet Format" width="30%">
-</a>
-
 
 ```
 | Connection ID (0â€“20 B) | Version (4 B) | Packet Number (1â€“4 B) | Encrypted Payload |
@@ -1036,16 +846,6 @@ QUIC (Quick UDP Internet Connections, RFC 9000) is a transport protocol original
 Long-header packets establish connections; short-header packets carry data. The connection ID may be zero-length for single-path connections to reduce overhead.
 
 ### 18.4.3 QUIC Streams
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-handwritten.svg" alt="Handwritten: 18.4.3 QUIC Streams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-diagram.svg" alt="Diagram: 18.4.3 QUIC Streams" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-4-3-quic-streams-sticky.svg" alt="Sticky Note: 18.4.3 QUIC Streams" width="30%">
-</a>
 
 
 A QUIC connection carries multiple streams, each identified by a 62-bit stream ID. Stream types:
@@ -1089,16 +889,6 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.1 Orbital Types for Satellite Internet
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-handwritten.svg" alt="Handwritten: 18.6.1 Orbital Types for Satellite Internet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-diagram.svg" alt="Diagram: 18.6.1 Orbital Types for Satellite Internet" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-1-orbital-types-for-satellite-internet-sticky.svg" alt="Sticky Note: 18.6.1 Orbital Types for Satellite Internet" width="30%">
-</a>
-
 
 | Type | Altitude | Latency (one-way) | Coverage | Satellites Needed |
 |------|----------|-------------------|----------|-------------------|
@@ -1108,16 +898,6 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 | VLEO | 200-340 km | <1 ms | Very small | 10,000+ |
 
 ### 18.6.2 Starlink Architecture
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-handwritten.svg" alt="Handwritten: 18.6.2 Starlink Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-diagram.svg" alt="Diagram: 18.6.2 Starlink Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-2-starlink-architecture-sticky.svg" alt="Sticky Note: 18.6.2 Starlink Architecture" width="30%">
-</a>
 
 
 **Real-World Analogy:** Starlink is like a mesh Wi-Fi network in the sky. Each satellite is a Wi-Fi extender with laser links to other satellites. Your dish (phased-array antenna) automatically tracks the nearest satellite as it passes overhead. Calls are handed off between satellites like a cellular network → but moving at 27,000 km/h.
@@ -1140,16 +920,6 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.3 Satellite vs Terrestrial Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-handwritten.svg" alt="Handwritten: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-diagram.svg" alt="Diagram: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-3-satellite-vs-terrestrial-comparison-table-sticky.svg" alt="Sticky Note: 18.6.3 Satellite vs Terrestrial Comparison Table" width="30%">
-</a>
-
 
 | Feature | LEO Satellite (Starlink) | Terrestrial Fiber | 5G Fixed Wireless |
 |---------|-------------------------|-------------------|-------------------|
@@ -1165,16 +935,6 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 
 ### 18.6.4 Edge Cases
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-handwritten.svg" alt="Handwritten: 18.6.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-diagram.svg" alt="Diagram: 18.6.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-4-edge-cases-sticky.svg" alt="Sticky Note: 18.6.4 Edge Cases" width="30%">
-</a>
-
 
 - **Rain fade (Ku/Ka band):** Heavy rain attenuates signals >30 dB. Mitigation: adaptive modulation (lower throughput), site diversity, larger dish aperture.
 - **LEO handover:** Satellite moves at 7.5 km/s; user switches satellite every 1-4 minutes. Handover must complete in &lt;10 ms to avoid TCP timeout. Mitigation: predictive handover (ephemeris-based), MPTCP/QUIC connection migration.
@@ -1184,16 +944,6 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 - **Light pollution (astronomy):** Satellite trails in telescope images. Mitigation: darkening coatings, sun-tracking orientation.
 
 ### 18.6.5 Complexity Analysis
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-handwritten.svg" alt="Handwritten: 18.6.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-diagram.svg" alt="Diagram: 18.6.5 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-6-5-complexity-analysis-sticky.svg" alt="Sticky Note: 18.6.5 Complexity Analysis" width="30%">
-</a>
 
 
 | Operation | Time | Space | Why |
@@ -1212,16 +962,6 @@ HTTP/3 (RFC 9114) maps HTTP semantics onto QUIC streams. It replaces HTTP/2's TC
 **Real-World Analogy:** Traditional networking is like manually threading a needle 1000 times → each device configured by SSH to a CLI. Automation makes it like using a sewing machine → you define the pattern once (playbook/configuration) and the machine applies it consistently everywhere. No typos, no forgotten steps, no "oops I configured the wrong VLAN."
 
 ### 18.7.1 Ansible for Network Automation
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-handwritten.svg" alt="Handwritten: 18.7.1 Ansible for Network Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-diagram.svg" alt="Diagram: 18.7.1 Ansible for Network Automation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-1-ansible-for-network-automation-sticky.svg" alt="Sticky Note: 18.7.1 Ansible for Network Automation" width="30%">
-</a>
 
 
 **Ansible** is an agentless automation tool that uses SSH (or API) to push configuration to network devices (Cisco IOS, Juniper JunOS, Arista EOS, Nokia SR OS). Playbooks are YAML files that define the desired state.
@@ -1321,16 +1061,6 @@ print(json.dumps(results, indent=2))
 
 ### 18.7.2 NETCONF/YANG
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-handwritten.svg" alt="Handwritten: 18.7.2 NETCONF/YANG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-diagram.svg" alt="Diagram: 18.7.2 NETCONF/YANG" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-2-netconf-yang-sticky.svg" alt="Sticky Note: 18.7.2 NETCONF/YANG" width="30%">
-</a>
-
 
 **Real-World Analogy:** NETCONF/YANG is like a standardized medical chart format for hospitals (YANG = data model schema) plus a secure fax line for sending updates (NETCONF = protocol). Before NETCONF, every device had its own format → like each hospital using a different patient record format. YANG defines what data exists and its structure; NETCONF provides the CRUD operations.
 
@@ -1414,16 +1144,6 @@ with manager.connect(**device) as m:
 
 ### 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-handwritten.svg" alt="Handwritten: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-diagram.svg" alt="Diagram: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-3-ansible-vs-netconf-vs-restconf-comparison-table-sticky.svg" alt="Sticky Note: 18.7.3 Ansible vs NETCONF vs RESTCONF Comparison Table" width="30%">
-</a>
-
 
 | Feature | Ansible | NETCONF | RESTCONF |
 |---------|---------|---------|----------|
@@ -1440,16 +1160,6 @@ with manager.connect(**device) as m:
 
 ### 18.7.4 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-handwritten.svg" alt="Handwritten: 18.7.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-diagram.svg" alt="Diagram: 18.7.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-4-complexity-analysis-sticky.svg" alt="Sticky Note: 18.7.4 Complexity Analysis" width="30%">
-</a>
-
 
 | Approach | Time to Configure N Devices | Space | Why |
 |----------|---------------------------|-------|-----|
@@ -1461,16 +1171,6 @@ with manager.connect(**device) as m:
 **Why it matters:** Manual configuration does not scale. At 100 devices, Ansible completes in seconds (parallel). Manual SSH with 10 commands Ã— 100 devices Ã— 30 seconds = 300 minutes of typing, with a 5-15% error rate. Automation eliminates the error rate and reduces time by 99%+.
 
 ### 18.7.5 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-handwritten.svg" alt="Handwritten: 18.7.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-diagram.svg" alt="Diagram: 18.7.5 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-7-5-edge-cases-sticky.svg" alt="Sticky Note: 18.7.5 Edge Cases" width="30%">
-</a>
 
 
 - **Config drift:** Operators make ad-hoc changes outside automation (ssh directly). Mitigation: configuration reconciliation (Ansible cron job every 15 min), immutable infrastructure (replace, don't change).
@@ -1486,16 +1186,6 @@ with manager.connect(**device) as m:
 **Real-World Analogy:** Traditional perimeter security is like a medieval castle → thick walls (firewall), a single gate (VPN), and everyone inside the walls is trusted. Zero Trust is a modern building with badge access on every door → even if you're already inside, you need credentials to enter each room. ZTNA/SASE is like a hotel key card that only opens your floor → by default, no one can go anywhere they're not explicitly authorized.
 
 ### 18.8.1 Core Principles (NIST SP 800-207)
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-handwritten.svg" alt="Handwritten: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-diagram.svg" alt="Diagram: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-1-core-principles-nist-sp-800-207-sticky.svg" alt="Sticky Note: 18.8.1 Core Principles (NIST SP 800-207)" width="30%">
-</a>
 
 
 1. **Never trust, always verify:** Every access request is authenticated and authorized regardless of source.
@@ -1522,16 +1212,6 @@ with manager.connect(**device) as m:
 
 ### 18.8.2 ZTNA (Zero Trust Network Access)
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-handwritten.svg" alt="Handwritten: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-diagram.svg" alt="Diagram: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-2-ztna-zero-trust-network-access-sticky.svg" alt="Sticky Note: 18.8.2 ZTNA (Zero Trust Network Access)" width="30%">
-</a>
-
 
 **Real-World Analogy:** Think of ZTNA like airport security on every individual flight. You need to show ID (authenticate), verify your ticket (authorize), and pass a scan (device posture) before you can board → no one gets a "cleared for all gates" badge. And if you change flights, you go through security again.
 
@@ -1549,32 +1229,12 @@ with manager.connect(**device) as m:
 
 ### 18.8.3 SASE (Secure Access Service Edge)
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-handwritten.svg" alt="Handwritten: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-diagram.svg" alt="Diagram: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-3-sase-secure-access-service-edge-sticky.svg" alt="Sticky Note: 18.8.3 SASE (Secure Access Service Edge)" width="30%">
-</a>
-
 
 **Real-World Analogy:** SASE is like a Swiss Army knife for network security. Instead of having separate tools for firewall, VPN, web filtering, malware protection, and WAN optimization, SASE combines them all into one cloud-delivered service. Your branch office connects once, and all security/inspection happens inline.
 
 **Components:** ZTNA, SWG (Secure Web Gateway), CASB (Cloud Access Security Broker), FWaaS (Firewall as a Service), SD-WAN (Software-Defined WAN).
 
 ### 18.8.4 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-handwritten.svg" alt="Handwritten: 18.8.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-diagram.svg" alt="Diagram: 18.8.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-8-4-edge-cases-sticky.svg" alt="Sticky Note: 18.8.4 Edge Cases" width="30%">
-</a>
 
 
 - **Device posture failure:** Outdated antivirus blocks access. Mitigation: remediation portal with self-service update instructions.
@@ -1591,16 +1251,6 @@ with manager.connect(**device) as m:
 
 ### 18.9.1 Application Areas
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-handwritten.svg" alt="Handwritten: 18.9.1 Application Areas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-diagram.svg" alt="Diagram: 18.9.1 Application Areas" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-1-application-areas-sticky.svg" alt="Sticky Note: 18.9.1 Application Areas" width="30%">
-</a>
-
 
 **Anomaly detection:** ML models learn normal traffic baselines and flag deviations (DDoS, C2 beaconing, data exfiltration). Technologies: unsupervised learning (autoencoders, clustering), time-series models (LSTM, Transformers for log sequences).
 
@@ -1613,16 +1263,6 @@ with manager.connect(**device) as m:
 **Intent-Based Networking (IBN):** NLP translates operator intent into network policies. Example: "ensure video streams have &lt;50 ms latency" → configuration. Formal verification (Batfish, Minesweeper) validates correctness.
 
 ### 18.9.2 AI/ML in Networking → Implementation
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-handwritten.svg" alt="Handwritten: 18.9.2 AI/ML in Networking → Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-diagram.svg" alt="Diagram: 18.9.2 AI/ML in Networking → Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-2-ai-ml-in-networking-implementation-sticky.svg" alt="Sticky Note: 18.9.2 AI/ML in Networking → Implementation" width="30%">
-</a>
 
 
 **Python Implementation → Traffic Anomaly Detection with LSTM:**
@@ -1686,16 +1326,6 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 
 ### 18.9.3 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-handwritten.svg" alt="Handwritten: 18.9.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-diagram.svg" alt="Diagram: 18.9.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-3-complexity-analysis-sticky.svg" alt="Sticky Note: 18.9.3 Complexity Analysis" width="30%">
-</a>
-
 
 | Technique | Training Time | Inference Time | Memory | Why |
 |-----------|--------------|---------------|--------|-----|
@@ -1707,16 +1337,6 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 **Why it matters:** AI inference must be faster than the phenomena it detects. For DDoS detection, model inference must complete within 10-100 ms (before the attack overwhelms the link). LSTM with 64 hidden units over 10 time steps → ~0.3 ms inference on GPU → suitable for real-time detection. Random Forest with 100 trees on a 10-feature flow → ~0.1 ms → even faster for classification.
 
 ### 18.9.4 A&D Table: AI/ML in Networking
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-handwritten.svg" alt="Handwritten: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-diagram.svg" alt="Diagram: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-9-4-a-d-table-ai-ml-in-networking-sticky.svg" alt="Sticky Note: 18.9.4 A&D Table: AI/ML in Networking" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -1734,16 +1354,6 @@ print(f"Threshold (95th percentile MSE): {threshold:.4f}")
 **Real-World Analogy:** Classical networking is like mailing a letter → you can copy it, read it, forward it. Quantum networking is like mailing a bubble that pops if anyone tries to open it. The information cannot be copied (no-cloning theorem) or read without destroying it. Two parties can detect if a third party is eavesdropping. The cost: no amplification, no error correction that preserves quantum state, and the signal degrades over distance.
 
 ### 18.10.1 Quantum Key Distribution (QKD)
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-handwritten.svg" alt="Handwritten: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-diagram.svg" alt="Diagram: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-1-quantum-key-distribution-qkd-sticky.svg" alt="Sticky Note: 18.10.1 Quantum Key Distribution (QKD)" width="30%">
-</a>
 
 
 The only mature quantum networking technology. QKD allows two parties to share a secret key with information-theoretic security. If an eavesdropper (Eve) measures the quantum states, the states are disturbed, and Alice and Bob detect the interference.
@@ -1796,16 +1406,6 @@ BOB:
 
 ### 18.10.2 Quantum Repeaters
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-handwritten.svg" alt="Handwritten: 18.10.2 Quantum Repeaters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-diagram.svg" alt="Diagram: 18.10.2 Quantum Repeaters" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-2-quantum-repeaters-sticky.svg" alt="Sticky Note: 18.10.2 Quantum Repeaters" width="30%">
-</a>
-
 
 Quantum signals cannot be amplified like classical signals (no quantum amplifier exists). Quantum repeaters use entanglement swapping to extend distance.
 
@@ -1816,16 +1416,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 - **Quantum memory:** Required for repeaters but current coherence time is &lt;1 second.
 
 ### 18.10.3 Quantum Networking Feasibility
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-handwritten.svg" alt="Handwritten: 18.10.3 Quantum Networking Feasibility" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-diagram.svg" alt="Diagram: 18.10.3 Quantum Networking Feasibility" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-3-quantum-networking-feasibility-sticky.svg" alt="Sticky Note: 18.10.3 Quantum Networking Feasibility" width="30%">
-</a>
 
 
 | Aspect | Current (2025) | Near-term (2030) | Long-term (2040+) |
@@ -1838,16 +1428,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 | Practical use | Key distribution only | Quantum-secured blockchain | Distributed quantum computing |
 
 ### 18.10.4 Edge Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-handwritten.svg" alt="Handwritten: 18.10.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-diagram.svg" alt="Diagram: 18.10.4 Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-10-4-edge-cases-sticky.svg" alt="Sticky Note: 18.10.4 Edge Cases" width="30%">
-</a>
 
 
 - **Photon loss in fiber:** Attenuation below 0.2 dB/km; at 100 km, 20 dB loss = 99% photons lost. Mitigation: high-efficiency detectors (SNSPD), decoy-state protocol.
@@ -1863,16 +1443,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.1 Edge Tiers
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-handwritten.svg" alt="Handwritten: 18.11.1 Edge Tiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-diagram.svg" alt="Diagram: 18.11.1 Edge Tiers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-1-edge-tiers-sticky.svg" alt="Sticky Note: 18.11.1 Edge Tiers" width="30%">
-</a>
-
 
 | Tier | Location | Latency | Compute | Examples |
 |------|----------|---------|---------|----------|
@@ -1882,16 +1452,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 | Central cloud | Hyperscale DC | 20-100 ms | Massive | AWS, Azure, GCP regions |
 
 ### 18.11.2 Use Cases
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-handwritten.svg" alt="Handwritten: 18.11.2 Use Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-diagram.svg" alt="Diagram: 18.11.2 Use Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-2-use-cases-sticky.svg" alt="Sticky Note: 18.11.2 Use Cases" width="30%">
-</a>
 
 
 **Industrial automation:** Sub-millisecond control loops for robotic arms. Edge processes sensor data locally (no cloud round-trip), sends only aggregated metrics to the cloud.
@@ -1903,16 +1463,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 **Video analytics:** Edge nodes process video locally; only metadata (object counts, alerts) sent to cloud. Bandwidth savings: 100x (10 Mbps video → 100 Kbps metadata).
 
 ### 18.11.3 Edge Computing Architecture → Numbered Steps
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-handwritten.svg" alt="Handwritten: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-diagram.svg" alt="Diagram: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-3-edge-computing-architecture-numbered-steps-sticky.svg" alt="Sticky Note: 18.11.3 Edge Computing Architecture → Numbered Steps" width="30%">
-</a>
 
 
 1. Sensor generates data (e.g., camera captures 1080p frame).
@@ -1926,16 +1476,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 
 ### 18.11.4 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-handwritten.svg" alt="Handwritten: 18.11.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-diagram.svg" alt="Diagram: 18.11.4 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-4-complexity-analysis-sticky.svg" alt="Sticky Note: 18.11.4 Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Space | Why |
 |-----------|------|-------|-----|
@@ -1947,16 +1487,6 @@ Quantum signals cannot be amplified like classical signals (no quantum amplifier
 **Why it matters:** Edge computing changes the calculus of where to run computation. Running inference on-device costs battery but saves bandwidth and latency. A single 1080p video stream = 10 Mbps. Streaming 100 cameras to cloud = 1 Gbps bandwidth cost (~$500/month). Edge processing reduces this to &lt;100 Kbps per camera (metadata only).
 
 ### 18.11.5 A&D Table: Edge Computing
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-handwritten.svg" alt="Handwritten: 18.11.5 A&D Table: Edge Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-diagram.svg" alt="Diagram: 18.11.5 A&D Table: Edge Computing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-11-5-a-d-table-edge-computing-sticky.svg" alt="Sticky Note: 18.11.5 A&D Table: Edge Computing" width="30%">
-</a>
 
 
 | Advantage | Disadvantage |
@@ -2047,16 +1577,6 @@ const edge = new EdgeNodeProcessor({
 
 ### 18.12.1 eBPF (Extended Berkeley Packet Filter)
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-handwritten.svg" alt="Handwritten: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-diagram.svg" alt="Diagram: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-1-ebpf-extended-berkeley-packet-filter-sticky.svg" alt="Sticky Note: 18.12.1 eBPF (Extended Berkeley Packet Filter)" width="30%">
-</a>
-
 
 eBPF is a revolutionary kernel technology that allows sandboxed programs to run in the Linux kernel without changing kernel source code or loading kernel modules. For networking, eBPF enables:
 
@@ -2128,16 +1648,6 @@ except KeyboardInterrupt:
 
 ### 18.12.2 OpenTelemetry
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-handwritten.svg" alt="Handwritten: 18.12.2 OpenTelemetry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-diagram.svg" alt="Diagram: 18.12.2 OpenTelemetry" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-2-opentelemetry-sticky.svg" alt="Sticky Note: 18.12.2 OpenTelemetry" width="30%">
-</a>
-
 
 OpenTelemetry is a CNCF-graduated observability framework that provides vendor-agnostic APIs and SDKs for collecting traces, metrics, and logs. For networking observability:
 
@@ -2184,16 +1694,6 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.12.3 Complexity Analysis
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-handwritten.svg" alt="Handwritten: 18.12.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-diagram.svg" alt="Diagram: 18.12.3 Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-12-3-complexity-analysis-sticky.svg" alt="Sticky Note: 18.12.3 Complexity Analysis" width="30%">
-</a>
-
 
 | Technique | Overhead per Packet | Data Volume | Why |
 |-----------|-------------------|-------------|-----|
@@ -2211,16 +1711,6 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.1 IPv6 Transition Mechanisms Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-handwritten.svg" alt="Handwritten: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-diagram.svg" alt="Diagram: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-1-ipv6-transition-mechanisms-comparison-sticky.svg" alt="Sticky Note: 18.13.1 IPv6 Transition Mechanisms Comparison" width="30%">
-</a>
-
 
 | Criterion | Dual-Stack | 6to4 Tunnel | Teredo | NAT64/DNS64 |
 |-----------|-----------|-------------|--------|-------------|
@@ -2236,16 +1726,6 @@ with tracer.start_as_current_span("backend-service") as span:
 | Use case | Enterprise campus | ISP backbone (legacy) | Last resort translation | Mobile 4G/5G (IPv6-only) |
 
 ### 18.13.2 MQTT vs CoAP vs HTTP Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-handwritten.svg" alt="Handwritten: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-diagram.svg" alt="Diagram: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-2-mqtt-vs-coap-vs-http-comparison-sticky.svg" alt="Sticky Note: 18.13.2 MQTT vs CoAP vs HTTP Comparison" width="30%">
-</a>
 
 
 | Feature | MQTT (3.1.1/5.0) | CoAP (RFC 7252) | HTTP/2 (RFC 7540/9113) |
@@ -2265,60 +1745,20 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### 18.13.3 4G vs 5G vs 6G Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-handwritten.svg" alt="Handwritten: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-diagram.svg" alt="Diagram: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-3-4g-vs-5g-vs-6g-comparison-sticky.svg" alt="Sticky Note: 18.13.3 4G vs 5G vs 6G Comparison" width="30%">
-</a>
-
 
 (See section [18.3.3](#1833-4g-vs-5g-vs-6g-comparison-table) for full comparison table.)
 
 ### 18.13.4 Satellite vs Terrestrial Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-handwritten.svg" alt="Handwritten: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-diagram.svg" alt="Diagram: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-4-satellite-vs-terrestrial-comparison-sticky.svg" alt="Sticky Note: 18.13.4 Satellite vs Terrestrial Comparison" width="30%">
-</a>
 
 
 (See section [18.6.3](#1863-satellite-vs-terrestrial-comparison-table) for full comparison table.)
 
 ### 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-handwritten.svg" alt="Handwritten: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-diagram.svg" alt="Diagram: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-5-ansible-vs-netconf-vs-restconf-comparison-sticky.svg" alt="Sticky Note: 18.13.5 Ansible vs NETCONF vs RESTCONF Comparison" width="30%">
-</a>
-
 
 (See section [18.7.3](#1873-ansible-vs-netconf-vs-restconf-comparison-table) for full comparison table.)
 
 ### 18.13.6 Zero Trust vs Perimeter Security Comparison
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-handwritten.svg" alt="Handwritten: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-diagram.svg" alt="Diagram: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/18-13-6-zero-trust-vs-perimeter-security-comparison-sticky.svg" alt="Sticky Note: 18.13.6 Zero Trust vs Perimeter Security Comparison" width="30%">
-</a>
 
 
 (See section [18.8.1](#1881-core-principles-nist-sp-800-207) for full comparison table.)
@@ -2328,16 +1768,6 @@ with tracer.start_as_current_span("backend-service") as span:
 ## 18.14 Interview Corner
 
 ### Q1: What are the main barriers to IPv6 adoption?
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-handwritten.svg" alt="Handwritten: What are the main barriers to IPv6 adoption?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-diagram.svg" alt="Diagram: What are the main barriers to IPv6 adoption?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-are-the-main-barriers-to-ipv6-adoption-sticky.svg" alt="Sticky Note: What are the main barriers to IPv6 adoption?" width="30%">
-</a>
 
 
 **Answer:** IPv6 adoption (currently ~45% of Google traffic) faces several barriers:
@@ -2352,45 +1782,15 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q2: 5G vs Wi-Fi 6 → when would you use each?
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-handwritten.svg" alt="Handwritten: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-diagram.svg" alt="Diagram: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/5g-vs-wi-fi-6-when-would-you-use-each-sticky.svg" alt="Sticky Note: 5G vs Wi-Fi 6 → when would you use each?" width="30%">
-</a>
-
 
 **Answer:** Choose 5G when: wide-area mobility (cars, trains), guaranteed QoS (network slicing for industrial control), carrier-managed security, >1 km range. Choose Wi-Fi 6 when: indoor high density (stadiums, offices → 2000+ devices per AP), low cost (free unlicensed spectrum), very high throughput per user (>1 Gbps), battery efficiency (802.11ax target wake time). Complementary: 5G for wide-area, Wi-Fi 6 for indoor; seamless handover via ATSSS (Access Traffic Steering, Switching, Splitting) in 3GPP Release 16.
 
 ### Q3: Is quantum networking feasible for the internet today?
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-handwritten.svg" alt="Handwritten: Is quantum networking feasible for the internet today?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-diagram.svg" alt="Diagram: Is quantum networking feasible for the internet today?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/is-quantum-networking-feasible-for-the-internet-today-sticky.svg" alt="Sticky Note: Is quantum networking feasible for the internet today?" width="30%">
-</a>
-
 
 **Answer:** Not for general-purpose internet traffic. Quantum networking today is limited to QKD (key distribution) in metro-area fiber networks (~100 km). Limitations: no quantum repeaters (trusted relays compromise security), low key rate (1-10 Mbps vs classical 10 Gbps), sensitivity to noise and vibration, need for single-photon sources. Feasible timeline: metro QKD backbones by 2028, cross-country by 2033, general-purpose quantum internet (distributed quantum computing) by 2040+. Current deployments: China's 2,000 km Beijing-Shanghai QKD backbone, Europe's OPENQKD testbed, US' Chicago quantum network.
 
 ### Q4: How does AI improve network management systems (NMS)?
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-handwritten.svg" alt="Handwritten: How does AI improve network management systems (NMS)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-diagram.svg" alt="Diagram: How does AI improve network management systems (NMS)?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/how-does-ai-improve-network-management-systems-nms-sticky.svg" alt="Sticky Note: How does AI improve network management systems (NMS)?" width="30%">
-</a>
 
 
 **Answer:** AI improves NMS in five key areas:
@@ -2404,45 +1804,15 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Q5: Explain the difference between SDN, NFV, and Network Automation.
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-handwritten.svg" alt="Handwritten: Explain the difference between SDN, NFV, and Network Automation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-diagram.svg" alt="Diagram: Explain the difference between SDN, NFV, and Network Automation." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/explain-the-difference-between-sdn-nfv-and-network-automation-sticky.svg" alt="Sticky Note: Explain the difference between SDN, NFV, and Network Automation." width="30%">
-</a>
-
 
 **Answer:** SDN (Software-Defined Networking) separates control plane from data plane; a central controller programs switch forwarding tables. NFV (Network Function Virtualization) runs network functions (firewall, load balancer, router) as VMs/containers instead of proprietary hardware. Network Automation programs device configurations programmatically (Ansible, NETCONF). They complement each other: SDN provides centralized control, NFV provides flexible deployment, automation ensures consistency. Example: SDN controller (OpenDaylight) is automated via REST API; NFV orchestrator (OpenStack Tacker) deploys VNFs (virtual firewall, virtual router) and runs automated lifecycle management.
 
 ### Q6: What is the role of QUIC connection migration in mobile networks?
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-handwritten.svg" alt="Handwritten: What is the role of QUIC connection migration in mobile networks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-diagram.svg" alt="Diagram: What is the role of QUIC connection migration in mobile networks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/what-is-the-role-of-quic-connection-migration-in-mobile-networks-sticky.svg" alt="Sticky Note: What is the role of QUIC connection migration in mobile networks?" width="30%">
-</a>
-
 
 **Answer:** QUIC connection migration is critical for mobile users who switch between WiFi and cellular (e.g., walking out of an office). Without QUIC: TCP connection drops (IP changes); application must reconnect and re-authenticate. With QUIC: Connection ID stays constant; new packets from the new IP are recognized by the server; the connection survives seamlessly. This enables: seamless video streaming through WiFi→5G transitions, no re-authentication required (TLS session resumed), no application-layer reconnection logic needed. Impact: 20-40% fewer application timeouts on mobile networks.
 
 ### Q7: Edge vs Cloud → how do you decide where to process data?
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-handwritten.svg" alt="Handwritten: Edge vs Cloud → how do you decide where to process data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-diagram.svg" alt="Diagram: Edge vs Cloud → how do you decide where to process data?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/edge-vs-cloud-how-do-you-decide-where-to-process-data-sticky.svg" alt="Sticky Note: Edge vs Cloud → how do you decide where to process data?" width="30%">
-</a>
 
 
 **Answer:** Decision criteria (in priority order):
@@ -2458,16 +1828,6 @@ with tracer.start_as_current_span("backend-service") as span:
 
 ### Starlink (SpaceX)
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-handwritten.svg" alt="Handwritten: Starlink (SpaceX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-diagram.svg" alt="Diagram: Starlink (SpaceX)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/starlink-spacex-sticky.svg" alt="Sticky Note: Starlink (SpaceX)" width="30%">
-</a>
-
 
 Starlink is the world's largest LEO satellite constellation (~5,500 satellites as of 2025). Real-world details:
 - **Phased-array antenna** (Dishy McFlatface): 1,280 beamforming elements, electronically steered. Tracks satellites moving at 7.5 km/s without moving parts.
@@ -2479,16 +1839,6 @@ Starlink is the world's largest LEO satellite constellation (~5,500 satellites a
 
 ### AWS Wavelength (5G Edge Computing)
 
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-handwritten.svg" alt="Handwritten: AWS Wavelength (5G Edge Computing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-diagram.svg" alt="Diagram: AWS Wavelength (5G Edge Computing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/aws-wavelength-5g-edge-computing-sticky.svg" alt="Sticky Note: AWS Wavelength (5G Edge Computing)" width="30%">
-</a>
-
 
 AWS Wavelength embeds AWS compute (EC2, EBS) at 5G base station sites, providing sub-10 ms latency to mobile devices.
 - **Architecture:** Wavelength Zone = AWS region extension at a carrier's 5G edge site. UPF at the base station routes local traffic to the Wavelength Zone without leaving carrier network.
@@ -2496,16 +1846,6 @@ AWS Wavelength embeds AWS compute (EC2, EBS) at 5G base station sites, providing
 - **Telecom integration:** Carrier exposes APIs (TMF 640) for dynamic UPF traffic steering. Slice management via NSSF.
 
 ### Google B4 SDN (WAN Traffic Engineering)
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-handwritten.svg" alt="Handwritten: Google B4 SDN (WAN Traffic Engineering)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-diagram.svg" alt="Diagram: Google B4 SDN (WAN Traffic Engineering)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/google-b4-sdn-wan-traffic-engineering-sticky.svg" alt="Sticky Note: Google B4 SDN (WAN Traffic Engineering)" width="30%">
-</a>
 
 
 Google B4 is the private WAN connecting Google data centers worldwide. Key innovations:
@@ -2515,16 +1855,6 @@ Google B4 is the private WAN connecting Google data centers worldwide. Key innov
 - **eBPF monitoring:** Google uses eBPF-based monitoring (Maglev load balancer) for per-flow latency and loss at scale.
 
 ### Cisco SD-Access (Intent-Based Networking)
-
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-handwritten.svg" alt="Handwritten: Cisco SD-Access (Intent-Based Networking)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-diagram.svg" alt="Diagram: Cisco SD-Access (Intent-Based Networking)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/computer-networks/18-modern/cisco-sd-access-intent-based-networking-sticky.svg" alt="Sticky Note: Cisco SD-Access (Intent-Based Networking)" width="30%">
-</a>
 
 
 Cisco SD-Access implements IBN for enterprise campus networks:

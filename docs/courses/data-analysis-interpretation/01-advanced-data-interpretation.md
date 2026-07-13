@@ -49,23 +49,11 @@ By the end of this chapter, you will be able to:
 </div>
 <!-- End Image Gallery -->
 
-
 ---
 
 ## Theory
 
 ### 1.1 The DI Problem-Solving Framework
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-handwritten.svg" alt="Handwritten: 1.1 The DI Problem-Solving Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-diagram.svg" alt="Diagram: 1.1 The DI Problem-Solving Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-1-the-di-problem-solving-framework-sticky.svg" alt="Sticky Note: 1.1 The DI Problem-Solving Framework" width="30%">
-</a>
-
 
 Data Interpretation questions test your ability to extract meaning from numerical data presented in various visual formats. A systematic approach is essential:
 
@@ -104,17 +92,6 @@ flowchart TD
 
 ### 1.2 Tabular Data Interpretation
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-handwritten.svg" alt="Handwritten: 1.2 Tabular Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-diagram.svg" alt="Diagram: 1.2 Tabular Data Interpretation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-2-tabular-data-interpretation-sticky.svg" alt="Sticky Note: 1.2 Tabular Data Interpretation" width="30%">
-</a>
-
-
 Tables are the most common DI format. A table organises data into rows and columns, often combining multiple categories.
 
 **Structure of a typical DI table:**
@@ -146,17 +123,6 @@ Some questions present two or three related tables. You must cross-reference dat
 3. Break multi-step calculations into atomic steps, recording intermediate results
 
 ### 1.3 Bar Graph Analysis
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-handwritten.svg" alt="Handwritten: 1.3 Bar Graph Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-diagram.svg" alt="Diagram: 1.3 Bar Graph Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-3-bar-graph-analysis-sticky.svg" alt="Sticky Note: 1.3 Bar Graph Analysis" width="30%">
-</a>
-
 
 #### Simple Bar Graph
 Bars of equal width represent values for different categories. The height (or length) is proportional to the value.
@@ -191,17 +157,6 @@ Each bar represents 100%, and segments show the percentage distribution. The tot
 
 ### 1.4 Line Chart Analysis
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-handwritten.svg" alt="Handwritten: 1.4 Line Chart Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-diagram.svg" alt="Diagram: 1.4 Line Chart Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-4-line-chart-analysis-sticky.svg" alt="Sticky Note: 1.4 Line Chart Analysis" width="30%">
-</a>
-
-
 #### Single Line Chart
 Plots a single data series over time. Useful for trend analysis.
 
@@ -229,17 +184,6 @@ Shows cumulative growth over time, often with a base year index of 100.
 
 ### 1.5 Pie Chart Analysis
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-handwritten.svg" alt="Handwritten: 1.5 Pie Chart Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-diagram.svg" alt="Diagram: 1.5 Pie Chart Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-5-pie-chart-analysis-sticky.svg" alt="Sticky Note: 1.5 Pie Chart Analysis" width="30%">
-</a>
-
-
 A pie chart shows the proportional distribution of a whole. Each sector's central angle is proportional to its value.
 
 **Key formulas:**
@@ -260,17 +204,6 @@ A pie chart shows the proportional distribution of a whole. Each sector's centra
 
 ### 1.6 Combining Multiple Chart Types
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-handwritten.svg" alt="Handwritten: 1.6 Combining Multiple Chart Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-diagram.svg" alt="Diagram: 1.6 Combining Multiple Chart Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-6-combining-multiple-chart-types-sticky.svg" alt="Sticky Note: 1.6 Combining Multiple Chart Types" width="30%">
-</a>
-
-
 A single question set may include a table, a bar graph, and a pie chart. The questions require integrating information across formats.
 
 **Example structure:**
@@ -287,17 +220,6 @@ A single question set may include a table, a bar graph, and a pie chart. The que
 
 ### 1.7 Approximation and Estimation Strategies
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-handwritten.svg" alt="Handwritten: 1.7 Approximation and Estimation Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-diagram.svg" alt="Diagram: 1.7 Approximation and Estimation Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-7-approximation-and-estimation-strategies-sticky.svg" alt="Sticky Note: 1.7 Approximation and Estimation Strategies" width="30%">
-</a>
-
-
 In competitive exams, exact calculation is not always necessary. Approximation saves time.
 
 | Technique | When to Use | Example |
@@ -312,17 +234,6 @@ In competitive exams, exact calculation is not always necessary. Approximation s
 
 ### 1.8 CAGR and Growth Rate Calculations
 
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-handwritten.svg" alt="Handwritten: 1.8 CAGR and Growth Rate Calculations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-diagram.svg" alt="Diagram: 1.8 CAGR and Growth Rate Calculations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-8-cagr-and-growth-rate-calculations-sticky.svg" alt="Sticky Note: 1.8 CAGR and Growth Rate Calculations" width="30%">
-</a>
-
-
 **Simple Growth Rate:**
 `Growth Rate = ((Value in Current Year - Value in Previous Year) / Value in Previous Year) × 100`
 
@@ -336,17 +247,6 @@ For 2 years: CAGR ≈ (Average of annual growth rates) - (Variance adjustment)
 For quick estimation: Use the rule of 72 for doubling time.
 
 ### 1.9 Percentage, Ratio, and Average Concepts in DI
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-handwritten.svg" alt="Handwritten: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-diagram.svg" alt="Diagram: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-9-percentage-ratio-and-average-concepts-in-di-sticky.svg" alt="Sticky Note: 1.9 Percentage, Ratio, and Average Concepts in DI" width="30%">
-</a>
-
 
 **Percentage change:**
 - Increase: `((New - Old) / Old) × 100`
@@ -365,17 +265,6 @@ For quick estimation: Use the rule of 72 for doubling time.
 - To decrease by x%, multiply by `(1 - x/100)`
 
 ### 1.10 Common Traps and Pitfalls
-
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-handwritten.svg" alt="Handwritten: 1.10 Common Traps and Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-diagram.svg" alt="Diagram: 1.10 Common Traps and Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-analysis-interpretation/01-advanced-data-interpretation/1-10-common-traps-and-pitfalls-sticky.svg" alt="Sticky Note: 1.10 Common Traps and Pitfalls" width="30%">
-</a>
-
 
 | Trap | Why It's Dangerous | How to Avoid |
 |------|--------------------|--------------|

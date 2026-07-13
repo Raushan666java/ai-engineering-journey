@@ -106,16 +106,6 @@ The `pom.xml` file is the heart of every Maven project. It is an XML file that d
 
 ### 1.1 Minimal POM
 
-<a href="../../../assets/images/diagrams/java/07-maven/1-1-minimal-pom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-1-minimal-pom-handwritten.svg" alt="Handwritten: 1.1 Minimal POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-1-minimal-pom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-1-minimal-pom-diagram.svg" alt="Diagram: 1.1 Minimal POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-1-minimal-pom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-1-minimal-pom-sticky.svg" alt="Sticky Note: 1.1 Minimal POM" width="30%">
-</a>
-
 
 Every POM inherits from the Super POM, which defines defaults like the central repository, standard lifecycle bindings, and the JAR packaging type. A minimal project needs only coordinates:
 
@@ -143,30 +133,10 @@ Every POM inherits from the Super POM, which defines defaults like the central r
 
 ### 1.2 Full POM Structure
 
-<a href="../../../assets/images/diagrams/java/07-maven/1-2-full-pom-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-2-full-pom-structure-handwritten.svg" alt="Handwritten: 1.2 Full POM Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-2-full-pom-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-2-full-pom-structure-diagram.svg" alt="Diagram: 1.2 Full POM Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-2-full-pom-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-2-full-pom-structure-sticky.svg" alt="Sticky Note: 1.2 Full POM Structure" width="30%">
-</a>
-
 
 A production POM contains many additional elements. The sections below cover each in detail.
 
 ### 1.3 The Parent Element
-
-<a href="../../../assets/images/diagrams/java/07-maven/1-3-the-parent-element-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-3-the-parent-element-handwritten.svg" alt="Handwritten: 1.3 The Parent Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-3-the-parent-element-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-3-the-parent-element-diagram.svg" alt="Diagram: 1.3 The Parent Element" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-3-the-parent-element-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-3-the-parent-element-sticky.svg" alt="Sticky Note: 1.3 The Parent Element" width="30%">
-</a>
 
 
 A POM can inherit from a parent POM. The parent defines shared configuration that children inherit automatically. The `<relativePath>` element tells Maven where to find the parent POM locally. If omitted or empty, Maven searches the repository.
@@ -200,16 +170,6 @@ The parent provides:
 - Profile activation for different environments
 
 ### 1.4 Properties
-
-<a href="../../../assets/images/diagrams/java/07-maven/1-4-properties-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-4-properties-handwritten.svg" alt="Handwritten: 1.4 Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-4-properties-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-4-properties-diagram.svg" alt="Diagram: 1.4 Properties" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-4-properties-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-4-properties-sticky.svg" alt="Sticky Note: 1.4 Properties" width="30%">
-</a>
 
 
 Properties allow you to define reusable values in the POM. Maven properties use `${property.name}` syntax. There are four categories:
@@ -248,16 +208,6 @@ Properties support value interpolation:
 
 ### 1.5 Packaging Types
 
-<a href="../../../assets/images/diagrams/java/07-maven/1-5-packaging-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-5-packaging-types-handwritten.svg" alt="Handwritten: 1.5 Packaging Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-5-packaging-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-5-packaging-types-diagram.svg" alt="Diagram: 1.5 Packaging Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/1-5-packaging-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/1-5-packaging-types-sticky.svg" alt="Sticky Note: 1.5 Packaging Types" width="30%">
-</a>
-
 
 The `<packaging>` element determines the default lifecycle bindings and the output artifact type:
 
@@ -277,16 +227,6 @@ Maven is built around build lifecycles. A lifecycle is a sequence of phases exec
 
 ### 2.1 The Three Built-in Lifecycles
 
-<a href="../../../assets/images/diagrams/java/07-maven/2-1-the-three-built-in-lifecycles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-1-the-three-built-in-lifecycles-handwritten.svg" alt="Handwritten: 2.1 The Three Built-in Lifecycles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-1-the-three-built-in-lifecycles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-1-the-three-built-in-lifecycles-diagram.svg" alt="Diagram: 2.1 The Three Built-in Lifecycles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-1-the-three-built-in-lifecycles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-1-the-three-built-in-lifecycles-sticky.svg" alt="Sticky Note: 2.1 The Three Built-in Lifecycles" width="30%">
-</a>
-
 
 | Lifecycle | Purpose | Key Phases |
 |-----------|---------|------------|
@@ -295,16 +235,6 @@ Maven is built around build lifecycles. A lifecycle is a sequence of phases exec
 | **site** | Generate project documentation | pre-site, site, post-site, site-deploy |
 
 ### 2.2 Default Lifecycle Phases (In Order)
-
-<a href="../../../assets/images/diagrams/java/07-maven/2-2-default-lifecycle-phases-in-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-2-default-lifecycle-phases-in-order-handwritten.svg" alt="Handwritten: 2.2 Default Lifecycle Phases (In Order)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-2-default-lifecycle-phases-in-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-2-default-lifecycle-phases-in-order-diagram.svg" alt="Diagram: 2.2 Default Lifecycle Phases (In Order)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-2-default-lifecycle-phases-in-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-2-default-lifecycle-phases-in-order-sticky.svg" alt="Sticky Note: 2.2 Default Lifecycle Phases (In Order)" width="30%">
-</a>
 
 
 Maven defines 23 phases in the default lifecycle. The most important are:
@@ -337,16 +267,6 @@ Maven defines 23 phases in the default lifecycle. The most important are:
 
 ### 2.3 Lifecycle Binding
 
-<a href="../../../assets/images/diagrams/java/07-maven/2-3-lifecycle-binding-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-3-lifecycle-binding-handwritten.svg" alt="Handwritten: 2.3 Lifecycle Binding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-3-lifecycle-binding-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-3-lifecycle-binding-diagram.svg" alt="Diagram: 2.3 Lifecycle Binding" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-3-lifecycle-binding-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-3-lifecycle-binding-sticky.svg" alt="Sticky Note: 2.3 Lifecycle Binding" width="30%">
-</a>
-
 
 Each packaging type defines default bindings ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â which plugin goals are bound to which phases. For `jar` packaging:
 
@@ -365,32 +285,12 @@ For `war` packaging, `war:war` is bound to `package` instead of `jar:jar`. For `
 
 ### 2.4 Clean Lifecycle
 
-<a href="../../../assets/images/diagrams/java/07-maven/2-4-clean-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-4-clean-lifecycle-handwritten.svg" alt="Handwritten: 2.4 Clean Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-4-clean-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-4-clean-lifecycle-diagram.svg" alt="Diagram: 2.4 Clean Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-4-clean-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-4-clean-lifecycle-sticky.svg" alt="Sticky Note: 2.4 Clean Lifecycle" width="30%">
-</a>
-
 
 ```
 pre-clean ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ clean (clean:clean) ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ post-clean
 ```
 
 ### 2.5 Site Lifecycle
-
-<a href="../../../assets/images/diagrams/java/07-maven/2-5-site-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-5-site-lifecycle-handwritten.svg" alt="Handwritten: 2.5 Site Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-5-site-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-5-site-lifecycle-diagram.svg" alt="Diagram: 2.5 Site Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-5-site-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-5-site-lifecycle-sticky.svg" alt="Sticky Note: 2.5 Site Lifecycle" width="30%">
-</a>
 
 
 ```
@@ -399,16 +299,6 @@ pre-site ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ site (site:site) ÃƒÂ¢Ã¢
 
 ### 2.6 Phase Execution Order Example
 
-<a href="../../../assets/images/diagrams/java/07-maven/2-6-phase-execution-order-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-6-phase-execution-order-example-handwritten.svg" alt="Handwritten: 2.6 Phase Execution Order Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-6-phase-execution-order-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-6-phase-execution-order-example-diagram.svg" alt="Diagram: 2.6 Phase Execution Order Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-6-phase-execution-order-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-6-phase-execution-order-example-sticky.svg" alt="Sticky Note: 2.6 Phase Execution Order Example" width="30%">
-</a>
-
 
 When you run `mvn clean install`:
 
@@ -416,16 +306,6 @@ When you run `mvn clean install`:
 2. **default lifecycle**: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test (run unit tests), prepare-package, package (create JAR), pre-integration-test, integration-test, post-integration-test, verify, install (copy JAR to `~/.m2/repository`)
 
 ### 2.7 Binding Custom Plugin Goals to Phases
-
-<a href="../../../assets/images/diagrams/java/07-maven/2-7-binding-custom-plugin-goals-to-phases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-7-binding-custom-plugin-goals-to-phases-handwritten.svg" alt="Handwritten: 2.7 Binding Custom Plugin Goals to Phases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-7-binding-custom-plugin-goals-to-phases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-7-binding-custom-plugin-goals-to-phases-diagram.svg" alt="Diagram: 2.7 Binding Custom Plugin Goals to Phases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/2-7-binding-custom-plugin-goals-to-phases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/2-7-binding-custom-plugin-goals-to-phases-sticky.svg" alt="Sticky Note: 2.7 Binding Custom Plugin Goals to Phases" width="30%">
-</a>
 
 
 You can bind any plugin goal to any lifecycle phase using the `<executions>` element:
@@ -468,16 +348,6 @@ Multiple executions of the same plugin can have different IDs, phases, goals, an
 Plugins are the heart of Maven's functionality. Every build operation ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â compiling, testing, packaging, deploying ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â is performed by a plugin. Plugins contain **goals** (also called mojos), which are atomic build operations.
 
 ### 3.1 Compiler Plugin (`maven-compiler-plugin`)
-
-<a href="../../../assets/images/diagrams/java/07-maven/3-1-compiler-plugin-maven-compiler-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-1-compiler-plugin-maven-compiler-plugin-handwritten.svg" alt="Handwritten: 3.1 Compiler Plugin (`maven-compiler-plugin`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-1-compiler-plugin-maven-compiler-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-1-compiler-plugin-maven-compiler-plugin-diagram.svg" alt="Diagram: 3.1 Compiler Plugin (`maven-compiler-plugin`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-1-compiler-plugin-maven-compiler-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-1-compiler-plugin-maven-compiler-plugin-sticky.svg" alt="Sticky Note: 3.1 Compiler Plugin (`maven-compiler-plugin`)" width="30%">
-</a>
 
 
 The compiler plugin compiles Java source code. It is bound to `compile` and `test-compile` phases by default.
@@ -538,16 +408,6 @@ Key configuration options:
 - **`maxmem` / `meminitial`**: JVM heap settings for the forked compiler.
 
 ### 3.2 Surefire Plugin (`maven-surefire-plugin`)
-
-<a href="../../../assets/images/diagrams/java/07-maven/3-2-surefire-plugin-maven-surefire-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-2-surefire-plugin-maven-surefire-plugin-handwritten.svg" alt="Handwritten: 3.2 Surefire Plugin (`maven-surefire-plugin`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-2-surefire-plugin-maven-surefire-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-2-surefire-plugin-maven-surefire-plugin-diagram.svg" alt="Diagram: 3.2 Surefire Plugin (`maven-surefire-plugin`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-2-surefire-plugin-maven-surefire-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-2-surefire-plugin-maven-surefire-plugin-sticky.svg" alt="Sticky Note: 3.2 Surefire Plugin (`maven-surefire-plugin`)" width="30%">
-</a>
 
 
 The Surefire plugin runs unit tests. It is bound to the `test` phase by default. It supports JUnit 5 (Jupiter), JUnit 4, and TestNG.
@@ -617,16 +477,6 @@ Surefire generates XML and HTML reports in `${project.build.directory}/surefire-
 
 ### 3.3 Failsafe Plugin (`maven-failsafe-plugin`)
 
-<a href="../../../assets/images/diagrams/java/07-maven/3-3-failsafe-plugin-maven-failsafe-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-3-failsafe-plugin-maven-failsafe-plugin-handwritten.svg" alt="Handwritten: 3.3 Failsafe Plugin (`maven-failsafe-plugin`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-3-failsafe-plugin-maven-failsafe-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-3-failsafe-plugin-maven-failsafe-plugin-diagram.svg" alt="Diagram: 3.3 Failsafe Plugin (`maven-failsafe-plugin`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-3-failsafe-plugin-maven-failsafe-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-3-failsafe-plugin-maven-failsafe-plugin-sticky.svg" alt="Sticky Note: 3.3 Failsafe Plugin (`maven-failsafe-plugin`)" width="30%">
-</a>
-
 
 Failsafe is designed for integration tests. The key difference from Surefire is that Failsafe allows the build to continue even if tests fail during the `integration-test` phase, and only fails during the `verify` phase. This is important because integration tests often require setup/teardown that must happen regardless of test outcomes.
 
@@ -673,16 +523,6 @@ Run `mvn verify` to execute both, or `mvn integration-test` to run integration t
 
 ### 3.4 JAR Plugin (maven-jar-plugin)
 
-<a href="../../../assets/images/diagrams/java/07-maven/3-4-jar-plugin-maven-jar-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-4-jar-plugin-maven-jar-plugin-handwritten.svg" alt="Handwritten: 3.4 JAR Plugin (maven-jar-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-4-jar-plugin-maven-jar-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-4-jar-plugin-maven-jar-plugin-diagram.svg" alt="Diagram: 3.4 JAR Plugin (maven-jar-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-4-jar-plugin-maven-jar-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-4-jar-plugin-maven-jar-plugin-sticky.svg" alt="Sticky Note: 3.4 JAR Plugin (maven-jar-plugin)" width="30%">
-</a>
-
 
 The JAR plugin creates a Java archive. It is bound to the `package` phase for `jar` packaging.
 
@@ -721,16 +561,6 @@ The `test-jar` goal creates a JAR of test classes: `mvn jar:jar jar:test-jar`.
 
 ### 3.5 WAR Plugin (maven-war-plugin)
 
-<a href="../../../assets/images/diagrams/java/07-maven/3-5-war-plugin-maven-war-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-5-war-plugin-maven-war-plugin-handwritten.svg" alt="Handwritten: 3.5 WAR Plugin (maven-war-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-5-war-plugin-maven-war-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-5-war-plugin-maven-war-plugin-diagram.svg" alt="Diagram: 3.5 WAR Plugin (maven-war-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-5-war-plugin-maven-war-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-5-war-plugin-maven-war-plugin-sticky.svg" alt="Sticky Note: 3.5 WAR Plugin (maven-war-plugin)" width="30%">
-</a>
-
 
 Builds web application archives for servlet container deployment.
 
@@ -757,16 +587,6 @@ Builds web application archives for servlet container deployment.
 ```
 
 ### 3.6 Shade Plugin (maven-shade-plugin)
-
-<a href="../../../assets/images/diagrams/java/07-maven/3-6-shade-plugin-maven-shade-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-6-shade-plugin-maven-shade-plugin-handwritten.svg" alt="Handwritten: 3.6 Shade Plugin (maven-shade-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-6-shade-plugin-maven-shade-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-6-shade-plugin-maven-shade-plugin-diagram.svg" alt="Diagram: 3.6 Shade Plugin (maven-shade-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-6-shade-plugin-maven-shade-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-6-shade-plugin-maven-shade-plugin-sticky.svg" alt="Sticky Note: 3.6 Shade Plugin (maven-shade-plugin)" width="30%">
-</a>
 
 
 Creates an uber-JAR (fat JAR) with all dependencies and supports relocation.
@@ -828,16 +648,6 @@ Key concepts:
 - **MinimizeJar**: Removes unused classes from bundled dependencies.
 
 ### 3.7 Assembly Plugin (maven-assembly-plugin)
-
-<a href="../../../assets/images/diagrams/java/07-maven/3-7-assembly-plugin-maven-assembly-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-7-assembly-plugin-maven-assembly-plugin-handwritten.svg" alt="Handwritten: 3.7 Assembly Plugin (maven-assembly-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-7-assembly-plugin-maven-assembly-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-7-assembly-plugin-maven-assembly-plugin-diagram.svg" alt="Diagram: 3.7 Assembly Plugin (maven-assembly-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-7-assembly-plugin-maven-assembly-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-7-assembly-plugin-maven-assembly-plugin-sticky.svg" alt="Sticky Note: 3.7 Assembly Plugin (maven-assembly-plugin)" width="30%">
-</a>
 
 
 Creates custom distribution archives (ZIP, TAR, GZip).
@@ -910,16 +720,6 @@ Assembly descriptor (src/assembly/distribution.xml):
 
 ### 3.8 Deploy Plugin (maven-deploy-plugin)
 
-<a href="../../../assets/images/diagrams/java/07-maven/3-8-deploy-plugin-maven-deploy-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-8-deploy-plugin-maven-deploy-plugin-handwritten.svg" alt="Handwritten: 3.8 Deploy Plugin (maven-deploy-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-8-deploy-plugin-maven-deploy-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-8-deploy-plugin-maven-deploy-plugin-diagram.svg" alt="Diagram: 3.8 Deploy Plugin (maven-deploy-plugin)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-8-deploy-plugin-maven-deploy-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-8-deploy-plugin-maven-deploy-plugin-sticky.svg" alt="Sticky Note: 3.8 Deploy Plugin (maven-deploy-plugin)" width="30%">
-</a>
-
 
 Uploads built artifacts to a remote repository.
 
@@ -939,16 +739,6 @@ Uploads built artifacts to a remote repository.
 ```
 
 ### 3.9 Code Quality Plugins
-
-<a href="../../../assets/images/diagrams/java/07-maven/3-9-code-quality-plugins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-9-code-quality-plugins-handwritten.svg" alt="Handwritten: 3.9 Code Quality Plugins" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-9-code-quality-plugins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-9-code-quality-plugins-diagram.svg" alt="Diagram: 3.9 Code Quality Plugins" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/3-9-code-quality-plugins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/3-9-code-quality-plugins-sticky.svg" alt="Sticky Note: 3.9 Code Quality Plugins" width="30%">
-</a>
 
 
 #### Checkstyle Plugin
@@ -1065,16 +855,6 @@ Dependency management handles transitive resolution, version mediation, and conf
 
 ### 4.1 Dependency Coordinates
 
-<a href="../../../assets/images/diagrams/java/07-maven/4-1-dependency-coordinates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-1-dependency-coordinates-handwritten.svg" alt="Handwritten: 4.1 Dependency Coordinates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-1-dependency-coordinates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-1-dependency-coordinates-diagram.svg" alt="Diagram: 4.1 Dependency Coordinates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-1-dependency-coordinates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-1-dependency-coordinates-sticky.svg" alt="Sticky Note: 4.1 Dependency Coordinates" width="30%">
-</a>
-
 
 Every dependency is identified by groupId, artifactId, version, plus optional type, scope, classifier.
 
@@ -1090,16 +870,6 @@ Every dependency is identified by groupId, artifactId, version, plus optional ty
 ```
 
 ### 4.2 Dependency Scopes
-
-<a href="../../../assets/images/diagrams/java/07-maven/4-2-dependency-scopes-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-2-dependency-scopes-handwritten.svg" alt="Handwritten: 4.2 Dependency Scopes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-2-dependency-scopes-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-2-dependency-scopes-diagram.svg" alt="Diagram: 4.2 Dependency Scopes" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-2-dependency-scopes-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-2-dependency-scopes-sticky.svg" alt="Sticky Note: 4.2 Dependency Scopes" width="30%">
-</a>
 
 
 | Scope | Description | Transitive? |
@@ -1131,30 +901,10 @@ Every dependency is identified by groupId, artifactId, version, plus optional ty
 
 ### 4.3 Transitive Dependency Resolution
 
-<a href="../../../assets/images/diagrams/java/07-maven/4-3-transitive-dependency-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-3-transitive-dependency-resolution-handwritten.svg" alt="Handwritten: 4.3 Transitive Dependency Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-3-transitive-dependency-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-3-transitive-dependency-resolution-diagram.svg" alt="Diagram: 4.3 Transitive Dependency Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-3-transitive-dependency-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-3-transitive-dependency-resolution-sticky.svg" alt="Sticky Note: 4.3 Transitive Dependency Resolution" width="30%">
-</a>
-
 
 Declaring `spring-boot-starter-web` pulls in Spring MVC, Tomcat, Jackson, Logback transitively. Maven automatically resolves the full dependency tree.
 
 ### 4.4 Dependency Mediation (Nearest Wins)
-
-<a href="../../../assets/images/diagrams/java/07-maven/4-4-dependency-mediation-nearest-wins-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-4-dependency-mediation-nearest-wins-handwritten.svg" alt="Handwritten: 4.4 Dependency Mediation (Nearest Wins)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-4-dependency-mediation-nearest-wins-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-4-dependency-mediation-nearest-wins-diagram.svg" alt="Diagram: 4.4 Dependency Mediation (Nearest Wins)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-4-dependency-mediation-nearest-wins-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-4-dependency-mediation-nearest-wins-sticky.svg" alt="Sticky Note: 4.4 Dependency Mediation (Nearest Wins)" width="30%">
-</a>
 
 
 When multiple versions of the same dependency exist in the tree, Maven uses the **nearest definition**: the version closest to the root wins. Same depth: first declaration wins.
@@ -1166,16 +916,6 @@ Project A
 ```
 
 ### 4.5 Exclusions
-
-<a href="../../../assets/images/diagrams/java/07-maven/4-5-exclusions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-5-exclusions-handwritten.svg" alt="Handwritten: 4.5 Exclusions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-5-exclusions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-5-exclusions-diagram.svg" alt="Diagram: 4.5 Exclusions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-5-exclusions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-5-exclusions-sticky.svg" alt="Sticky Note: 4.5 Exclusions" width="30%">
-</a>
 
 
 Remove unwanted transitive dependencies:
@@ -1196,16 +936,6 @@ Remove unwanted transitive dependencies:
 
 ### 4.6 Optional Dependencies
 
-<a href="../../../assets/images/diagrams/java/07-maven/4-6-optional-dependencies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-6-optional-dependencies-handwritten.svg" alt="Handwritten: 4.6 Optional Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-6-optional-dependencies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-6-optional-dependencies-diagram.svg" alt="Diagram: 4.6 Optional Dependencies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-6-optional-dependencies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-6-optional-dependencies-sticky.svg" alt="Sticky Note: 4.6 Optional Dependencies" width="30%">
-</a>
-
 
 Optional dependencies are not propagated transitively:
 
@@ -1219,16 +949,6 @@ Optional dependencies are not propagated transitively:
 ```
 
 ### 4.7 Dependency Management Section
-
-<a href="../../../assets/images/diagrams/java/07-maven/4-7-dependency-management-section-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-7-dependency-management-section-handwritten.svg" alt="Handwritten: 4.7 Dependency Management Section" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-7-dependency-management-section-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-7-dependency-management-section-diagram.svg" alt="Diagram: 4.7 Dependency Management Section" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-7-dependency-management-section-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-7-dependency-management-section-sticky.svg" alt="Sticky Note: 4.7 Dependency Management Section" width="30%">
-</a>
 
 
 Declares versions in a parent without adding dependencies:
@@ -1257,16 +977,6 @@ Child modules inherit versions:
 ```
 
 ### 4.8 BOM (Bill of Materials)
-
-<a href="../../../assets/images/diagrams/java/07-maven/4-8-bom-bill-of-materials-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-8-bom-bill-of-materials-handwritten.svg" alt="Handwritten: 4.8 BOM (Bill of Materials)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-8-bom-bill-of-materials-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-8-bom-bill-of-materials-diagram.svg" alt="Diagram: 4.8 BOM (Bill of Materials)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-8-bom-bill-of-materials-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-8-bom-bill-of-materials-sticky.svg" alt="Sticky Note: 4.8 BOM (Bill of Materials)" width="30%">
-</a>
 
 
 A BOM is a POM with `<packaging>pom</packaging>` that centralizes version management via `<dependencyManagement>`. Imported with `import` scope:
@@ -1329,16 +1039,6 @@ A BOM is a POM with `<packaging>pom</packaging>` that centralizes version manage
 
 ### 4.9 Dependency Convergence
 
-<a href="../../../assets/images/diagrams/java/07-maven/4-9-dependency-convergence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-9-dependency-convergence-handwritten.svg" alt="Handwritten: 4.9 Dependency Convergence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-9-dependency-convergence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-9-dependency-convergence-diagram.svg" alt="Diagram: 4.9 Dependency Convergence" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/4-9-dependency-convergence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/4-9-dependency-convergence-sticky.svg" alt="Sticky Note: 4.9 Dependency Convergence" width="30%">
-</a>
-
 
 Use the Enforcer plugin to enforce version consistency:
 
@@ -1381,16 +1081,6 @@ Profiles enable build-time configuration changes ÃƒÂ¢Ã¢â€šÂ¬Ã¢â�
 
 ### 5.1 Profile Activation
 
-<a href="../../../assets/images/diagrams/java/07-maven/5-1-profile-activation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-1-profile-activation-handwritten.svg" alt="Handwritten: 5.1 Profile Activation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-1-profile-activation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-1-profile-activation-diagram.svg" alt="Diagram: 5.1 Profile Activation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-1-profile-activation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-1-profile-activation-sticky.svg" alt="Sticky Note: 5.1 Profile Activation" width="30%">
-</a>
-
 
 Profiles activate automatically based on conditions or explicitly via `-P`.
 
@@ -1424,16 +1114,6 @@ Profiles activate automatically based on conditions or explicitly via `-P`.
 
 ### 5.2 Activation Conditions
 
-<a href="../../../assets/images/diagrams/java/07-maven/5-2-activation-conditions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-2-activation-conditions-handwritten.svg" alt="Handwritten: 5.2 Activation Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-2-activation-conditions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-2-activation-conditions-diagram.svg" alt="Diagram: 5.2 Activation Conditions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-2-activation-conditions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-2-activation-conditions-sticky.svg" alt="Sticky Note: 5.2 Activation Conditions" width="30%">
-</a>
-
 
 | Condition | Attribute | Description |
 |-----------|-----------|-------------|
@@ -1444,16 +1124,6 @@ Profiles activate automatically based on conditions or explicitly via `-P`.
 | activeByDefault | boolean | Activates when no other profile is active |
 
 ### 5.3 Explicit Activation
-
-<a href="../../../assets/images/diagrams/java/07-maven/5-3-explicit-activation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-3-explicit-activation-handwritten.svg" alt="Handwritten: 5.3 Explicit Activation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-3-explicit-activation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-3-explicit-activation-diagram.svg" alt="Diagram: 5.3 Explicit Activation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-3-explicit-activation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-3-explicit-activation-sticky.svg" alt="Sticky Note: 5.3 Explicit Activation" width="30%">
-</a>
 
 
 ```bash
@@ -1471,16 +1141,6 @@ mvn clean install -Denv=production
 ```
 
 ### 5.4 Profile Use Cases
-
-<a href="../../../assets/images/diagrams/java/07-maven/5-4-profile-use-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-4-profile-use-cases-handwritten.svg" alt="Handwritten: 5.4 Profile Use Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-4-profile-use-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-4-profile-use-cases-diagram.svg" alt="Diagram: 5.4 Profile Use Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-4-profile-use-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-4-profile-use-cases-sticky.svg" alt="Sticky Note: 5.4 Profile Use Cases" width="30%">
-</a>
 
 
 **Development profile:**
@@ -1540,16 +1200,6 @@ mvn clean install -Denv=production
 
 ### 5.5 Profile Inheritance and Conflict Resolution
 
-<a href="../../../assets/images/diagrams/java/07-maven/5-5-profile-inheritance-and-conflict-resolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-5-profile-inheritance-and-conflict-resolution-handwritten.svg" alt="Handwritten: 5.5 Profile Inheritance and Conflict Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-5-profile-inheritance-and-conflict-resolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-5-profile-inheritance-and-conflict-resolution-diagram.svg" alt="Diagram: 5.5 Profile Inheritance and Conflict Resolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/5-5-profile-inheritance-and-conflict-resolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/5-5-profile-inheritance-and-conflict-resolution-sticky.svg" alt="Sticky Note: 5.5 Profile Inheritance and Conflict Resolution" width="30%">
-</a>
-
 
 When multiple profiles define the same element, the **last-activated** profile wins. Activation order:
 
@@ -1571,16 +1221,6 @@ When multiple profiles define the same element, the **last-activated** profile w
 Multi-module projects organize related modules under a single parent POM.
 
 ### 6.1 Parent POM
-
-<a href="../../../assets/images/diagrams/java/07-maven/6-1-parent-pom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-1-parent-pom-handwritten.svg" alt="Handwritten: 6.1 Parent POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-1-parent-pom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-1-parent-pom-diagram.svg" alt="Diagram: 6.1 Parent POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-1-parent-pom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-1-parent-pom-sticky.svg" alt="Sticky Note: 6.1 Parent POM" width="30%">
-</a>
 
 
 ```xml
@@ -1638,16 +1278,6 @@ Multi-module projects organize related modules under a single parent POM.
 
 ### 6.2 Child Module POM
 
-<a href="../../../assets/images/diagrams/java/07-maven/6-2-child-module-pom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-2-child-module-pom-handwritten.svg" alt="Handwritten: 6.2 Child Module POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-2-child-module-pom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-2-child-module-pom-diagram.svg" alt="Diagram: 6.2 Child Module POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-2-child-module-pom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-2-child-module-pom-sticky.svg" alt="Sticky Note: 6.2 Child Module POM" width="30%">
-</a>
-
 
 ```xml
 <project>
@@ -1674,16 +1304,6 @@ Multi-module projects organize related modules under a single parent POM.
 
 ### 6.3 Reactor Build Order
 
-<a href="../../../assets/images/diagrams/java/07-maven/6-3-reactor-build-order-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-3-reactor-build-order-handwritten.svg" alt="Handwritten: 6.3 Reactor Build Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-3-reactor-build-order-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-3-reactor-build-order-diagram.svg" alt="Diagram: 6.3 Reactor Build Order" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-3-reactor-build-order-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-3-reactor-build-order-sticky.svg" alt="Sticky Note: 6.3 Reactor Build Order" width="30%">
-</a>
-
 
 Maven determines build order by:
 
@@ -1709,16 +1329,6 @@ mvn -rf myapp-service clean install
 
 ### 6.4 Reactor Options
 
-<a href="../../../assets/images/diagrams/java/07-maven/6-4-reactor-options-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-4-reactor-options-handwritten.svg" alt="Handwritten: 6.4 Reactor Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-4-reactor-options-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-4-reactor-options-diagram.svg" alt="Diagram: 6.4 Reactor Options" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-4-reactor-options-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-4-reactor-options-sticky.svg" alt="Sticky Note: 6.4 Reactor Options" width="30%">
-</a>
-
 
 ```bash
 # Exclude specific modules
@@ -1736,16 +1346,6 @@ mvn -fae clean install
 
 ### 6.5 Module Versioning Strategies
 
-<a href="../../../assets/images/diagrams/java/07-maven/6-5-module-versioning-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-5-module-versioning-strategies-handwritten.svg" alt="Handwritten: 6.5 Module Versioning Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-5-module-versioning-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-5-module-versioning-strategies-diagram.svg" alt="Diagram: 6.5 Module Versioning Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/6-5-module-versioning-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/6-5-module-versioning-strategies-sticky.svg" alt="Sticky Note: 6.5 Module Versioning Strategies" width="30%">
-</a>
-
 
 - **Consistent versioning** (recommended): All modules share the parent version.
 - **Independent versioning**: Each module versions independently, BOM coordinates.
@@ -1758,16 +1358,6 @@ mvn -fae clean install
 When built-in plugins do not suffice, create a custom Maven plugin.
 
 ### 7.1 Plugin Project Structure
-
-<a href="../../../assets/images/diagrams/java/07-maven/7-1-plugin-project-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-1-plugin-project-structure-handwritten.svg" alt="Handwritten: 7.1 Plugin Project Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-1-plugin-project-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-1-plugin-project-structure-diagram.svg" alt="Diagram: 7.1 Plugin Project Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-1-plugin-project-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-1-plugin-project-structure-sticky.svg" alt="Sticky Note: 7.1 Plugin Project Structure" width="30%">
-</a>
 
 
 ```
@@ -1788,16 +1378,6 @@ my-custom-plugin/
 ```
 
 ### 7.2 Plugin POM
-
-<a href="../../../assets/images/diagrams/java/07-maven/7-2-plugin-pom-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-2-plugin-pom-handwritten.svg" alt="Handwritten: 7.2 Plugin POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-2-plugin-pom-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-2-plugin-pom-diagram.svg" alt="Diagram: 7.2 Plugin POM" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-2-plugin-pom-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-2-plugin-pom-sticky.svg" alt="Sticky Note: 7.2 Plugin POM" width="30%">
-</a>
 
 
 ```xml
@@ -1834,16 +1414,6 @@ my-custom-plugin/
 ```
 
 ### 7.3 Mojo Implementation
-
-<a href="../../../assets/images/diagrams/java/07-maven/7-3-mojo-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-3-mojo-implementation-handwritten.svg" alt="Handwritten: 7.3 Mojo Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-3-mojo-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-3-mojo-implementation-diagram.svg" alt="Diagram: 7.3 Mojo Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-3-mojo-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-3-mojo-implementation-sticky.svg" alt="Sticky Note: 7.3 Mojo Implementation" width="30%">
-</a>
 
 
 ```java
@@ -1949,16 +1519,6 @@ public class CountLinesMojo extends AbstractMojo {
 
 ### 7.4 Using the Custom Plugin
 
-<a href="../../../assets/images/diagrams/java/07-maven/7-4-using-the-custom-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-4-using-the-custom-plugin-handwritten.svg" alt="Handwritten: 7.4 Using the Custom Plugin" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-4-using-the-custom-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-4-using-the-custom-plugin-diagram.svg" alt="Diagram: 7.4 Using the Custom Plugin" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-4-using-the-custom-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-4-using-the-custom-plugin-sticky.svg" alt="Sticky Note: 7.4 Using the Custom Plugin" width="30%">
-</a>
-
 
 ```xml
 <plugin>
@@ -1984,16 +1544,6 @@ public class CountLinesMojo extends AbstractMojo {
 Invoke directly: `mvn com.example:my-custom-plugin:1.0.0:count-lines -DsourceDir=src -DmaxLines=20000`.
 
 ### 7.5 Plugin Testing
-
-<a href="../../../assets/images/diagrams/java/07-maven/7-5-plugin-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-5-plugin-testing-handwritten.svg" alt="Handwritten: 7.5 Plugin Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-5-plugin-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-5-plugin-testing-diagram.svg" alt="Diagram: 7.5 Plugin Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/7-5-plugin-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/7-5-plugin-testing-sticky.svg" alt="Sticky Note: 7.5 Plugin Testing" width="30%">
-</a>
 
 
 ```xml
@@ -2023,16 +1573,6 @@ Maven resolves dependencies from repositories defined in POMs, settings.xml, or 
 
 ### 8.1 Repository Types
 
-<a href="../../../assets/images/diagrams/java/07-maven/8-1-repository-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-1-repository-types-handwritten.svg" alt="Handwritten: 8.1 Repository Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-1-repository-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-1-repository-types-diagram.svg" alt="Diagram: 8.1 Repository Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-1-repository-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-1-repository-types-sticky.svg" alt="Sticky Note: 8.1 Repository Types" width="30%">
-</a>
-
 
 | Type | Contains | Resolution Priority |
 |------|----------|-------------------|
@@ -2041,16 +1581,6 @@ Maven resolves dependencies from repositories defined in POMs, settings.xml, or 
 | Remote (Nexus/Artifactory) | Private or mirrored | Before Central |
 
 ### 8.2 Defining Repositories
-
-<a href="../../../assets/images/diagrams/java/07-maven/8-2-defining-repositories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-2-defining-repositories-handwritten.svg" alt="Handwritten: 8.2 Defining Repositories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-2-defining-repositories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-2-defining-repositories-diagram.svg" alt="Diagram: 8.2 Defining Repositories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-2-defining-repositories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-2-defining-repositories-sticky.svg" alt="Sticky Note: 8.2 Defining Repositories" width="30%">
-</a>
 
 
 ```xml
@@ -2078,16 +1608,6 @@ Maven resolves dependencies from repositories defined in POMs, settings.xml, or 
 
 ### 8.3 Plugin Repositories
 
-<a href="../../../assets/images/diagrams/java/07-maven/8-3-plugin-repositories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-3-plugin-repositories-handwritten.svg" alt="Handwritten: 8.3 Plugin Repositories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-3-plugin-repositories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-3-plugin-repositories-diagram.svg" alt="Diagram: 8.3 Plugin Repositories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-3-plugin-repositories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-3-plugin-repositories-sticky.svg" alt="Sticky Note: 8.3 Plugin Repositories" width="30%">
-</a>
-
 
 Plugin artifacts use a separate resolution path:
 
@@ -2101,16 +1621,6 @@ Plugin artifacts use a separate resolution path:
 ```
 
 ### 8.4 Mirror Configuration (`settings.xml`)
-
-<a href="../../../assets/images/diagrams/java/07-maven/8-4-mirror-configuration-settings-xml-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-4-mirror-configuration-settings-xml-handwritten.svg" alt="Handwritten: 8.4 Mirror Configuration (`settings.xml`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-4-mirror-configuration-settings-xml-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-4-mirror-configuration-settings-xml-diagram.svg" alt="Diagram: 8.4 Mirror Configuration (`settings.xml`)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-4-mirror-configuration-settings-xml-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-4-mirror-configuration-settings-xml-sticky.svg" alt="Sticky Note: 8.4 Mirror Configuration (`settings.xml`)" width="30%">
-</a>
 
 
 ```xml
@@ -2139,16 +1649,6 @@ Plugin artifacts use a separate resolution path:
 
 ### 8.5 Authentication
 
-<a href="../../../assets/images/diagrams/java/07-maven/8-5-authentication-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-5-authentication-handwritten.svg" alt="Handwritten: 8.5 Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-5-authentication-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-5-authentication-diagram.svg" alt="Diagram: 8.5 Authentication" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-5-authentication-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-5-authentication-sticky.svg" alt="Sticky Note: 8.5 Authentication" width="30%">
-</a>
-
 
 ```xml
 <servers>
@@ -2166,16 +1666,6 @@ Plugin artifacts use a separate resolution path:
 ```
 
 ### 8.6 Repository Deployment
-
-<a href="../../../assets/images/diagrams/java/07-maven/8-6-repository-deployment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-6-repository-deployment-handwritten.svg" alt="Handwritten: 8.6 Repository Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-6-repository-deployment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-6-repository-deployment-diagram.svg" alt="Diagram: 8.6 Repository Deployment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/8-6-repository-deployment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/8-6-repository-deployment-sticky.svg" alt="Sticky Note: 8.6 Repository Deployment" width="30%">
-</a>
 
 
 ```xml
@@ -2204,16 +1694,6 @@ Plugin artifacts use a separate resolution path:
 
 ### 9.1 POM Structure
 
-<a href="../../../assets/images/diagrams/java/07-maven/9-1-pom-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-1-pom-structure-handwritten.svg" alt="Handwritten: 9.1 POM Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-1-pom-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-1-pom-structure-diagram.svg" alt="Diagram: 9.1 POM Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-1-pom-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-1-pom-structure-sticky.svg" alt="Sticky Note: 9.1 POM Structure" width="30%">
-</a>
-
 
 - **Use properties**: Centralize versions in `<properties>` for consistency.
 - **BOM for large projects**: Import a BOM rather than repeating dependencies.
@@ -2222,16 +1702,6 @@ Plugin artifacts use a separate resolution path:
 - **Pin plugin versions**: Do not rely on super POM defaults.
 
 ### 9.2 Build Performance
-
-<a href="../../../assets/images/diagrams/java/07-maven/9-2-build-performance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-2-build-performance-handwritten.svg" alt="Handwritten: 9.2 Build Performance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-2-build-performance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-2-build-performance-diagram.svg" alt="Diagram: 9.2 Build Performance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-2-build-performance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-2-build-performance-sticky.svg" alt="Sticky Note: 9.2 Build Performance" width="30%">
-</a>
 
 
 ```xml
@@ -2262,16 +1732,6 @@ mvn dependency:resolve
 
 ### 9.3 Dependency Hygiene
 
-<a href="../../../assets/images/diagrams/java/07-maven/9-3-dependency-hygiene-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-3-dependency-hygiene-handwritten.svg" alt="Handwritten: 9.3 Dependency Hygiene" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-3-dependency-hygiene-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-3-dependency-hygiene-diagram.svg" alt="Diagram: 9.3 Dependency Hygiene" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-3-dependency-hygiene-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-3-dependency-hygiene-sticky.svg" alt="Sticky Note: 9.3 Dependency Hygiene" width="30%">
-</a>
-
 
 ```bash
 # Analyze unused/explicitly declared dependencies
@@ -2288,16 +1748,6 @@ mvn dependency:copy-dependencies -DoutputDirectory=dist/lib
 ```
 
 ### 9.4 Reproducible Builds
-
-<a href="../../../assets/images/diagrams/java/07-maven/9-4-reproducible-builds-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-4-reproducible-builds-handwritten.svg" alt="Handwritten: 9.4 Reproducible Builds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-4-reproducible-builds-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-4-reproducible-builds-diagram.svg" alt="Diagram: 9.4 Reproducible Builds" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-4-reproducible-builds-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-4-reproducible-builds-sticky.svg" alt="Sticky Note: 9.4 Reproducible Builds" width="30%">
-</a>
 
 
 ```xml
@@ -2317,16 +1767,6 @@ mvn dependency:copy-dependencies -DoutputDirectory=dist/lib
 ```
 
 ### 9.5 CI/CD Integration
-
-<a href="../../../assets/images/diagrams/java/07-maven/9-5-ci-cd-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-5-ci-cd-integration-handwritten.svg" alt="Handwritten: 9.5 CI/CD Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-5-ci-cd-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-5-ci-cd-integration-diagram.svg" alt="Diagram: 9.5 CI/CD Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-5-ci-cd-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-5-ci-cd-integration-sticky.svg" alt="Sticky Note: 9.5 CI/CD Integration" width="30%">
-</a>
 
 
 ```yaml
@@ -2352,16 +1792,6 @@ jobs:
 
 ### 9.6 POM Conventions
 
-<a href="../../../assets/images/diagrams/java/07-maven/9-6-pom-conventions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-6-pom-conventions-handwritten.svg" alt="Handwritten: 9.6 POM Conventions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-6-pom-conventions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-6-pom-conventions-diagram.svg" alt="Diagram: 9.6 POM Conventions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-6-pom-conventions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-6-pom-conventions-sticky.svg" alt="Sticky Note: 9.6 POM Conventions" width="30%">
-</a>
-
 
 - **groupId**: `com.{company}.{project}` (reverse domain)
 - **artifactId**: Lowercase, hyphen-separated (`myapp-service`)
@@ -2370,16 +1800,6 @@ jobs:
 - **Parent reference**: Always use `<relativePath>` for clarity
 
 ### 9.7 Common Pitfalls
-
-<a href="../../../assets/images/diagrams/java/07-maven/9-7-common-pitfalls-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-7-common-pitfalls-handwritten.svg" alt="Handwritten: 9.7 Common Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-7-common-pitfalls-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-7-common-pitfalls-diagram.svg" alt="Diagram: 9.7 Common Pitfalls" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/9-7-common-pitfalls-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/9-7-common-pitfalls-sticky.svg" alt="Sticky Note: 9.7 Common Pitfalls" width="30%">
-</a>
 
 
 - **Stale local cache**: Delete `~/.m2/repository` for a clean build.
@@ -2396,16 +1816,6 @@ jobs:
 Ensures the correct Maven version is used without installation.
 
 ### 10.1 Setup
-
-<a href="../../../assets/images/diagrams/java/07-maven/10-1-setup-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-1-setup-handwritten.svg" alt="Handwritten: 10.1 Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-1-setup-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-1-setup-diagram.svg" alt="Diagram: 10.1 Setup" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-1-setup-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-1-setup-sticky.svg" alt="Sticky Note: 10.1 Setup" width="30%">
-</a>
 
 
 ```bash
@@ -2427,16 +1837,6 @@ mvnw.cmd (Windows batch script)
 
 ### 10.2 Configuration
 
-<a href="../../../assets/images/diagrams/java/07-maven/10-2-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-2-configuration-handwritten.svg" alt="Handwritten: 10.2 Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-2-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-2-configuration-diagram.svg" alt="Diagram: 10.2 Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-2-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-2-configuration-sticky.svg" alt="Sticky Note: 10.2 Configuration" width="30%">
-</a>
-
 
 ```properties
 # .mvn/wrapper/maven-wrapper.properties
@@ -2445,16 +1845,6 @@ wrapperUrl=https://repo.maven.apache.org/maven2/org/apache/maven/wrapper/maven-w
 ```
 
 ### 10.3 Usage
-
-<a href="../../../assets/images/diagrams/java/07-maven/10-3-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-3-usage-handwritten.svg" alt="Handwritten: 10.3 Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-3-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-3-usage-diagram.svg" alt="Diagram: 10.3 Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-3-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-3-usage-sticky.svg" alt="Sticky Note: 10.3 Usage" width="30%">
-</a>
 
 
 ```bash
@@ -2472,16 +1862,6 @@ mvnw.cmd clean install
 
 ### 10.4 Custom JVM Configuration
 
-<a href="../../../assets/images/diagrams/java/07-maven/10-4-custom-jvm-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-4-custom-jvm-configuration-handwritten.svg" alt="Handwritten: 10.4 Custom JVM Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-4-custom-jvm-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-4-custom-jvm-configuration-diagram.svg" alt="Diagram: 10.4 Custom JVM Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-4-custom-jvm-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-4-custom-jvm-configuration-sticky.svg" alt="Sticky Note: 10.4 Custom JVM Configuration" width="30%">
-</a>
-
 
 ```
 # .mvn/jvm.config
@@ -2493,16 +1873,6 @@ mvnw.cmd clean install
 
 ### 10.5 Multi-Module Wrapper
 
-<a href="../../../assets/images/diagrams/java/07-maven/10-5-multi-module-wrapper-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-5-multi-module-wrapper-handwritten.svg" alt="Handwritten: 10.5 Multi-Module Wrapper" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-5-multi-module-wrapper-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-5-multi-module-wrapper-diagram.svg" alt="Diagram: 10.5 Multi-Module Wrapper" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/10-5-multi-module-wrapper-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/10-5-multi-module-wrapper-sticky.svg" alt="Sticky Note: 10.5 Multi-Module Wrapper" width="30%">
-</a>
-
 
 Place wrapper at the reactor root. All modules inherit it. The wrapper auto-downloads the specified Maven version on first run and caches it in `~/.m2/wrapper/`.
 
@@ -2513,16 +1883,6 @@ Place wrapper at the reactor root. All modules inherit it. The wrapper auto-down
 Spring Boot integrates deeply with Maven via its parent POM and dedicated plugin.
 
 ### 11.1 Spring Boot Starter Parent
-
-<a href="../../../assets/images/diagrams/java/07-maven/11-1-spring-boot-starter-parent-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-1-spring-boot-starter-parent-handwritten.svg" alt="Handwritten: 11.1 Spring Boot Starter Parent" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-1-spring-boot-starter-parent-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-1-spring-boot-starter-parent-diagram.svg" alt="Diagram: 11.1 Spring Boot Starter Parent" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-1-spring-boot-starter-parent-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-1-spring-boot-starter-parent-sticky.svg" alt="Sticky Note: 11.1 Spring Boot Starter Parent" width="30%">
-</a>
 
 
 ```xml
@@ -2542,16 +1902,6 @@ This provides:
 - `<pluginManagement>` for Spring Boot plugin
 
 ### 11.2 Spring Boot Maven Plugin
-
-<a href="../../../assets/images/diagrams/java/07-maven/11-2-spring-boot-maven-plugin-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-2-spring-boot-maven-plugin-handwritten.svg" alt="Handwritten: 11.2 Spring Boot Maven Plugin" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-2-spring-boot-maven-plugin-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-2-spring-boot-maven-plugin-diagram.svg" alt="Diagram: 11.2 Spring Boot Maven Plugin" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-2-spring-boot-maven-plugin-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-2-spring-boot-maven-plugin-sticky.svg" alt="Sticky Note: 11.2 Spring Boot Maven Plugin" width="30%">
-</a>
 
 
 ```xml
@@ -2592,16 +1942,6 @@ This provides:
 
 ### 11.3 Plugin Goals
 
-<a href="../../../assets/images/diagrams/java/07-maven/11-3-plugin-goals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-3-plugin-goals-handwritten.svg" alt="Handwritten: 11.3 Plugin Goals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-3-plugin-goals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-3-plugin-goals-diagram.svg" alt="Diagram: 11.3 Plugin Goals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-3-plugin-goals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-3-plugin-goals-sticky.svg" alt="Sticky Note: 11.3 Plugin Goals" width="30%">
-</a>
-
 
 ```bash
 # Package as executable JAR
@@ -2627,16 +1967,6 @@ mvn spring-boot:stop
 
 ### 11.4 Docker Image Building
 
-<a href="../../../assets/images/diagrams/java/07-maven/11-4-docker-image-building-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-4-docker-image-building-handwritten.svg" alt="Handwritten: 11.4 Docker Image Building" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-4-docker-image-building-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-4-docker-image-building-diagram.svg" alt="Diagram: 11.4 Docker Image Building" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-4-docker-image-building-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-4-docker-image-building-sticky.svg" alt="Sticky Note: 11.4 Docker Image Building" width="30%">
-</a>
-
 
 Spring Boot 3.x uses Cloud Native Buildpacks via Paketo:
 
@@ -2655,16 +1985,6 @@ mvn spring-boot:build-image \
 ```
 
 ### 11.5 Layered JARs
-
-<a href="../../../assets/images/diagrams/java/07-maven/11-5-layered-jars-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-5-layered-jars-handwritten.svg" alt="Handwritten: 11.5 Layered JARs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-5-layered-jars-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-5-layered-jars-diagram.svg" alt="Diagram: 11.5 Layered JARs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-5-layered-jars-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-5-layered-jars-sticky.svg" alt="Sticky Note: 11.5 Layered JARs" width="30%">
-</a>
 
 
 ```xml
@@ -2707,16 +2027,6 @@ Custom layer configuration (layers.xml):
 
 ### 11.6 Multi-Module Spring Boot
 
-<a href="../../../assets/images/diagrams/java/07-maven/11-6-multi-module-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-6-multi-module-spring-boot-handwritten.svg" alt="Handwritten: 11.6 Multi-Module Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-6-multi-module-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-6-multi-module-spring-boot-diagram.svg" alt="Diagram: 11.6 Multi-Module Spring Boot" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-6-multi-module-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-6-multi-module-spring-boot-sticky.svg" alt="Sticky Note: 11.6 Multi-Module Spring Boot" width="30%">
-</a>
-
 
 ```xml
 <project>
@@ -2754,16 +2064,6 @@ Custom layer configuration (layers.xml):
 
 ### 11.7 Devtools Integration
 
-<a href="../../../assets/images/diagrams/java/07-maven/11-7-devtools-integration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-7-devtools-integration-handwritten.svg" alt="Handwritten: 11.7 Devtools Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-7-devtools-integration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-7-devtools-integration-diagram.svg" alt="Diagram: 11.7 Devtools Integration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-7-devtools-integration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-7-devtools-integration-sticky.svg" alt="Sticky Note: 11.7 Devtools Integration" width="30%">
-</a>
-
 
 ```xml
 <dependency>
@@ -2780,16 +2080,6 @@ mvn compile
 ```
 
 ### 11.8 Common Spring Boot Maven Commands
-
-<a href="../../../assets/images/diagrams/java/07-maven/11-8-common-spring-boot-maven-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-8-common-spring-boot-maven-commands-handwritten.svg" alt="Handwritten: 11.8 Common Spring Boot Maven Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-8-common-spring-boot-maven-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-8-common-spring-boot-maven-commands-diagram.svg" alt="Diagram: 11.8 Common Spring Boot Maven Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/07-maven/11-8-common-spring-boot-maven-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/07-maven/11-8-common-spring-boot-maven-commands-sticky.svg" alt="Sticky Note: 11.8 Common Spring Boot Maven Commands" width="30%">
-</a>
 
 
 ```bash

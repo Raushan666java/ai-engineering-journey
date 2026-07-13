@@ -79,16 +79,6 @@ flowchart LR
 
 ### 3.1 Grammar Fundamentals
 
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-handwritten.svg" alt="Handwritten: 3.1 Grammar Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-diagram.svg" alt="Diagram: 3.1 Grammar Fundamentals" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-1-grammar-fundamentals-sticky.svg" alt="Sticky Note: 3.1 Grammar Fundamentals" width="30%">
-</a>
-
 
 #### 3.1.1 Parts of Speech
 
@@ -193,16 +183,6 @@ Items in a list or comparison should have the same grammatical structure.
 - ? "He is not only intelligent but also hardworking."
 
 ### 3.2 Vocabulary
-
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-handwritten.svg" alt="Handwritten: 3.2 Vocabulary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-diagram.svg" alt="Diagram: 3.2 Vocabulary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-2-vocabulary-sticky.svg" alt="Sticky Note: 3.2 Vocabulary" width="30%">
-</a>
 
 
 #### 3.2.1 Synonyms and Antonyms
@@ -317,16 +297,6 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.3 Sentence Correction
 
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-handwritten.svg" alt="Handwritten: 3.3 Sentence Correction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-diagram.svg" alt="Diagram: 3.3 Sentence Correction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-3-sentence-correction-sticky.svg" alt="Sticky Note: 3.3 Sentence Correction" width="30%">
-</a>
-
 
 **Error Detection Categories:**
 
@@ -342,16 +312,6 @@ Items in a list or comparison should have the same grammatical structure.
 10. **Redundancy:** Return (not return back), Repeat (not repeat again).
 
 ### 3.4 Para-Jumbles
-
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-handwritten.svg" alt="Handwritten: 3.4 Para-Jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-diagram.svg" alt="Diagram: 3.4 Para-Jumbles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-4-para-jumbles-sticky.svg" alt="Sticky Note: 3.4 Para-Jumbles" width="30%">
-</a>
 
 
 **Strategies for Ordering Sentences:**
@@ -387,16 +347,6 @@ Items in a list or comparison should have the same grammatical structure.
 
 ### 3.5 Reading Comprehension
 
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-handwritten.svg" alt="Handwritten: 3.5 Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-diagram.svg" alt="Diagram: 3.5 Reading Comprehension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-5-reading-comprehension-sticky.svg" alt="Sticky Note: 3.5 Reading Comprehension" width="30%">
-</a>
-
 
 **Question Types:**
 
@@ -430,16 +380,6 @@ Items in a list or comparison should have the same grammatical structure.
 6. **Stay within the text:** Don't bring external knowledge. Base answers only on the passage.
 
 ### 3.6 Cloze Test
-
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-handwritten.svg" alt="Handwritten: 3.6 Cloze Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-diagram.svg" alt="Diagram: 3.6 Cloze Test" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/general-aptitude/03-verbal-ability/3-6-cloze-test-sticky.svg" alt="Sticky Note: 3.6 Cloze Test" width="30%">
-</a>
 
 
 A passage with blanks where missing words must be filled. Tests vocabulary, grammar, and contextual understanding.

@@ -113,16 +113,6 @@ Class loading is the process by which the JVM locates, loads, and prepares class
 
 ### 2.1 Built-in Class Loaders
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-handwritten.svg" alt="Handwritten: 2.1 Built-in Class Loaders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-diagram.svg" alt="Diagram: 2.1 Built-in Class Loaders" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-1-built-in-class-loaders-sticky.svg" alt="Sticky Note: 2.1 Built-in Class Loaders" width="30%">
-</a>
-
 
 The JVM provides three built-in class loaders arranged in a parent-child hierarchy:
 
@@ -181,16 +171,6 @@ ArrayList class loader: null
 The Bootstrap class loader returns `null` because it is implemented natively and not represented as a Java object.
 
 ### 2.2 The Class Loading Lifecycle
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-handwritten.svg" alt="Handwritten: 2.2 The Class Loading Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-diagram.svg" alt="Diagram: 2.2 The Class Loading Lifecycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-2-the-class-loading-lifecycle-sticky.svg" alt="Sticky Note: 2.2 The Class Loading Lifecycle" width="30%">
-</a>
 
 
 Class loading follows three phases:
@@ -295,16 +275,6 @@ CONSTANT_VALUE
 Observe: the second instance does **not** re-run static initializers → class initialization happens exactly once per class loader.
 
 ### 2.3 Custom Class Loader
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-handwritten.svg" alt="Handwritten: 2.3 Custom Class Loader" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-diagram.svg" alt="Diagram: 2.3 Custom Class Loader" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-3-custom-class-loader-sticky.svg" alt="Sticky Note: 2.3 Custom Class Loader" width="30%">
-</a>
 
 
 Custom class loaders enable advanced scenarios: loading classes from encrypted bytecode, databases, networks, or implementing hot-reload. The only requirement is extending `java.lang.ClassLoader` and overriding `findClass()`.
@@ -460,16 +430,6 @@ public class HotSwapClassLoader extends ClassLoader {
 
 ### 2.4 The Delegation Model in Practice
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-handwritten.svg" alt="Handwritten: 2.4 The Delegation Model in Practice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-diagram.svg" alt="Diagram: 2.4 The Delegation Model in Practice" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/2-4-the-delegation-model-in-practice-sticky.svg" alt="Sticky Note: 2.4 The Delegation Model in Practice" width="30%">
-</a>
-
 
 The parent-delegation model prevents multiple copies of the same class from existing when the parent class loader can fulfill the request:
 
@@ -512,16 +472,6 @@ The JVM divides memory into several runtime data areas during execution. Each se
 
 ### 3.1 Overview
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-handwritten.svg" alt="Handwritten: 3.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-diagram.svg" alt="Diagram: 3.1 Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-1-overview-sticky.svg" alt="Sticky Note: 3.1 Overview" width="30%">
-</a>
-
 
 ```
                     JVM Memory Model
@@ -536,16 +486,6 @@ The JVM divides memory into several runtime data areas during execution. Each se
 ```
 
 ### 3.2 Method Area (Metaspace in JDK 8+)
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-handwritten.svg" alt="Handwritten: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-diagram.svg" alt="Diagram: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-2-method-area-metaspace-in-jdk-8-sticky.svg" alt="Sticky Note: 3.2 Method Area (Metaspace in JDK 8+)" width="30%">
-</a>
 
 
 The method area stores class-level information:
@@ -595,16 +535,6 @@ public class MethodAreaDemo {
 ```
 
 ### 3.3 The Heap
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-handwritten.svg" alt="Handwritten: 3.3 The Heap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-diagram.svg" alt="Diagram: 3.3 The Heap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-3-the-heap-sticky.svg" alt="Sticky Note: 3.3 The Heap" width="30%">
-</a>
 
 
 The heap is the largest memory area and stores all Java object instances and arrays. It is shared across all threads and is the primary focus of garbage collection.
@@ -675,16 +605,6 @@ public class HeapDemo {
 
 ### 3.4 Stack, PC Registers, and Native Method Stack
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-handwritten.svg" alt="Handwritten: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-diagram.svg" alt="Diagram: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-4-stack-pc-registers-and-native-method-stack-sticky.svg" alt="Sticky Note: 3.4 Stack, PC Registers, and Native Method Stack" width="30%">
-</a>
-
 
 Each thread in the JVM has its own private stack, PC register, and native method stack.
 
@@ -738,16 +658,6 @@ The **PC Register** stores the address of the currently executing bytecode instr
 The **Native Method Stack** supports native method execution (C/C++ code via JNI). It operates outside the Java bytecode model.
 
 ### 3.5 Direct Memory
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-handwritten.svg" alt="Handwritten: 3.5 Direct Memory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-diagram.svg" alt="Diagram: 3.5 Direct Memory" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/3-5-direct-memory-sticky.svg" alt="Sticky Note: 3.5 Direct Memory" width="30%">
-</a>
 
 
 Direct memory is allocated outside the Java heap using `ByteBuffer.allocateDirect()`. It bypasses the heap and is managed directly by the operating system. This is critical for high-performance I/O because it reduces copying between Java and native buffers.
@@ -808,16 +718,6 @@ public class DirectMemoryDemo {
 Java bytecode is the intermediate representation of your program. The JVM's instruction set has 256 opcodes (over 200 assigned in modern JDK). Understanding bytecode helps you reason about performance, concurrency, and JIT compilation.
 
 ### 4.1 Examining Bytecode with javap
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-handwritten.svg" alt="Handwritten: 4.1 Examining Bytecode with javap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-diagram.svg" alt="Diagram: 4.1 Examining Bytecode with javap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-1-examining-bytecode-with-javap-sticky.svg" alt="Sticky Note: 4.1 Examining Bytecode with javap" width="30%">
-</a>
 
 
 The `javap` tool disassembles class files. Consider this simple class:
@@ -902,16 +802,6 @@ public static double calculateAverage(int[]);
 
 ### 4.2 Key Bytecode Instructions
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-handwritten.svg" alt="Handwritten: 4.2 Key Bytecode Instructions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-diagram.svg" alt="Diagram: 4.2 Key Bytecode Instructions" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-2-key-bytecode-instructions-sticky.svg" alt="Sticky Note: 4.2 Key Bytecode Instructions" width="30%">
-</a>
-
 
 | Category | Instructions | Description |
 |---|---|---|
@@ -925,16 +815,6 @@ public static double calculateAverage(int[]);
 | Return | ireturn, areturn, dreturn, return | Return values from methods |
 
 ### 4.3 Stack Frame Walkthrough
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-handwritten.svg" alt="Handwritten: 4.3 Stack Frame Walkthrough" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-diagram.svg" alt="Diagram: 4.3 Stack Frame Walkthrough" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-3-stack-frame-walkthrough-sticky.svg" alt="Sticky Note: 4.3 Stack Frame Walkthrough" width="30%">
-</a>
 
 
 Consider the expression `result = a + b`. The JVM executes:
@@ -954,16 +834,6 @@ Operand Stack: []
 ```
 
 ### 4.4 Invokedynamic and Lambda Bytecode
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-handwritten.svg" alt="Handwritten: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-diagram.svg" alt="Diagram: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/4-4-invokedynamic-and-lambda-bytecode-sticky.svg" alt="Sticky Note: 4.4 Invokedynamic and Lambda Bytecode" width="30%">
-</a>
 
 
 Lambda expressions in Java 8+ use `invokedynamic`, which enables runtime method dispatch that was impossible with older invoke instructions:
@@ -995,16 +865,6 @@ Running `javap -c -p -v LambdaBytecode` reveals `invokedynamic` instructions tha
 The JIT (Just-In-Time) compiler transforms bytecode into native machine code at runtime. It is the key performance enabler for the JVM.
 
 ### 5.1 Interpretation vs Compilation
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-handwritten.svg" alt="Handwritten: 5.1 Interpretation vs Compilation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-diagram.svg" alt="Diagram: 5.1 Interpretation vs Compilation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-1-interpretation-vs-compilation-sticky.svg" alt="Sticky Note: 5.1 Interpretation vs Compilation" width="30%">
-</a>
 
 
 When a method begins execution, the JVM starts in **interpreted mode** → reading bytecode instruction by instruction. This is slow but has zero startup delay. The JVM monitors which methods are called frequently (hotspot detection) and compiles those methods to native code.
@@ -1049,16 +909,6 @@ public class JITDemo {
 
 ### 5.2 Tiered Compilation
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-handwritten.svg" alt="Handwritten: 5.2 Tiered Compilation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-diagram.svg" alt="Diagram: 5.2 Tiered Compilation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-2-tiered-compilation-sticky.svg" alt="Sticky Note: 5.2 Tiered Compilation" width="30%">
-</a>
-
 
 Since JDK 8 (and default since JDK 7u4), the JVM uses **tiered compilation** with five levels:
 
@@ -1073,16 +923,6 @@ Since JDK 8 (and default since JDK 7u4), the JVM uses **tiered compilation** wit
 The JVM escalates methods through tiers based on invocation count and loop back-edge count. This balances startup speed (quick C1 compilation) with peak performance (C2 optimization).
 
 ### 5.3 Hotspot Detection
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-handwritten.svg" alt="Handwritten: 5.3 Hotspot Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-diagram.svg" alt="Diagram: 5.3 Hotspot Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-3-hotspot-detection-sticky.svg" alt="Sticky Note: 5.3 Hotspot Detection" width="30%">
-</a>
 
 
 The JVM counts method invocations and loop iterations. When a threshold is crossed (default: 10,000 invocations for C1, 15,000 for C2), the method is queued for compilation.
@@ -1120,16 +960,6 @@ public class HotspotDetection {
 
 ### 5.4 Inlining
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-handwritten.svg" alt="Handwritten: 5.4 Inlining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-diagram.svg" alt="Diagram: 5.4 Inlining" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-4-inlining-sticky.svg" alt="Sticky Note: 5.4 Inlining" width="30%">
-</a>
-
 
 Inlining replaces a method call with the method's body directly, eliminating call overhead and enabling further optimizations.
 
@@ -1166,16 +996,6 @@ InliningDemo::processValue (3 bytes)
 ```
 
 ### 5.5 Escape Analysis
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-handwritten.svg" alt="Handwritten: 5.5 Escape Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-diagram.svg" alt="Diagram: 5.5 Escape Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-5-escape-analysis-sticky.svg" alt="Sticky Note: 5.5 Escape Analysis" width="30%">
-</a>
 
 
 Escape analysis determines whether an object is accessible outside the method that created it. If an object does not escape, the JIT can:
@@ -1239,16 +1059,6 @@ public class EscapeAnalysisDemo {
 
 ### 5.6 On-Stack Replacement (OSR)
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-handwritten.svg" alt="Handwritten: 5.6 On-Stack Replacement (OSR)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-diagram.svg" alt="Diagram: 5.6 On-Stack Replacement (OSR)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-6-on-stack-replacement-osr-sticky.svg" alt="Sticky Note: 5.6 On-Stack Replacement (OSR)" width="30%">
-</a>
-
 
 OSR replaces interpreted code with compiled code while a method is still executing in a loop. Without OSR, a hot loop inside a method would not benefit from compilation until the method returned.
 
@@ -1293,16 +1103,6 @@ public class OnStackReplacement {
 
 ### 5.7 C1 vs C2 Compiler
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-handwritten.svg" alt="Handwritten: 5.7 C1 vs C2 Compiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-diagram.svg" alt="Diagram: 5.7 C1 vs C2 Compiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-7-c1-vs-c2-compiler-sticky.svg" alt="Sticky Note: 5.7 C1 vs C2 Compiler" width="30%">
-</a>
-
 
 | Aspect | C1 (Client) | C2 (Server) |
 |---|---|---|
@@ -1316,16 +1116,6 @@ public class OnStackReplacement {
 Since tiered compilation is the default, you rarely choose C1 vs C2 explicitly. The JVM uses both.
 
 ### 5.8 Graal JIT Compiler
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-handwritten.svg" alt="Handwritten: 5.8 Graal JIT Compiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-diagram.svg" alt="Diagram: 5.8 Graal JIT Compiler" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/5-8-graal-jit-compiler-sticky.svg" alt="Sticky Note: 5.8 Graal JIT Compiler" width="30%">
-</a>
 
 
 Graal is a high-performance JIT compiler written in Java. It is available as an experimental replacement for C2 starting in JDK 16+:
@@ -1372,16 +1162,6 @@ public class GraalJITDemo {
 ## 6. Memory Areas -- Deep Dive
 
 ### 6.1 Heap Layout Visualization
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-handwritten.svg" alt="Handwritten: 6.1 Heap Layout Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-diagram.svg" alt="Diagram: 6.1 Heap Layout Visualization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-1-heap-layout-visualization-sticky.svg" alt="Sticky Note: 6.1 Heap Layout Visualization" width="30%">
-</a>
 
 
 ```java
@@ -1439,16 +1219,6 @@ public class HeapLayoutDemo {
 
 ### 6.2 Object Header and Memory Layout
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-handwritten.svg" alt="Handwritten: 6.2 Object Header and Memory Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-diagram.svg" alt="Diagram: 6.2 Object Header and Memory Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-2-object-header-and-memory-layout-sticky.svg" alt="Sticky Note: 6.2 Object Header and Memory Layout" width="30%">
-</a>
-
 
 Every Java object has a header containing the mark word (for GC, locks, identity hash) and the klass pointer (class reference).
 
@@ -1504,16 +1274,6 @@ public class ObjectMemoryLayout {
 
 ### 6.3 Metaspace
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-handwritten.svg" alt="Handwritten: 6.3 Metaspace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-diagram.svg" alt="Diagram: 6.3 Metaspace" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-3-metaspace-sticky.svg" alt="Sticky Note: 6.3 Metaspace" width="30%">
-</a>
-
 
 Metaspace (JDK 8+) replaces PermGen and stores class metadata. Unlike PermGen, Metaspace uses native memory and grows by default.
 
@@ -1549,16 +1309,6 @@ public class MetaspaceDemo {
 ```
 
 ### 6.4 Thread Stack Layout
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-handwritten.svg" alt="Handwritten: 6.4 Thread Stack Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-diagram.svg" alt="Diagram: 6.4 Thread Stack Layout" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/6-4-thread-stack-layout-sticky.svg" alt="Sticky Note: 6.4 Thread Stack Layout" width="30%">
-</a>
 
 
 Each thread's stack contains frames, each frame holding local variables and an operand stack.
@@ -1622,30 +1372,10 @@ public class StackLayoutDemo {
 
 ### 7.1 The Generational Hypothesis
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-handwritten.svg" alt="Handwritten: 7.1 The Generational Hypothesis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-diagram.svg" alt="Diagram: 7.1 The Generational Hypothesis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-1-the-generational-hypothesis-sticky.svg" alt="Sticky Note: 7.1 The Generational Hypothesis" width="30%">
-</a>
-
 
 The generational hypothesis states that most objects die young. Empirical observation shows that ~95% of objects live for a very short time. JVM garbage collectors exploit this by dividing the heap into generations.
 
 ### 7.2 Basic GC Algorithms
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-handwritten.svg" alt="Handwritten: 7.2 Basic GC Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-diagram.svg" alt="Diagram: 7.2 Basic GC Algorithms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-2-basic-gc-algorithms-sticky.svg" alt="Sticky Note: 7.2 Basic GC Algorithms" width="30%">
-</a>
 
 
 **Mark-Sweep**: Identify live objects (mark), delete dead objects (sweep). Leaves memory fragmentation.
@@ -1710,16 +1440,6 @@ public class GCAlgorithmsDemo {
 
 ### 7.3 Identifying Liveness (GC Roots)
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-handwritten.svg" alt="Handwritten: 7.3 Identifying Liveness (GC Roots)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-diagram.svg" alt="Diagram: 7.3 Identifying Liveness (GC Roots)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/7-3-identifying-liveness-gc-roots-sticky.svg" alt="Sticky Note: 7.3 Identifying Liveness (GC Roots)" width="30%">
-</a>
-
 
 The JVM uses **GC roots** as starting points for liveness analysis:
 
@@ -1776,16 +1496,6 @@ public class GCRootsDemo {
 
 ### 8.1 Serial GC
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-handwritten.svg" alt="Handwritten: 8.1 Serial GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-diagram.svg" alt="Diagram: 8.1 Serial GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-1-serial-gc-sticky.svg" alt="Sticky Note: 8.1 Serial GC" width="30%">
-</a>
-
 
 The simplest collector: single-threaded, stop-the-world for both minor and major collections. Best for single-threaded applications, small heaps (< ~100 MB), and client-side apps.
 
@@ -1822,16 +1532,6 @@ public class SerialGCDemo {
 ```
 
 ### 8.2 Parallel GC (Throughput Collector)
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-handwritten.svg" alt="Handwritten: 8.2 Parallel GC (Throughput Collector)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-diagram.svg" alt="Diagram: 8.2 Parallel GC (Throughput Collector)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-2-parallel-gc-throughput-collector-sticky.svg" alt="Sticky Note: 8.2 Parallel GC (Throughput Collector)" width="30%">
-</a>
 
 
 Default in JDK 8. Uses multiple threads for both minor and major collections. Optimizes for throughput.
@@ -1888,16 +1588,6 @@ public class ParallelGCDemo {
 ```
 
 ### 8.3 G1 GC
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-handwritten.svg" alt="Handwritten: 8.3 G1 GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-diagram.svg" alt="Diagram: 8.3 G1 GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-3-g1-gc-sticky.svg" alt="Sticky Note: 8.3 G1 GC" width="30%">
-</a>
 
 
 G1 (Garbage-First) is the default collector since JDK 9. It divides the heap into ~2048 fixed-size regions and collects the regions with the most garbage first.
@@ -1960,16 +1650,6 @@ public class G1GCDemo {
 
 ### 8.4 ZGC
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-handwritten.svg" alt="Handwritten: 8.4 ZGC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-diagram.svg" alt="Diagram: 8.4 ZGC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-4-zgc-sticky.svg" alt="Sticky Note: 8.4 ZGC" width="30%">
-</a>
-
 
 ZGC (JDK 15+, Production) is a low-latency collector designed for huge heaps (multi-terabyte) with sub-millisecond pause times.
 
@@ -2029,16 +1709,6 @@ public class ZGCDemo {
 
 ### 8.5 Shenandoah GC
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-handwritten.svg" alt="Handwritten: 8.5 Shenandoah GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-diagram.svg" alt="Diagram: 8.5 Shenandoah GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-5-shenandoah-gc-sticky.svg" alt="Sticky Note: 8.5 Shenandoah GC" width="30%">
-</a>
-
 
 Shenandoah (JDK 12+, OpenJDK; Oracle JDK 21+) is another low-pause collector using Brooks pointers.
 
@@ -2096,16 +1766,6 @@ public class ShenandoahGCDemo {
 
 ### 8.6 GC Comparison Summary
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-handwritten.svg" alt="Handwritten: 8.6 GC Comparison Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-diagram.svg" alt="Diagram: 8.6 GC Comparison Summary" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/8-6-gc-comparison-summary-sticky.svg" alt="Sticky Note: 8.6 GC Comparison Summary" width="30%">
-</a>
-
 
 | Collector | Throughput | Pause Time | Heap Size | Concurrency |
 |---|---|---|---|---|
@@ -2120,16 +1780,6 @@ public class ShenandoahGCDemo {
 ## 9. GC Tuning
 
 ### 9.1 Essential Flags
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-handwritten.svg" alt="Handwritten: 9.1 Essential Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-diagram.svg" alt="Diagram: 9.1 Essential Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-1-essential-flags-sticky.svg" alt="Sticky Note: 9.1 Essential Flags" width="30%">
-</a>
 
 
 ```java
@@ -2180,16 +1830,6 @@ public class GCTuningFlags {
 
 ### 9.2 GC Logging and Analysis
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-handwritten.svg" alt="Handwritten: 9.2 GC Logging and Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-diagram.svg" alt="Diagram: 9.2 GC Logging and Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-2-gc-logging-and-analysis-sticky.svg" alt="Sticky Note: 9.2 GC Logging and Analysis" width="30%">
-</a>
-
 
 ```java
 package com.example.jvm.gc;
@@ -2228,16 +1868,6 @@ public class GCLoggingDemo {
 ```
 
 ### 9.3 Choosing the Right GC
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-handwritten.svg" alt="Handwritten: 9.3 Choosing the Right GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-diagram.svg" alt="Diagram: 9.3 Choosing the Right GC" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/9-3-choosing-the-right-gc-sticky.svg" alt="Sticky Note: 9.3 Choosing the Right GC" width="30%">
-</a>
 
 
 ```java
@@ -2287,16 +1917,6 @@ Java's garbage collection does not eliminate all memory leaks. A leak occurs whe
 
 ### 10.1 Classloader Leak
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-handwritten.svg" alt="Handwritten: 10.1 Classloader Leak" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-diagram.svg" alt="Diagram: 10.1 Classloader Leak" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-1-classloader-leak-sticky.svg" alt="Sticky Note: 10.1 Classloader Leak" width="30%">
-</a>
-
 
 The most dangerous leak: holding references to classes prevents their ClassLoader from being GC'd.
 
@@ -2339,16 +1959,6 @@ public class ClassLoaderLeak {
 ```
 
 ### 10.2 ThreadLocal Leak
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-handwritten.svg" alt="Handwritten: 10.2 ThreadLocal Leak" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-diagram.svg" alt="Diagram: 10.2 ThreadLocal Leak" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-2-threadlocal-leak-sticky.svg" alt="Sticky Note: 10.2 ThreadLocal Leak" width="30%">
-</a>
 
 
 ThreadLocal values are tied to thread lifecycle. In thread-pool environments, thread reuse keeps stale values alive.
@@ -2401,16 +2011,6 @@ public class ThreadLocalLeak {
 
 ### 10.3 Static Collection Leak
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-handwritten.svg" alt="Handwritten: 10.3 Static Collection Leak" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-diagram.svg" alt="Diagram: 10.3 Static Collection Leak" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-3-static-collection-leak-sticky.svg" alt="Sticky Note: 10.3 Static Collection Leak" width="30%">
-</a>
-
 
 Accumulating objects in static collections is the simplest and most common leak pattern.
 
@@ -2462,16 +2062,6 @@ public class StaticCollectionLeak {
 
 ### 10.4 String.intern() Leak (Pre-JDK 8u25)
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-handwritten.svg" alt="Handwritten: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-diagram.svg" alt="Diagram: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-4-string-intern-leak-pre-jdk-8u25-sticky.svg" alt="Sticky Note: 10.4 String.intern() Leak (Pre-JDK 8u25)" width="30%">
-</a>
-
 
 Interned strings lived permanently in PermGen (pre-JDK 8) or the String Table.
 
@@ -2516,16 +2106,6 @@ public class StringInternLeak {
 ```
 
 ### 10.5 Listener and Callback Leaks
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-handwritten.svg" alt="Handwritten: 10.5 Listener and Callback Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-diagram.svg" alt="Diagram: 10.5 Listener and Callback Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-5-listener-and-callback-leaks-sticky.svg" alt="Sticky Note: 10.5 Listener and Callback Leaks" width="30%">
-</a>
 
 
 Forgotten listener registrations hold strong references to subscribers.
@@ -2584,16 +2164,6 @@ public class ListenerLeak {
 ```
 
 ### 10.6 Detecting Memory Leaks
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-handwritten.svg" alt="Handwritten: 10.6 Detecting Memory Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-diagram.svg" alt="Diagram: 10.6 Detecting Memory Leaks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/10-6-detecting-memory-leaks-sticky.svg" alt="Sticky Note: 10.6 Detecting Memory Leaks" width="30%">
-</a>
 
 
 ```java
@@ -2782,16 +2352,6 @@ public class StringPoolDemo {
 
 ### 13.1 JIT Compilation Flags
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-handwritten.svg" alt="Handwritten: 13.1 JIT Compilation Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-diagram.svg" alt="Diagram: 13.1 JIT Compilation Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-1-jit-compilation-flags-sticky.svg" alt="Sticky Note: 13.1 JIT Compilation Flags" width="30%">
-</a>
-
 
 ```java
 package com.example.jvm.flags;
@@ -2837,16 +2397,6 @@ public class JITFlags {
 
 ### 13.2 Memory Flags
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-handwritten.svg" alt="Handwritten: 13.2 Memory Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-diagram.svg" alt="Diagram: 13.2 Memory Flags" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-2-memory-flags-sticky.svg" alt="Sticky Note: 13.2 Memory Flags" width="30%">
-</a>
-
 
 ```java
 package com.example.jvm.flags;
@@ -2891,16 +2441,6 @@ public class MemoryFlags {
 ```
 
 ### 13.3 Complete Production JVM Flags Example
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-handwritten.svg" alt="Handwritten: 13.3 Complete Production JVM Flags Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-diagram.svg" alt="Diagram: 13.3 Complete Production JVM Flags Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/13-3-complete-production-jvm-flags-example-sticky.svg" alt="Sticky Note: 13.3 Complete Production JVM Flags Example" width="30%">
-</a>
 
 
 ```java
@@ -3047,16 +2587,6 @@ This chapter covered the JVM architecture and memory management in depth:
 
 ### Key Concepts
 
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-handwritten.svg" alt="Handwritten: Key Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-diagram.svg" alt="Diagram: Key Concepts" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/key-concepts-sticky.svg" alt="Sticky Note: Key Concepts" width="30%">
-</a>
-
 
 **JVM Architecture**: The JVM is a specification implemented by vendors (Oracle, IBM, GraalVM). It includes the class-loading subsystem (loading, linking, initialization), the runtime data areas (method area, heap, stack, PC registers, native stack), and the execution engine (interpreter, JIT compilers, GC).
 
@@ -3079,16 +2609,6 @@ This chapter covered the JVM architecture and memory management in depth:
 **String Pool**: Caches string literals and interned strings in a fixed-size hash table. Use `equals()` for comparison unless you control interning.
 
 ### JVM Evolution
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-handwritten.svg" alt="Handwritten: JVM Evolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-diagram.svg" alt="Diagram: JVM Evolution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/jvm-evolution-sticky.svg" alt="Sticky Note: JVM Evolution" width="30%">
-</a>
 
 
 | Feature | JDK Version |
@@ -3130,16 +2650,6 @@ This chapter covered the JVM architecture and memory management in depth:
 10. What is the String Pool? Why does `intern()` exist?
 
 ### Application Exercises
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-handwritten.svg" alt="Handwritten: Application Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-diagram.svg" alt="Diagram: Application Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/application-exercises-sticky.svg" alt="Sticky Note: Application Exercises" width="30%">
-</a>
 
 
 **Exercise 1: JIT Warmup Analysis**
@@ -3258,16 +2768,6 @@ public class Exercise3_LeakDetector {
 ```
 
 ### Challenge Exercises
-
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-handwritten.svg" alt="Handwritten: Challenge Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-diagram.svg" alt="Diagram: Challenge Exercises" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/01-jvm-memory/challenge-exercises-sticky.svg" alt="Sticky Note: Challenge Exercises" width="30%">
-</a>
 
 
 **Challenge 1: Custom ClassLoader for Bytecode Encryption**

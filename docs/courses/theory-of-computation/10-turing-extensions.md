@@ -82,16 +82,6 @@ flowchart LR
 
 ### 9.1 Recursively Enumerable vs Recursive Languages
 
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-1-recursively-enumerable-vs-recursive-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-1-recursively-enumerable-vs-recursive-languages-handwritten.svg" alt="Handwritten: 9.1 Recursively Enumerable vs Recursive Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-1-recursively-enumerable-vs-recursive-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-1-recursively-enumerable-vs-recursive-languages-diagram.svg" alt="Diagram: 9.1 Recursively Enumerable vs Recursive Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-1-recursively-enumerable-vs-recursive-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-1-recursively-enumerable-vs-recursive-languages-sticky.svg" alt="Sticky Note: 9.1 Recursively Enumerable vs Recursive Languages" width="30%">
-</a>
-
 
 A language L is **recursively enumerable (RE)** if there exists a Turing machine M such that L(M) = L. This means M halts in the accept state for every w âˆˆ L, and for w âˆ‰ L, M either halts in reject or **loops forever**.
 
@@ -104,16 +94,6 @@ A language L is **recursive** (or **decidable**) if there exists a Turing machin
 **Intuition:** Recognizing a language only requires positive answers to be correct. Deciding requires both positive and negative answers to be correct.
 
 ### 9.2 Complement of RE Languages
-
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-2-complement-of-re-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-2-complement-of-re-languages-handwritten.svg" alt="Handwritten: 9.2 Complement of RE Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-2-complement-of-re-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-2-complement-of-re-languages-diagram.svg" alt="Diagram: 9.2 Complement of RE Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-2-complement-of-re-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-2-complement-of-re-languages-sticky.svg" alt="Sticky Note: 9.2 Complement of RE Languages" width="30%">
-</a>
 
 
 For a language L:
@@ -128,16 +108,6 @@ For a language L:
 
 ### 9.3 Encoding Turing Machines
 
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-3-encoding-turing-machines-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-3-encoding-turing-machines-handwritten.svg" alt="Handwritten: 9.3 Encoding Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-3-encoding-turing-machines-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-3-encoding-turing-machines-diagram.svg" alt="Diagram: 9.3 Encoding Turing Machines" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-3-encoding-turing-machines-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-3-encoding-turing-machines-sticky.svg" alt="Sticky Note: 9.3 Encoding Turing Machines" width="30%">
-</a>
-
 
 To talk about TMs as inputs to other TMs, we need to encode them as strings. Turing machines can be encoded in a standard format:
 
@@ -150,16 +120,6 @@ Let TM M be described as (Q, Î£, Î“, Î´, qâ‚€, q_accept, q_reject). 
 The encoded TM is denoted âŸ¨MâŸ©. This encoding allows a TM to examine other TMs as data → a crucial capability.
 
 ### 9.4 The Universal Turing Machine
-
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-4-the-universal-turing-machine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-4-the-universal-turing-machine-handwritten.svg" alt="Handwritten: 9.4 The Universal Turing Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-4-the-universal-turing-machine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-4-the-universal-turing-machine-diagram.svg" alt="Diagram: 9.4 The Universal Turing Machine" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-4-the-universal-turing-machine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-4-the-universal-turing-machine-sticky.svg" alt="Sticky Note: 9.4 The Universal Turing Machine" width="30%">
-</a>
 
 
 A **universal Turing machine (UTM)** is a TM U that takes as input âŸ¨M, wâŸ© (the encoding of a TM M and an input string w) and simulates M on w. U accepts if M accepts w, rejects if M rejects w, and loops if M loops on w.
@@ -184,16 +144,6 @@ U uses a *multitape* architecture (simulatable on a single tape):
 
 ### 9.5 The Church-Turing Thesis
 
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-5-the-church-turing-thesis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-5-the-church-turing-thesis-handwritten.svg" alt="Handwritten: 9.5 The Church-Turing Thesis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-5-the-church-turing-thesis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-5-the-church-turing-thesis-diagram.svg" alt="Diagram: 9.5 The Church-Turing Thesis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-5-the-church-turing-thesis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-5-the-church-turing-thesis-sticky.svg" alt="Sticky Note: 9.5 The Church-Turing Thesis" width="30%">
-</a>
-
 
 **Church-Turing Thesis:** Everything that is intuitively computable can be computed by a Turing machine.
 
@@ -208,16 +158,6 @@ This is not a theorem (it cannot be proved) but a **thesis** → a claim about t
 
 ### 9.6 Oracle Turing Machines and Relativization
 
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-6-oracle-turing-machines-and-relativization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-6-oracle-turing-machines-and-relativization-handwritten.svg" alt="Handwritten: 9.6 Oracle Turing Machines and Relativization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-6-oracle-turing-machines-and-relativization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-6-oracle-turing-machines-and-relativization-diagram.svg" alt="Diagram: 9.6 Oracle Turing Machines and Relativization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-6-oracle-turing-machines-and-relativization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-6-oracle-turing-machines-and-relativization-sticky.svg" alt="Sticky Note: 9.6 Oracle Turing Machines and Relativization" width="30%">
-</a>
-
 
 An **oracle Turing machine** is a TM with an additional "oracle tape" and a special query state. When the machine enters the query state, the oracle (an external device) answers whether a string belongs to some fixed language A.
 
@@ -229,16 +169,6 @@ Oracle machines allow us to:
 - **Understand the limits of diagonalization.** Since relativizing proofs apply to all oracles, and P vs NP has contradicting relativizations, any correct proof must be non-relativizing. This rules out many standard proof techniques.
 
 ### 9.7 The Arithmetic Hierarchy
-
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-7-the-arithmetic-hierarchy-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-7-the-arithmetic-hierarchy-handwritten.svg" alt="Handwritten: 9.7 The Arithmetic Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-7-the-arithmetic-hierarchy-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-7-the-arithmetic-hierarchy-diagram.svg" alt="Diagram: 9.7 The Arithmetic Hierarchy" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-7-the-arithmetic-hierarchy-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-7-the-arithmetic-hierarchy-sticky.svg" alt="Sticky Note: 9.7 The Arithmetic Hierarchy" width="30%">
-</a>
 
 
 Languages definable by alternating quantifiers over recursive predicates form the **arithmetic hierarchy**:
@@ -276,16 +206,6 @@ This hierarchy is strict: \(\Sigma_n \subset \Sigma_{n+1}\) and \(\Pi_n \subset 
 
 ### 9.8 Reductions and Completeness
 
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-8-reductions-and-completeness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-8-reductions-and-completeness-handwritten.svg" alt="Handwritten: 9.8 Reductions and Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-8-reductions-and-completeness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-8-reductions-and-completeness-diagram.svg" alt="Diagram: 9.8 Reductions and Completeness" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-8-reductions-and-completeness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-8-reductions-and-completeness-sticky.svg" alt="Sticky Note: 9.8 Reductions and Completeness" width="30%">
-</a>
-
 
 **Many-one reduction:** A language A is **many-one reducible** to language B (written \(A \leq_m B\)) if there exists a computable function f such that:
 \[
@@ -301,16 +221,6 @@ w \in A \iff f(w) \in B
 - Many-one reductions can separate degree structures (many-one degrees vs Turing degrees).
 
 ### 9.9 The Chomsky Hierarchy Revisited
-
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-9-the-chomsky-hierarchy-revisited-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-9-the-chomsky-hierarchy-revisited-handwritten.svg" alt="Handwritten: 9.9 The Chomsky Hierarchy Revisited" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-9-the-chomsky-hierarchy-revisited-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-9-the-chomsky-hierarchy-revisited-diagram.svg" alt="Diagram: 9.9 The Chomsky Hierarchy Revisited" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-9-the-chomsky-hierarchy-revisited-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/10-turing-extensions/9-9-the-chomsky-hierarchy-revisited-sticky.svg" alt="Sticky Note: 9.9 The Chomsky Hierarchy Revisited" width="30%">
-</a>
 
 
 The relationship between language classes and Turing machines:

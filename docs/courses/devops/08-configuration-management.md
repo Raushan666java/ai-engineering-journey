@@ -90,16 +90,6 @@ flowchart LR
 
 ### What is Configuration Management?
 
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/what-is-configuration-management-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/what-is-configuration-management-handwritten.svg" alt="Handwritten: What is Configuration Management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/what-is-configuration-management-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/what-is-configuration-management-diagram.svg" alt="Diagram: What is Configuration Management?" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/what-is-configuration-management-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/what-is-configuration-management-sticky.svg" alt="Sticky Note: What is Configuration Management?" width="30%">
-</a>
-
 
 Configuration management (CM) is the practice of systematically managing and maintaining the state of systems and software in a consistent, desired state. In DevOps, CM ensures that servers, applications, and infrastructure are configured consistently across environments.
 
@@ -112,16 +102,6 @@ Configuration management (CM) is the practice of systematically managing and mai
 - **Version control:** Configuration changes are tracked
 
 ### Idempotency
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/idempotency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/idempotency-handwritten.svg" alt="Handwritten: Idempotency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/idempotency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/idempotency-diagram.svg" alt="Diagram: Idempotency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/idempotency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/idempotency-sticky.svg" alt="Sticky Note: Idempotency" width="30%">
-</a>
 
 
 Idempotency is the property that a configuration management operation can be applied multiple times with the same result. If the system is already in the desired state, no changes are made.
@@ -142,16 +122,6 @@ Idempotency is the property that a configuration management operation can be app
 ```
 
 ### Ansible Architecture
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-architecture-handwritten.svg" alt="Handwritten: Ansible Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-architecture-diagram.svg" alt="Diagram: Ansible Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-architecture-sticky.svg" alt="Sticky Note: Ansible Architecture" width="30%">
-</a>
 
 
 Ansible is agentless — it connects via SSH (or WinRM for Windows) and pushes modules to execute:
@@ -176,16 +146,6 @@ flowchart LR
 - **Roles:** Organizational units for playbooks, variables, and handlers
 
 ### Ansible Playbook Structure
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-playbook-structure-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-playbook-structure-handwritten.svg" alt="Handwritten: Ansible Playbook Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-playbook-structure-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-playbook-structure-diagram.svg" alt="Diagram: Ansible Playbook Structure" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-playbook-structure-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-playbook-structure-sticky.svg" alt="Sticky Note: Ansible Playbook Structure" width="30%">
-</a>
 
 
 ```yaml
@@ -225,16 +185,6 @@ flowchart LR
 
 ### Ansible Roles
 
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-roles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-roles-handwritten.svg" alt="Handwritten: Ansible Roles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-roles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-roles-diagram.svg" alt="Diagram: Ansible Roles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-roles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-roles-sticky.svg" alt="Sticky Note: Ansible Roles" width="30%">
-</a>
-
 
 Roles organize playbooks, variables, files, templates, and handlers into reusable units:
 
@@ -260,16 +210,6 @@ roles/
 
 ### Comparison of CM Tools
 
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/comparison-of-cm-tools-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/comparison-of-cm-tools-handwritten.svg" alt="Handwritten: Comparison of CM Tools" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/comparison-of-cm-tools-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/comparison-of-cm-tools-diagram.svg" alt="Diagram: Comparison of CM Tools" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/comparison-of-cm-tools-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/comparison-of-cm-tools-sticky.svg" alt="Sticky Note: Comparison of CM Tools" width="30%">
-</a>
-
 
 | Tool | Architecture | Language | Push/Pull | Learning Curve |
 |------|-------------|----------|-----------|---------------|
@@ -279,16 +219,6 @@ roles/
 | SaltStack | Agent-Master | YAML + Python | Both | Medium |
 
 ### Ansible Modules for DevOps
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-devops-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-devops-handwritten.svg" alt="Handwritten: Ansible Modules for DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-devops-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-devops-diagram.svg" alt="Diagram: Ansible Modules for DevOps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-devops-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-devops-sticky.svg" alt="Sticky Note: Ansible Modules for DevOps" width="30%">
-</a>
 
 
 **Package management:**
@@ -326,16 +256,6 @@ roles/
 
 ### Jinja2 Templating
 
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/jinja2-templating-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/jinja2-templating-handwritten.svg" alt="Handwritten: Jinja2 Templating" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/jinja2-templating-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/jinja2-templating-diagram.svg" alt="Diagram: Jinja2 Templating" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/jinja2-templating-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/jinja2-templating-sticky.svg" alt="Sticky Note: Jinja2 Templating" width="30%">
-</a>
-
 
 Ansible uses Jinja2 for dynamic configuration files:
 
@@ -358,16 +278,6 @@ server {
 
 ### Ansible Vault for Secrets
 
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-vault-for-secrets-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-vault-for-secrets-handwritten.svg" alt="Handwritten: Ansible Vault for Secrets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-vault-for-secrets-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-vault-for-secrets-diagram.svg" alt="Diagram: Ansible Vault for Secrets" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-vault-for-secrets-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-vault-for-secrets-sticky.svg" alt="Sticky Note: Ansible Vault for Secrets" width="30%">
-</a>
-
 
 ```text
 # Create encrypted file
@@ -384,16 +294,6 @@ ansible-playbook site.yml --vault-password-file .vault_pass
 ```
 
 ### Infrastructure Compliance
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/infrastructure-compliance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/infrastructure-compliance-handwritten.svg" alt="Handwritten: Infrastructure Compliance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/infrastructure-compliance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/infrastructure-compliance-diagram.svg" alt="Diagram: Infrastructure Compliance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/infrastructure-compliance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/infrastructure-compliance-sticky.svg" alt="Sticky Note: Infrastructure Compliance" width="30%">
-</a>
 
 
 Configuration management enables continuous compliance:
@@ -417,16 +317,6 @@ Configuration management enables continuous compliance:
 ```
 
 ### Ansible Modules for Containers and Orchestration
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-containers-and-orchestration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-containers-and-orchestration-handwritten.svg" alt="Handwritten: Ansible Modules for Containers and Orchestration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-containers-and-orchestration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-containers-and-orchestration-diagram.svg" alt="Diagram: Ansible Modules for Containers and Orchestration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-containers-and-orchestration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-modules-for-containers-and-orchestration-sticky.svg" alt="Sticky Note: Ansible Modules for Containers and Orchestration" width="30%">
-</a>
 
 
 Ansible extends into container management and orchestration:
@@ -483,16 +373,6 @@ Ansible extends into container management and orchestration:
 
 ### Ansible Performance Optimization
 
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-performance-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-performance-optimization-handwritten.svg" alt="Handwritten: Ansible Performance Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-performance-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-performance-optimization-diagram.svg" alt="Diagram: Ansible Performance Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-performance-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-performance-optimization-sticky.svg" alt="Sticky Note: Ansible Performance Optimization" width="30%">
-</a>
-
 
 Optimizing Ansible for large-scale deployments (500+ nodes):
 
@@ -521,16 +401,6 @@ strategy = free
 ```
 
 ### Ansible in CI/CD
-
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-in-ci-cd-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-in-ci-cd-handwritten.svg" alt="Handwritten: Ansible in CI/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-in-ci-cd-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-in-ci-cd-diagram.svg" alt="Diagram: Ansible in CI/CD" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/devops/08-configuration-management/ansible-in-ci-cd-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/devops/08-configuration-management/ansible-in-ci-cd-sticky.svg" alt="Sticky Note: Ansible in CI/CD" width="30%">
-</a>
 
 
 ```yaml

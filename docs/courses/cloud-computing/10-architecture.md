@@ -88,16 +88,6 @@ flowchart LR
 
 ### 10.1 AWS Well-Architected Framework
 
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-1-aws-well-architected-framework-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-1-aws-well-architected-framework-handwritten.svg" alt="Handwritten: 10.1 AWS Well-Architected Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-1-aws-well-architected-framework-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-1-aws-well-architected-framework-diagram.svg" alt="Diagram: 10.1 AWS Well-Architected Framework" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-1-aws-well-architected-framework-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-1-aws-well-architected-framework-sticky.svg" alt="Sticky Note: 10.1 AWS Well-Architected Framework" width="30%">
-</a>
-
 
 The Well-Architected Framework provides a consistent approach to evaluating and improving cloud architectures.
 
@@ -130,16 +120,6 @@ graph TB
 | Sustainability | How do you minimize environmental impact? | Efficient hardware, region selection, reduce data transfer |
 
 ### 10.2 Migration Strategies (The 6 Rs)
-
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-2-migration-strategies-the-6-rs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-2-migration-strategies-the-6-rs-handwritten.svg" alt="Handwritten: 10.2 Migration Strategies (The 6 Rs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-2-migration-strategies-the-6-rs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-2-migration-strategies-the-6-rs-diagram.svg" alt="Diagram: 10.2 Migration Strategies (The 6 Rs)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-2-migration-strategies-the-6-rs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-2-migration-strategies-the-6-rs-sticky.svg" alt="Sticky Note: 10.2 Migration Strategies (The 6 Rs)" width="30%">
-</a>
 
 
 | Strategy | Description | Effort | Benefit | Example |
@@ -222,16 +202,6 @@ console.log("Recommended strategy:", recommendStrategy(app));
 
 ### 10.3 Disaster Recovery Strategies
 
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-3-disaster-recovery-strategies-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-3-disaster-recovery-strategies-handwritten.svg" alt="Handwritten: 10.3 Disaster Recovery Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-3-disaster-recovery-strategies-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-3-disaster-recovery-strategies-diagram.svg" alt="Diagram: 10.3 Disaster Recovery Strategies" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-3-disaster-recovery-strategies-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-3-disaster-recovery-strategies-sticky.svg" alt="Sticky Note: 10.3 Disaster Recovery Strategies" width="30%">
-</a>
-
 
 **RTO and RPO:**
 
@@ -282,16 +252,6 @@ graph TB
 
 ### 10.4 Fault Tolerance and High Availability
 
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-4-fault-tolerance-and-high-availability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-4-fault-tolerance-and-high-availability-handwritten.svg" alt="Handwritten: 10.4 Fault Tolerance and High Availability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-4-fault-tolerance-and-high-availability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-4-fault-tolerance-and-high-availability-diagram.svg" alt="Diagram: 10.4 Fault Tolerance and High Availability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-4-fault-tolerance-and-high-availability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-4-fault-tolerance-and-high-availability-sticky.svg" alt="Sticky Note: 10.4 Fault Tolerance and High Availability" width="30%">
-</a>
-
 
 **Design Principles:**
 
@@ -330,16 +290,6 @@ console.log("Three AZ (parallel):", availabilityPercent(calculateCompositeAvaila
 \\\
 
 ### 10.5 Microservices Architecture
-
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-5-microservices-architecture-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-5-microservices-architecture-handwritten.svg" alt="Handwritten: 10.5 Microservices Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-5-microservices-architecture-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-5-microservices-architecture-diagram.svg" alt="Diagram: 10.5 Microservices Architecture" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-5-microservices-architecture-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-5-microservices-architecture-sticky.svg" alt="Sticky Note: 10.5 Microservices Architecture" width="30%">
-</a>
 
 
 **Monolith vs Microservices:**
@@ -389,16 +339,6 @@ graph TB
 \\\
 
 ### 10.6 Cost Optimization
-
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-6-cost-optimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-6-cost-optimization-handwritten.svg" alt="Handwritten: 10.6 Cost Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-6-cost-optimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-6-cost-optimization-diagram.svg" alt="Diagram: 10.6 Cost Optimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-6-cost-optimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-6-cost-optimization-sticky.svg" alt="Sticky Note: 10.6 Cost Optimization" width="30%">
-</a>
 
 
 **Compute Cost Optimization:**
@@ -457,16 +397,6 @@ console.log("Web server options:", webServer.map((o) => o.name + " @ $" + o.hour
 \\\
 
 ### 10.7 Observability
-
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-7-observability-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-7-observability-handwritten.svg" alt="Handwritten: 10.7 Observability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-7-observability-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-7-observability-diagram.svg" alt="Diagram: 10.7 Observability" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/cloud-computing/10-architecture/10-7-observability-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/cloud-computing/10-architecture/10-7-observability-sticky.svg" alt="Sticky Note: 10.7 Observability" width="30%">
-</a>
 
 
 The three pillars of observability:

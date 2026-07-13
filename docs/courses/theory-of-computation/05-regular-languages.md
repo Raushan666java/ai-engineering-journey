@@ -81,16 +81,6 @@ flowchart LR
 
 ### 4.1 The Pumping Lemma for Regular Languages
 
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-handwritten.svg" alt="Handwritten: 4.1 The Pumping Lemma for Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-diagram.svg" alt="Diagram: 4.1 The Pumping Lemma for Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-1-the-pumping-lemma-for-regular-languages-sticky.svg" alt="Sticky Note: 4.1 The Pumping Lemma for Regular Languages" width="30%">
-</a>
-
 
 The pumping lemma is a powerful tool for proving that certain languages are **not regular**. It captures a fundamental property: any sufficiently long string in a regular language can be "pumped" → a middle section can be repeated any number of times → and the resulting string remains in the language.
 
@@ -106,16 +96,6 @@ If L is a regular language, then there exists an integer **p â‰¥ 1** (the pu
 
 ### 4.2 Using the Pumping Lemma to Prove Non-Regularity
 
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-handwritten.svg" alt="Handwritten: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-diagram.svg" alt="Diagram: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-2-using-the-pumping-lemma-to-prove-non-regularity-sticky.svg" alt="Sticky Note: 4.2 Using the Pumping Lemma to Prove Non-Regularity" width="30%">
-</a>
-
 
 To prove L is not regular:
 1. Assume L is regular (for contradiction).
@@ -125,16 +105,6 @@ To prove L is not regular:
 5. This contradicts the pumping lemma, so L is not regular.
 
 ### 4.3 Closure Properties of Regular Languages
-
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 4.3 Closure Properties of Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-diagram.svg" alt="Diagram: 4.3 Closure Properties of Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-3-closure-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 4.3 Closure Properties of Regular Languages" width="30%">
-</a>
 
 
 The class of regular languages is closed under the following operations. If Lâ‚ and Lâ‚‚ are regular:
@@ -156,16 +126,6 @@ The class of regular languages is closed under the following operations. If Lâ�
 
 ### 4.4 Myhill-Nerode Theorem
 
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-handwritten.svg" alt="Handwritten: 4.4 Myhill-Nerode Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-diagram.svg" alt="Diagram: 4.4 Myhill-Nerode Theorem" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-4-myhill-nerode-theorem-sticky.svg" alt="Sticky Note: 4.4 Myhill-Nerode Theorem" width="30%">
-</a>
-
 
 The Myhill-Nerode theorem characterizes the regular languages in terms of an equivalence relation on strings and provides a method to find the minimal DFA.
 
@@ -186,16 +146,6 @@ When L is regular, the number of equivalence classes of â‰¡â‚— equals t
 
 ### 4.5 DFA Minimization
 
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-handwritten.svg" alt="Handwritten: 4.5 DFA Minimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-diagram.svg" alt="Diagram: 4.5 DFA Minimization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-5-dfa-minimization-sticky.svg" alt="Sticky Note: 4.5 DFA Minimization" width="30%">
-</a>
-
 
 The **table-filling algorithm** (also called the Moore or Hopcroft-Ullman algorithm) minimizes a DFA by identifying indistinguishable states.
 
@@ -210,16 +160,6 @@ The **table-filling algorithm** (also called the Moore or Hopcroft-Ullman algori
 **Why minimize?** The minimal DFA is guaranteed to be unique up to renaming. It provides the most efficient implementation of a regular language recognizer.
 
 ### 4.6 Decision Properties of Regular Languages
-
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-handwritten.svg" alt="Handwritten: 4.6 Decision Properties of Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-diagram.svg" alt="Diagram: 4.6 Decision Properties of Regular Languages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/theory-of-computation/05-regular-languages/4-6-decision-properties-of-regular-languages-sticky.svg" alt="Sticky Note: 4.6 Decision Properties of Regular Languages" width="30%">
-</a>
 
 
 These problems are decidable for regular languages:

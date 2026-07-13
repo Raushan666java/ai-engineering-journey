@@ -74,16 +74,6 @@ This chapter transforms the simple act of "finding a string in another string" f
 
 ### Chapter at a Glance
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-at-a-glance-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-at-a-glance-handwritten.svg" alt="Handwritten: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-at-a-glance-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-at-a-glance-diagram.svg" alt="Diagram: Chapter at a Glance" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-at-a-glance-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-at-a-glance-sticky.svg" alt="Sticky Note: Chapter at a Glance" width="30%">
-</a>
-
 
 | Topic | Key Insight | Practical Takeaway |
 |-------|-------------|-------------------|
@@ -97,16 +87,6 @@ This chapter transforms the simple act of "finding a string in another string" f
 | Manacher | Mirror property of palindromes | O(n) to find all palindromes |
 
 ### Chapter Roadmap
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-roadmap-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-roadmap-handwritten.svg" alt="Handwritten: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-roadmap-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-roadmap-diagram.svg" alt="Diagram: Chapter Roadmap" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-roadmap-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/chapter-roadmap-sticky.svg" alt="Sticky Note: Chapter Roadmap" width="30%">
-</a>
 
 
 ```mermaid
@@ -135,30 +115,10 @@ flowchart LR
 
 ### How It Works
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/how-it-works-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/how-it-works-handwritten.svg" alt="Handwritten: How It Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/how-it-works-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/how-it-works-diagram.svg" alt="Diagram: How It Works" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/how-it-works-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/how-it-works-sticky.svg" alt="Sticky Note: How It Works" width="30%">
-</a>
-
 
 Given text \(T[0..n-1]\) and pattern \(P[0..m-1]\), slide the pattern over the text one position at a time. At each shift \(s\), compare \(T[s..s+m-1]\) with \(P[0..m-1]\) character by character.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Let \(n = \text{len}(T)\), \(m = \text{len}(P)\).
@@ -168,16 +128,6 @@ Given text \(T[0..n-1]\) and pattern \(P[0..m-1]\), slide the pattern over the t
    c. If \(j == m\): report match at position \(s\)
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -192,16 +142,6 @@ NaiveSearch(T, P):
 ```
 
 ### Dry Run
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" alt="Handwritten: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" alt="Diagram: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" alt="Sticky Note: Dry Run" width="30%">
-</a>
 
 
 **Text:** `ABABDABACDABABCABAB` (n=18)  
@@ -222,16 +162,6 @@ NaiveSearch(T, P):
 | 10 | A=A✓ B=B✓ A=A✓ B=B✓ C=C✓ A=A✓ B=B✓ A=A✓ B=B✓ | **Match at 10** |
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -284,16 +214,6 @@ public static List<Integer> naiveSearch(String T, String P) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Comparisons | Why |
 |------|-------------|-----|
@@ -307,16 +227,6 @@ public static List<Integer> naiveSearch(String T, String P) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -326,16 +236,6 @@ public static List<Integer> naiveSearch(String T, String P) {
 | No extra memory needed | Impractical for n > 10⁵ |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Case | T | P | Expected |
@@ -355,30 +255,10 @@ public static List<Integer> naiveSearch(String T, String P) {
 
 ### The Key Insight
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" alt="Handwritten: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" alt="Diagram: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" alt="Sticky Note: The Key Insight" width="30%">
-</a>
-
 
 The **prefix function** (also called the failure function) \(\pi[i]\) stores the length of the longest proper prefix of \(P[0..i]\) that is also a suffix of \(P[0..i]\). When a mismatch occurs at position \(j\) in the pattern, the prefix function tells us how far to shift: the next comparison starts at \(\pi[j-1]\) instead of 0.
 
 ### Steps to Compute Prefix Function
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-to-compute-prefix-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-to-compute-prefix-function-handwritten.svg" alt="Handwritten: Steps to Compute Prefix Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-to-compute-prefix-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-to-compute-prefix-function-diagram.svg" alt="Diagram: Steps to Compute Prefix Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-to-compute-prefix-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-to-compute-prefix-function-sticky.svg" alt="Sticky Note: Steps to Compute Prefix Function" width="30%">
-</a>
 
 
 1. Initialize \(\pi[0] = 0\), \(k = 0\).
@@ -389,16 +269,6 @@ The **prefix function** (also called the failure function) \(\pi[i]\) stores the
 
 ### Steps for KMP Matching
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-for-kmp-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-for-kmp-matching-handwritten.svg" alt="Handwritten: Steps for KMP Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-for-kmp-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-for-kmp-matching-diagram.svg" alt="Diagram: Steps for KMP Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-for-kmp-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/steps-for-kmp-matching-sticky.svg" alt="Sticky Note: Steps for KMP Matching" width="30%">
-</a>
-
 
 1. Compute \(\pi\) array from the pattern.
 2. Initialize \(j = 0\) (pattern index).
@@ -408,16 +278,6 @@ The **prefix function** (also called the failure function) \(\pi[i]\) stores the
    c. If \(j == m\): report match at \(i-m+1\), set \(j = \pi[j-1]\)
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -448,16 +308,6 @@ KMP(T, P):
 
 ### Dry Run — Prefix Function
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-prefix-function-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-prefix-function-handwritten.svg" alt="Handwritten: Dry Run — Prefix Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-prefix-function-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-prefix-function-diagram.svg" alt="Diagram: Dry Run — Prefix Function" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-prefix-function-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-prefix-function-sticky.svg" alt="Sticky Note: Dry Run — Prefix Function" width="30%">
-</a>
-
 
 **Pattern:** `ABCABD` (m=6)
 
@@ -473,16 +323,6 @@ KMP(T, P):
 **Result:** \(\pi = [0, 0, 0, 1, 2, 0]\)
 
 ### Dry Run — Matching Phase
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-matching-phase-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-matching-phase-handwritten.svg" alt="Handwritten: Dry Run — Matching Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-matching-phase-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-matching-phase-diagram.svg" alt="Diagram: Dry Run — Matching Phase" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-matching-phase-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-matching-phase-sticky.svg" alt="Sticky Note: Dry Run — Matching Phase" width="30%">
-</a>
 
 
 **Text:** `ABCABCABD` (n=9), **Pattern:** `ABCABD` (m=6), \(\pi = [0,0,0,1,2,0]\)
@@ -501,16 +341,6 @@ KMP(T, P):
 | 8 | D | 5 | D==D✓ | 6 | **Match at 3** |
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -612,16 +442,6 @@ public static List<Integer> kmp(String T, String P) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Phase | Time | Why |
 |-------|------|-----|
@@ -633,16 +453,6 @@ public static List<Integer> kmp(String T, String P) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -652,16 +462,6 @@ public static List<Integer> kmp(String T, String P) {
 | Excellent for streaming/searching large texts | Only handles single-pattern search |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Case | T | P | Behavior |
@@ -686,30 +486,10 @@ public static List<Integer> kmp(String T, String P) {
 
 ### The Key Insight
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" alt="Handwritten: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" alt="Diagram: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" alt="Sticky Note: The Key Insight" width="30%">
-</a>
-
 
 Use a **rolling hash** to compute the hash of each text window in O(1) time from the previous window's hash. Only perform character-by-character comparison when hashes match.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Compute \(hp = \text{hash}(P)\) using base \(d\) and modulus \(q\).
@@ -720,32 +500,12 @@ Use a **rolling hash** to compute the hash of each text window in O(1) time from
 
 ### Rolling Hash Formula
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/rolling-hash-formula-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/rolling-hash-formula-handwritten.svg" alt="Handwritten: Rolling Hash Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/rolling-hash-formula-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/rolling-hash-formula-diagram.svg" alt="Diagram: Rolling Hash Formula" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/rolling-hash-formula-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/rolling-hash-formula-sticky.svg" alt="Sticky Note: Rolling Hash Formula" width="30%">
-</a>
-
 
 \( h(s) = (s[0] \cdot d^{m-1} + s[1] \cdot d^{m-2} + \cdots + s[m-1]) \bmod q \)
 
 Update: \( h_{\text{new}} = (d \cdot (h_{\text{old}} - T[i] \cdot d^{m-1}) + T[i+m]) \bmod q \)
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -769,16 +529,6 @@ RabinKarp(T, P):
 
 ### Dry Run
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" alt="Handwritten: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" alt="Diagram: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" alt="Sticky Note: Dry Run" width="30%">
-</a>
-
 
 **Text:** `CCABCA` (n=6), **Pattern:** `ABC` (m=3)  
 Let \(d = 10, q = 13\) for simplicity (using character values A=1, B=2, C=3)
@@ -793,16 +543,6 @@ Let \(d = 10, q = 13\) for simplicity (using character values A=1, B=2, C=3)
 | 3 | BCA | \(10\cdot(6-1\cdot10)+1)\bmod13 = (-39)\bmod13 = 0\) | No | – | No match |
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -887,16 +627,6 @@ public static List<Integer> rabinKarp(String T, String P) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Case | Time | Why |
 |------|------|-----|
@@ -908,16 +638,6 @@ public static List<Integer> rabinKarp(String T, String P) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -927,16 +647,6 @@ public static List<Integer> rabinKarp(String T, String P) {
 | Ideal for plagiarism detection (rolling hash of phrases) | Choosing d and q affects collision probability |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Case | Behavior |
@@ -961,30 +671,10 @@ public static List<Integer> rabinKarp(String T, String P) {
 
 ### The Key Insight
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" alt="Handwritten: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" alt="Diagram: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" alt="Sticky Note: The Key Insight" width="30%">
-</a>
-
 
 The **Z-array** \(Z[i]\) stores the length of the longest substring starting at position \(i\) that matches the prefix of the string. For pattern matching, concatenate \(P + \text{separator} + T\), compute the Z-array, and every \(Z[i] = m\) indicates a match.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 1. Initialize \(Z[0] = 0\), \(l = r = 0\).
@@ -994,16 +684,6 @@ The **Z-array** \(Z[i]\) stores the length of the longest substring starting at 
    c. If \(i + Z[i] - 1 > r\): set \(l = i\), \(r = i + Z[i] - 1\)
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1026,16 +706,6 @@ ComputeZ(S):
 
 ### Dry Run
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" alt="Handwritten: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" alt="Diagram: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" alt="Sticky Note: Dry Run" width="30%">
-</a>
-
 
 **Pattern:** `aab` (m=3), **Text:** `aabaab`  
 **Concatenated S:** `aab$aabaab`
@@ -1056,16 +726,6 @@ ComputeZ(S):
 \(Z[4] = 3\) → match at position 0 in original text. Indeed, "aab" is at position 0 and 3 in "aabaab".
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -1158,16 +818,6 @@ public static List<Integer> zMatch(String T, String P) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Phase | Time | Why |
 |-------|------|-----|
@@ -1179,16 +829,6 @@ public static List<Integer> zMatch(String T, String P) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1198,16 +838,6 @@ public static List<Integer> zMatch(String T, String P) {
 | Works well for pattern matching and string analysis | Not as well-known as KMP in interview settings |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Case | Behavior |
@@ -1232,30 +862,10 @@ public static List<Integer> zMatch(String T, String P) {
 
 ### The Key Insight
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-handwritten.svg" alt="Handwritten: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-diagram.svg" alt="Diagram: The Key Insight" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/the-key-insight-sticky.svg" alt="Sticky Note: The Key Insight" width="30%">
-</a>
-
 
 Build a **trie** of all patterns, then add **failure links** (like KMP's prefix function but extended to a tree). Failure links redirect mismatches to the longest proper suffix that is also a prefix of some pattern. The result is an automaton that processes the text in \(O(n)\) time, regardless of how many patterns exist.
 
 ### Algorithm Steps
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-handwritten.svg" alt="Handwritten: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-diagram.svg" alt="Diagram: Algorithm Steps" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/algorithm-steps-sticky.svg" alt="Sticky Note: Algorithm Steps" width="30%">
-</a>
 
 
 **Phase 1: Build Trie**
@@ -1280,16 +890,6 @@ Build a **trie** of all patterns, then add **failure links** (like KMP's prefix 
    c. Check for matches at the current node (including via output links).
 
 ### Pseudocode
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
 
 
 ```
@@ -1335,16 +935,6 @@ AhoCorasickSearch(T, root):
 
 ### Dry Run
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-handwritten.svg" alt="Handwritten: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-diagram.svg" alt="Diagram: Dry Run" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/dry-run-sticky.svg" alt="Sticky Note: Dry Run" width="30%">
-</a>
-
 
 **Patterns:** `ab`, `bc` **Text:** `abcab`
 
@@ -1378,16 +968,6 @@ root → 'b' → 'c'*   (pattern "bc" ends at node_bc)
 Matches found: "ab" at positions 0 and 3, "bc" at position 1.
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -1540,16 +1120,6 @@ class AhoCorasick {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Phase | Time | Why |
 |-------|------|-----|
@@ -1562,16 +1132,6 @@ class AhoCorasick {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1581,16 +1141,6 @@ class AhoCorasick {
 | Used in real IDS/IPS systems (Snort, Suricata) | Output link handling can be tricky |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Case | Behavior |
@@ -1611,16 +1161,6 @@ class AhoCorasick {
 
 ### Suffix Array
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/suffix-array-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/suffix-array-handwritten.svg" alt="Handwritten: Suffix Array" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/suffix-array-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/suffix-array-diagram.svg" alt="Diagram: Suffix Array" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/suffix-array-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/suffix-array-sticky.svg" alt="Sticky Note: Suffix Array" width="30%">
-</a>
-
 
 **Definition:** A **suffix array** of string \(S\) is an array of starting positions of all suffixes of \(S\) sorted lexicographically.
 
@@ -1638,16 +1178,6 @@ class AhoCorasick {
 Suffix Array: \(SA = [5, 3, 1, 0, 4, 2]\)
 
 ### Prefix-Doubling Construction
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/prefix-doubling-construction-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/prefix-doubling-construction-handwritten.svg" alt="Handwritten: Prefix-Doubling Construction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/prefix-doubling-construction-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/prefix-doubling-construction-diagram.svg" alt="Diagram: Prefix-Doubling Construction" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/prefix-doubling-construction-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/prefix-doubling-construction-sticky.svg" alt="Sticky Note: Prefix-Doubling Construction" width="30%">
-</a>
 
 
 **Idea:** Sort suffixes by the first \(2^k\) characters, doubling \(k\) each iteration. After \(k \ge \log n\) rounds, all suffixes are uniquely sorted.
@@ -1704,16 +1234,6 @@ Final SA = [5, 3, 1, 0, 4, 2]
 
 ### LCP Array (Kasai's Algorithm)
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/lcp-array-kasai-s-algorithm-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/lcp-array-kasai-s-algorithm-handwritten.svg" alt="Handwritten: LCP Array (Kasai's Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/lcp-array-kasai-s-algorithm-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/lcp-array-kasai-s-algorithm-diagram.svg" alt="Diagram: LCP Array (Kasai's Algorithm)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/lcp-array-kasai-s-algorithm-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/lcp-array-kasai-s-algorithm-sticky.svg" alt="Sticky Note: LCP Array (Kasai's Algorithm)" width="30%">
-</a>
-
 
 **Definition:** LCP[i] = longest common prefix between suffixes at SA[i] and SA[i+1].
 
@@ -1745,16 +1265,6 @@ LCP = [1, 3, 0, 0, 2]
 
 ### Applications
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/applications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/applications-handwritten.svg" alt="Handwritten: Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/applications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/applications-diagram.svg" alt="Diagram: Applications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/applications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/applications-sticky.svg" alt="Sticky Note: Applications" width="30%">
-</a>
-
 
 | Problem | Solution |
 |---------|----------|
@@ -1764,16 +1274,6 @@ LCP = [1, 3, 0, 0, 2]
 | Longest common prefix of two suffixes | Range minimum query on LCP array |
 
 ### Implementations
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-handwritten.svg" alt="Handwritten: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-diagram.svg" alt="Diagram: Implementations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementations-sticky.svg" alt="Sticky Note: Implementations" width="30%">
-</a>
 
 
 ```cpp
@@ -1873,16 +1373,6 @@ public static int[] buildSuffixArray(String S) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 | Operation | Time | Why |
 |-----------|------|-----|
@@ -1895,16 +1385,6 @@ public static int[] buildSuffixArray(String S) {
 
 ### Advantages & Disadvantages
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
-
 
 | Advantages | Disadvantages |
 |------------|---------------|
@@ -1914,16 +1394,6 @@ public static int[] buildSuffixArray(String S) {
 | Works with arbitrary alphabets | Overkill for single-pattern search |
 
 ### Edge Cases
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-handwritten.svg" alt="Handwritten: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-diagram.svg" alt="Diagram: Edge Cases" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/edge-cases-sticky.svg" alt="Sticky Note: Edge Cases" width="30%">
-</a>
 
 
 | Case | Behavior |
@@ -1945,16 +1415,6 @@ public static int[] buildSuffixArray(String S) {
 
 ### Pseudocode
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-handwritten.svg" alt="Handwritten: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-diagram.svg" alt="Diagram: Pseudocode" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/pseudocode-sticky.svg" alt="Sticky Note: Pseudocode" width="30%">
-</a>
-
 
 ```
 Manacher(S):
@@ -1974,16 +1434,6 @@ Manacher(S):
 ```
 
 ### Implementation
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementation-handwritten.svg" alt="Handwritten: Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementation-diagram.svg" alt="Diagram: Implementation" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/implementation-sticky.svg" alt="Sticky Note: Implementation" width="30%">
-</a>
 
 
 ```cpp
@@ -2046,32 +1496,12 @@ public static int[] manacher(String S) {
 
 ### Complexity Analysis
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-handwritten.svg" alt="Handwritten: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-diagram.svg" alt="Diagram: Complexity Analysis" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/complexity-analysis-sticky.svg" alt="Sticky Note: Complexity Analysis" width="30%">
-</a>
-
 
 **Time:** \(O(n)\) — the while loop expands the rightmost palindrome boundary \(R\), which only increases. Each expansion corresponds to a unique center.
 
 **Space:** \(O(n)\) for the transformed string and radius array.
 
 ### Advantages & Disadvantages
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-handwritten.svg" alt="Handwritten: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-diagram.svg" alt="Diagram: Advantages & Disadvantages" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/advantages-disadvantages-sticky.svg" alt="Sticky Note: Advantages & Disadvantages" width="30%">
-</a>
 
 
 | Advantages | Disadvantages |
@@ -2101,16 +1531,6 @@ public static int[] manacher(String S) {
 ## Interview Corner
 
 ### 1. Longest Palindromic Substring
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/1-longest-palindromic-substring-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/1-longest-palindromic-substring-handwritten.svg" alt="Handwritten: 1. Longest Palindromic Substring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/1-longest-palindromic-substring-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/1-longest-palindromic-substring-diagram.svg" alt="Diagram: 1. Longest Palindromic Substring" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/1-longest-palindromic-substring-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/1-longest-palindromic-substring-sticky.svg" alt="Sticky Note: 1. Longest Palindromic Substring" width="30%">
-</a>
 
 
 **Problem:** Given a string S, find the longest substring that is a palindrome.
@@ -2142,16 +1562,6 @@ LongestPalindrome(S):
 
 ### 2. Longest Common Prefix (LCP) of an Array of Strings
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/2-longest-common-prefix-lcp-of-an-array-of-strings-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/2-longest-common-prefix-lcp-of-an-array-of-strings-handwritten.svg" alt="Handwritten: 2. Longest Common Prefix (LCP) of an Array of Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/2-longest-common-prefix-lcp-of-an-array-of-strings-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/2-longest-common-prefix-lcp-of-an-array-of-strings-diagram.svg" alt="Diagram: 2. Longest Common Prefix (LCP) of an Array of Strings" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/2-longest-common-prefix-lcp-of-an-array-of-strings-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/2-longest-common-prefix-lcp-of-an-array-of-strings-sticky.svg" alt="Sticky Note: 2. Longest Common Prefix (LCP) of an Array of Strings" width="30%">
-</a>
-
 
 **Problem:** Given an array of strings, find the longest common prefix among all strings.
 
@@ -2176,16 +1586,6 @@ LongestCommonPrefix(strs):
 **Complexity:** O(S) where S = sum of all characters in all strings. Space: O(1).
 
 ### 3. Wildcard Pattern Matching
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/3-wildcard-pattern-matching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/3-wildcard-pattern-matching-handwritten.svg" alt="Handwritten: 3. Wildcard Pattern Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/3-wildcard-pattern-matching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/3-wildcard-pattern-matching-diagram.svg" alt="Diagram: 3. Wildcard Pattern Matching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/3-wildcard-pattern-matching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/3-wildcard-pattern-matching-sticky.svg" alt="Sticky Note: 3. Wildcard Pattern Matching" width="30%">
-</a>
 
 
 **Problem:** Implement wildcard pattern matching with support for '?' (matches any single character) and '\*' (matches any sequence of characters).
@@ -2219,16 +1619,6 @@ WildcardMatch(T, P):
 
 ### Ctrl+F in Browsers and Editors
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/ctrl-f-in-browsers-and-editors-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/ctrl-f-in-browsers-and-editors-handwritten.svg" alt="Handwritten: Ctrl+F in Browsers and Editors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/ctrl-f-in-browsers-and-editors-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/ctrl-f-in-browsers-and-editors-diagram.svg" alt="Diagram: Ctrl+F in Browsers and Editors" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/ctrl-f-in-browsers-and-editors-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/ctrl-f-in-browsers-and-editors-sticky.svg" alt="Sticky Note: Ctrl+F in Browsers and Editors" width="30%">
-</a>
-
 
 Every browser's "Find in Page" feature implements some form of pattern matching:
 - **Chrome** uses a modified version of Boyer-Moore for single-pattern search in the renderer process.
@@ -2238,16 +1628,6 @@ Every browser's "Find in Page" feature implements some form of pattern matching:
 The key requirement is interactivity: results must appear while the user types, which demands sub-50ms search for files up to 1MB.
 
 ### Bioinformatics — DNA Pattern Search
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/bioinformatics-dna-pattern-search-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/bioinformatics-dna-pattern-search-handwritten.svg" alt="Handwritten: Bioinformatics — DNA Pattern Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/bioinformatics-dna-pattern-search-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/bioinformatics-dna-pattern-search-diagram.svg" alt="Diagram: Bioinformatics — DNA Pattern Search" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/bioinformatics-dna-pattern-search-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/bioinformatics-dna-pattern-search-sticky.svg" alt="Sticky Note: Bioinformatics — DNA Pattern Search" width="30%">
-</a>
 
 
 DNA is a string over {A, C, G, T} with length ~3.2 billion for the human genome:
@@ -2259,16 +1639,6 @@ Example: Searching for the gene `BRCA1` (~125k base pairs) in the human genome u
 
 ### Network Intrusion Detection Systems (NIDS)
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/network-intrusion-detection-systems-nids-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/network-intrusion-detection-systems-nids-handwritten.svg" alt="Handwritten: Network Intrusion Detection Systems (NIDS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/network-intrusion-detection-systems-nids-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/network-intrusion-detection-systems-nids-diagram.svg" alt="Diagram: Network Intrusion Detection Systems (NIDS)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/network-intrusion-detection-systems-nids-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/network-intrusion-detection-systems-nids-sticky.svg" alt="Sticky Note: Network Intrusion Detection Systems (NIDS)" width="30%">
-</a>
-
 
 Snort and Suricata match network packets against thousands of attack signatures:
 - **Aho-Corasick** is the primary algorithm used — it matches all signatures in a single pass over the packet payload.
@@ -2279,31 +1649,11 @@ Snort and Suricata match network packets against thousands of attack signatures:
 
 ### Plagiarism Detection
 
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/plagiarism-detection-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/plagiarism-detection-handwritten.svg" alt="Handwritten: Plagiarism Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/plagiarism-detection-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/plagiarism-detection-diagram.svg" alt="Diagram: Plagiarism Detection" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/plagiarism-detection-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/plagiarism-detection-sticky.svg" alt="Sticky Note: Plagiarism Detection" width="30%">
-</a>
-
 
 - **MOSS** (Measure of Software Similarity) uses **document fingerprinting** with rolling hashes (Rabin-Karp style). It selects a subset of hashes (e.g., those where the hash mod some value = 0) as fingerprints.
 - **Turnitin** compares documents using suffix arrays and LCP to find the longest common substrings between papers.
 
 ### Search Engine Indexing
-
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/search-engine-indexing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/search-engine-indexing-handwritten.svg" alt="Handwritten: Search Engine Indexing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/search-engine-indexing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/search-engine-indexing-diagram.svg" alt="Diagram: Search Engine Indexing" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/algorithms/14-string-algorithms/search-engine-indexing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/algorithms/14-string-algorithms/search-engine-indexing-sticky.svg" alt="Sticky Note: Search Engine Indexing" width="30%">
-</a>
 
 
 - Google's **PageRank** doesn't use string algorithms directly, but its **inverted index** is built using suffix structures.

@@ -84,16 +84,6 @@ flowchart LR
 
 ### Service Container Deep Dive
 
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-handwritten.svg" alt="Handwritten: Service Container Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-diagram.svg" alt="Diagram: Service Container Deep Dive" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-container-deep-dive-sticky.svg" alt="Sticky Note: Service Container Deep Dive" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** bind() creates new instances on each resolution, singleton() returns the same instance, and contextual binding provides different implementations per consumer.
 
@@ -166,16 +156,6 @@ $this->app->afterResolving(PaymentGateway::class, function ($gateway, $app) { /*
 
 ### Service Providers
 
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-handwritten.svg" alt="Handwritten: Service Providers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-diagram.svg" alt="Diagram: Service Providers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/service-providers-sticky.svg" alt="Sticky Note: Service Providers" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Providers follow register() for container bindings and boot() for using registered services; deferrable providers load only when their services are requested.
 
@@ -225,16 +205,6 @@ class PaymentServiceProvider extends ServiceProvider implements DeferrableProvid
 
 ### Facades
 
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/facades-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/facades-handwritten.svg" alt="Handwritten: Facades" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/facades-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/facades-diagram.svg" alt="Diagram: Facades" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/facades-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/facades-sticky.svg" alt="Sticky Note: Facades" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Facades provide static-like proxies to container bindings; real-time facades use the Facades prefix for any class without creating a facade class.
 
@@ -280,16 +250,6 @@ Use facades for framework utilities (Cache, Log, Redis). Use DI for custom domai
 **Common facades:** `Route`, `DB`, `Cache`, `Redis`, `Queue`, `Bus`, `Event`, `Log`, `Mail`, `Notification`, `Auth`, `Hash`, `Storage`, `Validator`, `File`.
 
 ### Package Development
-
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/package-development-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/package-development-handwritten.svg" alt="Handwritten: Package Development" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/package-development-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/package-development-diagram.svg" alt="Diagram: Package Development" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/package-development-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/package-development-sticky.svg" alt="Sticky Note: Package Development" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Laravel packages use Composer's extra.laravel section for auto-discovery and provide helpers for publishing config, migrations, assets, and routes.
@@ -357,16 +317,6 @@ php artisan vendor:publish --tag=analytics-migrations
 
 ### Custom Artisan Commands
 
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-handwritten.svg" alt="Handwritten: Custom Artisan Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-diagram.svg" alt="Diagram: Custom Artisan Commands" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/custom-artisan-commands-sticky.svg" alt="Sticky Note: Custom Artisan Commands" width="30%">
-</a>
-
 
 ```bash
 php artisan make:command GenerateReport
@@ -424,16 +374,6 @@ Artisan::command('app:cleanup', function () {
 ```
 
 ### Scheduled Tasks
-
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-handwritten.svg" alt="Handwritten: Scheduled Tasks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-diagram.svg" alt="Diagram: Scheduled Tasks" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/scheduled-tasks-sticky.svg" alt="Sticky Note: Scheduled Tasks" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** The task scheduler offers 20+ frequency methods with hooks, overlapping prevention via cache locks, and single-server execution semantics.
@@ -496,16 +436,6 @@ $schedule->command('reports:cleanup')->daily()->onOneServer();
 Requires a shared cache driver (Redis, Memcached, database).
 
 ### Process & Concurrency
-
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-handwritten.svg" alt="Handwritten: Process & Concurrency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-diagram.svg" alt="Diagram: Process & Concurrency" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/09-container-packages/process-concurrency-sticky.svg" alt="Sticky Note: Process & Concurrency" width="30%">
-</a>
 
 
 **Process facade:**

@@ -86,16 +86,6 @@ flowchart LR
 
 ### Queue Drivers
 
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-drivers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-drivers-handwritten.svg" alt="Handwritten: Queue Drivers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-drivers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-drivers-diagram.svg" alt="Diagram: Queue Drivers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-drivers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-drivers-sticky.svg" alt="Sticky Note: Queue Drivers" width="30%">
-</a>
-
 
 > **One-Sentence Takeaway:** Queue drivers abstract job processing across backends from sync (testing) through redis (production) to sqs (AWS-native scaling).
 
@@ -171,16 +161,6 @@ php artisan migrate
 ```
 
 ### Jobs
-
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/jobs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/jobs-handwritten.svg" alt="Handwritten: Jobs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/jobs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/jobs-diagram.svg" alt="Diagram: Jobs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/jobs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/jobs-sticky.svg" alt="Sticky Note: Jobs" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Jobs encapsulate discrete tasks that can be dispatched immediately, with delay, chained sequentially, or batched for parallel execution.
@@ -514,16 +494,6 @@ public function boot(): void
 
 ### Queue Routing (Laravel 13)
 
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-routing-laravel-13-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-routing-laravel-13-handwritten.svg" alt="Handwritten: Queue Routing (Laravel 13)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-routing-laravel-13-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-routing-laravel-13-diagram.svg" alt="Diagram: Queue Routing (Laravel 13)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-routing-laravel-13-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-routing-laravel-13-sticky.svg" alt="Sticky Note: Queue Routing (Laravel 13)" width="30%">
-</a>
-
 
 Laravel 13 introduced centralized queue routing via the `Queue::route()` method, allowing you to define which queue and connection each job class should use, instead of scattering `onQueue`, `onConnection` calls across the codebase.
 
@@ -562,16 +532,6 @@ This approach centralizes queue topology decisions, making it trivial to re-rout
 
 ### PHP Attributes for Jobs
 
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/php-attributes-for-jobs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/php-attributes-for-jobs-handwritten.svg" alt="Handwritten: PHP Attributes for Jobs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/php-attributes-for-jobs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/php-attributes-for-jobs-diagram.svg" alt="Diagram: PHP Attributes for Jobs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/php-attributes-for-jobs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/php-attributes-for-jobs-sticky.svg" alt="Sticky Note: PHP Attributes for Jobs" width="30%">
-</a>
-
 
 Laravel 11+ supports using PHP 8 attributes directly on job classes to replace traditional `$tries`, `$backoff`, and `$timeout` properties.
 
@@ -605,16 +565,6 @@ class ProcessPodcast implements ShouldQueue
 ```
 
 ### Queue Workers
-
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-workers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-workers-handwritten.svg" alt="Handwritten: Queue Workers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-workers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-workers-diagram.svg" alt="Diagram: Queue Workers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-workers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/queue-workers-sticky.svg" alt="Sticky Note: Queue Workers" width="30%">
-</a>
 
 
 The queue worker listens for and processes jobs.
@@ -677,16 +627,6 @@ php artisan queue:work --queue=high,default
 ```
 
 ### Laravel Horizon
-
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/laravel-horizon-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/laravel-horizon-handwritten.svg" alt="Handwritten: Laravel Horizon" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/laravel-horizon-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/laravel-horizon-diagram.svg" alt="Diagram: Laravel Horizon" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/laravel-horizon-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/laravel-horizon-sticky.svg" alt="Sticky Note: Laravel Horizon" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Horizon provides a Redis-powered dashboard with auto-balancing, failure monitoring, job tagging, and per-queue configuration.
@@ -788,16 +728,6 @@ php artisan horizon:failed-notify // Send notification about recent failures
 ```
 
 ### Notifications
-
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/notifications-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/notifications-handwritten.svg" alt="Handwritten: Notifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/notifications-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/notifications-diagram.svg" alt="Diagram: Notifications" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/notifications-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/notifications-sticky.svg" alt="Sticky Note: Notifications" width="30%">
-</a>
 
 
 Laravel's notification system sends messages across multiple channels with a single, unified API.
@@ -956,16 +886,6 @@ Notification::sent(function (\Illuminate\Notifications\Events\NotificationSent $
 ```
 
 ### Mail
-
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/mail-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/mail-handwritten.svg" alt="Handwritten: Mail" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/mail-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/mail-diagram.svg" alt="Diagram: Mail" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/mail-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/mail-sticky.svg" alt="Sticky Note: Mail" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Mailables use Envelope, Content, and Attachment objects with Markdown templates for responsive, branded email delivery.
@@ -1192,16 +1112,6 @@ Mail::sent(function (\Illuminate\Mail\Events\MessageSent $event) {
 ```
 
 ### Events & Listeners
-
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/events-listeners-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/events-listeners-handwritten.svg" alt="Handwritten: Events & Listeners" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/events-listeners-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/events-listeners-diagram.svg" alt="Diagram: Events & Listeners" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/laravel/06-queues-notifications/events-listeners-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/laravel/06-queues-notifications/events-listeners-sticky.svg" alt="Sticky Note: Events & Listeners" width="30%">
-</a>
 
 
 > **One-Sentence Takeaway:** Events decouple business logic; queued listeners via ShouldQueue prevent slow operations from blocking the HTTP response.

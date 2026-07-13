@@ -48,7 +48,6 @@
 </div>
 <!-- End Image Gallery -->
 
-
 ## Problem Classification Flow
 
 ```mermaid
@@ -124,16 +123,6 @@ flowchart LR
 ---
 
 ### Problem 1: Reverse Linked List
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-1-reverse-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-1-reverse-linked-list-handwritten.svg" alt="Handwritten: Problem 1: Reverse Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-1-reverse-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-1-reverse-linked-list-diagram.svg" alt="Diagram: Problem 1: Reverse Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-1-reverse-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-1-reverse-linked-list-sticky.svg" alt="Sticky Note: Problem 1: Reverse Linked List" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
@@ -217,16 +206,6 @@ console.log(listToArray(reverseList(null)));
 
 ### Problem 2: Merge Two Sorted Lists
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-2-merge-two-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-2-merge-two-sorted-lists-handwritten.svg" alt="Handwritten: Problem 2: Merge Two Sorted Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-2-merge-two-sorted-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-2-merge-two-sorted-lists-diagram.svg" alt="Diagram: Problem 2: Merge Two Sorted Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-2-merge-two-sorted-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-2-merge-two-sorted-lists-sticky.svg" alt="Sticky Note: Problem 2: Merge Two Sorted Lists" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Recursion]
@@ -286,16 +265,6 @@ console.log(listToArray(mergeTwoLists(null, arrayToList([0]))));
 
 ### Problem 3: Linked List Cycle
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-3-linked-list-cycle-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-3-linked-list-cycle-handwritten.svg" alt="Handwritten: Problem 3: Linked List Cycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-3-linked-list-cycle-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-3-linked-list-cycle-diagram.svg" alt="Diagram: Problem 3: Linked List Cycle" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-3-linked-list-cycle-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-3-linked-list-cycle-sticky.svg" alt="Sticky Note: Problem 3: Linked List Cycle" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Two Pointers]
@@ -354,16 +323,6 @@ console.log(hasCycle(list)); // false
 
 ### Problem 4: Remove Duplicates from Sorted List
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-4-remove-duplicates-from-sorted-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-4-remove-duplicates-from-sorted-list-handwritten.svg" alt="Handwritten: Problem 4: Remove Duplicates from Sorted List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-4-remove-duplicates-from-sorted-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-4-remove-duplicates-from-sorted-list-diagram.svg" alt="Diagram: Problem 4: Remove Duplicates from Sorted List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-4-remove-duplicates-from-sorted-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-4-remove-duplicates-from-sorted-list-sticky.svg" alt="Sticky Note: Problem 4: Remove Duplicates from Sorted List" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List]
@@ -410,16 +369,6 @@ console.log(listToArray(deleteDuplicates(arrayToList([1, 1, 2, 3, 3]))));
 
 ### Problem 5: Middle of the Linked List
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-5-middle-of-the-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-5-middle-of-the-linked-list-handwritten.svg" alt="Handwritten: Problem 5: Middle of the Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-5-middle-of-the-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-5-middle-of-the-linked-list-diagram.svg" alt="Diagram: Problem 5: Middle of the Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-5-middle-of-the-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-5-middle-of-the-linked-list-sticky.svg" alt="Sticky Note: Problem 5: Middle of the Linked List" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
 📂 **Topics:** [Linked List, Two Pointers]
@@ -461,16 +410,6 @@ console.log(middleNode(arrayToList([1, 2, 3, 4, 5, 6]))?.val); // 4
 ---
 
 ### Problem 6: Remove Linked List Elements
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-6-remove-linked-list-elements-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-6-remove-linked-list-elements-handwritten.svg" alt="Handwritten: Problem 6: Remove Linked List Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-6-remove-linked-list-elements-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-6-remove-linked-list-elements-diagram.svg" alt="Diagram: Problem 6: Remove Linked List Elements" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-6-remove-linked-list-elements-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-6-remove-linked-list-elements-sticky.svg" alt="Sticky Note: Problem 6: Remove Linked List Elements" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Easy
@@ -515,16 +454,6 @@ console.log(listToArray(removeElements(arrayToList([]), 1)));
 ---
 
 ### Problem 7: Palindrome Linked List
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-7-palindrome-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-7-palindrome-linked-list-handwritten.svg" alt="Handwritten: Problem 7: Palindrome Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-7-palindrome-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-7-palindrome-linked-list-diagram.svg" alt="Diagram: Problem 7: Palindrome Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-7-palindrome-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-7-palindrome-linked-list-sticky.svg" alt="Sticky Note: Problem 7: Palindrome Linked List" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Easy
@@ -600,16 +529,6 @@ console.log(isPalindrome(arrayToList([1]))); // true
 
 ### Problem 8: Add Two Numbers
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-8-add-two-numbers-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-8-add-two-numbers-handwritten.svg" alt="Handwritten: Problem 8: Add Two Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-8-add-two-numbers-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-8-add-two-numbers-diagram.svg" alt="Diagram: Problem 8: Add Two Numbers" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-8-add-two-numbers-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-8-add-two-numbers-sticky.svg" alt="Sticky Note: Problem 8: Add Two Numbers" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Math]
@@ -663,16 +582,6 @@ console.log(listToArray(addTwoNumbers(
 ---
 
 ### Problem 9: Remove Nth Node From End of List
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-9-remove-nth-node-from-end-of-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-9-remove-nth-node-from-end-of-list-handwritten.svg" alt="Handwritten: Problem 9: Remove Nth Node From End of List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-9-remove-nth-node-from-end-of-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-9-remove-nth-node-from-end-of-list-diagram.svg" alt="Diagram: Problem 9: Remove Nth Node From End of List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-9-remove-nth-node-from-end-of-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-9-remove-nth-node-from-end-of-list-sticky.svg" alt="Sticky Note: Problem 9: Remove Nth Node From End of List" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -729,16 +638,6 @@ console.log(listToArray(removeNthFromEnd(arrayToList([1]), 1)));
 
 ### Problem 10: Swap Nodes in Pairs
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-10-swap-nodes-in-pairs-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-10-swap-nodes-in-pairs-handwritten.svg" alt="Handwritten: Problem 10: Swap Nodes in Pairs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-10-swap-nodes-in-pairs-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-10-swap-nodes-in-pairs-diagram.svg" alt="Diagram: Problem 10: Swap Nodes in Pairs" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-10-swap-nodes-in-pairs-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-10-swap-nodes-in-pairs-sticky.svg" alt="Sticky Note: Problem 10: Swap Nodes in Pairs" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Recursion]
@@ -788,16 +687,6 @@ console.log(listToArray(swapPairs(arrayToList([1, 2, 3]))));
 ---
 
 ### Problem 11: Odd Even Linked List
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-11-odd-even-linked-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-11-odd-even-linked-list-handwritten.svg" alt="Handwritten: Problem 11: Odd Even Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-11-odd-even-linked-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-11-odd-even-linked-list-diagram.svg" alt="Diagram: Problem 11: Odd Even Linked List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-11-odd-even-linked-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-11-odd-even-linked-list-sticky.svg" alt="Sticky Note: Problem 11: Odd Even Linked List" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
@@ -849,16 +738,6 @@ console.log(listToArray(oddEvenList(arrayToList([1]))));
 
 ### Problem 12: Intersection of Two Linked Lists
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-12-intersection-of-two-linked-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-12-intersection-of-two-linked-lists-handwritten.svg" alt="Handwritten: Problem 12: Intersection of Two Linked Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-12-intersection-of-two-linked-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-12-intersection-of-two-linked-lists-diagram.svg" alt="Diagram: Problem 12: Intersection of Two Linked Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-12-intersection-of-two-linked-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-12-intersection-of-two-linked-lists-sticky.svg" alt="Sticky Note: Problem 12: Intersection of Two Linked Lists" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Two Pointers]
@@ -907,16 +786,6 @@ console.log(getIntersectionNode(headA, headB)?.val); // 8
 ---
 
 ### Problem 13: Rotate List
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-13-rotate-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-13-rotate-list-handwritten.svg" alt="Handwritten: Problem 13: Rotate List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-13-rotate-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-13-rotate-list-diagram.svg" alt="Diagram: Problem 13: Rotate List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-13-rotate-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-13-rotate-list-sticky.svg" alt="Sticky Note: Problem 13: Rotate List" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
@@ -975,16 +844,6 @@ console.log(listToArray(rotateRight(arrayToList([1, 2]), 1)));
 ---
 
 ### Problem 14: Reorder List
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-14-reorder-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-14-reorder-list-handwritten.svg" alt="Handwritten: Problem 14: Reorder List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-14-reorder-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-14-reorder-list-diagram.svg" alt="Diagram: Problem 14: Reorder List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-14-reorder-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-14-reorder-list-sticky.svg" alt="Sticky Note: Problem 14: Reorder List" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
@@ -1046,16 +905,6 @@ console.log(listToArray(list)); // [1, 4, 2, 3]
 
 ### Problem 15: Sort List
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-15-sort-list-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-15-sort-list-handwritten.svg" alt="Handwritten: Problem 15: Sort List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-15-sort-list-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-15-sort-list-diagram.svg" alt="Diagram: Problem 15: Sort List" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-15-sort-list-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-15-sort-list-sticky.svg" alt="Sticky Note: Problem 15: Sort List" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List, Sorting, Merge Sort]
@@ -1107,16 +956,6 @@ console.log(listToArray(sortList(arrayToList([-1, 5, 3, 4, 0]))));
 
 ### Problem 16: Remove Duplicates from Sorted List II
 
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-16-remove-duplicates-from-sorted-list-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-16-remove-duplicates-from-sorted-list-ii-handwritten.svg" alt="Handwritten: Problem 16: Remove Duplicates from Sorted List II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-16-remove-duplicates-from-sorted-list-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-16-remove-duplicates-from-sorted-list-ii-diagram.svg" alt="Diagram: Problem 16: Remove Duplicates from Sorted List II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-16-remove-duplicates-from-sorted-list-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-16-remove-duplicates-from-sorted-list-ii-sticky.svg" alt="Sticky Note: Problem 16: Remove Duplicates from Sorted List II" width="30%">
-</a>
-
 🏷️ **Companies:** [Amazon] [Google] [Microsoft]
 📊 **Difficulty:** Medium
 📂 **Topics:** [Linked List]
@@ -1165,16 +1004,6 @@ console.log(listToArray(deleteDuplicates2(arrayToList([1, 1, 1, 2, 3]))));
 ---
 
 ### Problem 17: Reverse Linked List II
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-17-reverse-linked-list-ii-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-17-reverse-linked-list-ii-handwritten.svg" alt="Handwritten: Problem 17: Reverse Linked List II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-17-reverse-linked-list-ii-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-17-reverse-linked-list-ii-diagram.svg" alt="Diagram: Problem 17: Reverse Linked List II" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-17-reverse-linked-list-ii-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-17-reverse-linked-list-ii-sticky.svg" alt="Sticky Note: Problem 17: Reverse Linked List II" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta]
 📊 **Difficulty:** Medium
@@ -1225,16 +1054,6 @@ console.log(listToArray(reverseBetween(arrayToList([1, 2, 3, 4, 5]), 2, 4)));
 ---
 
 ### Problem 18: Merge K Sorted Lists
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-18-merge-k-sorted-lists-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-18-merge-k-sorted-lists-handwritten.svg" alt="Handwritten: Problem 18: Merge K Sorted Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-18-merge-k-sorted-lists-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-18-merge-k-sorted-lists-diagram.svg" alt="Diagram: Problem 18: Merge K Sorted Lists" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-18-merge-k-sorted-lists-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-18-merge-k-sorted-lists-sticky.svg" alt="Sticky Note: Problem 18: Merge K Sorted Lists" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft] [Apple]
 📊 **Difficulty:** Hard
@@ -1289,16 +1108,6 @@ console.log(listToArray(mergeKLists(lists)));
 ---
 
 ### Problem 19: Copy List with Random Pointer
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-19-copy-list-with-random-pointer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-19-copy-list-with-random-pointer-handwritten.svg" alt="Handwritten: Problem 19: Copy List with Random Pointer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-19-copy-list-with-random-pointer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-19-copy-list-with-random-pointer-diagram.svg" alt="Diagram: Problem 19: Copy List with Random Pointer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-19-copy-list-with-random-pointer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-19-copy-list-with-random-pointer-sticky.svg" alt="Sticky Note: Problem 19: Copy List with Random Pointer" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard
@@ -1382,16 +1191,6 @@ console.log(copied?.next?.random?.val); // 7
 ---
 
 ### Problem 20: Reverse Nodes in k-Group
-
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-20-reverse-nodes-in-k-group-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-20-reverse-nodes-in-k-group-handwritten.svg" alt="Handwritten: Problem 20: Reverse Nodes in k-Group" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-20-reverse-nodes-in-k-group-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-20-reverse-nodes-in-k-group-diagram.svg" alt="Diagram: Problem 20: Reverse Nodes in k-Group" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-20-reverse-nodes-in-k-group-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/coding-problems/03-linked-lists/problem-20-reverse-nodes-in-k-group-sticky.svg" alt="Sticky Note: Problem 20: Reverse Nodes in k-Group" width="30%">
-</a>
 
 🏷️ **Companies:** [Amazon] [Google] [Meta] [Microsoft]
 📊 **Difficulty:** Hard

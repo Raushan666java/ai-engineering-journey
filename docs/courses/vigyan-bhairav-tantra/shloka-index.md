@@ -5,7 +5,6 @@
 
 ---
 
-
 <!-- Image Gallery -->
 <div style="display:flex;flex-wrap:wrap;gap:4px;margin:16px 0;padding:12px;background:#f8fafc;border-radius:8px;border:1px solid #e2e8f0;">
 <a href="../../../assets/images/lessons/vigyan-bhairav-tantra/shloka-index/hero.svg" target="_blank" rel="noopener">
@@ -142,17 +141,6 @@ mindmap
 
 ### श्लोक १ — श्वास-प्राण धारण (Breath Awareness)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-awareness-handwritten.svg" alt="Handwritten: श्लोक १ — श्वास-प्राण धारण (Breath Awareness)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-awareness-diagram.svg" alt="Diagram: श्लोक १ — श्वास-प्राण धारण (Breath Awareness)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-awareness-sticky.svg" alt="Sticky Note: श्लोक १ — श्वास-प्राण धारण (Breath Awareness)" width="30%">
-</a>
-
-
 **मूल विधि:** १
 
 | आयाम | विवरण |
@@ -170,17 +158,6 @@ mindmap
 
 ### श्लोक २ — प्राण-अपान संयोग (Union of Prana and Apana)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/union-of-prana-and-apana-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/union-of-prana-and-apana-handwritten.svg" alt="Handwritten: श्लोक २ — प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/union-of-prana-and-apana-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/union-of-prana-and-apana-diagram.svg" alt="Diagram: श्लोक २ — प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/union-of-prana-and-apana-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/union-of-prana-and-apana-sticky.svg" alt="Sticky Note: श्लोक २ — प्राण-अपान संयोग (Union of Prana and Apana)" width="30%">
-</a>
-
-
 **मूल विधि:** २
 
 | आयाम | विवरण |
@@ -194,17 +171,6 @@ mindmap
 ---
 
 ### श्लोक ३ — श्वास-प्रश्वास साक्षी (Witnessing Breath)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-breath-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-breath-handwritten.svg" alt="Handwritten: श्लोक ३ — श्वास-प्रश्वास साक्षी (Witnessing Breath)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-breath-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-breath-diagram.svg" alt="Diagram: श्लोक ३ — श्वास-प्रश्वास साक्षी (Witnessing Breath)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-breath-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-breath-sticky.svg" alt="Sticky Note: श्लोक ३ — श्वास-प्रश्वास साक्षी (Witnessing Breath)" width="30%">
-</a>
-
 
 **मूल विधि:** ३
 
@@ -220,17 +186,6 @@ mindmap
 
 ### श्लोक ४ — श्वास रुकने पर ध्यान (Breath Suspension)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-suspension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-suspension-handwritten.svg" alt="Handwritten: श्लोक ४ — श्वास रुकने पर ध्यान (Breath Suspension)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-suspension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-suspension-diagram.svg" alt="Diagram: श्लोक ४ — श्वास रुकने पर ध्यान (Breath Suspension)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-suspension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-suspension-sticky.svg" alt="Sticky Note: श्लोक ४ — श्वास रुकने पर ध्यान (Breath Suspension)" width="30%">
-</a>
-
-
 **मूल विधि:** ४
 
 | आयाम | विवरण |
@@ -244,17 +199,6 @@ mindmap
 ---
 
 ### श्लोक ५ — प्राण-शून्य विस्तार (Expansion into Void)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/expansion-into-void-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/expansion-into-void-handwritten.svg" alt="Handwritten: श्लोक ५ — प्राण-शून्य विस्तार (Expansion into Void)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/expansion-into-void-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/expansion-into-void-diagram.svg" alt="Diagram: श्लोक ५ — प्राण-शून्य विस्तार (Expansion into Void)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/expansion-into-void-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/expansion-into-void-sticky.svg" alt="Sticky Note: श्लोक ५ — प्राण-शून्य विस्तार (Expansion into Void)" width="30%">
-</a>
-
 
 **मूल विधि:** ५
 
@@ -270,17 +214,6 @@ mindmap
 
 ### श्लोक ६ — प्राण-बिंदु धारणा (Prana Point Fixation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/prana-point-fixation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/prana-point-fixation-handwritten.svg" alt="Handwritten: श्लोक ६ — प्राण-बिंदु धारणा (Prana Point Fixation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/prana-point-fixation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/prana-point-fixation-diagram.svg" alt="Diagram: श्लोक ६ — प्राण-बिंदु धारणा (Prana Point Fixation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/prana-point-fixation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/prana-point-fixation-sticky.svg" alt="Sticky Note: श्लोक ६ — प्राण-बिंदु धारणा (Prana Point Fixation)" width="30%">
-</a>
-
-
 **मूल विधि:** ११
 
 | आयाम | विवरण |
@@ -295,17 +228,6 @@ mindmap
 
 ### श्लोक ७ — श्वास-नाद (Breath Sound Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-sound-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-sound-meditation-handwritten.svg" alt="Handwritten: श्लोक ७ — श्वास-नाद (Breath Sound Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-sound-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-sound-meditation-diagram.svg" alt="Diagram: श्लोक ७ — श्वास-नाद (Breath Sound Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-sound-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/breath-sound-meditation-sticky.svg" alt="Sticky Note: श्लोक ७ — श्वास-नाद (Breath Sound Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** १२
 
 | आयाम | विवरण |
@@ -319,17 +241,6 @@ mindmap
 ---
 
 ### श्लोक ८ — केवली कुम्भक (Spontaneous Breath Retention)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/spontaneous-breath-retention-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/spontaneous-breath-retention-handwritten.svg" alt="Handwritten: श्लोक ८ — केवली कुम्भक (Spontaneous Breath Retention)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/spontaneous-breath-retention-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/spontaneous-breath-retention-diagram.svg" alt="Diagram: श्लोक ८ — केवली कुम्भक (Spontaneous Breath Retention)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/spontaneous-breath-retention-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/spontaneous-breath-retention-sticky.svg" alt="Sticky Note: श्लोक ८ — केवली कुम्भक (Spontaneous Breath Retention)" width="30%">
-</a>
-
 
 **मूल विधि:** १४
 
@@ -349,17 +260,6 @@ mindmap
 
 ### श्लोक ९ — अंग-अंग ध्यान (Body Part Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/body-part-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/body-part-meditation-handwritten.svg" alt="Handwritten: श्लोक ९ — अंग-अंग ध्यान (Body Part Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/body-part-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/body-part-meditation-diagram.svg" alt="Diagram: श्लोक ९ — अंग-अंग ध्यान (Body Part Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/body-part-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/body-part-meditation-sticky.svg" alt="Sticky Note: श्लोक ९ — अंग-अंग ध्यान (Body Part Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** १६
 
 | आयाम | विवरण |
@@ -373,17 +273,6 @@ mindmap
 ---
 
 ### श्लोक १० — त्वचा संवेदना (Skin Sensation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/skin-sensation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/skin-sensation-handwritten.svg" alt="Handwritten: श्लोक १० — त्वचा संवेदना (Skin Sensation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/skin-sensation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/skin-sensation-diagram.svg" alt="Diagram: श्लोक १० — त्वचा संवेदना (Skin Sensation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/skin-sensation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/skin-sensation-sticky.svg" alt="Sticky Note: श्लोक १० — त्वचा संवेदना (Skin Sensation)" width="30%">
-</a>
-
 
 **मूल विधि:** १८
 
@@ -399,17 +288,6 @@ mindmap
 
 ### श्लोक ११ — तालु स्पर्श (Palate Touch)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/palate-touch-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/palate-touch-handwritten.svg" alt="Handwritten: श्लोक ११ — तालु स्पर्श (Palate Touch)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/palate-touch-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/palate-touch-diagram.svg" alt="Diagram: श्लोक ११ — तालु स्पर्श (Palate Touch)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/palate-touch-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/palate-touch-sticky.svg" alt="Sticky Note: श्लोक ११ — तालु स्पर्श (Palate Touch)" width="30%">
-</a>
-
-
 **मूल विधि:** १९
 
 | आयाम | विवरण |
@@ -423,17 +301,6 @@ mindmap
 ---
 
 ### श्लोक १२ — रोमांच ध्यान (Horripilation Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/horripilation-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/horripilation-meditation-handwritten.svg" alt="Handwritten: श्लोक १२ — रोमांच ध्यान (Horripilation Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/horripilation-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/horripilation-meditation-diagram.svg" alt="Diagram: श्लोक १२ — रोमांच ध्यान (Horripilation Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/horripilation-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/horripilation-meditation-sticky.svg" alt="Sticky Note: श्लोक १२ — रोमांच ध्यान (Horripilation Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** २१
 
@@ -449,17 +316,6 @@ mindmap
 
 ### श्लोक १३ — हृदय ध्यान (Heart Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/heart-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/heart-meditation-handwritten.svg" alt="Handwritten: श्लोक १३ — हृदय ध्यान (Heart Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/heart-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/heart-meditation-diagram.svg" alt="Diagram: श्लोक १३ — हृदय ध्यान (Heart Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/heart-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/heart-meditation-sticky.svg" alt="Sticky Note: श्लोक १३ — हृदय ध्यान (Heart Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** २३
 
 | आयाम | विवरण |
@@ -473,17 +329,6 @@ mindmap
 ---
 
 ### श्लोक १४ — नाभि चक्र ध्यान (Navel Center Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/navel-center-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/navel-center-meditation-handwritten.svg" alt="Handwritten: श्लोक १४ — नाभि चक्र ध्यान (Navel Center Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/navel-center-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/navel-center-meditation-diagram.svg" alt="Diagram: श्लोक १४ — नाभि चक्र ध्यान (Navel Center Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/navel-center-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/navel-center-meditation-sticky.svg" alt="Sticky Note: श्लोक १४ — नाभि चक्र ध्यान (Navel Center Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** २५
 
@@ -499,17 +344,6 @@ mindmap
 
 ### श्लोक १५ — चलने में ध्यान (Walking Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/walking-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/walking-meditation-handwritten.svg" alt="Handwritten: श्लोक १५ — चलने में ध्यान (Walking Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/walking-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/walking-meditation-diagram.svg" alt="Diagram: श्लोक १५ — चलने में ध्यान (Walking Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/walking-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/walking-meditation-sticky.svg" alt="Sticky Note: श्लोक १५ — चलने में ध्यान (Walking Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** २९
 
 | आयाम | विवरण |
@@ -523,17 +357,6 @@ mindmap
 ---
 
 ### श्लोक १६ — खाने में ध्यान (Eating Awareness)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eating-awareness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eating-awareness-handwritten.svg" alt="Handwritten: श्लोक १६ — खाने में ध्यान (Eating Awareness)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eating-awareness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eating-awareness-diagram.svg" alt="Diagram: श्लोक १६ — खाने में ध्यान (Eating Awareness)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eating-awareness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eating-awareness-sticky.svg" alt="Sticky Note: श्लोक १६ — खाने में ध्यान (Eating Awareness)" width="30%">
-</a>
-
 
 **मूल विधि:** ३०
 
@@ -553,17 +376,6 @@ mindmap
 
 ### श्लोक १७ — त्राटक — बिंदु दृष्टि (Point Gazing)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/point-gazing-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/point-gazing-handwritten.svg" alt="Handwritten: श्लोक १७ — त्राटक — बिंदु दृष्टि (Point Gazing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/point-gazing-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/point-gazing-diagram.svg" alt="Diagram: श्लोक १७ — त्राटक — बिंदु दृष्टि (Point Gazing)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/point-gazing-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/point-gazing-sticky.svg" alt="Sticky Note: श्लोक १७ — त्राटक — बिंदु दृष्टि (Point Gazing)" width="30%">
-</a>
-
-
 **मूल विधि:** ३३
 
 | आयाम | विवरण |
@@ -577,17 +389,6 @@ mindmap
 ---
 
 ### श्लोक १८ — भ्रूमध्य ध्यान (Eyebrow Center Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eyebrow-center-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eyebrow-center-meditation-handwritten.svg" alt="Handwritten: श्लोक १८ — भ्रूमध्य ध्यान (Eyebrow Center Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eyebrow-center-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eyebrow-center-meditation-diagram.svg" alt="Diagram: श्लोक १८ — भ्रूमध्य ध्यान (Eyebrow Center Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eyebrow-center-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/eyebrow-center-meditation-sticky.svg" alt="Sticky Note: श्लोक १८ — भ्रूमध्य ध्यान (Eyebrow Center Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ३४
 
@@ -603,17 +404,6 @@ mindmap
 
 ### श्लोक १९ — आकाश ध्यान (Space Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/space-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/space-meditation-handwritten.svg" alt="Handwritten: श्लोक १९ — आकाश ध्यान (Space Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/space-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/space-meditation-diagram.svg" alt="Diagram: श्लोक १९ — आकाश ध्यान (Space Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/space-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/space-meditation-sticky.svg" alt="Sticky Note: श्लोक १९ — आकाश ध्यान (Space Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ३६
 
 | आयाम | विवरण |
@@ -627,17 +417,6 @@ mindmap
 ---
 
 ### श्लोक २० — अन्धकार ध्यान (Darkness Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/darkness-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/darkness-meditation-handwritten.svg" alt="Handwritten: श्लोक २० — अन्धकार ध्यान (Darkness Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/darkness-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/darkness-meditation-diagram.svg" alt="Diagram: श्लोक २० — अन्धकार ध्यान (Darkness Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/darkness-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/darkness-meditation-sticky.svg" alt="Sticky Note: श्लोक २० — अन्धकार ध्यान (Darkness Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ३८
 
@@ -657,17 +436,6 @@ mindmap
 
 ### श्लोक २१ — ॐकार ध्यान (Pranava — OM Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/pranava-om-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/pranava-om-meditation-handwritten.svg" alt="Handwritten: श्लोक २१ — ॐकार ध्यान (Pranava — OM Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/pranava-om-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/pranava-om-meditation-diagram.svg" alt="Diagram: श्लोक २१ — ॐकार ध्यान (Pranava — OM Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/pranava-om-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/pranava-om-meditation-sticky.svg" alt="Sticky Note: श्लोक २१ — ॐकार ध्यान (Pranava — OM Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ४३
 
 | आयाम | विवरण |
@@ -681,17 +449,6 @@ mindmap
 ---
 
 ### श्लोक २२ — सोऽहम् — अजपा जप (So'ham Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/so-ham-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/so-ham-meditation-handwritten.svg" alt="Handwritten: श्लोक २२ — सोऽहम् — अजपा जप (So'ham Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/so-ham-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/so-ham-meditation-diagram.svg" alt="Diagram: श्लोक २२ — सोऽहम् — अजपा जप (So'ham Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/so-ham-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/so-ham-meditation-sticky.svg" alt="Sticky Note: श्लोक २२ — सोऽहम् — अजपा जप (So'ham Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ४५
 
@@ -707,17 +464,6 @@ mindmap
 
 ### श्लोक २३ — अनाहत नाद (Unstruck Sound)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/unstruck-sound-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/unstruck-sound-handwritten.svg" alt="Handwritten: श्लोक २३ — अनाहत नाद (Unstruck Sound)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/unstruck-sound-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/unstruck-sound-diagram.svg" alt="Diagram: श्लोक २३ — अनाहत नाद (Unstruck Sound)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/unstruck-sound-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/unstruck-sound-sticky.svg" alt="Sticky Note: श्लोक २३ — अनाहत नाद (Unstruck Sound)" width="30%">
-</a>
-
-
 **मूल विधि:** ४८
 
 | आयाम | विवरण |
@@ -732,17 +478,6 @@ mindmap
 
 ### श्लोक २४ — नाद-ब्रह्म (Sound is Divine)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sound-is-divine-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sound-is-divine-handwritten.svg" alt="Handwritten: श्लोक २४ — नाद-ब्रह्म (Sound is Divine)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sound-is-divine-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sound-is-divine-diagram.svg" alt="Diagram: श्लोक २४ — नाद-ब्रह्म (Sound is Divine)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sound-is-divine-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sound-is-divine-sticky.svg" alt="Sticky Note: श्लोक २४ — नाद-ब्रह्म (Sound is Divine)" width="30%">
-</a>
-
-
 **मूल विधि:** ५०
 
 | आयाम | विवरण |
@@ -756,17 +491,6 @@ mindmap
 ---
 
 ### श्लोक २५ — मौन ध्यान (Silence Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/silence-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/silence-meditation-handwritten.svg" alt="Handwritten: श्लोक २५ — मौन ध्यान (Silence Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/silence-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/silence-meditation-diagram.svg" alt="Diagram: श्लोक २५ — मौन ध्यान (Silence Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/silence-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/silence-meditation-sticky.svg" alt="Sticky Note: श्लोक २५ — मौन ध्यान (Silence Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ५२
 
@@ -786,17 +510,6 @@ mindmap
 
 ### श्लोक २६ — रति ध्यान (Sexual Energy Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sexual-energy-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sexual-energy-meditation-handwritten.svg" alt="Handwritten: श्लोक २६ — रति ध्यान (Sexual Energy Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sexual-energy-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sexual-energy-meditation-diagram.svg" alt="Diagram: श्लोक २६ — रति ध्यान (Sexual Energy Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sexual-energy-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/sexual-energy-meditation-sticky.svg" alt="Sticky Note: श्लोक २६ — रति ध्यान (Sexual Energy Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ५५
 
 | आयाम | विवरण |
@@ -810,17 +523,6 @@ mindmap
 ---
 
 ### श्लोक २७ — क्रोध ध्यान (Anger Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/anger-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/anger-meditation-handwritten.svg" alt="Handwritten: श्लोक २७ — क्रोध ध्यान (Anger Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/anger-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/anger-meditation-diagram.svg" alt="Diagram: श्लोक २७ — क्रोध ध्यान (Anger Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/anger-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/anger-meditation-sticky.svg" alt="Sticky Note: श्लोक २७ — क्रोध ध्यान (Anger Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ५७
 
@@ -836,17 +538,6 @@ mindmap
 
 ### श्लोक २८ — भावना ध्यान (Feeling Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/feeling-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/feeling-meditation-handwritten.svg" alt="Handwritten: श्लोक २८ — भावना ध्यान (Feeling Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/feeling-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/feeling-meditation-diagram.svg" alt="Diagram: श्लोक २८ — भावना ध्यान (Feeling Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/feeling-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/feeling-meditation-sticky.svg" alt="Sticky Note: श्लोक २८ — भावना ध्यान (Feeling Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ५९
 
 | आयाम | विवरण |
@@ -860,17 +551,6 @@ mindmap
 ---
 
 ### श्लोक २९ — प्रेम ध्यान (Love Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/love-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/love-meditation-handwritten.svg" alt="Handwritten: श्लोक २९ — प्रेम ध्यान (Love Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/love-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/love-meditation-diagram.svg" alt="Diagram: श्लोक २९ — प्रेम ध्यान (Love Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/love-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/love-meditation-sticky.svg" alt="Sticky Note: श्लोक २९ — प्रेम ध्यान (Love Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ६१
 
@@ -890,17 +570,6 @@ mindmap
 
 ### श्लोक ३० — मन: स्थिरता (Mental Stillness)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/mental-stillness-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/mental-stillness-handwritten.svg" alt="Handwritten: श्लोक ३० — मन: स्थिरता (Mental Stillness)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/mental-stillness-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/mental-stillness-diagram.svg" alt="Diagram: श्लोक ३० — मन: स्थिरता (Mental Stillness)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/mental-stillness-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/mental-stillness-sticky.svg" alt="Sticky Note: श्लोक ३० — मन: स्थिरता (Mental Stillness)" width="30%">
-</a>
-
-
 **मूल विधि:** ६५
 
 | आयाम | विवरण |
@@ -914,17 +583,6 @@ mindmap
 ---
 
 ### श्लोक ३१ — सूक्ष्म ध्यान (Subtle Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-meditation-handwritten.svg" alt="Handwritten: श्लोक ३१ — सूक्ष्म ध्यान (Subtle Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-meditation-diagram.svg" alt="Diagram: श्लोक ३१ — सूक्ष्म ध्यान (Subtle Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-meditation-sticky.svg" alt="Sticky Note: श्लोक ३१ — सूक्ष्म ध्यान (Subtle Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ६८
 
@@ -940,17 +598,6 @@ mindmap
 
 ### श्लोक ३२ — विचार-साक्षी (Witnessing Thoughts)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-thoughts-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-thoughts-handwritten.svg" alt="Handwritten: श्लोक ३२ — विचार-साक्षी (Witnessing Thoughts)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-thoughts-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-thoughts-diagram.svg" alt="Diagram: श्लोक ३२ — विचार-साक्षी (Witnessing Thoughts)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-thoughts-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/witnessing-thoughts-sticky.svg" alt="Sticky Note: श्लोक ३२ — विचार-साक्षी (Witnessing Thoughts)" width="30%">
-</a>
-
-
 **मूल विधि:** ७२
 
 | आयाम | विवरण |
@@ -964,17 +611,6 @@ mindmap
 ---
 
 ### श्लोक ३३ — अहंकार विसर्जन (Ego Dissolution)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/ego-dissolution-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/ego-dissolution-handwritten.svg" alt="Handwritten: श्लोक ३३ — अहंकार विसर्जन (Ego Dissolution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/ego-dissolution-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/ego-dissolution-diagram.svg" alt="Diagram: श्लोक ३३ — अहंकार विसर्जन (Ego Dissolution)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/ego-dissolution-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/ego-dissolution-sticky.svg" alt="Sticky Note: श्लोक ३३ — अहंकार विसर्जन (Ego Dissolution)" width="30%">
-</a>
-
 
 **मूल विधि:** ७५
 
@@ -990,17 +626,6 @@ mindmap
 
 ### श्लोक ३४ — स्वप्न ध्यान (Dream Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/dream-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/dream-meditation-handwritten.svg" alt="Handwritten: श्लोक ३४ — स्वप्न ध्यान (Dream Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/dream-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/dream-meditation-diagram.svg" alt="Diagram: श्लोक ३४ — स्वप्न ध्यान (Dream Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/dream-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/dream-meditation-sticky.svg" alt="Sticky Note: श्लोक ३४ — स्वप्न ध्यान (Dream Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ७३
 
 | आयाम | विवरण |
@@ -1014,17 +639,6 @@ mindmap
 ---
 
 ### श्लोक ३५ — रात्रि ध्यान (Night Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/night-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/night-meditation-handwritten.svg" alt="Handwritten: श्लोक ३५ — रात्रि ध्यान (Night Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/night-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/night-meditation-diagram.svg" alt="Diagram: श्लोक ३५ — रात्रि ध्यान (Night Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/night-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/night-meditation-sticky.svg" alt="Sticky Note: श्लोक ३५ — रात्रि ध्यान (Night Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ७६
 
@@ -1040,17 +654,6 @@ mindmap
 
 ### श्लोक ३६ — चक्र ध्यान (Chakra Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/chakra-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/chakra-meditation-handwritten.svg" alt="Handwritten: श्लोक ३६ — चक्र ध्यान (Chakra Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/chakra-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/chakra-meditation-diagram.svg" alt="Diagram: श्लोक ३६ — चक्र ध्यान (Chakra Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/chakra-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/chakra-meditation-sticky.svg" alt="Sticky Note: श्लोक ३६ — चक्र ध्यान (Chakra Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ८५
 
 | आयाम | विवरण |
@@ -1064,17 +667,6 @@ mindmap
 ---
 
 ### श्लोक ३७ — कुंडलिनी ध्यान (Kundalini Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/kundalini-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/kundalini-meditation-handwritten.svg" alt="Handwritten: श्लोक ३७ — कुंडलिनी ध्यान (Kundalini Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/kundalini-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/kundalini-meditation-diagram.svg" alt="Diagram: श्लोक ३७ — कुंडलिनी ध्यान (Kundalini Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/kundalini-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/kundalini-meditation-sticky.svg" alt="Sticky Note: श्लोक ३७ — कुंडलिनी ध्यान (Kundalini Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ८६
 
@@ -1094,17 +686,6 @@ mindmap
 
 ### श्लोक ३८ — देवता ध्यान (Deity Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/deity-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/deity-meditation-handwritten.svg" alt="Handwritten: श्लोक ३८ — देवता ध्यान (Deity Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/deity-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/deity-meditation-diagram.svg" alt="Diagram: श्लोक ३८ — देवता ध्यान (Deity Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/deity-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/deity-meditation-sticky.svg" alt="Sticky Note: श्लोक ३८ — देवता ध्यान (Deity Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ७९
 
 | आयाम | विवरण |
@@ -1119,17 +700,6 @@ mindmap
 
 ### श्लोक ३९ — गुरु ध्यान (Guru Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/guru-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/guru-meditation-handwritten.svg" alt="Handwritten: श्लोक ३९ — गुरु ध्यान (Guru Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/guru-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/guru-meditation-diagram.svg" alt="Diagram: श्लोक ३९ — गुरु ध्यान (Guru Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/guru-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/guru-meditation-sticky.svg" alt="Sticky Note: श्लोक ३९ — गुरु ध्यान (Guru Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ८२
 
 | आयाम | विवरण |
@@ -1143,17 +713,6 @@ mindmap
 ---
 
 ### श्लोक ४० — भक्ति ध्यान (Devotion Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devotion-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devotion-meditation-handwritten.svg" alt="Handwritten: श्लोक ४० — भक्ति ध्यान (Devotion Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devotion-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devotion-meditation-diagram.svg" alt="Diagram: श्लोक ४० — भक्ति ध्यान (Devotion Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devotion-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devotion-meditation-sticky.svg" alt="Sticky Note: श्लोक ४० — भक्ति ध्यान (Devotion Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ८३
 
@@ -1173,17 +732,6 @@ mindmap
 
 ### श्लोक ४१ — चैतन्य ध्यान (Consciousness Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/consciousness-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/consciousness-meditation-handwritten.svg" alt="Handwritten: श्लोक ४१ — चैतन्य ध्यान (Consciousness Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/consciousness-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/consciousness-meditation-diagram.svg" alt="Diagram: श्लोक ४१ — चैतन्य ध्यान (Consciousness Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/consciousness-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/consciousness-meditation-sticky.svg" alt="Sticky Note: श्लोक ४१ — चैतन्य ध्यान (Consciousness Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ९०
 
 | आयाम | विवरण |
@@ -1197,17 +745,6 @@ mindmap
 ---
 
 ### श्लोक ४२ — प्रकाश ध्यान (Light Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/light-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/light-meditation-handwritten.svg" alt="Handwritten: श्लोक ४२ — प्रकाश ध्यान (Light Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/light-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/light-meditation-diagram.svg" alt="Diagram: श्लोक ४२ — प्रकाश ध्यान (Light Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/light-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/light-meditation-sticky.svg" alt="Sticky Note: श्लोक ४२ — प्रकाश ध्यान (Light Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ९२
 
@@ -1223,17 +760,6 @@ mindmap
 
 ### श्लोक ४३ — व्यापक ध्यान (Universal Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/universal-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/universal-meditation-handwritten.svg" alt="Handwritten: श्लोक ४३ — व्यापक ध्यान (Universal Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/universal-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/universal-meditation-diagram.svg" alt="Diagram: श्लोक ४३ — व्यापक ध्यान (Universal Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/universal-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/universal-meditation-sticky.svg" alt="Sticky Note: श्लोक ४३ — व्यापक ध्यान (Universal Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ९४
 
 | आयाम | विवरण |
@@ -1248,17 +774,6 @@ mindmap
 
 ### श्लोक ४४ — ब्रह्मांड ध्यान (Cosmic Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/cosmic-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/cosmic-meditation-handwritten.svg" alt="Handwritten: श्लोक ४४ — ब्रह्मांड ध्यान (Cosmic Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/cosmic-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/cosmic-meditation-diagram.svg" alt="Diagram: श्लोक ४४ — ब्रह्मांड ध्यान (Cosmic Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/cosmic-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/cosmic-meditation-sticky.svg" alt="Sticky Note: श्लोक ४४ — ब्रह्मांड ध्यान (Cosmic Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ९७
 
 | आयाम | विवरण |
@@ -1272,17 +787,6 @@ mindmap
 ---
 
 ### श्लोक ४५ — प्रकृति ध्यान (Nature Meditation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nature-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nature-meditation-handwritten.svg" alt="Handwritten: श्लोक ४५ — प्रकृति ध्यान (Nature Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nature-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nature-meditation-diagram.svg" alt="Diagram: श्लोक ४५ — प्रकृति ध्यान (Nature Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nature-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nature-meditation-sticky.svg" alt="Sticky Note: श्लोक ४५ — प्रकृति ध्यान (Nature Meditation)" width="30%">
-</a>
-
 
 **मूल विधि:** ३९
 
@@ -1302,17 +806,6 @@ mindmap
 
 ### श्लोक ४६ — शून्य ध्यान (Void Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/void-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/void-meditation-handwritten.svg" alt="Handwritten: श्लोक ४६ — शून्य ध्यान (Void Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/void-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/void-meditation-diagram.svg" alt="Diagram: श्लोक ४६ — शून्य ध्यान (Void Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/void-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/void-meditation-sticky.svg" alt="Sticky Note: श्लोक ४६ — शून्य ध्यान (Void Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** ९८
 
 | आयाम | विवरण |
@@ -1326,17 +819,6 @@ mindmap
 ---
 
 ### श्लोक ४७ — तत्त्व चिंतन (Subtle Reality Contemplation)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-reality-contemplation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-reality-contemplation-handwritten.svg" alt="Handwritten: श्लोक ४७ — तत्त्व चिंतन (Subtle Reality Contemplation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-reality-contemplation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-reality-contemplation-diagram.svg" alt="Diagram: श्लोक ४७ — तत्त्व चिंतन (Subtle Reality Contemplation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-reality-contemplation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/subtle-reality-contemplation-sticky.svg" alt="Sticky Note: श्लोक ४७ — तत्त्व चिंतन (Subtle Reality Contemplation)" width="30%">
-</a>
-
 
 **मूल विधि:** ९९
 
@@ -1352,17 +834,6 @@ mindmap
 
 ### श्लोक ४८ — न किंचिदिति ध्यान (Nothingness Meditation)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nothingness-meditation-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nothingness-meditation-handwritten.svg" alt="Handwritten: श्लोक ४८ — न किंचिदिति ध्यान (Nothingness Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nothingness-meditation-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nothingness-meditation-diagram.svg" alt="Diagram: श्लोक ४८ — न किंचिदिति ध्यान (Nothingness Meditation)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nothingness-meditation-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/nothingness-meditation-sticky.svg" alt="Sticky Note: श्लोक ४८ — न किंचिदिति ध्यान (Nothingness Meditation)" width="30%">
-</a>
-
-
 **मूल विधि:** १०२
 
 | आयाम | विवरण |
@@ -1376,17 +847,6 @@ mindmap
 ---
 
 ### श्लोक ४९ — उन्मनी अवस्था (Transcendence)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/transcendence-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/transcendence-handwritten.svg" alt="Handwritten: श्लोक ४९ — उन्मनी अवस्था (Transcendence)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/transcendence-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/transcendence-diagram.svg" alt="Diagram: श्लोक ४९ — उन्मनी अवस्था (Transcendence)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/transcendence-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/transcendence-sticky.svg" alt="Sticky Note: श्लोक ४९ — उन्मनी अवस्था (Transcendence)" width="30%">
-</a>
-
 
 **मूल विधि:** १०५
 
@@ -1402,17 +862,6 @@ mindmap
 
 ### श्लोक ५० — सहजावस्था (Effortless State)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/effortless-state-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/effortless-state-handwritten.svg" alt="Handwritten: श्लोक ५० — सहजावस्था (Effortless State)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/effortless-state-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/effortless-state-diagram.svg" alt="Diagram: श्लोक ५० — सहजावस्था (Effortless State)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/effortless-state-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/effortless-state-sticky.svg" alt="Sticky Note: श्लोक ५० — सहजावस्था (Effortless State)" width="30%">
-</a>
-
-
 **मूल विधि:** १०८
 
 | आयाम | विवरण |
@@ -1427,17 +876,6 @@ mindmap
 
 ### श्लोक ५१ — भैरवी मुद्रा (Bhairavi Mudra)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairavi-mudra-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairavi-mudra-handwritten.svg" alt="Handwritten: श्लोक ५१ — भैरवी मुद्रा (Bhairavi Mudra)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairavi-mudra-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairavi-mudra-diagram.svg" alt="Diagram: श्लोक ५१ — भैरवी मुद्रा (Bhairavi Mudra)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairavi-mudra-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairavi-mudra-sticky.svg" alt="Sticky Note: श्लोक ५१ — भैरवी मुद्रा (Bhairavi Mudra)" width="30%">
-</a>
-
-
 **मूल विधि:** ११०
 
 | आयाम | विवरण |
@@ -1451,17 +889,6 @@ mindmap
 ---
 
 ### श्लोक ५२ — अहं भैरव एवास्मि (I Am Bhairav)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/i-am-bhairav-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/i-am-bhairav-handwritten.svg" alt="Handwritten: श्लोक ५२ — अहं भैरव एवास्मि (I Am Bhairav)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/i-am-bhairav-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/i-am-bhairav-diagram.svg" alt="Diagram: श्लोक ५२ — अहं भैरव एवास्मि (I Am Bhairav)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/i-am-bhairav-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/i-am-bhairav-sticky.svg" alt="Sticky Note: श्लोक ५२ — अहं भैरव एवास्मि (I Am Bhairav)" width="30%">
-</a>
-
 
 **मूल विधि:** ११२
 
@@ -1481,17 +908,6 @@ mindmap
 
 ### श्लोक ५३ — देवी प्रश्न (Devi's Question)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devi-s-question-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devi-s-question-handwritten.svg" alt="Handwritten: श्लोक ५३ — देवी प्रश्न (Devi's Question)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devi-s-question-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devi-s-question-diagram.svg" alt="Diagram: श्लोक ५३ — देवी प्रश्न (Devi's Question)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devi-s-question-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/devi-s-question-sticky.svg" alt="Sticky Note: श्लोक ५३ — देवी प्रश्न (Devi's Question)" width="30%">
-</a>
-
-
 **मूल विधि:** आरंभिक
 
 | आयाम | विवरण |
@@ -1506,17 +922,6 @@ mindmap
 
 ### श्लोक ५४ — भैरव उत्तर (Bhairav's Reply)
 
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairav-s-reply-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairav-s-reply-handwritten.svg" alt="Handwritten: श्लोक ५४ — भैरव उत्तर (Bhairav's Reply)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairav-s-reply-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairav-s-reply-diagram.svg" alt="Diagram: श्लोक ५४ — भैरव उत्तर (Bhairav's Reply)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairav-s-reply-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/bhairav-s-reply-sticky.svg" alt="Sticky Note: श्लोक ५४ — भैरव उत्तर (Bhairav's Reply)" width="30%">
-</a>
-
-
 **मूल विधि:** आरंभिक
 
 | आयाम | विवरण |
@@ -1530,17 +935,6 @@ mindmap
 ---
 
 ### श्लोक ५५ — निर्विकल्प समाधि (Supreme Samadhi)
-
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/supreme-samadhi-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/supreme-samadhi-handwritten.svg" alt="Handwritten: श्लोक ५५ — निर्विकल्प समाधि (Supreme Samadhi)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/supreme-samadhi-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/supreme-samadhi-diagram.svg" alt="Diagram: श्लोक ५५ — निर्विकल्प समाधि (Supreme Samadhi)" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/supreme-samadhi-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/vigyan-bhairav-tantra/shloka-index/supreme-samadhi-sticky.svg" alt="Sticky Note: श्लोक ५५ — निर्विकल्प समाधि (Supreme Samadhi)" width="30%">
-</a>
-
 
 **मूल विधि:** समापन
 

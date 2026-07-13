@@ -225,16 +225,6 @@ class TestApplication {
 
 ### 1.1 Custom Context Configuration
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/1-1-custom-context-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/1-1-custom-context-configuration-handwritten.svg" alt="Handwritten: 1.1 Custom Context Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/1-1-custom-context-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/1-1-custom-context-configuration-diagram.svg" alt="Diagram: 1.1 Custom Context Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/1-1-custom-context-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/1-1-custom-context-configuration-sticky.svg" alt="Sticky Note: 1.1 Custom Context Configuration" width="30%">
-</a>
-
 
 ```java
 package springboot.fullcontext;
@@ -278,16 +268,6 @@ class TestDatabaseConfig {
 ```
 
 ### 1.2 Context Caching
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/1-2-context-caching-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/1-2-context-caching-handwritten.svg" alt="Handwritten: 1.2 Context Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/1-2-context-caching-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/1-2-context-caching-diagram.svg" alt="Diagram: 1.2 Context Caching" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/1-2-context-caching-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/1-2-context-caching-sticky.svg" alt="Sticky Note: 1.2 Context Caching" width="30%">
-</a>
 
 
 ```java
@@ -506,16 +486,6 @@ class GreetingController {
 
 ### 2.1 LocalServerPort
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/2-1-localserverport-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/2-1-localserverport-handwritten.svg" alt="Handwritten: 2.1 LocalServerPort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/2-1-localserverport-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/2-1-localserverport-diagram.svg" alt="Diagram: 2.1 LocalServerPort" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/2-1-localserverport-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/2-1-localserverport-sticky.svg" alt="Sticky Note: 2.1 LocalServerPort" width="30%">
-</a>
-
 
 ```java
 package springboot.webenv;
@@ -551,16 +521,6 @@ class LocalServerPortTest {
 `TestRestTemplate` is a convenience wrapper around Spring's `RestTemplate`, pre-configured for integration testing. It is automatically available when using `@SpringBootTest` with `RANDOM_PORT` or `DEFINED_PORT`.
 
 ### 3.1 Basic REST Template Operations
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/3-1-basic-rest-template-operations-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/3-1-basic-rest-template-operations-handwritten.svg" alt="Handwritten: 3.1 Basic REST Template Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/3-1-basic-rest-template-operations-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/3-1-basic-rest-template-operations-diagram.svg" alt="Diagram: 3.1 Basic REST Template Operations" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/3-1-basic-rest-template-operations-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/3-1-basic-rest-template-operations-sticky.svg" alt="Sticky Note: 3.1 Basic REST Template Operations" width="30%">
-</a>
 
 
 ```java
@@ -681,16 +641,6 @@ record GreetingResponse(String message) {}
 
 ### 3.2 TestRestTemplate with Basic Auth
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/3-2-testresttemplate-with-basic-auth-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/3-2-testresttemplate-with-basic-auth-handwritten.svg" alt="Handwritten: 3.2 TestRestTemplate with Basic Auth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/3-2-testresttemplate-with-basic-auth-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/3-2-testresttemplate-with-basic-auth-diagram.svg" alt="Diagram: 3.2 TestRestTemplate with Basic Auth" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/3-2-testresttemplate-with-basic-auth-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/3-2-testresttemplate-with-basic-auth-sticky.svg" alt="Sticky Note: 3.2 TestRestTemplate with Basic Auth" width="30%">
-</a>
-
 
 ```java
 package springboot.testresttemplate;
@@ -742,16 +692,6 @@ class AuthenticatedRestTemplateTest {
 `WebTestClient` is a reactive HTTP client designed for testing WebFlux endpoints. It also works with MVC endpoints when used with `@AutoConfigureWebTestClient`.
 
 ### 4.1 Basic WebTestClient Usage
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-1-basic-webtestclient-usage-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-1-basic-webtestclient-usage-handwritten.svg" alt="Handwritten: 4.1 Basic WebTestClient Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-1-basic-webtestclient-usage-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-1-basic-webtestclient-usage-diagram.svg" alt="Diagram: 4.1 Basic WebTestClient Usage" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-1-basic-webtestclient-usage-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-1-basic-webtestclient-usage-sticky.svg" alt="Sticky Note: 4.1 Basic WebTestClient Usage" width="30%">
-</a>
 
 
 ```java
@@ -824,16 +764,6 @@ class WebTestClientTest {
 
 ### 4.2 WebTestClient with JSON Path
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-2-webtestclient-with-json-path-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-2-webtestclient-with-json-path-handwritten.svg" alt="Handwritten: 4.2 WebTestClient with JSON Path" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-2-webtestclient-with-json-path-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-2-webtestclient-with-json-path-diagram.svg" alt="Diagram: 4.2 WebTestClient with JSON Path" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-2-webtestclient-with-json-path-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-2-webtestclient-with-json-path-sticky.svg" alt="Sticky Note: 4.2 WebTestClient with JSON Path" width="30%">
-</a>
-
 
 ```java
 package springboot.webtestclient;
@@ -897,16 +827,6 @@ record CreateUserRequest(String name, String email) {}
 
 ### 4.3 WebTestClient for WebFlux
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-3-webtestclient-for-webflux-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-3-webtestclient-for-webflux-handwritten.svg" alt="Handwritten: 4.3 WebTestClient for WebFlux" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-3-webtestclient-for-webflux-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-3-webtestclient-for-webflux-diagram.svg" alt="Diagram: 4.3 WebTestClient for WebFlux" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/4-3-webtestclient-for-webflux-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/4-3-webtestclient-for-webflux-sticky.svg" alt="Sticky Note: 4.3 WebTestClient for WebFlux" width="30%">
-</a>
-
 
 ```java
 package springboot.webtestclient;
@@ -954,16 +874,6 @@ class ReactiveGreetingController {
 Test slices load only a subset of the application context Ã¢â‚¬â€ just the beans needed for a specific layer. This makes slice tests faster and more focused than `@SpringBootTest`.
 
 ### 5.1 @WebMvcTest Ã¢â‚¬â€ Testing Controllers Only
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-1-webmvctest-testing-controllers-only-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-1-webmvctest-testing-controllers-only-handwritten.svg" alt="Handwritten: 5.1 @WebMvcTest Ã¢â‚¬â€ Testing Controllers Only" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-1-webmvctest-testing-controllers-only-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-1-webmvctest-testing-controllers-only-diagram.svg" alt="Diagram: 5.1 @WebMvcTest Ã¢â‚¬â€ Testing Controllers Only" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-1-webmvctest-testing-controllers-only-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-1-webmvctest-testing-controllers-only-sticky.svg" alt="Sticky Note: 5.1 @WebMvcTest Ã¢â‚¬â€ Testing Controllers Only" width="30%">
-</a>
 
 
 ```java
@@ -1092,16 +1002,6 @@ class GlobalExceptionHandler {
 
 ### 5.2 @DataJpaTest Ã¢â‚¬â€ Testing Repositories Only
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-2-datajpatest-testing-repositories-only-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-2-datajpatest-testing-repositories-only-handwritten.svg" alt="Handwritten: 5.2 @DataJpaTest Ã¢â‚¬â€ Testing Repositories Only" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-2-datajpatest-testing-repositories-only-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-2-datajpatest-testing-repositories-only-diagram.svg" alt="Diagram: 5.2 @DataJpaTest Ã¢â‚¬â€ Testing Repositories Only" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-2-datajpatest-testing-repositories-only-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-2-datajpatest-testing-repositories-only-sticky.svg" alt="Sticky Note: 5.2 @DataJpaTest Ã¢â‚¬â€ Testing Repositories Only" width="30%">
-</a>
-
 
 ```java
 package springboot.slices;
@@ -1215,16 +1115,6 @@ interface UserRepository extends JpaRepository<UserEntity, Long> {
 
 ### 5.3 @JsonTest Ã¢â‚¬â€ Testing Serialization
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-3-jsontest-testing-serialization-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-3-jsontest-testing-serialization-handwritten.svg" alt="Handwritten: 5.3 @JsonTest Ã¢â‚¬â€ Testing Serialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-3-jsontest-testing-serialization-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-3-jsontest-testing-serialization-diagram.svg" alt="Diagram: 5.3 @JsonTest Ã¢â‚¬â€ Testing Serialization" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-3-jsontest-testing-serialization-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-3-jsontest-testing-serialization-sticky.svg" alt="Sticky Note: 5.3 @JsonTest Ã¢â‚¬â€ Testing Serialization" width="30%">
-</a>
-
 
 ```java
 package springboot.slices;
@@ -1304,16 +1194,6 @@ record UserDto(Long id, String name, String email, LocalDate createdAt) {}
 ```
 
 ### 5.4 @RestClientTest Ã¢â‚¬â€ Testing REST Clients
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-4-restclienttest-testing-rest-clients-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-4-restclienttest-testing-rest-clients-handwritten.svg" alt="Handwritten: 5.4 @RestClientTest Ã¢â‚¬â€ Testing REST Clients" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-4-restclienttest-testing-rest-clients-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-4-restclienttest-testing-rest-clients-diagram.svg" alt="Diagram: 5.4 @RestClientTest Ã¢â‚¬â€ Testing REST Clients" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-4-restclienttest-testing-rest-clients-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-4-restclienttest-testing-rest-clients-sticky.svg" alt="Sticky Note: 5.4 @RestClientTest Ã¢â‚¬â€ Testing REST Clients" width="30%">
-</a>
 
 
 ```java
@@ -1435,16 +1315,6 @@ class UserApiClient {
 
 ### 5.5 @DataMongoTest
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-5-datamongotest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-5-datamongotest-handwritten.svg" alt="Handwritten: 5.5 @DataMongoTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-5-datamongotest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-5-datamongotest-diagram.svg" alt="Diagram: 5.5 @DataMongoTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-5-datamongotest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-5-datamongotest-sticky.svg" alt="Sticky Note: 5.5 @DataMongoTest" width="30%">
-</a>
-
 
 ```java
 package springboot.slices;
@@ -1521,16 +1391,6 @@ interface ProductRepository extends MongoRepository<ProductEntity, String> {
 
 ### 5.6 @DataRedisTest
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-6-dataredistest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-6-dataredistest-handwritten.svg" alt="Handwritten: 5.6 @DataRedisTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-6-dataredistest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-6-dataredistest-diagram.svg" alt="Diagram: 5.6 @DataRedisTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-6-dataredistest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-6-dataredistest-sticky.svg" alt="Sticky Note: 5.6 @DataRedisTest" width="30%">
-</a>
-
 
 ```java
 package springboot.slices;
@@ -1598,16 +1458,6 @@ interface SessionRepository extends org.springframework.data.repository.CrudRepo
 
 ### 5.7 @DataLdapTest
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-7-dataldaptest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-7-dataldaptest-handwritten.svg" alt="Handwritten: 5.7 @DataLdapTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-7-dataldaptest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-7-dataldaptest-diagram.svg" alt="Diagram: 5.7 @DataLdapTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-7-dataldaptest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-7-dataldaptest-sticky.svg" alt="Sticky Note: 5.7 @DataLdapTest" width="30%">
-</a>
-
 
 ```java
 package springboot.slices;
@@ -1637,16 +1487,6 @@ class LdapSliceTest {
 ```
 
 ### 5.8 @DataNeo4jTest
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-8-dataneo4jtest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-8-dataneo4jtest-handwritten.svg" alt="Handwritten: 5.8 @DataNeo4jTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-8-dataneo4jtest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-8-dataneo4jtest-diagram.svg" alt="Diagram: 5.8 @DataNeo4jTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/5-8-dataneo4jtest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/5-8-dataneo4jtest-sticky.svg" alt="Sticky Note: 5.8 @DataNeo4jTest" width="30%">
-</a>
 
 
 ```java
@@ -1699,16 +1539,6 @@ interface PersonRepository extends org.springframework.data.neo4j.repository.Neo
 `@MockBean` and `@SpyBean` add mocks or spies to the Spring `ApplicationContext`. Any bean of the matching type in the context is replaced by the mock.
 
 ### 6.1 @MockBean
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-1-mockbean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-1-mockbean-handwritten.svg" alt="Handwritten: 6.1 @MockBean" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-1-mockbean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-1-mockbean-diagram.svg" alt="Diagram: 6.1 @MockBean" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-1-mockbean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-1-mockbean-sticky.svg" alt="Sticky Note: 6.1 @MockBean" width="30%">
-</a>
 
 
 ```java
@@ -1852,16 +1682,6 @@ interface NotificationService {
 
 ### 6.2 @SpyBean
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-2-spybean-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-2-spybean-handwritten.svg" alt="Handwritten: 6.2 @SpyBean" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-2-spybean-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-2-spybean-diagram.svg" alt="Diagram: 6.2 @SpyBean" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-2-spybean-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-2-spybean-sticky.svg" alt="Sticky Note: 6.2 @SpyBean" width="30%">
-</a>
-
 
 ```java
 package springboot.mockbean;
@@ -1944,16 +1764,6 @@ class AuditLogger {
 
 ### 6.3 DirtiesContext Ã¢â‚¬â€ Resetting Between Tests
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-3-dirtiescontext-resetting-between-tests-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-3-dirtiescontext-resetting-between-tests-handwritten.svg" alt="Handwritten: 6.3 DirtiesContext Ã¢â‚¬â€ Resetting Between Tests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-3-dirtiescontext-resetting-between-tests-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-3-dirtiescontext-resetting-between-tests-diagram.svg" alt="Diagram: 6.3 DirtiesContext Ã¢â‚¬â€ Resetting Between Tests" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/6-3-dirtiescontext-resetting-between-tests-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/6-3-dirtiescontext-resetting-between-tests-sticky.svg" alt="Sticky Note: 6.3 DirtiesContext Ã¢â‚¬â€ Resetting Between Tests" width="30%">
-</a>
-
 
 ```java
 package springboot.mockbean;
@@ -2003,16 +1813,6 @@ interface ConfigService {
 ## 7. Test Configuration
 
 ### 7.1 @TestConfiguration
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-1-testconfiguration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-1-testconfiguration-handwritten.svg" alt="Handwritten: 7.1 @TestConfiguration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-1-testconfiguration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-1-testconfiguration-diagram.svg" alt="Diagram: 7.1 @TestConfiguration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-1-testconfiguration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-1-testconfiguration-sticky.svg" alt="Sticky Note: 7.1 @TestConfiguration" width="30%">
-</a>
 
 
 ```java
@@ -2095,16 +1895,6 @@ class CacheManager {
 
 ### 7.2 @TestPropertySource
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-2-testpropertysource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-2-testpropertysource-handwritten.svg" alt="Handwritten: 7.2 @TestPropertySource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-2-testpropertysource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-2-testpropertysource-diagram.svg" alt="Diagram: 7.2 @TestPropertySource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-2-testpropertysource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-2-testpropertysource-sticky.svg" alt="Sticky Note: 7.2 @TestPropertySource" width="30%">
-</a>
-
 
 ```java
 package springboot.testconfig;
@@ -2164,16 +1954,6 @@ class FileBasedPropertyTest {
 ```
 
 ### 7.3 @DynamicPropertySource
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-3-dynamicpropertysource-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-3-dynamicpropertysource-handwritten.svg" alt="Handwritten: 7.3 @DynamicPropertySource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-3-dynamicpropertysource-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-3-dynamicpropertysource-diagram.svg" alt="Diagram: 7.3 @DynamicPropertySource" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-3-dynamicpropertysource-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-3-dynamicpropertysource-sticky.svg" alt="Sticky Note: 7.3 @DynamicPropertySource" width="30%">
-</a>
 
 
 ```java
@@ -2254,16 +2034,6 @@ class PostgresDynamicPropertyTest {
 
 ### 7.4 @ActiveProfiles
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-4-activeprofiles-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-4-activeprofiles-handwritten.svg" alt="Handwritten: 7.4 @ActiveProfiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-4-activeprofiles-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-4-activeprofiles-diagram.svg" alt="Diagram: 7.4 @ActiveProfiles" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-4-activeprofiles-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-4-activeprofiles-sticky.svg" alt="Sticky Note: 7.4 @ActiveProfiles" width="30%">
-</a>
-
 
 ```java
 package springboot.testconfig;
@@ -2327,16 +2097,6 @@ class ProductionInitializer {
 
 ### 7.5 Test Slice Auto-Configuration
 
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-5-test-slice-auto-configuration-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-5-test-slice-auto-configuration-handwritten.svg" alt="Handwritten: 7.5 Test Slice Auto-Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-5-test-slice-auto-configuration-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-5-test-slice-auto-configuration-diagram.svg" alt="Diagram: 7.5 Test Slice Auto-Configuration" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/7-5-test-slice-auto-configuration-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/7-5-test-slice-auto-configuration-sticky.svg" alt="Sticky Note: 7.5 Test Slice Auto-Configuration" width="30%">
-</a>
-
 
 ```java
 package springboot.testconfig;
@@ -2384,16 +2144,6 @@ class SliceCompositionTest {
 ## 8. Output Capture
 
 ### 8.1 @OutputCaptureExtension
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/8-1-outputcaptureextension-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/8-1-outputcaptureextension-handwritten.svg" alt="Handwritten: 8.1 @OutputCaptureExtension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/8-1-outputcaptureextension-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/8-1-outputcaptureextension-diagram.svg" alt="Diagram: 8.1 @OutputCaptureExtension" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/8-1-outputcaptureextension-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/8-1-outputcaptureextension-sticky.svg" alt="Sticky Note: 8.1 @OutputCaptureExtension" width="30%">
-</a>
 
 
 ```java
@@ -2464,16 +2214,6 @@ class OutputCaptureTest {
 ```
 
 ### 8.2 Using OutputCapture in @SpringBootTest
-
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/8-2-using-outputcapture-in-springboottest-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/8-2-using-outputcapture-in-springboottest-handwritten.svg" alt="Handwritten: 8.2 Using OutputCapture in @SpringBootTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/8-2-using-outputcapture-in-springboottest-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/8-2-using-outputcapture-in-springboottest-diagram.svg" alt="Diagram: 8.2 Using OutputCapture in @SpringBootTest" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/31-spring-boot-test/8-2-using-outputcapture-in-springboottest-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/31-spring-boot-test/8-2-using-outputcapture-in-springboottest-sticky.svg" alt="Sticky Note: 8.2 Using OutputCapture in @SpringBootTest" width="30%">
-</a>
 
 
 ```java

@@ -121,16 +121,6 @@ flowchart TD
 
 ### Service Discovery Patterns
 
-<a href="../../../assets/images/diagrams/java/39-discovery/service-discovery-patterns-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/service-discovery-patterns-handwritten.svg" alt="Handwritten: Service Discovery Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/39-discovery/service-discovery-patterns-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/service-discovery-patterns-diagram.svg" alt="Diagram: Service Discovery Patterns" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/39-discovery/service-discovery-patterns-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/service-discovery-patterns-sticky.svg" alt="Sticky Note: Service Discovery Patterns" width="30%">
-</a>
-
 
 In a microservices architecture, services need to find each other at runtime. Service discovery solves the problem of locating service instances whose network addresses change dynamically due to auto-scaling, failures, or deployments.
 
@@ -139,16 +129,6 @@ In a microservices architecture, services need to find each other at runtime. Se
 **Server-Side Discovery**: The client sends requests to a load balancer (e.g., AWS ALB, Kubernetes Service), which forwards to available instances. The client does not query the registry directly.
 
 ### Netflix Eureka
-
-<a href="../../../assets/images/diagrams/java/39-discovery/netflix-eureka-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/netflix-eureka-handwritten.svg" alt="Handwritten: Netflix Eureka" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/39-discovery/netflix-eureka-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/netflix-eureka-diagram.svg" alt="Diagram: Netflix Eureka" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/39-discovery/netflix-eureka-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/netflix-eureka-sticky.svg" alt="Sticky Note: Netflix Eureka" width="30%">
-</a>
 
 
 Eureka consists of two components:
@@ -164,16 +144,6 @@ Eureka consists of two components:
 - **Health Checks**: Eureka clients send heartbeats; the server evicts instances that miss renewals
 
 ### Spring Cloud LoadBalancer
-
-<a href="../../../assets/images/diagrams/java/39-discovery/spring-cloud-loadbalancer-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/spring-cloud-loadbalancer-handwritten.svg" alt="Handwritten: Spring Cloud LoadBalancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/39-discovery/spring-cloud-loadbalancer-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/spring-cloud-loadbalancer-diagram.svg" alt="Diagram: Spring Cloud LoadBalancer" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/java/39-discovery/spring-cloud-loadbalancer-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/java/39-discovery/spring-cloud-loadbalancer-sticky.svg" alt="Sticky Note: Spring Cloud LoadBalancer" width="30%">
-</a>
 
 
 Spring Cloud LoadBalancer is the replacement for Netflix Ribbon. It provides:

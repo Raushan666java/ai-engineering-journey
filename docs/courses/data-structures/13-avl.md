@@ -98,16 +98,6 @@ flowchart TD
 
 ### AVL Invariant
 
-<a href="../../../assets/images/diagrams/data-structures/13-avl/avl-invariant-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/avl-invariant-handwritten.svg" alt="Handwritten: AVL Invariant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/13-avl/avl-invariant-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/avl-invariant-diagram.svg" alt="Diagram: AVL Invariant" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/13-avl/avl-invariant-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/avl-invariant-sticky.svg" alt="Sticky Note: AVL Invariant" width="30%">
-</a>
-
 
 An **AVL tree** is a self-balancing BST. The balance factor of any node is:
 
@@ -117,30 +107,10 @@ The AVL invariant requires \( \text{balance} \in \{-1, 0, 1\} \) for every node.
 
 ### Height Guarantee
 
-<a href="../../../assets/images/diagrams/data-structures/13-avl/height-guarantee-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/height-guarantee-handwritten.svg" alt="Handwritten: Height Guarantee" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/13-avl/height-guarantee-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/height-guarantee-diagram.svg" alt="Diagram: Height Guarantee" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/13-avl/height-guarantee-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/height-guarantee-sticky.svg" alt="Sticky Note: Height Guarantee" width="30%">
-</a>
-
 
 The height of an AVL tree is bounded by \( h &lt; 2 \log_2 (n+1) \). This guarantees \( O(\log n) \) search, insert, and delete.
 
 ### Rotations Overview
-
-<a href="../../../assets/images/diagrams/data-structures/13-avl/rotations-overview-handwritten.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/rotations-overview-handwritten.svg" alt="Handwritten: Rotations Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/13-avl/rotations-overview-diagram.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/rotations-overview-diagram.svg" alt="Diagram: Rotations Overview" width="30%">
-</a>
-<a href="../../../assets/images/diagrams/data-structures/13-avl/rotations-overview-sticky.svg" target="_blank" rel="noopener">
-  <img src="../../../assets/images/diagrams/data-structures/13-avl/rotations-overview-sticky.svg" alt="Sticky Note: Rotations Overview" width="30%">
-</a>
 
 
 When an insertion or deletion violates the balance invariant, rotations restore balance.

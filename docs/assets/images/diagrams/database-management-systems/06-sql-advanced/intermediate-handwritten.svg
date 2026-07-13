@@ -1,9 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-    </style>
-  </defs>
   <!-- Paper background -->
   <rect width="600" height="400" fill="#F8F6F0" rx="4"/>
   <!-- Red margin line -->
@@ -23,17 +18,17 @@
   <line x1="55" y1="378" x2="570" y2="378" stroke="#D4D4E8" stroke-width="0.8"/>
   <line x1="55" y1="406" x2="570" y2="406" stroke="#D4D4E8" stroke-width="0.8"/>
   <!-- Title -->
-    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">Intermediate</text>
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive" transform="rotate(-0.5 60 90)">Intermediate</text>
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Write a recursive CTE that</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">generates dates from January 1,...</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Find employees whose salary is</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">above their department&apos;s...</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Write this using: a) a correlated</text>
-    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">subquery, b) a window...</text>
+      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Write a recursive CTE that</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">generates dates from January 1,...</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Find employees whose salary is</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">above their department&apos;s...</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Write this using: a) a correlated</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">subquery, b) a window...</text>
   <!-- Footer note -->
-  <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="344" font-size="13" fill="#666" font-family="'Segoe Print', 'Comic Sans MS', cursive" font-style="italic">
     — Write a recursive CTE that generates dates from...
   </text>
 </svg>

@@ -1,9 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-    </style>
-  </defs>
   <!-- Paper background -->
   <rect width="600" height="400" fill="#F8F6F0" rx="4"/>
   <!-- Red margin line -->
@@ -23,15 +18,15 @@
   <line x1="55" y1="378" x2="570" y2="378" stroke="#D4D4E8" stroke-width="0.8"/>
   <line x1="55" y1="406" x2="570" y2="406" stroke="#D4D4E8" stroke-width="0.8"/>
   <!-- Title -->
-    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">1.5 &quot;Why Do You Want to</text>
-  <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">Join Our Company?&quot;</text>
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive" transform="rotate(-0.5 60 90)">1.5 &quot;Why Do You Want to</text>
+  <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive" transform="rotate(-0.5 60 126)">Join Our Company?&quot;</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Research-based approach:</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Sample answers:</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">What not to say:</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Research-based approach:</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Sample answers:</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">What not to say:</text>
   <!-- Footer note -->
-  <text x="60" y="296" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="296" font-size="13" fill="#666" font-family="'Segoe Print', 'Comic Sans MS', cursive" font-style="italic">
     — Research-based approach:
   </text>
 </svg>

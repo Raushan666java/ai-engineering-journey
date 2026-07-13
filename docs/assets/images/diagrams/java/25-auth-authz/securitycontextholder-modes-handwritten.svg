@@ -1,9 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-    </style>
-  </defs>
   <!-- Paper background -->
   <rect width="600" height="400" fill="#F8F6F0" rx="4"/>
   <!-- Red margin line -->
@@ -23,17 +18,17 @@
   <line x1="55" y1="378" x2="570" y2="378" stroke="#D4D4E8" stroke-width="0.8"/>
   <line x1="55" y1="406" x2="570" y2="406" stroke="#D4D4E8" stroke-width="0.8"/>
   <!-- Title -->
-    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">SecurityContextHolder Modes</text>
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive" transform="rotate(-0.5 60 90)">SecurityContextHolder Modes</text>
   <line x1="55" y1="131" x2="570" y2="131" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Child threads // do NOT inherit the</text>
-    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">parent&apos;s context</text>
-    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">// Useful when async tasks need</text>
-    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">authentication info</text>
-    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">// DANGEROUS in multi-user</text>
-    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">applications Ã¢â‚¬â€ use with...</text>
+      <text x="60" y="146" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Child threads // do NOT inherit the</text>
+    <text x="60" y="174" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">parent&apos;s context</text>
+    <text x="60" y="202" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">// Useful when async tasks need</text>
+    <text x="60" y="230" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">authentication info</text>
+    <text x="60" y="258" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">// DANGEROUS in multi-user</text>
+    <text x="60" y="286" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">applications Ã¢â‚¬â€ use with...</text>
   <!-- Footer note -->
-  <text x="60" y="344" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="344" font-size="13" fill="#666" font-family="'Segoe Print', 'Comic Sans MS', cursive" font-style="italic">
     — Child threads // do NOT inherit the parent&apos;s context
   </text>
 </svg>

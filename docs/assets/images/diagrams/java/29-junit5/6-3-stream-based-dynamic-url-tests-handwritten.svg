@@ -1,9 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">
-  <defs>
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
-    </style>
-  </defs>
   <!-- Paper background -->
   <rect width="600" height="400" fill="#F8F6F0" rx="4"/>
   <!-- Red margin line -->
@@ -23,18 +18,18 @@
   <line x1="55" y1="378" x2="570" y2="378" stroke="#D4D4E8" stroke-width="0.8"/>
   <line x1="55" y1="406" x2="570" y2="406" stroke="#D4D4E8" stroke-width="0.8"/>
   <!-- Title -->
-    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 90)">6.3 Stream-Based Dynamic URL</text>
-  <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive" transform="rotate(-0.5 60 126)">Tests</text>
+    <text x="60" y="90" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive" transform="rotate(-0.5 60 90)">6.3 Stream-Based Dynamic URL</text>
+  <text x="60" y="126" font-size="22" font-weight="bold" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive" transform="rotate(-0.5 60 126)">Tests</text>
   <line x1="55" y1="167" x2="570" y2="167" stroke="#1a1a2e" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Bullet points -->
-      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">This is the mechanism behind</text>
-    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">@RepeatedTest and *...</text>
-    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Nested Tests `@Nested` creates</text>
-    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">inner test classes that...</text>
-    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">Each level can have its own</text>
-    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="Caveat, 'Segoe Print', cursive">`@BeforeEach`/`@AfterEach`</text>
+      <text x="60" y="182" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">This is the mechanism behind</text>
+    <text x="60" y="210" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">@RepeatedTest and *...</text>
+    <text x="60" y="238" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Nested Tests `@Nested` creates</text>
+    <text x="60" y="266" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">inner test classes that...</text>
+    <text x="60" y="294" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">Each level can have its own</text>
+    <text x="60" y="322" font-size="16" fill="#1a1a2e" font-family="'Segoe Print', 'Comic Sans MS', cursive">`@BeforeEach`/`@AfterEach`</text>
   <!-- Footer note -->
-  <text x="60" y="370" font-size="13" fill="#666" font-family="Caveat, 'Segoe Print', cursive" font-style="italic">
+  <text x="60" y="370" font-size="13" fill="#666" font-family="'Segoe Print', 'Comic Sans MS', cursive" font-style="italic">
     — This is the mechanism behind @RepeatedTest and *...
   </text>
 </svg>
